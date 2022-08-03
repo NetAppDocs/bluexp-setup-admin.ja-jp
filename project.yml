@@ -108,6 +108,8 @@ sidebar:
         url: "/task-adding-gcp-accounts.html"
     - title: ネットアップサポートサイトのアカウント
       url: "/task-adding-nss-accounts.html"
+    - title: My Opportunitiesを使用したディスカバリ
+      url: "/concept-my-opportunities.html"
   - title: 参照
     entries:
     - title: 権限の概要

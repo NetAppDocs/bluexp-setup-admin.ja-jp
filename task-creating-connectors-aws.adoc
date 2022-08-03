@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-creating-connectors-aws.html 
 keywords: fsx for ontap, iam, user role, create connector in aws, launch connector in aws, deploy connector in aws, aws connector, connector aws, connector permissions 
-summary: Cloud Manager のほとんどの機能を使用するには、 Account Admin がコネクタを導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 
+summary: Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカウント管理者がコネクタを導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 
 ---
 = Cloud Manager から AWS にコネクタを作成します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager のほとんどの機能を使用するには、 Account 
 
 
 [role="lead"]
-Cloud Manager のほとんどの機能を使用するには、 Account Admin が _ Connector を導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 link:concept-connectors.html["コネクタが必要になるタイミングを学習します"]。
+Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカウント管理者がコネクタを導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 link:concept-connectors.html["コネクタが必要になるタイミングを学習します"]。
 
 このページでは、 Cloud Manager から AWS でコネクタを直接作成する方法について説明します。 link:concept-connectors.html#how-to-create-a-connector["コネクタを配置するその他の方法について説明します"]。
 
@@ -223,3 +223,13 @@ NOTE: コネクタへの着信トラフィックは、開始しない限りあ�
 ワークスペース管理者がコネクタを使用して Cloud Volumes ONTAP システムを作成できるように、コネクタをワークスペースに関連付ける必要があります。アカウント管理者のみがいる場合は、コネクタをワークスペースに関連付ける必要はありません。アカウント管理者は、デフォルトで Cloud Manager のすべてのワークスペースにアクセスできます。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["詳細はこちら。"]。
 
 Connectorを作成したのと同じAWSアカウントにAmazon S3バケットがある場合、Amazon S3の作業環境がCanvasに自動的に表示されます。 link:task-viewing-amazon-s3.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
+
+
+
+== AutoSupport メッセージのポート3128を開きます
+
+アウトバウンドのインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、Cloud Managerはコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を自動的に設定します。
+
+唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
+
+Cloud Volumes ONTAP にデフォルトのセキュリティグループを使用する場合、そのセキュリティグループに対する変更は必要ありません。ただし、Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義する場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可することも必要です。

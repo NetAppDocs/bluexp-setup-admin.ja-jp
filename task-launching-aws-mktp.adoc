@@ -76,3 +76,9 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 これで、 Connector のインストールとセットアップが完了しました。Cloud Manager は、新しい作業環境の作成時にこのコネクタを自動的に使用します。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
 
 Connectorを作成したのと同じAWSアカウントにAmazon S3バケットがある場合、Amazon S3の作業環境がCanvasに自動的に表示されます。 link:task-viewing-amazon-s3.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
+
+アウトバウンドのインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、Cloud Managerはコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を自動的に設定します。
+
+唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
+
+Cloud Volumes ONTAP にデフォルトのセキュリティグループを使用する場合、そのセキュリティグループに対する変更は必要ありません。ただし、Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義する場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可することも必要です。

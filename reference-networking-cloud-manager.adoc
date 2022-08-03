@@ -81,7 +81,17 @@ Connector ソフトウェアは、手動でインストールすることもで�
 
 == ポートおよびセキュリティグループ
 
-コネクタへの着信トラフィックは、開始しない限りありません。へのアクセスは、 HTTP および HTTPS を使用して提供されます link:concept-connectors.html#the-local-user-interface["ローカル UI"]は、まれな状況で使用します。SSH が必要になるのは、トラブルシューティングのためにホストに接続する必要がある場合のみです。
+コネクタへの着信トラフィックは、コネクタを起動した場合や、コネクタがAutoSupport メッセージのプロキシとして使用されている場合を除き、受信トラフィックはありません。へのアクセスは、 HTTP および HTTPS を使用して提供されます link:concept-connectors.html#the-local-user-interface["ローカル UI"]は、まれな状況で使用します。SSH が必要になるのは、トラブルシューティングのためにホストに接続する必要がある場合のみです。
+
+
+
+=== AutoSupport メッセージ用のプロキシサーバ
+
+Cloud Volumes ONTAP からAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、Cloud Managerはコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を自動的に設定します。
+
+唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
+
+Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。
 
 
 
@@ -107,7 +117,7 @@ Connector ソフトウェアは、手動でインストールすることもで�
 | HTTPS | 443 | クライアント Web ブラウザからローカルユーザインターフェイスへの HTTPS アクセス、および Cloud Data Sense インスタンスからの接続を提供します 
 
 
-| TCP | 3128 | AWS ネットワークで NAT やプロキシを使用していない場合に、 Cloud Data Sense インスタンスにインターネットアクセスを提供します 
+| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 <<Proxy server for AutoSupport messages,Connectorのプロキシサーバの詳細については、こちらをご覧ください>>。 
 
 
 | TCP | 9060 | Cloud Data Sense を有効にして使用できる（ GovCloud 環境の場合のみ必要） 
@@ -183,6 +193,9 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | HTTPS | 443 | クライアント Web ブラウザからローカルユーザインターフェイスへの HTTPS アクセス、および Cloud Data Sense インスタンスからの接続を提供します 
 
 
+| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 <<Proxy server for AutoSupport messages,Connectorのプロキシサーバの詳細については、こちらをご覧ください>>。 
+
+
 | TCP | 9060 | クラウドデータセンスの有効化と使用が可能（政府機関のクラウド環境にのみ必要） 
 |===
 
@@ -248,6 +261,9 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 
 
 | HTTPS | 443 | クライアント Web ブラウザからローカルへの HTTPS アクセスを提供します ユーザインターフェイス 
+
+
+| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 <<Proxy server for AutoSupport messages,Connectorのプロキシサーバの詳細については、こちらをご覧ください>>。 
 |===
 
 

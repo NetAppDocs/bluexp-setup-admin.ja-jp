@@ -18,6 +18,30 @@ Cloud Manager の管理機能の新機能であるネットアップのアカウ
 
 
 
+== 2022年7月31日
+
+
+
+=== コネクタ3.9.21
+
+* Cloud Managerでまだ管理していない既存のクラウドリソースを検出する新しい方法が導入されました。
++
+Canvasでは、* My Opportunities *タブを使用して、ハイブリッドマルチクラウド全体で一貫したデータサービスと運用を実現するために、Cloud Managerに追加できる既存のリソースを一元的に検出できます。
+
++
+この初回リリースでは、My Opportunitiesを使用して、AWSアカウント内のONTAP ファイルシステム用の既存のFSXを検出できます。
+
++
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-using-my-opportunities["ONTAP のFSXを発見する方法については、こちらをご覧ください"^]
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#31-july-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+
+
+
+
+
 == 2022年7月15日
 
 

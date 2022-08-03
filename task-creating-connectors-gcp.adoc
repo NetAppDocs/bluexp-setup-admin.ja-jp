@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-creating-connectors-gcp.html 
 keywords: create connector in gcp, launch connector in gcp, deploy connector in gcp, gcp connector, connector gcp, connector permissions 
-summary: Cloud Manager のほとんどの機能を使用するには、 Account Admin がコネクタを導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 
+summary: Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカウント管理者がコネクタを導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 
 ---
 = Cloud Manager から Google Cloud でコネクタを作成します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager のほとんどの機能を使用するには、 Account 
 
 
 [role="lead"]
-Cloud Manager のほとんどの機能を使用するには、 Account Admin が _ Connector を導入する必要があります。 link:concept-connectors.html["コネクタが必要になるタイミングを学習します"]。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。
+Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカウント管理者がコネクタを導入する必要があります。 link:concept-connectors.html["コネクタが必要になるタイミングを学習します"]。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。
 
 このページでは、Cloud ManagerからGoogle Cloudで直接コネクタを作成する方法について説明します。 link:concept-connectors.html#how-to-create-a-connector["コネクタを配置するその他の方法について説明します"]。
 
@@ -440,3 +440,13 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 これで、 Connector のインストールとセットアップが完了しました。Cloud Manager は、新しい作業環境の作成時にこのコネクタを自動的に使用します。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
 
 Connectorを作成したGoogle CloudアカウントにGoogle Cloud Storageバケットがある場合は、Google Cloud Storage作業環境がCanvasに自動的に表示されます。 link:task-viewing-gcp-storage.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
+
+
+
+== AutoSupport メッセージのポート3128を開きます
+
+アウトバウンドのインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、Cloud Managerはコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を自動的に設定します。
+
+唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
+
+Cloud Volumes ONTAP にデフォルトのセキュリティグループを使用する場合、そのセキュリティグループに対する変更は必要ありません。ただし、Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義する場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可することも必要です。
