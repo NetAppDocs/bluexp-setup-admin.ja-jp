@@ -1885,7 +1885,6 @@
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">EC2インスタンスタイプはt3.xlargeです。</block>
   <block id="1c4a1f461d9d9ab860d5238735bbfa23" category="list-text">イメージのオペレーティングシステムはRed Hat Enterprise Linux 7.6（HVM）です。</block>
   <block id="09572768e7bd2d34b2a051ebb8774173" category="list-text">EC2 Linuxインスタンスのユーザ名はec2-userです。</block>
-  <block id="3e08af2c96d38d93f2b461c17451752f" category="list-text">デフォルトのシステムディスクは50GiBのgp2ディスクです。</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Azureの詳細</block>
   <block id="82e44dd5e94a855110f9dea154fed0ed" category="list-text">VMタイプはDS3 v2です。</block>
   <block id="6b20346212b35fa23c8778f7b40af243" category="list-text">イメージのオペレーティングシステムはCentOS 7.6です。</block>
@@ -2457,4 +2456,5 @@
   <block id="73739ec334e1d954edaeed2bf7ea0f3b" category="cell">Cloud Manager Tagging サービスを使用して、 Azure リソースのタグを管理できます。</block>
   <block id="6250087ecc700216c1d087cafab27212" category="cell">「 Microsoft.Network/applicationSecurityGroups/write" 」、「 Microsoft.Network/applicationSecurityGroups/read" 」、「 Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action" 」、「 Microsoft.Network/networkSecurityGroups/securityRules/write" 」、「 Microsoft.Network/applicationSecurityGroups/delete" 」、 「 Microsoft.Network/networkSecurityGroups/securityRules/delete"</block>
   <block id="68ecf3b89d5580d152c5d9385d1d9cdc" category="cell">Cloud Manager で HA ペアのアプリケーションセキュリティグループを設定できるため、 HA インターコネクトとクラスタネットワークの NIC が分離されます。</block>
+  <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">デフォルトのシステムディスクは100GiBのgp2ディスクです。</block>
 </blocks>
