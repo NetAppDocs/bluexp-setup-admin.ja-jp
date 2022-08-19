@@ -30,6 +30,10 @@ image:screenshot_s3_we.gif["Amazon S3 作業環境のスクリーンショット
 +
 image:screenshot_s3_actions.gif["Amazon S3 作業環境を選択したあとの操作ペインを示すスクリーンショット。このペインには、S3に関する情報（バケット数と使用可能なサービス数）が表示されます。"]
 
+. データの同期*をクリックして、S3バケットとの間でデータを同期します。
++
+詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Cloud Sync サービスの概要"^]。
+
 . Cloud Data Senseで個人データや機密データのS3バケットをスキャンする場合は、「* Enable」をクリックします。
 +
 詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-s3.html["Amazon S3 向けのクラウドデータセンスの導入"^]。
