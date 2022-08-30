@@ -1948,7 +1948,6 @@
   <block id="13a0adeb2b159ac19c415adb2a302ac7" category="list-text">ネットアップサポートサイトのクレデンシャルでログインして登録した場合は、毎回ログインオプションを使用する必要があります。</block>
   <block id="e7330d051a059d074bb6d948d1b195a1" category="paragraph"><block ref="e7330d051a059d074bb6d948d1b195a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0eac24292d137662727eddfcb308122d" category="paragraph">ログインするたびに、このサインアッププロセスで選択したオプションを使用する必要があります。</block>
-  <block id="5bcda5b087049d72bac31d0484792c9e" category="admonition">ネットアップでログインした場合、ネットアップサポートサイトのクレデンシャルはサポートダッシュボードにCloud Managerに追加されません。</block>
   <block id="bb3811f4fe37370092ea428b21cf1249" category="list-text">ネットアップサポートサイトのアカウントを登録している場合は、「* NetAppにログイン」をクリックし、ネットアップサポートサイトのクレデンシャルを入力します。</block>
   <block id="fa4e197c715b6a6e61487c84fa10bc13" category="paragraph"><block ref="fa4e197c715b6a6e61487c84fa10bc13" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
@@ -2458,4 +2457,6 @@
   <block id="68ecf3b89d5580d152c5d9385d1d9cdc" category="cell">Cloud Manager で HA ペアのアプリケーションセキュリティグループを設定できるため、 HA インターコネクトとクラスタネットワークの NIC が分離されます。</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">デフォルトのシステムディスクは100GiBのgp2ディスクです。</block>
   <block id="02bc515db3673d54b5989cdf43534729" category="list-text">データの同期*をクリックして、S3バケットとの間でデータを同期します。</block>
+  <block id="ff544de20f1db68a595954432523da78" category="inline-link-macro">Cloud ManagerにNSSクレデンシャルを追加する方法を説明します</block>
+  <block id="d9ca7aa291299ee1e7d3ee864546df7e" category="admonition">ネットアップでログインオプションを使用すると、ネットアップサポートサイト（NSS）のクレデンシャルがサポートダッシュボードにCloud Managerに追加されません。Cloud Volumes ONTAP の主要なワークフローを有効にし、Active IQ を介して予測分析とプロアクティブなサポートを有効にするには、NSSクレデンシャルをCloud Managerに追加する必要があります。 <block ref="d6386b10f546ed3137ed8f21203dfb6b" category="inline-link-macro-rx"></block>。</block>
 </blocks>

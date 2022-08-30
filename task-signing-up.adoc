@@ -36,7 +36,7 @@ image:screenshot-cloud-central-signup.png["Cloud Central のサインアップ�
 
 +
 
-NOTE: ネットアップでログインした場合、ネットアップサポートサイトのクレデンシャルはサポートダッシュボードにCloud Managerに追加されません。
+NOTE: ネットアップでログインオプションを使用すると、ネットアップサポートサイト（NSS）のクレデンシャルがサポートダッシュボードにCloud Managerに追加されません。Cloud Volumes ONTAP の主要なワークフローを有効にし、Active IQ を介して予測分析とプロアクティブなサポートを有効にするには、NSSクレデンシャルをCloud Managerに追加する必要があります。 link:task-adding-nss-accounts.html["Cloud ManagerにNSSクレデンシャルを追加する方法を説明します"]。
 
 
 
