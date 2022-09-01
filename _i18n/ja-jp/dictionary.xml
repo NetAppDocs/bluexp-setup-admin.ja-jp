@@ -1840,7 +1840,6 @@
   <block id="75af5b4615967c5f4c52ae9be3a8526c" category="paragraph">私たちは通常、コネクタソフトウェアを毎月更新して新機能を導入し、安定性を向上させています。Cloud Manager プラットフォームのサービスと機能のほとんどは SaaS ベースのソフトウェアで提供されますが、いくつかの機能はコネクタのバージョンによって異なります。Cloud Volumes ONTAP 管理、オンプレミスの ONTAP クラスタ管理、設定、ヘルプが含まれます。</block>
   <block id="3cdc0b8cb855b1fb9c206c3d696b6c9e" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.xlarge をお勧めします。</block>
   <block id="a6daae7da601d04e5cdb89d612a8d9b1" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。DS3 v2 を推奨します。</block>
-  <block id="a364c69650d36423667264592b72c7ce" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。n1-standard-4を推奨します。</block>
   <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">シールドVM機能</block>
   <block id="5e59673ea4dc0650f587413c4848c02c" category="paragraph">このコネクタは、OSがサポートされているVMインスタンス上のGoogle Cloudでサポートされます<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
   <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2022年5月2日</block>
@@ -1890,7 +1889,6 @@
   <block id="6b20346212b35fa23c8778f7b40af243" category="list-text">イメージのオペレーティングシステムはCentOS 7.6です。</block>
   <block id="474a089504b47eb34ee00ee62f121108" category="list-text">デフォルトのシステムディスクは100GiBのPremium SSDディスクです。</block>
   <block id="f246cf5f23e765f0a7ebed4a6c1d923a" category="section-title">Google Cloudの詳細</block>
-  <block id="eea8625f5c96ad7dadcdf9b2b4ddc80d" category="list-text">VMインスタンスはn1-standard-4です。</block>
   <block id="eac23d653ed188286a19e5301fe3807e" category="list-text">イメージのオペレーティングシステムはCentOS 7.9です。</block>
   <block id="6cb5fb9b61376b8ee3092321445fdea4" category="list-text">デフォルトのシステムディスクは100GiBのSSD永続ディスクです。</block>
   <block id="bc4aa6323016172de14a6835883b27c7" category="section-title">インストールフォルダ</block>
@@ -2459,4 +2457,6 @@
   <block id="02bc515db3673d54b5989cdf43534729" category="list-text">データの同期*をクリックして、S3バケットとの間でデータを同期します。</block>
   <block id="ff544de20f1db68a595954432523da78" category="inline-link-macro">Cloud ManagerにNSSクレデンシャルを追加する方法を説明します</block>
   <block id="d9ca7aa291299ee1e7d3ee864546df7e" category="admonition">ネットアップでログインオプションを使用すると、ネットアップサポートサイト（NSS）のクレデンシャルがサポートダッシュボードにCloud Managerに追加されません。Cloud Volumes ONTAP の主要なワークフローを有効にし、Active IQ を介して予測分析とプロアクティブなサポートを有効にするには、NSSクレデンシャルをCloud Managerに追加する必要があります。 <block ref="d6386b10f546ed3137ed8f21203dfb6b" category="inline-link-macro-rx"></block>。</block>
+  <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。</block>
+  <block id="0964bfe0dd83b0d60f5d55fd4502a11b" category="list-text">VMインスタンスがn2 -標準-4である。</block>
 </blocks>
