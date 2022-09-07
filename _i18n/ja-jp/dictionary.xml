@@ -2459,4 +2459,5 @@
   <block id="d9ca7aa291299ee1e7d3ee864546df7e" category="admonition">ネットアップでログインオプションを使用すると、ネットアップサポートサイト（NSS）のクレデンシャルがサポートダッシュボードにCloud Managerに追加されません。Cloud Volumes ONTAP の主要なワークフローを有効にし、Active IQ を介して予測分析とプロアクティブなサポートを有効にするには、NSSクレデンシャルをCloud Managerに追加する必要があります。 <block ref="d6386b10f546ed3137ed8f21203dfb6b" category="inline-link-macro-rx"></block>。</block>
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。</block>
   <block id="0964bfe0dd83b0d60f5d55fd4502a11b" category="list-text">VMインスタンスがn2 -標準-4である。</block>
+  <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">APIがAzureとONTAP にコールし、クラウドデータを検知してランサムウェアサービスに感染し、AutoSupport メッセージをネットアップに送信</block>
 </blocks>

@@ -234,7 +234,7 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | サービス | プロトコル | ポート | 宛先 | 目的 
 
 
-| API コールと AutoSupport | HTTPS | 443 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | API が AWS や ONTAP 、クラウドデータ検知、ランサムウェアサービス、ネットアップへの AutoSupport メッセージの送信を呼び出します 
+| API コールと AutoSupport | HTTPS | 443 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | APIがAzureとONTAP にコールし、クラウドデータを検知してランサムウェアサービスに感染し、AutoSupport メッセージをネットアップに送信 
 
 
 | DNS | UDP | 53 | DNS | Cloud Manager による DNS 解決に使用されます 
