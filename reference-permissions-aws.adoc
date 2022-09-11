@@ -127,14 +127,15 @@ AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnec
         "cloudformation:DeleteStack",
         "ec2:DescribePlacementGroups",
         "iam:GetRolePolicy",
-		"s3:ListAllMyBuckets",
+		    "s3:ListAllMyBuckets",
         "s3:GetObject",
         "iam:GetRole",
         "s3:DeleteObject",
         "s3:DeleteObjectVersion",
         "s3:PutObject",
-		"ec2:ModifyVolume",
-        "ec2:DescribeVolumesModifications"
+		    "ec2:ModifyVolume",
+        "ec2:DescribeVolumesModifications",
+		    "s3:GetEncryptionConfiguration"
       ],
       "Resource": "*"
     },
@@ -144,7 +145,7 @@ AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnec
       "Action": [
         "ec2:StartInstances",
         "ec2:StopInstances",
-        "ec2:DescribeInstances",
+		    "ec2:DescribeInstances",
         "ec2:DescribeInstanceStatus",
         "ec2:RunInstances",
         "ec2:TerminateInstances",
@@ -196,7 +197,21 @@ AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnec
         "s3:PutBucketAcl",
         "s3:AbortMultipartUpload",
         "s3:ListMultipartUploadParts",
-        "s3:DeleteBucket"
+        "s3:DeleteBucket",
+		    "s3:GetObjectVersionTagging",
+			  "s3:GetObjectVersionAcl",
+	   		"s3:GetObjectRetention",
+	   		"s3:GetObjectTagging",
+	   		"s3:GetObjectVersion",
+	   		"s3:PutObjectVersionTagging",
+	   		"s3:PutObjectRetention",
+	   		"s3:DeleteObjectTagging",
+	   		"s3:DeleteObjectVersionTagging",
+	   		"s3:GetBucketObjectLockConfiguration",
+	   		"s3:GetBucketVersioning",
+	   		"s3:PutBucketObjectLockConfiguration",
+	   		"s3:PutBucketVersioning",
+	   		"s3:BypassGovernanceRetention"
       ],
       "Resource": [
         "arn:aws:s3:::netapp-backup-*"
@@ -326,9 +341,9 @@ AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnec
       "Effect": "Allow",
       "Action": [
         "ec2:DescribeRegions",
-        "iam:GetInstanceProfile",
         "eks:ListClusters",
-        "eks:DescribeCluster"
+        "eks:DescribeCluster",
+		    "iam:GetInstanceProfiles"
       ],
       "Resource": "*"
     },
@@ -718,6 +733,37 @@ Connectorは、Amazon S3でバックアップを管理するために次のAPI�
 * グルー: BatchDeletePartition
 
 
+このコネクタは、データロックとランサムウェア保護を使用してボリュームのバックアップを行う際に次のAPI要求を実行します。
+
+* S3 ： GetObjectVersionTagging
+* S3 ： GetBucketObjectLockConfiguration
+* S3：GetObjectVersionAcl
+* S3 ： PutObjectTagging
+* S3 ： DeleteObject
+* S3 ： DeleteObjectTagging
+* S3 ： GetObjectRetention
+* S3 ： DeleteObjectVersionTagging
+* S3 ： PutObject
+* S3 ： GetObject
+* S3 ： PutBucketObjectLockConfiguration
+* S3 ： GetLifecycleConfiguration
+* S3：ListBucketByTags
+* S3 ： GetBucketTagging
+* S3 ： DeleteObjectVersion
+* S3 ： ListBucketVersions
+* S3 ： ListBucket
+* S3 ： PutBucketTagging
+* S3 ： GetObjectTagging
+* S3 ： PutBucketVersioning
+* S3 ： PutObjectVersionTagging
+* S3 ： GetBucketVersioning
+* S3 ： GetBucketAcl
+* S3：Bypassガバナー 保持
+* S3 ： PutObjectRetention
+* S3 ： GetBucketLocation
+* S3 ： GetObjectVersion
+
+
 
 
 === クラウドデータの意味
@@ -1076,6 +1122,42 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 
 
 
+=== FSX for ONTAP の略
+
+Connectorは、ONTAP のFSXを検出して管理するために次のAPI要求を実行します。
+
+* EC2: DescribeInstances
+* EC2: DescribeInstanceStatus
+* EC2: DescribeInstanceAttributeのこと
+* EC2: DescribeRouteTables
+* EC2: DescribeImages
+* ec2：CreateTags
+* EC2: DescribeVolumesの場合
+* EC2: DescribeSecurityGroups
+* EC2: DescribeNetworkInterfaces
+* EC2: DescribeSubnets
+* EC2: DescribeVpcs
+* EC2: DescribeDhcpOptions
+* ec2: DescribeSnapshots
+* EC2：DescribeKeyPairs
+* EC2: DescribeRegions (説明領域
+* EC2: DescribeTags (説明タグ)
+* EC2: DescribeIamInstanceProfileAssociations
+* EC2: DescribeReservedInstancesOfferings
+* ec2c:ディスクエンドポイントの説明
+* EC2: DescribeVpcs
+* EC2: DescribeVolumesModifications ( EC2 : DescribeVolumesMod
+* EC2: DescribePlacementGroups
+* KMS：リスト*
+* KMS：説明*
+* KMS：CreateGrant
+* KMS：エイリアスを確認する
+* FSx：説明*
+* FSx：リスト*
+
+
+
+
 === Kubernetes
 
 コネクタは、次のAPI要求を実行してAmazon EKSクラスタを検出および管理します。
@@ -1085,3 +1167,11 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 * EKS：DescribeCluster
 * IAM：GetInstanceProfile
 
+
+
+
+=== S3バケットの検出
+
+コネクタは、Amazon S3バケットを検出するために次のAPI要求を実行します。
+
+S3 ： GetEncryptionConfiguration
