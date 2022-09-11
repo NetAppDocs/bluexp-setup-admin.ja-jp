@@ -1124,7 +1124,7 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 
 === FSX for ONTAP の略
 
-Connectorは、ONTAP のFSXを検出して管理するために次のAPI要求を実行します。
+コネクタは、ONTAP のFSXを管理するために次のAPI要求を行います。
 
 * EC2: DescribeInstances
 * EC2: DescribeInstanceStatus

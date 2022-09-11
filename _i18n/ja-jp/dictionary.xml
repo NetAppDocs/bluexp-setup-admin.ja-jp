@@ -2478,10 +2478,10 @@
   <block id="b5abb00ccfe2eac60ae96d2e208a3d71" category="list-text">S3 ： PutObjectRetention</block>
   <block id="2575b79b2cd768a027306db8b9e8614a" category="list-text">S3 ： GetObjectVersion</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="section-title">FSX for ONTAP の略</block>
-  <block id="a66bcfc4972d6f3d13b3d340290757dd" category="paragraph">Connectorは、ONTAP のFSXを検出して管理するために次のAPI要求を実行します。</block>
   <block id="6c2169e32dbe273efb12c5de01180bd2" category="list-text">EC2: DescribeReservedInstancesOfferings</block>
   <block id="c7d6e8e55ec100d2a5894fa3c2eaabd4" category="list-text">EC2: DescribePlacementGroups</block>
   <block id="4e505c18a3df31a39f42336b9b57fa97" category="section-title">S3バケットの検出</block>
   <block id="1fd4dfa3fe95514f04e3ecdd7e8a001d" category="paragraph">コネクタは、Amazon S3バケットを検出するために次のAPI要求を実行します。</block>
   <block id="080045bf6ab788297df2820c007203af" category="paragraph">S3 ： GetEncryptionConfiguration</block>
+  <block id="2e0aa8db26606696ba7bb05ec89284a7" category="paragraph">コネクタは、ONTAP のFSXを管理するために次のAPI要求を行います。</block>
 </blocks>
