@@ -32,7 +32,7 @@ Cloud Manager からコネクタを直接導入するには、次の 2 組の権
 
 次の図は、上記の番号 1 と 2 で説明した権限の要件を示しています。
 
-image:diagram_permissions_gcp.png["説明"]
+image:diagram_permissions_gcp.png["GoogleとサービスアカウントがCloud Volumes ONTAP を導入するための権限の要件を示す概念図。"]
 
 
 

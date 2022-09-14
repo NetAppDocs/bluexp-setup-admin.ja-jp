@@ -71,7 +71,7 @@ image:screenshot-help-support.png["[ ヘルプ ] メニューのスクリーン�
 
 
 +
-image:screenshot-connector-autosupport.png[""]
+image:screenshot-connector-autosupport.png["ユーザがAutoSupport メッセージをダウンロードおよび送信する際にクリックできるサポートダッシュボードのスクリーンショット。"]
 
 
 
