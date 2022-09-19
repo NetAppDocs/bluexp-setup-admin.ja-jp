@@ -26,6 +26,9 @@ Cloud Manager の管理機能の新機能であるネットアップのアカウ
 
 * Connectorのインストールウィザードを強化しました。このウィザードには、Connectorのインストールに関する最小要件（権限、認証、ネットワーク）を満たすための手順が記載されています。
 * ネットアップサポートケースをCloud Managerのサポートダッシュボードで直接作成できるようになりました。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-get-help.html#netapp-support["ケースを作成する方法について説明します"]。
+
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
 +
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#18-september-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
