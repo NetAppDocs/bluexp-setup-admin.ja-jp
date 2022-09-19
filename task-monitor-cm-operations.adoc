@@ -50,7 +50,7 @@ Cloud Manager で実行されている処理のステータスを監視して、
 
 image:screenshot_notification_full.png["通知センターの現在の通知のリストを示すスクリーンショット。"]
 
-また、Cloud ManagerからEメールで通知を送信するように設定することで、システムにログインしていないときでも重要なシステムアクティビティを通知することができます。Eメールは、NetApp Cloud Accountの一部であるCloud Centralユーザ、または特定のタイプのシステムアクティビティを認識する必要のあるその他の受信者に送信できます。を参照してください <<Setting email notification settings,Eメール通知を設定しています>> 下。
+また、Cloud ManagerからEメールで通知を送信するように設定することで、システムにログインしていないときでも重要なシステムアクティビティを通知することができます。Eメールは、NetApp Cloud Accountの一部であるCloud Centralユーザ、または特定のタイプのシステムアクティビティを認識する必要のあるその他の受信者に送信できます。を参照してください  email notification settings,Eメール通知を設定しています 下。
 
 
 

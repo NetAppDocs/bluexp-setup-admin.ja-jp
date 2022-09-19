@@ -61,7 +61,18 @@ Connector は、これらのオペレーティングシステムの英語版で�
 ハイパーバイザー:: 認定済みのベアメタルハイパーバイザーまたはホスト型ハイパーバイザー CentOS または Red Hat Enterprise Linux を実行しますhttps://access.redhat.com/certified-hypervisors["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
 /var のディスク領域:: 20GiB のスペースが必要です
-アウトバウンドインターネットアクセス:: コネクターをインストールし、パブリッククラウド環境内でリソースとプロセスを管理するには、アウトバウンドインターネットアクセスが必要です。エンドポイントのリストについては、を参照してください link:reference-networking-cloud-manager.html["コネクタのネットワーク要件"]。
+アウトバウンドインターネットアクセス:: Connectorのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。
++
+--
+* https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+* https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
+* ¥ https://*.blob.core.windows.net または ¥ https://hub.docker.com
++
+ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。
+
+
+
+--
 
 
 

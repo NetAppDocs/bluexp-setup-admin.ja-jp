@@ -42,7 +42,7 @@ link:task-installing-linux.html["VM の要件を確認します"]。
 
 ** ネットワークセキュリティグループの場合、コネクタには、 SSH 、 HTTP 、および HTTPS を使用したインバウンド接続が必要です。
 +
-link:reference-networking-cloud-manager.html#rules-for-the-connector-in-azure["コネクタのセキュリティグループルールの詳細については、こちらを参照してください"]。
+link:reference-ports-azure.html["コネクタのセキュリティグループルールの詳細については、こちらを参照してください"]。
 
 ** [* 管理（ * Management ） ] で、 [ * オン * （ * on * ） ] を選択して、コネクターに割り当てられた管理 ID * を有効にします。
 +

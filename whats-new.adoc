@@ -18,6 +18,22 @@ Cloud Manager の管理機能の新機能であるネットアップのアカウ
 
 
 
+== 2022年9月18日
+
+
+
+=== コネクタ3.9.22
+
+* Connectorのインストールウィザードを強化しました。このウィザードには、Connectorのインストールに関する最小要件（権限、認証、ネットワーク）を満たすための手順が記載されています。
+* ネットアップサポートケースをCloud Managerのサポートダッシュボードで直接作成できるようになりました。
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#18-september-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+
+
+
+
+
 == 2022年7月31日
 
 
@@ -232,7 +248,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors
 
 パブリッククラウド環境内でリソースやプロセスを管理するためにコネクタが接続する必要があるエンドポイントの数を削減しました。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#outbound-internet-access["必要なエンドポイントのリストを表示します"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["必要なエンドポイントのリストを表示します"]
 
 
 

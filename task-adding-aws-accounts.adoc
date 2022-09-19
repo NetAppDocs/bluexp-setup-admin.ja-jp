@@ -24,11 +24,11 @@ AWS クレデンシャルは、既存のコネクタに追加するか、 Cloud 
 
 * 既存のコネクタにAWSクレデンシャルを追加する
 +
-既存のコネクタに新しい AWS クレデンシャルを追加すると、同じコネクタを使用して別の AWS アカウントに Cloud Volumes ONTAP を導入できるようになります。 <<Add additional credentials to a Connector,AWS クレデンシャルをコネクタに追加する方法について説明します>>。
+既存のコネクタに新しい AWS クレデンシャルを追加すると、同じコネクタを使用して別の AWS アカウントに Cloud Volumes ONTAP を導入できるようになります。  additional credentials to a Connector,AWS クレデンシャルをコネクタに追加する方法について説明します。
 
 * Cloud ManagerにAWSクレデンシャルを追加してコネクタを作成します
 +
-Cloud Managerに新しいAWSクレデンシャルを追加すると、Connectorの作成に必要な権限がCloud Managerに付与されます。 <<Add credentials to Cloud Manager for creating a Connector,Cloud Manager に AWS クレデンシャルを追加する方法について説明します>>。
+Cloud Managerに新しいAWSクレデンシャルを追加すると、Connectorの作成に必要な権限がCloud Managerに付与されます。  credentials to Cloud Manager for creating a Connector,Cloud Manager に AWS クレデンシャルを追加する方法について説明します。
 
 * Cloud Manager for FSX for ONTAP にAWSクレデンシャルを追加します
 +
@@ -63,8 +63,8 @@ NOTE: Cloud Manager からコネクタを導入すると、 Cloud Manager はコ
 
 * 選択肢 *
 
-* <<Grant permissions by assuming an IAM role in another account>>
-* <<Grant permissions by providing AWS keys>>
+*  permissions by assuming an IAM role in another account
+*  permissions by providing AWS keys
 
 
 
@@ -88,7 +88,7 @@ IAM ロールを使用して、コネクタインスタンスを導入したソ�
 . 後日 Cloud Manager に貼り付けることができるように、 IAM ロールの ARN をコピーします。
 
 
-これで、アカウントに必要な権限が付与されました。 <<add-the-credentials,これで、クレデンシャルをコネクタに追加できるようになりました>>。
+これで、アカウントに必要な権限が付与されました。 ,これで、クレデンシャルをコネクタに追加できるようになりました。
 
 
 
@@ -109,7 +109,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 
 
-これで、アカウントに必要な権限が付与されました。 <<add-the-credentials,これで、クレデンシャルをコネクタに追加できるようになりました>>。
+これで、アカウントに必要な権限が付与されました。 ,これで、クレデンシャルをコネクタに追加できるようになりました。
 
 
 
@@ -174,7 +174,7 @@ Cloud Manager SaaS で役割を引き受けることを可能にする IAM ロ�
 . IAM ロールのロール ARN をコピーして、次の手順で Cloud Manager に貼り付けることができます。
 
 
-IAM ロールに必要な権限が割り当てられます。 <<add-the-credentials-2,これで、 Cloud Manager に追加できます>>。
+IAM ロールに必要な権限が割り当てられます。 ,これで、 Cloud Manager に追加できます。
 
 
 

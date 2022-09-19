@@ -46,7 +46,6 @@
   <block id="3436333152b4e50a69b25e424a5d0873" category="paragraph"><block ref="1b633d2a7bc357dbd77dec7eba8d64c7" category="inline-xref-macro-rx"></block>。</block>
   <block id="573514d5de621ecfe56c91e7c665d73d" category="inline-link">Azure リージョンペア</block>
   <block id="6882deeb4b60915fc6b7a36d03f329e3" category="inline-link">Cloud Volumes ONTAP での Azure プライベートリンクの使用方法をご確認ください</block>
-  <block id="3390be7199c4e1acf84371ce3c4ae2a4" category="paragraph">コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。<block ref="8fd2062cae8df3766c9ddefca48991a5" category="inline-link-rx"></block>。</block>
   <block id="cd82a81f0c2bccf261869166e5786c07" category="section-title">Azure アカウントを使用してコネクタを作成します</block>
   <block id="358332b40331dd189cc9fff0c6200e31" category="paragraph">Azure でコネクタを作成するデフォルトの方法は、プロンプトが表示されたら Azure アカウントでログインすることです。ログインフォームは、 Microsoft が所有およびホストしています。クレデンシャルがネットアップに提供されていません。</block>
   <block id="4feea8fb07471b49da12ae6ce993e00f" category="section-title">Azure アカウントの権限を設定します</block>
@@ -84,11 +83,7 @@
   <block id="df5b4e7d7b6a4648ec54c1e80de11594" category="inline-image-macro">ヘッダーのコネクターアイコンとコネクターの追加アクションを示すスクリーンショット。</block>
   <block id="6afef7f4017876f5216334b8130f14fb" category="paragraph"><block ref="6afef7f4017876f5216334b8130f14fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="02a8c4a4e553694e2236fd17bb20b197" category="list-text">クラウドプロバイダとして「 * Microsoft Azure * 」を選択します。</block>
-  <block id="336114c46de5c797c5cd262aae516be2" category="paragraph">Connector は、作成する作業環境の種類や有効にするサービスへのネットワーク接続を確立する必要があることに注意してください。</block>
-  <block id="d172834beb0d4fd204de13e87e3eba66" category="inline-link-macro">Connector のネットワーク要件の詳細については、こちらをご覧ください</block>
-  <block id="df9f9795bfc1dcf5ccbef82292d61b8c" category="paragraph"><block ref="accae6a387d2cb0876547bc017cc7afc" category="inline-link-macro-rx"></block>。</block>
   <block id="b0e1a0461b32155d621f46d8d6f39569" category="list-text">ウィザードの手順に従って、コネクタを作成します。</block>
-  <block id="16ba6b23ebb7e77d30def44d01db853d" category="list-text">* 準備完了 * ：必要なものを確認して、 * 次へ * をクリックしてください。</block>
   <block id="e48f95b272ee0611b76ed8e7da5e4d48" category="list-text">プロンプトが表示されたら、 Microsoft アカウントにログインします。このアカウントには、仮想マシンの作成に必要な権限が付与されている必要があります。</block>
   <block id="e0f74d06e87b3ad6fc9f3b3cfc573c38" category="paragraph">このフォームは、 Microsoft が所有およびホストしています。クレデンシャルがネットアップに提供されていません。</block>
   <block id="5d149ff1e8243862b942bfa90d45a31b" category="admonition">すでに Azure アカウントにログインしている場合、そのアカウントは Cloud Manager によって自動的に使用されます。アカウントが複数ある場合は、適切なアカウントを使用するために、最初にログアウトする必要があります。</block>
@@ -98,7 +93,6 @@
   <block id="316cce18546001b2f1149ed17a4d3900" category="list-text">* ネットワーク * ： VNet とサブネットを選択し、パブリック IP アドレスを有効にするかどうか、および必要に応じてプロキシ設定を指定します。</block>
   <block id="39c1f44dc3cf3d61f829ba697b33eaac" category="list-text">* セキュリティグループ * ：新しいセキュリティグループを作成するか、インバウンド HTTP 、 HTTPS 、 SSH アクセスを許可する既存のセキュリティグループを選択するかを選択します。</block>
   <block id="ae6252cb830dbd695650f78870fe4309" category="inline-link-macro">ローカル UI</block>
-  <block id="be034f7a422abd26eb70ed41db2b1284" category="admonition">コネクタへの着信トラフィックは、開始しない限りありません。へのアクセスは、 HTTP および HTTPS を使用して提供されます <block ref="a4d556f51af89bcef8612c38a831609f" category="inline-link-macro-rx"></block>は、まれな状況で使用します。SSH が必要になるのは、トラブルシューティングのためにホストに接続する必要がある場合のみです。</block>
   <block id="77c0c575c550fbbb80de7e5c1eda4fbc" category="list-text">* 復習 * ：選択内容を確認して、設定が正しいことを確認してください。</block>
   <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">[ 追加（ Add ） ] をクリックします。</block>
   <block id="a1630873c12a4c232f890d319c1b34a5" category="paragraph">仮想マシンの準備が完了するまでに約 7 分かかります。処理が完了するまで、ページには表示されたままにしておいてください。</block>
@@ -172,7 +166,6 @@
   <block id="7c5f29026f30af547f4c1e9a0f0854e6" category="paragraph"><block ref="7c5f29026f30af547f4c1e9a0f0854e6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b5b7f7358bfd5257e7b59755057a10d8" category="paragraph">これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。この情報は、コネクタを作成するときに Cloud Manager で入力する必要があります。</block>
   <block id="5c75ce614010ed72ceeef735acca6f29" category="section-title">サービスプリンシパルでログインしてコネクタを作成します</block>
-  <block id="2b9b47b03d312cd1cc440b106bd893e4" category="list-text">* Get Ready * ： * Azure AD サービスプリンシパル * をクリックし、必要な権限を付与する Azure Active Directory サービスプリンシパルに関する情報を入力します。</block>
   <block id="42dedb42cdb310c29307f9649dd6b146" category="list-text">アプリケーション（クライアント） ID ：を参照してください <block ref="6e43fddc58b77d10342452e0c5f86200" category="inline-xref-macro-rx"></block>。</block>
   <block id="e6bfb5bdb5586f534e2e3adf3bc1f74a" category="list-text">ディレクトリ（テナント） ID ：を参照してください <block ref="6e43fddc58b77d10342452e0c5f86200" category="inline-xref-macro-rx"></block>。</block>
   <block id="aca5096ac18d904bd7d20b609f13571d" category="list-text">クライアントシークレット：を参照してください <block ref="2f8da44aff19ae4d1a810f6d1d618984" category="inline-xref-macro-rx"></block>。</block>
@@ -719,7 +712,6 @@
   <block id="a143e53bf3d41d3d4dd612ba13200112" category="list-text">deploymentmanager. editor は、ファイアウォールルールを導入環境に渡しておらず、 Cloud Manager に作成を許可することを選択している場合にのみホストプロジェクトで必要です。ルールを指定しない場合、 Cloud Manager はホストプロジェクトに導入を作成し、 VPC0 ファイアウォールルールを適用します。</block>
   <block id="8e7c4c2e8dfd2e81f9feb42ddfb2e9a8" category="list-text">Firewall.create および firewall.delete が必要となるのは、ファイアウォールルールを導入環境に渡しず、 Cloud Manager で作成することを選択している場合だけです。これらの権限は、 Cloud Manager サービスアカウントの .yaml ファイルに格納されています。共有 VPC を使用して HA ペアを導入する場合は、これらの権限を使用して VPC1 、 2 、および 3 のファイアウォールルールが作成されます。他のすべての展開では、これらの権限は VPC0 のルールの作成にも使用されます。</block>
   <block id="770b8b43613e5c706e2c10ec7bcc3ec7" category="list-text">データ階層化の場合、階層化サービスアカウントは、プロジェクトレベルだけでなく、サービスアカウントに対して serviceAccount.user ロールを持つ必要があります。現在、プロジェクトレベルで serviceAccount.user を割り当てている場合、 getIAMPolicy でサービスアカウントを照会しても権限は表示されません。</block>
-  <block id="c7f5a66dce6cabcd44a4ff22ae6d25c3" category="section-title">Google Cloud API の有効化</block>
   <block id="f8a0ce106d194d305897d63efea46b8d" category="paragraph">Connector と Cloud Volumes ONTAP を導入するには、いくつかの API が必要です。</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">ステップ</block>
   <block id="e478bf49f8034f2197e96520fa338da6" category="inline-link">プロジェクトで次の Google Cloud API を有効にします</block>
@@ -730,15 +722,11 @@
   <block id="1101b09020ade12e90a562489e315c8d" category="list-text">Compute Engine API</block>
   <block id="71660685d00034957db3f9a31c160978" category="list-text">ID およびアクセス管理（ IAM ） API</block>
   <block id="4642830f208507b4a2a5ff5bed0d9b97" category="paragraph">Cloud Manager ユーザインターフェイスから直接、または gcloud を使用して、 Google Cloud でコネクタを作成する。</block>
-  <block id="9d2307f8f5a2d2672e417c7fb2c70c0e" category="list-text">Google Cloud プロジェクト。</block>
-  <block id="566f8342f1a7975e05d47735cbd31877" category="list-text">このページの最初のセクションで説明するように、 Cloud Volumes ONTAP の作成と管理に必要な権限を持つサービスアカウント。</block>
-  <block id="bea8942e248f7318b017a2750ff8ec51" category="list-text">Google Cloud リージョン内の VPC とサブネット。</block>
   <block id="315474a8ef79b74899073fc979f12da4" category="open-title">クラウドマネージャ</block>
   <block id="5ec1fdc717a09349991e1304c5bd757a" category="list-text">クラウドプロバイダとして * Google Cloud Platform * を選択します。</block>
   <block id="af9010f3e11d7efceb7ba88d02e92d39" category="list-text">* 準備をしてください * ：必要なものを確認してください。</block>
   <block id="12e9d88275170959cb7167c4c85f6c77" category="list-text">プロンプトが表示されたら、 Google アカウントにログインします。このアカウントには、仮想マシンインスタンスを作成するために必要な権限が付与されている必要があります。</block>
   <block id="29b28ad1793cec26548948fbe79ebfd5" category="paragraph">このフォームは Google が所有およびホストしています。クレデンシャルがネットアップに提供されていません。</block>
-  <block id="a4a29fe3efca12ad39a6639b81ae7b18" category="list-text">* 基本設定 * ：仮想マシンインスタンスの名前を入力し、タグを指定し、プロジェクトを選択してから、必要な権限を持つサービスアカウントを選択します（詳細については、上記のセクションを参照してください）。</block>
   <block id="221cebedac65af2855cc9b0f21c55587" category="list-text">* 場所 * ：インスタンスのリージョン、ゾーン、 VPC 、およびサブネットを指定します。</block>
   <block id="39ca94376c3d56de257bd39a110e0c3b" category="list-text">* ネットワーク * ：パブリック IP アドレスを有効にするかどうかを選択し、必要に応じてプロキシ設定を指定します。</block>
   <block id="86f1b50eaa6c71046b42471aa31a534e" category="list-text">* ファイアウォールポリシー * ：新しいファイアウォールポリシーを作成するか、インバウンド HTTP 、 HTTPS 、 SSH アクセスを許可する既存のファイアウォールポリシーを選択するかを選択します。</block>
@@ -917,8 +905,6 @@
   <block id="482c8088b93a78c2682279e88617ca7f" category="list-text">インストールスクリプトを実行します。</block>
   <block id="29796d02ce8782cd7e5fc7ab3be29617" category="list-text">アップグレードが完了したら、 * Help &gt; Support &gt; Connector * を選択してコネクタのバージョンを確認できます。</block>
   <block id="d36184010415512fdb8a8816b7d2aba8" category="sidebar-title">インターネットにアクセスできるホスト上のソフトウェアアップグレードについてはどうでしょうか。</block>
-  <block id="f94f2faae5f0168a2ca69885c77dda4c" category="inline-link-macro">アウトバウンドインターネットアクセス</block>
-  <block id="969d18f13e33afc75147c1b461d02137" category="paragraph">Connector は、ソフトウェアが最新バージョンである限り、自動的にソフトウェアを更新します <block ref="ecd51bbcdaf97b05f08f632de186709c" category="inline-link-macro-rx"></block> をクリックしてソフトウェアアップデートを入手します。</block>
   <block id="781589b0a0e3477e5ba0477e895a07ab" category="section-title">Cloud Manager からコネクタを削除します</block>
   <block id="965420933f6f91639691e88c7155f544" category="paragraph">非アクティブなコネクタは、 Cloud Manager のコネクタのリストから削除できます。この処理は、 Connector 仮想マシンを削除した場合や Connector ソフトウェアをアンインストールした場合に実行できます。</block>
   <block id="c5c64fb69c2266a9bd084b1cc03349b6" category="paragraph">コネクタの取り外しについては、次の点に注意してください。</block>
@@ -1220,27 +1206,13 @@
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
   <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9 に関する注意事項</block>
   <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
-  <block id="93fd4230b4afd5ccd3311e78e4c88ac9" category="summary">コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。最も重要なステップは、さまざまなエンドポイントへのアウトバウンドインターネットアクセスを確保することです。</block>
-  <block id="b087af2757d2e30512be9aad9abf3ddb" category="doc">コネクタのネットワークを設定します</block>
-  <block id="6863e249b85870e839574ab2abf04db4" category="paragraph">コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。最も重要なステップは、さまざまなエンドポイントへのアウトバウンドインターネットアクセスを確保することです。</block>
-  <block id="f2452bb1e7a9e3a7a0569f14cb282cca" category="paragraph">このページの情報は、コネクタがアウトバウンドインターネットアクセスを持つ一般的な配置用です。</block>
-  <block id="20f41095471130e3ee55ad0782eeccd0" category="inline-link-macro">プロキシサーバを使用するようにコネクタを設定します</block>
-  <block id="b123956f032314223a27df4bc333c4f5" category="admonition">ネットワークでインターネットへのすべての通信にプロキシサーバを使用している場合は、 [ 設定 ] ページでプロキシサーバを指定できます。を参照してください <block ref="95523c9035aa1062ac8a3632aeb6e06b" category="inline-link-macro-rx"></block>。</block>
   <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">ターゲットネットワークへの接続</block>
   <block id="19dfd3f6e4e8058b5d5537232d50ca9b" category="paragraph">コネクタには、作成する作業環境の種類と、有効にする予定のサービスへのネットワーク接続が必要です。</block>
-  <block id="c3a5da2edea375289d166ef749b9bd1e" category="paragraph">たとえば、企業ネットワークにコネクタを設置する場合は、 Cloud Volumes ONTAP を起動する VPC または VNet への VPN 接続を設定する必要があります。</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">172 の範囲の IP アドレスと競合する可能性があります</block>
   <block id="3853b1ba353b50f09828dc0d39b3ed95" category="paragraph">Cloud Manager は、 172.17.0.0/16 と 172.18.0.0/16 の範囲に IP アドレスを持つ 2 つのインターフェイスを使用してコネクタを展開します。</block>
   <block id="9f608f9c1c8b1ff5590819babfd8d682" category="paragraph">これらの範囲のいずれかでネットワークのサブネットが設定されている場合、 Cloud Manager から接続エラーが発生することがあります。たとえば、 Cloud Manager でオンプレミスの ONTAP クラスタを検出すると失敗することがあります。</block>
   <block id="c8f224037ea295aeec347c94779d9932" category="section-title">アウトバウンドインターネットアクセス</block>
-  <block id="d7a9479796563c8f42a47db3973f774c" category="paragraph">コネクタからのアウトバウンドインターネットアクセスが必要です。</block>
-  <block id="5137b25e1ad14548ebb74e1d06668375" category="section-title">パブリッククラウド環境内のリソースを管理するためのエンドポイント</block>
   <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">Connector では、パブリッククラウド環境内のリソースとプロセスを管理するためにアウトバウンドインターネットアクセスが必要です。</block>
-  <block id="e858d45ba275a9ce09e00dcf57c80b28" category="section-title">Linux ホストにコネクタをインストールするエンドポイント</block>
-  <block id="39daa013874edb655057fc35e76e0e19" category="paragraph">Connector ソフトウェアは、手動でインストールすることもできます。その場合、 Connector のインストーラは、インストールプロセス中に次の URL にアクセスする必要があります。</block>
-  <block id="3ca10cbf1786d683696248daeef7a67c" category="section-title">ポートおよびセキュリティグループ</block>
-  <block id="fd1958e5e74317f89c6c16bbca7d1446" category="section-title">AWS のコネクタのルール</block>
-  <block id="0fbb894005047753551829b93d408eac" category="paragraph">コネクタのセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。</block>
   <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">インバウンドルール</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">プロトコル</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">ポート</block>
@@ -1282,10 +1254,7 @@
   <block id="ed5f2bdecbd4bd349d09412d1ff6a6fb" category="cell">DNS</block>
   <block id="d82c8d1619ad8176d665453cfb2e55f0" category="cell">53</block>
   <block id="dd8679112f038315d04028c46da1fef7" category="cell">Cloud Manager による DNS 解決に使用されます</block>
-  <block id="b445de53411a165e9c56da6430c38d59" category="section-title">Azure のコネクタのルール</block>
   <block id="63b34d7f22329c0eb7915fca7a346007" category="cell">クライアント Web ブラウザからローカルへの HTTP アクセスを提供します ユーザインターフェイス</block>
-  <block id="b52a434afaffee3d1646df3eb9acc853" category="section-title">GCP のコネクターのルール</block>
-  <block id="5ea521a799e1cf043cd101ec326044f6" category="paragraph">コネクタのファイアウォールルールには、インバウンドとアウトバウンドの両方のルールが必要です。</block>
   <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">コネクタの定義済みファイアウォールルールによって、すべてのアウトバウンドトラフィックが開かれます。これが可能な場合は、基本的なアウトバウンドルールに従います。より厳格なルールが必要な場合は、高度なアウトバウンドルールを使用します。</block>
   <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">コネクタの定義済みファイアウォールルールには、次のアウトバウンドルールが含まれています。</block>
   <block id="e3d41d6e94475edc27ad068b42448e0e" category="section-title">オンプレミスコネクタ用のポート</block>
@@ -1524,7 +1493,6 @@
   <block id="36bf6fd71e8981aa05c53805d789be2a" category="paragraph"><block ref="d2c78667c1f082bc15de6497425b6b70" category="inline-link-macro-rx"></block>。</block>
   <block id="7d081ddd1a763e64370bc13c27e3eaa1" category="list-text">ネットワークセキュリティグループの場合、コネクタには、 SSH 、 HTTP 、および HTTPS を使用したインバウンド接続が必要です。</block>
   <block id="e12ee8fc49a830a2c114fcbb887441c1" category="inline-link-macro">コネクタのセキュリティグループルールの詳細については、こちらを参照してください</block>
-  <block id="84a00cc621355536ed32f8f80f8aca63" category="paragraph"><block ref="9bd7b55c24855dfc42004fce619eab35" category="inline-link-macro-rx"></block>。</block>
   <block id="477f88046f056bb40397ec7e6effe28f" category="list-text">[* 管理（ * Management ） ] で、 [ * オン * （ * on * ） ] を選択して、コネクターに割り当てられた管理 ID * を有効にします。</block>
   <block id="089f373f5f48b55cde8c8de1db96243c" category="inline-link">Azure リソース用の管理対象 ID の詳細については、こちらをご覧ください</block>
   <block id="76f2625388817626b5d20572023827a8" category="paragraph">管理対象の ID を使用すると、 Connector 仮想マシンはクレデンシャルを指定せずに自身を Azure Active Directory に識別できるため、この設定は重要です。<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
@@ -1604,8 +1572,6 @@
   <block id="38522fbf43585538a7a55ea25460e779" category="list-text">AWS EC2 インスタンスタイプ</block>
   <block id="893ba5865a015de9dc77765cdf7184e3" category="list-text">Azure VM サイズ</block>
   <block id="0779e9296a32341a31830e6c4e36d7f5" category="list-text">GCP マシンタイプ</block>
-  <block id="7ebcb503cdda50b6cfafe4b188689a5c" category="inline-link-macro">コネクタのネットワーク要件</block>
-  <block id="8f13fe03e92b3df99e4fdab3f70b8bd0" category="list-text">コネクターをインストールし、パブリッククラウド環境内でリソースとプロセスを管理するには、アウトバウンドインターネットアクセスが必要です。エンドポイントのリストについては、を参照してください <block ref="4ec3519046179fc5881484cb894283f9" category="inline-link-macro-rx"></block>。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">このタスクについて</block>
   <block id="3a0381e5879eb05d4447518a0fe21601" category="list-text">インストールを実行すると、ネットアップサポートからのリカバリ手順用に AWS コマンドラインツール（ awscli ）がインストールされます。</block>
   <block id="c421e739c1e3aa36da0456d7f369e45f" category="paragraph">AWSCLI のインストールに失敗したというメッセージが表示された場合は、このメッセージを無視しても問題ありません。コネクタは、工具なしで正常に作動する。</block>
@@ -1643,7 +1609,6 @@
   <block id="24a6e24dbd4eec4ffe9ac5f4338dec68" category="paragraph">このページでは、 Cloud Manager から AWS でコネクタを直接作成する方法について説明します。 <block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block>。</block>
   <block id="3faf40ec673a27da72957bee9f22e597" category="paragraph">AWS ユーザに、 Cloud Manager からコネクタを作成するために必要な権限が付与されました。Cloud Manager からプロンプトが表示されたら、このユーザの AWS アクセスキーを指定する必要があります。</block>
   <block id="555955942c711a4d2bbe3fdd1980539b" category="paragraph">Cloud Manager では、ユーザインターフェイスから AWS に直接コネクタを作成できます。</block>
-  <block id="696168c9b9e3d6be0b4ff452721f4186" category="list-text">選択した AWS リージョン内の VPC 、サブネット、キーペア。</block>
   <block id="7cddf1ab764729128f3c7130203d73a0" category="list-text">クラウドプロバイダとして「 * Amazon Web Services * 」を選択し、「 * Continue * 」をクリックします。</block>
   <block id="694c0d1ad033ac65143fd7073852f718" category="list-text">* 詳細 * ：コネクタの詳細を入力します。</block>
   <block id="bb535485e7b97661af60ecc59e655498" category="list-text">インスタンスの名前を入力します。</block>
@@ -1700,7 +1665,6 @@
   <block id="7c0d614e33fd8b90d55d92a3d18d3e5d" category="sidebar">ネットアップアカウントを設定する</block>
   <block id="4893ffd05430036bfec4fab3ee00d110" category="sidebar">ワークスペースとユーザを設定します</block>
   <block id="38d95e0fcb99197130dc276778f94262" category="sidebar">コネクタをセットアップします</block>
-  <block id="4e85b7aafac6d2da235acd904c8d01ca" category="sidebar">ネットワークをセットアップします</block>
   <block id="0876dbe9a324b66ea7ac9a411751f1e7" category="sidebar">Google Cloud でコネクターを作成します</block>
   <block id="6edea119df8ceb037e21f33c59986aaa" category="sidebar">Cloud Manager の管理</block>
   <block id="031368c5cb02c2094066fcba2fdb92d5" category="sidebar">ネットアップアカウント</block>
@@ -1736,7 +1700,6 @@
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022 年 2 月 27 日</block>
   <block id="3ac47455b10c6fb4061a70a91fdbfde2" category="section-title">2022 年 1 月 30 日</block>
   <block id="586301717819197e24001cac47efdaaa" category="section-title">2022 年 1 月 2 日</block>
-  <block id="3f9908dd0d34e73be621e521e51cd6a8" category="paragraph"><block ref="5f52a012a929ebfb0b0a901a58e91a4c" category="inline-link-rx"></block>。</block>
   <block id="1a3140f260afcdb189bbb444b89966c4" category="paragraph"><block ref="1a3140f260afcdb189bbb444b89966c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e07973e7f57415cf8c19fe68b62a728c" category="paragraph"><block ref="e07973e7f57415cf8c19fe68b62a728c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f61163b681442ac500a8018c87241770" category="section-title">2021 年 11 月 28 日</block>
@@ -1757,8 +1720,6 @@
   <block id="90f42b795a98a48d78b53e8d6d353987" category="paragraph">コネクタを作成するときに、 Connector インスタンスの導入に必要な権限を持つ IAM ユーザに AWS アクセスキーとシークレットキーを指定できます。</block>
   <block id="2148f456d9af28f7a3c6836b09b86d79" category="list-text">IAM ユーザのアクセスキーとシークレットキーにアクセスできることを確認します。</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="section-title">コネクタを作成します</block>
-  <block id="4f17567a3649c9a7e40e769fe63ec8b1" category="list-text">AWS 認証方式： Cloud Manager が権限を持つ IAM ロールの ARN 、または IAM ユーザの AWS アクセスキーとシークレットキーのいずれかです。</block>
-  <block id="fafb693c24f4f5cc7a281b93dae71348" category="paragraph">これらは、 Connector がパブリッククラウド環境内のリソースを管理するために必要な権限です。これは、コネクタインスタンスの作成時に指定したアクセス許可とは異なります。</block>
   <block id="0f3262c52ea3cde7a6e7d8f3ced3e5d5" category="list-text">* AWS クレデンシャル * ： AWS リージョンを指定してから認証方式を選択します。認証方式は、 Cloud Manager が引き受けることができる IAM ロールか、 AWS のアクセスキーとシークレットキーのどちらかです。</block>
   <block id="8b8f36850755c4ac43a0df238add8748" category="inline-link-macro">クレデンシャルを追加する方法について説明します</block>
   <block id="c1174544170df213c211f69888f8d5fd" category="admonition">[*Assume Role] を選択した場合は、 Connector 展開ウィザードから最初の資格情報セットを作成できます。クレデンシャルの追加のセットは、 [Credentials] ページから作成する必要があります。ウィザードのドロップダウンリストから使用できるようになります。 <block ref="21eba73392ef6be6fd6da758f5bd2e93" category="inline-link-macro-rx"></block>。</block>
@@ -1817,12 +1778,8 @@
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com [ フィードバックメール ]</block>
   <block id="bff60abbc46aceed0f73a3a4f6cfb123" category="paragraph">お客様のご意見をお考えください。Cloud Manager の改善に役立つフィードバックを送信します。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="section-title">ネットアップサポート</block>
-  <block id="c91b5a63849b8d2db01014ed33192735" category="paragraph">上記のセルフサポートオプションに加え、サポートを有効にしたあとに問題が発生した場合は、ネットアップサポートエンジニアと協力して解決できます。</block>
   <block id="6c08c57e382a25a778455184cd9b1a4a" category="list-text">Cloud Manager で、 * Help &gt; Support * の順にクリックします。</block>
   <block id="f5052c65917d7341726235d4d4941461" category="list-text">テクニカルサポートで利用可能なオプションのいずれかを選択します。</block>
-  <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">[ * お問い合わせ * ] をクリックして、ネットアップ・テクニカル・サポートの電話番号を検索してください。</block>
-  <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">[ * 問題 を開く * ] をクリックし、いずれかのオプションを選択して、 [ * 送信 * ] をクリックします。</block>
-  <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">ネットアップの担当者がケースを確認し、すぐに対応を開始します。</block>
   <block id="0c01b3b7191c43507ad9ca43d6443731" category="cell">クライアント Web ブラウザからローカルユーザインターフェイスへの HTTPS アクセス、および Cloud Data Sense インスタンスからの接続を提供します</block>
   <block id="b774573fe7b53358246a054f6d44ca83" category="cell">クラウドデータセンスの有効化と使用が可能（政府機関のクラウド環境にのみ必要）</block>
   <block id="5c6b09600cdfc594130f9f3c053efecb" category="section-title">コネクタの IP アドレスを変更します</block>
@@ -1903,7 +1860,6 @@
   <block id="483a6486004960ab28236293d3cf2bce" category="cell">Connectorサービスアカウント</block>
   <block id="9165bdf7bcd983e5b9eeeea3649fe93d" category="cell">導入に代わってGoogle Cloud APIと対話します。Cloud Manager で共有ネットワークを使用できるようにします。</block>
   <block id="abb8f06c60f79c0d26aa84ecd4b682a9" category="cell">導入に代わってGoogle Cloudインスタンスとコンピューティングインフラストラクチャを導入します。Cloud Manager で共有ネットワークを使用できるようにします。</block>
-  <block id="c251b4e4495910558d988ba699a63a67" category="section-title">Google Cloudでコネクタを作成する</block>
   <block id="70d434e2bfd18a27962842edd06609f7" category="paragraph">この例では、gcloud SDKがインストールされたローカルシェルを使用しますが、Google CloudコンソールでネイティブのGoogle Cloud Shellを使用できます。</block>
   <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">2022年5月12日</block>
   <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">コネクタ3.9.18パッチ</block>
@@ -2276,7 +2232,6 @@
   <block id="91ae93d60d63596e2482a109b23c1290" category="list-text">[権限の追加]&gt;[既存のポリシーを直接適用する*]をクリックします。</block>
   <block id="8bcbf62e98416780ffe2095559aba87a" category="list-text">作成したポリシーを選択します。</block>
   <block id="7480dbf3472d377494469f75467b8989" category="list-text">[*次へ*]をクリックし、[*権限の追加*]をクリックします。</block>
-  <block id="e0704797fef70128c24dd4546bea3df2" category="list-text">Cloud Manager でコネクタ用の IAM ロールが自動的に作成されないようにするには、専用のを作成する必要があります <block ref="33c2e52293a8423cf2f0baa8f297e502" category="inline-link-macro-rx"></block>。</block>
   <block id="f7f5e7e3e9ba567310782ed8cfddf80c" category="list-text">必要な権限を含む新しいロールを Cloud Manager で作成するか、またはを使用して設定した既存のロールを選択するかを選択します <block ref="8b098a06817becf62c06297dd76999b5" category="inline-link-macro-rx"></block>。</block>
   <block id="dd35c8de0229dd896078da10fa6ca77d" category="inline-link-macro">GCPのコネクターポリシー</block>
   <block id="073869152f1998576e0d772f1465dce4" category="list-text"><block ref="b3e2dfdb02c4ef9473e0b3fb573ce75f" category="inline-link-rx"></block> で定義した権限を含むポリシーを作成します <block ref="0557e57dd138b7d2b4d9ced6dcd6f706" category="inline-link-macro-rx"></block>。</block>
@@ -2291,7 +2246,6 @@
   <block id="aecabcaa0f622aafe82a445d66cf8ca7" category="inline-link-macro">上記のセクションに記載されている権限</block>
   <block id="3c011542a6f32f96698424943f4c21db" category="list-text"><block ref="3c011542a6f32f96698424943f4c21db" category="inline-link-macro-rx"></block></block>
   <block id="e99cec7b008996e3bd5b81e8019e24ba" category="list-text"><block ref="e99cec7b008996e3bd5b81e8019e24ba" category="inline-link-macro-rx"></block></block>
-  <block id="ffeb29f758cf37b9f2c9b599fb609031" category="list-text">このページの最初のセクションで説明した、Google Cloudアカウントに必要な権限。</block>
   <block id="f56eaa1aab7c91f2f987469fb824ff7a" category="inline-link-macro">必要なAWS権限を確認します</block>
   <block id="c3eae6aa2c5fdc205f8fa520ed336419" category="list-text"><block ref="c3eae6aa2c5fdc205f8fa520ed336419" category="inline-link-macro-rx"></block></block>
   <block id="bcccd030f9d90bb330cfffec45ec9788" category="inline-link-macro">必要なAzure権限を確認します</block>
@@ -2382,15 +2336,10 @@
   <block id="489db3f339b691ea4dea5f4572483024" category="paragraph">Cloud Volumes ONTAP にデフォルトのセキュリティグループを使用する場合、そのセキュリティグループに対する変更は必要ありません。ただし、Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義する場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可することも必要です。</block>
   <block id="117e86e552d0c131628c9b59f4f27b24" category="paragraph">社内ポリシーで、インターネットへのすべてのHTTP通信にプロキシサーバを使用する必要がある場合は、HTTPプロキシサーバを使用するようにコネクタを設定する必要があります。プロキシサーバは、クラウドまたはネットワークに配置できます。</block>
   <block id="cd5948a5853fc000f635c34407e9be0e" category="paragraph">HTTPプロキシサーバを使用するようにコネクタを設定すると、パブリックIPアドレスまたはNATゲートウェイを使用できない場合にアウトバウンドインターネットアクセスが提供されます。このプロキシサーバは、アウトバウンド接続を持つコネクタのみを提供します。Cloud Volumes ONTAP システムへの接続は提供しません。</block>
-  <block id="d108a5c38a5cb3124175cfab4db4ec03" category="inline-link-macro">プロキシサーバを使用したAutoSupport メッセージの送信の詳細については、こちらをご覧ください</block>
-  <block id="87463ee8edca33f75eed85e674b8f926" category="paragraph">Cloud Volumes ONTAP システムでAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、Cloud Managerは、コネクタに含まれているプロキシサーバを使用するようにそれらのCloud Volumes ONTAP システムを自動的に設定します。 <block ref="4790ec07d3308f2887f9351ce8bd06a9" category="inline-link-macro-rx"></block>。</block>
   <block id="bc2ef3610c6865883f50e9f5733a7dbe" category="paragraph">Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカウント管理者がコネクタを導入する必要があります。 <block ref="39840e1bb98f6582f1bf4e505d666ea1" category="inline-link-macro-rx"></block>。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。</block>
   <block id="b71c0af8fd2f3db874128374c9e382a9" category="paragraph">その後、Cloud Managerアカウント管理者は、ユーザ（メンバー）、ワークスペース、コネクタ、およびサブスクリプションを管理して、このアカウントの設定を変更できます。</block>
   <block id="0ceeb24c560eb06b8d18aae0d9dd03c4" category="paragraph">デフォルトでは、Cloud Managerアカウント管理者は「Critical」通知と「Recommendation」通知のEメールを受信します。他のすべてのユーザと受信者は、通知メールを受信しないようにデフォルトで設定されています。</block>
   <block id="2724db8eb831856d2bcad22cc1470034" category="paragraph">コネクタへの着信トラフィックは、コネクタを起動した場合や、コネクタがAutoSupport メッセージのプロキシとして使用されている場合を除き、受信トラフィックはありません。へのアクセスは、 HTTP および HTTPS を使用して提供されます <block ref="a4d556f51af89bcef8612c38a831609f" category="inline-link-macro-rx"></block>は、まれな状況で使用します。SSH が必要になるのは、トラブルシューティングのためにホストに接続する必要がある場合のみです。</block>
-  <block id="4fe83d6a1c091adff7b022a5ed50374f" category="section-title">AutoSupport メッセージ用のプロキシサーバ</block>
-  <block id="68363af0cfc7fb5fa02c6d822a0e3f1c" category="paragraph">Cloud Volumes ONTAP からAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、Cloud Managerはコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を自動的に設定します。</block>
-  <block id="0e3e7ba11a5d193853da473b9d805b91" category="paragraph">Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。</block>
   <block id="6d222908a201e6b65bf048113504f4c1" category="inline-xref">Connectorのプロキシサーバの詳細については、こちらをご覧ください</block>
   <block id="379c1280ecc325be9f0d74d095f55ae9" category="cell">Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 <block ref="9a4dd6e745bb9c3853507bba2251a2cd" category="inline-xref-macro-rx"></block>。</block>
   <block id="68c909dd3a30c6ef6f35eff4ef3ad457" category="paragraph">ほとんどの場合、Cloud Managerアカウント管理者は、クラウドまたはオンプレミスネットワークに_ Connector _を導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。</block>
@@ -2485,4 +2434,95 @@
   <block id="328e4502038eaedc10a81f50a70db084" category="paragraph"><block ref="328e4502038eaedc10a81f50a70db084" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1b33affeaa41a09a9f3a99d38d14376f" category="inline-image-macro">GoogleとサービスアカウントがCloud Volumes ONTAP を導入するための権限の要件を示す概念図。</block>
   <block id="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="paragraph"><block ref="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0c1fbd3a68059273f48a44be8f588e1" category="summary">コネクタのAzureセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。</block>
+  <block id="569fe31933e5918613ae1efa70e82d16" category="doc">Azureのセキュリティグループルール</block>
+  <block id="ab46fcbc2aadf36c7b717189309f5fac" category="list-text">Connectorのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。</block>
+  <block id="a499e60b7101b8dc7028a8de9d72f713" category="paragraph">Connectorは、ソフトウェアアップデートを取得するためにアウトバウンドインターネットアクセスがある限り、ソフトウェアを自動的に最新バージョンにアップデートします。</block>
+  <block id="6b068f0a943d421535c7d8d412ee3522" category="list-text">Eシリーズシステム</block>
+  <block id="392d70ca39f31f10bd637936769788df" category="list-text">StorageGRID</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">クイックスタート</block>
+  <block id="91e06e9a9ef97681b798e2e5e007ba97" category="paragraph">これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。</block>
+  <block id="4e25b51b91caf6711f6cdffd01015593" category="paragraph">AWSでコネクタを起動するには、Cloud ManagerでIAMロールまたはAWSアクセスキーを使用してAWSで認証する必要があります。どちらのオプションでも、IAMポリシーが必要です。</block>
+  <block id="d2b8d6f0cd04659de9813fba0b765319" category="inline-xref">IAMロールを確認します</block>
+  <block id="5695f1494bf1a23e4dfb636b83f9663c" category="inline-xref">ステップバイステップの手順に従います</block>
+  <block id="e55593614a7f3a45e77ff97daf29fa18" category="paragraph"><block ref="bd1177e3d8f8248f18d9f01f00d6aa84" category="inline-xref-macro-rx"></block> または <block ref="f998d9b8f7fa449c8986f949582854eb" category="inline-xref-macro-rx"></block>。</block>
+  <block id="3d19b00e58ef1af50dd7a50cb57d2a9b" category="paragraph">特定のエンドポイントへのアウトバウンドのインターネットアクセスが可能なVPCとサブネットが必要です。アウトバウンドインターネットにHTTPプロキシが必要な場合は、IPアドレス、クレデンシャル、HTTPS証明書が必要です。</block>
+  <block id="0adaf59e592ea102330ecf66723d01c0" category="inline-xref">ネットワーク要件を確認します</block>
+  <block id="e18d3aaf46d9323ec3d44fd9d3878734" category="paragraph"><block ref="77e8c70950b7db505fe53c4bcd55f41a" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e988340d1dfb68e041da5e7a65701097" category="paragraph">コネクタードロップダウンをクリックし、*コネクターの追加*を選択して、プロンプトに従います。</block>
+  <block id="cd444a79f98ccbe383b146279f3bb526" category="inline-xref">ステップバイステップの手順に従います</block>
+  <block id="442342eacc7f01318bc860131355649e" category="paragraph"><block ref="ca365c48bf30193bd65b99125fcf8cd5" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ab316a3ccbad97726269c9705958262a" category="section-title">ネットワークをセットアップする</block>
+  <block id="7213720ac295b1a74851802d3a5a56b8" category="paragraph">コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタにVPCとサブネットを使用する以外に、次の要件が満たされていることを確認する必要があります。</block>
+  <block id="1b3deabe2c9e1e4a0b1167212bbfaef2" category="paragraph">たとえば、会社のネットワークにコネクタをインストールした場合は、Cloud Volumes ONTAP を起動するVPCへのVPN接続を設定する必要があります。</block>
+  <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">プロキシサーバ</block>
+  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">すべての送信インターネットトラフィックにHTTPプロキシを導入する必要がある場合は、HTTPプロキシに関する次の情報を取得します。</block>
+  <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP アドレス</block>
+  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">クレデンシャル</block>
+  <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">HTTPS証明書</block>
+  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="section-title">セキュリティグループ</block>
+  <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">IPアドレスの制限</block>
+  <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link-macro">この制限事項の詳細については、こちらをご覧ください</block>
+  <block id="2ef89d258d7b7a558315c92ffe06a70a" category="paragraph">172の範囲のIPアドレスと競合する可能性があります。 <block ref="9903a97952b05fb45b71a9f44012cd1c" category="inline-link-macro-rx"></block>。</block>
+  <block id="1fbc47392baedd9a8a771f5372aa43d4" category="list-text">[*コネクターの配置（Deploying a Connector *）]ページで、必要なものについて詳しく確認してください。次の 2 つのオプションがあります。</block>
+  <block id="639c5d452ac23b93fb028a8d3101d2c2" category="list-text">[* Continue *（続行）]をクリックして、製品ガイドを使用して導入の準備をします。製品ガイドの各手順には、このページのドキュメントに記載されている情報が含まれています。</block>
+  <block id="ce670b5c6b0b9f0203bdb18071265645" category="list-text">このページの手順に従って準備が完了している場合は、*配備にスキップ*をクリックします。</block>
+  <block id="10d640974ffe6a13a9a3a5b33c7610d6" category="paragraph">コネクタで使用する正しいキーペアがあることを確認します。キーペアがないと、Connector仮想マシンにアクセスできません。</block>
+  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
+  <block id="567aae3125fb3d0d81322caa575a9843" category="section-title">コネクタ3.9.22</block>
+  <block id="e9da1b86eba52d6822a9d7c294a3641c" category="list-text">Connectorのインストールウィザードを強化しました。このウィザードには、Connectorのインストールに関する最小要件（権限、認証、ネットワーク）を満たすための手順が記載されています。</block>
+  <block id="871cd14deee4188642f0f5e041d9e0bd" category="list-text">ネットアップサポートケースをCloud Managerのサポートダッシュボードで直接作成できるようになりました。</block>
+  <block id="b657064056ea8bf270b50939fb0c9bfe" category="paragraph"><block ref="b657064056ea8bf270b50939fb0c9bfe" category="inline-link-rx"></block></block>
+  <block id="9329698e280db3b309a02e9cb9e73a75" category="paragraph"><block ref="9329698e280db3b309a02e9cb9e73a75" category="inline-link-rx"></block></block>
+  <block id="4691b4c7ea6b67a757c3d7c68596a75b" category="summary">コネクタは、オンプレミスのLinuxホストに手動でインストールする場合、次のインバウンドポートを使用します。</block>
+  <block id="a3a26be97d56db88b1db47012a0942e5" category="paragraph"><block ref="7ce76aff95b05035629c9343687faa19" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d7e2c1c0f4420a7bd5fd9b30ef6949e" category="summary">コネクタのAWSセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。</block>
+  <block id="60f0453bf0393ab630be6aa37dc20180" category="doc">AWSのセキュリティグループのルール</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">上記のセルフサポートオプションに加え、サポートを有効にしたあとで問題が発生した場合は、ネットアップサポートの担当者と相談して解決できます。</block>
+  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">サポートに登録する方法について説明します</block>
+  <block id="09651e14b46d7e8697d32de90d0deacb" category="paragraph">ケースの作成*機能を使用するには、まずCloud ManagerアカウントIDのシリアル番号（例960xxxx）にネットアップが付属 <block ref="3349e4b3d05f646f2f1421bee7c2ad26" category="inline-link-macro-rx"></block>。</block>
+  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">電話の相手と話したい場合は、「*お電話」をクリックしてください。netapp.comのページに移動し、電話番号が表示されます。</block>
+  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">[*ケースの作成*]をクリックして、ネットアップサポートスペシャリストのチケットを開きます。</block>
+  <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">* NetApp Support Site アカウント*：サポートケースをオープンしたユーザーに関連付けられている該当のNSSアカウントを選択します。この担当者は、以下に記載する追加のEメールに加えて、ネットアップから連絡を受け取る主要担当者となります。</block>
+  <block id="ec65cc87efda54741062da1fce99ff76" category="paragraph">NSSアカウントが表示されない場合は、Cloud Managerのサポートセクションにある* NSS Management *タブに移動して追加できます。</block>
+  <block id="b3144caf7d928b7954447c757b3ed77b" category="list-text">*Service*:問題 が関連付けられているサービスを選択します。たとえば、サービス内のワークフローや機能を使用して、テクニカルサポートの問題 に固有のCloud Managerなどです。</block>
+  <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*作業環境*：ストレージに該当する場合は、* Cloud Volumes ONTAP *または*オンプレミス*を選択し、関連する作業環境を選択します。</block>
+  <block id="1e38219c106fb9d07d173c027b8911c7" category="paragraph">作業環境のリストは、サービスの上部バナーで選択したCloud Managerアカウント、ワークスペース、コネクタの範囲内にあります。</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*ケース優先度*：ケースの優先度を選択します。優先度は、[低]、[中]、[高]、[クリティカル]のいずれかになります。</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">これらの優先度の詳細を確認するには、フィールド名の横にある情報アイコンの上にマウスポインタを合わせます。</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*事象の説明 *：実行したエラーメッセージやトラブルシューティング手順など、問題の詳細な概要 を入力します。</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*その他のメールアドレス*：この問題 を他のユーザーに知らせる場合は、追加のメールアドレスを入力します。</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">ネットアップサポートでケースを作成できるケースの作成フォームのスクリーンショット。</block>
+  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">ポップアップにサポートケース番号が表示されます。ネットアップのサポート担当者がケースを確認し、すぐに対応させていただきます。</block>
+  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">サポートケースの履歴を確認するには、[*設定]、[タイムライン*]の順にクリックして、[サポートケースの作成]という名前のアクションを探します。 右端のボタンをクリックすると、アクションを展開して詳細を表示できます。</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">ケースを作成しようとすると、次のエラーメッセージが表示される場合があります。</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"選択したサービスに対してケースを作成する権限がありません"</block>
+  <block id="148f13242c3e296dc276821cdc574921" category="paragraph">このエラーは、NSSアカウントとそれに関連付けられているレコードの会社が、Cloud Managerアカウントのシリアル番号（例960xxxx）または動作環境のシリアル番号。[ケースの作成]フォームの上部にあるNSSアカウントの一覧を確認して、適切な一致を見つけることができます。または、次のいずれかのオプションを使用してサポートを依頼することもできます。</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">製品内のチャットを使用します</block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">テクニカル以外のケースをに送信します<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="7628d27e67d0fc21276a5e1d4d9776e4" category="summary">ConnectorのGoogle Cloudファイアウォールルールには、インバウンドとアウトバウンドの両方のルールが必要です。</block>
+  <block id="e22a4abc98b47ca148e0dfda7e259162" category="doc">Google Cloudのファイアウォールルール</block>
+  <block id="05070f603d4009196dfaec7e5ec5e933" category="paragraph">Cloud Volumes ONTAP システムでAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、Cloud Managerは、コネクタに含まれているプロキシサーバを使用するようにそれらのCloud Volumes ONTAP システムを自動的に設定します。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。このポートは、コネクタを展開した後に開く必要があります。</block>
+  <block id="a4359ad4c0ffb5518aa6c64f29f02b5b" category="paragraph">カスタムロールを作成して関連付け、Google Cloudアカウントに正しい権限が割り当てられていることを確認します。</block>
+  <block id="79b5e164502a529d170531ef62df5f6e" category="inline-xref">カスタムロールを表示します</block>
+  <block id="41b98c70857fbd877eaa6d5aa2afb38f" category="paragraph"><block ref="56342c0f42ba8cc53bfd82f726307829" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f3644ee5935c45fc9eda641aff25c872" category="paragraph">Connector VMを作成するときは、サービスアカウントに関連付ける必要があります。このサービスアカウントには、Google Cloud内のリソースを管理する権限を持つカスタムロールが必要です。</block>
+  <block id="10b8e1fabef4ff1cdc6916e0d45fd2d9" category="paragraph"><block ref="43195205bf0c290642c5b60423b88943" category="inline-xref-macro-rx"></block>。</block>
+  <block id="01790991bacd709c167c554d551529eb" category="list-title">&lt;span class="image"&gt;&lt;img src=<block ref="687851ea92b6566013c78343fcd6878f" category="inline-link-rx"></block> alt="4"&gt;&lt;/span&gt; Google Cloud APIを有効にします</block>
+  <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="section-title">権限を設定します</block>
+  <block id="ec8725380aa2f688c9b9d45557c44600" category="section-title">サービスアカウントを設定します</block>
+  <block id="3824876226172edfe0f17e8022b60fda" category="section-title">Google Cloud API を有効にします</block>
+  <block id="abfd76b9567ca082322504a092e076c7" category="list-text">*詳細*：仮想マシンインスタンスの名前を入力し、タグを指定してプロジェクトを選択し、必要な権限を持つサービスアカウントを選択します（詳細については、上のセクションを参照してください）。</block>
+  <block id="0e4b0391e50169d97fc505f0c73a94ba" category="paragraph">コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。</block>
+  <block id="07a7f9f6c28c927482b86d1b2710f6a3" category="paragraph"><block ref="07a7f9f6c28c927482b86d1b2710f6a3" category="inline-link-rx"></block></block>
+  <block id="85b230e60d81c13f5dc04f2f6348b69b" category="paragraph">コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタ用のVNetとサブネットを使用する以外にも、次の要件が満たされていることを確認する必要があります。</block>
+  <block id="7f98194e906061755ef77e3cbe8a33a9" category="paragraph">たとえば、企業ネットワークにコネクタを取り付ける場合は、Cloud Volumes ONTAP を起動するVNetへのVPN接続を設定する必要があります。</block>
+  <block id="a3f904af5bc42ef6ae44062da5d02b45" category="list-text">[* Continue *（続行）]をクリックして、製品ガイドを使用して導入の準備をします。各手順には、このページのドキュメントに記載されている情報が含まれています。</block>
+  <block id="7b3422536b44078a6701640706be10a0" category="list-text">すべての発信インターネットトラフィックにプロキシを必要とする場合は、HTTPプロキシに関する詳細情報を参照してください。</block>
+  <block id="1086659fbba9a8aed49e109adc659d56" category="list-text">[*コネクターの配置（Deploying a Connector *）]ページ：</block>
+  <block id="3e51a9204bf7c3a99ce916328857c361" category="list-text">[*認証]で、[* Active Directoryサービスプリンシパル*]をクリックし、必要な権限を付与するAzure Active Directoryサービスプリンシパルに関する情報を入力します。</block>
+  <block id="52352d978b8e538f26067965a59f6fc7" category="list-text">*ログイン*をクリックします。</block>
+  <block id="7b4c71e61e7482bb002c55117cf6e7a8" category="list-text">次の2つのオプションがあります。</block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
 </blocks>

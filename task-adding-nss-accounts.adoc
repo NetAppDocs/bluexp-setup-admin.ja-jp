@@ -100,7 +100,7 @@ image:screenshot-nss-update-account.png["［ アカウントの更新 ］ オプ
 +
 処理が完了したら、更新したアカウントが表に _new_account として表示されるようになります。古いバージョンのアカウントは ' 既存の作業環境の関連付けとともにテーブルに表示されます
 
-. 既存の Cloud Volumes ONTAP 作業環境が古いバージョンのアカウントに接続されている場合は、次の手順に従ってください <<Attach a working environment to a different NSS account,それらの作業環境を別の NSS アカウントに接続します>>。
+. 既存の Cloud Volumes ONTAP 作業環境が古いバージョンのアカウントに接続されている場合は、次の手順に従ってください  a working environment to a different NSS account,それらの作業環境を別の NSS アカウントに接続します。
 . 古いバージョンの NSS アカウントに移動し、をクリックします image:icon-action.png["横方向の 3 つの点を示すアイコン"] 次に、 * Delete * を選択します。
 
 
@@ -174,7 +174,7 @@ Cloud Manager に、ネットアップサポートサイトのユーザ名と関
 
 Cloud Manager で使用しない NSS アカウントを削除します。
 
-Cloud Volumes ONTAP 作業環境に現在関連付けられているアカウントは削除できません。最初にが必要です <<Attach a working environment to a different NSS account,それらの作業環境を別の NSS アカウントに接続します>>。
+Cloud Volumes ONTAP 作業環境に現在関連付けられているアカウントは削除できません。最初にが必要です  a working environment to a different NSS account,それらの作業環境を別の NSS アカウントに接続します。
 
 .手順
 . Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。

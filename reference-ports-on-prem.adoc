@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: reference-ports-on-prem.html 
+keywords: networking, network, requirements, ports, on-prem, linux, http, https 
+summary: コネクタは、オンプレミスのLinuxホストに手動でインストールする場合、次のインバウンドポートを使用します。 
+---
+= オンプレミスコネクタ用のポート
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+コネクタは、オンプレミスの Linux ホストに手動でインストールする場合、下記の _ インバウンド _ ポートを使用します。
+
+これらのインバウンドルールは、オンプレミスコネクタの両方の配置モデルに適用されます。つまり、インターネットアクセスがインストールされているか、インターネットアクセスがないかです。
+
+[cols="10,10,80"]
+|===
+| プロトコル | ポート | 目的 
+
+
+| HTTP | 80 | クライアント Web ブラウザからローカルへの HTTP アクセスを提供します ユーザインターフェイス 
+
+
+| HTTPS | 443 | クライアント Web ブラウザからローカルへの HTTPS アクセスを提供します ユーザインターフェイス 
+|===

@@ -39,8 +39,6 @@ sidebar:
       entries:
       - title: コネクタについて説明します
         url: "/concept-connectors.html"
-      - title: ネットワークをセットアップします
-        url: "/reference-networking-cloud-manager.html"
       - title: AWS でコネクタを作成します
         url: "/task-creating-connectors-aws.html"
       - title: Azure でコネクタを作成します
@@ -113,14 +111,26 @@ sidebar:
       url: "/concept-my-opportunities.html"
   - title: 参照
     entries:
-    - title: 権限の概要
-      url: "/reference-permissions.html"
-    - title: Connector の AWS 権限
-      url: "/reference-permissions-aws.html"
-    - title: Connector の Azure 権限
-      url: "/reference-permissions-azure.html"
-    - title: Connector の Google Cloud 権限
-      url: "/reference-permissions-gcp.html"
+    - title: 権限
+      entries:
+      - title: 権限の概要
+        url: "/reference-permissions.html"
+      - title: Connector の AWS 権限
+        url: "/reference-permissions-aws.html"
+      - title: Connector の Azure 権限
+        url: "/reference-permissions-azure.html"
+      - title: Connector の Google Cloud 権限
+        url: "/reference-permissions-gcp.html"
+    - title: ポート
+      entries:
+      - title: AWSのセキュリティグループのルール
+        url: "/reference-ports-aws.html"
+      - title: Azureのセキュリティグループルール
+        url: "/reference-ports-azure.html"
+      - title: Google Cloudのファイアウォールルール
+        url: "/reference-ports-gcp.html"
+      - title: オンプレミスコネクタ用のポート
+        url: "/reference-ports-on-prem.html"
   - title: 知識とサポート
     entries:
     - title: サポートに登録します
@@ -141,8 +151,6 @@ homepage:
     links:
     - title: コネクタについて説明します
       url: concept-connectors.html
-    - title: ネットワークをセットアップします
-      url: reference-networking-cloud-manager.html
     - title: コネクタを管理します
       url: task-managing-connectors.html
   - title: ネットアップアカウント
@@ -172,4 +180,4 @@ homepage:
 product-family:
   name: Cloud Manager
   repo: cloud-manager-family
-  sidebar_label: All Cloud Manager documentation
+  sidebar_label: Cloud Manager のすべてのドキュメント
