@@ -1225,7 +1225,6 @@
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
   <block id="cb4b69eb9bd10da82c15dca2f86a1385" category="cell">9060</block>
-  <block id="a88f9f8d3b07dc3b0bfb7e3fd41aaebe" category="cell">Cloud Data Sense を有効にして使用できる（ GovCloud 環境の場合のみ必要）</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">アウトバウンドルール</block>
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">コネクタの事前定義されたセキュリティグループは、すべての発信トラフィックを開きます。これが可能な場合は、基本的なアウトバウンドルールに従います。より厳格なルールが必要な場合は、高度なアウトバウンドルールを使用します。</block>
   <block id="d4dc7fa133657e4530cfde55110ec3c1" category="section-title">基本的なアウトバウンドルール</block>
@@ -1779,7 +1778,6 @@
   <block id="6c08c57e382a25a778455184cd9b1a4a" category="list-text">Cloud Manager で、 * Help &gt; Support * の順にクリックします。</block>
   <block id="f5052c65917d7341726235d4d4941461" category="list-text">テクニカルサポートで利用可能なオプションのいずれかを選択します。</block>
   <block id="0c01b3b7191c43507ad9ca43d6443731" category="cell">クライアント Web ブラウザからローカルユーザインターフェイスへの HTTPS アクセス、および Cloud Data Sense インスタンスからの接続を提供します</block>
-  <block id="b774573fe7b53358246a054f6d44ca83" category="cell">クラウドデータセンスの有効化と使用が可能（政府機関のクラウド環境にのみ必要）</block>
   <block id="5c6b09600cdfc594130f9f3c053efecb" category="section-title">コネクタの IP アドレスを変更します</block>
   <block id="a0dc112a414c5a75d4f2454974efc323" category="paragraph">ビジネスに必要な場合は、クラウドプロバイダによって自動的に割り当てられたコネクタインスタンスの内部 IP アドレスとパブリック IP アドレスを変更できます。</block>
   <block id="bfe6d8b96fb30d923a8089019f265d6b" category="list-text">クラウドプロバイダからの指示に従って、 Connector インスタンスのローカル IP アドレスまたはパブリック IP アドレス（またはその両方）を変更します。</block>
@@ -2527,4 +2525,5 @@
   <block id="55fc63d7111caa2a4badd753983607c4" category="paragraph"><block ref="45512476d85432fc18c9be020e976fed" category="inline-link-rx"></block>。</block>
   <block id="d14a27b37d19411318313c75f11baf13" category="inline-link-macro">Cloud Managerに関する通知</block>
   <block id="300aa46e11928dbde4552827675beb31" category="list-text"><block ref="300aa46e11928dbde4552827675beb31" category="inline-link-macro-rx"></block></block>
+  <block id="84f0978b53ad6dbefb1e08686d6c7c18" category="cell">クラウドデータセンスとCloud Backupを政府機関のクラウド環境で有効にして使用できます。Cloud ManagerアカウントでSaaSインターフェイスを無効にした場合は、Cloud Backupでもこのポートが必要です。</block>
 </blocks>
