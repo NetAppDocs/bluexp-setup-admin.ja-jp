@@ -75,7 +75,7 @@ AWS サービス（ amazonaws.com ）：
 
 |===
 --
-コネクタのアウトバウンドネットワーク:: Cloud Managerにログインしたら、Cloud Managerアカウント管理者がクラウドプロバイダまたはオンプレミスネットワークに_ Connector _を導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。Azure NetApp Files 、 Cloud Volumes Service 、 Cloud Sync のコネクタは必要ありませんが、 Cloud Manager のその他のすべてのサービスや機能に必要です。 link:concept-connectors.html["コネクターの詳細とその仕組みについては、こちらをご覧ください"]。
+コネクタのアウトバウンドネットワーク:: Cloud Managerにログインしたら、Cloud Managerアカウント管理者がクラウドプロバイダまたはオンプレミスネットワークに_ Connector _を導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。Cloud Managerのすべてのサービスと機能ではなく、ほとんどの場合はコネクタが必要です。 link:concept-connectors.html["コネクターの詳細とその仕組みについては、こちらをご覧ください"]。
 +
 --
 * コネクタを配置するネットワークの場所には、アウトバウンドのインターネット接続が必要です。

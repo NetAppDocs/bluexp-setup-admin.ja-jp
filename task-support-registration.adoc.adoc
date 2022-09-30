@@ -10,16 +10,51 @@ summary: ネットアップテクニカルサポートでサポートケース�
 :imagesdir: ../media/
 
 
-ネットアップテクニカルサポートでサポートケースをオープンするには、事前に Cloud Manager にネットアップサポートサイトのアカウントを追加し、サポートに登録しておく必要があります。
+ネットアップテクニカルサポートでサポートケースをオープンするには、NetApp Support Site （NSS）アカウントをCloud Managerに追加し、サポートに登録する必要があります。
 
 
 
-== NSS アカウントを追加します
+== サポート登録の概要
+
+サポート資格を有効にする登録には、次の2つの形式があります。
+
+* Cloud ManagerアカウントIDサポートサブスクリプションを登録します（Cloud Managerのサポートリソースのページにある20桁の960xxxxxxxxxシリアル番号）。
++
+これは、Cloud Manager内のすべてのサービスの単一のサポートサブスクリプションIDとして機能します。Cloud Managerのアカウントレベルのサポートサブスクリプションがそれぞれ登録されている必要があります。
+
+* クラウドプロバイダのマーケットプレイスでのサブスクリプションに関連付けられているCloud Volumes ONTAP のシリアル番号を登録している（909201xxxxxxxxのシリアル番号）。
++
+これらのシリアル番号は、一般にPAY_GOと呼ばれ、Cloud Volumes ONTAP の導入時にCloud Managerによって生成されます。
+
+
+
+両方のタイプのシリアル番号を登録することで、サポートチケットの発行、自動ケース生成、Active IQ などの機能を利用できます。
+
+登録方法は、新規のお客様か既存のお客様かパートナーかによって異なります。
+
+* 既存のお客様またはパートナー
++
+ネットアップの既存のお客様またはパートナー様は、NetApp Support Site （NSS）SSOアカウントを使用して上記の登録を実行することができます。サポートダッシュボードには、Cloud Managerの* NSS Management *ページでNSSアカウントを追加することができます。NSSアカウントを追加すると、Cloud Managerで自動的にこれらのシリアル番号が登録されます。
+
++
+ an NSS account to Cloud Manager,NSSアカウントを追加する方法について説明します。
+
+* 初めて導入する場合は
++
+ネットアップ製品を初めてご利用になる場合は、ネットアップのサポート登録サイトで、Cloud Managerアカウントのシリアル番号の登録を1回だけ完了してください。この登録を完了して新しいNSSアカウントを作成したら、Cloud Managerのこのアカウントを使用して自動で登録することができます。
+
++
+ with NetApp,ネットアップへの登録方法をご確認ください。
+
+
+
+
+
+== Cloud ManagerにNSSアカウントを追加します
 
 サポートダッシュボードを使用すると、すべてのネットアップサポートサイトのアカウントを 1 箇所から追加および管理できます。
 
 .手順
-. ネットアップサポートサイトのアカウントがない場合は、 https://register.netapp.com/register/start["1 名で登録します"^]。
 . Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
@@ -31,24 +66,92 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 . ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
 +
-Cloud Manager で NSS アカウントを使用することができます。
+これらの操作を実行すると、Cloud ManagerはNSSアカウントを使用して、ライセンスのダウンロード、ソフトウェアアップグレードの検証、以降のサポートの登録などを実行できます。
 
 +
-注：お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。
+次の点に注意してください。
+
++
+** お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。
+** ログインに成功すると、ネットアップはNSSのユーザ名を保存します。これはシステムで生成されたIDで、Eメールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。
+** ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。このオプションを使用すると、再度ログインするように求められます。
 
 
 
 
 
-== アカウントを登録してサポートを受けてください
 
-サポートの登録は、 Cloud Manager のサポートダッシュボードで実行できます。
+== ネットアップに登録してください
+
+ネットアップサポートへの登録方法は、NetApp Support Site （NSS）アカウントがあるかどうかによって異なります。
+
+
+
+=== NSSアカウントをお持ちの既存のお客様
+
+NSSアカウントをお持ちのネットアップのお客様は、Cloud Managerからサポートに登録するだけで済みます。
 
 .手順
 . Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
-. [* リソース ] タブで、 [* サポートに登録 * ] をクリックします。
-. 登録する NSS 資格情報を選択し、 * 登録 * をクリックします。
+. NSSアカウントをCloud Managerに追加していない場合は、
+. [*リソース]ページで、[*サポートに登録*]をクリックします。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-register-support.png["アカウントのシリアル番号と[サポートに登録]オプションを示すスクリーンショット"]
 
+
+
+
+
+=== NSSアカウントを持たない既存のお客様
+
+既存のライセンスとシリアル番号をお持ちで、_no-NSSアカウントをお持ちのネットアップのお客様は、NSSアカウントを作成するだけで十分です。
+
+.手順
+. を実行してNetApp Support Site アカウントを作成します https://mysupport.netapp.com/site/user/registration["NetApp Support Site ユーザー登録フォーム"^]
++
+.. 適切なユーザレベルを選択してください。通常は*ネットアップのお客様/エンドユーザ*がこれに該当します。
+.. シリアル番号のフィールドには、上記のCloud Managerアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。
+
+
+
+
+
+
+=== ネットアップのソリューションを初めて導入する場合は
+
+ネットアップ製品を初めてご利用になり、NSSアカウントをお持ちでない場合は、以下の手順に従ってください。
+
+.手順
+. Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
+
+. Support Registrationのページで、Cloud ManagerアカウントIDのシリアル番号を確認します。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
+
+. に移動します https://register.netapp.com["ネットアップサポート登録サイト"^] 「*ネットアップ登録のお客様ではありません*」を選択します。
+. 必須フィールドに入力します（赤いアスタリスクのフィールド）。
+. [*製品ライン*（Product Line *）]フィールドで、[* Cloud Manager *]を選択し、該当する課金プロバイダーを選択します。
+. 前述の手順2からCloud Managerアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを読み、確認します。
++
+この安全なトランザクションを完了するために、メールボックスに電子メールがすぐに送信されます。確認メールが数分で届かない場合は、必ずスパムフォルダを確認してください。
+
+. Eメールからアクションを確認します。
++
+確認ではネットアップにリクエストが送信され、NetApp Support Site アカウントを作成することを推奨します。
+
+. を実行してNetApp Support Site アカウントを作成します https://mysupport.netapp.com/site/user/registration["NetApp Support Site ユーザー登録フォーム"^]
++
+.. 適切なユーザレベルを選択してください。通常は*ネットアップのお客様/エンドユーザ*がこれに該当します。
+.. シリアル番号のフィールドには、上記のCloud Managerアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。
+
+
+
+
+このプロセスについては、ネットアップからご連絡ください。これは、新規ユーザ向けの1回限りのオンボーディング演習です。
+
+NetApp Support Site アカウントを作成したら、Cloud Managerに移動してこのNSSアカウントを追加して以降の登録を行うことができます。

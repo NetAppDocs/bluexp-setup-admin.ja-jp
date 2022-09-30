@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-launching-aws-mktp.html 
-keywords: install connector, create connector, deploy connector, installation, installing, marketplace, aws, launch, launching, ec2 console, iam role 
+keywords: install connector, create connector, deploy connector, installation, installing, marketplace, aws, launch, launching, ec2 console, iam role, govcloud, government, aws government, aws govcloud, gov marketplace 
 summary: Cloud Manager からコネクタを直接作成することを推奨します。 AWS アクセスキーを指定しない場合は、 AWS Marketplace からコネクタを起動できます。Connector の作成とセットアップが完了すると、新しい作業環境を作成するときに、 Cloud Manager によって自動的に Connector が使用されます。 
 ---
 = AWS Marketplace からコネクタを作成します
@@ -14,7 +14,18 @@ summary: Cloud Manager からコネクタを直接作成することを推奨し
 
 
 [role="lead"]
-Cloud Manager からコネクタを直接作成することを推奨します。 AWS アクセスキーを指定しない場合は、 AWS Marketplace からコネクタを起動できます。Connector の作成とセットアップが完了すると、新しい作業環境を作成するときに、 Cloud Manager によって自動的に Connector が使用されます。
+AWSの商業地域では、Cloud Managerから直接コネクタを作成することを推奨しますが、必要に応じてAWS Marketplaceからコネクタを起動できます。AWSリージョンの場合、Cloud ManagerのSaaS WebサイトからConnectorを政府機関のリージョンに導入することはできないため、次はAWS Marketplaceで導入することを推奨します。
+
+
+TIP: ネットワーク内またはクラウド内の既存のLinuxホストにConnectorソフトウェアをダウンロードしてインストールすることもできます。 link:task-installing-linux.html["既存のLinuxホストにConnectorをインストールする方法について説明します"]。
+
+
+
+== AWSの商業地域にコネクタを作成します
+
+Cloud Manager用のAWS MarketplaceからAWSの商業地域でConnectorインスタンスを直接起動することができます。
+
+Connectorを作成するIAMユーザには、サブスクライブとサブスクライブ解除を行うためのAWS Marketplace権限が必要です。
 
 .手順
 . AWSで権限を設定します。
@@ -23,10 +34,7 @@ Cloud Manager からコネクタを直接作成することを推奨します。
 .. ロールタイプが Amazon EC2 の IAM ロールを作成し、前の手順で作成したポリシーをロールに付加します。
 
 
-. 次に、に進みます https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace の Cloud Manager のページ"^] AMI から Cloud Manager を導入
-+
-IAM ユーザがサブスクライブとサブスクライブ解除を行うには、 AWS Marketplace の権限が必要です。
-
+. にアクセスします https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace の Cloud Manager のページ"^] AMIからCloud Managerを導入するには、次の手順を実行します
 . [Marketplace] ページで [* Continue to Subscribe* ] をクリックし、 [* Continue to Configuration* ] をクリックします。
 +
 image:screenshot_subscribe_cm.gif["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]
@@ -38,18 +46,23 @@ image:screenshot_subscribe_cm.gif["AWS Marketplace の Continue to Subscribe and
 
 . プロンプトに従って、インスタンスを設定および導入します。
 +
-** * インスタンスタイプを選択 * ：リージョンの可用性に応じて、サポートされているインスタンスタイプ（ t3.xlarge を推奨）のいずれかを選択します。
+** *名前とタグ*：インスタンスの名前とタグを入力します。
+** *アプリケーションとOSイメージ*:このセクションは省略します。Cloud Manager AMIがすでに選択されている。
+** * Instance type *：リージョンの可用性に応じて、サポートされているインスタンスタイプ（t3.xlargeを推奨）のいずれかを選択します。
 +
 link:task-installing-linux.html["インスタンスの要件を確認します"]。
 
-** * Configure Instance * ： VPC とサブネットを選択し、手順 1 で作成した IAM ロールを選択して、終了保護を有効にし（推奨）、要件を満たす他の設定オプションを選択します。
+** *キーペア（ログイン）*：インスタンスへのセキュアな接続に使用するキーペアを選択します。
+** *ネットワーク設定*：必要に応じてネットワーク設定を編集します。
 +
-image:screenshot_aws_iam_role.gif["AWS の Configure Instance ページのフィールドを示すスクリーンショット。手順 1 で作成する必要のある IAM ロールが選択されている。"]
+*** 目的のVPCとサブネットを選択します。
+*** インスタンスにパブリックIPアドレスを割り当てるかどうかを指定します。
+*** コネクタインスタンスに必要な接続方法（SSH、HTTP、HTTPS）を有効にするファイアウォール設定を指定します。
 
-** * Add Storage* ：デフォルトのストレージ・オプションをそのまま使用します。
-** * Add Tags* ：必要に応じて、インスタンスのタグを入力します。
-** * セキュリティグループの設定 * ：コネクタインスタンスに必要な接続方法（ SSH 、 HTTP 、 HTTPS ）を指定します。
-** * 復習 * ：選択内容を確認して、 * 起動 * をクリックします。
+
+** *ストレージの設定*：デフォルトのストレージオプションをそのまま使用します。
+** *詳細*：「* IAM intance profile *」で、手順1で作成したIAMロールを選択します。
+** *概要*：概要を確認し、*インスタンスの起動*をクリックします。
 +
 AWS は、指定した設定でソフトウェアを起動します。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。
 
@@ -71,11 +84,86 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 
 
 
+. Web ブラウザを開き、に進みます https://cloudmanager.netapp.com[] をクリックして、Connector with Cloud Managerの使用を開始します。
 
 
 これで、 Connector のインストールとセットアップが完了しました。Cloud Manager は、新しい作業環境の作成時にこのコネクタを自動的に使用します。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
 
 Connectorを作成したのと同じAWSアカウントにAmazon S3バケットがある場合、Amazon S3の作業環境がCanvasに自動的に表示されます。 link:task-viewing-amazon-s3.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
+
+
+
+== AWSリージョンにコネクタを作成します
+
+ConnectorをAWS Governmentリージョンに導入するには、EC2サービスにアクセスして、AWS MarketplaceからCloud Managerサービスを選択する必要があります。
+
+.手順
+. AWSで権限を設定します。
++
+.. IAMコンソールで、の内容をコピーして貼り付け、独自のポリシーを作成します link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+.. ロールタイプが Amazon EC2 の IAM ロールを作成し、前の手順で作成したポリシーをロールに付加します。
+
+
+. AWS Marketplaceで提供されているCloud Managerのサービスにアクセスします。
++
+IAM ユーザがサブスクライブとサブスクライブ解除を行うには、 AWS Marketplace の権限が必要です。
+
++
+.. EC2サービスを開き、*インスタンスの起動*を選択します。
+.. 「AWS Marketplace *」を選択します。
+.. Cloud Managerを検索してサービスを選択します。
++
+image:screenshot-gov-cloud-mktp.png["AWS Marketplaceで検索したCloud Managerのサービスを示すスクリーンショット"]
+
+.. [* Continue （続行） ] をクリックします
+
+
+. プロンプトに従って、インスタンスを設定および導入します。
++
+** *インスタンスタイプを選択*：リージョンの可用性に応じて、サポートされているインスタンスタイプ（t3.xlargeを推奨）のいずれかを選択します。
++
+link:task-installing-linux.html["インスタンスの要件を確認します"]。
+
+** * Configure Instance Details*：VPCとサブネットを選択し、手順1で作成したIAMロールを選択して、終了保護を有効にし（推奨）、要件を満たす他の設定オプションを選択します。
++
+image:screenshot_aws_iam_role.gif["AWS の Configure Instance ページのフィールドを示すスクリーンショット。手順 1 で作成する必要のある IAM ロールが選択されている。"]
+
+** * Add Storage* ：デフォルトのストレージ・オプションをそのまま使用します。
+** * Add Tags* ：必要に応じて、インスタンスのタグを入力します。
+** * セキュリティグループの設定 * ：コネクタインスタンスに必要な接続方法（ SSH 、 HTTP 、 HTTPS ）を指定します。
+** * 復習 * ：選択内容を確認して、 * 起動 * をクリックします。
+
+
++
+AWS は、指定した設定でソフトウェアを起動します。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。
+
+. コネクタインスタンスに接続されているホストから Web ブラウザを開き、次の URL を入力します。
++
+http://_ipaddress_:80[]
+
+. ログイン後、コネクタを設定します。
++
+.. コネクタに関連付けるネットアップアカウントを指定します。
++
+link:concept-netapp-accounts.html["ネットアップアカウントについて"]。
+
+.. システムの名前を入力します。
++
+image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを選択してシステムに名前を付けることができるコネクタのセットアップ画面のスクリーンショット。"]
+
+
+
+
+
+これで、 Connector のインストールとセットアップが完了しました。
+
+Cloud Managerを使用する場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続します。 http://_ipaddress_:80[]
+
+コネクタは政府機関に導入されているため、からはアクセスできません https://cloudmanager.netapp.com[]。
+
+
+
+== AutoSupport メッセージのポート3128を開きます
 
 アウトバウンドのインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、Cloud Managerはコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を自動的に設定します。
 

@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: task-create-connectors-gov.html 
+keywords: government region, gov, govcloud, connector 
+summary: 行政機関で運用している場合は、クラウドプロバイダのマーケットプレイスからConnectorを導入するか、手動でインストールする必要があります。Connectorは、Cloud ManagerのSaaS Webサイトからは政府機関のリージョンに導入できません。 
+---
+= 政府機関リージョンでコネクタを作成します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+政府機関で運用している場合は、クラウドプロバイダのマーケットプレイスからConnectorを導入するか、既存のLinuxホストにConnectorソフトウェアを手動でインストールする必要があります。Connectorは、Cloud ManagerのSaaS Webサイトからは政府機関のリージョンに導入できません。
+
+* link:task-launching-aws-mktp.html#create-the-connector-in-an-aws-government-region["AWS Marketplace からコネクタを作成します"]
+* link:task-launching-azure-mktp.html["Azure Marketplace からコネクタを作成します"]
+* link:task-installing-linux.html["コネクタを独自のLinuxホストにインストールします"]
+
+
+コネクタを導入したら、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続し、Cloud Managerにアクセスできます。 http://_ipaddress_:80[]
+
+コネクタは政府機関に導入されているため、からはアクセスできません https://cloudmanager.netapp.com[]。

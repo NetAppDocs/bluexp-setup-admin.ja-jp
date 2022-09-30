@@ -14,7 +14,10 @@ summary: Cloud Manager からコネクタを直接作成することを推奨し
 
 
 [role="lead"]
-Cloud Manager からコネクタを直接作成することを推奨しますが、必要に応じて Azure Marketplace からコネクタを起動できます。Connector の作成とセットアップが完了すると、新しい作業環境を作成するときに、 Cloud Manager によって自動的に Connector が使用されます。
+Azureの商業地域では、Cloud Managerから直接コネクタを作成することを推奨しますが、必要に応じてAzure Marketplaceからコネクタを起動することもできます。Azure Governmentリージョンの場合、Cloud ManagerのSaaS Webサイトから政府機関のリージョンにConnectorを導入することはできないため、次はAzure Marketplaceから導入することをお勧めします。
+
+
+TIP: ネットワーク内またはクラウド内の既存のLinuxホストにConnectorソフトウェアをダウンロードしてインストールすることもできます。 link:task-installing-linux.html["既存のLinuxホストにConnectorをインストールする方法について説明します"]。
 
 
 
@@ -72,7 +75,13 @@ image:screenshot_set_up_cloud_manager.gif["Cloud Manager のセットアップ�
 
 
 
-これでコネクタがインストールされ、セットアップされました。Cloud Volumes ONTAP を Azure に導入するには、 Azure の権限を付与する必要があります。
+これで、 Connector のインストールとセットアップが完了しました。
+
+コネクタがAzureの商業地域にある場合は、Webブラウザを開き、に進みます https://cloudmanager.netapp.com[] をクリックして、Connector with Cloud Managerの使用を開始します。
+
+コネクタがAzure Governmentリージョンにある場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続することで、Cloud Managerを使用できます。 http://_ipaddress_:80[]
+
+コネクタは政府機関に導入されているため、からはアクセスできません https://cloudmanager.netapp.com[]。
 
 
 

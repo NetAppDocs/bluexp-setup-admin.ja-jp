@@ -45,6 +45,8 @@ sidebar:
         url: "/task-creating-connectors-azure.html"
       - title: Google Cloud でコネクターを作成します
         url: "/task-creating-connectors-gcp.html"
+      - title: 政府機関リージョンでコネクタを作成します
+        url: "/task-create-connectors-gov.html"
     - title: 次の手順
       url: "/reference-whats-next.html"
   - title: Cloud Manager の管理
