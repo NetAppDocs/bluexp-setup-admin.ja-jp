@@ -19,6 +19,9 @@ summary: 行政機関で運用している場合は、クラウドプロバイ�
 * link:task-launching-aws-mktp.html#create-the-connector-in-an-aws-government-region["AWS Marketplace からコネクタを作成します"]
 * link:task-launching-azure-mktp.html["Azure Marketplace からコネクタを作成します"]
 * link:task-installing-linux.html["コネクタを独自のLinuxホストにインストールします"]
++
+Linuxホストを手動でインストールする場合は、「オンライン」インストーラを使用して、インターネットにアクセスできるホストにコネクタをインストールする必要があります。Cloud Managerでは個別の「オフライン」インストーラを使用できますが、インターネットにアクセスできないオンプレミスサイトでのみサポートされます。政府機関ではサポートされていません。
+
 
 
 コネクタを導入したら、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続し、Cloud Managerにアクセスできます。 http://_ipaddress_:80[]

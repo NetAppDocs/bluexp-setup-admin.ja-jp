@@ -2612,4 +2612,5 @@
   <block id="32ca71310dadc8fc1c3dc9edd297e66e" category="paragraph">コネクタを導入したら、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続し、Cloud Managerにアクセスできます。<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
   <block id="9878eb7f6fc13faa4a717cc5b1192951" category="paragraph">Cloud Managerアカウント管理者は、さまざまな方法でコネクタを作成できます。</block>
   <block id="08bcb1ae91400f74899c5825a1f7973c" category="paragraph">ではほぼすべてのタスクを実行する必要がありますが<block ref="8f305b98f88a161e5a1e68aca36c2103" category="inline-link-rx"></block>では、ローカルユーザーインターフェースは引き続きコネクターで使用できます。このインターフェイスは、インターネットにアクセスできない環境（政府機関など）にConnectorをインストールする場合、およびSaaSインターフェイスではなくコネクタ自体から実行する必要があるいくつかのタスクの場合に必要です。</block>
+  <block id="08072de6f5a921907c2b45d019f7d63c" category="paragraph">Linuxホストを手動でインストールする場合は、「オンライン」インストーラを使用して、インターネットにアクセスできるホストにコネクタをインストールする必要があります。Cloud Managerでは個別の「オフライン」インストーラを使用できますが、インターネットにアクセスできないオンプレミスサイトでのみサポートされます。政府機関ではサポートされていません。</block>
 </blocks>
