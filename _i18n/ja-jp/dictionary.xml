@@ -760,7 +760,6 @@
   <block id="3725c308cfc8c643d641a79a6973de6a" category="paragraph">これらの旗についてのより多くの情報のために、訪問しなさい <block ref="da0fbb66abe85889cc98553ca2ce188d" category="inline-link-macro-rx"></block>。</block>
   <block id="6e73017040e152e8818eb7f83bc493fc" category="paragraph">コマンドを実行すると、ネットアップのゴールデンイメージを使用してコネクタが導入されます。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。</block>
   <block id="bd9691461cb90d45ce8386aaf15e21a6" category="list-text">コネクタインスタンスに接続されているホストから Web ブラウザを開き、次の URL を入力します。</block>
-  <block id="2dfdf7b0d4a150072509d59652cddbf7" category="paragraph"><block ref="2dfdf7b0d4a150072509d59652cddbf7" category="inline-link-rx"></block></block>
   <block id="a00513d5f518d02aa962d5bbb308cdfb" category="list-text">ログイン後、コネクタを設定します。</block>
   <block id="759ba4e73fa8a63f85961494f316d3ed" category="list-text">コネクタに関連付けるネットアップアカウントを指定します。</block>
   <block id="531dd1abfed48af076a56cbf57b47ca8" category="inline-link-macro">ネットアップアカウントについて</block>
@@ -2542,12 +2541,10 @@
   <block id="07910e9ec98e7a02ee5b24f85cc660d2" category="list-text">*インスタンスタイプを選択*：リージョンの可用性に応じて、サポートされているインスタンスタイプ（t3.xlargeを推奨）のいずれかを選択します。</block>
   <block id="7de969f5ec8b28cd7687e32ca5c245bc" category="list-text">* Configure Instance Details*：VPCとサブネットを選択し、手順1で作成したIAMロールを選択して、終了保護を有効にし（推奨）、要件を満たす他の設定オプションを選択します。</block>
   <block id="ab055dd2454f72eae9c16179690384d6" category="paragraph">これで、 Connector のインストールとセットアップが完了しました。</block>
-  <block id="ffd720233eaf31d1f3e418cbededed22" category="paragraph">Cloud Managerを使用する場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続します。<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
   <block id="d4d1e4d7a1862b2f824535c50d2aef05" category="paragraph">コネクタは政府機関に導入されているため、からはアクセスできません<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block>。</block>
   <block id="028ecb795c7225a3860d19dee3ea530c" category="paragraph">政府機関のリージョンまたはアウトバウンドのインターネットアクセスがないサイトからCloud Managerにアクセスする場合は、コネクタの作成後にローカルユーザインターフェイスにログインする必要があります。 <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
   <block id="85926b387833c0d2d9c8da74b9b2c8f2" category="paragraph">Azureの商業地域では、Cloud Managerから直接コネクタを作成することを推奨しますが、必要に応じてAzure Marketplaceからコネクタを起動することもできます。Azure Governmentリージョンの場合、Cloud ManagerのSaaS Webサイトから政府機関のリージョンにConnectorを導入することはできないため、次はAzure Marketplaceから導入することをお勧めします。</block>
   <block id="5c7c86fa3a72eff2eda7fc5d06d22cc8" category="paragraph">コネクタがAzureの商業地域にある場合は、Webブラウザを開き、に進みます<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block> をクリックして、Connector with Cloud Managerの使用を開始します。</block>
-  <block id="4ff576acdb8dc9245e9af2a935cc45a5" category="paragraph">コネクタがAzure Governmentリージョンにある場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続することで、Cloud Managerを使用できます。<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
   <block id="d1a9582568e79d0f7df77bf8db0c78c2" category="paragraph">ネットアップテクニカルサポートでサポートケースをオープンするには、NetApp Support Site （NSS）アカウントをCloud Managerに追加し、サポートに登録する必要があります。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">サポート登録の概要</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">サポート資格を有効にする登録には、次の2つの形式があります。</block>
@@ -2609,8 +2606,14 @@
   <block id="58e61369cd7221124732850e5e76afa5" category="list-text"><block ref="58e61369cd7221124732850e5e76afa5" category="inline-link-macro-rx"></block></block>
   <block id="ed735c903ed6cdbd695395bc4d404651" category="inline-link-macro">コネクタを独自のLinuxホストにインストールします</block>
   <block id="1dbe2aafec7f9c19eaf4c72558a8bc64" category="list-text"><block ref="1dbe2aafec7f9c19eaf4c72558a8bc64" category="inline-link-macro-rx"></block></block>
-  <block id="32ca71310dadc8fc1c3dc9edd297e66e" category="paragraph">コネクタを導入したら、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続し、Cloud Managerにアクセスできます。<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
   <block id="9878eb7f6fc13faa4a717cc5b1192951" category="paragraph">Cloud Managerアカウント管理者は、さまざまな方法でコネクタを作成できます。</block>
   <block id="08bcb1ae91400f74899c5825a1f7973c" category="paragraph">ではほぼすべてのタスクを実行する必要がありますが<block ref="8f305b98f88a161e5a1e68aca36c2103" category="inline-link-rx"></block>では、ローカルユーザーインターフェースは引き続きコネクターで使用できます。このインターフェイスは、インターネットにアクセスできない環境（政府機関など）にConnectorをインストールする場合、およびSaaSインターフェイスではなくコネクタ自体から実行する必要があるいくつかのタスクの場合に必要です。</block>
   <block id="08072de6f5a921907c2b45d019f7d63c" category="paragraph">Linuxホストを手動でインストールする場合は、「オンライン」インストーラを使用して、インターネットにアクセスできるホストにコネクタをインストールする必要があります。Cloud Managerでは個別の「オフライン」インストーラを使用できますが、インターネットにアクセスできないオンプレミスサイトでのみサポートされます。政府機関ではサポートされていません。</block>
+  <block id="0d5ee8e9bcc8751b7e244c6060a8ce2e" category="paragraph"><block ref="0d5ee8e9bcc8751b7e244c6060a8ce2e" category="inline-link-rx"></block></block>
+  <block id="1b5c2413dd231baab0a3590fccf0cb20" category="paragraph">Cloud Managerを使用する場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続します。<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
+  <block id="5e50b798e9d8415fb0ee66559aedf39e" category="paragraph">コネクタがAzure Governmentリージョンにある場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続することで、Cloud Managerを使用できます。<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
+  <block id="654a986da1d7f49a7d2efc48def362d3" category="paragraph">次のいずれかのリンクを使用して、コネクタの作成手順を表示します。</block>
+  <block id="f6142793a7fc590c102faad49ea20e0e" category="inline-link">AWS C2S環境でコネクタとCloud Volumes ONTAP を作成します</block>
+  <block id="c9bea61d35e54e0303121feefa6c6e14" category="list-text"><block ref="c9bea61d35e54e0303121feefa6c6e14" category="inline-link-rx"></block></block>
+  <block id="afba41e19132010c49cd4b192f7f2518" category="paragraph">コネクタを導入したら、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続し、Cloud Managerにアクセスできます。<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
 </blocks>
