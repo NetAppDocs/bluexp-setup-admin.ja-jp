@@ -2609,11 +2609,10 @@
   <block id="9878eb7f6fc13faa4a717cc5b1192951" category="paragraph">Cloud Managerアカウント管理者は、さまざまな方法でコネクタを作成できます。</block>
   <block id="08bcb1ae91400f74899c5825a1f7973c" category="paragraph">ではほぼすべてのタスクを実行する必要がありますが<block ref="8f305b98f88a161e5a1e68aca36c2103" category="inline-link-rx"></block>では、ローカルユーザーインターフェースは引き続きコネクターで使用できます。このインターフェイスは、インターネットにアクセスできない環境（政府機関など）にConnectorをインストールする場合、およびSaaSインターフェイスではなくコネクタ自体から実行する必要があるいくつかのタスクの場合に必要です。</block>
   <block id="08072de6f5a921907c2b45d019f7d63c" category="paragraph">Linuxホストを手動でインストールする場合は、「オンライン」インストーラを使用して、インターネットにアクセスできるホストにコネクタをインストールする必要があります。Cloud Managerでは個別の「オフライン」インストーラを使用できますが、インターネットにアクセスできないオンプレミスサイトでのみサポートされます。政府機関ではサポートされていません。</block>
-  <block id="0d5ee8e9bcc8751b7e244c6060a8ce2e" category="paragraph"><block ref="0d5ee8e9bcc8751b7e244c6060a8ce2e" category="inline-link-rx"></block></block>
-  <block id="1b5c2413dd231baab0a3590fccf0cb20" category="paragraph">Cloud Managerを使用する場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続します。<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
-  <block id="5e50b798e9d8415fb0ee66559aedf39e" category="paragraph">コネクタがAzure Governmentリージョンにある場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続することで、Cloud Managerを使用できます。<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
   <block id="654a986da1d7f49a7d2efc48def362d3" category="paragraph">次のいずれかのリンクを使用して、コネクタの作成手順を表示します。</block>
   <block id="f6142793a7fc590c102faad49ea20e0e" category="inline-link">AWS C2S環境でコネクタとCloud Volumes ONTAP を作成します</block>
   <block id="c9bea61d35e54e0303121feefa6c6e14" category="list-text"><block ref="c9bea61d35e54e0303121feefa6c6e14" category="inline-link-rx"></block></block>
-  <block id="afba41e19132010c49cd4b192f7f2518" category="paragraph">コネクタを導入したら、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続し、Cloud Managerにアクセスできます。<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
+  <block id="dd67adbc83557c45a033469a2632edbb" category="paragraph">Cloud Managerを使用する場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続します。<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
+  <block id="4fc63d83f4164273804f76277bc9b0d3" category="paragraph">コネクタがAzure Governmentリージョンにある場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続することで、Cloud Managerを使用できます。<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
+  <block id="58048ddb566733365166efeac45f2917" category="paragraph">コネクタを導入したら、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続し、Cloud Managerにアクセスできます。<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
 </blocks>

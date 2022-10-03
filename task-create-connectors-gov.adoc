@@ -27,6 +27,6 @@ Linuxホストを手動でインストールする場合は、「オンライン
 
 
 
-コネクタを導入したら、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続し、Cloud Managerにアクセスできます。 http://_ipaddress_[]
+コネクタを導入したら、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続し、Cloud Managerにアクセスできます。 https://_ipaddress_[]
 
 コネクタは政府機関に導入されているため、からはアクセスできません https://cloudmanager.netapp.com[]。

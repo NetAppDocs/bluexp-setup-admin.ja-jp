@@ -59,7 +59,7 @@ link:reference-ports-azure.html["コネクタのセキュリティグループ�
 
 . Connector 仮想マシンに接続されているホストから Web ブラウザを開き、次の URL を入力します。
 +
-http://_ipaddress_[]
+https://_ipaddress_[]
 
 . ログイン後、コネクタを設定します。
 +
@@ -79,7 +79,7 @@ image:screenshot_set_up_cloud_manager.gif["Cloud Manager のセットアップ�
 
 コネクタがAzureの商業地域にある場合は、Webブラウザを開き、に進みます https://cloudmanager.netapp.com[] をクリックして、Connector with Cloud Managerの使用を開始します。
 
-コネクタがAzure Governmentリージョンにある場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続することで、Cloud Managerを使用できます。 http://_ipaddress_[]
+コネクタがAzure Governmentリージョンにある場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続することで、Cloud Managerを使用できます。 https://_ipaddress_[]
 
 コネクタは政府機関に導入されているため、からはアクセスできません https://cloudmanager.netapp.com[]。
 

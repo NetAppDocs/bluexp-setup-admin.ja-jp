@@ -70,7 +70,7 @@ AWS は、指定した設定でソフトウェアを起動します。コネク�
 
 . コネクタインスタンスに接続されているホストから Web ブラウザを開き、次の URL を入力します。
 +
-http://_ipaddress_[]
+https://_ipaddress_[]
 
 . ログイン後、コネクタを設定します。
 +
@@ -139,7 +139,7 @@ AWS は、指定した設定でソフトウェアを起動します。コネク�
 
 . コネクタインスタンスに接続されているホストから Web ブラウザを開き、次の URL を入力します。
 +
-http://_ipaddress_[]
+https://_ipaddress_[]
 
 . ログイン後、コネクタを設定します。
 +
@@ -157,7 +157,7 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 
 これで、 Connector のインストールとセットアップが完了しました。
 
-Cloud Managerを使用する場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続します。 http://_ipaddress_[]
+Cloud Managerを使用する場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続します。 https://_ipaddress_[]
 
 コネクタは政府機関に導入されているため、からはアクセスできません https://cloudmanager.netapp.com[]。
 
