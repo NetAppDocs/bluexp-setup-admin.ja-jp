@@ -29,17 +29,20 @@ TIP: 最初の Cloud Volumes ONTAP 作業環境を作成する際、まだコネ
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-[role="quick-margin-para"]
-カスタムロールを作成して関連付け、Google Cloudアカウントに正しい権限が割り当てられていることを確認します。
+.<span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png"[] alt="one "></span>権限を設定します
+* カスタムロールを作成して関連付け、Google Cloudアカウントに正しい権限が割り当てられていることを確認します。
++
+ up permissions to deploy the Connector。
 
-[role="quick-margin-para"]
- up permissions,カスタムロールを表示します。
+* Connector VMを作成するときは、サービスアカウントに関連付ける必要があります。このサービスアカウントには、Google Cloud内のリソースを管理する権限を持つカスタムロールが必要です。
++
+ up a service account for the Connector。
 
-[role="quick-margin-para"]
-Connector VMを作成するときは、サービスアカウントに関連付ける必要があります。このサービスアカウントには、Google Cloud内のリソースを管理する権限を持つカスタムロールが必要です。
+* 共有VPCを使用する場合は、サービスプロジェクトとホストプロジェクトで権限を設定します。
++
+ up shared VPC permissions。
 
-[role="quick-margin-para"]
- up a service account,カスタムロールを表示します。
+
 
 [role="quick-margin-para"]
 特定のエンドポイントへのアウトバウンドのインターネットアクセスが可能なVPCとサブネットが必要です。アウトバウンドインターネットにHTTPプロキシが必要な場合は、IPアドレス、クレデンシャル、HTTPS証明書が必要です。
@@ -47,7 +50,7 @@ Connector VMを作成するときは、サービスアカウントに関連付�
 [role="quick-margin-para"]
  up networking,ネットワーク要件を確認します。
 
-.<span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png"[] alt="4"></span> Google Cloud APIを有効にします
+.<span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] alt="3"></span> Google Cloud APIを有効にします
 * Cloud Deployment Manager V2 API
 * クラウドロギング API
 * Cloud Resource Manager API の略
@@ -64,6 +67,17 @@ Connector VMを作成するときは、サービスアカウントに関連付�
 
 
 == 権限を設定します
+
+権限は次の項目に必要です。
+
+* Connector VMを導入するユーザ
+* 導入時にConnector VMに接続する必要があるサービスアカウント
+* 共有VPC権限。共有VPCを使用してリソースをサービスプロジェクトに導入する場合に使用します
+
+
+
+
+=== Connectorを展開する権限を設定します
 
 Connectorを展開する前に、Google Cloudアカウントに正しい権限があることを確認する必要があります。
 
@@ -140,7 +154,7 @@ Google Cloudユーザに、Connectorの作成に必要な権限が付与され�
 
 
 
-== サービスアカウントを設定します
+=== コネクタのサービスアカウントを設定します
 
 Google Cloudでリソースを管理するために必要な権限をConnectorに提供するには、サービスアカウントが必要です。このサービスアカウントは、作成時に Connector VM に関連付けます。
 
@@ -256,57 +270,7 @@ Connector VMのサービスアカウントが設定されます。
 
 
 
-== ネットワークをセットアップする
-
-コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタにVPCとサブネットを使用する以外に、次の要件が満たされていることを確認する必要があります。
-
-
-
-=== ターゲットネットワークへの接続
-
-コネクタには、作成する作業環境の種類と、有効にする予定のサービスへのネットワーク接続が必要です。
-
-たとえば、会社のネットワークにコネクタをインストールした場合は、Cloud Volumes ONTAP を起動するVPCへのVPN接続を設定する必要があります。
-
-
-
-=== アウトバウンドインターネットアクセス
-
-Connector では、パブリッククラウド環境内のリソースとプロセスを管理するためにアウトバウンドインターネットアクセスが必要です。
-
-[cols="2*"]
-|===
-| エンドポイント | 目的 
-
-
-| \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
-
-
-| \ https://*.cloudmanager.cloud.netapp.com | Cloud Manager 内で SaaS の機能やサービスを提供できます。 
-
-
-| ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
-|===
-
-
-=== プロキシサーバ
-
-すべての送信インターネットトラフィックにHTTPプロキシを導入する必要がある場合は、HTTPプロキシに関する次の情報を取得します。
-
-* IP アドレス
-* クレデンシャル
-* HTTPS証明書
-
-
-
-
-=== セキュリティグループ
-
-コネクタへの着信トラフィックは、コネクタを起動した場合や、コネクタがAutoSupport メッセージのプロキシとして使用されている場合を除き、受信トラフィックはありません。へのアクセスは、 HTTP および HTTPS を使用して提供されます link:concept-connectors.html#the-local-user-interface["ローカル UI"]は、まれな状況で使用します。SSH が必要になるのは、トラブルシューティングのためにホストに接続する必要がある場合のみです。
-
-
-
-=== 共有 VPC の権限
+=== 共有VPC権限を設定する
 
 共有 VPC を使用してリソースをサービスプロジェクトに導入する場合は、次の権限が必要です。IAM の設定が完了したら、この表を参考にして権限の表を環境に反映させる必要があります。
 
@@ -325,7 +289,7 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 
 
 | Connectorサービスアカウント | カスタム | サービスプロジェクト  a| 
-* link:task-creating-connectors-gcp.html#set-up-permissions-for-the-connector["上記のセクションに記載されている権限"]
+* link:task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["上記のセクションに記載されている権限"]
 
  a| 
 * compute.networkUser
@@ -364,6 +328,56 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 . Firewall.create および firewall.delete が必要となるのは、ファイアウォールルールを導入環境に渡しず、 Cloud Manager で作成することを選択している場合だけです。これらの権限は、 Cloud Manager サービスアカウントの .yaml ファイルに格納されています。共有 VPC を使用して HA ペアを導入する場合は、これらの権限を使用して VPC1 、 2 、および 3 のファイアウォールルールが作成されます。他のすべての展開では、これらの権限は VPC0 のルールの作成にも使用されます。
 . データ階層化の場合、階層化サービスアカウントは、プロジェクトレベルだけでなく、サービスアカウントに対して serviceAccount.user ロールを持つ必要があります。現在、プロジェクトレベルで serviceAccount.user を割り当てている場合、 getIAMPolicy でサービスアカウントを照会しても権限は表示されません。
 
+
+
+
+== ネットワークをセットアップする
+
+コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタにVPCとサブネットを使用する以外に、次の要件が満たされていることを確認する必要があります。
+
+
+
+=== ターゲットネットワークへの接続
+
+コネクタには、作成する作業環境の種類と、有効にする予定のサービスへのネットワーク接続が必要です。
+
+たとえば、会社のネットワークにコネクタをインストールした場合は、Cloud Volumes ONTAP を起動するVPCへのVPN接続を設定する必要があります。
+
+
+
+=== アウトバウンドインターネットアクセス
+
+Connector では、パブリッククラウド環境内のリソースとプロセスを管理するためにアウトバウンドインターネットアクセスが必要です。
+
+[cols="2*"]
+|===
+| エンドポイント | 目的 
+
+
+| \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
+
+
+| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | Cloud Manager 内で SaaS の機能やサービスを提供できます。 
+
+
+| ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
+|===
+
+
+=== プロキシサーバ
+
+すべての送信インターネットトラフィックにHTTPプロキシを導入する必要がある場合は、HTTPプロキシに関する次の情報を取得します。
+
+* IP アドレス
+* クレデンシャル
+* HTTPS証明書
+
+
+
+
+=== セキュリティグループ
+
+コネクタへの着信トラフィックは、コネクタを起動した場合や、コネクタがAutoSupport メッセージのプロキシとして使用されている場合を除き、受信トラフィックはありません。へのアクセスは、 HTTP および HTTPS を使用して提供されます link:concept-connectors.html#the-local-user-interface["ローカル UI"]は、まれな状況で使用します。SSH が必要になるのは、トラブルシューティングのためにホストに接続する必要がある場合のみです。
 
 
 

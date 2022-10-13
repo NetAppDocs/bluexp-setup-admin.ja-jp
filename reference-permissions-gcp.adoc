@@ -209,7 +209,13 @@ includedPermissions:
 | - compute.instances.setServiceAccount - iam.serviceAccounts.actAs - iam.serviceAccounts.getIamPolicy - iam.serviceAccounts.list - storage.objects-get -storage.objectlist | Cloud Volumes ONTAP インスタンスにサービスアカウントを設定します。このサービスアカウントは、 Google Cloud Storage バケットへのデータ階層化の権限を提供します。 
 
 
-| -compute.address.listCompute.backendServices. create -compute.networks.updatePolicy -compute.regionBackendServices.create -compute.regionBackendServices.get -compute.regionBackendServices.list | をクリックしてください。 
+| -compute-addresslist | HAペアを導入する際にリージョン内のアドレスを取得する。 
+
+
+| -compute.backendServices.create-compute.regionBackendServices. create-compute.regionBackendServices.get-compute.regionBackendServices.list | HAペアでトラフィックを分散するためのバックエンドサービスを設定するには、次の手順を実行します。 
+
+
+| - compute.networks.updatePolicy | HAペアのVPCおよびサブネットにファイアウォールルールを適用する。 
 
 
 | - compute.subnetworks.us e-compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | クラウドデータの意味を有効にするため。 
