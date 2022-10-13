@@ -38,13 +38,16 @@ Cloud Manager でライセンスキーをアップロードし、購入した期
 
 == NSS アカウントを追加します
 
-サポートダッシュボードを使用すると、すべてのネットアップサポートサイトのアカウントを 1 箇所から追加および管理できます。
+サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、Cloud Managerで使用できます。
+
+* お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。
+* パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加できますが、お客様レベルのアカウントと一緒に追加することはできません。
+
 
 .手順
-. ネットアップサポートサイトのアカウントがない場合は、 https://register.netapp.com/register/start["1 名で登録します"^]。
 . Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
 +
-image:screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
 . [*NSS Management] > [Add NSS Account*] をクリックします。
 . メッセージが表示されたら、 [* Continue （続行） ] をクリックして Microsoft ログインページにリダイレクトします。
@@ -53,19 +56,15 @@ image:screenshot-help-support.png["[ ヘルプ ] メニューのスクリーン�
 
 . ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
 +
-Cloud Manager で NSS アカウントを使用することができます。
+これらの操作を実行すると、Cloud ManagerはNSSアカウントを使用して、ライセンスのダウンロード、ソフトウェアアップグレードの検証、以降のサポートの登録などを実行できます。
 
 +
-アカウントに関する次の要件に注意してください。
+次の点に注意してください。
 
 +
 ** お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。
-** ノードベースの BYOL システムを導入する場合は、次の点に注意してください。
-+
-*** BYOL システムのシリアル番号にアクセスする権限がアカウントに必要です。
-*** セキュアな BYOL サブスクリプションを購入した場合は、セキュアな NSS アカウントが必要です。
-
-
+** ログインに成功すると、ネットアップはNSSのユーザ名を保存します。これはシステムで生成されたIDで、Eメールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。
+** ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。このオプションを使用すると、再度ログインするように求められます。
 
 
 
