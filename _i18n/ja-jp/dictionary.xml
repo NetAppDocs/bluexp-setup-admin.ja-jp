@@ -1297,7 +1297,6 @@
   <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
   <block id="379f39ccee41ac65b6cdfb0734a7098c" category="list-text">4 コアまたは 4 個の vCPU</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
-  <block id="752a423b7896d2c8176434adcd527e26" category="list-text">16 GB</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">サポートされているオペレーティングシステム</block>
   <block id="17095cfe60ed8524003ea5bde611c4ea" category="list-text">CentOS 7.6</block>
   <block id="b0a4a3d9e04daf57d04de7ad03004279" category="list-text">CentOS 7.7</block>
@@ -2580,7 +2579,6 @@
   <block id="cc7175a084ebd6e004cb2c751c162569" category="paragraph">NetApp Support Site アカウントを作成したら、Cloud Managerに移動してこのNSSアカウントを追加して以降の登録を行うことができます。</block>
   <block id="b2066702e3e6316940ded0c6aa30980d" category="list-text">Cloud Managerにログインしたら、Cloud Managerアカウント管理者がクラウドプロバイダまたはオンプレミスネットワークに_ Connector _を導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。Cloud Managerのすべてのサービスと機能ではなく、ほとんどの場合はコネクタが必要です。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
   <block id="7608a60c77d3b58b2fe8cdc80a69c915" category="admonition">アウトバウンドのインターネットアクセスが利用できない環境で操作している場合は、その環境にConnectorソフトウェアをインストールし、コネクタで使用できるローカルユーザインターフェイスにアクセスできます。 <block ref="c5bcec7879e3189e4c7a5fdbd8b19a5b" category="inline-link-macro-rx"></block>。</block>
-  <block id="398448ac9e129f38d5f9d9b9e4710793" category="paragraph">たとえば、コネクタは、Cloud Volumes ONTAP の健常性と運用の鍵となるコンポーネントです。コネクタの電源がオフの場合、 Cloud Volumes ONTAP PAYGO システムは、コネクタとの通信を 14 日以上失った後にシャットダウンします。</block>
   <block id="b46003b26b49cd1b627ec1666586013e" category="summary">行政機関で運用している場合は、クラウドプロバイダのマーケットプレイスからConnectorを導入するか、手動でインストールする必要があります。Connectorは、Cloud ManagerのSaaS Webサイトからは政府機関のリージョンに導入できません。</block>
   <block id="e329219d5ceb07040d4a92f76918e18c" category="doc">政府機関リージョンでコネクタを作成します</block>
   <block id="269732fe326fedbab2007fcb7c8f5090" category="paragraph">政府機関で運用している場合は、クラウドプロバイダのマーケットプレイスからConnectorを導入するか、既存のLinuxホストにConnectorソフトウェアを手動でインストールする必要があります。Connectorは、Cloud ManagerのSaaS Webサイトからは政府機関のリージョンに導入できません。</block>
@@ -2619,4 +2617,7 @@
   <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、Cloud Managerで使用できます。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。</block>
   <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加できますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
+  <block id="6c73104e218372ccda6dc2d58fda524d" category="paragraph">たとえば、コネクタは、Cloud Volumes ONTAP の健常性と運用の鍵となるコンポーネントです。コネクタの電源がオフの場合は、Cloud Volumes ONTAP PAYGOシステムと容量ベースのBYOLシステムは、コネクタとの通信を14日以上切断したあとでシャットダウンします。これは、コネクタがシステムのライセンスを毎日更新するためです。</block>
+  <block id="b9c53fca7bb84d0455a2b4768b130e38" category="admonition">Cloud Volumes ONTAP システムにノードベースのBYOLライセンスがある場合は、ライセンスがCloud Volumes ONTAP システムにインストールされているため、14日後もシステムは実行されたままになります。</block>
+  <block id="2538b2df52d923f09592be3b38238322" category="list-text">14 GB</block>
 </blocks>
