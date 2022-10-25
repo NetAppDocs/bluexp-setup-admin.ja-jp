@@ -2104,7 +2104,6 @@
   <block id="1da5b30af8a0c5d1ce771dde6d9be98e" category="paragraph"><block ref="1da5b30af8a0c5d1ce771dde6d9be98e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="991b7c6e5c5e3b71cf64a28ea679cff0" category="paragraph"><block ref="8b6b603d70c42ac6b5c1db56412efc72" category="inline-link-rx"></block>。</block>
   <block id="87d47630996394fbe848adac841d4925" category="paragraph">通知には、Cloud Managerで開始した処理の進捗状況が追跡されるため、処理が成功したかどうかを確認できます。現在のログインセッションで開始した多くのCloud Manager処理のステータスを表示できます。現時点では、すべてのサービスが通知センターに情報を報告するわけではありません。</block>
-  <block id="e8bcd4ad549fa51ff8495440daac2515" category="paragraph">*注意：* Connectorがインターネットにアクセスできないサイトにインストールされている場合は、電子メール通知の送信はサポートされていません。</block>
   <block id="5d85fadabc5fc8c195c36c4e3f0560e1" category="list-text">Cloud Managerのメニューバーで、* Settings &gt; Timeline *をクリックします。</block>
   <block id="4dc69c94d3a012316bf202425be2931b" category="paragraph">Cloud Manager から Connector を導入する場合は、 Connector 仮想マシンを導入する権限を持つ Azure アカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます <block ref="21b574a2506cebaac25d928c2c71e30c" category="inline-link-macro-rx"></block>。</block>
   <block id="68eee87acea7aba9406b2232110c9ef1" category="paragraph">Cloud Manager からコネクタを導入する場合は、 IAM ロールの ARN または IAM ユーザのアクセスキーを指定する必要があります。使用する認証方式に、 Connector インスタンスを AWS に導入するための必要な権限がある必要があります。必要な権限は、に表示されます <block ref="44a7d63a6eb2c2f6422e9cdaac125624" category="inline-link-macro-rx"></block>。</block>
@@ -2620,4 +2619,6 @@
   <block id="6c73104e218372ccda6dc2d58fda524d" category="paragraph">たとえば、コネクタは、Cloud Volumes ONTAP の健常性と運用の鍵となるコンポーネントです。コネクタの電源がオフの場合は、Cloud Volumes ONTAP PAYGOシステムと容量ベースのBYOLシステムは、コネクタとの通信を14日以上切断したあとでシャットダウンします。これは、コネクタがシステムのライセンスを毎日更新するためです。</block>
   <block id="b9c53fca7bb84d0455a2b4768b130e38" category="admonition">Cloud Volumes ONTAP システムにノードベースのBYOLライセンスがある場合は、ライセンスがCloud Volumes ONTAP システムにインストールされているため、14日後もシステムは実行されたままになります。</block>
   <block id="2538b2df52d923f09592be3b38238322" category="list-text">14 GB</block>
+  <block id="ee684612f76fd9e6afd18a46554f2ede" category="list-text">現時点では、Cloud Sync のみがEメールで通知を送信しています。サービスは今後のリリースで追加される予定です。</block>
+  <block id="5fd245f2aeee830efb92d081af6a0e22" category="list-text">Connectorがインターネットにアクセスできないサイトにインストールされている場合は、Eメール通知の送信はサポートされません。</block>
 </blocks>
