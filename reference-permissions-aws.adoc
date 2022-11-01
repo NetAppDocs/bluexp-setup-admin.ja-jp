@@ -343,7 +343,7 @@ AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnec
         "ec2:DescribeRegions",
         "eks:ListClusters",
         "eks:DescribeCluster",
-		    "iam:GetInstanceProfiles"
+        "iam:GetInstanceProfile"
       ],
       "Resource": "*"
     },
