@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: Cloud Manager の管理機能に関する新機能について、ネットアップのアカウント、コネクタ、クラウドプロバイダのクレデンシャルなどを確認できます。 
+summary: BlueXP（旧称Cloud Manager）管理機能の新機能であるネットアップのアカウント、コネクタ、クラウドプロバイダのクレデンシャルなどについて説明します。 
 ---
 = 新機能
 :hardbreaks:
@@ -14,7 +14,13 @@ summary: Cloud Manager の管理機能に関する新機能について、ネッ
 
 
 [role="lead"]
-Cloud Manager の管理機能の新機能であるネットアップのアカウント、コネクタ、クラウドプロバイダのクレデンシャルなどについて説明します。
+BlueXP（旧称Cloud Manager）管理機能の新機能であるネットアップのアカウント、コネクタ、クラウドプロバイダのクレデンシャルなどについて説明します。
+
+
+
+== 2022年11月1日
+
+アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["NSS アカウントを管理する方法について説明します"^]
 
 
 

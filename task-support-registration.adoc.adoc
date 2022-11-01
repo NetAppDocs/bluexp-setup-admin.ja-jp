@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-support-registration.html 
 keywords: support registration, register for support, support, nss account, add nss account, 
-summary: ネットアップテクニカルサポートでサポートケースをオープンするには、事前に Cloud Manager にネットアップサポートサイトのアカウントを追加し、サポートに登録しておく必要があります。 
+summary: ネットアップテクニカルサポートでサポートケースをオープンするには、まずNetApp Support Site アカウントをBlueXPに追加し、サポートに登録する必要があります。 
 ---
 = サポートに登録します
 :allow-uri-read: 
@@ -10,7 +10,7 @@ summary: ネットアップテクニカルサポートでサポートケース�
 :imagesdir: ../media/
 
 
-ネットアップテクニカルサポートでサポートケースをオープンするには、NetApp Support Site （NSS）アカウントをCloud Managerに追加し、サポートに登録する必要があります。
+ネットアップテクニカルサポートでサポートケースをオープンするには、まずNetApp Support Site （NSS）アカウントをBlueXPに追加し、サポートに登録する必要があります。
 
 
 
@@ -18,30 +18,30 @@ summary: ネットアップテクニカルサポートでサポートケース�
 
 サポート資格を有効にする登録には、次の2つの形式があります。
 
-* Cloud ManagerアカウントIDサポートサブスクリプションを登録します（Cloud Managerのサポートリソースのページにある20桁の960xxxxxxxxxシリアル番号）。
+* BlueXPアカウントIDサポートサブスクリプションの登録(BlueXPの[サポートリソース]ページにある20桁の960xxxxxxxxxシリアル番号)。
 +
-これは、Cloud Manager内のすべてのサービスの単一のサポートサブスクリプションIDとして機能します。Cloud Managerのアカウントレベルのサポートサブスクリプションがそれぞれ登録されている必要があります。
+これは、BlueXP内のすべてのサービスのシングルサポートサブスクリプションIDとして機能します。各BlueXPアカウントレベルのサポート契約が登録されている必要があります。
 
 * クラウドプロバイダのマーケットプレイスでのサブスクリプションに関連付けられているCloud Volumes ONTAP のシリアル番号を登録している（909201xxxxxxxxのシリアル番号）。
 +
-これらのシリアル番号は、一般にPAY_GOと呼ばれ、Cloud Volumes ONTAP の導入時にCloud Managerによって生成されます。
+これらのシリアル番号は、通常PAY_GOシリアル番号と呼ばれ、Cloud Volumes ONTAP の導入時にBlueXPによって生成されます。
 
 
 
-両方のタイプのシリアル番号を登録することで、サポートチケットの発行、自動ケース生成、Active IQ などの機能を利用できます。
+両方のタイプのシリアル番号を登録することで、サポートチケットのオープンやケースの自動生成などの機能を利用できます。
 
 登録方法は、新規のお客様か既存のお客様かパートナーかによって異なります。
 
 * 既存のお客様またはパートナー
 +
-ネットアップの既存のお客様またはパートナー様は、NetApp Support Site （NSS）SSOアカウントを使用して上記の登録を実行することができます。サポートダッシュボードには、Cloud Managerの* NSS Management *ページでNSSアカウントを追加することができます。NSSアカウントを追加すると、Cloud Managerで自動的にこれらのシリアル番号が登録されます。
+ネットアップの既存のお客様またはパートナー様は、NetApp Support Site （NSS）SSOアカウントを使用して上記の登録を実行することができます。サポートダッシュボードでは、BlueXPには、NSSアカウントを追加できる*NSS Management*ページがあります。NSSアカウントを追加すると、これらのシリアル番号が自動的に登録されます。
 
 +
- an NSS account to Cloud Manager,NSSアカウントを追加する方法について説明します。
+ an NSS account to BlueXP,NSSアカウントを追加する方法について説明します。
 
 * 初めて導入する場合は
 +
-ネットアップ製品を初めてご利用になる場合は、ネットアップのサポート登録サイトで、Cloud Managerアカウントのシリアル番号の登録を1回だけ完了してください。この登録を完了して新しいNSSアカウントを作成したら、Cloud Managerのこのアカウントを使用して自動で登録することができます。
+ネットアップを初めてご利用になる場合は、ネットアップのサポート登録サイトで、BlueXPアカウントのシリアル番号の登録を1回だけ完了する必要があります。この登録を完了し、新しいNSSアカウントを作成したら、BlueXPでこのアカウントを使用して自動登録を行うことができます。
 
 +
  with NetApp,ネットアップへの登録方法をご確認ください。
@@ -50,7 +50,7 @@ summary: ネットアップテクニカルサポートでサポートケース�
 
 
 
-== Cloud ManagerにNSSアカウントを追加します
+== NSSアカウントをBlueXPに追加します
 
 サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、Cloud Managerで使用できます。
 
@@ -59,7 +59,7 @@ summary: ネットアップテクニカルサポートでサポートケース�
 
 
 .手順
-. Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
+. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
@@ -70,7 +70,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 . ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
 +
-これらの操作を実行すると、Cloud ManagerはNSSアカウントを使用して、ライセンスのダウンロード、ソフトウェアアップグレードの検証、以降のサポートの登録などを実行できます。
+これらのアクションにより、BlueXPはライセンスのダウンロード、ソフトウェアのアップグレード検証、および将来のサポート登録などの目的でNSSアカウントを使用できます。
 
 +
 次の点に注意してください。
@@ -93,14 +93,14 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 === NSSアカウントをお持ちの既存のお客様
 
-NSSアカウントをお持ちのネットアップのお客様は、Cloud Managerからサポートに登録するだけで済みます。
+NSSアカウントをお持ちのネットアップのお客様は、BlueXPからサポートに登録するだけで済みます。
 
 .手順
-. Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
+. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
-. NSSアカウントをCloud Managerに追加していない場合は、
+. NSSアカウントをまだ追加していない場合は、BlueXPに追加します。
 . [*リソース]ページで、[*サポートに登録*]をクリックします。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-register-support.png["アカウントのシリアル番号と[サポートに登録]オプションを示すスクリーンショット"]
@@ -117,7 +117,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 . を実行してNetApp Support Site アカウントを作成します https://mysupport.netapp.com/site/user/registration["NetApp Support Site ユーザー登録フォーム"^]
 +
 .. 適切なユーザレベルを選択してください。通常は*ネットアップのお客様/エンドユーザ*がこれに該当します。
-.. シリアル番号のフィールドには、上記のCloud Managerアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。
+.. 必ず、上記のシリアル番号フィールドに使用されているBlueXPアカウントのシリアル番号(960xxxx)をコピーしてください。これにより、アカウント処理が高速化されます。
 
 
 
@@ -129,7 +129,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 ネットアップ製品を初めてご利用になり、NSSアカウントをお持ちでない場合は、以下の手順に従ってください。
 
 .手順
-. Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
+. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
@@ -158,4 +158,4 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 このプロセスについては、ネットアップからご連絡ください。これは、新規ユーザ向けの1回限りのオンボーディング演習です。
 
-NetApp Support Site アカウントを作成したら、Cloud Managerに移動してこのNSSアカウントを追加して以降の登録を行うことができます。
+NetApp Support Site アカウントを作成したら、BlueXPに移動して、このNSSアカウントを追加して今後の登録を行うことができます。

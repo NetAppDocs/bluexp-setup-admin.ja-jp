@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-checklist-cm.html 
 keywords: networking overview, networking requirements, endpoints, urls, get started, getting started, deployment 
-summary: このチェックリストを使用して、 Connector からアウトバウンドのインターネットアクセスが設定されている一般的な環境で Cloud Manager を使用するために必要な作業を把握してください。 
+summary: このチェックリストを使用して、Connectorでアウトバウンドインターネットアクセスを使用する一般的な環境でBlueXPを使用するために必要な作業を把握してください。 
 ---
 = はじめにチェックリスト
 :hardbreaks:
@@ -14,10 +14,10 @@ summary: このチェックリストを使用して、 Connector からアウト
 
 
 [role="lead"]
-このチェックリストを使用して、 Connector からアウトバウンドのインターネットアクセスが設定されている一般的な環境で Cloud Manager を使用するために必要な作業を把握してください。
+このチェックリストを使用して、Connectorでアウトバウンドインターネットアクセスを使用する一般的な環境でBlueXPを使用するために必要な作業を把握してください。
 
-NetApp Cloud Central へのログイン:: にサインアップする必要があります https://cloud.netapp.com["NetApp Cloud Central"^] これで、 Cloud Manager などのクラウドサービスにアクセスできるようになります。
-Web ブラウザから複数のエンドポイントへのネットワークアクセス:: Cloud Manager のユーザインターフェイスに Web ブラウザからアクセスできます。Cloud Manager ユーザインターフェイスを使用する際に、複数のエンドポイントにアクセスしてデータ管理タスクを実行します。Web ブラウザを実行するマシンは、次のエンドポイントに接続する必要があります。
+ログイン:: BlueXPにログインするには、NetApp Support Site のクレデンシャルを使用するか、Eメールとパスワードを使用してネットアップクラウドへのログインにサインアップします。 link:task-logging-in.html["ログインの詳細については、こちらをご覧ください"]。
+Web ブラウザから複数のエンドポイントへのネットワークアクセス:: BlueXPのユーザーインターフェイスには、Webブラウザからアクセスできます。BlueXPユーザーインターフェイスを使用すると、複数のエンドポイントにアクセスしてデータ管理タスクを実行できます。Web ブラウザを実行するマシンは、次のエンドポイントに接続する必要があります。
 +
 --
 [cols="2*"]
@@ -38,32 +38,32 @@ AWS サービス（ amazonaws.com ）：
 * セキュリティトークンサービス（ STS ）
 * シンプルなストレージサービス（ S3 ）
 
-| AWS の Cloud Manager からコネクタを導入する場合に必要です。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、 AWS のマニュアルを参照してください。"^] 
+| BlueXPからAWSにコネクタを導入する場合に必要です。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、 AWS のマニュアルを参照してください。"^] 
 
 
-| https://management.azure.com https://login.microsoftonline.com | ほとんどの Azure リージョンで Cloud Manager からコネクタを導入する場合に必要です。 
+| https://management.azure.com https://login.microsoftonline.com | ほとんどのAzureリージョンでBlueXPからコネクタを導入する場合に必要です。 
 
 
-| https://management.microSoftazure.de https://login.microsoftonline.de | Azure ドイツのリージョンで Cloud Manager から Connector を導入する場合は必須です。 
+| https://management.microSoftazure.de https://login.microsoftonline.de | Azureドイツ地域でBlueXPからコネクタを導入する場合に必要です。 
 
 
-| https://management.usgovcloudapi.net/ https://login.microsoftonline.com | Azure US Government リージョンの Cloud Manager からコネクタを導入するために必要です。 
+| https://management.usgovcloudapi.net/ https://login.microsoftonline.com | Azure US GovリージョンでBlueXPからコネクタを導入する場合に必要です。 
 
 
-| \ https://www.googleapis.com | Google Cloud の Cloud Manager からコネクタを導入する場合に必要です。 
+| \ https://www.googleapis.com | Google CloudでBlueXPからConnectorを展開するために必要です。 
 
 
-| \ https://signin.b2c.netapp.com | ネットアップサポートサイト（ NSS ）のクレデンシャルを更新するか、 Cloud Manager に新しい NSS クレデンシャルを追加する必要があります。 
+| \ https://signin.b2c.netapp.com | NetApp Support Site (NSS)の資格情報を更新するか、新しいNSS資格情報をBlueXPに追加する必要があります。 
 
 
-| ¥ https://netapp-cloud-account.auth0.com ¥ https://cdn.auth0.com ¥ https://services.cloud.netapp.com | Web ブラウザはこれらのエンドポイントに接続し、 NetApp Cloud Central を介してユーザ認証を一元化します。 
+| ¥ https://netapp-cloud-account.auth0.com ¥ https://cdn.auth0.com ¥ https://services.cloud.netapp.com | Webブラウザはこれらのエンドポイントに接続して、BlueXPを介した集中型ユーザ認証を行います。 
 
 
 | \ https://widget.intercom.io | 製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。 
 
 
 | コネクタの IP アドレス  a| 
-ほとんどの場合、 Cloud Manager は SaaS UI で処理しますが link:concept-connectors.html#the-local-user-interface["ローカル UI を使用する場合は"]Web ブラウザからホストの IP アドレスを入力する必要があります。
+ほとんどの場合、SaaS UIからBlueXPを使用する必要がありますが link:concept-connectors.html#the-local-user-interface["ローカル UI を使用する場合は"]Web ブラウザからホストの IP アドレスを入力する必要があります。
 
 クラウドプロバイダへの接続に応じて、ホストに割り当てられたプライベート IP またはパブリック IP を使用します。
 
@@ -75,7 +75,7 @@ AWS サービス（ amazonaws.com ）：
 
 |===
 --
-コネクタのアウトバウンドネットワーク:: Cloud Managerにログインしたら、Cloud Managerアカウント管理者がクラウドプロバイダまたはオンプレミスネットワークに_ Connector _を導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。Cloud Managerのすべてのサービスと機能ではなく、ほとんどの場合はコネクタが必要です。 link:concept-connectors.html["コネクターの詳細とその仕組みについては、こちらをご覧ください"]。
+コネクタのアウトバウンドネットワーク:: BlueXPにログインした後、BlueXPアカウント管理者は、クラウドプロバイダまたは自社運用ネットワークに_Connector_inを導入する必要があります。Connectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。コネクタはほとんどの場合必要ですが、BlueXPのすべてのサービスと機能には必要ありません。 link:concept-connectors.html["コネクターの詳細とその仕組みについては、こちらをご覧ください"]。
 +
 --
 * コネクタを配置するネットワークの場所には、アウトバウンドのインターネット接続が必要です。
@@ -91,12 +91,12 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 | \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
 
 
-| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | Cloud Manager 内で SaaS の機能やサービスを提供できます。 
+| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | BlueXPでSaaSの機能とサービスを提供するため。 
 
 
 | ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
 |===
-* Connector を手動でインストールする場合（ Cloud Manager インターフェイスから直接インストールしない場合）は、インストールプロセスで Connector のインストーラが次のエンドポイントにアクセスする必要があります。
+* コネクタを手動でLinuxホストにインストールする場合（BlueXPインターフェイスから直接インストールしない場合）、Connectorのインストーラは、インストールプロセス中に次のエンドポイントにアクセスする必要があります。
 +
 ** https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 ** https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
@@ -113,7 +113,7 @@ HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提�
 
 
 --
-クラウドプロバイダの権限:: Cloud Manager から直接クラウドプロバイダに Connector を導入するための権限を持つアカウントが必要です。
+クラウドプロバイダの権限:: BlueXPから直接クラウドプロバイダにConnectorを導入するための権限を持つアカウントが必要です。
 +
 --
 
@@ -127,14 +127,14 @@ NOTE: コネクタを作成するには、別の方法があります。から�
 | AWS  a| 
 . AWS で IAM ポリシーを作成するために必要な権限を含む JSON ファイルを使用します。
 . IAM ロールまたは IAM ユーザにポリシーを関連付けます。
-. コネクタを作成するときは、 Cloud Manager に IAM ロールの ARN 、または IAM ユーザの AWS アクセスキーとシークレットキーを提供します。
+. コネクタを作成するときは、IAMロールのARN、またはIAMユーザのAWSアクセスキーとシークレットキーをBlueXPに提供します。
 
 | link:task-creating-connectors-aws.html["詳細な手順については、ここをクリックしてください"]。 
 
 
 | Azure  a| 
 . Azure でカスタムロールを作成するには、必要な権限が含まれた JSON ファイルを使用します。
-. Cloud Manager からコネクタを作成するユーザにロールを割り当てます。
+. BlueXPからコネクタを作成するユーザーにロールを割り当てます
 . Connector を作成するときは、必要な権限（ Microsoft が所有およびホストしているログインプロンプト）を持つ Microsoft アカウントでログインします。
 
 | link:task-creating-connectors-azure.html["詳細な手順については、ここをクリックしてください"]。 
@@ -142,7 +142,7 @@ NOTE: コネクタを作成するには、別の方法があります。から�
 
 | Google Cloud  a| 
 . Google Cloud でカスタムロールを作成するために必要な権限を含む YAML ファイルを使用します。
-. Cloud Manager からコネクタを作成するユーザにそのロールを割り当てます。
+. このロールをBlueXPからコネクタを作成するユーザーに割り当てます
 . Cloud Volumes ONTAP を使用する場合は、必要な権限を持つサービスアカウントを設定します。
 . Google Cloud API を有効にします
 . Connector を作成するときに、必要な権限を持つ Google アカウントでログインします（ログインプロンプトは Google が所有およびホストします）。
@@ -150,7 +150,7 @@ NOTE: コネクタを作成するには、別の方法があります。から�
 | link:task-creating-connectors-gcp.html["詳細な手順については、ここをクリックしてください"]。 
 |===
 --
-個々のサービスのネットワーク:: セットアップが完了したら、 Cloud Manager から提供されるサービスを使い始めることができます。各サービスには独自のネットワーク要件があります。詳細については、次のページを参照してください。
+個々のサービスのネットワーク:: セットアップが完了したら、BlueXPのサービスを使用する準備ができました。各サービスには独自のネットワーク要件があります。詳細については、次のページを参照してください。
 +
 --
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-aws.html["Cloud Volumes ONTAP for AWS"^]

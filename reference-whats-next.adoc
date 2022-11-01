@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-whats-next.html 
 keywords: get started, create working environments, manage settings 
-summary: Cloud Manager にログインしてセットアップしたので、ユーザは作業環境の作成と検出を開始できます。 
+summary: BlueXPにログインして設定したので、ユーザーは作業環境の作成と検出を開始できます。 
 ---
 = 次の手順
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager にログインしてセットアップしたので、ユ
 
 
 [role="lead"]
-Cloud Manager にログインしてセットアップしたので、ユーザは作業環境の作成と検出を開始できます。
+BlueXPにログインして設定したので、ユーザーは作業環境の作成と検出を開始できます。
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["Cloud Volumes ONTAP for AWS の利用を開始しましょう"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["Cloud Volumes ONTAP for Azure の利用を開始しましょう"^]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-my-opportunities.html 
 keywords: discover, discovering fsx, discover fsx, discovering, my opportunities, opportunities 
-summary: 'キャンバスの[マイオポチュニティ]タブでは、Cloud Managerに追加できる既存のリソースを一元的に検出し、ハイブリッドマルチクラウド全体で一貫したデータサービスと運用を実現します。' 
+summary: 'キャンバスの[マイオポチュニティ]タブでは、既存のリソースを一元的に検出できます。このリソースをBlueXPに追加することで、ハイブリッドマルチクラウド全体で一貫したデータサービスと運用を実現できます。' 
 ---
 = 私の機会
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'キャンバスの[マイオポチュニティ]タブでは、Cloud Ma
 
 
 [role="lead"]
-Canvasでは、* My Opportunities *タブを使用して、ハイブリッドマルチクラウド全体で一貫したデータサービスと運用を実現するために、Cloud Managerに追加できる既存のリソースを一元的に検出できます。
+キャンバスでは、「My Opportunities *」タブを使用して、ハイブリッドマルチクラウド全体で一貫したデータサービスと運用を実現するために、BlueXPに追加できる既存のリソースを一元的に検出できます。
 
 現在、My Opportunitiesを使用すると、AWSアカウント内のONTAP ファイルシステム用の既存のFSXを検出できます。
 

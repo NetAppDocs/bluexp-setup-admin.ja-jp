@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-launching-azure-mktp.html 
 keywords: install, installation, installing, marketplace, azure, deploy, virtual machine, permissions, deploy connector in azure, install connector in azure 
-summary: Cloud Manager からコネクタを直接作成することを推奨しますが、必要に応じて Azure Marketplace からコネクタを起動できます。Connector の作成とセットアップが完了すると、新しい作業環境を作成するときに、 Cloud Manager によって自動的に Connector が使用されます。 
+summary: Azureの商業地域では、BlueXPからコネクタを直接作成することをお勧めしますが、必要に応じてAzure Marketplaceからコネクタを起動することもできます。Azure Governmentリージョンでは、BlueXP SaaS Webサイトから政府機関のリージョンにConnectorを導入することはできないため、次の選択肢としてAzure Marketplaceから導入することをお勧めします。 
 ---
 = Azure Marketplace からコネクタを作成します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager からコネクタを直接作成することを推奨し
 
 
 [role="lead"]
-Azureの商業地域では、Cloud Managerから直接コネクタを作成することを推奨しますが、必要に応じてAzure Marketplaceからコネクタを起動することもできます。Azure Governmentリージョンの場合、Cloud ManagerのSaaS Webサイトから政府機関のリージョンにConnectorを導入することはできないため、次はAzure Marketplaceから導入することをお勧めします。
+Azureの商業地域では、BlueXPからコネクタを直接作成することをお勧めしますが、必要に応じてAzure Marketplaceからコネクタを起動することもできます。Azure Governmentリージョンでは、BlueXP SaaS Webサイトから政府機関のリージョンにConnectorを導入することはできないため、次の選択肢としてAzure Marketplaceから導入することをお勧めします。
 
 
 TIP: ネットワーク内またはクラウド内の既存のLinuxホストにConnectorソフトウェアをダウンロードしてインストールすることもできます。 link:task-installing-linux.html["既存のLinuxホストにConnectorをインストールする方法について説明します"]。
@@ -38,7 +38,7 @@ Azure Marketplace のイメージを使用して Azure に Connector を導入�
 VM を設定する際には、次の点に注意してください。
 
 +
-** Cloud Manager は、 HDD または SSD ディスクのいずれかで最適なパフォーマンスを実現できます。
+** コネクタはHDDディスクまたはSSDディスクで最適に動作します。
 ** CPU と RAM の要件を満たす VM サイズを選択します。DS3 v2 を推奨します。
 +
 link:task-installing-linux.html["VM の要件を確認します"]。
@@ -69,7 +69,7 @@ link:concept-netapp-accounts.html["ネットアップアカウントについて
 
 .. システムの名前を入力します。
 +
-image:screenshot_set_up_cloud_manager.gif["Cloud Manager のセットアップ画面のスクリーンショット。ネットアップアカウントを選択してシステムに名前を付けることができます。"]
+image:screenshot_set_up_cloud_manager.gif["BlueXPのセットアップ画面のスクリーンショット。ネットアップアカウントを選択してシステムに名前を付けることができます。"]
 
 
 
@@ -77,9 +77,9 @@ image:screenshot_set_up_cloud_manager.gif["Cloud Manager のセットアップ�
 
 これで、 Connector のインストールとセットアップが完了しました。
 
-コネクタがAzureの商業地域にある場合は、Webブラウザを開き、に進みます https://cloudmanager.netapp.com[] をクリックして、Connector with Cloud Managerの使用を開始します。
+コネクタがAzureの商業地域にある場合は、Webブラウザを開き、に進みます https://cloudmanager.netapp.com[] BlueXPでコネクタの使用を開始します
 
-コネクタがAzure Governmentリージョンにある場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続することで、Cloud Managerを使用できます。 https://_ipaddress_[]
+コネクタがAzure Governmentリージョンにある場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続すると、BlueXPを使用できます。 https://_ipaddress_[]
 
 コネクタは政府機関に導入されているため、からはアクセスできません https://cloudmanager.netapp.com[]。
 
@@ -125,7 +125,7 @@ image:screenshot_azure_shell_upload.png["ファイルをアップロードする
 az role definition create --role-definition Policy_for_Setup_As_Service_Azure.json
 ----
 +
-これで、 Connector 仮想マシンに割り当てることができる Cloud Manager Operator というカスタムロールが作成されます。
+これで、Connector仮想マシンに割り当てることができるBlueXP Operatorというカスタムロールが作成されました。
 
 
 
@@ -135,10 +135,10 @@ az role definition create --role-definition Policy_for_Setup_As_Service_Azure.js
 +
 .. [ サブスクリプション ] サービスを開き、 Cloud Volumes ONTAP システムを展開するサブスクリプションを選択します。
 .. * アクセス制御（ IAM ） * > * 追加 * > * 役割の割り当ての追加 * をクリックします。
-.. [* 役割 ] タブで、 * Cloud Manager Operator * 役割を選択し、 * Next * をクリックします。
+.. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
 +
 
-NOTE: Cloud Manager Operatorは、Cloud Managerポリシーで指定されるデフォルトの名前です。ロールに別の名前を選択した場合は、代わりにその名前を選択します。
+NOTE: BlueXP Operatorは'BlueXPポリシーで指定されているデフォルト名ですロールに別の名前を選択した場合は、代わりにその名前を選択します。
 
 .. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
 +
@@ -154,7 +154,7 @@ NOTE: Cloud Manager Operatorは、Cloud Managerポリシーで指定されるデ
 
 
 
-Connector には、パブリッククラウド環境内のリソースとプロセスを管理するために必要な権限が付与されました。Cloud Manager は、新しい作業環境の作成時にこのコネクタを自動的に使用します。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
+Connector には、パブリッククラウド環境内のリソースとプロセスを管理するために必要な権限が付与されました。新しい作業環境を作成するときに、BlueXPではこのコネクタが自動的に使用されます。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
 
 Connectorを作成したのと同じAzureアカウントにAzure BLOBストレージがある場合は、Azure Blob作業環境がCanvasに自動的に表示されます。 link:task-viewing-azure-blob.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
 
@@ -162,7 +162,7 @@ Connectorを作成したのと同じAzureアカウントにAzure BLOBストレ�
 
 == AutoSupport メッセージのポート3128を開きます
 
-アウトバウンドのインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、Cloud Managerはコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を自動的に設定します。
+アウトバウンドインターネット接続が使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、BlueXPは自動的にコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を設定します。
 
 唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
 

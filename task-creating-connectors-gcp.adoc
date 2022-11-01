@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-creating-connectors-gcp.html 
 keywords: create connector in gcp, launch connector in gcp, deploy connector in gcp, gcp connector, connector gcp, connector permissions 
-summary: Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカウント管理者がコネクタを導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 
+summary: BlueXPのほとんどの機能を使用するには、コネクタを展開する必要があります。Connectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。 
 ---
-= Cloud Manager から Google Cloud でコネクタを作成します
+= BlueXPからGoogle CloudにConnectorを作成します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,14 @@ summary: Cloud Managerのほとんどの機能を使用するには、Cloud Mana
 
 
 [role="lead"]
-Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカウント管理者がコネクタを導入する必要があります。 link:concept-connectors.html["コネクタが必要になるタイミングを学習します"]。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。
+BlueXPのほとんどの機能を使用するには'BlueXPアカウント管理者が_Connector_を 配備する必要があります link:concept-connectors.html["コネクタが必要になるタイミングを学習します"]。Connectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。
 
-このページでは、Cloud ManagerからGoogle Cloudで直接コネクタを作成する方法について説明します。 link:concept-connectors.html#how-to-create-a-connector["コネクタを配置するその他の方法について説明します"]。
+このページでは、BlueXPからGoogle Cloudでコネクタを直接作成する方法について説明します。 link:concept-connectors.html#how-to-create-a-connector["コネクタを配置するその他の方法について説明します"]。
 
 これらの手順は、 Account Admin ロールを持つユーザが実行する必要があります。ワークスペース管理者はコネクタを作成できません。
 
 
-TIP: 最初の Cloud Volumes ONTAP 作業環境を作成する際、まだコネクタがない場合は、 Cloud Manager からコネクタの作成を求められます。
+TIP: 最初のCloud Volumes ONTAP 作業環境を作成するときに、まだコネクタがない場合はコネクタの作成を求めるメッセージが表示されます。
 
 
 
@@ -87,7 +87,7 @@ Connectorを展開する前に、Google Cloudアカウントに正しい権限�
 [source, yaml]
 ----
 title: Connector deployment policy
-description: Permissions for the user who deploys the Connector from Cloud Manager
+description: Permissions for the user who deploys the Connector from BlueXP
 stage: GA
 includedPermissions:
 - compute.disks.create
@@ -147,7 +147,7 @@ includedPermissions:
 - compute.instances.setServiceAccount
 - iam.serviceAccounts.list
 ----
-. Cloud Managerからコネクタを導入するユーザにカスタムロールを割り当てます。
+. BlueXPからConnectorを配備するユーザーにカスタムロールを割り当てます
 
 
 Google Cloudユーザに、Connectorの作成に必要な権限が付与されるようになりました。
@@ -165,7 +165,7 @@ Google Cloudでリソースを管理するために必要な権限をConnector�
 +
 [source, yaml]
 ----
-title: NetApp Cloud Manager
+title: NetApp BlueXP
 description: Permissions for the service account associated with the Connector instance.
 stage: GA
 includedPermissions:
@@ -263,7 +263,7 @@ includedPermissions:
 - storage.buckets.getIamPolicy
 ----
 . https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloudサービスアカウントを作成し、作成したカスタムロールを適用します"^]。
-. Cloud Volumes ONTAP を他のプロジェクトに導入する場合は、 https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["クラウドでサービスアカウントを追加してアクセスを許可します そのプロジェクトに対するマネージャの役割"^]。プロジェクトごとにこの手順を繰り返す必要があります。
+. Cloud Volumes ONTAP を他のプロジェクトに導入する場合は、 https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["BlueXPロールを持つサービスアカウントをそのプロジェクトに追加して、アクセスを許可します"^]。プロジェクトごとにこの手順を繰り返す必要があります。
 
 
 Connector VMのサービスアカウントが設定されます。
@@ -300,7 +300,7 @@ Connector VMのサービスアカウントが設定されます。
 
 | Cloud Volumes ONTAP サービスアカウント | カスタム | サービスプロジェクト  a| 
 * storagec.admin
-* メンバー： Cloud Manager サービスアカウント。 serviceAccount.user
+* メンバー：BlueXPサービスアカウントをserviceAccount.userとして登録します
 
 | 該当なし | （オプション）データ階層化と Cloud Backup に使用できます 
 
@@ -311,7 +311,7 @@ Connector VMのサービスアカウントが設定されます。
  a| 
 * compute.networkUser
 
-| 導入に代わってGoogle Cloud APIと対話します。Cloud Manager で共有ネットワークを使用できるようにします。 
+| 導入に代わってGoogle Cloud APIと対話します。BlueXPが共有ネットワークを使用できるようにします 
 
 
 | Google Compute Engine のデフォルトのサービスアカウント | Google Cloud | サービスプロジェクト  a| 
@@ -320,12 +320,12 @@ Connector VMのサービスアカウントが設定されます。
  a| 
 * compute.networkUser
 
-| 導入に代わってGoogle Cloudインスタンスとコンピューティングインフラストラクチャを導入します。Cloud Manager で共有ネットワークを使用できるようにします。 
+| 導入に代わってGoogle Cloudインスタンスとコンピューティングインフラストラクチャを導入します。BlueXPが共有ネットワークを使用できるようにします 
 |===
 注：
 
-. deploymentmanager. editor は、ファイアウォールルールを導入環境に渡しておらず、 Cloud Manager に作成を許可することを選択している場合にのみホストプロジェクトで必要です。ルールを指定しない場合、 Cloud Manager はホストプロジェクトに導入を作成し、 VPC0 ファイアウォールルールを適用します。
-. Firewall.create および firewall.delete が必要となるのは、ファイアウォールルールを導入環境に渡しず、 Cloud Manager で作成することを選択している場合だけです。これらの権限は、 Cloud Manager サービスアカウントの .yaml ファイルに格納されています。共有 VPC を使用して HA ペアを導入する場合は、これらの権限を使用して VPC1 、 2 、および 3 のファイアウォールルールが作成されます。他のすべての展開では、これらの権限は VPC0 のルールの作成にも使用されます。
+. deploymentmanager. editorは、ファイアウォール規則を配備に渡していない場合にのみホストプロジェクトで必要です。BlueXPで作成することを選択している場合にのみ必要です。ルールが指定されていない場合、ホストプロジェクトにVPC0ファイアウォールルールが含まれているデプロイメントがBlueXPによって作成されます。
+. ファイアウォールの作成とfirewall.deleteは、ファイアウォールルールを配布に渡しておらず、BlueXPで作成することを選択している場合にのみ必要です。これらの権限はBlueXPアカウント.yamlファイルにあります。共有 VPC を使用して HA ペアを導入する場合は、これらの権限を使用して VPC1 、 2 、および 3 のファイアウォールルールが作成されます。他のすべての展開では、これらの権限は VPC0 のルールの作成にも使用されます。
 . データ階層化の場合、階層化サービスアカウントは、プロジェクトレベルだけでなく、サービスアカウントに対して serviceAccount.user ロールを持つ必要があります。現在、プロジェクトレベルで serviceAccount.user を割り当てている場合、 getIAMPolicy でサービスアカウントを照会しても権限は表示されません。
 
 
@@ -357,7 +357,7 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 | \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
 
 
-| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | Cloud Manager 内で SaaS の機能やサービスを提供できます。 
+| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | BlueXPでSaaSの機能とサービスを提供するため。 
 
 
 | ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
@@ -407,11 +407,11 @@ Connector と Cloud Volumes ONTAP を導入するには、いくつかの API �
 
 == コネクタを作成します
 
-Cloud Manager ユーザインターフェイスから直接、または gcloud を使用して、 Google Cloud でコネクタを作成する。
+BlueXPユーザーインターフェイスまたはgcloudを使用して、Google Cloudでコネクターを直接作成します。
 
 [role="tabbed-block"]
 ====
-.クラウドマネージャ
+.BlueXP
 --
 . 最初の作業環境を作成する場合は、 * 作業環境の追加 * をクリックし、プロンプトに従います。それ以外の場合は、 [*connector*] ドロップダウンをクリックし、 [*Add connector*] を選択します。
 +
@@ -533,7 +533,7 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 
 --
 ====
-これで、 Connector のインストールとセットアップが完了しました。Cloud Manager は、新しい作業環境の作成時にこのコネクタを自動的に使用します。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
+これで、 Connector のインストールとセットアップが完了しました。新しい作業環境を作成するときに、BlueXPではこのコネクタが自動的に使用されます。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
 
 Connectorを作成したGoogle CloudアカウントにGoogle Cloud Storageバケットがある場合は、Google Cloud Storage作業環境がCanvasに自動的に表示されます。 link:task-viewing-gcp-storage.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
 
@@ -541,7 +541,7 @@ Connectorを作成したGoogle CloudアカウントにGoogle Cloud Storageバケ
 
 == AutoSupport メッセージのポート3128を開きます
 
-アウトバウンドのインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、Cloud Managerはコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を自動的に設定します。
+アウトバウンドインターネット接続が使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、BlueXPは自動的にコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を設定します。
 
 唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
 

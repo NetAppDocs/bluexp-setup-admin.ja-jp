@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-viewing-azure-blob.html 
 keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment 
-summary: Azureにコネクタをインストールすると、Cloud Managerは、コネクタがインストールされているAzureサブスクリプションにあるAzureストレージアカウントに関する情報を自動的に検出できます。Azure Blob作業環境がCanvasに追加され、この情報を表示できるようになりました。 
+summary: AzureにConnectorをインストールすると、コネクタがインストールされているAzureサブスクリプションにあるAzureストレージアカウントに関する情報がBlueXPによって自動的に検出されます。Azure Blob作業環境がCanvasに追加され、この情報を表示できるようになりました。 
 ---
 = Azure Blobアカウントの表示
 :hardbreaks:
@@ -14,12 +14,13 @@ summary: Azureにコネクタをインストールすると、Cloud Managerは�
 
 
 [role="lead"]
-Azureにコネクタをインストールすると、Cloud Managerは、コネクタがインストールされているAzureサブスクリプションにあるAzureストレージアカウントに関する情報を自動的に検出できます。Azure Blob作業環境がCanvasに追加され、この情報を表示できるようになりました。
+AzureにConnectorをインストールすると、コネクタがインストールされているAzureサブスクリプションにあるAzureストレージアカウントに関する情報がBlueXPによって自動的に検出されます。Azure Blob作業環境がCanvasに追加され、この情報を表示できるようになりました。
 
 Azureストレージアカウントに関する詳細を確認できます。これには、場所、リソースグループ、合計容量と使用済み容量などの情報が含まれます。これらのアカウントは、クラウドバックアップ、クラウド階層化、Cloud Sync の各処理のデスティネーションとして使用できます。
 
 .手順
 . link:task-creating-connectors-azure.html["コネクタを取り付ける"] Azureストレージアカウントを表示するAzureアカウント。
+. ナビゲーションメニューから、*ストレージ>キャンバス*を選択します。
 +
 Azure Blob作業環境は、しばらくすると自動的に確認できます。
 

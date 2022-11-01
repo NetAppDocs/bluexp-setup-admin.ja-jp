@@ -37,7 +37,7 @@ summary: コネクタのAWSセキュリティグループには、インバウ�
 | TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。  server for AutoSupport messages,Connectorのプロキシサーバの詳細については、こちらをご覧ください。 
 
 
-| TCP | 9060 | クラウドデータセンスとCloud Backupを政府機関のクラウド環境で有効にして使用できます。Cloud ManagerアカウントでSaaSインターフェイスを無効にした場合は、Cloud Backupでもこのポートが必要です。 
+| TCP | 9060 | クラウドデータセンスとCloud Backupを政府機関のクラウド環境で有効にして使用できます。このポートは、BlueXPアカウントでSaaSインターフェイスを無効にした場合にも、Cloud Backupに必要です。 
 |===
 
 
@@ -84,5 +84,5 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | TCP | 8088 | S3 へのバックアップ | S3 へのバックアップを API で呼び出します 
 
 
-| DNS | UDP | 53 | DNS | Cloud Manager による DNS 解決に使用されます 
+| DNS | UDP | 53 | DNS | BlueXPによるDNS解決に使用されます 
 |===

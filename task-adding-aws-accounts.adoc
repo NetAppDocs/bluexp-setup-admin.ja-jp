@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-aws-accounts.html 
 keywords: permissions, aws, policy, iam, iam role, role, granting, policy, iam policy, iam user, access keys, arn, cloud provider accounts, aws, cloud provider profile, json, iam, credentials, adding credentials, add credentials 
-summary: AWS クレデンシャルを追加および管理して、 Cloud Manager が AWS アカウントでクラウドリソースを導入および管理するために必要な権限を付与されるようにします。複数の AWS サブスクリプションを管理する場合は、それぞれのサブスクリプションをのクレデンシャルページから別々の AWS クレデンシャルに割り当てることができます。 
+summary: AWSクレデンシャルを追加および管理して、BlueXPがAWSアカウントでクラウドリソースを導入および管理するために必要な権限を持つようにします。複数の AWS サブスクリプションを管理する場合は、それぞれのサブスクリプションをのクレデンシャルページから別々の AWS クレデンシャルに割り当てることができます。 
 ---
-= Cloud Manager の AWS クレデンシャルとサブスクリプションを管理します
+= AWSのクレデンシャルとBlueXPのサブスクリプションを管理します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,25 +14,25 @@ summary: AWS クレデンシャルを追加および管理して、 Cloud Manage
 
 
 [role="lead"]
-AWS クレデンシャルを追加および管理して、 Cloud Manager が AWS アカウントでクラウドリソースを導入および管理するために必要な権限を付与されるようにします。複数の AWS サブスクリプションを管理する場合は、それぞれのサブスクリプションをのクレデンシャルページから別々の AWS クレデンシャルに割り当てることができます。
+AWSクレデンシャルを追加および管理して、BlueXPがAWSアカウントでクラウドリソースを導入および管理するために必要な権限を持つようにします。複数の AWS サブスクリプションを管理する場合は、それぞれのサブスクリプションをのクレデンシャルページから別々の AWS クレデンシャルに割り当てることができます。
 
 
 
 == 概要
 
-AWS クレデンシャルは、既存のコネクタに追加するか、 Cloud Manager に直接追加できます。
+AWSクレデンシャルを既存のコネクタに追加するか、またはBlueXPに直接追加できます。
 
 * 既存のコネクタにAWSクレデンシャルを追加する
 +
 既存のコネクタに新しい AWS クレデンシャルを追加すると、同じコネクタを使用して別の AWS アカウントに Cloud Volumes ONTAP を導入できるようになります。  additional credentials to a Connector,AWS クレデンシャルをコネクタに追加する方法について説明します。
 
-* Cloud ManagerにAWSクレデンシャルを追加してコネクタを作成します
+* BlueXPに、コネクタを作成するためのAWSクレデンシャルを追加します
 +
-Cloud Managerに新しいAWSクレデンシャルを追加すると、Connectorの作成に必要な権限がCloud Managerに付与されます。  credentials to Cloud Manager for creating a Connector,Cloud Manager に AWS クレデンシャルを追加する方法について説明します。
+新しいAWSクレデンシャルをBlueXPに追加すると、コネクタの作成に必要な権限がBlueXPに付与されます。  credentials to BlueXP for creating a Connector,AWSクレデンシャルをBlueXPに追加する方法について説明します。
 
-* Cloud Manager for FSX for ONTAP にAWSクレデンシャルを追加します
+* BlueXP for FSX for ONTAP にAWSクレデンシャルを追加します
 +
-Cloud Managerに新しいAWSクレデンシャルを追加すると、ONTAP 用のFSXの作成と管理に必要な権限がCloud Managerに付与されます。 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSX for ONTAP のアクセス許可を設定する方法について説明します"^]
+BlueXPに新しいAWS資格情報を追加すると'BlueXPにONTAP 用FSXの作成と管理に必要な権限が与えられます https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSX for ONTAP のアクセス許可を設定する方法について説明します"^]
 
 
 
@@ -40,11 +40,11 @@ Cloud Managerに新しいAWSクレデンシャルを追加すると、ONTAP 用�
 
 == クレデンシャルのローテーション方法
 
-Cloud Manager では、いくつかの方法で AWS クレデンシャルを指定できます。信頼されたアカウントで IAM ロールを割り当てるか、 AWS アクセスキーを指定することで、コネクタインスタンスに関連付けられた IAM ロールを指定します。 link:concept-accounts-aws.html["AWS のクレデンシャルと権限に関する詳細情報"]。
+BlueXPでは、いくつかの方法でAWSクレデンシャルを提供できます。コネクタインスタンスに関連付けられたIAMロールで、信頼されたアカウントでIAMロールを割り当てるか、AWSアクセスキーを指定します。 link:concept-accounts-aws.html["AWS のクレデンシャルと権限に関する詳細情報"]。
 
-最初の 2 つのオプションでは、 Cloud Manager は AWS Security Token Service を使用して、継続的にローテーションする一時的なクレデンシャルを取得します。このプロセスは自動でセキュアであるため、ベストプラクティスです。
+最初の2つのオプションでは、BlueXPはAWS Security Token Serviceを使用して、絶えず回転する一時的な資格情報を取得します。このプロセスは自動でセキュアであるため、ベストプラクティスです。
 
-Cloud Manager に AWS アクセスキーを指定する場合は、 Cloud Manager でキーを一定の間隔で更新して、キーをローテーションする必要があります。これは完全に手動で行います。
+BlueXPにAWSアクセスキーを提供する場合は、BlueXPで定期的にキーを更新して、キーを回転させる必要があります。これは完全に手動で行います。
 
 
 
@@ -56,10 +56,10 @@ Cloud Manager に AWS アクセスキーを指定する場合は、 Cloud Manage
 
 === 権限を付与します
 
-Connector に AWS クレデンシャルを追加する前に、必要な権限を指定する必要があります。この権限を付与することで、 Cloud Manager からその AWS アカウント内のリソースやプロセスを管理できるようになります。権限の指定方法は、 Cloud Manager に信頼されたアカウントまたは AWS キーのロールの ARN を提供するかどうかによって異なります。
+Connector に AWS クレデンシャルを追加する前に、必要な権限を指定する必要があります。この権限を持つBlueXPは、そのAWSアカウント内のリソースとプロセスを管理できるようになります。アクセス許可の指定方法は、BlueXPに信頼されたアカウントまたはAWSキーの役割のARNを提供するかどうかによって異なります。
 
 
-NOTE: Cloud Manager からコネクタを導入すると、 Cloud Manager はコネクタを導入したアカウントの AWS クレデンシャルを自動的に追加しました。既存のシステムに Connector ソフトウェアを手動でインストールした場合、この初期アカウントは追加されません。 link:concept-accounts-aws.html["AWS のクレデンシャルと権限について説明します"]。
+NOTE: BlueXPからコネクタを導入すると、コネクタを導入したアカウントのAWS資格情報がBlueXPによって自動的に追加されました。既存のシステムに Connector ソフトウェアを手動でインストールした場合、この初期アカウントは追加されません。 link:concept-accounts-aws.html["AWS のクレデンシャルと権限について説明します"]。
 
 * 選択肢 *
 
@@ -71,7 +71,7 @@ NOTE: Cloud Manager からコネクタを導入すると、 Cloud Manager はコ
 
 ==== 別のアカウントで IAM ロールを想定して権限を付与します
 
-IAM ロールを使用して、コネクタインスタンスを導入したソース AWS アカウントと他の AWS アカウントの間に信頼関係を設定できます。その後、 Cloud Manager に信頼されたアカウントの IAM ロールの ARN を提供します。
+IAM ロールを使用して、コネクタインスタンスを導入したソース AWS アカウントと他の AWS アカウントの間に信頼関係を設定できます。次に、信頼できるアカウントのIAMロールのARNをBlueXPに提供します。
 
 .手順
 . Cloud Volumes ONTAP を導入するターゲットアカウントの IAM コンソールに移動します。
@@ -85,7 +85,7 @@ IAM ロールを使用して、コネクタインスタンスを導入したソ�
 ** の内容をコピーして貼り付け、ポリシーを作成します link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
 
 
-. 後日 Cloud Manager に貼り付けることができるように、 IAM ロールの ARN をコピーします。
+. 後でBlueXPに貼り付けることができるように、IAMロールの役割ARNをコピーします。
 
 
 これで、アカウントに必要な権限が付与されました。 ,これで、クレデンシャルをコネクタに追加できるようになりました。
@@ -94,7 +94,7 @@ IAM ロールを使用して、コネクタインスタンスを導入したソ�
 
 ==== AWS キーを指定して権限を付与します
 
-Cloud Manager に IAM ユーザの AWS キーを提供する場合は、必要な権限をそのユーザに付与する必要があります。Cloud Manager IAM ポリシーは、 Cloud Manager が使用できる AWS アクションとリソースを定義します。
+IAMユーザにAWSキーを提供する場合は、そのユーザに必要な権限を付与する必要があります。BlueXP IAMポリシーでは、BlueXPで使用できるAWSのアクションとリソースを定義しています。
 
 .手順
 . IAMコンソールで、の内容をコピーして貼り付け、ポリシーを作成します link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
@@ -117,13 +117,13 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 必要な権限を AWS アカウントに付与したら、そのアカウントのクレデンシャルを既存のコネクタに追加できます。これにより、同じコネクタを使用してアカウントの Cloud Volumes ONTAP システムを起動できます。
 
-作成したクレデンシャルをクラウドプロバイダで使用できるようになるまでに数分かかることがあります。Cloud Manager にクレデンシャルを追加するまで数分待ってから、
+作成したクレデンシャルをクラウドプロバイダで使用できるようになるまでに数分かかることがあります。数分待ってから、BlueXPに資格情報を追加します。
 
 .手順
-. Cloud Manager で正しいコネクタが選択されていることを確認します。
-. Cloud Manager コンソールの右上にある設定アイコンをクリックし、 * クレデンシャル * を選択します。
+. BlueXPで正しいコネクタが選択されていることを確認します
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
 +
-image:screenshot_settings_icon.gif["Cloud Manager コンソールの右上にある設定アイコンを示すスクリーンショット。"]
+image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 
 . [Add Credentials] をクリックし、ウィザードの手順に従います。
 +
@@ -144,15 +144,15 @@ image:screenshot_accounts_switch_aws.png["[ 詳細と資格情報 ] ページで
 
 
 
-== Cloud Managerにクレデンシャルを追加してコネクタを作成します
+== コネクタを作成するために、BlueXPに資格情報を追加します
 
-Cloud ManagerにAWSクレデンシャルを追加するには、Cloud Managerにコネクタの作成に必要な権限を付与するIAMロールのARNを指定します。これらのクレデンシャルは、新しいコネクタを作成するときに選択できます。
+BlueXPに、Connectorの作成に必要な権限をBlueXPに与えるIAMロールのARNを提供して、AWSクレデンシャルをBlueXPに追加します。これらのクレデンシャルは、新しいコネクタを作成するときに選択できます。
 
 
 
 === IAM ロールを設定します
 
-Cloud Manager SaaS で役割を引き受けることを可能にする IAM ロールを設定します。
+BlueXP SaaSが役割を引き受けることを可能にするIAM役割を設定します。
 
 .手順
 . ターゲットアカウントの IAM コンソールに移動します。
@@ -162,7 +162,7 @@ Cloud Manager SaaS で役割を引き受けることを可能にする IAM ロ�
 
 +
 ** 信頼されるエンティティのタイプ * で、 * AWS アカウント * を選択します。
-** 別の AWS アカウント * を選択し、 Cloud Manager SaaS の ID として 952013314444 を入力してください
+** 別のAWSアカウント*を選択して、BlueXP SaaSのID 952013314444を入力します
 ** コネクタの作成に必要な権限を含むポリシーを作成します。
 +
 *** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["ONTAP の FSX に必要な権限を表示します"^]
@@ -171,27 +171,27 @@ Cloud Manager SaaS で役割を引き受けることを可能にする IAM ロ�
 
 
 
-. IAM ロールのロール ARN をコピーして、次の手順で Cloud Manager に貼り付けることができます。
+. 次の手順で、IAMロールのロールARNをコピーしてBlueXPに貼り付けることができます。
 
 
-IAM ロールに必要な権限が割り当てられます。 ,これで、 Cloud Manager に追加できます。
+IAM ロールに必要な権限が割り当てられます。 ,これで、BlueXPに追加できます。
 
 
 
 === クレデンシャルを追加します
 
-IAM ロールに必要な権限を付与したら、 Cloud Manager に ARN ロールを追加します。
+IAMロールに必要な権限を付与したら、BlueXPにARNロールを追加します。
 
-IAM ロールを作成したばかりの場合は、使用できるようになるまで数分かかることがあります。Cloud Manager にクレデンシャルを追加するまで数分待ってから、
+IAM ロールを作成したばかりの場合は、使用できるようになるまで数分かかることがあります。数分待ってから、BlueXPに資格情報を追加します。
 
 .手順
-. Cloud Manager コンソールの右上にある設定アイコンをクリックし、 * クレデンシャル * を選択します。
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
 +
-image:screenshot_settings_icon.gif["Cloud Manager コンソールの右上にある設定アイコンを示すスクリーンショット。"]
+image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 
 . [Add Credentials] をクリックし、ウィザードの手順に従います。
 +
-.. * クレデンシャルの場所 * ：「 * Amazon Web Services > Cloud Manager * 」を選択します。
+.. *資格情報の場所*：「* Amazon Web Services > BlueXP *」を選択します。
 .. * クレデンシャルの定義 * ： IAM ロールの ARN （ Amazon リソース名）を指定します。
 .. * 確認 * ：新しいクレデンシャルの詳細を確認し、 * 追加 * をクリックします。
 
@@ -204,18 +204,18 @@ image:screenshot_settings_icon.gif["Cloud Manager コンソールの右上にあ
 
 == AWS サブスクリプションを関連付ける
 
-Cloud Manager に AWS のクレデンシャルを追加したら、 AWS Marketplace のサブスクリプションをそれらのクレデンシャルに関連付けることができます。サブスクリプションを使用すると、 Cloud Volumes ONTAP の料金を時間単位で支払う（ PAYGO ）と年単位の契約を使用する、および他の NetApp クラウドサービスを使用することができます。
+AWSのクレデンシャルをBlueXPに追加したら、AWS Marketplaceサブスクリプションをそれらのクレデンシャルに関連付けることができます。サブスクリプションを使用すると、 Cloud Volumes ONTAP の料金を時間単位で支払う（ PAYGO ）と年単位の契約を使用する、および他の NetApp クラウドサービスを使用することができます。
 
-Cloud Manager にクレデンシャルを追加したあとに、 AWS Marketplace サブスクリプションを関連付けるシナリオは 2 つあります。
+BlueXPに資格情報を追加した後、AWS Marketplaceサブスクリプションを関連付けるシナリオは2つあります。
 
-* Cloud Manager にクレデンシャルを最初に追加したときに、サブスクリプションを関連付けていません。
+* BlueXPに最初に資格情報を追加したときに、サブスクリプションを関連付けませんでした。
 * 既存の AWS Marketplace サブスクリプションを新しいサブスクリプションに置き換える場合。
 
 
-Cloud Manager の設定を変更する前に、コネクタを作成する必要があります。 link:concept-connectors.html#how-to-create-a-connector["コネクタの作成方法を説明します"]。
+BlueXP設定を変更する前にコネクタを作成する必要があります。 link:concept-connectors.html#how-to-create-a-connector["コネクタの作成方法を説明します"]。
 
 .手順
-. Cloud Manager コンソールの右上にある設定アイコンをクリックし、 * クレデンシャル * を選択します。
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
 . 一連の資格情報のアクションメニューをクリックし、 * 契約の関連付け * を選択します。
 +
 image:screenshot_associate_subscription.png["一連の既存のクレデンシャルに対する操作メニューのスクリーンショット。"]
@@ -229,13 +229,13 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 
 == クレデンシャルを編集する
 
-Cloud Manager で AWS クレデンシャルを編集するには、アカウントタイプ（ AWS キーまたは想定ロール）を変更するか、名前を編集するか、クレデンシャル自体（キーまたはロール ARN ）を更新します。
+BlueXPでAWSクレデンシャルを編集するには、アカウントタイプ（AWSキーまたは権限）を変更するか、名前を編集するか、クレデンシャル自体（キーまたはロールARN）を更新します。
 
 
 TIP: コネクタインスタンスに関連付けられているインスタンスプロファイルのクレデンシャルは編集できません。
 
 .手順
-. Cloud Manager コンソールの右上にある設定アイコンをクリックし、 * クレデンシャル * を選択します。
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
 . 一連の資格情報のアクションメニューをクリックし、 * 資格情報の編集 * を選択します。
 . 必要な変更を行い、 * 適用 * をクリックします。
 
@@ -244,13 +244,13 @@ TIP: コネクタインスタンスに関連付けられているインスタン
 
 == クレデンシャルを削除し
 
-クレデンシャルが不要になった場合は、 Cloud Manager から削除できます。削除できるのは、作業環境に関連付けられていないクレデンシャルのみです。
+一連の資格情報が不要になった場合は、BlueXPから削除できます。削除できるのは、作業環境に関連付けられていないクレデンシャルのみです。
 
 
 TIP: コネクタインスタンスに関連付けられているインスタンスプロファイルのクレデンシャルは削除できません。
 
 .手順
-. Cloud Manager コンソールの右上にある設定アイコンをクリックし、 * クレデンシャル * を選択します。
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
 . 一連の資格情報のアクションメニューをクリックし、 * 資格情報の削除 * を選択します。
 . 削除を確定するには、 * 削除 * をクリックします。
 

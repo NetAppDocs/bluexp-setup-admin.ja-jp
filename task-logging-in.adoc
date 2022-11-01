@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-logging-in.html 
-keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp 
-summary: 'Cloud Manager のインターフェイスには、 SaaS ベースのユーザがアクセスできます にアクセスしてインターフェイスを設定します https://cloudmanager.netapp.com[]。' 
+keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
+summary: 'BlueXPインターフェイスには、にアクセスして、SaaSベースのユーザーインターフェイスからアクセスできます https://cloudmanager.netapp.com[]。' 
 ---
-= Cloud Manager にログインしています
+= BlueXPにログインします
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,27 +14,49 @@ summary: 'Cloud Manager のインターフェイスには、 SaaS ベースの�
 
 
 [role="lead"]
-Cloud Manager のインターフェイスには、 SaaS ベースのユーザがアクセスできます にアクセスしてインターフェイスを設定します https://cloudmanager.netapp.com[]。
+BlueXPには、WebブラウザからSaaSベースのユーザインターフェイス経由でアクセスできます。
 
-政府機関のリージョンまたはアウトバウンドのインターネットアクセスがないサイトからCloud Managerにアクセスする場合は、コネクタの作成後にローカルユーザインターフェイスにログインする必要があります。 link:task-managing-connectors.html#access-the-local-ui["ConnectorでローカルUIにアクセスする方法について説明します"]。
+政府機関またはアウトバウンドのインターネットアクセスがないサイトからBlueXPにアクセスしている場合は、コネクタでローカルに実行されているBlueXPユーザーインターフェイスにログインする必要があります。 link:task-managing-connectors.html#access-the-local-ui["ConnectorでローカルUIにアクセスする方法について説明します"]。
+
+次のいずれかのオプションを使用して、BlueXPにログインできます。
+
+* 既存のNetApp Support Site （NSS）のクレデンシャルを必要に応じて変更
++
+このオプションを使用すると、NetApp Support Site (NSS)の資格情報は、サポートダッシュボードでBlueXPに追加されません。Cloud Volumes ONTAP の主要なワークフローを有効にするには'NSS資格情報をBlueXPに追加する必要があります link:task-adding-nss-accounts.html["NSS資格情報をBlueXPに追加する方法について説明します"]。
+
+* Eメールアドレスとパスワードを使用したネットアップクラウドへのログイン
++
+このオプションはフェデレーテッド接続をサポートします。シングルサインオンを使用して、社内ディレクトリ（フェデレーション ID ）からのクレデンシャルを使用してログインできます。詳細については、を参照してください https://cloud.netapp.com/help-center["BlueXPヘルプセンター"^] [サインインオプション*]をクリックします。
 
 
-TIP: シングルサインオンを使用して、社内ディレクトリ（フェデレーション ID ）からのクレデンシャルを使用してログインできます。詳細については、を参照してください https://cloud.netapp.com/help-center["Cloud Central ヘルプセンター"^] 次に、 * Cloud Central サインインオプション * をクリックします。
+
+ログインするたびに、初回ログイン時に選択したオプションを使用する必要があります。
+
+* ネットアップサポートサイトのクレデンシャルでログインして登録した場合は、毎回ログインオプションを使用する必要があります。
+* Eメールアドレスとパスワードを入力してサインアップした場合は、ログインするたびにクレデンシャルを入力する必要があります。
+
 
 .手順
-. Web ブラウザを開き、に進みます https://cloudmanager.netapp.com[]。
-. NetApp Cloud Centralのクレデンシャルを入力するか、* Log in with NetApp *をクリックして、ネットアップサポートサイトのクレデンシャルを入力してログインします。
+. Webブラウザを開き、にアクセスします https://cloudmanager.netapp.com["BlueXPコンソール"^]
 +
-Cloud Centralに登録するときに使用したオプションを選択する必要があります。
+NetApp BlueXPログインページが表示されます
 
 +
-** Eメールアドレスとパスワードを入力してサインアップした場合は、ログインするたびにクレデンシャルを入力する必要があります。
-** ネットアップサポートサイトのクレデンシャルでログインして登録した場合は、毎回ログインオプションを使用する必要があります。
+image:screenshot-login.png["BlueXPのログインページ"]
+
+. いずれかのログインオプションを選択します。
 +
-image:screenshot-login.png["Cloud Central のログイン画面。"]
+** ネットアップクラウドクレデンシャルを以前に作成している場合は、Eメールアドレスとパスワードを使用してログインします。
+** クラウドクレデンシャルがなく、既存のNetApp Support Site （NSS）アカウントを持っている場合は、* NetApp Support Site クレデンシャルでログイン*を選択します。
+** NSSアカウントをお持ちでなく、ネットアップクラウドクレデンシャルを作成していない場合は、「*サインアップ*」をクリックしてネットアップクラウドへのログインを作成してください。
++
+サインアップフォームでは、英語の文字のみを使用できます。
+
++
+サインアップが完了すると、ネットアップからEメールが届きます。EメールのリンクをクリックしてEメールアドレスを確認し、ログインします。
 
 
 
 
 
-ログインすると、 Cloud Manager を使用してハイブリッドマルチクラウドインフラを管理できるようになります。
+ログインして、BlueXPを使用してハイブリッドマルチクラウドインフラを管理できるようになりました。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions-gcp.html 
 keywords: permissions, gcp, gcp permissions 
-summary: Cloud Manager からクラウドプロバイダの処理を実行するには権限が必要です。これらの権限は、ネットアップが提供するポリシーに含まれています。このような権限を持つ Cloud Manager の機能を理解しておく必要があるかもしれません。 
+summary: BlueXPを使用するには、クラウドプロバイダで処理を実行するための権限が必要です。これらの権限は、ネットアップが提供するポリシーに含まれています。これらの権限でBlueXPが何を実行するのかを理解しておくとよいでしょう。 
 ---
 = Connector の Google Cloud 権限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager からクラウドプロバイダの処理を実行する
 
 
 [role="lead"]
-Cloud ManagerでGoogle Cloudの処理を実行するには権限が必要です。これらの権限は、ネットアップが提供するカスタムロールに含まれています。このような権限を持つ Cloud Manager の機能を理解しておく必要があるかもしれません。
+BlueXPには、Google Cloudでアクションを実行するための権限が必要です。これらの権限は、ネットアップが提供するカスタムロールに含まれています。これらの権限でBlueXPが何を実行するのかを理解しておくとよいでしょう。
 
 
 
@@ -28,7 +28,7 @@ Cloud ManagerでGoogle Cloudの処理を実行するには権限が必要です�
 
 [source, yaml]
 ----
-title: NetApp Cloud Manager
+title: NetApp BlueXP
 description: Permissions for the service account associated with the Connector instance.
 stage: GA
 includedPermissions:

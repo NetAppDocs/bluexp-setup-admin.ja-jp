@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-creating-connectors-azure.html 
 keywords: create connector in azure, launch connector in azure, deploy connector in azure, azure connector, connector azure, connector permissions, create custom role, create azure custom role, azure custom role 
-summary: Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカウント管理者がコネクタを導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 
+summary: BlueXPのほとんどの機能を使用するには、コネクタを展開する必要があります。Connectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。 
 ---
-= Cloud Manager から Azure にコネクタを作成します
+= BlueXPからAzureにコネクタを作成します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Cloud Managerのほとんどの機能を使用するには、Cloud Mana
 
 
 [role="lead"]
-Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカウント管理者がコネクタを導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 link:concept-connectors.html["コネクタが必要になるタイミングを学習します"]。
+BlueXPのほとんどの機能を使用するには'BlueXPアカウント管理者が_Connector_を 配備する必要がありますConnectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。 link:concept-connectors.html["コネクタが必要になるタイミングを学習します"]。
 
-このページでは、 Cloud Manager から直接 Azure でコネクタを作成する方法について説明します。 link:concept-connectors.html#how-to-create-a-connector["コネクタを配置するその他の方法について説明します"]。
+このページでは、BlueXPから直接Azureでコネクタを作成する方法について説明します。 link:concept-connectors.html#how-to-create-a-connector["コネクタを配置するその他の方法について説明します"]。
 
 これらの手順は、 Account Admin ロールを持つユーザが実行する必要があります。ワークスペース管理者はコネクタを作成できません。
 
@@ -24,7 +24,7 @@ Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカ
 
 == 概要
 
-Connector を導入するには、 Azure で Connector VM を作成するために必要な権限を持つログインを Cloud Manager に付与する必要があります。
+Connectorを導入するには、AzureでConnector VMを作成するために必要な権限を持つログインをBlueXPに提供する必要があります。
 
 次の 2 つのオプションがあります。
 
@@ -74,7 +74,7 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 | \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
 
 
-| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | Cloud Manager 内で SaaS の機能やサービスを提供できます。 
+| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | BlueXPでSaaSの機能とサービスを提供するため。 
 
 
 | ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
@@ -112,13 +112,13 @@ Azure でコネクタを作成するデフォルトの方法は、プロンプ�
 
 === Azure アカウントの権限を設定します
 
-Cloud Manager からコネクタを導入する前に、 Azure アカウントが正しい権限を持っていることを確認する必要があります。
+BlueXPからConnectorを導入する前に、Azureアカウントに正しい権限があることを確認する必要があります。
 
 .手順
 . Azureの新しいカスタムロールに必要な権限をコピーし、JSONファイルに保存します。
 +
 
-NOTE: このポリシーには、Cloud ManagerからAzureでConnector VMを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。Cloud Managerは、コネクタの作成時にConnector VMに新しい権限セットを適用します。これにより、コネクタはパブリッククラウド環境内のリソースを管理できます。
+NOTE: このポリシーには、BlueXPからAzureでConnector VMを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。BlueXPがコネクタを作成すると、Connector VMに新しい権限セットが適用され、Connectorがパブリッククラウド環境内のリソースを管理できるようになります。
 
 +
 [source, json]
@@ -222,7 +222,7 @@ az role definition create --role-definition Policy_for_Setup_As_Service_Azure.js
 +
 これで、 _Azure SetupAsService_という カスタムロールが作成されました。
 
-. Cloud Manager からコネクタを導入するユーザにロールを割り当てます。
+. BlueXPからコネクタを配備するユーザーにロールを割り当てます
 +
 .. [ サブスクリプション ] サービスを開き、ユーザーのサブスクリプションを選択します。
 .. 「 * アクセスコントロール（ IAM ） * 」をクリックします。
@@ -243,18 +243,18 @@ NOTE: Azure SetupAsServiceは、Azureのコネクタ導入ポリシーで指定�
 
 
 
-Azure ユーザに、 Cloud Manager から Connector を導入するために必要な権限が付与されるようになりました。
+これで、Azureユーザには、BlueXPからConnectorを導入するために必要な権限が付与されました。
 
 
 
 === Azure アカウントでログインしてコネクタを作成します
 
-Cloud Manager では、ユーザインターフェイスから直接 Azure にコネクタを作成できます。
+BlueXPを使用すると、Azureでユーザーインターフェイスからコネクタを直接作成できます。
 
 .必要なもの
 * Azure サブスクリプション。
 * 選択した Azure リージョン内の VNet およびサブネット
-* Cloud Manager で Connector 用の Azure ロールが自動的に作成されないようにするには、独自のを作成する必要があります link:reference-permissions-azure.html["このページのポリシーを使用する"]。
+* BlueXPでコネクタ用のAzureロールを自動的に作成しない場合は、自分で作成する必要があります link:reference-permissions-azure.html["このページのポリシーを使用する"]。
 +
 これらの権限はコネクタインスタンス自体に適用されます。これは、以前にコネクタを展開するように設定したアクセス権とは異なります。
 
@@ -280,10 +280,10 @@ image:screenshot_connector_add.gif["ヘッダーのコネクターアイコン�
 
 +
 
-TIP: すでに Azure アカウントにログインしている場合、そのアカウントは Cloud Manager によって自動的に使用されます。アカウントが複数ある場合は、適切なアカウントを使用するために、最初にログアウトする必要があります。
+TIP: すでにAzureアカウントにログインしている場合は、BlueXPによって自動的にそのアカウントが使用されます。アカウントが複数ある場合は、適切なアカウントを使用するために、最初にログアウトする必要があります。
 
 ** * VM 認証 * ： Azure サブスクリプション、場所、新しいリソースグループ、または既存のリソースグループを選択し、認証方法を選択します。
-** * 詳細 * ：インスタンスの名前を入力し、タグを指定し、必要な権限を持つ新しいロールを Cloud Manager で作成するか、で設定した既存のロールを選択するかを選択します link:reference-permissions-azure.html["必要な権限"]。
+** *詳細*:インスタンスの名前を入力し、タグを指定して、必要な権限を持つ新しいロールを作成するか、またはで設定した既存のロールを選択するかを選択します link:reference-permissions-azure.html["必要な権限"]。
 +
 このロールに関連付けられているサブスクリプションを選択できます。選択した各サブスクリプションには、 Cloud Volumes ONTAP をこれらのサブスクリプションに導入するための権限が Connector に付与されます。
 
@@ -298,7 +298,7 @@ TIP: すでに Azure アカウントにログインしている場合、その�
 
 
 
-ワークスペース管理者がコネクタを使用して Cloud Volumes ONTAP システムを作成できるように、コネクタをワークスペースに関連付ける必要があります。アカウント管理者のみがいる場合は、コネクタをワークスペースに関連付ける必要はありません。アカウント管理者は、デフォルトで Cloud Manager のすべてのワークスペースにアクセスできます。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["詳細はこちら。"]。
+ワークスペース管理者がコネクタを使用して Cloud Volumes ONTAP システムを作成できるように、コネクタをワークスペースに関連付ける必要があります。アカウント管理者のみがいる場合は、コネクタをワークスペースに関連付ける必要はありません。アカウント管理者は、既定でBlueXPのすべてのワークスペースにアクセスできます。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["詳細はこちら。"]。
 
 Connectorを作成したのと同じAzureアカウントにAzure BLOBストレージがある場合は、Azure Blob作業環境がCanvasに自動的に表示されます。 link:task-viewing-azure-blob.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
 
@@ -306,13 +306,13 @@ Connectorを作成したのと同じAzureアカウントにAzure BLOBストレ�
 
 == サービスプリンシパルを使用してコネクタを作成します
 
-Azure アカウントでログインする代わりに、必要な権限がある Azure サービスプリンシパルのクレデンシャルを Cloud Manager に入力することもできます。
+Azureアカウントでログインする代わりに、必要な権限を持つAzureサービスプリンシパルのクレデンシャルをBlueXPに提供することもできます。
 
 
 
 === サービスプリンシパルを使用した Azure 権限の付与
 
-Azure Active Directory でサービスプリンシパルを作成およびセットアップし、 Cloud Manager で必要な Azure クレデンシャルを取得して、 Azure に Connector を導入するために必要な権限を付与します。
+Azure Active Directoryでサービスプリンシパルを作成およびセットアップし、BlueXPで必要なAzureクレデンシャルを取得することで、AzureにConnectorを導入するために必要な権限を付与します。
 
 .手順
 .  an Azure Active Directory application。
@@ -326,7 +326,7 @@ Azure Active Directory でサービスプリンシパルを作成およびセッ
 
 ==== Azure Active Directory アプリケーションを作成します
 
-Cloud Manager でコネクタの導入に使用する Azure Active Directory （ AD ）アプリケーションとサービスプリンシパルを作成します。
+BlueXPでConnectorの導入に使用できるAzure Active Directory（AD）アプリケーションとサービスプリンシパルを作成します。
 
 Azure で Active Directory アプリケーションを作成してロールに割り当てるための適切な権限が必要です。詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
 
@@ -340,7 +340,7 @@ image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サ�
 . アプリケーションの詳細を指定します。
 +
 ** * 名前 * ：アプリケーションの名前を入力します。
-** * アカウントタイプ * ：アカウントタイプを選択します（ Cloud Manager で使用できます）。
+** *アカウントの種類*:アカウントの種類を選択します(すべてのアカウントはBlueXPで動作します)。
 ** * リダイレクト URI *: このフィールドは空白のままにできます。
 
 
@@ -359,7 +359,7 @@ AD アプリケーションとサービスプリンシパルを作成してお�
 . Azureの新しいカスタムロールに必要な権限をコピーし、JSONファイルに保存します。
 +
 
-NOTE: このポリシーには、Cloud ManagerからAzureでConnector VMを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。Cloud Managerは、コネクタの作成時にConnector VMに新しい権限セットを適用します。これにより、コネクタはパブリッククラウド環境内のリソースを管理できます。
+NOTE: このポリシーには、BlueXPからAzureでConnector VMを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。BlueXPがコネクタを作成すると、Connector VMに新しい権限セットが適用され、Connectorがパブリッククラウド環境内のリソースを管理できるようになります。
 
 +
 [source, json]
@@ -517,7 +517,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API �
 
 ==== アプリケーション ID とディレクトリ ID を取得します
 
-Cloud Manager でコネクタを作成するときは、アプリケーション（クライアント） ID とディレクトリ（テナント） ID を指定する必要があります。Cloud Manager は、この ID を使用してプログラムによってサインインします。
+BlueXPからコネクタを作成するときは'アプリケーション(クライアント) IDとディレクトリ(テナント) IDを指定する必要がありますBlueXPでは、プログラムでサインインするためにIDが使用されます。
 
 .手順
 . Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
@@ -531,7 +531,7 @@ image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケー
 
 ==== クライアントシークレットを作成します
 
-Cloud Manager がクライアントシークレットを使用して Azure AD で認証できるようにするには、クライアントシークレットを作成し、そのシークレットの値を Cloud Manager に指定する必要があります。
+クライアントシークレットを作成し、BlueXPがこれを使用してAzure ADで認証できるようにシークレットの値をBlueXPに提供する必要があります。
 
 .手順
 . Azure Active Directory * サービスを開きます。
@@ -545,13 +545,13 @@ image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパ�
 
 
 
-これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。この情報は、コネクタを作成するときに Cloud Manager で入力する必要があります。
+これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。コネクタを作成するときに、BlueXPでこの情報を入力する必要があります。
 
 
 
 === サービスプリンシパルでログインしてコネクタを作成します
 
-Cloud Manager では、ユーザインターフェイスから直接 Azure にコネクタを作成できます。
+BlueXPを使用すると、Azureでユーザーインターフェイスからコネクタを直接作成できます。
 
 .必要なもの
 * Azure サブスクリプション。
@@ -563,7 +563,7 @@ Cloud Manager では、ユーザインターフェイスから直接 Azure に�
 ** HTTPS証明書
 
 
-* Cloud Manager で Connector 用の Azure ロールが自動的に作成されないようにするには、独自のを作成する必要があります link:reference-permissions-azure.html["このページのポリシーを使用する"]。
+* BlueXPでコネクタ用のAzureロールを自動的に作成しない場合は、自分で作成する必要があります link:reference-permissions-azure.html["このページのポリシーを使用する"]。
 +
 これらの権限はコネクタインスタンス自体に適用されます。これは、以前にコネクタを展開するように設定したアクセス権とは異なります。
 
@@ -596,7 +596,7 @@ image:screenshot_connector_add.gif["ヘッダーのコネクターアイコン�
 . ウィザードの手順に従って、コネクタを作成します。
 +
 ** * VM 認証 * ： Azure サブスクリプション、場所、新しいリソースグループ、または既存のリソースグループを選択し、認証方法を選択します。
-** * 詳細 * ：インスタンスの名前を入力し、タグを指定し、必要な権限を持つ新しいロールを Cloud Manager で作成するか、で設定した既存のロールを選択するかを選択します link:reference-permissions-azure.html["必要な権限"]。
+** *詳細*:インスタンスの名前を入力し、タグを指定して、必要な権限を持つ新しいロールを作成するか、またはで設定した既存のロールを選択するかを選択します link:reference-permissions-azure.html["必要な権限"]。
 +
 このロールに関連付けられているサブスクリプションを選択できます。選択した各サブスクリプションには、 Cloud Volumes ONTAP をこれらのサブスクリプションに導入するための権限が Connector に付与されます。
 
@@ -611,7 +611,7 @@ image:screenshot_connector_add.gif["ヘッダーのコネクターアイコン�
 
 
 
-ワークスペース管理者がコネクタを使用して Cloud Volumes ONTAP システムを作成できるように、コネクタをワークスペースに関連付ける必要があります。アカウント管理者のみがいる場合は、コネクタをワークスペースに関連付ける必要はありません。アカウント管理者は、デフォルトで Cloud Manager のすべてのワークスペースにアクセスできます。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["詳細はこちら。"]。
+ワークスペース管理者がコネクタを使用して Cloud Volumes ONTAP システムを作成できるように、コネクタをワークスペースに関連付ける必要があります。アカウント管理者のみがいる場合は、コネクタをワークスペースに関連付ける必要はありません。アカウント管理者は、既定でBlueXPのすべてのワークスペースにアクセスできます。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["詳細はこちら。"]。
 
 Connectorを作成したのと同じAzureアカウントにAzure BLOBストレージがある場合は、Azure Blob作業環境がCanvasに自動的に表示されます。 link:task-viewing-azure-blob.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
 
@@ -619,7 +619,7 @@ Connectorを作成したのと同じAzureアカウントにAzure BLOBストレ�
 
 == AutoSupport メッセージのポート3128を開きます
 
-アウトバウンドのインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、Cloud Managerはコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を自動的に設定します。
+アウトバウンドインターネット接続が使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、BlueXPは自動的にコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を設定します。
 
 唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
 

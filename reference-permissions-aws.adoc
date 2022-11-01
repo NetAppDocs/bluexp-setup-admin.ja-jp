@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions-aws.html 
 keywords: permissions, actions, aws, aws permissions 
-summary: Cloud ManagerでAWSでコネクタインスタンスを起動するときに、そのAWSアカウント内のリソースとプロセスを管理するための権限を提供するポリシーがインスタンスに関連付けられます。Connectorでは、権限を使用してAPI呼び出しを実行することで、EC2、S3、CloudFormation、IAM、 キー管理サービスなど。 
+summary: BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカウント内のリソースとプロセスを管理するための権限をConnectorに提供するポリシーがインスタンスにアタッチされます。Connectorでは、権限を使用してAPI呼び出しを実行することで、EC2、S3、CloudFormation、IAM、 キー管理サービスなど。 
 ---
 = Connector の AWS 権限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud ManagerでAWSでコネクタインスタンスを起動すると�
 
 
 [role="lead"]
-Cloud ManagerでAWSでコネクタインスタンスを起動するときに、そのAWSアカウント内のリソースとプロセスを管理するための権限を提供するポリシーがインスタンスに関連付けられます。Connectorでは、権限を使用してAPI呼び出しを実行することで、EC2、S3、CloudFormation、IAM、 Key Management Service（KMS；キー管理サービス）など。
+BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカウント内のリソースとプロセスを管理するための権限をConnectorに提供するポリシーがインスタンスにアタッチされます。Connectorでは、権限を使用してAPI呼び出しを実行することで、EC2、S3、CloudFormation、IAM、 Key Management Service（KMS；キー管理サービス）など。
 
 
 
@@ -22,7 +22,7 @@ Cloud ManagerでAWSでコネクタインスタンスを起動するときに、�
 
 以下のIAMポリシーは、ConnectorがAWSリージョンに基づいてパブリッククラウド環境内のリソースとプロセスを管理するために必要な権限を提供します。
 
-Cloud Managerからコネクタを直接作成すると、Cloud Managerはこのポリシーをコネクタに自動的に適用します。
+BlueXPからコネクタを直接作成すると、BlueXPは自動的にこのポリシーをコネクタに適用します。
 
 AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnectorを手動でインストールする場合は、手動でポリシーを設定する必要があります。
 

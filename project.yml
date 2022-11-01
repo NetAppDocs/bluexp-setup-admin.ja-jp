@@ -4,8 +4,10 @@ settings:
   platform: cloud
   internal:
     pdf_enabled: true
+    lipi_enabled: false
   prod:
     pdf_enabled: true
+    lipi_enabled: false
     harmony_enabled: false
   rss_page: whats-new.html
   langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr
@@ -21,13 +23,11 @@ sidebar:
       url: "/reference-limitations.html"
   - title: はじめに
     entries:
-    - title: Cloud Manager の詳細をご確認ください
+    - title: BlueXPの詳細をご覧ください
       url: "/concept-overview.html"
     - title: はじめにチェックリスト
       url: "/reference-checklist-cm.html"
-    - title: Cloud Central に登録します
-      url: "/task-signing-up.html"
-    - title: Cloud Manager にログインします
+    - title: BlueXPにログインします
       url: "/task-logging-in.html"
     - title: ネットアップアカウントを設定する
       entries:
@@ -49,7 +49,7 @@ sidebar:
         url: "/task-create-connectors-gov.html"
     - title: 次の手順
       url: "/reference-whats-next.html"
-  - title: Cloud Manager の管理
+  - title: BlueXPを管理します
     entries:
     - title: ネットアップアカウント
       entries:
@@ -145,7 +145,7 @@ homepage:
   tiles:
   - title: はじめに
     links:
-    - title: Cloud Manager の詳細をご確認ください
+    - title: BlueXPの詳細をご覧ください
       url: concept-overview.html
     - title: はじめにチェックリスト
       url: reference-checklist-cm.html
@@ -175,11 +175,11 @@ homepage:
     links:
     - title: ネットアップコミュニティ
       url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: Cloud Central のブログです
+    - title: BlueXPブログ
       url: https://cloud.netapp.com/blog/topic/cloud-manager
     - title: クラウドに関する Web セミナー
       url: https://cloud.netapp.com/events
 product-family:
-  name: Cloud Manager
+  name: BlueXP
   repo: cloud-manager-family
-  sidebar_label: Cloud Manager のすべてのドキュメント
+  sidebar_label: BlueXPのすべてのマニュアル

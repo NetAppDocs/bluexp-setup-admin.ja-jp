@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations.html 
-keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, cloud manager, Cloud Volumes ONTAP, days, running, Connectors should remain running 
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running 
 summary: 既知の制限事項は、このリリースの製品でサポートされていないプラットフォーム、デバイス、機能、または製品と正しく相互運用できない機能を特定します。これらの制限事項を慎重に確認してください 
 ---
 = 既知の制限
@@ -16,7 +16,7 @@ summary: 既知の制限事項は、このリリースの製品でサポート�
 [role="lead"]
 既知の制限事項は、このリリースの製品でサポートされていないプラットフォーム、デバイス、機能、または製品と正しく相互運用できない機能を特定します。これらの制限事項を慎重に確認してください
 
-これらの制限事項は、 Cloud Manager のセットアップと管理に固有のもので、コネクタ、 SaaS プラットフォームなどが該当します。
+これらの制限は、BlueXPのセットアップと管理に特有のものです。コネクタ、SaaSプラットフォームなどです。
 
 
 
@@ -26,11 +26,11 @@ summary: 既知の制限事項は、このリリースの製品でサポート�
 
 === 172 の範囲の IP アドレスと競合する可能性があります
 
-Cloud Manager は、 172.17.0.0/16 と 172.18.0.0/16 の範囲に IP アドレスを持つ 2 つのインターフェイスを使用してコネクタを展開します。
+BlueXPは、172.17.0.0/16と172.18.0.0/16の範囲にIPアドレスを持つ2つのインターフェイスを持つコネクタを展開します。
 
-これらの範囲のいずれかでネットワークのサブネットが設定されている場合、 Cloud Manager から接続エラーが発生することがあります。たとえば、 Cloud Manager でオンプレミスの ONTAP クラスタを検出すると失敗することがあります。
+ネットワークにこれらのいずれかの範囲が設定されたサブネットがある場合、BlueXPから接続エラーが発生する可能性があります。たとえば、BlueXPでオンプレミスのONTAP クラスタを検出できない場合があります。
 
-技術情報アーティクルを参照してください link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["Cloud Manager ConnectorのIPが既存のネットワークと競合します"] コネクタのインターフェイスのIPアドレスを変更する方法については、を参照してください。
+技術情報アーティクルを参照してください link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["BlueXP ConnectorのIPが既存のネットワークと競合しています"] コネクタのインターフェイスのIPアドレスを変更する方法については、を参照してください。
 
 
 
@@ -38,13 +38,13 @@ Cloud Manager は、 172.17.0.0/16 と 172.18.0.0/16 の範囲に IP アドレ�
 
 社内ポリシーで、インターネットへのすべての HTTP 通信にプロキシサーバを使用する必要がある場合は、その HTTP プロキシサーバを使用するようにコネクタを設定する必要があります。プロキシサーバは、クラウドまたはネットワークに配置できます。
 
-Cloud Manager では、コネクタでの HTTPS プロキシの使用はサポートされていません。
+BlueXPでは、コネクタでHTTPSプロキシを使用することはサポートされていません。
 
 
 
 === SSL 復号化はサポートされていません
 
-Cloud Manager では、 SSL 復号化が有効になっているファイアウォール設定はサポートされていません。SSL 復号化が有効になっている場合、 Cloud Manager にエラーメッセージが表示され、 Connector インスタンスが非アクティブと表示されます。
+BlueXPでは、SSL復号化が有効になっているファイアウォール構成はサポートされていません。SSL復号化が有効になっている場合、BlueXPにエラーメッセージが表示され、コネクタインスタンスが非アクティブとして表示されます。
 
 セキュリティを強化するには、を選択します link:task-installing-https-cert.html["認証局（ CA ）が署名した HTTPS 証明書をインストールする"]。
 
@@ -76,9 +76,9 @@ Connector VM では、サードパーティのエージェントや VM 拡張機
 
 === 政府機関では SaaS プラットフォームが無効になっています
 
-コネクタを AWS GovCloud リージョン、 Azure Government リージョン、または Azure DoD リージョンに導入した場合、 Cloud Manager へのアクセスはコネクタのホスト IP アドレスからのみ可能です。SaaS プラットフォームへのアクセスは、アカウント全体で無効になります。
+コネクタをAWS GovCloudリージョン、Azure Govリージョン、またはAzure DoDリージョンに導入した場合、BlueXPへのアクセスはコネクタのホストIPアドレスからのみ可能です。SaaS プラットフォームへのアクセスは、アカウント全体で無効になります。
 
-つまり、エンドユーザの内部 VPC / VNet にアクセスできる特権ユーザのみが Cloud Manager の UI または API を使用できます。
+つまり、エンドユーザの内部VPC / VNetにアクセスできる特権ユーザだけがBlueXPのUIまたはAPIを使用できます。
 
 これらの地域でサポートされているサービスは、Cloud Volumes ONTAP 、クラウドバックアップ、クラウドデータセンス、レプリケーションだけです。その他のネットアップサービスは、政府機関の地域ではサポートされていません。
 

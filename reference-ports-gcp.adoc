@@ -75,5 +75,5 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | API コールと AutoSupport | HTTPS | 443 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | API が GCP と ONTAP にコールし、クラウドデータを検知してランサムウェア対策サービスに送信し、 AutoSupport メッセージをネットアップに送信します 
 
 
-| DNS | UDP | 53 | DNS | Cloud Manager による DNS 解決に使用されます 
+| DNS | UDP | 53 | DNS | BlueXPによるDNS解決に使用されます 
 |===

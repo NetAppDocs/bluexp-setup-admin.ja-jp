@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-creating-connectors-aws.html 
 keywords: fsx for ontap, iam, user role, create connector in aws, launch connector in aws, deploy connector in aws, aws connector, connector aws, connector permissions 
-summary: Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカウント管理者がコネクタを導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 
+summary: BlueXPのほとんどの機能を使用するには、コネクタを展開する必要があります。Connectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。 
 ---
-= Cloud Manager から AWS にコネクタを作成します
+= BlueXPからAWSにコネクタを作成します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Cloud Managerのほとんどの機能を使用するには、Cloud Mana
 
 
 [role="lead"]
-Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカウント管理者がコネクタを導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 link:concept-connectors.html["コネクタが必要になるタイミングを学習します"]。
+BlueXPのほとんどの機能を使用するには'BlueXPアカウント管理者が_Connector_を 配備する必要がありますConnectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。 link:concept-connectors.html["コネクタが必要になるタイミングを学習します"]。
 
-このページでは、 Cloud Manager から AWS でコネクタを直接作成する方法について説明します。 link:concept-connectors.html#how-to-create-a-connector["コネクタを配置するその他の方法について説明します"]。
+このページでは、BlueXPからAWSでコネクタを直接作成する方法について説明します。 link:concept-connectors.html#how-to-create-a-connector["コネクタを配置するその他の方法について説明します"]。
 
 これらの手順は、 Account Admin ロールを持つユーザが実行する必要があります。ワークスペース管理者はコネクタを作成できません。
 
@@ -27,7 +27,7 @@ Cloud Managerのほとんどの機能を使用するには、Cloud Managerアカ
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
 [role="quick-margin-para"]
-AWSでコネクタを起動するには、Cloud ManagerでIAMロールまたはAWSアクセスキーを使用してAWSで認証する必要があります。どちらのオプションでも、IAMポリシーが必要です。
+AWSでコネクタを起動するには、IAMロールまたはAWSアクセスキーを使用して、BlueXPがAWSで認証する必要があります。どちらのオプションでも、IAMポリシーが必要です。
 
 [role="quick-margin-para"]
  an IAM policy,IAMロールを確認します または  up AWS authentication,ステップバイステップの手順に従います。
@@ -48,9 +48,9 @@ AWSでコネクタを起動するには、Cloud ManagerでIAMロールまたはA
 
 == AWS 認証をセットアップする
 
-Cloud Manager で VPC にコネクタインスタンスを導入するには、 AWS で認証する必要があります。次のいずれかの認証方式を選択できます。
+BlueXPでは、VPCにConnectorインスタンスを導入する前にAWSで認証する必要があります。次のいずれかの認証方式を選択できます。
 
-* 必要な権限を持つIAMロールをCloud Managerで想定します
+* 必要な権限を持つIAMロールをBlueXPに割り当てます
 * 必要な権限を持つIAMユーザにAWSアクセスキーとシークレットキーを指定します
 
 
@@ -60,9 +60,9 @@ Cloud Manager で VPC にコネクタインスタンスを導入するには、 
 
 === IAMポリシーを作成します
 
-このポリシーには、Cloud ManagerからAWSでコネクタインスタンスを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。
+このポリシーには、BlueXPからAWSでConnectorインスタンスを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。
 
-Cloud Managerがコネクタを作成すると、新しい権限セットがコネクタインスタンスに適用され、コネクタがパブリッククラウド環境内のリソースを管理できるようになります。
+BlueXPがコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、コネクタがパブリッククラウド環境内のリソースを管理できるようになります。
 
 .手順
 . AWS IAMコンソールに移動します。
@@ -145,13 +145,13 @@ Cloud Managerがコネクタを作成すると、新しい権限セットがコ�
 . ［*ポリシーの作成*］をクリックします。
 
 
-Cloud Managerが権限を持つIAMロールにポリシーを関連付けるか、IAMユーザにポリシーを割り当てます。
+このポリシーを、BlueXPが引き受けることができるIAMロールまたはIAMユーザに適用します。
 
 
 
 === IAM ロールを設定する
 
-Cloud Manager で Connector を AWS に導入するために想定できる IAM ロールを設定します。
+コネクタをAWSに展開するためにBlueXPが想定できるIAMロールを設定します。
 
 .手順
 . ターゲットアカウントの AWS IAM コンソールに移動します。
@@ -161,11 +161,11 @@ Cloud Manager で Connector を AWS に導入するために想定できる IAM 
 
 +
 ** 信頼されるエンティティのタイプ * で、 * AWS アカウント * を選択します。
-** 別の AWS アカウント * を選択し、 Cloud Manager SaaS アカウントの ID として「 952013314444 」を入力してください
+** 別のAWSアカウント*を選択して、BlueXP SaaSアカウントのID 952013314444を入力します
 ** 前のセクションで作成したポリシーを選択します。
 
 
-. ロールを作成したら、コネクタの作成時にCloud Managerに貼り付けることができるように、ロールのARNをコピーします。
+. ロールを作成したら、ロールARNをコピーして、コネクタの作成時にBlueXPに貼り付けることができます。
 
 
 IAM ロールに必要な権限が割り当てられます。
@@ -184,7 +184,7 @@ IAM ロールに必要な権限が割り当てられます。
 . IAM ユーザのアクセスキーとシークレットキーにアクセスできることを確認します。
 
 
-AWS ユーザに、 Cloud Manager からコネクタを作成するために必要な権限が付与されました。Cloud Manager からプロンプトが表示されたら、このユーザの AWS アクセスキーを指定する必要があります。
+これで、AWSユーザにBlueXPからコネクタを作成するために必要な権限が付与されました。BlueXPによってプロンプトが表示されたら、このユーザのAWSアクセスキーを指定する必要があります。
 
 
 
@@ -214,7 +214,7 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 | \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
 
 
-| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | Cloud Manager 内で SaaS の機能やサービスを提供できます。 
+| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | BlueXPでSaaSの機能とサービスを提供するため。 
 
 
 | ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
@@ -246,7 +246,7 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 
 == コネクタを作成します
 
-Cloud Manager では、ユーザインターフェイスから AWS に直接コネクタを作成できます。
+BlueXPでは、ユーザインターフェイスからAWSでコネクタを直接作成できます。
 
 .手順
 . 最初の作業環境を作成する場合は、 * 作業環境の追加 * をクリックし、プロンプトに従います。それ以外の場合は、 [*connector*] ドロップダウンをクリックし、 [*Add connector*] を選択します。
@@ -263,7 +263,7 @@ image:screenshot_connector_add.gif["ヘッダーのコネクターアイコン�
 . ウィザードの手順に従って、コネクタを作成します。
 +
 ** * 準備をしてください * ：必要なものを確認してください。
-** * AWS クレデンシャル * ： AWS リージョンを指定してから認証方式を選択します。認証方式は、 Cloud Manager が引き受けることができる IAM ロールか、 AWS のアクセスキーとシークレットキーのどちらかです。
+** * AWSクレデンシャル*：AWSリージョンを指定してから認証方式を選択します。認証方式は、BlueXPが引き受けることができるIAMロールか、AWSのアクセスキーとシークレットキーのどちらかです。
 +
 
 TIP: [*Assume Role] を選択した場合は、 Connector 展開ウィザードから最初の資格情報セットを作成できます。クレデンシャルの追加のセットは、 [Credentials] ページから作成する必要があります。ウィザードのドロップダウンリストから使用できるようになります。 link:task-adding-aws-accounts.html["クレデンシャルを追加する方法について説明します"]。
@@ -272,7 +272,7 @@ TIP: [*Assume Role] を選択した場合は、 Connector 展開ウィザード�
 +
 *** インスタンスの名前を入力します。
 *** カスタムタグ（メタデータ）をインスタンスに追加します。
-*** 必要な権限を含む新しいロールを Cloud Manager で作成するか、またはを使用して設定した既存のロールを選択するかを選択します link:reference-permissions-aws.html["必要な権限"]。
+*** 必要な権限を持つ新しいロールを作成するか、で設定した既存のロールを選択するかを選択します link:reference-permissions-aws.html["必要な権限"]。
 *** コネクタの EBS ディスクを暗号化するかどうかを選択します。デフォルトの暗号化キーを使用することも、カスタムキーを使用することもできます。
 
 
@@ -296,7 +296,7 @@ Connectorを作成したのと同じAWSアカウントにAmazon S3バケット�
 
 == AutoSupport メッセージのポート3128を開きます
 
-アウトバウンドのインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、Cloud Managerはコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を自動的に設定します。
+アウトバウンドインターネット接続が使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、BlueXPは自動的にコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を設定します。
 
 唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-setting-up-netapp-accounts.html 
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, account, user account, user accounts, create workspace, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector 
-summary: Cloud Manager への初回ログイン時に、ネットアップアカウントの作成を求めるプロンプトが表示されます。このアカウントはマルチテナンシーに対応しており、分離されたワークスペースでユーザやリソースを整理することができます。 
+summary: BlueXPに初めてログインすると、ネットアップアカウントを作成するように求められます。このアカウントはマルチテナンシーに対応しており、分離されたワークスペースでユーザやリソースを整理することができます。 
 ---
 = ネットアップアカウントでワークスペースとユーザをセットアップ
 :hardbreaks:
@@ -14,22 +14,22 @@ summary: Cloud Manager への初回ログイン時に、ネットアップアカ
 
 
 [role="lead"]
-Cloud Manager に初めてログインするときは、 _netapp アカウント _ を作成するように求められます。このアカウントはマルチテナンシーを提供し、分離されたワークスペース内でユーザとリソースを整理することができます。
+BlueXPに初めてログインすると、_NetAppアカウント_の作成を求めるメッセージが表示されます。このアカウントはマルチテナンシーを提供し、分離されたワークスペース内でユーザとリソースを整理することができます。
 
 link:concept-netapp-accounts.html["ネットアップアカウントの仕組みをご覧ください"]。
 
-ユーザが Cloud Manager にアクセスしてワークスペース内の作業環境にアクセスできるように、ネットアップアカウントをセットアップします。1 人のユーザを追加するか、複数のユーザとワークスペースを追加するだけです。
+ネットアップアカウントを設定して、ユーザがBlueXPにアクセスし、ワークスペース内の作業環境にアクセスできるようにします。1 人のユーザを追加するか、複数のユーザとワークスペースを追加するだけです。
 
 
 
 == ワークスペースを追加します
 
-Cloud Manager のワークスペースを使用すると、作業環境のセットを他の作業環境や他のユーザから分離できます。たとえば、 2 つのワークスペースを作成し、各ワークスペースに別々のユーザーを関連付けることができます。
+BlueXPでは、ワークスペースを使用して、作業環境のセットを他の作業環境や他のユーザーから分離できます。たとえば、 2 つのワークスペースを作成し、各ワークスペースに別々のユーザーを関連付けることができます。
 
 .手順
-. の上部から https://cloudmanager.netapp.com["クラウドマネージャ"^]をクリックし、 [*Account*] ドロップダウンをクリックします。
+. の上部から https://cloudmanager.netapp.com["BlueXP"^]をクリックし、 [*Account*] ドロップダウンをクリックします。
 +
-image:screenshot-account-settings-menu.png["Cloud Manager の上部のバナーにあるアカウント設定オプションを示すスクリーンショット。"]
+image:screenshot-account-settings-menu.png["BlueXPの上部バナーにある「アカウント設定」オプションを示すスクリーンショット。"]
 
 . 現在選択されているアカウントの横にある ［ * アカウントの管理 * ］ をクリックします。
 +
@@ -46,18 +46,18 @@ image:screenshot-manage-account-settings.png["「アカウント」ドロップ�
 
 == ユーザを追加します
 
-Cloud Central ユーザをネットアップアカウントに関連付けて、これらのユーザが Cloud Manager で作業環境を作成および管理できるようにします。
+ネットアップアカウントにユーザを関連付けて、BlueXPで作業環境を作成、管理できるようにします。
 
 .手順
-. ユーザーがまだ行っていない場合は、にアクセスするようにユーザーに依頼します https://cloud.netapp.com["NetApp Cloud Central"^] 登録してください。
-. の上部から https://cloudmanager.netapp.com["クラウドマネージャ"^]をクリックし、 [*Account*] ドロップダウンをクリックして、 [*Manage Account*] をクリックします。
+. ユーザーがまだ行っていない場合は、にアクセスするようにユーザーに依頼します https://cloud.netapp.com["NetApp BlueXPのWebサイト"^] 登録してください。
+. の上部から https://cloudmanager.netapp.com["BlueXP"^]をクリックし、 [*Account*] ドロップダウンをクリックして、 [*Manage Account*] をクリックします。
 +
 image:screenshot-manage-account-settings.png["「アカウント」ドロップダウンから利用できる「アカウント設定の管理」オプションを示すスクリーンショット。"]
 
 . メンバータブで、 * ユーザーを関連付け * をクリックします。
 . ユーザの E メールアドレスを入力し、ユーザのロールを選択します。
 +
-** * アカウント管理者 * ： Cloud Manager で任意の操作を実行できます。
+** *Account Admin*: BlueXPではどのようなアクションでも実行できます。
 ** * ワークスペース管理者 * ：割り当てられたワークスペースでリソースを作成および管理できます。
 ** * Compliance Viewer * ：クラウドデータセンスガバナンスおよびコンプライアンス情報のみを表示し、アクセス権のあるワークスペースのレポートを生成できます。
 ** * SnapCenter Admin* ： SnapCenter サービスを使用して、アプリケーションと整合性のあるバックアップを作成し、それらのバックアップを使用してデータをリストアできます。このサービスは現在ベータ版です。
@@ -70,7 +70,7 @@ image:screenshot_associate_user.gif["ロールと関連するワークスペー�
 . [ 関連付け（ Associate ） ] をクリックします。
 
 
-ユーザには、 NetApp Cloud Central の「 Account Association 」というタイトルの E メールが送信されます。 E メールには、 Cloud Manager にアクセスするために必要な情報が記載されています。
+お客様には、NetApp BlueXPのWebサイト「Account Association」というタイトルのEメールが送信されます。 このメールには、BlueXPにアクセスするために必要な情報が記載されています。
 
 
 
@@ -79,7 +79,7 @@ image:screenshot_associate_user.gif["ロールと関連するワークスペー�
 ワークスペース管理者は、いつでも追加のワークスペースに関連付けることができます。ユーザーを関連付けると、ワークスペース内の作業環境を作成して表示できます。
 
 .手順
-. Cloud Manager の上部で、 * Account * ドロップダウンをクリックし、 * Manage Account * をクリックします。
+. BlueXPの上部にある[*Account*]ドロップダウンをクリックし、[*Manage Account*]をクリックします。
 +
 image:screenshot-manage-account-settings.png["「アカウント」ドロップダウンから利用できる「アカウント設定の管理」オプションを示すスクリーンショット。"]
 
@@ -91,7 +91,7 @@ image:screenshot_associate_user_workspace.png["ユーザテーブルでユーザ
 . 1 つ以上のワークスペースを選択し、 * 適用 * をクリックします。
 
 
-コネクタがワークスペースにも関連付けられていれば、ユーザは Cloud Manager からこれらのワークスペースにアクセスできるようになりました。
+コネクタがワークスペースにも関連付けられていれば、ユーザはBlueXPからこれらのワークスペースにアクセスできるようになりました。
 
 
 
@@ -99,12 +99,12 @@ image:screenshot_associate_user_workspace.png["ユーザテーブルでユーザ
 
 ワークスペース管理者がコネクタを使用して Cloud Volumes ONTAP システムを作成できるように、コネクタをワークスペースに関連付ける必要があります。
 
-アカウント管理者のみがいる場合は、コネクタをワークスペースに関連付ける必要はありません。アカウント管理者は、デフォルトで Cloud Manager のすべてのワークスペースにアクセスできます。
+アカウント管理者のみがいる場合は、コネクタをワークスペースに関連付ける必要はありません。アカウント管理者は、既定でBlueXPのすべてのワークスペースにアクセスできます。
 
 link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["ユーザー、ワークスペース、コネクターの詳細をご覧ください"]。
 
 .手順
-. Cloud Manager の上部で、 * Account * ドロップダウンをクリックし、 * Manage Account * をクリックします。
+. BlueXPの上部にある[*Account*]ドロップダウンをクリックし、[*Manage Account*]をクリックします。
 +
 image:screenshot-manage-account-settings.png["「アカウント」ドロップダウンから利用できる「アカウント設定の管理」オプションを示すスクリーンショット。"]
 

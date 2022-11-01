@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-launching-aws-mktp.html 
 keywords: install connector, create connector, deploy connector, installation, installing, marketplace, aws, launch, launching, ec2 console, iam role, govcloud, government, aws government, aws govcloud, gov marketplace 
-summary: Cloud Manager からコネクタを直接作成することを推奨します。 AWS アクセスキーを指定しない場合は、 AWS Marketplace からコネクタを起動できます。Connector の作成とセットアップが完了すると、新しい作業環境を作成するときに、 Cloud Manager によって自動的に Connector が使用されます。 
+summary: AWSの商業地域では、BlueXPからコネクタを直接作成することをお勧めしますが、必要に応じてAWS Marketplaceからコネクタを起動することもできます。AWS政府の地域では、BlueXP SaaS Webサイトから政府機関にConnectorを導入することはできないため、次はAWS Marketplaceから導入することをお勧めします。 
 ---
 = AWS Marketplace からコネクタを作成します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager からコネクタを直接作成することを推奨し
 
 
 [role="lead"]
-AWSの商業地域では、Cloud Managerから直接コネクタを作成することを推奨しますが、必要に応じてAWS Marketplaceからコネクタを起動できます。AWSリージョンの場合、Cloud ManagerのSaaS WebサイトからConnectorを政府機関のリージョンに導入することはできないため、次はAWS Marketplaceで導入することを推奨します。
+AWSの商業地域では、BlueXPからコネクタを直接作成することをお勧めしますが、必要に応じてAWS Marketplaceからコネクタを起動することもできます。AWS政府の地域では、BlueXP SaaS Webサイトから政府機関にConnectorを導入することはできないため、次はAWS Marketplaceから導入することをお勧めします。
 
 
 TIP: ネットワーク内またはクラウド内の既存のLinuxホストにConnectorソフトウェアをダウンロードしてインストールすることもできます。 link:task-installing-linux.html["既存のLinuxホストにConnectorをインストールする方法について説明します"]。
@@ -23,7 +23,7 @@ TIP: ネットワーク内またはクラウド内の既存のLinuxホストにC
 
 == AWSの商業地域にコネクタを作成します
 
-Cloud Manager用のAWS MarketplaceからAWSの商業地域でConnectorインスタンスを直接起動することができます。
+Connectorインスタンスは、AWS Marketplace for BlueXPから直接、AWSの商業地域で起動できます。
 
 Connectorを作成するIAMユーザには、サブスクライブとサブスクライブ解除を行うためのAWS Marketplace権限が必要です。
 
@@ -34,7 +34,7 @@ Connectorを作成するIAMユーザには、サブスクライブとサブス�
 .. ロールタイプが Amazon EC2 の IAM ロールを作成し、前の手順で作成したポリシーをロールに付加します。
 
 
-. にアクセスします https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace の Cloud Manager のページ"^] AMIからCloud Managerを導入するには、次の手順を実行します
+. にアクセスします https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS MarketplaceのBlueXPページ"^] AMIからコネクタを導入するには、次の手順を実行します。
 . [Marketplace] ページで [* Continue to Subscribe* ] をクリックし、 [* Continue to Configuration* ] をクリックします。
 +
 image:screenshot_subscribe_cm.gif["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]
@@ -42,12 +42,12 @@ image:screenshot_subscribe_cm.gif["AWS Marketplace の Continue to Subscribe and
 . デフォルトのオプションを変更し、 [* Continue to Launch] をクリックします。
 . [ アクションの選択 *] で [* EC2 で起動 ] を選択し、 [* 起動 *] をクリックします。
 +
-以下の手順では、 EC2 コンソールからインスタンスを起動する方法について説明します。このコンソールでは、 IAM ロールを Cloud Manager インスタンスに関連付けることができます。これは、 * ウェブサイトからの起動 * アクションを使用しては実行できません。
+以下の手順では、コンソールからEC2コンソールからインスタンスを起動する方法について説明します。これは、IAMロールをコネクタインスタンスに関連付けることができるためです。これは、 * ウェブサイトからの起動 * アクションを使用しては実行できません。
 
 . プロンプトに従って、インスタンスを設定および導入します。
 +
 ** *名前とタグ*：インスタンスの名前とタグを入力します。
-** *アプリケーションとOSイメージ*:このセクションは省略します。Cloud Manager AMIがすでに選択されている。
+** *アプリケーションとOSイメージ*:このセクションは省略します。コネクタAMIはすでに選択されています。
 ** * Instance type *：リージョンの可用性に応じて、サポートされているインスタンスタイプ（t3.xlargeを推奨）のいずれかを選択します。
 +
 link:task-installing-linux.html["インスタンスの要件を確認します"]。
@@ -61,7 +61,7 @@ link:task-installing-linux.html["インスタンスの要件を確認します"]
 
 
 ** *ストレージの設定*：デフォルトのストレージオプションをそのまま使用します。
-** *詳細*：「* IAM intance profile *」で、手順1で作成したIAMロールを選択します。
+** *詳細*：「* IAM instance profile *」で、手順1で作成したIAMロールを選択します。
 ** *概要*：概要を確認し、*インスタンスの起動*をクリックします。
 +
 AWS は、指定した設定でソフトウェアを起動します。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。
@@ -84,10 +84,10 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 
 
 
-. Web ブラウザを開き、に進みます https://cloudmanager.netapp.com[] をクリックして、Connector with Cloud Managerの使用を開始します。
+. Web ブラウザを開き、に進みます https://cloudmanager.netapp.com[] BlueXPでコネクタの使用を開始します
 
 
-これで、 Connector のインストールとセットアップが完了しました。Cloud Manager は、新しい作業環境の作成時にこのコネクタを自動的に使用します。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
+これで、 Connector のインストールとセットアップが完了しました。新しい作業環境を作成するときに、BlueXPではこのコネクタが自動的に使用されます。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
 
 Connectorを作成したのと同じAWSアカウントにAmazon S3バケットがある場合、Amazon S3の作業環境がCanvasに自動的に表示されます。 link:task-viewing-amazon-s3.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
 
@@ -95,7 +95,7 @@ Connectorを作成したのと同じAWSアカウントにAmazon S3バケット�
 
 == AWSリージョンにコネクタを作成します
 
-ConnectorをAWS Governmentリージョンに導入するには、EC2サービスにアクセスして、AWS MarketplaceからCloud Managerサービスを選択する必要があります。
+ConnectorをAWS Governmentリージョンに導入するには、EC2サービスにアクセスして、AWS MarketplaceからBlueXP製品を選択する必要があります。
 
 .手順
 . AWSで権限を設定します。
@@ -104,16 +104,16 @@ ConnectorをAWS Governmentリージョンに導入するには、EC2サービス
 .. ロールタイプが Amazon EC2 の IAM ロールを作成し、前の手順で作成したポリシーをロールに付加します。
 
 
-. AWS Marketplaceで提供されているCloud Managerのサービスにアクセスします。
+. AWS MarketplaceのBlueXP製品にアクセスします。
 +
 IAM ユーザがサブスクライブとサブスクライブ解除を行うには、 AWS Marketplace の権限が必要です。
 
 +
 .. EC2サービスを開き、*インスタンスの起動*を選択します。
 .. 「AWS Marketplace *」を選択します。
-.. Cloud Managerを検索してサービスを選択します。
+.. BlueXPを検索して、製品を選択します。
 +
-image:screenshot-gov-cloud-mktp.png["AWS Marketplaceで検索したCloud Managerのサービスを示すスクリーンショット"]
+image:screenshot-gov-cloud-mktp.png["AWS Marketplaceで検索したBlueXP製品を示すスクリーンショット"]
 
 .. [* Continue （続行） ] をクリックします
 
@@ -157,7 +157,7 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 
 これで、 Connector のインストールとセットアップが完了しました。
 
-Cloud Managerを使用する場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続します。 https://_ipaddress_[]
+BlueXPを使用する場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続します。 https://_ipaddress_[]
 
 コネクタは政府機関に導入されているため、からはアクセスできません https://cloudmanager.netapp.com[]。
 
@@ -165,7 +165,7 @@ Cloud Managerを使用する場合は、Webブラウザを開いてコネクタ�
 
 == AutoSupport メッセージのポート3128を開きます
 
-アウトバウンドのインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、Cloud Managerはコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を自動的に設定します。
+アウトバウンドインターネット接続が使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、BlueXPは自動的にコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を設定します。
 
 唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
 

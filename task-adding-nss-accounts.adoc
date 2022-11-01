@@ -4,7 +4,7 @@ permalink: task-adding-nss-accounts.html
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
 summary: ネットアップサポートサイト（ NSS ）アカウントのクレデンシャルを入力して、 Cloud Volumes ONTAP の主要なワークフローを有効にし、 Active IQ による予測分析とプロアクティブなサポートを有効にします。 
 ---
-= Cloud Manager でネットアップサポートサイトのアカウントを追加および管理します
+= BlueXPでNetApp Support Site アカウントを追加および管理します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,38 +14,70 @@ summary: ネットアップサポートサイト（ NSS ）アカウントのク
 
 
 [role="lead"]
-ネットアップサポートサイト（ NSS ）アカウントのクレデンシャルを入力して、 Cloud Volumes ONTAP の主要なワークフローを有効にし、 Active IQ による予測分析とプロアクティブなサポートを有効にします。
+NetApp Support Site （NSS）アカウントのサポートへの登録、Cloud Volumes ONTAP の主要なワークフローの有効化などに必要なクレデンシャルを指定します。
 
 
 
 == 概要
 
-次のタスクを実行するには、 Cloud Manager にネットアップサポートサイトのアカウントを追加する必要があります。
+次のタスクを有効にするには、NetApp Support Site アカウントをBlueXPに追加する必要があります。
 
+* をクリックしてサポートに登録してください
 * お客様所有のライセンスを使用（ BYOL ）した場合に Cloud Volumes ONTAP を導入するには
 +
-Cloud Manager でライセンスキーをアップロードし、購入した期間のサブスクリプションを有効にするには、 NSS アカウントを指定する必要があります。これには、期間の更新の自動更新も含まれます。
+ライセンスキーをBlueXPでアップロードし、購入した契約期間のサブスクリプションを有効にするには、NSSアカウントを提供する必要があります。これには、期間の更新の自動更新も含まれます。
 
 * 従量課金制の Cloud Volumes ONTAP システムを登録できます
 +
 お使いのシステムのサポートを有効にし、ネットアップのテクニカルサポートリソースにアクセスするには、 NSS アカウントを用意する必要があります。
 
 * をクリックして、 Cloud Volumes ONTAP ソフトウェアを最新リリースにアップグレードします
-* から Active IQ デジタルアドバイザを使用します
 
+
+また、BlueXP内からDigital Advisor (旧Active IQ )を使用するには、NSSの資格情報も入力する必要があります。これらの資格情報はユーザーアカウントに直接関連付けられており、Digital Advisorのみで使用できます。詳細については、以降のセクションを参照してください。
+
+
+
+== Digital Advisorに関連付けられたNSSアカウントを管理します
+
+BlueXPでDigital Advisorにアクセスすると、NSS資格情報を入力してDigital Advisorにログインするように求められます。NSSの資格情報を入力すると、NSS管理ページの上部にこのNSSアカウントが表示されます。その後、必要に応じてクレデンシャルを管理できます。
+
+このNSSアカウントについては、次の点に注意してください。
+
+* アカウントはユーザレベルで管理されるため、他のユーザがログインしても表示できません。
+* アカウントは、Cloud Volumes ONTAP の作成、ライセンス、サポートではなく、その他のBlueXP機能では使用できません。
+* Digital Advisorに関連付けられるNSSアカウントは、ユーザごとに1つだけです。
+
+
+.手順
+. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
+
+. [*NSS 管理 *] をクリックします。
+. [*Your NSS Credentials]で[*Action*]をクリックし、次のいずれかのオプションを選択します。
++
+** * NSSユーザーを関連付け*: NetApp Support Site アカウントの資格情報を追加して、BlueXPでDigital Advisorにアクセスできるようにします。
+** *既存の資格情報の更新*：NetApp Support Site アカウントの資格情報を更新します。
+** *削除*：Digital Advisorに関連付けられたアカウントを削除します。
+
+
+
+
+BlueXPは、Digital Advisorに関連付けられたNSSアカウントを更新します。
 
 
 
 == NSS アカウントを追加します
 
-サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、Cloud Managerで使用できます。
+サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加および管理して、ネットアップアカウントレベルでBlueXPを使用できます。
 
 * お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。
 * パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加できますが、お客様レベルのアカウントと一緒に追加することはできません。
 
 
 .手順
-. Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
+. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
@@ -56,7 +88,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 . ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
 +
-これらの操作を実行すると、Cloud ManagerはNSSアカウントを使用して、ライセンスのダウンロード、ソフトウェアアップグレードの検証、以降のサポートの登録などを実行できます。
+これらのアクションにより、BlueXPはライセンスのダウンロード、ソフトウェアのアップグレード検証、および将来のサポート登録などの目的でNSSアカウントを使用できます。
 
 +
 次の点に注意してください。
@@ -69,7 +101,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
-新しい Cloud Volumes ONTAP システムの作成時、既存の Cloud Volumes ONTAP システムの登録時、および Active IQ でデータを表示するときに、アカウントを選択できるようになりました。
+新しいCloud Volumes ONTAP システムの作成時、既存のCloud Volumes ONTAP システムの登録時、およびサポート登録時にアカウントを選択できるようになりました。
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS での Cloud Volumes ONTAP の起動"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure で Cloud Volumes ONTAP を起動します"^]
@@ -81,11 +113,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 == NSS アカウントを更新して新しい認証方法を適用します
 
-2021 年 11 月以降、ネットアップはサポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用します。この更新によって、 Cloud Manager は、以前に追加した既存のアカウントのクレデンシャルの更新を求めます。
+2021 年 11 月以降、ネットアップはサポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用します。この更新プログラムの結果、以前に追加した既存のアカウントの資格情報を更新するように求められます。
 
 .手順
 . まだ行っていない場合は、 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["現在のネットアップアカウントにリンクする Microsoft Azure Active Directory B2C アカウントを作成します"^]。
-. Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
+. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 . [*NSS 管理 *] をクリックします。
 . アップデートする NSS アカウントの場合は、 * アカウントの更新 * をクリックします。
 +
@@ -107,10 +139,14 @@ image:screenshot-nss-update-account.png["［ アカウントの更新 ］ オプ
 
 == NSS クレデンシャルを更新します
 
-NSS アカウントのクレデンシャルを変更するたびに、 Cloud Manager で更新する必要があります。
+次のいずれかの場合は、BlueXPでNSSアカウントの資格情報を更新する必要があります。
+
+* このアカウントのクレデンシャルを変更した場合
+* アカウントに関連付けられた更新トークンの有効期限は3カ月です
+
 
 .手順
-. Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
+. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 . [*NSS 管理 *] をクリックします。
 . アップデートする NSS アカウントのをクリックします image:icon-action.png["横方向の 3 つの点を示すアイコン"] 次に、 [ 資格情報の更新 ] を選択します。
 +
@@ -132,7 +168,7 @@ image:screenshot-nss-update-credentials.png["ネットアップサポートサ�
 この機能は、ネットアップがアイデンティティ管理に導入した Microsoft Azure AD を使用するように設定された NSS アカウントでのみサポートされます。この機能を使用する前に、「 * NSS アカウントを追加 * 」または「 * アカウントを更新 * 」をクリックする必要があります。
 
 .手順
-. Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
+. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 . [*NSS 管理 *] をクリックします。
 . NSS アカウントを変更するには、次の手順を実行します。
 +
@@ -151,13 +187,13 @@ image:screenshot-nss-change-account.png["ネットアップサポートサイト
 
 == NSS アカウントの E メールアドレスを表示します
 
-ネットアップサポートサイトのアカウントで認証サービスに Microsoft Azure Active Directory が使用されているため、 Cloud Manager に表示される NSS ユーザ名は通常、 Azure AD で生成された識別子です。そのため、そのアカウントに関連付けられている E メールアドレスがすぐにわからない場合があります。Cloud Manager には、関連付けられている E メールアドレスを表示するオプションがあります。
+NetApp Support Site アカウントで認証サービスにMicrosoft Azure Active Directoryを使用しているため、BlueXPに表示されるNSSユーザ名は通常、Azure ADで生成された識別子です。そのため、そのアカウントに関連付けられている E メールアドレスがすぐにわからない場合があります。しかし、BlueXPには、関連するメールアドレスを表示するオプションがあります。
 
 
-TIP: NSS の管理ページに移動すると、 Cloud Manager のテーブル内のアカウントごとにトークンが生成されます。このトークンには、関連付けられた E メールアドレスに関する情報が含まれます。その後、ページから移動するとトークンが削除されます。この情報はキャッシュされないため、プライバシーを保護できます。
+TIP: NSS管理ページに移動すると、表の各アカウントのトークンがBlueXPによって生成されます。このトークンには、関連付けられた E メールアドレスに関する情報が含まれます。その後、ページから移動するとトークンが削除されます。この情報はキャッシュされないため、プライバシーを保護できます。
 
 .手順
-. Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
+. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 . [*NSS 管理 *] をクリックします。
 . アップデートする NSS アカウントのをクリックします image:icon-action.png["横方向の 3 つの点を示すアイコン"] 次に、 [ 電子メールアドレスの表示 *] を選択します。
 +
@@ -165,18 +201,18 @@ image:screenshot-nss-display-email.png["ネットアップサポートサイト�
 
 
 
-Cloud Manager に、ネットアップサポートサイトのユーザ名と関連付けられている E メールアドレスが表示されます。コピーボタンを使用して、電子メールアドレスをコピーできます。
+NetApp Support Site ユーザー名と関連するメールアドレスが表示されます。コピーボタンを使用して、電子メールアドレスをコピーできます。
 
 
 
 == NSS アカウントを削除します
 
-Cloud Manager で使用しない NSS アカウントを削除します。
+BlueXPで使用しないNSSアカウントをすべて削除します。
 
 Cloud Volumes ONTAP 作業環境に現在関連付けられているアカウントは削除できません。最初にが必要です  a working environment to a different NSS account,それらの作業環境を別の NSS アカウントに接続します。
 
 .手順
-. Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
+. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 . [*NSS 管理 *] をクリックします。
 . 削除する NSS アカウントのをクリックします image:icon-action.png["横方向の 3 つの点を示すアイコン"] 次に、 * Delete * を選択します。
 +

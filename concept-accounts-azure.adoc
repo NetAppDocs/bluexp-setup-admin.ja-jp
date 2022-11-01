@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
-summary: Cloud Manager では、 Cloud Volumes ONTAP の導入時に使用する Azure クレデンシャルを選択できます。すべての Cloud Volumes ONTAP システムは、初期の Azure クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。 
+summary: BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するAzureクレデンシャルを選択できます。すべての Cloud Volumes ONTAP システムは、初期の Azure クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。 
 ---
 = Azure のクレデンシャルと権限
 :hardbreaks:
@@ -14,19 +14,19 @@ summary: Cloud Manager では、 Cloud Volumes ONTAP の導入時に使用する
 
 
 [role="lead"]
-Cloud Manager では、 Cloud Volumes ONTAP の導入時に使用する Azure クレデンシャルを選択できます。すべての Cloud Volumes ONTAP システムは、初期の Azure クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。
+BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するAzureクレデンシャルを選択できます。すべての Cloud Volumes ONTAP システムは、初期の Azure クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。
 
 
 
 == Azure の初期クレデンシャル
 
-Cloud Manager から Connector を導入する場合は、 Connector 仮想マシンを導入する権限を持つ Azure アカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます link:task-creating-connectors-azure.html["Azure の Connector 導入ポリシー"]。
+BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます link:task-creating-connectors-azure.html["Azure の Connector 導入ポリシー"]。
 
-Cloud Manager が Azure に Connector 仮想マシンを導入すると、が有効になります https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["システムによって割り当てられた管理 ID"^] 仮想マシンで、カスタムロールを作成して仮想マシンに割り当てます。Cloud Manager に、その Azure サブスクリプション内のリソースとプロセスを管理する権限が付与されます。 link:reference-permissions-azure.html["Cloud Manager での権限の使用方法を確認します。"]。
+BlueXPがAzureにConnector仮想マシンを導入すると、が有効になります https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["システムによって割り当てられた管理 ID"^] 仮想マシンで、カスタムロールを作成して仮想マシンに割り当てます。このロールは、そのAzureサブスクリプション内でリソースとプロセスを管理するために必要な権限をBlueXPに提供します。 link:reference-permissions-azure.html["BlueXPがどのように権限を使用しているかを確認します"]。
 
-image:diagram_permissions_initial_azure.png["クラウドセントラルの導入クラウドマネージャを Azure のアカウントとサブスクリプションに導入した場合の概念を示すイメージ。システムによって割り当てられた管理対象 ID が有効になり、カスタムロールが Cloud Manager 仮想マシンに割り当てられます。"]
+image:diagram_permissions_initial_azure.png["BlueXPがコネクタをAzureアカウントとサブスクリプションに導入する様子を示す概念図。システムによって割り当てられた管理IDが有効になり、Connector仮想マシンにカスタムロールが割り当てられます。"]
 
-Cloud Volumes ONTAP 用の新しい作業環境を作成すると、 Cloud Manager でデフォルトで次の Azure クレデンシャルが選択されます。
+Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォルトで次のAzureクレデンシャルが選択されます。
 
 image:screenshot_accounts_select_azure.gif["Details  Credentials ページに Switch Account オプションを示すスクリーンショット。"]
 
@@ -44,7 +44,7 @@ image:screenshot_accounts_select_azure.gif["Details  Credentials ページに Sw
 
 image:diagram_permissions_multiple_azure.png["「 Azure の最初のアカウントを示す概念図。カスタムのロールと管理対象 ID を使用して権限を付与します。また、カスタムのロールとサービスプリンシパルを使用して権限を付与するもう 1 つのアカウントも含まれます。」"]
 
-そのあとで link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["Cloud Manager にアカウントのクレデンシャルを追加します"] AD サービスプリンシパルの詳細を指定します。
+そのあとで link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["アカウントの資格情報をBlueXPに追加します"] AD サービスプリンシパルの詳細を指定します。
 
 クレデンシャルを追加したら、新しい作業環境を作成するときにクレデンシャルに切り替えることができます。
 
@@ -52,7 +52,7 @@ image:screenshot_accounts_switch_azure.gif["[ 詳細と資格情報 ] ページ�
 
 .市場への導入とオンプレミスの導入についてはどうでしょうか。
 ****
-上記のセクションでは、 NetApp Cloud Central のコネクタで推奨される導入方法について説明します。から Azure に Connector を導入することもできます link:task-launching-azure-mktp.html["Azure Marketplace で入手できます"]を使用できます link:task-installing-linux.html["コネクタをオンプレミスにインストールします"]。
+上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。から Azure に Connector を導入することもできます link:task-launching-azure-mktp.html["Azure Marketplace で入手できます"]を使用できます link:task-installing-linux.html["コネクタをオンプレミスにインストールします"]。
 
 Marketplace を使用する場合も、アクセス許可は同じ方法で提供されます。コネクタの管理 ID を手動で作成してセットアップし、追加のアカウントに権限を付与するだけで済みます。
 

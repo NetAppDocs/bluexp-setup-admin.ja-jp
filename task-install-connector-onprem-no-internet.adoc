@@ -69,7 +69,7 @@ Docker Engine の略:: Connector をインストールする前に、ホスト�
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
-. から Cloud Manager ソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]。
+. からBlueXPソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]。
 . インストーラを Linux ホストにコピーします。
 . スクリプトを実行する権限を割り当てます。
 +
@@ -90,23 +90,23 @@ sudo /path/cloud-manager-connector-offline-v3.9.19
 +
 image:screenshot-onprem-darksite-welcome.png["Web ブラウザにコネクタの IP アドレスを入力した後に表示される Welcome ページのスクリーンショット。"]
 
-. Set Up New Cloud Manager * をクリックし、プロンプトに従ってシステムをセットアップします。
+. [新しいBlueXP*をセットアップする]をクリックし、画面の指示に従ってシステムをセットアップします。
 +
-** * System Details * ： Cloud Manager システムの名前と会社名を入力します。
+** *システムの詳細*：コネクタの名前と会社名を入力します。
 +
-image:screenshot-onprem-darksite-details.png["System Details ページのスクリーンショット。 Cloud Manager の名前と会社名を入力するように求められます。"]
+image:screenshot-onprem-darksite-details.png["システムの詳細ページのスクリーンショット。BlueXPの名前と会社名を入力するように求められます。"]
 
 ** * 管理者ユーザーの作成 * ：システムの管理者ユーザーを作成します。
 +
-このユーザアカウントはシステム上でローカルに実行されます。NetApp Cloud Central への接続はありません。
+このユーザアカウントはシステム上でローカルに実行されます。BlueXPからはAuth0サービスに接続できません。
 
 ** * 復習 * ：詳細を確認し、ライセンス契約に同意して、 * セットアップ * をクリックします。
 
 
-. 作成した管理者ユーザを使用して Cloud Manager にログインします。
+. 作成した管理者ユーザを使用してBlueXPにログインします。
 
 
-これでコネクタがインストールされ、ダークサイト環境で使用できる Cloud Manager の機能の使用を開始できるようになります。
+これでコネクタがインストールされ、ダークサイトの展開で使用できるBlueXP機能を使用できるようになります。
 
 .次の内容
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの ONTAP クラスタを検出"^]

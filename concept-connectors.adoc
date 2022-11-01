@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-connectors.html 
 keywords: 'concept, connectors, learn about connectors, service connectors, what are connectors, what is a connector, what"s a connector, days, 14 days' 
-summary: ほとんどの場合、クラウドまたはオンプレミスネットワークにコネクタを導入する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。 
+summary: ほとんどの場合、クラウドまたはオンプレミスネットワークにコネクタを導入する必要があります。コネクタは、BlueXPを日常的に使用する上で重要なコンポーネントです。これにより、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できるようになります。 
 ---
 = コネクタについて説明します
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: ほとんどの場合、クラウドまたはオンプレミスネッ�
 
 
 [role="lead"]
-ほとんどの場合、Cloud Managerアカウント管理者は、クラウドまたはオンプレミスネットワークに_ Connector _を導入する必要があります。Connector は、 Cloud Manager を日常的に使用するための重要なコンポーネントです。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセスを管理できます。
+多くの場合、BlueXPアカウント管理者は、クラウドまたはオンプレミスネットワークに_コネクタ_を導入する必要があります。コネクタは、BlueXPを日常的に使用する上で重要なコンポーネントです。これにより、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できるようになります。
 
 
 
 == コネクタが必要な場合
 
-Cloud Manager の多くの機能やサービスを使用するには、コネクタが必要です。
+コネクタは、BlueXPの多くの機能やサービスを使用するために必要です。
 
 
 
@@ -44,7 +44,7 @@ Cloud Manager の多くの機能やサービスを使用するには、コネク
 
 次のサービスには、コネクタが * _ ではありません _ * 。
 
-* Active IQ デジタルアドバイザ
+* Digital Advisor
 * 作業環境の作成にはコネクタは必要ありませんが、 ONTAP FSX for ONTAP を作成して管理し、データをレプリケートし、データセンスや Cloud Sync などの クラウド サービス と FSX for を統合する必要があります。
 * Azure NetApp Files の特長
 +
@@ -102,9 +102,9 @@ NOTE: Cloud Volumes ONTAP システムにノードベースのBYOLライセン�
 
 == コネクタを作成する方法
 
-Cloud Managerアカウント管理者は、さまざまな方法でコネクタを作成できます。
+BlueXPアカウント管理者は、次のような方法でコネクタを作成できます。
 
-* Cloud Manager から直接（推奨）
+* BlueXPから直接(推奨)
 +
 ** link:task-creating-connectors-aws.html["AWS でを作成します"]
 ** link:task-creating-connectors-azure.html["Azure で作成します"]
@@ -125,7 +125,7 @@ Cloud Managerアカウント管理者は、さまざまな方法でコネクタ�
 
 
 
-政府機関で運用している場合は、クラウドプロバイダのマーケットプレイスからConnectorを導入するか、既存のLinuxホストにConnectorソフトウェアを手動でインストールする必要があります。Connectorは、Cloud ManagerのSaaS Webサイトからは政府機関のリージョンに導入できません。
+政府機関で運用している場合は、クラウドプロバイダのマーケットプレイスからConnectorを導入するか、既存のLinuxホストにConnectorソフトウェアを手動でインストールする必要があります。BlueXPのSaaS Webサイトでは、政府機関の地域にConnectorを導入することはできません。
 
 
 
@@ -137,7 +137,7 @@ Cloud Managerアカウント管理者は、さまざまな方法でコネクタ�
 
 === コネクタを作成する権限
 
-Cloud Manager からコネクタを作成するユーザには、任意のクラウドプロバイダにインスタンスを導入するための特定の権限が必要です。Connector を作成するときは、 Cloud Manager に権限の要件が通知されます。
+BlueXPからConnectorを作成するユーザーは、クラウドプロバイダを選択してインスタンスを展開するための特定の権限を必要とします。
 
 * link:task-creating-connectors-aws.html["必要なAWS権限を確認します"]
 * link:task-creating-connectors-azure.html["必要なAzure権限を確認します"]
@@ -150,7 +150,7 @@ Cloud Manager からコネクタを作成するユーザには、任意のクラ
 
 Connector で処理を実行するには、特定のクラウドプロバイダの権限が必要です。たとえば、 Cloud Volumes ONTAP を導入して管理するには、のように指定します。
 
-Cloud Manager から直接コネクタを作成すると、必要な権限を持つコネクタが Cloud Manager によって作成されます。必要なことは何もありません。
+BlueXPからコネクタを直接作成すると'BlueXPは必要なアクセス権を持つコネクタを作成します必要なことは何もありません。
 
 コネクタを AWS Marketplace 、 Azure Marketplace 、またはソフトウェアを手動でインストールして作成する場合は、適切な権限が設定されていることを確認する必要があります。
 
@@ -163,7 +163,7 @@ Cloud Manager から直接コネクタを作成すると、必要な権限を持
 
 == コネクタのアップグレード
 
-私たちは通常、コネクタソフトウェアを毎月更新して新機能を導入し、安定性を向上させています。Cloud Manager プラットフォームのサービスと機能のほとんどは SaaS ベースのソフトウェアで提供されますが、いくつかの機能はコネクタのバージョンによって異なります。Cloud Volumes ONTAP 管理、オンプレミスの ONTAP クラスタ管理、設定、ヘルプが含まれます。
+私たちは通常、コネクタソフトウェアを毎月更新して新機能を導入し、安定性を向上させています。BlueXPプラットフォームのサービスと機能のほとんどはSaaSベースのソフトウェアで提供されますが、いくつかの機能はコネクタのバージョンによって異なります。Cloud Volumes ONTAP 管理、オンプレミスの ONTAP クラスタ管理、設定、ヘルプが含まれます。
 
 Connectorは、ソフトウェアアップデートを取得するためにアウトバウンドインターネットアクセスがある限り、ソフトウェアを自動的に最新バージョンにアップデートします。
 
@@ -171,7 +171,7 @@ Connectorは、ソフトウェアアップデートを取得するためにア�
 
 == コネクタごとの作業環境数
 
-1 つのコネクタで複数の作業環境を Cloud Manager で管理できます。1 つのコネクタで管理できる作業環境の最大数は、環境によって異なります。管理対象は、作業環境の種類、ボリュームの数、管理対象の容量、ユーザの数によって異なります。
+コネクタは、BlueXPで複数の作業環境を管理できます。1 つのコネクタで管理できる作業環境の最大数は、環境によって異なります。管理対象は、作業環境の種類、ボリュームの数、管理対象の容量、ユーザの数によって異なります。
 
 大規模な導入の場合は、ネットアップの担当者にご相談のうえ、環境のサイジングを行ってください。途中で問題が発生した場合は、製品内のチャットでお問い合わせください。
 
@@ -198,7 +198,7 @@ Connectorは、ソフトウェアアップデートを取得するためにア�
 . link:task-managing-connectors.html["別のコネクタに切り替えます"]
 . 既存の作業環境を検出
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["既存の Cloud Volumes ONTAP システムを Cloud Manager に追加"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["既存のCloud Volumes ONTAP システムをBlueXPに追加します"^]
 ** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["ONTAP クラスタを検出"^]
 
 
@@ -212,7 +212,7 @@ Connectorは、ソフトウェアアップデートを取得するためにア�
 
 == コネクタを切り替えるタイミング
 
-最初のコネクタを作成すると、新しく作成する作業環境ごとに、そのコネクタが Cloud Manager によって自動的に使用されます。コネクタを追加で作成したら、コネクタを切り替えることで各コネクタに固有の作業環境を確認する必要があります。
+最初のコネクタを作成すると、作成した追加の作業環境ごとにそのコネクタが自動的に使用されます。コネクタを追加で作成したら、コネクタを切り替えることで各コネクタに固有の作業環境を確認する必要があります。
 
 link:task-managing-connectors.html["コネクタを切り替える方法について説明します"]。
 
