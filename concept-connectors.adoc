@@ -37,7 +37,6 @@ summary: ほとんどの場合、クラウドまたはオンプレミスネッ�
 * グローバルファイルキャッシュ
 * Google Cloud Storageの検出
 * Kubernetes クラスタ
-* 監視
 * オンプレミスの ONTAP クラスタ
 * StorageGRID
 
