@@ -765,7 +765,6 @@
   <block id="dad57e95fc9a5390302ad830888cbdb9" category="list-text">クラウドバックアップ</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="85eb427901278daf26f132cb3e076914" category="list-text">Kubernetes クラスタ</block>
-  <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="list-text">監視</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="list-text">オンプレミスの ONTAP クラスタ</block>
   <block id="d7c778975033347c9e67ffb83d3e7948" category="paragraph">次のサービスには、コネクタが * _ ではありません _ * 。</block>
   <block id="a8435d00af3d55ea03fdb027caa5b23b" category="list-text">作業環境の作成にはコネクタは必要ありませんが、 ONTAP FSX for ONTAP を作成して管理し、データをレプリケートし、データセンスや Cloud Sync などの クラウド サービス と FSX for を統合する必要があります。</block>
@@ -2162,7 +2161,6 @@
   <block id="6c73104e218372ccda6dc2d58fda524d" category="paragraph">たとえば、コネクタは、Cloud Volumes ONTAP の健常性と運用の鍵となるコンポーネントです。コネクタの電源がオフの場合は、Cloud Volumes ONTAP PAYGOシステムと容量ベースのBYOLシステムは、コネクタとの通信を14日以上切断したあとでシャットダウンします。これは、コネクタがシステムのライセンスを毎日更新するためです。</block>
   <block id="b9c53fca7bb84d0455a2b4768b130e38" category="admonition">Cloud Volumes ONTAP システムにノードベースのBYOLライセンスがある場合は、ライセンスがCloud Volumes ONTAP システムにインストールされているため、14日後もシステムは実行されたままになります。</block>
   <block id="2538b2df52d923f09592be3b38238322" category="list-text">14 GB</block>
-  <block id="ee684612f76fd9e6afd18a46554f2ede" category="list-text">現時点では、Cloud Sync のみがEメールで通知を送信しています。サービスは今後のリリースで追加される予定です。</block>
   <block id="5fd245f2aeee830efb92d081af6a0e22" category="list-text">Connectorがインターネットにアクセスできないサイトにインストールされている場合は、Eメール通知の送信はサポートされません。</block>
   <block id="288bb352dffecbb16aa463067359ba15" category="summary">デフォルトでは、BlueXPはWebコンソールへのHTTPSアクセスに自己署名証明書を使用します。認証局（ CA ）によって署名された証明書をインストールできます。これにより、自己署名証明書よりも優れたセキュリティ保護が提供されます。</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">BlueXP設定を変更する前にコネクタを作成する必要があります。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
@@ -2643,4 +2641,5 @@
   <block id="a222de5f9a1db461954d4160797dfa76" category="sidebar">BlueXPを管理します</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXPブログ</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
+  <block id="0600a5fd997330da4629c9667c77df85" category="list-text">現時点で通知をEメールで送信しているのは、Cloud Sync とクラウドバックアップのみです。サービスは今後のリリースで追加される予定です。</block>
 </blocks>
