@@ -148,17 +148,8 @@ image:screenshot-manage-account-settings.png["「アカウント」ドロップ�
 
 への API 呼び出しを実行するため https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["テナンシー API"^]サービスアカウントのベアラートークンを取得する必要があります。
 
-[source, curl]
-----
-curl --location --request POST 'https://netapp-cloud-account.auth0.com/oauth/token' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "grant_type": "client_credentials",
-    "client_secret": "<client secret>",
-    "audience": "https://api.cloud.netapp.com",
-    "client_id": "<client id>"
-}'
-----
+https://docs.netapp.com/us-en/cloud-manager-automation/platform/create_service_token.html["サービスアカウントトークンの作成方法について説明します"^]
+
 
 
 === クライアント ID をコピーしています
