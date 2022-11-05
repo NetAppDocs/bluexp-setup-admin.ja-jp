@@ -198,20 +198,22 @@ AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnec
         "s3:AbortMultipartUpload",
         "s3:ListMultipartUploadParts",
         "s3:DeleteBucket",
-		    "s3:GetObjectVersionTagging",
-			  "s3:GetObjectVersionAcl",
-	   		"s3:GetObjectRetention",
-	   		"s3:GetObjectTagging",
-	   		"s3:GetObjectVersion",
-	   		"s3:PutObjectVersionTagging",
-	   		"s3:PutObjectRetention",
-	   		"s3:DeleteObjectTagging",
-	   		"s3:DeleteObjectVersionTagging",
-	   		"s3:GetBucketObjectLockConfiguration",
-	   		"s3:GetBucketVersioning",
-	   		"s3:PutBucketObjectLockConfiguration",
-	   		"s3:PutBucketVersioning",
-	   		"s3:BypassGovernanceRetention"
+        "s3:GetObjectVersionTagging",
+        "s3:GetObjectVersionAcl",
+        "s3:GetObjectRetention",
+        "s3:GetObjectTagging",
+        "s3:GetObjectVersion",
+        "s3:PutObjectVersionTagging",
+        "s3:PutObjectRetention",
+        "s3:DeleteObjectTagging",
+        "s3:DeleteObjectVersionTagging",
+        "s3:GetBucketObjectLockConfiguration",
+        "s3:GetBucketVersioning",
+        "s3:PutBucketObjectLockConfiguration",
+        "s3:PutBucketVersioning",
+        "s3:BypassGovernanceRetention",
+        "s3:PutBucketPolicy",
+        "s3:PutBucketOwnershipControls"
       ],
       "Resource": [
         "arn:aws:s3:::netapp-backup-*"
@@ -762,6 +764,12 @@ Connectorは、Amazon S3でバックアップを管理するために次のAPI�
 * S3 ： PutObjectRetention
 * S3 ： GetBucketLocation
 * S3 ： GetObjectVersion
+
+
+Cloud Volumes ONTAP バックアップにソースボリュームとは異なるAWSアカウントを使用する場合、Connectorは次のAPI要求を実行します。
+
+* S3 ： PutBucketPolicy
+* S3：PutBucketOwnershipControls
 
 
 
