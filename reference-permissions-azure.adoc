@@ -707,6 +707,9 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 
 
 | microsoft.Resources/tags/delete | はい。 | いいえ | いいえ 
+
+
+| 作成時にストレージアカウントを暗号化 | microsoft.ManagedIdentity/userAssignedIdentities/assign/action | はい。 | はい。 | いいえ 
 |===
 
 

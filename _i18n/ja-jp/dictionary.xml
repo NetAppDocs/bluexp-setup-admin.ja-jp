@@ -2750,4 +2750,36 @@
   <block id="c188f3200de41a855c54a31c5e486db6" category="paragraph">Cloud Volumes ONTAP バックアップにソースボリュームとは異なるAWSアカウントを使用する場合、Connectorは次のAPI要求を実行します。</block>
   <block id="4b9c42bf1853fa25d534302dbc43f035" category="list-text">S3 ： PutBucketPolicy</block>
   <block id="fa4d7248969f7582be82c5aa4b15e08b" category="list-text">S3：PutBucketOwnershipControls</block>
+  <block id="c9c484fe908813be17fe13bbdeabfb1d" category="cell">作成時にストレージアカウントを暗号化</block>
+  <block id="4d17b7f0d1f8c0ae69c0ec8d32fea349" category="summary">クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、BlueXPのWebサイトにリダイレクトされます。このWebサイトでは、サブスクリプションを保存して、特定のアカウントに関連付ける必要があります。登録が完了すると、各サブスクリプションをデジタルウォレットから管理できるようになります。</block>
+  <block id="b01b1be092b95233172f870dc729234b" category="doc">PAYGOのサブスクリプションと契約を管理</block>
+  <block id="e858f445394700e621aa67dd8e3fe958" category="section-title">月額プランを表示します</block>
+  <block id="9c1b3fb5f48f73ce89025933ec931382" category="paragraph">Digital Walletは、お客様のBlueXPアカウントとAstra (AstraはBlueXPの課金サービスを利用)に関連するPAYGOの各サブスクリプションと年間契約の詳細を提供します。</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">BlueXPナビゲーションメニューから、* Governance &gt; Digital Wallet *を選択します。</block>
+  <block id="8c3682e85d7f4dbe8a46485082335dec" category="list-text">[サブスクリプション]を選択します。</block>
+  <block id="572e470335e0a6d55da05c732a01aed3" category="list-text">サブスクリプションに関する情報を表示する際、次のようにテーブルの詳細を操作できます。</block>
+  <block id="6a1de13d318f22872902849cd26467b4" category="list-text">行を展開すると詳細が表示されます。</block>
+  <block id="d61aec883b403c61da2d8d8e19d78473" category="inline-image-macro">デジタルウォレットの[購読]タブのスクリーンショット。行の末尾にある矢印を選択して展開できます。</block>
+  <block id="3a9d2caf2b3b63f1b3ab7d00e469b158" category="paragraph"><block ref="3a9d2caf2b3b63f1b3ab7d00e469b158" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="56594b7222b35921f9fe676eadf6bbdf" category="inline-image-macro">テーブルヘッダーの末尾にあるプラスアイコン</block>
+  <block id="31ede6b5001222203bb2fe87698bcc3a" category="list-text">をクリックします <block ref="98b11313fea6c4106e5a3c018f0ffbc9" category="inline-image-macro-rx" type="image"></block> をクリックして、テーブルに表示する列を選択します。</block>
+  <block id="c090ce3dc0b8ea780bfa95c666328c67" category="paragraph">デフォルトでは、［用語］および［自動更新］の列は表示されません。自動更新列には、Azure契約の更新情報のみが表示されます。</block>
+  <block id="48772efe35cdbabca3c0abdab7360b57" category="paragraph">表に表示される内容については、次の点に注意してください。</block>
+  <block id="4d34f1097f6c8b9cee28bca8b78bbee9" category="list-text">開始日</block>
+  <block id="d1686d74b72c58f44c6fceaf3011df0b" category="list-text">開始日は、サブスクリプションをアカウントに関連付け、課金が開始されたときです。</block>
+  <block id="716e98867696fbbeed00e3dcd1f76758" category="list-text">表に「N/A」と表示される場合は、現時点ではクラウドプロバイダのAPIから情報を入手できません。</block>
+  <block id="cd494d76449d5dfe0c0adfb2f3447761" category="list-text">契約</block>
+  <block id="8090b542b799e2f0268fddd048d44eda" category="list-text">契約の詳細を展開すると、Digital Walletには現在の計画で使用可能な内容が表示されます。これには、契約のオプションと単位（容量またはノード数）が含まれます。</block>
+  <block id="7f96d1365390f4c6a7c1befe0b068769" category="list-text">Digital Walletは、終了日と、契約がまもなく更新されるか、間もなく終了するか、またはすでに終了したかを識別します。</block>
+  <block id="d1d7830f95588ae511ee592eab47c2b0" category="list-text">AWS契約があり、開始日以降に契約のオプションを変更した場合は、AWSから契約オプションを確認してください。</block>
+  <block id="6942b724002d90bb0f705f478cdd6bf3" category="section-title">サブスクリプションを管理します</block>
+  <block id="ac3dad7b0d90a8896f44e77f84726619" category="paragraph">サブスクリプションの名前を変更し、そのサブスクリプションに関連付けられているアカウントを選択することで、Digital Walletからサブスクリプションを管理できます。</block>
+  <block id="23531331db8be0d13d9ce3c0685c0c8e" category="paragraph"><block ref="23531331db8be0d13d9ce3c0685c0c8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="79e4d47d0339f23eefd594d30e729f96" category="list-text">名前を変更するか、サブスクリプションに関連付けられているネットアップアカウントを管理するかを選択します。</block>
+  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
+  <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">コネクタ3.9.23</block>
+  <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">PAYGOサブスクリプションとBlueXPの年間契約が、Digital Walletから表示および管理できるようになりました。</block>
+  <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">サブスクリプションの管理方法について説明します</block>
+  <block id="ee0a02cf5f32853f4619caef4f31ab4e" category="paragraph"><block ref="ee0a02cf5f32853f4619caef4f31ab4e" category="inline-link-rx"></block></block>
+  <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
 </blocks>

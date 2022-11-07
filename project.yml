@@ -81,6 +81,8 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: デフォルト設定
         url: "/reference-connector-default-config.html"
+    - title: サブスクリプション
+      url: "/task-manage-subscriptions.html"
     - title: クラウドストレージを検出
       entries:
       - title: Amazon S3バケットを表示します

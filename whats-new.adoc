@@ -18,6 +18,24 @@ BlueXP（旧称Cloud Manager）管理機能の新機能であるネットアッ�
 
 
 
+== 2022年11月6日
+
+
+
+=== コネクタ3.9.23
+
+* PAYGOサブスクリプションとBlueXPの年間契約が、Digital Walletから表示および管理できるようになりました。
++
+https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_nov-2022/task-manage-subscriptions.html["サブスクリプションの管理方法について説明します"^]
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6-november-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+
+
+
+
+
 == 2022年11月1日
 
 アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["NSS アカウントを管理する方法について説明します"^]
