@@ -13,6 +13,7 @@ summary: BlueXPは、ITエキスパートとクラウドアーキテクトが、
 :imagesdir: ./media/
 
 
+[role="lead"]
 BlueXP（旧Cloud Manager）を使用すると、ITエキスパートとクラウドアーキテクトは、ネットアップのクラウドソリューションを使用してハイブリッドマルチクラウドインフラを一元管理できます。
 
 
