@@ -149,7 +149,6 @@
   <block id="2dbbb3b6b99aebde1c79427caf3046e0" category="list-text"><block ref="02c78f765c83c4fb4a0370471b089610" category="inline-xref-macro-rx"></block></block>
   <block id="0db58c0529496c0e926af5f8c9002335" category="list-text"><block ref="60d271fc50ad3f5d03a8767578822d7b" category="inline-xref-macro-rx"></block></block>
   <block id="6fca6b826d3e4d0980a08d26e6cf905f" category="section-title">別のアカウントで IAM ロールを想定して権限を付与します</block>
-  <block id="7ab2c48379bd2eb50d8191dc807ded90" category="list-text">Cloud Volumes ONTAP を導入するターゲットアカウントの IAM コンソールに移動します。</block>
   <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">[ アクセス管理 ] で、 [ 役割 ] 、 [ 役割の作成 *] の順にクリックし、手順に従って役割を作成します。</block>
   <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">必ず次の手順を実行してください。</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">信頼されるエンティティのタイプ * で、 * AWS アカウント * を選択します。</block>
@@ -159,7 +158,6 @@
   <block id="e7e95c3a4b88e02526b2bf48eb3cff3b" category="section-title">AWS キーを指定して権限を付与します</block>
   <block id="47d50d25f4b51617534e107d21701e80" category="inline-link">AWS のドキュメント：「 Creating IAM Policies</block>
   <block id="8466ec46633472a027af5c909c923782" category="paragraph"><block ref="8466ec46633472a027af5c909c923782" category="inline-link-rx"></block></block>
-  <block id="923890d009c62cd46ebbcc491c981264" category="list-text">IAM ロールまたは IAM ユーザにポリシーを関連付けます。</block>
   <block id="001eb8189b805b3dbf012a0955d8682f" category="inline-link">AWS のドキュメント：「 Creating IAM Roles</block>
   <block id="f470dc03b4486f269b32bef6a5d721d1" category="list-text"><block ref="f470dc03b4486f269b32bef6a5d721d1" category="inline-link-rx"></block></block>
   <block id="ae447524ca7a094fbd322687e0154e93" category="inline-link">AWS のドキュメント：「 Adding and Removing IAM Policies</block>
@@ -896,7 +894,6 @@
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">をクリックして、 Connector と Docker コンポーネントをアップグレードします。</block>
-  <block id="1608afc958ae647f4bdf5b85e8f9a7b3" category="list-text">https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</block>
   <block id="66f9783489f42faf5074015874cb1c5f" category="list-text">https://s3.amazonaws.com/aws-cli/awscli-bundle.zip</block>
   <block id="b0d26ef113a60166d94bd96f9067b52b" category="list-text">¥ https://*.blob.core.windows.net または ¥ https://hub.docker.com</block>
   <block id="35bd57a4dcfbd7a695f9beb7d01913c6" category="paragraph">ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。</block>
@@ -1356,7 +1353,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
   <block id="f350efde95c992c9fb3c75c0e8aefcf0" category="list-text">[* 役割（ * Role ） ] タブで、 * Azure SetupAsService * 役割を選択し、 * 次へ * をクリックします。</block>
-  <block id="448746f589ceea8f1b3191a05fe6c57c" category="paragraph">他の AWS アカウントで Cloud Volumes ONTAP を導入して管理できるように、 AWS クレデンシャルをコネクタに追加します。別のアカウントの IAM ロールの ARN を指定するか、 AWS アクセスキーを指定できます。</block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022 年 2 月 27 日</block>
   <block id="3ac47455b10c6fb4061a70a91fdbfde2" category="section-title">2022 年 1 月 30 日</block>
   <block id="586301717819197e24001cac47efdaaa" category="section-title">2022 年 1 月 2 日</block>
@@ -1574,9 +1570,7 @@
   <block id="5e56842d0cfbf695522e945a01570eba" category="paragraph"><block ref="5e56842d0cfbf695522e945a01570eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b434da4c5ce39b5e4a95ec5159a66676" category="list-text">名前、電子メールアドレスを入力し、受信者が受け取る通知の種類を選択して、*新しい受信者の追加*をクリックします。</block>
   <block id="19d38e2a40bebb64998474cbec167167" category="list-text">既存のコネクタにAWSクレデンシャルを追加する</block>
-  <block id="2d85cb7a34de23c6b7db0459f207a310" category="paragraph">既存のコネクタに新しい AWS クレデンシャルを追加すると、同じコネクタを使用して別の AWS アカウントに Cloud Volumes ONTAP を導入できるようになります。 <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>。</block>
   <block id="f63d604edef29843d35ad367e0d82814" category="inline-link">FSX for ONTAP のアクセス許可を設定する方法について説明します</block>
-  <block id="38d6d2ec27372e53c82e1227b5be44d4" category="section-title">コネクタにクレデンシャルを追加してください</block>
   <block id="875232e8c1abaa42024ddc396bcef6da" category="list-text">コネクタの作成に必要な権限を含むポリシーを作成します。</block>
   <block id="8dbc816059e1b421ecb65c693d5f2171" category="paragraph">新しいコネクタを作成するときにクレデンシャルを使用できるようになりました。</block>
   <block id="c3d36b4a46dce16b3ad60eecabc87582" category="list-text">Amazon S3検出</block>
@@ -1780,14 +1774,9 @@
   <block id="c5078b96055d6b776ee265ca4c7650c2" category="paragraph">また、新しい権限が以降のリリースで追加されるときに、ロールが最新の状態であることを確認する必要があります。</block>
   <block id="92ec95b8916ebc493b6546010073c81f" category="section-title">Azure権限の使用方法</block>
   <block id="ab75cfa6ae53348a737404e49985eb65" category="paragraph">新しいバージョンの Connector ソフトウェアが利用可能になると、ソフトウェアはネットアップサポートサイトにアップロードされます。 <block ref="f17f7484922764d58b748b63a8956073" category="inline-link-macro-rx"></block>。</block>
-  <block id="4e1f839391e849a6065024e60ace4c38" category="section-title">IAMポリシー</block>
-  <block id="d4d0602f330087eb24859ead29d741c3" category="paragraph">以下のIAMポリシーは、ConnectorがAWSリージョンに基づいてパブリッククラウド環境内のリソースとプロセスを管理するために必要な権限を提供します。</block>
-  <block id="4862cb85107f653706d201ef95242294" category="paragraph">AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnectorを手動でインストールする場合は、手動でポリシーを設定する必要があります。</block>
   <block id="222ddb2f355a49f64fb3858123f2b97b" category="open-title">標準領域</block>
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="open-title">GovCloud（US）リージョン</block>
   <block id="a8416eae2db8c97eb943559351fab358" category="open-title">C2S環境</block>
-  <block id="6686aeeff6eb0de250e6d134bb4b8cd5" category="list-text">の内容をコピーして貼り付け、ポリシーを作成します <block ref="9b22ee86ed2d831066d00816566458ca" category="inline-link-macro-rx"></block>。</block>
-  <block id="f3a061f1a8165759dd31c8b1fe6bda72" category="list-text">IAMコンソールで、の内容をコピーして貼り付け、ポリシーを作成します <block ref="9b22ee86ed2d831066d00816566458ca" category="inline-link-macro-rx"></block>。</block>
   <block id="3d35bba2e5ea6e739fb94736dc402017" category="inline-link">ONTAP の FSX に必要な権限を表示します</block>
   <block id="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="list-text"><block ref="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="inline-link-rx"></block></block>
   <block id="d2ec6bce44b6da11cd78a79db47dd385" category="inline-link-macro">Connector展開ポリシーを表示します</block>
@@ -2278,8 +2267,6 @@
   <block id="9c92b299186eaf0673a98ba9b40f21d8" category="paragraph">BlueXPでは、いくつかの方法でAWSクレデンシャルを提供できます。コネクタインスタンスに関連付けられたIAMロールで、信頼されたアカウントでIAMロールを割り当てるか、AWSアクセスキーを指定します。 <block ref="327ad200be450c94b449dea92a32b142" category="inline-link-macro-rx"></block>。</block>
   <block id="dac708f9ff7b3626ce8ac5a2ec42c9cf" category="paragraph">最初の2つのオプションでは、BlueXPはAWS Security Token Serviceを使用して、絶えず回転する一時的な資格情報を取得します。このプロセスは自動でセキュアであるため、ベストプラクティスです。</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">BlueXPにAWSアクセスキーを提供する場合は、BlueXPで定期的にキーを更新して、キーを回転させる必要があります。これは完全に手動で行います。</block>
-  <block id="a048177d059588f14caf812603cfdd39" category="paragraph">Connector に AWS クレデンシャルを追加する前に、必要な権限を指定する必要があります。この権限を持つBlueXPは、そのAWSアカウント内のリソースとプロセスを管理できるようになります。アクセス許可の指定方法は、BlueXPに信頼されたアカウントまたはAWSキーの役割のARNを提供するかどうかによって異なります。</block>
-  <block id="84576afbb5fec67a524a7228418c58be" category="admonition">BlueXPからコネクタを導入すると、コネクタを導入したアカウントのAWS資格情報がBlueXPによって自動的に追加されました。既存のシステムに Connector ソフトウェアを手動でインストールした場合、この初期アカウントは追加されません。 <block ref="36da95d92772c6b5e5c7802773061f54" category="inline-link-macro-rx"></block>。</block>
   <block id="cc9abb75b8a4618db30dc1fa4729b191" category="paragraph">IAM ロールを使用して、コネクタインスタンスを導入したソース AWS アカウントと他の AWS アカウントの間に信頼関係を設定できます。次に、信頼できるアカウントのIAMロールのARNをBlueXPに提供します。</block>
   <block id="2a486959a51570756bb9f881e508d399" category="list-text">後でBlueXPに貼り付けることができるように、IAMロールの役割ARNをコピーします。</block>
   <block id="c9c2739152f3fc14fabc2dda4c1578c8" category="paragraph">IAMユーザにAWSキーを提供する場合は、そのユーザに必要な権限を付与する必要があります。BlueXP IAMポリシーでは、BlueXPで使用できるAWSのアクションとリソースを定義しています。</block>
@@ -2340,7 +2327,6 @@
   <block id="9103937d6e94a5d3e88276d85254bdff" category="paragraph">アウトバウンドインターネット接続が使用できないサブネットにCloud Volumes ONTAP システムを導入する場合、BlueXPは自動的にコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP を設定します。</block>
   <block id="0e4e5198cc4ce7f534d554683573c921" category="summary">BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカウント内のリソースとプロセスを管理するための権限をConnectorに提供するポリシーがインスタンスにアタッチされます。Connectorでは、権限を使用してAPI呼び出しを実行することで、EC2、S3、CloudFormation、IAM、 キー管理サービスなど。</block>
   <block id="30782d3f448f611988824827b71e6b96" category="paragraph">BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカウント内のリソースとプロセスを管理するための権限をConnectorに提供するポリシーがインスタンスにアタッチされます。Connectorでは、権限を使用してAPI呼び出しを実行することで、EC2、S3、CloudFormation、IAM、 Key Management Service（KMS；キー管理サービス）など。</block>
-  <block id="025d94cf0afe9214e325eed1d6fcb08e" category="paragraph">BlueXPからコネクタを直接作成すると、BlueXPは自動的にこのポリシーをコネクタに適用します。</block>
   <block id="fa63e1e893cffd937dfc1bfa0546daf3" category="summary">BlueXPが実行中の操作のステータスを監視して、対処が必要な問題がないかどうかを確認できます。通知センター、タイムラインでステータスを表示したり、メールに通知を送信したりすることができます。</block>
   <block id="1e687a002fd0b9a542bf652069246ebb" category="paragraph">通知は、BlueXPで開始した操作の進捗状況を追跡するため、操作が成功したかどうかを確認できます。これらを使用すると、現在のログインセッションで開始した多くのBlueXPアクションのステータスを表示できます。現時点では、すべてのサービスが通知センターに情報を報告するわけではありません。</block>
   <block id="07ab717203091859eadd0800a6760a62" category="paragraph">また、システムにログインしていなくても重要なシステムアクティビティを通知できるように、メールで通知を送信するようにBlueXPを構成することもできます。Eメールは、ネットアップクラウドアカウントを使用しているすべてのユーザ、または特定のタイプのシステムアクティビティについて認識しておく必要のあるその他の受信者に送信できます。を参照してください <block ref="2fb0285882e9333d924eb054161cd903" category="inline-xref-macro-rx"></block> 下。</block>
@@ -2782,4 +2768,28 @@
   <block id="9683999221dec5e41e35756b2a8aee04" category="list-text">イメージのオペレーティングシステムはRed Hat Enterprise Linux 8.6です。</block>
   <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
   <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
+  <block id="2e5620a6569fc852b94b7e03a147a125" category="paragraph">AWSクレデンシャルを既存のコネクタに追加すると、パブリッククラウド環境内のリソースとプロセスの管理に必要な権限が付与されます。 <block ref="568ce14d3cdae759e790bc127b222228" category="inline-xref-macro-rx"></block>。</block>
+  <block id="2107472aff38cfdebba436df3f42b23b" category="section-title">コネクタにクレデンシャルを追加します</block>
+  <block id="3b463d710672b6b69227759d4e8c954d" category="paragraph">ConnectorにAWSクレデンシャルを追加して、パブリッククラウド環境内のリソースとプロセスの管理に必要な権限を付与する。別のアカウントの IAM ロールの ARN を指定するか、 AWS アクセスキーを指定できます。</block>
+  <block id="c482e377fe0af4cde6c8150a691978b5" category="paragraph">ConnectorにAWSクレデンシャルを追加する前に、必要な権限を指定する必要があります。この権限を持つBlueXPは、そのAWSアカウント内のリソースとプロセスを管理できるようになります。アクセス許可の指定方法は、BlueXPに信頼されたアカウントまたはAWSキーの役割のARNを提供するかどうかによって異なります。</block>
+  <block id="907d45cdba89ff9735d0c51d08c2c193" category="admonition">BlueXPからコネクタを導入した場合'BlueXPはコネクタを導入したアカウントのAWS資格情報を自動的に追加しましたこの初期アカウントは、AWS MarketplaceからConnectorを導入した場合や、Connectorソフトウェアを既存のシステムに手動でインストールした場合は追加されません。 <block ref="36da95d92772c6b5e5c7802773061f54" category="inline-link-macro-rx"></block>。</block>
+  <block id="2c76935f38c3f21d03c203f5311fc4f4" category="list-text">コネクタに権限を付与するターゲットアカウントのIAMコンソールに移動します。</block>
+  <block id="d8abc68ad3edce81a2a9f0c17b141c80" category="inline-link-macro">コネクタのIAMポリシー</block>
+  <block id="c2e4546cbde31fc634ce4d7fcdec56bb" category="list-text">の内容をコピーして貼り付けることで、必要なポリシーを作成します <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
+  <block id="357f29ef130f7ac8015a481d6e7c76f7" category="list-text">IAMコンソールで、の内容をコピーして貼り付けることでポリシーを作成する <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
+  <block id="681f994cad6161982250b03f44510310" category="list-text">IAMロールまたはIAMユーザにポリシーを関連付けます。</block>
+  <block id="c1141a37b962270fc1e8960233830c99" category="section-title">IAMポリシー</block>
+  <block id="d169cac20ae3e0b6b9cec32d273de5f2" category="paragraph">以下のIAMポリシーは、ConnectorがAWSリージョンに基づいてパブリッククラウド環境内のリソースとプロセスを管理するために必要な権限を提供します。</block>
+  <block id="74b6a526e505305f967084e06fa6aaf3" category="paragraph">BlueXPから直接、標準のAWSリージョンでコネクタを作成すると、BlueXPによって自動的にそのコネクタにポリシーが適用されます。この場合、何も行う必要はありません。</block>
+  <block id="fb86f9a9f53ddf38f2b2297b0200b8a3" category="paragraph">AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnectorを手動でインストールする場合は、手動でポリシーを設定する必要があります。</block>
+  <block id="b8502b99c36d378968d3d20a7561e523" category="paragraph">また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。</block>
+  <block id="de16d176ab7c6c01a7ce45f2e7213194" category="paragraph">必要なポリシーを表示する地域を選択します。</block>
+  <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。</block>
+  <block id="989bc9b22ba83d48ca30cdc4d2a0cbb8" category="paragraph">1つ目のポリシーでは、次のサービスに対する権限を付与します。</block>
+  <block id="bf43596ea2ef9041f13ded2298cba686" category="paragraph">2つ目のポリシーは、次のサービスに対する権限を提供します。</block>
+  <block id="6db3bf95be125a91f9ff9118d152f966" category="list-text">AppTemplateタグ付け</block>
+  <block id="995c7db8420cf7c1d22ec979a1f735ba" category="open-title">ポリシー1</block>
+  <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">ポリシー#2</block>
+  <block id="d094d5c78e8dbf27acd1a70c29b4b863" category="list-text">IAMコンソールで、の内容をコピーして貼り付け、必要なポリシーを作成します <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
+  <block id="a6a23d0964b870781db3c2557ec3583c" category="list-text">タイプがAmazon EC2のIAMロールを作成し、前の手順で作成したポリシーをそのロールに関連付けます。</block>
 </blocks>

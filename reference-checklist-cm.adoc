@@ -98,7 +98,6 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 |===
 * コネクタを手動でLinuxホストにインストールする場合（BlueXPインターフェイスから直接インストールしない場合）、Connectorのインストーラは、インストールプロセス中に次のエンドポイントにアクセスする必要があります。
 +
-** https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 ** https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
 ** ¥ https://*.blob.core.windows.net または ¥ https://hub.docker.com
 +

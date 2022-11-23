@@ -24,7 +24,7 @@ AWSクレデンシャルを既存のコネクタに追加するか、またはBl
 
 * 既存のコネクタにAWSクレデンシャルを追加する
 +
-既存のコネクタに新しい AWS クレデンシャルを追加すると、同じコネクタを使用して別の AWS アカウントに Cloud Volumes ONTAP を導入できるようになります。  additional credentials to a Connector,AWS クレデンシャルをコネクタに追加する方法について説明します。
+AWSクレデンシャルを既存のコネクタに追加すると、パブリッククラウド環境内のリソースとプロセスの管理に必要な権限が付与されます。  credentials to a Connector,AWS クレデンシャルをコネクタに追加する方法について説明します。
 
 * BlueXPに、コネクタを作成するためのAWSクレデンシャルを追加します
 +
@@ -48,18 +48,18 @@ BlueXPにAWSアクセスキーを提供する場合は、BlueXPで定期的に�
 
 
 
-== コネクタにクレデンシャルを追加してください
+== コネクタにクレデンシャルを追加します
 
-他の AWS アカウントで Cloud Volumes ONTAP を導入して管理できるように、 AWS クレデンシャルをコネクタに追加します。別のアカウントの IAM ロールの ARN を指定するか、 AWS アクセスキーを指定できます。
+ConnectorにAWSクレデンシャルを追加して、パブリッククラウド環境内のリソースとプロセスの管理に必要な権限を付与する。別のアカウントの IAM ロールの ARN を指定するか、 AWS アクセスキーを指定できます。
 
 
 
 === 権限を付与します
 
-Connector に AWS クレデンシャルを追加する前に、必要な権限を指定する必要があります。この権限を持つBlueXPは、そのAWSアカウント内のリソースとプロセスを管理できるようになります。アクセス許可の指定方法は、BlueXPに信頼されたアカウントまたはAWSキーの役割のARNを提供するかどうかによって異なります。
+ConnectorにAWSクレデンシャルを追加する前に、必要な権限を指定する必要があります。この権限を持つBlueXPは、そのAWSアカウント内のリソースとプロセスを管理できるようになります。アクセス許可の指定方法は、BlueXPに信頼されたアカウントまたはAWSキーの役割のARNを提供するかどうかによって異なります。
 
 
-NOTE: BlueXPからコネクタを導入すると、コネクタを導入したアカウントのAWS資格情報がBlueXPによって自動的に追加されました。既存のシステムに Connector ソフトウェアを手動でインストールした場合、この初期アカウントは追加されません。 link:concept-accounts-aws.html["AWS のクレデンシャルと権限について説明します"]。
+NOTE: BlueXPからコネクタを導入した場合'BlueXPはコネクタを導入したアカウントのAWS資格情報を自動的に追加しましたこの初期アカウントは、AWS MarketplaceからConnectorを導入した場合や、Connectorソフトウェアを既存のシステムに手動でインストールした場合は追加されません。 link:concept-accounts-aws.html["AWS のクレデンシャルと権限について説明します"]。
 
 * 選択肢 *
 
@@ -74,7 +74,7 @@ NOTE: BlueXPからコネクタを導入すると、コネクタを導入した�
 IAM ロールを使用して、コネクタインスタンスを導入したソース AWS アカウントと他の AWS アカウントの間に信頼関係を設定できます。次に、信頼できるアカウントのIAMロールのARNをBlueXPに提供します。
 
 .手順
-. Cloud Volumes ONTAP を導入するターゲットアカウントの IAM コンソールに移動します。
+. コネクタに権限を付与するターゲットアカウントのIAMコンソールに移動します。
 . [ アクセス管理 ] で、 [ 役割 ] 、 [ 役割の作成 *] の順にクリックし、手順に従って役割を作成します。
 +
 必ず次の手順を実行してください。
@@ -82,7 +82,7 @@ IAM ロールを使用して、コネクタインスタンスを導入したソ�
 +
 ** 信頼されるエンティティのタイプ * で、 * AWS アカウント * を選択します。
 ** 別の AWS アカウント * を選択し、コネクタインスタンスが存在するアカウントの ID を入力します。
-** の内容をコピーして貼り付け、ポリシーを作成します link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+** の内容をコピーして貼り付けることで、必要なポリシーを作成します link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
 
 
 . 後でBlueXPに貼り付けることができるように、IAMロールの役割ARNをコピーします。
@@ -97,11 +97,11 @@ IAM ロールを使用して、コネクタインスタンスを導入したソ�
 IAMユーザにAWSキーを提供する場合は、そのユーザに必要な権限を付与する必要があります。BlueXP IAMポリシーでは、BlueXPで使用できるAWSのアクションとリソースを定義しています。
 
 .手順
-. IAMコンソールで、の内容をコピーして貼り付け、ポリシーを作成します link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+. IAMコンソールで、の内容をコピーして貼り付けることでポリシーを作成する link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
 +
 https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWS のドキュメント：「 Creating IAM Policies"^]
 
-. IAM ロールまたは IAM ユーザにポリシーを関連付けます。
+. IAMロールまたはIAMユーザにポリシーを関連付けます。
 +
 ** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS のドキュメント：「 Creating IAM Roles"^]
 ** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS のドキュメント：「 Adding and Removing IAM Policies"^]

@@ -30,8 +30,8 @@ Connectorを作成するIAMユーザには、サブスクライブとサブス�
 .手順
 . AWSで権限を設定します。
 +
-.. IAMコンソールで、の内容をコピーして貼り付け、独自のポリシーを作成します link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
-.. ロールタイプが Amazon EC2 の IAM ロールを作成し、前の手順で作成したポリシーをロールに付加します。
+.. IAMコンソールで、の内容をコピーして貼り付け、必要なポリシーを作成します link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+.. タイプがAmazon EC2のIAMロールを作成し、前の手順で作成したポリシーをそのロールに関連付けます。
 
 
 . にアクセスします https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS MarketplaceのBlueXPページ"^] AMIからコネクタを導入するには、次の手順を実行します。

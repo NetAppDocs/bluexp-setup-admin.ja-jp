@@ -64,7 +64,6 @@ Connector は、これらのオペレーティングシステムの英語版で�
 アウトバウンドインターネットアクセス:: Connectorのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。
 +
 --
-* https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 * https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
 * ¥ https://*.blob.core.windows.net または ¥ https://hub.docker.com
 +
