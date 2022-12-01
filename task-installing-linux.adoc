@@ -49,6 +49,7 @@ GCP マシンタイプ:: 上記の CPU と RAM の要件を満たすインスタ
 * Red Hat Enterprise Linux 7.7
 * Red Hat Enterprise Linux 7.8
 * Red Hat Enterprise Linux 7.9
+* Red Hat Enterprise Linux 8.6
 +
 Red Hat Enterprise Linux システムは、 Red Hat サブスクリプション管理に登録する必要があります。登録されていない場合、 Connector のインストール中に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 
@@ -61,6 +62,7 @@ Connector は、これらのオペレーティングシステムの英語版で�
 ハイパーバイザー:: 認定済みのベアメタルハイパーバイザーまたはホスト型ハイパーバイザー CentOS または Red Hat Enterprise Linux を実行しますhttps://access.redhat.com/certified-hypervisors["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
 /var のディスク領域:: 20GiB のスペースが必要です
+Docker Engine の略:: Connector をインストールする前に、ホストに Docker Engine バージョン 19 以降が必要です。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]
 アウトバウンドインターネットアクセス:: Connectorのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。
 +
 --
@@ -91,6 +93,12 @@ AWSCLI のインストールに失敗したというメッセージが表示さ�
 
 
 .手順
+. Docker が有効で実行されていることを確認します。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
 . からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
 +
 AWS の EC2 インスタンスに接続してファイルをコピーする方法については、を参照してください http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html["AWS ドキュメント：「 Connecting to Your Linux Instance Using SSH"^]。
@@ -99,7 +107,7 @@ AWS の EC2 インスタンスに接続してファイルをコピーする方�
 +
 [source, cli]
 ----
-chmod +x OnCommandCloudManager-V3.9.19.sh
+chmod +x OnCommandCloudManager-V3.9.23.sh
 ----
 . インストールスクリプトを実行します。
 +
@@ -108,24 +116,8 @@ chmod +x OnCommandCloudManager-V3.9.19.sh
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.19.sh [silent] [proxy=ipaddress] [proxyport=port] [proxyuser=user_name] [proxypwd=password]
+ ./OnCommandCloudManager-V3.9.23.sh --proxy http://occm:password@10.0.0.30:9090/ --cacert /root/rootca.pem
 ----
-+
-_silent_ 情報の入力を求めずにインストールを実行します。
-
-+
-プロキシサーバの背後にホストがある場合は、 _proxy_is が必要です。
-
-+
-proxyport_ は、プロキシサーバのポートです。
-
-+
-_proxyUser_ は、ベーシック認証が必要な場合に、プロキシサーバのユーザ名です。
-
-+
-_proxypwd_は 、指定したユーザー名のパスワードです。
-
-. silent パラメータを指定しなかった場合は、「 * Y * 」と入力してインストールを続行します。
 +
 これでコネクタがインストールされました。プロキシサーバを指定した場合は、インストールの終了時にConnectorサービス（occm）が2回再起動されます。
 

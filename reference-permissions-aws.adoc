@@ -31,6 +31,7 @@ AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnec
 必要なポリシーを表示する地域を選択します。
 
 .標準領域
+[%collapsible]
 ====
 標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。
 
@@ -401,6 +402,7 @@ AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnec
 =====
 ====
 .GovCloud（US）リージョン
+[%collapsible]
 ====
 [source, json]
 ----
@@ -562,6 +564,7 @@ AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnec
 ----
 ====
 .C2S環境
+[%collapsible]
 ====
 [source, json]
 ----

@@ -1069,7 +1069,6 @@
   <block id="530ae65bce71acbabc920f0c53c4b5c2" category="list-text">20GiB のスペースが必要です</block>
   <block id="681992b8581f6d4247af5523a14d0ce4" category="list-text">Docker Engine の略</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">インストール手順を確認します</block>
-  <block id="d0866929c01f04a0947060329c774b7b" category="list-text">Connector をインストールする前に、ホストに Docker Engine バージョン 19 以降が必要です。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
   <block id="7c521ef00b3568ffec78f7d18b3f23a1" category="section-title">コネクタを取り付ける</block>
   <block id="96ddb04a1d15e031f2d343e6829e4b6c" category="paragraph">サポートされている Linux ホストがあることを確認したら、コネクタソフトウェアを取得してインストールできます。</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">コネクタをインストールするには root 権限が必要です。</block>
@@ -1263,12 +1262,6 @@
   <block id="880818f23f18d557a415dab94d58f242" category="paragraph">AWS の EC2 インスタンスに接続してファイルをコピーする方法については、を参照してください<block ref="dc4460aa50f8a612f26d39414027ad75" category="inline-link-rx"></block>。</block>
   <block id="325740f998865be7879e32048d406868" category="list-text">インストールスクリプトを実行します。</block>
   <block id="d2da61b44f426c871849fe81368a8e4f" category="paragraph">プロキシサーバを使用している場合は、次のようにコマンドパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。</block>
-  <block id="4043a6aa3722544830ff194f0161ca4b" category="paragraph">_silent_ 情報の入力を求めずにインストールを実行します。</block>
-  <block id="9c0cac643033d0d66c01380a30a07c17" category="paragraph">プロキシサーバの背後にホストがある場合は、 _proxy_is が必要です。</block>
-  <block id="35ab3a8c7fbb3509e0d9eafded99ef1c" category="paragraph">proxyport_ は、プロキシサーバのポートです。</block>
-  <block id="03834e3dec93fe21ff1b9d27519ca584" category="paragraph">_proxyUser_ は、ベーシック認証が必要な場合に、プロキシサーバのユーザ名です。</block>
-  <block id="d042e0838b4543f156e8d676bacd546c" category="paragraph">_proxypwd_は 、指定したユーザー名のパスワードです。</block>
-  <block id="e9d18c6194bd419fb0e88978d07225d6" category="list-text">silent パラメータを指定しなかった場合は、「 * Y * 」と入力してインストールを続行します。</block>
   <block id="8dae847f59a6afd8d7e49b7b7654d0eb" category="list-text">Web ブラウザを開き、次の URL を入力します。</block>
   <block id="0594b17c3f6f94eb28b63eec7d7d3841" category="paragraph"><block ref="0594b17c3f6f94eb28b63eec7d7d3841" category="inline-link-rx"></block></block>
   <block id="a28c11d82be2375d6506ed209153e0c1" category="paragraph">_ipaddress _ には、ホストの設定に応じて、 localhost 、プライベート IP アドレス、またはパブリック IP アドレスを指定できます。たとえば、パブリック IP アドレスのないパブリッククラウドにコネクタがある場合は、コネクタホストに接続されているホストからプライベート IP アドレスを入力する必要があります。</block>
@@ -1297,7 +1290,6 @@
   <block id="7681f9932e27b70d263e349bf8e45ccb" category="paragraph">MySQL サービスがダウンしている場合は、 OCCM サービスもダウンしています。</block>
   <block id="0cc88c75f9ccb3b092b1a9e54edf31dd" category="list-text">7 郵便番号</block>
   <block id="824e65f15b61863b18403a352208dbf8" category="list-text">AWSCLI</block>
-  <block id="c5fd214cdd0d2b3b4272e73b022ba5c2" category="list-text">Docker です</block>
   <block id="d52387880e1ea22817a72d3759213819" category="list-text">Java</block>
   <block id="6f49e891fdb1bb11823492f4d315b2fd" category="list-text">Kubectl のように入力する</block>
   <block id="62a004b95946bb97541afa471dcca73a" category="list-text">MySQL</block>
@@ -2056,16 +2048,13 @@
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support Site ユーザー登録フォーム</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">を実行してNetApp Support Site アカウントを作成します<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">適切なユーザレベルを選択してください。通常は*ネットアップのお客様/エンドユーザ*がこれに該当します。</block>
-  <block id="d6cb31c22f8f843a781cccec33157281" category="list-text">シリアル番号のフィールドには、上記のCloud Managerアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">ネットアップのソリューションを初めて導入する場合は</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">ネットアップ製品を初めてご利用になり、NSSアカウントをお持ちでない場合は、以下の手順に従ってください。</block>
-  <block id="59dd2a274c2c6a3cc5b3dce08109019d" category="list-text">Support Registrationのページで、Cloud ManagerアカウントIDのシリアル番号を確認します。</block>
   <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">ネットアップサポート登録サイト</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">に移動します<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 「*ネットアップ登録のお客様ではありません*」を選択します。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">必須フィールドに入力します（赤いアスタリスクのフィールド）。</block>
   <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">[*製品ライン*（Product Line *）]フィールドで、[* Cloud Manager *]を選択し、該当する課金プロバイダーを選択します。</block>
-  <block id="1192dec4cc2b923397748a651cef178f" category="list-text">前述の手順2からCloud Managerアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを読み、確認します。</block>
   <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">この安全なトランザクションを完了するために、メールボックスに電子メールがすぐに送信されます。確認メールが数分で届かない場合は、必ずスパムフォルダを確認してください。</block>
   <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">Eメールからアクションを確認します。</block>
   <block id="201080500e946070a2e4873042507c77" category="paragraph">確認ではネットアップにリクエストが送信され、NetApp Support Site アカウントを作成することを推奨します。</block>
@@ -2099,7 +2088,6 @@
   <block id="6fe79cfc93a8b51f7a8316a55877bfc4" category="list-text">共有VPC権限。共有VPCを使用してリソースをサービスプロジェクトに導入する場合に使用します</block>
   <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">共有VPC権限を設定する</block>
   <block id="17d9282186c2451db90a83330e5c9d7b" category="list-text"><block ref="17d9282186c2451db90a83330e5c9d7b" category="inline-link-macro-rx"></block></block>
-  <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、Cloud Managerで使用できます。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。</block>
   <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加できますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
   <block id="6c73104e218372ccda6dc2d58fda524d" category="paragraph">たとえば、コネクタは、Cloud Volumes ONTAP の健常性と運用の鍵となるコンポーネントです。コネクタの電源がオフの場合は、Cloud Volumes ONTAP PAYGOシステムと容量ベースのBYOLシステムは、コネクタとの通信を14日以上切断したあとでシャットダウンします。これは、コネクタがシステムのライセンスを毎日更新するためです。</block>
@@ -2566,7 +2554,6 @@
   <block id="929fa09ef9d24654b353f312638ca6e6" category="paragraph">アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。<block ref="abba285888ca54da9f89054b7e57f270" category="inline-link-rx"></block></block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">BlueXPに関する注意事項</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="list-text"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
-  <block id="5ddb110e3aced51416d4de7b0626d696" category="list-text">からBlueXPソフトウェアをダウンロードします<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>。</block>
   <block id="f681629287f9315842951d38d04b1eda" category="list-text">[新しいBlueXP*をセットアップする]をクリックし、画面の指示に従ってシステムをセットアップします。</block>
   <block id="9f390f684f634b575bf8d3a2e73f760c" category="list-text">*システムの詳細*：コネクタの名前と会社名を入力します。</block>
   <block id="ed55d4951cd784cfacedc42b26d251dd" category="inline-image-macro">システムの詳細ページのスクリーンショット。BlueXPの名前と会社名を入力するように求められます。</block>
@@ -2792,4 +2779,21 @@
   <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">ポリシー#2</block>
   <block id="d094d5c78e8dbf27acd1a70c29b4b863" category="list-text">IAMコンソールで、の内容をコピーして貼り付け、必要なポリシーを作成します <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
   <block id="a6a23d0964b870781db3c2557ec3583c" category="list-text">タイプがAmazon EC2のIAMロールを作成し、前の手順で作成したポリシーをそのロールに関連付けます。</block>
+  <block id="80829c0bc33e1821173e296173ba0a8d" category="list-text">Red Hat Enterprise Linux 8.6</block>
+  <block id="4e7880d4f8d9cf685f649e74e34a3de7" category="list-text">Connector をインストールする前に、ホストに Docker Engine バージョン 19 以降が必要です。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
+  <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">変更ログ</block>
+  <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。</block>
+  <block id="a6123430b152ca358cd64ba937f6f1b9" category="section-title">2022年12月1日</block>
+  <block id="2b4c0f2b7b106fa61101f47cad35238a" category="paragraph">JSONポリシーに次の権限が追加されました。Cloud BackupとCloud Tieringに必要です。</block>
+  <block id="a8a929fafb2eb09e993d8c797a52b5ef" category="paragraph">JSONポリシーから次の権限が削除されました。これらは不要になりました。</block>
+  <block id="ac692d638162a1dc479fa6a76fb4e114" category="list-text">Microsoft.Compute/images/write</block>
+  <block id="61d40b12dddcd9e571bbe7a89b0fbae8" category="list-text">Microsoft.Network/loadBalancers/backendAddressPools/join/action</block>
+  <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
+  <block id="3af64a9cb34f4b06a9e496f1f6a05879" category="list-text">microsoft.Storage/storageAccounts/regeneratekey/action</block>
+  <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">からConnectorソフトウェアをダウンロードします<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
+  <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、BlueXPで使用できます。</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することはできますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">サポート登録ページでアカウントIDのシリアル番号を確認します。</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">上記の手順2からアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを確認します。</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">シリアル番号フィールドには、上記のアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。</block>
 </blocks>

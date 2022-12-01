@@ -52,10 +52,10 @@ summary: ネットアップテクニカルサポートでサポートケース�
 
 == NSSアカウントをBlueXPに追加します
 
-サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、Cloud Managerで使用できます。
+サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、BlueXPで使用できます。
 
 * お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。
-* パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加できますが、お客様レベルのアカウントと一緒に追加することはできません。
+* パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することはできますが、お客様レベルのアカウントと一緒に追加することはできません。
 
 
 .手順
@@ -133,14 +133,14 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
-. Support Registrationのページで、Cloud ManagerアカウントIDのシリアル番号を確認します。
+. サポート登録ページでアカウントIDのシリアル番号を確認します。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
 . に移動します https://register.netapp.com["ネットアップサポート登録サイト"^] 「*ネットアップ登録のお客様ではありません*」を選択します。
 . 必須フィールドに入力します（赤いアスタリスクのフィールド）。
 . [*製品ライン*（Product Line *）]フィールドで、[* Cloud Manager *]を選択し、該当する課金プロバイダーを選択します。
-. 前述の手順2からCloud Managerアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを読み、確認します。
+. 上記の手順2からアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを確認します。
 +
 この安全なトランザクションを完了するために、メールボックスに電子メールがすぐに送信されます。確認メールが数分で届かない場合は、必ずスパムフォルダを確認してください。
 
@@ -151,7 +151,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 . を実行してNetApp Support Site アカウントを作成します https://mysupport.netapp.com/site/user/registration["NetApp Support Site ユーザー登録フォーム"^]
 +
 .. 適切なユーザレベルを選択してください。通常は*ネットアップのお客様/エンドユーザ*がこれに該当します。
-.. シリアル番号のフィールドには、上記のCloud Managerアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。
+.. シリアル番号フィールドには、上記のアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。
 
 
 

@@ -108,7 +108,6 @@ BlueXPでは、次のパッケージがまだインストールされていな�
 
 * 7 郵便番号
 * AWSCLI
-* Docker です
 * Java
 * Kubectl のように入力する
 * MySQL
