@@ -128,7 +128,6 @@ Azure MarketplaceからConnectorを導入する場合、またはLinuxホスト�
                     "Microsoft.Compute/snapshots/delete",
                     "Microsoft.Network/privateEndpoints/delete",
                     "Microsoft.Compute/availabilitySets/delete",
-                    "Microsoft.Network/loadBalancers/delete",
                     "Microsoft.KeyVault/vaults/read",
                     "Microsoft.KeyVault/vaults/accessPolicies/write",
                     "Microsoft.Compute/diskEncryptionSets/write",
@@ -154,6 +153,7 @@ Azure MarketplaceからConnectorを導入する場合、またはLinuxホスト�
                     "Microsoft.Synapse/workspaces/firewallRules/read",
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
+                    "Microsoft.Network/publicIPAddresses/delete",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
     ],
     "NotActions": [],
@@ -749,11 +749,19 @@ Connectorは、Azure Kubernetes Service（AKS）で実行されているクラ�
 
 === 2022年12月1日
 
-JSONポリシーに次の権限が追加されました。Cloud BackupとCloud Tieringに必要です。
+JSONポリシーに次の権限が追加されました。
 
-microsoft.Storage/storageAccounts/blobServices/container/write
+* microsoft.Storage/storageAccounts/blobServices/container/write
++
+この権限は、Cloud BackupとCloud Tieringに必要です。
 
-JSONポリシーから次の権限が削除されました。これらは不要になりました。
+* Microsoft.Network/publicIPAddresses/delete
++
+この権限はCloud Backupに必要です。
+
+
+
+JSONポリシーから次の権限が削除されました。これらの権限は不要になりました。
 
 * Microsoft.Compute/images/write
 * Microsoft.Network/loadBalancers/backendAddressPools/join/action
