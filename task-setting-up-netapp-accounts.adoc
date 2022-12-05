@@ -27,7 +27,7 @@ link:concept-netapp-accounts.html["ネットアップアカウントの仕組み
 BlueXPでは、ワークスペースを使用して、作業環境のセットを他の作業環境や他のユーザーから分離できます。たとえば、 2 つのワークスペースを作成し、各ワークスペースに別々のユーザーを関連付けることができます。
 
 .手順
-. の上部から https://cloudmanager.netapp.com["BlueXP"^]をクリックし、 [*Account*] ドロップダウンをクリックします。
+. の上部から https://console.bluexp.netapp.com["BlueXP"^]をクリックし、 [*Account*] ドロップダウンをクリックします。
 +
 image:screenshot-account-settings-menu.png["BlueXPの上部バナーにある「アカウント設定」オプションを示すスクリーンショット。"]
 
@@ -50,7 +50,7 @@ image:screenshot-manage-account-settings.png["「アカウント」ドロップ�
 
 .手順
 . ユーザーがまだ行っていない場合は、にアクセスするようにユーザーに依頼します https://cloud.netapp.com["NetApp BlueXPのWebサイト"^] 登録してください。
-. の上部から https://cloudmanager.netapp.com["BlueXP"^]をクリックし、 [*Account*] ドロップダウンをクリックして、 [*Manage Account*] をクリックします。
+. の上部から https://console.bluexp.netapp.com["BlueXP"^]をクリックし、 [*Account*] ドロップダウンをクリックして、 [*Manage Account*] をクリックします。
 +
 image:screenshot-manage-account-settings.png["「アカウント」ドロップダウンから利用できる「アカウント設定の管理」オプションを示すスクリーンショット。"]
 

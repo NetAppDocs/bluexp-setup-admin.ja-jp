@@ -29,4 +29,4 @@ Linuxホストを手動でインストールする場合は、「オンライン
 
 コネクタを展開したら、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続することでBlueXPにアクセスできます。 https://_ipaddress_[]
 
-コネクタは政府機関に導入されているため、からはアクセスできません https://cloudmanager.netapp.com[]。
+コネクタは政府機関に導入されているため、からはアクセスできません https://console.bluexp.netapp.com[]。

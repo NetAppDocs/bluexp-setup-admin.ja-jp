@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: 'BlueXPインターフェイスには、にアクセスして、SaaSベースのユーザーインターフェイスからアクセスできます https://cloudmanager.netapp.com[]。' 
+summary: BlueXPには、WebブラウザからSaaSベースのユーザインターフェイス経由でアクセスできます。 
 ---
 = BlueXPにログインします
 :hardbreaks:
@@ -37,7 +37,7 @@ BlueXPには、WebブラウザからSaaSベースのユーザインターフェ�
 
 
 .手順
-. Webブラウザを開き、にアクセスします https://cloudmanager.netapp.com["BlueXPコンソール"^]
+. Webブラウザを開き、にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^]
 +
 NetApp BlueXPログインページが表示されます
 

@@ -84,7 +84,7 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 
 
 
-. Web ブラウザを開き、に進みます https://cloudmanager.netapp.com[] BlueXPでコネクタの使用を開始します
+. Web ブラウザを開き、に進みます https://console.bluexp.netapp.com[] BlueXPでコネクタの使用を開始します
 
 
 これで、 Connector のインストールとセットアップが完了しました。新しい作業環境を作成するときに、BlueXPではこのコネクタが自動的に使用されます。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
@@ -159,7 +159,7 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 
 BlueXPを使用する場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続します。 https://_ipaddress_[]
 
-コネクタは政府機関に導入されているため、からはアクセスできません https://cloudmanager.netapp.com[]。
+コネクタは政府機関に導入されているため、からはアクセスできません https://console.bluexp.netapp.com[]。
 
 
 

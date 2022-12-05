@@ -77,11 +77,11 @@ image:screenshot_set_up_cloud_manager.gif["BlueXPのセットアップ画面の�
 
 これで、 Connector のインストールとセットアップが完了しました。
 
-コネクタがAzureの商業地域にある場合は、Webブラウザを開き、に進みます https://cloudmanager.netapp.com[] BlueXPでコネクタの使用を開始します
+コネクタがAzureの商業地域にある場合は、Webブラウザを開き、に進みます https://console.bluexp.netapp.com[] BlueXPでコネクタの使用を開始します
 
 コネクタがAzure Governmentリージョンにある場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続すると、BlueXPを使用できます。 https://_ipaddress_[]
 
-コネクタは政府機関に導入されているため、からはアクセスできません https://cloudmanager.netapp.com[]。
+コネクタは政府機関に導入されているため、からはアクセスできません https://console.bluexp.netapp.com[]。
 
 
 
