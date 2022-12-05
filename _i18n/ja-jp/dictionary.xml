@@ -2818,4 +2818,5 @@
   <block id="5ccc745272c52ce1868d5bcf2b07705a" category="section-title">ワークスペース管理者のワークスペースの管理</block>
   <block id="1cf32fb78afaf111cd4c8421dc8592a6" category="section-title">コネクタのワークスペースを管理する</block>
   <block id="c558073ec27a1686dce5ebbe5da43092" category="paragraph-title">ログインオプション</block>
+  <block id="065880318484084e9bfe33ea9c6a8702" category="cell">をクリックして、 Connector と Docker コンポーネントをアップグレードします。</block>
 </blocks>
