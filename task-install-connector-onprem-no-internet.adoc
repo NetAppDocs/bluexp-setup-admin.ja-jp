@@ -61,6 +61,7 @@ Docker Engine の略:: Connector をインストールする前に、ホスト�
 
 サポートされている Linux ホストがあることを確認したら、コネクタソフトウェアを取得してインストールできます。
 
+.必要な権限
 コネクタをインストールするには root 権限が必要です。
 
 .手順
@@ -107,9 +108,10 @@ image:screenshot-onprem-darksite-details.png["システムの詳細ページの�
 . 作成した管理者ユーザを使用してBlueXPにログインします。
 
 
+.結果
 これでコネクタがインストールされ、ダークサイトの展開で使用できるBlueXP機能を使用できるようになります。
 
-.次の内容
+.次の手順
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの ONTAP クラスタを検出"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["オンプレミスの ONTAP クラスタ間でデータをレプリケート"^]
 * https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["クラウドバックアップを使用して、オンプレミスのONTAP ボリュームのデータをStorageGRID にバックアップします"^]

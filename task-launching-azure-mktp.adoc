@@ -75,6 +75,7 @@ image:screenshot_set_up_cloud_manager.gif["BlueXPのセットアップ画面の�
 
 
 
+.結果
 これで、 Connector のインストールとセットアップが完了しました。
 
 コネクタがAzureの商業地域にある場合は、Webブラウザを開き、に進みます https://console.bluexp.netapp.com[] BlueXPでコネクタの使用を開始します
@@ -154,6 +155,7 @@ NOTE: BlueXP Operatorは'BlueXPポリシーで指定されているデフォル�
 
 
 
+.結果
 Connector には、パブリッククラウド環境内のリソースとプロセスを管理するために必要な権限が付与されました。新しい作業環境を作成するときに、BlueXPではこのコネクタが自動的に使用されます。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
 
 Connectorを作成したのと同じAzureアカウントにAzure BLOBストレージがある場合は、Azure Blob作業環境がCanvasに自動的に表示されます。 link:task-viewing-azure-blob.html["この作業環境でできることの詳細については、こちらをご覧ください"]。

@@ -25,6 +25,7 @@ TIP: ネットワーク内またはクラウド内の既存のLinuxホストにC
 
 Connectorインスタンスは、AWS Marketplace for BlueXPから直接、AWSの商業地域で起動できます。
 
+.始める前に
 Connectorを作成するIAMユーザには、サブスクライブとサブスクライブ解除を行うためのAWS Marketplace権限が必要です。
 
 .手順
@@ -87,6 +88,7 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 . Web ブラウザを開き、に進みます https://console.bluexp.netapp.com[] BlueXPでコネクタの使用を開始します
 
 
+.結果
 これで、 Connector のインストールとセットアップが完了しました。新しい作業環境を作成するときに、BlueXPではこのコネクタが自動的に使用されます。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
 
 Connectorを作成したのと同じAWSアカウントにAmazon S3バケットがある場合、Amazon S3の作業環境がCanvasに自動的に表示されます。 link:task-viewing-amazon-s3.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
@@ -155,6 +157,7 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 
 
 
+.結果
 これで、 Connector のインストールとセットアップが完了しました。
 
 BlueXPを使用する場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続します。 https://_ipaddress_[]

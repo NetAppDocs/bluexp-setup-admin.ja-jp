@@ -29,28 +29,31 @@ TIP: 最初のCloud Volumes ONTAP 作業環境を作成するときに、まだ�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-.<span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png"[] alt="one "></span>権限を設定します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] 権限を設定します
+[role="quick-margin-list"]
 * カスタムロールを作成して関連付け、Google Cloudアカウントに正しい権限が割り当てられていることを確認します。
 +
- up permissions to deploy the Connector。
+<<Connectorを展開する権限を設定します>>。
 
 * Connector VMを作成するときは、サービスアカウントに関連付ける必要があります。このサービスアカウントには、Google Cloud内のリソースを管理する権限を持つカスタムロールが必要です。
 +
- up a service account for the Connector。
+<<コネクタのサービスアカウントを設定します>>。
 
 * 共有VPCを使用する場合は、サービスプロジェクトとホストプロジェクトで権限を設定します。
 +
- up shared VPC permissions。
+<<共有VPC権限を設定する>>。
 
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] ネットワークをセットアップする
 [role="quick-margin-para"]
 特定のエンドポイントへのアウトバウンドのインターネットアクセスが可能なVPCとサブネットが必要です。アウトバウンドインターネットにHTTPプロキシが必要な場合は、IPアドレス、クレデンシャル、HTTPS証明書が必要です。
 
 [role="quick-margin-para"]
- up networking,ネットワーク要件を確認します。
+<<ネットワークをセットアップする,ネットワーク要件を確認します>>。
 
-.<span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] alt="3"></span> Google Cloud APIを有効にします
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] Google Cloud API を有効にします
+[role="quick-margin-list"]
 * Cloud Deployment Manager V2 API
 * クラウドロギング API
 * Cloud Resource Manager API の略
@@ -58,11 +61,12 @@ TIP: 最初のCloud Volumes ONTAP 作業環境を作成するときに、まだ�
 * ID およびアクセス管理（ IAM ） API
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] コネクターを作成します
 [role="quick-margin-para"]
 コネクタードロップダウンをクリックし、*コネクターの追加*を選択して、プロンプトに従います。
 
 [role="quick-margin-para"]
- a Connector,ステップバイステップの手順に従います。
+<<コネクタを作成します,ステップバイステップの手順に従います>>。
 
 
 
@@ -150,6 +154,7 @@ includedPermissions:
 . BlueXPからConnectorを配備するユーザーにカスタムロールを割り当てます
 
 
+.結果
 Google Cloudユーザに、Connectorの作成に必要な権限が付与されるようになりました。
 
 
@@ -266,6 +271,7 @@ includedPermissions:
 . Cloud Volumes ONTAP を他のプロジェクトに導入する場合は、 https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["BlueXPロールを持つサービスアカウントをそのプロジェクトに追加して、アクセスを許可します"^]。プロジェクトごとにこの手順を繰り返す必要があります。
 
 
+.結果
 Connector VMのサービスアカウントが設定されます。
 
 
@@ -546,6 +552,7 @@ image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを�
 
 --
 ====
+.結果
 これで、 Connector のインストールとセットアップが完了しました。新しい作業環境を作成するときに、BlueXPではこのコネクタが自動的に使用されます。ただし、コネクタが複数ある場合は、が必要です link:task-managing-connectors.html["スイッチを切り替えます"]。
 
 Connectorを作成したGoogle CloudアカウントにGoogle Cloud Storageバケットがある場合は、Google Cloud Storage作業環境がCanvasに自動的に表示されます。 link:task-viewing-gcp-storage.html["この作業環境でできることの詳細については、こちらをご覧ください"]。

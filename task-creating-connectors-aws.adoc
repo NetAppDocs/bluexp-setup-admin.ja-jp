@@ -26,23 +26,26 @@ BlueXPのほとんどの機能を使用するには'BlueXPアカウント管理�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] 認証を設定します
 [role="quick-margin-para"]
 AWSでコネクタを起動するには、IAMロールまたはAWSアクセスキーを使用して、BlueXPがAWSで認証する必要があります。どちらのオプションでも、IAMポリシーが必要です。
 
 [role="quick-margin-para"]
- an IAM policy,IAMロールを確認します または  up AWS authentication,ステップバイステップの手順に従います。
+<<IAMポリシーを作成します,IAMロールを確認します>> または <<AWS 認証をセットアップする,ステップバイステップの手順に従います>>。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] ネットワークをセットアップする
 [role="quick-margin-para"]
 特定のエンドポイントへのアウトバウンドのインターネットアクセスが可能なVPCとサブネットが必要です。アウトバウンドインターネットにHTTPプロキシが必要な場合は、IPアドレス、クレデンシャル、HTTPS証明書が必要です。
 
 [role="quick-margin-para"]
- up networking,ネットワーク要件を確認します。
+<<ネットワークをセットアップする,ネットワーク要件を確認します>>。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] コネクターを作成します
 [role="quick-margin-para"]
 コネクタードロップダウンをクリックし、*コネクターの追加*を選択して、プロンプトに従います。
 
 [role="quick-margin-para"]
- a Connector,ステップバイステップの手順に従います。
+<<コネクタを作成します,ステップバイステップの手順に従います>>。
 
 
 
@@ -145,6 +148,7 @@ BlueXPがコネクタを作成すると、コネクタインスタンスに新�
 . ［*ポリシーの作成*］をクリックします。
 
 
+.次の手順
 このポリシーを、BlueXPが引き受けることができるIAMロールまたはIAMユーザに適用します。
 
 
@@ -168,6 +172,7 @@ BlueXPがコネクタを作成すると、コネクタインスタンスに新�
 . ロールを作成したら、ロールARNをコピーして、コネクタの作成時にBlueXPに貼り付けることができます。
 
 
+.結果
 IAM ロールに必要な権限が割り当てられます。
 
 
@@ -184,6 +189,7 @@ IAM ロールに必要な権限が割り当てられます。
 . IAM ユーザのアクセスキーとシークレットキーにアクセスできることを確認します。
 
 
+.結果
 これで、AWSユーザにBlueXPからコネクタを作成するために必要な権限が付与されました。BlueXPによってプロンプトが表示されたら、このユーザのAWSアクセスキーを指定する必要があります。
 
 
@@ -303,6 +309,7 @@ TIP: [*Assume Role] を選択した場合は、 Connector 展開ウィザード�
 
 
 
+.完了後
 Connectorを作成したのと同じAWSアカウントにAmazon S3バケットがある場合、Amazon S3の作業環境がCanvasに自動的に表示されます。 link:task-viewing-amazon-s3.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
 
 

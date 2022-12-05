@@ -64,6 +64,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
+.結果
 BlueXPは、Digital Advisorに関連付けられたNSSアカウントを更新します。
 
 
@@ -101,6 +102,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
+.次の手順
 新しいCloud Volumes ONTAP システムの作成時、既存のCloud Volumes ONTAP システムの登録時、およびサポート登録時にアカウントを選択できるようになりました。
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS での Cloud Volumes ONTAP の起動"^]
@@ -131,7 +133,7 @@ image:screenshot-nss-update-account.png["［ アカウントの更新 ］ オプ
 +
 処理が完了したら、更新したアカウントが表に _new_account として表示されるようになります。古いバージョンのアカウントは ' 既存の作業環境の関連付けとともにテーブルに表示されます
 
-. 既存の Cloud Volumes ONTAP 作業環境が古いバージョンのアカウントに接続されている場合は、次の手順に従ってください  a working environment to a different NSS account,それらの作業環境を別の NSS アカウントに接続します。
+. 既存の Cloud Volumes ONTAP 作業環境が古いバージョンのアカウントに接続されている場合は、次の手順に従ってください <<作業環境を別の NSS アカウントに接続します,それらの作業環境を別の NSS アカウントに接続します>>。
 . 古いバージョンの NSS アカウントに移動し、をクリックします image:icon-action.png["横方向の 3 つの点を示すアイコン"] 次に、 * Delete * を選択します。
 
 
@@ -201,6 +203,7 @@ image:screenshot-nss-display-email.png["ネットアップサポートサイト�
 
 
 
+.結果
 NetApp Support Site ユーザー名と関連するメールアドレスが表示されます。コピーボタンを使用して、電子メールアドレスをコピーできます。
 
 
@@ -209,7 +212,7 @@ NetApp Support Site ユーザー名と関連するメールアドレスが表示
 
 BlueXPで使用しないNSSアカウントをすべて削除します。
 
-Cloud Volumes ONTAP 作業環境に現在関連付けられているアカウントは削除できません。最初にが必要です  a working environment to a different NSS account,それらの作業環境を別の NSS アカウントに接続します。
+Cloud Volumes ONTAP 作業環境に現在関連付けられているアカウントは削除できません。最初にが必要です <<作業環境を別の NSS アカウントに接続します,それらの作業環境を別の NSS アカウントに接続します>>。
 
 .手順
 . BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。

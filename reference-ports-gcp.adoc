@@ -34,7 +34,7 @@ ConnectorのGoogle Cloudファイアウォールルールには、インバウ�
 | HTTPS | 443 | クライアント Web ブラウザからローカルへの HTTPS アクセスを提供します ユーザインターフェイス 
 
 
-| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。  server for AutoSupport messages,Connectorのプロキシサーバの詳細については、こちらをご覧ください。 
+| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 <<Proxy server for AutoSupport messages,Connectorのプロキシサーバの詳細については、こちらをご覧ください>>。 
 |===
 
 

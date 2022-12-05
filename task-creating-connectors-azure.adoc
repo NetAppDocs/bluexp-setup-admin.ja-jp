@@ -30,11 +30,11 @@ Connectorを導入するには、AzureでConnector VMを作成するために必
 
 . プロンプトが表示されたら、 Microsoft アカウントでサインインします。このアカウントには Azure 固有の権限が必要です。これがデフォルトのオプションです。
 +
- a Connector using your Azure account,次の手順に従って、作業を開始してください。
+<<Azure アカウントを使用してコネクタを作成します,次の手順に従って、作業を開始してください>>。
 
 . Azure AD サービスプリンシパルの詳細を指定します。このサービスプリンシパルには、特定の権限も必要です。
 +
- a Connector using a service principal,次の手順に従って、作業を開始してください。
+<<サービスプリンシパルを使用してコネクタを作成します,次の手順に従って、作業を開始してください>>。
 
 
 
@@ -256,6 +256,7 @@ NOTE: Azure SetupAsServiceは、Azureのコネクタ導入ポリシーで指定�
 
 
 
+.結果
 これで、Azureユーザには、BlueXPからConnectorを導入するために必要な権限が付与されました。
 
 
@@ -311,6 +312,7 @@ TIP: すでにAzureアカウントにログインしている場合は、BlueXP�
 
 
 
+.完了後
 ワークスペース管理者がコネクタを使用して Cloud Volumes ONTAP システムを作成できるように、コネクタをワークスペースに関連付ける必要があります。アカウント管理者のみがいる場合は、コネクタをワークスペースに関連付ける必要はありません。アカウント管理者は、既定でBlueXPのすべてのワークスペースにアクセスできます。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["詳細はこちら。"]。
 
 Connectorを作成したのと同じAzureアカウントにAzure BLOBストレージがある場合は、Azure Blob作業環境がCanvasに自動的に表示されます。 link:task-viewing-azure-blob.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
@@ -328,11 +330,11 @@ Azureアカウントでログインする代わりに、必要な権限を持つ
 Azure Active Directoryでサービスプリンシパルを作成およびセットアップし、BlueXPで必要なAzureクレデンシャルを取得することで、AzureにConnectorを導入するために必要な権限を付与します。
 
 .手順
-.  an Azure Active Directory application。
-.  the application to a role。
-.  Windows Azure Service Management API permissions。
-.  the application ID and directory ID。
-.  a client secret。
+. <<Azure Active Directory アプリケーションを作成します>>。
+. <<アプリケーションをロールに割り当てます>>。
+. <<Windows Azure Service Management API 権限を追加します>>。
+. <<アプリケーション ID とディレクトリ ID を取得します>>。
+. <<クライアントシークレットを作成します>>。
 
 
 
@@ -341,6 +343,7 @@ Azure Active Directoryでサービスプリンシパルを作成およびセッ�
 
 BlueXPでConnectorの導入に使用できるAzure Active Directory（AD）アプリケーションとサービスプリンシパルを作成します。
 
+.作業を開始する前に
 Azure で Active Directory アプリケーションを作成してロールに割り当てるための適切な権限が必要です。詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
 
 .手順
@@ -360,6 +363,7 @@ image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サ�
 . [*Register] をクリックします。
 
 
+.結果
 AD アプリケーションとサービスプリンシパルを作成しておきます。
 
 
@@ -558,6 +562,7 @@ image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパ�
 
 
 
+.結果
 これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。コネクタを作成するときに、BlueXPでこの情報を入力する必要があります。
 
 
@@ -592,9 +597,9 @@ image:screenshot_connector_add.gif["ヘッダーのコネクターアイコン�
 +
 .. [*認証]で、[* Active Directoryサービスプリンシパル*]をクリックし、必要な権限を付与するAzure Active Directoryサービスプリンシパルに関する情報を入力します。
 +
-*** アプリケーション（クライアント） ID ：を参照してください  the application ID and directory ID。
-*** ディレクトリ（テナント） ID ：を参照してください  the application ID and directory ID。
-*** クライアントシークレット：を参照してください  a client secret。
+*** アプリケーション（クライアント） ID ：を参照してください <<アプリケーション ID とディレクトリ ID を取得します>>。
+*** ディレクトリ（テナント） ID ：を参照してください <<アプリケーション ID とディレクトリ ID を取得します>>。
+*** クライアントシークレット：を参照してください <<クライアントシークレットを作成します>>。
 
 
 .. *ログイン*をクリックします。
@@ -624,6 +629,7 @@ image:screenshot_connector_add.gif["ヘッダーのコネクターアイコン�
 
 
 
+.完了後
 ワークスペース管理者がコネクタを使用して Cloud Volumes ONTAP システムを作成できるように、コネクタをワークスペースに関連付ける必要があります。アカウント管理者のみがいる場合は、コネクタをワークスペースに関連付ける必要はありません。アカウント管理者は、既定でBlueXPのすべてのワークスペースにアクセスできます。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["詳細はこちら。"]。
 
 Connectorを作成したのと同じAzureアカウントにAzure BLOBストレージがある場合は、Azure Blob作業環境がCanvasに自動的に表示されます。 link:task-viewing-azure-blob.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
