@@ -887,7 +887,6 @@
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\ https://support.netapp.com</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net</block>
-  <block id="065880318484084e9bfe33ea9c6a8702" category="cell">をクリックして、 Connector と Docker コンポーネントをアップグレードします。</block>
   <block id="66f9783489f42faf5074015874cb1c5f" category="list-text">https://s3.amazonaws.com/aws-cli/awscli-bundle.zip</block>
   <block id="b0d26ef113a60166d94bd96f9067b52b" category="list-text">¥ https://*.blob.core.windows.net または ¥ https://hub.docker.com</block>
   <block id="35bd57a4dcfbd7a695f9beb7d01913c6" category="paragraph">ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。</block>
