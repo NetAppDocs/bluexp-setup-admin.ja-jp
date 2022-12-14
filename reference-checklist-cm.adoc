@@ -109,14 +109,9 @@ NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続�
 
 | ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
 |===
-* コネクタを手動でLinuxホストにインストールする場合（BlueXPインターフェイスから直接インストールしない場合）、Connectorのインストーラは、インストールプロセス中に次のエンドポイントにアクセスする必要があります。
+* コネクタを手動でLinuxホストにインストールする場合（BlueXPインターフェイスから直接インストールしない場合）、Connectorのインストーラは、インストールプロセス中に複数のエンドポイントにアクセスする必要があります。
 +
-** https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
-** ¥ https://*.blob.core.windows.net または ¥ https://hub.docker.com
-+
-ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。
-
-
+link:task-installing-linux.html["エンドポイントのリストを確認します"]。
 
 * コネクタへの着信トラフィックは、開始しない限りありません。
 +

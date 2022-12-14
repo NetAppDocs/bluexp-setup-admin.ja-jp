@@ -38,7 +38,7 @@ Connectorを作成するIAMユーザには、サブスクライブとサブス�
 . にアクセスします https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS MarketplaceのBlueXPページ"^] AMIからコネクタを導入するには、次の手順を実行します。
 . [Marketplace] ページで [* Continue to Subscribe* ] をクリックし、 [* Continue to Configuration* ] をクリックします。
 +
-image:screenshot_subscribe_cm.gif["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]
+image:screenshot-subscribe-aws.png["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]
 
 . デフォルトのオプションを変更し、 [* Continue to Launch] をクリックします。
 . [ アクションの選択 *] で [* EC2 で起動 ] を選択し、 [* 起動 *] をクリックします。
@@ -80,9 +80,6 @@ https://_ipaddress_[]
 link:concept-netapp-accounts.html["ネットアップアカウントについて"]。
 
 .. システムの名前を入力します。
-+
-image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを選択してシステムに名前を付けることができるコネクタのセットアップ画面のスクリーンショット。"]
-
 
 
 . Web ブラウザを開き、に進みます https://console.bluexp.netapp.com[] BlueXPでコネクタの使用を開始します
@@ -150,9 +147,6 @@ https://_ipaddress_[]
 link:concept-netapp-accounts.html["ネットアップアカウントについて"]。
 
 .. システムの名前を入力します。
-+
-image:screenshot_set_up_cloud_manager.gif["ネットアップアカウントを選択してシステムに名前を付けることができるコネクタのセットアップ画面のスクリーンショット。"]
-
 
 
 

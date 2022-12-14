@@ -68,9 +68,6 @@ https://_ipaddress_[]
 link:concept-netapp-accounts.html["ネットアップアカウントについて"]。
 
 .. システムの名前を入力します。
-+
-image:screenshot_set_up_cloud_manager.gif["BlueXPのセットアップ画面のスクリーンショット。ネットアップアカウントを選択してシステムに名前を付けることができます。"]
-
 
 
 

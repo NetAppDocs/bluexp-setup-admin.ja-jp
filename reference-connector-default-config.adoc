@@ -79,9 +79,10 @@ Connector インストールフォルダは、次の場所にあります。
 
 ログファイルは次のフォルダに格納されます。
 
-* /opt/application/netapp/cloudmanager/log を選択します
+* /opt/application/netapp/cloudmanager/logまたは
+* /opt/application/netapp/service-manager-2 /ログ（新規インストール3.9.23以降）
 +
-このフォルダのログには、 Connector イメージと Docker イメージの詳細が記録されます。
+これらのフォルダのログには、ConnectorイメージとDockerイメージの詳細が記載されています。
 
 * /opt/application/NetApp/cloudmanager/docx_occm/data/log
 +
@@ -102,32 +103,12 @@ MySQL サービスがダウンしている場合は、 OCCM サービスもダ�
 
 
 
-=== パッケージ
-
-BlueXPでは、次のパッケージがまだインストールされていない場合、Linuxホストにインストールされます。
-
-* 7 郵便番号
-* AWSCLI
-* Java
-* Kubectl のように入力する
-* MySQL
-* Tridentctl
-* プル
-* 取得
-
-
-
-
 === ポート
 
 このコネクタは Linux ホストで次のポートを使用します。
 
 * HTTP アクセスの場合は 80
 * 443 ： HTTPS アクセス用
-* BlueXPデータベース用に3306
-* 8080はBlueXP APIプロキシ
-* Service Manager API の場合は 8666
-* 8777 （ Health-Checker コンテナサービス API の場合）
 
 
 

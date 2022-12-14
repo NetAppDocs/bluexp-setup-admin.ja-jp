@@ -14,11 +14,13 @@ summary: BlueXPのほとんどの機能を使用するには、コネクタを�
 
 
 [role="lead"]
-BlueXPのほとんどの機能を使用するには'BlueXPアカウント管理者が_Connector_を 配備する必要がありますConnectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。 link:concept-connectors.html["コネクタが必要になるタイミングを学習します"]。
+BlueXPのほとんどの機能を使用するには'BlueXPアカウント管理者が_Connector_を 配備する必要がありますConnectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。
 
-このページでは、BlueXPから直接Azureでコネクタを作成する方法について説明します。 link:concept-connectors.html#how-to-create-a-connector["コネクタを配置するその他の方法について説明します"]。
+以下の手順では、BlueXP SaaS WebサイトからAzureコマーシャルリージョンにコネクタを直接作成する方法について説明します。
 
-これらの手順は、 Account Admin ロールを持つユーザが実行する必要があります。ワークスペース管理者はコネクタを作成できません。
+* link:task-create-connectors-gov.html["政府機関の地域にConnectorを導入する方法について説明します"]
+* link:concept-connectors.html#how-to-create-a-connector["コネクタを配置するその他の方法について説明します"]
+
 
 
 

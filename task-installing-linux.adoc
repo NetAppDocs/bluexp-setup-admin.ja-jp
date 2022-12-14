@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-installing-linux.html 
 keywords: install connector, manually install connector, install connector software, installation, installing, linux, installer, software, on prem, on-prem, silent, configurations, ec2, vm, ports, ram, operating system, os, host, requirement, requirements, hypervisor, disk, space, mysql, centos, rhel, red hat, cpu, disk space 
-summary: コネクタを作成する最も一般的な方法は、BlueXPから直接、またはクラウドプロバイダの市場から取得することです。ただし、ネットワークまたはクラウドにある既存の Linux ホストに Connector ソフトウェアをダウンロードしてインストールすることもできます。 
+summary: コネクタを作成する最も一般的な方法は、BlueXPから直接、またはクラウドプロバイダの市場から取得することです。ただし、ネットワークまたはクラウドにある既存の Linux ホストに Connector ソフトウェアをダウンロードしてインストールすることもできます。以下の手順は、インターネットにアクセスできるホストに固有の手順です。 
 ---
 = インターネットにアクセスできる既存の Linux ホストにコネクタをインストールします
 :hardbreaks:
@@ -62,16 +62,20 @@ Connector は、これらのオペレーティングシステムの英語版で�
 ハイパーバイザー:: 認定済みのベアメタルハイパーバイザーまたはホスト型ハイパーバイザー CentOS または Red Hat Enterprise Linux を実行しますhttps://access.redhat.com/certified-hypervisors["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
 /var のディスク領域:: 20GiB のスペースが必要です
-Docker Engine の略:: Connector をインストールする前に、ホストに Docker Engine バージョン 19 以降が必要です。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+Docker Engine の略:: Connectorをインストールする前に、ホストにDocker Engineバージョン19.3.1以降が必要です。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]
 アウトバウンドインターネットアクセス:: Connectorのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。
 +
 --
-* https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
-* ¥ https://*.blob.core.windows.net または ¥ https://hub.docker.com
-+
+* \ https://support.netapp.com
+* https://mysupport.netapp.com をご覧ください
+* \ https://cloudmanager.cloud.netapp.com/tenancy
+* \ https://stream.cloudmanager.cloud.netapp.com
+* \ https://cloudmanagerinfraprod.azurecr.io
+* \ https://production-artifacts.cloudmanager.cloud.netapp.com
+* \ https://*.blob.core.windows.net
+
+
 ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。
-
-
 
 --
 
@@ -82,8 +86,14 @@ Docker Engine の略:: Connector をインストールする前に、ホスト�
 
 サポートされている Linux ホストがあることを確認したら、コネクタソフトウェアを取得してインストールできます。
 
-.必要な権限
-コネクタをインストールするには root 権限が必要です。
+.必要なもの
+* コネクタをインストールするためのroot権限。
+* コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
++
+インストール後にプロキシサーバを設定することもできますが、その場合はコネクタを再起動する必要があります。
+
+* プロキシサーバでHTTPSを使用する場合は、CA署名証明書。
+
 
 .このタスクについて
 * インストールを実行すると、ネットアップサポートからのリカバリ手順用に AWS コマンドラインツール（ awscli ）がインストールされます。
@@ -102,26 +112,56 @@ sudo systemctl enable docker && sudo systemctl start docker
 ----
 . からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
 +
-AWS の EC2 インスタンスに接続してファイルをコピーする方法については、を参照してください http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html["AWS ドキュメント：「 Connecting to Your Linux Instance Using SSH"^]。
+ネットワークまたはクラウドで使用するコネクタインストーラをダウンロードする必要があります。
 
 . スクリプトを実行する権限を割り当てます。
 +
 [source, cli]
 ----
-chmod +x OnCommandCloudManager-V3.9.23.sh
+chmod +x OnCommandCloudManager-V3.9.23
 ----
 . インストールスクリプトを実行します。
 +
-プロキシサーバを使用している場合は、次のようにコマンドパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.23 --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+--proxyパラメータと--cacert.pemパラメータはオプションです。プロキシサーバがある場合は、次のようにパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。
+
++
+次に、両方のオプションパラメータを使用したコマンドの例を示します。
 
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.23.sh --proxy http://occm:password@10.0.0.30:9090/ --cacert /root/rootca.pem
+ ./OnCommandCloudManager-V3.9.23 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
+--proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。
+
++
+** \ http://address:port
+** \ http://username:password@address:port
+** \ https://address:port
+** \ https://username:password@address:port
+
+
++
+--cacertsは、コネクタとプロキシサーバ間のHTTPSアクセスに使用するCA署名証明書を指定しています。このパラメータは、HTTPSプロキシサーバを指定する場合にのみ必要です。
+
+
+
+.結果
 これでコネクタがインストールされました。プロキシサーバを指定した場合は、インストールの終了時にConnectorサービス（occm）が2回再起動されます。
 
+
+
+== コネクタをセットアップします
+
+サインアップまたはログインして、アカウントで使用できるようにコネクタを設定します。
+
+.手順
 . Web ブラウザを開き、次の URL を入力します。
 +
 https://_ipaddress_[]
@@ -145,9 +185,6 @@ _ipaddress _ には、ホストの設定に応じて、 localhost 、プライ�
 link:concept-netapp-accounts.html["ネットアップアカウントについて"]。
 
 .. システムの名前を入力します。
-+
-image:screenshot_set_up_cloud_manager.gif["セットアップ画面のスクリーンショット。ネットアップアカウントを選択してシステムに名前を付けることができます。"]
-
 
 
 
@@ -160,5 +197,5 @@ BlueXPがパブリッククラウド環境内のリソースとプロセスを�
 
 * AWS link:task-adding-aws-accounts.html["AWSアカウントを設定して、BlueXPに追加します"]
 * Azure link:task-adding-azure-accounts.html["Azureアカウントをセットアップして、BlueXPに追加します"]
-* Google Cloud ：上記の手順 7 を参照してください
+* Google Cloud：上記のステップ3を参照してください
 

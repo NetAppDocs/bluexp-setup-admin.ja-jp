@@ -613,8 +613,6 @@
   <block id="531dd1abfed48af076a56cbf57b47ca8" category="inline-link-macro">ネットアップアカウントについて</block>
   <block id="55b620da531e446543c62d6fb6d3f03f" category="paragraph"><block ref="c892241c2a895928e80c961e4d7a26f4" category="inline-link-macro-rx"></block>。</block>
   <block id="d80e79c3d96dec3b7d4daf9305412777" category="list-text">システムの名前を入力します。</block>
-  <block id="b7cc882225d4b093221554881a085ca4" category="inline-image-macro">ネットアップアカウントを選択してシステムに名前を付けることができるコネクタのセットアップ画面のスクリーンショット。</block>
-  <block id="ac8bdf7adae2e58a7ebb316b87ae9c56" category="paragraph"><block ref="ac8bdf7adae2e58a7ebb316b87ae9c56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ced2daafb1652bcf5bbc847ec20fd008" category="inline-link-macro">スイッチを切り替えます</block>
   <block id="f3e4ad8de2923d1ab615cff85a4f99f5" category="doc">ネットアップアカウントでワークスペースとユーザをセットアップ</block>
   <block id="ec37691ba98782dfd927ff958050c215" category="section-title">ワークスペースを追加します</block>
@@ -639,7 +637,6 @@
   <block id="040f37a8d15d49c042b5c21da1018a88" category="paragraph">IAM ユーザがサブスクライブとサブスクライブ解除を行うには、 AWS Marketplace の権限が必要です。</block>
   <block id="b748cb0f2ad325f27d30850a71d55e6d" category="list-text">[Marketplace] ページで [* Continue to Subscribe* ] をクリックし、 [* Continue to Configuration* ] をクリックします。</block>
   <block id="648fca9db3d7e8e554a59d3519d8b0f6" category="inline-image-macro">AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット</block>
-  <block id="09840755c5e1c205b5a61231831ba16f" category="paragraph"><block ref="09840755c5e1c205b5a61231831ba16f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6901834c9ae604b653768895509f4303" category="list-text">デフォルトのオプションを変更し、 [* Continue to Launch] をクリックします。</block>
   <block id="197769c5244e448b93746c973eb17b81" category="list-text">[ アクションの選択 *] で [* EC2 で起動 ] を選択し、 [* 起動 *] をクリックします。</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">プロンプトに従って、インスタンスを設定および導入します。</block>
@@ -887,8 +884,6 @@
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\ https://support.netapp.com</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net</block>
-  <block id="66f9783489f42faf5074015874cb1c5f" category="list-text">https://s3.amazonaws.com/aws-cli/awscli-bundle.zip</block>
-  <block id="b0d26ef113a60166d94bd96f9067b52b" category="list-text">¥ https://*.blob.core.windows.net または ¥ https://hub.docker.com</block>
   <block id="35bd57a4dcfbd7a695f9beb7d01913c6" category="paragraph">ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。</block>
   <block id="11ffd2b7817530008f4bc1916d79b3d7" category="list-text">コネクタへの着信トラフィックは、開始しない限りありません。</block>
   <block id="eedca72959934d39da95314809917fb3" category="paragraph">HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。</block>
@@ -1249,18 +1244,12 @@
   <block id="3a0381e5879eb05d4447518a0fe21601" category="list-text">インストールを実行すると、ネットアップサポートからのリカバリ手順用に AWS コマンドラインツール（ awscli ）がインストールされます。</block>
   <block id="c421e739c1e3aa36da0456d7f369e45f" category="paragraph">AWSCLI のインストールに失敗したというメッセージが表示された場合は、このメッセージを無視しても問題ありません。コネクタは、工具なしで正常に作動する。</block>
   <block id="aad3dfdc62f79a4c10e86004046d9509" category="list-text">ネットアップサポートサイトで入手できるインストーラは、それよりも古いバージョンの場合があります。インストール後、新しいバージョンが利用可能になると、コネクタは自動的に更新されます。</block>
-  <block id="1b5f30edaa0508ac79f12ba9891a0f16" category="inline-link">AWS ドキュメント：「 Connecting to Your Linux Instance Using SSH</block>
-  <block id="880818f23f18d557a415dab94d58f242" category="paragraph">AWS の EC2 インスタンスに接続してファイルをコピーする方法については、を参照してください<block ref="dc4460aa50f8a612f26d39414027ad75" category="inline-link-rx"></block>。</block>
   <block id="325740f998865be7879e32048d406868" category="list-text">インストールスクリプトを実行します。</block>
-  <block id="d2da61b44f426c871849fe81368a8e4f" category="paragraph">プロキシサーバを使用している場合は、次のようにコマンドパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。</block>
   <block id="8dae847f59a6afd8d7e49b7b7654d0eb" category="list-text">Web ブラウザを開き、次の URL を入力します。</block>
   <block id="0594b17c3f6f94eb28b63eec7d7d3841" category="paragraph"><block ref="0594b17c3f6f94eb28b63eec7d7d3841" category="inline-link-rx"></block></block>
   <block id="a28c11d82be2375d6506ed209153e0c1" category="paragraph">_ipaddress _ には、ホストの設定に応じて、 localhost 、プライベート IP アドレス、またはパブリック IP アドレスを指定できます。たとえば、パブリック IP アドレスのないパブリッククラウドにコネクタがある場合は、コネクタホストに接続されているホストからプライベート IP アドレスを入力する必要があります。</block>
   <block id="78a0d16b70372e27005759683969aed9" category="inline-link">このサービスアカウントを Connector VM に関連付けます</block>
   <block id="065c40fb33b56030d4bbcc42fcbf0d16" category="list-text"><block ref="1a9447e1a13f89edfdde92dee038b283" category="inline-link-rx"></block>。</block>
-  <block id="5b065d9fe675d1a98ef70d7a3436d9e7" category="inline-image-macro">セットアップ画面のスクリーンショット。ネットアップアカウントを選択してシステムに名前を付けることができます。</block>
-  <block id="90acb993325ea2038d45629d9ccc1fc0" category="paragraph"><block ref="90acb993325ea2038d45629d9ccc1fc0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a376d701bcf6f33dfc99e261c767ae1e" category="list-text">Google Cloud ：上記の手順 7 を参照してください</block>
   <block id="7cddf1ab764729128f3c7130203d73a0" category="list-text">クラウドプロバイダとして「 * Amazon Web Services * 」を選択し、「 * Continue * 」をクリックします。</block>
   <block id="694c0d1ad033ac65143fd7073852f718" category="list-text">* 詳細 * ：コネクタの詳細を入力します。</block>
   <block id="bb535485e7b97661af60ecc59e655498" category="list-text">インスタンスの名前を入力します。</block>
@@ -1274,24 +1263,13 @@
   <block id="6bcce13786258734e514d9a072a3c23a" category="list-text">Connector インストールフォルダは、次の場所にあります。</block>
   <block id="1290fecb35d9c7e8b4f1faf1f9b5c7f3" category="paragraph">/opt/application/netapp/cloudmanager です</block>
   <block id="af22c16aeca9d8bc2515764efff73455" category="list-text">ログファイルは次のフォルダに格納されます。</block>
-  <block id="9038f40808a3b534dd4031904a7d2ce8" category="list-text">/opt/application/netapp/cloudmanager/log を選択します</block>
   <block id="00226bd25a9eabd1528d0b9c1c7eb5e2" category="paragraph">このフォルダのログには、 Connector イメージと Docker イメージの詳細が記録されます。</block>
   <block id="b7fb1cb20b803995e802d3588f424efa" category="list-text">/opt/application/NetApp/cloudmanager/docx_occm/data/log</block>
   <block id="99479a37072ffa90a7b1b8b6c6eb156b" category="list-text">OCCM サービスは MySQL サービスに依存します。</block>
   <block id="7681f9932e27b70d263e349bf8e45ccb" category="paragraph">MySQL サービスがダウンしている場合は、 OCCM サービスもダウンしています。</block>
-  <block id="0cc88c75f9ccb3b092b1a9e54edf31dd" category="list-text">7 郵便番号</block>
-  <block id="824e65f15b61863b18403a352208dbf8" category="list-text">AWSCLI</block>
-  <block id="d52387880e1ea22817a72d3759213819" category="list-text">Java</block>
-  <block id="6f49e891fdb1bb11823492f4d315b2fd" category="list-text">Kubectl のように入力する</block>
-  <block id="62a004b95946bb97541afa471dcca73a" category="list-text">MySQL</block>
-  <block id="bc564dcbf13f1065be526346597880e6" category="list-text">Tridentctl</block>
-  <block id="718f59718640c6506b3721fbc8bf3a4d" category="list-text">プル</block>
-  <block id="f7bd8a523429508417b95f15d7d78a4f" category="list-text">取得</block>
   <block id="262eae76dd865321cbe26eb35ccca998" category="list-text">このコネクタは Linux ホストで次のポートを使用します。</block>
   <block id="f99405255f2e0275d201caf689380ada" category="list-text">HTTP アクセスの場合は 80</block>
   <block id="95376c13fd8813cbd5336d84e0207ed1" category="list-text">443 ： HTTPS アクセス用</block>
-  <block id="276b8acd33de7f3d565955f164e67cd2" category="list-text">Service Manager API の場合は 8666</block>
-  <block id="803a96dc7774103b48557af2d8ee96c3" category="list-text">8777 （ Health-Checker コンテナサービス API の場合）</block>
   <block id="953a0ee991cb0f7fd649dff3efa51614" category="section-title">インターネットアクセスを使用しないデフォルトの設定</block>
   <block id="23b1e0717b9b8b52e9ae0f29f7fc4241" category="inline-link-macro">このインストールオプションの詳細については、こちらをご覧ください</block>
   <block id="d29c75496182e07bc5b38ffe2cb4de30" category="paragraph">インターネットにアクセスできないオンプレミスの Linux ホストにコネクタを手動でインストールした場合、次の構成が適用されます。 <block ref="4d73489e378e81ca61892ecf59f809a5" category="inline-link-macro-rx"></block>。</block>
@@ -1460,7 +1438,6 @@
   <block id="bc4aa6323016172de14a6835883b27c7" category="section-title">インストールフォルダ</block>
   <block id="81fae4ea40cc442afa43dab4cc001004" category="section-title">ログファイル</block>
   <block id="7ab07ea46199c644dddf2520b843394b" category="section-title">コネクタサービス</block>
-  <block id="27fe4eb3edbaff8f250e2d51f7462681" category="section-title">パッケージ</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">ポート</block>
   <block id="bffde7130bcbd48dc4d26900909a6ec0" category="inline-link">Google Cloudサービスアカウントを作成し、作成したカスタムロールを適用します</block>
   <block id="8ffe57ff2d6f0334349512874d9ed89d" category="list-text"><block ref="e91ca9f63029ef70f3223d4f72fac132" category="inline-link-rx"></block>。</block>
@@ -2167,9 +2144,6 @@
   <block id="a0676ac5cfebaef69b53ff7e37cd8c3c" category="paragraph">BlueXPまたはクラウドプロバイダのマーケットプレイスからコネクタを導入した場合は、次の点に注意してください。</block>
   <block id="117c785e61d16618a1202c0ae6cf754a" category="paragraph">このフォルダのログには、コネクタで実行されている クラウド サービス およびBlueXPサービスの詳細が表示されます。</block>
   <block id="9381e0bddd6aaa003edbc676c4bf74ee" category="list-text">BlueXPサービスの名前はoccmです</block>
-  <block id="764d44260ad297eee560240a0f9876dc" category="paragraph">BlueXPでは、次のパッケージがまだインストールされていない場合、Linuxホストにインストールされます。</block>
-  <block id="08cb80fa4f936d781e5b8c3e12f64139" category="list-text">BlueXPデータベース用に3306</block>
-  <block id="21ce98ebf19ba7dfc7a4300742bb8f2a" category="list-text">8080はBlueXP APIプロキシ</block>
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">これらの制限は、BlueXPのセットアップと管理に特有のものです。コネクタ、SaaSプラットフォームなどです。</block>
   <block id="efdb2123102821583a0af000d2fa9040" category="paragraph">BlueXPは、172.17.0.0/16と172.18.0.0/16の範囲にIPアドレスを持つ2つのインターフェイスを持つコネクタを展開します。</block>
   <block id="5646658d58bb92ba775a6c2cd024ef17" category="paragraph">ネットワークにこれらのいずれかの範囲が設定されたサブネットがある場合、BlueXPから接続エラーが発生する可能性があります。たとえば、BlueXPでオンプレミスのONTAP クラスタを検出できない場合があります。</block>
@@ -2195,7 +2169,6 @@
   <block id="36e6435fcbb8fc1cb1db7a6b55e336f8" category="cell">Webブラウザはこれらのエンドポイントに接続して、BlueXPを介した集中型ユーザ認証を行います。</block>
   <block id="9307a4b1840270d6e9b32ec060d29760" category="paragraph">ほとんどの場合、SaaS UIからBlueXPを使用する必要がありますが <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>Web ブラウザからホストの IP アドレスを入力する必要があります。</block>
   <block id="ea7babb79350418e9437972e245c5e46" category="list-text">BlueXPにログインした後、BlueXPアカウント管理者は、クラウドプロバイダまたは自社運用ネットワークに_Connector_inを導入する必要があります。Connectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。コネクタはほとんどの場合必要ですが、BlueXPのすべてのサービスと機能には必要ありません。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
-  <block id="8a4762cb5d44b37be8c41c99aa8c77d1" category="list-text">コネクタを手動でLinuxホストにインストールする場合（BlueXPインターフェイスから直接インストールしない場合）、Connectorのインストーラは、インストールプロセス中に次のエンドポイントにアクセスする必要があります。</block>
   <block id="b9288d749f3ef53ccabb6e5c7c7bc85f" category="list-text">BlueXPから直接クラウドプロバイダにConnectorを導入するための権限を持つアカウントが必要です。</block>
   <block id="aa752bf0c5f36649ca4bd7a513728abe" category="list-text">コネクタを作成するときは、IAMロールのARN、またはIAMユーザのAWSアクセスキーとシークレットキーをBlueXPに提供します。</block>
   <block id="52fa2650896e1ee785bcdceccae31e8d" category="list-text">BlueXPからコネクタを作成するユーザーにロールを割り当てます</block>
@@ -2309,8 +2282,6 @@
   <block id="7c083cefb70575179c33df9514a78fce" category="list-text">BlueXPメニューバーで、*設定&gt;タイムライン*をクリックします。</block>
   <block id="750a8d708df5a8d73fc4ec2fb142feb6" category="summary">Azureの商業地域では、BlueXPからコネクタを直接作成することをお勧めしますが、必要に応じてAzure Marketplaceからコネクタを起動することもできます。Azure Governmentリージョンでは、BlueXP SaaS Webサイトから政府機関のリージョンにConnectorを導入することはできないため、次の選択肢としてAzure Marketplaceから導入することをお勧めします。</block>
   <block id="0e1b45b3594b4c3ece1911fc871e9fe5" category="list-text">コネクタはHDDディスクまたはSSDディスクで最適に動作します。</block>
-  <block id="2bf1f619d2f890a36c270d8592ed2afc" category="inline-image-macro">BlueXPのセットアップ画面のスクリーンショット。ネットアップアカウントを選択してシステムに名前を付けることができます。</block>
-  <block id="0d815f71e04fd373dfef85f5c2a1e6b5" category="paragraph"><block ref="0d815f71e04fd373dfef85f5c2a1e6b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f13f9c900e17fbd7423292fc7d7a65ef" category="paragraph">コネクタがAzure Governmentリージョンにある場合は、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続すると、BlueXPを使用できます。<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
   <block id="32d2a3c1d987b586f424356144271b0e" category="paragraph">これで、Connector仮想マシンに割り当てることができるBlueXP Operatorというカスタムロールが作成されました。</block>
   <block id="54b14f07c36bed41295c2086ea238332" category="list-text">[*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。</block>
@@ -2362,7 +2333,6 @@
   <block id="a6e51e5836a7fd28d1b3879d7658a4fb" category="paragraph">AzureのクレデンシャルをBlueXPに追加したら、Azure Marketplaceサブスクリプションをそれらのクレデンシャルに関連付けることができます。サブスクリプションを使用すると、従量課金制の Cloud Volumes ONTAP システムを作成し、他のネットアップクラウドサービスを使用できます。</block>
   <block id="2e6aa15d4609a29d86e5e9f886599c4c" category="paragraph">資格情報をBlueXPに追加した後、Azure Marketplaceサブスクリプションを関連付けるシナリオは2つあります。</block>
   <block id="bf6a5b9863bb599dd7d76e43de882036" category="paragraph">Azureサービスクレデンシャルの詳細を変更して、BlueXPでAzureクレデンシャルを編集します。たとえば、サービスプリンシパルアプリケーション用に新しいシークレットが作成された場合は、クライアントシークレットの更新が必要になることがあります。</block>
-  <block id="379280cc324da5135d2ccadf286698e6" category="summary">コネクタを作成する最も一般的な方法は、BlueXPから直接、またはクラウドプロバイダの市場から取得することです。ただし、ネットワークまたはクラウドにある既存の Linux ホストに Connector ソフトウェアをダウンロードしてインストールすることもできます。</block>
   <block id="ac9c35728450917d81cf663988a4bac2" category="paragraph">コネクタを作成する最も一般的な方法は、BlueXPから直接、またはクラウドプロバイダの市場から取得することです。ただし、ネットワークまたはクラウドにある既存の Linux ホストに Connector ソフトウェアをダウンロードしてインストールすることもできます。以下の手順は、インターネットにアクセスできるホストに固有の手順です。</block>
   <block id="7e64bcd49d202a618920fe22d66f21ac" category="list-text">からConnectorソフトウェアをダウンロードします<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>をクリックし、 Linux ホストにコピーします。</block>
   <block id="e832abccfbda1e1df2db47f59705c74c" category="paragraph">これでコネクタがインストールされました。プロキシサーバを指定した場合は、インストールの終了時にConnectorサービス（occm）が2回再起動されます。</block>
@@ -2445,8 +2415,6 @@
   <block id="309a17e5c03cbe61700c1e46eb38532f" category="cell">作業環境をBlueXPから削除します</block>
   <block id="32938b525c2b2416fa93e4e59287cb16" category="summary">キャンバスの[マイオポチュニティ]タブでは、既存のリソースを一元的に検出できます。このリソースをBlueXPに追加することで、ハイブリッドマルチクラウド全体で一貫したデータサービスと運用を実現できます。</block>
   <block id="b620bd6c68fcba7c4e98498bd33fd93c" category="paragraph">キャンバスでは、「My Opportunities *」タブを使用して、ハイブリッドマルチクラウド全体で一貫したデータサービスと運用を実現するために、BlueXPに追加できる既存のリソースを一元的に検出できます。</block>
-  <block id="beba35b5f1ffff4e7c4c9683317102ed" category="paragraph">BlueXPのほとんどの機能を使用するには'BlueXPアカウント管理者が_Connector_を 配備する必要がありますConnectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。 <block ref="39840e1bb98f6582f1bf4e505d666ea1" category="inline-link-macro-rx"></block>。</block>
-  <block id="642291c0cdf2ee77f8c053427866b467" category="paragraph">このページでは、BlueXPから直接Azureでコネクタを作成する方法について説明します。 <block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block>。</block>
   <block id="9207a1bb9dbe8c5c1aac06abfdb5a64a" category="paragraph">Connectorを導入するには、AzureでConnector VMを作成するために必要な権限を持つログインをBlueXPに提供する必要があります。</block>
   <block id="f651afd4cab9136bd78c9e4950f05cb9" category="paragraph">BlueXPからConnectorを導入する前に、Azureアカウントに正しい権限があることを確認する必要があります。</block>
   <block id="8747c846ccf20f1b6f26f06f38406ffa" category="admonition">このポリシーには、BlueXPからAzureでConnector VMを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。BlueXPがコネクタを作成すると、Connector VMに新しい権限セットが適用され、Connectorがパブリッククラウド環境内のリソースを管理できるようになります。</block>
@@ -2497,7 +2465,6 @@
   <block id="a74d4f6da1f4962caa974b5e68852f05" category="admonition">NSS管理ページに移動すると、表の各アカウントのトークンがBlueXPによって生成されます。このトークンには、関連付けられた E メールアドレスに関する情報が含まれます。その後、ページから移動するとトークンが削除されます。この情報はキャッシュされないため、プライバシーを保護できます。</block>
   <block id="c7a6c5419388c54dd17826c0c6b4dc85" category="paragraph">NetApp Support Site ユーザー名と関連するメールアドレスが表示されます。コピーボタンを使用して、電子メールアドレスをコピーできます。</block>
   <block id="09e40761f22ee02fc6f59d79db4d6f93" category="paragraph">BlueXPで使用しないNSSアカウントをすべて削除します。</block>
-  <block id="2b728e40e9cb22f93792e581f831c6e8" category="paragraph">このページでは、BlueXPからAWSでコネクタを直接作成する方法について説明します。 <block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block>。</block>
   <block id="2ff3310af3f7a8c23232832947eccc41" category="paragraph">AWSでコネクタを起動するには、IAMロールまたはAWSアクセスキーを使用して、BlueXPがAWSで認証する必要があります。どちらのオプションでも、IAMポリシーが必要です。</block>
   <block id="92c5959c8282fd63c3afcbd1c9b13f51" category="paragraph">BlueXPでは、VPCにConnectorインスタンスを導入する前にAWSで認証する必要があります。次のいずれかの認証方式を選択できます。</block>
   <block id="61f21c125c1220d8643bea1729345e36" category="list-text">必要な権限を持つIAMロールをBlueXPに割り当てます</block>
@@ -2819,4 +2786,40 @@
   <block id="1cf32fb78afaf111cd4c8421dc8592a6" category="section-title">コネクタのワークスペースを管理する</block>
   <block id="c558073ec27a1686dce5ebbe5da43092" category="paragraph-title">ログインオプション</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">をクリックして、 Connector と Docker コンポーネントをアップグレードします。</block>
+  <block id="25fd4db5a75c387fe3fd85258810fcad" category="list-text">コネクタを手動でLinuxホストにインストールする場合（BlueXPインターフェイスから直接インストールしない場合）、Connectorのインストーラは、インストールプロセス中に複数のエンドポイントにアクセスする必要があります。</block>
+  <block id="d225210f36f5d8518fad068e89f2d1c3" category="inline-link-macro">エンドポイントのリストを確認します</block>
+  <block id="c0355dfc890e268b51bb88722cb448a9" category="paragraph"><block ref="12b2338905766fe009fef0e6c52eb82d" category="inline-link-macro-rx"></block>。</block>
+  <block id="762cb137e48e2922920955cfb157dea8" category="list-text">Connectorをインストールする前に、ホストにDocker Engineバージョン19.3.1以降が必要です。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
+  <block id="d03b3625d28d43168905850da108e917" category="list-text">https://mysupport.netapp.com をご覧ください</block>
+  <block id="648b7f3d6699305c92d33129e6ea00fe" category="list-text">\ https://cloudmanager.cloud.netapp.com/tenancy</block>
+  <block id="aeed9abd051a5ff37a94ee8ea302bdd8" category="list-text">\ https://stream.cloudmanager.cloud.netapp.com</block>
+  <block id="9dcb0a1d3281e001a6085626a264be49" category="list-text">\ https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="49fa0b884bb05dfb3678aff69fc2a90f" category="list-text">\ https://production-artifacts.cloudmanager.cloud.netapp.com</block>
+  <block id="f55e31da35f47937201bdbf54e964315" category="list-text">\ https://*.blob.core.windows.net</block>
+  <block id="4212008c2b937ee581ff9e530b8440f8" category="list-text">コネクタをインストールするためのroot権限。</block>
+  <block id="f39873ba3fdf2dff72b117d1ccc0a3f8" category="list-text">コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。</block>
+  <block id="2d8d8f0bca25643e72f72642f3d69663" category="paragraph">インストール後にプロキシサーバを設定することもできますが、その場合はコネクタを再起動する必要があります。</block>
+  <block id="65b78a376b8b24b27e70f95a439510ed" category="list-text">プロキシサーバでHTTPSを使用する場合は、CA署名証明書。</block>
+  <block id="e4e566d8d29952e9ed77e5d97574962e" category="paragraph">ネットワークまたはクラウドで使用するコネクタインストーラをダウンロードする必要があります。</block>
+  <block id="658dfe68751aa32c88df07e11961f9e4" category="paragraph">--proxyパラメータと--cacert.pemパラメータはオプションです。プロキシサーバがある場合は、次のようにパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。</block>
+  <block id="b9fe00008273bec266b1b13a375c5496" category="paragraph">次に、両方のオプションパラメータを使用したコマンドの例を示します。</block>
+  <block id="c4b4fca8bb676cd8922fa6d8e24c4b0b" category="paragraph">--proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。</block>
+  <block id="2ceb0e196c300f23618f8a9e66bf0553" category="list-text">\ http://address:port</block>
+  <block id="56ea310ec955ce6bca75693a1ac8f92d" category="list-text">\ http://username:password@address:port</block>
+  <block id="ab0bd0c76dc86ad344963fb604cbdb9a" category="list-text">\ https://address:port</block>
+  <block id="0e304d528ea3fafc4ceebb3dd322c283" category="list-text">\ https://username:password@address:port</block>
+  <block id="aa39dfaee370d13c729f753fcb941905" category="paragraph">--cacertsは、コネクタとプロキシサーバ間のHTTPSアクセスに使用するCA署名証明書を指定しています。このパラメータは、HTTPSプロキシサーバを指定する場合にのみ必要です。</block>
+  <block id="32a79a3da73e9b7dab502ea9e60bf1a5" category="section-title">コネクタをセットアップします</block>
+  <block id="9679c37d1ece85e4705ecd886aca356e" category="paragraph">サインアップまたはログインして、アカウントで使用できるようにコネクタを設定します。</block>
+  <block id="f585d8283789f95373bb4a61f1b6ce67" category="list-text">Google Cloud：上記のステップ3を参照してください</block>
+  <block id="bdf21bb8cfe7ab9d40f2a425c4b3b3d2" category="paragraph">BlueXPのほとんどの機能を使用するには'BlueXPアカウント管理者が_Connector_を 配備する必要がありますConnectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。</block>
+  <block id="d244936e046f15fcb45607b4abdb4b1a" category="paragraph">以下の手順では、BlueXP SaaS WebサイトからAzureコマーシャルリージョンにコネクタを直接作成する方法について説明します。</block>
+  <block id="2e8e562450aa2519f49cd0db32ef65de" category="inline-link-macro">政府機関の地域にConnectorを導入する方法について説明します</block>
+  <block id="7f86b05bc7243efe06f8812a8de60993" category="list-text"><block ref="7f86b05bc7243efe06f8812a8de60993" category="inline-link-macro-rx"></block></block>
+  <block id="f56df5f8b4fd558a7482d6115403eadd" category="list-text"><block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block></block>
+  <block id="4c8996b4b6a0d48752377c7e6f5e0168" category="paragraph">以下の手順では、BlueXP SaaS WebサイトからAWS商用リージョンにコネクタを直接作成する方法について説明します。</block>
+  <block id="973e3a2a390bb57ce9d9e16ac0145023" category="paragraph"><block ref="973e3a2a390bb57ce9d9e16ac0145023" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ff6e28c8eaa73c74f132f30b8a504071" category="list-text">/opt/application/netapp/cloudmanager/logまたは</block>
+  <block id="f41aa0898b72dcd91cd63bd3d33d4258" category="list-text">/opt/application/netapp/service-manager-2 /ログ（新規インストール3.9.23以降）</block>
+  <block id="ca20316f548fc97a4d2a061c877b1956" category="paragraph">これらのフォルダのログには、ConnectorイメージとDockerイメージの詳細が記載されています。</block>
 </blocks>
