@@ -23,29 +23,40 @@ BlueXP（旧Cloud Manager）を使用すると、ITエキスパートとクラ�
 BlueXPは、エンタープライズクラスのSaaSベースの管理プラットフォームであり、場所を問わずデータを管理できます。
 
 * をセットアップして使用します https://cloud.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 複数のクラウドにわたって効率的なマルチプロトコルデータ管理を実現します。
-* ファイルストレージサービスをセットアップして使用
+* クラウドファイルストレージサービスをセットアップして使用
 +
-** https://cloud.netapp.com/azure-netapp-files["Azure NetApp Files の特長"^]
-** https://cloud.netapp.com/fsx-for-ontap["ONTAP 対応の Amazon FSX"^]
-** https://cloud.netapp.com/cloud-volumes-service-for-aws["Cloud Volumes Service for AWS"^]
-** https://cloud.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service for Google Cloud"^]
+** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files の特長"^]
+** https://bluexp.netapp.com/fsx-for-ontap["ONTAP 対応の Amazon FSX"^]
+** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service for Google Cloud"^]
 
 
-* ボリュームの作成、クラウドへのバックアップ、ハイブリッドクラウド間でのデータのレプリケート、クラウドへのコールドデータの階層化を行うことで、オンプレミスの ONTAP クラスタを検出して管理できます。
-* 次のような統合 クラウド サービス を有効にします。
+* 検出と管理 https://bluexp.netapp.com/netapp-on-premises["オンプレミスストレージ"^]
 +
-** https://cloud.netapp.com/cloud-compliance["クラウドデータの意味"^]
-** https://cloud.netapp.com/cloud-insights["Cloud Insights の機能です"^]
-** https://cloud.netapp.com/cloud-backup-service["クラウドバックアップ"^]
+** Eシリーズシステム
+** ONTAP クラスタ
+** StorageGRID システム
+
+
+* BlueXPのサービスを使用して'データの移動'データ保護'データの分析と管理を行うことができます
++
+** https://bluexp.netapp.com/cloud-backup["クラウドバックアップ"^]
+** https://bluexp.netapp.com/netapp-cloud-data-sense["クラウドデータの意味"^]
+** https://bluexp.netapp.com/cloud-sync-service["Cloud Sync"^]
+** https://bluexp.netapp.com/cloud-tiering["クラウド階層化"^]
+** https://bluexp.netapp.com/digital-advisor["Digital Advisor"^]
+** https://bluexp.netapp.com/global-file-cache["グローバルファイルキャッシュ"^]
+** https://bluexp.netapp.com/k8s["Kubernetes"^]
+** https://bluexp.netapp.com/ransomware-protection["ランサムウェアからの保護"^]
+** https://bluexp.netapp.com/replication["レプリケーション"^]
 
 
 
 
-https://cloud.netapp.com/cloud-manager["BlueXPの詳細をご覧ください"^]。
+https://cloud.netapp.com/cloud-manager["BlueXPの詳細をご覧ください"^]
 
 
 
-== サポートされているオブジェクトストレージプロバイダ
+== サポートされているクラウドプロバイダ
 
 BlueXPを使用すると、クラウドストレージを管理し、Amazon Web Services、Microsoft Azure、Google Cloudで クラウド サービス を使用できます。
 
@@ -53,11 +64,7 @@ BlueXPを使用すると、クラウドストレージを管理し、Amazon Web 
 
 == コスト
 
-BlueXPソフトウェアはネットアップから無償で提供されています。
-
-ほとんどのタスクでは、クラウドネットワークにConnectorを導入するように求められます。これにより、コンピューティングインスタンスと関連ストレージのクラウドプロバイダから料金が発生します。Connector ソフトウェアをオンプレミスで実行することもできます。
-
-link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。
+BlueXPの価格は、使用する予定のサービスによって異なります。 https://bluexp.netapp.com/pricing["BlueXPの価格設定についてはこちらをご覧ください"^]。
 
 
 

@@ -16,12 +16,14 @@ summary: BlueXPにログインして設定したので、ユーザーは作業�
 [role="lead"]
 BlueXPにログインして設定したので、ユーザーは作業環境の作成と検出を開始できます。
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["Cloud Volumes ONTAP for AWS の利用を開始しましょう"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["Cloud Volumes ONTAP for Azure の利用を開始しましょう"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Cloud Volumes ONTAP for Google Cloud の利用を開始しましょう"^]
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Azure NetApp Files をセットアップする"^]
-* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["ONTAP 用に Amazon FSX をセットアップします"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-aws/task-manage-cvs-aws.html["Cloud Volumes Service for AWS をセットアップする"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの ONTAP クラスタを検出"^]
-* link:task-viewing-amazon-s3.html["Amazon S3 バケットを検出します"]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Azure NetApp Files の特長"^]
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["ONTAP 対応の Amazon FSX"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["Cloud Volumes ONTAP for AWS"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["Cloud Volumes ONTAP for Azure"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Cloud Volumes ONTAP for Google Cloud の略"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/task-set-up-google-cloud.html["Cloud Volumes Service for Google Cloud"^]
+* https://docs.netapp.com/us-en/cloud-manager-e-series/task-discover-e-series.html["Eシリーズシステム"^]
+* https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["Kubernetes クラスタ"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの ONTAP クラスタ"^]
+* https://docs.netapp.com/us-en/cloud-manager-storagegrid/task-discover-storagegrid.html["StorageGRID システム"^]
 

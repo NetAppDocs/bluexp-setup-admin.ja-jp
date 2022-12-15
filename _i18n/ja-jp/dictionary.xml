@@ -918,20 +918,7 @@
   <block id="ede70ed6f915794fb0cf32f488c14c20" category="list-text"><block ref="ede70ed6f915794fb0cf32f488c14c20" category="inline-link-rx"></block></block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">の機能</block>
   <block id="c70759e14c99d146c9a06c0aa179fd97" category="list-text">をセットアップして使用します<block ref="b41a5c30c6d9d82a8289eb263626d622" category="inline-link-rx"></block> 複数のクラウドにわたって効率的なマルチプロトコルデータ管理を実現します。</block>
-  <block id="442da2ce6c62de650f0093c5c3936f8b" category="list-text">ファイルストレージサービスをセットアップして使用</block>
-  <block id="fe47a7bae21deac481466753a76b1e01" category="list-text"><block ref="fe47a7bae21deac481466753a76b1e01" category="inline-link-rx"></block></block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link">ONTAP 対応の Amazon FSX</block>
-  <block id="2ccead5fa1ba8e96f9ff96a6730df792" category="list-text"><block ref="2ccead5fa1ba8e96f9ff96a6730df792" category="inline-link-rx"></block></block>
-  <block id="06021ba1ee96f1a3a57b50001fc7244c" category="inline-link">Cloud Volumes Service for AWS</block>
-  <block id="510fe8614c3929cdfae8c51f9ef579a0" category="list-text"><block ref="510fe8614c3929cdfae8c51f9ef579a0" category="inline-link-rx"></block></block>
-  <block id="31e7239cc507a58a4794b36df4448093" category="list-text"><block ref="31e7239cc507a58a4794b36df4448093" category="inline-link-rx"></block></block>
-  <block id="8ccee3c04142be04af106dd59a32d53b" category="list-text">ボリュームの作成、クラウドへのバックアップ、ハイブリッドクラウド間でのデータのレプリケート、クラウドへのコールドデータの階層化を行うことで、オンプレミスの ONTAP クラスタを検出して管理できます。</block>
-  <block id="60b339721b3af17b74fa26ee748c0c4a" category="list-text">次のような統合 クラウド サービス を有効にします。</block>
-  <block id="eded69f9cac39a42b807d8fe9673cbf0" category="list-text"><block ref="eded69f9cac39a42b807d8fe9673cbf0" category="inline-link-rx"></block></block>
-  <block id="b4f83b03956523a39e8bbbd0895f0f29" category="inline-link">Cloud Insights の機能です</block>
-  <block id="79014bb685e82b5d8e08031244ab76c6" category="list-text"><block ref="79014bb685e82b5d8e08031244ab76c6" category="inline-link-rx"></block></block>
-  <block id="f80499b11aeb75282e4dca4568323011" category="list-text"><block ref="f80499b11aeb75282e4dca4568323011" category="inline-link-rx"></block></block>
-  <block id="002fca37a5e7d8eb724e874566419716" category="section-title">サポートされているオブジェクトストレージプロバイダ</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
   <block id="11cf550820ecd5e75ae1a9046f7f7f05" category="section-title">ソフトウェアサービス</block>
   <block id="249e471f7f9907a3aa62024b7aafe261" category="inline-link">SaaS ベースのユーザインターフェイス</block>
@@ -943,7 +930,6 @@
   <block id="958c315a8c40765f65895091ecc83488" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
   <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">ターゲットネットワークへの接続</block>
-  <block id="19dfd3f6e4e8058b5d5537232d50ca9b" category="paragraph">コネクタには、作成する作業環境の種類と、有効にする予定のサービスへのネットワーク接続が必要です。</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">172 の範囲の IP アドレスと競合する可能性があります</block>
   <block id="c8f224037ea295aeec347c94779d9932" category="section-title">アウトバウンドインターネットアクセス</block>
   <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">Connector では、パブリッククラウド環境内のリソースとプロセスを管理するためにアウトバウンドインターネットアクセスが必要です。</block>
@@ -1075,7 +1061,6 @@
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">既知の制限事項は、このリリースの製品でサポートされていないプラットフォーム、デバイス、機能、または製品と正しく相互運用できない機能を特定します。これらの制限事項を慎重に確認してください</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">既知の制限</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">コネクタの制限</block>
-  <block id="82538689c7a66297973814120306d42f" category="section-title">HTTP プロキシサーバのみがサポートされています</block>
   <block id="7bd92bd111bfbf23b12f73672eb0dd1c" category="inline-link-macro">認証局（ CA ）が署名した HTTPS 証明書をインストールする</block>
   <block id="c3ce271d53cbf6a7afd137a37f4ee8d6" category="paragraph">セキュリティを強化するには、を選択します <block ref="11df3d19916b70ba1d82d33e876689bc" category="inline-link-macro-rx"></block>。</block>
   <block id="e949623e23f093c132f86ba2771e8a2e" category="section-title">ローカル UI のロード時に空白ページが表示される</block>
@@ -1083,10 +1068,6 @@
   <block id="1f8685c3e9591b0ac770ad3c60e0ea9b" category="paragraph">この問題は、キャッシュの問題に関連しています。回避策では、 incognito モードまたはプライベート Web ブラウザセッションを使用します。</block>
   <block id="f1bbf021df1d9b288af2cafebc1736b8" category="section-title">SaaS の制限</block>
   <block id="3197827325be6e413fb43c8aa3862608" category="section-title">政府機関では SaaS プラットフォームが無効になっています</block>
-  <block id="4c8bad6756ca0d84a9a56e8303428c9c" category="section-title">市場の制約</block>
-  <block id="09b41782e7d4a148f9a7da9ba9dd8aab" category="section-title">従量課金制の Azure と Google Cloud のパートナーは利用できません</block>
-  <block id="3bb34cc4b91242a4a34cd43a6fe0fd46" category="paragraph">Microsoft Cloud 解決策 Provider （ CSP ）パートナー様または Google Cloud パートナー様は、従量課金制のサブスクリプションをご利用いただけません。ライセンスを購入し、 BYOL ライセンスを使用した NetApp クラウドソリューションを導入する必要があります。</block>
-  <block id="33a2b7ff6dc79a8e4cc0b966b36b485d" category="paragraph">従量課金制のサブスクリプションは、次の NetApp クラウドサービスでは利用できません。</block>
   <block id="1ab5193f89cf79df51fd4138318923ac" category="doc">Azure のクレデンシャルと権限</block>
   <block id="08a6159f6d9d986210470d2ab6dff166" category="section-title">Azure の初期クレデンシャル</block>
   <block id="1985b326c07cdcb2a260ae0c0c6fde8d" category="inline-link">システムによって割り当てられた管理 ID</block>
@@ -1103,20 +1084,6 @@
   <block id="65f0e30e3c24202dbbc18402c495e104" category="paragraph">Marketplace を使用する場合も、アクセス許可は同じ方法で提供されます。コネクタの管理 ID を手動で作成してセットアップし、追加のアカウントに権限を付与するだけで済みます。</block>
   <block id="67ae2bc9115f67bfaadac4861db76177" category="paragraph">オンプレミス環境では、 Connector の管理対象 ID を設定することはできませんが、サービスプリンシパルを使用して追加のアカウントの場合と同様に権限を設定できます。</block>
   <block id="3163b3d4dc92f42d04ad4c79906dcdc3" category="doc">次の手順</block>
-  <block id="7225cbd09f10418bea11f9f5a7bb8239" category="inline-link">Cloud Volumes ONTAP for AWS の利用を開始しましょう</block>
-  <block id="1ab38ec994b2b571e5a64425b17adfd0" category="list-text"><block ref="1ab38ec994b2b571e5a64425b17adfd0" category="inline-link-rx"></block></block>
-  <block id="c9872f24ec1c862fec9a6daae0322223" category="inline-link">Cloud Volumes ONTAP for Azure の利用を開始しましょう</block>
-  <block id="c842a3b183e53a5bf6629088c63c3cfe" category="list-text"><block ref="c842a3b183e53a5bf6629088c63c3cfe" category="inline-link-rx"></block></block>
-  <block id="f4488428860ec63a8b5d5b49e6e05044" category="inline-link">Cloud Volumes ONTAP for Google Cloud の利用を開始しましょう</block>
-  <block id="f16a9ac5c661e28643e0bd9a18254d16" category="list-text"><block ref="f16a9ac5c661e28643e0bd9a18254d16" category="inline-link-rx"></block></block>
-  <block id="1a13f57b619b2ef0b47e851b04e48aec" category="inline-link">Azure NetApp Files をセットアップする</block>
-  <block id="64e7cbd14ba57000ea8cdd5fa33d079f" category="inline-link">ONTAP 用に Amazon FSX をセットアップします</block>
-  <block id="ee1b3fc0e1771ee3c8d6a1474ba7b403" category="inline-link">Cloud Volumes Service for AWS をセットアップする</block>
-  <block id="3707f9686304d02d294cdb98fb9cbf36" category="list-text"><block ref="3707f9686304d02d294cdb98fb9cbf36" category="inline-link-rx"></block></block>
-  <block id="c6f905e067bdaa7ba33a58a907e59477" category="inline-link">オンプレミスの ONTAP クラスタを検出</block>
-  <block id="b28e9c0d24784ac4474fb496f6e3ce23" category="list-text"><block ref="b28e9c0d24784ac4474fb496f6e3ce23" category="inline-link-rx"></block></block>
-  <block id="a3e15006a0362130cf46b948ce3a5626" category="inline-link-macro">Amazon S3 バケットを検出します</block>
-  <block id="3f48c5e9be05508878e1ceb77d8423a7" category="list-text"><block ref="3f48c5e9be05508878e1ceb77d8423a7" category="inline-link-macro-rx"></block></block>
   <block id="ca82fdd9a480fcc34a6b470f5ec8e908" category="inline-link-macro">プロキシを設定します</block>
   <block id="8224e3db072d582bb34ae19441c597fe" category="cell">-compute.disks .create -computedisks .createsnapshot - compute.disks.delete -computedisks .get-compute.diskList - compute.disks.setLabels - compute.disks.us</block>
   <block id="f66d598893a55fa43b7676b10c66160f" category="cell">Cloud Volumes ONTAP 用のディスクを作成および管理します。</block>
@@ -1347,8 +1314,6 @@
   <block id="0992dccda336100add15ce23fc9702f3" category="list-text"><block ref="0992dccda336100add15ce23fc9702f3" category="inline-link-rx"></block></block>
   <block id="3439d2a50956809b2cccde2f89685ce6" category="list-text"><block ref="3439d2a50956809b2cccde2f89685ce6" category="inline-link-rx"></block></block>
   <block id="fad43b5fbcb08d889da84d61cf2ea0e8" category="list-text"><block ref="fad43b5fbcb08d889da84d61cf2ea0e8" category="inline-link-rx"></block></block>
-  <block id="d1640a3b53ec580119ad1efa519fa5a4" category="list-text"><block ref="d1640a3b53ec580119ad1efa519fa5a4" category="inline-link-rx"></block></block>
-  <block id="571331341f9a044145a7015b8d5b9b03" category="list-text"><block ref="571331341f9a044145a7015b8d5b9b03" category="inline-link-rx"></block></block>
   <block id="a37da40b1cf1ce86308b603dbc497d9d" category="paragraph"><block ref="443587ef67dfdb72c89535a3fb85e4c4" category="inline-link-macro-rx"></block>。</block>
   <block id="de60a486c1b92dffa7eb55af0b1c8bb0" category="paragraph">AWS クレデンシャルを追加する方法は 2 種類あります。</block>
   <block id="1e0ffea311b606e155cd79847cc310dd" category="list-text">IAM ロールまたは IAM ユーザにポリシーを関連付けます。</block>
@@ -1422,8 +1387,6 @@
   <block id="0c5f74a83e5cbc5c6c230dd0caf096f7" category="inline-link">Azure Marketplaceの一般企業向けページ</block>
   <block id="5fb9ace1b2fee444b848b1ad1c5d886c" category="list-text"><block ref="5fb9ace1b2fee444b848b1ad1c5d886c" category="inline-link-rx"></block></block>
   <block id="8ac340f924d72696326df51a32dbdee5" category="inline-link">Azure GovernmentリージョンのAzure Marketplaceのページ</block>
-  <block id="da14ee4a8100ac08980150bcda1e397d" category="inline-link-macro">コネクタのデフォルト設定について説明します</block>
-  <block id="84fc34721c0c912a148a70d22ac7cd5a" category="paragraph"><block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="2fc22405cb36e8596d9bdb7b52cbf10c" category="paragraph">導入前にコネクタの詳細を確認したり、問題のトラブルシューティングが必要な場合に利用できます。</block>
   <block id="5eeca886fa07462826a9ea747483f528" category="section-title">AWSの詳細</block>
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">EC2インスタンスタイプはt3.xlargeです。</block>
@@ -1848,7 +1811,6 @@
   <block id="489db3f339b691ea4dea5f4572483024" category="paragraph">Cloud Volumes ONTAP にデフォルトのセキュリティグループを使用する場合、そのセキュリティグループに対する変更は必要ありません。ただし、Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義する場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可することも必要です。</block>
   <block id="117e86e552d0c131628c9b59f4f27b24" category="paragraph">社内ポリシーで、インターネットへのすべてのHTTP通信にプロキシサーバを使用する必要がある場合は、HTTPプロキシサーバを使用するようにコネクタを設定する必要があります。プロキシサーバは、クラウドまたはネットワークに配置できます。</block>
   <block id="cd5948a5853fc000f635c34407e9be0e" category="paragraph">HTTPプロキシサーバを使用するようにコネクタを設定すると、パブリックIPアドレスまたはNATゲートウェイを使用できない場合にアウトバウンドインターネットアクセスが提供されます。このプロキシサーバは、アウトバウンド接続を持つコネクタのみを提供します。Cloud Volumes ONTAP システムへの接続は提供しません。</block>
-  <block id="2724db8eb831856d2bcad22cc1470034" category="paragraph">コネクタへの着信トラフィックは、コネクタを起動した場合や、コネクタがAutoSupport メッセージのプロキシとして使用されている場合を除き、受信トラフィックはありません。へのアクセスは、 HTTP および HTTPS を使用して提供されます <block ref="a4d556f51af89bcef8612c38a831609f" category="inline-link-macro-rx"></block>は、まれな状況で使用します。SSH が必要になるのは、トラブルシューティングのためにホストに接続する必要がある場合のみです。</block>
   <block id="6d222908a201e6b65bf048113504f4c1" category="inline-xref">Connectorのプロキシサーバの詳細については、こちらをご覧ください</block>
   <block id="379c1280ecc325be9f0d74d095f55ae9" category="cell">Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 <block ref="9a4dd6e745bb9c3853507bba2251a2cd" category="inline-xref-macro-rx"></block>。</block>
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">サインアップフォームでは、英語の文字のみを使用できます。</block>
@@ -1909,8 +1871,6 @@
   <block id="cd444a79f98ccbe383b146279f3bb526" category="inline-xref">ステップバイステップの手順に従います</block>
   <block id="442342eacc7f01318bc860131355649e" category="paragraph"><block ref="ca365c48bf30193bd65b99125fcf8cd5" category="inline-xref-macro-rx"></block>。</block>
   <block id="ab316a3ccbad97726269c9705958262a" category="section-title">ネットワークをセットアップする</block>
-  <block id="7213720ac295b1a74851802d3a5a56b8" category="paragraph">コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタにVPCとサブネットを使用する以外に、次の要件が満たされていることを確認する必要があります。</block>
-  <block id="1b3deabe2c9e1e4a0b1167212bbfaef2" category="paragraph">たとえば、会社のネットワークにコネクタをインストールした場合は、Cloud Volumes ONTAP を起動するVPCへのVPN接続を設定する必要があります。</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">プロキシサーバ</block>
   <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">すべての送信インターネットトラフィックにHTTPプロキシを導入する必要がある場合は、HTTPプロキシに関する次の情報を取得します。</block>
   <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP アドレス</block>
@@ -1919,7 +1879,6 @@
   <block id="338578acf7e0dc54ebcd8c3592f0b022" category="section-title">セキュリティグループ</block>
   <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">IPアドレスの制限</block>
   <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link-macro">この制限事項の詳細については、こちらをご覧ください</block>
-  <block id="2ef89d258d7b7a558315c92ffe06a70a" category="paragraph">172の範囲のIPアドレスと競合する可能性があります。 <block ref="9903a97952b05fb45b71a9f44012cd1c" category="inline-link-macro-rx"></block>。</block>
   <block id="1fbc47392baedd9a8a771f5372aa43d4" category="list-text">[*コネクターの配置（Deploying a Connector *）]ページで、必要なものについて詳しく確認してください。次の 2 つのオプションがあります。</block>
   <block id="639c5d452ac23b93fb028a8d3101d2c2" category="list-text">[* Continue *（続行）]をクリックして、製品ガイドを使用して導入の準備をします。製品ガイドの各手順には、このページのドキュメントに記載されている情報が含まれています。</block>
   <block id="ce670b5c6b0b9f0203bdb18071265645" category="list-text">このページの手順に従って準備が完了している場合は、*配備にスキップ*をクリックします。</block>
@@ -1961,8 +1920,6 @@
   <block id="abfd76b9567ca082322504a092e076c7" category="list-text">*詳細*：仮想マシンインスタンスの名前を入力し、タグを指定してプロジェクトを選択し、必要な権限を持つサービスアカウントを選択します（詳細については、上のセクションを参照してください）。</block>
   <block id="0e4b0391e50169d97fc505f0c73a94ba" category="paragraph">コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。</block>
   <block id="07a7f9f6c28c927482b86d1b2710f6a3" category="paragraph"><block ref="07a7f9f6c28c927482b86d1b2710f6a3" category="inline-link-rx"></block></block>
-  <block id="85b230e60d81c13f5dc04f2f6348b69b" category="paragraph">コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタ用のVNetとサブネットを使用する以外にも、次の要件が満たされていることを確認する必要があります。</block>
-  <block id="7f98194e906061755ef77e3cbe8a33a9" category="paragraph">たとえば、企業ネットワークにコネクタを取り付ける場合は、Cloud Volumes ONTAP を起動するVNetへのVPN接続を設定する必要があります。</block>
   <block id="a3f904af5bc42ef6ae44062da5d02b45" category="list-text">[* Continue *（続行）]をクリックして、製品ガイドを使用して導入の準備をします。各手順には、このページのドキュメントに記載されている情報が含まれています。</block>
   <block id="7b3422536b44078a6701640706be10a0" category="list-text">すべての発信インターネットトラフィックにプロキシを必要とする場合は、HTTPプロキシに関する詳細情報を参照してください。</block>
   <block id="1086659fbba9a8aed49e109adc659d56" category="list-text">[*コネクターの配置（Deploying a Connector *）]ページ：</block>
@@ -2367,10 +2324,7 @@
   <block id="9dc9eda989fecd8cfbde78f1ddcc23fb" category="paragraph">BlueXP（旧Cloud Manager）を使用すると、ITエキスパートとクラウドアーキテクトは、ネットアップのクラウドソリューションを使用してハイブリッドマルチクラウドインフラを一元管理できます。</block>
   <block id="58d76b9868fa792339621fbdd30421f7" category="paragraph">BlueXPは、エンタープライズクラスのSaaSベースの管理プラットフォームであり、場所を問わずデータを管理できます。</block>
   <block id="78d1c9f9c86eecd86f5f568cfe0c0721" category="inline-link">BlueXPの詳細をご覧ください</block>
-  <block id="3f0f4690f27de5e62f84c1a350e6e4b1" category="paragraph"><block ref="3e6500f6feea5ba5821d69bacae3c610" category="inline-link-rx"></block>。</block>
   <block id="0cf89ba9f6178dc91d18ec5c2aec1c61" category="paragraph">BlueXPを使用すると、クラウドストレージを管理し、Amazon Web Services、Microsoft Azure、Google Cloudで クラウド サービス を使用できます。</block>
-  <block id="14c4e84af1098b2006f2fddadf5e62fd" category="paragraph">BlueXPソフトウェアはネットアップから無償で提供されています。</block>
-  <block id="231aa5fbc2bffd88a9700bb68c45554e" category="paragraph">ほとんどのタスクでは、クラウドネットワークにConnectorを導入するように求められます。これにより、コンピューティングインスタンスと関連ストレージのクラウドプロバイダから料金が発生します。Connector ソフトウェアをオンプレミスで実行することもできます。</block>
   <block id="a2513e72ab3ae9830fac174977d58572" category="section-title">BlueXPの仕組み</block>
   <block id="1d30e47d408ebb4c330e626c7ae44937" category="paragraph">BlueXPには'BlueXP Webサイトに統合さCloud Volumes ONTAP れたSaaSベースのインタフェースと'BlueXPやその他の クラウド サービス を管理するコネクタが含まれています</block>
   <block id="8ff6e794637981d1636a228e2fd99e19" category="section-title">BlueXPのWebサイト</block>
@@ -2822,4 +2776,44 @@
   <block id="ff6e28c8eaa73c74f132f30b8a504071" category="list-text">/opt/application/netapp/cloudmanager/logまたは</block>
   <block id="f41aa0898b72dcd91cd63bd3d33d4258" category="list-text">/opt/application/netapp/service-manager-2 /ログ（新規インストール3.9.23以降）</block>
   <block id="ca20316f548fc97a4d2a061c877b1956" category="paragraph">これらのフォルダのログには、ConnectorイメージとDockerイメージの詳細が記載されています。</block>
+  <block id="df290139b26527b2473b1e82a36386d4" category="paragraph">コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタの仮想ネットワークとサブネットを使用する以外に、次の要件が満たされていることを確認する必要があります。</block>
+  <block id="2f03f8dd45cb031f8f3cce95fd4acefc" category="paragraph">Connectorでは、作成する作業環境の種類と有効にするサービスへのネットワーク接続が必要です。</block>
+  <block id="3f92e0c134aea90b900c9d9fb8728adc" category="paragraph">たとえば、会社のネットワークにコネクタをインストールする場合は、Cloud Volumes ONTAP を起動する仮想ネットワークへのVPN接続を設定する必要があります。</block>
+  <block id="4f85ea1fc2337ca87ea3957b6ed0f523" category="paragraph">コネクタへの着信トラフィックは、コネクタを起動した場合や、コネクタがAutoSupport メッセージのプロキシとして使用されている場合を除き、受信トラフィックはありません。へのアクセスは、 HTTP および HTTPS を使用して提供されます<block ref="b66a5441ef03e9f48be36352f5f78769" category="inline-link-rx"></block>は、まれな状況で使用します。SSH が必要になるのは、トラブルシューティングのためにホストに接続する必要がある場合のみです。</block>
+  <block id="9b1f033bcac0595326d8acd1ef89e52c" category="paragraph">172の範囲のIPアドレスと競合する可能性があります。<block ref="120cc620882c590412757bc531a4f583" category="inline-link-rx"></block>。</block>
+  <block id="17a28f89a71d8bcba39452a2fd7343db" category="list-text">クラウドファイルストレージサービスをセットアップして使用</block>
+  <block id="d03fba385c4e1320cb0846a9690ea3db" category="list-text"><block ref="d03fba385c4e1320cb0846a9690ea3db" category="inline-link-rx"></block></block>
+  <block id="a24bba36cb4a314e2d49f3de7731e9af" category="list-text"><block ref="a24bba36cb4a314e2d49f3de7731e9af" category="inline-link-rx"></block></block>
+  <block id="bb5abe8201599db6217db0b48efaaf5c" category="list-text"><block ref="bb5abe8201599db6217db0b48efaaf5c" category="inline-link-rx"></block></block>
+  <block id="f06223f9afc23bac523c7b9854772040" category="inline-link">オンプレミスストレージ</block>
+  <block id="50568fb1f1ec4912ba1fc41a6e7d9b52" category="list-text">検出と管理<block ref="3908ac962ccecd5304bef31bbe1227cb" category="inline-link-rx"></block></block>
+  <block id="3404cce75db90acf6a9d52860721a139" category="list-text">ONTAP クラスタ</block>
+  <block id="7fcb7f97cbc710b693fef37b5e86770f" category="list-text">StorageGRID システム</block>
+  <block id="ab3e169cccbf28cfe5a645631e4c3ee9" category="list-text">BlueXPのサービスを使用して'データの移動'データ保護'データの分析と管理を行うことができます</block>
+  <block id="0edddc509df3db4e8717d189e32db020" category="list-text"><block ref="0edddc509df3db4e8717d189e32db020" category="inline-link-rx"></block></block>
+  <block id="19e49e48b1b7dfb345807d478924695e" category="list-text"><block ref="19e49e48b1b7dfb345807d478924695e" category="inline-link-rx"></block></block>
+  <block id="c0daf6fd97668893647e484d22abfa87" category="list-text"><block ref="c0daf6fd97668893647e484d22abfa87" category="inline-link-rx"></block></block>
+  <block id="b53201308fec60a975760c1edb55b773" category="list-text"><block ref="b53201308fec60a975760c1edb55b773" category="inline-link-rx"></block></block>
+  <block id="b2b0ea38d4048b69c988dce66f1d0b1d" category="list-text"><block ref="b2b0ea38d4048b69c988dce66f1d0b1d" category="inline-link-rx"></block></block>
+  <block id="8a7565a3d3fd48c7fc9f1e196dfdca92" category="list-text"><block ref="8a7565a3d3fd48c7fc9f1e196dfdca92" category="inline-link-rx"></block></block>
+  <block id="fcb8e4813d92a80a1bbc9b8070ca196b" category="list-text"><block ref="fcb8e4813d92a80a1bbc9b8070ca196b" category="inline-link-rx"></block></block>
+  <block id="950604af87c30e09716e6d097eb491db" category="inline-link">ランサムウェアからの保護</block>
+  <block id="a2caf1b1186133b845d3659ba1a714e8" category="list-text"><block ref="a2caf1b1186133b845d3659ba1a714e8" category="inline-link-rx"></block></block>
+  <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">レプリケーション</block>
+  <block id="e5335d776982e29d68ce5591f7857b38" category="list-text"><block ref="e5335d776982e29d68ce5591f7857b38" category="inline-link-rx"></block></block>
+  <block id="3e6500f6feea5ba5821d69bacae3c610" category="paragraph"><block ref="3e6500f6feea5ba5821d69bacae3c610" category="inline-link-rx"></block></block>
+  <block id="902e65d33784bd8924eb05e622aa2dda" category="section-title">サポートされているクラウドプロバイダ</block>
+  <block id="586136b5d097497746a02a0ee9fbf106" category="inline-link">BlueXPの価格設定についてはこちらをご覧ください</block>
+  <block id="fdef4b7b833e98f74a43e15f9596aba2" category="paragraph">BlueXPの価格は、使用する予定のサービスによって異なります。<block ref="75160bc8e8d9a72990607b919e54f0eb" category="inline-link-rx"></block>。</block>
+  <block id="1dbcc3dbf7eca2d457ef75c308b633a7" category="list-text"><block ref="1dbcc3dbf7eca2d457ef75c308b633a7" category="inline-link-rx"></block></block>
+  <block id="04ffe0a147dbb13700889c1e70e9882e" category="list-text"><block ref="04ffe0a147dbb13700889c1e70e9882e" category="inline-link-rx"></block></block>
+  <block id="87364e5ba30db1c43d48c2f9fb268599" category="list-text"><block ref="87364e5ba30db1c43d48c2f9fb268599" category="inline-link-rx"></block></block>
+  <block id="2cd4c52a2c24d00b0728a00fb7fdfa14" category="list-text"><block ref="2cd4c52a2c24d00b0728a00fb7fdfa14" category="inline-link-rx"></block></block>
+  <block id="f540a08b090d18fa948ca4ade8ceb7ff" category="inline-link">Cloud Volumes ONTAP for Google Cloud の略</block>
+  <block id="18be24d5615a34e11f88d365c94d770c" category="list-text"><block ref="18be24d5615a34e11f88d365c94d770c" category="inline-link-rx"></block></block>
+  <block id="8ddf9ef59a261682f484b2030ac2104d" category="list-text"><block ref="8ddf9ef59a261682f484b2030ac2104d" category="inline-link-rx"></block></block>
+  <block id="10a0b60b9648ccc503b486ec26950667" category="list-text"><block ref="10a0b60b9648ccc503b486ec26950667" category="inline-link-rx"></block></block>
+  <block id="92f468efd354e3cfaab0772943ec7f1d" category="list-text"><block ref="92f468efd354e3cfaab0772943ec7f1d" category="inline-link-rx"></block></block>
+  <block id="412b379b83628f21da708ff096d131e5" category="list-text"><block ref="412b379b83628f21da708ff096d131e5" category="inline-link-rx"></block></block>
+  <block id="a565303474e8a5c2bfe13bce52714f80" category="list-text"><block ref="a565303474e8a5c2bfe13bce52714f80" category="inline-link-rx"></block></block>
 </blocks>
