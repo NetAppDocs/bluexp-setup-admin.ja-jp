@@ -18,6 +18,18 @@ BlueXP（旧称Cloud Manager）管理機能の新機能であるネットアッ�
 
 
 
+== 2023年1月1日
+
+
+
+=== コネクタ3.9.25
+
+このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とバグ修正が含まれています。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1-january-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+
+
+
 == 2022年12月4日
 
 

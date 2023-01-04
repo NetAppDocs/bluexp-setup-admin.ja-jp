@@ -254,7 +254,7 @@ Online Connector には、ソフトウェアのアンインストールに使用
 .ステップ
 . Linux ホストからアンインストールスクリプトを実行します。
 +
-* /opt/application/NetApp/cloudmanager/bin/uninstall.sh [ サイレント ] *
+*/opt/application/netapp/service-manager-2 / uninstall.sh [サイレント]*
 
 +
 silent_ 確認を求めずにスクリプトを実行します。

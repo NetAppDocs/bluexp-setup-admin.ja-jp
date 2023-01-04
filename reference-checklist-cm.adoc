@@ -62,8 +62,8 @@ AWS サービス（ amazonaws.com ）：
 | \ https://widget.intercom.io | 製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。 
 
 
-| コネクタの IP アドレス  a| 
-ほとんどの場合、SaaS UIからBlueXPを使用する必要がありますが link:concept-connectors.html#the-local-user-interface["ローカル UI を使用する場合は"]Web ブラウザからホストの IP アドレスを入力する必要があります。
+| コネクタのIPアドレス  a| 
+ほとんどの場合、SaaS UIからBlueXPを使用する必要がありますが link:concept-connectors.html#the-local-user-interface["ローカル UI を使用する場合は"]WebブラウザでホストのIPアドレスを入力する必要があります。
 
 クラウドプロバイダへの接続に応じて、ホストに割り当てられたプライベート IP またはパブリック IP を使用します。
 
@@ -115,7 +115,7 @@ link:task-installing-linux.html["エンドポイントのリストを確認し�
 
 * コネクタへの着信トラフィックは、開始しない限りありません。
 +
-HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。
+HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。一方、アウトバウンドのインターネット接続が利用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128を介したインバウンド接続が必要です。
 
 
 
@@ -157,7 +157,7 @@ NOTE: コネクタを作成するには、別の方法があります。から�
 | link:task-creating-connectors-gcp.html["詳細な手順については、ここをクリックしてください"]。 
 |===
 --
-個々のサービスのネットワーク:: セットアップが完了したら、BlueXPのサービスを使用する準備ができました。各サービスには独自のネットワーク要件があります。詳細については、次のページを参照してください。
+個々のサービスのネットワーク:: セットアップが完了したら、BlueXPで利用できるサービスを使い始めることができます。各サービスには独自のネットワーク要件があります。詳細については、次のページを参照してください。
 +
 --
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-aws.html["Cloud Volumes ONTAP for AWS"^]
