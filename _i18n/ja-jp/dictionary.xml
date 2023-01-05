@@ -2677,7 +2677,6 @@
   <block id="4e7880d4f8d9cf685f649e74e34a3de7" category="list-text">Connector をインストールする前に、ホストに Docker Engine バージョン 19 以降が必要です。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
   <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">変更ログ</block>
   <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。</block>
-  <block id="a6123430b152ca358cd64ba937f6f1b9" category="section-title">2022年12月1日</block>
   <block id="ac692d638162a1dc479fa6a76fb4e114" category="list-text">Microsoft.Compute/images/write</block>
   <block id="61d40b12dddcd9e571bbe7a89b0fbae8" category="list-text">Microsoft.Network/loadBalancers/backendAddressPools/join/action</block>
   <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
@@ -2820,4 +2819,10 @@
   <block id="1c3a99b9cab6b55c9a46ccd58a1283c8" category="paragraph">ほとんどの場合、SaaS UIからBlueXPを使用する必要がありますが <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>WebブラウザでホストのIPアドレスを入力する必要があります。</block>
   <block id="c24732648af9b734203cc5a8a19f2537" category="paragraph">HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。一方、アウトバウンドのインターネット接続が利用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128を介したインバウンド接続が必要です。</block>
   <block id="31cd3194dbc40a48cdae969161abd4a5" category="list-text">セットアップが完了したら、BlueXPで利用できるサービスを使い始めることができます。各サービスには独自のネットワーク要件があります。詳細については、次のページを参照してください。</block>
+  <block id="9efb399c3a128a79f4671ff959339e79" category="list-text">microsoft.Storage/storageAccountSas/action</block>
+  <block id="a5b807c71b066c1d33685818cfa2806e" category="list-text">Microsoft .Synapse/workspaces /privateEndpointConnectionsApproval / action</block>
+  <block id="176944a9db0702558233e827d21e2f80" category="section-title">2023年1月5日</block>
+  <block id="267cfa5c9c91dc1d99dc797e89903dfa" category="paragraph">これらの権限はCloud Backupに必要です。</block>
+  <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">この権限はCloud Volumes ONTAP の導入に必要です。</block>
+  <block id="1d37387582eb7a955869d3991c1dab28" category="section-title">2022年12月1日</block>
 </blocks>
