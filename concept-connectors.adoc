@@ -20,11 +20,7 @@ summary: ほとんどの場合、クラウドまたはオンプレミスネッ�
 
 == コネクタが必要な場合
 
-コネクタは、BlueXPの多くの機能やサービスを使用するために必要です。
-
-
-
-=== サービス
+BlueXPの次の機能とサービスにはコネクタが必要です
 
 * ONTAP 管理機能用の Amazon FSX
 * Amazon S3検出
@@ -37,29 +33,37 @@ summary: ほとんどの場合、クラウドまたはオンプレミスネッ�
 * グローバルファイルキャッシュ
 * Google Cloud Storageの検出
 * Kubernetes クラスタ
-* オンプレミスの ONTAP クラスタ
+* オンプレミスのONTAP クラスタとBlueXPデータサービスの統合
 * StorageGRID
 
 
 次のサービスには、コネクタが * _ ではありません _ * 。
 
 * Digital Advisor
-* 作業環境の作成にはコネクタは必要ありませんが、 ONTAP FSX for ONTAP を作成して管理し、データをレプリケートし、データセンスや Cloud Sync などの クラウド サービス と FSX for を統合する必要があります。
++
+ほとんどの場合、コネクタなしでデジタルウォレットにライセンスを追加できます。
+
++
+デジタルウォレットにライセンスを追加するためにコネクタが必要なのは、 Cloud Volumes ONTAP ノードベースのライセンスのみです。この場合、 Cloud Volumes ONTAP システムにインストールされているライセンスのデータを使用するため、コネクタが必要です。
+
+* Amazon FSX for ONTAP の作業環境の作成
++
+作業環境の構築にコネクタは必要ありませんが、ボリュームの作成と管理、データのレプリケート、 ONTAP 対応の FSX と クラウド サービス の統合（データセンスや Cloud Sync など）が求められます。
+
 * Azure NetApp Files の特長
 +
 Azure NetApp Files のセットアップと管理にコネクタは必要ありませんが、 Azure NetApp Files データのスキャンにクラウドデータセンスを使用する場合はコネクタが必要です。
 
 * Cloud Volumes Service for Google Cloud
 * Cloud Sync
+* オンプレミスのONTAP クラスタを直接検出
++
+オンプレミスのONTAP クラスタを直接検出する場合はコネクタは必要ありませんが、BlueXPのその他の機能を利用する場合はコネクタが必要です。
+
++
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスのONTAP クラスタの検出オプションと管理オプションの詳細については、こちらをご覧ください"^]
 
 
-
-
-=== デジタルウォレット
-
-ほとんどの場合、コネクタなしでデジタルウォレットにライセンスを追加できます。
-
-デジタルウォレットにライセンスを追加するためにコネクタが必要なのは、 Cloud Volumes ONTAP ノードベースのライセンスのみです。この場合、 Cloud Volumes ONTAP システムにインストールされているライセンスのデータを使用するため、コネクタが必要です。
 
 
 

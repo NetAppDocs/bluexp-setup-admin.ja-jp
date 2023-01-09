@@ -116,11 +116,11 @@ Azure にコネクタを導入したら、を有効にしておく必要があ�
 +
 image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
 
-*** Azure CLI で次のコマンドを入力します。
+*** Azure CLIを使用してカスタムロールを作成します。
 +
 [source, azurecli]
 ----
-az role definition create --role-definition Policy_for_Setup_As_Service_Azure.json
+az role definition create --role-definition Connector_Policy.json
 ----
 +
 これで、Connector仮想マシンに割り当てることができるBlueXP Operatorというカスタムロールが作成されました。
