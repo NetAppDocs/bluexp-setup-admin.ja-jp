@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-netapp-accounts.html 
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, member, remove user, remove users, remove, delete, account, user account, user accounts, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector, service account 
-summary: 初期セットアップを実行した後、ユーザー、サービスアカウント、ワークスペース、コネクタ、およびサブスクリプションを管理することで、アカウント設定を後から管理できます。 
+summary: 初期セットアップを実行した後、ユーザー、サービスアカウント、ワークスペース、およびコネクタを管理することで、アカウント設定を後から管理できます。 
 ---
 = ネットアップアカウントの管理
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 初期セットアップを実行した後、ユーザー、サービ�
 
 
 [role="lead"]
-link:task-setting-up-netapp-accounts.html["初期セットアップを実行したあと"]では、後でユーザー、サービスアカウント、ワークスペース、コネクタ、およびサブスクリプションを管理することで、アカウント設定を管理できます。
+link:task-setting-up-netapp-accounts.html["初期セットアップを実行したあと"]では、後でユーザー、サービスアカウント、ワークスペース、およびコネクタを管理することで、アカウント設定を管理できます。
 
 link:concept-netapp-accounts.html["ネットアップアカウントの仕組みをご覧ください"]。
 
@@ -236,29 +236,6 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["ユ�
 . コネクター（ * Connector ）をクリックします。
 . 関連付けるコネクタの * ワークスペースの管理 * をクリックします。
 . コネクタに関連付けるワークスペースを選択し、 * 適用 * をクリックします。
-
-
-
-
-== サブスクリプションの管理
-
-クラウドプロバイダのマーケットプレイスからサブスクライブすると、各サブスクリプションはアカウント設定ウィジェットから利用できます。サブスクリプションの名前を変更したり、 1 つまたは複数のアカウントからサブスクリプションの関連付けを解除したりすることができます。
-
-たとえば、 2 つのアカウントがあり、それぞれが別々のサブスクリプションで課金されるとします。いずれかのアカウントとサブスクリプションの関連付けを解除することで、 Cloud Volume ONTAP 作業環境の作成時にそのアカウントのユーザが誤って誤ったサブスクリプションを選択しないようにすることができます。
-
-link:concept-netapp-accounts.html#subscriptions["サブスクリプションの詳細については、こちらをご覧ください"]。
-
-.手順
-. BlueXPの上部にある[*Account*]ドロップダウンをクリックし、[*Manage Account*]をクリックします。
-. [ サブスクリプション ] をクリックします。
-+
-現在表示しているアカウントに関連付けられている月額プランのみが表示されます。
-
-. 管理するサブスクリプションに対応する行のアクションメニューをクリックします。
-+
-image:screenshot_subscription_menu.gif["サブスクリプションのアクションメニューのスクリーンショット。"]
-
-. サブスクリプションの名前を変更するか、サブスクリプションに関連付けられているアカウントを管理するかを選択します。
 
 
 
