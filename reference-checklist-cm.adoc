@@ -60,19 +60,6 @@ AWS サービス（ amazonaws.com ）：
 
 
 | \ https://widget.intercom.io | 製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。 
-
-
-| コネクタのIPアドレス  a| 
-ほとんどの場合、SaaS UIからBlueXPを使用する必要がありますが link:concept-connectors.html#the-local-user-interface["ローカル UI を使用する場合は"]WebブラウザでホストのIPアドレスを入力する必要があります。
-
-クラウドプロバイダへの接続に応じて、ホストに割り当てられたプライベート IP またはパブリック IP を使用します。
-
-* プライベート IP は、 VPN があり、仮想ネットワークに直接アクセスできる場合に機能します
-* パブリック IP は、あらゆるネットワークシナリオで機能します
-
-
-いずれの場合も、セキュリティグループルールで許可された IP またはサブネットからのアクセスのみを許可することで、ネットワークアクセスを保護します。
-
 |===
 --
 コネクタのアウトバウンドネットワーク:: BlueXPにログインした後、BlueXPアカウント管理者は、クラウドプロバイダまたは自社運用ネットワークに_Connector_inを導入する必要があります。Connectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。コネクタはほとんどの場合必要ですが、BlueXPのすべてのサービスと機能には必要ありません。 link:concept-connectors.html["コネクターの詳細とその仕組みについては、こちらをご覧ください"]。
@@ -86,6 +73,24 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 [cols="2*"]
 |===
 | エンドポイント | 目的 
+
+
+| \https://<region> .amazonaws.com | AWSでリソースを管理できます。 
+
+
+| https://management.azure.com https://login.microsoftonline.com | Azureパブリックリージョン内のリソースを管理します。 
+
+
+| ¥https://management.usgovcloudapi.net¥https://login.microsoftonline.us | Azure Governmentリージョンのリソースを管理 
+
+
+| ¥https://management.azure.microsoft.scloud¥https://login.microsoftonline.microsoft.scloud | をクリックして、Azure IL6リージョン内のリソースを管理します。 
+
+
+| ¥https://management.chinacloudapi.cn¥https://login.chinacloudapi.cn | をクリックしてAzure中国地域のリソースを管理してください。 
+
+
+| ¥https://www.googleapis.com/compute/v1/¥https://cloudresourcemanager.googleapis.com/v1/projects¥https://www.googleapis.com/compute/beta¥https://storage.googleapis.com/storage/v1¥https://iam.googleapis.com/v1¥https://cloudkms.googleapis.com/v1¥https://www.googleapis.com/storage/v1 https://www.googleapis.com/deploymentmanager/v2/projects | Google Cloudでリソースを管理します。 
 
 
 | \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 

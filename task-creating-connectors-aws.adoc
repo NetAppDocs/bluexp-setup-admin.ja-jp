@@ -219,6 +219,9 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 | エンドポイント | 目的 
 
 
+| \https://<region> .amazonaws.com | AWSでリソースを管理できます。 
+
+
 | \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
 
 

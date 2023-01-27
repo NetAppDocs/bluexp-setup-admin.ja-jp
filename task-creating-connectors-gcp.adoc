@@ -275,6 +275,11 @@ includedPermissions:
 - storage.objects.list
 - monitoring.timeSeries.list
 - storage.buckets.getIamPolicy
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkms.keyRings.get
+- cloudkms.keyRings.getIamPolicy
+- cloudkms.keyRings.setIamPolicy
 ----
 . https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloudサービスアカウントを作成し、作成したカスタムロールを適用します"^]。
 . Cloud Volumes ONTAP を他のプロジェクトに導入する場合は、 https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["BlueXPロールを持つサービスアカウントをそのプロジェクトに追加して、アクセスを許可します"^]。プロジェクトごとにこの手順を繰り返す必要があります。
@@ -388,6 +393,9 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 [cols="2*"]
 |===
 | エンドポイント | 目的 
+
+
+| ¥https://www.googleapis.com/compute/v1/¥https://cloudresourcemanager.googleapis.com/v1/projects¥https://www.googleapis.com/compute/beta¥https://storage.googleapis.com/storage/v1¥https://iam.googleapis.com/v1¥https://cloudkms.googleapis.com/v1¥https://www.googleapis.com/storage/v1 https://www.googleapis.com/deploymentmanager/v2/projects | Google Cloudでリソースを管理します。 
 
 
 | \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 

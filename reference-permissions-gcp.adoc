@@ -124,6 +124,11 @@ includedPermissions:
 - storage.objects.list
 - monitoring.timeSeries.list
 - storage.buckets.getIamPolicy
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkms.keyRings.get
+- cloudkms.keyRings.getIamPolicy
+- cloudkms.keyRings.setIamPolicy
 ----
 
 
@@ -228,4 +233,27 @@ includedPermissions:
 
 
 | -monitoring timeseries.list -storage.buckets-getIamPolicyを選択します | をクリックして、Google Cloud Storageバケットに関する情報を確認してください。 
+
+
+| -cloudkms.cryptoKeys.get-cloudkms.cryptoKeys.getIamPolicy-cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy -cloudkms.keyrings.get-cloudkms.keyrings.getIamPolicy-cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy | デフォルトのGoogleが管理する暗号化キーを使用する代わりに、Cloud Backupアクティベーションウィザードでお客様が管理するキーを選択する。 
 |===
+
+
+== 変更ログ
+
+権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。
+
+
+
+=== 2023年1月27日
+
+ポリシーに追加された権限は次のとおりです。
+
+* Cloudkms.cryptoKeys.getIamPolicy
+* cloudkms.cryptoKeys.setIamPolicy
+* Cloudkms.keyrings.get
+* cloudks.keyrings.getIamPolicyを参照してください
+* cloudkms.keyRings.setIamPolicy
+
+
+これらの権限はCloud Backupに必要です。
