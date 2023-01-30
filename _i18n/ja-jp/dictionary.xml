@@ -2848,4 +2848,5 @@
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">社内ポリシーで、インターネットへのすべての通信にプロキシサーバを使用する必要がある場合は、そのプロキシサーバを使用するようにコネクタを設定する必要があります。インストール時にプロキシサーバを使用するようにコネクタを設定していない場合は、いつでもそのプロキシサーバを使用するようにコネクタを設定できます。</block>
   <block id="07fe9439c5f6159dd126f0b5ad5b0282" category="doc">HTTPプロキシサーバを使用するようにコネクタを設定します</block>
   <block id="231f168c8922afc18c96c3ab2866fb77" category="paragraph">BlueXPでは、ユーザーインターフェイスからHTTPプロキシサーバーを構成できます。プロキシサーバは、クラウドまたはネットワークに配置できます。</block>
+  <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">SaaSプラットフォームが無効になっている政府機関ではCloud Backupがサポートされますが、SaaSプラットフォームが無効になっている民間の地域ではサポートされません</block>
 </blocks>
