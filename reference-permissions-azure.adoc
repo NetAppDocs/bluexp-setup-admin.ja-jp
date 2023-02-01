@@ -425,7 +425,7 @@ Cloud Tieringをセットアップすると、コネクタは次のAPI要求を�
 
 === Cloud Volumes ONTAP
 
-Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次のAPI要求を実行します。
+Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために次のAPI要求を実行します。
 
 [cols="5*"]
 |===

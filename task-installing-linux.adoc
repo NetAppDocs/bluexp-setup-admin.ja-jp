@@ -88,7 +88,7 @@ Docker Engine の略:: Connectorをインストールする前に、ホストに
 
 .必要なもの
 * コネクタをインストールするためのroot権限。
-* コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
+* コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。HTTPとHTTPSがサポートされています。
 +
 インストール後にプロキシサーバを設定することもできますが、その場合はコネクタを再起動する必要があります。
 
@@ -110,6 +110,16 @@ AWSCLI のインストールに失敗したというメッセージが表示さ�
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
+. ホストに_http_proxy_or_https_proxy_system変数が設定されている場合は、削除します。
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+これらのシステム変数を削除しないと、インストールは失敗します。
+
 . からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
 +
 ネットワークまたはクラウドで使用するコネクタインストーラをダウンロードする必要があります。

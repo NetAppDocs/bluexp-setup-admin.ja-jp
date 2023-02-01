@@ -822,7 +822,6 @@
   <block id="612b348971c225ac2d665ccff3a8413d" category="list-text">[*General] で、 [*HTTP Proxy Configuration*] をクリックします。</block>
   <block id="2c451caa323474f558c4e4065578647d" category="list-text">プロキシを設定します。</block>
   <block id="45258bae64ec247989d17b5b6233b7b8" category="list-text">[ プロキシを有効にする *] をクリックします</block>
-  <block id="8550306d83f9fe682f85ed3f60217f89" category="list-text">構文を使用してサーバを指定します<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block></block>
   <block id="3d069ceba6ecf8b2c1c3def00d512e45" category="list-text">ベーシック認証の場合は、ユーザ名とパスワードを指定します サーバに必要です</block>
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">API の直接トラフィックを有効にします</block>
   <block id="a10c3460c01965af15b02ac3cd407880" category="list-text">[*General] で、 [* Support Direct API traffic* ] をクリックします。</block>
@@ -1189,7 +1188,6 @@
   <block id="bb535485e7b97661af60ecc59e655498" category="list-text">インスタンスの名前を入力します。</block>
   <block id="edda80be79ac3f7cac925a65c6a3e5b5" category="list-text">カスタムタグ（メタデータ）をインスタンスに追加します。</block>
   <block id="bc08dffbc581e8fd57ce1bac9b369e13" category="list-text">コネクタの EBS ディスクを暗号化するかどうかを選択します。デフォルトの暗号化キーを使用することも、カスタムキーを使用することもできます。</block>
-  <block id="9a5f9a8791099f371ab5a4d09e6974a7" category="list-text">* ネットワーク * ：インスタンスに VPC 、サブネット、キーペアを指定し、パブリック IP アドレスを有効にするかどうかを選択し、必要に応じてプロキシ設定を指定します。</block>
   <block id="d091f5f5ef56e437171dce81de151778" category="summary">コネクタのトラブルシューティングが必要な場合は、コネクタの設定を理解すると役立つことがあります。</block>
   <block id="6e8114a6676a5923599d8d78479d23d8" category="doc">コネクタのデフォルト設定</block>
   <block id="87047facc49847cec237f6d055d56b31" category="section-title">インターネットアクセスを使用するデフォルト設定</block>
@@ -1774,7 +1772,6 @@
   <block id="5f174caa182ccf4eda7018d2ae4ed7a0" category="section-title">AutoSupport メッセージのポート3128を開きます</block>
   <block id="5fc25795a93f92bfee952eef3220d9e5" category="paragraph">唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
   <block id="489db3f339b691ea4dea5f4572483024" category="paragraph">Cloud Volumes ONTAP にデフォルトのセキュリティグループを使用する場合、そのセキュリティグループに対する変更は必要ありません。ただし、Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義する場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可することも必要です。</block>
-  <block id="cd5948a5853fc000f635c34407e9be0e" category="paragraph">HTTPプロキシサーバを使用するようにコネクタを設定すると、パブリックIPアドレスまたはNATゲートウェイを使用できない場合にアウトバウンドインターネットアクセスが提供されます。このプロキシサーバは、アウトバウンド接続を持つコネクタのみを提供します。Cloud Volumes ONTAP システムへの接続は提供しません。</block>
   <block id="6d222908a201e6b65bf048113504f4c1" category="inline-xref">Connectorのプロキシサーバの詳細については、こちらをご覧ください</block>
   <block id="379c1280ecc325be9f0d74d095f55ae9" category="cell">Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 <block ref="9a4dd6e745bb9c3853507bba2251a2cd" category="inline-xref-macro-rx"></block>。</block>
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">サインアップフォームでは、英語の文字のみを使用できます。</block>
@@ -1828,7 +1825,6 @@
   <block id="d2b8d6f0cd04659de9813fba0b765319" category="inline-xref">IAMロールを確認します</block>
   <block id="5695f1494bf1a23e4dfb636b83f9663c" category="inline-xref">ステップバイステップの手順に従います</block>
   <block id="e55593614a7f3a45e77ff97daf29fa18" category="paragraph"><block ref="bd1177e3d8f8248f18d9f01f00d6aa84" category="inline-xref-macro-rx"></block> または <block ref="f998d9b8f7fa449c8986f949582854eb" category="inline-xref-macro-rx"></block>。</block>
-  <block id="3d19b00e58ef1af50dd7a50cb57d2a9b" category="paragraph">特定のエンドポイントへのアウトバウンドのインターネットアクセスが可能なVPCとサブネットが必要です。アウトバウンドインターネットにHTTPプロキシが必要な場合は、IPアドレス、クレデンシャル、HTTPS証明書が必要です。</block>
   <block id="0adaf59e592ea102330ecf66723d01c0" category="inline-xref">ネットワーク要件を確認します</block>
   <block id="e18d3aaf46d9323ec3d44fd9d3878734" category="paragraph"><block ref="77e8c70950b7db505fe53c4bcd55f41a" category="inline-xref-macro-rx"></block>。</block>
   <block id="e988340d1dfb68e041da5e7a65701097" category="paragraph">コネクタードロップダウンをクリックし、*コネクターの追加*を選択して、プロンプトに従います。</block>
@@ -1836,7 +1832,6 @@
   <block id="442342eacc7f01318bc860131355649e" category="paragraph"><block ref="ca365c48bf30193bd65b99125fcf8cd5" category="inline-xref-macro-rx"></block>。</block>
   <block id="ab316a3ccbad97726269c9705958262a" category="section-title">ネットワークをセットアップする</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">プロキシサーバ</block>
-  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">すべての送信インターネットトラフィックにHTTPプロキシを導入する必要がある場合は、HTTPプロキシに関する次の情報を取得します。</block>
   <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP アドレス</block>
   <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">クレデンシャル</block>
   <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">HTTPS証明書</block>
@@ -1885,7 +1880,6 @@
   <block id="0e4b0391e50169d97fc505f0c73a94ba" category="paragraph">コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。</block>
   <block id="07a7f9f6c28c927482b86d1b2710f6a3" category="paragraph"><block ref="07a7f9f6c28c927482b86d1b2710f6a3" category="inline-link-rx"></block></block>
   <block id="a3f904af5bc42ef6ae44062da5d02b45" category="list-text">[* Continue *（続行）]をクリックして、製品ガイドを使用して導入の準備をします。各手順には、このページのドキュメントに記載されている情報が含まれています。</block>
-  <block id="7b3422536b44078a6701640706be10a0" category="list-text">すべての発信インターネットトラフィックにプロキシを必要とする場合は、HTTPプロキシに関する詳細情報を参照してください。</block>
   <block id="1086659fbba9a8aed49e109adc659d56" category="list-text">[*コネクターの配置（Deploying a Connector *）]ページ：</block>
   <block id="3e51a9204bf7c3a99ce916328857c361" category="list-text">[*認証]で、[* Active Directoryサービスプリンシパル*]をクリックし、必要な権限を付与するAzure Active Directoryサービスプリンシパルに関する情報を入力します。</block>
   <block id="52352d978b8e538f26067965a59f6fc7" category="list-text">*ログイン*をクリックします。</block>
@@ -2210,7 +2204,6 @@
   <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">アカウントのサードパーティサービスがBlueXPで利用可能なサードパーティサービスにアクセスできるようにします。サードパーティのサービスはクラウドサービスとネットアップが提供するサービスに似ていますが、サードパーティが管理とサポートを行っています。</block>
   <block id="41f2e26a5f1f980cf07709ccd461458a" category="paragraph">次のサービスは、SaaSプラットフォームを無効にした場合、BlueXPからは利用できません。</block>
   <block id="1ce82671debd0854eab737731870ba89" category="admonition">これは、BlueXP SaaSプラットフォームの使用を妨げる元に戻せないアクションです。ローカルコネクターからアクションを実行する必要があります。ネットアップの統合クラウドサービスの多くを利用することはできません。また、 SaaS プラットフォームを再度有効にするには、ネットアップのサポートが必要になります。</block>
-  <block id="b39b73ad4fe9a846dd3074a3698f2989" category="paragraph">Cloud Volumes ONTAP システムにAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、コネクタに含まれているプロキシサーバを使用するようにCloud Volumes ONTAP システムが自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。このポートは、コネクタを展開した後に開く必要があります。</block>
   <block id="47e1359a022ca3afaefd4c4135f630ab" category="inline-link-macro">BlueXP SaaSインタフェースにログインします</block>
   <block id="53cd2d53a0bbb4596900dbf8dc2f1193" category="list-text"><block ref="5cdb1ce54f5091c2b2ed720c94b4f10e" category="inline-link-macro-rx"></block> コネクターインスタンスへのネットワーク接続を持つマシンから。</block>
   <block id="b50274362874150065bf00a8be70b751" category="paragraph">コネクタで実行されているBlueXPインターフェイスが新しいブラウザタブに読み込まれます。</block>
@@ -2701,7 +2694,6 @@
   <block id="49fa0b884bb05dfb3678aff69fc2a90f" category="list-text">\ https://production-artifacts.cloudmanager.cloud.netapp.com</block>
   <block id="f55e31da35f47937201bdbf54e964315" category="list-text">\ https://*.blob.core.windows.net</block>
   <block id="4212008c2b937ee581ff9e530b8440f8" category="list-text">コネクタをインストールするためのroot権限。</block>
-  <block id="f39873ba3fdf2dff72b117d1ccc0a3f8" category="list-text">コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。</block>
   <block id="2d8d8f0bca25643e72f72642f3d69663" category="paragraph">インストール後にプロキシサーバを設定することもできますが、その場合はコネクタを再起動する必要があります。</block>
   <block id="65b78a376b8b24b27e70f95a439510ed" category="list-text">プロキシサーバでHTTPSを使用する場合は、CA署名証明書。</block>
   <block id="e4e566d8d29952e9ed77e5d97574962e" category="paragraph">ネットワークまたはクラウドで使用するコネクタインストーラをダウンロードする必要があります。</block>
@@ -2846,7 +2838,18 @@
   <block id="46f3c2b17cd41da44d4022428c48ec74" category="list-text">Kubernetesクラスタ</block>
   <block id="aa2a9593bd535a1923acb9053fd7788b" category="paragraph">1 つのコネクタを複数のネットアップクラウドデータサービスで使用できます。たとえば、Cloud Volumes ONTAP の管理にコネクタを使用している場合、同じコネクタをCloud Tieringなどの別のサービスと使用できます。</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">社内ポリシーで、インターネットへのすべての通信にプロキシサーバを使用する必要がある場合は、そのプロキシサーバを使用するようにコネクタを設定する必要があります。インストール時にプロキシサーバを使用するようにコネクタを設定していない場合は、いつでもそのプロキシサーバを使用するようにコネクタを設定できます。</block>
-  <block id="07fe9439c5f6159dd126f0b5ad5b0282" category="doc">HTTPプロキシサーバを使用するようにコネクタを設定します</block>
-  <block id="231f168c8922afc18c96c3ab2866fb77" category="paragraph">BlueXPでは、ユーザーインターフェイスからHTTPプロキシサーバーを構成できます。プロキシサーバは、クラウドまたはネットワークに配置できます。</block>
   <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">SaaSプラットフォームが無効になっている政府機関ではCloud Backupがサポートされますが、SaaSプラットフォームが無効になっている民間の地域ではサポートされません</block>
+  <block id="a8c35528b3f05016e72e71694bb679ee" category="list-text">コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。HTTPとHTTPSがサポートされています。</block>
+  <block id="16c184ab0a5376cef0ecef7f0da93ac2" category="list-text">ホストに_http_proxy_or_https_proxy_system変数が設定されている場合は、削除します。</block>
+  <block id="15c8f910fc596ecb4a8b91027b56de66" category="paragraph">これらのシステム変数を削除しないと、インストールは失敗します。</block>
+  <block id="dae5521ccadea1321150f5f74aad0a58" category="paragraph">すべての送信インターネットトラフィックにプロキシサーバを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。</block>
+  <block id="eea7ea20469c0fce0042b06e0bb1327a" category="list-text">すべての発信インターネットトラフィックにプロキシを必要とする場合は、プロキシサーバの詳細を参照してください。</block>
+  <block id="5ecf1d4c60139fd535d59e1ca3b91b76" category="paragraph">Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために次のAPI要求を実行します。</block>
+  <block id="7e3934b4ea56939b597edfcf84aa4803" category="paragraph">特定のエンドポイントへのアウトバウンドのインターネットアクセスが可能なVPCとサブネットが必要です。アウトバウンドインターネットにプロキシサーバが必要な場合は、IPアドレス、資格情報、HTTPS証明書が必要です。</block>
+  <block id="146adb7944757e88795676b780c31811" category="doc">プロキシサーバを使用するようにコネクタを設定します</block>
+  <block id="9d8704731bd068bd3be5ad98b7941cba" category="paragraph">BlueXPはHTTPとHTTPSをサポートしていますプロキシサーバは、クラウドまたはネットワークに配置できます。</block>
+  <block id="30d7902c191c571f1aa091af3df65f3d" category="paragraph">プロキシサーバを使用するようにコネクタを設定すると、パブリックIPアドレスまたはNATゲートウェイを使用できない場合に、アウトバウンドインターネットアクセスが提供されます。このプロキシサーバは、アウトバウンド接続を持つコネクタのみを提供します。Cloud Volumes ONTAP システムへの接続は提供しません。</block>
+  <block id="66dcf6df2e799ff19e8fe5b0ed10a143" category="paragraph">Cloud Volumes ONTAP システムにAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、コネクタに含まれているプロキシサーバを使用するようにCloud Volumes ONTAP システムが自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
+  <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">構文を使用してサーバを指定します<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> または<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
+  <block id="5b2b679cfd4361d102ffc80defe9709e" category="list-text">*ネットワーク*：インスタンスにVPC、サブネット、キーペアを指定し、パブリックIPアドレスを有効にするかどうかを選択します。必要に応じてプロキシ設定も指定できます（HTTPとHTTPSがサポートされます）。</block>
 </blocks>
