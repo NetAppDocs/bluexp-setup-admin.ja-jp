@@ -923,7 +923,6 @@
   <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">クライアント Web ブラウザからローカルへの HTTPS アクセスを提供します ユーザインターフェイス</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
-  <block id="cb4b69eb9bd10da82c15dca2f86a1385" category="cell">9060</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">アウトバウンドルール</block>
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">コネクタの事前定義されたセキュリティグループは、すべての発信トラフィックを開きます。これが可能な場合は、基本的なアウトバウンドルールに従います。より厳格なルールが必要な場合は、高度なアウトバウンドルールを使用します。</block>
   <block id="d4dc7fa133657e4530cfde55110ec3c1" category="section-title">基本的なアウトバウンドルール</block>
@@ -2047,7 +2046,6 @@
   <block id="70f1be412fcdc9d0de757859e335f5a6" category="summary">BlueXPにログインして設定したので、ユーザーは作業環境の作成と検出を開始できます。</block>
   <block id="082338dd3697084a7af4c20fcdf81e82" category="summary">BlueXPがAzureでConnector VMを起動すると、そのAzureサブスクリプション内のリソースとプロセスを管理するための権限をConnectorに提供するカスタムロールがVMに割り当てられます。Connectorは、権限を使用して複数のAzureサービスに対してAPI呼び出しを実行します。</block>
   <block id="770735bf1cfd4e882dd9ac93b90271d3" category="paragraph">BlueXPからコネクタを直接作成すると、BlueXPは自動的にこのカスタムロールをコネクタに適用します。</block>
-  <block id="f0f5ff10d4c591333ded6e8023c5d365" category="cell">クラウドデータセンスとCloud Backupを政府機関のクラウド環境で有効にして使用できます。このポートは、BlueXPアカウントでSaaSインターフェイスを無効にした場合にも、Cloud Backupに必要です。</block>
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">BlueXPによるDNS解決に使用されます</block>
   <block id="ab84a9278b660f1adee8c0a3fe2938de" category="paragraph">次の構成の詳細は、BlueXPからコネクタを導入した場合、クラウドプロバイダのマーケットプレイスからコネクタを導入した場合、またはインターネットにアクセスできるオンプレミスのLinuxホストにコネクタを手動でインストールした場合に適用されます。</block>
   <block id="a0676ac5cfebaef69b53ff7e37cd8c3c" category="paragraph">BlueXPまたはクラウドプロバイダのマーケットプレイスからコネクタを導入した場合は、次の点に注意してください。</block>
@@ -2852,4 +2850,6 @@
   <block id="66dcf6df2e799ff19e8fe5b0ed10a143" category="paragraph">Cloud Volumes ONTAP システムにAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、コネクタに含まれているプロキシサーバを使用するようにCloud Volumes ONTAP システムが自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">構文を使用してサーバを指定します<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> または<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
   <block id="5b2b679cfd4361d102ffc80defe9709e" category="list-text">*ネットワーク*：インスタンスにVPC、サブネット、キーペアを指定し、パブリックIPアドレスを有効にするかどうかを選択します。必要に応じてプロキシ設定も指定できます（HTTPとHTTPSがサポートされます）。</block>
+  <block id="6bd6b829c865d2a64a85e79355655e12" category="cell">9060、9061</block>
+  <block id="971da77efd7f98f0cb0eeb45103b5b77" category="cell">クラウドデータセンスとCloud Backupを政府機関のクラウド環境で有効にして使用できます。これらのポートは、BlueXPアカウントでSaaSインターフェイスを無効にした場合にも、Cloud Backupに必要です。</block>
 </blocks>
