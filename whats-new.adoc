@@ -18,6 +18,54 @@ BlueXP（旧称Cloud Manager）管理機能の新機能であるネットアッ�
 
 
 
+== 2023年2月5日
+
+
+
+=== コネクタ3.9.26
+
+* ログイン*ページで、ログインに関連付けられたメールアドレスを入力するように求められます。[次へ]をクリックすると、ログインに関連付けられた認証方法を使用して認証を行うように求めるメッセージが表示されます。
++
+** ネットアップクラウドクレデンシャルのパスワード
+** フェデレーテッドアイデンティティのクレデンシャル
+** NetApp Support Site クレデンシャルが必要です
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-login.png["BlueXPのログインページのスクリーンショットで、電子メールアドレスの入力を求められます。"]
+
+* BlueXPを初めて使用していて、既存のNetApp Support Site (NSS)の資格情報がある場合は、サインアップページをスキップして、ログインページに電子メールアドレスを直接入力できます。この初回ログインの一環として、BlueXPがサインアップします。
+* クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、1つのアカウントの既存のサブスクリプションを新しいサブスクリプションに置き換えることができます。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["BlueXPアカウントのサブスクリプション割り当てを示すスクリーンショット"]
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["AWSサブスクリプションを関連付ける方法について説明します"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["Azureサブスクリプションを関連付ける方法について説明します"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Google Cloudサブスクリプションを関連付ける方法について説明します"]
+
+
+* BlueXPは、コネクタの電源が14日以上切れている場合に通知します。
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["BlueXP通知についてはこちらをご覧ください"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["コネクタの動作を維持する理由について説明します"]
+
+
+* Google Cloudのコネクタポリシーを更新し、Cloud Volumes ONTAP HAペアでStorage VMを作成および管理するために必要な権限を追加しました。
++
+compute.instances.updateNetworkInterface
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["ConnectorのGoogle Cloud権限を表示します"]。
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+
+
+
+
+
 == 2023年1月1日
 
 

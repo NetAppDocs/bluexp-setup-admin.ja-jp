@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-connector-default-config.html 
 keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux 
-summary: コネクタのトラブルシューティングが必要な場合は、コネクタの設定を理解すると役立つことがあります。 
+summary: 導入前にコネクタの詳細を確認したり、問題のトラブルシューティングが必要な場合に利用できます。 
 ---
 = コネクタのデフォルト設定
 :hardbreaks:

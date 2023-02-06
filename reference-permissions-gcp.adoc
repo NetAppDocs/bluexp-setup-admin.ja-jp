@@ -71,6 +71,9 @@ includedPermissions:
 - compute.instances.start
 - compute.instances.stop
 - compute.instances.updateDisplayDevice
+- compute.instanceGroups.get
+- compute.addresses.get
+- compute.instances.updateNetworkInterface
 - compute.machineTypes.get
 - compute.networks.get
 - compute.networks.list
@@ -229,7 +232,7 @@ includedPermissions:
 | -container-type コンテナクラスタリスト | Google Kubernetes Engine で実行されている Kubernetes クラスタを検出する。 
 
 
-| - compute.instanceGroups.get - compute .address.get | HAペアでStorage VMを作成および管理する。 
+| - compute.instanceGroups.get -compute.addresss.get - compute.instances.updateNetworkInterface | Cloud Volumes ONTAP HAペアでStorage VMを作成および管理する方法。 
 
 
 | -monitoring timeseries.list -storage.buckets-getIamPolicyを選択します | をクリックして、Google Cloud Storageバケットに関する情報を確認してください。 
@@ -242,6 +245,17 @@ includedPermissions:
 == 変更ログ
 
 権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。
+
+
+
+=== 2023年2月6日
+
+このポリシーには次の権限が追加されています：
+
+* compute.instances.updateNetworkInterface
+
+
+この権限はCloud Volumes ONTAP に必要です。
 
 
 

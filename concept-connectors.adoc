@@ -101,6 +101,8 @@ Google Cloud で Cloud Volumes ONTAP システムを作成する場合は、 Goo
 
 NOTE: Cloud Volumes ONTAP システムにノードベースのBYOLライセンスがある場合は、ライセンスがCloud Volumes ONTAP システムにインストールされているため、14日後もシステムは実行されたままになります。
 
+BlueXPは、コネクタの電源が14日以上切れている場合に通知します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["BlueXP通知についてはこちらをご覧ください"]。
+
 
 
 == コネクタを作成する方法

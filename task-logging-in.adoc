@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: BlueXPには、WebブラウザからSaaSベースのユーザインターフェイス経由でアクセスできます。 
+summary: BlueXPにサインアップすると、WebブラウザからSaaSベースのユーザーインターフェイスを介してログインできます。 
 ---
 = BlueXPにログインします
 :hardbreaks:
@@ -14,7 +14,9 @@ summary: BlueXPには、WebブラウザからSaaSベースのユーザインタ�
 
 
 [role="lead"]
-BlueXPには、WebブラウザからSaaSベースのユーザインターフェイス経由でアクセスできます。
+BlueXPにサインアップすると、WebブラウザからSaaSベースのユーザーインターフェイスを介してログインできます。
+
+link:task-sign-up-saas.html["BlueXPにサインアップして組織を作成する方法について説明します"]。
 
 政府機関またはアウトバウンドのインターネットアクセスがないサイトからBlueXPにアクセスしている場合は、コネクタでローカルに実行されているBlueXPユーザーインターフェイスにログインする必要があります。 link:task-managing-connectors.html#access-the-local-ui["ConnectorでローカルUIにアクセスする方法について説明します"]。
 
@@ -22,40 +24,21 @@ BlueXPには、WebブラウザからSaaSベースのユーザインターフェ�
 次のいずれかのオプションを使用して、BlueXPにログインできます。
 
 * 既存のNetApp Support Site （NSS）のクレデンシャルを必要に応じて変更
-+
-このオプションを使用すると、NetApp Support Site (NSS)の資格情報は、サポートダッシュボードでBlueXPに追加されません。Cloud Volumes ONTAP の主要なワークフローを有効にするには'NSS資格情報をBlueXPに追加する必要があります link:task-adding-nss-accounts.html["NSS資格情報をBlueXPに追加する方法について説明します"]。
-
 * Eメールアドレスとパスワードを使用したネットアップクラウドへのログイン
+* フェデレーテッド接続
 +
-このオプションはフェデレーテッド接続をサポートします。シングルサインオンを使用して、社内ディレクトリ（フェデレーション ID ）からのクレデンシャルを使用してログインできます。詳細については、を参照してください https://cloud.netapp.com/help-center["BlueXPヘルプセンター"^] [サインインオプション*]をクリックします。
+シングルサインオンを使用して、社内ディレクトリ（フェデレーション ID ）からのクレデンシャルを使用してログインできます。詳細については、を参照してください https://cloud.netapp.com/help-center["BlueXPヘルプセンター"^] [サインインオプション*]をクリックします。
 
-
-
-ログインするたびに、初回ログイン時に選択したオプションを使用する必要があります。
-
-* ネットアップサポートサイトのクレデンシャルでログインして登録した場合は、毎回ログインオプションを使用する必要があります。
-* Eメールアドレスとパスワードを入力してサインアップした場合は、ログインするたびにクレデンシャルを入力する必要があります。
 
 
 .手順
 . Webブラウザを開き、にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^]
+. [ログイン*]ページで、ログインに関連付けられている電子メールアドレスを入力します。
+. ログインに関連付けられている認証方法に応じて、クレデンシャルの入力を求められます。
 +
-NetApp BlueXPログインページが表示されます
-
-+
-image:screenshot-login.png["BlueXPのログインページ"]
-
-. いずれかのログインオプションを選択します。
-+
-** ネットアップクラウドクレデンシャルを以前に作成している場合は、Eメールアドレスとパスワードを使用してログインします。
-** クラウドクレデンシャルがなく、既存のNetApp Support Site （NSS）アカウントを持っている場合は、* NetApp Support Site クレデンシャルでログイン*を選択します。
-** NSSアカウントをお持ちでなく、ネットアップクラウドクレデンシャルを作成していない場合は、「*サインアップ*」をクリックしてネットアップクラウドへのログインを作成してください。
-+
-サインアップフォームでは、英語の文字のみを使用できます。
-
-+
-サインアップが完了すると、ネットアップからEメールが届きます。EメールのリンクをクリックしてEメールアドレスを確認し、ログインします。
-
+** ネットアップクラウドクレデンシャル：パスワードを入力します
+** フェデレーテッドユーザ：フェデレーテッドアイデンティティクレデンシャルを入力します
+** NetApp Support Site アカウント：NetApp Support Site クレデンシャルを入力します
 
 
 
