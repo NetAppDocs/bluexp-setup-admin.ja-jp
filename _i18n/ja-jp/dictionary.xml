@@ -953,18 +953,12 @@
   <block id="329d19fc5afbf1e6e6b899cb6324212a" category="summary">Connector VM インスタンスに関連付けられているクレデンシャルを管理できます。</block>
   <block id="fd5876417edb63f12f7c19c175309431" category="paragraph">これらの資格情報に関連付けられている Marketplace サブスクリプションは、いつでも変更できます。サブスクリプションを使用すると、従量課金制の Cloud Volumes ONTAP システムを作成し、他のネットアップクラウドサービスを使用できます。</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3607221d62467c2e5249f8716b69616f" category="list-text">ダウンリストから Google Cloud プロジェクトとサブスクリプションを選択します。</block>
   <block id="fff6f5125be05a94543d2e88dbd30b27" category="inline-image-macro">Google Cloud の資格情報に対して選択された Google Cloud プロジェクトとサブスクリプションのスクリーンショット。</block>
   <block id="cab980518d03aa36afc924b709828a6e" category="paragraph"><block ref="cab980518d03aa36afc924b709828a6e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1c3692898f95f79b425ac8b50f45bb06" category="list-text">サブスクリプションをまだお持ちでない場合は、 [ サブスクリプションの追加 ] をクリックし、以下の手順に従って新しいサブスクリプションを作成します。</block>
-  <block id="e34e3eb07d03eff321019c85029cb441" category="inline-image-macro">サブスクリプションのポップアップのスクリーンショット。</block>
-  <block id="1c258a9e8501efe4f4ce95f3fd83a245" category="paragraph"><block ref="1c258a9e8501efe4f4ce95f3fd83a245" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8b5c3e503fd0da73cc8d1592a1ccbb6e" category="inline-image-macro">GCP CVO Marketplace ページのスクリーンショット。</block>
   <block id="ea161d25d0a04de5fa898ead6a9bccaa" category="paragraph"><block ref="ea161d25d0a04de5fa898ead6a9bccaa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="85bb97cf1fc6a37ea1a5e97e0e2e1a8b" category="list-text">[*Subscribe*] をクリックします</block>
   <block id="861c99531853674511342d75aef34187" category="list-text">適切な請求先アカウントを選択し、条件に同意します。</block>
-  <block id="49dc469db7329172e0cd98944810877d" category="inline-image-macro">GCP の利用規約のスクリーンショット。</block>
-  <block id="293c9c122116ad2c263a6ddbe4831cb0" category="paragraph"><block ref="293c9c122116ad2c263a6ddbe4831cb0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca4f48bdc60c2a16dd59109486af30ee" category="paragraph">転送要求がネットアップに送信されます。</block>
   <block id="e3d03a33db92a9024d72af3cae4684fd" category="inline-image-macro">登録ポップアップのスクリーンショット。</block>
   <block id="6373a7d66fb33193565645f81635ec0c" category="paragraph"><block ref="6373a7d66fb33193565645f81635ec0c" category="inline-image-macro-rx" type="image"></block></block>
@@ -2262,7 +2256,6 @@
   <block id="7a0df3203d8f6522d2b39b5f4c38db03" category="admonition">次の手順を実行する前に、Google CloudアカウントとBlueXPログインの両方に課金管理者権限があることを確認してください。</block>
   <block id="cdcf076c3fd3e62a3c7e3691d02894db" category="inline-link">Google Cloud MarketplaceのNetApp BlueXPページ</block>
   <block id="b7e7a20500f8489bfa6b8a559c74a1d4" category="list-text">にリダイレクトされたら<block ref="d9d3d72c24d9b3446210d5b539c6bbf5" category="inline-link-rx"></block>をクリックし、上部のナビゲーションメニューで正しいプロジェクトが選択されていることを確認します。</block>
-  <block id="10e61096cba50402ef6cb31c1b17e8ae" category="list-text">ポップアップダイアログボックスで、NetApp BlueXP Webサイトにリダイレクトされる「*Register with NetApp, Inc.*」をクリックします。</block>
   <block id="4314e9e91f1c1e76df01e49490b3367e" category="inline-link">BlueXP WebサイトのCloud Volumes ONTAP ページ</block>
   <block id="5894b1931d65e9796cc25db1bb6fd566" category="list-text">このプロセスが完了したら、BlueXPの[資格情報]ページに戻り、この新しいサブスクリプションを選択します。</block>
   <block id="9da5b2b6ec24e29a79e40e816340c98d" category="paragraph">Google Cloud MarketplaceからCloud Volumes ONTAP に登録すると、権限が不適切なために断片化したり、BlueXP Webサイトへのリダイレクトに誤って追随したりしないことがあります。この場合は、次の手順に従ってサブスクリプションプロセスを完了してください。</block>
@@ -2826,17 +2819,12 @@
   <block id="35189ab5714b42941b6c22320f395243" category="list-text">クレデンシャルを既存のサブスクリプションに関連付けるには、ダウンリストからサブスクリプションを選択し、* Associate *をクリックします。</block>
   <block id="7f024bcfe9b965209454c94e48004d5d" category="list-text">クレデンシャルを新しいサブスクリプションに関連付けるには、「*サブスクリプションの追加&gt;続行」をクリックし、Azure Marketplaceで次の手順を実行します。</block>
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">プロンプトが表示されたら、Azureアカウントにログインします。</block>
-  <block id="229d7258c60456f36a718cd138813888" category="list-text">フォームに入力して、*登録*をクリックします。</block>
-  <block id="a6f968ccb979a102bb5ce0538b9f2456" category="list-text">[*Notifications]をクリックし、通知のリンクをクリックしてアカウントを設定します。</block>
-  <block id="daa4df96e26fea6c1270d01a4426eab1" category="list-text">［アカウントの設定］をクリックします。</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">BlueXPのWebサイトにリダイレクトされます</block>
   <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">[サブスクリプションの割り当て*]ページで、次の操作を行います。</block>
   <block id="761b37459e9daab0f25c3e9b5edfd370" category="list-text">このサブスクリプションを関連付けるネットアップアカウントを選択してください。</block>
   <block id="e0c62276bada3b5536cceb070664c871" category="list-text">[既存のサブスクリプションを置き換える*]フィールドで、1つのアカウントの既存のサブスクリプションをこの新しいサブスクリプションに自動的に置き換えるかどうかを選択します。</block>
   <block id="23d838dbd51becc56367e6d9358b446e" category="paragraph">BlueXPは、アカウントのすべての資格情報の既存のサブスクリプションをこの新しいサブスクリプションに置き換えます。一連の資格情報がサブスクリプションに関連付けられていない場合、この新しいサブスクリプションはこれらの資格情報に関連付けられません。</block>
   <block id="b4676b03cb1388f474b207b449af0dc2" category="paragraph">他のすべてのアカウントについては、以下の手順を繰り返して、手動で契約を関連付ける必要があります。</block>
-  <block id="ef545e4a852035275622b3ad9df636de" category="inline-image-macro">このサブスクリプションを1つまたは複数のアカウントに関連付け、それらのアカウントの既存のサブスクリプションを置き換えることを選択できる[サブスクリプションの割り当て]ページのスクリーンショット。</block>
-  <block id="56884c9225391e21aea7cf42dd6f7bd5" category="paragraph"><block ref="56884c9225391e21aea7cf42dd6f7bd5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4a4cfdd3c4b047c552e6626beca055d3" category="summary">BlueXPの使用を開始すると、最初にサインアップします。アカウントを作成するオプションが表示されますが、既存のアカウントに招待されている場合は、この手順を省略できます。</block>
   <block id="156c302d186fc36d9d944c5d74b971af" category="doc">BlueXPにサインアップします</block>
   <block id="a6da179f46168e9455ae7e15202c1a47" category="paragraph-title">政府地域に関する注意事項</block>
@@ -2861,8 +2849,6 @@
   <block id="e079acaa326ddf3b1cb6ee167cce08f4" category="paragraph"><block ref="e079acaa326ddf3b1cb6ee167cce08f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="20653d224bca9fb40181f3916e4f643d" category="list-text">「 * アカウントの作成 * 」を選択します。</block>
   <block id="2f0488f8a3ca91699637c323ed3b7ae7" category="paragraph">これでBlueXPログインとアカウントが作成されました。ほとんどの場合、次の手順では、BlueXPのサービスをハイブリッドクラウド環境に接続するコネクタを作成します。</block>
-  <block id="c12be2d5c6d53ffeba2b81d18475c007" category="list-text">サブスクリプションの手順を確認し、[* Continue（続行）]をクリックします。</block>
-  <block id="5f6337397041d9f655e961c010a87fdc" category="paragraph"><block ref="5f6337397041d9f655e961c010a87fdc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e5d34a7be7e3c957d955b41f31cc1b6b" category="admonition">組織の誰かが請求アカウントからNetApp BlueXPサブスクリプションにすでに登録している場合は、にリダイレクトされます<block ref="35e104e3e4686d9ee172091b57b45bc0" category="inline-link-rx"></block> 代わりに、予想外の場合は、ネットアップの営業チームにお問い合わせください。Google では、 1 つの Google 請求アカウントにつき 1 つのサブスクリプションのみが有効です。</block>
   <block id="18ed152ca3e6d97795e3c62f29f14fa3" category="inline-link">BlueXP通知についてはこちらをご覧ください</block>
   <block id="aea5351abe13a2ef43df184a5caed50e" category="paragraph">BlueXPは、コネクタの電源が14日以上切れている場合に通知します。<block ref="e16712c557ed9121be1392c11d3884a1" category="inline-link-rx"></block>。</block>
@@ -2903,9 +2889,7 @@
   <block id="61130fb01406e968937613de0add552f" category="inline-image-macro">3つの垂直点を持つアイコン</block>
   <block id="86687429f8938a809fc671fe296b1bcc" category="paragraph">すべての通知を却下するには、通知センターでをクリックします <block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> をクリックして、 [ すべてを却下 ] を選択します。<block ref="e49bd0cb9810a0678258a0ab07786c5e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0da34741c0fedd26eb889170d87be2c7" category="list-text">クレデンシャルを新しいサブスクリプションに関連付けるには、「*サブスクリプションの追加&gt;続行」をクリックし、AWS Marketplaceで次の手順を実行します。</block>
-  <block id="6ce481dcdc8134b6b4c81db0911f0267" category="list-text">[* 購読の続行 *] をクリックします。</block>
   <block id="c75b8cac68776a239e8da30928fbc723" category="list-text">「*アカウントの設定*」をクリックします。</block>
-  <block id="1b71aaa72599faca0c9974618a3c749d" category="paragraph"><block ref="1b71aaa72599faca0c9974618a3c749d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2d362fb636ab4e2644720f00f02ddbfb" category="summary">BlueXPにサインアップすると、WebブラウザからSaaSベースのユーザーインターフェイスを介してログインできます。</block>
   <block id="f2209a6bc960d5dd3350ca4b5b662c18" category="inline-link-macro">BlueXPにサインアップして組織を作成する方法について説明します</block>
   <block id="2a319fe0bd9ba8ece64b79d59a233b15" category="paragraph"><block ref="8c767825ada5127971c09f228e56d843" category="inline-link-macro-rx"></block>。</block>
@@ -2917,4 +2901,13 @@
   <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">ネットアップクラウドクレデンシャル：パスワードを入力します</block>
   <block id="a02705346febd77df5680fe2f12343a9" category="list-text">フェデレーテッドユーザ：フェデレーテッドアイデンティティクレデンシャルを入力します</block>
   <block id="24bdc2b22d38abff9ff97a9c5b5e7966" category="list-text">NetApp Support Site アカウント：NetApp Support Site クレデンシャルを入力します</block>
+  <block id="078d62005d56b885b14c45dcfcd16082" category="list-text">フォームに入力して、*登録*をクリックします。</block>
+  <block id="ac66d82c89aefbe9c31ed8fe6308233a" category="list-text">登録プロセスが完了したら、［*アカウントを今すぐ設定*］をクリックします。</block>
+  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">次のビデオでは、Azure Marketplaceでのサブスクライブ手順を紹介しています。</block>
+  <block id="978deed4db0f89cc0f25e6998d8c5ede" category="list-text">資格情報を既存のサブスクリプションに関連付けるには、下のリストからGoogle Cloudプロジェクトとサブスクリプションを選択し、*アソシエート*をクリックします。</block>
+  <block id="b46cc5bd37bd52a5b31b40b8ff054c3d" category="list-text">まだサブスクリプションをお持ちでない場合は、[サブスクリプションの追加]、[続行]の順にクリックし、Google Cloud Marketplaceの手順に従います。</block>
+  <block id="8e43471beda7327a078697a498a253ca" category="list-text">ポップアップダイアログボックスで、* NetApp、Inc.に登録*をクリックします</block>
+  <block id="825c72d4114a9a71a355213f6b79c642" category="list-text">[サブスクリプションの割り当て*]ページで次の手順を実行します。</block>
+  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">次のビデオでは、Google Cloud Marketplaceから登録する手順を紹介しています。</block>
+  <block id="1c1c040e218e35ae634138db5c2055f4" category="list-text">[購入オプションの表示*]をクリックします。</block>
 </blocks>

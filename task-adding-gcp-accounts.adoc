@@ -30,64 +30,60 @@ Google CloudでConnectorを導入すると、Connector VMインスタンスに�
 +
 image:screenshot_gcp_add_subscription.png["一連の既存のクレデンシャルに対する操作メニューのスクリーンショット。"]
 
-. ダウンリストから Google Cloud プロジェクトとサブスクリプションを選択します。
+. 資格情報を既存のサブスクリプションに関連付けるには、下のリストからGoogle Cloudプロジェクトとサブスクリプションを選択し、*アソシエート*をクリックします。
 +
 image:screenshot_gcp_associate.gif["Google Cloud の資格情報に対して選択された Google Cloud プロジェクトとサブスクリプションのスクリーンショット。"]
 
-. [ 関連付け（ Associate ） ] をクリックします。
-. サブスクリプションをまだお持ちでない場合は、 [ サブスクリプションの追加 ] をクリックし、以下の手順に従って新しいサブスクリプションを作成します。
+. まだサブスクリプションをお持ちでない場合は、[サブスクリプションの追加]、[続行]の順にクリックし、Google Cloud Marketplaceの手順に従います。
 +
 
 NOTE: 次の手順を実行する前に、Google CloudアカウントとBlueXPログインの両方に課金管理者権限があることを確認してください。
 
-. サブスクリプションの手順を確認し、[* Continue（続行）]をクリックします。
 +
-image:screenshot_gcp_sub_popup.png["サブスクリプションのポップアップのスクリーンショット。"]
-
-. にリダイレクトされたら https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^]をクリックし、上部のナビゲーションメニューで正しいプロジェクトが選択されていることを確認します。
+.. にリダイレクトされたら https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^]をクリックし、上部のナビゲーションメニューで正しいプロジェクトが選択されていることを確認します。
 +
 image:screenshot_gcp_cvo_marketplace.png["GCP CVO Marketplace ページのスクリーンショット。"]
 
-. [*Subscribe*] をクリックします
-. 適切な請求先アカウントを選択し、条件に同意します。
-+
-image:screenshot_gcp_terms_and_conditions.png["GCP の利用規約のスクリーンショット。"]
-
-. [*Subscribe*] をクリックします
+.. [*Subscribe*] をクリックします
+.. 適切な請求先アカウントを選択し、条件に同意します。
+.. [*Subscribe*] をクリックします
 +
 転送要求がネットアップに送信されます。
 
-. ポップアップダイアログボックスで、NetApp BlueXP Webサイトにリダイレクトされる「*Register with NetApp, Inc.*」をクリックします。
+.. ポップアップダイアログボックスで、* NetApp、Inc.に登録*をクリックします
++
+Google Cloudサブスクリプションをネットアップアカウントにリンクするには、この手順を完了する必要があります。このページからリダイレクトされてBlueXPにサインインするまで、サブスクリプションをリンクするプロセスは完了していません。
+
 +
 image:screenshot_gcp_marketplace_register.png["登録ポップアップのスクリーンショット。"]
 
+.. [サブスクリプションの割り当て*]ページで次の手順を実行します。
 +
 
-NOTE: Google Cloudサブスクリプションをネットアップアカウントにリンクするには、この手順を完了する必要があります。このページからリダイレクトされてBlueXPにサインインするまで、サブスクリプションをリンクするプロセスは完了していません。
+NOTE: 組織の誰かが請求アカウントからNetApp BlueXPサブスクリプションにすでに登録している場合は、にリダイレクトされます https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP WebサイトのCloud Volumes ONTAP ページ"^] 代わりに、予想外の場合は、ネットアップの営業チームにお問い合わせください。Google では、 1 つの Google 請求アカウントにつき 1 つのサブスクリプションのみが有効です。
 
-. [サブスクリプションの割り当て*]ページで、次の操作を行います。
 +
-** このサブスクリプションを関連付けるネットアップアカウントを選択してください。
-** [既存のサブスクリプションを置き換える*]フィールドで、1つのアカウントの既存のサブスクリプションをこの新しいサブスクリプションに自動的に置き換えるかどうかを選択します。
+*** このサブスクリプションを関連付けるネットアップアカウントを選択してください。
+*** [既存のサブスクリプションを置き換える*]フィールドで、1つのアカウントの既存のサブスクリプションをこの新しいサブスクリプションに自動的に置き換えるかどうかを選択します。
 +
 BlueXPは、アカウントのすべての資格情報の既存のサブスクリプションをこの新しいサブスクリプションに置き換えます。一連の資格情報がサブスクリプションに関連付けられていない場合、この新しいサブスクリプションはこれらの資格情報に関連付けられません。
 
 +
 他のすべてのアカウントについては、以下の手順を繰り返して、手動で契約を関連付ける必要があります。
 
-** [ 保存（ Save ） ] をクリックします。
+*** [ 保存（ Save ） ] をクリックします。
 +
-image:screenshot-google-cloud-subscription.png["このサブスクリプションを1つまたは複数のアカウントに関連付け、それらのアカウントの既存のサブスクリプションを置き換えることを選択できる[サブスクリプションの割り当て]ページのスクリーンショット。"]
+次のビデオでは、Google Cloud Marketplaceから登録する手順を紹介しています。
 
 +
-
-NOTE: 組織の誰かが請求アカウントからNetApp BlueXPサブスクリプションにすでに登録している場合は、にリダイレクトされます https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP WebサイトのCloud Volumes ONTAP ページ"^] 代わりに、予想外の場合は、ネットアップの営業チームにお問い合わせください。Google では、 1 つの Google 請求アカウントにつき 1 つのサブスクリプションのみが有効です。
-
+video::video-subscribing-google-cloud.mp4[width=848,height=480]
 
 
-. このプロセスが完了したら、BlueXPの[資格情報]ページに戻り、この新しいサブスクリプションを選択します。
+.. このプロセスが完了したら、BlueXPの[資格情報]ページに戻り、この新しいサブスクリプションを選択します。
 +
 image:screenshot_gcp_associate.gif["サブスクリプションの割り当てページのスクリーンショット。"]
+
+
 
 
 
