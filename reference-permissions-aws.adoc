@@ -183,7 +183,7 @@ AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnec
                 "cloudformation:DescribeStacks",
                 "kms:List*",
                 "kms:Describe*",
-                "ec2:describeVpcEndpoints",
+                "ec2:DescribeVpcEndpoints",
                 "kms:ListAliases",
                 "athena:StartQueryExecution",
                 "athena:GetQueryResults",
@@ -745,7 +745,7 @@ Connectorは、Amazon S3でバックアップを管理するために次のAPI�
 * KMS：リスト*
 * KMS：説明*
 * S3 ： GetObject
-* ec2c:ディスクエンドポイントの説明
+* EC2: DescribeVpcEndpoints
 * KMS：エイリアスを確認する
 * S3 ： PutEncryptionConfiguration
 
@@ -883,7 +883,10 @@ Cloud Tieringを使用すると、ConnectorはAmazon S3へのデータの階層�
 | S3 ： GetLifecycleConfiguration | はい。 | はい。 
 
 
-| EC2: DescribeRegions (説明領域 | はい。 | はい。 
+| EC2: DescribeRegions (説明領域 | はい。 | いいえ 
+
+
+| EC2: DescribeVpcEndpoints | はい。 | いいえ 
 |===
 
 
@@ -1191,7 +1194,7 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 * EC2: DescribeTags (説明タグ)
 * EC2: DescribeIamInstanceProfileAssociations
 * EC2: DescribeReservedInstancesOfferings
-* ec2c:ディスクエンドポイントの説明
+* EC2: DescribeVpcEndpoints
 * EC2: DescribeVpcs
 * EC2: DescribeVolumesModifications ( EC2 : DescribeVolumesMod
 * EC2: DescribePlacementGroups
@@ -1222,3 +1225,17 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 コネクタは、Amazon S3バケットを検出するために次のAPI要求を実行します。
 
 S3 ： GetEncryptionConfiguration
+
+
+
+== 変更ログ
+
+権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。
+
+
+
+=== 2023年2月14日
+
+Cloud Tieringには、次の権限が必要です。
+
+EC2: DescribeVpcEndpoints

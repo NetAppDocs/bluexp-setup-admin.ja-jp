@@ -1484,7 +1484,6 @@
   <block id="b18a2220ba0da795c31cbb6cd990fd49" category="list-text">KMS：リスト*</block>
   <block id="2101c43af42db107614da3d2faadb4dc" category="list-text">KMS：説明*</block>
   <block id="53cfd5032381d05f65cbc6d64e0004f5" category="list-text">S3 ： GetObject</block>
-  <block id="9072562ed0b0a146d2eee12aaa27baf4" category="list-text">ec2c:ディスクエンドポイントの説明</block>
   <block id="276e466538acff21910df6227231c79f" category="list-text">KMS：エイリアスを確認する</block>
   <block id="599a8ceed768fab9cc6e39dff7c9f215" category="list-text">S3 ： PutEncryptionConfiguration</block>
   <block id="21eddde0f415ffe52f38d432d14088c9" category="paragraph">コネクタは、Search &amp; Restoreメソッドを使用してボリュームとファイルをリストアする場合に次のAPI要求を実行します。</block>
@@ -2910,4 +2909,9 @@
   <block id="825c72d4114a9a71a355213f6b79c642" category="list-text">[サブスクリプションの割り当て*]ページで次の手順を実行します。</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">次のビデオでは、Google Cloud Marketplaceから登録する手順を紹介しています。</block>
   <block id="1c1c040e218e35ae634138db5c2055f4" category="list-text">[購入オプションの表示*]をクリックします。</block>
+  <block id="8258ac0fb8b015087851de720e92f796" category="list-text">EC2: DescribeVpcEndpoints</block>
+  <block id="1be1ae3d277ebf372ecefda4d444dbbb" category="section-title">2023年2月14日</block>
+  <block id="fae746653dec0583228106493b15ac1a" category="paragraph">Cloud Tieringには、次の権限が必要です。</block>
+  <block id="296337985ff5f0cc398e02f1aff0b176" category="paragraph">コネクタがオンプレミスにインストールされている場合は、この認証方法は使用できません。AWSキーを使用する必要があります。</block>
+  <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">コネクタがオンプレミスにインストールされている場合は、この認証方法を使用する必要があります。IAMロールは使用できません。</block>
 </blocks>
