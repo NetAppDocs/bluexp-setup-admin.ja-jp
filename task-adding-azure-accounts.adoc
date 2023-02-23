@@ -4,7 +4,7 @@ permalink: task-adding-azure-accounts.html
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
 summary: Cloud Volumes ONTAP システムを作成するときは、 Azure のクレデンシャルと Marketplace サブスクリプションを選択して、そのシステムで使用する必要があります。複数の Azure Marketplace サブスクリプションを管理する場合は、それぞれのサブスクリプションを、クレデンシャルページから別々の Azure クレデンシャルに割り当てることができます。 
 ---
-= BlueXPのAzure資格情報とサブスクリプションの管理
+= Azureの資格情報とBlueXPのサブスクリプションを管理します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

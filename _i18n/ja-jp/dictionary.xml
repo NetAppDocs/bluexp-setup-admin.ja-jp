@@ -1281,7 +1281,6 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
-  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">セルフサポート</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">次のオプションは、 1 日 24 時間、週 7 日間無料でご利用いただけます。</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">ナレッジベース</block>
   <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
@@ -1289,8 +1288,6 @@
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com [ フィードバックメール ]</block>
-  <block id="0659d428df833a806e29e65e632d380a" category="section-title">ネットアップサポート</block>
-  <block id="f5052c65917d7341726235d4d4941461" category="list-text">テクニカルサポートで利用可能なオプションのいずれかを選択します。</block>
   <block id="0c01b3b7191c43507ad9ca43d6443731" category="cell">クライアント Web ブラウザからローカルユーザインターフェイスへの HTTPS アクセス、および Cloud Data Sense インスタンスからの接続を提供します</block>
   <block id="5c6b09600cdfc594130f9f3c053efecb" category="section-title">コネクタの IP アドレスを変更します</block>
   <block id="a0dc112a414c5a75d4f2454974efc323" category="paragraph">ビジネスに必要な場合は、クラウドプロバイダによって自動的に割り当てられたコネクタインスタンスの内部 IP アドレスとパブリック IP アドレスを変更できます。</block>
@@ -1835,7 +1832,6 @@
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">上記のセルフサポートオプションに加え、サポートを有効にしたあとで問題が発生した場合は、ネットアップサポートの担当者と相談して解決できます。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">サポートに登録する方法について説明します</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">電話の相手と話したい場合は、「*お電話」をクリックしてください。netapp.comのページに移動し、電話番号が表示されます。</block>
-  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">[*ケースの作成*]をクリックして、ネットアップサポートスペシャリストのチケットを開きます。</block>
   <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">* NetApp Support Site アカウント*：サポートケースをオープンしたユーザーに関連付けられている該当のNSSアカウントを選択します。この担当者は、以下に記載する追加のEメールに加えて、ネットアップから連絡を受け取る主要担当者となります。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*作業環境*：ストレージに該当する場合は、* Cloud Volumes ONTAP *または*オンプレミス*を選択し、関連する作業環境を選択します。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*ケース優先度*：ケースの優先度を選択します。優先度は、[低]、[中]、[高]、[クリティカル]のいずれかになります。</block>
@@ -2177,7 +2173,6 @@
   <block id="190d3f654701a58653384f20c47c8ecf" category="list-text">BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。</block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="admonition">BlueXPでは、@文字を含むパスワードはサポートされていません。</block>
   <block id="0e2ec8861e0eca9eed397572feaa87da" category="paragraph">プロキシサーバを設定している場合は、プロキシを経由せずにAPIコールをBlueXPに直接送信できます。このオプションは、 AWS 、 Azure 、または Google Cloud で実行されているコネクタでサポートされます。</block>
-  <block id="81fdb7b2f8a92d7339906c3b7b4f736f" category="doc">BlueXPのAzure資格情報とサブスクリプションの管理</block>
   <block id="67cbb61f9d12c71b3b67153567963530" category="paragraph">Azureサブスクリプションと資格情報をBlueXPに追加するには、2つの方法があります。</block>
   <block id="d6e059f3de26b29b7be6b2949eae8f3d" category="list-text">別のAzureクレデンシャルを使用してCloud Volumes ONTAP を導入する場合は、サービスプリンシパルを使用してAzure権限を付与し、そのクレデンシャルをBlueXPに追加します。</block>
   <block id="44b7efa00ab8e5ca07e5783fe3175bb3" category="paragraph">BlueXPを使用すると、Cloud Volumes ONTAP を導入するAzureクレデンシャルとAzureサブスクリプションを選択できます。管理対象に別の Azure サブスクリプションを選択することはできません を関連付けない限り、アイデンティティプロファイルを作成します<block ref="683de527faad104d75b2c83aceba6f01" category="inline-link-rx"></block> それらの登録と。</block>
@@ -2914,4 +2909,12 @@
   <block id="fae746653dec0583228106493b15ac1a" category="paragraph">Cloud Tieringには、次の権限が必要です。</block>
   <block id="296337985ff5f0cc398e02f1aff0b176" category="paragraph">コネクタがオンプレミスにインストールされている場合は、この認証方法は使用できません。AWSキーを使用する必要があります。</block>
   <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">コネクタがオンプレミスにインストールされている場合は、この認証方法を使用する必要があります。IAMロールは使用できません。</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">セルフサポートオプションを使用します</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">ネットアップサポートでケースを作成</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">[*リソース*]ページで、[テクニカルサポート]で使用可能なオプションの1つを選択します。</block>
+  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">[*ケースの作成*]をクリックして、ネットアップサポートスペシャリストのチケットを開きます。</block>
+  <block id="d4a973e303ec37692cc8923e3148eef7" category="cell">8080 です</block>
+  <block id="0773be92494e9aa5f52a2d6834a7c90f" category="cell">データセンス</block>
+  <block id="f1ec925a41746bf6e895d454b6a6eddb" category="cell">配備中にData Senseインスタンスにプローブします</block>
+  <block id="3cae1bb62504fde722824fee95046472" category="doc">Azureの資格情報とBlueXPのサブスクリプションを管理します</block>
 </blocks>

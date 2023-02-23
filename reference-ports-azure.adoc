@@ -78,5 +78,8 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | API コールと AutoSupport | HTTPS | 443 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | APIがAzureとONTAP にコールし、クラウドデータを検知してランサムウェアサービスに感染し、AutoSupport メッセージをネットアップに送信 
 
 
+| API コール | TCP | 8080 です | データセンス | 配備中にData Senseインスタンスにプローブします 
+
+
 | DNS | UDP | 53 | DNS | BlueXPによるDNS解決に使用されます 
 |===

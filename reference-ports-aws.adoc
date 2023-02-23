@@ -78,7 +78,10 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | API コールと AutoSupport | HTTPS | 443 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | API が AWS や ONTAP 、クラウドデータ検知、ランサムウェアサービス、ネットアップへの AutoSupport メッセージの送信を呼び出します 
 
 
-.2+| API コール | TCP | 3000 | ONTAP HA メディエーター | ONTAP HA メディエーターとの通信 
+.3+| API コール | TCP | 3000 | ONTAP HA メディエーター | ONTAP HA メディエーターとの通信 
+
+
+| TCP | 8080 です | データセンス | 配備中にData Senseインスタンスにプローブします 
 
 
 | TCP | 8088 | S3 へのバックアップ | S3 へのバックアップを API で呼び出します 
