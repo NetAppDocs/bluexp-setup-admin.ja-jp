@@ -119,7 +119,7 @@ BlueXPアカウント管理者は、次のような方法でコネクタを作�
 * ソフトウェアを手動で独自の Linux ホストにインストールする
 +
 ** link:task-installing-linux.html["インターネットにアクセスできるホスト"]
-** link:task-install-connector-onprem-no-internet.html["インターネットにアクセスできないオンプレミスのホスト"]
+** link:task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にあるホスト"]
 
 
 * クラウドプロバイダのマーケットプレイスから

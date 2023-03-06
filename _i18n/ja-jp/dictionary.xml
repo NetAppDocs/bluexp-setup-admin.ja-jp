@@ -318,11 +318,7 @@
   <block id="322812be635bbd80fb94dbae450a00b4" category="paragraph">タイムラインのチェックは、特定のアクションを実行したユーザーを特定する必要がある場合や、アクションのステータスを特定する必要がある場合に役立ちます。</block>
   <block id="b505fc306e045c1511c6f1d37531ee7f" category="list-text">[ フィルタ ] で、 [ サービス *] 、 [ テナント *] の順にクリックし、 [ 適用 *] をクリックします。</block>
   <block id="7aa6a4ffdbdc6eccd7f131257c7de6a8" category="paragraph">タイムラインが更新され、アカウント管理アクションが表示されます。</block>
-  <block id="5cc47ef6d684116dbea75fa5016faf05" category="summary">ネットアップサポートサイト（ NSS ）アカウントのクレデンシャルを入力して、 Cloud Volumes ONTAP の主要なワークフローを有効にし、 Active IQ による予測分析とプロアクティブなサポートを有効にします。</block>
-  <block id="3cd40b4bad86322191adf034be9f7873" category="list-text">お客様所有のライセンスを使用（ BYOL ）した場合に Cloud Volumes ONTAP を導入するには</block>
-  <block id="641d05ccafb217ba1d71672a604e42a8" category="list-text">従量課金制の Cloud Volumes ONTAP システムを登録できます</block>
   <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">お使いのシステムのサポートを有効にし、ネットアップのテクニカルサポートリソースにアクセスするには、 NSS アカウントを用意する必要があります。</block>
-  <block id="1d82e88d22e4fb3ffa42a186537412b7" category="list-text">をクリックして、 Cloud Volumes ONTAP ソフトウェアを最新リリースにアップグレードします</block>
   <block id="aeaeee19a7c393222e407a525cf01991" category="section-title">NSS アカウントを追加します</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです</block>
   <block id="357be4e47fe6e7132dca092006062510" category="paragraph"><block ref="357be4e47fe6e7132dca092006062510" category="inline-image-macro-rx" type="image"></block></block>
@@ -330,7 +326,6 @@
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">メッセージが表示されたら、 [* Continue （続行） ] をクリックして Microsoft ログインページにリダイレクトします。</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。</block>
-  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。</block>
   <block id="6602afb860a6cca23c3b75bf601365eb" category="inline-link">AWS での Cloud Volumes ONTAP の起動</block>
   <block id="3e33b81f05bb640dee79c5aa4e351c91" category="list-text"><block ref="3e33b81f05bb640dee79c5aa4e351c91" category="inline-link-rx"></block></block>
   <block id="7ca1af679f0ba86814f2ad58a578cb7c" category="inline-link">Azure で Cloud Volumes ONTAP を起動します</block>
@@ -687,9 +682,6 @@
   <block id="876f62e75a1f45f9bc7d03ac9a0db173" category="paragraph">32 は値の例です。使用する値は、 NAT の設定と同時に使用できるセッションの数によって異なります。</block>
   <block id="4ae719205766e20198cc595136cbf10c" category="inline-link">/occm/config API 呼び出しの詳細を確認してください</block>
   <block id="a1e38cfa12dff31d370faa5e9e31c16d" category="paragraph"><block ref="4c1ec6626d4216a927415f20603af4bb" category="inline-link-rx"></block>。</block>
-  <block id="2772d58af2fcb3e8fca3edab506433e9" category="section-title">インターネットにアクセスせずにオンプレミスのコネクタをアップグレードします</block>
-  <block id="76c2612a71749b97c90759d496bc4eba" category="inline-link-macro">インターネットにアクセスできないオンプレミスホストにコネクタをインストール</block>
-  <block id="a0a7d617caaec7a4009bf929e1c9de72" category="paragraph">あなたの場合 <block ref="3724bc4909d5db79bc2030cfc2db7249" category="inline-link-macro-rx"></block>では、ネットアップサポートサイトで新しいバージョンを利用できる場合にコネクタをアップグレードできます。</block>
   <block id="7dad5aa897582994eeb9cb487acf31ea" category="paragraph">アップグレードプロセス中にコネクタを再起動する必要があるため、アップグレード中はユーザインターフェイスを使用できなくなります。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">ネットアップサポートサイト</block>
   <block id="0d5d3e78379f182967772aab096aa6ac" category="list-text">インストーラを Linux ホストにコピーします。</block>
@@ -774,8 +766,6 @@
   <block id="5e004583c62c40cba943716ab5c82a0d" category="list-text">ソフトウェアを手動で独自の Linux ホストにインストールする</block>
   <block id="eb2793ba4e7b262ec587a9f189d21e72" category="inline-link-macro">インターネットにアクセスできるホスト</block>
   <block id="756d0d2041b19ecadfb8aad8627bf747" category="list-text"><block ref="756d0d2041b19ecadfb8aad8627bf747" category="inline-link-macro-rx"></block></block>
-  <block id="cbbe966aefd5924ef451af7da66257ee" category="inline-link-macro">インターネットにアクセスできないオンプレミスのホスト</block>
-  <block id="e3cbbeded92eab3ebcd3efafd65ce209" category="list-text"><block ref="e3cbbeded92eab3ebcd3efafd65ce209" category="inline-link-macro-rx"></block></block>
   <block id="91ec75afa8db310b2f8dd16755657857" category="list-text">クラウドプロバイダのマーケットプレイスから</block>
   <block id="ed949d24ab11f0d2a40c0b8161ab4cf3" category="list-text"><block ref="ed949d24ab11f0d2a40c0b8161ab4cf3" category="inline-link-macro-rx"></block></block>
   <block id="21e74b3c28d006317f38a2bc8eb1da3b" category="inline-link-macro">Azure Marketplace で入手できます</block>
@@ -973,7 +963,6 @@
   <block id="342df35452bbec008148c714d47038f6" category="list-text">注文に時計と * 保留中 * のステータスが表示されている場合は、マーケットプレイスのページに戻り、 * プロバイダで管理 * を選択して、上記の手順を完了します。</block>
   <block id="9547217bb6aa822040056cba67310321" category="inline-image-macro">市場で保留中のエンタイトルメントのスクリーンショット。</block>
   <block id="e6ec8d6dff39d45a9056311495699cef" category="paragraph"><block ref="e6ec8d6dff39d45a9056311495699cef" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="424a4bbc5d90882baf6dfd31a70caf62" category="doc">インターネットにアクセスせずにオンプレミスにコネクタをインストールします</block>
   <block id="92241232df0720bddf843b8b16c8be1a" category="paragraph">ここで説明するインストール手順は、前述の使用事例を対象としています。 <block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block>。</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">ホストの要件を確認</block>
   <block id="f6c634614114f28ad6651cf4345c81a6" category="paragraph">コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。</block>
@@ -983,14 +972,6 @@
   <block id="379f39ccee41ac65b6cdfb0734a7098c" category="list-text">4 コアまたは 4 個の vCPU</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">サポートされているオペレーティングシステム</block>
-  <block id="17095cfe60ed8524003ea5bde611c4ea" category="list-text">CentOS 7.6</block>
-  <block id="b0a4a3d9e04daf57d04de7ad03004279" category="list-text">CentOS 7.7</block>
-  <block id="1f880a0709e66557fee307fd4eccd811" category="list-text">CentOS 7.8</block>
-  <block id="2d4e0d903d85884dcb41f49d855fce57" category="list-text">CentOS 7.9</block>
-  <block id="bc2d60e50368b206380016cb6576edda" category="list-text">Red Hat Enterprise Linux 7.6</block>
-  <block id="935b9daeec310c8e2291d043d3e14f44" category="list-text">Red Hat Enterprise Linux 7.7</block>
-  <block id="359770104fc0e772f479949c0511abfa" category="list-text">Red Hat Enterprise Linux 7.8</block>
-  <block id="efdefb5589146725b584d2c0c715c9b3" category="list-text">Red Hat Enterprise Linux 7.9</block>
   <block id="db0e685f184a31c6a4657a29d4d74973" category="paragraph">Red Hat Enterprise Linux システムは、 Red Hat サブスクリプション管理に登録する必要があります。登録されていない場合、 Connector のインストール中に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。</block>
   <block id="1aa77ca522dde8d598ae9c2372a7494b" category="paragraph">Connector は、これらのオペレーティングシステムの英語版でサポートされています。</block>
   <block id="1b21b0d71706897b69f108572c444d40" category="list-text">ハイパーバイザー</block>
@@ -1211,7 +1192,6 @@
   <block id="59a9ba18ee55c4e977e8be81c488ec04" category="sidebar">AWS Marketplace から作成します</block>
   <block id="b6ffdcd8501e6eb2e45e1715d00da4f5" category="sidebar">Azure Marketplace から作成</block>
   <block id="e48c1f5d2aaae000a24e0a16d0a46a0f" category="sidebar">インターネットを備えたホストにインストールします</block>
-  <block id="eee9d9f3c554fc2dd0a524cf80ec3396" category="sidebar">インターネットを使用せずにオンプレミスにインストールできます</block>
   <block id="4d23d12ce4b0de2019310ec73c45d09b" category="sidebar">コネクタのシステム ID を確認します</block>
   <block id="dd6f576fe34949ea5c3d4b196b2c626d" category="sidebar">既存のコネクタを管理します</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">デフォルト設定</block>
@@ -1367,7 +1347,6 @@
   <block id="2027473f3ca71543274163d3bb9dd8e1" category="list-text"><block ref="2027473f3ca71543274163d3bb9dd8e1" category="inline-link-rx"></block></block>
   <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">ONTAP オンプレミスクラスタの機能拡張について説明します</block>
   <block id="f0aff813a70ef2591adfbb6a1a06b553" category="list-text"><block ref="f0aff813a70ef2591adfbb6a1a06b553" category="inline-link-rx"></block></block>
-  <block id="bea9d9e1b3f9260b5dafbfee794aead7" category="summary">インターネットにアクセスできないオンプレミスの Linux ホストにコネクタをインストールできます。オンプレミスのONTAP クラスタを検出し、クラスタ間でデータをレプリケートし、Cloud Backupを使用してボリュームをバックアップし、Cloud Data Senseでスキャンできます。</block>
   <block id="89b945901df4999cfbb07b91df7f3e83" category="inline-link">クラウドバックアップを使用して、オンプレミスのONTAP ボリュームのデータをStorageGRID にバックアップします</block>
   <block id="0ef5e09df96e6b4d97470a69c3a5bb03" category="list-text"><block ref="0ef5e09df96e6b4d97470a69c3a5bb03" category="inline-link-rx"></block></block>
   <block id="c6e51205c48cc37a7cc66b973d442adf" category="inline-link">クラウドデータセンスを使用してオンプレミスのONTAP ボリュームデータをスキャン</block>
@@ -1893,8 +1872,6 @@
   <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">3つの水平ドットのアイコン</block>
-  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">ログインに成功すると、ネットアップはNSSのユーザ名を保存します。これはシステムで生成されたIDで、Eメールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
-  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。このオプションを使用すると、再度ログインするように求められます。</block>
   <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">ネットアップに登録してください</block>
   <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">ネットアップサポートへの登録方法は、NetApp Support Site （NSS）アカウントがあるかどうかによって異なります。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSSアカウントをお持ちの既存のお客様</block>
@@ -1942,7 +1919,6 @@
   <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">共有VPC権限を設定する</block>
   <block id="17d9282186c2451db90a83330e5c9d7b" category="list-text"><block ref="17d9282186c2451db90a83330e5c9d7b" category="inline-link-macro-rx"></block></block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。</block>
-  <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加できますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
   <block id="6c73104e218372ccda6dc2d58fda524d" category="paragraph">たとえば、コネクタは、Cloud Volumes ONTAP の健常性と運用の鍵となるコンポーネントです。コネクタの電源がオフの場合は、Cloud Volumes ONTAP PAYGOシステムと容量ベースのBYOLシステムは、コネクタとの通信を14日以上切断したあとでシャットダウンします。これは、コネクタがシステムのライセンスを毎日更新するためです。</block>
   <block id="b9c53fca7bb84d0455a2b4768b130e38" category="admonition">Cloud Volumes ONTAP システムにノードベースのBYOLライセンスがある場合は、ライセンスがCloud Volumes ONTAP システムにインストールされているため、14日後もシステムは実行されたままになります。</block>
   <block id="2538b2df52d923f09592be3b38238322" category="list-text">14 GB</block>
@@ -2296,24 +2272,13 @@
   <block id="4b8d6d1554d22a2bda6470094c227037" category="paragraph">Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォルトで次のAzureクレデンシャルが選択されます。</block>
   <block id="79f0e2a1f0b9a07786aae7969fdf941c" category="paragraph">そのあとで <block ref="fdb068e0f25207f010bf6b52e6d7dd53" category="inline-link-macro-rx"></block> AD サービスプリンシパルの詳細を指定します。</block>
   <block id="4ac30ed8a8abb75a74c2afca163c3250" category="paragraph">上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。から Azure に Connector を導入することもできます <block ref="42416828ae8ae7a901a48c71094e7a44" category="inline-link-macro-rx"></block>を使用できます <block ref="562eb722c78878c7a1bcbac21fbdef4a" category="inline-link-macro-rx"></block>。</block>
-  <block id="3b2c928529c58de342d4ce57a573030b" category="doc">BlueXPでNetApp Support Site アカウントを追加および管理します</block>
   <block id="333c244077c4c3df40d39cbb97f94995" category="paragraph">NetApp Support Site （NSS）アカウントのサポートへの登録、Cloud Volumes ONTAP の主要なワークフローの有効化などに必要なクレデンシャルを指定します。</block>
-  <block id="60ca5d243604b7893152fa6c4e082601" category="paragraph">次のタスクを有効にするには、NetApp Support Site アカウントをBlueXPに追加する必要があります。</block>
-  <block id="b1be5f2baf7b68dcca8fa31518602a38" category="list-text">をクリックしてサポートに登録してください</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">ライセンスキーをBlueXPでアップロードし、購入した契約期間のサブスクリプションを有効にするには、NSSアカウントを提供する必要があります。これには、期間の更新の自動更新も含まれます。</block>
-  <block id="8b45fdd7e598db2464922c534af8581b" category="paragraph">また、BlueXP内からDigital Advisor (旧Active IQ )を使用するには、NSSの資格情報も入力する必要があります。これらの資格情報はユーザーアカウントに直接関連付けられており、Digital Advisorのみで使用できます。詳細については、以降のセクションを参照してください。</block>
-  <block id="e45884eb97ffee5d4246b789a0b594f3" category="section-title">Digital Advisorに関連付けられたNSSアカウントを管理します</block>
   <block id="b34d01d56d89281c69c44eaef7460a79" category="paragraph">BlueXPでDigital Advisorにアクセスすると、NSS資格情報を入力してDigital Advisorにログインするように求められます。NSSの資格情報を入力すると、NSS管理ページの上部にこのNSSアカウントが表示されます。その後、必要に応じてクレデンシャルを管理できます。</block>
   <block id="60f184ee8b252ec5284ca4bfc102c193" category="paragraph">このNSSアカウントについては、次の点に注意してください。</block>
   <block id="37cb0cdf24a1597d838bc5f1699b9e5a" category="list-text">アカウントはユーザレベルで管理されるため、他のユーザがログインしても表示できません。</block>
-  <block id="e2a854ed97334bfe190a5004c6992a10" category="list-text">アカウントは、Cloud Volumes ONTAP の作成、ライセンス、サポートではなく、その他のBlueXP機能では使用できません。</block>
-  <block id="7cdc37cd26e80c9dee2fb7d28a83f9ee" category="list-text">Digital Advisorに関連付けられるNSSアカウントは、ユーザごとに1つだけです。</block>
   <block id="3793cae33028a6b75ab0ca8130ca6a9d" category="list-text">[*Your NSS Credentials]で[*Action*]をクリックし、次のいずれかのオプションを選択します。</block>
-  <block id="1f7880842a7d0a07086c42d41eae4faa" category="list-text">* NSSユーザーを関連付け*: NetApp Support Site アカウントの資格情報を追加して、BlueXPでDigital Advisorにアクセスできるようにします。</block>
   <block id="fe11914cdc8e174bef64d941a9b88b00" category="list-text">*既存の資格情報の更新*：NetApp Support Site アカウントの資格情報を更新します。</block>
-  <block id="633c5baa1b3f4fa5a0ca89d3296fc26d" category="list-text">*削除*：Digital Advisorに関連付けられたアカウントを削除します。</block>
-  <block id="3f54153a94aa4008ec37f11d357a708b" category="paragraph">BlueXPは、Digital Advisorに関連付けられたNSSアカウントを更新します。</block>
-  <block id="7a68553535df91a6e97b134352b077bf" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加および管理して、ネットアップアカウントレベルでBlueXPを使用できます。</block>
   <block id="5d7e9ca2f0be827f29d91dca2f767f7f" category="paragraph">新しいCloud Volumes ONTAP システムの作成時、既存のCloud Volumes ONTAP システムの登録時、およびサポート登録時にアカウントを選択できるようになりました。</block>
   <block id="759f5e4f5dca6e6753e9254efed21ea1" category="paragraph">2021 年 11 月以降、ネットアップはサポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用します。この更新プログラムの結果、以前に追加した既存のアカウントの資格情報を更新するように求められます。</block>
   <block id="90488de845793cd541dd12866e86b44a" category="paragraph">次のいずれかの場合は、BlueXPでNSSアカウントの資格情報を更新する必要があります。</block>
@@ -2352,7 +2317,6 @@
   <block id="7c9eb12f4e4956c9ae85861da03d5799" category="summary">行政機関で運用している場合は、クラウドプロバイダのマーケットプレイスからConnectorを導入するか、手動でインストールする必要があります。BlueXPのSaaS Webサイトでは、政府機関の地域にConnectorを導入することはできません。</block>
   <block id="696e2f2c399b40c0fb12aafa86f0ccbc" category="paragraph">Linuxホストを手動でインストールする場合は、「オンライン」インストーラを使用して、インターネットにアクセスできるホストにコネクタをインストールする必要があります。Connectorでは別の「オフライン」インストーラを使用できますが、インターネットにアクセスできないオンプレミスサイトでのみサポートされます。政府機関ではサポートされていません。</block>
   <block id="7a0d13f990c1c9af75d6fae4c9ff04ff" category="paragraph">コネクタを展開したら、Webブラウザを開いてコネクタインスタンスのIPアドレスに接続することでBlueXPにアクセスできます。<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
-  <block id="d89c4f7e7a6faeeab29240ba995258b3" category="summary">BlueXP（旧称Cloud Manager）管理機能の新機能であるネットアップのアカウント、コネクタ、クラウドプロバイダのクレデンシャルなどについて説明します。</block>
   <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">2022年11月1日</block>
   <block id="929fa09ef9d24654b353f312638ca6e6" category="paragraph">アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。<block ref="abba285888ca54da9f89054b7e57f270" category="inline-link-rx"></block></block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">BlueXPに関する注意事項</block>
@@ -2581,7 +2545,6 @@
   <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">ポリシー#2</block>
   <block id="d094d5c78e8dbf27acd1a70c29b4b863" category="list-text">IAMコンソールで、の内容をコピーして貼り付け、必要なポリシーを作成します <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
   <block id="a6a23d0964b870781db3c2557ec3583c" category="list-text">タイプがAmazon EC2のIAMロールを作成し、前の手順で作成したポリシーをそのロールに関連付けます。</block>
-  <block id="80829c0bc33e1821173e296173ba0a8d" category="list-text">Red Hat Enterprise Linux 8.6</block>
   <block id="4e7880d4f8d9cf685f649e74e34a3de7" category="list-text">Connector をインストールする前に、ホストに Docker Engine バージョン 19 以降が必要です。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
   <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">変更ログ</block>
   <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。</block>
@@ -2589,7 +2552,6 @@
   <block id="61d40b12dddcd9e571bbe7a89b0fbae8" category="list-text">Microsoft.Network/loadBalancers/backendAddressPools/join/action</block>
   <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
   <block id="3af64a9cb34f4b06a9e496f1f6a05879" category="list-text">microsoft.Storage/storageAccounts/regeneratekey/action</block>
-  <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">からConnectorソフトウェアをダウンロードします<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
   <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、BlueXPで使用できます。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することはできますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">サポート登録ページでアカウントIDのシリアル番号を確認します。</block>
@@ -2917,4 +2879,112 @@
   <block id="0773be92494e9aa5f52a2d6834a7c90f" category="cell">データセンス</block>
   <block id="f1ec925a41746bf6e895d454b6a6eddb" category="cell">配備中にData Senseインスタンスにプローブします</block>
   <block id="3cae1bb62504fde722824fee95046472" category="doc">Azureの資格情報とBlueXPのサブスクリプションを管理します</block>
+  <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6、7.7、7.8、7.9</block>
+  <block id="fe342f4d7fb16d9eddf02f4c613dfb19" category="list-text">Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 および8.7</block>
+  <block id="3e2babff5cfde6df6f00667d0ab74b31" category="section-title">インターネットにアクセスできない場所でコネクタをアップグレードします</block>
+  <block id="0046538fde0515ac69a012bb8ac238c9" category="inline-link-macro">インターネットにアクセスできない場所にコネクタを取り付けた</block>
+  <block id="80511fe8771333d5c71a1f6f33b080fe" category="paragraph">あなたの場合 <block ref="149181f7ecd7c61bf65dc751cb02e94c" category="inline-link-macro-rx"></block>NetApp Support Siteで新しいバージョンを利用できる場合にコネクタをアップグレードできます。</block>
+  <block id="643a877b7c306b1bcece42c8f03bebfb" category="paragraph">&lt;version&gt; は、ダウンロードしたコネクタのバージョンです。</block>
+  <block id="b66b5e3c69923d75bab00ad211ae0876" category="summary">コネクタは、オンプレミスでもクラウドリージョンでも、インターネットから完全に分離された場所にインストールできます。その後、その環境でサポートされているBlueXPサービスを使用できます。</block>
+  <block id="538df6b7aa2304c978bd22cbc188715d" category="doc">インターネットにアクセスできない場所にコネクタを取り付けます</block>
+  <block id="2140919b7a4acf643c668582587a3fc3" category="paragraph">コネクタは、オンプレミスでもクラウドリージョンでも、インターネットから完全に分離された場所にインストールできます。その後、その環境でサポートされているBlueXPサービスを使用できます。</block>
+  <block id="dd8d2e5dd396a762bed92b10f72f5d67" category="section-title">オンプレミスの概要</block>
+  <block id="4b85a689d4bf46a14216c1f7043d61d9" category="paragraph">インターネットのないオンプレミス環境では、BlueXPを使用して、オンプレミスのONTAP クラスタの検出、クラスタ間でのデータのレプリケート、Cloud Backupを使用したボリュームのバックアップ、Cloud Data Senseでのスキャンを実行できます。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。</block>
+  <block id="817fffd09424883c473079707bd42227" category="section-title">クラウドの概要</block>
+  <block id="6a2d5b4c5ec168a0a42fd35e394d5e59" category="paragraph">インターネットのないクラウドリージョンでは、BlueXPを使用してCloud Volumes ONTAP システムを導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境への接続がある場合）。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。</block>
+  <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">クラウドリージョンは、AWS C2S/SC2S、Azure IL6、または任意の商用リージョンのような安全な米国機関のリージョンにすることができます。</block>
+  <block id="42e8616c7f9505f6747fcbb59c7b5a93" category="list-text">からインターネットにアクセスできない制限付きネットワーク用のコネクタインストーラをダウンロードします<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
+  <block id="559e00158f66ad338da1ff42475d15d4" category="paragraph">オンプレミス環境：</block>
+  <block id="ddc27aae141cdde9ebf1781f29405e62" category="inline-link">Cloud Volumes ONTAP を導入します</block>
+  <block id="d4e942d34e603f30d4aa65123ee69ac5" category="paragraph">クラウド環境では、それが可能です<block ref="00153078c5cb58fb46fb6b9817a49af6" category="inline-link-rx"></block></block>
+  <block id="3c64f2e1d3b86927fc25494420d8e69e" category="doc">BlueXPでNetApp Support Site アカウントを管理します</block>
+  <block id="8b12e6f38f8b47f363480ac1d3b8327f" category="paragraph">BlueXPでは、1つのNSSアカウントを各BlueXPユーザに関連付け、1つ以上のNSSアカウントをBlueXPアカウントに関連付けることができます。</block>
+  <block id="e6cee5a5293cdefddf2eea3f6f8e63a0" category="section-title">BlueXPユーザごとのNSSクレデンシャル</block>
+  <block id="9f16a5e3343035191419f8ff9c2e5969" category="paragraph">BlueXPでDigital Advisorアカウントにアクセスしたりサポートケースを管理したりするには、個 々 のNSSクレデンシャルが必要です。これらのクレデンシャルは、BlueXPにログインしているユーザにのみ表示されます。クレデンシャルは、必要に応じて削除および更新できます。</block>
+  <block id="d0c8c4e397d970dc8543d75be500735a" category="inline-xref">BlueXPユーザごとにNSSクレデンシャルを管理する方法を説明します</block>
+  <block id="67d6e3f20ef7fa11673f57da719e30a4" category="paragraph"><block ref="7ba791bb5a4402182b386f894b67a43b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="86b693fcb28e522569eb6bcbe22e1048" category="section-title">BlueXPアカウントのNSSクレデンシャル</block>
+  <block id="4a2f661974665defd7d188133a1ab48b" category="paragraph">BlueXPで次のタスクを有効にするには、NetApp Support Site クレデンシャルを特定のBlueXPアカウントIDに関連付ける必要があります。</block>
+  <block id="15c2fed71e5ff16c335e2d40bc485e1e" category="list-text">サポートを登録しています</block>
+  <block id="1ca6b2b8383e207951356457a77708e7" category="list-text">サポートケースの作成</block>
+  <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">お客様所有のライセンスを使用（BYOL）する場合のCloud Volumes ONTAP の導入</block>
+  <block id="a3b3ed2f72536d95b268a4a67722c55d" category="list-text">従量課金制のCloud Volumes ONTAP システムを登録しています</block>
+  <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAP ソフトウェアを最新リリースにアップグレードしています</block>
+  <block id="a86ad85ddb4228477c624e47ab659180" category="paragraph">これらのクレデンシャルは、特定のBlueXPアカウントIDに関連付けられます。BlueXPアカウントに属するユーザは、*[サポート]&gt;[NSS管理]*からこれらのクレデンシャルにアクセスできます。</block>
+  <block id="0080504e9313f9b154660cf9d3a82d90" category="inline-xref">BlueXPアカウントのNSSクレデンシャルを管理する方法について説明します</block>
+  <block id="c8ab27a714bbad7b5a28e63b8123aae5" category="paragraph"><block ref="04ed260555c7204bedee595d1a22139b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d9307c659c4370870dcc89d984d908e2" category="section-title">BlueXPログインのNSSクレデンシャルを管理します</block>
+  <block id="5a201f4198ac7b46778a727f32bd6203" category="paragraph">BlueXPログインに関連付けられたNSSクレデンシャルを使用して、Digital Advisorとケース管理機能にアクセスできます。</block>
+  <block id="79dce1fafa49d0b2bbe06423f13f9d58" category="list-text">[サポート]&gt;[ケース管理]*にアクセスすると、NSSクレデンシャルを入力するように求められます（まだ入力していない場合）。このページには、NSSアカウントと会社に関連付けられたサポートケースが表示されます。</block>
+  <block id="d4b8ea0f438d980b900fa0c72d88710f" category="list-text">このアカウントは、BlueXPの他の機能では使用できません。Cloud Volumes ONTAP の作成、ライセンス、サポートケースの作成では使用できません。</block>
+  <block id="37ab7585b9575599c51022bd3b09813a" category="list-text">Digital Advisorとケース管理に関連付けることができるNSSアカウントは、ユーザごとに1つだけです。</block>
+  <block id="78eefce62993605d332b1408d42256d7" category="list-text">* NSSユーザを関連付けます*：NetApp Support Site アカウントのクレデンシャルを追加します。</block>
+  <block id="bb003c773133044d9d8666f477a36cfe" category="list-text">*削除*：BlueXPユーザアカウントに関連付けられているアカウントを削除します。</block>
+  <block id="65fb057ff5fa0f79f9e974fbbf20b1b4" category="paragraph">NSSクレデンシャルがBlueXPで更新されます。Digital AdvisorまたはCase Managementページにアクセスすると、変更が反映されます。</block>
+  <block id="ce3a367043c4a6897ab7ccbfa40ad329" category="section-title">BlueXPアカウントのNSSクレデンシャルを管理します</block>
+  <block id="2a99a7f02260cc6c2b4aa3815cee53ec" category="paragraph">BlueXPアカウントに関連付けられているNSSクレデンシャルを管理して、サポートの登録、サポートケースの作成、Cloud Volumes ONTAP の主要なワークフローの有効化を行うことができます。</block>
+  <block id="9a030ad8abbc9b1e402feade38bdec50" category="paragraph">サポートダッシュボードでは、BlueXPで使用するNetApp Support Site アカウントをBlueXPアカウントレベルで追加および管理できます。</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSSアカウントは、お客様レベルのアカウントである必要があります（ゲストアカウントや一時アカウントではありません）。複数のお客様レベルのNSSアカウントを設定できます。</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">NSSアカウントがパートナーレベルのアカウントの場合、作成できるNSSアカウントは1つだけです。お客様レベルのNSSアカウントを追加しようとすると、パートナーレベルのアカウントが存在する場合は、次のエラーメッセージが表示されます。</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">「別のタイプのNSSユーザーがすでに存在するため、このアカウントではNSS顧客タイプは許可されていません。」</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">既存のお客様レベルのNSSアカウントがあり、パートナーレベルのアカウントを追加しようとする場合も同様です。</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">ログインに成功すると、ネットアップはNSSのユーザ名を保存します。</block>
+  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">これはシステムによって生成されたIDで、電子メールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
+  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">このオプションを使用すると、再度ログインするように求められます。これらのアカウントのトークンは90日後に期限切れになります。このことを通知する通知が投稿されます。</block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">サポートケースの管理（プレビュー）</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">ケース管理はプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">ページ上部のケース管理ダッシュボードには、次の2つのビューがあります。</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">左側のビューには、指定したユーザNSSアカウントによって過去3カ月間にオープンされたケースの総数が表示されます。</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">右側のビューには、ユーザのNSSアカウントに基づいて、過去3カ月間にオープンしたケースの総数が会社レベルで表示されます。</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">テーブルの結果には、選択したビューに関連するケースが反映されます。</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">目的の列を追加または削除したり、[優先度]や[ステータス]などの列の内容をフィルタリングしたりできます。他の列には、並べ替え機能だけがあります。</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">詳細については、以下の手順を参照してください。</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">ケースごとに、ケースノートを更新したり、ステータスが「Closed」または「Pending Closed」でないケースをクローズしたりすることができます。</block>
+  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">[ケース管理]*をクリックし、プロンプトが表示されたらNSSアカウントをBlueXPに追加します。</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">ケース管理*ページには、BlueXPユーザアカウントに関連付けられたNSSアカウントに関連するオープンケースが表示されます。これは、* NSS管理*ページの上部に表示されるNSSアカウントと同じです。</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">必要に応じて、テーブルに表示される情報を変更します。</block>
+  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">[Organization's Cases]*で[View]*をクリックすると、会社に関連付けられているすべてのケースが表示されます。</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">正確な日付範囲を選択するか、別の期間を選択して、日付範囲を変更します。</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">[Case Management]ページのテーブルの上にあるオプションのスクリーンショット。正確な日付範囲、または過去7日、30日、または3カ月を選択できます。</block>
+  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">列の内容をフィルタリングします。</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">[Status]列のフィルタオプションのスクリーンショット。[Active]や[Closed]など、特定のステータスに一致するケースを除外できます。</block>
+  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">テーブルに表示されるプラスアイコン</block>
+  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">をクリックして、テーブルに表示される列を変更します <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 次に、表示する列を選択します。</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">表に表示できる列を示すスクリーンショット。</block>
+  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">テーブルの最後の列に表示される3つの点を持つアイコン</block>
+  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">をクリックして既存のケースを管理します <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 使用可能なオプションのいずれかを選択します。</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*ケースの表示*:特定のケースの詳細を表示します。</block>
+  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*ケースノートの更新*：問題の詳細を入力します。</block>
+  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*ケースをクローズ*：ケースをクローズする理由の詳細を入力し、*ケースをクローズ*をクリックします。</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。</block>
+  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1da23045b320eae048772af1011d22a1" category="summary">ネットアップアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど、BlueXP管理機能の新機能をご紹介します。</block>
+  <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
+  <block id="ba5bb99eb6a04798c8ccd3f156db75a5" category="section-title">コネクタ3.9.27</block>
+  <block id="ce47c670900f3fe8347a2fc95ff710d8" category="list-text">BlueXPコンソールで検索できるようになりました。この時点で、検索機能を使用してBlueXPのサービスと機能を検索できます。</block>
+  <block id="73984711a5ba4c8d6f613d3ef2426680" category="inline-image-macro">コンソールの上部に表示されるBlueXP検索のスクリーンショット。</block>
+  <block id="4be68bdee3a27bc0218c6188d192fc95" category="paragraph"><block ref="4be68bdee3a27bc0218c6188d192fc95" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">サポートケースの管理方法について説明します</block>
+  <block id="796ced97a72330e5ce3c0935b7b09f45" category="paragraph"><block ref="622b6e7f4143df2aca06b538ee1d864e" category="inline-link-rx"></block>。</block>
+  <block id="dd9b32305d0c33f8845bee1cdfcfc85a" category="list-text">Red Hat Enterprise Linux 8.7を実行するホストでコネクタがサポートされるようになりました。</block>
+  <block id="9954c00cefacf69f28fa1994e949ff83" category="paragraph"><block ref="1c471069dafa2d25f3a632cea0250222" category="inline-link-rx"></block>。</block>
+  <block id="9597dfcf8249ec8766cfb35fd11357f3" category="list-text">このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。</block>
+  <block id="33b6f29ed1acfc0fbed883a6e1f44ef2" category="paragraph">開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BYOLライセンスをDigital Walletに追加してから、Cloud Volumes ONTAP を導入します。</block>
+  <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">インターネットにアクセスできない場所にコネクタを取り付けます</block>
+  <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
+  <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">コネクタのBlueXPコンソールにアクセスします</block>
+  <block id="b620510a7b9198825896459898b7bc08" category="list-text"><block ref="b620510a7b9198825896459898b7bc08" category="inline-link-rx"></block></block>
+  <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">未割り当てライセンスを追加します</block>
+  <block id="587a8286d2e3b61d9f250d807b34983c" category="list-text"><block ref="587a8286d2e3b61d9f250d807b34983c" category="inline-link-rx"></block></block>
+  <block id="a8ed015209d62d3ffd9042f8a01b9725" category="inline-link">Cloud Volumes ONTAP の使用を開始します</block>
+  <block id="d66686137674e9cdef6070dbe4ce01c6" category="list-text"><block ref="d66686137674e9cdef6070dbe4ce01c6" category="inline-link-rx"></block></block>
+  <block id="37e16775c1bede9551f227ccaca87974" category="paragraph"><block ref="37e16775c1bede9551f227ccaca87974" category="inline-link-rx"></block></block>
+  <block id="16ad465f333a3d9520fe4f57691eb5be" category="inline-link-macro">インターネットにアクセスできない場所にあるホスト</block>
+  <block id="273c438fb142c078d2637f09a68a894b" category="list-text"><block ref="273c438fb142c078d2637f09a68a894b" category="inline-link-macro-rx"></block></block>
+  <block id="6b8dbc1426241e742cda28e32722d238" category="sidebar">インターネットを使用せずに自分のホストにインストールします</block>
 </blocks>

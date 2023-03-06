@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: BlueXP（旧称Cloud Manager）管理機能の新機能であるネットアップのアカウント、コネクタ、クラウドプロバイダのクレデンシャルなどについて説明します。 
+summary: ネットアップアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど、BlueXP管理機能の新機能をご紹介します。 
 ---
 = 新機能
 :hardbreaks:
@@ -14,7 +14,47 @@ summary: BlueXP（旧称Cloud Manager）管理機能の新機能であるネッ�
 
 
 [role="lead"]
-BlueXP（旧称Cloud Manager）管理機能の新機能であるネットアップのアカウント、コネクタ、クラウドプロバイダのクレデンシャルなどについて説明します。
+ネットアップアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど、BlueXP管理機能の新機能をご紹介します。
+
+
+
+== 2023年3月5日
+
+
+
+=== コネクタ3.9.27
+
+* BlueXPコンソールで検索できるようになりました。この時点で、検索機能を使用してBlueXPのサービスと機能を検索できます。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search.png["コンソールの上部に表示されるBlueXP検索のスクリーンショット。"]
+
+* アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースの管理方法について説明します"]。
+
+* Red Hat Enterprise Linux 8.7を実行するホストでコネクタがサポートされるようになりました。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタのシステム要件を確認します"]。
+
+* このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。
++
+クラウドリージョンは、AWS C2S/SC2S、Azure IL6、または任意の商用リージョンのような安全な米国機関のリージョンにすることができます。
+
++
+開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BYOLライセンスをDigital Walletに追加してから、Cloud Volumes ONTAP を導入します。
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを取り付けます"^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["コネクタのBlueXPコンソールにアクセスします"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["未割り当てライセンスを追加します"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Cloud Volumes ONTAP の使用を開始します"^]
+
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+
+
 
 
 

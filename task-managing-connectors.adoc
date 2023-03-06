@@ -185,9 +185,9 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 
 
 
-== インターネットにアクセスせずにオンプレミスのコネクタをアップグレードします
+== インターネットにアクセスできない場所でコネクタをアップグレードします
 
-あなたの場合 link:task-install-connector-onprem-no-internet.html["インターネットにアクセスできないオンプレミスホストにコネクタをインストール"]では、ネットアップサポートサイトで新しいバージョンを利用できる場合にコネクタをアップグレードできます。
+あなたの場合 link:task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを取り付けた"]NetApp Support Siteで新しいバージョンを利用できる場合にコネクタをアップグレードできます。
 
 アップグレードプロセス中にコネクタを再起動する必要があるため、アップグレード中はユーザインターフェイスを使用できなくなります。
 
@@ -198,14 +198,20 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 +
 [source, cli]
 ----
-chmod +x /path/cloud-manager-connector-offline-v3.9.14
+chmod +x /path/cloud-manager-connector-offline-<version>
 ----
++
+<version> は、ダウンロードしたコネクタのバージョンです。
+
 . インストールスクリプトを実行します。
 +
 [source, cli]
 ----
-sudo /path/cloud-manager-connector-offline-v3.9.14
+sudo /path/cloud-manager-connector-offline-<version>
 ----
++
+<version> は、ダウンロードしたコネクタのバージョンです。
+
 . アップグレードが完了したら、 * Help > Support > Connector * を選択してコネクタのバージョンを確認できます。
 
 

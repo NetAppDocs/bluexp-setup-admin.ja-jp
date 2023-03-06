@@ -41,15 +41,8 @@ GCP マシンタイプ:: 上記の CPU と RAM の要件を満たすインスタ
 サポートされているオペレーティングシステム::
 +
 --
-* CentOS 7.6
-* CentOS 7.7
-* CentOS 7.8
-* CentOS 7.9
-* Red Hat Enterprise Linux 7.6
-* Red Hat Enterprise Linux 7.7
-* Red Hat Enterprise Linux 7.8
-* Red Hat Enterprise Linux 7.9
-* Red Hat Enterprise Linux 8.6
+* CentOS 7.6、7.7、7.8、7.9
+* Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 および8.7
 +
 Red Hat Enterprise Linux システムは、 Red Hat サブスクリプション管理に登録する必要があります。登録されていない場合、 Connector のインストール中に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 
