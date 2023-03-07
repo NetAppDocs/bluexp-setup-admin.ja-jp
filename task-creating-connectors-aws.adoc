@@ -219,7 +219,16 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 | エンドポイント | 目的 
 
 
-| \https://<region> .amazonaws.com | AWSでリソースを管理できます。 
+ a| 
+AWS サービス（ amazonaws.com ）：
+
+* クラウド形成
+* 柔軟なコンピューティングクラウド（ EC2 ）
+* キー管理サービス（ KMS ）
+* セキュリティトークンサービス（ STS ）
+* シンプルなストレージサービス（ S3 ）
+
+| AWSでリソースを管理できます。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWSのドキュメントを参照してください"^] 
 
 
 | \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 

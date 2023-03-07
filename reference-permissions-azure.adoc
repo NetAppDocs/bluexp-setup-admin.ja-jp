@@ -432,7 +432,7 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 | 目的 | アクション | 導入に使用 | 日々の業務に使用されるか？ | 削除しますか？ 
 
 
-.12+| VMの作成、システムの停止、開始、削除、ステータスの取得を行います | Microsoft.Compute/locations/operations/read | はい。 | はい。 | いいえ 
+.14+| VMの作成と管理 | Microsoft.Compute/locations/operations/read | はい。 | はい。 | いいえ 
 
 
 | Microsoft.Compute/locations/vmSizes/read | はい。 | はい。 | いいえ 
@@ -468,10 +468,16 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 | Microsoft.Compute/virtualMachines/write | はい。 | はい。 | いいえ 
 
 
+| Microsoft.Compute/virtualMachines/delete | はい。 | はい。 | はい。 
+
+
+| microsoft.Resources/Deployments/delete | はい。 | いいえ | いいえ 
+
+
 | VHDからの導入を有効にします | Microsoft.Compute/images/read | はい。 | いいえ | いいえ 
 
 
-.3+| ターゲットサブネットのネットワークインターフェイスを作成および管理します | Microsoft.Network/networkInterfaces/read | はい。 | はい。 | いいえ 
+.4+| ターゲットサブネットのネットワークインターフェイスを作成および管理します | Microsoft.Network/networkInterfaces/read | はい。 | はい。 | いいえ 
 
 
 | Microsoft.Network/networkInterfaces/write | はい。 | はい。 | いいえ 
@@ -480,13 +486,19 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 | Microsoft.Network/networkInterfaces/join/action | はい。 | はい。 | いいえ 
 
 
-.3+| 事前定義されたネットワークセキュリティグループを作成します | Microsoft.Network/networkSecurityGroups/read | はい。 | はい。 | いいえ 
+| Microsoft.Network/networkInterfaces/delete | はい。 | はい。 | いいえ 
+
+
+.4+| ネットワークセキュリティグループを作成および管理します | Microsoft.Network/networkSecurityGroups/read | はい。 | はい。 | いいえ 
 
 
 | Microsoft.Network/networkSecurityGroups/write | はい。 | はい。 | いいえ 
 
 
 | Microsoft.Network/networkSecurityGroups/join/action | はい。 | いいえ | いいえ 
+
+
+| Microsoft.Network/networkSecurityGroups/delete | いいえ | はい。 | はい。 
 
 
 .8+| リージョンおよびターゲットのVNetとサブネットのネットワーク情報を取得し、VMをVNetに追加します | Microsoft.Network/locations/operationResults/read | はい。 | はい。 | いいえ 
@@ -618,7 +630,7 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 | Microsoft.Network/loadBalancers/delete | いいえ | はい。 | はい。 
 
 
-| Microsoft.Network/loadBalancers/backendAddressPools/read | はい。 | はい。 | いいえ 
+| Microsoft.Network/loadBalancers/backendAddressPools/read | はい。 | いいえ | いいえ 
 
 
 | Microsoft.Network/loadBalancers/backendAddressPools/join/action | はい。 | いいえ | いいえ 
@@ -666,7 +678,7 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 | Microsoft.Network/privateDnsZones/virtualNetworkLinks/read | はい。 | はい。 | いいえ 
 
 
-| 基盤となる物理ハードウェアに応じて、一部のVM環境にAzureで必要です | microsoft.Resources/Deployments/operationStatuses /read | はい。 | はい。 | いいえ 
+| 基盤となる物理ハードウェアに応じて、一部のVM環境で必要です | microsoft.Resources/Deployments/operationStatuses /read | はい。 | はい。 | いいえ 
 
 
 .2+| 導入に失敗した場合やリソースを削除した場合は、リソースグループからリソースを削除します | Microsoft.Network/privateEndpoints/delete | はい。 | はい。 | いいえ 
@@ -690,7 +702,7 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 .6+| HAペアのアプリケーションセキュリティグループを設定して、HAインターコネクトのNICとクラスタネットワークのNICを分離します | Microsoft.Network/applicationSecurityGroups/write | いいえ | はい。 | いいえ 
 
 
-| Microsoft.Network/applicationSecurityGroups/read | いいえ | はい。 | はい。 
+| Microsoft.Network/applicationSecurityGroups/read | いいえ | はい。 | いいえ 
 
 
 | Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action | いいえ | はい。 | いいえ 
@@ -699,7 +711,7 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 | Microsoft.Network/networkSecurityGroups/securityRules/write | はい。 | はい。 | いいえ 
 
 
-| Microsoft.Network/applicationSecurityGroups/delete | いいえ | はい。 | いいえ 
+| Microsoft.Network/applicationSecurityGroups/delete | いいえ | はい。 | はい。 
 
 
 | Microsoft.Network/networkSecurityGroups/securityRules/delete | いいえ | はい。 | はい。 
