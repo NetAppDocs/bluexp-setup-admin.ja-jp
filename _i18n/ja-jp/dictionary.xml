@@ -812,15 +812,9 @@
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">API の直接トラフィックを有効にします</block>
   <block id="a10c3460c01965af15b02ac3cd407880" category="list-text">[*General] で、 [* Support Direct API traffic* ] をクリックします。</block>
   <block id="46a12b9bf87a6fc814d2fc24ac4a41f4" category="list-text">チェックボックスをクリックしてオプションを有効にし、 * 保存 * をクリックします。</block>
-  <block id="f7099ec977551c0bfc4264472c0bf927" category="doc">Amazon S3 バケットの表示</block>
   <block id="9c626900b015a97ee8e428d66dd7d5d1" category="inline-link-macro">コネクタを取り付ける</block>
-  <block id="0d6fec8d76a7754ac76ae4d48310ed99" category="list-text"><block ref="d950cee94b130c47fc349a9ce27609ba" category="inline-link-macro-rx"></block> Amazon S3 バケットを表示する AWS アカウントで実行します。</block>
-  <block id="52b8ffdf03daa97daa3970bb3a4247ff" category="paragraph">しばらくすると、 Amazon S3 の作業環境が自動的に表示されます。</block>
   <block id="620734ddcf438083fa8f2f7a7550fbbf" category="inline-image-macro">Amazon S3 作業環境のスクリーンショット。</block>
-  <block id="7458becc274c80c36e850edbc1f6337e" category="paragraph"><block ref="7458becc274c80c36e850edbc1f6337e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f0e4d0f6a6a8bae74ed62ce4759c8e3a" category="list-text">作業環境をクリックし、右ペインからアクションを選択します。</block>
-  <block id="c1c42f8ba1dae80cacf28e68dae0ee46" category="inline-link">Amazon S3 向けのクラウドデータセンスの導入</block>
-  <block id="dea958812841439df90399efabd7d9ca" category="paragraph">詳細については、を参照してください<block ref="8bc61ddf61abb52b2869fa75574cd87f" category="inline-link-rx"></block>。</block>
   <block id="5b13c2584f8e7be6ddae81fa76b103bc" category="doc">はじめにチェックリスト</block>
   <block id="b59e275c4ece2430dff67db92845ab7f" category="list-text">Web ブラウザから複数のエンドポイントへのネットワークアクセス</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">エンドポイント</block>
@@ -1671,13 +1665,6 @@
   <block id="8d0d51d4047979af669daac866df81ec" category="inline-link-macro">この作業環境でできることの詳細については、こちらをご覧ください</block>
   <block id="3a87e6ba2e9a6adf84612ff7e5ce977c" category="paragraph">Connectorを作成したのと同じAzureアカウントにAzure BLOBストレージがある場合は、Azure Blob作業環境がCanvasに自動的に表示されます。 <block ref="1554e33833508aa8ae7d5d6aebee0d7e" category="inline-link-macro-rx"></block>。</block>
   <block id="5d1144c70f9657fe3fbc8d4918974ddb" category="paragraph">Connectorを作成したのと同じAWSアカウントにAmazon S3バケットがある場合、Amazon S3の作業環境がCanvasに自動的に表示されます。 <block ref="24e8a034d6d6fc16941efffc954c2b3b" category="inline-link-macro-rx"></block>。</block>
-  <block id="bf9799ea7692475c7cf9755a148ec201" category="paragraph">リージョン、アクセスポリシー、アカウント、合計容量と使用済み容量など、S3バケットに関する詳細を確認できます。これらのバケットは、クラウドバックアップ、クラウド階層化、Cloud Sync の各処理のデスティネーションとして使用できます。また、Cloud Data Senseを使用してこれらのバケットをスキャンすることもできます。</block>
-  <block id="3664079914496ab0ee90209b4ace936f" category="inline-image-macro">Amazon S3 作業環境を選択したあとの操作ペインを示すスクリーンショット。このペインには、S3に関する情報（バケット数と使用可能なサービス数）が表示されます。</block>
-  <block id="b9b2b40a667ab16249d63fc7e435d7f8" category="paragraph"><block ref="b9b2b40a667ab16249d63fc7e435d7f8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a4fefa0676fbe2ed6dbd32159183f6d1" category="list-text">Cloud Data Senseで個人データや機密データのS3バケットをスキャンする場合は、「* Enable」をクリックします。</block>
-  <block id="51ae836da5531e750c5dcf0f62f2dd18" category="list-text">Enter Working Environment *をクリックして、AWSアカウントでS3バケットの詳細を表示します。</block>
-  <block id="9e2485669a43b6702c2aedabfee812a6" category="inline-image-macro">Amazon S3作業環境の詳細を示すスクリーンショット。バケットの総数とリージョンの総数、および各S3バケットの詳細を示す表を示しています。</block>
-  <block id="d6e5e99b5ad8371c45f8879b9381a020" category="paragraph"><block ref="d6e5e99b5ad8371c45f8879b9381a020" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60c5f52d2a1d91eb3d9cc28c497c50d5" category="doc">Azure Blobアカウントの表示</block>
   <block id="8038b7f4543340933f0702ca9be2c9c5" category="paragraph">Azureストレージアカウントに関する詳細を確認できます。これには、場所、リソースグループ、合計容量と使用済み容量などの情報が含まれます。これらのアカウントは、クラウドバックアップ、クラウド階層化、Cloud Sync の各処理のデスティネーションとして使用できます。</block>
   <block id="d62a82d07f9a8474b6e149206712157a" category="list-text"><block ref="8a881211fef5d9da1cb01ccc356312a3" category="inline-link-macro-rx"></block> Azureストレージアカウントを表示するAzureアカウント。</block>
@@ -1706,7 +1693,6 @@
   <block id="14738180b3115b94f504ce48bf25a31a" category="paragraph"><block ref="14738180b3115b94f504ce48bf25a31a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a7901982205b7bb3f9e615cc8b6e29af" category="paragraph">Connectorを作成したGoogle CloudアカウントにGoogle Cloud Storageバケットがある場合は、Google Cloud Storage作業環境がCanvasに自動的に表示されます。 <block ref="3be67402f92aecc3ed5f8761be46eca8" category="inline-link-macro-rx"></block>。</block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">クラウドストレージを検出</block>
-  <block id="e11597621f115e17031710501eefedbc" category="sidebar">Amazon S3バケットを表示します</block>
   <block id="bce447551b8153911559a7a705721ffe" category="sidebar">Azure Blobアカウントを表示</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="sidebar">Google Cloud Storageバケットを表示します</block>
   <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022年7月15日</block>
@@ -1737,7 +1723,6 @@
   <block id="56148e3a5b597bf775527bf28e119033" category="paragraph"><block ref="56148e3a5b597bf775527bf28e119033" category="inline-link-rx"></block></block>
   <block id="a92dc2a225f00bb9e0d676f2e4ae484e" category="sidebar">My Opportunitiesを使用したディスカバリ</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">デフォルトのシステムディスクは100GiBのgp2ディスクです。</block>
-  <block id="02bc515db3673d54b5989cdf43534729" category="list-text">データの同期*をクリックして、S3バケットとの間でデータを同期します。</block>
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。</block>
   <block id="0964bfe0dd83b0d60f5d55fd4502a11b" category="list-text">VMインスタンスがn2 -標準-4である。</block>
   <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">APIがAzureとONTAP にコールし、クラウドデータを検知してランサムウェアサービスに感染し、AutoSupport メッセージをネットアップに送信</block>
@@ -2986,4 +2971,14 @@
   <block id="864338d2d7dc3c2738f45a0a8851b0cf" category="cell">VMの作成と管理</block>
   <block id="fe4ddc4ad605bbd0c66fc946f65fb17c" category="cell">ネットワークセキュリティグループを作成および管理します</block>
   <block id="7b82c8bb5f712b74fd5cab9947ae81fb" category="cell">基盤となる物理ハードウェアに応じて、一部のVM環境で必要です</block>
+  <block id="1c1b21ef0ec839f8c7f0c98a086d2319" category="doc">Amazon S3バケットの管理</block>
+  <block id="93850b8e1d97181700833dcae4c7e219" category="paragraph"><block ref="93850b8e1d97181700833dcae4c7e219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea59f5a18533f0723be7342656f4c831" category="paragraph">リージョン、アクセスポリシー、アカウント、合計容量と使用済み容量など、S3バケットに関する詳細を確認できます。これらのバケットは、クラウドバックアップ、クラウド階層化、Cloud Sync の各処理のデスティネーションとして使用できます。また、Cloud Data Senseを使用してこれらのバケットをスキャンすることもできます。</block>
+  <block id="55b5b30feffe912b6e65f29c34807a28" category="inline-link">ここでは、BlueXPを使用してS3バケットを表示、作成、管理する方法を説明します。</block>
+  <block id="bd94fd8efc4371afd7a3af9e7a08b50e" category="paragraph">新たに追加された機能で、S3バケットを作成および編集できるようになりました。<block ref="c9e42eab5c6f6e6e35f844a7123dd423" category="inline-link-rx"></block></block>
+  <block id="10a7432528d1253e1f27cd183ae759a7" category="paragraph">Connectorを作成したのと同じAWSアカウントにAmazon S3バケットがある場合、Amazon S3の作業環境がCanvasに自動的に表示されます。<block ref="eb59da80ee57b828e1255dafd1c2c796" category="inline-link-rx"></block>。</block>
+  <block id="d564f41f7e0ffa3f9e8bc7a809230f94" category="list-text">このコネクタで、BlueXPからAmazon S3バケットを追加および管理できるようになりました。</block>
+  <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">BlueXPからAWSアカウントに新しいAmazon S3バケットを追加する方法をご確認ください</block>
+  <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>。</block>
+  <block id="a4f513306c1a0ead14679ffb7c282460" category="sidebar">Amazon S3バケットを管理します</block>
 </blocks>

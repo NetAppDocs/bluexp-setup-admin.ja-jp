@@ -50,6 +50,10 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.ht
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Cloud Volumes ONTAP の使用を開始します"^]
 
 
+* このコネクタで、BlueXPからAmazon S3バケットを追加および管理できるようになりました。
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["BlueXPからAWSアカウントに新しいAmazon S3バケットを追加する方法をご確認ください"^]。
+
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
 +
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]

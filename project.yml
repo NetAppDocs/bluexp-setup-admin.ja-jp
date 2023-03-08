@@ -85,7 +85,7 @@ sidebar:
       url: "/task-manage-subscriptions.html"
     - title: クラウドストレージを検出
       entries:
-      - title: Amazon S3バケットを表示します
+      - title: Amazon S3バケットを管理します
         url: "/task-viewing-amazon-s3.html"
       - title: Azure Blobアカウントを表示
         url: "/task-viewing-azure-blob.html"

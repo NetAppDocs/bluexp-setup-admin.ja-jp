@@ -324,7 +324,7 @@ TIP: [*Assume Role] を選択した場合は、 Connector 展開ウィザード�
 
 
 .完了後
-Connectorを作成したのと同じAWSアカウントにAmazon S3バケットがある場合、Amazon S3の作業環境がCanvasに自動的に表示されます。 link:task-viewing-amazon-s3.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
+Connectorを作成したのと同じAWSアカウントにAmazon S3バケットがある場合、Amazon S3の作業環境がCanvasに自動的に表示されます。 https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["この作業環境でできることの詳細については、こちらをご覧ください"]。
 
 
 
