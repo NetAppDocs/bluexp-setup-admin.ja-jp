@@ -65,7 +65,11 @@ NOTE: BlueXPでは、@文字を含むパスワードはサポートされてい�
 
 == API の直接トラフィックを有効にします
 
-プロキシサーバを設定している場合は、プロキシを経由せずにAPIコールをBlueXPに直接送信できます。このオプションは、 AWS 、 Azure 、または Google Cloud で実行されているコネクタでサポートされます。
+プロキシサーバを使用するようにコネクタを設定した場合は、コネクタで直接APIトラフィックを有効にして、プロキシを経由せずにAPI呼び出しをクラウドプロバイダサービスに直接送信できます。このオプションは、 AWS 、 Azure 、または Google Cloud で実行されているコネクタでサポートされます。
+
+Cloud Volumes ONTAP でAzureプライベートリンクの使用を無効にし、代わりにサービスエンドポイントを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。そうしないと、トラフィックは適切にルーティングされません。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Azure Private LinkまたはサービスエンドポイントをCloud Volumes ONTAP で使用する方法の詳細については、こちらをご覧ください"]
 
 .手順
 . BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。

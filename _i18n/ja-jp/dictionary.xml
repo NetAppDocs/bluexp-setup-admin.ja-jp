@@ -270,14 +270,10 @@
   <block id="b48299c449bac839819763792d4aff22" category="list-text">[ * 概要 * ] タブで、 [ * プライベートプレビューを許可する * ] 設定を有効にします。</block>
   <block id="e288a6b2e6cc2fbb00bd407bda387c90" category="section-title">サードパーティサービスを許可しています</block>
   <block id="90837faa596ab1d28c90a381b6997722" category="list-text">[ * 概要 * ] タブで、 [ * サードパーティサービスを許可する * ] 設定を有効にします。</block>
-  <block id="4b52ca01dd550f3fab5c378895fbfd60" category="section-title">SaaS プラットフォームを無効にする</block>
-  <block id="fa7043a1853c2b6854490998db361dca" category="paragraph">会社のセキュリティポリシーに準拠するために必要な場合を除き、 SaaS プラットフォームを無効にすることはお勧めしません。SaaS プラットフォームを無効にすると、ネットアップの統合クラウドサービスを使用できなくなります。</block>
   <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="list-text">クラウドデータの意味</block>
   <block id="30136395f01879792198317c11831ea4" category="list-text">Kubernetes</block>
   <block id="92d2b6aba6afa3f690540cf3dba9b633" category="list-text">クラウド階層化</block>
   <block id="24e6e2f6171b43a847fe194a9a9b5cd0" category="list-text">グローバルファイルキャッシュ</block>
-  <block id="8ea5339a59d1a6a15d2ad2629fa9dd33" category="inline-link-macro">コネクタで使用可能なローカルユーザインターフェイス</block>
-  <block id="bd24a7e9d8368897df823b65a8960e61" category="list-text">［ 概要 ］ タブで、 SaaS プラットフォームの使用を無効にするオプションを切り替えます。</block>
   <block id="0384f4ba39f6a15ffd9b42bfb03b8d83" category="doc">Google Cloud のプロジェクト、権限、アカウント</block>
   <block id="3fb6500db5f2cccec7627a9cb9fbd38d" category="paragraph">Google Cloud に Cloud Volumes ONTAP を導入する前に、まず Google Cloud プロジェクトに Connector を導入する必要があります。Connector は、オンプレミスでも別のクラウドプロバイダでも実行できません。</block>
   <block id="1c3efa7cf0b87cbb078fe955b2c587a5" category="inline-link">サービスアカウント</block>
@@ -1230,7 +1226,6 @@
   <block id="6dc6b060b761d145366b9ed041137917" category="sidebar">AWS クレデンシャルを管理する</block>
   <block id="c135c603177e58023474a65f829c0fd3" category="sidebar">Azure クレデンシャルを管理します</block>
   <block id="15f599d5c4282f662b38657a0b5c5739" category="sidebar">Google Cloud クレデンシャルを管理します</block>
-  <block id="736683b36559de9a86788ab6e33c00d8" category="paragraph">SaaS プラットフォームを無効にする場合は、からすべてのタスクを実行する必要があります <block ref="d248ae1d8e530aaf57663e2d920abe18" category="inline-link-macro-rx"></block>。</block>
   <block id="42719a12f66c2c272af903550dd96abe" category="paragraph"><block ref="3d5e26c44503b9c3759d0014c33a4b1a" category="inline-link-macro-rx"></block>。</block>
   <block id="cf1d9ac600892a9c03d7ebca3ca130cb" category="paragraph"><block ref="1a1e214f52d56e3240a2456ee3e051fc" category="inline-link-macro-rx"></block>。</block>
   <block id="0992dccda336100add15ce23fc9702f3" category="list-text"><block ref="0992dccda336100add15ce23fc9702f3" category="inline-link-rx"></block></block>
@@ -2125,14 +2120,11 @@
   <block id="e98ed4965158505163fc6b7ffa9ba9b0" category="paragraph">ワークスペース管理者がBlueXPからワークスペースにアクセスできるように、コネクタをワークスペースに関連付ける必要があります。</block>
   <block id="735a598daa91e3f877c73aa4e5e72dca" category="paragraph">アカウントのプレビューで、新しいNetAppクラウド サービス が利用できるようになります。このは、BlueXPでプレビュー版として利用できます。</block>
   <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">アカウントのサードパーティサービスがBlueXPで利用可能なサードパーティサービスにアクセスできるようにします。サードパーティのサービスはクラウドサービスとネットアップが提供するサービスに似ていますが、サードパーティが管理とサポートを行っています。</block>
-  <block id="41f2e26a5f1f980cf07709ccd461458a" category="paragraph">次のサービスは、SaaSプラットフォームを無効にした場合、BlueXPからは利用できません。</block>
-  <block id="1ce82671debd0854eab737731870ba89" category="admonition">これは、BlueXP SaaSプラットフォームの使用を妨げる元に戻せないアクションです。ローカルコネクターからアクションを実行する必要があります。ネットアップの統合クラウドサービスの多くを利用することはできません。また、 SaaS プラットフォームを再度有効にするには、ネットアップのサポートが必要になります。</block>
   <block id="47e1359a022ca3afaefd4c4135f630ab" category="inline-link-macro">BlueXP SaaSインタフェースにログインします</block>
   <block id="53cd2d53a0bbb4596900dbf8dc2f1193" category="list-text"><block ref="5cdb1ce54f5091c2b2ed720c94b4f10e" category="inline-link-macro-rx"></block> コネクターインスタンスへのネットワーク接続を持つマシンから。</block>
   <block id="b50274362874150065bf00a8be70b751" category="paragraph">コネクタで実行されているBlueXPインターフェイスが新しいブラウザタブに読み込まれます。</block>
   <block id="190d3f654701a58653384f20c47c8ecf" category="list-text">BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。</block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="admonition">BlueXPでは、@文字を含むパスワードはサポートされていません。</block>
-  <block id="0e2ec8861e0eca9eed397572feaa87da" category="paragraph">プロキシサーバを設定している場合は、プロキシを経由せずにAPIコールをBlueXPに直接送信できます。このオプションは、 AWS 、 Azure 、または Google Cloud で実行されているコネクタでサポートされます。</block>
   <block id="67cbb61f9d12c71b3b67153567963530" category="paragraph">Azureサブスクリプションと資格情報をBlueXPに追加するには、2つの方法があります。</block>
   <block id="d6e059f3de26b29b7be6b2949eae8f3d" category="list-text">別のAzureクレデンシャルを使用してCloud Volumes ONTAP を導入する場合は、サービスプリンシパルを使用してAzure権限を付与し、そのクレデンシャルをBlueXPに追加します。</block>
   <block id="44b7efa00ab8e5ca07e5783fe3175bb3" category="paragraph">BlueXPを使用すると、Cloud Volumes ONTAP を導入するAzureクレデンシャルとAzureサブスクリプションを選択できます。管理対象に別の Azure サブスクリプションを選択することはできません を関連付けない限り、アイデンティティプロファイルを作成します<block ref="683de527faad104d75b2c83aceba6f01" category="inline-link-rx"></block> それらの登録と。</block>
@@ -2730,7 +2722,6 @@
   <block id="46f3c2b17cd41da44d4022428c48ec74" category="list-text">Kubernetesクラスタ</block>
   <block id="aa2a9593bd535a1923acb9053fd7788b" category="paragraph">1 つのコネクタを複数のネットアップクラウドデータサービスで使用できます。たとえば、Cloud Volumes ONTAP の管理にコネクタを使用している場合、同じコネクタをCloud Tieringなどの別のサービスと使用できます。</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">社内ポリシーで、インターネットへのすべての通信にプロキシサーバを使用する必要がある場合は、そのプロキシサーバを使用するようにコネクタを設定する必要があります。インストール時にプロキシサーバを使用するようにコネクタを設定していない場合は、いつでもそのプロキシサーバを使用するようにコネクタを設定できます。</block>
-  <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">SaaSプラットフォームが無効になっている政府機関ではCloud Backupがサポートされますが、SaaSプラットフォームが無効になっている民間の地域ではサポートされません</block>
   <block id="a8c35528b3f05016e72e71694bb679ee" category="list-text">コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。HTTPとHTTPSがサポートされています。</block>
   <block id="16c184ab0a5376cef0ecef7f0da93ac2" category="list-text">ホストに_http_proxy_or_https_proxy_system変数が設定されている場合は、削除します。</block>
   <block id="15c8f910fc596ecb4a8b91027b56de66" category="paragraph">これらのシステム変数を削除しないと、インストールは失敗します。</block>
@@ -2981,4 +2972,8 @@
   <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">BlueXPからAWSアカウントに新しいAmazon S3バケットを追加する方法をご確認ください</block>
   <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>。</block>
   <block id="a4f513306c1a0ead14679ffb7c282460" category="sidebar">Amazon S3バケットを管理します</block>
+  <block id="6282017b43dee5b3762b81c0124c425c" category="paragraph">プロキシサーバを使用するようにコネクタを設定した場合は、コネクタで直接APIトラフィックを有効にして、プロキシを経由せずにAPI呼び出しをクラウドプロバイダサービスに直接送信できます。このオプションは、 AWS 、 Azure 、または Google Cloud で実行されているコネクタでサポートされます。</block>
+  <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">Cloud Volumes ONTAP でAzureプライベートリンクの使用を無効にし、代わりにサービスエンドポイントを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。そうしないと、トラフィックは適切にルーティングされません。</block>
+  <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">Azure Private LinkまたはサービスエンドポイントをCloud Volumes ONTAP で使用する方法の詳細については、こちらをご覧ください</block>
+  <block id="bfa340d153d70df3ad6af8db39b45e8e" category="paragraph"><block ref="bfa340d153d70df3ad6af8db39b45e8e" category="inline-link-rx"></block></block>
 </blocks>
