@@ -750,8 +750,6 @@
   <block id="d3889a6ed22a99a11226c6b554539fa1" category="paragraph">コネクタは、他のアプリケーションと共有されている VM ではサポートされません。VM は、コネクタソフトウェア専用にする必要があります。</block>
   <block id="39c131bd8f90ef7749228972a6486162" category="section-title">サードパーティのエージェントと内線番号</block>
   <block id="c305e694f602a4913fd20d15e3508fcc" category="paragraph">Connector VM では、サードパーティのエージェントや VM 拡張機能はサポートされません。</block>
-  <block id="9b2658aca840a5bb63ea0f460945616d" category="section-title">コネクタは動作したままにしてください</block>
-  <block id="e3b183b81588a53a9977e2f408f637ca" category="paragraph">コネクタは常時稼働している必要があります。有効にするサービスの継続的な健常性と運用性にとって重要です。</block>
   <block id="fa1f9e92f4f0aa51cba859b2dbc37a02" category="section-title">コネクタを作成する方法</block>
   <block id="2a6d41af9b09f97725c64e2705d629b2" category="inline-link-macro">AWS でを作成します</block>
   <block id="f6a61a9eb8031d1e8178ffee4fa56624" category="list-text"><block ref="f6a61a9eb8031d1e8178ffee4fa56624" category="inline-link-macro-rx"></block></block>
@@ -878,7 +876,6 @@
   <block id="ac252743de820aac9183d9f76d4bed67" category="section-title">ネットアップアカウント</block>
   <block id="fe4a785cf549e843e958f443c4baf0fe" category="section-title">コネクタ</block>
   <block id="249345af661bafcf4f8bd3a0b9d6e949" category="inline-link-macro">コネクタが必要になる状況とその方法については、こちらをご覧ください 仕事</block>
-  <block id="5becfd4bbec3e5daaed9dbc85669ff84" category="paragraph"><block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>。</block>
   <block id="958c315a8c40765f65895091ecc83488" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
   <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">ターゲットネットワークへの接続</block>
@@ -1898,7 +1895,6 @@
   <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">共有VPC権限を設定する</block>
   <block id="17d9282186c2451db90a83330e5c9d7b" category="list-text"><block ref="17d9282186c2451db90a83330e5c9d7b" category="inline-link-macro-rx"></block></block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。</block>
-  <block id="6c73104e218372ccda6dc2d58fda524d" category="paragraph">たとえば、コネクタは、Cloud Volumes ONTAP の健常性と運用の鍵となるコンポーネントです。コネクタの電源がオフの場合は、Cloud Volumes ONTAP PAYGOシステムと容量ベースのBYOLシステムは、コネクタとの通信を14日以上切断したあとでシャットダウンします。これは、コネクタがシステムのライセンスを毎日更新するためです。</block>
   <block id="b9c53fca7bb84d0455a2b4768b130e38" category="admonition">Cloud Volumes ONTAP システムにノードベースのBYOLライセンスがある場合は、ライセンスがCloud Volumes ONTAP システムにインストールされているため、14日後もシステムは実行されたままになります。</block>
   <block id="2538b2df52d923f09592be3b38238322" category="list-text">14 GB</block>
   <block id="5fd245f2aeee830efb92d081af6a0e22" category="list-text">Connectorがインターネットにアクセスできないサイトにインストールされている場合は、Eメール通知の送信はサポートされません。</block>
@@ -2191,7 +2187,6 @@
   <block id="8ff6e794637981d1636a228e2fd99e19" category="section-title">BlueXPのWebサイト</block>
   <block id="ccf2bc5e97e215334aa616cd5aae2339" category="inline-link">BlueXPのWebサイト</block>
   <block id="4e05b56c4de538910ffb2fd4803fc8fe" category="paragraph"><block ref="1d556453952dc634fd34acc203a3b356" category="inline-link-rx"></block> 一元的な場所でアクセスと管理を行うことができます<block ref="f8857ad38375ecb04836e382f93d702b" category="inline-link-rx"></block>。一元管理されたユーザ認証を使用すると、同じクレデンシャルセットを使用してBlueXPやCloud Insights などの他の クラウド サービス にアクセスできます。</block>
-  <block id="3f724f244896d73f5824434d26fb0c62" category="paragraph">多くの場合、BlueXPアカウント管理者は、クラウドまたはオンプレミスネットワークに_コネクタ_を導入する必要があります。Connectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。</block>
   <block id="def802d2deb64de5ee040ba416bab8f8" category="paragraph">独立認定された公認会計士企業およびサービス監査役は、BlueXP、Cloud Sync 、クラウド階層化、クラウドデータセンス、クラウドバックアップ（BlueXPプラットフォーム）について調査し、該当する信頼サービス基準に基づいてSOC 2 Type 2レポートを達成したことを確認しました。</block>
   <block id="51562116f8d941fa36a92a4d3133b0ff" category="summary">サービスアカウントでは、コネクタと同じプロジェクト、または異なるプロジェクトにあるCloud Volumes ONTAP システムを展開および管理する権限がBlueXPに提供されます。</block>
   <block id="a8f8f08c9d91eeaecc31377113ddd27b" category="section-title">BlueXPのプロジェクトと権限</block>
@@ -2772,7 +2767,6 @@
   <block id="2f0488f8a3ca91699637c323ed3b7ae7" category="paragraph">これでBlueXPログインとアカウントが作成されました。ほとんどの場合、次の手順では、BlueXPのサービスをハイブリッドクラウド環境に接続するコネクタを作成します。</block>
   <block id="e5d34a7be7e3c957d955b41f31cc1b6b" category="admonition">組織の誰かが請求アカウントからNetApp BlueXPサブスクリプションにすでに登録している場合は、にリダイレクトされます<block ref="35e104e3e4686d9ee172091b57b45bc0" category="inline-link-rx"></block> 代わりに、予想外の場合は、ネットアップの営業チームにお問い合わせください。Google では、 1 つの Google 請求アカウントにつき 1 つのサブスクリプションのみが有効です。</block>
   <block id="18ed152ca3e6d97795e3c62f29f14fa3" category="inline-link">BlueXP通知についてはこちらをご覧ください</block>
-  <block id="aea5351abe13a2ef43df184a5caed50e" category="paragraph">BlueXPは、コネクタの電源が14日以上切れている場合に通知します。<block ref="e16712c557ed9121be1392c11d3884a1" category="inline-link-rx"></block>。</block>
   <block id="4bfec65bcbc9665c362f6c53301324c5" category="cell">- compute.instanceGroups.get -compute.addresss.get - compute.instances.updateNetworkInterface</block>
   <block id="c5338aa09d091a71f3080053c9a0edc0" category="cell">Cloud Volumes ONTAP HAペアでStorage VMを作成および管理する方法。</block>
   <block id="00e6f4ddf63e81c5de84a3913163d11d" category="section-title">2023年2月6日</block>
@@ -2976,4 +2970,10 @@
   <block id="bfa340d153d70df3ad6af8db39b45e8e" category="paragraph"><block ref="bfa340d153d70df3ad6af8db39b45e8e" category="inline-link-rx"></block></block>
   <block id="ecbd3aa946706d4530b409255ef3a87e" category="paragraph">インターネットのないクラウドリージョンでは、BlueXPを使用してCloud Volumes ONTAP システムを導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境への接続がある場合）。Cloud Backupを使用して、AWSとAzureの商用リージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます（現時点では、AWSとAzureのシークレットリージョンではバックアップはサポートされていません）。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。</block>
   <block id="a8709880418b83b1477f57ddb74c84e3" category="list-text">このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。Cloud Backupを使用して、AWSとAzureの商用リージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。</block>
+  <block id="5bf7ac4937c946ab4eedfb091ffa67ab" category="section-title">コネクタは常に動作している必要があります</block>
+  <block id="1673272503e134b89e873151de0225a4" category="paragraph">コネクタは、NetApp BlueXPサービスアーキテクチャの基本要素です。関連するコネクタが常に稼働し、アクセス可能であることを確認するのは、お客様の責任です。このサービスは、コネクタの可用性の短い停止を克服するように設計されていますが、インフラストラクチャの障害を修復するために必要なときにすぐに対処する必要があります。</block>
+  <block id="5e546ca24430fc2b79e0e409176438c9" category="paragraph">このドキュメントにはEULAが適用されます。製品がドキュメントに従って操作されていない場合、製品の機能と操作、およびEULAに基づくお客様の権利に悪影響を及ぼす可能性があります。</block>
+  <block id="8dffc8a152aadc1b397171c4248bd97b" category="section-title">コネクタの可用性がCloud Volumes ONTAP に与える影響</block>
+  <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">コネクタは、Cloud Volumes ONTAP の正常性と動作における重要なコンポーネントです。コネクタの電源がオフの場合は、Cloud Volumes ONTAP PAYGOシステムと容量ベースのBYOLシステムは、コネクタとの通信を14日以上切断したあとでシャットダウンします。これは、コネクタがシステムのライセンスを毎日更新するためです。</block>
+  <block id="e7da4bd68a22b069bcff5c88157199b4" category="paragraph">多くの場合、BlueXPアカウント管理者は、クラウドまたはオンプレミスネットワークに_コネクタ_を導入する必要があります。Connectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。 <block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>。</block>
 </blocks>
