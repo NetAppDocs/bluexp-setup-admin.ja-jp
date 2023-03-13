@@ -2856,7 +2856,6 @@
   <block id="dd8d2e5dd396a762bed92b10f72f5d67" category="section-title">オンプレミスの概要</block>
   <block id="4b85a689d4bf46a14216c1f7043d61d9" category="paragraph">インターネットのないオンプレミス環境では、BlueXPを使用して、オンプレミスのONTAP クラスタの検出、クラスタ間でのデータのレプリケート、Cloud Backupを使用したボリュームのバックアップ、Cloud Data Senseでのスキャンを実行できます。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。</block>
   <block id="817fffd09424883c473079707bd42227" category="section-title">クラウドの概要</block>
-  <block id="6a2d5b4c5ec168a0a42fd35e394d5e59" category="paragraph">インターネットのないクラウドリージョンでは、BlueXPを使用してCloud Volumes ONTAP システムを導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境への接続がある場合）。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。</block>
   <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">クラウドリージョンは、AWS C2S/SC2S、Azure IL6、または任意の商用リージョンのような安全な米国機関のリージョンにすることができます。</block>
   <block id="42e8616c7f9505f6747fcbb59c7b5a93" category="list-text">からインターネットにアクセスできない制限付きネットワーク用のコネクタインストーラをダウンロードします<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
   <block id="559e00158f66ad338da1ff42475d15d4" category="paragraph">オンプレミス環境：</block>
@@ -2938,7 +2937,6 @@
   <block id="796ced97a72330e5ce3c0935b7b09f45" category="paragraph"><block ref="622b6e7f4143df2aca06b538ee1d864e" category="inline-link-rx"></block>。</block>
   <block id="dd9b32305d0c33f8845bee1cdfcfc85a" category="list-text">Red Hat Enterprise Linux 8.7を実行するホストでコネクタがサポートされるようになりました。</block>
   <block id="9954c00cefacf69f28fa1994e949ff83" category="paragraph"><block ref="1c471069dafa2d25f3a632cea0250222" category="inline-link-rx"></block>。</block>
-  <block id="9597dfcf8249ec8766cfb35fd11357f3" category="list-text">このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。</block>
   <block id="33b6f29ed1acfc0fbed883a6e1f44ef2" category="paragraph">開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BYOLライセンスをDigital Walletに追加してから、Cloud Volumes ONTAP を導入します。</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">インターネットにアクセスできない場所にコネクタを取り付けます</block>
   <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
@@ -2976,4 +2974,6 @@
   <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">Cloud Volumes ONTAP でAzureプライベートリンクの使用を無効にし、代わりにサービスエンドポイントを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。そうしないと、トラフィックは適切にルーティングされません。</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">Azure Private LinkまたはサービスエンドポイントをCloud Volumes ONTAP で使用する方法の詳細については、こちらをご覧ください</block>
   <block id="bfa340d153d70df3ad6af8db39b45e8e" category="paragraph"><block ref="bfa340d153d70df3ad6af8db39b45e8e" category="inline-link-rx"></block></block>
+  <block id="ecbd3aa946706d4530b409255ef3a87e" category="paragraph">インターネットのないクラウドリージョンでは、BlueXPを使用してCloud Volumes ONTAP システムを導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境への接続がある場合）。Cloud Backupを使用して、AWSとAzureの商用リージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます（現時点では、AWSとAzureのシークレットリージョンではバックアップはサポートされていません）。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。</block>
+  <block id="a8709880418b83b1477f57ddb74c84e3" category="list-text">このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。Cloud Backupを使用して、AWSとAzureの商用リージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。</block>
 </blocks>
