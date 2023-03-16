@@ -113,15 +113,35 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 .手順
 . コネクタホストの CLI シェルにアクセスします。
-. 管理者権限で次のコマンドを実行します。
+. 次のディレクトリがホストに存在するかどうかを確認します。
++
+/opt/application/netapp/service-manager--2を参照してください
+
++
+2022年後半以降に作成されたコネクタには、このディレクトリが含まれます。
+
+. そのディレクトリが存在するかどうかに応じて、コマンドを実行してOSを更新します。
++
+** ディレクトリが存在する場合は、昇格された権限で次のコマンドを実行します。
 +
 [source, cli]
 ----
 sudo -s
 service netapp-service-manager stop
-yum -y update –-security
+yum -y update --security
 service netapp-service-manager start
 ----
+** ディレクトリ_が存在しない場合は、昇格された権限で次のコマンドを実行します。
++
+[source, cli]
+----
+sudo -s
+service service-manager stop
+yum -y update --security
+service service-manager start
+----
+
+
 
 
 

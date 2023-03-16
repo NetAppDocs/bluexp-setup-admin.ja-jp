@@ -667,7 +667,6 @@
   <block id="bb036d72177ab633d83cf7c11f211546" category="section-title">セキュリティ更新プログラムを適用する</block>
   <block id="fce63be6a5df1b8f029ff105a6d48616" category="paragraph">コネクタのオペレーティングシステムをアップデートして、最新のセキュリティアップデートでパッチが適用されていることを確認します。</block>
   <block id="1208149fe3ebe603e8d12495099b22e4" category="list-text">コネクタホストの CLI シェルにアクセスします。</block>
-  <block id="065ff36e9f63c035ca95dbe0bff46bfe" category="list-text">管理者権限で次のコマンドを実行します。</block>
   <block id="e2729464f9bccb35f8d10ba5019f3955" category="paragraph">コネクタの URI を追加および削除します。</block>
   <block id="5e6a0548d1a9b870a897fd2b63da39c6" category="list-text">[ * コネクターの管理 * ] をクリックします。</block>
   <block id="184412530c50886985d099a0d5cedd16" category="list-text">コネクターのアクションメニューをクリックし、 * URI を編集 * をクリックする。</block>
@@ -2976,4 +2975,10 @@
   <block id="8dffc8a152aadc1b397171c4248bd97b" category="section-title">コネクタの可用性がCloud Volumes ONTAP に与える影響</block>
   <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">コネクタは、Cloud Volumes ONTAP の正常性と動作における重要なコンポーネントです。コネクタの電源がオフの場合は、Cloud Volumes ONTAP PAYGOシステムと容量ベースのBYOLシステムは、コネクタとの通信を14日以上切断したあとでシャットダウンします。これは、コネクタがシステムのライセンスを毎日更新するためです。</block>
   <block id="e7da4bd68a22b069bcff5c88157199b4" category="paragraph">多くの場合、BlueXPアカウント管理者は、クラウドまたはオンプレミスネットワークに_コネクタ_を導入する必要があります。Connectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます。 <block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>。</block>
+  <block id="7889e734551361eda836c7c7bb098d0f" category="list-text">次のディレクトリがホストに存在するかどうかを確認します。</block>
+  <block id="8a5f2dc93753049d63d32fca4e868454" category="paragraph">/opt/application/netapp/service-manager--2を参照してください</block>
+  <block id="1d356cb442bdf9a28522842dc7a5fc3f" category="paragraph">2022年後半以降に作成されたコネクタには、このディレクトリが含まれます。</block>
+  <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">そのディレクトリが存在するかどうかに応じて、コマンドを実行してOSを更新します。</block>
+  <block id="d18a6912830b95dcae293a053dd50838" category="list-text">ディレクトリが存在する場合は、昇格された権限で次のコマンドを実行します。</block>
+  <block id="7239793e251456f2e73133f34ccc957d" category="list-text">ディレクトリ_が存在しない場合は、昇格された権限で次のコマンドを実行します。</block>
 </blocks>
