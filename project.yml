@@ -51,6 +51,8 @@ sidebar:
       url: "/reference-whats-next.html"
   - title: BlueXPを管理します
     entries:
+    - title: アイデンティティフェデレーション
+      url: "/concept-federation.html"
     - title: ネットアップアカウント
       entries:
       - title: アカウントを管理します
