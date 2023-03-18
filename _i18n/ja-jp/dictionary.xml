@@ -2978,7 +2978,6 @@
   <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">そのディレクトリが存在するかどうかに応じて、コマンドを実行してOSを更新します。</block>
   <block id="d18a6912830b95dcae293a053dd50838" category="list-text">ディレクトリが存在する場合は、昇格された権限で次のコマンドを実行します。</block>
   <block id="7239793e251456f2e73133f34ccc957d" category="list-text">ディレクトリ_が存在しない場合は、昇格された権限で次のコマンドを実行します。</block>
-  <block id="91d6fce5ad295f4c49b5ab17ad293e4c" category="summary">アイデンティティフェデレーションを使用すると、BlueXPとのシングルサインオンが可能になり、ユーザは自社のアイデンティティのクレデンシャルを使用してログインできます。アイデンティティプロバイダとの接続をセットアップする前に、BlueXPでのアイデンティティフェデレーションのサポートについて理解しておく必要があります。</block>
   <block id="5a94ee93b1a4f42d5f889b53b576b4f0" category="doc">BlueXPでアイデンティティフェデレーションを使用</block>
   <block id="694b3afac14ef0d070817c7ae79c1199" category="section-title">アイデンティティフェデレーションの仕組み</block>
   <block id="e4f3bdd29d08f22be201dfa18bf12273" category="paragraph">アイデンティティフェデレーションを設定すると、BlueXPの認証サービスプロバイダ（Auth0）と独自のアイデンティティ管理プロバイダの間に信頼関係が確立されます。</block>
@@ -3058,7 +3057,6 @@
   <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
   <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">PingFederateサーバのURL</block>
   <block id="512527e34bba36a42c42f1febf1b5404" category="cell">手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用して、PingFederateサーバーで設定を完了します。</block>
-  <block id="5b8ff6609e9eeeaa9e1acfdab0eabf9f" category="section-title">フェデレーテッド接続を更新します</block>
   <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">BlueXP管理者が接続を有効にすると、管理者はからいつでも接続を更新できます<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
   <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">たとえば、新しい証明書をアップロードして接続を更新する必要がある場合があります。</block>
   <block id="dbc6f5b69f3e88c308c302b2a186606c" category="paragraph">接続を更新できるのは、接続を作成したBlueXP管理者のみです。管理者を追加したい場合は、製品内チャットからお問い合わせください。</block>
@@ -3066,4 +3064,8 @@
   <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">シングルサインオンを使用して、社内ディレクトリ（フェデレーション ID ）からのクレデンシャルを使用してログインできます。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
   <block id="66721b55faa00316d484082879eed67d" category="paragraph">どちらのオプションも連携接続をサポートしているため、社内ディレクトリのクレデンシャルを使用してシングルサインオンを実行できます（フェデレーテッドアイデンティティ）。フェデレーション接続は、サインアップ後に設定できます。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">アイデンティティフェデレーション</block>
+  <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">アイデンティティフェデレーションを使用すると、BlueXPとのシングルサインオンが可能になり、ユーザは自社のアイデンティティのクレデンシャルを使用してログインできます。まず、アイデンティティフェデレーションとBlueXPの連携について説明し、セットアッププロセスの概要を確認してください。</block>
+  <block id="dca3cd1676cfe384fbb50f39c2e26eb4" category="paragraph">アイデンティティフェデレーション_ BlueXPとのシングルサインオンを有効にして、ユーザが自社のアイデンティティのクレデンシャルを使用してログインできるようにします。まず、アイデンティティフェデレーションとBlueXPの連携について説明し、セットアッププロセスの概要を確認してください。</block>
+  <block id="6c3d838359f74f39c9ee994a4c202763" category="cell">Active Directory（AD）管理者</block>
+  <block id="38354362734b03037ea9de3dd0ec048c" category="section-title">フェデレーテッド接続を更新しています</block>
 </blocks>
