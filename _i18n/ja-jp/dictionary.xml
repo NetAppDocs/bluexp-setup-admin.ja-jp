@@ -3004,7 +3004,6 @@
   <block id="3fa1942dfddcdac97191c621480a5ded" category="cell">完了者</block>
   <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1.</block>
   <block id="2e227b32919705455ef0fe6fd61b669d" category="cell">AD管理者</block>
-  <block id="7402250b00e852b3f4ea20ff6cf99ece" category="paragraph">Auth0ドキュメントのガイドラインに従ってSAMLアイデンティティプロバイダを設定します。</block>
   <block id="80723e7f2abf44c346356b58de5584bf" category="paragraph">SAML IDプロバイダの手順を表示します。</block>
   <block id="657ddf7370b0d5eff54a335127a66282" category="inline-link">ADFS （ ADFS ）</block>
   <block id="c33ddb3734db9918c602b8a73eb3854a" category="list-text"><block ref="c33ddb3734db9918c602b8a73eb3854a" category="inline-link-rx"></block></block>
@@ -3021,7 +3020,6 @@
   <block id="e784439ab583dc6269222d988a21051a" category="list-text"><block ref="e784439ab583dc6269222d988a21051a" category="inline-link-rx"></block></block>
   <block id="685a1bb94de19c84d18952bbd724e718" category="inline-link">以下の一般的な手順に従ってください</block>
   <block id="e1b2d18c713df40e0da0fb45bad9d9de" category="paragraph">お使いのアイデンティティプロバイダが上記のリストに表示されない場合は、<block ref="7e20de1bde53a2c364dc941f7f4f716f" category="inline-link-rx"></block></block>
-  <block id="5cad18854556867a3dd05cfaa49bcda2" category="admonition">DO_NOT_Auth0との接続の作成方法を説明する手順を完了します。この接続は次のステップで作成します。</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2.</block>
   <block id="9c9a7aca54b3b1227c02037ae00098e1" category="cell">BlueXPの管理者</block>
   <block id="1dd36b1c601a7192a0dbb196db0dae1b" category="inline-link">[NetApp Federation Setup]ページ</block>
@@ -3037,7 +3035,6 @@
   <block id="77515c9e6cbb6a15e2cb738105271642" category="cell">から接続をテストして有効にします<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block>接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。</block>
   <block id="6e9feb3d8b1d2610e025f8bd1e048c93" category="section-title">Microsoft Azure ADの略</block>
   <block id="fa292d75bd72ae1e1506c8f6c8e39fa3" category="paragraph">BlueXPとAzure ADの間にフェデレーテッド接続を設定するには、大まかに言って次の手順を実行します。</block>
-  <block id="f803510b253eb6863659ac394a94c9b4" category="paragraph">Azure Active Directoryで、クライアントシークレットとともに新しいアプリケーションを作成します。</block>
   <block id="a2c2d074b529efb4b812b96b74e02f33" category="inline-link">Azure ADにアプリケーションを登録する手順を表示します</block>
   <block id="8f916695f0c02d47ca7caf627294b5b2" category="paragraph"><block ref="8f916695f0c02d47ca7caf627294b5b2" category="inline-link-rx"></block></block>
   <block id="ef64c252ec5198cd24bcab0c5b591d8c" category="paragraph">この手順を完了するには、AD管理者から次の情報を入手する必要があります。</block>
@@ -3052,14 +3049,12 @@
   <block id="ea984b58d998a6393b5a21a789c7b789" category="paragraph">この手順を完了するには、AD管理者からADFSサーバーまたはフェデレーションメタデータファイルのURLを取得する必要があります。</block>
   <block id="8d4a0cfaae04a0d29dc491b71ab5dcb1" category="cell">手順2が完了したら、[フェデレーションセットアップ]ページに表示されているパラメータを使用して、ADFSサーバーで設定を完了します。</block>
   <block id="9340450967aba985f2ce16f324a6284a" category="paragraph">BlueXPとPingFederateサーバの間にフェデレーテッド接続を設定するには、次の手順を実行します。</block>
-  <block id="1ed12178ba0d0aded4c5a306f3150570" category="paragraph">Auth0ドキュメントのガイドラインに従ってPingFederateサーバーを設定します。</block>
   <block id="bb6800676df1891c64f4c92dd2cf1c7e" category="inline-link">接続の作成手順を表示します</block>
   <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
   <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">PingFederateサーバのURL</block>
   <block id="512527e34bba36a42c42f1febf1b5404" category="cell">手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用して、PingFederateサーバーで設定を完了します。</block>
   <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">BlueXP管理者が接続を有効にすると、管理者はからいつでも接続を更新できます<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
   <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">たとえば、新しい証明書をアップロードして接続を更新する必要がある場合があります。</block>
-  <block id="dbc6f5b69f3e88c308c302b2a186606c" category="paragraph">接続を更新できるのは、接続を作成したBlueXP管理者のみです。管理者を追加したい場合は、製品内チャットからお問い合わせください。</block>
   <block id="4cd9dd3aeeaff4f9e2ee0a8b309b6856" category="inline-link-macro">BlueXPでアイデンティティフェデレーションを使用する方法をご紹介します</block>
   <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">シングルサインオンを使用して、社内ディレクトリ（フェデレーション ID ）からのクレデンシャルを使用してログインできます。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
   <block id="66721b55faa00316d484082879eed67d" category="paragraph">どちらのオプションも連携接続をサポートしているため、社内ディレクトリのクレデンシャルを使用してシングルサインオンを実行できます（フェデレーテッドアイデンティティ）。フェデレーション接続は、サインアップ後に設定できます。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
@@ -3068,4 +3063,9 @@
   <block id="dca3cd1676cfe384fbb50f39c2e26eb4" category="paragraph">アイデンティティフェデレーション_ BlueXPとのシングルサインオンを有効にして、ユーザが自社のアイデンティティのクレデンシャルを使用してログインできるようにします。まず、アイデンティティフェデレーションとBlueXPの連携について説明し、セットアッププロセスの概要を確認してください。</block>
   <block id="6c3d838359f74f39c9ee994a4c202763" category="cell">Active Directory（AD）管理者</block>
   <block id="38354362734b03037ea9de3dd0ec048c" category="section-title">フェデレーテッド接続を更新しています</block>
+  <block id="17155619aa276262956a9169cbbc98ea" category="paragraph">SAMLアイデンティティプロバイダを設定して、BlueXPとのアイデンティティフェデレーションを有効にします。</block>
+  <block id="1660967ba9c7dec5ecf29538424c54a7" category="admonition">DO_NOT_Auth0で接続を作成する方法を説明する手順を完了します。この接続は次のステップで作成します。</block>
+  <block id="9149dec1c87108fda2f607ad7f9d0f7c" category="paragraph">BlueXPでアイデンティティフェデレーションを有効にするには、Azure Active Directoryを設定します。</block>
+  <block id="60f43fc6dd2ef1336922bb7836f8fd10" category="paragraph">BlueXPでアイデンティティフェデレーションを有効にするようにPingFederateサーバを設定します。</block>
+  <block id="61bc7bf1f88516437cb71c2afcff94f5" category="paragraph">接続を更新できるのは、接続を作成したBlueXP管理者のみです。管理者を追加する場合は、ネットアップサポートにお問い合わせください。</block>
 </blocks>

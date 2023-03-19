@@ -69,7 +69,7 @@ BlueXPとアイデンティティ管理プロバイダの間の接続をセッ�
 
 
 | 1. | Active Directory（AD）管理者  a| 
-Auth0ドキュメントのガイドラインに従ってSAMLアイデンティティプロバイダを設定します。
+SAMLアイデンティティプロバイダを設定して、BlueXPとのアイデンティティフェデレーションを有効にします。
 
 SAML IDプロバイダの手順を表示します。
 
@@ -85,7 +85,7 @@ SAML IDプロバイダの手順を表示します。
 お使いのアイデンティティプロバイダが上記のリストに表示されない場合は、 https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["以下の一般的な手順に従ってください"^]
 
 
-TIP: DO_NOT_Auth0との接続の作成方法を説明する手順を完了します。この接続は次のステップで作成します。
+TIP: DO_NOT_Auth0で接続を作成する方法を説明する手順を完了します。この接続は次のステップで作成します。
 
 
 
@@ -120,12 +120,12 @@ BlueXPとAzure ADの間にフェデレーテッド接続を設定するには、
 
 
 | 1. | AD管理者  a| 
-Azure Active Directoryで、クライアントシークレットとともに新しいアプリケーションを作成します。
+BlueXPでアイデンティティフェデレーションを有効にするには、Azure Active Directoryを設定します。
 
 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Azure ADにアプリケーションを登録する手順を表示します"^]
 
 
-TIP: DO_NOT_Auth0との接続の作成方法を説明する手順を完了します。この接続は次のステップで作成します。
+TIP: DO_NOT_Auth0で接続を作成する方法を説明する手順を完了します。この接続は次のステップで作成します。
 
 
 
@@ -192,12 +192,12 @@ BlueXPとPingFederateサーバの間にフェデレーテッド接続を設定�
 
 
 | 1. | AD管理者  a| 
-Auth0ドキュメントのガイドラインに従ってPingFederateサーバーを設定します。
+BlueXPでアイデンティティフェデレーションを有効にするようにPingFederateサーバを設定します。
 
 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["接続の作成手順を表示します"^]
 
 
-TIP: DO_NOT_Auth0との接続の作成方法を説明する手順を完了します。この接続は次のステップで作成します。
+TIP: DO_NOT_Auth0で接続を作成する方法を説明する手順を完了します。この接続は次のステップで作成します。
 
 
 
@@ -227,4 +227,4 @@ BlueXP管理者が接続を有効にすると、管理者はからいつでも�
 
 たとえば、新しい証明書をアップロードして接続を更新する必要がある場合があります。
 
-接続を更新できるのは、接続を作成したBlueXP管理者のみです。管理者を追加したい場合は、製品内チャットからお問い合わせください。
+接続を更新できるのは、接続を作成したBlueXP管理者のみです。管理者を追加する場合は、ネットアップサポートにお問い合わせください。
