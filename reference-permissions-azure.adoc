@@ -321,9 +321,6 @@ Cloud Data Senseを使用している場合は、コネクタによって次のA
 | microsoft.Storage/storageAccounts/write | はい。 | いいえ 
 
 
-| microsoft.Storage/storageAccounts/delete | いいえ | はい。 
-
-
 | microsoft.Storage/storageAccounts/blobServices/container/read | はい。 | はい。 
 
 
@@ -764,6 +761,14 @@ Connectorは、Azure Kubernetes Service（AKS）で実行されているクラ�
 == 変更ログ
 
 権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。
+
+
+
+=== 2023年3月23日
+
+Cloud Data Senseには「Microsoft.Storage/storageAccounts/delete」権限は不要になりました。
+
+この権限はCloud Volumes ONTAP では引き続き必要です。
 
 
 

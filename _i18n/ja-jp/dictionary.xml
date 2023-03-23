@@ -2500,7 +2500,6 @@
   <block id="c1141a37b962270fc1e8960233830c99" category="section-title">IAMポリシー</block>
   <block id="d169cac20ae3e0b6b9cec32d273de5f2" category="paragraph">以下のIAMポリシーは、ConnectorがAWSリージョンに基づいてパブリッククラウド環境内のリソースとプロセスを管理するために必要な権限を提供します。</block>
   <block id="74b6a526e505305f967084e06fa6aaf3" category="paragraph">BlueXPから直接、標準のAWSリージョンでコネクタを作成すると、BlueXPによって自動的にそのコネクタにポリシーが適用されます。この場合、何も行う必要はありません。</block>
-  <block id="fb86f9a9f53ddf38f2b2297b0200b8a3" category="paragraph">AWS MarketplaceからConnectorを導入する場合や、LinuxホストにConnectorを手動でインストールする場合は、手動でポリシーを設定する必要があります。</block>
   <block id="b8502b99c36d378968d3d20a7561e523" category="paragraph">また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。</block>
   <block id="de16d176ab7c6c01a7ce45f2e7213194" category="paragraph">必要なポリシーを表示する地域を選択します。</block>
   <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。</block>
@@ -3068,4 +3067,11 @@
   <block id="dbd1aae17ba4f4ca876aea9deb478855" category="inline-link-macro">BlueXPに登録してアカウントを作成する方法をご紹介します</block>
   <block id="f4d0e4f5ec6f078434dc63eacdebe638" category="paragraph"><block ref="94d2906599f74921f2fab3568b028f51" category="inline-link-macro-rx"></block>。</block>
   <block id="816dc8c932a8afbdb9361ede8774b3d0" category="paragraph">すでにアカウントをお持ちで参加をご希望の場合は、BlueXPを終了して所有者にアカウントとの関連付けを依頼してください。オーナーが追加されると、ログインできるようになり、アカウントにアクセスできるようになります。 <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>。</block>
+  <block id="5409221a62615b6b2cf0061a5376c983" category="inline-link">AWSドキュメント：Condition要素</block>
+  <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="paragraph">必要に応じて、IAMを使用してIAMポリシーを制限できます<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 要素（Element）：<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
+  <block id="7d6d11737dd3bca1243f4e22e7aeaec1" category="list-text">AWS Marketplaceからコネクタを導入する場合、Linuxホストにコネクタを手動でインストールする場合、またはBlueXPにAWSクレデンシャルを追加する場合は、ポリシーを自分で設定する必要があります。</block>
+  <block id="0c511f4078f33be6ce46a7b4c4d64f3e" category="section-title">2023年3月23日</block>
+  <block id="43908e244f944d05ab87a4987453f7bc" category="paragraph">Cloud Data Senseには「Microsoft.Storage/storageAccounts/delete」権限は不要になりました。</block>
+  <block id="47e8280c2cd82cf2f49537bfd5661b15" category="paragraph">この権限はCloud Volumes ONTAP では引き続き必要です。</block>
+  <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">必要に応じて、IAMを使用してIAMポリシーを制限できます<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 要素（Element）：<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
 </blocks>

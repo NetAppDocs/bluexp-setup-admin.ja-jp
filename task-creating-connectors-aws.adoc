@@ -67,6 +67,8 @@ BlueXPでは、VPCにConnectorインスタンスを導入する前にAWSで認�
 
 このポリシーには、BlueXPからAWSでConnectorインスタンスを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。
 
+必要に応じて、IAMを使用してIAMポリシーを制限できます `Condition` 要素（Element）： https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWSドキュメント：Condition要素"^]
+
 BlueXPがコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、コネクタがパブリッククラウド環境内のリソースを管理できるようになります。
 
 .手順
