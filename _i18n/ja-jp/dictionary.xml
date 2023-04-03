@@ -3087,8 +3087,6 @@
   <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">作業を開始するには、*[作業環境の追加]*を選択し、* Amazon Web Services *または*オンプレミス*を選択して、*[VMware vCenter Server]*を選択します。サーバのドメイン名またはIPアドレスを入力し、adminユーザのユーザ名とパスワードを入力します。</block>
   <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">BlueXPログインに関連付けられたユーザクレデンシャル（ONTAP クレデンシャルとNetApp Support Site （NSS）クレデンシャル）を管理できるようになりました。</block>
   <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">[設定]&gt;[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。</block>
-  <block id="b74c77e09b66a8f63b22e9ec3917cbbc" category="inline-link-macro">ユーザクレデンシャルを管理する方法について説明します</block>
-  <block id="43cddfbd5a5e952fa3a0613068b01922" category="paragraph"><block ref="f57f6e52027d92bbfed90d112fcd8715" category="inline-link-macro-rx"></block>。</block>
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">サポートケースを作成するとき、または既存のサポートケースのケースノートを更新するときに、添付ファイルをアップロードできるようになりました。</block>
   <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">サポートケースを作成および管理する方法について説明します</block>
   <block id="6d69140f9b878e098eb9bfcd623c9dbd" category="paragraph"><block ref="7f3b2cbcf14ed0f5a85962e6b9e3eba8" category="inline-link-rx"></block>。</block>
@@ -3097,4 +3095,6 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*添付ファイル（オプション）*：一度に1つずつ、最大5つの添付ファイルをアップロードできます。</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">添付ファイルはファイルあたり25 MBに制限されています。サポートされているファイル拡張子は、txt、log、pdf、jpg/jpeg、rtf、 doc/docx、xls/xlsx、およびcsv。</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*ケースノートの更新*：問題の詳細を入力するか、*ファイルのアップロード*を選択して最大5つのファイルを添付します。</block>
+  <block id="6f6e8b4bb29cff7fb5a94ccadb883777" category="inline-link-macro">ユーザクレデンシャルの管理方法について説明します</block>
+  <block id="551a80734187b23f5368b6a5609f3de3" category="paragraph"><block ref="cf16e3f2aabf285f3de8d29b23130725" category="inline-link-macro-rx"></block>。</block>
 </blocks>
