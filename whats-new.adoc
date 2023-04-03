@@ -18,6 +18,54 @@ summary: ネットアップアカウント、コネクタ、クラウドプロ�
 
 
 
+== 2023年4月3日
+
+
+
+=== コネクタ3.9.28
+
+* デジタルウォレットでEメール通知がサポートされるようになりました。
++
+通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"]。
+
+* Google Cloud Turinリージョンでコネクタがサポートされるようになりました。
++
+https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
+
+* BlueXPでVMware vCenter Serverを検出できるようになりました。
++
+AWSまたはオンプレミスで実行されているVMware vCenter Serverを検出したら、作業環境を開いて、サーバに関連付けられているデータストアと仮想マシンに関する詳細を確認できます。
+
++
+唯一の要件は、バージョン7.0以降を実行しているVMware vCenter Serverに接続するコネクタです。
+
++
+作業を開始するには、*[作業環境の追加]*を選択し、* Amazon Web Services *または*オンプレミス*を選択して、*[VMware vCenter Server]*を選択します。サーバのドメイン名またはIPアドレスを入力し、adminユーザのユーザ名とパスワードを入力します。
+
+* BlueXPログインに関連付けられたユーザクレデンシャル（ONTAP クレデンシャルとNetApp Support Site （NSS）クレデンシャル）を管理できるようになりました。
++
+[設定]>[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。
+
++
+link:task-manage-user-credentials.html["ユーザクレデンシャルを管理する方法について説明します"]。
+
+* サポートケースを作成するとき、または既存のサポートケースのケースノートを更新するときに、添付ファイルをアップロードできるようになりました。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースを作成および管理する方法について説明します"]。
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+
+
+
+
+
+
 == 2023年3月5日
 
 

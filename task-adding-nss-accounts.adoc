@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: NetApp Support Site （NSS）アカウントのサポートへの登録、Cloud Volumes ONTAP の主要なワークフローの有効化などに必要なクレデンシャルを指定します。 
+summary: NetApp Support Site （NSS）アカウントのサポートへの登録、Cloud Volumes ONTAP の主要なワークフローの有効化などに必要なクレデンシャルを指定します。これらのNSSクレデンシャルはBlueXPアカウント全体に関連付けられます。 
 ---
-= BlueXPでNetApp Support Site アカウントを管理します
+= BlueXPアカウントに関連付けられているNSSクレデンシャルを管理します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,25 +14,14 @@ summary: NetApp Support Site （NSS）アカウントのサポートへの登録
 
 
 [role="lead"]
-NetApp Support Site （NSS）アカウントのサポートへの登録、Cloud Volumes ONTAP の主要なワークフローの有効化などに必要なクレデンシャルを指定します。
+NetApp Support Site （NSS）アカウントのサポートへの登録、Cloud Volumes ONTAP の主要なワークフローの有効化などに必要なクレデンシャルを指定します。これらのNSSクレデンシャルはBlueXPアカウント全体に関連付けられます。
+
+
+NOTE: BlueXPでは、BlueXPユーザごとに1つのNSSアカウントを関連付けることもできます。 link:task-manage-user-credentials.html["ユーザレベルのクレデンシャルを管理する方法について説明します"]。
 
 
 
 == 概要
-
-BlueXPでは、1つのNSSアカウントを各BlueXPユーザに関連付け、1つ以上のNSSアカウントをBlueXPアカウントに関連付けることができます。
-
-
-
-=== BlueXPユーザごとのNSSクレデンシャル
-
-BlueXPでDigital Advisorアカウントにアクセスしたりサポートケースを管理したりするには、個 々 のNSSクレデンシャルが必要です。これらのクレデンシャルは、BlueXPにログインしているユーザにのみ表示されます。クレデンシャルは、必要に応じて削除および更新できます。
-
-<<Manage NSS credentials per BlueXP user,BlueXPユーザごとにNSSクレデンシャルを管理する方法を説明します>>。
-
-
-
-=== BlueXPアカウントのNSSクレデンシャル
 
 BlueXPで次のタスクを有効にするには、NetApp Support Site クレデンシャルを特定のBlueXPアカウントIDに関連付ける必要があります。
 
@@ -51,52 +40,9 @@ BlueXPで次のタスクを有効にするには、NetApp Support Site クレデ
 
 これらのクレデンシャルは、特定のBlueXPアカウントIDに関連付けられます。BlueXPアカウントに属するユーザは、*[サポート]>[NSS管理]*からこれらのクレデンシャルにアクセスできます。
 
-<<BlueXPアカウントのNSSクレデンシャルを管理します,BlueXPアカウントのNSSクレデンシャルを管理する方法について説明します>>。
 
 
-
-== BlueXPログインのNSSクレデンシャルを管理します
-
-BlueXPログインに関連付けられたNSSクレデンシャルを使用して、Digital Advisorとケース管理機能にアクセスできます。
-
-* BlueXPでDigital Advisorにアクセスすると、NSS資格情報を入力してDigital Advisorにログインするように求められます。NSSの資格情報を入力すると、NSS管理ページの上部にこのNSSアカウントが表示されます。その後、必要に応じてクレデンシャルを管理できます。
-* [サポート]>[ケース管理]*にアクセスすると、NSSクレデンシャルを入力するように求められます（まだ入力していない場合）。このページには、NSSアカウントと会社に関連付けられたサポートケースが表示されます。
-
-
-このNSSアカウントについては、次の点に注意してください。
-
-* アカウントはユーザレベルで管理されるため、他のユーザがログインしても表示できません。
-* このアカウントは、BlueXPの他の機能では使用できません。Cloud Volumes ONTAP の作成、ライセンス、サポートケースの作成では使用できません。
-* Digital Advisorとケース管理に関連付けることができるNSSアカウントは、ユーザごとに1つだけです。
-
-
-.手順
-. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
-
-. [*NSS 管理 *] をクリックします。
-. [*Your NSS Credentials]で[*Action*]をクリックし、次のいずれかのオプションを選択します。
-+
-** * NSSユーザを関連付けます*：NetApp Support Site アカウントのクレデンシャルを追加します。
-** *既存の資格情報の更新*：NetApp Support Site アカウントの資格情報を更新します。
-** *削除*：BlueXPユーザアカウントに関連付けられているアカウントを削除します。
-
-
-
-
-.結果
-NSSクレデンシャルがBlueXPで更新されます。Digital AdvisorまたはCase Managementページにアクセスすると、変更が反映されます。
-
-
-
-== BlueXPアカウントのNSSクレデンシャルを管理します
-
-BlueXPアカウントに関連付けられているNSSクレデンシャルを管理して、サポートの登録、サポートケースの作成、Cloud Volumes ONTAP の主要なワークフローの有効化を行うことができます。
-
-
-
-=== NSS アカウントを追加します
+== NSS アカウントを追加します
 
 サポートダッシュボードでは、BlueXPで使用するNetApp Support Site アカウントをBlueXPアカウントレベルで追加および管理できます。
 
@@ -153,7 +99,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
-=== NSS アカウントを更新して新しい認証方法を適用します
+== NSS アカウントを更新して新しい認証方法を適用します
 
 2021 年 11 月以降、ネットアップはサポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用します。この更新プログラムの結果、以前に追加した既存のアカウントの資格情報を更新するように求められます。
 
@@ -179,7 +125,7 @@ image:screenshot-nss-update-account.png["［ アカウントの更新 ］ オプ
 
 
 
-=== NSS クレデンシャルを更新します
+== NSS クレデンシャルを更新します
 
 次のいずれかの場合は、BlueXPでNSSアカウントの資格情報を更新する必要があります。
 
@@ -203,7 +149,7 @@ image:screenshot-nss-update-credentials.png["ネットアップサポートサ�
 
 
 
-=== 作業環境を別の NSS アカウントに接続します
+== 作業環境を別の NSS アカウントに接続します
 
 組織に複数のネットアップサポートサイトのアカウントがある場合、 Cloud Volumes ONTAP システムに関連付けられているアカウントを変更することができます。
 
@@ -227,7 +173,7 @@ image:screenshot-nss-change-account.png["ネットアップサポートサイト
 
 
 
-=== NSS アカウントの E メールアドレスを表示します
+== NSS アカウントの E メールアドレスを表示します
 
 NetApp Support Site アカウントで認証サービスにMicrosoft Azure Active Directoryを使用しているため、BlueXPに表示されるNSSユーザ名は通常、Azure ADで生成された識別子です。そのため、そのアカウントに関連付けられている E メールアドレスがすぐにわからない場合があります。しかし、BlueXPには、関連するメールアドレスを表示するオプションがあります。
 
@@ -248,7 +194,7 @@ NetApp Support Site ユーザー名と関連するメールアドレスが表示
 
 
 
-=== NSS アカウントを削除します
+== NSS アカウントを削除します
 
 BlueXPで使用しないNSSアカウントをすべて削除します。
 

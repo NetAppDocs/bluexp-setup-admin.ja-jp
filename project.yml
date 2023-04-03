@@ -83,6 +83,30 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: デフォルト設定
         url: "/reference-connector-default-config.html"
+    - title: クレデンシャル
+      entries:
+      - title: AWS クレデンシャルを管理する
+        entries:
+        - title: 概要
+          url: "/concept-accounts-aws.html"
+        - title: クレデンシャルとサブスクリプションを管理する
+          url: "/task-adding-aws-accounts.html"
+      - title: Azure クレデンシャルを管理します
+        entries:
+        - title: 概要
+          url: "/concept-accounts-azure.html"
+        - title: クレデンシャルとサブスクリプションを管理する
+          url: "/task-adding-azure-accounts.html"
+      - title: Google Cloud クレデンシャルを管理します
+        entries:
+        - title: 概要
+          url: "/concept-accounts-gcp.html"
+        - title: クレデンシャルとサブスクリプションを管理する
+          url: "/task-adding-gcp-accounts.html"
+      - title: BlueXPアカウントに関連付けられているNSSクレデンシャルを管理します
+        url: "/task-adding-nss-accounts.html"
+      - title: BlueXPログインに関連付けられているクレデンシャルを管理します
+        url: "/task-manage-user-credentials.html"
     - title: サブスクリプション
       url: "/task-manage-subscriptions.html"
     - title: クラウドストレージを検出
@@ -93,26 +117,6 @@ sidebar:
         url: "/task-viewing-azure-blob.html"
       - title: Google Cloud Storageバケットを表示します
         url: "/task-viewing-gcp-storage.html"
-    - title: AWS クレデンシャル
-      entries:
-      - title: 概要
-        url: "/concept-accounts-aws.html"
-      - title: クレデンシャルとサブスクリプションを管理する
-        url: "/task-adding-aws-accounts.html"
-    - title: Azure のクレデンシャル
-      entries:
-      - title: 概要
-        url: "/concept-accounts-azure.html"
-      - title: クレデンシャルとサブスクリプションを管理する
-        url: "/task-adding-azure-accounts.html"
-    - title: Google Cloud のクレデンシャル
-      entries:
-      - title: 概要
-        url: "/concept-accounts-gcp.html"
-      - title: クレデンシャルとサブスクリプションを管理する
-        url: "/task-adding-gcp-accounts.html"
-    - title: ネットアップサポートサイトのアカウント
-      url: "/task-adding-nss-accounts.html"
     - title: My Opportunitiesを使用したディスカバリ
       url: "/concept-my-opportunities.html"
   - title: 参照
