@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task-log-in-restricted-mode.html 
+keywords: logging in, log in, sign in, signing in, restricted mode, restricted mode log in, local log in, connector log in, log in connector 
+summary: 制限モードでBlueXPを使用する場合は、コネクタでローカルに実行されるユーザインターフェイスからBlueXPコンソールにログインする必要があります。 
+---
+= BlueXPへのログイン（制限モード）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+制限モードでBlueXPを使用する場合は、コネクタでローカルに実行されるユーザインターフェイスからBlueXPコンソールにログインする必要があります。
+
+.ログインオプション
+BlueXPでは、アカウントが制限モードで設定されている場合、次のいずれかの方法でログインできます。
+
+* Eメールアドレスとパスワードを使用したネットアップクラウドへのログイン
+* フェデレーテッド接続
++
+シングルサインオンを使用して、社内ディレクトリ（フェデレーション ID ）からのクレデンシャルを使用してログインできます。 link:concept-federation.html["BlueXPでアイデンティティフェデレーションを使用する方法をご紹介します"]。
+
+
+
+.手順
+. Web ブラウザを開き、次の URL を入力します。
++
+https://_ipaddress_[]
+
++
+_ipaddress_には、コネクタをインストールしたホストの構成に応じて、localhost、プライベートIPアドレス、またはパブリックIPアドレスを指定できます。たとえば、コネクタホストに接続されているホストからプライベートIPアドレスを入力する必要がある場合があります。
+
+. ログインするためのユーザ名とパスワードを入力します。
+
+
+.結果
+ログインして、BlueXPを使用してハイブリッドマルチクラウドインフラを管理できるようになりました。

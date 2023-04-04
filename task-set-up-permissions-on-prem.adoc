@@ -1,0 +1,209 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-permissions-on-prem.html 
+keywords: set up permissions, cloud permissions, aws permissions, azure permissions, on prem permissions, connector permissions 
+summary: AWSまたはAzureでBlueXPサービスをオンプレミスコネクタで使用する場合は、インストール後にコネクタにクレデンシャルを追加できるように、クラウドプロバイダで権限を設定する必要があります。 
+---
+= オンプレミス環境のクラウド権限を設定
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+AWSまたはAzureでBlueXPサービスをオンプレミスコネクタで使用する場合は、インストール後にコネクタにクレデンシャルを追加できるように、クラウドプロバイダで権限を設定する必要があります。
+
+
+TIP: Google Cloudではない理由コネクタがオンプレミスにインストールされている場合、Google Cloudでリソースを管理することはできません。Google Cloudに存在するリソースを管理するには、コネクタをGoogle Cloudにインストールする必要があります。
+
+[role="tabbed-block"]
+====
+.AWS
+--
+コネクタをオンプレミスにインストールする場合は、必要な権限を持つIAMユーザのアクセスキーを追加して、BlueXPにAWS権限を設定する必要があります。
+
+コネクタがオンプレミスにインストールされている場合は、この認証方法を使用する必要があります。IAMロールは使用できません。
+
+.手順
+. IAMコンソールで、ポリシーを作成します。
++
+.. [*Policies]>[Create policy*]をクリックします。
+.. [*json]*を選択し、の内容をコピーして貼り付けます link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+.. 残りの手順を完了してポリシーを作成します。
++
+使用するBlueXPサービスによっては、2つ目のポリシーの作成が必要になる場合があります。
+
++
+標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。 link:reference-permissions-aws.html["コネクタのIAMポリシーの詳細については、こちらを参照してください"]。
+
+
+
+. IAMユーザにポリシーを適用します。
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS のドキュメント：「 Creating IAM Roles"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
+
+
+. コネクタのインストール後にBlueXPに追加できるアクセスキーがユーザに割り当てられていることを確認します。
+
+
+.結果
+これで、必要な権限を持つIAMユーザのアクセスキーが作成されました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。
+
+link:task-provide-permissions-on-prem.html["これらの権限をBlueXPに付与する方法について説明します"]。
+
+--
+.Azure
+--
+コネクタをオンプレミスにインストールする場合は、Azure Active Directoryでサービスプリンシパルを設定し、BlueXPに必要なAzureクレデンシャルを取得して、BlueXPにAzure権限を付与する必要があります。
+
+.ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
+. Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
++
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
+
+. Azure ポータルで、 * Azure Active Directory * サービスを開きます。
++
+image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サービスを示しています。"]
+
+. メニューで、 * アプリ登録 * をクリックします。
+. [ 新規登録 ] をクリックします。
+. アプリケーションの詳細を指定します。
++
+** * 名前 * ：アプリケーションの名前を入力します。
+** *アカウントの種類*:アカウントの種類を選択します(すべてのアカウントはBlueXPで動作します)。
+** * リダイレクト URI *: このフィールドは空白のままにできます。
+
+
+. [*Register] をクリックします。
++
+AD アプリケーションとサービスプリンシパルを作成しておきます。
+
+
+
+.アプリケーションをロールに割り当てます
+. カスタムロールを作成します。
++
+.. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
+.. 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
++
+ユーザが Cloud Volumes ONTAP システムを作成する Azure サブスクリプションごとに ID を追加する必要があります。
+
++
+* 例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. JSON ファイルを使用して、 Azure でカスタムロールを作成します。
++
+次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
+
++
+*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
+*** JSON ファイルをアップロードします。
++
+image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
+
+*** Azure CLIを使用してカスタムロールを作成します。
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+これで、Connector仮想マシンに割り当てることができるBlueXP Operatorというカスタムロールが作成されました。
+
+
+
+
+
+. ロールにアプリケーションを割り当てます。
++
+.. Azure ポータルで、 * Subscriptions * サービスを開きます。
+.. サブスクリプションを選択します。
+.. [* アクセス制御 (IAM)] 、 [ 追加 ] 、 [ 役割の割り当ての追加 *] の順にクリックします。
+.. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
+.. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
++
+*** [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
+*** [ メンバーの選択 ] をクリックします。
++
+image:screenshot-azure-service-principal-role.png["アプリケーションにロールを追加するときに Members タブを表示する Azure ポータルのスクリーンショット。"]
+
+*** アプリケーションの名前を検索します。
++
+次に例を示します。
+
++
+image:screenshot_azure_service_principal_role.png["Azure ポータルのスクリーンショットで、 Azure ポータルのロール割り当ての追加フォームが表示されています。"]
+
+*** アプリケーションを選択し、 * Select * をクリックします。
+*** 「 * 次へ * 」をクリックします。
+
+
+.. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
++
+サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
+
++
+Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入する場合は、サービスプリンシパルを各サブスクリプションにバインドする必要があります。BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するサブスクリプションを選択できます。
+
+
+
+
+
+.Windows Azure Service Management API 権限を追加します
+. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
+. [API アクセス許可 ] 、 [ アクセス許可の追加 ] の順にクリックします。
+. Microsoft API* で、 * Azure Service Management * を選択します。
++
+image:screenshot_azure_service_mgmt_apis.gif["Azure Service Management API 権限を示す Azure ポータルのスクリーンショット。"]
+
+. [* 組織ユーザーとして Azure サービス管理にアクセスする *] をクリックし、 [ * 権限の追加 * ] をクリックします。
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API の追加を示す Azure ポータルのスクリーンショット。"]
+
+
+
+.アプリケーションのアプリケーションIDとディレクトリIDを取得します
+. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
+. アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。
++
+image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケーション（クライアント）の ID とディレクトリ（テナント） ID を示すスクリーンショット。"]
+
++
+AzureアカウントをBlueXPに追加するときは、アプリケーション（クライアント）IDとディレクトリ（テナント）IDを指定する必要があります。BlueXPでは、プログラムでサインインするためにIDが使用されます。
+
+
+
+.クライアントシークレットを作成します
+. Azure Active Directory * サービスを開きます。
+. [* アプリ登録 * ] をクリックして、アプリケーションを選択します。
+. ［ * 証明書とシークレット > 新しいクライアントシークレット * ］ をクリックします。
+. シークレットと期間の説明を入力します。
+. [ 追加（ Add ） ] をクリックします。
+. クライアントシークレットの値をコピーします。
++
+image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパルのクライアントシークレットを表示する Azure ポータルのスクリーンショット。"]
+
++
+BlueXPでAzure ADの認証に使用するクライアントシークレットが作成されました。
+
+
+
+.結果
+これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。
+
+link:task-provide-permissions-on-prem.html["これらの権限をBlueXPに付与する方法について説明します"]。
+
+--
+====

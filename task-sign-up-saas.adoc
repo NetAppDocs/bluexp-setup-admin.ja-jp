@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-sign-up-saas.html 
-keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account 
-summary: BlueXPの使用を開始すると、最初にサインアップします。アカウントを作成するオプションが表示されますが、既存のアカウントに招待されている場合は、この手順を省略できます。 
+keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
+summary: BlueXPの利用を開始するには、まず既存のNetApp Support Site クレデンシャルを使用するか、ネットアップクラウドログインアカウントを作成して登録します。 
 ---
 = BlueXPにサインアップします
 :hardbreaks:
@@ -14,14 +14,9 @@ summary: BlueXPの使用を開始すると、最初にサインアップしま�
 
 
 [role="lead"]
-BlueXPの使用を開始すると、最初にサインアップします。アカウントを作成するオプションが表示されますが、既存のアカウントに招待されている場合は、この手順を省略できます。
-
-.政府地域に関する注意事項
-政府機関またはアウトバウンドインターネットアクセスを持たないサイトからBlueXPにアクセスする必要がある場合は、コネクタを作成し、コネクタ上でローカルに実行されているBlueXPユーザーインターフェイスにログインする必要があります。 link:task-managing-connectors.html#access-the-local-ui["ConnectorでローカルUIにアクセスする方法について説明します"]。
+BlueXPにはWebベースのコンソールからアクセスできます。BlueXPの利用を開始するには、まず既存のNetApp Support Site クレデンシャルを使用するか、ネットアップクラウドログインアカウントを作成して登録します。
 
 .サインアップオプション
-BlueXPには、WebブラウザからSaaSベースのユーザインターフェイス経由でアクセスできます。
-
 次のいずれかのオプションを使用して、BlueXPにサインアップできます。
 
 * 既存のNetApp Support Site （NSS）のクレデンシャルを必要に応じて変更

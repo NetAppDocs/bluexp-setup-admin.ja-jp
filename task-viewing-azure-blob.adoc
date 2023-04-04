@@ -4,7 +4,7 @@ permalink: task-viewing-azure-blob.html
 keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment 
 summary: AzureにConnectorをインストールすると、コネクタがインストールされているAzureサブスクリプションにあるAzureストレージアカウントに関する情報がBlueXPによって自動的に検出されます。Azure Blob作業環境がCanvasに追加され、この情報を表示できるようになりました。 
 ---
-= Azure Blobアカウントの表示
+= Azure Blobアカウントを表示
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -19,7 +19,7 @@ AzureにConnectorをインストールすると、コネクタがインストー
 Azureストレージアカウントに関する詳細を確認できます。これには、場所、リソースグループ、合計容量と使用済み容量などの情報が含まれます。これらのアカウントは、クラウドバックアップ、クラウド階層化、Cloud Sync の各処理のデスティネーションとして使用できます。
 
 .手順
-. link:task-creating-connectors-azure.html["コネクタを取り付ける"] Azureストレージアカウントを表示するAzureアカウント。
+. Azureストレージアカウントを表示するAzureアカウントにコネクタをインストールします。
 . ナビゲーションメニューから、*ストレージ>キャンバス*を選択します。
 +
 Azure Blob作業環境は、しばらくすると自動的に確認できます。
@@ -27,15 +27,15 @@ Azure Blob作業環境は、しばらくすると自動的に確認できます�
 +
 image:screenshot-azure-blob-we.png["Azure Blob作業環境のスクリーンショット"]
 
-. 作業環境をクリックし、右ペインからアクションを選択します。
+. 作業環境を選択し、右側のペインからアクションを選択します。
 +
 image:screenshot-azure-actions.png["Azure Blob Working環境を選択したあとの操作ペインのスクリーンショットこのペインには、ストレージアカウントの総数と、Syncサービスを使用するためのアクションが表示されます。"]
 
-. *データの同期*をクリックして、Azure BLOBストレージとの間でデータを同期します。
+. Azure BLOBストレージとの間でデータを同期するには、*[データの同期]*を選択します。
 +
-詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Cloud Sync サービスの概要"^]。
+詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Cloud Sync サービスの概要"^]
 
-. Enter Working Environment *をクリックして、Azure Blob内のAzureストレージアカウントに関する詳細を表示します。
+. [Enter Working Environment]*を選択して、Azure Blob内のAzureストレージアカウントに関する詳細を表示します。
 +
 image:screenshot-azure-blob-details.png["Azure Blob作業環境の詳細を示すスクリーンショット：ストレージアカウントの総数、場所の総数、リソースグループ、合計容量と使用済み容量など。"]
 

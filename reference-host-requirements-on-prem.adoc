@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: reference-host-requirements-on-prem.html 
+keywords: cpu requirements, ram requirements, on prem requirements, on prem host requirements, connector host requirements 
+summary: コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。 
+---
+= コネクタホストのオンプレミスインストール要件を確認します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。
+
+専用ホスト:: 他のアプリケーションと共有しているホストでは、このコネクタはサポートされていません。専用のホストである必要があります。
+サポートされているオペレーティングシステム::
++
+--
+* CentOS 7.6、7.7、7.8、7.9
+* Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 および8.7
++
+ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
+
++
+Connector は、これらのオペレーティングシステムの英語版でサポートされています。
+
+
+
+--
+ハイパーバイザー:: CentOSまたはRed Hat Enterprise Linuxの実行が認定されたベアメタルまたはホスト型のハイパーバイザーが必要です。 https://access.redhat.com/certified-hypervisors["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
+CPU:: 4 コアまたは 4 個の vCPU
+RAM:: 14 GB
+/opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
+/var のディスク領域:: 20GiB のスペースが必要です
+Docker Engine の略:: Connectorをインストールする前に、ホストにDocker Engineバージョン19.3.1以降が必要です。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+

@@ -1,0 +1,263 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-permissions-aws.html 
+keywords: aws permissions, set up permissions, set up aws permissions, permissions, iam role, iam policy, json, policy, role, credentials 
+summary: BlueXPを使用してAWSのデータとストレージインフラを管理できるように、AWSの権限を設定します。アクセス許可の設定方法は、使用するインストールオプションによって異なります。 
+---
+= AWS権限を設定
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPを使用してAWSのデータとストレージインフラを管理できるように、AWSの権限を設定します。アクセス許可の設定方法は、使用するインストールオプションによって異なります。
+
+次のインストールオプションから選択できます。
+
+* * BlueXPからインストール*：BlueXPがAWSで認証してインスタンスを導入できるように権限を設定します。コネクタインスタンスの権限は、導入時にBlueXPによって自動的に設定されます。
++
+<<BlueXPからコネクタを作成するための権限を設定します,ステップバイステップの手順を確認します>>。
+
+* * AWS Marketplaceからインストール*：コネクタインスタンスに関連付けることができるIAMロールを設定します。
++
+<<AWS Marketplaceからデプロイする際にコネクタの権限を設定します,ステップバイステップの手順を確認します>>。
+
+* *手動インストール*：IAMポリシーを作成し、IAMロールまたはIAMユーザに適用します。
++
+<<手動インストール後に割り当てる権限を設定します,ステップバイステップの手順を確認します>>。
+
+
+
+
+
+== BlueXPからコネクタを作成するための権限を設定します
+
+BlueXPでは、VPCにConnectorインスタンスを導入する前にAWSで認証する必要があります。次のいずれかの認証方式を選択できます。
+
+* 必要な権限を持つIAMロールをBlueXPに割り当てます
+* 必要な権限を持つIAMユーザにAWSアクセスキーとシークレットキーを指定します
+
+
+どちらのオプションを使用する場合も、最初にIAMポリシーを作成します。このポリシーには、BlueXPからAWSでConnectorインスタンスを起動するために必要な権限のみが含まれています。
+
+必要に応じて、IAMを使用してIAMポリシーを制限できます `Condition` 要素（Element）： https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWSドキュメント：Condition要素"^]
+
+
+TIP: BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、AWSリソースへのコネクタが有効になります。
+
+.手順
+. AWS IAMコンソールに移動します。
+. [*Policies]>[Create policy*]をクリックします。
+. [*JSON]をクリックします。
+. 次のポリシーをコピーして貼り付けます。
++
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "iam:PassRole",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DescribeInstances",
+                "ec2:CreateTags",
+                "ec2:DescribeImages",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "iam:GetRole",
+                "iam:TagRole",
+                "iam:ListRoles",
+                "kms:ListAliases"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:TerminateInstances"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/OCCMInstance": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ]
+        }
+    ]
+}
+----
+. 必要に応じて、[次へ]をクリックしてタグを追加します。
+. 「*次へ*」をクリックし、名前と概要 を入力します。
+. ［*ポリシーの作成*］をクリックします。
+. BlueXPが引き継ぐことができるIAMロールにポリシーを適用するか、BlueXPにアクセスキーを提供できるようにIAMユーザにポリシーを関連付けます。
++
+** （オプション1）BlueXPで想定できるIAMロールを設定します。
++
+... ターゲットアカウントの AWS IAM コンソールに移動します。
+... [ アクセス管理 ] で、 [ 役割 ] 、 [ 役割の作成 *] の順にクリックし、手順に従って役割を作成します。
+... 信頼されるエンティティのタイプ * で、 * AWS アカウント * を選択します。
+... 別のAWSアカウント*を選択して、BlueXP SaaSアカウントのID 952013314444を入力します
+... 前のセクションで作成したポリシーを選択します。
+... ロールを作成したら、ロールARNをコピーして、コネクタの作成時にBlueXPに貼り付けることができます。
+
+
+** （オプション2）BlueXPにアクセスキーを提供できるように、IAMユーザの権限を設定します。
++
+... AWS IAMコンソールで、* Users *をクリックしてユーザ名を選択します。
+... [権限の追加]>[既存のポリシーを直接適用する*]をクリックします。
+... 作成したポリシーを選択します。
+... [*次へ*]をクリックし、[*権限の追加*]をクリックします。
+... IAMユーザのアクセスキーとシークレットキーがあることを確認します。
+
+
+
+
+
+
+.結果
+これで、必要な権限を持つIAMロールまたは必要な権限を持つIAMユーザが作成されました。BlueXPからコネクタを作成するときに、ロールまたはアクセスキーに関する情報を指定できます。
+
+
+
+== AWS Marketplaceからデプロイする際にコネクタの権限を設定します
+
+AWSでIAMポリシーを作成し、IAMロールに関連付けます。AWS Marketplaceからコネクタを作成すると、そのIAMロールを選択するように求められます。
+
+.手順
+. IAMコンソールで、ポリシーを作成します。
++
+.. [*Policies]>[Create policy*]をクリックします。
+.. [*json]*を選択し、の内容をコピーして貼り付けます link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+.. 残りの手順を完了してポリシーを作成します。
++
+使用するBlueXPサービスによっては、2つ目のポリシーの作成が必要になる場合があります。
+
++
+標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。
+
+
+
+. IAMコンソールに戻り、IAMロールを作成します。
++
+.. [ロール]>[ロールの作成]*をクリックします。
+.. [AWS service]>[EC2]*を選択します。
+.. 前の手順で作成したポリシーを適用して権限を追加します。
+.. 残りの手順を完了してロールを作成します。
+
+
+
+
+.結果
+これで、AWS Marketplaceからの導入時にEC2インスタンスに関連付けることができるIAMロールが作成されました。
+
+
+
+== 手動インストール後に割り当てる権限を設定します
+
+AWSの独自のLinuxホストにコネクタソフトウェアを手動でインストールする場合は、次の方法で権限を指定できます。
+
+* オプション1：IAMポリシーを作成し、EC2インスタンスに関連付けることができるIAMロールにポリシーを関連付けます。
+* オプション2：必要な権限を持つIAMユーザのAWSアクセスキーをBlueXPに提供します。
+
+
+[role="tabbed-block"]
+====
+.IAMロール
+--
+.手順
+. IAMコンソールで、ポリシーを作成します。
++
+.. [*Policies]>[Create policy*]をクリックします。
+.. [*json]*を選択し、の内容をコピーして貼り付けます link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+.. 残りの手順を完了してポリシーを作成します。
++
+使用するBlueXPサービスによっては、2つ目のポリシーの作成が必要になる場合があります。
+
++
+標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。 link:reference-permissions-aws.html["コネクタのIAMポリシーの詳細については、こちらを参照してください"]。
+
+
+
+. IAMコンソールに戻り、IAMロールを作成します。
++
+.. [ロール]>[ロールの作成]*をクリックします。
+.. [AWS service]>[EC2]*を選択します。
+.. 前の手順で作成したポリシーを適用して権限を追加します。
+.. 残りの手順を完了してロールを作成します。
+
+
+
+
+.結果
+これで、コネクタのインストール後にEC2インスタンスに関連付けることができるIAMロールが作成されました。 link:task-provide-permissions-aws.html["これらの権限をBlueXPに付与する方法について説明します"]。
+
+--
+.AWSアクセスキー
+--
+.手順
+. IAMコンソールで、ポリシーを作成します。
++
+.. [*Policies]>[Create policy*]をクリックします。
+.. [*json]*を選択し、の内容をコピーして貼り付けます link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+.. 残りの手順を完了してポリシーを作成します。
++
+使用するBlueXPサービスによっては、2つ目のポリシーの作成が必要になる場合があります。
+
++
+標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。 link:reference-permissions-aws.html["コネクタのIAMポリシーの詳細については、こちらを参照してください"]。
+
+
+
+. IAMユーザにポリシーを適用します。
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS のドキュメント：「 Creating IAM Roles"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
+
+
+. コネクタのインストール後にBlueXPに追加できるアクセスキーがユーザに割り当てられていることを確認します。
+
+
+.結果
+これで、必要な権限とBlueXPへのアクセスキーを持つIAMユーザが作成されました。 link:task-provide-permissions-aws.html["これらの権限をBlueXPに付与する方法について説明します"]。
+
+--
+====

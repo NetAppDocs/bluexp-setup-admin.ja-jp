@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next-restricted-mode.html 
+keywords: private mode, what you can do 
+summary: 制限モードでBlueXPを起動して実行したら、制限モードでサポートされるBlueXPサービスの使用を開始できます。 
+---
+= 次に実行できる処理（制限モード）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+制限モードでBlueXPを起動して実行したら、制限モードでサポートされるBlueXPサービスの使用を開始できます。
+
+ヘルプについては、次のサービスのマニュアルを参照してください。
+
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html["ONTAP ドキュメント： Amazon FSX"^]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html["Azure NetApp Files のドキュメント"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html["Cloud Backup のドキュメント"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html["Cloud Data Sense ドキュメント"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP のドキュメント"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["オンプレミスのONTAP クラスタのドキュメント"^]
+* https://docs.netapp.com/us-en/cloud-manager-replication/index.html["レプリケーションドキュメント"^]
+

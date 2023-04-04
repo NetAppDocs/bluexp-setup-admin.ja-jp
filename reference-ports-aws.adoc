@@ -34,10 +34,10 @@ summary: コネクタのAWSセキュリティグループには、インバウ�
 | HTTPS | 443 | クライアント Web ブラウザからローカルユーザインターフェイスへの HTTPS アクセス、および Cloud Data Sense インスタンスからの接続を提供します 
 
 
-| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 <<Proxy server for AutoSupport messages,Connectorのプロキシサーバの詳細については、こちらをご覧ください>>。 
+| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 
 
 
-| TCP | 9060、9061 | クラウドデータセンスとCloud Backupを政府機関のクラウド環境で有効にして使用できます。これらのポートは、BlueXPアカウントでSaaSインターフェイスを無効にした場合にも、Cloud Backupに必要です。 
+| TCP | 9060、9061 | 政府機関のリージョンでCloud Data SenseとCloud Backupを有効にして使用できるようになります。 
 |===
 
 
@@ -78,13 +78,10 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | API コールと AutoSupport | HTTPS | 443 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | API が AWS や ONTAP 、クラウドデータ検知、ランサムウェアサービス、ネットアップへの AutoSupport メッセージの送信を呼び出します 
 
 
-.3+| API コール | TCP | 3000 | ONTAP HA メディエーター | ONTAP HA メディエーターとの通信 
+.2+| API コール | TCP | 3000 | ONTAP HA メディエーター | ONTAP HA メディエーターとの通信 
 
 
 | TCP | 8080 です | データセンス | 配備中にData Senseインスタンスにプローブします 
-
-
-| TCP | 8088 | S3 へのバックアップ | S3 へのバックアップを API で呼び出します 
 
 
 | DNS | UDP | 53 | DNS | BlueXPによるDNS解決に使用されます 

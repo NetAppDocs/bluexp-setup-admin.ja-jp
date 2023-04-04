@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: reference-networking-saas-console.html 
+keywords: networking, urls, endpoints, web browser, console 
+summary: SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。Webブラウザを実行しているマシンは、これらのエンドポイントに接続されている必要があります。 
+---
+= BlueXPコンソールにユーザがアクセスできるようにネットワークを準備
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。Webブラウザを実行しているマシンは、これらのエンドポイントに接続されている必要があります。
+
+[cols="2*"]
+|===
+| エンドポイント | 目的 
+
+
+| \ https://console.bluexp.netapp.com | Webベースのコンソールを使用している場合、WebブラウザはこのURLにアクセスします。 
+
+
+ a| 
+AWS サービス（ amazonaws.com ）：
+
+* クラウド形成
+* 柔軟なコンピューティングクラウド（ EC2 ）
+* キー管理サービス（ KMS ）
+* セキュリティトークンサービス（ STS ）
+* シンプルなストレージサービス（ S3 ）
+
+| BlueXPからAWSにコネクタを導入する場合に必要です。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、 AWS のマニュアルを参照してください。"^] 
+
+
+| https://management.azure.com https://login.microsoftonline.com | ほとんどのAzureリージョンでBlueXPからコネクタを導入する場合に必要です。 
+
+
+| https://management.microSoftazure.de https://login.microsoftonline.de | Azureドイツ地域でBlueXPからコネクタを導入する場合に必要です。 
+
+
+| https://management.usgovcloudapi.net/ https://login.microsoftonline.com | Azure US GovリージョンでBlueXPからコネクタを導入する場合に必要です。 
+
+
+| \ https://www.googleapis.com | Google CloudでBlueXPからConnectorを展開するために必要です。 
+
+
+| \ https://signin.b2c.netapp.com | NetApp Support Site (NSS)の資格情報を更新するか、新しいNSS資格情報をBlueXPに追加する必要があります。 
+
+
+| ¥ https://netapp-cloud-account.auth0.com ¥ https://cdn.auth0.com ¥ https://services.cloud.netapp.com | Webブラウザはこれらのエンドポイントに接続して、BlueXPを介した集中型ユーザ認証を行います。 
+
+
+| \ https://widget.intercom.io | 製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。 
+|===
+.関連リンク
+* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["コネクタがAWSで接続するエンドポイント"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["コネクタがAzureで接続するエンドポイント"]
+* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["コネクタがGoogle Cloudで接続するエンドポイント"]
+* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["コネクタの手動インストール中に接続されたエンドポイント"]
+

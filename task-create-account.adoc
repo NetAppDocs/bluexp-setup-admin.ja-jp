@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: task-create-account.html 
+keywords: create account, account, create, create another account, tenancy account, tenancy, tenancy account creation 
+summary: BlueXPにサインアップすると、組織のアカウントを作成するように求められます。このアカウントだけが必要な場合もありますが、ビジネスで複数のアカウントが必要な場合は、Tenancy APIを使用して追加のアカウントを作成する必要があります。 
+---
+= BlueXPアカウントをもう1つ作成します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPにサインアップすると、組織のアカウントを作成するように求められます。このアカウントだけが必要な場合もありますが、ビジネスで複数のアカウントが必要な場合は、Tenancy APIを使用して追加のアカウントを作成する必要があります。
+
+次のAPI呼び出しを使用して、追加のBlueXPアカウントを作成します。
+
+投稿（ Post ） `/tenancy/account/{accountName}`
+
+制限モードを有効にする場合は、要求の本文に次の項目を含める必要があります。
+
+[source, JSON]
+----
+{
+  "isSaasDisabled": true
+}
+----
+
+NOTE: 制限モードの設定は、BlueXPがアカウントを作成したあとに変更することはできません。制限モードは後で有効にすることも、後で無効にすることもできません。アカウント作成時に設定する必要があります。
+
+https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/post-tenancy-account-.html["このAPI呼び出しの使用方法について説明します"^]
+
+.関連リンク
+* link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認ください"]
+* link:concept-modes.html["BlueXPの導入モードについて説明します"]
+

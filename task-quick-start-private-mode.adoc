@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-private-mode.html 
+keywords: private mode quick start, quick start 
+summary: わずか数ステップでプライベートモードでBlueXPを開始できます。 
+---
+= BlueXPをプライベートモードでクイックスタートします
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+わずか数ステップでプライベートモードでBlueXPを開始できます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] 導入を準備
+[role="quick-margin-list"]
+. CPU、RAM、ディスクスペース、Docker Engineなどの要件を満たす専用のLinuxホストを準備します。
+. ターゲットネットワークへのアクセスを提供するネットワークをセットアップします。
+. クラウド環境の場合は、ソフトウェアのインストール後にそれらの権限をコネクタに関連付けることができるように、クラウドプロバイダで権限を設定します。
+
+
+[role="quick-margin-para"]
+link:task-prepare-private-mode.html["導入の準備方法をご確認ください"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] コネクタを展開します
+[role="quick-margin-list"]
+. Connectorソフトウェアを独自のLinuxホストにインストールします。
+. Webブラウザを開き、LinuxホストのIPアドレスを入力してBlueXPをセットアップします。
+. クラウド環境の場合は、以前に設定した権限をBlueXPに付与します。
+
+
+[role="quick-margin-para"]
+link:task-install-private-mode.html["コネクタの導入方法について説明します"]。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
-summary: BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するAzureクレデンシャルを選択できます。すべての Cloud Volumes ONTAP システムは、初期の Azure クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。 
+summary: 1つ以上のAzureサブスクリプションのクレデンシャルを管理できるように、BlueXPでのAzureクレデンシャルと権限の使用方法を理解しておく必要があります。 
 ---
 = Azure のクレデンシャルと権限
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用す
 
 
 [role="lead"]
-BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するAzureクレデンシャルを選択できます。すべての Cloud Volumes ONTAP システムは、初期の Azure クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。
+1つ以上のAzureサブスクリプションのクレデンシャルを管理できるように、BlueXPでのAzureクレデンシャルと権限の使用方法を理解しておく必要があります。
 
 
 
 == Azure の初期クレデンシャル
 
-BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます link:task-creating-connectors-azure.html["Azure の Connector 導入ポリシー"]。
+BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます link:task-set-up-permissions-azure.html["Azure の Connector 導入ポリシー"]。
 
 BlueXPがAzureにConnector仮想マシンを導入すると、が有効になります https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["システムによって割り当てられた管理 ID"^] 仮想マシンで、カスタムロールを作成して仮想マシンに割り当てます。このロールは、そのAzureサブスクリプション内でリソースとプロセスを管理するために必要な権限をBlueXPに提供します。 link:reference-permissions-azure.html["BlueXPがどのように権限を使用しているかを確認します"]。
 
@@ -30,32 +30,46 @@ Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォル
 
 image:screenshot_accounts_select_azure.gif["Details  Credentials ページに Switch Account オプションを示すスクリーンショット。"]
 
+すべての Cloud Volumes ONTAP システムは、初期の Azure クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。
+
 
 
 == マネージド ID 向けの Azure サブスクリプションが追加されました
 
-管理対象 ID は、 Connector を起動したサブスクリプションに関連付けられます。別の Azure サブスクリプションを選択する場合は、が必要です link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["管理対象 ID をこれらのサブスクリプションに関連付けます"]。
+コネクタVMに割り当てられたシステム割り当ての管理IDは、コネクタを起動したサブスクリプションに関連付けられています。別の Azure サブスクリプションを選択する場合は、が必要です link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["管理対象 ID をこれらのサブスクリプションに関連付けます"]。
 
 
 
 == Azure の追加クレデンシャル
 
-別の Azure クレデンシャルを使用して Cloud Volumes ONTAP を導入する場合は、必要な権限をに付与する必要があります link:task-adding-azure-accounts.html["Azure Active でサービスプリンシパルを作成およびセットアップする ディレクトリ"] を Azure アカウントごとに用意します。次の図は、 2 つの追加アカウントを示しています。各アカウントには、権限を提供するサービスプリンシパルとカスタムロールが設定されています。
+BlueXPで別のAzureクレデンシャルを使用する場合は、で必要な権限を付与する必要があります link:task-adding-azure-accounts.html["Azure Active でサービスプリンシパルを作成およびセットアップする ディレクトリ"] を Azure アカウントごとに用意します。次の図は、 2 つの追加アカウントを示しています。各アカウントには、権限を提供するサービスプリンシパルとカスタムロールが設定されています。
 
 image:diagram_permissions_multiple_azure.png["「 Azure の最初のアカウントを示す概念図。カスタムのロールと管理対象 ID を使用して権限を付与します。また、カスタムのロールとサービスプリンシパルを使用して権限を付与するもう 1 つのアカウントも含まれます。」"]
 
 そのあとで link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["アカウントの資格情報をBlueXPに追加します"] AD サービスプリンシパルの詳細を指定します。
 
-クレデンシャルを追加したら、新しい作業環境を作成するときにクレデンシャルに切り替えることができます。
+たとえば、新しいCloud Volumes ONTAP 作業環境を作成するときにクレデンシャルを切り替えることができます。
 
 image:screenshot_accounts_switch_azure.gif["[ 詳細と資格情報 ] ページで [ アカウントの切り替え ] をクリックした後に、クラウドプロバイダアカウントを選択する方法を示すスクリーンショット。"]
 
-.市場への導入とオンプレミスの導入についてはどうでしょうか。
-****
-上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。から Azure に Connector を導入することもできます link:task-launching-azure-mktp.html["Azure Marketplace で入手できます"]を使用できます link:task-installing-linux.html["コネクタをオンプレミスにインストールします"]。
 
-Marketplace を使用する場合も、アクセス許可は同じ方法で提供されます。コネクタの管理 ID を手動で作成してセットアップし、追加のアカウントに権限を付与するだけで済みます。
 
-オンプレミス環境では、 Connector の管理対象 ID を設定することはできませんが、サービスプリンシパルを使用して追加のアカウントの場合と同様に権限を設定できます。
+== 市場への導入とオンプレミスの導入についてはどうでしょうか。
 
-****
+上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。Azure MarketplaceからAzureにコネクタを導入したり、独自のLinuxホストにコネクタソフトウェアをインストールしたりすることもできます。
+
+Marketplaceを使用する場合は、コネクタVMとシステムによって割り当てられた管理IDにカスタムロールを割り当てることで権限を付与するか、Azure ADサービスプリンシパルを使用できます。
+
+オンプレミス展開の場合、コネクタの管理IDを設定することはできませんが、サービスプリンシパルを使用して権限を提供することはできます。
+
+権限の設定方法については、次のページを参照してください。
+
+* 標準モード
++
+** link:task-set-up-permissions-azure.html["Azure権限を設定する"]
+** link:task-set-up-permissions-on-prem.html["オンプレミス環境のクラウド権限を設定"]
+
+
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["制限モードにクラウド権限を設定する"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["プライベートモードのクラウド権限を設定します"]
+

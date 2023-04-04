@@ -1,0 +1,129 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-networking-azure.html 
+keywords: azure networking, networking, vnet, subnet, azure region, connections, outbound connections, endpoints, urls, proxy, proxy server 
+summary: コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。 
+---
+= Azureネットワークをセットアップする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。
+
+
+
+== VNetおよびサブネット
+
+コネクタを作成するときは、コネクタを配置するVNetとサブネットを指定する必要があります。
+
+
+
+== Azure リージョン
+
+コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure リージョンペア"^] Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP での Azure プライベートリンクの使用方法をご確認ください"^]
+
+
+
+== ターゲットネットワークへの接続
+
+コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。
+
+
+
+== アウトバウンドインターネットアクセス
+
+コネクタを配置するネットワークの場所には、アウトバウンドのインターネット接続が必要です。
+
+
+
+=== 手動インストール中にエンドポイントに接続しました
+
+独自のLinuxホストにコネクタを手動でインストールする場合は、コネクタのインストーラでインストールプロセス中に次のURLにアクセスする必要があります。
+
+* \ https://support.netapp.com
+* https://mysupport.netapp.com をご覧ください
+* \ https://cloudmanager.cloud.netapp.com/tenancy
+* \ https://stream.cloudmanager.cloud.netapp.com
+* \ https://cloudmanagerinfraprod.azurecr.io
+* \ https://production-artifacts.cloudmanager.cloud.netapp.com
+* \ https://*.blob.core.windows.net
+
+
+ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。
+
+
+
+=== 日常業務のためにコンタクトしたエンドポイント
+
+Connector では、パブリッククラウド環境内のリソースとプロセスを管理するために、次のエンドポイントに接続するためにアウトバウンドインターネットアクセスが必要です。
+
+[cols="2*"]
+|===
+| エンドポイント | 目的 
+
+
+| https://management.azure.com https://login.microsoftonline.com https://blob.core.windows.net https://core.windows.net | Azureパブリックリージョン内のリソースを管理します。 
+
+
+| https://management.chinacloudapi.cn https://login.chinacloudapi.cn https://blob.core.chinacloudapi.cn https://core.chinacloudapi.cn | をクリックしてAzure中国地域のリソースを管理してください。 
+
+
+| \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
+
+
+ a| 
+\ https://*.api.bluexp.netapp.com
+
+\ https://api.bluexp.netapp.com
+
+\ https://*.cloudmanager.cloud.netapp.com
+
+\ https://cloudmanager.cloud.netapp.com
+ a| 
+BlueXPでSaaSの機能とサービスを提供するため。
+
+
+NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続していますが、今後のリリースでapi.bluexp.netapp.com"への連絡を開始します。
+
+
+
+| ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
+|===
+.関連リンク
+link:reference-networking-saas-console.html["BlueXPコンソールにユーザがアクセスできるようにネットワークを準備"]
+
+
+
+== プロキシサーバ
+
+すべての送信インターネットトラフィックにプロキシサーバを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。
+
+* IP アドレス
+* クレデンシャル
+* HTTPS証明書
+
+
+
+
+== ポート
+
+コネクタへの着信トラフィックは、コネクタを起動した場合や、コネクタがAutoSupport メッセージのプロキシとして使用されている場合を除き、受信トラフィックはありません。
+
+* HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。
+* SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。
+* アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。
+
+
+
+
+== IPアドレスの制限
+
+172の範囲のIPアドレスと競合する可能性があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["この制限事項の詳細については、こちらをご覧ください"]。

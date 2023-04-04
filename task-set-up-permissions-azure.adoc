@@ -1,0 +1,469 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-permissions-azure.html 
+keywords: azure permissions, set up permissions, setup permissions, permissions, custom role, azure custom role, service principal, azure ad service principal, json 
+summary: BlueXPを使用してAzureのデータとストレージインフラを管理できるように、Azureの権限を設定します。アクセス許可の設定方法は、使用するインストールオプションによって異なります。 
+---
+= Azure権限を設定する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPを使用してAzureのデータとストレージインフラを管理できるように、Azureの権限を設定します。アクセス許可の設定方法は、使用するインストールオプションによって異なります。
+
+次のインストールオプションから選択できます。
+
+* * BlueXPからインストール*：BlueXPがAzureで認証してVMを導入できるように権限を設定します。コネクタVMの権限は、導入時にBlueXPによって自動的に設定されます。
++
+<<BlueXPからコネクタを作成するための権限を設定します,ステップバイステップの手順を確認します>>。
+
+* * Azure Marketplaceからインストール*:コネクタVMまたはAzure ADサービスプリンシパルに関連付けるAzureカスタムロールを設定します。
++
+<<Azure Marketplaceの導入後または手動インストール後に割り当てる権限を設定します,ステップバイステップの手順を確認します>>。
+
+* *手動インストール*:コネクタVMまたはAzure ADサービスプリンシパルに関連付けるAzureカスタムロールを設定します。
++
+<<Azure Marketplaceの導入後または手動インストール後に割り当てる権限を設定します,ステップバイステップの手順を確認します>>。
+
+
+
+
+
+== BlueXPからコネクタを作成するための権限を設定します
+
+BlueXPからコネクタを作成するには、AzureでコネクタVMを作成するために必要な権限を持つBlueXPへのログインを設定する必要があります。次の 2 つのオプションがあります。
+
+. プロンプトが表示されたら、 Microsoft アカウントでサインインします。このアカウントには Azure 固有の権限が必要です。これがデフォルトのオプションです。
+. Azure AD サービスプリンシパルの詳細を指定します。このサービスプリンシパルには、特定の権限も必要です。
+
+
+どちらのオプションを使用する場合も、最初にカスタムロールを作成します。
+
+
+
+=== カスタムロールを作成します
+
+Azureアカウントまたはサービスプリンシパルに割り当てることができるカスタムロールを作成します。
+
+.手順
+. Azureの新しいカスタムロールに必要な権限をコピーし、JSONファイルに保存します。
++
+
+NOTE: このポリシーには、BlueXPからAzureでConnector VMを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。BlueXPがコネクタを作成すると、Connector VMに新しい権限セットが適用され、Connectorがパブリッククラウド環境内のリソースを管理できるようになります。
+
++
+[source, json]
+----
+{
+    "Name": "Azure SetupAsService",
+    "Actions": [
+        "Microsoft.Compute/disks/delete",
+        "Microsoft.Compute/disks/read",
+        "Microsoft.Compute/disks/write",
+        "Microsoft.Compute/locations/operations/read",
+        "Microsoft.Compute/operations/read",
+        "Microsoft.Compute/virtualMachines/instanceView/read",
+        "Microsoft.Compute/virtualMachines/read",
+        "Microsoft.Compute/virtualMachines/write",
+        "Microsoft.Compute/virtualMachines/delete",
+        "Microsoft.Compute/virtualMachines/extensions/write",
+        "Microsoft.Compute/virtualMachines/extensions/read",
+        "Microsoft.Compute/availabilitySets/read",
+        "Microsoft.Network/locations/operationResults/read",
+        "Microsoft.Network/locations/operations/read",
+        "Microsoft.Network/networkInterfaces/join/action",
+        "Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Network/networkInterfaces/write",
+        "Microsoft.Network/networkInterfaces/delete",
+        "Microsoft.Network/networkSecurityGroups/join/action",
+        "Microsoft.Network/networkSecurityGroups/read",
+        "Microsoft.Network/networkSecurityGroups/write",
+        "Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/subnets/virtualMachines/read",
+        "Microsoft.Network/virtualNetworks/virtualMachines/read",
+        "Microsoft.Network/publicIPAddresses/write",
+        "Microsoft.Network/publicIPAddresses/read",
+        "Microsoft.Network/publicIPAddresses/delete",
+        "Microsoft.Network/networkSecurityGroups/securityRules/read",
+        "Microsoft.Network/networkSecurityGroups/securityRules/write",
+        "Microsoft.Network/networkSecurityGroups/securityRules/delete",
+        "Microsoft.Network/publicIPAddresses/join/action",
+        "Microsoft.Network/locations/virtualNetworkAvailableEndpointServices/read",
+        "Microsoft.Network/networkInterfaces/ipConfigurations/read",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/deployments/delete",
+        "Microsoft.Resources/deployments/cancel/action",
+        "Microsoft.Resources/deployments/validate/action",
+        "Microsoft.Resources/resources/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/delete",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/resources/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "Microsoft.Authorization/roleDefinitions/write",
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/read",
+        "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/write",
+        "Microsoft.Network/networkSecurityGroups/delete",
+        "Microsoft.Storage/storageAccounts/delete",
+        "Microsoft.Storage/storageAccounts/write",
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.Resources/deployments/operationStatuses/read",
+        "Microsoft.Authorization/roleAssignments/read"
+    ],
+    "NotActions": [],
+    "AssignableScopes": [],
+    "Description": "Azure SetupAsService",
+    "IsCustom": "true"
+}
+----
+. JSONを変更して、割り当て可能な範囲にAzureサブスクリプションIDを追加します。
++
+* 例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz"
+],
+----
+. JSON ファイルを使用して、 Azure でカスタムロールを作成します。
++
+次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
+
++
+.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
+.. JSON ファイルをアップロードします。
++
+image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
+
+.. Azure CLI で次のコマンドを入力します。
++
+[source, azurecli]
+----
+az role definition create --role-definition Policy_for_Setup_As_Service_Azure.json
+----
+
+
++
+これで、 _Azure SetupAsService_という カスタムロールが作成されました。このカスタムロールをユーザーアカウントまたはサービスプリンシパルに適用できるようになりました。
+
+
+
+
+
+=== 認証方法を設定します
+
+BlueXPコネクタを導入するには、BlueXPがAzureで認証される必要があります。2つのAzure認証方式から選択できます。
+
+[role="tabbed-block"]
+====
+.Azureユーザアカウント
+--
+BlueXPからコネクタを導入するユーザにカスタムロールを割り当てます。
+
+.手順
+. Azureポータルで、* Subscriptions *サービスを開き、ユーザーのサブスクリプションを選択します。
+. 「 * アクセスコントロール（ IAM ） * 」をクリックします。
+. [ * 追加 *>* 役割の割り当ての追加 * ] をクリックして、権限を追加します。
++
+.. Azure SetupAsService * ロールを選択し、 * 次へ * をクリックします。
++
+
+NOTE: Azure SetupAsServiceは、Azureのコネクタ導入ポリシーで指定されているデフォルトの名前です。ロールに別の名前を選択した場合は、代わりにその名前を選択します。
+
+.. [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
+.. [ * メンバーの選択 * ] をクリックし、ユーザーアカウントを選択して、 [ * 選択 * ] をクリックします。
+.. 「 * 次へ * 」をクリックします。
+.. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
+
+
+
+
+.結果
+これで、Azureユーザには、BlueXPからConnectorを導入するために必要な権限が付与されました。
+
+--
+.サービスプリンシパル
+--
+Azureアカウントでログインする代わりに、必要な権限を持つAzureサービスプリンシパルのクレデンシャルをBlueXPに指定できます。
+
+Azure Active Directoryでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。
+
+.ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
+. Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
++
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
+
+. Azure ポータルで、 * Azure Active Directory * サービスを開きます。
++
+image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サービスを示しています。"]
+
+. メニューで、 * アプリ登録 * をクリックします。
+. [ 新規登録 ] をクリックします。
+. アプリケーションの詳細を指定します。
++
+** * 名前 * ：アプリケーションの名前を入力します。
+** *アカウントの種類*:アカウントの種類を選択します(すべてのアカウントはBlueXPで動作します)。
+** * リダイレクト URI *: このフィールドは空白のままにできます。
+
+
+. [*Register] をクリックします。
++
+AD アプリケーションとサービスプリンシパルを作成しておきます。
+
+
+
+.アプリケーションにカスタムロールを割り当てます
+. Azure ポータルで、 * Subscriptions * サービスを開きます。
+. サブスクリプションを選択します。
+. [* アクセス制御 (IAM)] 、 [ 追加 ] 、 [ 役割の割り当ての追加 *] の順にクリックします。
+. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
+. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
++
+.. [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
+.. [ メンバーの選択 ] をクリックします。
++
+image:screenshot-azure-service-principal-role.png["アプリケーションにロールを追加するときに Members タブを表示する Azure ポータルのスクリーンショット。"]
+
+.. アプリケーションの名前を検索します。
++
+次に例を示します。
+
++
+image:screenshot_azure_service_principal_role.png["Azure ポータルのスクリーンショットで、 Azure ポータルのロール割り当ての追加フォームが表示されています。"]
+
+.. アプリケーションを選択し、 * Select * をクリックします。
+.. 「 * 次へ * 」をクリックします。
+
+
+. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
++
+サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
+
++
+Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入する場合は、サービスプリンシパルを各サブスクリプションにバインドする必要があります。BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するサブスクリプションを選択できます。
+
+
+
+.Windows Azure Service Management API 権限を追加します
+. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
+. [API アクセス許可 ] 、 [ アクセス許可の追加 ] の順にクリックします。
+. Microsoft API* で、 * Azure Service Management * を選択します。
++
+image:screenshot_azure_service_mgmt_apis.gif["Azure Service Management API 権限を示す Azure ポータルのスクリーンショット。"]
+
+. [* 組織ユーザーとして Azure サービス管理にアクセスする *] をクリックし、 [ * 権限の追加 * ] をクリックします。
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API の追加を示す Azure ポータルのスクリーンショット。"]
+
+
+
+.アプリケーションのアプリケーションIDとディレクトリIDを取得します
+. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
+. アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。
++
+image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケーション（クライアント）の ID とディレクトリ（テナント） ID を示すスクリーンショット。"]
+
++
+AzureアカウントをBlueXPに追加するときは、アプリケーション（クライアント）IDとディレクトリ（テナント）IDを指定する必要があります。BlueXPでは、プログラムでサインインするためにIDが使用されます。
+
+
+
+.クライアントシークレットを作成します
+. Azure Active Directory * サービスを開きます。
+. [* アプリ登録 * ] をクリックして、アプリケーションを選択します。
+. ［ * 証明書とシークレット > 新しいクライアントシークレット * ］ をクリックします。
+. シークレットと期間の説明を入力します。
+. [ 追加（ Add ） ] をクリックします。
+. クライアントシークレットの値をコピーします。
++
+image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパルのクライアントシークレットを表示する Azure ポータルのスクリーンショット。"]
+
++
+BlueXPでAzure ADの認証に使用するクライアントシークレットが作成されました。
+
+
+
+.結果
+これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。コネクタを作成するときに、BlueXPでこの情報を入力する必要があります。
+
+--
+====
+
+
+== Azure Marketplaceの導入後または手動インストール後に割り当てる権限を設定します
+
+Azure Marketplaceからコネクタを導入する場合、またはコネクタソフトウェアを手動で独自のLinuxホストにインストールする場合は、次の方法で権限を指定できます。
+
+* オプション1：システム割り当ての管理IDを使用して、Azure VMにカスタムロールを割り当てます。
+* オプション2：必要な権限を持つAzureサービスプリンシパルのクレデンシャルをBlueXPに提供します。
+
+
+[role="tabbed-block"]
+====
+.カスタムロール
+--
+.手順
+. 独自のホストにソフトウェアを手動でインストールする場合は、カスタムロールを使用して必要なAzure権限を提供できるように、VMでシステムが割り当てた管理IDを有効にします。
++
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azureのドキュメント：Azureポータルを使用して、VM上のAzureリソースの管理IDを設定します"^]
+
+. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
+. 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
++
+ユーザが Cloud Volumes ONTAP システムを作成する Azure サブスクリプションごとに ID を追加する必要があります。
+
++
+* 例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+. JSON ファイルを使用して、 Azure でカスタムロールを作成します。
++
+次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
+
++
+.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
+.. JSON ファイルをアップロードします。
++
+image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
+
+.. Azure CLIを使用してカスタムロールを作成します。
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
+
+
+
+
+.結果
+これで、Connector仮想マシンに割り当てることができるBlueXP Operatorというカスタムロールが作成されました。
+
+link:task-provide-permissions-azure.html["これらの権限をBlueXPに付与する方法について説明します"]。
+
+--
+.サービスプリンシパル
+--
+Azure Active Directoryでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。
+
+.ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
+. Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
++
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
+
+. Azure ポータルで、 * Azure Active Directory * サービスを開きます。
++
+image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サービスを示しています。"]
+
+. メニューで、 * アプリ登録 * をクリックします。
+. [ 新規登録 ] をクリックします。
+. アプリケーションの詳細を指定します。
++
+** * 名前 * ：アプリケーションの名前を入力します。
+** *アカウントの種類*:アカウントの種類を選択します(すべてのアカウントはBlueXPで動作します)。
+** * リダイレクト URI *: このフィールドは空白のままにできます。
+
+
+. [*Register] をクリックします。
++
+AD アプリケーションとサービスプリンシパルを作成しておきます。
+
+
+
+.アプリケーションにカスタムロールを割り当てます
+. Azure ポータルで、 * Subscriptions * サービスを開きます。
+. サブスクリプションを選択します。
+. [* アクセス制御 (IAM)] 、 [ 追加 ] 、 [ 役割の割り当ての追加 *] の順にクリックします。
+. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
+. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
++
+.. [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
+.. [ メンバーの選択 ] をクリックします。
++
+image:screenshot-azure-service-principal-role.png["アプリケーションにロールを追加するときに Members タブを表示する Azure ポータルのスクリーンショット。"]
+
+.. アプリケーションの名前を検索します。
++
+次に例を示します。
+
++
+image:screenshot_azure_service_principal_role.png["Azure ポータルのスクリーンショットで、 Azure ポータルのロール割り当ての追加フォームが表示されています。"]
+
+.. アプリケーションを選択し、 * Select * をクリックします。
+.. 「 * 次へ * 」をクリックします。
+
+
+. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
++
+サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
+
++
+Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入する場合は、サービスプリンシパルを各サブスクリプションにバインドする必要があります。BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するサブスクリプションを選択できます。
+
+
+
+.Windows Azure Service Management API 権限を追加します
+. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
+. [API アクセス許可 ] 、 [ アクセス許可の追加 ] の順にクリックします。
+. Microsoft API* で、 * Azure Service Management * を選択します。
++
+image:screenshot_azure_service_mgmt_apis.gif["Azure Service Management API 権限を示す Azure ポータルのスクリーンショット。"]
+
+. [* 組織ユーザーとして Azure サービス管理にアクセスする *] をクリックし、 [ * 権限の追加 * ] をクリックします。
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API の追加を示す Azure ポータルのスクリーンショット。"]
+
+
+
+.アプリケーションのアプリケーションIDとディレクトリIDを取得します
+. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
+. アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。
++
+image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケーション（クライアント）の ID とディレクトリ（テナント） ID を示すスクリーンショット。"]
+
++
+AzureアカウントをBlueXPに追加するときは、アプリケーション（クライアント）IDとディレクトリ（テナント）IDを指定する必要があります。BlueXPでは、プログラムでサインインするためにIDが使用されます。
+
+
+
+.クライアントシークレットを作成します
+. Azure Active Directory * サービスを開きます。
+. [* アプリ登録 * ] をクリックして、アプリケーションを選択します。
+. ［ * 証明書とシークレット > 新しいクライアントシークレット * ］ をクリックします。
+. シークレットと期間の説明を入力します。
+. [ 追加（ Add ） ] をクリックします。
+. クライアントシークレットの値をコピーします。
++
+image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパルのクライアントシークレットを表示する Azure ポータルのスクリーンショット。"]
+
++
+BlueXPでAzure ADの認証に使用するクライアントシークレットが作成されました。
+
+
+
+.結果
+これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。Azureアカウントを追加する場合は、BlueXPでこの情報を入力する必要があります。
+
+link:task-provide-permissions-azure.html["これらの権限をBlueXPに付与する方法について説明します"]。
+
+--
+====

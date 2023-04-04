@@ -4,7 +4,7 @@ permalink: task-installing-https-cert.html
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
 summary: デフォルトでは、BlueXPはWebコンソールへのHTTPSアクセスに自己署名証明書を使用します。認証局（ CA ）によって署名された証明書をインストールできます。これにより、自己署名証明書よりも優れたセキュリティ保護が提供されます。 
 ---
-= セキュアなアクセスのための HTTPS 証明書の管理
+= セキュアなアクセスのためのHTTPS証明書をインストールします
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -24,12 +24,12 @@ BlueXP設定を変更する前にコネクタを作成する必要がありま�
 
 
 
-== HTTPS 証明書のインストール
+== HTTPS 証明書をインストールします
 
 セキュアなアクセスのために、 CA によって署名された証明書をインストールします。
 
 .手順
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*HTTPSセットアップ*]を選択します。
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[HTTPSセットアップ]*を選択します。
 +
 image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 
@@ -41,7 +41,7 @@ image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設�
 
 
 | CSR を生成します  a| 
-.. コネクターホストのホスト名または DNS （共通名）を入力し、 * CSR の生成 * をクリックします。
+.. コネクタホストのホスト名またはDNS（共通名）を入力し、*[CSRの生成]*を選択します。
 +
 証明書署名要求が表示されます。
 
@@ -49,14 +49,14 @@ image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設�
 +
 証明書では、 Privacy Enhanced Mail （ PEM ） Base-64 エンコード X.509 形式を使用する必要があります。
 
-.. 証明書ファイルをアップロードし、 * Install * をクリックします。
+.. 証明書ファイルをアップロードし、*[インストール]*を選択します。
 
 
 
 
 | 独自の CA 署名付き証明書をインストールします  a| 
 .. 「 CA 署名証明書のインストール」を選択します。
-.. 証明書ファイルと秘密鍵の両方をロードし、 * Install * をクリックします。
+.. 証明書ファイルと秘密鍵の両方をロードし、*[インストール]*を選択します。
 +
 証明書では、 Privacy Enhanced Mail （ PEM ） Base-64 エンコード X.509 形式を使用する必要があります。
 
@@ -77,11 +77,11 @@ image:screenshot_https_cert.gif["スクリーンショット：署名付き証�
 BlueXPコンソールへの安全なアクセスを確保するために、有効期限が切れる前にBlueXP HTTPS証明書を更新する必要があります。有効期限が切れる前に証明書を更新しないと、ユーザがHTTPSを使用してWebコンソールにアクセスしたときに警告が表示されます。
 
 .手順
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*HTTPSセットアップ*]を選択します。
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[HTTPSセットアップ]*を選択します。
 +
 BlueXP証明書の詳細が、有効期限を含めて表示されます。
 
-. [ 証明書の変更 ] をクリックし、手順に従って CSR を生成するか、独自の CA 署名証明書をインストールします。
+. [証明書の変更]*を選択し、手順に従ってCSRを生成するか、独自のCA署名証明書をインストールします。
 
 
 .結果

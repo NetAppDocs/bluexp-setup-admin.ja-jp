@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: concept-install-options-aws.html 
+keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
+summary: AWSでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。 
+---
+= AWSでのコネクタのインストールオプション
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+AWSでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。
+
+次のインストールオプションを使用できます。
+
+* BlueXPからコネクタを直接作成（標準オプション）
++
+この操作により、Linuxを実行するEC2インスタンスとコネクタソフトウェアが、選択したVPCで起動されます。
+
+* AWS Marketplace からコネクタを作成します
++
+また、LinuxとConnectorソフトウェアを実行するEC2インスタンスも起動します。
+
+* ソフトウェアをダウンロードして、自分のLinuxホストに手動でインストールします
+
+
+選択するインストールオプションは、インストールの準備方法に影響します。これには、AWSでリソースの認証と管理に必要な権限をBlueXPに付与する方法も含まれます。
+
+link:task-install-connector-aws.html["AWSにコネクタをインストールする方法について説明します"]。

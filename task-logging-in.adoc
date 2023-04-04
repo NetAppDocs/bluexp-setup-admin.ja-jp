@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: BlueXPにサインアップすると、WebブラウザからSaaSベースのユーザーインターフェイスを介してログインできます。 
+summary: BlueXPにサインアップすると、WebブラウザからWebベースのコンソールからログインできます。 
 ---
-= BlueXPにログインします
+= BlueXPにログインする（標準モード）
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,10 @@ summary: BlueXPにサインアップすると、WebブラウザからSaaSベー�
 
 
 [role="lead"]
-BlueXPにサインアップすると、WebブラウザからSaaSベースのユーザーインターフェイスを介してログインできます。
-
-link:task-sign-up-saas.html["BlueXPに登録してアカウントを作成する方法をご紹介します"]。
-
-政府機関またはアウトバウンドのインターネットアクセスがないサイトからBlueXPにアクセスしている場合は、コネクタでローカルに実行されているBlueXPユーザーインターフェイスにログインする必要があります。 link:task-managing-connectors.html#access-the-local-ui["ConnectorでローカルUIにアクセスする方法について説明します"]。
+BlueXPに登録すると、Webベースのコンソールからログインできます。
 
 .ログインオプション
-次のいずれかのオプションを使用して、BlueXPにログインできます。
+BlueXPのWebベースのコンソールには、次のいずれかの方法でログインできます。
 
 * 既存のNetApp Support Site （NSS）のクレデンシャルを必要に応じて変更
 * Eメールアドレスとパスワードを使用したネットアップクラウドへのログイン

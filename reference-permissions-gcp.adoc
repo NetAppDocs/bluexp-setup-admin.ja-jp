@@ -22,7 +22,12 @@ BlueXPには、Google Cloudでアクションを実行するための権限が�
 
 次のカスタムロールは、ConnectorがGoogle Cloudネットワーク内のリソースとプロセスを管理するために必要な権限を提供します。
 
-このカスタムロールは、Connector VMに関連付けられているサービスアカウントに適用する必要があります。 link:task-creating-connectors-gcp.html["ステップバイステップの手順を確認します"]。
+このカスタムロールは、Connector VMに関連付けられているサービスアカウントに適用する必要があります。
+
+* link:task-set-up-permissions-google.html["標準モードの権限を設定します"]
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["制限モードの権限を設定します"]
+* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["プライベートモードの権限を設定します"]
+
 
 また、新しい権限が以降のリリースで追加されるときに、ロールが最新の状態であることを確認する必要があります。
 

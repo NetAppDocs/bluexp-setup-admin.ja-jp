@@ -1,0 +1,439 @@
+---
+sidebar: sidebar 
+permalink: task-prepare-private-mode.html 
+keywords: private mode requirements, requirements, install options, private mode networking, dark site, private mode permissions, permissions for private mode, networking for private mode 
+summary: 環境を準備できるように、BlueXPをプライベートモードで運用するために必要なことを理解しておく必要があります。 
+---
+= プライベートモードでの導入を準備します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+環境を準備するために、プライベートモードでBlueXPの使用を開始するために必要なことを理解しておく必要があります。
+
+
+NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial Cloud Services（C2S）環境"^] その後、コネクタの準備、取り付け、およびCloud Volumes ONTAP の起動方法を説明する別の指示に従う必要があります。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["AWS C2S環境でCloud Volumes ONTAP を使用する方法をご確認ください"^]
+
+
+
+== プライベートモードの仕組みを理解します
+
+作業を開始する前に、BlueXPがプライベートモードでどのように動作するかを理解しておく必要があります。
+
+たとえば、インストールする必要があるBlueXP Connectorからローカルにアクセスできるブラウザベースのインターフェイスを使用する必要があることを理解しておく必要があります。BlueXPには、SaaSレイヤ経由で提供されるWebベースのコンソールからはアクセスできません。
+
+また、すべてのBlueXPサービスを利用できるわけではありません。
+
+link:concept-modes.html["プライベートモードの仕組みを説明します"]。
+
+
+
+== インストールオプションを確認します
+
+プライベートモードでは、コネクタを自社のLinuxホストに手動でインストールすることで、コネクタをオンプレミスまたはクラウドにインストールできます。
+
+Google CloudでCloud Volumes ONTAP システムを作成する場合は、コネクタをGoogle Cloudで実行する必要があります。オンプレミスで実行することはできません。
+
+
+
+== ホストの要件を確認します
+
+コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。
+
+専用ホスト:: 他のアプリケーションと共有しているホストでは、このコネクタはサポートされていません。専用のホストである必要があります。
+サポートされているオペレーティングシステム::
++
+--
+* CentOS 7.6、7.7、7.8、7.9
+* Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 および8.7
++
+ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
+
++
+Connector は、これらのオペレーティングシステムの英語版でサポートされています。
+
+
+
+--
+ハイパーバイザー:: CentOSまたはRed Hat Enterprise Linuxの実行が認定されたベアメタルまたはホスト型のハイパーバイザーが必要です。 https://access.redhat.com/certified-hypervisors["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
+CPU:: 4 コアまたは 4 個の vCPU
+RAM:: 14 GB
+AWS EC2 インスタンスタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.xlarge をお勧めします。
+Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。DS3 v2 を推奨します。
+Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。
++
+--
+このコネクタは、OSがサポートされているVMインスタンス上のGoogle Cloudでサポートされます https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["シールドVM機能"^]
+
+--
+/opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
+/var のディスク領域:: 20GiB のスペースが必要です
+Docker Engine の略:: Connectorをインストールする前に、ホストにDocker Engineバージョン19.3.1以降が必要です。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+
+
+
+
+== コネクタのネットワークを準備します
+
+コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタの仮想ネットワークとサブネットを使用する以外に、次の要件が満たされていることを確認する必要があります。
+
+
+
+=== ターゲットネットワークへの接続
+
+コネクタには、ストレージを管理する場所へのネットワーク接続が必要です。たとえば、Cloud Volumes ONTAP を導入するVPCまたはVNet、オンプレミスのONTAP クラスタが配置されているデータセンターなどです。
+
+
+
+=== 日常業務のエンドポイント
+
+コネクタは次のエンドポイントに接続し、パブリッククラウド環境にCloud Volumes ONTAP を導入して管理します。
+
+[cols="2*"]
+|===
+| エンドポイント | 目的 
+
+
+ a| 
+AWS サービス（ amazonaws.com ）：
+
+* クラウド形成
+* 柔軟なコンピューティングクラウド（ EC2 ）
+* IDおよびアクセス管理（IAM）
+* キー管理サービス（ KMS ）
+* セキュリティトークンサービス（ STS ）
+* シンプルなストレージサービス（ S3 ）
+
+| AWSでリソースを管理できます。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWSのドキュメントを参照してください"^] 
+
+
+| https://management.azure.com https://login.microsoftonline.com https://blob.core.windows.net https://core.windows.net | Azureパブリックリージョン内のリソースを管理します。 
+
+
+| https://management.azure.microsoft.scloud https://login.microsoftonline.microsoft.scloud https://blob.core.microsoft.scloud https://core.microsoft.scloud | をクリックして、Azure IL6リージョン内のリソースを管理します。 
+
+
+| https://management.chinacloudapi.cn https://login.chinacloudapi.cn https://blob.core.chinacloudapi.cn https://core.chinacloudapi.cn | をクリックしてAzure中国地域のリソースを管理してください。 
+
+
+| ¥https://www.googleapis.com/compute/v1/¥https://cloudresourcemanager.googleapis.com/v1/projects¥https://www.googleapis.com/compute/beta¥https://storage.googleapis.com/storage/v1¥https://iam.googleapis.com/v1¥https://cloudkms.googleapis.com/v1¥https://www.googleapis.com/storage/v1 https://www.googleapis.com/deploymentmanager/v2/projects | Google Cloudでリソースを管理します。 
+|===
+
+
+=== プロキシサーバ
+
+送信インターネットトラフィック用にプロキシサーバを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。
+
+* IP アドレス
+* クレデンシャル
+* HTTPS証明書
+
+
+プライベートモードの場合、BlueXPがアウトバウンドトラフィックを送信するのは、Cloud Volumes ONTAP システムを作成するためにクラウドプロバイダにしかありません。
+
+
+
+=== AzureのパブリックIPアドレス
+
+AzureのコネクタVMでパブリックIPアドレスを使用する場合は、そのIPアドレスでBasic SKUを使用して、BlueXPでこのパブリックIPアドレスが使用されるようにする必要があります。
+
+image:screenshot-azure-sku.png["Azureで新しいIPアドレスを作成するスクリーンショット。[SKU]フィールドで[Basic]を選択できます。"]
+
+Standard SKUのIPアドレスを代わりに使用する場合、BlueXPでは、パブリックIPではなくコネクタの_private_IPアドレスが使用されます。BlueXPコンソールへのアクセスに使用しているマシンがそのプライベートIPアドレスにアクセスできない場合、BlueXPコンソールからの操作が失敗します。
+
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azureのドキュメント：パブリックIP SKU"^]
+
+
+
+=== ポート
+
+コネクタへの着信トラフィックは、開始しない限りありません。
+
+HTTP（80）およびHTTPS（443）は、BlueXPコンソールへのアクセスを提供します。SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。一方、アウトバウンドのインターネット接続が利用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128を介したインバウンド接続が必要です。
+
+
+
+== クラウドの権限を準備
+
+Cloud Volumes ONTAP システムの作成を計画している場合は、クラウドプロバイダからBlueXPの権限が必要です。クラウドプロバイダで権限を設定し、インストール後にそれらの権限をコネクタインスタンスに関連付ける必要があります。
+
+必要な手順を表示するには、クラウドプロバイダに使用する認証オプションを選択します。
+
+コネクタをオンプレミスにインストールする場合は、AWSアクセスキーまたはAzureサービスプリンシパルを使用して権限を提供する必要があります。その他のオプションはサポートされていません。
+
+[role="tabbed-block"]
+====
+.AWS IAMロール
+--
+コネクタに権限を付与するには、IAMロールを使用します。コネクタのEC2インスタンスにロールを手動でアタッチする必要があります。
+
+.手順
+. AWSコンソールにログインし、IAMサービスに移動します。
+. ポリシーを作成します。
++
+.. [*Policies]>[Create policy*]をクリックします。
+.. [*json]*を選択し、の内容をコピーして貼り付けます link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+.. 残りの手順を完了してポリシーを作成します。
+
+
+. IAMロールを作成します。
++
+.. [ロール]>[ロールの作成]*をクリックします。
+.. [AWS service]>[EC2]*を選択します。
+.. 作成したポリシーを適用して権限を追加します。
+.. 残りの手順を完了してロールを作成します。
+
+
+
+
+.結果
+これで、コネクタEC2インスタンスのIAMロールが作成されました。
+
+--
+.AWSアクセスキー
+--
+IAMユーザの権限とアクセスキーを設定します。コネクタをインストールしてBlueXPをセットアップしたら、BlueXPにAWSアクセスキーを指定する必要があります。
+
+.手順
+. IAMコンソールで、ポリシーを作成します。
++
+.. [*Policies]>[Create policy*]をクリックします。
+.. [*json]*を選択し、の内容をコピーして貼り付けます link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+.. 残りの手順を完了してポリシーを作成します。
++
+使用するBlueXPサービスによっては、2つ目のポリシーの作成が必要になる場合があります。
+
++
+標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。 link:reference-permissions-aws.html["コネクタのIAMポリシーの詳細については、こちらを参照してください"]。
+
+
+
+. IAMユーザにポリシーを適用します。
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS のドキュメント：「 Creating IAM Roles"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
+
+
+. コネクタのインストール後にBlueXPに追加できるアクセスキーがユーザに割り当てられていることを確認します。
+
+
+.結果
+これで、アカウントに必要な権限が付与されました。
+
+--
+.Azureロール
+--
+必要な権限を持つAzureカスタムロールを作成します。このロールをコネクタVMに割り当てます。
+
+.手順
+. カスタムロールを使用して必要なAzure権限を提供できるように、コネクタをインストールするVMでシステム割り当ての管理IDを有効にします。
++
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azureのドキュメント：Azureポータルを使用して、VM上のAzureリソースの管理IDを設定します"^]
+
+. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
+. 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
++
+ユーザが Cloud Volumes ONTAP システムを作成する Azure サブスクリプションごとに ID を追加する必要があります。
+
++
+* 例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+. JSON ファイルを使用して、 Azure でカスタムロールを作成します。
++
+次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
+
++
+.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
+.. JSON ファイルをアップロードします。
++
+image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
+
+.. Azure CLIを使用してカスタムロールを作成します。
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
+
+
+
+
+.結果
+これで、Connector仮想マシンに割り当てることができるBlueXP Operatorというカスタムロールが作成されました。
+
+--
+.Azureサービスプリンシパル
+--
+Azure Active Directoryでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。これらのクレデンシャルは、コネクタをインストールしてBlueXPをセットアップしたあとにBlueXPに提供する必要があります。
+
+.ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
+. Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
++
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
+
+. Azure ポータルで、 * Azure Active Directory * サービスを開きます。
++
+image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サービスを示しています。"]
+
+. メニューで、 * アプリ登録 * をクリックします。
+. [ 新規登録 ] をクリックします。
+. アプリケーションの詳細を指定します。
++
+** * 名前 * ：アプリケーションの名前を入力します。
+** *アカウントの種類*:アカウントの種類を選択します(すべてのアカウントはBlueXPで動作します)。
+** * リダイレクト URI *: このフィールドは空白のままにできます。
+
+
+. [*Register] をクリックします。
++
+AD アプリケーションとサービスプリンシパルを作成しておきます。
+
+
+
+.アプリケーションにカスタムロールを割り当てます
+. Azure ポータルで、 * Subscriptions * サービスを開きます。
+. サブスクリプションを選択します。
+. [* アクセス制御 (IAM)] 、 [ 追加 ] 、 [ 役割の割り当ての追加 *] の順にクリックします。
+. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
+. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
++
+.. [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
+.. [ メンバーの選択 ] をクリックします。
++
+image:screenshot-azure-service-principal-role.png["アプリケーションにロールを追加するときに Members タブを表示する Azure ポータルのスクリーンショット。"]
+
+.. アプリケーションの名前を検索します。
++
+次に例を示します。
+
++
+image:screenshot_azure_service_principal_role.png["Azure ポータルのスクリーンショットで、 Azure ポータルのロール割り当ての追加フォームが表示されています。"]
+
+.. アプリケーションを選択し、 * Select * をクリックします。
+.. 「 * 次へ * 」をクリックします。
+
+
+. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
++
+サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
+
++
+Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入する場合は、サービスプリンシパルを各サブスクリプションにバインドする必要があります。BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するサブスクリプションを選択できます。
+
+
+
+.Windows Azure Service Management API 権限を追加します
+. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
+. [API アクセス許可 ] 、 [ アクセス許可の追加 ] の順にクリックします。
+. Microsoft API* で、 * Azure Service Management * を選択します。
++
+image:screenshot_azure_service_mgmt_apis.gif["Azure Service Management API 権限を示す Azure ポータルのスクリーンショット。"]
+
+. [* 組織ユーザーとして Azure サービス管理にアクセスする *] をクリックし、 [ * 権限の追加 * ] をクリックします。
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API の追加を示す Azure ポータルのスクリーンショット。"]
+
+
+
+.アプリケーションのアプリケーションIDとディレクトリIDを取得します
+. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
+. アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。
++
+image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケーション（クライアント）の ID とディレクトリ（テナント） ID を示すスクリーンショット。"]
+
++
+AzureアカウントをBlueXPに追加するときは、アプリケーション（クライアント）IDとディレクトリ（テナント）IDを指定する必要があります。BlueXPでは、プログラムでサインインするためにIDが使用されます。
+
+
+
+.クライアントシークレットを作成します
+. Azure Active Directory * サービスを開きます。
+. [* アプリ登録 * ] をクリックして、アプリケーションを選択します。
+. ［ * 証明書とシークレット > 新しいクライアントシークレット * ］ をクリックします。
+. シークレットと期間の説明を入力します。
+. [ 追加（ Add ） ] をクリックします。
+. クライアントシークレットの値をコピーします。
++
+image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパルのクライアントシークレットを表示する Azure ポータルのスクリーンショット。"]
+
++
+BlueXPでAzure ADの認証に使用するクライアントシークレットが作成されました。
+
+
+
+.結果
+これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。Azureアカウントを追加する場合は、BlueXPでこの情報を入力する必要があります。
+
+--
+.Google Cloudサービスアカウント
+--
+ロールを作成し、コネクタVMインスタンスに使用するサービスアカウントに適用します。
+
+.手順
+. Google Cloudでカスタムロールを作成します。
++
+.. で定義された権限を含むYAMLファイルを作成します link:reference-permissions-gcp.html["Google Cloudのコネクタポリシー"]。
+.. Google CloudからCloud Shellをアクティブ化します。
+.. コネクタに必要な権限を含むYAMLファイルをアップロードします。
+.. を使用して、カスタムロールを作成します `gcloud iam roles create` コマンドを実行します
++
+次の例では、プロジェクトレベルで「Connector」という名前のロールを作成します。
+
++
+[source, gcloud]
+----
+gcloud iam roles create connector --project=myproject --file=connector.yaml
+----
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
+
+
+
+. Google Cloudでサービスアカウントを作成します。
++
+.. IAMおよび管理サービスで、*[サービスアカウント]>[サービスアカウントの作成]*をクリックします。
+.. サービスアカウントの詳細を入力し、*[作成して続行]*をクリックします。
+.. 作成したロールを選択します。
+.. 残りの手順を完了してロールを作成します。
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloudドキュメント：サービスアカウントの作成"^]
+
+
+
+
+
+.結果
+これで、Connector VMインスタンスに割り当てることができるサービスアカウントが作成されました。
+
+--
+====
+
+
+== Google Cloud API を有効にします
+
+Google CloudにCloud Volumes ONTAP を導入するには、いくつかのAPIが必要です。
+
+.ステップ
+. https://cloud.google.com/apis/docs/getting-started#enabling_apis["プロジェクトで次の Google Cloud API を有効にします"^]
++
+** Cloud Deployment Manager V2 API
+** クラウドロギング API
+** Cloud Resource Manager API の略
+** Compute Engine API
+** ID およびアクセス管理（ IAM ） API
+
+
+

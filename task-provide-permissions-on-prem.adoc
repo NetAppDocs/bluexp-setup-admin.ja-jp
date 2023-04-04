@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-provide-permissions-on-prem.html 
+keywords: permissins, on prem permissions, aws permissions, azure permissions, credentials, aws credentials, azure credentials 
+summary: コネクタのインストールとセットアップが完了したら、クラウドクレデンシャルを追加して、AWSまたはAzureで操作を実行するために必要な権限をBlueXPに付与する必要があります。 
+---
+= BlueXPへのオンプレミスインストール権限を付与
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+コネクタのインストールとセットアップが完了したら、クラウドクレデンシャルを追加して、AWSまたはAzureで操作を実行するために必要な権限をBlueXPに付与する必要があります。
+
+
+TIP: Google Cloudではない理由コネクタがオンプレミスにインストールされている場合、Google Cloudでリソースを管理することはできません。Google Cloudに存在するリソースを管理するには、コネクタをGoogle Cloudにインストールする必要があります。
+
+[role="tabbed-block"]
+====
+.AWS
+--
+.始める前に
+AWSでクレデンシャルを作成したばかりの場合は、クレデンシャルが使用可能になるまでに数分かかることがあります。数分待ってから、BlueXPに資格情報を追加します。
+
+.手順
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
++
+image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
+
+. [Add Credentials] をクリックし、ウィザードの手順に従います。
++
+.. * 資格情報の場所 * ：「 * Amazon Web Services > Connector * 」を選択します。
+.. *クレデンシャルを定義*：AWSアクセスキーとシークレットキーを入力します。
+.. * Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。
+.. * 確認 * ：新しいクレデンシャルの詳細を確認し、 * 追加 * をクリックします。
+
+
+
+
+.結果
+BlueXPに、AWSでユーザに代わって操作を実行するために必要な権限が付与されました。これで、に移動できます https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+
+--
+.Azure
+--
+.始める前に
+これらのクレデンシャルをAzureで作成したばかりの場合は、クレデンシャルが使用可能になるまでに数分かかることがあります。数分待ってから、BlueXPに資格情報を追加します。
+
+.手順
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
++
+image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
+
+. [Add Credentials] をクリックし、ウィザードの手順に従います。
++
+.. * 資格情報の場所 * ： Microsoft Azure > Connector * を選択します。
+.. * クレデンシャルの定義 * ：必要な権限を付与する Azure Active Directory サービスプリンシパルに関する情報を入力します。
++
+*** アプリケーション（クライアント）ID
+*** ディレクトリ（テナント）ID
+*** クライアントシークレット
+
+
+.. * Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。
+.. * 確認 * ：新しいクレデンシャルの詳細を確認し、 * 追加 * をクリックします。
+
+
+
+
+.結果
+BlueXPに、Azureで処理を実行するために必要な権限が付与されました。これで、に移動できます https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+
+--
+====

@@ -1,0 +1,118 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-networking-google.html 
+keywords: networking, on prem networking, endpoints, urls, ports, ip address, proxy, proxy server, connections 
+summary: コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。 
+---
+= Google Cloudネットワークをセットアップする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。
+
+
+
+== vPCおよびサブネット
+
+コネクタを作成するときは、コネクタを配置するVPCとサブネットを指定する必要があります。
+
+
+
+== ターゲットネットワークへの接続
+
+コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。
+
+
+
+== アウトバウンドインターネットアクセス
+
+コネクタを配置するネットワークの場所には、アウトバウンドのインターネット接続が必要です。
+
+
+
+=== 手動インストール中にエンドポイントに接続しました
+
+独自のLinuxホストにコネクタを手動でインストールする場合は、コネクタのインストーラでインストールプロセス中に次のURLにアクセスする必要があります。
+
+* \ https://support.netapp.com
+* https://mysupport.netapp.com をご覧ください
+* \ https://cloudmanager.cloud.netapp.com/tenancy
+* \ https://stream.cloudmanager.cloud.netapp.com
+* \ https://cloudmanagerinfraprod.azurecr.io
+* \ https://production-artifacts.cloudmanager.cloud.netapp.com
+* \ https://*.blob.core.windows.net
+
+
+ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。
+
+
+
+=== 日常業務のためにコンタクトしたエンドポイント
+
+Connector では、パブリッククラウド環境内のリソースとプロセスを管理するために、次のエンドポイントに接続するためにアウトバウンドインターネットアクセスが必要です。
+
+[cols="2*"]
+|===
+| エンドポイント | 目的 
+
+
+| ¥https://www.googleapis.com/compute/v1/¥https://cloudresourcemanager.googleapis.com/v1/projects¥https://www.googleapis.com/compute/beta¥https://storage.googleapis.com/storage/v1¥https://iam.googleapis.com/v1¥https://cloudkms.googleapis.com/v1¥https://www.googleapis.com/storage/v1 https://www.googleapis.com/deploymentmanager/v2/projects | Google Cloudでリソースを管理します。 
+
+
+| \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
+
+
+ a| 
+\ https://*.api.bluexp.netapp.com
+
+\ https://api.bluexp.netapp.com
+
+\ https://*.cloudmanager.cloud.netapp.com
+
+\ https://cloudmanager.cloud.netapp.com
+ a| 
+BlueXPでSaaSの機能とサービスを提供するため。
+
+
+NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続していますが、今後のリリースでapi.bluexp.netapp.com"への連絡を開始します。
+
+
+
+| ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
+|===
+.関連リンク
+link:reference-networking-saas-console.html["BlueXPコンソールにユーザがアクセスできるようにネットワークを準備"]
+
+
+
+== プロキシサーバ
+
+すべての送信インターネットトラフィックにプロキシサーバを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。
+
+* IP アドレス
+* クレデンシャル
+* HTTPS証明書
+
+
+
+
+== ポート
+
+コネクタへの着信トラフィックは、コネクタを起動した場合や、コネクタがAutoSupport メッセージのプロキシとして使用されている場合を除き、受信トラフィックはありません。
+
+* HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。
+* SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。
+* アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。
+
+
+
+
+== IPアドレスの制限
+
+172の範囲のIPアドレスと競合する可能性があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["この制限事項の詳細については、こちらをご覧ください"]。

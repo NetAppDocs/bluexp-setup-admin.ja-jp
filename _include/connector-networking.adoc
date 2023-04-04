@@ -63,7 +63,7 @@ AWS サービス（ amazonaws.com ）：
 | https://management.usgovcloudapi.net https://login.microsoftonline.us https://blob.core.usgovcloudapi.net https://core.usgovcloudapi.net | Azure Governmentリージョンのリソースを管理 
 
 
-| \shttps：// management.azure.microsoft.scloud\ https://login.microsoftonline.microsoft.scloud https://blob.core.microsoft.scloud \ https://core.microsoft.scloud | をクリックして、Azure IL6リージョン内のリソースを管理します。 
+| https://management.azure.microsoft.scloud https://login.microsoftonline.microsoft.scloud https://blob.core.microsoft.scloud https://core.microsoft.scloud | をクリックして、Azure IL6リージョン内のリソースを管理します。 
 
 
 | https://management.chinacloudapi.cn https://login.chinacloudapi.cn https://blob.core.chinacloudapi.cn https://core.chinacloudapi.cn | をクリックしてAzure中国地域のリソースを管理してください。 

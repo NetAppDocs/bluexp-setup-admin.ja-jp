@@ -1,0 +1,139 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-on-prem.html 
+keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
+summary: コネクタをオンプレミスにインストールし、ログインしてBlueXPアカウントと連携するように設定します。 
+---
+= コネクタをオンプレミスにインストールしてセットアップします
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+コネクタをオンプレミスにインストールし、ログインしてBlueXPアカウントと連携するように設定します。
+
+
+
+== コネクタを取り付ける
+
+コネクタソフトウェアをオンプレミスの既存のLinuxホストにダウンロードしてインストールします。
+
+.必要なもの
+* コネクタをインストールするためのroot権限。
+* コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
++
+インストール後にプロキシサーバを設定することもできますが、その場合はコネクタを再起動する必要があります。
+
+* プロキシサーバがHTTPSを使用している場合、またはプロキシが代行受信プロキシの場合は、CA署名証明書。
+
+
+.このタスクについて
+* インストールを実行すると、ネットアップサポートからのリカバリ手順用に AWS コマンドラインツール（ awscli ）がインストールされます。
++
+AWSCLI のインストールに失敗したというメッセージが表示された場合は、このメッセージを無視しても問題ありません。コネクタは、工具なしで正常に作動する。
+
+* ネットアップサポートサイトで入手できるインストーラは、それよりも古いバージョンの場合があります。インストール後、新しいバージョンが利用可能になると、コネクタは自動的に更新されます。
+
+
+.手順
+. Docker が有効で実行されていることを確認します。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. ホストに_http_proxy_or_https_proxy_system変数が設定されている場合は、削除します。
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+これらのシステム変数を削除しないと、インストールは失敗します。
+
+. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
++
+ネットワークまたはクラウドで使用するための「オンライン」コネクタインストーラをダウンロードする必要があります。コネクタには別の「オフライン」インストーラが用意されていますが、プライベートモード展開でのみサポートされています。
+
+. スクリプトを実行する権限を割り当てます。
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+<version> は、ダウンロードしたコネクタのバージョンです。
+
+. インストールスクリプトを実行します。
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+--proxyパラメータと--cacert.pemパラメータはオプションです。プロキシサーバがある場合は、次のようにパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。
+
++
+次に、両方のオプションパラメータを使用したコマンドの例を示します。
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。
+
++
+** \ http://address:port
+** \ http://username:password@address:port
+** \ https://address:port
+** \ https://username:password@address:port
+
+
++
+--cacertsは、コネクタとプロキシサーバ間のHTTPSアクセスに使用するCA署名証明書を指定しています。このパラメータは、HTTPSプロキシサーバを指定する場合、または代行受信プロキシを指定する場合にのみ必要です。
+
+
+
+.結果
+これでコネクタがインストールされました。プロキシサーバを指定した場合は、インストールの終了時にConnectorサービス（occm）が2回再起動されます。
+
+
+
+== コネクタをセットアップします
+
+サインアップまたはログインして、アカウントで使用できるようにコネクタを設定します。
+
+.手順
+. Web ブラウザを開き、次の URL を入力します。
++
+https://_ipaddress_[]
+
++
+_ipaddress _ には、ホストの設定に応じて、 localhost 、プライベート IP アドレス、またはパブリック IP アドレスを指定できます。たとえば、パブリック IP アドレスのないパブリッククラウドにコネクタがある場合は、コネクタホストに接続されているホストからプライベート IP アドレスを入力する必要があります。
+
+. サインアップまたはログインします。
+. ログインしたら、BlueXPをセットアップします。
++
+.. コネクタに関連付けるBlueXPアカウントを指定します。
+.. システムの名前を入力します。
+.. *では、セキュリティ保護された環境で実行していますか？*制限モードを無効にしたままにします。
++
+標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。(また、コネクタがオンプレミスにインストールされている場合、制限モードはサポートされません)。
+
+.. [Let's start]*をクリックします。
+
+
+
+
+.結果
+これで、先ほどインストールしたコネクタでBlueXPがセットアップされました。
+
+.次の手順
+link:task-provide-permissions-on-prem.html["以前に設定した権限をBlueXPに付与します"]。

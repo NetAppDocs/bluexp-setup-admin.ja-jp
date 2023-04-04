@@ -1,0 +1,279 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-google.html 
+keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, manual install, create connector, gcp installation, gcp connector 
+summary: BlueXPのWebベースのコンソールから直接コネクタを作成するか、gcloudを使用するか、独自のLinuxホストにソフトウェアをインストールします。 
+---
+= Google Cloudでコネクタを作成します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPのWebベースのコンソールから直接コネクタを作成するか、gcloudを使用するか、独自のLinuxホストにソフトウェアをインストールします。
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+.必要なもの
+* コネクタVMのコネクタとサービスアカウントを作成するために必要なGoogle Cloud権限。
++
+link:task-set-up-permissions-google.html["Google Cloudの権限を設定する方法について説明します"]
+
+* ネットワーク要件を満たすVPCとサブネット。
++
+link:task-set-up-networking-google.html["ネットワーク要件について説明します"]
+
+* コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
+
+
+.手順
+. [Connector]*ドロップダウンをクリックし、*[Add Connector]*を選択します。
++
+image:screenshot_connector_add.gif["ヘッダーのコネクターアイコンとコネクターの追加アクションを示すスクリーンショット。"]
+
+. クラウドプロバイダとして * Google Cloud Platform * を選択します。
+. [*コネクターの配置（Deploying a Connector *）]ページで、必要なものについて詳しく確認してください。次の 2 つのオプションがあります。
++
+.. [* Continue *（続行）]をクリックして、製品ガイドを使用して導入の準備をします。製品ガイドの各手順には、このページのドキュメントに記載されている情報が含まれています。
+.. このページの手順に従って準備が完了している場合は、*配備にスキップ*をクリックします。
+
+
+. ウィザードの手順に従って、コネクタを作成します。
++
+** プロンプトが表示されたら、 Google アカウントにログインします。このアカウントには、仮想マシンインスタンスを作成するために必要な権限が付与されている必要があります。
++
+このフォームは Google が所有およびホストしています。クレデンシャルがネットアップに提供されていません。
+
+** *詳細*：仮想マシンインスタンスの名前を入力し、タグを指定してプロジェクトを選択し、必要な権限を持つサービスアカウントを選択します（詳細については、上のセクションを参照してください）。
+** * 場所 * ：インスタンスのリージョン、ゾーン、 VPC 、およびサブネットを指定します。
+** * ネットワーク * ：パブリック IP アドレスを有効にするかどうかを選択し、必要に応じてプロキシ設定を指定します。
+** * ファイアウォールポリシー * ：新しいファイアウォールポリシーを作成するか、インバウンド HTTP 、 HTTPS 、 SSH アクセスを許可する既存のファイアウォールポリシーを選択するかを選択します。
+** * 復習 * ：選択内容を確認して、設定が正しいことを確認してください。
+
+
+. [ 追加（ Add ） ] をクリックします。
++
+インスタンスの準備が完了するまでに約 7 分かかります。処理が完了するまで、ページには表示されたままにしておいてください。
+
+
+
+.結果
+プロセスが完了すると、BlueXPからコネクタを使用できるようになります。
+
+--
+.gcloud
+--
+.必要なもの
+* コネクタVMのコネクタとサービスアカウントを作成するために必要なGoogle Cloud権限。
++
+link:task-set-up-permissions-google.html["Google Cloudの権限を設定する方法について説明します"]
+
+* ネットワーク要件を満たすVPCとサブネット。
++
+link:task-set-up-networking-google.html["ネットワーク要件について説明します"]
+
+
+
+.手順
+. ご希望の方法で gcloud SDK にログインします。
++
+この例では、gcloud SDKがインストールされたローカルシェルを使用しますが、Google CloudコンソールでネイティブのGoogle Cloud Shellを使用できます。
+
++
+Google Cloud SDK の詳細については、を参照してください link:https://cloud.google.com/sdk["Google Cloud SDK ドキュメントページ"^]。
+
+. 上のセクションで定義した必要な権限を持つユーザとしてログインしていることを確認します。
++
+[source, bash]
+----
+gcloud auth list
+----
++
+出力には次のように表示されます。ここで、 * user account はログインに使用するユーザアカウントです。
+
++
+[listing]
+----
+Credentialed Accounts
+ACTIVE  ACCOUNT
+     some_user_account@domain.com
+*    desired_user_account@domain.com
+To set the active account, run:
+ $ gcloud config set account `ACCOUNT`
+Updates are available for some Cloud SDK components. To install them,
+please run:
+$ gcloud components update
+----
+. gcloud compute instances create コマンドを実行します。
++
+[source, bash]
+----
+gcloud compute instances create <instance-name>
+  --machine-type=n2-standard-4
+  --image-project=netapp-cloudmanager
+  --image-family=cloudmanager
+  --scopes=cloud-platform
+  --project=<project>
+  --service-account=<service-account>
+  --zone=<zone>
+  --no-address
+  --tags <network-tag>
+  --network <network-path>
+  --subnet <subnet-path>
+  --boot-disk-kms-key <kms-key-path>
+----
++
+インスタンス名:: VM インスタンスに必要なインスタンス名。
+プロジェクト:: （オプション） VM を導入するプロジェクト。
+service-account のことです:: 手順 2 の出力で指定したサービスアカウント。
+ゾーン:: VM を導入するゾーン
+no-address:: （オプション）外部 IP アドレスは使用されません（パブリックインターネットにトラフィックをルーティングするには、クラウド NAT またはプロキシが必要です）。
+ネットワークタグ:: （オプション）タグを使用してファイアウォールルールをコネクタインスタンスにリンクするには、ネットワークタグを追加します
+network-path:: （オプション）コネクタを配置するネットワークの名前を追加します（共有 VPC の場合は完全パスが必要です）。
+subnet-path 」を指定します:: （オプション）コネクタを導入するサブネットの名前を追加します（共有 VPC の場合は完全パスが必要です）。
+kms -key-path:: （オプション） KMS キーを追加してコネクタのディスクを暗号化する（ IAM 権限も適用する必要があります）
++
+--
+これらの旗についてのより多くの情報のために、訪問しなさい link:https://cloud.google.com/sdk/gcloud/reference/compute/instances/create["Google Cloud Compute SDK ドキュメント"^]。
+
+--
+
+
++
+コマンドを実行すると、ネットアップのゴールデンイメージを使用してコネクタが導入されます。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。
+
+. コネクタインスタンスに接続されているホストから Web ブラウザを開き、次の URL を入力します。
++
+https://_ipaddress_[]
+
+. ログイン後、コネクタを設定します。
++
+.. コネクタに関連付けるBlueXPアカウントを指定します。
++
+link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認ください"]。
+
+.. システムの名前を入力します。
+
+
+
+
+.結果
+これで、コネクタのインストールとBlueXPアカウントでのセットアップが完了しました。
+
+Webブラウザを開き、にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+
+--
+.手動インストール
+--
+.必要なもの
+* コネクタをインストールするためのroot権限。
+* コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
++
+インストール後にプロキシサーバを設定することもできますが、その場合はコネクタを再起動する必要があります。
+
+* プロキシサーバがHTTPSを使用している場合、またはプロキシが代行受信プロキシの場合は、CA署名証明書。
+
+
+.このタスクについて
+* インストールを実行すると、ネットアップサポートからのリカバリ手順用に AWS コマンドラインツール（ awscli ）がインストールされます。
++
+AWSCLI のインストールに失敗したというメッセージが表示された場合は、このメッセージを無視しても問題ありません。コネクタは、工具なしで正常に作動する。
+
+* ネットアップサポートサイトで入手できるインストーラは、それよりも古いバージョンの場合があります。インストール後、新しいバージョンが利用可能になると、コネクタは自動的に更新されます。
+
+
+.手順
+. Docker が有効で実行されていることを確認します。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. ホストに_http_proxy_or_https_proxy_system変数が設定されている場合は、削除します。
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+これらのシステム変数を削除しないと、インストールは失敗します。
+
+. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
++
+ネットワークまたはクラウドで使用するための「オンライン」コネクタインストーラをダウンロードする必要があります。コネクタには別の「オフライン」インストーラが用意されていますが、プライベートモード展開でのみサポートされています。
+
+. スクリプトを実行する権限を割り当てます。
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+<version> は、ダウンロードしたコネクタのバージョンです。
+
+. インストールスクリプトを実行します。
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+--proxyパラメータと--cacert.pemパラメータはオプションです。プロキシサーバがある場合は、次のようにパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。
+
++
+次に、両方のオプションパラメータを使用したコマンドの例を示します。
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。
+
++
+** \ http://address:port
+** \ http://username:password@address:port
+** \ https://address:port
+** \ https://username:password@address:port
+
+
++
+--cacertsは、コネクタとプロキシサーバ間のHTTPSアクセスに使用するCA署名証明書を指定しています。このパラメータは、HTTPSプロキシサーバを指定する場合、または代行受信プロキシを指定する場合にのみ必要です。
+
+. インストールが完了するまで待ちます。
++
+プロキシサーバを指定した場合は、インストールの終了時にConnectorサービス（occm）が2回再起動されます。
+
+. Connector 仮想マシンに接続されているホストから Web ブラウザを開き、次の URL を入力します。
++
+https://_ipaddress_[]
+
+. ログイン後、コネクタを設定します。
++
+.. コネクタに関連付けるBlueXPアカウントを指定します。
+.. システムの名前を入力します。
+.. *では、セキュリティ保護された環境で実行していますか？*制限モードを無効にしたままにします。
++
+標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。セキュアな環境でBlueXPバックエンドサービスからこのアカウントを切断する場合にのみ、制限モードを有効にしてください。その場合は、 link:task-quick-start-restricted-mode.html["制限モードでBlueXPの使用を開始するには、次の手順に従います"]。
+
+.. [Let's start]*をクリックします。
+
+
+
+
+.結果
+これでコネクタがインストールされ、BlueXPアカウントでセットアップされました。
+
+.次の手順
+link:task-provide-permissions-google.html["以前に設定した権限をBlueXPに付与します"]。
+
+--
+====

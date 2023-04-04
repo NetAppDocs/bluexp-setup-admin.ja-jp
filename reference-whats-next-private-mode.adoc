@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next-private-mode.html 
+keywords: private mode, what you can do 
+summary: プライベートモードでBlueXPを起動して実行したら、プライベートモードでサポートされているBlueXPサービスの使用を開始できます。 
+---
+= 次に実行できる操作（プライベートモード）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+プライベートモードでBlueXPを起動して実行したら、プライベートモードでサポートされているBlueXPサービスの使用を開始できます。
+
+ヘルプについては、次のドキュメントを参照してください。
+
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP システムの作成"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["オンプレミスのONTAP クラスタを検出"^]
+* https://docs.netapp.com/us-en/cloud-manager-replication/index.html["データのレプリケート"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["クラウドデータセンスを使用してオンプレミスのONTAP ボリュームデータをスキャン"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["クラウドバックアップを使用して、オンプレミスのONTAP ボリュームのデータをStorageGRID にバックアップします"^]
+

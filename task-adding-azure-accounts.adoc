@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-azure-accounts.html 
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
-summary: Cloud Volumes ONTAP システムを作成するときは、 Azure のクレデンシャルと Marketplace サブスクリプションを選択して、そのシステムで使用する必要があります。複数の Azure Marketplace サブスクリプションを管理する場合は、それぞれのサブスクリプションを、クレデンシャルページから別々の Azure クレデンシャルに割り当てることができます。 
+summary: Azureクレデンシャルを追加および管理して、Azureサブスクリプションのクラウドリソースの導入と管理に必要な権限をBlueXPに付与する。複数の Azure Marketplace サブスクリプションを管理する場合は、それぞれのサブスクリプションを、クレデンシャルページから別々の Azure クレデンシャルに割り当てることができます。 
 ---
 = Azureの資格情報とBlueXPのサブスクリプションを管理します
 :hardbreaks:
@@ -14,7 +14,13 @@ summary: Cloud Volumes ONTAP システムを作成するときは、 Azure の�
 
 
 [role="lead"]
-Cloud Volumes ONTAP システムを作成するときに、そのシステムで使用する Azure クレデンシャルを選択する必要があります。従量課金制のライセンスを使用している場合は、 Marketplace サブスクリプションも選択する必要があります。複数の Azure クレデンシャルを使用する場合や、複数の Azure Marketplace サブスクリプションを Cloud Volumes ONTAP に使用する場合は、このページの手順に従います。
+Azureクレデンシャルを追加および管理して、Azureサブスクリプションのクラウドリソースの導入と管理に必要な権限をBlueXPに付与する。複数の Azure Marketplace サブスクリプションを管理する場合は、それぞれのサブスクリプションを、クレデンシャルページから別々の Azure クレデンシャルに割り当てることができます。
+
+複数の Azure クレデンシャルを使用する場合や、複数の Azure Marketplace サブスクリプションを Cloud Volumes ONTAP に使用する場合は、このページの手順に従います。
+
+
+
+== 概要
 
 Azureサブスクリプションと資格情報をBlueXPに追加するには、2つの方法があります。
 
@@ -24,7 +30,7 @@ Azureサブスクリプションと資格情報をBlueXPに追加するには、
 
 
 
-== 追加の Azure サブスクリプションを管理対象 ID に関連付ける
+== 追加のAzureサブスクリプションを管理対象IDに関連付けます
 
 BlueXPを使用すると、Cloud Volumes ONTAP を導入するAzureクレデンシャルとAzureサブスクリプションを選択できます。管理対象に別の Azure サブスクリプションを選択することはできません を関連付けない限り、アイデンティティプロファイルを作成します https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["管理された ID"^] それらの登録と。
 
@@ -34,9 +40,9 @@ BlueXPを使用すると、Cloud Volumes ONTAP を導入するAzureクレデン�
 .手順
 . Azure ポータルにログインします。
 . [ サブスクリプション ] サービスを開き、 Cloud Volumes ONTAP を展開するサブスクリプションを選択します。
-. 「 * アクセスコントロール（ IAM ） * 」をクリックします。
+. [Access control（IAM）]*を選択します。
 +
-.. [ * 追加 *>* 役割の割り当ての追加 * ] をクリックして、権限を追加します。
+.. [追加]*>*[ロール割り当ての追加]*を選択し、権限を追加します。
 +
 *** BlueXP Operator *ロールを選択します。
 +
@@ -46,7 +52,7 @@ NOTE: BlueXP Operatorは、コネクタポリシーで指定されているデ�
 *** 仮想マシン * へのアクセスを割り当てます。
 *** Connector 仮想マシンが作成されたサブスクリプションを選択します。
 *** Connector 仮想マシンを選択します。
-*** [ 保存（ Save ） ] をクリックします。
+*** [ 保存（ Save ） ] を選択します。
 
 
 
@@ -61,7 +67,7 @@ image:screenshot_accounts_switch_azure_subscription.gif["Microsoft Azure プロ�
 
 
 
-== BlueXPにAzureクレデンシャルを追加しています
+== AzureクレデンシャルをBlueXPに追加します
 
 BlueXPからConnectorを展開すると、BlueXPでは、必要な権限を持つシステム割り当ての管理対象IDを仮想マシンで使用できるようになります。Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォルトでAzureクレデンシャルが選択されます。
 
@@ -72,7 +78,7 @@ TIP: 既存のシステムに Connector ソフトウェアを手動でインス�
 
 
 
-=== サービスプリンシパルを使用した Azure 権限の付与
+=== サービスプリンシパルを使用してAzure権限を付与します
 
 BlueXPには、Azureで処理を実行するための権限が必要です。Azureアカウントに必要な権限を付与するには、Azure Active Directoryでサービスプリンシパルを作成して設定し、BlueXPで必要なAzureクレデンシャルを取得します。
 
@@ -82,16 +88,16 @@ BlueXPには、Azureで処理を実行するための権限が必要です。Azu
 image:diagram_azure_authentication.png["この概念図は、BlueXPがAPI呼び出しを行う前にAzure Active Directoryから認証と許可を取得する方法を示しています。Active Directoryでは、BlueXPロールが権限を定義します。Azure サブスクリプションと、 Cloud Manger アプリケーションを表すサービスプリンシパルオブジェクトに関連付けています。"]
 
 .手順
-. <<Azure Active Directory アプリケーションの作成,Azure Active Directory アプリケーションを作成します>>。
-. <<アプリケーションをロールに割り当てます,アプリケーションをロールに割り当てます>>。
-. <<Windows Azure Service Management API 権限を追加しています,Windows Azure Service Management API 権限を追加します>>。
-. <<アプリケーション ID とディレクトリ ID を取得しています,アプリケーション ID とディレクトリ ID を取得します>>。
-. <<クライアントシークレットの作成,クライアントシークレットを作成します>>。
+. <<Azure Active Directory アプリケーションを作成します>>。
+. <<アプリケーションをロールに割り当てます>>。
+. <<Windows Azure Service Management API 権限を追加します>>。
+. <<アプリケーション ID とディレクトリ ID を取得します>>。
+. <<クライアントシークレットを作成します>>。
 
 
 
 
-==== Azure Active Directory アプリケーションの作成
+==== Azure Active Directory アプリケーションを作成します
 
 BlueXPでロールベースアクセス制御に使用できるAzure Active Directory（AD）アプリケーションとサービスプリンシパルを作成します。
 
@@ -103,8 +109,8 @@ Azure で Active Directory アプリケーションを作成してロールに�
 +
 image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サービスを示しています。"]
 
-. メニューで、 * アプリ登録 * をクリックします。
-. [ 新規登録 ] をクリックします。
+. メニューで*アプリ登録*を選択します。
+. [New registration]*を選択します。
 . アプリケーションの詳細を指定します。
 +
 ** * 名前 * ：アプリケーションの名前を入力します。
@@ -112,7 +118,7 @@ image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サ�
 ** * リダイレクト URI *: このフィールドは空白のままにできます。
 
 
-. [*Register] をクリックします。
+. [*Register] を選択します。
 
 
 .結果
@@ -170,12 +176,12 @@ az role definition create --role-definition Connector_Policy.json
 +
 .. Azure ポータルで、 * Subscriptions * サービスを開きます。
 .. サブスクリプションを選択します。
-.. [* アクセス制御 (IAM)] 、 [ 追加 ] 、 [ 役割の割り当ての追加 *] の順にクリックします。
-.. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
+.. [アクセス制御（IAM）]>[追加]>[ロール割り当ての追加]*を選択します。
+.. [ロール]タブで、*[BlueXP Operator]*ロールを選択し、*[次へ]*を選択します。
 .. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
 +
 *** [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
-*** [ メンバーの選択 ] をクリックします。
+*** [メンバーの選択]*を選択します。
 +
 image:screenshot-azure-service-principal-role.png["アプリケーションにロールを追加するときに Members タブを表示する Azure ポータルのスクリーンショット。"]
 
@@ -186,11 +192,11 @@ image:screenshot-azure-service-principal-role.png["アプリケーションに�
 +
 image:screenshot_azure_service_principal_role.png["Azure ポータルのスクリーンショットで、 Azure ポータルのロール割り当ての追加フォームが表示されています。"]
 
-*** アプリケーションを選択し、 * Select * をクリックします。
-*** 「 * 次へ * 」をクリックします。
+*** アプリケーションを選択し、*選択*を選択します。
+*** 「 * 次へ * 」を選択します。
 
 
-.. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
+.. [Review + Assign]*を選択します。
 +
 サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
 
@@ -203,18 +209,18 @@ Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入�
 
 
 
-==== Windows Azure Service Management API 権限を追加しています
+==== Windows Azure Service Management API 権限を追加します
 
 サービスプリンシパルに「 Windows Azure Service Management API 」の権限が必要です。
 
 .手順
-. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
-. [API アクセス許可 ] 、 [ アクセス許可の追加 ] の順にクリックします。
+. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
+. [API permissions]>[Add a permission]*を選択します。
 . Microsoft API* で、 * Azure Service Management * を選択します。
 +
 image:screenshot_azure_service_mgmt_apis.gif["Azure Service Management API 権限を示す Azure ポータルのスクリーンショット。"]
 
-. [* 組織ユーザーとして Azure サービス管理にアクセスする *] をクリックし、 [ * 権限の追加 * ] をクリックします。
+. [Access Azure Service Management as organization users]*を選択し、*[Add permissions]*を選択します。
 +
 image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API の追加を示す Azure ポータルのスクリーンショット。"]
 
@@ -222,12 +228,12 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API �
 
 
 
-==== アプリケーション ID とディレクトリ ID を取得しています
+==== アプリケーション ID とディレクトリ ID を取得します
 
 AzureアカウントをBlueXPに追加するときは、アプリケーション（クライアント）IDとディレクトリ（テナント）IDを指定する必要があります。BlueXPでは、プログラムでサインインするためにIDが使用されます。
 
 .手順
-. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
+. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
 . アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。
 +
 image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケーション（クライアント）の ID とディレクトリ（テナント） ID を示すスクリーンショット。"]
@@ -236,16 +242,16 @@ image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケー
 
 
 
-==== クライアントシークレットの作成
+==== クライアントシークレットを作成します
 
 クライアントシークレットを作成し、BlueXPがこれを使用してAzure ADで認証できるようにシークレットの値をBlueXPに提供する必要があります。
 
 .手順
 . Azure Active Directory * サービスを開きます。
-. [* アプリ登録 * ] をクリックして、アプリケーションを選択します。
-. ［ * 証明書とシークレット > 新しいクライアントシークレット * ］ をクリックします。
+. *アプリ登録*を選択し、アプリケーションを選択します。
+. [Certificates & secrets]>[New client secret]*を選択します。
 . シークレットと期間の説明を入力します。
-. [ 追加（ Add ） ] をクリックします。
+. 「 * 追加」を選択します。
 . クライアントシークレットの値をコピーします。
 +
 image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパルのクライアントシークレットを表示する Azure ポータルのスクリーンショット。"]
@@ -257,7 +263,7 @@ image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパ�
 
 
 
-=== 資格情報をBlueXPに追加します
+=== BlueXPにクレデンシャルを追加します
 
 必要な権限を持つAzureアカウントを入力したら、そのアカウントのクレデンシャルをBlueXPに追加できます。この手順を完了すると、複数の Azure クレデンシャルを使用して Cloud Volumes ONTAP を起動できます。
 
@@ -268,25 +274,25 @@ image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパ�
 BlueXP設定を変更する前にコネクタを作成する必要があります。 link:concept-connectors.html#how-to-create-a-connector["詳細をご確認ください"]。
 
 .手順
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
 +
 image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 
-. [アカウントのクレデンシャル]*ページで*[クレデンシャルの追加]*をクリックし、ウィザードの手順に従います。
+. [アカウントのクレデンシャル]*ページで*[クレデンシャルの追加]*を選択し、ウィザードの手順に従います。
 +
 .. * 資格情報の場所 * ： Microsoft Azure > Connector * を選択します。
 .. * クレデンシャルの定義 * ：必要な権限を付与する Azure Active Directory サービスプリンシパルに関する情報を入力します。
 +
-*** アプリケーション（クライアント） ID ：を参照してください <<アプリケーション ID とディレクトリ ID を取得しています>>。
-*** ディレクトリ（テナント） ID ：を参照してください <<アプリケーション ID とディレクトリ ID を取得しています>>。
-*** クライアントシークレット：を参照してください <<クライアントシークレットの作成>>。
+*** アプリケーション（クライアント） ID ：を参照してください <<アプリケーション ID とディレクトリ ID を取得します>>。
+*** ディレクトリ（テナント） ID ：を参照してください <<アプリケーション ID とディレクトリ ID を取得します>>。
+*** クライアントシークレット：を参照してください <<クライアントシークレットを作成します>>。
 
 
 .. * Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。
 +
 Cloud Volumes ONTAP の料金を時間単位で支払う（ PAYGO ）には、 Azure のクレデンシャルが Azure Marketplace からのサブスクリプションに関連付けられている必要があります。
 
-.. * 確認 * ：新しいクレデンシャルの詳細を確認し、 * 追加 * をクリックします。
+.. *確認*：新しいクレデンシャルの詳細を確認し、*[追加]*を選択します。
 
 
 
@@ -294,7 +300,7 @@ Cloud Volumes ONTAP の料金を時間単位で支払う（ PAYGO ）には、 A
 .結果
 これで、から別のクレデンシャルセットに切り替えることができます [ 詳細と資格情報 ] ページ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["新しい作業環境を作成する場合"^]
 
-image:screenshot_accounts_switch_azure.gif["[ 詳細と資格情報 ] ページで [ 資格情報の編集 ] をクリックした後で資格情報を選択する方法を示すスクリーンショット"]
+image:screenshot_accounts_switch_azure.gif["[詳細と資格情報]ページで[資格情報の編集]を選択した後の資格情報の選択を示すスクリーンショット。"]
 
 
 
@@ -304,9 +310,9 @@ Marketplaceサブスクリプションを関連付け、クレデンシャルを
 
 
 
-=== Azure Marketplace サブスクリプションをクレデンシャルに関連付ける
+=== Azure Marketplaceサブスクリプションをクレデンシャルに関連付けます
 
-AzureのクレデンシャルをBlueXPに追加したら、Azure Marketplaceサブスクリプションをそれらのクレデンシャルに関連付けることができます。サブスクリプションを使用すると、従量課金制の Cloud Volumes ONTAP システムを作成し、他のネットアップクラウドサービスを使用できます。
+AzureのクレデンシャルをBlueXPに追加したら、Azure Marketplaceサブスクリプションをそれらのクレデンシャルに関連付けることができます。このサブスクリプションでは、従量課金制のCloud Volumes ONTAP システムを作成したり、他のBlueXPサービスを使用したりできます。
 
 資格情報をBlueXPに追加した後、Azure Marketplaceサブスクリプションを関連付けるシナリオは2つあります。
 
@@ -318,24 +324,24 @@ AzureのクレデンシャルをBlueXPに追加したら、Azure Marketplaceサ�
 BlueXP設定を変更する前にコネクタを作成する必要があります。 link:concept-connectors.html#how-to-create-a-connector["詳細をご確認ください"]。
 
 .手順
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
-. [アカウントの認証情報]ページで、一連の認証情報の操作メニューをクリックし、*[サブスクリプションの関連付け]*を選択します。
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
+. [アカウントの認証情報]ページで、一連の認証情報の操作メニューを選択し、*[サブスクリプションの関連付け]*を選択します。
 +
 image:screenshot_azure_add_subscription.png["一連の既存のクレデンシャルに対する操作メニューのスクリーンショット。"]
 
-. クレデンシャルを既存のサブスクリプションに関連付けるには、ダウンリストからサブスクリプションを選択し、* Associate *をクリックします。
-. クレデンシャルを新しいサブスクリプションに関連付けるには、「*サブスクリプションの追加>続行」をクリックし、Azure Marketplaceで次の手順を実行します。
+. クレデンシャルを既存のサブスクリプションに関連付けるには、ダウンリストからサブスクリプションを選択し、*[関連付け]*を選択します。
+. クレデンシャルを新しいサブスクリプションに関連付けるには、*[サブスクリプションの追加]>[続行]*を選択し、Azure Marketplaceで次の手順を実行します。
 +
 .. プロンプトが表示されたら、Azureアカウントにログインします。
-.. [*Subscribe*] をクリックします
-.. フォームに入力して、*登録*をクリックします。
-.. 登録プロセスが完了したら、［*アカウントを今すぐ設定*］をクリックします。
+.. [サブスクライブ]*を選択します。
+.. フォームに必要事項を入力し、* Subscribe *を選択します。
+.. サブスクリプションプロセスが完了したら、*[今すぐアカウントを設定する]*を選択します。
 +
 BlueXPのWebサイトにリダイレクトされます
 
 .. [サブスクリプションの割り当て*]ページで、次の操作を行います。
 +
-*** このサブスクリプションを関連付けるネットアップアカウントを選択してください。
+*** このサブスクリプションを関連付けるBlueXPアカウントを選択します。
 *** [既存のサブスクリプションを置き換える*]フィールドで、1つのアカウントの既存のサブスクリプションをこの新しいサブスクリプションに自動的に置き換えるかどうかを選択します。
 +
 BlueXPは、アカウントのすべての資格情報の既存のサブスクリプションをこの新しいサブスクリプションに置き換えます。一連の資格情報がサブスクリプションに関連付けられていない場合、この新しいサブスクリプションはこれらの資格情報に関連付けられません。
@@ -343,7 +349,7 @@ BlueXPは、アカウントのすべての資格情報の既存のサブスク�
 +
 他のすべてのアカウントについては、以下の手順を繰り返して、手動で契約を関連付ける必要があります。
 
-*** [ 保存（ Save ） ] をクリックします。
+*** [ 保存（ Save ） ] を選択します。
 +
 次のビデオでは、Azure Marketplaceでのサブスクライブ手順を紹介しています。
 
@@ -357,24 +363,24 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 
 
 
-=== クレデンシャルの編集
+=== クレデンシャルを編集する
 
 Azureサービスクレデンシャルの詳細を変更して、BlueXPでAzureクレデンシャルを編集します。たとえば、サービスプリンシパルアプリケーション用に新しいシークレットが作成された場合は、クライアントシークレットの更新が必要になることがあります。
 
 .手順
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
-. [アカウントのクレデンシャル]*ページで、一連のクレデンシャルの操作メニューをクリックし、*[クレデンシャルの編集]*を選択します。
-. 必要な変更を行い、 * 適用 * をクリックします。
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
+. [アカウントのクレデンシャル]*ページで、一連のクレデンシャルの操作メニューを選択し、*[クレデンシャルの編集]*を選択します。
+. 必要な変更を行い、*適用*を選択します。
 
 
 
 
-=== クレデンシャルを削除し
+=== クレデンシャルを削除
 
 一連の資格情報が不要になった場合は、BlueXPから削除できます。削除できるのは、作業環境に関連付けられていないクレデンシャルのみです。
 
 .手順
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
-. [アカウントのクレデンシャル]*ページで、一連のクレデンシャルの操作メニューをクリックし、*[クレデンシャルの削除]*を選択します。
-. 削除を確定するには、 * 削除 * をクリックします。
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
+. [アカウントのクレデンシャル]*ページで、一連のクレデンシャルの操作メニューを選択し、*[クレデンシャルの削除]*を選択します。
+. [削除]*を選択して確定します。
 

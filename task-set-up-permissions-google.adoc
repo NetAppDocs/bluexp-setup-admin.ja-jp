@@ -1,0 +1,246 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-permissions-google.html 
+keywords: set up permissions, set up gcp permissions, set up google cloud permissions, google permissions, gcp permissions, service account, create service account, gcp service account, google service account 
+summary: BlueXPを使用してGoogle Cloudでデータとストレージインフラを管理できるように、Google Cloudの権限を設定します。 
+---
+= Google Cloud権限を設定する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPを使用してGoogle Cloudでデータとストレージインフラを管理できるように、Google Cloudの権限を設定します。
+
+Google Cloudの権限は次のように設定する必要があります。
+
+* BlueXPまたはgcloudを使用してコネクタを作成する場合は、コネクタVMを導入するGoogle Cloudユーザの権限を設定する必要があります。
+* ロールを作成し、そのロールをサービスアカウントに付与することで、コネクタの権限を設定します。
++
+このサービスアカウントをコネクタVMに関連付けて、BlueXPに必要な権限を付与します。
+
+
+
+構成によっては、次の手順も実行する必要があります。
+
+* プロジェクト間でアクセス許可を設定する
+* 共有VPCの権限を設定します
+
+
+
+
+== BlueXPまたはgcloudからコネクタを作成するための権限を設定します
+
+BlueXPまたはgcloudを使用してコネクタを導入する前に、Google Cloudアカウントに正しい権限が割り当てられていることを確認する必要があります。
+
+.手順
+. Google Cloudでカスタムロールを作成します。
++
+.. 次の権限を含むYAMLファイルを作成します。
++
+[source, yaml]
+----
+title: Connector deployment policy
+description: Permissions for the user who deploys the Connector from BlueXP
+stage: GA
+includedPermissions:
+- compute.disks.create
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.get
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.networks.updatePolicy
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- resourcemanager.projects.get
+- compute.instances.setServiceAccount
+- iam.serviceAccounts.list
+----
+.. Google CloudからCloud Shellをアクティブ化します。
+.. 必要な権限を含むYAMLファイルをアップロードします。
+.. を使用して、カスタムロールを作成します `gcloud iam roles create` コマンドを実行します
++
+次の例では、「connectorDeployment」という名前のロールをプロジェクトレベルで作成します。
+
++
+gcloud IAMロールcreate connectorDeployment --project=myproject --file=connector-deployment.yaml
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
+
+
+
+. このカスタムロールを、BlueXPから、またはgcloudを使用してコネクタを導入するユーザに割り当てます。
++
+https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloudドキュメント：ロールを1つだけ指定します"^]
+
+
+
+.結果
+Google Cloudユーザに、Connectorの作成に必要な権限が付与されるようになりました。
+
+
+
+== コネクタの権限を設定します
+
+Google Cloudでリソースを管理するためにBlueXPで必要な権限をコネクタに付与するには、サービスアカウントが必要です。このサービスアカウントをコネクタVMに関連付ける必要があります。
+
+.手順
+. Google Cloudでカスタムロールを作成します。
++
+.. の内容を含むYAMLファイルを作成します link:reference-permissions-gcp.html["コネクタのサービスアカウント権限"]。
+.. Google CloudからCloud Shellをアクティブ化します。
+.. 必要な権限を含むYAMLファイルをアップロードします。
+.. を使用して、カスタムロールを作成します `gcloud iam roles create` コマンドを実行します
++
+次の例では、プロジェクトレベルで「Connector」という名前のロールを作成します。
+
++
+gcloud IAMロールcreate connector --project=myproject --file=connector.yaml
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
+
+
+
+. Google Cloudでサービスアカウントを作成します。
++
+.. IAMおよび管理サービスで、*[サービスアカウント]>[サービスアカウントの作成]*をクリックします。
+.. サービスアカウントの詳細を入力し、*[作成して続行]*をクリックします。
+.. 作成したロールを選択します。
+.. 残りの手順を完了してロールを作成します。
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloudドキュメント：サービスアカウントの作成"^]
+
+
+
+
+
+.結果
+Connector VMのサービスアカウントが設定されます。
+
+
+
+== プロジェクト間でアクセス許可を設定する
+
+Cloud Volumes ONTAP システムを、Connectorが存在するプロジェクトとは異なるプロジェクトに導入する場合は、Connectorのサービスアカウントにこれらのプロジェクトへのアクセスを提供する必要があります。
+
+たとえば、コネクタがプロジェクト1にあり、プロジェクト2でCloud Volumes ONTAP システムを作成するとします。プロジェクト2のサービスアカウントへのアクセス権を付与する必要があります。
+
+.手順
+. Google Cloudコンソールで、IAMサービスに移動し、Cloud Volumes ONTAP システムを作成するプロジェクトを選択します。
+. [* iAM*（* IAM）]ページで、[*アクセスを許可（Grant Access）]を選択し、必要な詳細を入力します。
++
+** コネクタのサービスアカウントのEメールを入力します。
+** コネクタのカスタムロールを選択します。
+** [ 保存（ Save ） ] をクリックします。
+
+
+
+
+詳細については、を参照してください https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloudのドキュメント"^]
+
+
+
+== 共有VPC権限を設定する
+
+共有VPCを使用してサービスプロジェクトにリソースを導入する場合は、権限を準備する必要があります。
+
+IAM の設定が完了したら、この表を参考にして権限の表を環境に反映させる必要があります。
+
+[cols="10,10,10,20,20,30"]
+|===
+| ID | 作成者 | でホストされています | サービスプロジェクトの権限 | ホストプロジェクトの権限 | 目的 
+
+
+| コネクタを展開するためのGoogleアカウント | カスタム | サービスプロジェクト  a| 
+link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["コネクタ展開ポリシー"]
+ a| 
+compute.networkUser
+| サービスプロジェクトへのコネクタの配置 
+
+
+| Connectorサービスアカウント | カスタム | サービスプロジェクト  a| 
+link:reference-permissions-gcp.html["コネクタサービスアカウントポリシー"]
+ a| 
+* compute.networkUser
+* deploymentmanager. editor
+
+| サービスプロジェクトへの Cloud Volumes ONTAP とサービスの導入と保守 
+
+
+| Cloud Volumes ONTAP サービスアカウント | カスタム | サービスプロジェクト  a| 
+* storagec.admin
+* メンバー：BlueXPサービスアカウントをserviceAccount.userとして登録します
+
+| 該当なし | （オプション）データ階層化と Cloud Backup に使用できます 
+
+
+| Google API サービスエージェント | Google Cloud | サービスプロジェクト  a| 
+（デフォルト） Editor
+ a| 
+compute.networkUser
+| 導入に代わってGoogle Cloud APIと対話します。BlueXPが共有ネットワークを使用できるようにします 
+
+
+| Google Compute Engine のデフォルトのサービスアカウント | Google Cloud | サービスプロジェクト  a| 
+（デフォルト） Editor
+ a| 
+compute.networkUser
+| 導入に代わってGoogle Cloudインスタンスとコンピューティングインフラストラクチャを導入します。BlueXPが共有ネットワークを使用できるようにします 
+|===
+注：
+
+. deploymentmanager. editorは、ファイアウォール規則を配備に渡していない場合にのみホストプロジェクトで必要です。BlueXPで作成することを選択している場合にのみ必要です。ルールが指定されていない場合、ホストプロジェクトにVPC0ファイアウォールルールが含まれているデプロイメントがBlueXPによって作成されます。
+. ファイアウォールの作成とfirewall.deleteは、ファイアウォールルールを配布に渡しておらず、BlueXPで作成することを選択している場合にのみ必要です。これらの権限はBlueXPアカウント.yamlファイルにあります。共有 VPC を使用して HA ペアを導入する場合は、これらの権限を使用して VPC1 、 2 、および 3 のファイアウォールルールが作成されます。他のすべての展開では、これらの権限は VPC0 のルールの作成にも使用されます。
+. データ階層化の場合、階層化サービスアカウントは、プロジェクトレベルだけでなく、サービスアカウントに対して serviceAccount.user ロールを持つ必要があります。現在、プロジェクトレベルで serviceAccount.user を割り当てている場合、 getIAMPolicy でサービスアカウントを照会しても権限は表示されません。
+

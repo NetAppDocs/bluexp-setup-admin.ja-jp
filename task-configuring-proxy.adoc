@@ -31,28 +31,17 @@ Cloud Volumes ONTAP システムにAutoSupport メッセージを送信するた
 この操作により、コネクタが再起動されます。続行する前に、コネクタが操作を実行していないことを確認してください。
 
 .手順
-. link:task-logging-in.html["BlueXP SaaSインタフェースにログインします"^] コネクターインスタンスへのネットワーク接続を持つマシンから。
-+
-コネクタにパブリック IP アドレスがない場合は、 VPN 接続が必要です。そうでない場合は、コネクタと同じネットワークにあるジャンプホストから接続する必要があります。
-
-. [* コネクタ * （ Connector * ） ] ドロップダウンをクリックし、特定のコネクターの [ ローカル UI へ移動（ * Go to local UI * ） ] をクリックする。
-+
-image:screenshot_connector_local_ui.gif["ヘッダーのコネクターアイコンとローカル UI へ移動アクションを示すスクリーンショット。"]
-
-+
-コネクタで実行されているBlueXPインターフェイスが新しいブラウザタブに読み込まれます。
-
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[コネクタ設定]*を選択します。
 +
 image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 
-. [*General] で、 [*HTTP Proxy Configuration*] をクリックします。
+. [General]*で、[HTTP Proxy Configuration]*を選択します。
 . プロキシを設定します。
 +
-.. [ プロキシを有効にする *] をクリックします
+.. [Enable Proxy]*を選択します。
 .. 構文を使用してサーバを指定します http://_address:port_[] または https://_address:port_[]
 .. ベーシック認証の場合は、ユーザ名とパスワードを指定します サーバに必要です
-.. [ 保存（ Save ） ] をクリックします。
+.. [ 保存（ Save ） ] を選択します。
 +
 
 NOTE: BlueXPでは、@文字を含むパスワードはサポートされていません。
@@ -69,13 +58,13 @@ NOTE: BlueXPでは、@文字を含むパスワードはサポートされてい�
 
 Cloud Volumes ONTAP でAzureプライベートリンクの使用を無効にし、代わりにサービスエンドポイントを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。そうしないと、トラフィックは適切にルーティングされません。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Azure Private LinkまたはサービスエンドポイントをCloud Volumes ONTAP で使用する方法の詳細については、こちらをご覧ください"]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Azure Private LinkまたはサービスエンドポイントをCloud Volumes ONTAP で使用する方法の詳細については、こちらをご覧ください"^]
 
 .手順
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[コネクタ設定]*を選択します。
 +
 image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 
-. [*General] で、 [* Support Direct API traffic* ] をクリックします。
-. チェックボックスをクリックしてオプションを有効にし、 * 保存 * をクリックします。
+. [General]*で、*[Support Direct API Traffic]*を選択します。
+. チェックボックスをオンにしてオプションを有効にし、*[保存]*を選択します。
 

@@ -1,0 +1,457 @@
+---
+sidebar: sidebar 
+permalink: task-install-restricted-mode.html 
+keywords: government region, gov, govcloud, connector, sovereign cloud 
+summary: 制限モードでBlueXPを使用するには、コネクタを導入し、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップする必要があります。 
+---
+= コネクタを制限モードで展開します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPを制限モードで使用するには、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、クラウド権限を指定する必要があります。
+
+
+
+== コネクタを取り付ける
+
+クラウドプロバイダのマーケットプレイスから、または手動で独自のLinuxホストにソフトウェアをインストールして、コネクタをインストールします。
+
+[role="tabbed-block"]
+====
+.AWS Commercial Marketplaceの略
+--
+.必要なもの
+* ネットワーク要件を満たすVPCとサブネット。
++
+link:task-prepare-restricted-mode.html["ネットワーク要件について説明します"]
+
+* コネクタに必要な権限を含むポリシーが添付されたIAMロール。
++
+link:task-prepare-restricted-mode.html#prepare-cloud-permissions["AWS権限の設定方法をご確認ください"]
+
+* IAMユーザのAWS Marketplaceをサブスクライブおよびサブスクライブ解除する権限。
+* EC2インスタンスのキーペア。
+
+
+.手順
+. にアクセスします https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS MarketplaceのBlueXPページ"^]
+. [Marketplace] ページで [* Continue to Subscribe* ] をクリックし、 [* Continue to Configuration* ] をクリックします。
++
+image:screenshot-subscribe-aws.png["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]
+
+. デフォルトのオプションを変更し、 [* Continue to Launch] をクリックします。
+. [ アクションの選択 *] で [* EC2 で起動 ] を選択し、 [* 起動 *] をクリックします。
++
+以下の手順では、コンソールからEC2コンソールからインスタンスを起動する方法について説明します。これは、IAMロールをコネクタインスタンスに関連付けることができるためです。これは、 * ウェブサイトからの起動 * アクションを使用しては実行できません。
+
+. プロンプトに従って、インスタンスを設定および導入します。
++
+** *名前とタグ*：インスタンスの名前とタグを入力します。
+** *アプリケーションとOSイメージ*:このセクションは省略します。コネクタAMIはすでに選択されています。
+** * Instance type *：リージョンの可用性に応じて、サポートされているインスタンスタイプ（t3.xlargeを推奨）のいずれかを選択します。
++
+link:task-prepare-restricted-mode.html["インスタンスの要件を確認します"]。
+
+** *キーペア（ログイン）*：インスタンスへのセキュアな接続に使用するキーペアを選択します。
+** *ネットワーク設定*：必要に応じてネットワーク設定を編集します。
++
+*** 目的のVPCとサブネットを選択します。
+*** インスタンスにパブリックIPアドレスを割り当てるかどうかを指定します。
+*** コネクタインスタンスに必要な接続方法（SSH、HTTP、HTTPS）を有効にするファイアウォール設定を指定します。
+
+
+** *ストレージの設定*：デフォルトのストレージオプションをそのまま使用します。
+** *詳細情報*：*[IAMインスタンスプロファイル]*で、コネクタに必要な権限を含むIAMロールを選択します。
++
+link:task-prepare-restricted-mode.html["AWS権限の設定方法をご確認ください"]。
+
+** *概要*：概要を確認し、*インスタンスの起動*をクリックします。
+
+
+
+
+.結果
+AWS は、指定した設定でソフトウェアを起動します。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。
+
+.次の手順
+BlueXPをセットアップします。
+
+--
+.AWS Gov Marketplaceの略
+--
+.必要なもの
+* ネットワーク要件を満たすVPCとサブネット。
++
+link:task-prepare-restricted-mode.html["ネットワーク要件について説明します"]
+
+* コネクタに必要な権限を含むポリシーが添付されたIAMロール。
++
+link:task-prepare-restricted-mode.html#prepare-cloud-permissions["AWS権限の設定方法をご確認ください"]
+
+* IAMユーザのAWS Marketplaceをサブスクライブおよびサブスクライブ解除する権限。
+* EC2インスタンスのキーペア。
+
+
+.手順
+. AWS MarketplaceのBlueXP製品にアクセスします。
++
+.. EC2サービスを開き、*インスタンスの起動*を選択します。
+.. 「AWS Marketplace *」を選択します。
+.. BlueXPを検索して、製品を選択します。
++
+image:screenshot-gov-cloud-mktp.png["AWS Marketplaceで検索したBlueXP製品を示すスクリーンショット"]
+
+.. [* Continue （続行） ] をクリックします
+
+
+. プロンプトに従って、インスタンスを設定および導入します。
++
+** *インスタンスタイプを選択*：リージョンの可用性に応じて、サポートされているインスタンスタイプ（t3.xlargeを推奨）のいずれかを選択します。
++
+link:task-prepare-restricted-mode.html["インスタンスの要件を確認します"]。
+
+** * Configure Instance Details*：VPCとサブネットを選択し、手順1で作成したIAMロールを選択して、終了保護を有効にし（推奨）、要件を満たす他の設定オプションを選択します。
++
+image:screenshot_aws_iam_role.gif["AWS の Configure Instance ページのフィールドを示すスクリーンショット。手順 1 で作成する必要のある IAM ロールが選択されている。"]
+
+** * Add Storage* ：デフォルトのストレージ・オプションをそのまま使用します。
+** * Add Tags* ：必要に応じて、インスタンスのタグを入力します。
+** * セキュリティグループの設定 * ：コネクタインスタンスに必要な接続方法（ SSH 、 HTTP 、 HTTPS ）を指定します。
+** * 復習 * ：選択内容を確認して、 * 起動 * をクリックします。
+
+
+
+
+.結果
+AWS は、指定した設定でソフトウェアを起動します。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。
+
+.次の手順
+BlueXPをセットアップします。
+
+--
+.Azure Marketplace で入手できます
+--
+.必要なもの
+* ネットワーク要件を満たすVNetとサブネット。
++
+link:task-prepare-restricted-mode.html["ネットワーク要件について説明します"]
+
+* コネクタに必要な権限を含むAzureのカスタムロール。
++
+link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Azure権限の設定方法については、こちらをご覧ください"]
+
+
+
+.手順
+. Azure MarketplaceのNetApp Connector VMのページに移動します。
++
+** https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Azure Marketplaceの一般企業向けページ"^]
+** https://portal.azure.us/#create/netapp.netapp-oncommand-cloud-manageroccm-byol["Azure GovernmentリージョンのAzure Marketplaceのページ"^]
+
+
+. [* Get it Now* ( 今すぐ取得 )] をクリックし、 [* Continue * ( 続行 )] をクリックします。
+. Azure ポータルで、 * Create * をクリックし、手順に従って仮想マシンを設定します。
++
+VM を設定する際には、次の点に注意してください。
+
++
+** * VMサイズ*：CPUとRAMの要件を満たすVMサイズを選択します。DS3 v2 を推奨します。
+** *ディスク*：コネクタはHDDまたはSSDディスクで最適なパフォーマンスを発揮します。
+** *パブリックIP *：コネクタVMでパブリックIPアドレスを使用する場合、BlueXPでこのパブリックIPアドレスが確実に使用されるように、そのIPアドレスでBasic SKUを使用する必要があります。
++
+image:screenshot-azure-sku.png["Azureで新しいIPアドレスを作成するスクリーンショット。[SKU]フィールドで[Basic]を選択できます。"]
+
++
+Standard SKUのIPアドレスを代わりに使用する場合、BlueXPでは、パブリックIPではなくコネクタの_private_IPアドレスが使用されます。BlueXPコンソールへのアクセスに使用しているマシンがそのプライベートIPアドレスにアクセスできない場合、BlueXPコンソールからの操作が失敗します。
+
++
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azureのドキュメント：パブリックIP SKU"^]
+
+** *ネットワークセキュリティグループ*：コネクタには、SSH、HTTP、およびHTTPSを使用したインバウンド接続が必要です。
++
+link:task-prepare-restricted-mode.html["ネットワーク要件について説明します"]。
+
+** * ID *：* Management *で* Enable system assigned managed identity *を選択します。
++
+管理対象の ID を使用すると、 Connector 仮想マシンはクレデンシャルを指定せずに自身を Azure Active Directory に識別できるため、この設定は重要です。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Azure リソース用の管理対象 ID の詳細については、こちらをご覧ください"^]。
+
+
+
+. [* Review + create * （レビュー + 作成） ] ページで選択内容を確認し、 [* Create * （作成） ] をクリックして展開を開始します。
+
+
+.結果
+指定した設定で仮想マシンが展開されます。仮想マシンと Connector ソフトウェアが起動するまでの所要時間は約 5 分です。
+
+.次の手順
+BlueXPをセットアップします。
+
+--
+.手動インストール
+--
+.必要なもの
+* コネクタをインストールするためのroot権限。
+* コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
++
+インストール後にプロキシサーバを設定することもできますが、その場合はコネクタを再起動する必要があります。
+
+* プロキシサーバがHTTPSを使用している場合、またはプロキシが代行受信プロキシの場合は、CA署名証明書。
+
+
+.このタスクについて
+* インストールを実行すると、ネットアップサポートからのリカバリ手順用に AWS コマンドラインツール（ awscli ）がインストールされます。
++
+AWSCLI のインストールに失敗したというメッセージが表示された場合は、このメッセージを無視しても問題ありません。コネクタは、工具なしで正常に作動する。
+
+* ネットアップサポートサイトで入手できるインストーラは、それよりも古いバージョンの場合があります。インストール後、新しいバージョンが利用可能になると、コネクタは自動的に更新されます。
+
+
+.手順
+. Docker が有効で実行されていることを確認します。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. ホストに_http_proxy_or_https_proxy_system変数が設定されている場合は、削除します。
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+これらのシステム変数を削除しないと、インストールは失敗します。
+
+. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
++
+ネットワークまたはクラウドで使用するための「オンライン」コネクタインストーラをダウンロードする必要があります。コネクタには別の「オフライン」インストーラが用意されていますが、プライベートモード展開でのみサポートされています。
+
+. スクリプトを実行する権限を割り当てます。
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+<version> は、ダウンロードしたコネクタのバージョンです。
+
+. インストールスクリプトを実行します。
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+--proxyパラメータと--cacert.pemパラメータはオプションです。プロキシサーバがある場合は、次のようにパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。
+
++
+次に、両方のオプションパラメータを使用したコマンドの例を示します。
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。
+
++
+** \ http://address:port
+** \ http://username:password@address:port
+** \ https://address:port
+** \ https://username:password@address:port
+
+
++
+--cacertsは、コネクタとプロキシサーバ間のHTTPSアクセスに使用するCA署名証明書を指定しています。h
+
+
+
+.結果
+これでコネクタがインストールされました。プロキシサーバを指定した場合は、インストールの終了時にConnectorサービス（occm）が2回再起動されます。
+
+.次の手順
+BlueXPをセットアップします。
+
+--
+====
+
+
+== BlueXPをセットアップします
+
+BlueXPコンソールに初めてアクセスすると、コネクタを関連付けるアカウントを選択するように求められ、制限モードを有効にする必要があります。
+
+
+NOTE: すでにアカウントを持っていて、別のアカウントを作成する場合は、Tenancy APIを使用する必要があります。 link:task-create-account.html["BlueXPアカウントを追加で作成する方法をご紹介します"]。
+
+.手順
+. コネクタインスタンスに接続されているホストから Web ブラウザを開き、次の URL を入力します。
++
+https://_ipaddress_[]
+
+. BlueXPに登録またはログインします。
+. ログインしたら、BlueXPをセットアップします。
++
+.. コネクタの名前を入力します。
+.. 新しいBlueXPアカウントの名前を入力するか、既存のアカウントを選択します。
++
+ログインがすでにBlueXPアカウントに関連付けられている場合は、既存のアカウントを選択できます。
+
+.. [セキュリティ保護された環境で実行していますか？]*を選択します
+.. *このアカウントで制限モードを有効にする*を選択します。
++
+BlueXPでアカウントが作成されると、この設定を変更することはできません。制限モードは後で有効にすることも、後で無効にすることもできません。
+
++
+コネクタを政府地域に配置した場合、このチェックボックスはすでに有効になっており、変更することはできません。これは、制限モードが政府地域でサポートされている唯一のモードであるためです。
+
++
+image:screenshot-restricted-mode.png["コネクタ名とアカウント名を入力する必要があるようこそページを示すスクリーンショット。このアカウントで制限モードを有効にすることができます。"]
+
+.. [Let's start]*をクリックします。
+
+
+
+
+.結果
+これで、コネクタのインストールとBlueXPアカウントでのセットアップが完了しました。すべてのユーザがコネクタインスタンスのIPアドレスを使用してBlueXPにアクセスする必要があります。
+
+.次の手順
+以前に設定した権限をBlueXPに付与します。
+
+
+
+== BlueXPへの権限を付与します
+
+Azure Marketplaceからコネクタを導入した場合やコネクタソフトウェアを手動でインストールした場合は、BlueXPサービスを使用できるように、以前に設定した権限を指定する必要があります。
+
+AWS Marketplaceからコネクタをデプロイした場合、デプロイ時に必要なIAMロールを選択したため、これらの手順は適用されません。
+
+link:task-prepare-restricted-mode.html#prepare-cloud-permissions["クラウドへのアクセス許可を準備する方法をご確認ください"]。
+
+[role="tabbed-block"]
+====
+.AWS IAMロール
+--
+以前に作成したIAMロールを、コネクタをインストールしたEC2インスタンスにアタッチします。
+
+これらの手順は、コネクタをAWSに手動でインストールした場合にのみ該当します。AWS Marketplace環境の場合は、コネクタインスタンスに必要な権限を含むIAMロールがすでに関連付けられています。
+
+.手順
+. Amazon EC2コンソールに移動します。
+. [インスタンス]*を選択します。
+. コネクターインスタンスを選択します。
+. [アクション]>[セキュリティ]>[IAMロールの変更]*を選択します。
+. IAMロールを選択し、*[IAMロールの更新]*をクリックします。
+
+
+.結果
+BlueXPに、AWSでユーザに代わって操作を実行するために必要な権限が付与されました。
+
+--
+.AWSアクセスキー
+--
+必要な権限を持つIAMユーザのAWSアクセスキーをBlueXPに渡します。
+
+.手順
+. BlueXPで正しいコネクタが選択されていることを確認します
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
++
+image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
+
+. [Add Credentials] をクリックし、ウィザードの手順に従います。
++
+.. * 資格情報の場所 * ：「 * Amazon Web Services > Connector * 」を選択します。
+.. *クレデンシャルを定義*：AWSアクセスキーとシークレットキーを入力します。
+.. * Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。
+.. * 確認 * ：新しいクレデンシャルの詳細を確認し、 * 追加 * をクリックします。
+
+
+
+
+.結果
+BlueXPに、AWSでユーザに代わって操作を実行するために必要な権限が付与されました。
+
+--
+.Azureロール
+--
+Azureポータルに移動し、1つ以上のサブスクリプションのコネクタ仮想マシンにAzureカスタムロールを割り当てます。
+
+.手順
+. Azure Portalで、* Subscriptions *サービスを開き、サブスクリプションを選択します。
+. * アクセス制御（ IAM ） * > * 追加 * > * 役割の割り当ての追加 * をクリックします。
+. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
++
+
+NOTE: BlueXP Operatorは'BlueXPポリシーで指定されているデフォルト名ですロールに別の名前を選択した場合は、代わりにその名前を選択します。
+
+. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
++
+.. * 管理対象 ID * へのアクセス権を割り当てます。
+.. [ * メンバーの選択 * ] をクリックし、 Connector 仮想マシンが作成されたサブスクリプションを選択し、 [ * 仮想マシン * ] を選択してから、 Connector 仮想マシンを選択します。
+.. [ * 選択 * ] をクリックします。
+.. 「 * 次へ * 」をクリックします。
+.. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
+.. 追加のサブスクリプションから Cloud Volumes ONTAP を導入する場合は、そのサブスクリプションに切り替えてから、これらの手順を繰り返します。
+
+
+
+
+.結果
+BlueXPに、Azureで処理を実行するために必要な権限が付与されました。
+
+--
+.Azureサービスプリンシパル
+--
+以前にセットアップしたAzureサービスプリンシパルのクレデンシャルをBlueXPに指定します。
+
+.手順
+. にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] ログインします。
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
++
+image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
+
+. [Add Credentials] をクリックし、ウィザードの手順に従います。
++
+.. * 資格情報の場所 * ： Microsoft Azure > Connector * を選択します。
+.. * クレデンシャルの定義 * ：必要な権限を付与する Azure Active Directory サービスプリンシパルに関する情報を入力します。
++
+*** アプリケーション（クライアント）ID
+*** ディレクトリ（テナント）ID
+*** クライアントシークレット
+
+
+.. * Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。
+.. * 確認 * ：新しいクレデンシャルの詳細を確認し、 * 追加 * をクリックします。
+
+
+
+
+.結果
+BlueXPに、Azureで処理を実行するために必要な権限が付与されました。
+
+--
+.Google Cloudサービスアカウント
+--
+サービスアカウントをコネクタVMに関連付けます。
+
+.手順
+. Google Cloudポータルに移動し、コネクタVMインスタンスにサービスアカウントを割り当てます。
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloudドキュメント：インスタンスのサービスアカウントとアクセス範囲の変更"^]
+
+. Cloud Volumes ONTAP を他のプロジェクトに導入する場合は、BlueXPロールを持つサービスアカウントをそのプロジェクトに追加してアクセスを許可します。プロジェクトごとにこの手順を繰り返す必要があります。
+
+
+.結果
+BlueXPに、Google Cloudでユーザに代わって操作を実行するために必要な権限が付与されました。
+
+--
+====

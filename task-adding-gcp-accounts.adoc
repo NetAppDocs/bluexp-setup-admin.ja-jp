@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-gcp-accounts.html 
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: Connector VM インスタンスに関連付けられているクレデンシャルを管理できます。 
+summary: コネクタVMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理できます。 
 ---
-= BlueXPのGoogle Cloud資格情報とサブスクリプションの管理
+= BlueXPのGoogle Cloudクレデンシャルとサブスクリプションを管理します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,27 +14,25 @@ summary: Connector VM インスタンスに関連付けられているクレデ�
 
 
 [role="lead"]
-Connector VM インスタンスに関連付けられているクレデンシャルを管理できます。
+コネクタVMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理できます。
 
 
 
-== MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け
+== MarketplaceサブスクリプションをGoogle Cloudのクレデンシャルに関連付ける
 
-Google CloudでConnectorを導入すると、Connector VMインスタンスに関連付けられたデフォルトのクレデンシャルセットがBlueXPによって作成されます。これらはBlueXPがCloud Volumes ONTAP を展開するために使用する資格情報です。
-
-これらの資格情報に関連付けられている Marketplace サブスクリプションは、いつでも変更できます。サブスクリプションを使用すると、従量課金制の Cloud Volumes ONTAP システムを作成し、他のネットアップクラウドサービスを使用できます。
+Google CloudでConnectorを導入すると、Connector VMインスタンスに関連付けられたデフォルトのクレデンシャルセットがBlueXPによって作成されます。これらの資格情報に関連付けられている Marketplace サブスクリプションは、いつでも変更できます。このサブスクリプションでは、従量課金制のCloud Volumes ONTAP システムを作成したり、他のBlueXPサービスを使用したりできます。
 
 .手順
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
-. [アカウントの認証情報]ページで、一連の認証情報の操作メニューをクリックし、*[サブスクリプションの関連付け]*を選択します。
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
+. [アカウントの認証情報]ページで、一連の認証情報の操作メニューを選択し、*[サブスクリプションの関連付け]*を選択します。
 +
 image:screenshot_gcp_add_subscription.png["一連の既存のクレデンシャルに対する操作メニューのスクリーンショット。"]
 
-. 資格情報を既存のサブスクリプションに関連付けるには、下のリストからGoogle Cloudプロジェクトとサブスクリプションを選択し、*アソシエート*をクリックします。
+. クレデンシャルを既存のサブスクリプションに関連付けるには、ダウンリストからGoogle Cloudプロジェクトとサブスクリプションを選択し、*[関連付け]*を選択します。
 +
 image:screenshot_gcp_associate.gif["Google Cloud の資格情報に対して選択された Google Cloud プロジェクトとサブスクリプションのスクリーンショット。"]
 
-. まだサブスクリプションをお持ちでない場合は、[サブスクリプションの追加]、[続行]の順にクリックし、Google Cloud Marketplaceの手順に従います。
+. サブスクリプションをまだお持ちでない場合は、*[サブスクリプションの追加]>[続行]*を選択し、Google Cloud Marketplaceの手順に従います。
 +
 
 NOTE: 次の手順を実行する前に、Google CloudアカウントとBlueXPログインの両方に課金管理者権限があることを確認してください。
@@ -42,17 +40,17 @@ NOTE: 次の手順を実行する前に、Google CloudアカウントとBlueXP�
 +
 .. にリダイレクトされたら https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^]をクリックし、上部のナビゲーションメニューで正しいプロジェクトが選択されていることを確認します。
 +
-image:screenshot_gcp_cvo_marketplace.png["GCP CVO Marketplace ページのスクリーンショット。"]
+image:screenshot_gcp_cvo_marketplace.png["Google CloudのCloud Volumes ONTAP Marketplaceページのスクリーンショット。"]
 
-.. [*Subscribe*] をクリックします
+.. [サブスクライブ]*を選択します。
 .. 適切な請求先アカウントを選択し、条件に同意します。
-.. [*Subscribe*] をクリックします
+.. [サブスクライブ]*を選択します。
 +
 転送要求がネットアップに送信されます。
 
-.. ポップアップダイアログボックスで、* NetApp、Inc.に登録*をクリックします
+.. ポップアップダイアログボックスで、* NetApp、Inc.への登録*を選択します
 +
-Google Cloudサブスクリプションをネットアップアカウントにリンクするには、この手順を完了する必要があります。このページからリダイレクトされてBlueXPにサインインするまで、サブスクリプションをリンクするプロセスは完了していません。
+Google CloudサブスクリプションをBlueXPアカウントにリンクするには、この手順を完了する必要があります。このページからリダイレクトされてBlueXPにサインインするまで、サブスクリプションをリンクするプロセスは完了していません。
 
 +
 image:screenshot_gcp_marketplace_register.png["登録ポップアップのスクリーンショット。"]
@@ -63,7 +61,7 @@ image:screenshot_gcp_marketplace_register.png["登録ポップアップのスク
 NOTE: 組織の誰かが請求アカウントからNetApp BlueXPサブスクリプションにすでに登録している場合は、にリダイレクトされます https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP WebサイトのCloud Volumes ONTAP ページ"^] 代わりに、予想外の場合は、ネットアップの営業チームにお問い合わせください。Google では、 1 つの Google 請求アカウントにつき 1 つのサブスクリプションのみが有効です。
 
 +
-*** このサブスクリプションを関連付けるネットアップアカウントを選択してください。
+*** このサブスクリプションを関連付けるBlueXPアカウントを選択します。
 *** [既存のサブスクリプションを置き換える*]フィールドで、1つのアカウントの既存のサブスクリプションをこの新しいサブスクリプションに自動的に置き換えるかどうかを選択します。
 +
 BlueXPは、アカウントのすべての資格情報の既存のサブスクリプションをこの新しいサブスクリプションに置き換えます。一連の資格情報がサブスクリプションに関連付けられていない場合、この新しいサブスクリプションはこれらの資格情報に関連付けられません。
@@ -71,7 +69,7 @@ BlueXPは、アカウントのすべての資格情報の既存のサブスク�
 +
 他のすべてのアカウントについては、以下の手順を繰り返して、手動で契約を関連付ける必要があります。
 
-*** [ 保存（ Save ） ] をクリックします。
+*** [ 保存（ Save ） ] を選択します。
 +
 次のビデオでは、Google Cloud Marketplaceから登録する手順を紹介しています。
 
@@ -89,12 +87,12 @@ image:screenshot_gcp_associate.gif["サブスクリプションの割り当て�
 
 
 
-== Marketplace サブスクリプションプロセスのトラブルシューティング
+== Marketplaceのサブスクリプションプロセスのトラブルシューティング
 
-Google Cloud MarketplaceからCloud Volumes ONTAP に登録すると、権限が不適切なために断片化したり、BlueXP Webサイトへのリダイレクトに誤って追随したりしないことがあります。この場合は、次の手順に従ってサブスクリプションプロセスを完了してください。
+Google Cloud MarketplaceからBlueXPにサブスクライブすると、権限が正しくない場合やBlueXP Webサイトへのリダイレクトを誤って実行しなかった場合に、断片化されることがあります。この場合は、次の手順に従ってサブスクリプションプロセスを完了してください。
 
 .手順
-. に移動します https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^] 注文の状態を確認します。ページに「 * プロバイダで管理」と表示されている場合は、下にスクロールして「 * 注文の管理 * 」をクリックします。
+. に移動します https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^] 注文の状態を確認します。ページに「プロバイダで管理」と表示されている場合は、下にスクロールして「注文の管理」を選択します。
 +
 image:screenshot_gcp_manage_orders.png["配信登録後のマーケットプレイスページのスクリーンショット"]
 

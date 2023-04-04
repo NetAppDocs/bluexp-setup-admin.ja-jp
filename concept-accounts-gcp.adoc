@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
-keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, tiering, data tiering, account for data tiering, account for tiering, project, projects, add project, select new project, gcp project, google project, google cloud project 
-summary: サービスアカウントでは、コネクタと同じプロジェクト、または異なるプロジェクトにあるCloud Volumes ONTAP システムを展開および管理する権限がBlueXPに提供されます。 
+keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
+summary: 1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理できるように、BlueXPでのGoogle Cloudのクレデンシャルと権限の使用方法を理解しておく必要があります。 
 ---
 = Google Cloud のプロジェクト、権限、アカウント
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: サービスアカウントでは、コネクタと同じプロジェ�
 
 
 [role="lead"]
-サービスアカウントでは、コネクタと同じプロジェクト、または異なるプロジェクトにあるCloud Volumes ONTAP システムを展開および管理する権限がBlueXPに提供されます。
+1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理できるように、BlueXPでのGoogle Cloudのクレデンシャルと権限の使用方法を理解しておく必要があります。
 
 
 
 == BlueXPのプロジェクトと権限
 
-Google Cloud に Cloud Volumes ONTAP を導入する前に、まず Google Cloud プロジェクトに Connector を導入する必要があります。Connector は、オンプレミスでも別のクラウドプロバイダでも実行できません。
+BlueXPを使用してGoogle Cloudプロジェクトのリソースを管理するには、まずコネクタを導入する必要があります。Connector は、オンプレミスでも別のクラウドプロバイダでも実行できません。
 
 BlueXPからコネクタを直接展開するには、次の2セットの権限が必要です。
 
@@ -28,11 +28,16 @@ BlueXPからコネクタを直接展開するには、次の2セットの権限�
 . コネクタを配置するときに、を選択するよう求められます https://cloud.google.com/iam/docs/service-accounts["サービスアカウント"^] VM インスタンスの場合です。BlueXPは、サービスアカウントから権限を取得して、Cloud Volumes ONTAP システムの作成と管理を代行します。権限は、サービスアカウントにカスタムロールを割り当てることによって提供されます。
 
 
-ユーザとサービスアカウントに必要な権限を含む YAML ファイルを 2 つ設定しました。 link:task-creating-connectors-gcp.html["YAML ファイルを使用して設定する方法を学習します 権限"]。
-
 次の図は、上記の番号 1 と 2 で説明した権限の要件を示しています。
 
 image:diagram_permissions_gcp.png["GoogleとサービスアカウントがCloud Volumes ONTAP を導入するための権限の要件を示す概念図。"]
+
+権限の設定方法については、次のページを参照してください。
+
+* link:task-set-up-permissions-google.html["標準モードのGoogle Cloud権限を設定します"]
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["制限モードにクラウド権限を設定する"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["プライベートモードのクラウド権限を設定します"]
+
 
 
 
@@ -41,5 +46,5 @@ image:diagram_permissions_gcp.png["GoogleとサービスアカウントがCloud 
 Cloud Volumes ONTAP は、コネクタと同じプロジェクトに存在することも、別のプロジェクトに存在することもできます。Cloud Volumes ONTAP を別のプロジェクトに配置するには、まずコネクタサービスアカウントとその役割をそのプロジェクトに追加する必要があります。
 
 * link:task-creating-connectors-gcp.html#setting-up-gcp-permissions-to-create-a-connector["サービスアカウントの設定方法について説明します"]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["GCP とで Cloud Volumes ONTAP を導入する方法について説明します プロジェクトを選択します"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Google CloudにCloud Volumes ONTAP を導入する方法とプロジェクトを選択する方法について説明します"^]
 

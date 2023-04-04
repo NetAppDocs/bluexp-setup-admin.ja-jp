@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-standard-mode.html 
+keywords: quick start, standard mode quick start 
+summary: BlueXPを標準モードでわずか数ステップで開始できます。 
+---
+= BlueXPを標準モードでクイックスタートできます
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPを標準モードでわずか数ステップで開始できます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] サインアップしてアカウントを作成します
+[role="quick-margin-para"]
+にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] 登録してください。アカウントを作成するオプションが表示されますが、既存のアカウントに招待されている場合は、この手順を省略できます。
+
+[role="quick-margin-para"]
+これでログインし、デジタルアドバイザ、Amazon FSx for ONTAP 、Azure NetApp Files など、複数のBlueXPサービスの使用を開始できます。 link:concept-connectors.html["コネクタなしでできることを学びます"]。
+
+[role="quick-margin-para"]
+link:task-sign-up-saas.html["サインアップしてアカウントを作成する方法について説明します"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] コネクタを作成します
+[role="quick-margin-para"]
+BlueXPの使用を開始するためにコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを活用することができます。このコネクタは、BlueXPでハイブリッドクラウド環境内のリソースとプロセスを管理するためのネットアップのソフトウェアです。
+
+[role="quick-margin-para"]
+BlueXPアカウント管理者は、クラウドまたはオンプレミスのネットワークにコネクタを作成できます。
+
+[role="quick-margin-list"]
+* link:concept-connectors.html["コネクタが必要になる状況とその方法については、こちらをご覧ください 仕事"]
+* link:task-quick-start-connector-aws.html["AWS でコネクタを作成する方法について説明します"]
+* link:task-quick-start-connector-azure.html["Azure でコネクタを作成する方法について説明します"]
+* link:task-quick-start-connector-google.html["Google Cloud でコネクタを作成する方法について説明します"]
+* link:task-quick-start-connector-on-prem.html["オンプレミスでコネクタを作成する方法について説明します"]
+
+
+[role="quick-margin-para"]
+BlueXPサービスを使用してGoogle Cloudのストレージとデータを管理する場合は、コネクタがGoogle Cloudで実行されている必要があります。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] BlueXPにサブスクライブします
+[role="quick-margin-para"]
+クラウドプロバイダのマーケットプレイスからBlueXPにサブスクライブして、BlueXPサービスの料金を時間単位（PAYGO）または年間契約でお支払いください。
+
+[role="quick-margin-para"]
+link:task-subscribe-standard-mode.html["BlueXPの購読方法をご確認ください"]。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: ネットアップアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど、BlueXP管理機能の新機能をご紹介します。 
+summary: BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど）をご確認ください。 
 ---
 = 新機能
 :hardbreaks:
@@ -14,7 +14,27 @@ summary: ネットアップアカウント、コネクタ、クラウドプロ�
 
 
 [role="lead"]
-ネットアップアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど、BlueXP管理機能の新機能をご紹介します。
+BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど）をご確認ください。
+
+
+
+== 2023年4月4日
+
+
+
+=== 展開モード
+
+BlueXP_deployment modes_を使用すると、ビジネス要件やセキュリティ要件に合わせてBlueXPを使用できます。次の3つのモードから選択できます。
+
+* 標準モード
+* 制限モード
+* プライベートモード
+
+
+link:concept-modes.html["これらの展開モードの詳細については、こちらをご覧ください"]。
+
+
+NOTE: 制限モードが導入されたことで、SaaSプラットフォームを有効または無効にするオプションが廃止されました。制限モードはアカウント作成時に有効にすることができます。後で有効または無効にすることはできません。
 
 
 
@@ -303,7 +323,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * Azure West US 3リージョンでコネクタがサポートされるようになりました。
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
 +
@@ -335,7 +355,7 @@ NOTE: Eメールアドレスとパスワードを使用する既存のログイ�
 * このコネクタは、AWSジャカルタリージョン（AP-Southee-3）でサポートされるようになりました。
 * このコネクタは、Azureブラジル南東部でサポートされるようになりました。
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
 +
@@ -372,7 +392,7 @@ https://cloud.netapp.com/cloud-volumes-global-regions["サポートされてい�
 
 
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
 
 * Connectorで使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。
 +
@@ -559,7 +579,7 @@ link:task-installing-linux.html["コネクタのシステム要件を確認し�
 
 * link:task-creating-connectors-aws.html["AWS でコネクタを作成します"]
 * link:task-creating-connectors-azure.html["Azure でコネクタを作成します"]
-* link:task-creating-connectors-gcp.html["GCP でコネクターを作成します"]
+* link:task-creating-connectors-gcp.html["Google Cloud でコネクターを作成します"]
 
 
 

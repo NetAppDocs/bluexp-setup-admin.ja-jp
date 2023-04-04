@@ -4,7 +4,7 @@ permalink: task-finding-system-id.html
 keywords: system id, id, BlueXP system id, connector system id 
 summary: 作業を開始する際に、ネットアップの担当者からコネクタのシステム ID を尋ねられることがあります。この ID は通常、ライセンスの取得やトラブルシューティングの目的で使用されます。 
 ---
-= コネクタのシステム ID の確認
+= コネクタのシステム ID を確認します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -17,8 +17,8 @@ summary: 作業を開始する際に、ネットアップの担当者からコ�
 作業を開始する際に、ネットアップの担当者からコネクタのシステム ID を尋ねられることがあります。この ID は通常、ライセンスの取得やトラブルシューティングの目的で使用されます。
 
 .手順
-. BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックします。
-. [ サポート（ Support ） ] > [ コネクター（ Connector ） ] をクリック
+. BlueXPコンソールの右上にある[Help]アイコンを選択します。
+. [Support]>[Connector]*を選択します。
 +
 システム ID が一番上に表示されます。
 

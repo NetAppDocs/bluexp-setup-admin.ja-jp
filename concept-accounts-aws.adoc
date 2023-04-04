@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-aws.html 
-keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, json 
-summary: BlueXPでは、Cloud Volumes ONTAP の導入時に使用するAWSクレデンシャルを選択できます。すべての Cloud Volumes ONTAP システムは、初期の AWS クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。 
+keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
+summary: 1つ以上のAWSアカウントのクレデンシャルを管理できるように、BlueXPでのAWSのクレデンシャルと権限の使用方法を理解しておく必要があります。 
 ---
 = AWS のクレデンシャルと権限
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: BlueXPでは、Cloud Volumes ONTAP の導入時に使用するAWSクレ
 
 
 [role="lead"]
-BlueXPでは、Cloud Volumes ONTAP の導入時に使用するAWSクレデンシャルを選択できます。すべての Cloud Volumes ONTAP システムは、初期の AWS クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。
+1つ以上のAWSアカウントのクレデンシャルを管理できるように、BlueXPでのAWSのクレデンシャルと権限の使用方法を理解しておく必要があります。
 
 
 
 == AWS の初期クレデンシャル
 
-BlueXPからコネクタを展開する場合は、IAMロールのARNまたはIAMユーザのアクセスキーを指定する必要があります。使用する認証方式に、 Connector インスタンスを AWS に導入するための必要な権限がある必要があります。必要な権限は、に表示されます link:task-creating-connectors-aws.html["AWS 用のコネクタ導入ポリシー"]。
+BlueXPからコネクタを展開する場合は、IAMロールのARNまたはIAMユーザのアクセスキーを指定する必要があります。使用する認証方式に、 Connector インスタンスを AWS に導入するための必要な権限がある必要があります。必要な権限は、に表示されます link:task-set-up-permissions-aws.html["AWS 用のコネクタ導入ポリシー"]。
 
 BlueXPがAWSでコネクタインスタンスを起動すると、インスタンスのIAMロールとインスタンスプロファイルが作成されます。また、ポリシーを適用して、指定した AWS アカウント内のリソースやプロセスを管理する権限を Connector に提供します。 link:reference-permissions-aws.html["BlueXPがどのように権限を使用しているかを確認します"]。
 
@@ -30,25 +30,35 @@ Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォル
 
 image:screenshot_accounts_select_aws.gif["Details  Credentials ページに Switch Account オプションを示すスクリーンショット。"]
 
+すべての Cloud Volumes ONTAP システムは、初期の AWS クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。
+
 
 
 == 追加の AWS クレデンシャル
 
-AWS クレデンシャルを追加する方法は 2 種類あります。
+AWSクレデンシャルを追加するには、次の2つの方法があります。
+
+* 既存のコネクタにAWSクレデンシャルを追加できます
+* AWSクレデンシャルはBlueXPに直接追加できます
+
+
+詳細については、以下のセクションを参照してください。
 
 
 
 === AWS クレデンシャルを既存のコネクタに追加する
 
-別々の AWS アカウントで Cloud Volumes ONTAP を起動する場合は、どちらかを実行します link:task-adding-aws-accounts.html["IAM ユーザまたは ARN に AWS キーを指定します 信頼できるアカウントのロール"]。次の図は、 2 つの追加アカウントを示しています。 1 つは、信頼されたアカウントの IAM ロールを介してアクセス許可を提供し、もう 1 つは IAM ユーザの AWS キーを使用してアクセス許可を提供します。
+Cloud Volumes ONTAP を別の AWS アカウントで起動する場合は、 IAM ユーザに AWS キーを提供するか、信頼されたアカウントのロールの ARN を提供します。次の図は、 2 つの追加アカウントを示しています。 1 つは、信頼されたアカウントの IAM ロールを介してアクセス許可を提供し、もう 1 つは IAM ユーザの AWS キーを使用してアクセス許可を提供します。
 
 image:diagram_permissions_multiple_aws.png["2 つの追加アカウントを示す概念図。各には IAM ポリシーが 1 つあり、 1 つは IAM ユーザに関連付けられ、もう 1 つは IAM ロールに関連付けられている。」"]
 
-そのあとで link:task-adding-aws-accounts.html#adding-aws-accounts-to-cloud-manager["アカウントの資格情報をBlueXPに追加します"] IAM ロールの Amazon リソース名（ ARN ）、または IAM ユーザの AWS キーを指定します。
+その後、IAMロールのAmazon Resource Name（ARN）またはIAMユーザのAWSキーを指定して、アカウントクレデンシャルをBlueXPに追加します。
 
 クレデンシャルを追加したら、新しい作業環境を作成するときにクレデンシャルに切り替えることができます。
 
 image:screenshot_accounts_switch_aws.png["[ 詳細と資格情報 ] ページで [ アカウントの切り替え ] をクリックした後に、クラウドプロバイダアカウントを選択する方法を示すスクリーンショット。"]
+
+link:task-adding-aws-accounts.html#add-credentials-to-a-connector["既存のコネクタにAWSクレデンシャルを追加する方法を説明します。"]
 
 
 
@@ -56,15 +66,31 @@ image:screenshot_accounts_switch_aws.png["[ 詳細と資格情報 ] ページで
 
 BlueXPに新しいAWS資格情報を追加すると'FSX for ONTAP 作業環境の作成と管理'またはコネクタの作成に必要な権限が提供されます
 
+* link:https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["BlueXP for Amazon FSx for ONTAP にAWSクレデンシャルを追加する方法をご紹介します"^]
+* link:task-adding-aws-accounts.html#add-credentials-to-a-connector["コネクタを作成するためにAWSクレデンシャルをBlueXPに追加する方法について説明します"]
+
+
 
 
 == 市場への導入とオンプレミスの導入についてはどうでしょうか。
 
-上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。から AWS に Connector を導入することもできます link:task-launching-aws-mktp.html["AWS Marketplace"] また、次のことも可能です link:task-installing-linux.html["コネクタをオンプレミスにインストールします"]。
+上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。AWS MarketplaceからAWSにコネクタを導入したり、独自のLinuxホストにコネクタソフトウェアを手動でインストールしたりすることもできます。
 
 Marketplace を使用する場合も、アクセス許可は同じ方法で提供されます。IAM ロールを手動で作成して設定し、追加のアカウントに権限を付与するだけで済みます。
 
-オンプレミス環境では、BlueXPシステム用にIAMロールを設定することはできませんが、追加のAWSアカウントの場合と同様に権限を付与することはできます。
+オンプレミス環境の場合、BlueXPシステム用のIAMロールを設定することはできませんが、AWSアクセスキーを使用して権限を指定することはできます。
+
+権限の設定方法については、次のページを参照してください。
+
+* 標準モード
++
+** link:task-set-up-permissions-aws.html["AWS権限を設定"]
+** link:task-set-up-permissions-on-prem.html["オンプレミス環境のクラウド権限を設定"]
+
+
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["制限モードにクラウド権限を設定する"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["プライベートモードのクラウド権限を設定します"]
+
 
 
 

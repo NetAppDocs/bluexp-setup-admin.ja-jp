@@ -53,7 +53,7 @@ Compliance Viewer ロールは、読み取り専用の Cloud Data Sense アク�
 | コネクタを作成します | はい。 | いいえ | いいえ | いいえ 
 
 
-| ネットアップアカウントを管理 | はい。 | いいえ | いいえ | いいえ 
+| BlueXPアカウントの管理 | はい。 | いいえ | いいえ | いいえ 
 
 
 | クレデンシャルを管理する | はい。 | いいえ | いいえ | いいえ 
@@ -69,11 +69,8 @@ Compliance Viewer ロールは、読み取り専用の Cloud Data Sense アク�
 
 
 | HTTPS 証明書をインストールします | はい。 | いいえ | いいえ | いいえ 
-
-
-| SnapCenter サービスを使用します | はい。 | はい。 | いいえ | はい。 
 |===
 .関連リンク
-* link:task-setting-up-netapp-accounts.html["ネットアップアカウントでワークスペースとユーザをセットアップ"]
-* link:task-managing-netapp-accounts.html["ネットアップアカウントでのワークスペースとユーザの管理"]
+* link:task-setting-up-netapp-accounts.html["BlueXPアカウントでのワークスペースとユーザのセットアップ"]
+* link:task-managing-netapp-accounts.html["BlueXPアカウントでのワークスペースとユーザの管理"]
 

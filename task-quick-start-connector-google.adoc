@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-connector-google.html 
+keywords: quick start, connector quick start, google cloud quick start, gcp quick start 
+summary: Google Cloudでコネクタを作成するには、インストールオプションの選択、ネットワークの設定、権限の準備などを行います。 
+---
+= Google Cloudでコネクタを作成するためのクイックスタート
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Google Cloudでコネクタを作成するには、インストールオプションの選択、ネットワークの設定、権限の準備などを行います。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] インストールオプションを理解します
+[role="quick-margin-para"]
+Google Cloudでコネクタを直接作成する標準的な方法はBlueXPから直接作成できますが、gcloudを使用して作成することも、既存のLinuxホストにソフトウェアを手動でインストールすることもできます。
+
+[role="quick-margin-para"]
+link:concept-install-options-google.html["インストールオプションの詳細については、こちらを参照してください"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] ネットワークをセットアップする
+[role="quick-margin-para"]
+コネクタ用に次のものを準備します。
+
+[role="quick-margin-list"]
+* VPCとサブネット
+* 作業環境の作成と管理を計画しているネットワークへのネットワーク接続
+* 日常業務用の特定のエンドポイントへのアウトバウンドインターネットアクセス
+* アウトバウンドインターネットにプロキシサーバが必要な場合は、プロキシサーバのIPアドレス、クレデンシャル、およびHTTPS証明書
+
+
+[role="quick-margin-para"]
+link:task-set-up-networking-google.html["ネットワーク要件の詳細については、こちらをご覧ください"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ホストの要件を確認します
+[role="quick-margin-para"]
+コネクタソフトウェアは、特定の要件を満たすホストで実行する必要があります。Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、これらの要件をホストが満たしていることを確認する必要があります。BlueXPまたはgcloudを使用してコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応できます。
+
+[role="quick-margin-para"]
+主な要件は次のとおりです。
+
+[role="quick-margin-list"]
+* CentOSまたはRed Hat Enterprise Linuxを実行する専用ホスト
+* CPU × 4
+* 14GBのRAM
+* Docker Engine の略
+
+
+[role="quick-margin-para"]
+link:reference-host-requirements-google.html["これらのホスト要件の詳細については、こちらをご覧ください"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] Google Cloud権限を設定する
+[role="quick-margin-para"]
+使用するインストールオプションに対してGoogle Cloudの権限を設定します。
+
+[role="quick-margin-list"]
+* * BlueXPまたはgcloudからのインストール*：カスタムロールを作成し、コネクタを導入するユーザに割り当てます。別のカスタムロールを作成し、コネクタVMインスタンスのサービスアカウントに割り当てます。
+* *手動インストール*：カスタムロールを作成し、コネクタVMインスタンスのサービスアカウントに割り当てます。
+
+
+[role="quick-margin-para"]
+link:task-set-up-permissions-google.html["これらの各オプションの詳細な手順に従います"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] Google Cloud API を有効にします
+[role="quick-margin-para"]
+Google CloudにConnectorとCloud Volumes ONTAP を導入するには、いくつかのAPIが必要です。
+
+[role="quick-margin-list"]
+* Cloud Deployment Manager V2 API
+* クラウドロギング API
+* Cloud Resource Manager API の略
+* Compute Engine API
+* ID およびアクセス管理（ IAM ） API
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"] コネクターを作成します
+[role="quick-margin-para"]
+使用可能なインストールオプションのいずれかを使用してコネクタを作成します。
+
+[role="quick-margin-list"]
+* * BlueXP *で：[Connector]ドロップダウンをクリックし、*[Add Connector]*を選択して、画面の指示に従います。
+* * gloud *を使用して:を使用してください `gcloud compute instances create` コマンドを実行します
+* *手動インストール*：からコネクタソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"] インストールスクリプトを実行します。
+
+
+[role="quick-margin-para"]
+link:task-install-connector-google.html["これらの各オプションの詳細な手順に従います"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["7"] BlueXPに権限を付与する
+[role="quick-margin-para"]
+コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。
+
+[role="quick-margin-para"]
+link:task-provide-permissions-google.html["ステップバイステップの手順に従います"]。

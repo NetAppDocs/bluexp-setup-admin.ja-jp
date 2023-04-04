@@ -25,10 +25,10 @@ BlueXPの機能とサービスを使用するには、BlueXPがクラウド環�
 | 目的 | 説明 | リンク 
 
 
-| コネクタの展開 | BlueXPからConnectorを作成するユーザには、AWSにインスタンスを導入するための特別な権限が必要です。 | link:task-creating-connectors-aws.html["BlueXPからAWSにコネクタを作成します"] 
+| BlueXPからのコネクタの導入 | BlueXPからConnectorを作成するユーザには、AWSにインスタンスを導入するための特別な権限が必要です。 | link:task-set-up-permissions-aws.html["AWS権限を設定"] 
 
 
-| コネクタの動作 | BlueXPがConnectorを起動すると、AWSアカウントのリソースとプロセスの管理に必要な権限を提供するポリシーがインスタンスに関連付けられます。その場合は、自分でポリシーを設定する必要があります link:task-launching-aws-mktp.html["マーケットプレイスからコネクターを起動します"] またはあなたの場合 link:task-adding-aws-accounts.html#add-credentials-to-a-connector["AWSクレデンシャルをコネクタに追加します"]。また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:reference-permissions-aws.html["Connector の AWS 権限"] 
+| コネクタの動作 | BlueXPがConnectorを起動すると、AWSアカウントのリソースとプロセスの管理に必要な権限を提供するポリシーがインスタンスに関連付けられます。マーケットプレイスからコネクタを起動する場合、コネクタを手動でインストールする場合、またはコネクタを手動でインストールする場合は、ポリシーを自分で設定する必要があります link:task-adding-aws-accounts.html#add-credentials-to-a-connector["AWSクレデンシャルをコネクタに追加します"]。また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:reference-permissions-aws.html["Connector の AWS 権限"] 
 
 
 | Cloud Volumes ONTAP 処理 | AWSの各Cloud Volumes ONTAP ノードにIAMロールを関連付ける必要があります。HAメディエーターについても同様です。デフォルトでは、BlueXPでIAMロールを作成することができますが、自分で作成することもできます。 | https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-iam-roles.html["IAMロールを自分で設定する方法について説明します"^] 
@@ -42,13 +42,13 @@ BlueXPの機能とサービスを使用するには、BlueXPがクラウド環�
 | 目的 | 説明 | リンク 
 
 
-| コネクタの展開 | BlueXPからConnectorを導入する場合は、AzureにConnector VMを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。 | link:task-creating-connectors-azure.html["BlueXPからAzureにコネクタを作成します"] 
+| BlueXPからのコネクタの導入 | BlueXPからConnectorを導入する場合は、AzureにConnector VMを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。 | link:task-set-up-permissions-azure.html["Azure権限を設定する"] 
 
 
 | コネクタの動作  a| 
 BlueXPがConnector VMをAzureに導入すると、そのAzureサブスクリプション内でリソースとプロセスを管理するために必要な権限を提供するカスタムロールが作成されます。
 
-カスタムロールは自分で設定する必要があります link:task-launching-azure-mktp.html["マーケットプレイスからコネクターを起動します"] またはあなたの場合 link:task-adding-azure-accounts.html#adding-additional-azure-credentials-to-cloud-manager["Azureクレデンシャルをコネクタに追加します"]。
+Marketplaceからコネクタを起動する場合、コネクタを手動でインストールする場合、または独自にカスタムロールを設定する必要があります link:task-adding-azure-accounts.html#adding-additional-azure-credentials-to-cloud-manager["Azureクレデンシャルをコネクタに追加します"]。
 
 また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。
  a| 
@@ -64,8 +64,8 @@ link:reference-permissions-azure.html["Connector の Azure 権限"]
 | 目的 | 説明 | リンク 
 
 
-| コネクタの展開 | BlueXPからConnectorを導入するGoogle Cloudユーザーには、Google CloudにConnectorを導入するための特定の権限が必要です。 | link:task-creating-connectors-gcp.html#set-up-permissions-to-deploy-the-connector["Connectorを展開する権限を設定します"] 
+| コネクタの展開 | BlueXPからConnectorを導入するGoogle Cloudユーザーには、Google CloudにConnectorを導入するための特定の権限が必要です。 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Connectorを展開する権限を設定します"] 
 
 
-| コネクタの動作 | Connector VMインスタンスのサービスアカウントには、日常処理に対する特定の権限が必要です。BlueXPからサービスアカウントを展開するときは、コネクタに関連付ける必要があります。また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["コネクタのサービスアカウントを設定します"] 
+| コネクタの動作 | Connector VMインスタンスのサービスアカウントには、日常処理に対する特定の権限が必要です。BlueXPからサービスアカウントを展開するときは、コネクタに関連付ける必要があります。また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:reference-permissions-gcp.html["Connector の Google Cloud 権限"] 
 |===
