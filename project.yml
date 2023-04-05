@@ -241,27 +241,39 @@ homepage:
       url: "/task-quick-start-restricted-mode.html"
     - title: プライベートモードで開始します
       url: "/task-quick-start-private-mode.html"
-  - title: コネクタ
-    links:
-    - title: コネクタについて説明します
-      url: concept-connectors.html
-    - title: コネクタを管理します
-      url: task-managing-connectors.html
-    - title: AWS権限
-      url: reference-permissions-aws.html
-    - title: Azure権限
-      url: reference-permissions-azure.html
-    - title: Google Cloud権限
-      url: reference-permissions-gcp.html
   - title: BlueXPのアカウント
     links:
     - title: BlueXPアカウントの詳細をご確認ください
       url: concept-netapp-accounts.html
-    - title: ワークスペースとユーザを設定します
-      url: task-setting-up-netapp-accounts.html
     - title: BlueXPアカウントを管理します
       url: task-managing-netapp-accounts.html
-  - title: クラウドプロバイダアカウント
+    - title: アカウントでの処理を監視します
+      url: task-monitor-cm-operations.html
+  - title: コネクタ
+    links:
+    - title: コネクタについて説明します
+      url: concept-connectors.html
+    - title: AWSでのコネクタの作成（標準モード）
+      url: task-quick-start-connector-aws.html
+    - title: Azureでのコネクタの作成（標準モード）
+      url: task-quick-start-connector-azure.html
+    - title: Google Cloudでコネクタを作成する（標準モード）
+      url: task-quick-start-connector-google.html
+    - title: オンプレミスでコネクターを作成（標準モード）
+      url: task-quick-start-connector-on-prem.html
+    - title: コネクタを管理します
+      url: task-managing-connectors.html
+  - title: 権限
+    links:
+    - title: 権限の概要
+      url: reference-permissions.html
+    - title: Connector の AWS 権限
+      url: reference-permissions-aws.html
+    - title: Connector の Azure 権限
+      url: reference-permissions-azure.html
+    - title: Connector の Google Cloud 権限
+      url: reference-permissions-gcp.html
+  - title: クレデンシャル
     links:
     - title: AWS クレデンシャルを管理する
       url: task-adding-aws-accounts.html
@@ -269,6 +281,8 @@ homepage:
       url: task-adding-azure-accounts.html
     - title: Google Cloud クレデンシャルを管理します
       url: task-adding-gcp-accounts.html
+    - title: アカウントのNSSクレデンシャルを管理します
+      url: task-adding-nss-accounts.html
   - title: ブログコミュニティ
     links:
     - title: ネットアップコミュニティ

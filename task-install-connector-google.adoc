@@ -4,7 +4,7 @@ permalink: task-install-connector-google.html
 keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, manual install, create connector, gcp installation, gcp connector 
 summary: BlueXPのWebベースのコンソールから直接コネクタを作成するか、gcloudを使用するか、独自のLinuxホストにソフトウェアをインストールします。 
 ---
-= Google Cloudでコネクタを作成します
+= Google Cloud でコネクターを作成します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

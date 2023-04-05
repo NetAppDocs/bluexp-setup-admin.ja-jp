@@ -4,7 +4,7 @@ permalink: task-install-connector-azure.html
 keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, azure marketplace, manual install, create connector 
 summary: コネクタは、BlueXPのWebベースのコンソールやAzure Marketplaceから直接作成するか、自社のLinuxホストにインストールして作成します。 
 ---
-= Azureでコネクタを作成します
+= Azure でコネクタを作成します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

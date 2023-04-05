@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-connector-aws.html 
 keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector 
-summary: コネクタは、BlueXP Webベースのコンソール、AWS Marketplaceから直接AWSにインストールするか、自社のLinuxホストにインストールしてインストールします。 
+summary: コネクタは、BlueXPのWebベースのコンソールやAWS Marketplaceから直接作成するか、自社のLinuxホストにインストールして作成します。 
 ---
-= AWSでコネクタを作成します
+= AWS でコネクタを作成します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
