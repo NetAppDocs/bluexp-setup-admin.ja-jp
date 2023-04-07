@@ -491,7 +491,6 @@
   <block id="fa25ff644bc82c03a613715d969f788d" category="paragraph">Google Cloud でコネクタを作成するときに認証方法を指定することはできません。ただし、 Google Cloud Console または Google Cloud CLI （ gcloud ）を使用して Linux VM インスタンスに接続することができます。</block>
   <block id="b60097f9f3ac90a5ce4fd69c66be0717" category="inline-link">Google Cloud Docs ： Linux VM に接続します</block>
   <block id="b80f2820ec689140e03615f3240fde24" category="paragraph"><block ref="b80f2820ec689140e03615f3240fde24" category="inline-link-rx"></block></block>
-  <block id="e2729464f9bccb35f8d10ba5019f3955" category="paragraph">コネクタの URI を追加および削除します。</block>
   <block id="fb6890fd99d108eeb3627b961bdfb529" category="section-title">Google Cloud NAT ゲートウェイを使用しているときのダウンロードエラーを修正します</block>
   <block id="123919fc420bd58c9e773df9431e7089" category="list-text">次の JSON を本文として /occm/config に PUT 要求を送信します。</block>
   <block id="cd8e208bdf0e89ff2e888104b2d9c769" category="paragraph">_maxDownloadSessions_ の値は 1 または 1 より大きい任意の整数です。値が 1 の場合、ダウンロードされたイメージは分割されません。</block>
@@ -834,7 +833,6 @@
   <block id="a15b1a7954f2d926c5ee7f261a97b4d2" category="paragraph">/var/lib/docker /volumes /DS_occmdata/_data/log</block>
   <block id="590b2ea5933ad8ead3c9a15a914f1a9c" category="list-text">すべてのサービスが Docker コンテナ内で実行されています</block>
   <block id="f76b4c57c56377745199382d59cdeed3" category="paragraph">サービスは、実行されている Docker ランタイムサービスに依存します</block>
-  <block id="b7117438679aa668508b75822322c225" category="sidebar">管理ドキュメントをセットアップします</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="sidebar">制限</block>
@@ -893,7 +891,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">次のオプションは、 1 日 24 時間、週 7 日間無料でご利用いただけます。</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">ナレッジベース</block>
-  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">コミュニティ</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
@@ -1464,7 +1461,6 @@
   <block id="691be8e1993c2535e4afe5834afe3b01" category="list-text">Eメールアドレスとパスワードを使用したネットアップクラウドへのログイン</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link">BlueXPコンソール</block>
   <block id="0cdc0aaedcc5278681de9de08217447f" category="paragraph">ログインして、BlueXPを使用してハイブリッドマルチクラウドインフラを管理できるようになりました。</block>
-  <block id="f12aeeed0f164c86af69a57fddb01689" category="doc">BlueXPのセットアップと管理</block>
   <block id="a9e454ea444248fbc35956644d9980ab" category="paragraph">BlueXPが更新され'選択したコネクタに関連付けられている作業環境が表示されます</block>
   <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。</block>
   <block id="db56ea1b582b55a06a12a4267a2c8d20" category="list-text">パブリックIPアドレスを変更した場合、コネクタで実行されているローカルユーザインターフェイスに接続する必要があるときは、コネクタインスタンスを再起動して、新しいIPアドレスをBlueXPに登録します。</block>
@@ -3149,13 +3145,11 @@
   <block id="ce6d43255d920acadadb7e3862aee0b0" category="list-text"><block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block></block>
   <block id="2d9421fac12c9ac9462f27b55d118c68" category="list-text"><block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block></block>
   <block id="ba356dfc51631fb5a0371fea940de345" category="list-text"><block ref="ba356dfc51631fb5a0371fea940de345" category="inline-link-macro-rx"></block></block>
-  <block id="d1aefcf060d35fe9add58217931dc24a" category="paragraph">BlueXPからコネクタを直接作成するには特定の権限が必要です。コネクタインスタンス自体には別の権限セットが必要です。AWSまたはAzureでBlueXPから直接コネクタを作成する場合は、必要な権限でコネクタがBlueXPによって作成されます。あなたがする必要があることは他に何もありません。</block>
   <block id="e914e731bb669784ea88e9ad697407fb" category="inline-link-macro">Google Cloud権限を設定する</block>
   <block id="f068c113e0f68966d3264976bff4de1a" category="list-text"><block ref="f068c113e0f68966d3264976bff4de1a" category="inline-link-macro-rx"></block></block>
   <block id="1e419112f48a13d6b30178e127d0a445" category="paragraph">コネクタに必要な正確な権限を表示するには、次のページを参照してください。</block>
   <block id="8c03e33a988ffb4175368e0784ca1ff5" category="paragraph">Connectorは、ソフトウェアアップデートを取得するためにアウトバウンドインターネットアクセスがある限り、ソフトウェアを自動的に最新バージョンにアップデートします。BlueXPをプライベートモードで使用している場合は、コネクタを手動でアップグレードする必要があります。</block>
   <block id="ed0b87049db36af81b1e2989ce889651" category="inline-link-macro">コネクタソフトウェアを手動でアップグレードする方法について説明します</block>
-  <block id="079398d71b1e343d69f7a6ed5f005eb2" category="paragraph"><block ref="079398d71b1e343d69f7a6ed5f005eb2" category="inline-link-macro-rx"></block></block>
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>。</block>
   <block id="3feb0795a14e1cc974940057fc75d0e7" category="section-title">複数の作業環境</block>
   <block id="c6d129878583320db44cb10e4daa0ffc" category="section-title">複数のコネクタ</block>
@@ -3602,4 +3596,10 @@
   <block id="5287995c403f34c9ff0e79af4e8e7c9d" category="sidebar">アカウントのNSSクレデンシャルを管理します</block>
   <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="paragraph">必要に応じて、IAMを使用してIAMポリシーを制限できます<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 要素（Element）：<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
   <block id="10b9ce0cb6b2f607e0c7df6e246cfe67" category="paragraph"><block ref="8a7bc1e5ebe0f732b7f8c57cc7b088b6" category="inline-link-rx"></block>。</block>
+  <block id="7390f55a27add10ddc1a6c765b8a67c7" category="doc">BlueXPのセットアップと管理に関するドキュメント</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">BlueXPからコネクタを直接作成するには特定の権限が必要です。コネクタインスタンス自体には別の権限セットが必要です。AWSまたはAzureでBlueXPから直接コネクタを作成する場合は、必要な権限でコネクタがBlueXPによって作成されます。</block>
+  <block id="c6793bcdb1eae6a26c6e9cb42e6b2f31" category="paragraph"><block ref="079398d71b1e343d69f7a6ed5f005eb2" category="inline-link-macro-rx"></block>。</block>
+  <block id="c160cffd96a1bb98161a7add244e274f" category="paragraph">コネクタのUniform Resource Identifier（URI）を追加および削除します。</block>
+  <block id="f53835e0f369158c476f99fda577e700" category="sidebar">セットアップおよび管理に関するドキュメント</block>
 </blocks>
