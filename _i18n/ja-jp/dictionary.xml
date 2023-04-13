@@ -185,9 +185,6 @@
   <block id="43623b24ff4be4e0e0174dccd5d4446a" category="list-text">次のいずれかのオプションを選択します。</block>
   <block id="b7f7a48c60012c23b8adb659da31b71a" category="inline-link-macro">ユーザー、ワークスペース、コネクターの詳細をご覧ください</block>
   <block id="7d033896524ebe16495f74d9f7202783" category="paragraph"><block ref="cf2050a2914e59a752ab48465ba00e16" category="inline-link-macro-rx"></block>。</block>
-  <block id="eb6dd0692058cd4edb3fb82f48db1f57" category="paragraph">たとえば、 2 つのアカウントがあり、それぞれが別々のサブスクリプションで課金されるとします。いずれかのアカウントとサブスクリプションの関連付けを解除することで、 Cloud Volume ONTAP 作業環境の作成時にそのアカウントのユーザが誤って誤ったサブスクリプションを選択しないようにすることができます。</block>
-  <block id="1422eb9c77ef6c74d6abe35beedc5d64" category="paragraph">現在表示しているアカウントに関連付けられている月額プランのみが表示されます。</block>
-  <block id="1dea06c0cd8c3b77e4597670a860c155" category="inline-image-macro">サブスクリプションのアクションメニューのスクリーンショット。</block>
   <block id="0a1328e44a818b47ecf6db707c8721d7" category="paragraph">プライベートプレビューのサービスは、期待どおりに動作することが保証されておらず、サービスが停止したり、機能しなくなったりする可能性があります。</block>
   <block id="b48299c449bac839819763792d4aff22" category="list-text">[ * 概要 * ] タブで、 [ * プライベートプレビューを許可する * ] 設定を有効にします。</block>
   <block id="90837faa596ab1d28c90a381b6997722" category="list-text">[ * 概要 * ] タブで、 [ * サードパーティサービスを許可する * ] 設定を有効にします。</block>
@@ -794,7 +791,6 @@
   <block id="ced2d945d98014d4467b685b8314caa1" category="paragraph"><block ref="5fada74255cc5bbf99ee00eda10403ac" category="inline-link-macro-rx"></block>。</block>
   <block id="649d75c6283da2a4b802839db32a41af" category="inline-link-macro">コネクタの詳細については、こちらをご覧ください</block>
   <block id="75599088791b92751fdc2c9cee3a481e" category="paragraph"><block ref="c5bcec7879e3189e4c7a5fdbd8b19a5b" category="inline-link-macro-rx"></block>。</block>
-  <block id="4ca2c509994c2776d0880357b4e8e5be" category="section-title">サブスクリプション</block>
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">例</block>
   <block id="6643fe16b29885768bd30191d9673e3e" category="paragraph">次の例は、アカウントの設定方法を示しています。</block>
   <block id="ddc6e5885facb249d958d56dc9bb1acc" category="paragraph">次の例は、 2 つのワークスペースを使用して分離された環境を作成するアカウントを示しています。1 つ目のワークスペースは本番環境用で、 2 つ目のワークスペースは開発環境用です。</block>
@@ -1848,29 +1844,6 @@
   <block id="4b9c42bf1853fa25d534302dbc43f035" category="list-text">S3 ： PutBucketPolicy</block>
   <block id="fa4d7248969f7582be82c5aa4b15e08b" category="list-text">S3：PutBucketOwnershipControls</block>
   <block id="c9c484fe908813be17fe13bbdeabfb1d" category="cell">作成時にストレージアカウントを暗号化</block>
-  <block id="4d17b7f0d1f8c0ae69c0ec8d32fea349" category="summary">クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、BlueXPのWebサイトにリダイレクトされます。このWebサイトでは、サブスクリプションを保存して、特定のアカウントに関連付ける必要があります。登録が完了すると、各サブスクリプションをデジタルウォレットから管理できるようになります。</block>
-  <block id="b01b1be092b95233172f870dc729234b" category="doc">PAYGOのサブスクリプションと契約を管理</block>
-  <block id="e858f445394700e621aa67dd8e3fe958" category="section-title">月額プランを表示します</block>
-  <block id="9c1b3fb5f48f73ce89025933ec931382" category="paragraph">Digital Walletは、お客様のBlueXPアカウントとAstra (AstraはBlueXPの課金サービスを利用)に関連するPAYGOの各サブスクリプションと年間契約の詳細を提供します。</block>
-  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">BlueXPナビゲーションメニューから、* Governance &gt; Digital Wallet *を選択します。</block>
-  <block id="8c3682e85d7f4dbe8a46485082335dec" category="list-text">[サブスクリプション]を選択します。</block>
-  <block id="572e470335e0a6d55da05c732a01aed3" category="list-text">サブスクリプションに関する情報を表示する際、次のようにテーブルの詳細を操作できます。</block>
-  <block id="6a1de13d318f22872902849cd26467b4" category="list-text">行を展開すると詳細が表示されます。</block>
-  <block id="d61aec883b403c61da2d8d8e19d78473" category="inline-image-macro">デジタルウォレットの[購読]タブのスクリーンショット。行の末尾にある矢印を選択して展開できます。</block>
-  <block id="3a9d2caf2b3b63f1b3ab7d00e469b158" category="paragraph"><block ref="3a9d2caf2b3b63f1b3ab7d00e469b158" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="56594b7222b35921f9fe676eadf6bbdf" category="inline-image-macro">テーブルヘッダーの末尾にあるプラスアイコン</block>
-  <block id="c090ce3dc0b8ea780bfa95c666328c67" category="paragraph">デフォルトでは、［用語］および［自動更新］の列は表示されません。自動更新列には、Azure契約の更新情報のみが表示されます。</block>
-  <block id="48772efe35cdbabca3c0abdab7360b57" category="paragraph">表に表示される内容については、次の点に注意してください。</block>
-  <block id="4d34f1097f6c8b9cee28bca8b78bbee9" category="list-text">開始日</block>
-  <block id="d1686d74b72c58f44c6fceaf3011df0b" category="list-text">開始日は、サブスクリプションをアカウントに関連付け、課金が開始されたときです。</block>
-  <block id="716e98867696fbbeed00e3dcd1f76758" category="list-text">表に「N/A」と表示される場合は、現時点ではクラウドプロバイダのAPIから情報を入手できません。</block>
-  <block id="cd494d76449d5dfe0c0adfb2f3447761" category="list-text">契約</block>
-  <block id="8090b542b799e2f0268fddd048d44eda" category="list-text">契約の詳細を展開すると、Digital Walletには現在の計画で使用可能な内容が表示されます。これには、契約のオプションと単位（容量またはノード数）が含まれます。</block>
-  <block id="7f96d1365390f4c6a7c1befe0b068769" category="list-text">Digital Walletは、終了日と、契約がまもなく更新されるか、間もなく終了するか、またはすでに終了したかを識別します。</block>
-  <block id="d1d7830f95588ae511ee592eab47c2b0" category="list-text">AWS契約があり、開始日以降に契約のオプションを変更した場合は、AWSから契約オプションを確認してください。</block>
-  <block id="6942b724002d90bb0f705f478cdd6bf3" category="section-title">サブスクリプションを管理します</block>
-  <block id="ac3dad7b0d90a8896f44e77f84726619" category="paragraph">サブスクリプションの名前を変更し、そのサブスクリプションに関連付けられているアカウントを選択することで、Digital Walletからサブスクリプションを管理できます。</block>
-  <block id="23531331db8be0d13d9ce3c0685c0c8e" category="paragraph"><block ref="23531331db8be0d13d9ce3c0685c0c8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">コネクタ3.9.23</block>
   <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">PAYGOサブスクリプションとBlueXPの年間契約が、Digital Walletから表示および管理できるようになりました。</block>
@@ -2025,7 +1998,6 @@
   <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
   <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
   <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
-  <block id="3933fdb8f34cb01278a72748377338a5" category="cell">¥https://www.googleapis.com/compute/v1/¥https://cloudresourcemanager.googleapis.com/v1/projects¥https://www.googleapis.com/compute/beta¥https://storage.googleapis.com/storage/v1¥https://iam.googleapis.com/v1¥https://cloudkms.googleapis.com/v1¥https://www.googleapis.com/storage/v1 https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">Google Cloudでリソースを管理します。</block>
   <block id="4ce604ab4b6f3184f26713f30bde1bbe" category="cell">-cloudkms.cryptoKeys.get-cloudkms.cryptoKeys.getIamPolicy-cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy -cloudkms.keyrings.get-cloudkms.keyrings.getIamPolicy-cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy</block>
   <block id="9e4edb2eed22d4c91a667b29567ee08d" category="cell">デフォルトのGoogleが管理する暗号化キーを使用する代わりに、Cloud Backupアクティベーションウィザードでお客様が管理するキーを選択する。</block>
@@ -3372,9 +3344,6 @@
   <block id="b7afeec70319496f1e3eb3a317ae30c3" category="doc">Google Cloudネットワークをセットアップする</block>
   <block id="acb3a31b8e79039416f86dfe140a002a" category="section-title">vPCおよびサブネット</block>
   <block id="2ece2735ee78ce884898c747bead2708" category="paragraph">コネクタを作成するときは、コネクタを配置するVPCとサブネットを指定する必要があります。</block>
-  <block id="33d90cc16eaedf37738a3faf06f00f36" category="list-text">選択するオプション <block ref="98b11313fea6c4106e5a3c018f0ffbc9" category="inline-image-macro-rx" type="image"></block> をクリックして、テーブルに表示する列を選択します。</block>
-  <block id="e97d1d1134e32a84fb4d6d796e3e56a9" category="list-text">管理するサブスクリプションに対応する行のアクションメニューを選択します。</block>
-  <block id="1201c1bd99e40a424aee33ac62838b92" category="list-text">サブスクリプションの名前を変更するか、サブスクリプションに関連付けられているBlueXPアカウントを管理するかを選択します。</block>
   <block id="7badfd12f4665ef65fdb218a565f47d6" category="summary">環境を準備できるように、BlueXPをプライベートモードで運用するために必要なことを理解しておく必要があります。</block>
   <block id="5f1067df496bfafd5eb793369b955e41" category="doc">プライベートモードでの導入を準備します</block>
   <block id="c597b49a830c4a4ce2fd66c374de3113" category="paragraph">環境を準備するために、プライベートモードでBlueXPの使用を開始するために必要なことを理解しておく必要があります。</block>
@@ -3613,4 +3582,5 @@
   <block id="2ffd4295ac6fb250f496a1c2b7840422" category="paragraph">ネットアップのIDおよびアクセス管理チームがリクエスト内容を確認します。</block>
   <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">NSSクレデンシャルを使用してアイデンティティフェデレーションを設定する方法について説明します</block>
   <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">以下の手順は、ネットアップのクラウドログインを使用してBlueXPにログインするユーザに固有のものです。NSSクレデンシャルを使用してBlueXPにログインする場合は、 <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>。</block>
+  <block id="47bf230a49ecee72c3b36a37f9758812" category="cell">\ https://www.googleapis.com/compute/v1/\ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \</block>
 </blocks>

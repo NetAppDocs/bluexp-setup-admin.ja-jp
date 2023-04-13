@@ -187,8 +187,6 @@ sidebar:
         url: "/task-adding-nss-accounts.html"
       - title: BlueXPログインに関連付けられているクレデンシャルを管理します
         url: "/task-manage-user-credentials.html"
-    - title: サブスクリプション
-      url: "/task-manage-subscriptions.html"
     - title: クラウドストレージを検出
       entries:
       - title: Amazon S3バケットを管理します
