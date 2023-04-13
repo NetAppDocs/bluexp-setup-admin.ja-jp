@@ -3583,4 +3583,9 @@
   <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">NSSクレデンシャルを使用してアイデンティティフェデレーションを設定する方法について説明します</block>
   <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">以下の手順は、ネットアップのクラウドログインを使用してBlueXPにログインするユーザに固有のものです。NSSクレデンシャルを使用してBlueXPにログインする場合は、 <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>。</block>
   <block id="47bf230a49ecee72c3b36a37f9758812" category="cell">\ https://www.googleapis.com/compute/v1/\ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \</block>
+  <block id="cf4525e15b866700f10e91573643ba54" category="section-title">デフォルトのEC2インスタンス設定は変更しないでください</block>
+  <block id="505d2a7358228b26711e097c3ca6dc24" category="paragraph">AWSにコネクタを導入すると、デフォルトで次のEC2インスタンス設定が構成されます。</block>
+  <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2はオプションに設定されています</block>
+  <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokensはオプションに設定されています</block>
+  <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">これらの設定を「必須」に変更しないでください。これらの設定を[必須]に変更すると、コネクタとCloud Volumes ONTAP の可用性に影響します。</block>
 </blocks>

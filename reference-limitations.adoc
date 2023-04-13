@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations.html 
-keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running 
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, httpstokens 
 summary: 既知の制限事項は、このリリースの製品でサポートされていないプラットフォーム、デバイス、機能、または製品と正しく相互運用できない機能を特定します。これらの制限事項を慎重に確認してください 
 ---
 = 既知の制限
@@ -21,6 +21,18 @@ summary: 既知の制限事項は、このリリースの製品でサポート�
 
 
 == コネクタの制限
+
+
+
+=== デフォルトのEC2インスタンス設定は変更しないでください
+
+AWSにコネクタを導入すると、デフォルトで次のEC2インスタンス設定が構成されます。
+
+* IMDSv2はオプションに設定されています
+* HttpTokensはオプションに設定されています
+
+
+これらの設定を「必須」に変更しないでください。これらの設定を[必須]に変更すると、コネクタとCloud Volumes ONTAP の可用性に影響します。
 
 
 
