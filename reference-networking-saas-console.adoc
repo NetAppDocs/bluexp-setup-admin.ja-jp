@@ -21,7 +21,7 @@ SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用す�
 | エンドポイント | 目的 
 
 
-| \ https://console.bluexp.netapp.com | Webベースのコンソールを使用している場合、WebブラウザはこのURLにアクセスします。 
+| https://console.bluexp.netapp.com https://*.console.bluexp.netapp.com | BlueXPのWebベースのコンソールを使用すると、WebブラウザからこれらのURLにアクセスできます。 
 
 
  a| 
@@ -57,8 +57,9 @@ AWS サービス（ amazonaws.com ）：
 | \ https://widget.intercom.io | 製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。 
 |===
 .関連リンク
-* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["コネクタがAWSで接続するエンドポイント"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["コネクタがAzureで接続するエンドポイント"]
-* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["コネクタがGoogle Cloudで接続するエンドポイント"]
-* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["コネクタの手動インストール中に接続されたエンドポイント"]
+* link:task-prepare-restricted-mode.html#prepare-networking-for-user-access-to-bluexp-console["BlueXPコンソールにユーザがアクセスできるようにネットワークを準備する（制限モード）"]
+* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["コネクタがAWSで接続するエンドポイント（標準モード）"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["コネクタがAzureで接続するエンドポイント（標準モード）"]
+* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["コネクタがGoogle Cloudで接続するエンドポイント（標準モード）"]
+* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["コネクタの手動インストール中に接続されたエンドポイント（標準モード）"]
 

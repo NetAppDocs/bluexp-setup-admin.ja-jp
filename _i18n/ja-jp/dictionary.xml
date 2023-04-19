@@ -1886,7 +1886,6 @@
   <block id="e9c8bdcc91d25115e46e6c43d23fe563" category="paragraph">この権限は、Cloud BackupとCloud Tieringに必要です。</block>
   <block id="175e0c32b0d1e82352dde70ca6ad31a2" category="paragraph">この権限はCloud Backupに必要です。</block>
   <block id="1ff61a19534f16f8c2b0aa752b13fb0a" category="paragraph">JSONポリシーから次の権限が削除されました。これらの権限は不要になりました。</block>
-  <block id="03275fa7fd8487800900fe5ed21b50b4" category="cell">\ https://console.bluexp.netapp.com</block>
   <block id="3a9d5bd356ec8e4fc31c11150128b7ac" category="list-text">Webブラウザを開き、にアクセスします<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block></block>
   <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022年12月4日</block>
   <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">コネクタ3.9.24</block>
@@ -3017,9 +3016,6 @@
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">クレデンシャルを削除</block>
   <block id="79c33710e10337a79e50227860ebf59a" category="list-text">[アカウントのクレデンシャル]*ページで、一連のクレデンシャルの操作メニューを選択し、*[クレデンシャルの削除]*を選択します。</block>
   <block id="26b956db62dfb9e45d6132f9e41a9d73" category="summary">SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。Webブラウザを実行しているマシンは、これらのエンドポイントに接続されている必要があります。</block>
-  <block id="b49cf226526bec08997a8b7c5adba39c" category="cell">Webベースのコンソールを使用している場合、WebブラウザはこのURLにアクセスします。</block>
-  <block id="1ecee0edf351652fe1d2dfd06c45adab" category="inline-link-macro">コネクタの手動インストール中に接続されたエンドポイント</block>
-  <block id="28654ae42df3aaae083bad0a7d52a508" category="list-text"><block ref="28654ae42df3aaae083bad0a7d52a508" category="inline-link-macro-rx"></block></block>
   <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">セキュアなアクセスのためのHTTPS証明書をインストールします</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">BlueXPコンソールの右上で、[設定]アイコンを選択し、*[HTTPSセットアップ]*を選択します。</block>
   <block id="6af98f64f202dba04d4bee35778042a2" category="list-text">コネクタホストのホスト名またはDNS（共通名）を入力し、*[CSRの生成]*を選択します。</block>
@@ -3588,4 +3584,16 @@
   <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2はオプションに設定されています</block>
   <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokensはオプションに設定されています</block>
   <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">これらの設定を「必須」に変更しないでください。これらの設定を[必須]に変更すると、コネクタとCloud Volumes ONTAP の可用性に影響します。</block>
+  <block id="ca514cc7f92949257244bf6c32d47ea3" category="cell">https://console.bluexp.netapp.com https://*.console.bluexp.netapp.com</block>
+  <block id="7926588c37032e15e3fdc15831f4bbb5" category="cell">BlueXPのWebベースのコンソールを使用すると、WebブラウザからこれらのURLにアクセスできます。</block>
+  <block id="bfb1a8284652de834f7e5f10d70d1b28" category="inline-link-macro">BlueXPコンソールにユーザがアクセスできるようにネットワークを準備する（制限モード）</block>
+  <block id="bbeb91503e087c169e5b9723b8e20883" category="list-text"><block ref="bbeb91503e087c169e5b9723b8e20883" category="inline-link-macro-rx"></block></block>
+  <block id="2860cec66f88d15f252631c132ac68ce" category="inline-link-macro">コネクタがAWSで接続するエンドポイント（標準モード）</block>
+  <block id="c5671cdad008988d217498ffee18763f" category="list-text"><block ref="c5671cdad008988d217498ffee18763f" category="inline-link-macro-rx"></block></block>
+  <block id="f30c2ab09bb92e952f9dc522c1d59a4b" category="inline-link-macro">コネクタがAzureで接続するエンドポイント（標準モード）</block>
+  <block id="befb6b1b01e0761a5d0ce6f028c4edd2" category="list-text"><block ref="befb6b1b01e0761a5d0ce6f028c4edd2" category="inline-link-macro-rx"></block></block>
+  <block id="51592248285ea432f62366d3bb873cd2" category="inline-link-macro">コネクタがGoogle Cloudで接続するエンドポイント（標準モード）</block>
+  <block id="6de9f5682041f68bedd20c6f93964068" category="list-text"><block ref="6de9f5682041f68bedd20c6f93964068" category="inline-link-macro-rx"></block></block>
+  <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">コネクタの手動インストール中に接続されたエンドポイント（標準モード）</block>
+  <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
 </blocks>
