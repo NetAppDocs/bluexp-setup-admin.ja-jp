@@ -44,7 +44,7 @@ NOTE: 制限モードが導入されたことで、SaaSプラットフォーム�
 
 === コネクタ3.9.28
 
-* デジタルウォレットでEメール通知がサポートされるようになりました。
+* Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。
 +
 通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。
 
@@ -104,12 +104,12 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタのシステム要件を確認します"]。
 
-* このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。Cloud Backupを使用して、AWSとAzureの商用リージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、Digital Walletを除き、他のBlueXPサービスはサポートされません。
+* このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。BlueXPのバックアップとリカバリを使用して、AWSとAzureのコマーシャルリージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、BlueXPデジタルウォレットを除き、他のBlueXPサービスはサポートされません。
 +
 クラウドリージョンは、AWS C2S/SC2S、Azure IL6、または任意の商用リージョンのような安全な米国機関のリージョンにすることができます。
 
 +
-開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BYOLライセンスをDigital Walletに追加してから、Cloud Volumes ONTAP を導入します。
+開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BlueXPデジタルウォレットにBYOLライセンスを追加してから、Cloud Volumes ONTAP を導入します。
 
 +
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを取り付けます"^]
@@ -214,7 +214,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1
 
 === コネクタ3.9.23
 
-* PAYGOサブスクリプションとBlueXPの年間契約が、Digital Walletから表示および管理できるようになりました。
+* BlueXPのPAYGOサブスクリプションと年間契約が、デジタルウォレットで表示、管理できるようになりました。
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html["サブスクリプションの管理方法について説明します"^]
 

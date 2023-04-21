@@ -47,19 +47,19 @@ BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカ�
 
 1つ目のポリシーでは、次のサービスに対する権限を付与します。
 
-* クラウドバックアップ
-* クラウドデータの意味
-* クラウド階層化
+* Amazon S3 バケットの検出
+* バックアップとリカバリ
+* 分類
 * Cloud Volumes ONTAP
 * FSX for ONTAP の略
-* S3バケットの検出
+* 階層化
 
 
 2つ目のポリシーは、次のサービスに対する権限を提供します。
 
-* AppTemplateタグ付け
-* グローバルファイルキャッシュ
+* エッジキャッシュ
 * Kubernetes
+* 修正
 
 
 [role="tabbed-block"]
@@ -703,25 +703,53 @@ BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカ�
 
 
 
-=== AppTemplateタグ
+=== ONTAP 対応の Amazon FSX
 
-AppTemplate Taggingサービスを使用する場合、Connectorは次のAPI要求を実行してAWSリソースのタグを管理します。
+コネクタは、Amazon FSx for ONTAP を管理するための次のAPI要求を行います。
 
+* EC2: DescribeInstances
+* EC2: DescribeInstanceStatus
+* EC2: DescribeInstanceAttributeのこと
+* EC2: DescribeRouteTables
+* EC2: DescribeImages
 * ec2：CreateTags
-* EC2:タグを削除します
+* EC2: DescribeVolumesの場合
+* EC2: DescribeSecurityGroups
+* EC2: DescribeNetworkInterfaces
+* EC2: DescribeSubnets
+* EC2: DescribeVpcs
+* EC2: DescribeDhcpOptions
+* ec2: DescribeSnapshots
+* EC2：DescribeKeyPairs
+* EC2: DescribeRegions (説明領域
 * EC2: DescribeTags (説明タグ)
-* Tag:getResources
-* tag:getTagKeys
-* tag:getTagValues
-* Tag:タグリソース
-* タグ: UntagResources
+* EC2: DescribeIamInstanceProfileAssociations
+* EC2: DescribeReservedInstancesOfferings
+* EC2: DescribeVpcEndpoints
+* EC2: DescribeVpcs
+* EC2: DescribeVolumesModifications ( EC2 : DescribeVolumesMod
+* EC2: DescribePlacementGroups
+* KMS：リスト*
+* KMS：説明*
+* KMS：CreateGrant
+* KMS：エイリアスを確認する
+* FSx：説明*
+* FSx：リスト*
 
 
 
 
-=== クラウドバックアップ
+=== Amazon S3 バケットの検出
 
-コネクタは、Cloud Backupのリストアインスタンスを導入するために次のAPI要求を実行します。
+コネクタは、Amazon S3バケットを検出するために次のAPI要求を実行します。
+
+S3 ： GetEncryptionConfiguration
+
+
+
+=== バックアップとリカバリ
+
+コネクタは、次のAPI要求を実行して、BlueXPのバックアップとリカバリのリストアインスタンスを導入します。
 
 * EC2：StartInstances（EC2：開始インスタンス
 * EC2：StopInstances
@@ -825,9 +853,9 @@ Cloud Volumes ONTAP バックアップにソースボリュームとは異なる
 
 
 
-=== クラウドデータの意味
+=== 分類
 
-Connectorは、Cloud Data Senseインスタンスを導入するために次のAPI要求を実行します。
+コネクタは、BlueXP分類インスタンスを導入するために次のAPI要求を行います。
 
 * EC2: DescribeInstances
 * EC2: DescribeInstanceStatus
@@ -855,7 +883,7 @@ Connectorは、Cloud Data Senseインスタンスを導入するために次のA
 * EC2: DescribeIamInstanceProfileAssociations
 
 
-Cloud Data Senseを使用している場合、コネクタはS3バケットのスキャンを行うために次のAPI要求を実行します。
+BlueXP分類を使用する場合、コネクタはS3バケットをスキャンするために次のAPI要求を行います。
 
 * IAM：AddRoleToInstanceProfile
 * EC2: AssociateIamInstanceProfile
@@ -875,31 +903,6 @@ Cloud Data Senseを使用している場合、コネクタはS3バケットの�
 * STS: AssumeRole
 
 
-
-
-=== クラウド階層化
-
-Cloud Tieringを使用すると、ConnectorはAmazon S3へのデータの階層化を求める次のAPI要求を実行します。
-
-[cols="3*"]
-|===
-| アクション | セットアップに使用？ | 日々の業務に使用されるか？ 
-
-
-| S3 ： CreateBucket を指定します | はい。 | いいえ 
-
-
-| S3 ： PutLifecycleConfiguration | はい。 | いいえ 
-
-
-| S3 ： GetLifecycleConfiguration | はい。 | はい。 
-
-
-| EC2: DescribeRegions (説明領域 | はい。 | いいえ 
-
-
-| EC2: DescribeVpcEndpoints | はい。 | いいえ 
-|===
 
 
 === Cloud Volumes ONTAP
@@ -1173,49 +1176,13 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 |===
 
 
-=== グローバルファイルキャッシュ
+=== エッジキャッシュ
 
-このコネクタは、導入時にグローバルファイルキャッシュインスタンスを導入するために次のAPI要求を行います。
+コネクタは、導入時にBlueXPエッジキャッシュインスタンスを導入するために次のAPI要求を行います。
 
 * CloudFormation：DescribeStack
 * CloudWatch：GetMetricStatistics
 * CloudFormation：リストスタック
-
-
-
-
-=== FSX for ONTAP の略
-
-コネクタは、ONTAP のFSXを管理するために次のAPI要求を行います。
-
-* EC2: DescribeInstances
-* EC2: DescribeInstanceStatus
-* EC2: DescribeInstanceAttributeのこと
-* EC2: DescribeRouteTables
-* EC2: DescribeImages
-* ec2：CreateTags
-* EC2: DescribeVolumesの場合
-* EC2: DescribeSecurityGroups
-* EC2: DescribeNetworkInterfaces
-* EC2: DescribeSubnets
-* EC2: DescribeVpcs
-* EC2: DescribeDhcpOptions
-* ec2: DescribeSnapshots
-* EC2：DescribeKeyPairs
-* EC2: DescribeRegions (説明領域
-* EC2: DescribeTags (説明タグ)
-* EC2: DescribeIamInstanceProfileAssociations
-* EC2: DescribeReservedInstancesOfferings
-* EC2: DescribeVpcEndpoints
-* EC2: DescribeVpcs
-* EC2: DescribeVolumesModifications ( EC2 : DescribeVolumesMod
-* EC2: DescribePlacementGroups
-* KMS：リスト*
-* KMS：説明*
-* KMS：CreateGrant
-* KMS：エイリアスを確認する
-* FSx：説明*
-* FSx：リスト*
 
 
 
@@ -1232,11 +1199,19 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 
 
 
-=== S3バケットの検出
+=== 修正
 
-コネクタは、Amazon S3バケットを検出するために次のAPI要求を実行します。
+BlueXPの修正措置を使用する場合、コネクタは次のAPI要求を実行してAWSリソースのタグを管理します。
 
-S3 ： GetEncryptionConfiguration
+* ec2：CreateTags
+* EC2:タグを削除します
+* EC2: DescribeTags (説明タグ)
+* Tag:getResources
+* tag:getTagKeys
+* tag:getTagValues
+* Tag:タグリソース
+* タグ: UntagResources
+
 
 
 
@@ -1248,6 +1223,6 @@ S3 ： GetEncryptionConfiguration
 
 === 2023年2月14日
 
-Cloud Tieringには、次の権限が必要です。
+BlueXPの階層化には次の権限が必要です。
 
 EC2: DescribeVpcEndpoints

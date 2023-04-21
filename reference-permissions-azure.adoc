@@ -179,20 +179,6 @@ Azure MarketplaceからConnectorを導入する場合、またはLinuxホスト�
 
 
 
-=== AppTemplateタグ
-
-AppTemplate Taggingサービスを使用する場合、Connectorは次のAPI要求を実行してAzureリソースのタグを管理します。
-
-* microsoft.resources/resources/read
-* microsoft.Resources/Subscriptions /operationresults/read
-* microsoft.Resources/Subscriptions /resourceGroups/read
-* microsoft.resources/Subscriptions /resourcegroups/resources/read
-* microsoft.Resources/tags/read
-* microsoft.Resources/tags/write
-
-
-
-
 === Azure NetApp Files の特長
 
 コネクタは、Azure NetApp Files 作業環境の管理用に次のAPI要求を実行します。
@@ -206,9 +192,9 @@ AppTemplate Taggingサービスを使用する場合、Connectorは次のAPI要�
 
 
 
-=== クラウドバックアップ
+=== バックアップとリカバリ
 
-コネクタは、バックアップとリストアの処理に対して次のAPI要求を実行します。
+コネクタは、BlueXPのバックアップとリカバリ用に次のAPI要求を行います。
 
 * Microsoft.Compute/virtualMachines/read
 * Microsoft.Compute/virtualMachines/start/action
@@ -261,9 +247,9 @@ AppTemplate Taggingサービスを使用する場合、Connectorは次のAPI要�
 
 
 
-=== クラウドデータの意味
+=== 分類
 
-Cloud Data Senseを使用している場合は、コネクタによって次のAPI要求が実行されます。
+BlueXP分類を使用する場合、コネクタは次のAPI要求を行います。
 
 [cols="3*"]
 |===
@@ -404,26 +390,6 @@ Cloud Data Senseを使用している場合は、コネクタによって次のA
 
 | microsoft.Resources/Subscriptions /resourceGroups/write | はい。 | いいえ 
 |===
-
-
-=== クラウド階層化
-
-Cloud Tieringをセットアップすると、コネクタは次のAPI要求を実行します。
-
-* microsoft.Storage/storageAccounts/listkeys/action
-* microsoft.Resources/Subscriptions /resourceGroups/read
-* microsoft.Resources/Subscriptions /locations /read
-
-
-このコネクタは、次のAPI要求を日々の処理に送信します。
-
-* microsoft.Storage/storageAccounts/blobServices/container/read
-* microsoft.Storage/storageAccounts/blobServices/container/write
-* Microsoft。Storage/storageAccounts/managementPolicies/read
-* microsoft.StorageAccounts/managementPolicies/write
-* microsoft.Storage/storageAccounts/read
-
-
 
 
 === Cloud Volumes ONTAP
@@ -733,9 +699,9 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 |===
 
 
-=== グローバルファイルキャッシュ
+=== エッジキャッシュ
 
-このコネクタは、グローバルファイルキャッシュの使用時に次のAPI要求を行います。
+BlueXPエッジキャッシングを使用する場合、コネクタは次のAPI要求を行います。
 
 * Microsoft .Insights / Metrics / Read
 * Microsoft.Compute/virtualMachines/extensions/write
@@ -764,6 +730,40 @@ Connectorは、Azure Kubernetes Service（AKS）で実行されているクラ�
 
 
 
+=== 修正
+
+BlueXPの修正措置を使用すると、コネクタはAzureリソースのタグを管理するために次のAPI要求を行います。
+
+* microsoft.resources/resources/read
+* microsoft.Resources/Subscriptions /operationresults/read
+* microsoft.Resources/Subscriptions /resourceGroups/read
+* microsoft.resources/Subscriptions /resourcegroups/resources/read
+* microsoft.Resources/tags/read
+* microsoft.Resources/tags/write
+
+
+
+
+=== 階層化
+
+BlueXP階層化のセットアップ時に、コネクタは次のAPI要求を行います。
+
+* microsoft.Storage/storageAccounts/listkeys/action
+* microsoft.Resources/Subscriptions /resourceGroups/read
+* microsoft.Resources/Subscriptions /locations /read
+
+
+このコネクタは、次のAPI要求を日々の処理に送信します。
+
+* microsoft.Storage/storageAccounts/blobServices/container/read
+* microsoft.Storage/storageAccounts/blobServices/container/write
+* Microsoft。Storage/storageAccounts/managementPolicies/read
+* microsoft.StorageAccounts/managementPolicies/write
+* microsoft.Storage/storageAccounts/read
+
+
+
+
 == 変更ログ
 
 権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。
@@ -772,7 +772,7 @@ Connectorは、Azure Kubernetes Service（AKS）で実行されているクラ�
 
 === 2023年3月23日
 
-Cloud Data Senseには「Microsoft.Storage/storageAccounts/delete」権限は不要になりました。
+BlueXPの分類に「Microsoft.Storage/storageAccounts/delete」権限は不要になりました。
 
 この権限はCloud Volumes ONTAP では引き続き必要です。
 
@@ -785,7 +785,7 @@ JSONポリシーに次の権限が追加されました。
 * microsoft.Storage/storageAccountSas/action
 * Microsoft .Synapse/workspaces /privateEndpointConnectionsApproval / action
 +
-これらの権限はCloud Backupに必要です。
+これらの権限はBlueXPのバックアップとリカバリに必要です。
 
 * Microsoft.Network/loadBalancers/backendAddressPools/join/action
 +
@@ -801,11 +801,11 @@ JSONポリシーに次の権限が追加されました。
 
 * microsoft.Storage/storageAccounts/blobServices/container/write
 +
-この権限は、Cloud BackupとCloud Tieringに必要です。
+BlueXPのバックアップとリカバリとBlueXPの階層化を実行するには、この権限が必要です。
 
 * Microsoft.Network/publicIPAddresses/delete
 +
-この権限はCloud Backupに必要です。
+この権限は、BlueXPのバックアップとリカバリに必要です。
 
 
 

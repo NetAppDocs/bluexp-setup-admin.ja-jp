@@ -40,33 +40,33 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 ** StorageGRID システム
 
 
+* オーケストレーションと保護 https://bluexp.netapp.com/solutions/kubernetes["Kubernetesの永続的データ"^]
 
 
 --
 モビリティ:: データを同期、コピー、階層化、キャッシュすることで、必要な場所にデータを移動できます。
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["Cloud Sync"^]
-* https://bluexp.netapp.com/cloud-tiering["クラウド階層化"^]
-* https://bluexp.netapp.com/global-file-cache["グローバルファイルキャッシュ"^]
+* https://bluexp.netapp.com/cloud-sync-service["コピーと同期"^]
+* https://bluexp.netapp.com/global-file-cache["エッジキャッシュ"^]
+* https://bluexp.netapp.com/cloud-tiering["階層化"^]
 
 
 --
 保護:: 自動化された保護メカニズムを使用して、データ損失、計画外停止、ランサムウェアなどのサイバー脅威からデータを保護します。
 +
 --
-* https://bluexp.netapp.com/cloud-backup["クラウドバックアップ"^]
+* https://bluexp.netapp.com/cloud-backup["バックアップとリカバリ"^]
 * https://bluexp.netapp.com/replication["レプリケーション"^]
-* https://bluexp.netapp.com/ransomware-protection["ランサムウェアからの保護"^]
-* https://bluexp.netapp.com/k8s["Kubernetes"^]
 
 
 --
 分析と管理:: ツールを使用して、データストレージとインフラを監視、マッピング、最適化できます。
 +
 --
-* https://bluexp.netapp.com/netapp-cloud-data-sense["クラウドデータの意味"^]
-* https://bluexp.netapp.com/digital-advisor["Digital Advisor"^]
+* https://bluexp.netapp.com/netapp-cloud-data-sense["分類"^]
+* https://bluexp.netapp.com/digital-advisor["デジタルアドバイザ"^]
+* https://bluexp.netapp.com/ransomware-protection["ランサムウェアからの保護"^]
 
 
 --
@@ -126,6 +126,6 @@ link:concept-modes.html["BlueXPの導入モードの詳細については、こ�
 
 == SOC 2 Type 2 認定
 
-独立認定された公認会計士企業およびサービス監査役は、BlueXP、Cloud Sync 、クラウド階層化、クラウドデータセンス、クラウドバックアップ（BlueXPプラットフォーム）について調査し、該当する信頼サービス基準に基づいてSOC 2 Type 2レポートを達成したことを確認しました。
+独立した公認会計士事務所およびサービス監査人がBlueXPを調査し、該当するトラストサービスの基準に基づいてSOC 2 Type 2レポートを達成したことを確認しました。
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["ネットアップの SOC 2 レポートをご覧ください"^]

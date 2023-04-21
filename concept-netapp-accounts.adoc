@@ -44,7 +44,7 @@ link:concept-modes.html["BlueXPの導入モードの詳細については、こ�
 
 * _Account Admin_: BlueXPではどのようなアクションでも実行できます。
 * _ ワークスペース管理者 _ ：割り当てられたワークスペースでリソースを作成および管理できます。
-* _Compliance Viewer_: Cloud Data Sense のコンプライアンス情報を表示し、アクセス権のあるシステムのレポートを生成することのみができます。
+* _Compliance Viewer_：BlueXP分類のコンプライアンス情報のみを表示し、アクセス権限があるワークスペースのレポートを生成できます。
 
 
 link:reference-user-roles.html["これらの役割の詳細については、こちらをご覧ください"]。
@@ -70,7 +70,7 @@ link:task-setting-up-netapp-accounts.html["ワークスペースを追加する�
 
 コネクタは、データインフラを管理するためにBlueXPが実行する必要のあるアクションを実行します。コネクタは、クラウドプロバイダに導入した仮想マシンインスタンス、または設定したオンプレミスホストで実行されます。
 
-コネクタは複数のBlueXPサービスで使用できます。たとえば、Cloud Volumes ONTAP の管理にコネクタを使用している場合、同じコネクタをCloud Tieringなどの別のサービスと使用できます。
+コネクタは複数のBlueXPサービスで使用できます。たとえば、Cloud Volumes ONTAP の管理にコネクタを使用している場合は、同じコネクタをBlueXP階層化などの別のサービスで使用できます。
 
 link:concept-connectors.html["コネクタの詳細については、こちらをご覧ください"]。
 

@@ -53,7 +53,7 @@ image:screenshot-manage-account-settings.png["「アカウント」ドロップ�
 +
 ** *Account Admin*: BlueXPではどのようなアクションでも実行できます。
 ** * ワークスペース管理者 * ：割り当てられたワークスペースでリソースを作成および管理できます。
-** * Compliance Viewer * ：クラウドデータセンスのコンプライアンス情報のみを表示し、アクセス権限のあるワークスペースのレポートを生成できます。
+** * Compliance Viewer *：BlueXPの分類に関するコンプライアンス情報の表示と、アクセス権を持つワークスペースのレポートの生成のみが可能です。
 
 
 . Workspace Admin または Compliance Viewer を選択した場合は、 1 つ以上のワークスペースを選択してそのユーザーに関連付けます。

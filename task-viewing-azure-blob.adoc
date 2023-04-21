@@ -16,7 +16,7 @@ summary: AzureにConnectorをインストールすると、コネクタがイン
 [role="lead"]
 AzureにConnectorをインストールすると、コネクタがインストールされているAzureサブスクリプションにあるAzureストレージアカウントに関する情報がBlueXPによって自動的に検出されます。Azure Blob作業環境がCanvasに追加され、この情報を表示できるようになりました。
 
-Azureストレージアカウントに関する詳細を確認できます。これには、場所、リソースグループ、合計容量と使用済み容量などの情報が含まれます。これらのアカウントは、クラウドバックアップ、クラウド階層化、Cloud Sync の各処理のデスティネーションとして使用できます。
+Azureストレージアカウントに関する詳細を確認できます。これには、場所、リソースグループ、合計容量と使用済み容量などの情報が含まれます。これらのアカウントは、BlueXPのバックアップとリカバリ、BlueXPの階層化、BlueXPのコピーと同期の処理のデスティネーションとして使用できます。
 
 .手順
 . Azureストレージアカウントを表示するAzureアカウントにコネクタをインストールします。
@@ -33,7 +33,7 @@ image:screenshot-azure-actions.png["Azure Blob Working環境を選択したあ�
 
 . Azure BLOBストレージとの間でデータを同期するには、*[データの同期]*を選択します。
 +
-詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Cloud Sync サービスの概要"^]
+詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["BlueXPのコピーと同期の概要を紹介します"^]
 
 . [Enter Working Environment]*を選択して、Azure Blob内のAzureストレージアカウントに関する詳細を表示します。
 +

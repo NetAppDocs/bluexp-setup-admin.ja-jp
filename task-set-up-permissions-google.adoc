@@ -222,7 +222,7 @@ link:reference-permissions-gcp.html["コネクタサービスアカウントポ�
 * storagec.admin
 * メンバー：BlueXPサービスアカウントをserviceAccount.userとして登録します
 
-| 該当なし | （オプション）データ階層化と Cloud Backup に使用できます 
+| 該当なし | （オプション）データ階層化とBlueXPのバックアップとリカバリに使用します 
 
 
 | Google API サービスエージェント | Google Cloud | サービスプロジェクト  a| 

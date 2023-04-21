@@ -154,10 +154,10 @@ APIエンドポイント:: API呼び出しは次のエンドポイントに対�
 | Azure NetApp Files の特長 | フルサポート 
 
 
-| クラウドバックアップ | 制限モードの政府地域および商用地域でサポートされています。制限モードの主権領域ではサポートされていません。サポートされていない機能は、アプリケーション、仮想マシン、Kubernetesです。 
+| バックアップとリカバリ | 制限モードの政府地域および商用地域でサポートされています。制限モードの主権領域ではサポートされていません。サポートされていない機能は、アプリケーション、仮想マシン、Kubernetesです。 
 
 
-| クラウドデータの意味  a| 
+| 分類  a| 
 制限モードの政府機関地域でサポートされます。商用リージョンまたは制限モードのソブリンリージョンではサポートされていません。
 
 次の制限事項が適用されます。
@@ -171,7 +171,7 @@ APIエンドポイント:: API呼び出しは次のエンドポイントに対�
 | Cloud Volumes ONTAP | フルサポート 
 
 
-| デジタルウォレット | Digital Walletは、制限モードでサポートされている以下のライセンスオプションで使用できます。 
+| デジタルウォレット | デジタルウォレットは、制限モードでサポートされている以下のライセンスオプションで使用できます。 
 
 
 | オンプレミスの ONTAP クラスタ | コネクタを使用した検出とコネクタを使用しない検出（直接検出）の両方がサポートされます。コネクタを備えたオンプレミスクラスタを検出した場合、アドバンストビュー（System Manager）はサポートされません。 
@@ -246,13 +246,13 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 | サポートされるサービス | 注： 
 
 
-| クラウドバックアップ | AWSとAzureの商用リージョンでサポートされます。Google Cloudまたはではサポートされていません https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S / SC2S"^] または https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+| バックアップとリカバリ | AWSとAzureの商用リージョンでサポートされます。Google Cloudまたはではサポートされていません https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S / SC2S"^] または https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
 
 
 | Cloud Volumes ONTAP | インターネットにアクセスできないため、自動ソフトウェアアップグレード、AutoSupport 、AWSのコスト情報などの機能は使用できません。 
 
 
-| デジタルウォレット | Digital Walletは、プライベートモードでサポートされている以下のライセンスオプションで使用できます。 
+| デジタルウォレット | デジタルウォレットは、プライベートモードでサポートされている以下のライセンスオプションで使用できます。 
 
 
 | オンプレミスの ONTAP クラスタ | クラウド（コネクタがインストールされている場所）からオンプレミス環境への接続が必要コネクタなしの検出（直接検出）はサポートされていません。 
@@ -266,10 +266,10 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 | サポートされるサービス | 注： 
 
 
-| クラウドバックアップ | オンプレミスのONTAP ボリュームのStorageGRID システムへのバックアップとリストアのみがサポートされます。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["オンプレミスのONTAP データをStorageGRID にバックアップする方法をご紹介します"^] 
+| バックアップとリカバリ | オンプレミスのONTAP ボリュームのStorageGRID システムへのバックアップとリストアのみがサポートされます。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["オンプレミスのONTAP データをStorageGRID にバックアップする方法をご紹介します"^] 
 
 
-| クラウドデータの意味  a| 
+| 分類  a| 
 * ローカルで検出できるデータソースは、サポートされているデータソースだけです。
 +
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["ローカルで検出できるソースを表示します"^]
@@ -282,7 +282,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 
 
 
-| デジタルウォレット | Digital Walletは、プライベートモードでサポートされている以下のライセンスオプションで使用できます。 
+| デジタルウォレット | デジタルウォレットは、プライベートモードでサポートされている以下のライセンスオプションで使用できます。 
 
 
 | オンプレミスの ONTAP クラスタ | コネクタなしの検出（直接検出）はサポートされていません。 
@@ -294,9 +294,9 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 サポートされるライセンスオプション:: プライベートモードではBYOLのみがサポートされます。
 +
 --
-Cloud Volumes ONTAP のBYOLでは、ノードベースのライセンスのみがサポートされます。容量単位のライセンスはサポートされていません。アウトバウンドインターネット接続を使用できないため、Cloud Volumes ONTAP ライセンスファイルをデジタルウォレットに手動でアップロードする必要があります。
+Cloud Volumes ONTAP のBYOLでは、ノードベースのライセンスのみがサポートされます。容量単位のライセンスはサポートされていません。アウトバウンドのインターネット接続を使用できないため、Cloud Volumes ONTAP ライセンスファイルをBlueXPのデジタルウォレットに手動でアップロードする必要があります。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Digital Walletにライセンスを追加する方法について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["BlueXPデジタルウォレットにライセンスを追加する方法をご紹介します"^]
 
 --
 プライベートモードを開始する方法:: プライベートモードは、NetApp Support Site から「オフライン」インストーラをダウンロードすることで利用できます。
@@ -315,18 +315,15 @@ link:task-quick-start-private-mode.html["プライベートモードの使用を
 
 一部のサービスは制限付きでサポートされる場合があります。これらのサービスが制限モードおよびプライベートモードでどのようにサポートされるかの詳細については、上記の項を参照してください。
 
-[cols="33h,33,33"]
+[cols="19,27,27,27"]
 |===
-| BlueXPのサービスまたは機能 | 制限モード | プライベートモード 
+| 製品エリア | BlueXPのサービスまたは機能 | 制限モード | プライベートモード 
 
 
-| ONTAP 対応の Amazon FSX | はい。 | いいえ 
+.11+| *作業環境* | ONTAP 対応の Amazon FSX | はい。 | いいえ 
 
 
 | Amazon S3 | いいえ | いいえ 
-
-
-| AppTemplate （アプリケーションテンプレート） | いいえ | いいえ 
 
 
 | Azure Blob の略 | いいえ | いいえ 
@@ -335,40 +332,10 @@ link:task-quick-start-private-mode.html["プライベートモードの使用を
 | Azure NetApp Files の特長 | はい。 | いいえ 
 
 
-| クラウドバックアップ | はい。 | はい。 
-
-
-| クラウドデータの意味 | はい。 | はい。 
-
-
-| Cloud Sync | いいえ | いいえ 
-
-
-| クラウド階層化 | いいえ | いいえ 
-
-
 | Cloud Volumes ONTAP | はい。 | はい。 
 
 
 | Cloud Volumes Service for Google Cloud | いいえ | いいえ 
-
-
-| コンピューティング | いいえ | いいえ 
-
-
-| Digital Advisor | いいえ | いいえ 
-
-
-| デジタルウォレット | はい。 | はい。 
-
-
-| E シリーズ | いいえ | いいえ 
-
-
-| 経済効率 | いいえ | いいえ 
-
-
-| グローバルファイルキャッシュ | いいえ | いいえ 
 
 
 | Google クラウドストレージ | いいえ | いいえ 
@@ -380,19 +347,52 @@ link:task-quick-start-private-mode.html["プライベートモードの使用を
 | オンプレミスの ONTAP クラスタ | はい。 | はい。 
 
 
+| E シリーズ | いいえ | いいえ 
+
+
+| StorageGRID | いいえ | いいえ 
+
+
+.13+| * サービス * | バックアップとリカバリ | はい。 | はい。 
+
+
+| 分類 | はい。 | はい。 
+
+
+| クラウド運用 | いいえ | いいえ 
+
+
+| コピーと同期 | いいえ | いいえ 
+
+
+| デジタルアドバイザ | いいえ | いいえ 
+
+
+| デジタルウォレット | はい。 | はい。 
+
+
+| 経済効率 | いいえ | いいえ 
+
+
+| エッジキャッシュ | いいえ | いいえ 
+
+
 | 運用の耐障害性 | いいえ | いいえ 
 
 
 | ランサムウェアからの保護 | いいえ | いいえ 
 
 
+| 修正 | いいえ | いいえ 
+
+
 | レプリケーション | はい。 | はい。 
 
 
-| StorageGRID | いいえ | いいえ 
+| 階層化 | いいえ | いいえ 
 
 
-| クレデンシャル | はい。 | はい。 
+.4+| *機能* | クレデンシャル | はい。 | はい。 
 
 
 | NSSアカウント | はい。 | いいえ 

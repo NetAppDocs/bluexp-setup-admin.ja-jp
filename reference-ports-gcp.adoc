@@ -72,10 +72,10 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | サービス | プロトコル | ポート | 宛先 | 目的 
 
 
-| API コールと AutoSupport | HTTPS | 443 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | Google CloudとONTAP 、Cloud Data Sense、RansomwareサービスへのAPI呼び出し、ネットアップへのAutoSupport メッセージの送信 
+| API コールと AutoSupport | HTTPS | 443 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | Google CloudとONTAP 、BlueXP分類、BlueXPランサムウェア対策、AutoSupport メッセージのネットアップへの送信へのAPI呼び出し 
 
 
-| API コール | TCP | 8080 です | データセンス | 配備中にData Senseインスタンスにプローブします 
+| API コール | TCP | 8080 です | BlueXPの分類 | 導入時にBlueXP分類インスタンスを確認します 
 
 
 | DNS | UDP | 53 | DNS | BlueXPによるDNS解決に使用されます 
