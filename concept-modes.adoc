@@ -4,7 +4,7 @@ permalink: concept-modes.html
 keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region 
 summary: BlueXPには複数の導入モードが用意されており、ビジネスやセキュリティの要件に合わせてBlueXPを使用できます。Standardモードでは、BlueXPのSaaSレイヤを活用してすべての機能を提供します。RestrictedモードとPrivateモードは、接続が制限されている組織で使用できます。 
 ---
-= BlueXPの導入モード
+= BlueXPの導入モードについて説明します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
