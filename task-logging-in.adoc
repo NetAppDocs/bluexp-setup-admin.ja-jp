@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: BlueXPにサインアップすると、WebブラウザからWebベースのコンソールからログインできます。 
+summary: BlueXPに登録すると、Webベースのコンソールからログインしてデータとストレージインフラの管理を開始できます。 
 ---
 = BlueXPにログインする（標準モード）
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXPにサインアップすると、WebブラウザからWebベー�
 
 
 [role="lead"]
-BlueXPに登録すると、Webベースのコンソールからログインできます。
+BlueXPに登録すると、Webベースのコンソールからログインしてデータとストレージインフラの管理を開始できます。
 
 .ログインオプション
 BlueXPのWebベースのコンソールには、次のいずれかの方法でログインできます。

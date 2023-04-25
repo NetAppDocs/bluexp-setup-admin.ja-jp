@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-private-mode.html 
 keywords: install dark site, deploy dark site, install private mode, deploy private mode, install connector dark site, connector dark site, dark site, private mode, no internet 
-summary: BlueXPをプライベートモードでセットアップするには、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、クラウド権限を指定する必要があります。 
+summary: コネクタをプライベートモードで導入し、BlueXP SaaSレイヤへのアウトバウンド接続なしでBlueXPを使用できるようにします。まず、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、以前に設定したクラウド権限を指定します。 
 ---
 = コネクタをプライベートモードで展開します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXPをプライベートモードでセットアップするには�
 
 
 [role="lead"]
-BlueXPをプライベートモードでセットアップするには、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、クラウド権限を指定する必要があります。
+コネクタをプライベートモードで導入し、BlueXP SaaSレイヤへのアウトバウンド接続なしでBlueXPを使用できるようにします。まず、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、以前に設定したクラウド権限を指定します。
 
 
 

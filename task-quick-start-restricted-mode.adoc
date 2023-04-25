@@ -14,7 +14,7 @@ summary: わずか数ステップでBlueXPを制限モードで開始できま�
 
 
 [role="lead"]
-わずか数ステップでBlueXPを制限モードで開始できます。
+環境を準備し、コネクタを導入し、BlueXPにサブスクライブすることで、制限モードでBlueXPを開始できます。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] 導入を準備
 [role="quick-margin-list"]

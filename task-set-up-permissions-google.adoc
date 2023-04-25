@@ -14,7 +14,7 @@ summary: BlueXPを使用してGoogle Cloudでデータとストレージイン�
 
 
 [role="lead"]
-BlueXPを使用してGoogle Cloudでデータとストレージインフラを管理できるように、Google Cloudの権限を設定します。
+Google Cloudで権限を設定して、データとストレージインフラの管理に必要な権限でコネクタを導入できるようにします。
 
 Google Cloudの権限は次のように設定する必要があります。
 

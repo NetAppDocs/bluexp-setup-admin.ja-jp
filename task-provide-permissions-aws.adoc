@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-provide-permissions-aws.html 
 keywords: aws permissions, set up aws permissions, iam role, json policy, bluexp policy, aws marketplace, aws access key, access key, iam policy, permissions 
-summary: コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。 
+summary: コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、BlueXPでAWSのデータとストレージインフラを管理できるようになります。 
 ---
 = BlueXPにAWS権限を付与します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: コネクタソフトウェアを自社のLinuxホストに手動でイ
 
 
 [role="lead"]
-コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。
+コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、BlueXPでAWSのデータとストレージインフラを管理できるようになります。
 
 link:task-set-up-permissions-aws.html["これらの権限の設定方法については、こちらを参照してください"]。
 

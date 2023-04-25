@@ -24,3 +24,6 @@ summary: プライベートモードでBlueXPを起動して実行したら、�
 * https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["BlueXPの分類を使用してオンプレミスのONTAP ボリュームのデータをスキャンします"^]
 * https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["BlueXPのバックアップとリカバリを使用して、オンプレミスのONTAP ボリュームのデータをStorageGRID にバックアップします"^]
 
+
+.関連リンク
+link:concept-modes.html["BlueXPの導入モード"]

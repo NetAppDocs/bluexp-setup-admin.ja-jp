@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-aws.html 
 keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
-summary: AWSでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。 
+summary: AWSでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。選択するインストールオプションによって、導入の準備方法が決まります。 
 ---
 = AWSでのコネクタのインストールオプション
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: AWSでコネクタを作成する方法はいくつかあります。�
 
 
 [role="lead"]
-AWSでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。
+AWSでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。選択するインストールオプションによって、導入の準備方法が決まります。
 
 次のインストールオプションを使用できます。
 

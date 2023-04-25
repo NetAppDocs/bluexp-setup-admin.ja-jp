@@ -17,3 +17,6 @@ summary: これでログインして標準モードでBlueXPをセットアッ�
 これでログインして標準モードでBlueXPをセットアップできました。ユーザは作業環境を作成、検出し、BlueXPデータサービスを使用できます。
 
 ヘルプが必要な場合は、を参照してください https://docs.netapp.com/us-en/cloud-manager-family/["BlueXPドキュメントのホームページ"^] をクリックして、すべてのBlueXPサービスのドキュメントを表示してください。
+
+.関連リンク
+link:concept-modes.html["BlueXPの導入モード"]

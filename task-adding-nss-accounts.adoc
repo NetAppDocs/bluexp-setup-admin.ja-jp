@@ -14,7 +14,7 @@ summary: NetApp Support Site （NSS）アカウントのサポートへの登録
 
 
 [role="lead"]
-NetApp Support Site （NSS）アカウントのサポートへの登録、Cloud Volumes ONTAP の主要なワークフローの有効化などに必要なクレデンシャルを指定します。これらのNSSクレデンシャルはBlueXPアカウント全体に関連付けられます。
+BlueXPにNetApp Support Site （NSS）アカウントのクレデンシャルを入力して、サポートの登録やCloud Volumes ONTAP の主要なワークフローの有効化などを行います。これらのNSSクレデンシャルはBlueXPアカウント全体に関連付けられます。
 
 
 NOTE: BlueXPでは、BlueXPユーザごとに1つのNSSアカウントを関連付けることもできます。 link:task-manage-user-credentials.html["ユーザレベルのクレデンシャルを管理する方法について説明します"]。

@@ -26,3 +26,6 @@ summary: 制限モードでBlueXPを起動して実行したら、制限モー�
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["オンプレミスのONTAP クラスタのドキュメント"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/index.html["レプリケーションドキュメント"^]
 
+
+.関連リンク
+link:concept-modes.html["BlueXPの導入モード"]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-gcp-accounts.html 
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: コネクタVMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理できます。 
+summary: Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。どちらのタスクも、Marketplaceのサブスクリプションを使用してBlueXPサービスの料金を支払うことができます。 
 ---
 = BlueXPのGoogle Cloudクレデンシャルとサブスクリプションを管理します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: コネクタVMインスタンスに関連付けられているGoogle Cl
 
 
 [role="lead"]
-コネクタVMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理できます。
+Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。どちらのタスクも、Marketplaceのサブスクリプションを使用してBlueXPサービスの料金を支払うことができます。
 
 
 

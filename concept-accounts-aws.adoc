@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-aws.html 
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
-summary: 1つ以上のAWSアカウントのクレデンシャルを管理できるように、BlueXPでのAWSのクレデンシャルと権限の使用方法を理解しておく必要があります。 
+summary: 1つ以上のAWSアカウントのクレデンシャルを管理できるように、BlueXPでのAWSのクレデンシャルと権限の使用方法を理解しておく必要があります。たとえば、BlueXPにAWSクレデンシャルを追加する方法を確認できます。 
 ---
 = AWS のクレデンシャルと権限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 1つ以上のAWSアカウントのクレデンシャルを管理でき�
 
 
 [role="lead"]
-1つ以上のAWSアカウントのクレデンシャルを管理できるように、BlueXPでのAWSのクレデンシャルと権限の使用方法を理解しておく必要があります。
+1つ以上のAWSアカウントのクレデンシャルを管理できるように、BlueXPでのAWSのクレデンシャルと権限の使用方法を理解しておく必要があります。たとえば、BlueXPにAWSクレデンシャルを追加する方法を確認できます。
 
 
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-restricted-mode.html 
 keywords: government region, gov, govcloud, connector, sovereign cloud 
-summary: 制限モードでBlueXPを使用するには、コネクタを導入し、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップする必要があります。 
+summary: BlueXPのSaaSレイヤへのアウトバウンド接続を制限してBlueXPを使用できるように、コネクタを制限モードで導入します。まず、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、以前に設定したクラウド権限を指定します。 
 ---
 = コネクタを制限モードで展開します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 制限モードでBlueXPを使用するには、コネクタを導入�
 
 
 [role="lead"]
-BlueXPを制限モードで使用するには、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、クラウド権限を指定する必要があります。
+BlueXPのSaaSレイヤへのアウトバウンド接続を制限してBlueXPを使用できるように、コネクタを制限モードで導入します。まず、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、以前に設定したクラウド権限を指定します。
 
 
 

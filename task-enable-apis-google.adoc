@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-enable-apis-google.html 
 keywords: aws networking, networking, connector networking, ports, proxy server, outbound internet, endpoints, urls, permissions, cloud permission, aws permissions, iam role, keys, aws keys, aws marketplace, marketplace install, manuall install, connector installer 
-summary: AWSにコネクタを導入して、パブリッククラウド環境内のリソースとプロセスをBlueXPで管理できるようにします。 
+summary: コネクタとCloud Volumes ONTAP をGoogle Cloudに導入する前に、いくつかのGoogle Cloud APIを有効にする必要があります。 
 ---
 = Google Cloud API を有効にします
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: AWSにコネクタを導入して、パブリッククラウド環境�
 
 
 [role="lead"]
-Google CloudにConnectorとCloud Volumes ONTAP を導入するには、いくつかのAPIが必要です。
+コネクタとCloud Volumes ONTAP をGoogle Cloudに導入する前に、いくつかのGoogle Cloud APIを有効にする必要があります。
 
 .ステップ
 . プロジェクトで次のGoogle Cloud APIを有効にします。

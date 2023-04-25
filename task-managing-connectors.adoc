@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-connectors.html 
 keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager 
-summary: 1 つ以上のコネクタを作成した後、コネクタを切り替えたり、コネクタで実行されているローカルユーザーインタフェースに接続したりすることで、コネクタを管理できます。 
+summary: コネクタの作成後は、コネクタの管理が必要になる場合があります。たとえば、複数のコネクタがある場合は、コネクタを切り替えることができます。または、BlueXPをプライベートモードで使用している場合は、コネクタの手動アップグレードが必要になることがあります。 
 ---
 = 既存のコネクタを管理します
 :hardbreaks:
@@ -14,7 +14,9 @@ summary: 1 つ以上のコネクタを作成した後、コネクタを切り替
 
 
 [role="lead"]
-1つまたは複数のコネクタを作成した後、コネクタ間の切り替え、ソフトウェアのアップグレードなどにより、コネクタを管理できます。
+コネクタの作成後は、コネクタの管理が必要になる場合があります。たとえば、複数のコネクタがある場合は、コネクタを切り替えることができます。または、BlueXPをプライベートモードで使用している場合は、コネクタの手動アップグレードが必要になることがあります。
+
+link:concept-connectors.html["コネクタの仕組みを説明します"]。
 
 
 

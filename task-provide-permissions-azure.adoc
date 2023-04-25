@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-provide-permissions-azure.html 
 keywords: azure permissions, connector permissions, custom role, azure custom role, service principal, how to provide azure permissions, set up azure permissions, provide azure permissions, permissions 
-summary: Azure Marketplaceでコネクタを作成した場合、またはソフトウェアを手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。 
+summary: Azure Marketplaceでコネクタを作成した場合、またはソフトウェアを手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、AzureのデータとストレージインフラをBlueXPで管理できるようになります。 
 ---
 = BlueXPにAzure権限を付与します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Azure Marketplaceでコネクタを作成した場合、またはソフ
 
 
 [role="lead"]
-Azure Marketplaceでコネクタを作成した場合、またはソフトウェアを手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。
+Azure Marketplaceでコネクタを作成した場合、またはソフトウェアを手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、AzureのデータとストレージインフラをBlueXPで管理できるようになります。
 
 link:task-set-up-permissions-azure.html["これらの権限の設定方法については、こちらを参照してください"]。
 

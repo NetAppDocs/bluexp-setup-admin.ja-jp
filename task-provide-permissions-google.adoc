@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-provide-permissions-google.html 
 keywords: google cloud permissions, permissions, gcp permissions, service account, gcp service account 
-summary: コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。 
+summary: コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、BlueXPでGoogle Cloudのデータとストレージインフラを管理できるようになります。 
 ---
 = BlueXPにGoogle Cloudの権限を付与します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: コネクタソフトウェアを自社のLinuxホストに手動でイ
 
 
 [role="lead"]
-コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。
+コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、BlueXPでGoogle Cloudのデータとストレージインフラを管理できるようになります。
 
 link:task-set-up-permissions-google.html["これらの権限の設定方法については、こちらを参照してください"]。
 

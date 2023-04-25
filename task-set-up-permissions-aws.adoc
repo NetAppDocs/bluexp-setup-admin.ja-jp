@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-set-up-permissions-aws.html 
 keywords: aws permissions, set up permissions, set up aws permissions, permissions, iam role, iam policy, json, policy, role, credentials 
-summary: BlueXPを使用してAWSのデータとストレージインフラを管理できるように、AWSの権限を設定します。アクセス許可の設定方法は、使用するインストールオプションによって異なります。 
+summary: データとストレージインフラの管理に必要な権限を使用してコネクタを導入できるように、AWSで権限を設定します。権限の設定方法と付与方法は、使用するインストールオプションによって異なります。 
 ---
 = AWS権限を設定
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXPを使用してAWSのデータとストレージインフラを�
 
 
 [role="lead"]
-BlueXPを使用してAWSのデータとストレージインフラを管理できるように、AWSの権限を設定します。アクセス許可の設定方法は、使用するインストールオプションによって異なります。
+データとストレージインフラの管理に必要な権限を使用してコネクタを導入できるように、AWSで権限を設定します。権限の設定方法と付与方法は、使用するインストールオプションによって異なります。
 
 次のインストールオプションから選択できます。
 

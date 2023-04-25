@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-host-requirements-google.html 
 keywords: cpu requirements, ram requirements, google cloud requirements, google cloud host requirements, connector host requirements, gcp machine type, machine type 
-summary: コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。コネクタを手動でインストールする場合は、以下の要件をホストが満たしていることを確認する必要があります。 
+summary: コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。コネクタを手動でインストールする場合は、以下の要件をホストが満たしていることを確認する必要があります。コネクタを取り付ける前に、ホストがこれらの要件を満たしていることを確認してください。 
 ---
 = Google Cloudのインストールに必要なコネクタホストの要件を確認します
 :hardbreaks:

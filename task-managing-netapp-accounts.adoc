@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-netapp-accounts.html 
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, member, remove user, remove users, remove, delete, account, user account, user accounts, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector, service account 
-summary: 初期セットアップを実行した後、ユーザー、サービスアカウント、ワークスペース、およびコネクタを管理することで、アカウント設定を後から管理できます。 
+summary: BlueXPアカウントの作成時には、管理者ユーザとワークスペースが1人だけ含まれます。ユーザーの追加、自動化を目的としたサービスアカウントの作成、ワークスペースの追加など、組織のニーズに合わせてアカウントを管理できます。 
 ---
 = BlueXPアカウントを管理します
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: 初期セットアップを実行した後、ユーザー、サービ�
 
 
 [role="lead"]
-ユーザー、サービスアカウント、ワークスペース、コネクタを管理することで、アカウントを管理できます。
+BlueXPアカウントの作成時には、管理者ユーザとワークスペースが1人だけ含まれます。ユーザーの追加、自動化を目的としたサービスアカウントの作成、ワークスペースの追加など、組織のニーズに合わせてアカウントを管理できます。
 
-link:concept-netapp-accounts.html["BlueXPアカウントの詳細については、こちらをご覧ください"]。
+link:concept-netapp-accounts.html["BlueXPアカウントの仕組みをご紹介します"]。
 
 
 

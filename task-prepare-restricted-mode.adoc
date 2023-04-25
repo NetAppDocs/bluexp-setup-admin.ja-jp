@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-prepare-restricted-mode.html 
 keywords: restricted mode requirements, requirements, install options, restricted mode networking, dark site, restricted mode permissions, permissions for restricted mode, networking for restricted mode 
-summary: 環境を準備するために、制限モードでBlueXPを開始するために必要なことを理解しておく必要があります。 
+summary: 制限モードでBlueXPを導入する前に、環境を準備します。たとえば、ホストの要件の確認、ネットワークの準備、権限の設定などが必要になります。 
 ---
 = 制限モードでの展開を準備します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 環境を準備するために、制限モードでBlueXPを開始す�
 
 
 [role="lead"]
-環境を準備するために、制限モードでBlueXPを開始するために必要なことを理解しておく必要があります。
+制限モードでBlueXPを導入する前に、環境を準備します。たとえば、ホストの要件の確認、ネットワークの準備、権限の設定などが必要になります。
 
 
 
