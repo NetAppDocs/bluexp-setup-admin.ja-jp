@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: BlueXPでGoogle Cloudのクレデンシャルと権限を使用して、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する方法について説明します。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。 
+summary: BlueXPでGoogle Cloudのクレデンシャルと権限を使用して操作を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する際に役立ちます。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。 
 ---
 = Google Cloud のプロジェクト、権限、アカウント
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXPでGoogle Cloudのクレデンシャルと権限を使用して�
 
 
 [role="lead"]
-BlueXPでGoogle Cloudのクレデンシャルと権限を使用して、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する方法について説明します。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。
+BlueXPでGoogle Cloudのクレデンシャルと権限を使用して操作を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する際に役立ちます。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。
 
 
 

@@ -3611,7 +3611,7 @@
   <block id="4453e7502515d4db1f3a4a1c28c48f13" category="summary">コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。コネクタを手動でインストールする場合は、以下の要件をホストが満たしていることを確認する必要があります。コネクタを取り付ける前に、ホストがこれらの要件を満たしていることを確認してください。</block>
   <block id="47ca16329494467c539bde558f0ae632" category="list-text">コネクタを配置するときに、を選択するよう求められます<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> VM インスタンスの場合です。BlueXPは、サービスアカウントからCloud Volumes ONTAP システムを作成、管理するための権限を取得します。権限は、サービスアカウントにカスタムロールを割り当てることによって提供されます。</block>
   <block id="52be9a779a7de2bea0867d1d993e7f07" category="summary">コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。コネクタを取り付ける前に、ホストがこれらの要件を満たしていることを確認してください。</block>
-  <block id="467ab02e35d0adba413e3be72e9c49a8" category="summary">BlueXPでAzureのクレデンシャルと権限を使用して、1つ以上のAzureサブスクリプションのクレデンシャルを管理する方法について説明します。たとえば、BlueXPにAzureクレデンシャルを追加する方法を確認できます。</block>
-  <block id="3c0eb878d2cb71d8ced9c8198a3d9f1d" category="summary">BlueXPでAWSのクレデンシャルと権限を使用して1つ以上のAWSアカウントのクレデンシャルを管理する方法について説明します。たとえば、BlueXPにAWSクレデンシャルを追加する方法を確認できます。</block>
-  <block id="8054ab9ced76d417f5267da91e77acb2" category="summary">BlueXPでGoogle Cloudのクレデンシャルと権限を使用して、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する方法について説明します。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。</block>
+  <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">BlueXPがAzureのクレデンシャルと権限を使用して処理を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のAzureサブスクリプションのクレデンシャルを管理する際に役立ちます。たとえば、AzureクレデンシャルをBlueXPに追加するタイミングを確認できます。</block>
+  <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">BlueXPがAWSのクレデンシャルと権限を使用してユーザに代わって操作を実行する方法をご紹介します。これらの詳細を理解しておくと、BlueXPで1つ以上のAWSアカウントのクレデンシャルを管理する際に役立ちます。たとえば、AWSクレデンシャルをBlueXPに追加するタイミングを把握できます。</block>
+  <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">BlueXPでGoogle Cloudのクレデンシャルと権限を使用して操作を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する際に役立ちます。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。</block>
 </blocks>
