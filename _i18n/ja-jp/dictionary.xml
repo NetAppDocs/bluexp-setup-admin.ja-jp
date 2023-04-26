@@ -47,7 +47,6 @@
   <block id="02a8c4a4e553694e2236fd17bb20b197" category="list-text">クラウドプロバイダとして「 * Microsoft Azure * 」を選択します。</block>
   <block id="b0e1a0461b32155d621f46d8d6f39569" category="list-text">ウィザードの手順に従って、コネクタを作成します。</block>
   <block id="e0f74d06e87b3ad6fc9f3b3cfc573c38" category="paragraph">このフォームは、 Microsoft が所有およびホストしています。クレデンシャルがネットアップに提供されていません。</block>
-  <block id="ec444652764a4ae69cee1fdb97fdab30" category="list-text">* VM 認証 * ： Azure サブスクリプション、場所、新しいリソースグループ、または既存のリソースグループを選択し、認証方法を選択します。</block>
   <block id="a6100ac4fa5cb7bbb1c49e95165b96b2" category="inline-link">必要な権限</block>
   <block id="e1ca9b0274808b9c445718fa4b9a5d26" category="paragraph">このロールに関連付けられているサブスクリプションを選択できます。選択した各サブスクリプションには、 Cloud Volumes ONTAP をこれらのサブスクリプションに導入するための権限が Connector に付与されます。</block>
   <block id="316cce18546001b2f1149ed17a4d3900" category="list-text">* ネットワーク * ： VNet とサブネットを選択し、パブリック IP アドレスを有効にするかどうか、および必要に応じてプロキシ設定を指定します。</block>
@@ -1967,13 +1966,6 @@
   <block id="213954d7bdaa5b2d9eab4ee897a935d3" category="paragraph-title">サインアップオプション</block>
   <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">次のいずれかのオプションを使用して、BlueXPにサインアップできます。</block>
   <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">Eメールアドレスとパスワードを指定してネットアップクラウドにログインします</block>
-  <block id="9f1b84fa92d950a165d75ff20ea339ef" category="list-text">ログイン*ページで、*サインアップ*を選択します。</block>
-  <block id="c838c41871c4f726a74cecb65930bcdd" category="admonition">既存のNSSクレデンシャルを使用する場合は、サインアップページをスキップして、ログインページにEメールアドレスを直接入力できます。この初回ログインの一環として、BlueXPがサインアップします。</block>
-  <block id="9a076f8e1167c7f54e717f3312d9be22" category="list-text">[*サインアップ*]ページで、次のいずれかのログインオプションを選択します。</block>
-  <block id="eb7dc3949c534285123f407b97df88ce" category="list-text">既存のNetApp Support Site （NSS）アカウントをお持ちの場合は、* NetApp Support Site 資格情報でサインアップ*を選択します。</block>
-  <block id="a67ec4292dbbae18fa7d903a5925529f" category="inline-link-macro">NSSクレデンシャルをサポートダッシュボードに追加して、主要なワークフローを有効にする方法について説明します</block>
-  <block id="f36fff08cce9f284672696a03c3af986" category="paragraph">このオプションを使用すると、NetApp Support Site (NSS)の資格情報は、サポートダッシュボードでBlueXPに追加されません。 <block ref="6dd91a7e65a4b86508888798b6f600ec" category="inline-link-macro-rx"></block>。</block>
-  <block id="5185f2e203db6dcf60732c4adcccbd15" category="list-text">NSSアカウントがなく、ネットアップクラウドのクレデンシャルを作成していない場合は、必要な情報を入力してネットアップクラウドへのログインを作成します。</block>
   <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">プロンプトが表示されたら、エンドユーザライセンス契約を確認し、条件に同意します。</block>
   <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">[ようこそ*]ページで、アカウントの名前を入力します。</block>
   <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">既存のアカウントにメンバーを追加する方法について説明します</block>
@@ -3311,7 +3303,6 @@
   <block id="74a4ede1451c1e5d5746c24e1fc77924" category="paragraph"><block ref="7a5209a3744a7cace63a040ed3f3ce07" category="inline-link-macro-rx"></block>。</block>
   <block id="b7ffaf906b575603b3ec9613a0b6ea30" category="paragraph">BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。コネクタにより、オンプレミス環境とクラウド環境にわたってリソースとプロセスを管理できます。Cloud Volumes ONTAP などのデータサービスを使用する必要があります。</block>
   <block id="0b2713c18a328b85808183d496d2d28c" category="paragraph">BlueXPは、セキュリティや接続が制限されている環境でもサポートされます。restricted mode_or_private mode__を使用して、アウトバウンド接続をBlueXP SaaSレイヤへの制限できます。</block>
-  <block id="ba2f0b6169ae38b10d24f0818c4c9d17" category="summary">BlueXPの利用を開始するには、まず既存のNetApp Support Site クレデンシャルを使用するか、ネットアップクラウドログインアカウントを作成して登録します。</block>
   <block id="ae140c7a1104ac99f1a01b18e5dc3ed8" category="paragraph">BlueXPにはWebベースのコンソールからアクセスできます。BlueXPの利用を開始するには、まず既存のNetApp Support Site クレデンシャルを使用するか、ネットアップクラウドログインアカウントを作成して登録します。</block>
   <block id="b829f1a930ae603edd16b249b070f4c9" category="doc">コネクタを制限モードで展開します</block>
   <block id="5cadd29a69b0be5bc8b482cfc2e89adb" category="open-title">AWS Commercial Marketplaceの略</block>
@@ -3614,4 +3605,13 @@
   <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">BlueXPがAzureのクレデンシャルと権限を使用して処理を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のAzureサブスクリプションのクレデンシャルを管理する際に役立ちます。たとえば、AzureクレデンシャルをBlueXPに追加するタイミングを確認できます。</block>
   <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">BlueXPがAWSのクレデンシャルと権限を使用してユーザに代わって操作を実行する方法をご紹介します。これらの詳細を理解しておくと、BlueXPで1つ以上のAWSアカウントのクレデンシャルを管理する際に役立ちます。たとえば、AWSクレデンシャルをBlueXPに追加するタイミングを把握できます。</block>
   <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">BlueXPでGoogle Cloudのクレデンシャルと権限を使用して操作を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する際に役立ちます。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。</block>
+  <block id="647051cbb24da89d3b791c11978a8b90" category="list-text">コネクタ仮想マシンでその認証方法を使用する場合は、SSH公開鍵。認証方法のもう1つのオプションは、パスワードを使用することです。</block>
+  <block id="94fc3421a7ccbcb57366109daea19aed" category="inline-link">AzureでLinux VMに接続する方法について説明します</block>
+  <block id="51efa34484491a2cd1e24f30b14fc68a" category="paragraph"><block ref="51efa34484491a2cd1e24f30b14fc68a" category="inline-link-rx"></block></block>
+  <block id="c3e1d8cd2a4fddc661ad823da98d5fa7" category="list-text">* VM認証*：Azureサブスクリプション、場所、新しいリソースグループ、または既存のリソースグループを選択し、作成するコネクタ仮想マシンの認証方法を選択します。</block>
+  <block id="52f3863b6256b8ae764628f74442ca5c" category="paragraph">仮想マシンの認証方法には、パスワードまたはSSH公開鍵を使用できます。</block>
+  <block id="3587d9f2b48c4f0c9c40433731329a21" category="list-text">NetApp Support Site アカウントをお持ちの場合は、*ログイン*ページでNSSアカウントに関連付けられているメールアドレスを直接入力してください。</block>
+  <block id="61bd9c463723beb495c6ca6a1a35e0eb" category="paragraph">NSSアカウントをお持ちの場合は、サインアップページをスキップできます。この初回ログインの一環として、BlueXPがサインアップします。</block>
+  <block id="7c74a9177ae92ae3e635c6ec91ce1d71" category="list-text">NSSアカウントをお持ちでなく、ネットアップクラウドログインを作成して登録する場合は、*[Sign Up]*を選択します。</block>
+  <block id="9c27b53d053eec29dd123f70f05c5d03" category="list-text">[Sign Up]ページで、ネットアップクラウドログインの作成に必要な情報を入力します。</block>
 </blocks>

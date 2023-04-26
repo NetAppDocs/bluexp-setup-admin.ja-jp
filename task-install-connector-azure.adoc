@@ -30,6 +30,10 @@ summary: コネクタは、BlueXPのWebベースのコンソールやAzure Marke
 ** HTTPS証明書
 
 
+* コネクタ仮想マシンでその認証方法を使用する場合は、SSH公開鍵。認証方法のもう1つのオプションは、パスワードを使用することです。
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["AzureでLinux VMに接続する方法について説明します"^]
+
 * BlueXPでコネクタ用のAzureロールを自動的に作成しない場合は、自分で作成する必要があります link:reference-permissions-azure.html["このページのポリシーを使用する"]。
 +
 これらの権限はコネクタインスタンス自体に適用されます。これは、以前にコネクタを展開するように設定したアクセス権とは異なります。
@@ -70,7 +74,13 @@ link:task-set-up-permissions-azure.html["サービスプリンシパルのこれ
 
 . ウィザードの手順に従って、コネクタを作成します。
 +
-** * VM 認証 * ： Azure サブスクリプション、場所、新しいリソースグループ、または既存のリソースグループを選択し、認証方法を選択します。
+** * VM認証*：Azureサブスクリプション、場所、新しいリソースグループ、または既存のリソースグループを選択し、作成するコネクタ仮想マシンの認証方法を選択します。
++
+仮想マシンの認証方法には、パスワードまたはSSH公開鍵を使用できます。
+
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["AzureでLinux VMに接続する方法について説明します"^]
+
 ** *詳細*:インスタンスの名前を入力し、タグを指定して、必要な権限を持つ新しいロールを作成するか、またはで設定した既存のロールを選択するかを選択します link:reference-permissions-azure.html["必要な権限"]。
 +
 このロールに関連付けられているサブスクリプションを選択できます。選択した各サブスクリプションには、 Cloud Volumes ONTAP をこれらのサブスクリプションに導入するための権限が Connector に付与されます。
