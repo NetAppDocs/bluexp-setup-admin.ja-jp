@@ -570,7 +570,6 @@
   <block id="abc66ca669cfbd9be590874c67e8d7ef" category="cell">\ https://widget.intercom.io</block>
   <block id="30fe214f0e8ecaf9b895a0137cad8ce9" category="cell">製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。</block>
   <block id="9827c1dc4f901b9ac9340f0034c5a996" category="list-text">コネクタを配置するネットワークの場所には、アウトバウンドのインターネット接続が必要です。</block>
-  <block id="ffcad347e7fbe5448bc3fabe48be2db8" category="paragraph">Connector では、パブリッククラウド環境内のリソースとプロセスを管理するために、次のエンドポイントに接続するためにアウトバウンドインターネットアクセスが必要です。</block>
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\ https://support.netapp.com</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net</block>
@@ -2280,7 +2279,6 @@
   <block id="e977076f329f114f070ba24997d6ea89" category="paragraph">コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。</block>
   <block id="9d1c31fa96e155af1c5f2d21f024ae6b" category="section-title">手動インストール中にエンドポイントに接続しました</block>
   <block id="6017dcd09765a1c92a35f18a704f3fb7" category="paragraph">独自のLinuxホストにコネクタを手動でインストールする場合は、コネクタのインストーラでインストールプロセス中に次のURLにアクセスする必要があります。</block>
-  <block id="6b928849399b5939b51343f6c87ad310" category="section-title">日常業務のためにコンタクトしたエンドポイント</block>
   <block id="06afa66cf6eca938a45be835a47030e1" category="paragraph-title">関連リンク</block>
   <block id="74f7ea1e969abd8d8ec017d333bead7e" category="inline-link-macro">BlueXPコンソールにユーザがアクセスできるようにネットワークを準備</block>
   <block id="8ae42ef1699b44390c771e4ea6cb78df" category="paragraph"><block ref="8ae42ef1699b44390c771e4ea6cb78df" category="inline-link-macro-rx"></block></block>
@@ -2650,11 +2648,8 @@
   <block id="7b0c55f247d6f53c6782615b53af4619" category="list-text">アウトバウンド通信</block>
   <block id="b765b1f4695cc75eccd54629c696871c" category="list-text">コネクタからBlueXP SaaSレイヤ、クラウドプロバイダが一般に公開しているリソース、および日常業務に欠かせないその他のコンポーネントへの接続が必要です。</block>
   <block id="481967699cb23b1212553273ddd07956" category="inline-link-macro">コネクタがAWSで接続するエンドポイント</block>
-  <block id="ab8177880a13f92d2c6c296fd85611c9" category="list-text"><block ref="ab8177880a13f92d2c6c296fd85611c9" category="inline-link-macro-rx"></block></block>
   <block id="bc9ca29d6605d1cf6f70076a23749d7d" category="inline-link-macro">コネクタがAzureで接続するエンドポイント</block>
-  <block id="3f6e7a440a8cae86f238db2ca1da0175" category="list-text"><block ref="3f6e7a440a8cae86f238db2ca1da0175" category="inline-link-macro-rx"></block></block>
   <block id="b9ae7144d8994b521f00e7ea998af276" category="inline-link-macro">コネクタがGoogle Cloudで接続するエンドポイント</block>
-  <block id="a0a5f0a2e1c920dc11829154cff84abd" category="list-text"><block ref="a0a5f0a2e1c920dc11829154cff84abd" category="inline-link-macro-rx"></block></block>
   <block id="3bf5c9324dc0745f8cad507c90fe86b2" category="list-text">コネクタのサポートされている場所</block>
   <block id="916a2669af97d2f4130e6923cd637b3f" category="list-text">標準モードでは、コネクタはクラウドまたはオンプレミスでサポートされます。</block>
   <block id="fd18b98fb0c01efb9ebdfe9d8aac583c" category="list-text">コネクタのインストールは、BlueXPのセットアップウィザード、AWSまたはAzure Marketplaceから実行できます。また、インストーラを使用して、データセンターまたはクラウドの自社のLinuxホストにコネクタを手動でインストールすることもできます。</block>
@@ -3456,11 +3451,8 @@
   <block id="bfb1a8284652de834f7e5f10d70d1b28" category="inline-link-macro">BlueXPコンソールにユーザがアクセスできるようにネットワークを準備する（制限モード）</block>
   <block id="bbeb91503e087c169e5b9723b8e20883" category="list-text"><block ref="bbeb91503e087c169e5b9723b8e20883" category="inline-link-macro-rx"></block></block>
   <block id="2860cec66f88d15f252631c132ac68ce" category="inline-link-macro">コネクタがAWSで接続するエンドポイント（標準モード）</block>
-  <block id="c5671cdad008988d217498ffee18763f" category="list-text"><block ref="c5671cdad008988d217498ffee18763f" category="inline-link-macro-rx"></block></block>
   <block id="f30c2ab09bb92e952f9dc522c1d59a4b" category="inline-link-macro">コネクタがAzureで接続するエンドポイント（標準モード）</block>
-  <block id="befb6b1b01e0761a5d0ce6f028c4edd2" category="list-text"><block ref="befb6b1b01e0761a5d0ce6f028c4edd2" category="inline-link-macro-rx"></block></block>
   <block id="51592248285ea432f62366d3bb873cd2" category="inline-link-macro">コネクタがGoogle Cloudで接続するエンドポイント（標準モード）</block>
-  <block id="6de9f5682041f68bedd20c6f93964068" category="list-text"><block ref="6de9f5682041f68bedd20c6f93964068" category="inline-link-macro-rx"></block></block>
   <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">コネクタの手動インストール中に接続されたエンドポイント（標準モード）</block>
   <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
   <block id="6187e32203fd05e22e575166349f5b99" category="inline-link">バックアップとリカバリのドキュメント</block>
@@ -3614,4 +3606,17 @@
   <block id="61bd9c463723beb495c6ca6a1a35e0eb" category="paragraph">NSSアカウントをお持ちの場合は、サインアップページをスキップできます。この初回ログインの一環として、BlueXPがサインアップします。</block>
   <block id="7c74a9177ae92ae3e635c6ec91ce1d71" category="list-text">NSSアカウントをお持ちでなく、ネットアップクラウドログインを作成して登録する場合は、*[Sign Up]*を選択します。</block>
   <block id="9c27b53d053eec29dd123f70f05c5d03" category="list-text">[Sign Up]ページで、ネットアップクラウドログインの作成に必要な情報を入力します。</block>
+  <block id="71afd6b2cb4c08d6d8f78d761345d34b" category="paragraph">コネクタを配置するネットワークの場所には、アウトバウンドのインターネット接続が必要です。BlueXPコンソールからコネクタを導入する場合は、Webブラウザからアウトバウンドのインターネットアクセスも必要です。</block>
+  <block id="6dffc69caefdf6586b8f4562e4f891ff" category="section-title">BlueXPコンソールからアクセスするエンドポイント</block>
+  <block id="7e793e0926dc898cd9fdf640dab8b7d2" category="paragraph">SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。これには、BlueXPコンソールからコネクタを導入するために接続されるエンドポイントも含まれます。</block>
+  <block id="de3d7dbdd97c240a233066ad7479c6c2" category="inline-link-macro">BlueXPコンソールからアクセスしたエンドポイントのリストを表示します</block>
+  <block id="638887c7fa101cc437e1eb7f6041b91e" category="paragraph"><block ref="7d376f679e4be0527c6e11d1cf760c68" category="inline-link-macro-rx"></block>。</block>
+  <block id="715f0347cb236dfb96b8932c5f17b0ea" category="section-title">コネクタから接続されたエンドポイント</block>
+  <block id="5519fcf85b24bd3271825a502543232a" category="paragraph">このコネクタは、パブリッククラウド環境内のリソースとプロセスを日常的に管理するために、次のエンドポイントに接続するためのアウトバウンドインターネットアクセスを必要とします。</block>
+  <block id="4904eb58ec6f09d17bea1bcb4209ac4b" category="list-text"><block ref="4904eb58ec6f09d17bea1bcb4209ac4b" category="inline-link-macro-rx"></block></block>
+  <block id="1a989b3502c194d5e9de1168533c7d28" category="list-text"><block ref="1a989b3502c194d5e9de1168533c7d28" category="inline-link-macro-rx"></block></block>
+  <block id="ef12cf012477b5ad02d81be8ada8b95c" category="list-text"><block ref="ef12cf012477b5ad02d81be8ada8b95c" category="inline-link-macro-rx"></block></block>
+  <block id="f4986cf63781254c431f585eade70914" category="list-text"><block ref="f4986cf63781254c431f585eade70914" category="inline-link-macro-rx"></block></block>
+  <block id="d4725a75fbee6904284f3109fa5e079a" category="list-text"><block ref="d4725a75fbee6904284f3109fa5e079a" category="inline-link-macro-rx"></block></block>
+  <block id="31dec7fbef975d09b76f499ef8abfb62" category="list-text"><block ref="31dec7fbef975d09b76f499ef8abfb62" category="inline-link-macro-rx"></block></block>
 </blocks>
