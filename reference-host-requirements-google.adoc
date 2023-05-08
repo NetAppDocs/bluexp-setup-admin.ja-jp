@@ -22,8 +22,9 @@ BlueXPからまたはglcoudを使用してコネクタを導入する場合、�
 サポートされているオペレーティングシステム::
 +
 --
+* Ubuntu 22.04.
 * CentOS 7.6、7.7、7.8、7.9
-* Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 および8.7
+* Red Hat Enterprise Linux 7.6、7.7、7.8、および7.9
 +
 ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 
@@ -33,7 +34,12 @@ Connector は、これらのオペレーティングシステムの英語版で�
 
 
 --
-ハイパーバイザー:: CentOSまたはRed Hat Enterprise Linuxの実行が認定されたベアメタルまたはホスト型のハイパーバイザーが必要です。 https://access.redhat.com/certified-hypervisors["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
+ハイパーバイザー:: Ubuntu、CentOS、またはRed Hat Enterprise Linuxの実行が認定されているベアメタルまたはホスト型のハイパーバイザーが必要です。
++
+--
+https://access.redhat.com/certified-hypervisors["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
+
+--
 CPU:: 4 コアまたは 4 個の vCPU
 RAM:: 14 GB
 Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。

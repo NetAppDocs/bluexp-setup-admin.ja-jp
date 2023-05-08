@@ -18,6 +18,36 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
+== 2023年5月7日
+
+
+
+=== コネクタ3.9.29
+
+* Ubuntu 22.04は、BlueXPまたはクラウドプロバイダのマーケットプレイスからコネクタを導入する際のコネクタ用の新しいオペレーティングシステムです。
++
+また、Ubuntu 22.04を実行している独自のLinuxホストにコネクタを手動でインストールすることもできます。
+
+* Red Hat Enterprise Linux 8.6および8.7は、新しいコネクタの導入ではサポートされなくなりました。
++
+Red Hatではコネクタに必要なDockerがサポートされなくなるため、新しい環境ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のコネクタを実行している場合、ネットアップは引き続きこの構成をサポートします。
+
++
+Red Hat 7.6、7.7、7.8、および7.9は、新規および既存のコネクタで引き続きサポートされます。
+
+* コネクタは現在、Google Cloudのカタール地域でサポートされています。
+* このコネクタは、Microsoft AzureのSweden Centralリージョンでもサポートされています。
++
+https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+
+
+
+
+
 == 2023年4月4日
 
 
@@ -55,16 +85,6 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 +
 https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
 
-* BlueXPでVMware vCenter Serverを検出できるようになりました。
-+
-AWSまたはオンプレミスで実行されているVMware vCenter Serverを検出したら、作業環境を開いて、サーバに関連付けられているデータストアと仮想マシンに関する詳細を確認できます。
-
-+
-唯一の要件は、バージョン7.0以降を実行しているVMware vCenter Serverに接続するコネクタです。
-
-+
-作業を開始するには、*[作業環境の追加]*を選択し、* Amazon Web Services *または*オンプレミス*を選択して、*[VMware vCenter Server]*を選択します。サーバのドメイン名またはIPアドレスを入力し、adminユーザのユーザ名とパスワードを入力します。
-
 * BlueXPログインに関連付けられたユーザクレデンシャル（ONTAP クレデンシャルとNetApp Support Site （NSS）クレデンシャル）を管理できるようになりました。
 +
 [設定]>[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。
@@ -99,10 +119,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 * アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースの管理方法について説明します"]。
-
-* Red Hat Enterprise Linux 8.7を実行するホストでコネクタがサポートされるようになりました。
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタのシステム要件を確認します"]。
 
 * このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。BlueXPのバックアップとリカバリを使用して、AWSとAzureのコマーシャルリージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、BlueXPデジタルウォレットを除き、他のBlueXPサービスはサポートされません。
 +
@@ -554,18 +570,6 @@ link:task-creating-connectors-azure.html#create-a-connector-using-a-service-prin
 === 新しい通知サービスが追加されました
 
 通知サービスが導入され、現在のログインセッションで開始した Cloud Manager の処理のステータスを表示できるようになりました。処理が成功したかどうか、または失敗したかどうかを確認できます。 link:task-monitor-cm-operations.html["アカウントの操作を監視する方法については、を参照してください"]。
-
-
-
-== 2021 年 8 月 1 日
-
-
-
-=== RHEL 7.9 はコネクタでサポートされます
-
-Red Hat Enterprise Linux 7.9 を実行しているホストでは、コネクタがサポートされるようになりました。
-
-link:task-installing-linux.html["コネクタのシステム要件を確認します"]。
 
 
 

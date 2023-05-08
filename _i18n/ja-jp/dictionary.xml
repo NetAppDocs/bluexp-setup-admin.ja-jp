@@ -309,10 +309,6 @@
   <block id="b965147e511dac4e3aebd73ea41829e3" category="section-title">新しい通知サービスが追加されました</block>
   <block id="3c1b23b324258ff4cbade594bf9bba9d" category="inline-link-macro">アカウントの操作を監視する方法については、を参照してください</block>
   <block id="e2945895b2a6a405c218350491024401" category="paragraph">通知サービスが導入され、現在のログインセッションで開始した Cloud Manager の処理のステータスを表示できるようになりました。処理が成功したかどうか、または失敗したかどうかを確認できます。 <block ref="f47b918ef0cfcb851278e7a8f756b776" category="inline-link-macro-rx"></block>。</block>
-  <block id="81de4fabd4db5e6833366e4bcef85f1e" category="section-title">RHEL 7.9 はコネクタでサポートされます</block>
-  <block id="a95742b809057568fda07a87694945f1" category="paragraph">Red Hat Enterprise Linux 7.9 を実行しているホストでは、コネクタがサポートされるようになりました。</block>
-  <block id="2a75ac250c22787b79b100a2a614a4e2" category="inline-link-macro">コネクタのシステム要件を確認します</block>
-  <block id="3d3993351431dd156dcaa0d507b8983f" category="paragraph"><block ref="bee2a520a8b2c506ca8f5164283ec407" category="inline-link-macro-rx"></block>。</block>
   <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021 年 7 月 7 日</block>
   <block id="087ea838180b315ad53e36db764cd8d2" category="section-title">コネクタの追加ウィザードの機能拡張</block>
   <block id="49b04ecdbf78ac3e84e01d5ad6dcb05f" category="paragraph">新しいオプションを追加して使いやすくするために、 * コネクターの追加 * ウィザードを再設計しました。タグの追加、ロール（ AWS または Azure ）の指定、プロキシサーバのルート証明書のアップロード、 Terraform Automation のコードの表示、進捗状況の詳細の表示などが可能になりました。</block>
@@ -835,7 +831,6 @@
   <block id="0c8656a54bb3c58b8facb7ba72092bdc" category="section-title">2021 年 11 月 4 日</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
-  <block id="9e27c4a53794e4f6cfc9949de58e5091" category="section-title">2021 年 8 月 1 日</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021 年 4 月 11 日</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021 年 2 月 9 日</block>
   <block id="0e78dc7220ea8b6abafe6ef7aaad9998" category="list-text">ターゲットアカウントの AWS IAM コンソールに移動します。</block>
@@ -910,11 +905,9 @@
   <block id="2fc22405cb36e8596d9bdb7b52cbf10c" category="paragraph">導入前にコネクタの詳細を確認したり、問題のトラブルシューティングが必要な場合に利用できます。</block>
   <block id="5eeca886fa07462826a9ea747483f528" category="section-title">AWSの詳細</block>
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">EC2インスタンスタイプはt3.xlargeです。</block>
-  <block id="1c4a1f461d9d9ab860d5238735bbfa23" category="list-text">イメージのオペレーティングシステムはRed Hat Enterprise Linux 7.6（HVM）です。</block>
   <block id="09572768e7bd2d34b2a051ebb8774173" category="list-text">EC2 Linuxインスタンスのユーザ名はec2-userです。</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Azureの詳細</block>
   <block id="82e44dd5e94a855110f9dea154fed0ed" category="list-text">VMタイプはDS3 v2です。</block>
-  <block id="6b20346212b35fa23c8778f7b40af243" category="list-text">イメージのオペレーティングシステムはCentOS 7.6です。</block>
   <block id="474a089504b47eb34ee00ee62f121108" category="list-text">デフォルトのシステムディスクは100GiBのPremium SSDディスクです。</block>
   <block id="f246cf5f23e765f0a7ebed4a6c1d923a" category="section-title">Google Cloudの詳細</block>
   <block id="6cb5fb9b61376b8ee3092321445fdea4" category="list-text">デフォルトのシステムディスクは100GiBのSSD永続ディスクです。</block>
@@ -1792,7 +1785,6 @@
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">コネクタ3.9.23</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">サブスクリプションの管理方法について説明します</block>
   <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
-  <block id="9683999221dec5e41e35756b2a8aee04" category="list-text">イメージのオペレーティングシステムはRed Hat Enterprise Linux 8.6です。</block>
   <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
   <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
   <block id="2e5620a6569fc852b94b7e03a147a125" category="paragraph">AWSクレデンシャルを既存のコネクタに追加すると、パブリッククラウド環境内のリソースとプロセスの管理に必要な権限が付与されます。 <block ref="568ce14d3cdae759e790bc127b222228" category="inline-xref-macro-rx"></block>。</block>
@@ -2038,7 +2030,6 @@
   <block id="d4a973e303ec37692cc8923e3148eef7" category="cell">8080 です</block>
   <block id="3cae1bb62504fde722824fee95046472" category="doc">Azureの資格情報とBlueXPのサブスクリプションを管理します</block>
   <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6、7.7、7.8、7.9</block>
-  <block id="fe342f4d7fb16d9eddf02f4c613dfb19" category="list-text">Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 および8.7</block>
   <block id="643a877b7c306b1bcece42c8f03bebfb" category="paragraph">&lt;version&gt; は、ダウンロードしたコネクタのバージョンです。</block>
   <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">クラウドリージョンは、AWS C2S/SC2S、Azure IL6、または任意の商用リージョンのような安全な米国機関のリージョンにすることができます。</block>
   <block id="4a2f661974665defd7d188133a1ab48b" category="paragraph">BlueXPで次のタスクを有効にするには、NetApp Support Site クレデンシャルを特定のBlueXPアカウントIDに関連付ける必要があります。</block>
@@ -2097,8 +2088,6 @@
   <block id="4be68bdee3a27bc0218c6188d192fc95" category="paragraph"><block ref="4be68bdee3a27bc0218c6188d192fc95" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">サポートケースの管理方法について説明します</block>
   <block id="796ced97a72330e5ce3c0935b7b09f45" category="paragraph"><block ref="622b6e7f4143df2aca06b538ee1d864e" category="inline-link-rx"></block>。</block>
-  <block id="dd9b32305d0c33f8845bee1cdfcfc85a" category="list-text">Red Hat Enterprise Linux 8.7を実行するホストでコネクタがサポートされるようになりました。</block>
-  <block id="9954c00cefacf69f28fa1994e949ff83" category="paragraph"><block ref="1c471069dafa2d25f3a632cea0250222" category="inline-link-rx"></block>。</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">インターネットにアクセスできない場所にコネクタを取り付けます</block>
   <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
   <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">コネクタのBlueXPコンソールにアクセスします</block>
@@ -2256,10 +2245,6 @@
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Eメール通知の設定方法については、こちらをご覧ください</block>
   <block id="e16804d7658f4d3132a1170b8cec7c7e" category="paragraph"><block ref="9ce9eb475c326d02a5c224ef8589bc0a" category="inline-link-rx"></block>。</block>
   <block id="1ba259cc1a092c9c30c1a18ccc612c75" category="list-text">Google Cloud Turinリージョンでコネクタがサポートされるようになりました。</block>
-  <block id="e9c35e9b853bc286e0f3b1a7ee2e338a" category="list-text">BlueXPでVMware vCenter Serverを検出できるようになりました。</block>
-  <block id="a5b1ab8743c3279fbcf5a93dcd6de23d" category="paragraph">AWSまたはオンプレミスで実行されているVMware vCenter Serverを検出したら、作業環境を開いて、サーバに関連付けられているデータストアと仮想マシンに関する詳細を確認できます。</block>
-  <block id="10cc8c1f48423a72bf1e617861999cae" category="paragraph">唯一の要件は、バージョン7.0以降を実行しているVMware vCenter Serverに接続するコネクタです。</block>
-  <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">作業を開始するには、*[作業環境の追加]*を選択し、* Amazon Web Services *または*オンプレミス*を選択して、*[VMware vCenter Server]*を選択します。サーバのドメイン名またはIPアドレスを入力し、adminユーザのユーザ名とパスワードを入力します。</block>
   <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">BlueXPログインに関連付けられたユーザクレデンシャル（ONTAP クレデンシャルとNetApp Support Site （NSS）クレデンシャル）を管理できるようになりました。</block>
   <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">[設定]&gt;[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。</block>
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">サポートケースを作成するとき、または既存のサポートケースのケースノートを更新するときに、添付ファイルをアップロードできるようになりました。</block>
@@ -2342,9 +2327,7 @@
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">ネットワーク要件の詳細については、こちらをご覧ください</block>
   <block id="587b8633f80536ad1f87ba680eaf93e0" category="paragraph"><block ref="48e0e005bc28fbf668fbd01539cd6de0" category="inline-link-macro-rx"></block>。</block>
   <block id="41c4e1e04e36e331e0bc8306e8c462e4" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> ホストの要件を確認します</block>
-  <block id="8cf82bb665e40bb25d9a540e444e36b3" category="paragraph">コネクタソフトウェアは、特定の要件を満たすホストで実行する必要があります。Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、これらの要件をホストが満たしていることを確認する必要があります。BlueXPまたはAzure Marketplaceからコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応します。</block>
   <block id="c0cf348e555529bd637208dfcf54a870" category="paragraph">主な要件は次のとおりです。</block>
-  <block id="8d870988502027508b00629d082d4d40" category="list-text">CentOSまたはRed Hat Enterprise Linuxを実行する専用ホスト</block>
   <block id="fd7f01f6e4333c9d37efa65b264ff2a2" category="list-text">CPU × 4</block>
   <block id="ccdc6c134c96d6c386d088a2301d4f2b" category="list-text">14GBのRAM</block>
   <block id="6cfd8f6d3354ebd55131c33afd96d4f1" category="inline-link-macro">これらのホスト要件の詳細については、こちらをご覧ください</block>
@@ -2427,7 +2410,6 @@
   <block id="512bfa3bd93d6398b4e5010a77b6b397" category="paragraph">BlueXPまたはAWS Marketplaceからコネクタを導入する場合、イメージには必要なOSとソフトウェアコンポーネントが含まれています。</block>
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">専用ホスト</block>
   <block id="24dfedb0d4bd46f0cd823d4e245f7642" category="paragraph">ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。</block>
-  <block id="6e1a44ecc6a3c7f575a069cf7334fbae" category="list-text">CentOSまたはRed Hat Enterprise Linuxの実行が認定されたベアメタルまたはホスト型のハイパーバイザーが必要です。<block ref="e9e3991507328b97d5307322157c9608" category="inline-link-rx"></block></block>
   <block id="6cd56a4cc4ddbbfd2bc9d57de5d788aa" category="list-text">キーペア</block>
   <block id="58b11c8ddf3d2ba8e39859b658696729" category="list-text">BlueXPまたはAWS Marketplaceからコネクタを作成する場合は、インスタンスで使用するEC2キーペアを選択する必要があります。</block>
   <block id="d27c20ffdc2a86f7372d5fe1b59e028f" category="summary">ネットワークの設定、ホストの準備、クラウド権限の準備などを行い、オンプレミスにコネクタを作成します。</block>
@@ -3130,7 +3112,6 @@
   <block id="a56be8fcf9cdfe04c839d8381b610ad9" category="paragraph"><block ref="ade0887db526f72ed0d1d6c5708f3e13" category="inline-link-macro-rx"></block>。</block>
   <block id="bcbc9fff8d4487788c2d9340f7d3f30a" category="list-text">VPCとサブネット</block>
   <block id="b2f11e007fbc7abca64e5c1d6c2b7128" category="paragraph"><block ref="8e7b3f5f067e9282c1888d205cec32d1" category="inline-link-macro-rx"></block>。</block>
-  <block id="6349ee97072121bbd5a4507bac2e8735" category="paragraph">コネクタソフトウェアは、特定の要件を満たすホストで実行する必要があります。Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、これらの要件をホストが満たしていることを確認する必要があります。BlueXPまたはAWS Marketplaceからコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応します。</block>
   <block id="a210968d517dd722bb07b30a19848aba" category="paragraph"><block ref="a0def2bb90da07c3ee565e52d86737eb" category="inline-link-macro-rx"></block>。</block>
   <block id="9b2016503a2a16403edd8e4505d62007" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> AWS権限を設定</block>
   <block id="c405be6f63207e29490377f138661fe6" category="paragraph">使用するインストールオプションに基づいてAWS権限を設定します。</block>
@@ -3192,7 +3173,6 @@
   <block id="7a396f953e409fc4113a3eeb3714978c" category="paragraph">Google Cloudでコネクタを直接作成する標準的な方法はBlueXPから直接作成できますが、gcloudを使用して作成することも、既存のLinuxホストにソフトウェアを手動でインストールすることもできます。</block>
   <block id="d6b2edc88b04bf885cb72e8cf0bdb02e" category="paragraph"><block ref="7faab28792959edccdd5bb629174a43b" category="inline-link-macro-rx"></block>。</block>
   <block id="6d117b41618cb9d361db392dd6ff151b" category="paragraph"><block ref="10b8794b5b9549957094545036a01876" category="inline-link-macro-rx"></block>。</block>
-  <block id="2d1ed7591f7f80cfce8c5b951e513704" category="paragraph">コネクタソフトウェアは、特定の要件を満たすホストで実行する必要があります。Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、これらの要件をホストが満たしていることを確認する必要があります。BlueXPまたはgcloudを使用してコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応できます。</block>
   <block id="3633aaf72e18b72ee7d2e915e82be0c6" category="paragraph"><block ref="2d4899440637ad0f9b80e78751923630" category="inline-link-macro-rx"></block>。</block>
   <block id="7a48e91302c9dc7f85920f518f25f1d7" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Google Cloud権限を設定する</block>
   <block id="f7b1947038df0eb1bf72eca001af4938" category="paragraph">使用するインストールオプションに対してGoogle Cloudの権限を設定します。</block>
@@ -3244,7 +3224,6 @@
   <block id="df7114b91c38b799f7e55c741aae2b74" category="list-text">*手動インストール*：IAMポリシーを作成し、IAMロールまたはIAMユーザに適用します。</block>
   <block id="d427acae4bc956af9fed6c72fb68b12a" category="paragraph"><block ref="b2113e9e3a9e0e0062402d34fe3bdc2d" category="inline-xref-macro-rx"></block>。</block>
   <block id="8098dd228e3c3acafd4ab6231ee02a5b" category="paragraph">どちらのオプションを使用する場合も、最初にIAMポリシーを作成します。このポリシーには、BlueXPからAWSでConnectorインスタンスを起動するために必要な権限のみが含まれています。</block>
-  <block id="475ac26bd29a47d7852c43b6768e1e79" category="admonition">BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、AWSリソースへのコネクタが有効になります。</block>
   <block id="1bd08699c526c66f71094b5ff54dc839" category="list-text">BlueXPが引き継ぐことができるIAMロールにポリシーを適用するか、BlueXPにアクセスキーを提供できるようにIAMユーザにポリシーを関連付けます。</block>
   <block id="87b8ba43578311804ba14d80f6c8cb89" category="list-text">（オプション1）BlueXPで想定できるIAMロールを設定します。</block>
   <block id="bf10cb047f4db72713407e74d30df1e9" category="list-text">（オプション2）BlueXPにアクセスキーを提供できるように、IAMユーザの権限を設定します。</block>
@@ -3621,4 +3600,26 @@
   <block id="31dec7fbef975d09b76f499ef8abfb62" category="list-text"><block ref="31dec7fbef975d09b76f499ef8abfb62" category="inline-link-macro-rx"></block></block>
   <block id="b86699cce9d5045d0f0bc82298a74e55" category="list-text">Cloud Key Management Service（KMS）APIの略</block>
   <block id="5cb2601217dd646515fe8e7cba8643b1" category="paragraph">（お客様が管理する暗号化キー（CMEK）でBlueXPのバックアップとリカバリを使用する場合にのみ必要）</block>
+  <block id="e5051949dc3a37f9077e85df0f1c8a21" category="list-text">Ubuntu 22.04.</block>
+  <block id="eaf5618d0182a88179ac8580cc418219" category="list-text">Red Hat Enterprise Linux 7.6、7.7、7.8、および7.9</block>
+  <block id="0791add814d036f56d1303750c34ee31" category="list-text">Ubuntu、CentOS、またはRed Hat Enterprise Linuxの実行が認定されているベアメタルまたはホスト型のハイパーバイザーが必要です。</block>
+  <block id="394349da65ddd77a10f3cdb6426b7439" category="paragraph"><block ref="394349da65ddd77a10f3cdb6426b7439" category="inline-link-rx"></block></block>
+  <block id="c1e102579945406fac37126823f71dd7" category="paragraph">Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、ホストが特定の要件を満たしていることを確認する必要があります。BlueXPまたはAzure Marketplaceからコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応します。</block>
+  <block id="458ff6a54977b54b851374a784615658" category="list-text">Ubuntu 22.04、CentOS 7.6から7.9、またはRHEL 7.6から7.9を実行する専用ホスト</block>
+  <block id="3140bd3be2a4f9fe830514ff5b18be1f" category="list-text">Docker Engine 19.3.1以降</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023年5月7日</block>
+  <block id="d13015f8ae4fd0f7f263eba9f81f4caa" category="section-title">コネクタ3.9.29</block>
+  <block id="05263fcc56b50972b2dfe4be20698328" category="list-text">Ubuntu 22.04は、BlueXPまたはクラウドプロバイダのマーケットプレイスからコネクタを導入する際のコネクタ用の新しいオペレーティングシステムです。</block>
+  <block id="9ab8f4fa1e0839b1101d04c9cd4e1bae" category="paragraph">また、Ubuntu 22.04を実行している独自のLinuxホストにコネクタを手動でインストールすることもできます。</block>
+  <block id="dfcaca26de191f6219819bb7091c9ebe" category="list-text">Red Hat Enterprise Linux 8.6および8.7は、新しいコネクタの導入ではサポートされなくなりました。</block>
+  <block id="2f5617aecec1df3805ada7f05da46bde" category="paragraph">Red Hatではコネクタに必要なDockerがサポートされなくなるため、新しい環境ではこれらのバージョンはサポートされません。RHEL 8.6または8.7で既存のコネクタを実行している場合、ネットアップは引き続きこの構成をサポートします。</block>
+  <block id="470821fb08a53bb45ecda66d23c58d6f" category="paragraph">Red Hat 7.6、7.7、7.8、および7.9は、新規および既存のコネクタで引き続きサポートされます。</block>
+  <block id="a2619f6db1e9fa217b857129c75384ab" category="list-text">コネクタは現在、Google Cloudのカタール地域でサポートされています。</block>
+  <block id="368c64d1828dfb51f85a6ad8427db46c" category="list-text">このコネクタは、Microsoft AzureのSweden Centralリージョンでもサポートされています。</block>
+  <block id="cff120b14e79d2501e83070f59bb2387" category="paragraph"><block ref="cff120b14e79d2501e83070f59bb2387" category="inline-link-rx"></block></block>
+  <block id="a12b9d09313df9b379fff76f6080b543" category="paragraph">Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、ホストが特定の要件を満たしていることを確認する必要があります。BlueXPまたはAWS Marketplaceからコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応します。</block>
+  <block id="8a9983b753881349972a7c0a24378110" category="paragraph">Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、ホストが特定の要件を満たしていることを確認する必要があります。BlueXPまたはgcloudを使用してコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応できます。</block>
+  <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">このイメージのオペレーティングシステムはUbuntu 22.04です。</block>
+  <block id="ba5aa0edf5aca9e505ac70fc6e55851d" category="paragraph">BlueXPからコネクタを導入した場合は、次の点に注意してください。</block>
+  <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、コネクタでAWSリソースを管理できるようになります。</block>
 </blocks>

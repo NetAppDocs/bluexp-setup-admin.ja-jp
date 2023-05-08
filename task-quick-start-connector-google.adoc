@@ -39,16 +39,16 @@ link:task-set-up-networking-google.html["ネットワーク要件の詳細につ
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ホストの要件を確認します
 [role="quick-margin-para"]
-コネクタソフトウェアは、特定の要件を満たすホストで実行する必要があります。Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、これらの要件をホストが満たしていることを確認する必要があります。BlueXPまたはgcloudを使用してコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応できます。
+Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、ホストが特定の要件を満たしていることを確認する必要があります。BlueXPまたはgcloudを使用してコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応できます。
 
 [role="quick-margin-para"]
 主な要件は次のとおりです。
 
 [role="quick-margin-list"]
-* CentOSまたはRed Hat Enterprise Linuxを実行する専用ホスト
+* Ubuntu 22.04、CentOS 7.6から7.9、またはRHEL 7.6から7.9を実行する専用ホスト
 * CPU × 4
 * 14GBのRAM
-* Docker Engine の略
+* Docker Engine 19.3.1以降
 
 
 [role="quick-margin-para"]

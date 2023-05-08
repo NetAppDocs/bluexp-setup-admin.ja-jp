@@ -35,10 +35,10 @@ link:task-set-up-networking-on-prem.html["ネットワーク要件の詳細に�
 コネクタソフトウェアは、特定の要件を満たすホストで実行する必要があります。主な要件は次のとおりです。
 
 [role="quick-margin-list"]
-* CentOSまたはRed Hat Enterprise Linuxを実行する専用ホスト
+* Ubuntu 22.04、CentOS 7.6から7.9、またはRHEL 7.6から7.9を実行する専用ホスト
 * CPU × 4
 * 14GBのRAM
-* Docker Engine の略
+* Docker Engine 19.3.1以降
 
 
 [role="quick-margin-para"]

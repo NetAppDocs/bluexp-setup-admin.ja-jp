@@ -47,7 +47,7 @@ BlueXPでは、VPCにConnectorインスタンスを導入する前にAWSで認�
 必要に応じて、IAMを使用してIAMポリシーを制限できます `Condition` 要素（Element）： https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWSドキュメント：Condition要素"^]
 
 
-TIP: BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、AWSリソースへのコネクタが有効になります。
+TIP: BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、コネクタでAWSリソースを管理できるようになります。
 
 .手順
 . AWS IAMコンソールに移動します。

@@ -1,20 +1,12 @@
----
-sidebar: sidebar 
-permalink: reference-host-requirements-on-prem.html 
-keywords: cpu requirements, ram requirements, on prem requirements, on prem host requirements, connector host requirements 
-summary: コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。コネクタを取り付ける前に、ホストがこれらの要件を満たしていることを確認してください。 
----
-= コネクタホストのオンプレミスインストール要件を確認します
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
-[role="lead"]
-コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。コネクタを取り付ける前に、ホストがこれらの要件を満たしていることを確認してください。
+* Ubuntu 22.04、CentOS 7.6から7.9、またはRHEL 7.6から7.9を実行する専用ホスト
+* CPU × 4
+* 14GBのRAM
+* Docker Engine 19.3.1以降
+
 
 専用ホスト:: 他のアプリケーションと共有しているホストでは、このコネクタはサポートされていません。専用のホストである必要があります。
 サポートされているオペレーティングシステム::
@@ -40,6 +32,25 @@ https://access.redhat.com/certified-hypervisors["Red Hat ソリューション�
 --
 CPU:: 4 コアまたは 4 個の vCPU
 RAM:: 14 GB
+
+
+AWS EC2 インスタンスタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.xlarge をお勧めします。
+
+
+キーペア:: BlueXPまたはAWS Marketplaceからコネクタを作成する場合は、インスタンスで使用するEC2キーペアを選択する必要があります。
+
+
+Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。DS3 v2 を推奨します。
+
+
+Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。
++
+--
+このコネクタは、OSがサポートされているVMインスタンス上のGoogle Cloudでサポートされます https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["シールドVM機能"^]
+
+--
+
+
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
 /var のディスク領域:: 20GiB のスペースが必要です
 Docker Engine の略:: Connectorをインストールする前に、ホストにDocker Engineバージョン19.3.1以降が必要です。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]
