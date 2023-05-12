@@ -3616,20 +3616,6 @@
   <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">このイメージのオペレーティングシステムはUbuntu 22.04です。</block>
   <block id="ba5aa0edf5aca9e505ac70fc6e55851d" category="paragraph">BlueXPからコネクタを導入した場合は、次の点に注意してください。</block>
   <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、コネクタでAWSリソースを管理できるようになります。</block>
-  <block id="60a24477cd4bc1d96c88b21629d8cd7c" category="summary">クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、時間単位または年間契約でBlueXPサービスの料金をお支払いできます。ネットアップからライセンスを購入した場合は、マーケットプレイスのサービスにサブスクライブする必要もあります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。</block>
-  <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">クラウドプロバイダのマーケットプレイスからBlueXPにサブスクライブして、BlueXPサービスの料金を時間単位（PAYGO）または年間契約でお支払いください。ネットアップからライセンスを購入した場合（BYOL）は、マーケットプレイスのサービスにも登録する必要があります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。</block>
-  <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">マーケットプレイスのサブスクリプションでは、次のBlueXPサービスの料金が請求されます。</block>
-  <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">BlueXPにサブスクライブするには、コネクタに関連付けられているクラウドクレデンシャルにマーケットプレイスのサブスクリプションを関連付けます。「標準モードで開始」ワークフローに従っている場合は、コネクタがすでにあるはずです。詳細については、を参照してください <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>。</block>
-  <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">コネクタに関連付けられているクレデンシャルを選択する必要があります。BlueXPに関連付けられているクレデンシャルにMarketplaceサブスクリプションを関連付けることはできません。</block>
-  <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">Cloud Volumes ONTAP のBYOL容量ベースライセンスを管理します</block>
-  <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
-  <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">BlueXPデータサービスのBYOLライセンスを管理します</block>
-  <block id="49056b2966eae66ee0345bbf80d6b8d6" category="list-text"><block ref="49056b2966eae66ee0345bbf80d6b8d6" category="inline-link-rx"></block></block>
-  <block id="a4821774f3941403655492bb82c492ca" category="list-text"><block ref="a4821774f3941403655492bb82c492ca" category="inline-link-rx"></block></block>
-  <block id="75c14ab09fd89f95714034d50258a6cc" category="list-text"><block ref="75c14ab09fd89f95714034d50258a6cc" category="inline-link-rx"></block></block>
-  <block id="95c435337a307137f163f5eb04ac01ad" category="list-text"><block ref="95c435337a307137f163f5eb04ac01ad" category="inline-link-rx"></block></block>
-  <block id="ba66b75d479f2289bcf99d989de6e0b1" category="paragraph">マーケットプレイスのサブスクリプションでは、制限モードで次のBlueXPサービスの料金が請求されます。</block>
-  <block id="d639d0a55c1a57a909ac7ffab5f941c6" category="paragraph">BlueXPにサブスクライブするには、コネクタに関連付けられているクラウドクレデンシャルにマーケットプレイスのサブスクリプションを関連付けます。「制限モードで開始する」ワークフローに従っている場合は、コネクタがすでに用意されている必要があります。詳細については、を参照してください <block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block>。</block>
   <block id="c9d7cb56a51bc183eea92ab6ecce2997" category="section-title">2023年5月12日</block>
   <block id="c8e8c3b324197dbdad9e21df5a435a35" category="paragraph">次の権限はCloud Volumes ONTAP の管理に必要なため、JSONポリシーに追加されました。</block>
   <block id="c7e8dc746d7263609202186d1ac75c65" category="inline-link-macro">コネクタインスタンスに必要な表示権限</block>
