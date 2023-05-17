@@ -42,7 +42,7 @@ image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設�
 
 
 .結果
-BlueXPに、AWSでユーザに代わって操作を実行するために必要な権限が付与されました。これで、に移動できます https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+BlueXPに、AWSでユーザに代わって操作を実行するために必要な権限が付与されました。これで、に移動できます https://["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
 
 --
 .Azure
@@ -72,7 +72,7 @@ image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設�
 
 
 .結果
-BlueXPに、Azureで処理を実行するために必要な権限が付与されました。これで、に移動できます https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+BlueXPに、Azureで処理を実行するために必要な権限が付与されました。これで、に移動できます https://["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
 
 --
 ====

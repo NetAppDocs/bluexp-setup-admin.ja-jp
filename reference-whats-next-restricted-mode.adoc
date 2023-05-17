@@ -18,13 +18,13 @@ summary: 制限モードでBlueXPを起動して実行したら、制限モー�
 
 ヘルプについては、次のサービスのマニュアルを参照してください。
 
-* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html["ONTAP ドキュメント： Amazon FSX"^]
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html["Azure NetApp Files のドキュメント"^]
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html["バックアップとリカバリのドキュメント"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html["分類ドキュメント"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP のドキュメント"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["オンプレミスのONTAP クラスタのドキュメント"^]
-* https://docs.netapp.com/us-en/cloud-manager-replication/index.html["レプリケーションドキュメント"^]
+* https://["ONTAP ドキュメント： Amazon FSX"^]
+* https://["Azure NetApp Files のドキュメント"^]
+* https://["バックアップとリカバリのドキュメント"^]
+* https://["分類ドキュメント"^]
+* https://["Cloud Volumes ONTAP のドキュメント"^]
+* https://["オンプレミスのONTAP クラスタのドキュメント"^]
+* https://["レプリケーションドキュメント"^]
 
 
 .関連リンク

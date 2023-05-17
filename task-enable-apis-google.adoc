@@ -32,4 +32,4 @@ summary: コネクタとCloud Volumes ONTAP をGoogle Cloudに導入する前に
 
 
 
-https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloudドキュメント：APIの有効化"^]
+https://["Google Cloudドキュメント：APIの有効化"^]

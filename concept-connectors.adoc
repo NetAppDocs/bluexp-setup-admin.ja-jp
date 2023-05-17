@@ -47,7 +47,7 @@ Azure NetApp Files のセットアップと管理にコネクタは必要あり�
 オンプレミスのONTAP クラスタを直接検出する場合はコネクタは必要ありませんが、BlueXPのその他の機能を利用する場合はコネクタが必要です。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスのONTAP クラスタの検出オプションと管理オプションの詳細については、こちらをご覧ください"^]
+https://["オンプレミスのONTAP クラスタの検出オプションと管理オプションの詳細については、こちらをご覧ください"^]
 
 
 
@@ -101,7 +101,7 @@ Cloud Volumes ONTAP システムにノードベースのBYOLライセンスが�
 * Amazon Web Services の
 * Microsoft Azure
 +
-Azureのコネクタは、管理するCloud Volumes ONTAP システムと同じAzureリージョンまたはに導入する必要があります https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure リージョンペア"^] Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP での Azure プライベートリンクの使用方法をご確認ください"^]
+Azureのコネクタは、管理するCloud Volumes ONTAP システムと同じAzureリージョンまたはに導入する必要があります https://["Azure リージョンペア"^] Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。 https://["Cloud Volumes ONTAP での Azure プライベートリンクの使用方法をご確認ください"^]
 
 * Google Cloud
 +
@@ -218,11 +218,11 @@ link:task-managing-connectors.html["コネクタを切り替える方法につ�
 . link:task-managing-connectors.html["別のコネクタに切り替えます"]。
 . 既存の作業環境を検出
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["既存のCloud Volumes ONTAP システムをBlueXPに追加します"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["ONTAP クラスタを検出"^]
+** https://["既存のCloud Volumes ONTAP システムをBlueXPに追加します"^]
+** https://["ONTAP クラスタを検出"^]
 
 
-. を設定します https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-storage-management.html["Capacity Management Mode （容量管理モード）"^]
+. を設定します https://["Capacity Management Mode （容量管理モード）"^]
 +
 メインコネクターのみ * オートマチックモード * に設定する必要があります。DR 目的で別のコネクタに切り替える場合は、必要に応じて容量管理モードを変更できます。
 

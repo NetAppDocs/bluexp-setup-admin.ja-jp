@@ -153,7 +153,7 @@ kms -key-path:: （オプション） KMS キーを追加してコネクタの�
 
 . コネクタインスタンスに接続されているホストから Web ブラウザを開き、次の URL を入力します。
 +
-https://_ipaddress_[]
+https://[]
 
 . ログイン後、コネクタを設定します。
 +
@@ -169,7 +169,7 @@ link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認く
 .結果
 これで、コネクタのインストールとBlueXPアカウントでのセットアップが完了しました。
 
-Webブラウザを開き、にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+Webブラウザを開き、にアクセスします https://["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
 
 --
 .手動インストール
@@ -208,7 +208,7 @@ unset https_proxy
 +
 これらのシステム変数を削除しないと、インストールは失敗します。
 
-. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
+. からConnectorソフトウェアをダウンロードします https://["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
 +
 ネットワークまたはクラウドで使用するための「オンライン」コネクタインストーラをダウンロードする必要があります。コネクタには別の「オフライン」インストーラが用意されていますが、プライベートモード展開でのみサポートされています。
 
@@ -257,7 +257,7 @@ chmod +x OnCommandCloudManager-<version>
 
 . Connector 仮想マシンに接続されているホストから Web ブラウザを開き、次の URL を入力します。
 +
-https://_ipaddress_[]
+https://[]
 
 . ログイン後、コネクタを設定します。
 +

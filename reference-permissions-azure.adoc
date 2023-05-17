@@ -86,7 +86,6 @@ Azure MarketplaceからConnectorを導入する場合、またはLinuxホスト�
                     "Microsoft.Storage/storageAccounts/delete",
                     "Microsoft.Storage/storageAccounts/write",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/read",
-                    "Microsoft.Storage/storageAccounts/blobServices/containers/write",
                     "Microsoft.Storage/storageAccounts/listAccountSas/action",
                     "Microsoft.Storage/usages/read",
                     "Microsoft.Compute/snapshots/write",
@@ -161,9 +160,10 @@ Azure MarketplaceからConnectorを導入する場合、またはLinuxホスト�
                     "Microsoft.Synapse/workspaces/firewallRules/read",
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
-                    "Microsoft.Network/publicIPAddresses/delete",
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
-                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
+                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+                    "Microsoft.Compute/images/write",
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -226,8 +226,6 @@ Azure MarketplaceからConnectorを導入する場合、またはLinuxホスト�
 * Microsoft.Network/networkInterfaces/delete
 * Microsoft.Network/networkSecurityGroups/delete
 * microsoft.Resources/Deployments/delete
-* Microsoft.Network/publicIPAddresses/delete
-* microsoft.Storage/storageAccounts/blobServices/container/write
 * microsoft.ManagedIdentity/userAssignedIdentities/assign/action
 
 
@@ -443,7 +441,10 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 | microsoft.Resources/Deployments/delete | はい。 | いいえ | いいえ 
 
 
-| VHDからの導入を有効にします | Microsoft.Compute/images/read | はい。 | いいえ | いいえ 
+.2+| VHDからの導入を有効にします | Microsoft.Compute/images/read | はい。 | いいえ | いいえ 
+
+
+| Microsoft.Compute/images/write | はい。 | いいえ | いいえ 
 
 
 .4+| ターゲットサブネットのネットワークインターフェイスを作成および管理します | Microsoft.Network/networkInterfaces/read | はい。 | はい。 | いいえ 
@@ -590,7 +591,7 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 | "Microsoft.MarketplaceOrdering/offerTypes/publisher/offers/plans/agrees/write | はい。 | はい。 | いいえ 
 
 
-.8+| HAペアのロードバランサを管理します | Microsoft.Network/loadBalancers/read | はい。 | はい。 | いいえ 
+.9+| HAペアのロードバランサを管理します | Microsoft.Network/loadBalancers/read | はい。 | はい。 | いいえ 
 
 
 | Microsoft.Network/loadBalancers/write | はい。 | いいえ | いいえ 
@@ -603,6 +604,9 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 
 
 | Microsoft.Network/loadBalancers/backendAddressPools/join/action | はい。 | いいえ | いいえ 
+
+
+| Microsoft.Network/loadBalancers/frontendIPConfigurations/read | はい。 | はい。 | いいえ 
 
 
 | Microsoft.Network/loadBalancers/loadBalancingRules/read | はい。 | いいえ | いいえ 
@@ -756,7 +760,6 @@ BlueXP階層化のセットアップ時に、コネクタは次のAPI要求を�
 このコネクタは、次のAPI要求を日々の処理に送信します。
 
 * microsoft.Storage/storageAccounts/blobServices/container/read
-* microsoft.Storage/storageAccounts/blobServices/container/write
 * Microsoft。Storage/storageAccounts/managementPolicies/read
 * microsoft.StorageAccounts/managementPolicies/write
 * microsoft.Storage/storageAccounts/read
@@ -767,6 +770,22 @@ BlueXP階層化のセットアップ時に、コネクタは次のAPI要求を�
 == 変更ログ
 
 権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。
+
+
+
+=== 2023年5月12日
+
+次の権限はCloud Volumes ONTAP の管理に必要なため、JSONポリシーに追加されました。
+
+* Microsoft.Compute/images/write
+* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
+
+
+JSONポリシーから次の権限が削除されました。これらの権限は不要になりました。
+
+* microsoft.Storage/storageAccounts/blobServices/container/write
+* Microsoft.Network/publicIPAddresses/delete
+
 
 
 
@@ -791,27 +810,4 @@ JSONポリシーに次の権限が追加されました。
 +
 この権限はCloud Volumes ONTAP の導入に必要です。
 
-
-
-
-
-=== 2022年12月1日
-
-JSONポリシーに次の権限が追加されました。
-
-* microsoft.Storage/storageAccounts/blobServices/container/write
-+
-BlueXPのバックアップとリカバリとBlueXPの階層化を実行するには、この権限が必要です。
-
-* Microsoft.Network/publicIPAddresses/delete
-+
-この権限は、BlueXPのバックアップとリカバリに必要です。
-
-
-
-JSONポリシーから次の権限が削除されました。これらの権限は不要になりました。
-
-* Microsoft.Compute/images/write
-* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
-* microsoft.Storage/storageAccounts/regeneratekey/action
 

@@ -32,7 +32,7 @@ summary: コネクタは、BlueXPのWebベースのコンソールやAzure Marke
 
 * コネクタ仮想マシンでその認証方法を使用する場合は、SSH公開鍵。認証方法のもう1つのオプションは、パスワードを使用することです。
 +
-https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["AzureでLinux VMに接続する方法について説明します"^]
+https://["AzureでLinux VMに接続する方法について説明します"^]
 
 * BlueXPでコネクタ用のAzureロールを自動的に作成しない場合は、自分で作成する必要があります link:reference-permissions-azure.html["このページのポリシーを使用する"]。
 +
@@ -79,7 +79,7 @@ link:task-set-up-permissions-azure.html["サービスプリンシパルのこれ
 仮想マシンの認証方法には、パスワードまたはSSH公開鍵を使用できます。
 
 +
-https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["AzureでLinux VMに接続する方法について説明します"^]
+https://["AzureでLinux VMに接続する方法について説明します"^]
 
 ** *詳細*:インスタンスの名前を入力し、タグを指定して、必要な権限を持つ新しいロールを作成するか、またはで設定した既存のロールを選択するかを選択します link:reference-permissions-azure.html["必要な権限"]。
 +
@@ -108,7 +108,7 @@ link:reference-ports-azure.html["Azureのセキュリティグループルール
 .手順
 . Azure MarketplaceのNetApp Connector VMのページに移動します。
 +
-https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Azure Marketplaceの一般企業向けページ"^]
+https://["Azure Marketplaceの一般企業向けページ"^]
 
 . [* Get it Now* ( 今すぐ取得 )] をクリックし、 [* Continue * ( 続行 )] をクリックします。
 . Azure ポータルで、 * Create * をクリックし、手順に従って仮想マシンを設定します。
@@ -127,7 +127,7 @@ link:reference-ports-azure.html["Azureのセキュリティグループルール
 
 ** [Management]*で、[On]*を選択して、コネクターVMの*[System assigned managed identity]*を有効にします。
 +
-管理対象の ID を使用すると、 Connector 仮想マシンはクレデンシャルを指定せずに自身を Azure Active Directory に識別できるため、この設定は重要です。完了したら、作成したカスタムロールを割り当てる必要があります https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Azure リソース用の管理対象 ID の詳細については、こちらをご覧ください"^]。
+管理対象の ID を使用すると、 Connector 仮想マシンはクレデンシャルを指定せずに自身を Azure Active Directory に識別できるため、この設定は重要です。完了したら、作成したカスタムロールを割り当てる必要があります https://["Azure リソース用の管理対象 ID の詳細については、こちらをご覧ください"^]。
 
 
 
@@ -137,7 +137,7 @@ link:reference-ports-azure.html["Azureのセキュリティグループルール
 
 . Connector 仮想マシンに接続されているホストから Web ブラウザを開き、次の URL を入力します。
 +
-https://_ipaddress_[]
+https://[]
 
 . ログイン後、コネクタを設定します。
 +
@@ -169,7 +169,7 @@ link:task-provide-permissions-azure.html["以前に設定した権限をBlueXP�
 * プロキシサーバがHTTPSを使用している場合、またはプロキシが代行受信プロキシの場合は、CA署名証明書。
 * カスタムロールを使用して必要なAzure権限を指定できるように、AzureのVMで有効になっている管理対象ID。
 +
-https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azureのドキュメント：Azureポータルを使用して、VM上のAzureリソースの管理IDを設定します"^]
+https://["Microsoft Azureのドキュメント：Azureポータルを使用して、VM上のAzureリソースの管理IDを設定します"^]
 
 
 
@@ -198,7 +198,7 @@ unset https_proxy
 +
 これらのシステム変数を削除しないと、インストールは失敗します。
 
-. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
+. からConnectorソフトウェアをダウンロードします https://["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
 +
 ネットワークまたはクラウドで使用するための「オンライン」コネクタインストーラをダウンロードする必要があります。コネクタには別の「オフライン」インストーラが用意されていますが、プライベートモード展開でのみサポートされています。
 
@@ -247,7 +247,7 @@ chmod +x OnCommandCloudManager-<version>
 
 . Connector 仮想マシンに接続されているホストから Web ブラウザを開き、次の URL を入力します。
 +
-https://_ipaddress_[]
+https://[]
 
 . ログイン後、コネクタを設定します。
 +

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-subscribe-standard-mode.html 
 keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
-summary: クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、時間単位または年間契約でBlueXPサービスの料金をお支払いできます。ネットアップからライセンスを購入した場合は、PAYGOサービスにもサブスクライブする必要があります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。 
+summary: クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、時間単位または年間契約でBlueXPサービスの料金をお支払いできます。ネットアップからライセンスを購入した場合は、マーケットプレイスのサービスにサブスクライブする必要もあります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。 
 ---
 = BlueXPにサブスクライブ（Standardモード）
 :hardbreaks:
@@ -14,7 +14,18 @@ summary: クラウドプロバイダのマーケットプレイスからBlueXP�
 
 
 [role="lead"]
-クラウドプロバイダのマーケットプレイスからBlueXPにサブスクライブして、BlueXPサービスの料金を時間単位（PAYGO）または年間契約でお支払いください。ネットアップからライセンス（BYOL）を購入した場合は、PAYGOサービスにもサブスクライブする必要があります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。
+クラウドプロバイダのマーケットプレイスからBlueXPにサブスクライブして、BlueXPサービスの料金を時間単位（PAYGO）または年間契約でお支払いください。ネットアップからライセンスを購入した場合（BYOL）は、マーケットプレイスのサービスにも登録する必要があります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。
+
+マーケットプレイスのサブスクリプションでは、次のBlueXPサービスの料金が請求されます。
+
+* バックアップとリカバリ
+* 分類
+* Cloud Volumes ONTAP
+* 階層化
+
+
+.作業を開始する前に
+BlueXPにサブスクライブするには、コネクタに関連付けられているクラウドクレデンシャルにマーケットプレイスのサブスクリプションを関連付けます。「標準モードで開始」ワークフローに従っている場合は、コネクタがすでにあるはずです。詳細については、を参照してください link:task-quick-start-standard-mode.html["BlueXPを標準モードでクイックスタートできます"]。
 
 [role="tabbed-block"]
 ====
@@ -23,6 +34,9 @@ summary: クラウドプロバイダのマーケットプレイスからBlueXP�
 .手順
 . BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
 . 一連の資格情報のアクションメニューをクリックし、 * 契約の関連付け * を選択します。
++
+コネクタに関連付けられているクレデンシャルを選択する必要があります。BlueXPに関連付けられているクレデンシャルにMarketplaceサブスクリプションを関連付けることはできません。
+
 +
 image:screenshot_associate_subscription.png["一連の既存のクレデンシャルに対する操作メニューのスクリーンショット。"]
 
@@ -63,6 +77,9 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 .手順
 . BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
 . 一連の資格情報のアクションメニューをクリックし、 * 契約の関連付け * を選択します。
++
+コネクタに関連付けられているクレデンシャルを選択する必要があります。BlueXPに関連付けられているクレデンシャルにMarketplaceサブスクリプションを関連付けることはできません。
+
 +
 image:screenshot_azure_add_subscription.png["一連の既存のクレデンシャルに対する操作メニューのスクリーンショット。"]
 
@@ -117,7 +134,7 @@ image:screenshot_gcp_associate.gif["Google Cloud の資格情報に対して選�
 NOTE: 次の手順を実行する前に、Google CloudアカウントとBlueXPログインの両方に課金管理者権限があることを確認してください。
 
 +
-.. にリダイレクトされたら https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^]をクリックし、上部のナビゲーションメニューで正しいプロジェクトが選択されていることを確認します。
+.. にリダイレクトされたら https://["Google Cloud MarketplaceのNetApp BlueXPページ"^]をクリックし、上部のナビゲーションメニューで正しいプロジェクトが選択されていることを確認します。
 +
 image:screenshot_gcp_cvo_marketplace.png["Google CloudのCloud Volumes ONTAP Marketplaceページのスクリーンショット。"]
 
@@ -137,7 +154,7 @@ image:screenshot_gcp_marketplace_register.png["登録ポップアップのスク
 .. [サブスクリプションの割り当て*]ページで次の手順を実行します。
 +
 
-NOTE: 組織の誰かが請求アカウントからNetApp BlueXPサブスクリプションにすでに登録している場合は、にリダイレクトされます https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP WebサイトのCloud Volumes ONTAP ページ"^] 代わりに、予想外の場合は、ネットアップの営業チームにお問い合わせください。Google では、 1 つの Google 請求アカウントにつき 1 つのサブスクリプションのみが有効です。
+NOTE: 組織の誰かが請求アカウントからNetApp BlueXPサブスクリプションにすでに登録している場合は、にリダイレクトされます https://["BlueXP WebサイトのCloud Volumes ONTAP ページ"^] 代わりに、予想外の場合は、ネットアップの営業チームにお問い合わせください。Google では、 1 つの Google 請求アカウントにつき 1 つのサブスクリプションのみが有効です。
 
 +
 *** このサブスクリプションを関連付けるBlueXPアカウントを選択します。
@@ -166,3 +183,10 @@ image:screenshot_gcp_associate.gif["サブスクリプションの割り当て�
 
 --
 ====
+.関連リンク
+* https://["Cloud Volumes ONTAP のBYOL容量ベースライセンスを管理します"^]
+* https://["BlueXPデータサービスのBYOLライセンスを管理します"^]
+* https://["AWSのクレデンシャルとBlueXPのサブスクリプションを管理します"]
+* https://["Azureの資格情報とBlueXPのサブスクリプションを管理します"]
+* https://["BlueXPのGoogle Cloudクレデンシャルとサブスクリプションを管理します"]
+

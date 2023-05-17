@@ -44,7 +44,7 @@ BlueXPでは、VPCにConnectorインスタンスを導入する前にAWSで認�
 
 どちらのオプションを使用する場合も、最初にIAMポリシーを作成します。このポリシーには、BlueXPからAWSでConnectorインスタンスを起動するために必要な権限のみが含まれています。
 
-必要に応じて、IAMを使用してIAMポリシーを制限できます `Condition` 要素（Element）： https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWSドキュメント：Condition要素"^]
+必要に応じて、IAMを使用してIAMポリシーを制限できます `Condition` 要素（Element）： https://["AWSドキュメント：Condition要素"^]
 
 
 TIP: BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、コネクタでAWSリソースを管理できるようになります。
@@ -54,6 +54,9 @@ TIP: BlueXPでコネクタを作成すると、コネクタインスタンスに
 . [*Policies]>[Create policy*]をクリックします。
 . [*JSON]をクリックします。
 . 次のポリシーをコピーして貼り付けます。
++
+なお、このポリシーには、BlueXPからAWSでコネクタインスタンスを起動するために必要な権限のみが含まれています。 link:reference-permissions-aws.html["コネクタインスタンスに必要な表示権限"]。
+
 +
 [source, json]
 ----
@@ -249,8 +252,8 @@ AWSの独自のLinuxホストにコネクタソフトウェアを手動でイン
 
 . IAMユーザにポリシーを適用します。
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS のドキュメント：「 Creating IAM Roles"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
+** https://["AWS のドキュメント：「 Creating IAM Roles"^]
+** https://["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
 
 
 . コネクタのインストール後にBlueXPに追加できるアクセスキーがユーザに割り当てられていることを確認します。

@@ -24,7 +24,7 @@ link:concept-netapp-accounts.html["BlueXPアカウントの仕組みをご紹介
 
 API 要求を送信してアカウント設定を管理する場合は、 _Tenancy _API を使用する必要があります。このAPIは、Cloud Volumes ONTAP 作業環境の作成と管理に使用するBlueXP APIとは異なります。
 
-https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["テナンシー API のエンドポイントを表示します"^]
+https://["テナンシー API のエンドポイントを表示します"^]
 
 
 
@@ -39,7 +39,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["�
 ユーザをBlueXPアカウントに関連付けて、BlueXPで作業環境を作成、管理できるようにします。
 
 .手順
-. ユーザーがまだ行っていない場合は、にアクセスするようにユーザーに依頼します https://bluexp.netapp.com/["NetApp BlueXPのWebサイト"^] 登録してください。
+. ユーザーがまだ行っていない場合は、にアクセスするようにユーザーに依頼します https://["NetApp BlueXPのWebサイト"^] 登録してください。
 . BlueXPの上部で、*[Account]*ドロップダウンを選択します。
 +
 image:screenshot-account-settings-menu.png["BlueXPの上部バナーにある「アカウント設定」オプションを示すスクリーンショット。"]
@@ -148,9 +148,9 @@ image:screenshot-manage-account-settings.png["「アカウント」ドロップ�
 
 === サービスアカウントのベアラートークンを取得します
 
-への API 呼び出しを実行するため https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["テナンシー API"^]サービスアカウントのベアラートークンを取得する必要があります。
+への API 呼び出しを実行するため https://["テナンシー API"^]サービスアカウントのベアラートークンを取得する必要があります。
 
-https://docs.netapp.com/us-en/cloud-manager-automation/platform/create_service_token.html["サービスアカウントトークンの作成方法について説明します"^]
+https://["サービスアカウントトークンの作成方法について説明します"^]
 
 
 

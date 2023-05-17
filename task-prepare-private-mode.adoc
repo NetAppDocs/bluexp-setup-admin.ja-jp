@@ -17,7 +17,7 @@ summary: BlueXPをプライベートモードで導入する前に、環境を�
 BlueXPをプライベートモードで導入する前に、環境を準備します。たとえば、ホストの要件の確認、ネットワークの準備、権限の設定などが必要になります。
 
 
-NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial Cloud Services（C2S）環境"^] その後、コネクタの準備、取り付け、およびCloud Volumes ONTAP の起動方法を説明する別の指示に従う必要があります。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["AWS C2S環境でCloud Volumes ONTAP を使用する方法をご確認ください"^]
+NOTE: でBlueXPを使用する場合は https://["AWS Commercial Cloud Services（C2S）環境"^] その後、コネクタの準備、取り付け、およびCloud Volumes ONTAP の起動方法を説明する別の指示に従う必要があります。 https://["AWS C2S環境でCloud Volumes ONTAP を使用する方法をご確認ください"^]
 
 
 
@@ -64,7 +64,7 @@ Connector は、これらのオペレーティングシステムの英語版で�
 ハイパーバイザー:: Ubuntu、CentOS、またはRed Hat Enterprise Linuxの実行が認定されているベアメタルまたはホスト型のハイパーバイザーが必要です。
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
+https://["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
 
 --
 CPU:: 4 コアまたは 4 個の vCPU
@@ -74,12 +74,12 @@ Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタン�
 Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。
 +
 --
-このコネクタは、OSがサポートされているVMインスタンス上のGoogle Cloudでサポートされます https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["シールドVM機能"^]
+このコネクタは、OSがサポートされているVMインスタンス上のGoogle Cloudでサポートされます https://["シールドVM機能"^]
 
 --
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
 /var のディスク領域:: 20GiB のスペースが必要です
-Docker Engine の略:: Connectorをインストールする前に、ホストにDocker Engineバージョン19.3.1以降が必要です。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+Docker Engine の略:: Connectorをインストールする前に、ホストにDocker Engineバージョン19.3.1以降が必要です。 https://["インストール手順を確認します"^]
 
 
 
@@ -115,7 +115,7 @@ AWS サービス（ amazonaws.com ）：
 * セキュリティトークンサービス（ STS ）
 * シンプルなストレージサービス（ S3 ）
 
-| AWSでリソースを管理できます。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWSのドキュメントを参照してください"^] 
+| AWSでリソースを管理できます。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://["詳細については、AWSのドキュメントを参照してください"^] 
 
 
 | https://management.azure.com https://login.microsoftonline.com https://blob.core.windows.net https://core.windows.net | Azureパブリックリージョン内のリソースを管理します。 
@@ -152,7 +152,7 @@ image:screenshot-azure-sku.png["Azureで新しいIPアドレスを作成する�
 
 Standard SKUのIPアドレスを代わりに使用する場合、BlueXPでは、パブリックIPではなくコネクタの_private_IPアドレスが使用されます。BlueXPコンソールへのアクセスに使用しているマシンがそのプライベートIPアドレスにアクセスできない場合、BlueXPコンソールからの操作が失敗します。
 
-https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azureのドキュメント：パブリックIP SKU"^]
+https://["Azureのドキュメント：パブリックIP SKU"^]
 
 
 
@@ -223,8 +223,8 @@ IAMユーザの権限とアクセスキーを設定します。コネクタを�
 
 . IAMユーザにポリシーを適用します。
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS のドキュメント：「 Creating IAM Roles"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
+** https://["AWS のドキュメント：「 Creating IAM Roles"^]
+** https://["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
 
 
 . コネクタのインストール後にBlueXPに追加できるアクセスキーがユーザに割り当てられていることを確認します。
@@ -241,7 +241,7 @@ IAMユーザの権限とアクセスキーを設定します。コネクタを�
 .手順
 . カスタムロールを使用して必要なAzure権限を提供できるように、コネクタをインストールするVMでシステム割り当ての管理IDを有効にします。
 +
-https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azureのドキュメント：Azureポータルを使用して、VM上のAzureリソースの管理IDを設定します"^]
+https://["Microsoft Azureのドキュメント：Azureポータルを使用して、VM上のAzureリソースの管理IDを設定します"^]
 
 . の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
 . 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
@@ -264,7 +264,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
 
 +
-.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
+.. 開始 https://["Azure Cloud Shell の略"^] Bash 環境を選択します。
 .. JSON ファイルをアップロードします。
 +
 image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
@@ -290,7 +290,7 @@ Azure Active Directoryでサービスプリンシパルを作成してセット�
 .ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
 . Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
 +
-詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
+詳細については、を参照してください https://["Microsoft Azure のドキュメント：「 Required permissions"^]。
 
 . Azure ポータルで、 * Azure Active Directory * サービスを開きます。
 +
@@ -406,7 +406,7 @@ BlueXPでAzure ADの認証に使用するクライアントシークレットが
 gcloud iam roles create connector --project=myproject --file=connector.yaml
 ----
 +
-https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
+https://["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
 
 
 
@@ -417,7 +417,7 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 .. 作成したロールを選択します。
 .. 残りの手順を完了してロールを作成します。
 +
-https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloudドキュメント：サービスアカウントの作成"^]
+https://["Google Cloudドキュメント：サービスアカウントの作成"^]
 
 
 
@@ -435,7 +435,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 Google CloudにCloud Volumes ONTAP を導入するには、いくつかのAPIが必要です。
 
 .ステップ
-. https://cloud.google.com/apis/docs/getting-started#enabling_apis["プロジェクトで次の Google Cloud API を有効にします"^]
+. https://["プロジェクトで次の Google Cloud API を有効にします"^]
 +
 ** Cloud Deployment Manager V2 API
 ** クラウドロギング API

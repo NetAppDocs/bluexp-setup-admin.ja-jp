@@ -91,10 +91,10 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 .次の手順
 新しいCloud Volumes ONTAP システムの作成時、既存のCloud Volumes ONTAP システムの登録時、およびサポート登録時にアカウントを選択できるようになりました。
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS での Cloud Volumes ONTAP の起動"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure で Cloud Volumes ONTAP を起動します"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Google Cloud で Cloud Volumes ONTAP を起動しています"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html["従量課金制システムの登録"^]
+* https://["AWS での Cloud Volumes ONTAP の起動"^]
+* https://["Azure で Cloud Volumes ONTAP を起動します"^]
+* https://["Google Cloud で Cloud Volumes ONTAP を起動しています"^]
+* https://["従量課金制システムの登録"^]
 
 
 
@@ -104,7 +104,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 2021 年 11 月以降、ネットアップはサポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用します。この更新プログラムの結果、以前に追加した既存のアカウントの資格情報を更新するように求められます。
 
 .手順
-. まだ行っていない場合は、 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Microsoft Azure Active Directory B2Cアカウントを作成します。このアカウントは現在のBlueXPアカウントにリンクされます"^]。
+. まだ行っていない場合は、 https://["Microsoft Azure Active Directory B2Cアカウントを作成します。このアカウントは現在のBlueXPアカウントにリンクされます"^]。
 . BlueXPコンソールの右上で、[ヘルプ]アイコンを選択し、*[サポート]*を選択します。
 . [NSS Management]*を選択します。
 . 更新するNSSアカウントの*[アカウントの更新]*を選択します。

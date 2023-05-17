@@ -38,7 +38,7 @@ image:screenshot_gcp_associate.gif["Google Cloud の資格情報に対して選�
 NOTE: 次の手順を実行する前に、Google CloudアカウントとBlueXPログインの両方に課金管理者権限があることを確認してください。
 
 +
-.. にリダイレクトされたら https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^]をクリックし、上部のナビゲーションメニューで正しいプロジェクトが選択されていることを確認します。
+.. にリダイレクトされたら https://["Google Cloud MarketplaceのNetApp BlueXPページ"^]をクリックし、上部のナビゲーションメニューで正しいプロジェクトが選択されていることを確認します。
 +
 image:screenshot_gcp_cvo_marketplace.png["Google CloudのCloud Volumes ONTAP Marketplaceページのスクリーンショット。"]
 
@@ -58,7 +58,7 @@ image:screenshot_gcp_marketplace_register.png["登録ポップアップのスク
 .. [サブスクリプションの割り当て*]ページで次の手順を実行します。
 +
 
-NOTE: 組織の誰かが請求アカウントからNetApp BlueXPサブスクリプションにすでに登録している場合は、にリダイレクトされます https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP WebサイトのCloud Volumes ONTAP ページ"^] 代わりに、予想外の場合は、ネットアップの営業チームにお問い合わせください。Google では、 1 つの Google 請求アカウントにつき 1 つのサブスクリプションのみが有効です。
+NOTE: 組織の誰かが請求アカウントからNetApp BlueXPサブスクリプションにすでに登録している場合は、にリダイレクトされます https://["BlueXP WebサイトのCloud Volumes ONTAP ページ"^] 代わりに、予想外の場合は、ネットアップの営業チームにお問い合わせください。Google では、 1 つの Google 請求アカウントにつき 1 つのサブスクリプションのみが有効です。
 
 +
 *** このサブスクリプションを関連付けるBlueXPアカウントを選択します。
@@ -92,7 +92,7 @@ image:screenshot_gcp_associate.gif["サブスクリプションの割り当て�
 Google Cloud MarketplaceからBlueXPにサブスクライブすると、権限が正しくない場合やBlueXP Webサイトへのリダイレクトを誤って実行しなかった場合に、断片化されることがあります。この場合は、次の手順に従ってサブスクリプションプロセスを完了してください。
 
 .手順
-. に移動します https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^] 注文の状態を確認します。ページに「プロバイダで管理」と表示されている場合は、下にスクロールして「注文の管理」を選択します。
+. に移動します https://["Google Cloud MarketplaceのNetApp BlueXPページ"^] 注文の状態を確認します。ページに「プロバイダで管理」と表示されている場合は、下にスクロールして「注文の管理」を選択します。
 +
 image:screenshot_gcp_manage_orders.png["配信登録後のマーケットプレイスページのスクリーンショット"]
 

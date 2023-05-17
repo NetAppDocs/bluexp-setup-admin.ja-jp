@@ -27,7 +27,7 @@ BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカ�
 * BlueXPから直接、標準のAWSリージョンでコネクタを作成すると、BlueXPによって自動的にそのコネクタにポリシーが適用されます。この場合、何も行う必要はありません。
 * AWS Marketplaceからコネクタを導入する場合、Linuxホストにコネクタを手動でインストールする場合、またはBlueXPにAWSクレデンシャルを追加する場合は、ポリシーを自分で設定する必要があります。
 * また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。
-* 必要に応じて、IAMを使用してIAMポリシーを制限できます `Condition` 要素（Element）： https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWSドキュメント：Condition要素"^]
+* 必要に応じて、IAMを使用してIAMポリシーを制限できます `Condition` 要素（Element）： https://["AWSドキュメント：Condition要素"^]
 * これらのポリシーの使用手順については、次のページを参照してください。
 +
 ** link:task-set-up-permissions-aws.html["AWSでコネクタをインストールするための権限を設定する（標準モード）"]

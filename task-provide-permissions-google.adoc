@@ -23,7 +23,7 @@ BlueXPから直接コネクタを導入した場合、またはgcloudを使用�
 .手順
 . Google Cloudポータルに移動し、コネクタVMインスタンスにサービスアカウントを割り当てます。
 +
-https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloudドキュメント：インスタンスのサービスアカウントとアクセス範囲の変更"^]
+https://["Google Cloudドキュメント：インスタンスのサービスアカウントとアクセス範囲の変更"^]
 
 . Cloud Volumes ONTAP を他のプロジェクトに導入する場合は、BlueXPロールを持つサービスアカウントをそのプロジェクトに追加してアクセスを許可します。プロジェクトごとにこの手順を繰り返す必要があります。
 

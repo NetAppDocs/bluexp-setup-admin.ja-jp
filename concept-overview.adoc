@@ -25,54 +25,54 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 ストレージ:: AWS、Azure、Google Cloud、オンプレミスのいずれであっても、ストレージを検出、導入、管理できます。
 +
 --
-* をセットアップして使用します https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 複数のクラウドにわたって効率的なマルチプロトコルデータ管理を実現します。
+* をセットアップして使用します https://["Cloud Volumes ONTAP"^] 複数のクラウドにわたって効率的なマルチプロトコルデータ管理を実現します。
 * クラウドファイルストレージサービスをセットアップして使用
 +
-** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files の特長"^]
-** https://bluexp.netapp.com/fsx-for-ontap["ONTAP 対応の Amazon FSX"^]
-** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service for Google Cloud"^]
+** https://["Azure NetApp Files の特長"^]
+** https://["ONTAP 対応の Amazon FSX"^]
+** https://["Cloud Volumes Service for Google Cloud"^]
 
 
-* 検出と管理 https://bluexp.netapp.com/netapp-on-premises["オンプレミスストレージ"^]：
+* 検出と管理 https://["オンプレミスストレージ"^]：
 +
 ** Eシリーズシステム
 ** ONTAP クラスタ
 ** StorageGRID システム
 
 
-* オーケストレーションと保護 https://bluexp.netapp.com/solutions/kubernetes["Kubernetesの永続的データ"^]
+* オーケストレーションと保護 https://["Kubernetesの永続的データ"^]
 
 
 --
 モビリティ:: データを同期、コピー、階層化、キャッシュすることで、必要な場所にデータを移動できます。
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["コピーと同期"^]
-* https://bluexp.netapp.com/global-file-cache["エッジキャッシュ"^]
-* https://bluexp.netapp.com/cloud-tiering["階層化"^]
+* https://["コピーと同期"^]
+* https://["エッジキャッシュ"^]
+* https://["階層化"^]
 
 
 --
 保護:: 自動化された保護メカニズムを使用して、データ損失、計画外停止、ランサムウェアなどのサイバー脅威からデータを保護します。
 +
 --
-* https://bluexp.netapp.com/cloud-backup["バックアップとリカバリ"^]
-* https://bluexp.netapp.com/replication["レプリケーション"^]
+* https://["バックアップとリカバリ"^]
+* https://["レプリケーション"^]
 
 
 --
 分析と管理:: ツールを使用して、データストレージとインフラを監視、マッピング、最適化できます。
 +
 --
-* https://bluexp.netapp.com/netapp-cloud-data-sense["分類"^]
-* https://bluexp.netapp.com/digital-advisor["デジタルアドバイザ"^]
-* https://bluexp.netapp.com/ransomware-protection["ランサムウェアからの保護"^]
+* https://["分類"^]
+* https://["デジタルアドバイザ"^]
+* https://["ランサムウェアからの保護"^]
 
 
 --
 
 
-https://bluexp.netapp.com/["BlueXPを活用して組織を支援する方法をご紹介します"^]
+https://["BlueXPを活用して組織を支援する方法をご紹介します"^]
 
 
 
@@ -84,7 +84,7 @@ BlueXPを使用すると、クラウドストレージを管理し、Amazon Web 
 
 == コスト
 
-BlueXPの価格は、使用する予定のサービスによって異なります。 https://bluexp.netapp.com/pricing["BlueXPの価格設定についてはこちらをご覧ください"^]
+BlueXPの価格は、使用する予定のサービスによって異なります。 https://["BlueXPの価格設定についてはこちらをご覧ください"^]
 
 
 
@@ -96,7 +96,7 @@ BlueXPには、SaaSレイヤを通じて提供されるWebベースのコンソ�
 
 === ソフトウェアサービス
 
-BlueXPには、からアクセスできます https://console.bluexp.netapp.com["Webベースのコンソール"^] API を使用できます。このSaaSエクスペリエンスでは、リリースされた最新機能に自動的にアクセスし、BlueXPアカウントとコネクタを簡単に切り替えることができます。
+BlueXPには、からアクセスできます https://["Webベースのコンソール"^] API を使用できます。このSaaSエクスペリエンスでは、リリースされた最新機能に自動的にアクセスし、BlueXPアカウントとコネクタを簡単に切り替えることができます。
 
 
 
@@ -128,4 +128,4 @@ link:concept-modes.html["BlueXPの導入モードの詳細については、こ�
 
 独立した公認会計士事務所およびサービス監査人がBlueXPを調査し、該当するトラストサービスの基準に基づいてSOC 2 Type 2レポートを達成したことを確認しました。
 
-https://www.netapp.com/company/trust-center/compliance/soc-2/["ネットアップの SOC 2 レポートをご覧ください"^]
+https://["ネットアップの SOC 2 レポートをご覧ください"^]

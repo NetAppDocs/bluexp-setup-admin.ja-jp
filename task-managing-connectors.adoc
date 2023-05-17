@@ -80,19 +80,19 @@ image:screenshot-connector-autosupport.png["サポートダッシュボードの
 AWS:: AWS でコネクタインスタンスを作成する際に、 AWS のアクセスキーとシークレットキーを指定しました。このキーペアを使用して、 SSH でインスタンスに接続できます。
 +
 --
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs ： Linux インスタンスに接続します"^]
+https://["AWS Docs ： Linux インスタンスに接続します"^]
 
 --
 Azure:: Azure で Connector VM を作成する際に、パスワードまたは SSH 公開鍵を使用して認証するように選択します。選択した認証方式を使用して VM に接続します。
 +
 --
-https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure Docs ： SSH を使用して VM を接続します"^]
+https://["Azure Docs ： SSH を使用して VM を接続します"^]
 
 --
 Google Cloud:: Google Cloud でコネクタを作成するときに認証方法を指定することはできません。ただし、 Google Cloud Console または Google Cloud CLI （ gcloud ）を使用して Linux VM インスタンスに接続することができます。
 +
 --
-https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs ： Linux VM に接続します"^]
+https://["Google Cloud Docs ： Linux VM に接続します"^]
 
 --
 
@@ -109,7 +109,7 @@ BlueXPをプライベートモードで使用している場合は、NetApp Supp
 NOTE: インターネットにアクセスできるホストでは、ソフトウェアの更新を取得するためのアウトバウンドインターネットアクセスがある限り、コネクタはソフトウェアを自動的に最新バージョンに更新します。
 
 .手順
-. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]。
+. からConnectorソフトウェアをダウンロードします https://["ネットアップサポートサイト"^]。
 . インストーラを Linux ホストにコピーします。
 . スクリプトを実行する権限を割り当てます。
 +
@@ -192,7 +192,7 @@ _maxDownloadSessions_ の値は 1 または 1 より大きい任意の整数で�
 
 
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["/occm/config API 呼び出しの詳細を確認してください"^]
+https://["/occm/config API 呼び出しの詳細を確認してください"^]
 
 
 

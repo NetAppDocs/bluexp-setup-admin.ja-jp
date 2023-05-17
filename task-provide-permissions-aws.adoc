@@ -35,7 +35,7 @@ link:task-set-up-permissions-aws.html["これらの権限の設定方法につ�
 
 
 .結果
-BlueXPに、AWSでユーザに代わって操作を実行するために必要な権限が付与されました。にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+BlueXPに、AWSでユーザに代わって操作を実行するために必要な権限が付与されました。にアクセスします https://["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
 
 --
 .AWSアクセスキー
@@ -59,7 +59,7 @@ image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設�
 
 
 .結果
-BlueXPに、AWSでユーザに代わって操作を実行するために必要な権限が付与されました。にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+BlueXPに、AWSでユーザに代わって操作を実行するために必要な権限が付与されました。にアクセスします https://["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
 
 --
 ====

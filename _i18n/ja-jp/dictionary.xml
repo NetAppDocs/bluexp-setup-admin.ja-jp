@@ -1810,7 +1810,6 @@
   <block id="ac692d638162a1dc479fa6a76fb4e114" category="list-text">Microsoft.Compute/images/write</block>
   <block id="61d40b12dddcd9e571bbe7a89b0fbae8" category="list-text">Microsoft.Network/loadBalancers/backendAddressPools/join/action</block>
   <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
-  <block id="3af64a9cb34f4b06a9e496f1f6a05879" category="list-text">microsoft.Storage/storageAccounts/regeneratekey/action</block>
   <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、BlueXPで使用できます。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することはできますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">サポート登録ページでアカウントIDのシリアル番号を確認します。</block>
@@ -1891,7 +1890,6 @@
   <block id="a5b807c71b066c1d33685818cfa2806e" category="list-text">Microsoft .Synapse/workspaces /privateEndpointConnectionsApproval / action</block>
   <block id="176944a9db0702558233e827d21e2f80" category="section-title">2023年1月5日</block>
   <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">この権限はCloud Volumes ONTAP の導入に必要です。</block>
-  <block id="1d37387582eb7a955869d3991c1dab28" category="section-title">2022年12月1日</block>
   <block id="5847199ca78e66e581ccd10e8e88b057" category="list-text">Azure CLIを使用してカスタムロールを作成します。</block>
   <block id="9fc1f8c97e791c3c5fa11f21f2c02740" category="list-text">オンプレミスのONTAP クラスタとBlueXPデータサービスの統合</block>
   <block id="184e70c253a2ad370c338775e7482497" category="list-text">オンプレミスのONTAP クラスタを直接検出</block>
@@ -3478,8 +3476,6 @@
   <block id="92b5575604daffe3be8d9be7e9eea83d" category="paragraph">BlueXPの修正措置を使用すると、コネクタはAzureリソースのタグを管理するために次のAPI要求を行います。</block>
   <block id="826e9938777ea2a0280d06c76218f7c7" category="paragraph">BlueXP階層化のセットアップ時に、コネクタは次のAPI要求を行います。</block>
   <block id="6bf8cf4546732effc9436b03e26fd3ab" category="paragraph">BlueXPの分類に「Microsoft.Storage/storageAccounts/delete」権限は不要になりました。</block>
-  <block id="56e09b1406b08f4b77233f0e7ec35a49" category="paragraph">BlueXPのバックアップとリカバリとBlueXPの階層化を実行するには、この権限が必要です。</block>
-  <block id="82492651a82d98ca83599fcd9c536c5d" category="paragraph">この権限は、BlueXPのバックアップとリカバリに必要です。</block>
   <block id="7cd82008ab5d353c3e33f87f49f92961" category="paragraph">コネクタは作業環境の作成には必要ありませんが、ボリュームの作成と管理、データのレプリケート、FSx for ONTAP とBlueXPの分類やコピーと同期などのサービスの統合を行う必要があります。</block>
   <block id="60404bf35ed1506b74cc9cfac99f0818" category="paragraph">Azure NetApp Files のセットアップと管理にコネクタは必要ありませんが、BlueXP分類を使用してAzure NetApp Files データをスキャンする場合はコネクタが必要です。</block>
   <block id="dd37176246e6abf3e559086afcadce82" category="paragraph">ほとんどすべての場合、コネクタなしでデジタルウォレットにライセンスを追加できます。</block>
@@ -3535,8 +3531,6 @@
   <block id="9345f603d48306b04203c8a77bc1ec43" category="summary">BlueXPアカウントの作成時には、管理者ユーザとワークスペースが1人だけ含まれます。ユーザーの追加、自動化を目的としたサービスアカウントの作成、ワークスペースの追加など、組織のニーズに合わせてアカウントを管理できます。</block>
   <block id="c695b69dfd48e2e642e9cf48a8d3e483" category="inline-link-macro">BlueXPアカウントの仕組みをご紹介します</block>
   <block id="401598fa995f1173bd8b6d805a3761d0" category="paragraph"><block ref="5fbf8d815c8a85b58ff259c4d5123e15" category="inline-link-macro-rx"></block>。</block>
-  <block id="30f0924c2b9792580922ba2bb932268a" category="summary">クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、時間単位または年間契約でBlueXPサービスの料金をお支払いできます。ネットアップからライセンスを購入した場合は、PAYGOサービスにもサブスクライブする必要があります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。</block>
-  <block id="28737e110ddfecf7a0ee4cf74dc11735" category="paragraph">クラウドプロバイダのマーケットプレイスからBlueXPにサブスクライブして、BlueXPサービスの料金を時間単位（PAYGO）または年間契約でお支払いください。ネットアップからライセンス（BYOL）を購入した場合は、PAYGOサービスにもサブスクライブする必要があります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。</block>
   <block id="771e18f961335c5b2ae045b3fefc3e80" category="summary">コネクタのAWSセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。BlueXPでコネクタを作成すると、BlueXPでこのセキュリティグループが自動的に作成されます。他のすべてのインストールオプションには、このセキュリティグループを設定する必要があります。</block>
   <block id="5dba83ec70c57d2bf0180e542772a92f" category="summary">BlueXPに登録すると、Webベースのコンソールからログインしてデータとストレージインフラの管理を開始できます。</block>
   <block id="ee88a6eb4f7c0c45ebac21244e471cac" category="summary">コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。たとえば、ターゲットネットワークへの接続が可能で、アウトバウンドのインターネットアクセスが利用可能であることを確認する必要があります。</block>
@@ -3622,4 +3616,22 @@
   <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">このイメージのオペレーティングシステムはUbuntu 22.04です。</block>
   <block id="ba5aa0edf5aca9e505ac70fc6e55851d" category="paragraph">BlueXPからコネクタを導入した場合は、次の点に注意してください。</block>
   <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、コネクタでAWSリソースを管理できるようになります。</block>
+  <block id="60a24477cd4bc1d96c88b21629d8cd7c" category="summary">クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、時間単位または年間契約でBlueXPサービスの料金をお支払いできます。ネットアップからライセンスを購入した場合は、マーケットプレイスのサービスにサブスクライブする必要もあります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。</block>
+  <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">クラウドプロバイダのマーケットプレイスからBlueXPにサブスクライブして、BlueXPサービスの料金を時間単位（PAYGO）または年間契約でお支払いください。ネットアップからライセンスを購入した場合（BYOL）は、マーケットプレイスのサービスにも登録する必要があります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。</block>
+  <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">マーケットプレイスのサブスクリプションでは、次のBlueXPサービスの料金が請求されます。</block>
+  <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">BlueXPにサブスクライブするには、コネクタに関連付けられているクラウドクレデンシャルにマーケットプレイスのサブスクリプションを関連付けます。「標準モードで開始」ワークフローに従っている場合は、コネクタがすでにあるはずです。詳細については、を参照してください <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>。</block>
+  <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">コネクタに関連付けられているクレデンシャルを選択する必要があります。BlueXPに関連付けられているクレデンシャルにMarketplaceサブスクリプションを関連付けることはできません。</block>
+  <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">Cloud Volumes ONTAP のBYOL容量ベースライセンスを管理します</block>
+  <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
+  <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">BlueXPデータサービスのBYOLライセンスを管理します</block>
+  <block id="49056b2966eae66ee0345bbf80d6b8d6" category="list-text"><block ref="49056b2966eae66ee0345bbf80d6b8d6" category="inline-link-rx"></block></block>
+  <block id="a4821774f3941403655492bb82c492ca" category="list-text"><block ref="a4821774f3941403655492bb82c492ca" category="inline-link-rx"></block></block>
+  <block id="75c14ab09fd89f95714034d50258a6cc" category="list-text"><block ref="75c14ab09fd89f95714034d50258a6cc" category="inline-link-rx"></block></block>
+  <block id="95c435337a307137f163f5eb04ac01ad" category="list-text"><block ref="95c435337a307137f163f5eb04ac01ad" category="inline-link-rx"></block></block>
+  <block id="ba66b75d479f2289bcf99d989de6e0b1" category="paragraph">マーケットプレイスのサブスクリプションでは、制限モードで次のBlueXPサービスの料金が請求されます。</block>
+  <block id="d639d0a55c1a57a909ac7ffab5f941c6" category="paragraph">BlueXPにサブスクライブするには、コネクタに関連付けられているクラウドクレデンシャルにマーケットプレイスのサブスクリプションを関連付けます。「制限モードで開始する」ワークフローに従っている場合は、コネクタがすでに用意されている必要があります。詳細については、を参照してください <block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block>。</block>
+  <block id="c9d7cb56a51bc183eea92ab6ecce2997" category="section-title">2023年5月12日</block>
+  <block id="c8e8c3b324197dbdad9e21df5a435a35" category="paragraph">次の権限はCloud Volumes ONTAP の管理に必要なため、JSONポリシーに追加されました。</block>
+  <block id="c7e8dc746d7263609202186d1ac75c65" category="inline-link-macro">コネクタインスタンスに必要な表示権限</block>
+  <block id="5a25157670ec0b889a34ec2b3905bc26" category="paragraph">なお、このポリシーには、BlueXPからAWSでコネクタインスタンスを起動するために必要な権限のみが含まれています。 <block ref="e99a10e3be28ba86573878700d04f6c5" category="inline-link-macro-rx"></block>。</block>
 </blocks>
