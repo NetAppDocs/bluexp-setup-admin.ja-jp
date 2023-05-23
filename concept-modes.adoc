@@ -41,7 +41,7 @@ BlueXPには、お客様のアカウントに次の導入モードが用意さ�
 プライベートモード:: BlueXP Connectorはオンプレミスまたはクラウド（セキュアなリージョン、ソブリンクラウドリージョン、商用リージョン）にインストールされ、BlueXP SaaSレイヤへの_no_connectivityがあります。BlueXPには、SaaSレイヤではなくコネクタからアクセスできるWebベースのコンソールからローカルにアクセスします。
 +
 --
-セキュアなリージョンには、が含まれます https://["AWS C2SおよびSC2S"^] および https://["Azure IL6"^]
+セキュアなリージョンには、が含まれます https://aws.amazon.com/federal/us-intelligence-community/["AWS C2SおよびSC2S"^] および https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
 
 --
 
@@ -108,7 +108,7 @@ APIエンドポイント:: API呼び出しは次のエンドポイントに対�
 認証:: 認証は、BlueXPのクラウドサービスでAuth0またはNetApp Support Site （NSS）ログインを使用して行われます。アイデンティティフェデレーションを使用できます。
 サポートされるBlueXPサービス:: ユーザはすべてのBlueXPサービスを利用できます。
 サポートされるライセンスオプション:: MarketplaceのサブスクリプションとBYOLはStandardモードでサポートされますが、サポートされるライセンスオプションは、使用しているBlueXPサービスによって異なります。使用可能なライセンスオプションの詳細については、各サービスのドキュメントを参照してください。
-標準モードで開始する方法:: にアクセスします https://["WebベースのBlueXPコンソール"^] 登録してください。
+標準モードで開始する方法:: にアクセスします https://console.bluexp.netapp.com["WebベースのBlueXPコンソール"^] 登録してください。
 +
 --
 link:task-quick-start-standard-mode.html["標準モードを使用する方法について説明します"]。
@@ -246,7 +246,7 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 | サポートされるサービス | 注： 
 
 
-| バックアップとリカバリ | AWSとAzureの商用リージョンでサポートされます。Google Cloudまたはではサポートされていません https://["AWS C2S / SC2S"^] または https://["Azure IL6"^] 
+| バックアップとリカバリ | AWSとAzureの商用リージョンでサポートされます。Google Cloudまたはではサポートされていません https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S / SC2S"^] または https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
 
 
 | Cloud Volumes ONTAP | インターネットにアクセスできないため、自動ソフトウェアアップグレード、AutoSupport 、AWSのコスト情報などの機能は使用できません。 
@@ -266,17 +266,17 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 | サポートされるサービス | 注： 
 
 
-| バックアップとリカバリ | オンプレミスのONTAP ボリュームのStorageGRID システムへのバックアップとリストアのみがサポートされます。https://["オンプレミスのONTAP データをStorageGRID にバックアップする方法をご紹介します"^] 
+| バックアップとリカバリ | オンプレミスのONTAP ボリュームのStorageGRID システムへのバックアップとリストアのみがサポートされます。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["オンプレミスのONTAP データをStorageGRID にバックアップする方法をご紹介します"^] 
 
 
 | 分類  a| 
 * ローカルで検出できるデータソースは、サポートされているデータソースだけです。
 +
-https://["ローカルで検出できるソースを表示します"^]
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["ローカルで検出できるソースを表示します"^]
 
 * アウトバウンドインターネットアクセスを必要とする機能はサポートされていません。
 +
-https://["機能の制限事項を確認します"^]
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations["機能の制限事項を確認します"^]
 
 
 
@@ -296,7 +296,7 @@ https://["機能の制限事項を確認します"^]
 --
 Cloud Volumes ONTAP のBYOLでは、ノードベースのライセンスのみがサポートされます。容量単位のライセンスはサポートされていません。アウトバウンドのインターネット接続を使用できないため、Cloud Volumes ONTAP ライセンスファイルをBlueXPのデジタルウォレットに手動でアップロードする必要があります。
 
-https://["BlueXPデジタルウォレットにライセンスを追加する方法をご紹介します"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["BlueXPデジタルウォレットにライセンスを追加する方法をご紹介します"^]
 
 --
 プライベートモードを開始する方法:: プライベートモードは、NetApp Support Site から「オフライン」インストーラをダウンロードすることで利用できます。

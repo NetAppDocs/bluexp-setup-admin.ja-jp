@@ -33,7 +33,7 @@ AWS サービス（ amazonaws.com ）：
 * セキュリティトークンサービス（ STS ）
 * シンプルなストレージサービス（ S3 ）
 
-| BlueXPからAWSにコネクタを導入する場合に必要です。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://["詳細については、 AWS のマニュアルを参照してください。"^] 
+| BlueXPからAWSにコネクタを導入する場合に必要です。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、 AWS のマニュアルを参照してください。"^] 
 
 
 | https://management.azure.com https://login.microsoftonline.com | ほとんどのAzureリージョンでBlueXPからコネクタを導入する場合に必要です。 

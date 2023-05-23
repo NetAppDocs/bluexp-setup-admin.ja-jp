@@ -22,7 +22,7 @@ summary: コネクタをプライベートモードで導入し、BlueXP SaaSレ
 
 NetApp Support Site から製品のインストーラをダウンロードし、手動でコネクタを自分のLinuxホストにインストールします。
 
-でBlueXPを使用する場合は https://["AWS Commercial Cloud Services（C2S）環境"^] その後、別の手順に従ってその環境で作業を開始する必要があります。 https://["AWS C2S環境でCloud Volumes ONTAP を使用する方法をご確認ください"^]
+でBlueXPを使用する場合は https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial Cloud Services（C2S）環境"^] その後、別の手順に従ってその環境で作業を開始する必要があります。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["AWS C2S環境でCloud Volumes ONTAP を使用する方法をご確認ください"^]
 
 .必要な権限
 コネクタをインストールするには root 権限が必要です。
@@ -34,7 +34,7 @@ NetApp Support Site から製品のインストーラをダウンロードし、
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
-. からConnectorソフトウェアをダウンロードします https://["ネットアップサポートサイト"^]
+. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]
 +
 インターネットにアクセスできない制限されたネットワーク用のインストーラを必ずダウンロードしてください。
 
@@ -69,7 +69,7 @@ sudo /path/cloud-manager-connector-offline-<version>
 BlueXPコンソールに初めてアクセスすると、BlueXPをセットアップするように求められます。
 
 .手順
-. Web ブラウザを開き、と入力します https://[] _ipaddress_は、コネクタをインストールしたLinuxホストのIPアドレスです。
+. Web ブラウザを開き、と入力します https://_ipaddress_[] _ipaddress_は、コネクタをインストールしたLinuxホストのIPアドレスです。
 +
 次の画面が表示されます。
 
@@ -213,7 +213,7 @@ BlueXPに、Azureで処理を実行するために必要な権限が付与され
 .手順
 . Google Cloudポータルに移動し、コネクタVMインスタンスにサービスアカウントを割り当てます。
 +
-https://["Google Cloudドキュメント：インスタンスのサービスアカウントとアクセス範囲の変更"^]
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloudドキュメント：インスタンスのサービスアカウントとアクセス範囲の変更"^]
 
 . Cloud Volumes ONTAP を他のプロジェクトに導入する場合は、BlueXPロールを持つサービスアカウントをそのプロジェクトに追加してアクセスを許可します。プロジェクトごとにこの手順を繰り返す必要があります。
 

@@ -33,7 +33,7 @@ image:screenshot-azure-actions.png["Azure Blob Working環境を選択したあ�
 
 . Azure BLOBストレージとの間でデータを同期するには、*[データの同期]*を選択します。
 +
-詳細については、を参照してください https://["BlueXPのコピーと同期の概要を紹介します"^]
+詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["BlueXPのコピーと同期の概要を紹介します"^]
 
 . [Enter Working Environment]*を選択して、Azure Blob内のAzureストレージアカウントに関する詳細を表示します。
 +

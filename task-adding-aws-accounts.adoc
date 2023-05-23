@@ -32,7 +32,7 @@ AWSクレデンシャルを既存のコネクタに追加すると、パブリ�
 
 * BlueXP for FSX for ONTAP にAWSクレデンシャルを追加します
 +
-BlueXPに新しいAWS資格情報を追加すると'BlueXPにONTAP 用FSXの作成と管理に必要な権限が与えられます https://["FSX for ONTAP のアクセス許可を設定する方法について説明します"^]
+BlueXPに新しいAWS資格情報を追加すると'BlueXPにONTAP 用FSXの作成と管理に必要な権限が与えられます https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSX for ONTAP のアクセス許可を設定する方法について説明します"^]
 
 
 
@@ -106,12 +106,12 @@ IAMユーザにAWSキーを提供する場合は、そのユーザに必要な�
 .手順
 . IAMコンソールで、の内容をコピーして貼り付けることでポリシーを作成する link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
 +
-https://["AWS のドキュメント：「 Creating IAM Policies"^]
+https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWS のドキュメント：「 Creating IAM Policies"^]
 
 . IAMロールまたはIAMユーザにポリシーを関連付けます。
 +
-** https://["AWS のドキュメント：「 Creating IAM Roles"^]
-** https://["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS のドキュメント：「 Creating IAM Roles"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
 
 
 
@@ -175,7 +175,7 @@ BlueXP SaaSレイヤからロールを引き継ぐためのIAMロールを設定
 ** 別のAWSアカウント*を選択して、BlueXP SaaSのID 952013314444を入力します
 ** コネクタの作成に必要な権限を含むポリシーを作成します。
 +
-*** https://["ONTAP の FSX に必要な権限を表示します"^]
+*** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["ONTAP の FSX に必要な権限を表示します"^]
 *** link:task-set-up-permissions-aws.html["Connector展開ポリシーを表示します"]
 
 
@@ -217,7 +217,7 @@ image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設�
 
 == BlueXP for Amazon FSx for ONTAP にクレデンシャルを追加
 
-詳細については、を参照してください https://["Amazon FSx for ONTAP 向けBlueXPドキュメント"^]
+詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Amazon FSx for ONTAP 向けBlueXPドキュメント"^]
 
 
 

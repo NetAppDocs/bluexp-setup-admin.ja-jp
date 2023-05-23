@@ -32,7 +32,7 @@ Azureサブスクリプションと資格情報をBlueXPに追加するには、
 
 == 追加のAzureサブスクリプションを管理対象IDに関連付けます
 
-BlueXPを使用すると、Cloud Volumes ONTAP を導入するAzureクレデンシャルとAzureサブスクリプションを選択できます。管理対象に別の Azure サブスクリプションを選択することはできません を関連付けない限り、アイデンティティプロファイルを作成します https://["管理された ID"^] それらの登録と。
+BlueXPを使用すると、Cloud Volumes ONTAP を導入するAzureクレデンシャルとAzureサブスクリプションを選択できます。管理対象に別の Azure サブスクリプションを選択することはできません を関連付けない限り、アイデンティティプロファイルを作成します https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["管理された ID"^] それらの登録と。
 
 .このタスクについて
 管理対象 ID はです link:concept-accounts-azure.html["最初の Azure アカウント"] BlueXPからコネクタを展開すると、コネクタを展開すると、BlueXPはBlueXP Operatorロールを作成し、Connector仮想マシンに割り当てました。
@@ -102,7 +102,7 @@ image:diagram_azure_authentication.png["この概念図は、BlueXPがAPI呼び�
 BlueXPでロールベースアクセス制御に使用できるAzure Active Directory（AD）アプリケーションとサービスプリンシパルを作成します。
 
 .作業を開始する前に
-Azure で Active Directory アプリケーションを作成してロールに割り当てるための適切な権限が必要です。詳細については、を参照してください https://["Microsoft Azure のドキュメント：「 Required permissions"^]。
+Azure で Active Directory アプリケーションを作成してロールに割り当てるための適切な権限が必要です。詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
 
 .手順
 . Azure ポータルで、 * Azure Active Directory * サービスを開きます。
@@ -154,7 +154,7 @@ Azureで権限を持つように、サービスプリンシパルを1つ以上�
 次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
 
 +
-*** 開始 https://["Azure Cloud Shell の略"^] Bash 環境を選択します。
+*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
 *** JSON ファイルをアップロードします。
 +
 image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
@@ -298,7 +298,7 @@ Cloud Volumes ONTAP の料金を時間単位で支払う（ PAYGO ）には、 A
 
 
 .結果
-これで、から別のクレデンシャルセットに切り替えることができます [ 詳細と資格情報 ] ページ https://["新しい作業環境を作成する場合"^]
+これで、から別のクレデンシャルセットに切り替えることができます [ 詳細と資格情報 ] ページ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["新しい作業環境を作成する場合"^]
 
 image:screenshot_accounts_switch_azure.gif["[詳細と資格情報]ページで[資格情報の編集]を選択した後の資格情報の選択を示すスクリーンショット。"]
 

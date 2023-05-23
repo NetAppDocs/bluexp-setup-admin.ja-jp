@@ -138,7 +138,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 既存のライセンスとシリアル番号をお持ちで、_no-NSSアカウントをお持ちのネットアップのお客様は、NSSアカウントを作成するだけで十分です。
 
 .手順
-. を実行してNetApp Support Site アカウントを作成します https://["NetApp Support Site ユーザー登録フォーム"^]
+. を実行してNetApp Support Site アカウントを作成します https://mysupport.netapp.com/site/user/registration["NetApp Support Site ユーザー登録フォーム"^]
 +
 .. 適切なユーザレベルを選択してください。通常は*ネットアップのお客様/エンドユーザ*がこれに該当します。
 .. 必ず、上記のシリアル番号フィールドに使用されているBlueXPアカウントのシリアル番号(960xxxx)をコピーしてください。これにより、アカウント処理が高速化されます。
@@ -161,7 +161,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
-. に移動します https://["ネットアップサポート登録サイト"^] 「*ネットアップ登録のお客様ではありません*」を選択します。
+. に移動します https://register.netapp.com["ネットアップサポート登録サイト"^] 「*ネットアップ登録のお客様ではありません*」を選択します。
 . 必須フィールドに入力します（赤いアスタリスクのフィールド）。
 . [*製品ライン*（Product Line *）]フィールドで、[* Cloud Manager *]を選択し、該当する課金プロバイダーを選択します。
 . 上記の手順2からアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを確認します。
@@ -172,7 +172,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 +
 確認ではネットアップにリクエストが送信され、NetApp Support Site アカウントを作成することを推奨します。
 
-. を実行してNetApp Support Site アカウントを作成します https://["NetApp Support Site ユーザー登録フォーム"^]
+. を実行してNetApp Support Site アカウントを作成します https://mysupport.netapp.com/site/user/registration["NetApp Support Site ユーザー登録フォーム"^]
 +
 .. 適切なユーザレベルを選択してください。通常は*ネットアップのお客様/エンドユーザ*がこれに該当します。
 .. シリアル番号フィールドには、上記のアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。

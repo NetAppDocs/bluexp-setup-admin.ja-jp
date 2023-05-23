@@ -98,7 +98,7 @@ link:task-set-up-permissions-aws.html["AWS権限の設定方法をご確認く�
 
 
 .手順
-. にアクセスします https://["AWS MarketplaceのBlueXPページ"^]
+. にアクセスします https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS MarketplaceのBlueXPページ"^]
 . [Marketplace] ページで [* Continue to Subscribe* ] をクリックし、 [* Continue to Configuration* ] をクリックします。
 +
 image:screenshot-subscribe-aws.png["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]
@@ -143,7 +143,7 @@ AWS は、指定した設定でソフトウェアを起動します。コネク�
 
 . Connector 仮想マシンに接続されているホストから Web ブラウザを開き、次の URL を入力します。
 +
-https://[]
+https://_ipaddress_[]
 
 . ログイン後、コネクタを設定します。
 +
@@ -161,7 +161,7 @@ https://[]
 .結果
 これで、コネクタのインストールとBlueXPアカウントでのセットアップが完了しました。
 
-Webブラウザを開き、にアクセスします https://["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+Webブラウザを開き、にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
 
 --
 .手動インストール
@@ -200,7 +200,7 @@ unset https_proxy
 +
 これらのシステム変数を削除しないと、インストールは失敗します。
 
-. からConnectorソフトウェアをダウンロードします https://["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
+. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
 +
 ネットワークまたはクラウドで使用するための「オンライン」コネクタインストーラをダウンロードする必要があります。コネクタには別の「オフライン」インストーラが用意されていますが、プライベートモード展開でのみサポートされています。
 
@@ -249,7 +249,7 @@ chmod +x OnCommandCloudManager-<version>
 
 . Connector 仮想マシンに接続されているホストから Web ブラウザを開き、次の URL を入力します。
 +
-https://[]
+https://_ipaddress_[]
 
 . ログイン後、コネクタを設定します。
 +

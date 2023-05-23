@@ -115,13 +115,13 @@ includedPermissions:
 gcloud IAMロールcreate connectorDeployment --project=myproject --file=connector-deployment.yaml
 
 +
-https://["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
 
 
 
 . このカスタムロールを、BlueXPから、またはgcloudを使用してコネクタを導入するユーザに割り当てます。
 +
-https://["Google Cloudドキュメント：ロールを1つだけ指定します"^]
+https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloudドキュメント：ロールを1つだけ指定します"^]
 
 
 
@@ -148,7 +148,7 @@ Google Cloudでリソースを管理するためにBlueXPで必要な権限を�
 gcloud IAMロールcreate connector --project=myproject --file=connector.yaml
 
 +
-https://["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
 
 
 
@@ -159,7 +159,7 @@ https://["Google Cloudのドキュメント：カスタムロールの作成と�
 .. 作成したロールを選択します。
 .. 残りの手順を完了してロールを作成します。
 +
-https://["Google Cloudドキュメント：サービスアカウントの作成"^]
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloudドキュメント：サービスアカウントの作成"^]
 
 
 
@@ -187,7 +187,7 @@ Cloud Volumes ONTAP システムを、Connectorが存在するプロジェクト
 
 
 
-詳細については、を参照してください https://["Google Cloudのドキュメント"^]
+詳細については、を参照してください https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloudのドキュメント"^]
 
 
 

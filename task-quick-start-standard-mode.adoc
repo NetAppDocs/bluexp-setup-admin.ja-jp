@@ -18,7 +18,7 @@ BlueXPを標準モードで開始するには、BlueXPコンソールからサ�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] サインアップしてアカウントを作成します
 [role="quick-margin-para"]
-にアクセスします https://["BlueXPコンソール"^] 登録してください。アカウントを作成するオプションが表示されますが、既存のアカウントに招待されている場合は、この手順を省略できます。
+にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] 登録してください。アカウントを作成するオプションが表示されますが、既存のアカウントに招待されている場合は、この手順を省略できます。
 
 [role="quick-margin-para"]
 これでログインし、デジタルアドバイザ、Amazon FSx for ONTAP 、Azure NetApp Files など、複数のBlueXPサービスの使用を開始できます。 link:concept-connectors.html["コネクタなしでできることを学びます"]。

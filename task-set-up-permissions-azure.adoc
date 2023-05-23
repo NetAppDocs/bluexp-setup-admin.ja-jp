@@ -142,7 +142,7 @@ NOTE: このポリシーには、BlueXPからAzureでConnector VMを起動する
 次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
 
 +
-.. 開始 https://["Azure Cloud Shell の略"^] Bash 環境を選択します。
+.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
 .. JSON ファイルをアップロードします。
 +
 image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
@@ -203,7 +203,7 @@ Azure Active Directoryでサービスプリンシパルを作成してセット�
 .ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
 . Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
 +
-詳細については、を参照してください https://["Microsoft Azure のドキュメント：「 Required permissions"^]。
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
 
 . Azure ポータルで、 * Azure Active Directory * サービスを開きます。
 +
@@ -317,7 +317,7 @@ Azure Marketplaceからコネクタを導入する場合、またはコネクタ
 .手順
 . 独自のホストにソフトウェアを手動でインストールする場合は、カスタムロールを使用して必要なAzure権限を提供できるように、VMでシステムが割り当てた管理IDを有効にします。
 +
-https://["Microsoft Azureのドキュメント：Azureポータルを使用して、VM上のAzureリソースの管理IDを設定します"^]
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azureのドキュメント：Azureポータルを使用して、VM上のAzureリソースの管理IDを設定します"^]
 
 . の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
 . 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
@@ -340,7 +340,7 @@ https://["Microsoft Azureのドキュメント：Azureポータルを使用し�
 次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
 
 +
-.. 開始 https://["Azure Cloud Shell の略"^] Bash 環境を選択します。
+.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
 .. JSON ファイルをアップロードします。
 +
 image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
@@ -368,7 +368,7 @@ Azure Active Directoryでサービスプリンシパルを作成してセット�
 .ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
 . Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
 +
-詳細については、を参照してください https://["Microsoft Azure のドキュメント：「 Required permissions"^]。
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
 
 . Azure ポータルで、 * Azure Active Directory * サービスを開きます。
 +

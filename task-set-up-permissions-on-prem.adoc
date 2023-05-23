@@ -43,8 +43,8 @@ TIP: Google Cloudではない理由コネクタがオンプレミスにインス
 
 . IAMユーザにポリシーを適用します。
 +
-** https://["AWS のドキュメント：「 Creating IAM Roles"^]
-** https://["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS のドキュメント：「 Creating IAM Roles"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
 
 
 . コネクタのインストール後にBlueXPに追加できるアクセスキーがユーザに割り当てられていることを確認します。
@@ -63,7 +63,7 @@ link:task-provide-permissions-on-prem.html["これらの権限をBlueXPに付与
 .ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
 . Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
 +
-詳細については、を参照してください https://["Microsoft Azure のドキュメント：「 Required permissions"^]。
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
 
 . Azure ポータルで、 * Azure Active Directory * サービスを開きます。
 +
@@ -108,7 +108,7 @@ AD アプリケーションとサービスプリンシパルを作成してお�
 次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
 
 +
-*** 開始 https://["Azure Cloud Shell の略"^] Bash 環境を選択します。
+*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
 *** JSON ファイルをアップロードします。
 +
 image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]

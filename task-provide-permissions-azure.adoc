@@ -50,13 +50,13 @@ NOTE: BlueXP Operatorは'BlueXPポリシーで指定されているデフォル�
 BlueXPに、Azureで処理を実行するために必要な権限が付与されました。
 
 .次の手順
-にアクセスします https://["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
 
 --
 .サービスプリンシパル
 --
 .手順
-. にアクセスします https://["BlueXPコンソール"^] ログインします。
+. にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] ログインします。
 . BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
 +
 image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]

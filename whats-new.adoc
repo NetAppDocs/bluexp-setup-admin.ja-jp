@@ -38,11 +38,11 @@ Red Hat 7.6、7.7、7.8、および7.9は、新規および既存のコネクタ
 * コネクタは現在、Google Cloudのカタール地域でサポートされています。
 * このコネクタは、Microsoft AzureのSweden Centralリージョンでもサポートされています。
 +
-https://["サポートされているリージョンの完全なリストを表示します"^]
+https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
 +
-https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -61,7 +61,7 @@ BlueXP_deployment modes_を使用すると、ビジネス要件やセキュリ�
 * プライベートモード
 
 
-https://["これらの展開モードの詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["これらの展開モードの詳細については、こちらをご覧ください"]。
 
 
 NOTE: 制限モードが導入されたことで、SaaSプラットフォームを有効または無効にするオプションが廃止されました。制限モードはアカウント作成時に有効にすることができます。後で有効または無効にすることはできません。
@@ -79,27 +79,27 @@ NOTE: 制限モードが導入されたことで、SaaSプラットフォーム�
 通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。
 
 +
-https://["Eメール通知の設定方法については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"]。
 
 * Google Cloud Turinリージョンでコネクタがサポートされるようになりました。
 +
-https://["サポートされているリージョンの完全なリストを表示します"^]
+https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
 
 * BlueXPログインに関連付けられたユーザクレデンシャル（ONTAP クレデンシャルとNetApp Support Site （NSS）クレデンシャル）を管理できるようになりました。
 +
 [設定]>[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。
 
 +
-https://["ユーザクレデンシャルの管理方法について説明します"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["ユーザクレデンシャルの管理方法について説明します"]。
 
 * サポートケースを作成するとき、または既存のサポートケースのケースノートを更新するときに、添付ファイルをアップロードできるようになりました。
 +
-https://["サポートケースを作成および管理する方法について説明します"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースを作成および管理する方法について説明します"]。
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
 +
-** https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
 
 
 
@@ -118,7 +118,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。
 +
-https://["サポートケースの管理方法について説明します"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースの管理方法について説明します"]。
 
 * このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。BlueXPのバックアップとリカバリを使用して、AWSとAzureのコマーシャルリージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、BlueXPデジタルウォレットを除き、他のBlueXPサービスはサポートされません。
 +
@@ -128,19 +128,19 @@ https://["サポートケースの管理方法について説明します"]。
 開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BlueXPデジタルウォレットにBYOLライセンスを追加してから、Cloud Volumes ONTAP を導入します。
 
 +
-** https://["インターネットにアクセスできない場所にコネクタを取り付けます"^]
-** https://["コネクタのBlueXPコンソールにアクセスします"^]
-** https://["未割り当てライセンスを追加します"^]
-** https://["Cloud Volumes ONTAP の使用を開始します"^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを取り付けます"^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["コネクタのBlueXPコンソールにアクセスします"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["未割り当てライセンスを追加します"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Cloud Volumes ONTAP の使用を開始します"^]
 
 
 * このコネクタで、BlueXPからAmazon S3バケットを追加および管理できるようになりました。
 +
-https://["BlueXPからAWSアカウントに新しいAmazon S3バケットを追加する方法をご確認ください"^]。
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["BlueXPからAWSアカウントに新しいAmazon S3バケットを追加する方法をご確認ください"^]。
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
 +
-https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -168,15 +168,15 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["BlueXPアカウントのサブスクリプション割り当てを示すスクリーンショット"]
 
 +
-** https://["AWSサブスクリプションを関連付ける方法について説明します"]
-** https://["Azureサブスクリプションを関連付ける方法について説明します"]
-** https://["Google Cloudサブスクリプションを関連付ける方法について説明します"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["AWSサブスクリプションを関連付ける方法について説明します"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["Azureサブスクリプションを関連付ける方法について説明します"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Google Cloudサブスクリプションを関連付ける方法について説明します"]
 
 
 * BlueXPは、コネクタの電源が14日以上切れている場合に通知します。
 +
-** https://["BlueXP通知についてはこちらをご覧ください"]
-** https://["コネクタの動作を維持する理由について説明します"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["BlueXP通知についてはこちらをご覧ください"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["コネクタの動作を維持する理由について説明します"]
 
 
 * Google Cloudのコネクタポリシーを更新し、Cloud Volumes ONTAP HAペアでStorage VMを作成および管理するために必要な権限を追加しました。
@@ -184,11 +184,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 compute.instances.updateNetworkInterface
 
 +
-https://["ConnectorのGoogle Cloud権限を表示します"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["ConnectorのGoogle Cloud権限を表示します"]。
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
 +
-https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -202,7 +202,7 @@ https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とバグ修正が含まれています。
 
-https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1-january-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -212,12 +212,12 @@ https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 === コネクタ3.9.24
 
-* BlueXPコンソールのURLがに更新されました https://[]
+* BlueXPコンソールのURLがに更新されました https://console.bluexp.netapp.com[]
 * ConnectorはGoogle Cloudイスラエル地域でサポートされるようになりました。
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
 +
-** https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#4-december-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#4-december-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
 
 
 
@@ -232,11 +232,11 @@ https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 * BlueXPのPAYGOサブスクリプションと年間契約が、デジタルウォレットで表示、管理できるようになりました。
 +
-https://["サブスクリプションの管理方法について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html["サブスクリプションの管理方法について説明します"^]
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
 +
-https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6-november-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -244,7 +244,7 @@ https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 == 2022年11月1日
 
-アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。 https://["NSS アカウントを管理する方法について説明します"^]
+アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["NSS アカウントを管理する方法について説明します"^]
 
 
 
@@ -257,11 +257,11 @@ https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
 * Connectorのインストールウィザードを強化しました。このウィザードには、Connectorのインストールに関する最小要件（権限、認証、ネットワーク）を満たすための手順が記載されています。
 * ネットアップサポートケースをCloud Managerのサポートダッシュボードで直接作成できるようになりました。
 +
-https://["ケースを作成する方法について説明します"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-get-help.html#netapp-support["ケースを作成する方法について説明します"]。
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
 +
-https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#18-september-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -281,11 +281,11 @@ Canvasでは、* My Opportunities *タブを使用して、ハイブリッドマ
 この初回リリースでは、My Opportunitiesを使用して、AWSアカウント内のONTAP ファイルシステム用の既存のFSXを検出できます。
 
 +
-https://["ONTAP のFSXを発見する方法については、こちらをご覧ください"^]
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-using-my-opportunities["ONTAP のFSXを発見する方法については、こちらをご覧ください"^]
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
 +
-https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#31-july-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -299,9 +299,9 @@ https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 ドキュメントを更新するには、Cloud Managerのポリシーをドキュメント内に直接追加します。これにより、コネクタとCloud Volumes ONTAP に必要な権限を、設定方法を説明する手順とともに表示できるようになりました。これらのポリシーには、ネットアップサポートサイトのページからアクセスできます。
 
-https://["次の例は、コネクタの作成に使用するAWS IAMロールの権限を示しています"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#create-an-iam-policy["次の例は、コネクタの作成に使用するAWS IAMロールの権限を示しています"]。
 
-また、各ポリシーへのリンクを提供するページも作成しました。 https://["Cloud Managerの権限の概要を確認します"]。
+また、各ポリシーへのリンクを提供するページも作成しました。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["Cloud Managerの権限の概要を確認します"]。
 
 
 
@@ -317,7 +317,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * Cloud ManagerからEメールで通知を送信するように設定できるようになりました。これにより、システムにログインしていないときでも重要なシステムアクティビティを通知できます。
 +
-https://["アカウントでの操作の監視の詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["アカウントでの操作の監視の詳細については、こちらをご覧ください"]。
 
 * Cloud Managerでは、Amazon S3のサポートと同様に、Azure Blob StorageとGoogle Cloud Storageが作業環境としてサポートされるようになりました。
 +
@@ -339,11 +339,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * Azure West US 3リージョンでコネクタがサポートされるようになりました。
 +
-https://["サポートされているリージョンの完全なリストを表示します"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
 +
-https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-july-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -371,12 +371,12 @@ NOTE: Eメールアドレスとパスワードを使用する既存のログイ�
 * このコネクタは、AWSジャカルタリージョン（AP-Southee-3）でサポートされるようになりました。
 * このコネクタは、Azureブラジル南東部でサポートされるようになりました。
 +
-https://["サポートされているリージョンの完全なリストを表示します"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
 +
-** https://["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-june-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#7-june-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
 
 
 
@@ -408,14 +408,14 @@ https://["サポートされているリージョンの完全なリストを表�
 
 
 +
-https://["サポートされているリージョンの完全なリストを表示します"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
 
 * Connectorで使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-google-cloud-service-account.png["サービスアカウントフィールドのスクリーンショット"]
 
-* をサポートするOSでVMインスタンス上のGoogle CloudのConnectorを認定しました https://["シールドVM機能"^]
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://["これらの拡張機能について説明します"^]
+* をサポートするOSでVMインスタンス上のGoogle CloudのConnectorを認定しました https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["シールドVM機能"^]
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-may-2022["これらの拡張機能について説明します"^]
 * ConnectorでCloud Volumes ONTAP を導入するには、新しいAWS権限が必要です。
 +
 単一のAvailability Zone（AZ；アベイラビリティゾーン）にHAペアを導入する際にAWS分散配置グループを作成するためには、次の権限が必要です。
@@ -444,9 +444,9 @@ Cloud Managerに追加したAWSクレデンシャルの各セットに、これ�
 
 * Cloud Manager に、環境で設定した IAM ロールを割り当てることでコネクタを作成できるようになりました。この認証方式は、 AWS のアクセスキーとシークレットキーを共有する場合よりも安全です。
 +
-https://["IAM ロールを使用してコネクタを作成する方法について説明します"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["IAM ロールを使用してコネクタを作成する方法について説明します"]。
 
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://["これらの拡張機能について説明します"^]
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2022["これらの拡張機能について説明します"^]
 
 
 
@@ -458,7 +458,7 @@ https://["IAM ロールを使用してコネクタを作成する方法につい
 === コネクタ3.9.16
 
 * Google Cloud で新しいコネクタを作成すると、 Cloud Manager に既存のすべてのファイアウォールポリシーが表示されるようになります。以前は、 Cloud Manager にはターゲットタグがないポリシーは表示されませんでした。
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://["これらの拡張機能について説明します"^]
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#27-february-2022["これらの拡張機能について説明します"^]
 
 
 
@@ -469,7 +469,7 @@ https://["IAM ロールを使用してコネクタを作成する方法につい
 
 === コネクタ3.9.15
 
-このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。 https://["これらの拡張機能について説明します"^]
+このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#30-january-2022["これらの拡張機能について説明します"^]
 
 
 
@@ -481,7 +481,7 @@ https://["IAM ロールを使用してコネクタを作成する方法につい
 
 パブリッククラウド環境内でリソースやプロセスを管理するためにコネクタが接続する必要があるエンドポイントの数を削減しました。
 
-https://["必要なエンドポイントのリストを表示します"]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["必要なエンドポイントのリストを表示します"]
 
 
 
@@ -512,7 +512,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 NSS アカウントを IDaaS に移行していない場合は、まずアカウントを移行してから、 Cloud Manager でクレデンシャルを更新する必要があります。
 
 * link:task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method["NSS アカウントを新しい認証方法に更新する方法について説明します"]。
-* https://["ネットアップによるアイデンティティ管理での Microsoft Azure AD の使用方法の詳細については、こちらをご覧ください"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["ネットアップによるアイデンティティ管理での Microsoft Azure AD の使用方法の詳細については、こちらをご覧ください"^]
 
 
 
@@ -533,7 +533,7 @@ link:task-adding-nss-accounts.html#attach-a-working-environment-to-a-different-n
 
 独立機関の公認会計士であり、サービス監査役は、 Cloud Manager 、 Cloud Sync 、 Cloud Tiering 、 Cloud Data Sense 、 Cloud Backup （ Cloud Manager プラットフォーム）を調査し、該当する信頼サービス基準に基づいて SOC 2 Type 2 のレポートを達成したことを確認しました。
 
-https://["ネットアップの SOC 2 レポートをご覧ください"^]。
+https://www.netapp.com/company/trust-center/compliance/soc-2/["ネットアップの SOC 2 レポートをご覧ください"^]。
 
 
 
@@ -541,7 +541,7 @@ https://["ネットアップの SOC 2 レポートをご覧ください"^]。
 
 AutoSupport から Cloud Volumes ONTAP メッセージを送信するためのプロキシサーバとして Cloud Manager Connector を使用することはできなくなりました。この機能は削除され、サポートも終了しています。AutoSupport 接続は、 NAT インスタンスまたは環境のプロキシサービスを介して提供する必要があります。
 
-https://["Cloud Volumes ONTAP による AutoSupport の検証の詳細については、こちらをご覧ください"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["Cloud Volumes ONTAP による AutoSupport の検証の詳細については、こちらをご覧ください"^]
 
 
 
