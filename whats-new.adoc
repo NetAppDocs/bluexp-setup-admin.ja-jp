@@ -42,7 +42,7 @@ https://cloud.netapp.com/cloud-volumes-global-regions["サポートされてい�
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -61,7 +61,7 @@ BlueXP_deployment modes_を使用すると、ビジネス要件やセキュリ�
 * プライベートモード
 
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["これらの展開モードの詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["これらの展開モードの詳細については、こちらをご覧ください"]。
 
 
 NOTE: 制限モードが導入されたことで、SaaSプラットフォームを有効または無効にするオプションが廃止されました。制限モードはアカウント作成時に有効にすることができます。後で有効または無効にすることはできません。
@@ -79,7 +79,7 @@ NOTE: 制限モードが導入されたことで、SaaSプラットフォーム�
 通知を設定すると、BYOLライセンスの有効期限が近づいたとき（「警告」通知）、またはすでに有効期限が切れているとき（「エラー」通知）にEメール通知を受け取ることができます。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"]。
 
 * Google Cloud Turinリージョンでコネクタがサポートされるようになりました。
 +
@@ -90,16 +90,16 @@ https://cloud.netapp.com/cloud-volumes-global-regions["サポートされてい�
 [設定]>[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["ユーザクレデンシャルの管理方法について説明します"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.html["ユーザクレデンシャルの管理方法について説明します"]。
 
 * サポートケースを作成するとき、または既存のサポートケースのケースノートを更新するときに、添付ファイルをアップロードできるようになりました。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースを作成および管理する方法について説明します"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースを作成および管理する方法について説明します"]。
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
 
 
 
@@ -114,11 +114,11 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 
 * BlueXPコンソールで検索できるようになりました。この時点で、検索機能を使用してBlueXPのサービスと機能を検索できます。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search.png["コンソールの上部に表示されるBlueXP検索のスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-search.png["コンソールの上部に表示されるBlueXP検索のスクリーンショット。"]
 
 * アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースの管理方法について説明します"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースの管理方法について説明します"]。
 
 * このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。BlueXPのバックアップとリカバリを使用して、AWSとAzureのコマーシャルリージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、BlueXPデジタルウォレットを除き、他のBlueXPサービスはサポートされません。
 +
@@ -128,10 +128,10 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BlueXPデジタルウォレットにBYOLライセンスを追加してから、Cloud Volumes ONTAP を導入します。
 
 +
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを取り付けます"^]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["コネクタのBlueXPコンソールにアクセスします"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["未割り当てライセンスを追加します"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Cloud Volumes ONTAP の使用を開始します"^]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを取り付けます"^]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["コネクタのBlueXPコンソールにアクセスします"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["未割り当てライセンスを追加します"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-overview-cvo.html["Cloud Volumes ONTAP の使用を開始します"^]
 
 
 * このコネクタで、BlueXPからAmazon S3バケットを追加および管理できるようになりました。
@@ -140,7 +140,7 @@ https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["BlueXP�
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-march-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -160,23 +160,23 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-login.png["BlueXPのログインページのスクリーンショットで、電子メールアドレスの入力を求められます。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-login.png["BlueXPのログインページのスクリーンショットで、電子メールアドレスの入力を求められます。"]
 
 * BlueXPを初めて使用していて、既存のNetApp Support Site (NSS)の資格情報がある場合は、サインアップページをスキップして、ログインページに電子メールアドレスを直接入力できます。この初回ログインの一環として、BlueXPがサインアップします。
 * クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、1つのアカウントの既存のサブスクリプションを新しいサブスクリプションに置き換えることができます。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["BlueXPアカウントのサブスクリプション割り当てを示すスクリーンショット"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-aws-subscription.png["BlueXPアカウントのサブスクリプション割り当てを示すスクリーンショット"]
 
 +
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["AWSサブスクリプションを関連付ける方法について説明します"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["Azureサブスクリプションを関連付ける方法について説明します"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Google Cloudサブスクリプションを関連付ける方法について説明します"]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["AWSサブスクリプションを関連付ける方法について説明します"]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["Azureサブスクリプションを関連付ける方法について説明します"]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Google Cloudサブスクリプションを関連付ける方法について説明します"]
 
 
 * BlueXPは、コネクタの電源が14日以上切れている場合に通知します。
 +
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["BlueXP通知についてはこちらをご覧ください"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["コネクタの動作を維持する理由について説明します"]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["BlueXP通知についてはこちらをご覧ください"]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connectors-should-remain-running["コネクタの動作を維持する理由について説明します"]
 
 
 * Google Cloudのコネクタポリシーを更新し、Cloud Volumes ONTAP HAペアでStorage VMを作成および管理するために必要な権限を追加しました。
@@ -184,11 +184,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 compute.instances.updateNetworkInterface
 
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["ConnectorのGoogle Cloud権限を表示します"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["ConnectorのGoogle Cloud権限を表示します"]。
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-february-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -202,7 +202,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5
 
 このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とバグ修正が含まれています。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1-january-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-january-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -216,8 +216,8 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1
 * ConnectorはGoogle Cloudイスラエル地域でサポートされるようになりました。
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#4-december-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#4-december-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#4-december-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#4-december-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
 
 
 
@@ -232,11 +232,11 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1
 
 * BlueXPのPAYGOサブスクリプションと年間契約が、デジタルウォレットで表示、管理できるようになりました。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html["サブスクリプションの管理方法について説明します"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-subscriptions.html["サブスクリプションの管理方法について説明します"^]
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6-november-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#6-november-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -244,7 +244,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6
 
 == 2022年11月1日
 
-アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["NSS アカウントを管理する方法について説明します"^]
+アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["NSS アカウントを管理する方法について説明します"^]
 
 
 
@@ -257,11 +257,11 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6
 * Connectorのインストールウィザードを強化しました。このウィザードには、Connectorのインストールに関する最小要件（権限、認証、ネットワーク）を満たすための手順が記載されています。
 * ネットアップサポートケースをCloud Managerのサポートダッシュボードで直接作成できるようになりました。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-get-help.html#netapp-support["ケースを作成する方法について説明します"]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-get-help.html#netapp-support["ケースを作成する方法について説明します"]。
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#18-september-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#18-september-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -281,11 +281,11 @@ Canvasでは、* My Opportunities *タブを使用して、ハイブリッドマ
 この初回リリースでは、My Opportunitiesを使用して、AWSアカウント内のONTAP ファイルシステム用の既存のFSXを検出できます。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-using-my-opportunities["ONTAP のFSXを発見する方法については、こちらをご覧ください"^]
+https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-using-my-opportunities["ONTAP のFSXを発見する方法については、こちらをご覧ください"^]
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#31-july-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#31-july-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -299,9 +299,9 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3
 
 ドキュメントを更新するには、Cloud Managerのポリシーをドキュメント内に直接追加します。これにより、コネクタとCloud Volumes ONTAP に必要な権限を、設定方法を説明する手順とともに表示できるようになりました。これらのポリシーには、ネットアップサポートサイトのページからアクセスできます。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#create-an-iam-policy["次の例は、コネクタの作成に使用するAWS IAMロールの権限を示しています"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html#create-an-iam-policy["次の例は、コネクタの作成に使用するAWS IAMロールの権限を示しています"]。
 
-また、各ポリシーへのリンクを提供するページも作成しました。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["Cloud Managerの権限の概要を確認します"]。
+また、各ポリシーへのリンクを提供するページも作成しました。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Cloud Managerの権限の概要を確認します"]。
 
 
 
@@ -313,11 +313,11 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors
 
 * 拡大する機能のリストへの新しいナビゲート方法が導入されました。左側のパネルにカーソルを合わせると、使い慣れたCloud Managerの機能を簡単に確認できます。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-navigation.png["Cloud Managerの新しい左側のナビゲーションメニューを示すスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-navigation.png["Cloud Managerの新しい左側のナビゲーションメニューを示すスクリーンショット。"]
 
 * Cloud ManagerからEメールで通知を送信するように設定できるようになりました。これにより、システムにログインしていないときでも重要なシステムアクティビティを通知できます。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["アカウントでの操作の監視の詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["アカウントでの操作の監視の詳細については、こちらをご覧ください"]。
 
 * Cloud Managerでは、Amazon S3のサポートと同様に、Azure Blob StorageとGoogle Cloud Storageが作業環境としてサポートされるようになりました。
 +
@@ -327,7 +327,7 @@ AzureまたはGoogle Cloudにコネクタをインストールすると、Connec
 Azure Blob作業環境の例は次のとおりです。
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-azure-blob-details.png["ストレージアカウントの概要と詳細情報を表示できるAzure Blob作業環境のスクリーンショット"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-azure-blob-details.png["ストレージアカウントの概要と詳細情報を表示できるAzure Blob作業環境のスクリーンショット"]
 
 * 容量や暗号化の詳細など、S3バケットに関する詳細情報を提供することで、Amazon S3作業環境用のリソースページが再設計されました。
 * Connectorは、次のGoogle Cloudリージョンでサポートされるようになりました。
@@ -343,7 +343,7 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされてい
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-july-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-july-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
 
 
@@ -375,8 +375,8 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされてい
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-june-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#7-june-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-june-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#7-june-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
 
 
 
@@ -412,10 +412,10 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされてい
 
 * Connectorで使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-google-cloud-service-account.png["サービスアカウントフィールドのスクリーンショット"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-google-cloud-service-account.png["サービスアカウントフィールドのスクリーンショット"]
 
 * をサポートするOSでVMインスタンス上のGoogle CloudのConnectorを認定しました https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["シールドVM機能"^]
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-may-2022["これらの拡張機能について説明します"^]
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-may-2022["これらの拡張機能について説明します"^]
 * ConnectorでCloud Volumes ONTAP を導入するには、新しいAWS権限が必要です。
 +
 単一のAvailability Zone（AZ；アベイラビリティゾーン）にHAペアを導入する際にAWS分散配置グループを作成するためには、次の権限が必要です。
@@ -444,9 +444,9 @@ Cloud Managerに追加したAWSクレデンシャルの各セットに、これ�
 
 * Cloud Manager に、環境で設定した IAM ロールを割り当てることでコネクタを作成できるようになりました。この認証方式は、 AWS のアクセスキーとシークレットキーを共有する場合よりも安全です。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["IAM ロールを使用してコネクタを作成する方法について説明します"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["IAM ロールを使用してコネクタを作成する方法について説明します"]。
 
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2022["これらの拡張機能について説明します"^]
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2022["これらの拡張機能について説明します"^]
 
 
 
@@ -458,7 +458,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors
 === コネクタ3.9.16
 
 * Google Cloud で新しいコネクタを作成すると、 Cloud Manager に既存のすべてのファイアウォールポリシーが表示されるようになります。以前は、 Cloud Manager にはターゲットタグがないポリシーは表示されませんでした。
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#27-february-2022["これらの拡張機能について説明します"^]
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#27-february-2022["これらの拡張機能について説明します"^]
 
 
 
@@ -469,7 +469,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors
 
 === コネクタ3.9.15
 
-このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#30-january-2022["これらの拡張機能について説明します"^]
+このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-january-2022["これらの拡張機能について説明します"^]
 
 
 
@@ -481,7 +481,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors
 
 パブリッククラウド環境内でリソースやプロセスを管理するためにコネクタが接続する必要があるエンドポイントの数を削減しました。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["必要なエンドポイントのリストを表示します"]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-checklist-cm.html["必要なエンドポイントのリストを表示します"]
 
 
 
@@ -489,7 +489,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.h
 
 Cloud Manager から AWS に新しいコネクタを導入する際に、デフォルトのマスターキーまたは管理対象キーを使用してコネクタの EBS ディスクを暗号化できるようになりました。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-disk-encryption.png["AWS でコネクタを作成する際のディスク暗号化オプションを示すスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-disk-encryption.png["AWS でコネクタを作成する際のディスク暗号化オプションを示すスクリーンショット。"]
 
 
 
@@ -497,7 +497,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 Cloud Manager に、ネットアップサポートサイトのアカウントに関連付けられている E メールアドレスが表示されるようになりました。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-nss-display-email.png["ネットアップサポートサイトのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-nss-display-email.png["ネットアップサポートサイトのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。"]
 
 
 
@@ -541,7 +541,7 @@ https://www.netapp.com/company/trust-center/compliance/soc-2/["ネットアッ�
 
 AutoSupport から Cloud Volumes ONTAP メッセージを送信するためのプロキシサーバとして Cloud Manager Connector を使用することはできなくなりました。この機能は削除され、サポートも終了しています。AutoSupport 接続は、 NAT インスタンスまたは環境のプロキシサービスを介して提供する必要があります。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["Cloud Volumes ONTAP による AutoSupport の検証の詳細については、こちらをご覧ください"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["Cloud Volumes ONTAP による AutoSupport の検証の詳細については、こちらをご覧ください"^]
 
 
 

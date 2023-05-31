@@ -18,11 +18,11 @@ summary: プライベートモードでBlueXPを起動して実行したら、�
 
 ヘルプについては、次のドキュメントを参照してください。
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP システムの作成"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["オンプレミスのONTAP クラスタを検出"^]
-* https://docs.netapp.com/us-en/cloud-manager-replication/index.html["データのレプリケート"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["BlueXPの分類を使用してオンプレミスのONTAP ボリュームのデータをスキャンします"^]
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["BlueXPのバックアップとリカバリを使用して、オンプレミスのONTAP ボリュームのデータをStorageGRID にバックアップします"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP システムの作成"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["オンプレミスのONTAP クラスタを検出"^]
+* https://docs.netapp.com/us-en/bluexp-replication/index.html["データのレプリケート"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["BlueXPの分類を使用してオンプレミスのONTAP ボリュームのデータをスキャンします"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["BlueXPのバックアップとリカバリを使用して、オンプレミスのONTAP ボリュームのデータをStorageGRID にバックアップします"^]
 
 
 .関連リンク

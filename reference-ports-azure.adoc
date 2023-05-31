@@ -34,7 +34,7 @@ summary: コネクタのAzureセキュリティグループには、インバウ
 | HTTPS | 443 | クライアントWebブラウザからローカルユーザインターフェイスへのHTTPSアクセス、およびBlueXP分類インスタンスからの接続を提供します 
 
 
-| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["コネクタがAutoSupport メッセージのプロキシとしてどのように使用されるかについて説明します"^] 
+| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["コネクタがAutoSupport メッセージのプロキシとしてどのように使用されるかについて説明します"^] 
 
 
 | TCP | 9060、9061 | 政府機関の地域でBlueXPの分類とBlueXPのバックアップとリカバリを有効にして使用できるようになります。 

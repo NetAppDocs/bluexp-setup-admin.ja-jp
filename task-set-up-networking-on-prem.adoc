@@ -130,4 +130,4 @@ link:reference-networking-saas-console.html["BlueXPコンソールにユーザ�
 
 == IPアドレスの制限
 
-172の範囲のIPアドレスと競合する可能性があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["この制限事項の詳細については、こちらをご覧ください"]。
+172の範囲のIPアドレスと競合する可能性があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["この制限事項の詳細については、こちらをご覧ください"]。

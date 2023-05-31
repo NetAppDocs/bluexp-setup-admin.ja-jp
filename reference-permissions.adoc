@@ -31,7 +31,7 @@ BlueXPの機能とサービスを使用するには、BlueXPがクラウド環�
 | コネクタの動作 | BlueXPがConnectorを起動すると、AWSアカウントのリソースとプロセスの管理に必要な権限を提供するポリシーがインスタンスに関連付けられます。マーケットプレイスからコネクタを起動する場合、コネクタを手動でインストールする場合、またはコネクタを手動でインストールする場合は、ポリシーを自分で設定する必要があります link:task-adding-aws-accounts.html#add-credentials-to-a-connector["AWSクレデンシャルをコネクタに追加します"]。また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:reference-permissions-aws.html["Connector の AWS 権限"] 
 
 
-| Cloud Volumes ONTAP 処理 | AWSの各Cloud Volumes ONTAP ノードにIAMロールを関連付ける必要があります。HAメディエーターについても同様です。デフォルトでは、BlueXPでIAMロールを作成することができますが、自分で作成することもできます。 | https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-iam-roles.html["IAMロールを自分で設定する方法について説明します"^] 
+| Cloud Volumes ONTAP 処理 | AWSの各Cloud Volumes ONTAP ノードにIAMロールを関連付ける必要があります。HAメディエーターについても同様です。デフォルトでは、BlueXPでIAMロールを作成することができますが、自分で作成することもできます。 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["IAMロールを自分で設定する方法について説明します"^] 
 |===
 
 

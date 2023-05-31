@@ -33,7 +33,7 @@ image:screenshot-gcp-cloud-storage-actions.png["Google Cloud Storage作業環境
 
 . Google Cloud Storageバケットとの間でデータを同期するには、* Sync data *を選択します。
 +
-詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["BlueXPのコピーと同期の概要を紹介します"^]
+詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["BlueXPのコピーと同期の概要を紹介します"^]
 
 . Googleアカウントのバケットに関する詳細を表示するには、*[Enter Working Environment]*を選択します。
 +

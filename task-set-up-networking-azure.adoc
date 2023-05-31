@@ -28,7 +28,7 @@ summary: コネクタがハイブリッドクラウド環境内のリソース�
 
 コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure リージョンペア"^] Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP での Azure プライベートリンクの使用方法をご確認ください"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP での Azure プライベートリンクの使用方法をご確認ください"^]
 
 
 
@@ -131,4 +131,4 @@ NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続�
 
 == IPアドレスの制限
 
-172の範囲のIPアドレスと競合する可能性があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["この制限事項の詳細については、こちらをご覧ください"]。
+172の範囲のIPアドレスと競合する可能性があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["この制限事項の詳細については、こちらをご覧ください"]。
