@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: NetApp Support Site （NSS）アカウントのサポートへの登録、Cloud Volumes ONTAP の主要なワークフローの有効化などに必要なクレデンシャルを指定します。これらのNSSクレデンシャルはBlueXPアカウント全体に関連付けられます。 
+summary: NetApp Support SiteアカウントをBlueXPアカウントに関連付けて、Cloud Volumes ONTAPの主要なワークフローを有効にします。これらのNSSクレデンシャルはBlueXPアカウント全体に関連付けられます。 
 ---
 = BlueXPアカウントに関連付けられているNSSクレデンシャルを管理します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp Support Site （NSS）アカウントのサポートへの登録
 
 
 [role="lead"]
-BlueXPにNetApp Support Site （NSS）アカウントのクレデンシャルを入力して、サポートの登録やCloud Volumes ONTAP の主要なワークフローの有効化などを行います。これらのNSSクレデンシャルはBlueXPアカウント全体に関連付けられます。
+NetApp Support SiteアカウントをBlueXPアカウントに関連付けて、Cloud Volumes ONTAPの主要なワークフローを有効にします。これらのNSSクレデンシャルはBlueXPアカウント全体に関連付けられます。
 
 
 NOTE: BlueXPでは、BlueXPユーザごとに1つのNSSアカウントを関連付けることもできます。 link:task-manage-user-credentials.html["ユーザレベルのクレデンシャルを管理する方法について説明します"]。
@@ -25,8 +25,6 @@ NOTE: BlueXPでは、BlueXPユーザごとに1つのNSSアカウントを関連�
 
 BlueXPで次のタスクを有効にするには、NetApp Support Site クレデンシャルを特定のBlueXPアカウントIDに関連付ける必要があります。
 
-* サポートを登録しています
-* サポートケースの作成
 * お客様所有のライセンスを使用（BYOL）する場合のCloud Volumes ONTAP の導入
 +
 ライセンスキーをBlueXPでアップロードし、購入した契約期間のサブスクリプションを有効にするには、NSSアカウントを提供する必要があります。これには、期間の更新の自動更新も含まれます。
@@ -89,7 +87,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 
 
 .次の手順
-新しいCloud Volumes ONTAP システムの作成時、既存のCloud Volumes ONTAP システムの登録時、およびサポート登録時にアカウントを選択できるようになりました。
+新しいCloud Volumes ONTAPシステムの作成時や既存のCloud Volumes ONTAPシステムの登録時にアカウントを選択できるようになりました。
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS での Cloud Volumes ONTAP の起動"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure で Cloud Volumes ONTAP を起動します"^]
