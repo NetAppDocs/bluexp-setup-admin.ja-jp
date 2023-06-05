@@ -119,7 +119,7 @@ VM を設定する際には、次の点に注意してください。
 ** コネクタはHDDディスクまたはSSDディスクで最適に動作します。
 ** CPU と RAM の要件を満たす VM サイズを選択します。DS3 v2 を推奨します。
 +
-link:reference-host-requirements-azure["VM の要件を確認します"]。
+link:reference-host-requirements-azure.html["VM の要件を確認します"]。
 
 ** ネットワークセキュリティグループの場合、コネクタには、 SSH 、 HTTP 、および HTTPS を使用したインバウンド接続が必要です。特定の構成にはさらにいくつかのルールが必要です。
 +

@@ -36,7 +36,7 @@ image:screenshot_accounts_select_azure.gif["Details  Credentials ページに Sw
 
 == マネージド ID 向けの Azure サブスクリプションが追加されました
 
-コネクタVMに割り当てられたシステム割り当ての管理IDは、コネクタを起動したサブスクリプションに関連付けられています。別の Azure サブスクリプションを選択する場合は、が必要です link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["管理対象 ID をこれらのサブスクリプションに関連付けます"]。
+コネクタVMに割り当てられたシステム割り当ての管理IDは、コネクタを起動したサブスクリプションに関連付けられています。別の Azure サブスクリプションを選択する場合は、が必要です link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity["管理対象 ID をこれらのサブスクリプションに関連付けます"]。
 
 
 
@@ -46,7 +46,7 @@ BlueXPで別のAzureクレデンシャルを使用する場合は、で必要な
 
 image:diagram_permissions_multiple_azure.png["「 Azure の最初のアカウントを示す概念図。カスタムのロールと管理対象 ID を使用して権限を付与します。また、カスタムのロールとサービスプリンシパルを使用して権限を付与するもう 1 つのアカウントも含まれます。」"]
 
-そのあとで link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["アカウントの資格情報をBlueXPに追加します"] AD サービスプリンシパルの詳細を指定します。
+そのあとで link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["アカウントの資格情報をBlueXPに追加します"] AD サービスプリンシパルの詳細を指定します。
 
 たとえば、新しいCloud Volumes ONTAP 作業環境を作成するときにクレデンシャルを切り替えることができます。
 

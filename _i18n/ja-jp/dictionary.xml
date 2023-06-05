@@ -189,8 +189,6 @@
   <block id="fee2d29ad57ecb4f5309060016b4495c" category="paragraph">次の図は、上記の番号 1 と 2 で説明した権限の要件を示しています。</block>
   <block id="ebd7d1e81a9a2891e260eecaa709adbf" category="section-title">Project for Cloud Volumes ONTAP の略</block>
   <block id="a4ccd00c9229d2a8510153f89f2a576a" category="paragraph">Cloud Volumes ONTAP は、コネクタと同じプロジェクトに存在することも、別のプロジェクトに存在することもできます。Cloud Volumes ONTAP を別のプロジェクトに配置するには、まずコネクタサービスアカウントとその役割をそのプロジェクトに追加する必要があります。</block>
-  <block id="c5eb6c02a9d49411a265d5ddf6527796" category="inline-link-macro">サービスアカウントの設定方法について説明します</block>
-  <block id="b2a3116602dffae5ec2500e053b897f2" category="list-text"><block ref="b2a3116602dffae5ec2500e053b897f2" category="inline-link-macro-rx"></block></block>
   <block id="9085e5686dfeb6405cc2917702710ed3" category="cell">通知センター</block>
   <block id="3d1f92a565d3b1a61880236e33c49bf3" category="cell">タイムライン</block>
   <block id="0486b07a3d352a89611f0005bff8bbd3" category="cell">イベントとアクションのステータスの概要が表示されます</block>
@@ -1532,7 +1530,6 @@
   <block id="825a028e49bfdd88d5c17500e011aaf5" category="inline-image-macro">BlueXPがコネクタをAzureアカウントとサブスクリプションに導入する様子を示す概念図。システムによって割り当てられた管理IDが有効になり、Connector仮想マシンにカスタムロールが割り当てられます。</block>
   <block id="4ba8970a06f2fd9f7ce2b5459745a3f0" category="paragraph"><block ref="4ba8970a06f2fd9f7ce2b5459745a3f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4b8d6d1554d22a2bda6470094c227037" category="paragraph">Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォルトで次のAzureクレデンシャルが選択されます。</block>
-  <block id="79f0e2a1f0b9a07786aae7969fdf941c" category="paragraph">そのあとで <block ref="fdb068e0f25207f010bf6b52e6d7dd53" category="inline-link-macro-rx"></block> AD サービスプリンシパルの詳細を指定します。</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">ライセンスキーをBlueXPでアップロードし、購入した契約期間のサブスクリプションを有効にするには、NSSアカウントを提供する必要があります。これには、期間の更新の自動更新も含まれます。</block>
   <block id="37cb0cdf24a1597d838bc5f1699b9e5a" category="list-text">アカウントはユーザレベルで管理されるため、他のユーザがログインしても表示できません。</block>
   <block id="759f5e4f5dca6e6753e9254efed21ea1" category="paragraph">2021 年 11 月以降、ネットアップはサポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用します。この更新プログラムの結果、以前に追加した既存のアカウントの資格情報を更新するように求められます。</block>
@@ -2158,7 +2155,6 @@
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。</block>
   <block id="3944b94e332ebaaeeb1f75ea267f7687" category="paragraph">BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます <block ref="215c62f8f7b8f0001687c60d93a1178c" category="inline-link-macro-rx"></block>。</block>
   <block id="61d31e18d80b565c39bc938c02808e6f" category="paragraph">すべての Cloud Volumes ONTAP システムは、初期の Azure クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。</block>
-  <block id="75904d63b29699480eda8c85929c78ee" category="paragraph">コネクタVMに割り当てられたシステム割り当ての管理IDは、コネクタを起動したサブスクリプションに関連付けられています。別の Azure サブスクリプションを選択する場合は、が必要です <block ref="fde23217a3c87d38cc57946a4ba7d7b4" category="inline-link-macro-rx"></block>。</block>
   <block id="008c03a90ac1fbf6c15706a19f919f3b" category="paragraph">BlueXPで別のAzureクレデンシャルを使用する場合は、で必要な権限を付与する必要があります <block ref="551303c9f711674f6fbd417b1f488bc0" category="inline-link-macro-rx"></block> を Azure アカウントごとに用意します。次の図は、 2 つの追加アカウントを示しています。各アカウントには、権限を提供するサービスプリンシパルとカスタムロールが設定されています。</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">たとえば、新しいCloud Volumes ONTAP 作業環境を作成するときにクレデンシャルを切り替えることができます。</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。Azure MarketplaceからAzureにコネクタを導入したり、独自のLinuxホストにコネクタソフトウェアをインストールしたりすることもできます。</block>
@@ -2321,7 +2317,6 @@
   <block id="eec108a26c2c4c3392174c931352146b" category="cell">BlueXPからのコネクタの導入</block>
   <block id="2d3fc94cd0898448a15e6e05f4098b6f" category="inline-link-macro">AWS権限を設定</block>
   <block id="5e32b9a1412a74f0635b487d41937c4a" category="cell"><block ref="5e32b9a1412a74f0635b487d41937c4a" category="inline-link-macro-rx"></block></block>
-  <block id="d7977db2bcddda7e6cbf6cfc23b6278b" category="cell">BlueXPがConnectorを起動すると、AWSアカウントのリソースとプロセスの管理に必要な権限を提供するポリシーがインスタンスに関連付けられます。マーケットプレイスからコネクタを起動する場合、コネクタを手動でインストールする場合、またはコネクタを手動でインストールする場合は、ポリシーを自分で設定する必要があります <block ref="aec3821661a331ee5026b7ddbb2bcb98" category="inline-link-macro-rx"></block>。また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。</block>
   <block id="8ff08eb12a4bed8d94e8682a89020c56" category="paragraph">Marketplaceからコネクタを起動する場合、コネクタを手動でインストールする場合、または独自にカスタムロールを設定する必要があります <block ref="3a714b4b67994f94abb2f77ce85a395b" category="inline-link-macro-rx"></block>。</block>
   <block id="cf94f172dc39ef92ca49e3c869407357" category="cell"><block ref="cf94f172dc39ef92ca49e3c869407357" category="inline-link-macro-rx"></block></block>
   <block id="8e83b819241a1bf1d918adcc453afeab" category="cell"><block ref="8e83b819241a1bf1d918adcc453afeab" category="inline-link-macro-rx"></block></block>
@@ -2430,10 +2425,8 @@
   <block id="c0f31a85c681cbd2946d5195b382308e" category="paragraph">Cloud Volumes ONTAP を別の AWS アカウントで起動する場合は、 IAM ユーザに AWS キーを提供するか、信頼されたアカウントのロールの ARN を提供します。次の図は、 2 つの追加アカウントを示しています。 1 つは、信頼されたアカウントの IAM ロールを介してアクセス許可を提供し、もう 1 つは IAM ユーザの AWS キーを使用してアクセス許可を提供します。</block>
   <block id="48c7f5d184d27ef640370421d3317ba5" category="paragraph">その後、IAMロールのAmazon Resource Name（ARN）またはIAMユーザのAWSキーを指定して、アカウントクレデンシャルをBlueXPに追加します。</block>
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">既存のコネクタにAWSクレデンシャルを追加する方法を説明します。</block>
-  <block id="51c8ce8bb23533cdcf692a4e99f34896" category="paragraph"><block ref="51c8ce8bb23533cdcf692a4e99f34896" category="inline-link-macro-rx"></block></block>
   <block id="a3d00aa90b48860260586c7be1bec2e8" category="inline-link-macro">BlueXP for Amazon FSx for ONTAP にAWSクレデンシャルを追加する方法をご紹介します</block>
   <block id="3e9d4cd6e63ede4decfd24e1cd55b4f5" category="inline-link-macro">コネクタを作成するためにAWSクレデンシャルをBlueXPに追加する方法について説明します</block>
-  <block id="d53482083698aad0c56365a4b9848a94" category="list-text"><block ref="d53482083698aad0c56365a4b9848a94" category="inline-link-macro-rx"></block></block>
   <block id="3551bffff472d33de9e274227109232f" category="paragraph">上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。AWS MarketplaceからAWSにコネクタを導入したり、独自のLinuxホストにコネクタソフトウェアを手動でインストールしたりすることもできます。</block>
   <block id="c369edb322a8885a983610e18f932d0c" category="paragraph">オンプレミス環境の場合、BlueXPシステム用のIAMロールを設定することはできませんが、AWSアクセスキーを使用して権限を指定することはできます。</block>
   <block id="b8c45dd3fc7b806721f81b6d91964231" category="summary">プライベートモードでBlueXPを起動して実行したら、プライベートモードでサポートされているBlueXPサービスの使用を開始できます。</block>
@@ -2970,7 +2963,6 @@
   <block id="0a3420a284048b3146bfedfda39bc929" category="list-text">[Active Directory service principal]*を選択して、必要な権限を付与するAzure Active Directoryサービスプリンシパルに関する情報を入力します。</block>
   <block id="37653ce036b712cbc8dcc5b189d94b80" category="inline-link-macro">サービスプリンシパルのこれらの値を取得する方法について説明します</block>
   <block id="283459c094a8c0f9ef857a405f711530" category="paragraph"><block ref="82e5cd1190c32cd925829227067e3312" category="inline-link-macro-rx"></block>。</block>
-  <block id="870a297127d1f7e2fafbc700250f7ba7" category="paragraph"><block ref="3596f994dc1277abac9bff5ff853fb6f" category="inline-link-macro-rx"></block>。</block>
   <block id="2ad12e29d6b612d0df73a715eb04038a" category="list-text">[Management]*で、[On]*を選択して、コネクターVMの*[System assigned managed identity]*を有効にします。</block>
   <block id="827aaa681f80dbd83d41241979226f5a" category="paragraph">管理対象の ID を使用すると、 Connector 仮想マシンはクレデンシャルを指定せずに自身を Azure Active Directory に識別できるため、この設定は重要です。完了したら、作成したカスタムロールを割り当てる必要があります<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
   <block id="f6f67a41d5743f1fd41a2fb8b54fd85b" category="paragraph"><block ref="7e9e5669a04928e1ffa0a9abd020b87e" category="inline-link-macro-rx"></block>。</block>
@@ -3659,4 +3651,20 @@
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">NSSクレデンシャルをBlueXPアカウントに関連付ける方法は、BlueXPユーザログインに関連付けられたNSSアカウントとは異なります。</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">これらのNSSクレデンシャルは、特定のBlueXPアカウントIDに関連付けられています。BlueXPアカウントに属するユーザは、*[サポート]&gt;[NSS管理]*からこれらのクレデンシャルにアクセスできます。</block>
   <block id="13348442cc6a27032d2b4aa28b75a5d3" category="cell">検索</block>
+  <block id="41f10588fd19d4ce9160a06b3b02b971" category="paragraph"><block ref="a42750006c41b7be8d7d74e88b9209f7" category="inline-link-macro-rx"></block>。</block>
+  <block id="8bee474fd085c11334ab13b9c1a78d9e" category="inline-link-macro">サービスアカウントの設定方法について説明します</block>
+  <block id="2846d36d7005f43bc3cc15749f932ff7" category="list-text"><block ref="2846d36d7005f43bc3cc15749f932ff7" category="inline-link-macro-rx"></block></block>
+  <block id="e9449a821e5687d61739e39e9c79898a" category="paragraph">コネクタVMに割り当てられたシステム割り当ての管理IDは、コネクタを起動したサブスクリプションに関連付けられています。別の Azure サブスクリプションを選択する場合は、が必要です <block ref="f01caac2e85764bbee287cdcbf568231" category="inline-link-macro-rx"></block>。</block>
+  <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">そのあとで <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> AD サービスプリンシパルの詳細を指定します。</block>
+  <block id="affef63146feae005315127173a28aa9" category="paragraph"><block ref="affef63146feae005315127173a28aa9" category="inline-link-macro-rx"></block></block>
+  <block id="7a3f65e5f9d581964ce0fcd660ba7130" category="list-text"><block ref="7a3f65e5f9d581964ce0fcd660ba7130" category="inline-link-macro-rx"></block></block>
+  <block id="37c1762f10d4fe7f0bd3dd2820e543c3" category="section-title">ドメインユーザを使用したプロキシ設定</block>
+  <block id="2ced7e677ffb2b0b579ea765f328f9d9" category="paragraph">BlueXPでは、コネクタのプロキシサーバの設定時にドメインユーザがサポートされません。プロキシサーバのユーザ名を入力する場合は、ローカルユーザである必要があります。</block>
+  <block id="0964ada151a483bdbffce0cc395edecc" category="admonition">証明書の有効期限をメモします。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。</block>
+  <block id="5b70b2d98b345016c9e69390ea296277" category="admonition">シークレットキーの有効期限をメモします。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。</block>
+  <block id="ec2a26203d1e704fea5fe65b3298f175" category="cell">BlueXPがConnectorを起動すると、AWSアカウントのリソースとプロセスの管理に必要な権限を提供するポリシーがインスタンスに関連付けられます。
+
+マーケットプレイスからコネクタを起動する場合、コネクタを手動でインストールする場合、またはコネクタを手動でインストールする場合は、ポリシーを自分で設定する必要があります <block ref="c5a34c273ba791769e2c0edbb9c79dc0" category="inline-link-macro-rx"></block>。
+
+また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。</block>
 </blocks>
