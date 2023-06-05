@@ -41,6 +41,9 @@ image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設�
 .. [Enable Proxy]*を選択します。
 .. 構文を使用してサーバを指定します http://_address:port_[] または https://_address:port_[]
 .. ベーシック認証の場合は、ユーザ名とパスワードを指定します サーバに必要です
++
+ユーザはローカルユーザである必要があります。ドメインユーザはサポートされません。
+
 .. [ 保存（ Save ） ] を選択します。
 +
 

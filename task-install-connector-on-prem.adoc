@@ -94,6 +94,9 @@ chmod +x OnCommandCloudManager-<version>
 ** \ http://username:password@address:port
 ** \ https://address:port
 ** \ https://username:password@address:port
++
+ユーザはローカルユーザである必要があります。ドメインユーザはサポートされません。
+
 
 
 +

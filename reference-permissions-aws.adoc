@@ -167,7 +167,8 @@ BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカ�
                 "ce:GetCostAndUsage",
                 "ce:GetTags",
                 "fsx:Describe*",
-                "fsx:List*"
+                "fsx:List*",
+                "kms:GenerateDataKeyWithoutPlaintext"
             ],
             "Resource": "*",
             "Effect": "Allow",
@@ -1133,7 +1134,7 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 | S3 ： ListBucket | いいえ | はい。 | いいえ 
 
 
-.4+| AWS Key Management Service（KMS；キー管理サービス）を使用してCloud Volumes ONTAP のデータ暗号化を有効にする | KMS：リスト* | はい。 | はい。 | いいえ 
+.5+| AWS Key Management Service（KMS；キー管理サービス）を使用してCloud Volumes ONTAP のデータ暗号化を有効にする | KMS：リスト* | はい。 | はい。 | いいえ 
 
 
 | KMS：再暗号化* | はい。 | いいえ | いいえ 
@@ -1143,6 +1144,9 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 
 
 | KMS：CreateGrant | はい。 | はい。 | いいえ 
+
+
+| KMS：GenerateDataKeyWithoutPlaintext | はい。 | はい。 | いいえ 
 
 
 .4+| AWSからCloud Volumes ONTAP のコストデータを取得 | CE：GetReservationUtilization | いいえ | はい。 | いいえ 
@@ -1218,6 +1222,14 @@ BlueXPの修正措置を使用する場合、コネクタは次のAPI要求を�
 == 変更ログ
 
 権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。
+
+
+
+=== 2023年6月6日
+
+Cloud Volumes ONTAPには次の権限が必要です。
+
+KMS：GenerateDataKeyWithoutPlaintext
 
 
 
