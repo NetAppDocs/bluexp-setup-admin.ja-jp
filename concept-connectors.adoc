@@ -58,20 +58,22 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 BlueXPを標準モードで使用する場合、BlueXPの次の機能やサービスにはコネクタが必要です。
 
 * ONTAP 管理機能用の Amazon FSX
-* Amazon S3検出
-* Azure Blob検出
+* Amazon S3ストレージ
+* Azure BLOBストレージ
 * バックアップとリカバリ
 * 分類
 * Cloud Volumes ONTAP
 * Eシリーズシステム
 * 経済性^ 1^
 * エッジキャッシュ
-* Google Cloud Storageの検出
+* Google Cloud Storageバケット
 * Kubernetes クラスタ
+* 移行レポート
 * オンプレミスのONTAP クラスタとBlueXPデータサービスの統合
 * 運用の耐障害性^1^
 * StorageGRID システム
 * 階層化
+* ボリュームキャッシュ
 
 
 ^1^コネクタなしでこれらのサービスにアクセスできますが、サービスからアクションを開始するにはコネクタが必要です。
