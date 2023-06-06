@@ -191,7 +191,7 @@ sidebar:
       entries:
       - title: Amazon S3バケットを管理します
         url: "/task-viewing-amazon-s3.html"
-      - title: Azure Blobアカウントを表示
+      - title: Azure Blobアカウントを管理します
         url: "/task-viewing-azure-blob.html"
       - title: Google Cloud Storageバケットを表示します
         url: "/task-viewing-gcp-storage.html"

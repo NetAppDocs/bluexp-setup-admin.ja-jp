@@ -1174,13 +1174,8 @@
   <block id="823b2e7894c2b52c1e9adc9ea10b9be5" category="section-title">Google Cloud権限の使用方法</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">権限の概要</block>
   <block id="abc9b009fdeb5b04ca7bcd60cdae2434" category="section-title">AWS権限の使用方法</block>
-  <block id="4fa9fc9591ffa247eeef55070b3327a0" category="paragraph">Azure Blob作業環境は、しばらくすると自動的に確認できます。</block>
   <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Azure Blob作業環境のスクリーンショット</block>
   <block id="33b5e081bfc2a4ff553d44178d68dda0" category="paragraph"><block ref="33b5e081bfc2a4ff553d44178d68dda0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ddf1211c4efc09073771de2cfb4c8add" category="inline-image-macro">Azure Blob Working環境を選択したあとの操作ペインのスクリーンショットこのペインには、ストレージアカウントの総数と、Syncサービスを使用するためのアクションが表示されます。</block>
-  <block id="ff6037c85b586250d2e3426572b132dc" category="paragraph"><block ref="ff6037c85b586250d2e3426572b132dc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="60c144c7df7b8788c579926f83c506f9" category="inline-image-macro">Azure Blob作業環境の詳細を示すスクリーンショット：ストレージアカウントの総数、場所の総数、リソースグループ、合計容量と使用済み容量など。</block>
-  <block id="b8fb2daac759c86243cf205eec39b222" category="paragraph"><block ref="b8fb2daac759c86243cf205eec39b222" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18fe44f15840f7116c5288c8e5b736da" category="paragraph">しばらくすると、Google Cloud Storageの作業環境が自動的に表示されます。</block>
   <block id="21b1bc909131728ad1b5d3d05c538f6b" category="inline-image-macro">Google Cloud Storage作業環境のスクリーンショット。</block>
   <block id="94bd1056e53b5ba66af1269a83d9d853" category="paragraph"><block ref="94bd1056e53b5ba66af1269a83d9d853" category="inline-image-macro-rx" type="image"></block></block>
@@ -1189,7 +1184,6 @@
   <block id="b008bc9f769ee3b6c8813b19052b43a6" category="inline-image-macro">Google Cloud Storage作業環境の詳細を示すスクリーンショット。バケット、容量、場所の総数、および各バケットの詳細を示す表を示しています。</block>
   <block id="14738180b3115b94f504ce48bf25a31a" category="paragraph"><block ref="14738180b3115b94f504ce48bf25a31a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">クラウドストレージを検出</block>
-  <block id="bce447551b8153911559a7a705721ffe" category="sidebar">Azure Blobアカウントを表示</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="sidebar">Google Cloud Storageバケットを表示します</block>
   <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022年7月15日</block>
   <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">ポリシーの変更</block>
@@ -2345,10 +2339,7 @@
   <block id="e48cc2b8b425580d8ee1508fd8a29ab2" category="paragraph">これでコネクタがインストールされ、BlueXPアカウントでセットアップされました。</block>
   <block id="ba997697bddbedc57faeb5fdc16c15a6" category="inline-link-macro">以前に設定した権限をBlueXPに付与します</block>
   <block id="263bf141eee327cfdfe08fdc96fb32bc" category="paragraph"><block ref="53f6e9b699374851a8086ab8319c48f4" category="inline-link-macro-rx"></block>。</block>
-  <block id="dee8aad8e11608028ff3bcbb674cdcde" category="list-text">Azureストレージアカウントを表示するAzureアカウントにコネクタをインストールします。</block>
   <block id="f0574ea9efbf61e3005311c1ed736537" category="list-text">作業環境を選択し、右側のペインからアクションを選択します。</block>
-  <block id="1b4dd0d5e9a98e510340de3c3938e7c5" category="list-text">Azure BLOBストレージとの間でデータを同期するには、*[データの同期]*を選択します。</block>
-  <block id="9e6c19e48717319b0b71ece6d5735a24" category="list-text">[Enter Working Environment]*を選択して、Azure Blob内のAzureストレージアカウントに関する詳細を表示します。</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">オンプレミスネットワークをセットアップする</block>
   <block id="caf7fd71047bbc17e23e603d7a448234" category="paragraph">たとえば、クラウドでCloud Volumes ONTAP を起動する場合は、企業ネットワークからCloud Volumes ONTAP を起動する仮想ネットワークへのVPN接続を設定する必要があります。</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">独自のLinuxホストにコネクタを手動でインストールする場合、コネクタのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。</block>
@@ -3671,4 +3662,10 @@
   <block id="bff35f79163f07f1c3724cc46b19c1f3" category="paragraph">BlueXPログインに関連付けられているNSSアカウントについては、次の点に注意してください。</block>
   <block id="7919f3886eb3f79725465a41663fb32e" category="list-text">NetApp Support SiteアカウントをCloud Volumes ONTAP作業環境に関連付ける場合は、メンバーであるBlueXPアカウントに追加されたNSSアカウントからのみ選択できます。</block>
   <block id="a91658662405c5ec223c95cc1036afce" category="paragraph">NSSアカウントレベルのクレデンシャルは、BlueXPログインに関連付けられたNSSアカウントとは異なります。NSSアカウントレベルのクレデンシャルを使用して、お客様所有のライセンスを使用（BYOL）した場合、PAYGOシステムを登録した場合、Cloud Volumes ONTAPソフトウェアをアップグレードした場合にCloud Volumes ONTAPを導入できます。</block>
+  <block id="70c85793f0a33ef534a67f193287a992" category="doc">Azure Blobアカウントを管理します</block>
+  <block id="bbea79834217efc10b46f4ce874042e0" category="inline-link">BlueXPを使用してAzureストレージアカウントを表示、作成、管理する方法については、こちらをご覧ください</block>
+  <block id="925b4bfac5efe2fd0e529d00b71f77ab" category="paragraph">新たに追加された機能で、Azureストレージアカウントを作成および編集できるようになりました。<block ref="3ed7f712e1a5045237f8df14106ff39a" category="inline-link-rx"></block>。</block>
+  <block id="26e3ab611e399c831d813cdff5745975" category="list-text">コネクタを使用して、BlueXPからAzureストレージアカウントを追加および管理できるようになりました。</block>
+  <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">BlueXPからAzureサブスクリプションに新しいAzureストレージアカウントを追加する方法をご確認ください</block>
+  <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>。</block>
 </blocks>

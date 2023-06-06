@@ -38,6 +38,10 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["コンソールの上部に表示されるBlueXP検索のスクリーンショット。"]
 
+* コネクタを使用して、BlueXPからAzureストレージアカウントを追加および管理できるようになりました。
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["BlueXPからAzureサブスクリプションに新しいAzureストレージアカウントを追加する方法をご確認ください"^]。
+
 * このコネクタが次のAWSリージョンでサポートされるようになりました。
 +
 ** ハイデラバード（AP-south-2）
