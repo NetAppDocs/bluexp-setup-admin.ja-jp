@@ -759,8 +759,6 @@
   <block id="38522fbf43585538a7a55ea25460e779" category="list-text">AWS EC2 インスタンスタイプ</block>
   <block id="893ba5865a015de9dc77765cdf7184e3" category="list-text">Azure VM サイズ</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">このタスクについて</block>
-  <block id="3a0381e5879eb05d4447518a0fe21601" category="list-text">インストールを実行すると、ネットアップサポートからのリカバリ手順用に AWS コマンドラインツール（ awscli ）がインストールされます。</block>
-  <block id="c421e739c1e3aa36da0456d7f369e45f" category="paragraph">AWSCLI のインストールに失敗したというメッセージが表示された場合は、このメッセージを無視しても問題ありません。コネクタは、工具なしで正常に作動する。</block>
   <block id="aad3dfdc62f79a4c10e86004046d9509" category="list-text">ネットアップサポートサイトで入手できるインストーラは、それよりも古いバージョンの場合があります。インストール後、新しいバージョンが利用可能になると、コネクタは自動的に更新されます。</block>
   <block id="325740f998865be7879e32048d406868" category="list-text">インストールスクリプトを実行します。</block>
   <block id="8dae847f59a6afd8d7e49b7b7654d0eb" category="list-text">Web ブラウザを開き、次の URL を入力します。</block>
@@ -1942,8 +1940,6 @@
   <block id="a3b3ed2f72536d95b268a4a67722c55d" category="list-text">従量課金制のCloud Volumes ONTAP システムを登録しています</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAP ソフトウェアを最新リリースにアップグレードしています</block>
   <block id="a86ad85ddb4228477c624e47ab659180" category="paragraph">これらのクレデンシャルは、特定のBlueXPアカウントIDに関連付けられます。BlueXPアカウントに属するユーザは、*[サポート]&gt;[NSS管理]*からこれらのクレデンシャルにアクセスできます。</block>
-  <block id="d4b8ea0f438d980b900fa0c72d88710f" category="list-text">このアカウントは、BlueXPの他の機能では使用できません。Cloud Volumes ONTAP の作成、ライセンス、サポートケースの作成では使用できません。</block>
-  <block id="37ab7585b9575599c51022bd3b09813a" category="list-text">Digital Advisorとケース管理に関連付けることができるNSSアカウントは、ユーザごとに1つだけです。</block>
   <block id="9a030ad8abbc9b1e402feade38bdec50" category="paragraph">サポートダッシュボードでは、BlueXPで使用するNetApp Support Site アカウントをBlueXPアカウントレベルで追加および管理できます。</block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSSアカウントは、お客様レベルのアカウントである必要があります（ゲストアカウントや一時アカウントではありません）。複数のお客様レベルのNSSアカウントを設定できます。</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">NSSアカウントがパートナーレベルのアカウントの場合、作成できるNSSアカウントは1つだけです。お客様レベルのNSSアカウントを追加しようとすると、パートナーレベルのアカウントが存在する場合は、次のエラーメッセージが表示されます。</block>
@@ -3598,7 +3594,6 @@
   <block id="b5d4819a4e8d73d085630d52e025ce10" category="paragraph">この操作により、BlueXPアカウントがサポート用に登録され、サポート使用権がアクティブ化されます。サポートに登録してサポート利用資格をアクティブ化するには、BlueXPアカウント内の1人のユーザだけがNetApp Support SiteアカウントをBlueXPログインに関連付ける必要があります。これが完了すると、*リソース*ページにアカウントがサポートに登録されたことが表示されます。</block>
   <block id="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="paragraph"><block ref="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="inline-link-rx"></block></block>
   <block id="1f41c927d23b7f472c07e8cefaaa4155" category="list-text">[サポート]&gt;[ケース管理]*にアクセスすると、NSSクレデンシャルを入力するように求められます（まだ入力していない場合）。このページでは、NSSアカウントと会社に関連付けられたサポートケースを作成および管理できます。</block>
-  <block id="455362b49d80ddf5f9cd87d0f39e81ab" category="paragraph">NetApp Support Site クレデンシャルは、メンバーであるBlueXPアカウントにも関連付けられます。NSSアカウントレベルのクレデンシャルを使用すると、お客様所有のライセンスを使用（BYOL）する場合などにCloud Volumes ONTAPを導入できます。</block>
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">BlueXPログインに関連付けられているクレデンシャルの管理方法について説明します</block>
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">[ケースの作成]*機能を使用するには、最初にNetApp Support SiteクレデンシャルをBlueXPログインに関連付ける必要があります。<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>。</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">シリアル番号のあるONTAPシステムのケースをオープンする場合は、そのシステムのシリアル番号にNSSアカウントを関連付ける必要があります。</block>
@@ -3673,4 +3668,7 @@
   <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Google Cloud Storageバケット</block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">移行レポート</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">ボリュームキャッシュ</block>
+  <block id="816a41c8cb7108ca970b7fdff9e2b798" category="list-text">このアカウントは、Cloud Volumes ONTAPライセンスでは使用できません。</block>
+  <block id="fcaf3921e62bfc728003fed248ffa3f9" category="list-text">Digital Advisorとサポートケース管理に関連付けることができるNSSアカウントは、ユーザごとに1つだけです。</block>
+  <block id="2c0e4e5466a7db131a747ad4e195dc2c" category="paragraph">また、メンバーになっているBlueXPアカウントにNetApp Support Siteクレデンシャルを関連付けることもできます。NSSアカウントレベルのクレデンシャルを使用して、お客様所有のライセンスを使用（BYOL）した場合、PAYGOシステムを登録した場合、Cloud Volumes ONTAPソフトウェアをアップグレードした場合にCloud Volumes ONTAPを導入できます。</block>
 </blocks>
