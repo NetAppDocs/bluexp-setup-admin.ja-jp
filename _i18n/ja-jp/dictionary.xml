@@ -2103,7 +2103,6 @@
   <block id="b82af7a7b96d34942cadb7921514f408" category="paragraph">コネクタを使用せずにオンプレミスのONTAP クラスタを直接検出すると、クラスタのONTAP クレデンシャルを入力するように求められます。これらのクレデンシャルはユーザレベルで管理されます。つまり、ログインした他のユーザはこれらのクレデンシャルを表示できません。</block>
   <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">NSSクレデンシャル</block>
   <block id="fb81cc600c8251372b08f0797c3abdd7" category="list-text">BlueXPでDigital Advisorにアクセスすると、NSS資格情報を入力してDigital Advisorにログインするように求められます。</block>
-  <block id="276e2bd44117ba4b3317de4a352235b2" category="paragraph">NSSアカウントについては、次の点に注意してください。</block>
   <block id="db0f1f3e531a1a1c690b42c9a6daae35" category="inline-link-macro">BlueXPアカウントでNSSクレデンシャルを使用する方法の詳細については、こちらをご覧ください</block>
   <block id="dacf2f246c2efb276c3709c141985f7c" category="paragraph"><block ref="4734e8f3bab5a9c00aebb286a2f16deb" category="inline-link-macro-rx"></block>。</block>
   <block id="cc96a4cc30e50577aa6671b076af72e1" category="section-title">ユーザクレデンシャルを管理します</block>
@@ -3589,7 +3588,6 @@
   <block id="c60a13b5352c81dedc5a2bed03d2f76a" category="list-text"><block ref="c60a13b5352c81dedc5a2bed03d2f76a" category="inline-link-rx"></block></block>
   <block id="8b2f4a40ac1aa19f2dc2b3da3efe4ffc" category="summary">NetApp Support SiteアカウントをBlueXPアカウントに関連付けて、Cloud Volumes ONTAPの主要なワークフローを有効にします。これらのNSSクレデンシャルはBlueXPアカウント全体に関連付けられます。</block>
   <block id="71e32bbdd672e63bea65d67ecaa9f394" category="paragraph">新しいCloud Volumes ONTAPシステムの作成時や既存のCloud Volumes ONTAPシステムの登録時にアカウントを選択できるようになりました。</block>
-  <block id="282252a29e0d06c01483bbd34c2304a0" category="paragraph">BlueXPログインに関連付けられたNSSクレデンシャルを使用して、Digital Advisor、サポート登録、ケース管理の機能にアクセスできます。</block>
   <block id="f57a365a74c463e64fe68cc99fbed5f5" category="list-text">[サポート]&gt;[リソース]*にアクセスしてサポートに登録すると、NSSクレデンシャルをBlueXPログインに関連付けるように求められます。</block>
   <block id="b5d4819a4e8d73d085630d52e025ce10" category="paragraph">この操作により、BlueXPアカウントがサポート用に登録され、サポート使用権がアクティブ化されます。サポートに登録してサポート利用資格をアクティブ化するには、BlueXPアカウント内の1人のユーザだけがNetApp Support SiteアカウントをBlueXPログインに関連付ける必要があります。これが完了すると、*リソース*ページにアカウントがサポートに登録されたことが表示されます。</block>
   <block id="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="paragraph"><block ref="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="inline-link-rx"></block></block>
@@ -3669,6 +3667,8 @@
   <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">移行レポート</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">ボリュームキャッシュ</block>
   <block id="fcaf3921e62bfc728003fed248ffa3f9" category="list-text">Digital Advisorとサポートケース管理に関連付けることができるNSSアカウントは、ユーザごとに1つだけです。</block>
-  <block id="a90e2fd00c8dae4d2fb187ce1b69fa09" category="list-text">このアカウントはCloud Volumes ONTAPライセンスでは使用できません。</block>
-  <block id="49dd7d8a4c2b90d52580a51718450534" category="paragraph">Cloud Volumes ONTAPを使用している場合は、メンバーになっているBlueXPアカウントにNetApp Support Siteクレデンシャルを関連付けることができます。NSSアカウントレベルのクレデンシャルを使用して、お客様所有のライセンスを使用（BYOL）した場合、PAYGOシステムを登録した場合、Cloud Volumes ONTAPソフトウェアをアップグレードした場合にCloud Volumes ONTAPを導入できます。</block>
+  <block id="9b7ea233ab4085c74e7506949f6c1a49" category="paragraph">BlueXPログインに関連付けられたNSSクレデンシャルにより、サポート登録、ケース管理、Digital Advisorへのアクセスが可能になります。</block>
+  <block id="bff35f79163f07f1c3724cc46b19c1f3" category="paragraph">BlueXPログインに関連付けられているNSSアカウントについては、次の点に注意してください。</block>
+  <block id="7919f3886eb3f79725465a41663fb32e" category="list-text">NetApp Support SiteアカウントをCloud Volumes ONTAP作業環境に関連付ける場合は、メンバーであるBlueXPアカウントに追加されたNSSアカウントからのみ選択できます。</block>
+  <block id="a91658662405c5ec223c95cc1036afce" category="paragraph">NSSアカウントレベルのクレデンシャルは、BlueXPログインに関連付けられたNSSアカウントとは異なります。NSSアカウントレベルのクレデンシャルを使用して、お客様所有のライセンスを使用（BYOL）した場合、PAYGOシステムを登録した場合、Cloud Volumes ONTAPソフトウェアをアップグレードした場合にCloud Volumes ONTAPを導入できます。</block>
 </blocks>
