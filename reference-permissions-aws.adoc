@@ -750,27 +750,6 @@ S3 ： GetEncryptionConfiguration
 
 === バックアップとリカバリ
 
-コネクタは、次のAPI要求を実行して、BlueXPのバックアップとリカバリのリストアインスタンスを導入します。
-
-* EC2：StartInstances（EC2：開始インスタンス
-* EC2：StopInstances
-* EC2: DescribeInstances
-* EC2: DescribeInstanceStatus
-* EC2：RunInstances
-* EC2：TerminateInstances
-* EC2: DescribeInstanceAttributeのこと
-* EC2: DescribeImages
-* ec2：CreateTags
-* EC2：CreateVolume
-* EC2：CreateSecurityGroup
-* EC2: DescribeSubnets
-* EC2: DescribeVpcs
-* EC2: DescribeRegions (説明領域
-* CloudFormation：CreateStack
-* CloudFormation：DeleteStack
-* CloudFormation：DescribeStack
-
-
 Connectorは、Amazon S3でバックアップを管理するために次のAPI要求を実行します。
 
 * S3 ： GetBucketLocation
