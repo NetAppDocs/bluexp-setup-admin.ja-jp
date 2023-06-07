@@ -281,7 +281,7 @@ homepage:
       url: task-adding-gcp-accounts.html
     - title: アカウントのNSSクレデンシャルを管理します
       url: task-adding-nss-accounts.html
-  - title: ブログコミュニティ
+  - title: ブログとコミュニティ
     links:
     - title: ネットアップコミュニティ
       url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS

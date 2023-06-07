@@ -28,7 +28,7 @@ image:diagram_permissions_initial_aws.png["BlueXPがConnectorをAWSアカウン�
 
 Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォルトで次のAWSクレデンシャルが選択されます。
 
-image:screenshot_accounts_select_aws.gif["Details  Credentials ページに Switch Account オプションを示すスクリーンショット。"]
+image:screenshot_accounts_select_aws.gif["[Details  Credentials]ページの[Switch Account]オプションを示すスクリーンショット。"]
 
 すべての Cloud Volumes ONTAP システムは、初期の AWS クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。
 
@@ -56,7 +56,7 @@ image:diagram_permissions_multiple_aws.png["2 つの追加アカウントを示�
 
 クレデンシャルを追加したら、新しい作業環境を作成するときにクレデンシャルに切り替えることができます。
 
-image:screenshot_accounts_switch_aws.png["[ 詳細と資格情報 ] ページで [ アカウントの切り替え ] をクリックした後に、クラウドプロバイダアカウントを選択する方法を示すスクリーンショット。"]
+image:screenshot_accounts_switch_aws.png["[Details  Credentials]ページで[Switch Account]をクリックした後、クラウドプロバイダアカウントを選択するスクリーンショット。"]
 
 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["既存のコネクタにAWSクレデンシャルを追加する方法を説明します。"]
 

@@ -123,7 +123,9 @@ NOTE: 証明書の有効期限をメモします。[フェデレーションセ�
 | 3. | AD管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用してアイデンティティプロバイダで設定を完了します。 
 
 
-| 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。 
+| 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]
+
+接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。 
 |===
 
 
@@ -166,7 +168,9 @@ NOTE: シークレットキーの有効期限をメモします。[フェデレ�
 | 3. | AD管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用してAzure ADで構成を完了します。 
 
 
-| 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。 
+| 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]
+
+接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。 
 |===
 
 
@@ -201,7 +205,9 @@ NOTE: 証明書の有効期限をメモします。[フェデレーションセ�
 | 3. | AD管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されているパラメータを使用して、ADFSサーバーで設定を完了します。 
 
 
-| 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。 
+| 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]
+
+接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。 
 |===
 
 
@@ -243,7 +249,9 @@ NOTE: 証明書の有効期限をメモします。[フェデレーションセ�
 | 3. | AD管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用して、PingFederateサーバーで設定を完了します。 
 
 
-| 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。 
+| 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]
+
+接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。 
 |===
 
 

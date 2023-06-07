@@ -74,7 +74,7 @@ link:task-set-up-permissions-azure.html["これらの各オプションの詳細
 [role="quick-margin-list"]
 * * BlueXP *で：[Connector]ドロップダウンをクリックし、*[Add Connector]*を選択して、画面の指示に従います。
 * * Azure Marketplaceから*：に移動します https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Azure MarketplaceのNetApp Connector VMのページ"^] プロンプトに従ってコネクタVMを作成します。
-* *手動インストール*：からコネクタソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"] インストールスクリプトを実行します。
+* *手動インストール*：からコネクタソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Site"] インストールスクリプトを実行します。
 
 
 [role="quick-margin-para"]

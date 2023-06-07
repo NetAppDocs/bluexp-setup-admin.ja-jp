@@ -21,7 +21,8 @@ SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用す�
 | エンドポイント | 目的 
 
 
-| https://console.bluexp.netapp.com https://*.console.bluexp.netapp.com | BlueXPのWebベースのコンソールを使用すると、WebブラウザからこれらのURLにアクセスできます。 
+| \https://console.bluexp.netapp.com
+\https://*.console.bluexp.netapp.com | BlueXPのWebベースのコンソールを使用すると、WebブラウザからこれらのURLにアクセスできます。 
 
 
  a| 
@@ -36,25 +37,35 @@ AWS サービス（ amazonaws.com ）：
 | BlueXPからAWSにコネクタを導入する場合に必要です。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、 AWS のマニュアルを参照してください。"^] 
 
 
-| https://management.azure.com https://login.microsoftonline.com | ほとんどのAzureリージョンでBlueXPからコネクタを導入する場合に必要です。 
+| \https://management.azure.com
+
+\https://login.microsoftonline.com | ほとんどのAzureリージョンでBlueXPからコネクタを導入する場合に必要です。 
 
 
-| https://management.microSoftazure.de https://login.microsoftonline.de | Azureドイツ地域でBlueXPからコネクタを導入する場合に必要です。 
+| \https://management.microsoftazure.de
+
+\https://login.microsoftonline.de | Azureドイツ地域でBlueXPからコネクタを導入する場合に必要です。 
 
 
-| https://management.usgovcloudapi.net/ https://login.microsoftonline.com | Azure US GovリージョンでBlueXPからコネクタを導入する場合に必要です。 
+| \https://management.usgovcloudapi.net
+
+\https://login.microsoftonline.com | Azure US GovリージョンでBlueXPからコネクタを導入する場合に必要です。 
 
 
-| \ https://www.googleapis.com | Google CloudでBlueXPからConnectorを展開するために必要です。 
+| \https://www.googleapis.com | Google CloudでBlueXPからConnectorを展開するために必要です。 
 
 
-| \ https://signin.b2c.netapp.com | NetApp Support Site (NSS)の資格情報を更新するか、新しいNSS資格情報をBlueXPに追加する必要があります。 
+| \https://signin.b2c.netapp.com | NetApp Support Site (NSS)の資格情報を更新するか、新しいNSS資格情報をBlueXPに追加する必要があります。 
 
 
-| ¥ https://netapp-cloud-account.auth0.com ¥ https://cdn.auth0.com ¥ https://services.cloud.netapp.com | Webブラウザはこれらのエンドポイントに接続して、BlueXPを介した集中型ユーザ認証を行います。 
+| \https://netapp-cloud-account.auth0.com
+
+\https://cdn.auth0.com
+
+\https://services.cloud.netapp.com | Webブラウザはこれらのエンドポイントに接続して、BlueXPを介した集中型ユーザ認証を行います。 
 
 
-| \ https://widget.intercom.io | 製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。 
+| \https://widget.intercom.io | 製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。 
 |===
 .関連リンク
 * link:task-prepare-restricted-mode.html#prepare-networking-for-user-access-to-bluexp-console["BlueXPコンソールにユーザがアクセスできるようにネットワークを準備する（制限モード）"]

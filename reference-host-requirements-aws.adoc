@@ -41,7 +41,7 @@ https://access.redhat.com/certified-hypervisors["Red Hat ソリューション�
 
 --
 CPU:: 4 コアまたは 4 個の vCPU
-RAM:: 14 GB
+RAM:: 14GB
 AWS EC2 インスタンスタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.xlarge をお勧めします。
 キーペア:: BlueXPまたはAWS Marketplaceからコネクタを作成する場合は、インスタンスで使用するEC2キーペアを選択する必要があります。
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります

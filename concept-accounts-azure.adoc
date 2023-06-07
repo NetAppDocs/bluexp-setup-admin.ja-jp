@@ -28,7 +28,7 @@ image:diagram_permissions_initial_azure.png["BlueXPがコネクタをAzureアカ
 
 Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォルトで次のAzureクレデンシャルが選択されます。
 
-image:screenshot_accounts_select_azure.gif["Details  Credentials ページに Switch Account オプションを示すスクリーンショット。"]
+image:screenshot_accounts_select_azure.gif["[Details  Credentials]ページの[Switch Account]オプションを示すスクリーンショット。"]
 
 すべての Cloud Volumes ONTAP システムは、初期の Azure クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。
 
@@ -50,7 +50,7 @@ image:diagram_permissions_multiple_azure.png["「 Azure の最初のアカウン
 
 たとえば、新しいCloud Volumes ONTAP 作業環境を作成するときにクレデンシャルを切り替えることができます。
 
-image:screenshot_accounts_switch_azure.gif["[ 詳細と資格情報 ] ページで [ アカウントの切り替え ] をクリックした後に、クラウドプロバイダアカウントを選択する方法を示すスクリーンショット。"]
+image:screenshot_accounts_switch_azure.gif["[Details  Credentials]ページで[Switch Account]をクリックした後、クラウドプロバイダアカウントを選択するスクリーンショット。"]
 
 
 

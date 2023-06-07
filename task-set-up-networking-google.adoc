@@ -48,13 +48,13 @@ link:reference-networking-saas-console.html["BlueXPコンソールからアク�
 
 独自のLinuxホストにコネクタを手動でインストールする場合は、コネクタのインストーラでインストールプロセス中に次のURLにアクセスする必要があります。
 
-* \ https://support.netapp.com
-* https://mysupport.netapp.com をご覧ください
-* \ https://cloudmanager.cloud.netapp.com/tenancy
-* \ https://stream.cloudmanager.cloud.netapp.com
-* \ https://cloudmanagerinfraprod.azurecr.io
-* \ https://production-artifacts.cloudmanager.cloud.netapp.com
-* \ https://*.blob.core.windows.net
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://cloudmanagerinfraprod.azurecr.io
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
 
 
 ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。
@@ -70,20 +70,28 @@ link:reference-networking-saas-console.html["BlueXPコンソールからアク�
 | エンドポイント | 目的 
 
 
-| \ https://www.googleapis.com/compute/v1/\ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ | Google Cloudでリソースを管理します。 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | Google Cloudでリソースを管理します。 
 
 
-| \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
+| \https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
 
 
  a| 
-\ https://*.api.bluexp.netapp.com
+\https://*.api.bluexp.netapp.com
 
-\ https://api.bluexp.netapp.com
+\https://api.bluexp.netapp.com
 
-\ https://*.cloudmanager.cloud.netapp.com
+\https://*.cloudmanager.cloud.netapp.com
 
-\ https://cloudmanager.cloud.netapp.com
+\https://cloudmanager.cloud.netapp.com
  a| 
 BlueXPでSaaSの機能とサービスを提供するため。
 
@@ -92,7 +100,9 @@ NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続�
 
 
 
-| ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
 |===
 
 

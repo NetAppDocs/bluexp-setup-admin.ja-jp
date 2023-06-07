@@ -31,7 +31,7 @@ https://access.redhat.com/certified-hypervisors["Red Hat ソリューション�
 
 --
 CPU:: 4 コアまたは 4 個の vCPU
-RAM:: 14 GB
+RAM:: 14GB
 
 
 AWS EC2 インスタンスタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.xlarge をお勧めします。

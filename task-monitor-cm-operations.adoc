@@ -143,9 +143,11 @@ image:screenshot-add-email-recipient.png["アラートと通知用に新しいE�
 
 通知が不要になった場合は、ページから削除できます。すべての通知を一度に却下することも、個々の通知を却下することもできます。
 
-すべての通知を閉じるには、通知センターでを選択します image:button_3_vert_dots.png["3つの垂直点を持つアイコン"] をクリックして、 [ すべてを却下 ] を選択します。image:screenshot_notification_menu.png["設定を選択してすべてのオプションを閉じるための通知メニューを示すスクリーンショット。"]
+すべての通知を閉じるには、通知センターでを選択します image:button_3_vert_dots.png["3つの垂直点を持つアイコン"] をクリックして、 [ すべてを却下 ] を選択します。
+image:screenshot_notification_menu.png["設定を選択してすべてのオプションを閉じるための通知メニューを示すスクリーンショット。"]
 
-個 々 の通知を閉じるには、通知にカーソルを合わせて*[却下]*を選択します。image:screenshot_notification_dismiss1.png["単一の通知を却下する方法を示すスクリーンショット。"]
+個 々 の通知を閉じるには、通知にカーソルを合わせて*[却下]*を選択します。
+image:screenshot_notification_dismiss1.png["単一の通知を却下する方法を示すスクリーンショット。"]
 
 
 

@@ -58,7 +58,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 +
 ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。
 
-. ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
+. ログインページで、NetApp Support Siteの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
 +
 これらのアクションにより、BlueXPはライセンスのダウンロード、ソフトウェアのアップグレード検証、および将来のサポート登録などの目的でNSSアカウントを使用できます。
 
@@ -113,7 +113,7 @@ image:screenshot-nss-update-account.png["［ アカウントの更新 ］ オプ
 +
 ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。
 
-. ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
+. ログインページで、NetApp Support Siteの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
 +
 処理が完了したら、更新したアカウントが表に _new_account として表示されるようになります。古いバージョンのアカウントは ' 既存の作業環境の関連付けとともにテーブルに表示されます
 
@@ -136,20 +136,20 @@ image:screenshot-nss-update-account.png["［ アカウントの更新 ］ オプ
 . [NSS Management]*を選択します。
 . 更新するNSSアカウントのを選択します image:icon-action.png["横方向の 3 つの点を示すアイコン"] 次に、 [ 資格情報の更新 ] を選択します。
 +
-image:screenshot-nss-update-credentials.png["ネットアップサポートサイトのアカウントの操作メニューを示すスクリーンショット。削除オプションを選択できます。"]
+image:screenshot-nss-update-credentials.png["NetApp Support Siteのアカウントの操作メニューを示すスクリーンショット。削除オプションを選択できます。"]
 
 . プロンプトが表示されたら、*続行*を選択してMicrosoftログインページにリダイレクトします。
 +
 ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。
 
-. ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
+. ログインページで、NetApp Support Siteの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
 
 
 
 
 == 作業環境を別の NSS アカウントに接続します
 
-組織に複数のネットアップサポートサイトのアカウントがある場合、 Cloud Volumes ONTAP システムに関連付けられているアカウントを変更することができます。
+組織に複数のNetApp Support Siteのアカウントがある場合、 Cloud Volumes ONTAP システムに関連付けられているアカウントを変更することができます。
 
 この機能は、ネットアップがアイデンティティ管理に導入した Microsoft Azure AD を使用するように設定された NSS アカウントでのみサポートされます。この機能を使用する前に、* NSSアカウントの追加*または*アカウントの更新*を選択する必要があります。
 
@@ -158,11 +158,11 @@ image:screenshot-nss-update-credentials.png["ネットアップサポートサ�
 . [NSS Management]*を選択します。
 . NSS アカウントを変更するには、次の手順を実行します。
 +
-.. 作業環境が現在関連付けられているネットアップサポートサイトのアカウントの行を展開します。
+.. 作業環境が現在関連付けられているNetApp Support Siteのアカウントの行を展開します。
 .. 関連付けを変更する作業環境で、を選択します image:icon-action.png["横方向の 3 つの点を示すアイコン"]
 .. 別の NSS アカウントに変更 * を選択します。
 +
-image:screenshot-nss-change-account.png["ネットアップサポートサイトのアカウントに関連付けられている作業環境の操作メニューを示すスクリーンショット。"]
+image:screenshot-nss-change-account.png["NetApp Support Siteのアカウントに関連付けられている作業環境の操作メニューを示すスクリーンショット。"]
 
 .. アカウントを選択し、*[保存]*を選択します。
 
@@ -183,7 +183,7 @@ TIP: NSS管理ページに移動すると、表の各アカウントのトーク
 . [NSS Management]*を選択します。
 . 更新するNSSアカウントのを選択します image:icon-action.png["横方向の 3 つの点を示すアイコン"] 次に、 [ 電子メールアドレスの表示 *] を選択します。
 +
-image:screenshot-nss-display-email.png["ネットアップサポートサイトのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。"]
+image:screenshot-nss-display-email.png["NetApp Support Siteのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。"]
 
 
 
@@ -203,7 +203,7 @@ Cloud Volumes ONTAP 作業環境に現在関連付けられているアカウン
 . [NSS Management]*を選択します。
 . 削除するNSSアカウントのを選択します image:icon-action.png["横方向の 3 つの点を示すアイコン"] 次に、 * Delete * を選択します。
 +
-image:screenshot-nss-delete.png["ネットアップサポートサイトのアカウントの操作メニューを示すスクリーンショット。削除オプションを選択できます。"]
+image:screenshot-nss-delete.png["NetApp Support Siteのアカウントの操作メニューを示すスクリーンショット。削除オプションを選択できます。"]
 
 . [削除]*を選択して確定します。
 

@@ -70,7 +70,7 @@ https://access.redhat.com/certified-hypervisors["Red Hat ソリューション�
 
 --
 CPU:: 4 コアまたは 4 個の vCPU
-RAM:: 14 GB
+RAM:: 14GB
 AWS EC2 インスタンスタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.xlarge をお勧めします。
 Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。DS3 v2 を推奨します。
 Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。
@@ -102,13 +102,13 @@ Docker Engine の略:: Connectorをインストールする前に、ホストに
 
 独自のLinuxホストにコネクタを手動でインストールする場合は、コネクタのインストーラでインストールプロセス中に次のURLにアクセスする必要があります。
 
-* \ https://support.netapp.com
-* https://mysupport.netapp.com をご覧ください
-* \ https://cloudmanager.cloud.netapp.com/tenancy
-* \ https://stream.cloudmanager.cloud.netapp.com
-* \ https://cloudmanagerinfraprod.azurecr.io
-* \ https://production-artifacts.cloudmanager.cloud.netapp.com
-* \ https://*.blob.core.windows.net
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://cloudmanagerinfraprod.azurecr.io
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
 
 
 ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。
@@ -137,29 +137,46 @@ AWS サービス（ amazonaws.com ）：
 | AWSでリソースを管理できます。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWSのドキュメントを参照してください"^] 
 
 
-| https://management.azure.com https://login.microsoftonline.com https://blob.core.windows.net https://core.windows.net | Azureパブリックリージョン内のリソースを管理します。 
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net | Azureパブリックリージョン内のリソースを管理します。 
 
 
-| https://management.usgovcloudapi.net https://login.microsoftonline.us https://blob.core.usgovcloudapi.net https://core.usgovcloudapi.net | Azure Governmentリージョンのリソースを管理 
+| \https://management.usgovcloudapi.net
+\https://login.microsoftonline.us
+\https://blob.core.usgovcloudapi.net
+\https://core.usgovcloudapi.net | Azure Governmentリージョンのリソースを管理 
 
 
-| https://management.chinacloudapi.cn https://login.chinacloudapi.cn https://blob.core.chinacloudapi.cn https://core.chinacloudapi.cn | をクリックしてAzure中国地域のリソースを管理してください。 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn | をクリックしてAzure中国地域のリソースを管理してください。 
 
 
-| \ https://www.googleapis.com/compute/v1/\ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ | Google Cloudでリソースを管理します。 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | Google Cloudでリソースを管理します。 
 
 
-| \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
+| \https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
 
 
  a| 
-\ https://*.api.bluexp.netapp.com
+\https://*.api.bluexp.netapp.com
 
-\ https://api.bluexp.netapp.com
+\https://api.bluexp.netapp.com
 
-\ https://*.cloudmanager.cloud.netapp.com
+\https://*.cloudmanager.cloud.netapp.com
 
-\ https://cloudmanager.cloud.netapp.com
+\https://cloudmanager.cloud.netapp.com
  a| 
 BlueXPでSaaSの機能とサービスを提供するため。
 
@@ -168,7 +185,9 @@ NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続�
 
 
 
-| ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
 |===
 
 
@@ -214,13 +233,17 @@ HTTP（80）およびHTTPS（443）は、BlueXPコンソールへのアクセス
 | エンドポイント | 目的 
 
 
-| \ https://signin.b2c.netapp.com | NetApp Support Site (NSS)の資格情報を更新するか、新しいNSS資格情報をBlueXPに追加する必要があります。 
+| \https://signin.b2c.netapp.com | NetApp Support Site (NSS)の資格情報を更新するか、新しいNSS資格情報をBlueXPに追加する必要があります。 
 
 
-| ¥ https://netapp-cloud-account.auth0.com ¥ https://cdn.auth0.com ¥ https://services.cloud.netapp.com | Webブラウザはこれらのエンドポイントに接続して、BlueXPを介した集中型ユーザ認証を行います。 
+| \https://netapp-cloud-account.auth0.com
+
+\https://cdn.auth0.com
+
+\https://services.cloud.netapp.com | Webブラウザはこれらのエンドポイントに接続して、BlueXPを介した集中型ユーザ認証を行います。 
 
 
-| \ https://widget.intercom.io | 製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。 
+| \https://widget.intercom.io | 製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。 
 |===
 
 

@@ -71,5 +71,7 @@ link:reference-permissions-azure.html["Connector の Azure 権限"]
 | コネクタの展開 | BlueXPからConnectorを導入するGoogle Cloudユーザーには、Google CloudにConnectorを導入するための特定の権限が必要です。 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Connectorを展開する権限を設定します"] 
 
 
-| コネクタの動作 | Connector VMインスタンスのサービスアカウントには、日常処理に対する特定の権限が必要です。BlueXPからサービスアカウントを展開するときは、コネクタに関連付ける必要があります。また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:reference-permissions-gcp.html["Connector の Google Cloud 権限"] 
+| コネクタの動作 | Connector VMインスタンスのサービスアカウントには、日常処理に対する特定の権限が必要です。BlueXPからサービスアカウントを展開するときは、コネクタに関連付ける必要があります。
+
+また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:reference-permissions-gcp.html["Connector の Google Cloud 権限"] 
 |===

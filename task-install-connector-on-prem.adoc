@@ -32,7 +32,7 @@ summary: コネクタをオンプレミスにインストールし、ログイ�
 
 
 .このタスクについて
-ネットアップサポートサイトで入手できるインストーラは、それよりも古いバージョンの場合があります。インストール後、新しいバージョンが利用可能になると、コネクタは自動的に更新されます。
+NetApp Support Siteで入手できるインストーラは、それよりも古いバージョンの場合があります。インストール後、新しいバージョンが利用可能になると、コネクタは自動的に更新されます。
 
 .手順
 . Docker が有効で実行されていることを確認します。
@@ -51,7 +51,7 @@ unset https_proxy
 +
 これらのシステム変数を削除しないと、インストールは失敗します。
 
-. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["ネットアップサポートサイト"^]をクリックし、 Linux ホストにコピーします。
+. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Site"^]をクリックし、 Linux ホストにコピーします。
 +
 ネットワークまたはクラウドで使用するための「オンライン」コネクタインストーラをダウンロードする必要があります。コネクタには別の「オフライン」インストーラが用意されていますが、プライベートモード展開でのみサポートされています。
 
@@ -85,10 +85,10 @@ chmod +x OnCommandCloudManager-<version>
 --proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。
 
 +
-** \ http://address:port
-** \ http://username:password@address:port
-** \ https://address:port
-** \ https://username:password@address:port
+** \http://address:port
+** \http://username:password@address:port
+** \https://address:port
+** \https://username:password@address:port
 +
 ユーザはローカルユーザである必要があります。ドメインユーザはサポートされません。
 

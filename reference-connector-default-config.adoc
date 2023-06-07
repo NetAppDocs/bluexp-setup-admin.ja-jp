@@ -79,7 +79,8 @@ Connector インストールフォルダは、次の場所にあります。
 
 ログファイルは次のフォルダに格納されます。
 
-* /opt/application/netapp/cloudmanager/logまたは
+* /opt/application/netapp/cloudmanager/log を選択します
+または
 * /opt/application/netapp/service-manager-2 /ログ（新規インストール3.9.23以降）
 +
 これらのフォルダのログには、ConnectorイメージとDockerイメージの詳細が記載されています。

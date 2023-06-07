@@ -353,7 +353,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#31-july-
 
 === ポリシーの変更
 
-ドキュメントを更新するには、Cloud Managerのポリシーをドキュメント内に直接追加します。これにより、コネクタとCloud Volumes ONTAP に必要な権限を、設定方法を説明する手順とともに表示できるようになりました。これらのポリシーには、ネットアップサポートサイトのページからアクセスできます。
+ドキュメントを更新するには、Cloud Managerのポリシーをドキュメント内に直接追加します。これにより、コネクタとCloud Volumes ONTAP に必要な権限を、設定方法を説明する手順とともに表示できるようになりました。これらのポリシーには、NetApp Support Siteのページからアクセスできます。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html#create-an-iam-policy["次の例は、コネクタの作成に使用するAWS IAMロールの権限を示しています"]。
 
@@ -411,7 +411,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-july-2
 
 === ネットアップのクレデンシャルでログインします
 
-新規ユーザがCloud Centralに登録する際に、「ネットアップでログイン」オプションを選択して、ネットアップサポートサイトのクレデンシャルを使用してログインできるようになりました。Eメールアドレスとパスワードを入力する代わりに使用できます。
+新規ユーザがCloud Centralに登録する際に、「ネットアップでログイン」オプションを選択して、NetApp Support Siteのクレデンシャルを使用してログインできるようになりました。Eメールアドレスとパスワードを入力する代わりに使用できます。
 
 
 NOTE: Eメールアドレスとパスワードを使用する既存のログインでは、このログイン方法を使用し続ける必要があります。ネットアップでログインするオプションは、新規ユーザがサインアップする際に使用できます。
@@ -492,7 +492,7 @@ Cloud Managerに追加したAWSクレデンシャルの各セットに、これ�
 
 
 
-== 2022 年 4 月 3 日
+== 2022年4月3日
 
 
 
@@ -507,7 +507,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 
 
-== 2022 年 2 月 27 日
+== (2022年2月27日).
 
 
 
@@ -519,7 +519,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 
 
-== 2022 年 1 月 30 日
+== (2022年1月30日).
 
 
 
@@ -529,7 +529,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 
 
-== 2022 年 1 月 2 日
+== 2022年1月2日
 
 
 
@@ -551,19 +551,19 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 === NSS アカウントの E メールアドレス
 
-Cloud Manager に、ネットアップサポートサイトのアカウントに関連付けられている E メールアドレスが表示されるようになりました。
+Cloud Manager に、NetApp Support Siteのアカウントに関連付けられている E メールアドレスが表示されるようになりました。
 
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-nss-display-email.png["ネットアップサポートサイトのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。"]
-
-
-
-== 2021 年 11 月 28 日
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-nss-display-email.png["NetApp Support Siteのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。"]
 
 
 
-=== ネットアップサポートサイトのアカウントを更新する必要があります
+== (2021年11月28日).
 
-2021 年 12 月以降、ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用するようになりました。この更新によって、 Cloud Manager は、以前に追加した既存のネットアップサポートサイトのアカウントのクレデンシャルの更新を求めます。
+
+
+=== NetApp Support Siteのアカウントを更新する必要があります
+
+2021 年 12 月以降、ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用するようになりました。この更新によって、 Cloud Manager は、以前に追加した既存のNetApp Support Siteのアカウントのクレデンシャルの更新を求めます。
 
 NSS アカウントを IDaaS に移行していない場合は、まずアカウントを移行してから、 Cloud Manager でクレデンシャルを更新する必要があります。
 
@@ -575,13 +575,13 @@ NSS アカウントを IDaaS に移行していない場合は、まずアカウ
 
 === Cloud Volumes ONTAP の NSS アカウントを変更します
 
-組織内に複数のネットアップサポートサイトのアカウントがある場合、 Cloud Volumes ONTAP システムに関連付けられているアカウントを変更できるようになりました。
+組織内に複数のNetApp Support Siteのアカウントがある場合、 Cloud Volumes ONTAP システムに関連付けられているアカウントを変更できるようになりました。
 
 link:task-adding-nss-accounts.html#attach-a-working-environment-to-a-different-nss-account["作業環境を別の NSS アカウントに接続する方法について説明します"]。
 
 
 
-== 2021 年 11 月 4 日
+== (2021年11月4日).
 
 
 
@@ -601,7 +601,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport
 
 
 
-== 2021 年 10 月 31 日
+== 2021年10月31日閲覧
 
 
 
@@ -619,7 +619,7 @@ link:task-creating-connectors-azure.html#create-a-connector-using-a-service-prin
 
 
 
-== 2021 年 9 月 2 日
+== 2021年9月2日
 
 
 
@@ -646,7 +646,7 @@ link:task-creating-connectors-azure.html#create-a-connector-using-a-service-prin
 
 === NSS アカウントの管理をサポートダッシュボードから行うこともできます
 
-ネットアップサポートサイト（ NSS ）アカウントは、設定メニューではなくサポートダッシュボードで管理できるようになりました。この変更により、すべてのサポート関連情報を 1 箇所から簡単に検索して管理できるようになります。
+NetApp Support Site（ NSS ）アカウントは、設定メニューではなくサポートダッシュボードで管理できるようになりました。この変更により、すべてのサポート関連情報を 1 箇所から簡単に検索して管理できるようになります。
 
 link:task-adding-nss-accounts.html["NSS アカウントを管理する方法について説明します"]。
 
@@ -666,7 +666,7 @@ link:task-monitor-cm-operations.html#auditing-user-activity-in-your-account["タ
 
 
 
-== 2021 年 4 月 11 日
+== (2021年4月11日).
 
 
 
@@ -704,10 +704,10 @@ link:task-managing-netapp-accounts.html#allowing-third-party-services["このオ
 
 
 
-== 2021 年 2 月 9 日
+== (2021年2月9日).
 
 
 
 === サポートダッシュボードの強化
 
-サポートダッシュボードが更新され、ネットアップサポートサイトのクレデンシャルを追加できるようになりました。このクレデンシャルをサポートに登録してください。ネットアップサポートケースは、ダッシュボードから直接開始することもできます。[ ヘルプ ] アイコンをクリックして、 [*Support*] をクリックします。
+サポートダッシュボードが更新され、NetApp Support Siteのクレデンシャルを追加できるようになりました。このクレデンシャルをサポートに登録してください。ネットアップサポートケースは、ダッシュボードから直接開始することもできます。[ ヘルプ ] アイコンをクリックして、 [*Support*] をクリックします。

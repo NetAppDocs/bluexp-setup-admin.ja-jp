@@ -41,7 +41,7 @@ https://access.redhat.com/certified-hypervisors["Red Hat ソリューション�
 
 --
 CPU:: 4 コアまたは 4 個の vCPU
-RAM:: 14 GB
+RAM:: 14GB
 Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。
 +
 --

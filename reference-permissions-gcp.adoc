@@ -147,22 +147,36 @@ includedPermissions:
 | アクション | 目的 
 
 
-| -compute.disks .create -computedisks .createsnapshot - compute.disks.delete -computedisks .get-compute.diskList - compute.disks.setLabels - compute.disks.us | Cloud Volumes ONTAP 用のディスクを作成および管理します。 
+| - compute.disks.create
+- compute.disks.createsnapshot
+- compute.disks.delete
+-コンピューティング、ディスク、取得
+- compute.disksリスト
+- compute.disks.setLabels
+- compute.disks.us | Cloud Volumes ONTAP 用のディスクを作成および管理します。 
 
 
-| -compute-firewalls .create - compute.firewalls.delete -comput領域 .firewalls .get-comput領域 .firewalls リスト | Cloud Volumes ONTAP のファイアウォールルールを作成します。 
+| - compute.firewalls.create
+- compute.firewalls.delete
+-コンピューティング、ファイアウォール、取得
+- compute.firewalls.list | Cloud Volumes ONTAP のファイアウォールルールを作成します。 
 
 
 | -computer.globalOperationsGet | 処理のステータスを確認できます。 
 
 
-| -compute.image.get-compute.image.getFromFamily-compute.image.list - compute.images.useReadOnly | VM インスタンスのイメージを取得します。 
+| -計算画像取得
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly | VM インスタンスのイメージを取得します。 
 
 
-| - compute.instances.attachDisk - compute.instances.detachDisk | ディスクを Cloud Volumes ONTAP に接続して接続解除します。 
+| - compute.instances.attachDisk
+- compute.instances.detachDisk | ディスクを Cloud Volumes ONTAP に接続して接続解除します。 
 
 
-| - compute.instances.create - compute.instances.delete | Cloud Volumes ONTAP VM インスタンスを作成および削除します。 
+| - compute.instances.create
+- compute.instances.delete | Cloud Volumes ONTAP VM インスタンスを作成および削除します。 
 
 
 | - compute.instances.get | VM インスタンスを一覧表示します。 
@@ -180,7 +194,8 @@ includedPermissions:
 | - compute.instances.setLabels | ラベルを追加します。 
 
 
-| - compute.instances.setMachineType - compute.instances.setMinCpuPlatform | Cloud Volumes ONTAP のマシンタイプを変更します。 
+| - compute.instances.setMachineType
+- compute.instances.setMinCpuPlatform | Cloud Volumes ONTAP のマシンタイプを変更します。 
 
 
 | - compute.instances.setMetadata | をクリックしてください。 
@@ -189,7 +204,9 @@ includedPermissions:
 | - compute.instances.setTags | ファイアウォールルールのタグを追加します。 
 
 
-| - compute.instances.start - compute.instances.stop - compute.instances.updateDisplayDevice | Cloud Volumes ONTAP を開始および停止します。 
+| - compute.instances.start
+- compute.instances.stop
+- compute.instances.updateDisplayDevice | Cloud Volumes ONTAP を開始および停止します。 
 
 
 | -computesCompute .machineTypes.get | コア数を取得して qoutas をチェックしてください。 
@@ -198,52 +215,108 @@ includedPermissions:
 | - compute.projects.get | 複数のプロジェクトをサポートするため。 
 
 
-| -compute-snapshots-create - compute.snapshots.delete -compute-snapshots-getCompute-snapshots-list - compute.snapshots.setLabels | 永続ディスクスナップショットを作成および管理するには、次の手順に従います。 
+| - compute.snapshots.create
+- compute.snapshots.delete
+-コンピュートスナップショット取得
+- compute.snapshots.list
+- compute.snapshots.setLabels | 永続ディスクスナップショットを作成および管理するには、次の手順に従います。 
 
 
-| - compute.networks.get - compute.networks.list - comput.regions.Get-comput領域 .list-comput領域 .subnetworks -compute.subnetworks .listCompute.zoneOperations-get-compute.zones .get-compute.zones リスト | 新しい Cloud Volumes ONTAP 仮想マシンインスタンスの作成に必要なネットワーク情報を取得するため。 
+| - compute.networks.get
+- compute.networks.list
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+-コンピュートゾーン取得
+- compute.zones.list | 新しい Cloud Volumes ONTAP 仮想マシンインスタンスの作成に必要なネットワーク情報を取得するため。 
 
 
-| - deploymentmanager.compositeTypes.get - deploymentmanager.compositeTypes.list - deploymentmanager.deployments.create - deploymentmanager.deployments.delete - deploymentmanager.deployments.get - deploymentmanager.deployments.list -deploymentmanager. マニフェスト .get-deploymentmanager. マニフェスト .list-list-deploymentmanager. operations-get-deploymentmanager. operationlist -deploymentmanager. resources.get-deploymentmanager. resources.list-deploymentmanager. typeProviders.get-deploymentmanager. typeProviders.list-deploymentmanager. -deploymentmanager. types] リスト | Google Cloud Deployment Manager を使用して Cloud Volumes ONTAP 仮想マシンインスタンスを導入します。 
+| - deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list | Google Cloud Deployment Manager を使用して Cloud Volumes ONTAP 仮想マシンインスタンスを導入します。 
 
 
-| -logging.logEntries.list-logging.privateLogEntries.list | スタックログドライブを取得する方法 
+| -logging.logEntries.list
+-logging.privateLogEntries.list | スタックログドライブを取得する方法 
 
 
 | - resourcemanager.projects.get | 複数のプロジェクトをサポートするため。 
 
 
-| -storagバケット 。 create - storage.buckets.delete -storagバケット .get-storagバケット .list-storagバケット .buckets-update | Google Cloud Storage バケットを作成して管理し、データを階層化します。 
+| -storage.buckets.create
+- storage.buckets.delete
+-ストレージ、バケツ、取得します
+-storage.buckets.list
+-storage.buckets.update | Google Cloud Storage バケットを作成して管理し、データを階層化します。 
 
 
-| - cloudkms.cryptoKeyVersions.useToEncrypt - cloudkms .cryptoKeys.get-cloudkms .cryptoKeys.list-cloudkm.keyringlist.list | Cloud Volumes ONTAP でクラウドキー管理サービスからお客様が管理する暗号化キーを使用するため。 
+| - cloudkms.cryptoKeyVersions.useToEncrypt
+- cloudkms.cryptoKeys.get
+- cloudkms.cryptoKeys.list
+- cloudkms.keyrings.list | Cloud Volumes ONTAP でクラウドキー管理サービスからお客様が管理する暗号化キーを使用するため。 
 
 
-| - compute.instances.setServiceAccount - iam.serviceAccounts.actAs - iam.serviceAccounts.getIamPolicy - iam.serviceAccounts.list - storage.objects-get -storage.objectlist | Cloud Volumes ONTAP インスタンスにサービスアカウントを設定します。このサービスアカウントは、 Google Cloud Storage バケットへのデータ階層化の権限を提供します。 
+| - compute.instances.setServiceAccount
+- iam.serviceAccounts.actAs
+- iam.serviceAccounts.getIamPolicy
+- iam.serviceAccounts.list
+-storage.objects.get
+-storage.objects.list | Cloud Volumes ONTAP インスタンスにサービスアカウントを設定します。このサービスアカウントは、 Google Cloud Storage バケットへのデータ階層化の権限を提供します。 
 
 
 | -compute-addresslist | HAペアを導入する際にリージョン内のアドレスを取得する。 
 
 
-| -compute.backendServices.create-compute.regionBackendServices. create-compute.regionBackendServices.get-compute.regionBackendServices.list | HAペアでトラフィックを分散するためのバックエンドサービスを設定するには、次の手順を実行します。 
+| -compute.backendServices.create
+-compute.regionBackendServices.create
+-compute.regionBackendServices.get
+-compute.regionBackendServices.list | HAペアでトラフィックを分散するためのバックエンドサービスを設定するには、次の手順を実行します。 
 
 
 | - compute.networks.updatePolicy | HAペアのVPCおよびサブネットにファイアウォールルールを適用する。 
 
 
-| - compute.subnetworks.us e-compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | してBlueXPの分類を有効にします。 
+| - compute.subnetworks.us
+- compute.subnetworks.useExternalIp
+- compute.instances.addAccessConfig | してBlueXPの分類を有効にします。 
 
 
-| -container-type コンテナクラスタリスト | Google Kubernetes Engine で実行されている Kubernetes クラスタを検出する。 
+| -container.clusters.get
+-container.clusters.list | Google Kubernetes Engine で実行されている Kubernetes クラスタを検出する。 
 
 
-| - compute.instanceGroups.get -compute.addresss.get - compute.instances.updateNetworkInterface | Cloud Volumes ONTAP HAペアでStorage VMを作成および管理する方法。 
+| - compute.instanceGroups.get
+-計算アドレス取得
+- compute.instances.updateNetworkInterface | Cloud Volumes ONTAP HAペアでStorage VMを作成および管理する方法。 
 
 
-| -monitoring timeseries.list -storage.buckets-getIamPolicyを選択します | をクリックして、Google Cloud Storageバケットに関する情報を確認してください。 
+| - monitoring.timeseries.list
+-storage.buckets.getIamPolicy | をクリックして、Google Cloud Storageバケットに関する情報を確認してください。 
 
 
-| -cloudkms.cryptoKeys.get-cloudkms.cryptoKeys.getIamPolicy-cloudkms.cryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy -cloudkms.keyrings.get-cloudkms.keyrings.getIamPolicy-cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy | Googleが管理するデフォルトの暗号化キーを使用する代わりに、BlueXPのバックアップとリカバリのアクティブ化ウィザードでお客様が管理する独自のキーを選択します。 
+| - cloudkms.cryptoKeys.get
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.list
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkmsキーリング取得
+- cloudkms.keyrings.getIamPolicy
+- cloudkms.keyrings.list
+- cloudkms.keyRings.setIamPolicy | Googleが管理するデフォルトの暗号化キーを使用する代わりに、BlueXPのバックアップとリカバリのアクティブ化ウィザードでお客様が管理する独自のキーを選択します。 
 |===
 
 

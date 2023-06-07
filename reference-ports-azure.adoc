@@ -25,16 +25,16 @@ summary: コネクタのAzureセキュリティグループには、インバウ
 | プロトコル | ポート | 目的 
 
 
-| SSH | 22 | コネクタホストへの SSH アクセスを提供します 
+| SSH | 22. | コネクタホストへの SSH アクセスを提供します 
 
 
-| HTTP | 80 | クライアント Web ブラウザからローカルへの HTTP アクセスを提供します ユーザインターフェイス 
+| HTTP | 8時80分 | クライアント Web ブラウザからローカルへの HTTP アクセスを提供します ユーザインターフェイス 
 
 
-| HTTPS | 443 | クライアントWebブラウザからローカルユーザインターフェイスへのHTTPSアクセス、およびBlueXP分類インスタンスからの接続を提供します 
+| HTTPS | 443年 | クライアントWebブラウザからローカルユーザインターフェイスへのHTTPSアクセス、およびBlueXP分類インスタンスからの接続を提供します 
 
 
-| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["コネクタがAutoSupport メッセージのプロキシとしてどのように使用されるかについて説明します"^] 
+| TCP | 3128だ | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["コネクタがAutoSupport メッセージのプロキシとしてどのように使用されるかについて説明します"^] 
 
 
 | TCP | 9060、9061 | 政府機関の地域でBlueXPの分類とBlueXPのバックアップとリカバリを有効にして使用できるようになります。 
@@ -59,7 +59,7 @@ summary: コネクタのAzureセキュリティグループには、インバウ
 | すべての TCP | すべて | すべての発信トラフィック 
 
 
-| すべての UDP | すべて | すべての発信トラフィック 
+| すべてのUDP | すべて | すべての発信トラフィック 
 |===
 
 
@@ -75,11 +75,11 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | サービス | プロトコル | ポート | 宛先 | 目的 
 
 
-| API コールと AutoSupport | HTTPS | 443 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | Google CloudとONTAP 、BlueXP分類、BlueXPランサムウェア対策、AutoSupport メッセージのネットアップへの送信へのAPI呼び出し 
+| API コールと AutoSupport | HTTPS | 443年 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | Google CloudとONTAP 、BlueXP分類、BlueXPランサムウェア対策、AutoSupport メッセージのネットアップへの送信へのAPI呼び出し 
 
 
 | API コール | TCP | 8080 です | BlueXPの分類 | 導入時にBlueXP分類インスタンスを確認します 
 
 
-| DNS | UDP | 53 | DNS | BlueXPによるDNS解決に使用されます 
+| DNS | UDP | 53. | DNS | BlueXPによるDNS解決に使用されます 
 |===
