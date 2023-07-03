@@ -106,9 +106,16 @@ Docker Engine の略:: Connectorをインストールする前に、ホストに
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+このエンドポイントは、Azure Governmentリージョンでは必要ありません。
+
+* \https://occmclientinfragov.azurecr.us
++
+このエンドポイントは、Azure Governmentリージョンでのみ必要です。
+
 
 
 ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。
@@ -185,9 +192,13 @@ NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続�
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io
+| \https://*.blob.core.windows.net
 
-\https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
+\https://cloudmanagerinfraprod.azurecr.io
+このエンドポイントは、Azure Governmentリージョンでは必要ありません。
+
+\https://occmclientinfragov.azurecr.us
+このエンドポイントは、Azure Governmentリージョンでのみ必要です。 | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
 |===
 
 

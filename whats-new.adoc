@@ -18,6 +18,36 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
+== 2023年7月2日
+
+
+
+=== コネクタ3.9.31
+
+* [My estate]タブ（以前の[My Opportunities]）でオンプレミスのONTAPクラスタを検出できるようになりました。
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["クラスタを検出する方法については、[My estate]ページを参照してください"]。
+
+* Azure Governmentリージョンでコネクタを使用している場合は、コネクタが次のエンドポイントに接続できることを確認する必要があります。
++
+\https://occmclientinfragov.azurecr.us
+
++
+このエンドポイントは、コネクタを手動でインストールし、コネクタとそのDockerコンポーネントをアップグレードするために必要です。
+
++
+この変更により、Azure Governmentリージョン内のコネクタは、次のエンドポイントに接続しなくなりました。
+
++
+\https://cloudmanagerinfraprod.azurecr.io
+
++
+このエンドポイントは、他のすべての制限モード設定および標準モードでは引き続き必要であることに注意してください。
+
+
+
+
+
 == 2023年6月4日
 
 
