@@ -252,7 +252,7 @@ image:screenshot_azure_service_principal_role.png["Azure ポータルのスク�
 サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
 
 +
-Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入する場合は、サービスプリンシパルを各サブスクリプションにバインドする必要があります。BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するサブスクリプションを選択できます。
+複数のAzureサブスクリプションでリソースを管理する場合は、各サブスクリプションにサービスプリンシパルをバインドする必要があります。たとえば、BlueXPでは、Cloud Volumes ONTAPの導入時に使用するサブスクリプションを選択できます。
 
 
 
@@ -322,7 +322,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 . の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
 . 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
 +
-ユーザが Cloud Volumes ONTAP システムを作成する Azure サブスクリプションごとに ID を追加する必要があります。
+BlueXPで使用する各AzureサブスクリプションのIDを追加する必要があります。
 
 +
 * 例 *
@@ -417,7 +417,7 @@ image:screenshot_azure_service_principal_role.png["Azure ポータルのスク�
 サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
 
 +
-Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入する場合は、サービスプリンシパルを各サブスクリプションにバインドする必要があります。BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するサブスクリプションを選択できます。
+複数のAzureサブスクリプションでリソースを管理する場合は、各サブスクリプションにサービスプリンシパルをバインドする必要があります。たとえば、BlueXPでは、Cloud Volumes ONTAPの導入時に使用するサブスクリプションを選択できます。
 
 
 

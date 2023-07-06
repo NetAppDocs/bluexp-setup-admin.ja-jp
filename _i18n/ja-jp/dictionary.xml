@@ -146,7 +146,6 @@
   <block id="52f3863b6256b8ae764628f74442ca5c" category="paragraph">仮想マシンの認証方法には、パスワードまたはSSH公開鍵を使用できます。</block>
   <block id="a6100ac4fa5cb7bbb1c49e95165b96b2" category="inline-link-macro">必要な権限</block>
   <block id="45e2f16f488dd77ea28e4cc6a50751e5" category="list-text">*詳細*:インスタンスの名前を入力し、タグを指定して、必要な権限を持つ新しいロールを作成するか、またはで設定した既存のロールを選択するかを選択します <block ref="b569336f779a413e2d7fa8c0ccb0306d" category="inline-link-macro-rx"></block>。</block>
-  <block id="e1ca9b0274808b9c445718fa4b9a5d26" category="paragraph">このロールに関連付けられているサブスクリプションを選択できます。選択した各サブスクリプションには、 Cloud Volumes ONTAP をこれらのサブスクリプションに導入するための権限が Connector に付与されます。</block>
   <block id="316cce18546001b2f1149ed17a4d3900" category="list-text">* ネットワーク * ： VNet とサブネットを選択し、パブリック IP アドレスを有効にするかどうか、および必要に応じてプロキシ設定を指定します。</block>
   <block id="90eac3cf24d6ad4fdd59cac1fb153a63" category="list-text">*セキュリティグループ*:新しいセキュリティグループを作成するか、必要なインバウンドおよびアウトバウンドルールを許可する既存のセキュリティグループを選択するかを選択します。</block>
   <block id="ffcf64d34f1dcc41900c7060705863c1" category="inline-link-macro">Azureのセキュリティグループルールを表示します</block>
@@ -522,7 +521,6 @@
   <block id="356334a26d74c400a5e0a69f237ba73e" category="paragraph">BlueXPからコネクタを直接展開するには、次の2セットの権限が必要です。</block>
   <block id="7e1224e2fd0f204a7cd31b8672f1b63d" category="list-text">BlueXPからConnector VMインスタンスを起動する権限を持つGoogleアカウントを使用してConnectorを導入する必要があります。</block>
   <block id="1c3efa7cf0b87cbb078fe955b2c587a5" category="inline-link">サービスアカウント</block>
-  <block id="47ca16329494467c539bde558f0ae632" category="list-text">コネクタを配置するときに、を選択するよう求められます<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> VM インスタンスの場合です。BlueXPは、サービスアカウントからCloud Volumes ONTAP システムを作成、管理するための権限を取得します。権限は、サービスアカウントにカスタムロールを割り当てることによって提供されます。</block>
   <block id="fee2d29ad57ecb4f5309060016b4495c" category="paragraph">次の図は、上記の番号 1 と 2 で説明した権限の要件を示しています。</block>
   <block id="1b33affeaa41a09a9f3a99d38d14376f" category="inline-image-macro">GoogleとサービスアカウントがCloud Volumes ONTAP を導入するための権限の要件を示す概念図。</block>
   <block id="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="paragraph"><block ref="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="inline-image-macro-rx" type="image"></block></block>
@@ -539,9 +537,7 @@
   <block id="2846d36d7005f43bc3cc15749f932ff7" category="list-text"><block ref="2846d36d7005f43bc3cc15749f932ff7" category="inline-link-macro-rx"></block></block>
   <block id="4ec920ccbe2fc417ccd7dcd957eb9653" category="inline-link">Google CloudにCloud Volumes ONTAP を導入する方法とプロジェクトを選択する方法について説明します</block>
   <block id="486db18d2aa67b603506d28b5425dc88" category="list-text"><block ref="486db18d2aa67b603506d28b5425dc88" category="inline-link-rx"></block></block>
-  <block id="894183ce1a3e115b89d0e6b0726cfff2" category="summary">BlueXPアカウントは組織にマルチテナンシーを提供するため、分離されたワークスペースでユーザやリソースを整理できます。たとえば、ユーザーのグループは、他のユーザーには表示されないワークスペースにCloud Volumes ONTAP システムを展開および管理できます。</block>
   <block id="389368f5d98ef09e3dca047f7f72f270" category="doc">BlueXPアカウントの詳細をご確認ください</block>
-  <block id="b9a1d81f39a3e0be85108ee4eee92e56" category="paragraph">A_BlueXPアカウント_は組織にマルチテナンシーを提供するため、isolated_workspaces_でユーザとリソースを整理できます。たとえば、ユーザーのグループは、他のユーザーには表示されないワークスペースにCloud Volumes ONTAP システムを展開および管理できます。</block>
   <block id="684ef065a6596c929baa4364adca2e52" category="paragraph">BlueXPに初めてアクセスすると、アカウントを選択または作成するように求められます。たとえば、まだアカウントを持っていない場合は、次の画面が表示されます。</block>
   <block id="21ad8a394fd878b4f709af241e04c2fc" category="inline-image-macro">BlueXPセットアップウィザードのスクリーンショット。BlueXPを作成するBlueXPアカウントの入力を求められます。</block>
   <block id="f735901c47be672686b9be997d3bf0d7" category="paragraph"><block ref="f735901c47be672686b9be997d3bf0d7" category="inline-image-macro-rx" type="image"></block></block>
@@ -1239,7 +1235,6 @@
   <block id="d47be244f383106c84a24b1e4ba4fea6" category="paragraph">BlueXPがAzureにConnector仮想マシンを導入すると、が有効になります<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> 仮想マシンで、カスタムロールを作成して仮想マシンに割り当てます。このロールは、そのAzureサブスクリプション内でリソースとプロセスを管理するために必要な権限をBlueXPに提供します。 <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>。</block>
   <block id="825a028e49bfdd88d5c17500e011aaf5" category="inline-image-macro">BlueXPがコネクタをAzureアカウントとサブスクリプションに導入する様子を示す概念図。システムによって割り当てられた管理IDが有効になり、Connector仮想マシンにカスタムロールが割り当てられます。</block>
   <block id="4ba8970a06f2fd9f7ce2b5459745a3f0" category="paragraph"><block ref="4ba8970a06f2fd9f7ce2b5459745a3f0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4b8d6d1554d22a2bda6470094c227037" category="paragraph">Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォルトで次のAzureクレデンシャルが選択されます。</block>
   <block id="98c16c747c940667876d314b6eb47dba" category="inline-image-macro">[Details &amp; Credentials]ページの[Switch Account]オプションを示すスクリーンショット。</block>
   <block id="d640a03c3d2fca2ca36870e7954e48cc" category="paragraph"><block ref="a864416fc969bfbd6c4c8b4ff646cd2f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="61d31e18d80b565c39bc938c02808e6f" category="paragraph">すべての Cloud Volumes ONTAP システムは、初期の Azure クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。</block>
@@ -1821,7 +1816,6 @@
   <block id="858c852a1a4696d4e56295d4b4b0ea20" category="paragraph">BlueXPがAWSでコネクタインスタンスを起動すると、インスタンスのIAMロールとインスタンスプロファイルが作成されます。また、ポリシーを適用して、指定した AWS アカウント内のリソースやプロセスを管理する権限を Connector に提供します。 <block ref="9d2ef148313eb953f656b8efd4016e8c" category="inline-link-macro-rx"></block>。</block>
   <block id="87905dffb8ffacc115ce029071ecc843" category="inline-image-macro">BlueXPがConnectorをAWSアカウントに導入する様子を示す概念図。IAMポリシーは、BlueXPインスタンスに関連付けられているIAMロールに割り当てられている。</block>
   <block id="c234f29a81f1d5eb1c1e71c54ce5a0e7" category="paragraph"><block ref="c234f29a81f1d5eb1c1e71c54ce5a0e7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1845774a539e719af2ff230adb01acc9" category="paragraph">Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォルトで次のAWSクレデンシャルが選択されます。</block>
   <block id="e39fac9d22fb901a8fb8b7118de8c4e7" category="paragraph"><block ref="e4d4efd6d9bbb3c296b1c319bd5c65f5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="109a76aa4a30822be3d0a4a6162bbc73" category="paragraph">すべての Cloud Volumes ONTAP システムは、初期の AWS クレデンシャルを使用して導入することも、クレデンシャルを追加することもできます。</block>
   <block id="59cf740f037c70fa5f9d43001aabf6b9" category="section-title">追加の AWS クレデンシャル</block>
@@ -3213,7 +3207,6 @@
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">コネクタを作成するときは、コネクタを配置するVNetとサブネットを指定する必要があります。</block>
   <block id="0b21fb3864d43aad91ca35b2b5d2354d" category="section-title">Azure リージョン</block>
   <block id="573514d5de621ecfe56c91e7c665d73d" category="inline-link">Azure リージョンペア</block>
-  <block id="0e4b0391e50169d97fc505f0c73a94ba" category="paragraph">コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。</block>
   <block id="6882deeb4b60915fc6b7a36d03f329e3" category="inline-link">Cloud Volumes ONTAP での Azure プライベートリンクの使用方法をご確認ください</block>
   <block id="f09d4eba567a9e2b031517b472055a69" category="paragraph"><block ref="f09d4eba567a9e2b031517b472055a69" category="inline-link-rx"></block></block>
   <block id="d0d67dd335747b3a00234d869cd08267" category="summary">BlueXPのSaaSレイヤへのアウトバウンド接続を制限してBlueXPを使用できるように、コネクタを制限モードで導入します。まず、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、以前に設定したクラウド権限を指定します。</block>
@@ -3413,7 +3406,6 @@
   <block id="36bc52aaebad43ec3e49ed9a0efacd43" category="section-title">クレデンシャルを追加します</block>
   <block id="0fcafd12d45dbcf0e60c3aba44fe49a1" category="paragraph">必要な権限を AWS アカウントに付与したら、そのアカウントのクレデンシャルを既存のコネクタに追加できます。これにより、同じコネクタを使用してアカウントの Cloud Volumes ONTAP システムを起動できます。</block>
   <block id="a1418a1fbbbe1aec52c1618b6cc4b381" category="list-text">* クレデンシャルの定義 * ：信頼された IAM ロールの ARN （ Amazon リソース名）を指定するか、 AWS アクセスキーとシークレットキーを入力します。</block>
-  <block id="1e65c796a2058f2e006fb33cdd7e9879" category="paragraph">Cloud Volumes ONTAP の料金を 1 時間単位で支払う（ PAYGO ）場合や 1 年単位で支払う場合は、 AWS のクレデンシャルを AWS Marketplace から Cloud Volumes ONTAP へのサブスクリプションに関連付ける必要があります。</block>
   <block id="59c42111c120e2a009a663d366f4914f" category="paragraph">新しい作業環境を作成するときに、 [ 詳細と資格情報 ] ページから別の資格情報セットに切り替えることができるようになりました。</block>
   <block id="21eadec2055a6f0a03fad1207bdeece7" category="inline-image-macro">[Details &amp; Credentials]ページで[Switch Account]を選択した後、クラウドプロバイダアカウントを選択するスクリーンショット。</block>
   <block id="670a8a47b7b3908f997fce0320ebba4d" category="paragraph"><block ref="516be10b96635b1f3aefce4dcd4540dd" category="inline-image-macro-rx" type="image"></block></block>
@@ -3462,7 +3454,6 @@
   <block id="ba7c13ef3e78a348949ddfd6f17e4f18" category="paragraph">プライベートモードでは、コネクタを自社のLinuxホストに手動でインストールすることで、コネクタをオンプレミスまたはクラウドにインストールできます。</block>
   <block id="fb04864667c4668b6288df7ac7f6f40b" category="paragraph">Google CloudでCloud Volumes ONTAP システムを作成する場合は、コネクタをGoogle Cloudで実行する必要があります。オンプレミスで実行することはできません。</block>
   <block id="c3d3f783d267d1bd41b2e7f8639a5865" category="section-title">日常業務のエンドポイント</block>
-  <block id="838ec2871c40a93d892b2ebb5ec4ae58" category="paragraph">コネクタは次のエンドポイントに接続し、パブリッククラウド環境にCloud Volumes ONTAP を導入して管理します。</block>
   <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">\https://management.azure.microsoft.scloud
 \https://login.microsoftonline.microsoft.scloud
 \https://blob.core.microsoft.scloud
@@ -3811,4 +3802,19 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
 
 \https://occmclientinfragov.azurecr.us
 このエンドポイントは、Azure Governmentリージョンでのみ必要です。</block>
+  <block id="297a49f6150dc8dc8d45620c0f09f393" category="list-text">他のGoogle Cloudプロジェクトのリソースを管理する場合は、BlueXPロールを持つサービスアカウントをそのプロジェクトに追加してアクセスを許可します。プロジェクトごとにこの手順を繰り返す必要があります。</block>
+  <block id="1f7d098197ba2def0ffc66c388b2aa6c" category="paragraph">Cloud Volumes ONTAPの新しい作業環境を作成すると、BlueXPでは次のAWSクレデンシャルがデフォルトで選択されます。</block>
+  <block id="1c16bd0b2377f4460ae56ecb40a419ae" category="paragraph">このロールに関連付けられているAzureサブスクリプションを選択できることに注意してください。選択した各サブスクリプションには、そのサブスクリプション内のリソースを管理するためのコネクタ権限（Cloud Volumes ONTAPなど）が用意されています。</block>
+  <block id="55a733edf0d6d526d9ebeda09e38bdd1" category="summary">BlueXPアカウントは組織にマルチテナンシーを提供するため、分離されたワークスペースでユーザやリソースを整理できます。たとえば、ユーザーのグループは、異なるワークスペースで異なるタイプの作業環境を管理する他のユーザーには表示されないワークスペース内のCloud Volumes ONTAPシステムを展開および管理できます。</block>
+  <block id="e96a7b63d6df3633f05aea7438dd616e" category="paragraph">A_BlueXPアカウント_は組織にマルチテナンシーを提供するため、isolated_workspaces_でユーザとリソースを整理できます。たとえば、ユーザーのグループは、異なるワークスペースで異なるタイプの作業環境を管理する他のユーザーには表示されないワークスペース内のCloud Volumes ONTAPシステムを展開および管理できます。</block>
+  <block id="d90aceadc99dce46d7d593ee18ab0d90" category="paragraph">コネクタは、次のエンドポイントに接続して、パブリッククラウド環境内のリソースとプロセスを管理します。</block>
+  <block id="91499b479a6f9fe14de575cded8e2ab6" category="paragraph">複数のAzureサブスクリプションでリソースを管理する場合は、各サブスクリプションにサービスプリンシパルをバインドする必要があります。たとえば、BlueXPでは、Cloud Volumes ONTAPの導入時に使用するサブスクリプションを選択できます。</block>
+  <block id="6258a889f12d08d6da95cf4059f67498" category="paragraph">BlueXPで使用する各AzureサブスクリプションのIDを追加する必要があります。</block>
+  <block id="4f700fdc55105ee1225978e0ecbf1046" category="paragraph">Cloud Volumes ONTAPを使用する場合は、コネクタを管理するCloud Volumes ONTAPシステムと同じAzureリージョンまたはに導入する必要があります<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。</block>
+  <block id="ddc3be173496396ad174fa34013f6165" category="list-text">追加のAzureサブスクリプションでリソースを管理する場合は、そのサブスクリプションに切り替えてから、上記の手順を繰り返します。</block>
+  <block id="89297fbbf3c86991163b7008fe105840" category="paragraph">BlueXPサービスの料金を時間単位（PAYGO）または年間契約で支払うには、AWSクレデンシャルをAWS Marketplaceサブスクリプションに関連付ける必要があります。</block>
+  <block id="4047ebfdbd8672d8c7471db55440e35a" category="list-text">追加のサブスクリプションでリソースを管理する場合は、そのサブスクリプションに切り替えてから、上記の手順を繰り返します。</block>
+  <block id="cb4a26e3cea7ec3938d93961d212ef39" category="list-text">他のプロジェクトのリソースを管理する場合は、BlueXPロールを持つサービスアカウントをそのプロジェクトに追加してアクセスを許可します。プロジェクトごとにこの手順を繰り返す必要があります。</block>
+  <block id="c063b725387c641804ed10699362a645" category="list-text">コネクタを配置するときに、を選択するよう求められます<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> VM インスタンスの場合です。BlueXPは、サービスアカウントから、Cloud Volumes ONTAPシステムの作成と管理、BlueXPのバックアップとリカバリを使用したバックアップの管理などの権限を取得します。権限は、サービスアカウントにカスタムロールを割り当てることによって提供されます。</block>
+  <block id="4196d70b52fef46e6943a70842908897" category="paragraph">Cloud Volumes ONTAPの新しい作業環境を作成すると、BlueXPでは次のAzureクレデンシャルがデフォルトで選択されます。</block>
 </blocks>

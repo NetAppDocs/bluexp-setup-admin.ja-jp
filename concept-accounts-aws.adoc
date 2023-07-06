@@ -26,7 +26,7 @@ BlueXPがAWSでコネクタインスタンスを起動すると、インスタ�
 
 image:diagram_permissions_initial_aws.png["BlueXPがConnectorをAWSアカウントに導入する様子を示す概念図。IAMポリシーは、BlueXPインスタンスに関連付けられているIAMロールに割り当てられている。"]
 
-Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォルトで次のAWSクレデンシャルが選択されます。
+Cloud Volumes ONTAPの新しい作業環境を作成すると、BlueXPでは次のAWSクレデンシャルがデフォルトで選択されます。
 
 image:screenshot_accounts_select_aws.gif["[Details  Credentials]ページの[Switch Account]オプションを示すスクリーンショット。"]
 

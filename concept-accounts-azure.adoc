@@ -26,7 +26,7 @@ BlueXPがAzureにConnector仮想マシンを導入すると、が有効になり
 
 image:diagram_permissions_initial_azure.png["BlueXPがコネクタをAzureアカウントとサブスクリプションに導入する様子を示す概念図。システムによって割り当てられた管理IDが有効になり、Connector仮想マシンにカスタムロールが割り当てられます。"]
 
-Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォルトで次のAzureクレデンシャルが選択されます。
+Cloud Volumes ONTAPの新しい作業環境を作成すると、BlueXPでは次のAzureクレデンシャルがデフォルトで選択されます。
 
 image:screenshot_accounts_select_azure.gif["[Details  Credentials]ページの[Switch Account]オプションを示すスクリーンショット。"]
 
