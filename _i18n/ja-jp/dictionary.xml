@@ -3034,13 +3034,10 @@
   <block id="5c61dbbb22810fcf5149eb1192885607" category="cell">アカウントユーザーおよび他のユーザーに通知を電子メールで送信する機能を提供します</block>
   <block id="e92861fef775acb8c5a64f8d282a8b80" category="cell">Eメール機能はありません</block>
   <block id="d1e2d8530c09fe28c2a817289491bd01" category="section-title">通知センターを使用してアクティビティを監視します</block>
-  <block id="1e687a002fd0b9a542bf652069246ebb" category="paragraph">通知は、BlueXPで開始した操作の進捗状況を追跡するため、操作が成功したかどうかを確認できます。これらを使用すると、現在のログインセッションで開始した多くのBlueXPアクションのステータスを表示できます。現時点では、すべてのサービスが通知センターに情報を報告するわけではありません。</block>
   <block id="40da6f1400e45d080a97992a6a539894" category="inline-image-macro">通知ベル</block>
   <block id="5cf9ecbcae765efe1cb17d1c802e39cb" category="paragraph">通知を表示するには、通知ベル（<block ref="df7c8a71ca3da4359e40e121f18f87b9" category="inline-image-macro-rx" type="image"></block>）をクリックします。ベルの小さなバブルの色は、アクティブな最上位レベルの重大度通知を示します。赤いバブルが表示されている場合は、重要な通知があることを意味します。</block>
   <block id="d59387ab05a2cbd005866b74628417a0" category="inline-image-macro">通知センターの現在の通知のリストを示すスクリーンショット。</block>
   <block id="e24c5199eee665d8e879dc72dc56c667" category="paragraph"><block ref="e24c5199eee665d8e879dc72dc56c667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6c836fac6db418cb1aa7dbc3dbd8ff62" category="inline-xref">Eメール通知を設定しています</block>
-  <block id="4d45f6ca89e32d46a11c304cf274697c" category="paragraph">また、システムにログインしていなくても重要なシステムアクティビティを通知できるように、メールで通知を送信するようにBlueXPを構成することもできます。Eメールは、BlueXPアカウントに参加しているすべてのユーザや、特定の種類のシステムアクティビティについて注意が必要なその他の受信者に送信できます。を参照してください <block ref="2fb0285882e9333d924eb054161cd903" category="inline-xref-macro-rx"></block> 下。</block>
   <block id="2a4be390687f80c7cdf976afca0fe778" category="section-title">通知タイプ</block>
   <block id="0ebfeb3212b9bb4b152ea82a5877a33b" category="paragraph">通知は次のカテゴリに分類されます。</block>
   <block id="9e89e978c220a2a733d027866cb12907" category="cell">通知のタイプ</block>
@@ -3057,15 +3054,12 @@
   <block id="505a83f220c02df2f85c3810cd9ceb38" category="cell">成功</block>
   <block id="ae75ef51af35154ca4a9e6d19fb16774" category="cell">アクションまたはプロセスが正常に完了しました。</block>
   <block id="e457faf451b04c78c6b2c6bc25491ad1" category="section-title">通知をフィルタリングします</block>
-  <block id="f3ac04608c1c767bc38258edb6feb320" category="paragraph">デフォルトでは、すべての通知が表示されます。通知センターに表示される通知をフィルタリングして、重要な通知のみを表示できます。BlueXPの「サービス」と通知の「タイプ」でフィルタリングできます。</block>
   <block id="3ad97ba753a3f0d27266b3d174a47648" category="inline-image-macro">通知センターで使用可能な 2 種類のフィルタを示すスクリーンショット。</block>
   <block id="86a2197cbddea56be1e7cc24be3d4916" category="paragraph"><block ref="86a2197cbddea56be1e7cc24be3d4916" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4815e02c8d3314e19dd0c9f88070f95e" category="paragraph">たとえば、BlueXP操作の「エラー」および「警告」通知のみを表示する場合は、これらのエントリを選択すると、これらの通知タイプのみが表示されます。</block>
   <block id="def7f3eac7eed1dada5cdcd2951ede36" category="section-title">Eメール通知を設定します</block>
   <block id="f8e2d638417ba643bd67781e67c8ff5f" category="paragraph">特定の種類の通知を電子メールで送信することで、BlueXPにログインしていない場合でも重要なシステムアクティビティを通知できます。Eメールは、BlueXPアカウントに参加しているすべてのユーザや、特定の種類のシステムアクティビティについて注意が必要なその他の受信者に送信できます。</block>
-  <block id="46cbe9208ff114439409f262e659f93e" category="list-text">現時点では、コネクタ、BlueXPのコピーと同期、BlueXPのバックアップとリカバリ、BlueXPデジタルウォレット、BlueXPランサムウェア対策に関する通知がEメールで送信されます。サービスは今後のリリースで追加される予定です。</block>
   <block id="5fd245f2aeee830efb92d081af6a0e22" category="list-text">Connectorがインターネットにアクセスできないサイトにインストールされている場合は、Eメール通知の送信はサポートされません。</block>
-  <block id="95542c2d2bb8f536e459ea1a4e6e77b7" category="paragraph">既定では、BlueXPアカウント管理者はすべての「重要」および「推奨」通知の電子メールを受信します。他のすべてのユーザと受信者は、通知メールを受信しないようにデフォルトで設定されています。</block>
   <block id="f6cf378d25bc2bcaeedbdbd322fec41b" category="paragraph">通知設定をカスタマイズするには、アカウント管理者である必要があります。</block>
   <block id="8d7a9434573819ca2918a0be28a97671" category="list-text">BlueXPのメニューバーで、*[設定]&gt;[アラートと通知の設定]*を選択します。</block>
   <block id="dffb0ae952f619b638efb5dbc37b121a" category="inline-image-macro">アラートと通知の設定ページの表示方法を示すスクリーンショット。</block>
@@ -3817,4 +3811,11 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="cb4a26e3cea7ec3938d93961d212ef39" category="list-text">他のプロジェクトのリソースを管理する場合は、BlueXPロールを持つサービスアカウントをそのプロジェクトに追加してアクセスを許可します。プロジェクトごとにこの手順を繰り返す必要があります。</block>
   <block id="c063b725387c641804ed10699362a645" category="list-text">コネクタを配置するときに、を選択するよう求められます<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> VM インスタンスの場合です。BlueXPは、サービスアカウントから、Cloud Volumes ONTAPシステムの作成と管理、BlueXPのバックアップとリカバリを使用したバックアップの管理などの権限を取得します。権限は、サービスアカウントにカスタムロールを割り当てることによって提供されます。</block>
   <block id="4196d70b52fef46e6943a70842908897" category="paragraph">Cloud Volumes ONTAPの新しい作業環境を作成すると、BlueXPでは次のAzureクレデンシャルがデフォルトで選択されます。</block>
+  <block id="9704e328148ed91b7f98eb143244edd7" category="paragraph">通知は、BlueXPで開始した操作の進捗状況を追跡するため、操作が成功したかどうかを確認できます。これらを使用すると、現在のログインセッションで開始した多くのBlueXPアクションのステータスを表示できます。現時点では、すべてのBlueXPサービスが通知センターに情報を報告するわけではありません。</block>
+  <block id="8efb4a247c34c0ca71ba217009352182" category="inline-xref">Eメール通知を設定します</block>
+  <block id="5e703ffd4a02b69f95fc98818e5f3919" category="paragraph">また、特定の種類の通知をEメールで送信するようにBlueXPを設定することで、システムにログインしていないときでも重要なシステムアクティビティを通知することができます。Eメールは、BlueXPアカウントに参加しているすべてのユーザや、特定の種類のシステムアクティビティについて注意が必要なその他の受信者に送信できます。方法を参照してください <block ref="a148e670707e0255b9681ed2a38729bc" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">デフォルトでは、すべてのアクティブな通知が通知センターに表示されます。表示される通知をフィルタリングして、重要な通知のみを表示できます。BlueXPの「サービス」と通知の「タイプ」でフィルタリングできます。</block>
+  <block id="9a4a8fa1cd4f878ff0d3a810b77cddd2" category="list-text">現時点では、コネクタ、BlueXPのコピーと同期、BlueXPのバックアップとリカバリ、BlueXPデジタルウォレット、BlueXPランサムウェア対策に関する通知がEメールで送信されます。サービスは今後のリリースで追加される予定です。</block>
+  <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">通知センターで設定したフィルタは、電子メールで受信する通知の種類を決定するものではありません。既定では、BlueXPアカウント管理者はすべての「重要」および「推奨」通知の電子メールを受信します。これらの通知はすべてのサービスに適用されます。コネクタやBlueXPのバックアップとリカバリなど、特定のサービスについてのみ通知を受け取ることはできません。</block>
+  <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">他のすべてのユーザーと受信者は、通知メールを受信しないように設定されているため、追加のユーザーの通知設定を構成する必要があります。</block>
 </blocks>
