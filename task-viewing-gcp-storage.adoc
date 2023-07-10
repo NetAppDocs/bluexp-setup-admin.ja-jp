@@ -16,27 +16,8 @@ summary: Google CloudにConnectorをインストールすると、BlueXPは、Co
 [role="lead"]
 Google CloudにConnectorをインストールすると、BlueXPは、ConnectorがインストールされているGoogleアカウントにあるGoogle Cloud Storageバケットに関する情報を自動的に検出できます。Google Cloud Storage作業環境がCanvasに追加され、この情報を表示できます。
 
-Google Cloud Storageバケットの場所、アクセスステータス、ストレージクラス、合計容量と使用済み容量などの詳細を確認できます。これらのバケットは、BlueXPのバックアップとリカバリ、BlueXPの階層化、BlueXPのコピーと同期の処理のデスティネーションとして使用できます。
-
-.手順
-. Google Cloud Storageバケットを表示するGoogleアカウントにコネクタをインストールします。
-. ナビゲーションメニューから、*ストレージ>キャンバス*を選択します。
-+
-しばらくすると、Google Cloud Storageの作業環境が自動的に表示されます。
-
-+
 image:screenshot-gcp-cloud-storage-we.png["Google Cloud Storage作業環境のスクリーンショット。"]
 
-. 作業環境を選択し、右側のペインからアクションを選択します。
-+
-image:screenshot-gcp-cloud-storage-actions.png["Google Cloud Storage作業環境を選択した後の操作ペインを示すスクリーンショット。このペインには、同期サービスを使用するためのバケットの総数とアクションが表示されます。"]
+Google Cloud Storageバケットの場所、アクセスステータス、ストレージクラス、合計容量と使用済み容量などの詳細を確認できます。これらのバケットは、BlueXPのバックアップとリカバリ、BlueXPの階層化、BlueXPのコピーと同期の処理のデスティネーションとして使用できます。
 
-. Google Cloud Storageバケットとの間でデータを同期するには、* Sync data *を選択します。
-+
-詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["BlueXPのコピーと同期の概要を紹介します"^]
-
-. Googleアカウントのバケットに関する詳細を表示するには、*[Enter Working Environment]*を選択します。
-+
-image:screenshot-gcp-cloud-storage-details.png["Google Cloud Storage作業環境の詳細を示すスクリーンショット。バケット、容量、場所の総数、および各バケットの詳細を示す表を示しています。"]
-
-
+新たに追加された機能で、Google Cloud Storageバケットを作成および編集できるようになりました。 https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["BlueXPを使用してCloud Storageバケットを表示、作成、管理する方法については、こちらをご覧ください"^]。

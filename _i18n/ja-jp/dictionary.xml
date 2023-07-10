@@ -1473,20 +1473,8 @@
   <block id="82f74539a8232efa9fe9d44fbb820377" category="doc">Google Cloud Storageバケットを表示します</block>
   <block id="e952b1c060b2dc1be5663131351e06a5" category="paragraph">Google CloudにConnectorをインストールすると、BlueXPは、ConnectorがインストールされているGoogleアカウントにあるGoogle Cloud Storageバケットに関する情報を自動的に検出できます。Google Cloud Storage作業環境がCanvasに追加され、この情報を表示できます。</block>
   <block id="4a5a2cb37f05953f58468c7fed5af846" category="paragraph">Google Cloud Storageバケットの場所、アクセスステータス、ストレージクラス、合計容量と使用済み容量などの詳細を確認できます。これらのバケットは、BlueXPのバックアップとリカバリ、BlueXPの階層化、BlueXPのコピーと同期の処理のデスティネーションとして使用できます。</block>
-  <block id="aaaa45300f726e0be12017066c3b12e8" category="list-text">Google Cloud Storageバケットを表示するGoogleアカウントにコネクタをインストールします。</block>
-  <block id="69e6c31f6140607f08425260f2faecb5" category="list-text">ナビゲーションメニューから、*ストレージ&gt;キャンバス*を選択します。</block>
-  <block id="18fe44f15840f7116c5288c8e5b736da" category="paragraph">しばらくすると、Google Cloud Storageの作業環境が自動的に表示されます。</block>
   <block id="21b1bc909131728ad1b5d3d05c538f6b" category="inline-image-macro">Google Cloud Storage作業環境のスクリーンショット。</block>
   <block id="94bd1056e53b5ba66af1269a83d9d853" category="paragraph"><block ref="94bd1056e53b5ba66af1269a83d9d853" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f0574ea9efbf61e3005311c1ed736537" category="list-text">作業環境を選択し、右側のペインからアクションを選択します。</block>
-  <block id="dda5d91ac092d5a2808c7b76b6686167" category="inline-image-macro">Google Cloud Storage作業環境を選択した後の操作ペインを示すスクリーンショット。このペインには、同期サービスを使用するためのバケットの総数とアクションが表示されます。</block>
-  <block id="15d37262e72beba7163abfd70b5bfa25" category="paragraph"><block ref="15d37262e72beba7163abfd70b5bfa25" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2d08106578502b2089149e27907c689b" category="list-text">Google Cloud Storageバケットとの間でデータを同期するには、* Sync data *を選択します。</block>
-  <block id="6beafc0ddd3d2d40e91fd1f10beca6f6" category="inline-link">BlueXPのコピーと同期の概要を紹介します</block>
-  <block id="e0e6f4b8b0641d976b8e099c1fe32756" category="paragraph">詳細については、を参照してください<block ref="fb520091925060688384bbe43ee465fa" category="inline-link-rx"></block></block>
-  <block id="1a2a90dcdbeaa1a29ed61b2e814f7fc6" category="list-text">Googleアカウントのバケットに関する詳細を表示するには、*[Enter Working Environment]*を選択します。</block>
-  <block id="b008bc9f769ee3b6c8813b19052b43a6" category="inline-image-macro">Google Cloud Storage作業環境の詳細を示すスクリーンショット。バケット、容量、場所の総数、および各バケットの詳細を示す表を示しています。</block>
-  <block id="14738180b3115b94f504ce48bf25a31a" category="paragraph"><block ref="14738180b3115b94f504ce48bf25a31a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c7c7fe81ff2afbb7f657e592f9871125" category="summary">制限モードでBlueXPを起動して実行したら、制限モードでサポートされるBlueXPサービスの使用を開始できます。</block>
   <block id="d279ef9d3fa427882e45e653bc7b1949" category="doc">次に実行できる処理（制限モード）</block>
   <block id="9ed3d93e6149b9255047c4f345ace3ed" category="paragraph">ヘルプについては、次のサービスのマニュアルを参照してください。</block>
@@ -3195,7 +3183,6 @@
   <block id="93850b8e1d97181700833dcae4c7e219" category="paragraph"><block ref="93850b8e1d97181700833dcae4c7e219" category="inline-image-macro-rx" type="image"></block></block>
   <block id="54301079e01fc865e928c6fe22deeeef" category="paragraph">リージョン、アクセスポリシー、アカウント、合計容量と使用済み容量など、S3バケットに関する詳細を確認できます。これらのバケットは、BlueXPのバックアップとリカバリ、BlueXPの階層化、BlueXPのコピーと同期の処理のデスティネーションとして使用できます。また、BlueXPの分類を使用してこれらのバケットをスキャンすることもできます。</block>
   <block id="1f96aa045f6500e7c58cc5f50ea21ffd" category="inline-link">ここでは、BlueXPを使用してS3バケットを表示、作成、管理する方法を説明します</block>
-  <block id="8ca79a150bd523c9a9a82fb5420fee36" category="paragraph">新たに追加された機能で、S3バケットを作成および編集できるようになりました。<block ref="c4481f66e0558788424eb34d61e736ff" category="inline-link-rx"></block></block>
   <block id="08533087d95fb07c92ed0773080a65d4" category="doc">Azureネットワークをセットアップする</block>
   <block id="1387f52f9e1a700036780a5bf567fab3" category="section-title">VNetおよびサブネット</block>
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">コネクタを作成するときは、コネクタを配置するVNetとサブネットを指定する必要があります。</block>
@@ -3818,4 +3805,8 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="9a4a8fa1cd4f878ff0d3a810b77cddd2" category="list-text">現時点では、コネクタ、BlueXPのコピーと同期、BlueXPのバックアップとリカバリ、BlueXPデジタルウォレット、BlueXPランサムウェア対策に関する通知がEメールで送信されます。サービスは今後のリリースで追加される予定です。</block>
   <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">通知センターで設定したフィルタは、電子メールで受信する通知の種類を決定するものではありません。既定では、BlueXPアカウント管理者はすべての「重要」および「推奨」通知の電子メールを受信します。これらの通知はすべてのサービスに適用されます。コネクタやBlueXPのバックアップとリカバリなど、特定のサービスについてのみ通知を受け取ることはできません。</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">他のすべてのユーザーと受信者は、通知メールを受信しないように設定されているため、追加のユーザーの通知設定を構成する必要があります。</block>
+  <block id="00fba3f8242dff426927884c6521757a" category="paragraph">新たに追加された機能で、S3バケットを作成および編集できるようになりました。<block ref="c4481f66e0558788424eb34d61e736ff" category="inline-link-rx"></block>。</block>
+  <block id="238db521ba5110fd4f7c460de28dd0c8" category="inline-link">BlueXPを使用してCloud Storageバケットを表示、作成、管理する方法については、こちらをご覧ください</block>
+  <block id="8bc5e348bcf49d1543e86fd28ce45f86" category="paragraph">新たに追加された機能で、Google Cloud Storageバケットを作成および編集できるようになりました。<block ref="640cf64376886268ca971c71c762f644" category="inline-link-rx"></block>。</block>
+  <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">Google Cloud Storageバケットを管理します</block>
 </blocks>
