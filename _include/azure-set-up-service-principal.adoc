@@ -1,67 +1,7 @@
----
-sidebar: sidebar 
-permalink: task-set-up-permissions-on-prem.html 
-keywords: set up permissions, cloud permissions, aws permissions, azure permissions, on prem permissions, connector permissions 
-summary: AWSまたはAzureでBlueXPサービスをオンプレミスコネクタで使用する場合は、インストール後にコネクタにクレデンシャルを追加できるように、クラウドプロバイダで権限を設定する必要があります。 
----
-= オンプレミス環境のクラウド権限を設定
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
-[role="lead"]
-AWSまたはAzureでBlueXPサービスをオンプレミスコネクタで使用する場合は、インストール後にコネクタにクレデンシャルを追加できるように、クラウドプロバイダで権限を設定する必要があります。
-
-
-TIP: Google Cloudではない理由コネクタがオンプレミスにインストールされている場合、Google Cloudでリソースを管理することはできません。Google Cloudに存在するリソースを管理するには、コネクタをGoogle Cloudにインストールする必要があります。
-
-[role="tabbed-block"]
-====
-.AWS
---
-コネクタをオンプレミスにインストールする場合は、必要な権限を持つIAMユーザのアクセスキーを追加して、BlueXPにAWS権限を設定する必要があります。
-
-コネクタがオンプレミスにインストールされている場合は、この認証方法を使用する必要があります。IAMロールは使用できません。
-
-.手順
-. AWSコンソールにログインし、IAMサービスに移動します。
-. ポリシーを作成します。
-+
-.. [*Policies]>[Create policy*]をクリックします。
-.. [*json]*を選択し、の内容をコピーして貼り付けます link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
-.. 残りの手順を完了してポリシーを作成します。
-+
-使用するBlueXPサービスによっては、2つ目のポリシーの作成が必要になる場合があります。
-
-+
-標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。 link:reference-permissions-aws.html["コネクタのIAMポリシーの詳細については、こちらを参照してください"]。
-
-
-
-. IAMユーザにポリシーを適用します。
-+
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS のドキュメント：「 Creating IAM Roles"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
-
-
-. コネクタのインストール後にBlueXPに追加できるアクセスキーがユーザに割り当てられていることを確認します。
-
-
-.結果
-これで、必要な権限を持つIAMユーザのアクセスキーが作成されました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。
-
-link:task-provide-permissions-on-prem.html["これらの権限をBlueXPに付与する方法について説明します"]。
-
---
-.Azure
---
-コネクタをオンプレミスにインストールする場合は、Azure Active Directoryでサービスプリンシパルを設定し、BlueXPに必要なAzureクレデンシャルを取得して、BlueXPにAzure権限を付与する必要があります。
-
-.ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
 . Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
 +
 詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]
@@ -85,7 +25,6 @@ AD アプリケーションとサービスプリンシパルを作成してお�
 
 
 
-.アプリケーションをロールに割り当てます
 . カスタムロールを作成します。
 +
 .. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
@@ -162,7 +101,6 @@ Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入�
 
 
 
-.Windows Azure Service Management API 権限を追加します
 . Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
 . [API アクセス許可 ] 、 [ アクセス許可の追加 ] の順にクリックします。
 . Microsoft API* で、 * Azure Service Management * を選択します。
@@ -175,7 +113,6 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API �
 
 
 
-.アプリケーションのアプリケーションIDとディレクトリIDを取得します
 . Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
 . アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。
 +
@@ -186,7 +123,6 @@ AzureアカウントをBlueXPに追加するときは、アプリケーション
 
 
 
-.クライアントシークレットを作成します
 . Azure Active Directory * サービスを開きます。
 . [* アプリ登録 * ] をクリックして、アプリケーションを選択します。
 . ［ * 証明書とシークレット > 新しいクライアントシークレット * ］ をクリックします。
@@ -200,11 +136,3 @@ image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパ�
 BlueXPでAzure ADの認証に使用するクライアントシークレットが作成されました。
 
 
-
-.結果
-これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。
-
-link:task-provide-permissions-on-prem.html["これらの権限をBlueXPに付与する方法について説明します"]。
-
---
-====

@@ -26,7 +26,9 @@ BlueXPのSaaSレイヤへのアウトバウンド接続を制限してBlueXPを�
 ====
 .AWS Commercial Marketplaceの略
 --
-.必要なもの
+.作業を開始する前に
+次の情報が必要です。
+
 * ネットワーク要件を満たすVPCとサブネット。
 +
 link:task-prepare-restricted-mode.html["ネットワーク要件について説明します"]
@@ -36,6 +38,10 @@ link:task-prepare-restricted-mode.html["ネットワーク要件について説�
 link:task-prepare-restricted-mode.html#prepare-cloud-permissions["AWS権限の設定方法をご確認ください"]
 
 * IAMユーザのAWS Marketplaceをサブスクライブおよびサブスクライブ解除する権限。
+* インスタンスのCPUとRAMの要件を理解していること。
++
+link:task-prepare-restricted-mode.html#review-host-requirements["インスタンス要件を確認します"]。
+
 * EC2インスタンスのキーペア。
 
 
@@ -54,23 +60,23 @@ image:screenshot-subscribe-aws.png["AWS Marketplace の Continue to Subscribe an
 +
 ** *名前とタグ*：インスタンスの名前とタグを入力します。
 ** *アプリケーションとOSイメージ*:このセクションは省略します。コネクタAMIはすでに選択されています。
-** * Instance type *：リージョンの可用性に応じて、サポートされているインスタンスタイプ（t3.xlargeを推奨）のいずれかを選択します。
-+
-link:task-prepare-restricted-mode.html["インスタンスの要件を確認します"]。
-
+** *インスタンスタイプ*：リージョンの可用性に応じて、RAMとCPUの要件を満たすインスタンスタイプを選択します（T3.xlargeを推奨）。
 ** *キーペア（ログイン）*：インスタンスへのセキュアな接続に使用するキーペアを選択します。
 ** *ネットワーク設定*：必要に応じてネットワーク設定を編集します。
 +
 *** 目的のVPCとサブネットを選択します。
 *** インスタンスにパブリックIPアドレスを割り当てるかどうかを指定します。
 *** コネクタインスタンスに必要な接続方法（SSH、HTTP、HTTPS）を有効にするファイアウォール設定を指定します。
++
+特定の構成にはさらにいくつかのルールが必要です。
+
++
+link:reference-ports-aws.html["AWSのセキュリティグループルールを表示します"]。
+
 
 
 ** *ストレージの設定*：デフォルトのストレージオプションをそのまま使用します。
 ** *詳細情報*：*[IAMインスタンスプロファイル]*で、コネクタに必要な権限を含むIAMロールを選択します。
-+
-link:task-prepare-restricted-mode.html["AWS権限の設定方法をご確認ください"]。
-
 ** *概要*：概要を確認し、*インスタンスの起動*をクリックします。
 
 
@@ -85,7 +91,9 @@ BlueXPをセットアップします。
 --
 .AWS Gov Marketplaceの略
 --
-.必要なもの
+.作業を開始する前に
+次の情報が必要です。
+
 * ネットワーク要件を満たすVPCとサブネット。
 +
 link:task-prepare-restricted-mode.html["ネットワーク要件について説明します"]
@@ -137,7 +145,9 @@ BlueXPをセットアップします。
 --
 .Azure Marketplace で入手できます
 --
-.必要なもの
+.作業を開始する前に
+次の情報が必要です。
+
 * ネットワーク要件を満たすVNetとサブネット。
 +
 link:task-prepare-restricted-mode.html["ネットワーク要件について説明します"]
@@ -175,7 +185,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 ** *ネットワークセキュリティグループ*：コネクタには、SSH、HTTP、およびHTTPSを使用したインバウンド接続が必要です。
 +
-link:task-prepare-restricted-mode.html["ネットワーク要件について説明します"]。
+link:reference-ports-azure.html["Azureのセキュリティグループルールを表示します"]。
 
 ** * ID *：* Management *で* Enable system assigned managed identity *を選択します。
 +
@@ -195,7 +205,9 @@ BlueXPをセットアップします。
 --
 .手動インストール
 --
-.必要なもの
+.作業を開始する前に
+次の情報が必要です。
+
 * コネクタをインストールするためのroot権限。
 * コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
 +
@@ -268,7 +280,7 @@ chmod +x OnCommandCloudManager-<version>
 
 
 +
---cacertsは、コネクタとプロキシサーバ間のHTTPSアクセスに使用するCA署名証明書を指定しています。h
+--cacertsは、コネクタとプロキシサーバ間のHTTPSアクセスに使用するCA署名証明書を指定しています。このパラメータは、HTTPSプロキシサーバを指定する場合、または代行受信プロキシを指定する場合にのみ必要です。
 
 
 
@@ -359,7 +371,6 @@ BlueXPに、AWSでユーザに代わって操作を実行するために必要�
 必要な権限を持つIAMユーザのAWSアクセスキーをBlueXPに渡します。
 
 .手順
-. BlueXPで正しいコネクタが選択されていることを確認します
 . BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
 +
 image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
@@ -397,7 +408,7 @@ NOTE: BlueXP Operatorは'BlueXPポリシーで指定されているデフォル�
 .. [ * 選択 * ] をクリックします。
 .. 「 * 次へ * 」をクリックします。
 .. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
-.. 追加のサブスクリプションでリソースを管理する場合は、そのサブスクリプションに切り替えてから、上記の手順を繰り返します。
+.. 追加のAzureサブスクリプションでリソースを管理する場合は、そのサブスクリプションに切り替えてから、上記の手順を繰り返します。
 
 
 
@@ -411,7 +422,6 @@ BlueXPに、Azureで処理を実行するために必要な権限が付与され
 以前にセットアップしたAzureサービスプリンシパルのクレデンシャルをBlueXPに指定します。
 
 .手順
-. にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] ログインします。
 . BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
 +
 image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]

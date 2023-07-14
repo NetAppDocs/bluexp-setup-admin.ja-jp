@@ -1,26 +1,6 @@
----
-sidebar: sidebar 
-permalink: task-adding-gcp-accounts.html 
-keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。どちらのタスクも、Marketplaceのサブスクリプションを使用してBlueXPサービスの料金を支払うことができます。 
----
-= BlueXPのGoogle Cloudクレデンシャルとサブスクリプションを管理します
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
-
-[role="lead"]
-Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。どちらのタスクも、Marketplaceのサブスクリプションを使用してBlueXPサービスの料金を支払うことができます。
-
-
-
-== MarketplaceサブスクリプションをGoogle Cloudのクレデンシャルに関連付ける
-
-Google CloudでConnectorを導入すると、Connector VMインスタンスに関連付けられたデフォルトのクレデンシャルセットがBlueXPによって作成されます。これらの資格情報に関連付けられている Marketplace サブスクリプションは、いつでも変更できます。このサブスクリプションでは、従量課金制のCloud Volumes ONTAP システムを作成したり、他のBlueXPサービスを使用したりできます。
 
 .手順
 . BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
@@ -80,30 +60,6 @@ video::video-subscribing-google-cloud.mp4[width=848,height=480]
 .. このプロセスが完了したら、BlueXPの[資格情報]ページに戻り、この新しいサブスクリプションを選択します。
 +
 image:screenshot_gcp_associate.gif["サブスクリプションの割り当てページのスクリーンショット。"]
-
-
-
-
-
-
-
-== Marketplaceのサブスクリプションプロセスのトラブルシューティング
-
-Google Cloud MarketplaceからBlueXPにサブスクライブすると、権限が正しくない場合やBlueXP Webサイトへのリダイレクトを誤って実行しなかった場合に、断片化されることがあります。この場合は、次の手順に従ってサブスクリプションプロセスを完了してください。
-
-.手順
-. に移動します https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^] 注文の状態を確認します。ページに「プロバイダで管理」と表示されている場合は、下にスクロールして「注文の管理」を選択します。
-+
-image:screenshot_gcp_manage_orders.png["配信登録後のマーケットプレイスページのスクリーンショット"]
-
-+
-** 注文に緑のチェックマークが表示されていて、これが予期しない場合は、同じ請求アカウントを使用している組織の他の人がすでに登録されている可能性があります。想定外のサポートやサブスクリプションの詳細が必要な場合は、ネットアップの営業チームにお問い合わせください。
-+
-image:screenshot_gcp_green_marketplace.png["承認されたエンタイトルメントのスクリーンショット。"]
-
-** 注文に時計と * 保留中 * のステータスが表示されている場合は、マーケットプレイスのページに戻り、 * プロバイダで管理 * を選択して、上記の手順を完了します。
-+
-image:screenshot_gcp_pending_marketplace.png["市場で保留中のエンタイトルメントのスクリーンショット。"]
 
 
 

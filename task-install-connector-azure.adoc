@@ -20,7 +20,9 @@ summary: コネクタは、BlueXPのWebベースのコンソールやAzure Marke
 ====
 .BlueXP
 --
-.必要なもの
+.作業を開始する前に
+次の情報が必要です。
+
 * Azure サブスクリプション。
 * 選択した Azure リージョン内の VNet およびサブネット
 * すべての発信インターネットトラフィックにプロキシを必要とする場合は、プロキシサーバの詳細を参照してください。
@@ -116,18 +118,15 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 VM を設定する際には、次の点に注意してください。
 
 +
-** コネクタはHDDディスクまたはSSDディスクで最適に動作します。
-** CPU と RAM の要件を満たす VM サイズを選択します。DS3 v2 を推奨します。
-+
-link:reference-host-requirements-azure.html["VM の要件を確認します"]。
-
-** ネットワークセキュリティグループの場合、コネクタには、 SSH 、 HTTP 、および HTTPS を使用したインバウンド接続が必要です。特定の構成にはさらにいくつかのルールが必要です。
+** * VMサイズ*：CPUとRAMの要件を満たすVMサイズを選択します。DS3 v2 を推奨します。
+** *ディスク*：コネクタはHDDまたはSSDディスクで最適なパフォーマンスを発揮します。
+** *ネットワークセキュリティグループ*：コネクタには、SSH、HTTP、およびHTTPSを使用したインバウンド接続が必要です。
 +
 link:reference-ports-azure.html["Azureのセキュリティグループルールを表示します"]。
 
-** [Management]*で、[On]*を選択して、コネクターVMの*[System assigned managed identity]*を有効にします。
+** * ID *：* Management *で* Enable system assigned managed identity *を選択します。
 +
-管理対象の ID を使用すると、 Connector 仮想マシンはクレデンシャルを指定せずに自身を Azure Active Directory に識別できるため、この設定は重要です。完了したら、作成したカスタムロールを割り当てる必要があります https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Azure リソース用の管理対象 ID の詳細については、こちらをご覧ください"^]。
+管理対象の ID を使用すると、 Connector 仮想マシンはクレデンシャルを指定せずに自身を Azure Active Directory に識別できるため、この設定は重要です。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Azure リソース用の管理対象 ID の詳細については、こちらをご覧ください"^]。
 
 
 
@@ -160,7 +159,9 @@ link:task-provide-permissions-azure.html["以前に設定した権限をBlueXP�
 --
 .手動インストール
 --
-.必要なもの
+.作業を開始する前に
+次の情報が必要です。
+
 * コネクタをインストールするためのroot権限。
 * コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
 +

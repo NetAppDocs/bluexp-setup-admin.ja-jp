@@ -1,0 +1,87 @@
+= 
+:allow-uri-read: 
+
+
+| AWSサービス（amazonaws.com):
+
+* クラウド形成
+* 柔軟なコンピューティングクラウド（ EC2 ）
+* IDおよびアクセス管理（IAM）
+* キー管理サービス（ KMS ）
+* セキュリティトークンサービス（ STS ）
+* シンプルなストレージサービス（ S3 ）
+
+
+|をクリックしてAWSのリソースを管理します。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWSのドキュメントを参照してください"^]
+
+|\https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net
+
+|をクリックして、Azureパブリックリージョンのリソースを管理します。
+
+|
+\https://management.azure.microsoft.scloud
+\https://login.microsoftonline.microsoft.scloud
+\https://blob.core.microsoft.scloud
+\https://core.microsoft.scloud
+
+|をクリックしてAzure IL6リージョンのリソースを管理します。
+
+|\https://management.usgovcloudapi.net
+\https://login.microsoftonline.us
+\https://blob.core.usgovcloudapi.net
+\https://core.usgovcloudapi.net
+
+| Azure Governmentリージョンのリソースを管理します。
+
+|\https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn
+
+| Azure Chinaリージョンのリソースを管理します。
+
+|\https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects
+
+| Google Cloudでリソースを管理するには
+
+|\https://support.netapp.com |をクリックしてライセンス情報を取得し、AutoSupportメッセージをNetAppサポートに送信します。
+
+|\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+|をクリックして、BlueXP内でSaaSの機能とサービスを提供します。
+
+
+NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続していますが、今後のリリースでapi.bluexp.netapp.com"への連絡を開始します。
+
+|\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+
+|を押して、コネクタとそのDockerコンポーネントをアップグレードします。
+
+|\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+このエンドポイントは、Azure Governmentリージョンでは必要ありません。
+
+\https://occmclientinfragov.azurecr.us
+このエンドポイントは、Azure Governmentリージョンでのみ必要です。
+
+|を押して、コネクタとそのDockerコンポーネントをアップグレードします。

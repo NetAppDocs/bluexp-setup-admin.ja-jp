@@ -54,15 +54,15 @@ link:reference-networking-saas-console.html["BlueXPコンソールからアク�
 
 === 手動インストール中にエンドポイントに接続しました
 
-独自のLinuxホストにコネクタを手動でインストールする場合は、コネクタのインストーラでインストールプロセス中に次のURLにアクセスする必要があります。
+独自のLinuxホストにコネクタを手動でインストールする場合、コネクタのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。
 
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
 
 
 ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。
@@ -73,24 +73,36 @@ link:reference-networking-saas-console.html["BlueXPコンソールからアク�
 
 このコネクタは、パブリッククラウド環境内のリソースとプロセスを日常的に管理するために、次のエンドポイントに接続するためのアウトバウンドインターネットアクセスを必要とします。
 
-[cols="2*"]
+[cols="2a,1a"]
 |===
 | エンドポイント | 目的 
 
 
-| \https://management.azure.com
+ a| 
+\https://management.azure.com
 \https://login.microsoftonline.com
 \https://blob.core.windows.net
-\https://core.windows.net | Azureパブリックリージョン内のリソースを管理します。 
+\https://core.windows.net
+ a| 
+Azureパブリックリージョン内のリソースを管理します。
 
 
-| \https://management.chinacloudapi.cn
+
+ a| 
+\https://management.chinacloudapi.cn
 \https://login.chinacloudapi.cn
 \https://blob.core.chinacloudapi.cn
-\https://core.chinacloudapi.cn | をクリックしてAzure中国地域のリソースを管理してください。 
+\https://core.chinacloudapi.cn
+ a| 
+をクリックしてAzure中国地域のリソースを管理してください。
 
 
-| \https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
+
+ a| 
+\https://support.netapp.com
+ a| 
+ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。
+
 
 
  a| 
@@ -109,9 +121,13 @@ NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続�
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io
+ a| 
+\https://*.blob.core.windows.net
 
-\https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+をクリックして、 Connector と Docker コンポーネントをアップグレードします。
+
 |===
 
 
@@ -124,15 +140,20 @@ NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続�
 * HTTPS証明書
 
 
+この情報は、インストール時に入力する必要があります。
+
 
 
 == ポート
 
-コネクタへの着信トラフィックは、コネクタを起動した場合や、コネクタがAutoSupport メッセージのプロキシとして使用されている場合を除き、受信トラフィックはありません。
+コネクタを起動するか、コネクタがCloud Volumes ONTAPからNetAppサポートにAutoSupportメッセージを送信するためのプロキシとして使用されている場合を除き、コネクタへの受信トラフィックはありません。
 
 * HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。
 * SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。
-* アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。Cloud Volumes ONTAP システムにAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、コネクタに含まれているプロキシサーバを使用するようにCloud Volumes ONTAP システムが自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
+* アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。
++
+Cloud Volumes ONTAP システムにAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、コネクタに含まれているプロキシサーバを使用するようにCloud Volumes ONTAP システムが自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
+
 
 
 

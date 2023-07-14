@@ -56,7 +56,6 @@ BlueXPに、Azureで処理を実行するために必要な権限が付与され
 .サービスプリンシパル
 --
 .手順
-. にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] ログインします。
 . BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
 +
 image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]

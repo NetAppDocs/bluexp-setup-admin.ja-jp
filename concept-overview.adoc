@@ -66,6 +66,8 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 --
 * https://bluexp.netapp.com/netapp-cloud-data-sense["分類"^]
 * https://bluexp.netapp.com/digital-advisor["デジタルアドバイザ"^]
+* https://bluexp.netapp.com/digital-advisor["経済効率"^]
+* https://bluexp.netapp.com/digital-advisor["運用の耐障害性"^]
 * https://bluexp.netapp.com/ransomware-protection["ランサムウェアからの保護"^]
 
 
@@ -90,7 +92,7 @@ BlueXPの価格は、使用する予定のサービスによって異なりま�
 
 == BlueXPの仕組み
 
-BlueXPには、SaaSレイヤを通じて提供されるWebベースのコンソール、マルチテナンシーを提供するアカウント、Cloud Volumes ONTAP やその他のクラウドサービスを管理するコネクタが含まれています。
+BlueXPには、SaaSレイヤを通じて提供されるWebベースのコンソール、マルチテナンシーを提供するアカウント、作業環境を管理してBlueXPクラウドサービスを有効にするコネクタが含まれています。
 
 
 
@@ -110,7 +112,7 @@ link:concept-netapp-accounts.html["アカウントの詳細については、こ
 
 === コネクタ
 
-BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。コネクタにより、オンプレミス環境とクラウド環境にわたってリソースとプロセスを管理できます。Cloud Volumes ONTAP などのデータサービスを使用する必要があります。
+BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。コネクタにより、オンプレミス環境とクラウド環境にわたってリソースとプロセスを管理できます。作業環境（Cloud Volumes ONTAPクラスタやオンプレミスのONTAPクラスタなど）の管理や、BlueXPの多くのデータサービスの使用が必要です。
 
 link:concept-connectors.html["コネクタの詳細については、こちらをご覧ください"]。
 

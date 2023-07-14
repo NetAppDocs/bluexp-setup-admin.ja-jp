@@ -1,0 +1,16 @@
+= 
+:allow-uri-read: 
+
+
+サービスアカウントをコネクタVMに関連付けます。
+
+.手順
+. Google Cloudポータルに移動し、コネクタVMインスタンスにサービスアカウントを割り当てます。
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloudドキュメント：インスタンスのサービスアカウントとアクセス範囲の変更"^]
+
+. 他のプロジェクトのリソースを管理する場合は、BlueXPロールを持つサービスアカウントをそのプロジェクトに追加してアクセスを許可します。プロジェクトごとにこの手順を繰り返す必要があります。
+
+
+.結果
+BlueXPに、Google Cloudでユーザに代わって操作を実行するために必要な権限が付与されました。

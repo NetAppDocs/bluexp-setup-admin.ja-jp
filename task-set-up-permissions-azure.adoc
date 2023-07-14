@@ -203,7 +203,7 @@ Azure Active Directoryでサービスプリンシパルを作成してセット�
 .ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
 . Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
 +
-詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]
 
 . Azure ポータルで、 * Azure Active Directory * サービスを開きます。
 +
@@ -368,7 +368,7 @@ Azure Active Directoryでサービスプリンシパルを作成してセット�
 .ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
 . Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
 +
-詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]
 
 . Azure ポータルで、 * Azure Active Directory * サービスを開きます。
 +
@@ -389,35 +389,80 @@ AD アプリケーションとサービスプリンシパルを作成してお�
 
 
 
-.アプリケーションにカスタムロールを割り当てます
-. Azure ポータルで、 * Subscriptions * サービスを開きます。
-. サブスクリプションを選択します。
-. [* アクセス制御 (IAM)] 、 [ 追加 ] 、 [ 役割の割り当ての追加 *] の順にクリックします。
-. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
-. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
+.アプリケーションをロールに割り当てます
+. カスタムロールを作成します。
 +
-.. [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
-.. [ メンバーの選択 ] をクリックします。
+.. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
+.. 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
++
+ユーザが Cloud Volumes ONTAP システムを作成する Azure サブスクリプションごとに ID を追加する必要があります。
+
++
+* 例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. JSON ファイルを使用して、 Azure でカスタムロールを作成します。
++
+次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
+
++
+*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
+*** JSON ファイルをアップロードします。
++
+image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
+
+*** Azure CLIを使用してカスタムロールを作成します。
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+これで、Connector仮想マシンに割り当てることができるBlueXP Operatorというカスタムロールが作成されました。
+
+
+
+
+
+. ロールにアプリケーションを割り当てます。
++
+.. Azure ポータルで、 * Subscriptions * サービスを開きます。
+.. サブスクリプションを選択します。
+.. [* アクセス制御 (IAM)] 、 [ 追加 ] 、 [ 役割の割り当ての追加 *] の順にクリックします。
+.. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
+.. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
++
+*** [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
+*** [ メンバーの選択 ] をクリックします。
 +
 image:screenshot-azure-service-principal-role.png["アプリケーションにロールを追加するときに Members タブを表示する Azure ポータルのスクリーンショット。"]
 
-.. アプリケーションの名前を検索します。
+*** アプリケーションの名前を検索します。
 +
 次に例を示します。
 
 +
 image:screenshot_azure_service_principal_role.png["Azure ポータルのスクリーンショットで、 Azure ポータルのロール割り当ての追加フォームが表示されています。"]
 
-.. アプリケーションを選択し、 * Select * をクリックします。
-.. 「 * 次へ * 」をクリックします。
+*** アプリケーションを選択し、 * Select * をクリックします。
+*** 「 * 次へ * 」をクリックします。
 
 
-. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
+.. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
 +
 サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
 
 +
-複数のAzureサブスクリプションでリソースを管理する場合は、各サブスクリプションにサービスプリンシパルをバインドする必要があります。たとえば、BlueXPでは、Cloud Volumes ONTAPの導入時に使用するサブスクリプションを選択できます。
+Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入する場合は、サービスプリンシパルを各サブスクリプションにバインドする必要があります。BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するサブスクリプションを選択できます。
+
+
 
 
 

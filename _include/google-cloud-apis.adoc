@@ -1,0 +1,14 @@
+= 
+:allow-uri-read: 
+
+
+* Cloud Deployment Manager V2 API
+* クラウドロギング API
+* Cloud Resource Manager API の略
+* Compute Engine API
+* ID およびアクセス管理（ IAM ） API
+* Cloud Key Management Service（KMS）APIの略
++
+（お客様が管理する暗号化キー（CMEK）でBlueXPのバックアップとリカバリを使用する場合にのみ必要）
+
+

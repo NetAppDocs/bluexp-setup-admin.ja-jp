@@ -1,0 +1,32 @@
+= 
+:allow-uri-read: 
+
+
+. AWSコンソールにログインし、IAMサービスに移動します。
+. ポリシーを作成します。
++
+.. [*Policies]>[Create policy*]をクリックします。
+.. [*json]*を選択し、の内容をコピーして貼り付けます link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+.. 残りの手順を完了してポリシーを作成します。
+
+
+
+
+. IAMロールを作成します。
++
+.. [ロール]>[ロールの作成]*をクリックします。
+.. [AWS service]>[EC2]*を選択します。
+.. 作成したポリシーを適用して権限を追加します。
+.. 残りの手順を完了してロールを作成します。
+
+
+
+
+. IAMユーザにポリシーを適用します。
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS のドキュメント：「 Creating IAM Roles"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
+
+
+. コネクタのインストール後にBlueXPに追加できるアクセスキーがユーザに割り当てられていることを確認します。
+

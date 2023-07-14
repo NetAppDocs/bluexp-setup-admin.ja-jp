@@ -20,7 +20,9 @@ BlueXPのWebベースのコンソールから直接コネクタを作成する�
 ====
 .BlueXP
 --
-.必要なもの
+.作業を開始する前に
+次の情報が必要です。
+
 * コネクタVMのコネクタとサービスアカウントを作成するために必要なGoogle Cloud権限。
 +
 link:task-set-up-permissions-google.html["Google Cloudの権限を設定する方法について説明します"]
@@ -72,7 +74,9 @@ link:reference-ports-gcp.html["Google Cloudのファイアウォールルール"
 --
 .gcloud
 --
-.必要なもの
+.作業を開始する前に
+次の情報が必要です。
+
 * コネクタVMのコネクタとサービスアカウントを作成するために必要なGoogle Cloud権限。
 +
 link:task-set-up-permissions-google.html["Google Cloudの権限を設定する方法について説明します"]
@@ -174,7 +178,9 @@ Webブラウザを開き、にアクセスします https://console.bluexp.netap
 --
 .手動インストール
 --
-.必要なもの
+.作業を開始する前に
+次の情報が必要です。
+
 * コネクタをインストールするためのroot権限。
 * コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
 +

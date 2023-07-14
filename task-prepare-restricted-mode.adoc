@@ -100,7 +100,7 @@ Docker Engine の略:: Connectorをインストールする前に、ホストに
 
 === 手動インストール用のアウトバウンドインターネットアクセス
 
-独自のLinuxホストにコネクタを手動でインストールする場合は、コネクタのインストーラでインストールプロセス中に次のURLにアクセスする必要があります。
+独自のLinuxホストにコネクタを手動でインストールする場合、コネクタのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。
 
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
@@ -126,7 +126,7 @@ Docker Engine の略:: Connectorをインストールする前に、ホストに
 
 コネクタを配置するネットワークの場所には、アウトバウンドのインターネット接続が必要です。Connector では、パブリッククラウド環境内のリソースとプロセスを管理するために、次のエンドポイントに接続するためにアウトバウンドインターネットアクセスが必要です。
 
-[cols="2*"]
+[cols="2a,1a"]
 |===
 | エンドポイント | 目的 
 
@@ -141,28 +141,43 @@ AWS サービス（ amazonaws.com ）：
 * セキュリティトークンサービス（ STS ）
 * シンプルなストレージサービス（ S3 ）
 
-| AWSでリソースを管理できます。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWSのドキュメントを参照してください"^] 
+ a| 
+AWSでリソースを管理できます。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWSのドキュメントを参照してください"^]
 
 
-| \https://management.azure.com
+
+ a| 
+\https://management.azure.com
 \https://login.microsoftonline.com
 \https://blob.core.windows.net
-\https://core.windows.net | Azureパブリックリージョン内のリソースを管理します。 
+\https://core.windows.net
+ a| 
+Azureパブリックリージョン内のリソースを管理します。
 
 
-| \https://management.usgovcloudapi.net
+
+ a| 
+\https://management.usgovcloudapi.net
 \https://login.microsoftonline.us
 \https://blob.core.usgovcloudapi.net
-\https://core.usgovcloudapi.net | Azure Governmentリージョンのリソースを管理 
+\https://core.usgovcloudapi.net
+ a| 
+Azure Governmentリージョンのリソースを管理
 
 
-| \https://management.chinacloudapi.cn
+
+ a| 
+\https://management.chinacloudapi.cn
 \https://login.chinacloudapi.cn
 \https://blob.core.chinacloudapi.cn
-\https://core.chinacloudapi.cn | をクリックしてAzure中国地域のリソースを管理してください。 
+\https://core.chinacloudapi.cn
+ a| 
+をクリックしてAzure中国地域のリソースを管理してください。
 
 
-| \https://www.googleapis.com/compute/v1/
+
+ a| 
+\https://www.googleapis.com/compute/v1/
 \https://compute.googleapis.com/compute/v1
 \https://cloudresourcemanager.googleapis.com/v1/projects
 \https://www.googleapis.com/compute/beta
@@ -170,10 +185,17 @@ AWS サービス（ amazonaws.com ）：
 \https://www.googleapis.com/storage/v1
 \https://iam.googleapis.com/v1
 \https://cloudkms.googleapis.com/v1
-\https://www.googleapis.com/deploymentmanager/v2/projects | Google Cloudでリソースを管理します。 
+\https://www.googleapis.com/deploymentmanager/v2/projects
+ a| 
+Google Cloudでリソースを管理します。
 
 
-| \https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
+
+ a| 
+\https://support.netapp.com
+ a| 
+ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。
+
 
 
  a| 
@@ -192,13 +214,17 @@ NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続�
 
 
 
-| \https://*.blob.core.windows.net
+ a| 
+\https://*.blob.core.windows.net
 
 \https://cloudmanagerinfraprod.azurecr.io
 このエンドポイントは、Azure Governmentリージョンでは必要ありません。
 
 \https://occmclientinfragov.azurecr.us
-このエンドポイントは、Azure Governmentリージョンでのみ必要です。 | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
+このエンドポイントは、Azure Governmentリージョンでのみ必要です。
+ a| 
+をクリックして、 Connector と Docker コンポーネントをアップグレードします。
+
 |===
 
 
@@ -210,6 +236,8 @@ NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続�
 * クレデンシャル
 * HTTPS証明書
 
+
+この情報は、インストール時に入力する必要があります。
 
 
 
@@ -227,11 +255,15 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 === ポート
 
-コネクタへの着信トラフィックは、開始しない限りありません。
+コネクタを起動するか、コネクタがCloud Volumes ONTAPからNetAppサポートにAutoSupportメッセージを送信するためのプロキシとして使用されている場合を除き、コネクタへの受信トラフィックはありません。
 
-HTTP（80）およびHTTPS（443）は、BlueXPコンソールへのアクセスを提供します。SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。
+* HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。
+* SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。
+* アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。
++
+Cloud Volumes ONTAP システムにAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、コネクタに含まれているプロキシサーバを使用するようにCloud Volumes ONTAP システムが自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
 
-アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。Cloud Volumes ONTAP システムにAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、コネクタに含まれているプロキシサーバを使用するようにCloud Volumes ONTAP システムが自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
+
 
 
 
@@ -302,7 +334,8 @@ AWS Marketplaceからコネクタを作成する場合は、EC2インスタン�
 IAMユーザの権限とアクセスキーを設定します。コネクタをインストールしてBlueXPをセットアップしたら、BlueXPにAWSアクセスキーを指定する必要があります。
 
 .手順
-. IAMコンソールで、ポリシーを作成します。
+. AWSコンソールにログインし、IAMサービスに移動します。
+. ポリシーを作成します。
 +
 .. [*Policies]>[Create policy*]をクリックします。
 .. [*json]*を選択し、の内容をコピーして貼り付けます link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
@@ -333,14 +366,14 @@ IAMユーザの権限とアクセスキーを設定します。コネクタを�
 必要な権限を持つAzureカスタムロールを作成します。このロールをコネクタVMに割り当てます。
 
 .手順
-. 独自のホストにソフトウェアを手動でインストールする場合は、でシステム割り当ての管理IDを有効にして、カスタムロールを使用して必要なAzure権限を提供できるようにします。
+. 独自のホストにソフトウェアを手動でインストールする場合は、カスタムロールを使用して必要なAzure権限を提供できるように、VMでシステムが割り当てた管理IDを有効にします。
 +
 https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azureのドキュメント：Azureポータルを使用して、VM上のAzureリソースの管理IDを設定します"^]
 
 . の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
 . 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
 +
-ユーザが Cloud Volumes ONTAP システムを作成する Azure サブスクリプションごとに ID を追加する必要があります。
+BlueXPで使用する各AzureサブスクリプションのIDを追加する必要があります。
 
 +
 * 例 *
@@ -384,7 +417,7 @@ Azure Active Directoryでサービスプリンシパルを作成してセット�
 .ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
 . Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
 +
-詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]。
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]
 
 . Azure ポータルで、 * Azure Active Directory * サービスを開きます。
 +
@@ -405,35 +438,80 @@ AD アプリケーションとサービスプリンシパルを作成してお�
 
 
 
-.アプリケーションにカスタムロールを割り当てます
-. Azure ポータルで、 * Subscriptions * サービスを開きます。
-. サブスクリプションを選択します。
-. [* アクセス制御 (IAM)] 、 [ 追加 ] 、 [ 役割の割り当ての追加 *] の順にクリックします。
-. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
-. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
+.アプリケーションをロールに割り当てます
+. カスタムロールを作成します。
 +
-.. [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
-.. [ メンバーの選択 ] をクリックします。
+.. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
+.. 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
++
+ユーザが Cloud Volumes ONTAP システムを作成する Azure サブスクリプションごとに ID を追加する必要があります。
+
++
+* 例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. JSON ファイルを使用して、 Azure でカスタムロールを作成します。
++
+次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
+
++
+*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
+*** JSON ファイルをアップロードします。
++
+image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
+
+*** Azure CLIを使用してカスタムロールを作成します。
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+これで、Connector仮想マシンに割り当てることができるBlueXP Operatorというカスタムロールが作成されました。
+
+
+
+
+
+. ロールにアプリケーションを割り当てます。
++
+.. Azure ポータルで、 * Subscriptions * サービスを開きます。
+.. サブスクリプションを選択します。
+.. [* アクセス制御 (IAM)] 、 [ 追加 ] 、 [ 役割の割り当ての追加 *] の順にクリックします。
+.. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
+.. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
++
+*** [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
+*** [ メンバーの選択 ] をクリックします。
 +
 image:screenshot-azure-service-principal-role.png["アプリケーションにロールを追加するときに Members タブを表示する Azure ポータルのスクリーンショット。"]
 
-.. アプリケーションの名前を検索します。
+*** アプリケーションの名前を検索します。
 +
 次に例を示します。
 
 +
 image:screenshot_azure_service_principal_role.png["Azure ポータルのスクリーンショットで、 Azure ポータルのロール割り当ての追加フォームが表示されています。"]
 
-.. アプリケーションを選択し、 * Select * をクリックします。
-.. 「 * 次へ * 」をクリックします。
+*** アプリケーションを選択し、 * Select * をクリックします。
+*** 「 * 次へ * 」をクリックします。
 
 
-. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
+.. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
 +
 サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
 
 +
 Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入する場合は、サービスプリンシパルを各サブスクリプションにバインドする必要があります。BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するサブスクリプションを選択できます。
+
+
 
 
 

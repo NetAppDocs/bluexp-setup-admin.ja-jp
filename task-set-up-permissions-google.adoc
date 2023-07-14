@@ -145,7 +145,7 @@ Google Cloudでリソースを管理するためにBlueXPで必要な権限を�
 次の例では、プロジェクトレベルで「Connector」という名前のロールを作成します。
 
 +
-gcloud IAMロールcreate connector --project=myproject --file=connector.yaml
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
