@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions.html 
 keywords: permissions, actions 
-summary: BlueXPの機能とサービスを使用するには、BlueXPがクラウド環境で操作を実行できるように権限を付与する必要があります。このページのリンクを使用して、BlueXPで必要な権限にすばやくアクセスできます。 
+summary: BlueXPの機能やサービスを使用するには、権限を指定してBlueXPがクラウド環境で処理を実行できるようにする必要があります。このページのリンクを使用して、目的に応じて必要な権限にすばやくアクセスできます。 
 ---
 = BlueXPの権限の概要
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXPの機能とサービスを使用するには、BlueXPがクラ�
 
 
 [role="lead"]
-BlueXPの機能とサービスを使用するには、BlueXPがクラウド環境で操作を実行できるように権限を付与する必要があります。このページのリンクを使用して、目的に応じて必要な権限にすばやくアクセスできます。
+BlueXPの機能やサービスを使用するには、権限を指定してBlueXPがクラウド環境で処理を実行できるようにする必要があります。このページのリンクを使用して、目的に応じて必要な権限にすばやくアクセスできます。
 
 
 
@@ -41,13 +41,7 @@ BlueXPの機能とサービスを使用するには、BlueXPがクラウド環�
 | オンプレミスのONTAPクラスタをAmazon S3にバックアップ | ONTAPボリュームでバックアップをアクティブ化すると、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["バックアップのS3権限を設定"^] 
 
 
-| オンプレミスのONTAPクラスタをStorageGRIDにバックアップ | StorageGRIDをONTAPクラスタのバックアップターゲットとして準備する際、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["バックアップターゲットとしてStorageGRIDを準備します"^] 
-
-
-| オンプレミスのONTAPクラスタをAWSに階層化 | AWSへのBlueXPの階層化を有効にすると、アクセスキーとシークレットキーを入力するように求められます。これらのクレデンシャルは、ONTAP がS3バケットにデータを階層化できるようにONTAP クラスタに渡されます。 | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["階層化のためのS3権限を設定する"^] 
-
-
-| オンプレミスのONTAPクラスタをStorageGRIDに階層化 | StorageGRIDへのBlueXPの階層化をセットアップするときは、S3のアクセスキーとシークレットキーを使用してBlueXPの階層化を提供する必要があります。BlueXPの階層化サービスでは、このキーを使用してバケットにアクセスします。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["StorageGRIDへの階層化を準備"^] 
+| オンプレミスのONTAPクラスタをAmazon S3に階層化 | AWSへのBlueXPの階層化を有効にすると、アクセスキーとシークレットキーを入力するように求められます。これらのクレデンシャルは、ONTAP がS3バケットにデータを階層化できるようにONTAP クラスタに渡されます。 | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["階層化のためのS3権限を設定する"^] 
 |===
 
 
@@ -102,4 +96,18 @@ BlueXPのバックアップとリカバリを使用してCloud Volumes ONTAPを�
 
 
 | オンプレミスのONTAPクラスタをGoogle Cloudにバックアップ | BlueXPのバックアップとリカバリを使用してオンプレミスのONTAPクラスタをバックアップする場合は、「検索とリストア」機能を使用するためにコネクタに権限を追加する必要があります。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["検索と復元機能の権限"^] 
+|===
+
+
+== StorageGRIDケンケン
+
+[cols="25,60,40"]
+|===
+| 目的 | 説明 | リンク 
+
+
+| オンプレミスのONTAPクラスタをStorageGRIDにバックアップ | StorageGRIDをONTAPクラスタのバックアップターゲットとして準備する際、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["バックアップターゲットとしてStorageGRIDを準備します"^] 
+
+
+| オンプレミスのONTAPクラスタをStorageGRIDに階層化 | StorageGRIDへのBlueXPの階層化をセットアップするときは、S3のアクセスキーとシークレットキーを使用してBlueXPの階層化を提供する必要があります。BlueXPの階層化サービスでは、このキーを使用してバケットにアクセスします。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["StorageGRIDへの階層化を準備"^] 
 |===

@@ -2906,9 +2906,7 @@
   <block id="be01cd1242a81da984b776c6a5aacb83" category="section-title">サードパーティのサービスを許可します</block>
   <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">アカウントのサードパーティサービスがBlueXPで利用可能なサードパーティサービスにアクセスできるようにします。サードパーティのサービスはクラウドサービスとネットアップが提供するサービスに似ていますが、サードパーティが管理とサポートを行っています。</block>
   <block id="90837faa596ab1d28c90a381b6997722" category="list-text">[ * 概要 * ] タブで、 [ * サードパーティサービスを許可する * ] 設定を有効にします。</block>
-  <block id="84dddaa8f7ae88c549f969e61659e03a" category="summary">BlueXPの機能とサービスを使用するには、BlueXPがクラウド環境で操作を実行できるように権限を付与する必要があります。このページのリンクを使用して、BlueXPで必要な権限にすばやくアクセスできます。</block>
   <block id="f664478fbdfbd15104b014e41c35e88c" category="doc">BlueXPの権限の概要</block>
-  <block id="b26840ebf08ae862c7d257c1229a3091" category="paragraph">BlueXPの機能とサービスを使用するには、BlueXPがクラウド環境で操作を実行できるように権限を付与する必要があります。このページのリンクを使用して、目的に応じて必要な権限にすばやくアクセスできます。</block>
   <block id="d2c0c7feb18d0e89bab9d23b6ec4c042" category="section-title">AWS権限</block>
   <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="cell">リンク</block>
   <block id="eec108a26c2c4c3392174c931352146b" category="cell">BlueXPからのコネクタの導入</block>
@@ -3780,7 +3778,6 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="649c5239d0163afb3411e36c5e857809" category="cell">StorageGRIDをONTAPクラスタのバックアップターゲットとして準備する際、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。</block>
   <block id="08cdeb7ce64fda06111111c8fea66510" category="inline-link">バックアップターゲットとしてStorageGRIDを準備します</block>
   <block id="62d09ae20af8b1a53c08a95792d3bdb1" category="cell"><block ref="62d09ae20af8b1a53c08a95792d3bdb1" category="inline-link-rx"></block></block>
-  <block id="746562efc5b1b0667c7d322c1bda9554" category="cell">オンプレミスのONTAPクラスタをAWSに階層化</block>
   <block id="e6b202bba8f7c7c067b2137e58a41397" category="cell">AWSへのBlueXPの階層化を有効にすると、アクセスキーとシークレットキーを入力するように求められます。これらのクレデンシャルは、ONTAP がS3バケットにデータを階層化できるようにONTAP クラスタに渡されます。</block>
   <block id="827bb82562627531a1105788bd9826e6" category="inline-link">階層化のためのS3権限を設定する</block>
   <block id="5f2c172dbfc6022aa5027029dc114852" category="cell"><block ref="5f2c172dbfc6022aa5027029dc114852" category="inline-link-rx"></block></block>
@@ -3815,4 +3812,7 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="d1c50736002ef3676d1c143a04d4cc59" category="list-text">Athena：StartQueryExecution</block>
   <block id="e7a0ee2f9390b4213bbeb8838f2d3896" category="list-text">BlueXP SaaSレイヤへのアウトバウンド接続は必要ありません。すべてのパッケージ、依存関係、および必須コンポーネントはコネクタとともにパッケージ化され、ローカルマシンから提供されます。クラウドプロバイダの一般に利用可能なリソースへの接続は、Cloud Volumes ONTAP を導入する場合にのみ必要です。</block>
   <block id="75dbd7f878d584e6e9f033b3806519ac" category="sidebar">ネットワークを準備</block>
+  <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">BlueXPの機能やサービスを使用するには、権限を指定してBlueXPがクラウド環境で処理を実行できるようにする必要があります。このページのリンクを使用して、目的に応じて必要な権限にすばやくアクセスできます。</block>
+  <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">オンプレミスのONTAPクラスタをAmazon S3に階層化</block>
+  <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">StorageGRIDケンケン</block>
 </blocks>
