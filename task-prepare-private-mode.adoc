@@ -274,6 +274,8 @@ IAMユーザの権限とアクセスキーを設定します。コネクタを�
 --
 必要な権限を持つAzureカスタムロールを作成します。このロールをコネクタVMに割り当てます。
 
+Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
+
 .手順
 . カスタムロールを使用して必要なAzure権限を提供できるように、コネクタをインストールするVMでシステム割り当ての管理IDを有効にします。
 +
@@ -349,6 +351,9 @@ AD アプリケーションとサービスプリンシパルを作成してお�
 
 .アプリケーションをロールに割り当てます
 . カスタムロールを作成します。
++
+Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
+
 +
 .. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
 .. 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。

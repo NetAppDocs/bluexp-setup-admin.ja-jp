@@ -36,6 +36,18 @@ BlueXPの機能とサービスを使用するには、BlueXPがクラウド環�
 
 
 | Cloud Volumes ONTAP 処理 | AWSの各Cloud Volumes ONTAP ノードにIAMロールを関連付ける必要があります。HAメディエーターについても同様です。デフォルトでは、BlueXPでIAMロールを作成することができますが、自分で作成することもできます。 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["IAMロールを自分で設定する方法について説明します"^] 
+
+
+| オンプレミスのONTAPクラスタをAmazon S3にバックアップ | ONTAPボリュームでバックアップをアクティブ化すると、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["バックアップのS3権限を設定"^] 
+
+
+| オンプレミスのONTAPクラスタをStorageGRIDにバックアップ | StorageGRIDをONTAPクラスタのバックアップターゲットとして準備する際、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["バックアップターゲットとしてStorageGRIDを準備します"^] 
+
+
+| オンプレミスのONTAPクラスタをAWSに階層化 | AWSへのBlueXPの階層化を有効にすると、アクセスキーとシークレットキーを入力するように求められます。これらのクレデンシャルは、ONTAP がS3バケットにデータを階層化できるようにONTAP クラスタに渡されます。 | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["階層化のためのS3権限を設定する"^] 
+
+
+| オンプレミスのONTAPクラスタをStorageGRIDに階層化 | StorageGRIDへのBlueXPの階層化をセットアップするときは、S3のアクセスキーとシークレットキーを使用してBlueXPの階層化を提供する必要があります。BlueXPの階層化サービスでは、このキーを使用してバケットにアクセスします。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["StorageGRIDへの階層化を準備"^] 
 |===
 
 
@@ -74,4 +86,20 @@ link:reference-permissions-azure.html["Connector の Azure 権限"]
 | コネクタの動作 | Connector VMインスタンスのサービスアカウントには、日常処理に対する特定の権限が必要です。BlueXPからサービスアカウントを展開するときは、コネクタに関連付ける必要があります。
 
 また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:reference-permissions-gcp.html["Connector の Google Cloud 権限"] 
+
+
+| Cloud Volumes ONTAP を Google Cloud にバックアップ  a| 
+BlueXPのバックアップとリカバリを使用してCloud Volumes ONTAPをバックアップする場合は、次のシナリオでコネクタに権限を追加する必要があります。
+
+* 「検索と復元」機能を使用する場合
+* 顧客管理の暗号化キー（CMEK）を使用する場合
+
+ a| 
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#verify-or-add-permissions-to-the-connector["検索と復元機能の権限"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#required-information-for-using-customer-managed-encryption-keys-cmek["CMEKの権限"^]
+
+
+
+
+| オンプレミスのONTAPクラスタをGoogle Cloudにバックアップ | BlueXPのバックアップとリカバリを使用してオンプレミスのONTAPクラスタをバックアップする場合は、「検索とリストア」機能を使用するためにコネクタに権限を追加する必要があります。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["検索と復元機能の権限"^] 
 |===

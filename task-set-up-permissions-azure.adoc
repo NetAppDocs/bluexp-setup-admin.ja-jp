@@ -50,6 +50,8 @@ BlueXPからコネクタを作成するには、AzureでコネクタVMを作成�
 
 Azureアカウントまたはサービスプリンシパルに割り当てることができるカスタムロールを作成します。
 
+Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
+
 .手順
 . Azureの新しいカスタムロールに必要な権限をコピーし、JSONファイルに保存します。
 +
@@ -314,6 +316,8 @@ Azure Marketplaceからコネクタを導入する場合、またはコネクタ
 ====
 .カスタムロール
 --
+Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
+
 .手順
 . 独自のホストにソフトウェアを手動でインストールする場合は、カスタムロールを使用して必要なAzure権限を提供できるように、VMでシステムが割り当てた管理IDを有効にします。
 +
@@ -391,6 +395,9 @@ AD アプリケーションとサービスプリンシパルを作成してお�
 
 .アプリケーションをロールに割り当てます
 . カスタムロールを作成します。
++
+Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
+
 +
 .. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
 .. 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reference-networking-saas-console.html 
-keywords: networking, urls, endpoints, web browser, console 
-summary: SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。Webブラウザを実行しているマシンは、これらのエンドポイントに接続されている必要があります。 
+keywords: networking, urls, endpoints, web browser, console, network, set up networking 
+summary: BlueXPを使い始めるときは、ネットワークでBlueXPコンソールから特定のエンドポイントへのアクセスが許可されていることを確認してください。BlueXPの使用方法によっては、コネクタや特定のBlueXPサービス用のネットワークの設定も必要になる場合があります。 
 ---
-= BlueXPコンソールにユーザがアクセスできるようにネットワークを準備
+= ネットワークの準備
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,12 @@ summary: SaaSレイヤで提供されるWebベースのBlueXPコンソールを�
 
 
 [role="lead"]
+BlueXPを使い始めるときは、ネットワークでBlueXPコンソールから特定のエンドポイントへのアクセスが許可されていることを確認してください。BlueXPの使用方法によっては、コネクタや特定のBlueXPサービス用のネットワークの設定も必要になる場合があります。
+
+
+
+== BlueXPコンソールにユーザがアクセスできるようにネットワークを準備
+
 SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。Webブラウザを実行しているマシンは、これらのエンドポイントに接続されている必要があります。
 
 [cols="2*"]
@@ -67,10 +73,24 @@ AWS サービス（ amazonaws.com ）：
 
 | \https://widget.intercom.io | 製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。 
 |===
-.関連リンク
-* link:task-prepare-restricted-mode.html#prepare-networking-for-user-access-to-bluexp-console["BlueXPコンソールにユーザがアクセスできるようにネットワークを準備する（制限モード）"]
-* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector["コネクタがAWSで接続するエンドポイント（標準モード）"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector["コネクタがAzureで接続するエンドポイント（標準モード）"]
-* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector["コネクタがGoogle Cloudで接続するエンドポイント（標準モード）"]
-* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["コネクタの手動インストール中に接続されたエンドポイント（標準モード）"]
+これらのエンドポイント以外にも、日常業務のために特定のエンドポイントに接続するためのアウトバウンドインターネットアクセスがコネクタにあることを確認する必要があります。これらのエンドポイントのリストは、次のセクションのリンクに従って確認できます。
 
+
+
+== コネクタのネットワークの準備
+
+コネクタのネットワークをどのように準備するかは、コネクタの設置場所によって異なります。コネクタの設置場所は、クラウド内でもオンプレミスでもかまいません。コネクタのネットワーク要件の詳細については、次のページを参照してください。
+
+* link:task-set-up-networking-aws.html["AWSネットワークをセットアップする"]
+* link:task-set-up-networking-azure.html["Azureネットワークをセットアップする"]
+* link:task-set-up-networking-google.html["Google Cloudネットワークをセットアップする"]
+* link:task-set-up-networking-on-prem.html["オンプレミスネットワークをセットアップする"]
+
+
+
+
+== BlueXPサービスのネットワークを準備
+
+BlueXPの使用を開始するときは、使用するBlueXPサービスのネットワーク要件を満たしていることを確認する必要があります。詳細については、各サービスのマニュアルを参照してください。
+
+https://docs.netapp.com/us-en/bluexp-family/["BlueXPのマニュアル"^]

@@ -35,7 +35,7 @@ sidebar:
       entries:
       - title: クイックスタート
         url: "/task-quick-start-standard-mode.html"
-      - title: コンソールアクセス用のネットワーク
+      - title: ネットワークを準備
         url: "/reference-networking-saas-console.html"
       - title: BlueXPにサインアップします
         url: "/task-sign-up-saas.html"

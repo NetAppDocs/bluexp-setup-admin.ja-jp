@@ -137,6 +137,9 @@ Azureで権限を持つように、サービスプリンシパルを1つ以上�
 .手順
 . カスタムロールを作成します。
 +
+Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
+
++
 .. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
 .. 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
 +

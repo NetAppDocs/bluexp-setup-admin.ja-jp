@@ -785,7 +785,7 @@ Connectorは、Amazon S3でバックアップを管理するために次のAPI�
 * S3：PutBucketPublicAccessBlock
 * S3 ： AbortMultipartUpload
 * S3 ： ListMultipartUploadParts
-* Athena：StartQueryExecutionc
+* Athena：StartQueryExecution
 * Athena: GetQueryResults.
 * Athena: GetQueryExecution
 * Athena：StopQueryExecution
