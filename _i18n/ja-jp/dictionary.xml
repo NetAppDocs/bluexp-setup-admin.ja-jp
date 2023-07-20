@@ -1828,7 +1828,6 @@
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">宛先</block>
   <block id="241b5fab8e737eaa79c543efe7307059" category="cell">API コールと AutoSupport</block>
   <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF</block>
-  <block id="7863903e1b4b84391267ab5c4af6a68d" category="cell">Google CloudとONTAP 、BlueXP分類、BlueXPランサムウェア対策、AutoSupport メッセージのネットアップへの送信へのAPI呼び出し</block>
   <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">API コール</block>
   <block id="e93028bdc1aacdfb3687181f2031765d" category="cell">3000</block>
   <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">ONTAP HA メディエーター</block>
@@ -3815,4 +3814,7 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">BlueXPの機能やサービスを使用するには、権限を指定してBlueXPがクラウド環境で処理を実行できるようにする必要があります。このページのリンクを使用して、目的に応じて必要な権限にすばやくアクセスできます。</block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">オンプレミスのONTAPクラスタをAmazon S3に階層化</block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">StorageGRIDケンケン</block>
+  <block id="eb44d47feda5532d1121c79d84128d2e" category="cell">AWS、ONTAP、BlueXP分類、BlueXPランサムウェア対策へのAPI呼び出し、NetAppへのAutoSupportメッセージの送信</block>
+  <block id="e671b39f5fdb18b38eb5c968b368b3aa" category="cell">Azure、ONTAP、BlueXP分類、BlueXPランサムウェア対策へのAPI呼び出し、NetAppへのAutoSupportメッセージの送信</block>
+  <block id="8150638aa57d2b5755445cf3ab8eac20" category="cell">Google Cloud、ONTAP、BlueXP分類、BlueXPランサムウェア対策へのAPI呼び出し、NetAppへのAutoSupportメッセージの送信</block>
 </blocks>

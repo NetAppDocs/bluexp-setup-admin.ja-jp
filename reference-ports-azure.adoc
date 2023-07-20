@@ -75,7 +75,7 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | サービス | プロトコル | ポート | 宛先 | 目的 
 
 
-| API コールと AutoSupport | HTTPS | 443年 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | Google CloudとONTAP 、BlueXP分類、BlueXPランサムウェア対策、AutoSupport メッセージのネットアップへの送信へのAPI呼び出し 
+| API コールと AutoSupport | HTTPS | 443年 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | Azure、ONTAP、BlueXP分類、BlueXPランサムウェア対策へのAPI呼び出し、NetAppへのAutoSupportメッセージの送信 
 
 
 | API コール | TCP | 8080 です | BlueXPの分類 | 導入時にBlueXP分類インスタンスを確認します 
