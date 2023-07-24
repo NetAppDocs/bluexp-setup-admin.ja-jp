@@ -31,7 +31,7 @@ BlueXPにサインアップすると、組織のアカウントを作成する�
 
 NOTE: 制限モードの設定は、BlueXPがアカウントを作成したあとに変更することはできません。制限モードは後で有効にすることも、後で無効にすることもできません。アカウント作成時に設定する必要があります。
 
-https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-.html["このAPI呼び出しの使用方法について説明します"^]
+https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-id.html["このAPI呼び出しの使用方法について説明します"^]
 
 .関連リンク
 * link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認ください"]
