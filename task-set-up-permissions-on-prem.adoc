@@ -31,7 +31,7 @@ TIP: Google Cloudではない理由コネクタがオンプレミスにインス
 . AWSコンソールにログインし、IAMサービスに移動します。
 . ポリシーを作成します。
 +
-.. [*Policies]>[Create policy*]をクリックします。
+.. [Policies]>[Create policy]*を選択します。
 .. [*json]*を選択し、の内容をコピーして貼り付けます link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
 .. 残りの手順を完了してポリシーを作成します。
 +
@@ -70,8 +70,8 @@ link:task-provide-permissions-on-prem.html["これらの権限をBlueXPに付与
 +
 image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サービスを示しています。"]
 
-. メニューで、 * アプリ登録 * をクリックします。
-. [ 新規登録 ] をクリックします。
+. メニューで*アプリ登録*を選択します。
+. [New registration]*を選択します。
 . アプリケーションの詳細を指定します。
 +
 ** * 名前 * ：アプリケーションの名前を入力します。
@@ -79,7 +79,7 @@ image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サ�
 ** * リダイレクト URI *: このフィールドは空白のままにできます。
 
 
-. [*Register] をクリックします。
+. [*Register] を選択します。
 +
 AD アプリケーションとサービスプリンシパルを作成しておきます。
 
@@ -134,12 +134,12 @@ az role definition create --role-definition Connector_Policy.json
 +
 .. Azure ポータルで、 * Subscriptions * サービスを開きます。
 .. サブスクリプションを選択します。
-.. [* アクセス制御 (IAM)] 、 [ 追加 ] 、 [ 役割の割り当ての追加 *] の順にクリックします。
-.. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
+.. [アクセス制御（IAM）]>[追加]>[ロール割り当ての追加]*を選択します。
+.. [ロール]タブで、*[BlueXP Operator]*ロールを選択し、*[次へ]*を選択します。
 .. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
 +
 *** [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
-*** [ メンバーの選択 ] をクリックします。
+*** [メンバーの選択]*を選択します。
 +
 image:screenshot-azure-service-principal-role.png["アプリケーションにロールを追加するときに Members タブを表示する Azure ポータルのスクリーンショット。"]
 
@@ -150,11 +150,11 @@ image:screenshot-azure-service-principal-role.png["アプリケーションに�
 +
 image:screenshot_azure_service_principal_role.png["Azure ポータルのスクリーンショットで、 Azure ポータルのロール割り当ての追加フォームが表示されています。"]
 
-*** アプリケーションを選択し、 * Select * をクリックします。
-*** 「 * 次へ * 」をクリックします。
+*** アプリケーションを選択し、*選択*を選択します。
+*** 「 * 次へ * 」を選択します。
 
 
-.. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
+.. [Review + Assign]*を選択します。
 +
 サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
 
@@ -166,20 +166,20 @@ Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入�
 
 
 .Windows Azure Service Management API 権限を追加します
-. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
-. [API アクセス許可 ] 、 [ アクセス許可の追加 ] の順にクリックします。
+. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
+. [API permissions]>[Add a permission]*を選択します。
 . Microsoft API* で、 * Azure Service Management * を選択します。
 +
 image:screenshot_azure_service_mgmt_apis.gif["Azure Service Management API 権限を示す Azure ポータルのスクリーンショット。"]
 
-. [* 組織ユーザーとして Azure サービス管理にアクセスする *] をクリックし、 [ * 権限の追加 * ] をクリックします。
+. [Access Azure Service Management as organization users]*を選択し、*[Add permissions]*を選択します。
 +
 image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API の追加を示す Azure ポータルのスクリーンショット。"]
 
 
 
 .アプリケーションのアプリケーションIDとディレクトリIDを取得します
-. Azure Active Directory * サービスで、 * アプリ登録 * をクリックしてアプリケーションを選択します。
+. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
 . アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。
 +
 image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケーション（クライアント）の ID とディレクトリ（テナント） ID を示すスクリーンショット。"]
@@ -191,10 +191,10 @@ AzureアカウントをBlueXPに追加するときは、アプリケーション
 
 .クライアントシークレットを作成します
 . Azure Active Directory * サービスを開きます。
-. [* アプリ登録 * ] をクリックして、アプリケーションを選択します。
-. ［ * 証明書とシークレット > 新しいクライアントシークレット * ］ をクリックします。
+. *アプリ登録*を選択し、アプリケーションを選択します。
+. [Certificates & secrets]>[New client secret]*を選択します。
 . シークレットと期間の説明を入力します。
-. [ 追加（ Add ） ] をクリックします。
+. 「 * 追加」を選択します。
 . クライアントシークレットの値をコピーします。
 +
 image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパルのクライアントシークレットを表示する Azure ポータルのスクリーンショット。"]

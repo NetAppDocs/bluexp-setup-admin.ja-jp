@@ -47,12 +47,12 @@ link:task-prepare-restricted-mode.html#review-host-requirements["インスタン
 
 .手順
 . にアクセスします https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS MarketplaceのBlueXPページ"^]
-. [Marketplace] ページで [* Continue to Subscribe* ] をクリックし、 [* Continue to Configuration* ] をクリックします。
+. [Marketplace]ページで、*[Continue to Subscribe]*を選択し、*[Continue to Configuration]*を選択します。
 +
 image:screenshot-subscribe-aws.png["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]
 
-. デフォルトのオプションを変更し、 [* Continue to Launch] をクリックします。
-. [ アクションの選択 *] で [* EC2 で起動 ] を選択し、 [* 起動 *] をクリックします。
+. デフォルトのオプションを変更して、*[起動を続行]*を選択します。
+. [Choose Action]*で、[Launch through EC2]*を選択し、[Launch]*を選択します。
 +
 以下の手順では、コンソールからEC2コンソールからインスタンスを起動する方法について説明します。これは、IAMロールをコネクタインスタンスに関連付けることができるためです。これは、 * ウェブサイトからの起動 * アクションを使用しては実行できません。
 
@@ -77,7 +77,7 @@ link:reference-ports-aws.html["AWSのセキュリティグループルールを�
 
 ** *ストレージの設定*：デフォルトのストレージオプションをそのまま使用します。
 ** *詳細情報*：*[IAMインスタンスプロファイル]*で、コネクタに必要な権限を含むIAMロールを選択します。
-** *概要*：概要を確認し、*インスタンスの起動*をクリックします。
+** *概要*：概要を確認し、*インスタンスの起動*を選択します。
 
 
 
@@ -115,7 +115,7 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["AWS権限の�
 +
 image:screenshot-gov-cloud-mktp.png["AWS Marketplaceで検索したBlueXP製品を示すスクリーンショット"]
 
-.. [* Continue （続行） ] をクリックします
+.. 「 * Continue * 」を選択します。
 
 
 . プロンプトに従って、インスタンスを設定および導入します。
@@ -131,7 +131,7 @@ image:screenshot_aws_iam_role.gif["AWS の Configure Instance ページのフィ
 ** * Add Storage* ：デフォルトのストレージ・オプションをそのまま使用します。
 ** * Add Tags* ：必要に応じて、インスタンスのタグを入力します。
 ** * セキュリティグループの設定 * ：コネクタインスタンスに必要な接続方法（ SSH 、 HTTP 、 HTTPS ）を指定します。
-** * 復習 * ：選択内容を確認して、 * 起動 * をクリックします。
+** *確認*：選択内容を確認し、*起動*を選択します。
 
 
 
@@ -165,8 +165,8 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Azure権限の
 ** https://portal.azure.us/#create/netapp.netapp-oncommand-cloud-manageroccm-byol["Azure GovernmentリージョンのAzure Marketplaceのページ"^]
 
 
-. [* Get it Now* ( 今すぐ取得 )] をクリックし、 [* Continue * ( 続行 )] をクリックします。
-. Azure ポータルで、 * Create * をクリックし、手順に従って仮想マシンを設定します。
+. [今すぐ入手]*を選択し、*[続行]*を選択します。
+. Azureポータルで、*[作成]*を選択し、手順に従って仮想マシンを設定します。
 +
 VM を設定する際には、次の点に注意してください。
 
@@ -193,7 +193,7 @@ link:reference-ports-azure.html["Azureのセキュリティグループルール
 
 
 
-. [* Review + create * （レビュー + 作成） ] ページで選択内容を確認し、 [* Create * （作成） ] をクリックして展開を開始します。
+. [確認と作成]ページで、選択内容を確認し、*[作成]*を選択して導入を開始します。
 
 
 .結果
@@ -325,7 +325,7 @@ BlueXPでアカウントが作成されると、この設定を変更するこ�
 +
 image:screenshot-restricted-mode.png["コネクタ名とアカウント名を入力する必要があるようこそページを示すスクリーンショット。このアカウントで制限モードを有効にすることができます。"]
 
-.. [Let's start]*をクリックします。
+.. [* Let's start]*を選択します。
 
 
 
@@ -359,7 +359,7 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["クラウド�
 . [インスタンス]*を選択します。
 . コネクターインスタンスを選択します。
 . [アクション]>[セキュリティ]>[IAMロールの変更]*を選択します。
-. IAMロールを選択し、*[IAMロールの更新]*をクリックします。
+. IAMロールを選択し、*[IAMロールの更新]*を選択します。
 
 
 .結果
@@ -371,16 +371,16 @@ BlueXPに、AWSでユーザに代わって操作を実行するために必要�
 必要な権限を持つIAMユーザのAWSアクセスキーをBlueXPに渡します。
 
 .手順
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
 +
 image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 
-. [Add Credentials] をクリックし、ウィザードの手順に従います。
+. [クレデンシャルの追加]*を選択し、ウィザードの手順に従います。
 +
 .. * 資格情報の場所 * ：「 * Amazon Web Services > Connector * 」を選択します。
 .. *クレデンシャルを定義*：AWSアクセスキーとシークレットキーを入力します。
 .. * Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。
-.. * 確認 * ：新しいクレデンシャルの詳細を確認し、 * 追加 * をクリックします。
+.. *確認*：新しいクレデンシャルの詳細を確認し、*[追加]*を選択します。
 
 
 
@@ -395,8 +395,8 @@ Azureポータルに移動し、1つ以上のサブスクリプションのコ�
 
 .手順
 . Azure Portalで、* Subscriptions *サービスを開き、サブスクリプションを選択します。
-. * アクセス制御（ IAM ） * > * 追加 * > * 役割の割り当ての追加 * をクリックします。
-. [*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。
+. [アクセス制御（IAM）]*>*[追加]*>*[ロール割り当ての追加]*を選択します。
+. [ロール]タブで、*[BlueXP Operator]*ロールを選択し、*[次へ]*を選択します。
 +
 
 NOTE: BlueXP Operatorは'BlueXPポリシーで指定されているデフォルト名ですロールに別の名前を選択した場合は、代わりにその名前を選択します。
@@ -404,10 +404,10 @@ NOTE: BlueXP Operatorは'BlueXPポリシーで指定されているデフォル�
 . [* Members* （メンバー * ） ] タブで、次の手順を実行します。
 +
 .. * 管理対象 ID * へのアクセス権を割り当てます。
-.. [ * メンバーの選択 * ] をクリックし、 Connector 仮想マシンが作成されたサブスクリプションを選択し、 [ * 仮想マシン * ] を選択してから、 Connector 仮想マシンを選択します。
-.. [ * 選択 * ] をクリックします。
-.. 「 * 次へ * 」をクリックします。
-.. [ レビュー + 割り当て（ Review + Assign ） ] をクリックします。
+.. *メンバーの選択*を選択し、コネクター仮想マシンが作成されたサブスクリプションを選択して*仮想マシン*を選択し、コネクター仮想マシンを選択します。
+.. [選択]*を選択します。
+.. 「 * 次へ * 」を選択します。
+.. [Review + Assign]*を選択します。
 .. 追加のAzureサブスクリプションでリソースを管理する場合は、そのサブスクリプションに切り替えてから、上記の手順を繰り返します。
 
 
@@ -422,11 +422,11 @@ BlueXPに、Azureで処理を実行するために必要な権限が付与され
 以前にセットアップしたAzureサービスプリンシパルのクレデンシャルをBlueXPに指定します。
 
 .手順
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[資格情報*]を選択します。
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
 +
 image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 
-. [Add Credentials] をクリックし、ウィザードの手順に従います。
+. [クレデンシャルの追加]*を選択し、ウィザードの手順に従います。
 +
 .. * 資格情報の場所 * ： Microsoft Azure > Connector * を選択します。
 .. * クレデンシャルの定義 * ：必要な権限を付与する Azure Active Directory サービスプリンシパルに関する情報を入力します。
@@ -437,7 +437,7 @@ image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設�
 
 
 .. * Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。
-.. * 確認 * ：新しいクレデンシャルの詳細を確認し、 * 追加 * をクリックします。
+.. *確認*：新しいクレデンシャルの詳細を確認し、*[追加]*を選択します。
 
 
 

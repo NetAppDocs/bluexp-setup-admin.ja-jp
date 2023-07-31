@@ -50,7 +50,7 @@ image:diagram_permissions_multiple_azure.png["「 Azure の最初のアカウン
 
 たとえば、新しいCloud Volumes ONTAP 作業環境を作成するときにクレデンシャルを切り替えることができます。
 
-image:screenshot_accounts_switch_azure.gif["[Details  Credentials]ページで[Switch Account]をクリックした後、クラウドプロバイダアカウントを選択するスクリーンショット。"]
+image:screenshot_accounts_switch_azure.gif["[Details  Credentials]ページで[Switch Account]を選択した後、クラウドプロバイダアカウントを選択するスクリーンショット。"]
 
 
 

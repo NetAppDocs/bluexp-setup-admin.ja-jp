@@ -181,7 +181,7 @@ Azure MarketplaceからConnectorを導入する場合、またはLinuxホスト�
 
 === Azure NetApp Files の特長
 
-コネクタは、Azure NetApp Files 作業環境の管理用に次のAPI要求を実行します。
+BlueXP分類を使用してAzure NetApp Filesデータをスキャンする場合、コネクタは次のAPI要求を行います。
 
 * Microsoft.NetApp/netAppAccounts/read
 * Microsoft.NetApp/netAppAccounts/capacityPools/read

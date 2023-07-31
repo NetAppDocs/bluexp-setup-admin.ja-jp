@@ -56,7 +56,7 @@ image:diagram_permissions_multiple_aws.png["2 つの追加アカウントを示�
 
 クレデンシャルを追加したら、新しい作業環境を作成するときにクレデンシャルに切り替えることができます。
 
-image:screenshot_accounts_switch_aws.png["[Details  Credentials]ページで[Switch Account]をクリックした後、クラウドプロバイダアカウントを選択するスクリーンショット。"]
+image:screenshot_accounts_switch_aws.png["[Details  Credentials]ページで[Switch Account]を選択した後、クラウドプロバイダアカウントを選択するスクリーンショット。"]
 
 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["既存のコネクタにAWSクレデンシャルを追加する方法を説明します。"]
 

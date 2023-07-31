@@ -72,7 +72,7 @@ link:task-set-up-permissions-aws.html["ステップバイステップの手順�
 使用可能なインストールオプションのいずれかを使用してコネクタを作成します。
 
 [role="quick-margin-list"]
-* * BlueXP *で：[Connector]ドロップダウンをクリックし、*[Add Connector]*を選択して、画面の指示に従います。
+* * BlueXP *で：[Connector]ドロップダウンを選択し、*[Add Connector]*を選択して、画面の指示に従います。
 * * AWS Marketplaceから*：に移動します https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS MarketplaceのBlueXPページ"^] プロンプトに従ってEC2を起動し、IAMロールを割り当てることができます。
 * *手動インストール*：からコネクタソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Site"] インストールスクリプトを実行します。
 

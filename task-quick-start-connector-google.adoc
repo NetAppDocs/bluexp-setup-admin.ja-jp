@@ -87,7 +87,7 @@ Google CloudにConnectorとCloud Volumes ONTAP を導入するには、いくつ
 使用可能なインストールオプションのいずれかを使用してコネクタを作成します。
 
 [role="quick-margin-list"]
-* * BlueXP *で：[Connector]ドロップダウンをクリックし、*[Add Connector]*を選択して、画面の指示に従います。
+* * BlueXP *で：[Connector]ドロップダウンを選択し、*[Add Connector]*を選択して、画面の指示に従います。
 * * gloud *を使用して:を使用してください `gcloud compute instances create` コマンドを実行します
 * *手動インストール*：からコネクタソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Site"] インストールスクリプトを実行します。
 

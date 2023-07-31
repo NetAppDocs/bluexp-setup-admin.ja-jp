@@ -43,7 +43,7 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=L
 
 
 .手順
-. 最初の作業環境を作成する場合は、 * 作業環境の追加 * をクリックし、プロンプトに従います。それ以外の場合は、 [*connector*] ドロップダウンをクリックし、 [*Add connector*] を選択します。
+. 最初の作業環境を作成する場合は、*[Add Working Environment]*を選択し、画面の指示に従います。それ以外の場合は、*コネクタ*ドロップダウンを選択し、*コネクタの追加*を選択します。
 +
 image:screenshot_connector_add.gif["ヘッダーのコネクターアイコンとコネクターの追加アクションを示すスクリーンショット。"]
 
@@ -95,7 +95,7 @@ link:reference-ports-azure.html["Azureのセキュリティグループルール
 ** * 復習 * ：選択内容を確認して、設定が正しいことを確認してください。
 
 
-. [ 追加（ Add ） ] をクリックします。
+. 「 * 追加」を選択します。
 +
 仮想マシンの準備が完了するまでに約 7 分かかります。処理が完了するまで、ページには表示されたままにしておいてください。
 
@@ -112,8 +112,8 @@ link:reference-ports-azure.html["Azureのセキュリティグループルール
 +
 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Azure Marketplaceの一般企業向けページ"^]
 
-. [* Get it Now* ( 今すぐ取得 )] をクリックし、 [* Continue * ( 続行 )] をクリックします。
-. Azure ポータルで、 * Create * をクリックし、手順に従って仮想マシンを設定します。
+. [今すぐ入手]*を選択し、*[続行]*を選択します。
+. Azureポータルで、*[作成]*を選択し、手順に従って仮想マシンを設定します。
 +
 VM を設定する際には、次の点に注意してください。
 
@@ -130,7 +130,7 @@ link:reference-ports-azure.html["Azureのセキュリティグループルール
 
 
 
-. [* Review + create * （レビュー + 作成） ] ページで選択内容を確認し、 [* Create * （作成） ] をクリックして展開を開始します。
+. [確認と作成]ページで、選択内容を確認し、*[作成]*を選択して導入を開始します。
 +
 指定した設定で仮想マシンが展開されます。仮想マシンと Connector ソフトウェアが起動するまでの所要時間は約 5 分です。
 
@@ -146,7 +146,7 @@ https://_ipaddress_[]
 +
 標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。セキュアな環境でBlueXPバックエンドサービスからこのアカウントを切断する場合にのみ、制限モードを有効にしてください。その場合は、 link:task-quick-start-restricted-mode.html["制限モードでBlueXPの使用を開始するには、次の手順に従います"]。
 
-.. [Let's start]*をクリックします。
+.. [* Let's start]*を選択します。
 
 
 
@@ -256,7 +256,7 @@ https://_ipaddress_[]
 +
 標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。セキュアな環境でBlueXPバックエンドサービスからこのアカウントを切断する場合にのみ、制限モードを有効にしてください。その場合は、 link:task-quick-start-restricted-mode.html["制限モードでBlueXPの使用を開始するには、次の手順に従います"]。
 
-.. [Let's start]*をクリックします。
+.. [* Let's start]*を選択します。
 
 
 
