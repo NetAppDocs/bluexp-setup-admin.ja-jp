@@ -273,10 +273,8 @@
   <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">\https://*.cloudmanager.cloud.netapp.com</block>
   <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
   <block id="23486ca53d499245ebae5460cf6d10ad" category="paragraph">BlueXPでSaaSの機能とサービスを提供するため。</block>
-  <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続していますが、今後のリリースでapi.bluexp.netapp.com"への連絡を開始します。</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">をクリックして、 Connector と Docker コンポーネントをアップグレードします。</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">プロキシサーバ</block>
-  <block id="dae5521ccadea1321150f5f74aad0a58" category="paragraph">すべての送信インターネットトラフィックにプロキシサーバを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">ポート</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。</block>
@@ -3614,7 +3612,6 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">Google Cloud Storageバケットを管理します</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">次の情報が必要です。</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">詳細については、を参照してください<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
-  <block id="d6feb2cb4605dd3d35a1cfeb944fe219" category="paragraph">この情報は、インストール時に入力する必要があります。</block>
   <block id="1b6d3b3a89f4e066eb8bb8d481156cbb" category="list-text">*インスタンスタイプ*：リージョンの可用性に応じて、RAMとCPUの要件を満たすインスタンスタイプを選択します（T3.xlargeを推奨）。</block>
   <block id="2ad37577d6b48e75deace7b9df85fa0f" category="paragraph">コネクタを起動するか、コネクタがCloud Volumes ONTAPからNetAppサポートにAutoSupportメッセージを送信するためのプロキシとして使用されている場合を除き、コネクタへの受信トラフィックはありません。</block>
   <block id="46b7ac383833d40797a3c63596b781a1" category="list-text">アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。</block>
@@ -3818,4 +3815,41 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">[新しいBlueXPのセットアップ]*を選択し、プロンプトに従ってシステムをセットアップします。</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">*確認*：詳細を確認し、使用許諾契約に同意して、*セットアップ*を選択します。</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">コネクタは現在「cloudmanager.cloud.netapp.com"」に連絡していますが、今後のリリースでは「api.bluexp.netapp.com"」に連絡を開始します。</block>
+  <block id="2da6f1af030756bb235fd83baa6abd7b" category="paragraph">すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。</block>
+  <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するためのアウトバウンドインターネット接続が確立されていない場合は、コネクタに付属のプロキシサーバを使用するように自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
+  <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">BlueXPからAzureにコネクタを作成します</block>
+  <block id="5b943b0498231c38714aca470c3c0dab" category="paragraph">ネットワークをセットアップし、Azure権限を準備してから、BlueXPからAzureでコネクタを作成します。</block>
+  <block id="42f8643eb52a942747937327c72c8361" category="section-title">導入の概要</block>
+  <block id="ac5d5b7ded11cc7f8b4df462f961d2e8" category="paragraph">次の手順では、このページで実行するタスクの概要を示します。これらの各手順の詳細については、以降のセクションを参照してください。</block>
+  <block id="2ef15946081a8510366177e6ee7e5111" category="paragraph">コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。たとえば、アウトバウンドのインターネットアクセスとターゲットネットワークへのネットワーク接続が確立された仮想ネットワークが必要です。</block>
+  <block id="c794110cfe04873f3ea19458fb48df3c" category="inline-xref">ネットワーク要件を表示する</block>
+  <block id="582b3a879115844ed6c92eedc860c81a" category="paragraph"><block ref="01fbc73f2f4d3ada99434a64c61d271f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="3cf3b3a2d331d9973e9029f5ee423d59" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Azure権限を設定する</block>
+  <block id="1503a9f546164361607faf57c69eae56" category="paragraph">カスタムロールを作成して、AzureアカウントまたはAzure ADサービスプリンシパルに適用します。BlueXPはAzureで認証し、これらの権限を使用してコネクタインスタンスを作成します。</block>
+  <block id="e82d7f6d0b7a997d6eac1814ff1c2863" category="paragraph"><block ref="74b20113240190c7a71403f57a3cd8fc" category="inline-xref-macro-rx"></block>。</block>
+  <block id="aea46324800b152c6a50caff1d14e2fc" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> コネクターを作成します</block>
+  <block id="985afe15de341c249321c6704172a4ea" category="paragraph">BlueXPで、[Connector]ドロップダウンをクリックし、*[Add Connector]*を選択して、画面の指示に従います。</block>
+  <block id="1dc565e14b0401db0c6aee5f8e24ef79" category="paragraph"><block ref="450d1cb8d9a0a316433d14e18974a979" category="inline-xref-macro-rx"></block>。</block>
+  <block id="95643ce42bab17c218d7c19a0c0040bb" category="paragraph">コネクタをインストールするネットワークの場所が、次の要件をサポートしていることを確認します。</block>
+  <block id="83bb814dc9552aa2612588ab7ce9f0e9" category="list-text">コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。たとえば、Cloud Volumes ONTAPシステムやストレージをオンプレミス環境に作成するVNetなどです。</block>
+  <block id="8e97b7d14c907dc59419c53c5e813e4d" category="list-text">次のセクションで説明するように、コネクタを展開するネットワークの場所には、特定のエンドポイントに接続するためのアウトバウンドインターネット接続が必要です。</block>
+  <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">BlueXPからコネクタを作成するときは、BlueXPがAzureで認証してVMを導入するためのログインを指定する必要があります。次の 2 つのオプションがあります。</block>
+  <block id="79a9c2b8e447685125856ec6046d8128" category="admonition">このカスタムロールには、BlueXPからAzureでコネクタVMを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。BlueXPがコネクタを作成すると、Connector VMに新しい権限セットが適用され、Connectorがパブリッククラウド環境内のリソースを管理できるようになります。</block>
+  <block id="00e80b4b164dd96954a27ed3236c9728" category="paragraph">コネクタを導入するには、BlueXPがAzureで認証される必要があります。2つのAzure認証方式から選択できます。</block>
+  <block id="6dc4f3e9aa2dada18f0a17189fa7d079" category="list-text">「 * アクセスコントロール（ IAM ） * 」をクリックします。</block>
+  <block id="761218505548d0e5a2977bd7c31de50a" category="list-text">[ * 追加 *&gt;* 役割の割り当ての追加 * ] をクリックして、権限を追加します。</block>
+  <block id="407df91196b1a54a89a9911a8ac6a332" category="list-text">Azure SetupAsService * ロールを選択し、 * 次へ * をクリックします。</block>
+  <block id="42cffe053a918fe3b27cd3bef2758b91" category="list-text">[ * メンバーの選択 * ] をクリックし、ユーザーアカウントを選択して、 [ * 選択 * ] をクリックします。</block>
+  <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">「 * 次へ * 」をクリックします。</block>
+  <block id="e3bbb08034982e47da96f9df0529c14b" category="list-text">[ レビュー + 割り当て（ Review + Assign ） ] をクリックします。</block>
+  <block id="8174c4d89029818113468594f8347c70" category="list-text">[* アクセス制御 (IAM)] 、 [ 追加 ] 、 [ 役割の割り当ての追加 *] の順にクリックします。</block>
+  <block id="54b14f07c36bed41295c2086ea238332" category="list-text">[*役割]タブで、[* BlueXP演算子*]役割を選択し、[次へ]をクリックします。</block>
+  <block id="e567d156455b03053b50302bf4ff266e" category="list-text">[ メンバーの選択 ] をクリックします。</block>
+  <block id="e33ca9bd2b94654f882a0e0ed82dec19" category="list-text">アプリケーションを選択し、 * Select * をクリックします。</block>
+  <block id="16d491a352eff99aff3a3090f243e9a7" category="paragraph">BlueXPのWebベースのコンソールから直接コネクタを作成します。</block>
+  <block id="38c0deaf9ce4435ad8d471fc04a21ac0" category="paragraph">これらの権限はコネクタインスタンス自体に適用されます。これは、コネクタVMを導入するために以前に設定した権限とは異なる権限のセットです。</block>
+  <block id="d2b74161d054c69894469355bb22cb63" category="list-text">最初の作業環境を作成する場合は、 * 作業環境の追加 * をクリックし、プロンプトに従います。それ以外の場合は、 [*connector*] ドロップダウンをクリックし、 [*Add connector*] を選択します。</block>
+  <block id="7dafa3d9179efddb7b70ff753d853a0e" category="paragraph"><block ref="29949bbccf251af183678449a2465f09" category="inline-xref-macro-rx"></block>。</block>
+  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">[ 追加（ Add ） ] をクリックします。</block>
 </blocks>
