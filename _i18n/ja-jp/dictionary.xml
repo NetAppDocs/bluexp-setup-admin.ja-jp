@@ -1429,7 +1429,6 @@
   <block id="23d838dbd51becc56367e6d9358b446e" category="paragraph">BlueXPは、アカウントのすべての資格情報の既存のサブスクリプションをこの新しいサブスクリプションに置き換えます。一連の資格情報がサブスクリプションに関連付けられていない場合、この新しいサブスクリプションはこれらの資格情報に関連付けられません。</block>
   <block id="b4676b03cb1388f474b207b449af0dc2" category="paragraph">他のすべてのアカウントについては、以下の手順を繰り返して、手動で契約を関連付ける必要があります。</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">[ 保存（ Save ） ] を選択します。</block>
-  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">次のビデオでは、Google Cloud Marketplaceから登録する手順を紹介しています。</block>
   <block id="5894b1931d65e9796cc25db1bb6fd566" category="list-text">このプロセスが完了したら、BlueXPの[資格情報]ページに戻り、この新しいサブスクリプションを選択します。</block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">サブスクリプションの割り当てページのスクリーンショット。</block>
   <block id="60d2ed6f6e1774535b6e69274800381d" category="paragraph"><block ref="60d2ed6f6e1774535b6e69274800381d" category="inline-image-macro-rx" type="image"></block></block>
@@ -3011,7 +3010,6 @@
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">プロンプトが表示されたら、Azureアカウントにログインします。</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">BlueXPのWebサイトにリダイレクトされます</block>
   <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">[サブスクリプションの割り当て*]ページで、次の操作を行います。</block>
-  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">次のビデオでは、Azure Marketplaceでのサブスクライブ手順を紹介しています。</block>
   <block id="c98f8dfd7e317cb87d057d9e065d71d4" category="section-title">クレデンシャルを編集する</block>
   <block id="bf6a5b9863bb599dd7d76e43de882036" category="paragraph">Azureサービスクレデンシャルの詳細を変更して、BlueXPでAzureクレデンシャルを編集します。たとえば、サービスプリンシパルアプリケーション用に新しいシークレットが作成された場合は、クライアントシークレットの更新が必要になることがあります。</block>
   <block id="c042156941649b9112145dc552484165" category="list-text">[アカウントのクレデンシャル]*ページで、一連のクレデンシャルの操作メニューを選択し、*[クレデンシャルの編集]*を選択します。</block>
@@ -3466,7 +3464,6 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">マーケットプレイスのサブスクリプションでは、次のBlueXPサービスの料金が請求されます。</block>
   <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">BlueXPにサブスクライブするには、コネクタに関連付けられているクラウドクレデンシャルにマーケットプレイスのサブスクリプションを関連付けます。「標準モードで開始」ワークフローに従っている場合は、コネクタがすでにあるはずです。詳細については、を参照してください <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>。</block>
   <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">コネクタに関連付けられているクレデンシャルを選択する必要があります。BlueXPに関連付けられているクレデンシャルにMarketplaceサブスクリプションを関連付けることはできません。</block>
-  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">次のビデオは、AWS Marketplaceからサブスクライブする手順を示しています。</block>
   <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">Cloud Volumes ONTAP のBYOL容量ベースライセンスを管理します</block>
   <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
   <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">BlueXPデータサービスのBYOLライセンスを管理します</block>
@@ -3879,4 +3876,8 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">次に例を示します。</block>
   <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">BlueXPの[Account credentials]ページのスクリーンショット。AWSクレデンシャルには、クレデンシャルに関連付けられているサブスクリプションの名前を示すサブスクリプションフィールドが含まれています。</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a19fbbab905f444316acc463c35da764" category="paragraph">次のビデオでは、クレデンシャルを新しいサブスクリプションに関連付ける方法を示します。</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Azure MarketplaceでBlueXPにサブスクライブ</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Google Cloud MarketplaceからBlueXPにサブスクライブ</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">AWS MarketplaceでBlueXPにサブスクライブ</block>
 </blocks>

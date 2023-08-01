@@ -32,10 +32,11 @@ BlueXPは、アカウントのすべての資格情報の既存のサブスク�
 
 *** [ 保存（ Save ） ] を選択します。
 +
-次のビデオは、AWS Marketplaceからサブスクライブする手順を示しています。
+次のビデオでは、クレデンシャルを新しいサブスクリプションに関連付ける方法を示します。
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.AWS MarketplaceでBlueXPにサブスクライブ
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 

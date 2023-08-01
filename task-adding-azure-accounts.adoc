@@ -364,10 +364,11 @@ BlueXPは、アカウントのすべての資格情報の既存のサブスク�
 
 *** [ 保存（ Save ） ] を選択します。
 +
-次のビデオでは、Azure Marketplaceでのサブスクライブ手順を紹介しています。
+次のビデオでは、クレデンシャルを新しいサブスクリプションに関連付ける方法を示します。
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.Azure MarketplaceでBlueXPにサブスクライブ
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
