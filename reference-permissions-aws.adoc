@@ -162,10 +162,6 @@ BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカ�
                 "kms:ReEncrypt*",
                 "kms:Describe*",
                 "kms:CreateGrant",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "fsx:Describe*",
                 "fsx:List*",
                 "kms:GenerateDataKeyWithoutPlaintext"
@@ -493,10 +489,6 @@ BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカ�
                 "ec2:DescribeIamInstanceProfileAssociations",
                 "ec2:DisassociateIamInstanceProfile",
                 "ec2:DescribeInstanceAttribute",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "ec2:CreatePlacementGroup",
                 "ec2:DeletePlacementGroup"
             ],
@@ -1126,18 +1118,6 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 
 
 | KMS：GenerateDataKeyWithoutPlaintext | はい。 | はい。 | いいえ 
-
-
-.4+| AWSからCloud Volumes ONTAP のコストデータを取得 | CE：GetReservationUtilization | いいえ | はい。 | いいえ 
-
-
-| CE：GetDimensionValues | いいえ | はい。 | いいえ 
-
-
-| CE：GetCostAndUsage | いいえ | はい。 | いいえ 
-
-
-| CE: GetTags. | いいえ | はい。 | いいえ 
 
 
 .2+| 2つのHAノードとメディエーター用のAWS分散配置グループを1つのAWSアベイラビリティゾーンに作成して管理します | EC2：CreatePlacementGroup | はい。 | いいえ | いいえ 
