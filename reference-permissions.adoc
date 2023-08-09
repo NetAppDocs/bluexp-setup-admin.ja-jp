@@ -58,7 +58,7 @@ BlueXPの機能やサービスを使用するには、権限を指定してBlueX
 | コネクタの動作  a| 
 BlueXPがConnector VMをAzureに導入すると、そのAzureサブスクリプション内でリソースとプロセスを管理するために必要な権限を提供するカスタムロールが作成されます。
 
-Marketplaceからコネクタを起動する場合、コネクタを手動でインストールする場合、または独自にカスタムロールを設定する必要があります link:task-adding-azure-accounts.html#adding-additional-azure-credentials-to-cloud-manager["Azureクレデンシャルをコネクタに追加します"]。
+Marketplaceからコネクタを起動する場合、コネクタを手動でインストールする場合、または独自にカスタムロールを設定する必要があります link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Azureクレデンシャルをコネクタに追加します"]。
 
 また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。
  a| 

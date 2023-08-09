@@ -141,7 +141,7 @@ image:screenshot-change-notifications.png["複数のユーザの通知を変更�
 
 === Eメール受信者を追加します
 
-[_Account Users]タブに表示されるユーザは、（から）BlueXPアカウントのユーザから自動的に入力されます link:task-managing-netapp-accounts.html#creating-and-managing-users["［アカウントの管理］ページ"]）。BlueXPにアクセスできないが、特定の種類のアラートや通知について通知する必要がある他のユーザーまたはグループの場合は、_追加の受信者_タブに電子メールアドレスを追加できます。
+[_Account Users]タブに表示されるユーザは、（から）BlueXPアカウントのユーザから自動的に入力されます link:task-managing-netapp-accounts.html#create-and-manage-users["［アカウントの管理］ページ"]）。BlueXPにアクセスできないが、特定の種類のアラートや通知について通知する必要がある他のユーザーまたはグループの場合は、_追加の受信者_タブに電子メールアドレスを追加できます。
 
 .手順
 . [アラートと通知の設定]ページで、*[新しい受信者の追加]*を選択します。

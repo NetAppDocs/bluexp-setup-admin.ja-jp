@@ -234,7 +234,7 @@ image:screenshot_service_account_actions.gif["ユーザテーブルでユーザ�
 
 アカウント管理者のみがいる場合は、コネクタをワークスペースに関連付ける必要はありません。アカウント管理者は、既定でBlueXPのすべてのワークスペースにアクセスできます。
 
-link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["ユーザー、ワークスペース、コネクターの詳細をご覧ください"]。
+link:concept-netapp-accounts.html["ユーザー、ワークスペース、コネクターの詳細をご覧ください"]。
 
 .手順
 . BlueXPの上部で、*[Account]*ドロップダウンを選択し、*[Manage Account]*を選択します。

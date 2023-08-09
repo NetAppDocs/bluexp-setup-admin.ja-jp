@@ -665,7 +665,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport
 
 Microsoft Azure で新しいコネクタを作成する際、 Azure アカウントのクレデンシャルではなく Azure サービスプリンシパルで認証できるようになりました。
 
-link:task-creating-connectors-azure.html#create-a-connector-using-a-service-principal["Azure サービスプリンシパルでの認証方法について説明します"]。
+link:task-creating-connectors-azure.html["Azure サービスプリンシパルでの認証方法について説明します"]。
 
 
 
@@ -718,7 +718,7 @@ image:screenshot_nss_management.png["NSS アカウントを追加できる Suppo
 
 Cloud Manager のタイムラインに、アカウント管理に関連する操作とイベントが表示されるようになりました。アクションには、ユーザーの関連付け、ワークスペースの作成、コネクタの作成などがあります。タイムラインのチェックは、特定のアクションを実行したユーザーを特定する必要がある場合や、アクションのステータスを特定する必要がある場合に役立ちます。
 
-link:task-monitor-cm-operations.html#auditing-user-activity-in-your-account["タイムラインをテナンシーサービスにフィルタリングする方法について説明します"]。
+link:task-monitor-cm-operations.html#audit-user-activity-in-your-account["タイムラインをテナンシーサービスにフィルタリングする方法について説明します"]。
 
 
 
@@ -740,7 +740,7 @@ link:task-configuring-proxy.html["この設定の詳細については、こち�
 
 サービスアカウントは「ユーザ」の役割を果たし、 Cloud Manager に対して自動化のための許可された API 呼び出しを実行できます。これにより、自動化スクリプトを作成する必要がなくなります。自動化スクリプトは、会社を離れることができる実際のユーザアカウントに基づいて作成する必要がなくなります。フェデレーションを使用している場合は、クラウドから更新トークンを生成することなくトークンを作成できます。
 
-link:task-managing-netapp-accounts.html#creating-and-managing-service-accounts["サービスアカウントの使用方法の詳細については、こちらをご覧ください"]。
+link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["サービスアカウントの使用方法の詳細については、こちらをご覧ください"]。
 
 
 
@@ -748,7 +748,7 @@ link:task-managing-netapp-accounts.html#creating-and-managing-service-accounts["
 
 アカウントのプライベートプレビューで、新しい NetApp クラウドサービスが Cloud Manager のプレビューとして利用できるようになりました。
 
-link:task-managing-netapp-accounts.html#allowing-private-previews["このオプションの詳細については、こちらをご覧ください"]。
+link:task-managing-netapp-accounts.html#allow-private-previews["このオプションの詳細については、こちらをご覧ください"]。
 
 
 
@@ -756,7 +756,7 @@ link:task-managing-netapp-accounts.html#allowing-private-previews["このオプ�
 
 また、アカウント内のサードパーティサービスが Cloud Manager で使用可能なサードパーティサービスにアクセスできるようにすることもできます。
 
-link:task-managing-netapp-accounts.html#allowing-third-party-services["このオプションの詳細については、こちらをご覧ください"]。
+link:task-managing-netapp-accounts.html#allow-third-party-services["このオプションの詳細については、こちらをご覧ください"]。
 
 
 
