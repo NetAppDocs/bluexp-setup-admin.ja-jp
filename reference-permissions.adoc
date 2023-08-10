@@ -20,25 +20,83 @@ BlueXPの機能やサービスを使用するには、権限を指定してBlueX
 
 == AWS権限
 
-[cols="25,60,40"]
+BlueXPでは、コネクタと個 々 のサービスにAWS権限が必要です。
+
+
+
+=== コネクタ
+
+[cols="20,60,20"]
 |===
-| 目的 | 説明 | リンク 
+| 目標 | 説明 | リンク 
 
 
-| BlueXPからのコネクタの導入 | BlueXPからConnectorを作成するユーザには、AWSにインスタンスを導入するための特別な権限が必要です。 | link:task-set-up-permissions-aws.html["AWS権限を設定"] 
+| BlueXPからコネクタを導入 | BlueXPからConnectorを作成するユーザには、AWSにインスタンスを導入するための特別な権限が必要です。 | link:task-set-up-permissions-aws.html["AWS権限を設定"] 
 
 
-| コネクタの動作 | BlueXPがConnectorを起動すると、AWSアカウントのリソースとプロセスの管理に必要な権限を提供するポリシーがインスタンスに関連付けられます。
+| コネクタの権限を指定します | BlueXPがConnectorを起動すると、AWSアカウントのリソースとプロセスの管理に必要な権限を提供するポリシーがインスタンスに関連付けられます。
 
-マーケットプレイスからコネクタを起動する場合、コネクタを手動でインストールする場合、またはコネクタを手動でインストールする場合は、ポリシーを自分で設定する必要があります link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["AWSクレデンシャルをコネクタに追加します"]。
+AWS Marketplaceからコネクタを起動した場合、コネクタを手動でインストールした場合、または link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["AWSクレデンシャルをコネクタに追加します"]。
 
 また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:reference-permissions-aws.html["Connector の AWS 権限"] 
+|===
 
 
-| Cloud Volumes ONTAP 処理 | AWSの各Cloud Volumes ONTAP ノードにIAMロールを関連付ける必要があります。HAメディエーターについても同様です。デフォルトでは、BlueXPでIAMロールを作成することができますが、自分で作成することもできます。 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["IAMロールを自分で設定する方法について説明します"^] 
+=== バックアップとリカバリ
+
+[cols="20,60,20"]
+|===
+| 目標 | 説明 | リンク 
 
 
 | オンプレミスのONTAPクラスタをAmazon S3にバックアップ | ONTAPボリュームでバックアップをアクティブ化すると、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["バックアップのS3権限を設定"^] 
+|===
+
+
+=== Cloud Volumes ONTAP
+
+[cols="20,60,20"]
+|===
+| 目標 | 説明 | リンク 
+
+
+| Cloud Volumes ONTAPノードの権限を付与する | AWSの各Cloud Volumes ONTAP ノードにIAMロールを関連付ける必要があります。HAメディエーターについても同様です。デフォルトではBlueXPにIAMロールが作成されますが、作業環境の作成時に独自のロールを使用することもできます。 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["IAMロールを自分で設定する方法について説明します"^] 
+|===
+
+
+=== コピーと同期
+
+[cols="20,60,20"]
+|===
+| 目標 | 説明 | リンク 
+
+
+| データブローカーをAWSに導入 | データブローカーの導入に使用するAWSユーザアカウントには、特定の権限が必要です。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#permissions-required-to-deploy-the-data-broker-in-aws["AWS にデータブローカーを展開するために必要な権限"^] 
+
+
+| データブローカーの権限を指定 | BlueXPのコピーと同期でデータブローカーを導入すると、データブローカーインスタンス用のIAMロールが作成されます。必要に応じて、独自の IAM ロールを使用してデータブローカーを展開できます。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#requirements-to-use-your-own-iam-role-with-the-aws-data-broker["AWS データブローカーで独自の IAM ロールを使用するための要件"^] 
+
+
+| 手動でインストールしたデータブローカーに対してAWSへのアクセスを有効にする | データブローカーをS3バケットを含む同期関係で使用する場合は、AWSにアクセスできるLinuxホストを準備する必要があります。データブローカーをインストールするときは、プログラムによるアクセスと特定の権限を持つIAMユーザにAWSキーを指定する必要があります。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-aws["AWS へのアクセスを有効化"^] 
+|===
+
+
+=== FSX for ONTAP の略
+
+[cols="20,60,20"]
+|===
+| 目標 | 説明 | リンク 
+
+
+| FSx for ONTAPの作成と管理 | Amazon FSx for NetApp ONTAP作業環境を作成または管理するには、作業環境の作成に必要な権限をBlueXPに付与するIAMロールのARNを指定して、AWSクレデンシャルをBlueXPに追加する必要があります。 | https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSx用のAWSクレデンシャルの設定方法をご確認ください"^] 
+|===
+
+
+=== 階層化
+
+[cols="20,60,20"]
+|===
+| 目標 | 説明 | リンク 
 
 
 | オンプレミスのONTAPクラスタをAmazon S3に階層化 | AWSへのBlueXPの階層化を有効にすると、アクセスキーとシークレットキーを入力するように求められます。これらのクレデンシャルは、ONTAP がS3バケットにデータを階層化できるようにONTAP クラスタに渡されます。 | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["階層化のためのS3権限を設定する"^] 
@@ -47,18 +105,24 @@ BlueXPの機能やサービスを使用するには、権限を指定してBlueX
 
 == Azure権限
 
-[cols="25,60,40"]
+BlueXPでは、コネクタと個 々 のサービスにAzure権限が必要です。
+
+
+
+=== コネクタ
+
+[cols="20,60,20"]
 |===
-| 目的 | 説明 | リンク 
+| 目標 | 説明 | リンク 
 
 
-| BlueXPからのコネクタの導入 | BlueXPからConnectorを導入する場合は、AzureにConnector VMを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。 | link:task-set-up-permissions-azure.html["Azure権限を設定する"] 
+| BlueXPからコネクタを導入 | BlueXPからConnectorを導入する場合は、AzureにConnector VMを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。 | link:task-set-up-permissions-azure.html["Azure権限を設定する"] 
 
 
-| コネクタの動作  a| 
+| コネクタの権限を指定します  a| 
 BlueXPがConnector VMをAzureに導入すると、そのAzureサブスクリプション内でリソースとプロセスを管理するために必要な権限を提供するカスタムロールが作成されます。
 
-Marketplaceからコネクタを起動する場合、コネクタを手動でインストールする場合、または独自にカスタムロールを設定する必要があります link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Azureクレデンシャルをコネクタに追加します"]。
+Marketplaceからコネクタを起動する場合、コネクタを手動でインストールする場合、またはカスタムロールを自分で設定する必要があります。 link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Azureクレデンシャルをコネクタに追加します"]。
 
 また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。
  a| 
@@ -67,19 +131,44 @@ link:reference-permissions-azure.html["Connector の Azure 権限"]
 |===
 
 
+=== コピーと同期
+
+[cols="20,60,20"]
+|===
+| 目標 | 説明 | リンク 
+
+
+| Azureにデータブローカーを導入 | データブローカーの導入に使用するAzureユーザアカウントに、必要な権限が付与されている必要があります。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#permissions-required-to-deploy-the-data-broker-in-azure["Azureにデータブローカーを導入するための権限が必要です"^] 
+|===
+
+
 == Google Cloud権限
 
-[cols="25,60,40"]
+BlueXPでは、コネクタと個 々 のサービスにGoogle Cloudの権限が必要です。
+
+
+
+=== コネクタ
+
+[cols="20,60,20"]
 |===
-| 目的 | 説明 | リンク 
+| 目標 | 説明 | リンク 
 
 
-| コネクタの展開 | BlueXPからConnectorを導入するGoogle Cloudユーザーには、Google CloudにConnectorを導入するための特定の権限が必要です。 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Connectorを展開する権限を設定します"] 
+| BlueXPからコネクタを導入 | BlueXPからConnectorを導入するGoogle Cloudユーザーには、Google CloudにConnectorを導入するための特定の権限が必要です。 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Connectorを展開する権限を設定します"] 
 
 
-| コネクタの動作 | Connector VMインスタンスのサービスアカウントには、日常処理に対する特定の権限が必要です。BlueXPからサービスアカウントを展開するときは、コネクタに関連付ける必要があります。
+| コネクタの権限を指定します | Connector VMインスタンスのサービスアカウントには、日常処理に対する特定の権限が必要です。導入時にサービスアカウントをコネクタに関連付ける必要があります。
 
 また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:reference-permissions-gcp.html["Connector の Google Cloud 権限"] 
+|===
+
+
+=== バックアップとリカバリ
+
+[cols="20,60,20"]
+|===
+| 目標 | 説明 | リンク 
 
 
 | Cloud Volumes ONTAP を Google Cloud にバックアップ  a| 
@@ -99,14 +188,53 @@ BlueXPのバックアップとリカバリを使用してCloud Volumes ONTAPを�
 |===
 
 
+=== Cloud Volumes Service for Google Cloud
+
+[cols="20,60,20"]
+|===
+| 目標 | 説明 | リンク 
+
+
+| Cloud Volumes Service for Google Cloudの詳細 | BlueXPでは、Google Cloudサービスアカウントを使用してCloud Volumes Service APIにアクセスし、適切な権限を付与する必要があります。 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/task-set-up-google-cloud.html["サービスアカウントを設定します"^] 
+|===
+
+
+=== コピーと同期
+
+[cols="20,60,20"]
+|===
+| 目標 | 説明 | リンク 
+
+
+| Google Cloudにデータブローカーを導入 | データブローカーを導入するGoogle Cloudユーザに必要な権限が割り当てられていることを確認します。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#permissions-required-to-deploy-the-data-broker-in-google-cloud["Google Cloud にデータブローカーを導入するための権限が必要です"^] 
+
+
+| 手動でインストールしたデータブローカーに対してGoogle Cloudへのアクセスを有効にする | Google Cloud Storage バケットを含む同期関係でデータブローカーを使用する場合は、 Google Cloud アクセス用の Linux ホストを準備しておく必要があります。データブローカーをインストールする場合、特定の権限を持つサービスアカウントにキーを提供する必要があります。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-google-cloud["Google Cloud へのアクセスを有効にします"^] 
+|===
+
+
 == StorageGRIDケンケン
 
-[cols="25,60,40"]
+BlueXPでは、2つのサービスに対してStorageGRID権限が必要です。
+
+
+
+=== バックアップとリカバリ
+
+[cols="20,60,20"]
 |===
-| 目的 | 説明 | リンク 
+| 目標 | 説明 | リンク 
 
 
 | オンプレミスのONTAPクラスタをStorageGRIDにバックアップ | StorageGRIDをONTAPクラスタのバックアップターゲットとして準備する際、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["バックアップターゲットとしてStorageGRIDを準備します"^] 
+|===
+
+
+=== 階層化
+
+[cols="20,60,20"]
+|===
+| 目標 | 説明 | リンク 
 
 
 | オンプレミスのONTAPクラスタをStorageGRIDに階層化 | StorageGRIDへのBlueXPの階層化をセットアップするときは、S3のアクセスキーとシークレットキーを使用してBlueXPの階層化を提供する必要があります。BlueXPの階層化サービスでは、このキーを使用してバケットにアクセスします。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["StorageGRIDへの階層化を準備"^] 
