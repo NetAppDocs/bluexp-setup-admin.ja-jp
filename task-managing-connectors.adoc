@@ -77,13 +77,13 @@ image:screenshot-connector-autosupport.png["サポートダッシュボードの
 
 コネクタが実行されている Linux VM に接続する必要がある場合は、クラウドプロバイダから提供されている接続オプションを使用できます。
 
-AWS:: AWS でコネクタインスタンスを作成する際に、 AWS のアクセスキーとシークレットキーを指定しました。このキーペアを使用して、 SSH でインスタンスに接続できます。
+AWS:: AWS でコネクタインスタンスを作成する際に、 AWS のアクセスキーとシークレットキーを指定しました。このキーペアを使用して、 SSH でインスタンスに接続できます。EC2 Linuxインスタンスのユーザ名はUbuntuです（2023年5月より前に作成されたコネクタの場合、ユーザ名はEC2-user）。
 +
 --
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs ： Linux インスタンスに接続します"^]
 
 --
-Azure:: Azure で Connector VM を作成する際に、パスワードまたは SSH 公開鍵を使用して認証するように選択します。選択した認証方式を使用して VM に接続します。
+Azure:: AzureでコネクタVMを作成するときに、ユーザ名を指定し、パスワードまたはSSH公開鍵で認証することを選択しました。選択した認証方式を使用して VM に接続します。
 +
 --
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure Docs ： SSH を使用して VM を接続します"^]
