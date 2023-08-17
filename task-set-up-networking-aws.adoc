@@ -97,13 +97,11 @@ AWSでリソースを管理できます。正確なエンドポイントは、�
 
 \https://api.bluexp.netapp.com
 
-\https://api.cloud.netapp.com
-
 \https://*.cloudmanager.cloud.netapp.com
 
 \https://cloudmanager.cloud.netapp.com
 
-\https://netapp-cloud-account.auth0.com/userinfo
+\https://netapp-cloud-account.auth0.com
  a| 
 BlueXPでSaaSの機能とサービスを提供するため。
 
