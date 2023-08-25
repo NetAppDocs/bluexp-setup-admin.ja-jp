@@ -64,7 +64,8 @@ BlueXPは、アカウントのすべての資格情報の既存のサブスク�
 次のビデオは、AWS Marketplaceからサブスクライブする手順を示しています。
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.AWS MarketplaceでBlueXPにサブスクライブ
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 
@@ -108,7 +109,8 @@ BlueXPは、アカウントのすべての資格情報の既存のサブスク�
 次のビデオでは、Azure Marketplaceでのサブスクライブ手順を紹介しています。
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.Azure MarketplaceでBlueXPにサブスクライブ
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
@@ -170,7 +172,8 @@ BlueXPは、アカウントのすべての資格情報の既存のサブスク�
 次のビデオでは、Google Cloud Marketplaceから登録する手順を紹介しています。
 
 +
-video::video-subscribing-google-cloud.mp4[width=848,height=480]
+.Google Cloud MarketplaceからBlueXPにサブスクライブ
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 .. このプロセスが完了したら、BlueXPの[資格情報]ページに戻り、この新しいサブスクリプションを選択します。

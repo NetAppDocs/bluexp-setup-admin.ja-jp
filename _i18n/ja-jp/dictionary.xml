@@ -3915,4 +3915,7 @@ AWS Marketplaceからコネクタを起動した場合、コネクタを手動�
   <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">AzureでコネクタVMを作成するときに、ユーザ名を指定し、パスワードまたはSSH公開鍵で認証することを選択しました。選択した認証方式を使用して VM に接続します。</block>
   <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
   <block id="80a43f3cb5826b8218d88da517c1e84b" category="list-text">現時点では、コネクタ、BlueXPデジタルウォレット、BlueXPのコピーと同期、BlueXPのバックアップとリカバリ、BlueXPの階層化、BlueXP移行レポート、BlueXPランサムウェア対策など、BlueXPの機能とサービスに関する通知がEメールで送信されます。サービスは今後のリリースで追加される予定です。</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">AWS MarketplaceでBlueXPにサブスクライブ</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Azure MarketplaceでBlueXPにサブスクライブ</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Google Cloud MarketplaceからBlueXPにサブスクライブ</block>
 </blocks>
