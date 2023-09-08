@@ -1,0 +1,56 @@
+= 
+:allow-uri-read: 
+
+
+共有VPCを使用してサービスプロジェクトにリソースを導入する場合は、権限を準備する必要があります。
+
+IAM の設定が完了したら、この表を参考にして権限の表を環境に反映させる必要があります。
+
+.共有VPC権限の表示
+[%collapsible]
+====
+[cols="10,10,10,18,18,34"]
+|===
+| ID | 作成者 | でホストされています | サービスプロジェクトの権限 | ホストプロジェクトの権限 | 目的 
+
+
+| コネクタを展開するためのGoogleアカウント | カスタム | サービスプロジェクト  a| 
+link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["コネクタ展開ポリシー"]
+ a| 
+compute.networkUser
+| サービスプロジェクトへのコネクタの配置 
+
+
+| Connectorサービスアカウント | カスタム | サービスプロジェクト  a| 
+link:reference-permissions-gcp.html["コネクタサービスアカウントポリシー"]
+| compute.networkUser
+
+deploymentmanager. editor | サービスプロジェクトへの Cloud Volumes ONTAP とサービスの導入と保守 
+
+
+| Cloud Volumes ONTAP サービスアカウント | カスタム | サービスプロジェクト | storagec.admin
+
+メンバー：BlueXPサービスアカウントをserviceAccount.userとして登録します | 該当なし | （オプション）データ階層化とBlueXPのバックアップとリカバリに使用します 
+
+
+| Google API サービスエージェント | Google Cloud | サービスプロジェクト  a| 
+（デフォルト） Editor
+ a| 
+compute.networkUser
+| 導入に代わってGoogle Cloud APIと対話します。BlueXPが共有ネットワークを使用できるようにします 
+
+
+| Google Compute Engine のデフォルトのサービスアカウント | Google Cloud | サービスプロジェクト  a| 
+（デフォルト） Editor
+ a| 
+compute.networkUser
+| 導入に代わってGoogle Cloudインスタンスとコンピューティングインフラストラクチャを導入します。BlueXPが共有ネットワークを使用できるようにします 
+|===
+注：
+
+. deploymentmanager. editorは、ファイアウォール規則を配備に渡していない場合にのみホストプロジェクトで必要です。BlueXPで作成することを選択している場合にのみ必要です。ルールが指定されていない場合、ホストプロジェクトにVPC0ファイアウォールルールが含まれているデプロイメントがBlueXPによって作成されます。
+. ファイアウォールの作成とfirewall.deleteは、ファイアウォールルールを配布に渡しておらず、BlueXPで作成することを選択している場合にのみ必要です。これらの権限はBlueXPアカウント.yamlファイルにあります。共有 VPC を使用して HA ペアを導入する場合は、これらの権限を使用して VPC1 、 2 、および 3 のファイアウォールルールが作成されます。他のすべての展開では、これらの権限は VPC0 のルールの作成にも使用されます。
+. データ階層化の場合、階層化サービスアカウントは、プロジェクトレベルだけでなく、サービスアカウントに対して serviceAccount.user ロールを持つ必要があります。現在、プロジェクトレベルで serviceAccount.user を割り当てている場合、 getIAMPolicy でサービスアカウントを照会しても権限は表示されません。
+
+
+====

@@ -20,7 +20,7 @@ BlueXPがAzureのクレデンシャルと権限を使用して処理を実行す
 
 == Azure の初期クレデンシャル
 
-BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます link:task-set-up-permissions-azure.html["Azure の Connector 導入ポリシー"]。
+BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Azure の Connector 導入ポリシー"]。
 
 BlueXPがAzureにConnector仮想マシンを導入すると、が有効になります https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["システムによって割り当てられた管理 ID"^] 仮想マシンで、カスタムロールを作成して仮想マシンに割り当てます。このロールは、そのAzureサブスクリプション内でリソースとプロセスを管理するために必要な権限をBlueXPに提供します。 link:reference-permissions-azure.html["BlueXPがどのように権限を使用しているかを確認します"]。
 
@@ -66,10 +66,10 @@ Marketplaceを使用する場合は、コネクタVMとシステムによって�
 
 * 標準モード
 +
-** link:task-set-up-permissions-azure.html["Azure権限を設定する"]
-** link:task-set-up-permissions-on-prem.html["オンプレミス環境のクラウド権限を設定"]
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Azure Marketplace環境の権限を設定する"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["オンプレミス環境の権限を設定する"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["制限モードにクラウド権限を設定する"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["プライベートモードのクラウド権限を設定します"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["制限モードの権限を設定します"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["プライベートモードの権限を設定します"]
 

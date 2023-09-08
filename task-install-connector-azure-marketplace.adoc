@@ -1,0 +1,502 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-azure-marketplace.html 
+keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector, marketplace, azure marketplace 
+summary: Azure Marketplaceからコネクタを作成するには、ネットワークを設定し、Azureの権限を準備し、インスタンス要件を確認してからコネクタを作成する必要があります。 
+---
+= Azure Marketplace からコネクタを作成します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure Marketplaceからコネクタを作成するには、ネットワークを設定し、Azureの権限を準備し、インスタンス要件を確認してからコネクタを作成する必要があります。
+
+.作業を開始する前に
+確認が必要です link:reference-limitations.html["コネクタの制限"]。
+
+
+
+== 手順1：ネットワークをセットアップする
+
+コネクタをインストールするネットワークの場所が、次の要件をサポートしていることを確認します。これらの要件を満たすことで、コネクタはハイブリッドクラウド環境内のリソースとプロセスを管理できるようになります。
+
+Azure リージョン:: Cloud Volumes ONTAPを使用する場合は、コネクタを管理するCloud Volumes ONTAPシステムと同じAzureリージョンまたはに導入する必要があります https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure リージョンペア"^] Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。
++
+--
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP での Azure プライベートリンクの使用方法をご確認ください"^]
+
+--
+
+
+VNetおよびサブネット:: コネクタを作成するときは、コネクタを配置するVNetとサブネットを指定する必要があります。
+
+
+ターゲットネットワークへの接続:: コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。たとえば、オンプレミス環境にCloud Volumes ONTAPシステムやストレージシステムを作成するネットワークなどです。
+
+
+アウトバウンドインターネットアクセス:: コネクタを展開するネットワークの場所には、特定のエンドポイントに接続するためのアウトバウンドインターネット接続が必要です。
+
+
+コネクタから接続されたエンドポイント:: このコネクタは、パブリッククラウド環境内のリソースとプロセスを日常的に管理するために、次のエンドポイントに接続するためのアウトバウンドインターネットアクセスを必要とします。
++
+--
+[cols="2a,1a"]
+|===
+| エンドポイント | 目的 
+
+
+ a| 
+\https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net
+ a| 
+Azureパブリックリージョン内のリソースを管理します。
+
+
+
+ a| 
+\https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn
+ a| 
+をクリックしてAzure中国地域のリソースを管理してください。
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+BlueXPでSaaSの機能とサービスを提供するため。
+
+コネクタは現在「cloudmanager.cloud.netapp.com"」に連絡していますが、今後のリリースでは「api.bluexp.netapp.com"」に連絡を開始します。
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+をクリックして、 Connector と Docker コンポーネントをアップグレードします。
+
+|===
+--
+
+
+プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。
++
+--
+* IP アドレス
+* クレデンシャル
+* HTTPS証明書
+
+
+--
+
+
+ポート:: コネクタを起動するか、コネクタがCloud Volumes ONTAPからNetAppサポートにAutoSupportメッセージを送信するためのプロキシとして使用されている場合を除き、コネクタへの受信トラフィックはありません。
++
+--
+* HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。
+* SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。
+* アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。
++
+Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するためのアウトバウンドインターネット接続が確立されていない場合は、コネクタに付属のプロキシサーバを使用するように自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
+
+
+
+--
+
+
+
+
+== ステップ2：VMの要件を確認する
+
+コネクタを作成するときは、次の要件を満たす仮想マシンタイプを選択する必要があります。
+
+CPU:: 4 コアまたは 4 個の vCPU
+RAM:: 14GB
+Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。DS3 v2 を推奨します。
+
+
+
+
+== 手順3：権限を設定する
+
+権限は次の方法で指定できます。
+
+* オプション1：システム割り当ての管理IDを使用して、Azure VMにカスタムロールを割り当てます。
+* オプション2：必要な権限を持つAzureサービスプリンシパルのクレデンシャルをBlueXPに提供します。
+
+
+BlueXPの権限を設定するには、次の手順を実行します。
+
+[role="tabbed-block"]
+====
+.カスタムロール
+--
+Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
+
+.手順
+. 独自のホストにソフトウェアを手動でインストールする場合は、カスタムロールを使用して必要なAzure権限を提供できるように、VMでシステムが割り当てた管理IDを有効にします。
++
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azureのドキュメント：Azureポータルを使用して、VM上のAzureリソースの管理IDを設定します"^]
+
+. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
+. 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
++
+BlueXPで使用する各AzureサブスクリプションのIDを追加する必要があります。
+
++
+* 例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+. JSON ファイルを使用して、 Azure でカスタムロールを作成します。
++
+次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
+
++
+.. 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
+.. JSON ファイルをアップロードします。
++
+image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
+
+.. Azure CLIを使用してカスタムロールを作成します。
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
+
+
+
+
+.結果
+これで、Connector仮想マシンに割り当てることができるBlueXP Operatorというカスタムロールが作成されました。
+
+--
+.サービスプリンシパル
+--
+Azure Active Directoryでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。
+
+.ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
+. Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
++
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]
+
+. Azure ポータルで、 * Azure Active Directory * サービスを開きます。
++
+image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サービスを示しています。"]
+
+. メニューで*アプリ登録*を選択します。
+. [New registration]*を選択します。
+. アプリケーションの詳細を指定します。
++
+** * 名前 * ：アプリケーションの名前を入力します。
+** *アカウントの種類*:アカウントの種類を選択します(すべてのアカウントはBlueXPで動作します)。
+** * リダイレクト URI *: このフィールドは空白のままにできます。
+
+
+. [*Register] を選択します。
++
+AD アプリケーションとサービスプリンシパルを作成しておきます。
+
+
+
+.アプリケーションをロールに割り当てます
+. カスタムロールを作成します。
++
+Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
+
++
+.. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
+.. 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
++
+ユーザが Cloud Volumes ONTAP システムを作成する Azure サブスクリプションごとに ID を追加する必要があります。
+
++
+* 例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. JSON ファイルを使用して、 Azure でカスタムロールを作成します。
++
+次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
+
++
+*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
+*** JSON ファイルをアップロードします。
++
+image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
+
+*** Azure CLIを使用してカスタムロールを作成します。
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+これで、Connector仮想マシンに割り当てることができるBlueXP Operatorというカスタムロールが作成されました。
+
+
+
+
+
+. ロールにアプリケーションを割り当てます。
++
+.. Azure ポータルで、 * Subscriptions * サービスを開きます。
+.. サブスクリプションを選択します。
+.. [アクセス制御（IAM）]>[追加]>[ロール割り当ての追加]*を選択します。
+.. [ロール]タブで、*[BlueXP Operator]*ロールを選択し、*[次へ]*を選択します。
+.. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
++
+*** [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
+*** [メンバーの選択]*を選択します。
++
+image:screenshot-azure-service-principal-role.png["アプリケーションにロールを追加するときに Members タブを表示する Azure ポータルのスクリーンショット。"]
+
+*** アプリケーションの名前を検索します。
++
+次に例を示します。
+
++
+image:screenshot_azure_service_principal_role.png["Azure ポータルのスクリーンショットで、 Azure ポータルのロール割り当ての追加フォームが表示されています。"]
+
+*** アプリケーションを選択し、*選択*を選択します。
+*** 「 * 次へ * 」を選択します。
+
+
+.. [Review + Assign]*を選択します。
++
+サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
+
++
+Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入する場合は、サービスプリンシパルを各サブスクリプションにバインドする必要があります。BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するサブスクリプションを選択できます。
+
+
+
+
+
+.Windows Azure Service Management API 権限を追加します
+. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
+. [API permissions]>[Add a permission]*を選択します。
+. Microsoft API* で、 * Azure Service Management * を選択します。
++
+image:screenshot_azure_service_mgmt_apis.gif["Azure Service Management API 権限を示す Azure ポータルのスクリーンショット。"]
+
+. [Access Azure Service Management as organization users]*を選択し、*[Add permissions]*を選択します。
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API の追加を示す Azure ポータルのスクリーンショット。"]
+
+
+
+.アプリケーションのアプリケーションIDとディレクトリIDを取得します
+. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
+. アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。
++
+image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケーション（クライアント）の ID とディレクトリ（テナント） ID を示すスクリーンショット。"]
+
++
+AzureアカウントをBlueXPに追加するときは、アプリケーション（クライアント）IDとディレクトリ（テナント）IDを指定する必要があります。BlueXPでは、プログラムでサインインするためにIDが使用されます。
+
+
+
+.クライアントシークレットを作成します
+. Azure Active Directory * サービスを開きます。
+. *アプリ登録*を選択し、アプリケーションを選択します。
+. [Certificates & secrets]>[New client secret]*を選択します。
+. シークレットと期間の説明を入力します。
+. 「 * 追加」を選択します。
+. クライアントシークレットの値をコピーします。
++
+image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパルのクライアントシークレットを表示する Azure ポータルのスクリーンショット。"]
+
++
+BlueXPでAzure ADの認証に使用するクライアントシークレットが作成されました。
+
+
+
+.結果
+これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。Azureアカウントを追加する場合は、BlueXPでこの情報を入力する必要があります。
+
+--
+====
+
+
+== 手順4：コネクタを作成する
+
+Azure Marketplaceからコネクタを直接起動します。
+
+.このタスクについて
+Azure Marketplaceからコネクタを作成すると、デフォルト構成を使用してAzureに仮想マシンが導入されます。 link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。
+
+.作業を開始する前に
+次の情報が必要です。
+
+* Azure サブスクリプション。
+* 選択した Azure リージョン内の VNet およびサブネット
+* すべての発信インターネットトラフィックにプロキシを必要とする場合は、プロキシサーバの詳細を参照してください。
++
+** IP アドレス
+** クレデンシャル
+** HTTPS証明書
+
+
+* コネクタ仮想マシンでその認証方法を使用する場合は、SSH公開鍵。認証方法のもう1つのオプションは、パスワードを使用することです。
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["AzureでLinux VMに接続する方法について説明します"^]
+
+* BlueXPでコネクタ用のAzureロールを自動的に作成しない場合は、自分で作成する必要があります link:reference-permissions-azure.html["このページのポリシーを使用する"]。
++
+これらの権限はコネクタインスタンス自体に適用されます。これは、コネクタVMを導入するために以前に設定した権限とは異なる権限のセットです。
+
+
+
+.手順
+. Azure MarketplaceのNetApp Connector VMのページに移動します。
++
+https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Azure Marketplaceの一般企業向けページ"^]
+
+. [今すぐ入手]*を選択し、*[続行]*を選択します。
+. Azureポータルで、*[作成]*を選択し、手順に従って仮想マシンを設定します。
++
+VM を設定する際には、次の点に注意してください。
+
++
+** * VMサイズ*：CPUとRAMの要件を満たすVMサイズを選択します。DS3 v2 を推奨します。
+** *ディスク*：コネクタはHDDまたはSSDディスクで最適なパフォーマンスを発揮します。
+** *ネットワークセキュリティグループ*：コネクタには、SSH、HTTP、およびHTTPSを使用したインバウンド接続が必要です。
++
+link:reference-ports-azure.html["Azureのセキュリティグループルールを表示します"]。
+
+** * ID *：* Management *で* Enable system assigned managed identity *を選択します。
++
+管理対象の ID を使用すると、 Connector 仮想マシンはクレデンシャルを指定せずに自身を Azure Active Directory に識別できるため、この設定は重要です。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Azure リソース用の管理対象 ID の詳細については、こちらをご覧ください"^]。
+
+
+
+. [確認と作成]ページで、選択内容を確認し、*[作成]*を選択して導入を開始します。
++
+指定した設定で仮想マシンが展開されます。仮想マシンと Connector ソフトウェアが起動するまでの所要時間は約 5 分です。
+
+. Connector 仮想マシンに接続されているホストから Web ブラウザを開き、次の URL を入力します。
++
+https://_ipaddress_[]
+
+. ログイン後、コネクタを設定します。
++
+.. コネクタに関連付けるBlueXPアカウントを指定します。
+.. システムの名前を入力します。
+.. *では、セキュリティ保護された環境で実行していますか？*制限モードを無効にしたままにします。
++
+標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。セキュアな環境でBlueXPバックエンドサービスからこのアカウントを切断する場合にのみ、制限モードを有効にしてください。その場合は、 link:task-quick-start-restricted-mode.html["制限モードでBlueXPの使用を開始するには、次の手順に従います"]。
+
+.. [* Let's start]*を選択します。
+
+
+
+
+これでコネクタがインストールされ、BlueXPアカウントでセットアップされました。
+
+
+
+== 手順5：BlueXPに権限を付与する
+
+コネクタの作成が完了したら、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、AzureのデータとストレージインフラをBlueXPで管理できるようになります。
+
+[role="tabbed-block"]
+====
+.カスタムロール
+--
+Azureポータルに移動し、1つ以上のサブスクリプションのコネクタ仮想マシンにAzureカスタムロールを割り当てます。
+
+.手順
+. Azure Portalで、* Subscriptions *サービスを開き、サブスクリプションを選択します。
+. [アクセス制御（IAM）]*>*[追加]*>*[ロール割り当ての追加]*を選択します。
+. [ロール]タブで、*[BlueXP Operator]*ロールを選択し、*[次へ]*を選択します。
++
+
+NOTE: BlueXP Operatorは'BlueXPポリシーで指定されているデフォルト名ですロールに別の名前を選択した場合は、代わりにその名前を選択します。
+
+. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
++
+.. * 管理対象 ID * へのアクセス権を割り当てます。
+.. *メンバーの選択*を選択し、コネクター仮想マシンが作成されたサブスクリプションを選択して*仮想マシン*を選択し、コネクター仮想マシンを選択します。
+.. [選択]*を選択します。
+.. 「 * 次へ * 」を選択します。
+.. [Review + Assign]*を選択します。
+.. 追加のAzureサブスクリプションでリソースを管理する場合は、そのサブスクリプションに切り替えてから、上記の手順を繰り返します。
+
+
+
+
+.結果
+BlueXPに、Azureで処理を実行するために必要な権限が付与されました。
+
+.次の手順
+にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+
+--
+.サービスプリンシパル
+--
+.手順
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
++
+image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
+
+. [クレデンシャルの追加]*を選択し、ウィザードの手順に従います。
++
+.. * 資格情報の場所 * ： Microsoft Azure > Connector * を選択します。
+.. * クレデンシャルの定義 * ：必要な権限を付与する Azure Active Directory サービスプリンシパルに関する情報を入力します。
++
+*** アプリケーション（クライアント）ID
+*** ディレクトリ（テナント）ID
+*** クライアントシークレット
+
+
+.. * Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。
+.. *確認*：新しいクレデンシャルの詳細を確認し、*[追加]*を選択します。
+
+
+
+
+.結果
+BlueXPに、Azureで処理を実行するために必要な権限が付与されました。
+
+--
+====

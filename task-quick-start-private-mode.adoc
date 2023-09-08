@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-quick-start-private-mode.html 
 keywords: private mode quick start, quick start 
-summary: わずか数ステップでプライベートモードでBlueXPを開始できます。 
+summary: BlueXPをプライベートモードで使用するには、環境を準備してコネクタを導入します。 
 ---
-= BlueXPをプライベートモードでクイックスタートします
+= スタートアップワークフロー（プライベートモード）
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,22 +16,18 @@ summary: わずか数ステップでプライベートモードでBlueXPを開�
 [role="lead"]
 BlueXPをプライベートモードで使用するには、環境を準備してコネクタを導入します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] 導入を準備
+開始する前に、次のことを理解しておく必要があります。 link:concept-netapp-accounts.html["BlueXPのアカウント"]、 link:concept-connectors.html["コネクタ"]および link:concept-modes.html["導入モード"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] link:task-prepare-private-mode.html["導入を準備"]
 [role="quick-margin-list"]
 . CPU、RAM、ディスクスペース、Docker Engineなどの要件を満たす専用のLinuxホストを準備します。
 . ターゲットネットワークへのアクセスを提供するネットワークをセットアップします。
 . クラウド環境の場合は、ソフトウェアのインストール後にそれらの権限をコネクタに関連付けることができるように、クラウドプロバイダで権限を設定します。
 
 
-[role="quick-margin-para"]
-link:task-prepare-private-mode.html["導入の準備方法をご確認ください"]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] コネクタを展開します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] link:task-install-private-mode.html["コネクタを展開します"]
 [role="quick-margin-list"]
 . Connectorソフトウェアを独自のLinuxホストにインストールします。
 . Webブラウザを開き、LinuxホストのIPアドレスを入力してBlueXPをセットアップします。
 . クラウド環境の場合は、以前に設定した権限をBlueXPに付与します。
 
-
-[role="quick-margin-para"]
-link:task-install-private-mode.html["コネクタの導入方法について説明します"]。

@@ -1,52 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="edfd6cc0ab18dc2313501be4396f011a" category="summary">インストールオプションの選択、ネットワークの設定、権限の準備などを行い、Azureでコネクタを作成します。</block>
-  <block id="1dcc6e23d41671c3a6f96a8f61e57f18" category="doc">Azureでコネクタを作成するためのクイックスタート</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1つ</block>
-  <block id="4336b5fcde6519e0ad7cfc03d406b725" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> インストールオプションを理解します</block>
-  <block id="170cf282453bc5bb842416e25c05a3d3" category="paragraph">Azureでコネクタを作成する標準的な方法はBlueXPから直接作成できますが、Azure Marketplaceから作成することも、既存のLinuxホストに手動でソフトウェアをインストールすることもできます。</block>
-  <block id="274b145c4a281502f19b58adaeb570c1" category="inline-link-macro">インストールオプションの詳細については、こちらを参照してください</block>
-  <block id="2437c72bf3beb4e33bdd041dbc0b94be" category="paragraph"><block ref="811b0992788616fced956f5adf8830f6" category="inline-link-macro-rx"></block>。</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2 つ</block>
-  <block id="0acd6f364c67bcef47587e5727525116" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> ネットワークをセットアップする</block>
-  <block id="8ffcde9d7d78e59a747c9316b70a6fd2" category="paragraph">コネクタ用に次のものを準備します。</block>
-  <block id="2432a6cc5cea8aeb7389c0baa7ea2111" category="list-text">VNetとサブネット</block>
   <block id="e93e3d03906a0e994e8ba9816cbb23fc" category="list-text">作業環境の作成と管理を計画しているネットワークへのネットワーク接続</block>
   <block id="1ec4bfd50771e936db6abbdaef3326d4" category="list-text">日常業務用の特定のエンドポイントへのアウトバウンドインターネットアクセス</block>
   <block id="a2054dcca627b3e50f6202fe6c39774e" category="list-text">アウトバウンドインターネットにプロキシサーバが必要な場合は、プロキシサーバのIPアドレス、クレデンシャル、およびHTTPS証明書</block>
-  <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">ネットワーク要件の詳細については、こちらをご覧ください</block>
-  <block id="587b8633f80536ad1f87ba680eaf93e0" category="paragraph"><block ref="48e0e005bc28fbf668fbd01539cd6de0" category="inline-link-macro-rx"></block>。</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">3つ</block>
-  <block id="41c4e1e04e36e331e0bc8306e8c462e4" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> ホストの要件を確認します</block>
-  <block id="c1e102579945406fac37126823f71dd7" category="paragraph">Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、ホストが特定の要件を満たしていることを確認する必要があります。BlueXPまたはAzure Marketplaceからコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応します。</block>
-  <block id="c0cf348e555529bd637208dfcf54a870" category="paragraph">主な要件は次のとおりです。</block>
-  <block id="458ff6a54977b54b851374a784615658" category="list-text">Ubuntu 22.04、CentOS 7.6から7.9、またはRHEL 7.6から7.9を実行する専用ホスト</block>
-  <block id="fd7f01f6e4333c9d37efa65b264ff2a2" category="list-text">CPU × 4</block>
-  <block id="ccdc6c134c96d6c386d088a2301d4f2b" category="list-text">14GBのRAM</block>
-  <block id="3140bd3be2a4f9fe830514ff5b18be1f" category="list-text">Docker Engine 19.3.1以降</block>
-  <block id="6cfd8f6d3354ebd55131c33afd96d4f1" category="inline-link-macro">これらのホスト要件の詳細については、こちらをご覧ください</block>
-  <block id="369d0911111271cdfbd7e9f063757d98" category="paragraph"><block ref="09ee71e6486c9f0c61a1b5246e297fcd" category="inline-link-macro-rx"></block>。</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">4.</block>
-  <block id="027797cbe98f6b158461ff3f6dbbd334" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Azure権限を設定する</block>
-  <block id="8a9d95375b8491f874d5d1c6562f7343" category="paragraph">使用するインストールオプションのAzure権限を設定します。</block>
-  <block id="89f985c75e332d6c094a98b24d581939" category="list-text">* BlueXPからインストール*：カスタムロールを作成してAzureアカウントまたはAzure ADサービスプリンシパルに適用します。BlueXPはAzureで認証し、これらの権限を使用してコネクタインスタンスを作成します。</block>
-  <block id="5f017c24568392f62aaaf81a69f822c9" category="list-text">* Azure Marketplaceからインストール*:コネクタVMインスタンスまたはAzure ADサービスプリンシパルに関連付けることができるカスタムロールを作成します。</block>
-  <block id="6d3e288af786920eccf5b0674c17d867" category="list-text">*手動インストール*:コネクタVMインスタンスまたはAzure ADサービスプリンシパルに関連付けることができるカスタムロールを作成します。</block>
-  <block id="2cc898b389bc13b579859b0326ebed29" category="inline-link-macro">これらの各オプションの詳細な手順に従います</block>
-  <block id="8d49ecb044426618c455059729628e16" category="paragraph"><block ref="d41b7abb287ddfad558a942020d8e305" category="inline-link-macro-rx"></block>。</block>
-  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">5 つ</block>
-  <block id="0db7fae0cbffb2606b92943c020175f6" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> コネクターを作成します</block>
-  <block id="58dfb3b98f86ab56e2908a35ae6b090f" category="paragraph">使用可能なインストールオプションのいずれかを使用してコネクタを作成します。</block>
-  <block id="5be6bb31e75b1dd8bd94a7ae6af3e755" category="inline-link">Azure MarketplaceのNetApp Connector VMのページ</block>
-  <block id="29e1a7cf06605bf888586cc76182b640" category="list-text">* Azure Marketplaceから*：に移動します<block ref="ed0d2d9c900d50a83f742250d29abeec" category="inline-link-rx"></block> プロンプトに従ってコネクタVMを作成します。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp Support Site</block>
-  <block id="55fb00cdacc84bfb11ed9412e3d3008a" category="list-text">*手動インストール*：からコネクタソフトウェアをダウンロードします<block ref="ecafab118b2af7ac4f48713d9a2b867a" category="inline-link-rx"></block> インストールスクリプトを実行します。</block>
-  <block id="ce00f49241e683facb54cd0cecee53ba" category="paragraph"><block ref="55bc339bc66105bf0446573c2bad29e3" category="inline-link-macro-rx"></block>。</block>
-  <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">6</block>
-  <block id="f1a5593ecb291eabe452f93e18ebdb9e" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> BlueXPに権限を付与する</block>
-  <block id="715c6e7d85ad7699a0e7ed3bcb50873c" category="paragraph">Azure Marketplaceでコネクタを作成した場合、またはソフトウェアを手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。</block>
-  <block id="cd444a79f98ccbe383b146279f3bb526" category="inline-link-macro">ステップバイステップの手順に従います</block>
-  <block id="ace0bda3409885d45bea1ac3342128a0" category="paragraph"><block ref="00f070cb4c9b58b2b2a64202b6b8c1d5" category="inline-link-macro-rx"></block>。</block>
   <block id="834c88c0bca4a9bc1dfadd5390b4c388" category="summary">使用を開始するにあたり、ネットアップの担当者からコネクタのシステムIDを尋ねられることがあります。この ID は通常、ライセンスの取得やトラブルシューティングの目的で使用されます。</block>
   <block id="4d23d12ce4b0de2019310ec73c45d09b" category="doc">コネクタのシステム ID を確認します</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
@@ -56,20 +17,11 @@
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 例 *</block>
   <block id="2529cf627b3e8b4f850e5b8e7998dea3" category="inline-image-macro">サポートダッシュボードに表示されるBlueXPのシステムIDを示すスクリーンショット。</block>
   <block id="dd452be96917f1c62ed3d40b11c4ebf2" category="paragraph"><block ref="dd452be96917f1c62ed3d40b11c4ebf2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b1bf8e5320cdd219124de4b848049533" category="summary">コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、BlueXPでGoogle Cloudのデータとストレージインフラを管理できるようになります。</block>
-  <block id="279f8e6e654bd6c88df8e11849e24092" category="doc">BlueXPにGoogle Cloudの権限を付与します</block>
-  <block id="cb561ef187f15b32ac2db4331dfe81b2" category="inline-link-macro">これらの権限の設定方法については、こちらを参照してください</block>
-  <block id="37fe5449f83c33dc3e71363c3a81b812" category="paragraph"><block ref="f04b15cc9682df5da57238201635ffcf" category="inline-link-macro-rx"></block>。</block>
-  <block id="49df401f9192c85c7f39cfdf646fb06e" category="paragraph">BlueXPから直接コネクタを導入した場合、またはgcloudを使用してコネクタを導入した場合、これらの手順は実行しません。</block>
   <block id="a31342596e31d918d08c0417177a8f77" category="list-text">Google Cloudポータルに移動し、コネクタVMインスタンスにサービスアカウントを割り当てます。</block>
   <block id="81c722be01f6c1251ced26ff2ff9dd3f" category="inline-link">Google Cloudドキュメント：インスタンスのサービスアカウントとアクセス範囲の変更</block>
   <block id="c8b77e7a211a8e1bbb884962a105fc2f" category="paragraph"><block ref="c8b77e7a211a8e1bbb884962a105fc2f" category="inline-link-rx"></block></block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="a6e38b80693d553a1debbba70e8974ef" category="paragraph">BlueXPに、Google Cloudでユーザに代わって操作を実行するために必要な権限が付与されました。</block>
-  <block id="9a4eb6738f043a9d449205f3ee2089f1" category="summary">コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、BlueXPでAWSのデータとストレージインフラを管理できるようになります。</block>
-  <block id="d06b951ea3d21ec4231361092444f706" category="doc">BlueXPにAWS権限を付与します</block>
-  <block id="d4e987c1265b2bb249040ab078e28f18" category="paragraph"><block ref="336de8ca27e92ccb4d3177edc6a05ab3" category="inline-link-macro-rx"></block>。</block>
-  <block id="d98b0751af7f55733b470dfd645ab395" category="paragraph">必要な権限が導入時に提供されているため、BlueXPまたはAWS Marketplaceからコネクタを直接導入した場合は、この手順は実行しません。</block>
   <block id="759d9f0fdbf1b3fe124b8de48be0485b" category="open-title">IAMロール</block>
   <block id="0aa789abd24dd033c311721c01ab26d8" category="paragraph">以前に作成したIAMロールをコネクタEC2インスタンスにアタッチします。</block>
   <block id="7f8c174d588ebe0dadcdeb4a63202e4b" category="list-text">Amazon EC2コンソールに移動します。</block>
@@ -92,18 +44,12 @@
   <block id="df329246877a4bd1e46b66f9dd6845df" category="paragraph">Azureストレージアカウントに関する詳細を確認できます。これには、場所、リソースグループ、合計容量と使用済み容量などの情報が含まれます。これらのアカウントは、BlueXPのバックアップとリカバリ、BlueXPの階層化、BlueXPのコピーと同期の処理のデスティネーションとして使用できます。</block>
   <block id="bbea79834217efc10b46f4ce874042e0" category="inline-link">BlueXPを使用してAzureストレージアカウントを表示、作成、管理する方法については、こちらをご覧ください</block>
   <block id="925b4bfac5efe2fd0e529d00b71f77ab" category="paragraph">新たに追加された機能で、Azureストレージアカウントを作成および編集できるようになりました。<block ref="3ed7f712e1a5045237f8df14106ff39a" category="inline-link-rx"></block>。</block>
-  <block id="8b0d5260f5fba5a6140e3eef4180dfb7" category="summary">Google Cloudでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。選択するインストールオプションによって、導入の準備方法が決まります。</block>
   <block id="f9a2f8eef1df12108fd0c6b9b6b7fe6a" category="doc">Google Cloudでのコネクタのインストールオプション</block>
   <block id="b5afc81c4f24b143224e304b939a3f6c" category="paragraph">次のインストールオプションを使用できます。</block>
-  <block id="2be5713550453beeb95920945caf9edb" category="list-text">BlueXPからコネクタを直接作成（標準オプション）</block>
   <block id="b584cbf8cb993e5b450384402639e3c4" category="paragraph">この操作により、Linuxを実行するVMインスタンスとコネクタソフトウェアが、選択したVPCで起動されます。</block>
   <block id="aeb0fd93533d2abe16a0c3de7ac30243" category="list-text">gcloudを使用してコネクターを作成します</block>
-  <block id="faa8e4e3b060fca7e7dcae6df874bbe8" category="paragraph">また、LinuxとConnectorソフトウェアを実行するVMインスタンスも起動します。</block>
   <block id="7ec389ef03b4378689ec8afd5b977499" category="list-text">ソフトウェアをダウンロードして、自分のLinuxホストに手動でインストールします</block>
   <block id="aad2c066ffe748669f0919517c62b920" category="paragraph">選択するインストールオプションは、インストールの準備方法に影響します。これには、Google Cloudのリソースの認証と管理に必要な権限をBlueXPに付与する方法も含まれます。</block>
-  <block id="0e729c7047b6724051cd3075125ee033" category="inline-link-macro">Google Cloudにコネクタをインストールする方法について説明します</block>
-  <block id="e125fc89afb4e1df4139d1d590ddb886" category="paragraph"><block ref="f10aea6a309f24e3b383a3596f8a82db" category="inline-link-macro-rx"></block>。</block>
-  <block id="b03fc4422539272712e207a8d897a72c" category="summary">コネクタは、BlueXPのWebベースのコンソールやAzure Marketplaceから直接作成するか、自社のLinuxホストにインストールして作成します。</block>
   <block id="09b97c28476d2fd5c125ffc638225bae" category="doc">Azure でコネクタを作成します</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="open-title">BlueXP</block>
   <block id="cec61994be2c9633fc4acb202e4b9c41" category="list-text">Azure サブスクリプション。</block>
@@ -117,7 +63,6 @@
   <block id="51efa34484491a2cd1e24f30b14fc68a" category="paragraph"><block ref="51efa34484491a2cd1e24f30b14fc68a" category="inline-link-rx"></block></block>
   <block id="bc3d26f932a03033b70d3ed650139a18" category="inline-link-macro">このページのポリシーを使用する</block>
   <block id="578821444383a169c989590dba162c8a" category="list-text">BlueXPでコネクタ用のAzureロールを自動的に作成しない場合は、自分で作成する必要があります <block ref="7706b04266d0a3d170ef3034140acd41" category="inline-link-macro-rx"></block>。</block>
-  <block id="bb0af45d6e9045bc2046c5f245006f7c" category="paragraph">これらの権限はコネクタインスタンス自体に適用されます。これは、以前にコネクタを展開するように設定したアクセス権とは異なります。</block>
   <block id="df5b4e7d7b6a4648ec54c1e80de11594" category="inline-image-macro">ヘッダーのコネクターアイコンとコネクターの追加アクションを示すスクリーンショット。</block>
   <block id="6afef7f4017876f5216334b8130f14fb" category="paragraph"><block ref="6afef7f4017876f5216334b8130f14fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="02a8c4a4e553694e2236fd17bb20b197" category="list-text">クラウドプロバイダとして「 * Microsoft Azure * 」を選択します。</block>
@@ -131,7 +76,6 @@
   <block id="ac1fdeeca5975112ea2d53b754a4c94f" category="list-text">ディレクトリ（テナント）ID</block>
   <block id="734082edf44417dd19cc65943aa65c36" category="list-text">クライアントシークレット</block>
   <block id="37653ce036b712cbc8dcc5b189d94b80" category="inline-link-macro">サービスプリンシパルのこれらの値を取得する方法について説明します</block>
-  <block id="283459c094a8c0f9ef857a405f711530" category="paragraph"><block ref="82e5cd1190c32cd925829227067e3312" category="inline-link-macro-rx"></block>。</block>
   <block id="b0e1a0461b32155d621f46d8d6f39569" category="list-text">ウィザードの手順に従って、コネクタを作成します。</block>
   <block id="c3e1d8cd2a4fddc661ad823da98d5fa7" category="list-text">* VM認証*：Azureサブスクリプション、場所、新しいリソースグループ、または既存のリソースグループを選択し、作成するコネクタ仮想マシンの認証方法を選択します。</block>
   <block id="52f3863b6256b8ae764628f74442ca5c" category="paragraph">仮想マシンの認証方法には、パスワードまたはSSH公開鍵を使用できます。</block>
@@ -162,8 +106,6 @@
   <block id="47b475ce8fffd929f1fc89967e693fe0" category="paragraph">標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。セキュアな環境でBlueXPバックエンドサービスからこのアカウントを切断する場合にのみ、制限モードを有効にしてください。その場合は、 <block ref="d4230e2957fd67694fbeb2d4cebbd012" category="inline-link-macro-rx"></block>。</block>
   <block id="e48cc2b8b425580d8ee1508fd8a29ab2" category="paragraph">これでコネクタがインストールされ、BlueXPアカウントでセットアップされました。</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">次の手順</block>
-  <block id="ba997697bddbedc57faeb5fdc16c15a6" category="inline-link-macro">以前に設定した権限をBlueXPに付与します</block>
-  <block id="f6f67a41d5743f1fd41a2fb8b54fd85b" category="paragraph"><block ref="7e9e5669a04928e1ffa0a9abd020b87e" category="inline-link-macro-rx"></block>。</block>
   <block id="8f40f6b9cda905fc9a83217435e6b940" category="open-title">手動インストール</block>
   <block id="4212008c2b937ee581ff9e530b8440f8" category="list-text">コネクタをインストールするためのroot権限。</block>
   <block id="f39873ba3fdf2dff72b117d1ccc0a3f8" category="list-text">コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。</block>
@@ -205,38 +147,25 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">BlueXPに関する注意事項</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="paragraph"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
-  <block id="15af3353861266e80ed9b6c8329ad94a" category="summary">わずか数ステップでプライベートモードでBlueXPを開始できます。</block>
   <block id="60f3c104288fca2aca24db064cb7c7c1" category="doc">BlueXPをプライベートモードでクイックスタートします</block>
   <block id="077d70acc6fcd0e9c32a626a8ef8e416" category="paragraph">BlueXPをプライベートモードで使用するには、環境を準備してコネクタを導入します。</block>
-  <block id="9a830cd64ab9d78a17a34ed14d95cf1f" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 導入を準備</block>
   <block id="19b89452bb4e16dbfc6dc9d3fbbf8fc1" category="list-text">CPU、RAM、ディスクスペース、Docker Engineなどの要件を満たす専用のLinuxホストを準備します。</block>
   <block id="8cb1247d6f1cd796c983b5b1cfbbd285" category="list-text">ターゲットネットワークへのアクセスを提供するネットワークをセットアップします。</block>
   <block id="31b22ac218f817003d8419ad3518a02a" category="list-text">クラウド環境の場合は、ソフトウェアのインストール後にそれらの権限をコネクタに関連付けることができるように、クラウドプロバイダで権限を設定します。</block>
-  <block id="9e27fe6e4ca179cef3f90054a66df85c" category="inline-link-macro">導入の準備方法をご確認ください</block>
-  <block id="f2ff49c4d0833a9eadcae84f7b90b2ff" category="paragraph"><block ref="9b726f214629b15f98bfde2cb9073835" category="inline-link-macro-rx"></block>。</block>
-  <block id="87f8bea3409ee5873c4bbf977d8c3362" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> コネクタを展開します</block>
   <block id="817e58b984e5e3e7eeaf7dcb9b540fed" category="list-text">Connectorソフトウェアを独自のLinuxホストにインストールします。</block>
   <block id="a70d4bbf703f0bb183929b0ec4430ef4" category="list-text">Webブラウザを開き、LinuxホストのIPアドレスを入力してBlueXPをセットアップします。</block>
   <block id="3ec2d3c7ef4c8979b57d4f2b01b79999" category="list-text">クラウド環境の場合は、以前に設定した権限をBlueXPに付与します。</block>
-  <block id="7a2c74a09879a62515ffe13d1f8f0b37" category="inline-link-macro">コネクタの導入方法について説明します</block>
-  <block id="6ba235be33f84a7d443965c370e7c288" category="paragraph"><block ref="ffb771e5072e98ecc21c33fef82a5bf5" category="inline-link-macro-rx"></block>。</block>
   <block id="7b31e3388ea034b121ff61f2d58ae897" category="summary">Azureでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。</block>
   <block id="c7e9b1fa8d8f650fb40f0b5f30493666" category="doc">Azureでのコネクタのインストールオプション</block>
-  <block id="88b0d99fc50504eb1e90039166a7405e" category="paragraph">Azureでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。選択するインストールオプションによって、導入の準備方法が決まります。</block>
   <block id="dd1f4ed694cfbe13a6ccad3403ea1728" category="paragraph">この操作により、Linuxを実行するVMとコネクタソフトウェアが任意のVNetで起動されます。</block>
   <block id="6505fd7495c0d65d3dcf8a473c69ddcf" category="list-text">Azure Marketplace からコネクタを作成します</block>
-  <block id="272e4bff4d50ea43c92ce8c4e0416844" category="paragraph">また、LinuxとConnectorソフトウェアを実行しているVMも起動します。</block>
   <block id="144abf22f67a9e7bd34e83012cfa59ec" category="paragraph">選択するインストールオプションは、インストールの準備方法に影響します。これには、Azureのリソースの認証と管理に必要な権限をBlueXPに付与する方法も含まれます。</block>
-  <block id="aa5036f5148517c6eef77af4d087a1eb" category="inline-link-macro">Azureにコネクタをインストールする方法について説明します</block>
-  <block id="50b740bfe5133abfa358935d9447cf0b" category="paragraph"><block ref="5235875f7052c9f6ed27d95c848dbea1" category="inline-link-macro-rx"></block>。</block>
   <block id="ee88a6eb4f7c0c45ebac21244e471cac" category="summary">コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。たとえば、ターゲットネットワークへの接続が可能で、アウトバウンドのインターネットアクセスが利用可能であることを確認する必要があります。</block>
   <block id="eccf4730c0054498e1b7d5cab926e79f" category="doc">AWSネットワークをセットアップする</block>
   <block id="acb3a31b8e79039416f86dfe140a002a" category="section-title">vPCおよびサブネット</block>
   <block id="2ece2735ee78ce884898c747bead2708" category="paragraph">コネクタを作成するときは、コネクタを配置するVPCとサブネットを指定する必要があります。</block>
   <block id="8f83d4a2626dac354314d5394d1f9d21" category="section-title">ターゲットネットワークへの接続</block>
-  <block id="e977076f329f114f070ba24997d6ea89" category="paragraph">コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。</block>
   <block id="c8f224037ea295aeec347c94779d9932" category="section-title">アウトバウンドインターネットアクセス</block>
-  <block id="71afd6b2cb4c08d6d8f78d761345d34b" category="paragraph">コネクタを配置するネットワークの場所には、アウトバウンドのインターネット接続が必要です。BlueXPコンソールからコネクタを導入する場合は、Webブラウザからアウトバウンドのインターネットアクセスも必要です。</block>
   <block id="6dffc69caefdf6586b8f4562e4f891ff" category="section-title">BlueXPコンソールからアクセスするエンドポイント</block>
   <block id="7e793e0926dc898cd9fdf640dab8b7d2" category="paragraph">SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。これには、BlueXPコンソールからコネクタを導入するために接続されるエンドポイントも含まれます。</block>
   <block id="de3d7dbdd97c240a233066ad7479c6c2" category="inline-link-macro">BlueXPコンソールからアクセスしたエンドポイントのリストを表示します</block>
@@ -262,7 +191,6 @@
   <block id="5ea79461f4d299dc0735dc824ffeb854" category="list-text">セキュリティトークンサービス（ STS ）</block>
   <block id="ec646b7b2f70895a68ca206afb2d6108" category="list-text">シンプルなストレージサービス（ S3 ）</block>
   <block id="aec651d37f6f533a4066a1ac8774d6b0" category="inline-link">詳細については、AWSのドキュメントを参照してください</block>
-  <block id="c908f2a3ba166fdf32de7eba53bd7156" category="cell">AWSでリソースを管理できます。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。</block>
   <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">\https://*.api.bluexp.netapp.com</block>
   <block id="e1095ff19466581c5274f67123c95036" category="paragraph">\https://api.bluexp.netapp.com</block>
@@ -274,9 +202,6 @@
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">ポート</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。</block>
-  <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">IPアドレスの制限</block>
-  <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link">この制限事項の詳細については、こちらをご覧ください</block>
-  <block id="c7353b14a4a7612afd3864b6595a72b7" category="paragraph">172の範囲のIPアドレスと競合する可能性があります。<block ref="a310fc31ed10a191d1bb25f21e014658" category="inline-link-rx"></block>。</block>
   <block id="288bb352dffecbb16aa463067359ba15" category="summary">デフォルトでは、BlueXPはWebコンソールへのHTTPSアクセスに自己署名証明書を使用します。認証局（ CA ）によって署名された証明書をインストールできます。これにより、自己署名証明書よりも優れたセキュリティ保護が提供されます。</block>
   <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">セキュアなアクセスのためのHTTPS証明書をインストールします</block>
   <block id="094e745d52cd94c819bfa88386ee94b4" category="paragraph">デフォルトでは、BlueXPはWebコンソールへのHTTPSアクセスに自己署名証明書を使用します。ビジネスで必要な場合は、認証局（CA）によって署名された証明書をインストールできます。これにより、自己署名証明書よりもセキュリティ保護が強化されます。</block>
@@ -306,26 +231,18 @@
   <block id="35d75b7721b3a7b85f83f9a22b971a9e" category="paragraph">BlueXP証明書の詳細が、有効期限を含めて表示されます。</block>
   <block id="56c47e4865091b4cf1fdfddb1fa57b51" category="list-text">[証明書の変更]*を選択し、手順に従ってCSRを生成するか、独自のCA署名証明書をインストールします。</block>
   <block id="a87a73cb3d313039fff4125360dd6090" category="paragraph">BlueXPは、新しいCA署名証明書を使用してセキュアなHTTPSアクセスを提供します。</block>
-  <block id="2001c0016712a9564e9b186bd9242a59" category="summary">AWSでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。選択するインストールオプションによって、導入の準備方法が決まります。</block>
   <block id="eca3237a9ea860ef946ba4cdd489bc59" category="doc">AWSでのコネクタのインストールオプション</block>
   <block id="9f2d2da10225389a78d31f33f8d7c7be" category="paragraph">この操作により、Linuxを実行するEC2インスタンスとコネクタソフトウェアが、選択したVPCで起動されます。</block>
   <block id="e96bc5b1e40abf07ff070b96c65057db" category="list-text">AWS Marketplace からコネクタを作成します</block>
-  <block id="75568875dcefc1b684ae42256d7e4964" category="paragraph">また、LinuxとConnectorソフトウェアを実行するEC2インスタンスも起動します。</block>
   <block id="34fdddcdcabc8edce8bcbc1e23965cca" category="paragraph">選択するインストールオプションは、インストールの準備方法に影響します。これには、AWSでリソースの認証と管理に必要な権限をBlueXPに付与する方法も含まれます。</block>
-  <block id="62deb419f07c89883fdbfaad105678b2" category="inline-link-macro">AWSにコネクタをインストールする方法について説明します</block>
-  <block id="e9dcfa14808514bcb8e00b78ce2233e6" category="paragraph"><block ref="475058c00c821d06aaaa09a93292b192" category="inline-link-macro-rx"></block>。</block>
   <block id="6e0db9379e3434e931d198d00617cbd6" category="summary">BlueXPを使用するには、クラウドプロバイダで処理を実行するための権限が必要です。これらの権限は、ネットアップが提供するポリシーに含まれています。これらの権限でBlueXPが何を実行するのかを理解しておくとよいでしょう。</block>
   <block id="9451bddd2cec3e9489f79e90187bcc6a" category="doc">Connector の Google Cloud 権限</block>
   <block id="f4c4efc5241f9f82576eec23d40da3e3" category="paragraph">BlueXPには、Google Cloudでアクションを実行するための権限が必要です。これらの権限は、ネットアップが提供するカスタムロールに含まれています。これらの権限でBlueXPが何を実行するのかを理解しておくとよいでしょう。</block>
   <block id="6b45b097205607d8631a7d487a76da98" category="section-title">サービスアカウントの権限</block>
   <block id="7ed95920f3d958d414a782a8af607000" category="paragraph">次のカスタムロールは、ConnectorがGoogle Cloudネットワーク内のリソースとプロセスを管理するために必要な権限を提供します。</block>
   <block id="12c7029287280adb69871787fa604772" category="paragraph">このカスタムロールは、Connector VMに関連付けられているサービスアカウントに適用する必要があります。</block>
-  <block id="dbca94da801805282b46468db90d84ea" category="inline-link-macro">標準モードの権限を設定します</block>
-  <block id="79d7130cf3d4b073bce7c34d3a9f9ebf" category="list-text"><block ref="79d7130cf3d4b073bce7c34d3a9f9ebf" category="inline-link-macro-rx"></block></block>
   <block id="cb3ffce0d4b8f43b3d9f183b558cca41" category="inline-link-macro">制限モードの権限を設定します</block>
-  <block id="df4564942ae0e0bd6f202d613e944ba1" category="list-text"><block ref="df4564942ae0e0bd6f202d613e944ba1" category="inline-link-macro-rx"></block></block>
   <block id="fad45f664f0478b74c9485a0b1f6d781" category="inline-link-macro">プライベートモードの権限を設定します</block>
-  <block id="22e332a6ecd5f345a3f720b11f7cf805" category="list-text"><block ref="22e332a6ecd5f345a3f720b11f7cf805" category="inline-link-macro-rx"></block></block>
   <block id="c5078b96055d6b776ee265ca4c7650c2" category="paragraph">また、新しい権限が以降のリリースで追加されるときに、ロールが最新の状態であることを確認する必要があります。</block>
   <block id="823b2e7894c2b52c1e9adc9ea10b9be5" category="section-title">Google Cloud権限の使用方法</block>
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">アクション</block>
@@ -493,15 +410,9 @@
   <block id="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="paragraph"><block ref="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="796c918f0fce99224fa4a1b54f518f96" category="paragraph">権限の設定方法については、次のページを参照してください。</block>
   <block id="392cce9be5aaba5ccc4ab6924ab91b7b" category="inline-link-macro">標準モードのGoogle Cloud権限を設定します</block>
-  <block id="33ff027b08c4a47957d518ff558c2a6a" category="list-text"><block ref="33ff027b08c4a47957d518ff558c2a6a" category="inline-link-macro-rx"></block></block>
-  <block id="5d32f055b25a05b4a5de4b696ce25add" category="inline-link-macro">制限モードにクラウド権限を設定する</block>
-  <block id="bff57419f890b7401599d0d01c006651" category="list-text"><block ref="bff57419f890b7401599d0d01c006651" category="inline-link-macro-rx"></block></block>
-  <block id="9831540247cdea4b68486aa957754535" category="inline-link-macro">プライベートモードのクラウド権限を設定します</block>
-  <block id="1727091b0fa7a23ab1ee837811a3080c" category="list-text"><block ref="1727091b0fa7a23ab1ee837811a3080c" category="inline-link-macro-rx"></block></block>
   <block id="ebd7d1e81a9a2891e260eecaa709adbf" category="section-title">Project for Cloud Volumes ONTAP の略</block>
   <block id="a4ccd00c9229d2a8510153f89f2a576a" category="paragraph">Cloud Volumes ONTAP は、コネクタと同じプロジェクトに存在することも、別のプロジェクトに存在することもできます。Cloud Volumes ONTAP を別のプロジェクトに配置するには、まずコネクタサービスアカウントとその役割をそのプロジェクトに追加する必要があります。</block>
   <block id="8bee474fd085c11334ab13b9c1a78d9e" category="inline-link-macro">サービスアカウントの設定方法について説明します</block>
-  <block id="2846d36d7005f43bc3cc15749f932ff7" category="list-text"><block ref="2846d36d7005f43bc3cc15749f932ff7" category="inline-link-macro-rx"></block></block>
   <block id="4ec920ccbe2fc417ccd7dcd957eb9653" category="inline-link">Google CloudにCloud Volumes ONTAP を導入する方法とプロジェクトを選択する方法について説明します</block>
   <block id="486db18d2aa67b603506d28b5425dc88" category="list-text"><block ref="486db18d2aa67b603506d28b5425dc88" category="inline-link-rx"></block></block>
   <block id="389368f5d98ef09e3dca047f7f72f270" category="doc">BlueXPアカウントの詳細をご確認ください</block>
@@ -550,21 +461,13 @@
   <block id="895677275494125470d7cc56c3ce30f8" category="paragraph">アカウント 2 には 2 つのコネクタがあります。これは、システムが別々の地域にある場合や、別々のクラウドプロバイダにある場合に発生することがあります。</block>
   <block id="95a00cde96c8528d426e00f8e01264a4" category="inline-image-macro">2つのBlueXPアカウントを示した図。それぞれに複数のワークスペースとワークスペース管理者が関連付けられています。</block>
   <block id="27ce19ec81ea0efd6efd2acc34163a86" category="paragraph"><block ref="27ce19ec81ea0efd6efd2acc34163a86" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5fe4634900cc0854715c8b51db1cab99" category="summary">わずか数ステップでBlueXPを制限モードで開始できます。</block>
   <block id="7fc084d4fa6d37ac9aaea34d698aece0" category="doc">制限モードのBlueXPのクイックスタート</block>
   <block id="d82a01de8fc043d47b50211e2437d663" category="paragraph">環境を準備し、コネクタを導入し、BlueXPにサブスクライブすることで、制限モードでBlueXPを開始できます。</block>
   <block id="b6ff2c8bfe1c4f67a13521ec6fe0231d" category="list-text">ターゲットネットワークへのアクセス、手動インストールの場合はアウトバウンドインターネットアクセス、日常的なアクセスの場合はアウトバウンドインターネットを提供するネットワークをセットアップします。</block>
   <block id="78ea35a287bddf52a43cb9034e7c3ebf" category="list-text">クラウドプロバイダで権限を設定して、導入後にコネクタインスタンスにそれらの権限を関連付けることができるようにします。</block>
-  <block id="b2d5845a39e791f67d4f1e2a2bd6826c" category="paragraph"><block ref="5af38a4dbfddabab478874ff5528e9ce" category="inline-link-macro-rx"></block>。</block>
   <block id="54b3702a411bfa4eec461cd069266198" category="list-text">クラウドプロバイダのマーケットプレイスから、または手動で独自のLinuxホストにソフトウェアをインストールして、コネクタをインストールします。</block>
   <block id="93447552f0f8eecf9f81fb372861ee85" category="list-text">以前に設定した権限をBlueXPに付与します。</block>
-  <block id="6b1e2b09a276e7dcffea8c19d9185610" category="paragraph"><block ref="fcdd4a186ae0bbc3cd105bf54cbd32ef" category="inline-link-macro-rx"></block>。</block>
-  <block id="1d8ac4f2ff6fdebc68cac1152b79c0e9" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> BlueXPにサブスクライブします</block>
   <block id="870a261de0f18a65c1ce93a292943250" category="paragraph">クラウドプロバイダのマーケットプレイスからBlueXPにサブスクライブして、BlueXPサービスの料金を時間単位（PAYGO）または年間契約でお支払いください。</block>
-  <block id="26cb38ef7d9165cb6c60daa782ddf448" category="inline-link-macro">BlueXPの購読方法をご確認ください</block>
-  <block id="81c3313ea95d8c6400b4938a484d7c52" category="paragraph"><block ref="6def5e6c9f414f70f3dcb72b211d5120" category="inline-link-macro-rx"></block>。</block>
-  <block id="26b956db62dfb9e45d6132f9e41a9d73" category="summary">SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。Webブラウザを実行しているマシンは、これらのエンドポイントに接続されている必要があります。</block>
-  <block id="74f7ea1e969abd8d8ec017d333bead7e" category="doc">BlueXPコンソールにユーザがアクセスできるようにネットワークを準備</block>
   <block id="ca514cc7f92949257244bf6c32d47ea3" category="cell">\https://console.bluexp.netapp.com
 \https://*.console.bluexp.netapp.com</block>
   <block id="7926588c37032e15e3fdc15831f4bbb5" category="cell">BlueXPのWebベースのコンソールを使用すると、WebブラウザからこれらのURLにアクセスできます。</block>
@@ -595,9 +498,6 @@
   <block id="abc66ca669cfbd9be590874c67e8d7ef" category="cell">\https://widget.intercom.io</block>
   <block id="30fe214f0e8ecaf9b895a0137cad8ce9" category="cell">製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">関連リンク</block>
-  <block id="96b84799107df797728622ab026d748b" category="summary">コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。コネクタを手動でインストールする場合は、以下の要件をホストが満たしていることを確認する必要があります。</block>
-  <block id="d5512feab068baeeddb3ea0cf10f8cca" category="doc">AWSのインストールに必要なコネクタホストの要件を確認します</block>
-  <block id="512bfa3bd93d6398b4e5010a77b6b397" category="paragraph">BlueXPまたはAWS Marketplaceからコネクタを導入する場合、イメージには必要なOSとソフトウェアコンポーネントが含まれています。</block>
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">専用ホスト</block>
   <block id="3e54bf758f50b15d709edd166d8bf82b" category="list-text">他のアプリケーションと共有しているホストでは、このコネクタはサポートされていません。専用のホストである必要があります。</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">サポートされているオペレーティングシステム</block>
@@ -617,7 +517,6 @@
   <block id="38522fbf43585538a7a55ea25460e779" category="list-text">AWS EC2 インスタンスタイプ</block>
   <block id="3cdc0b8cb855b1fb9c206c3d696b6c9e" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.xlarge をお勧めします。</block>
   <block id="6cd56a4cc4ddbbfd2bc9d57de5d788aa" category="list-text">キーペア</block>
-  <block id="58b11c8ddf3d2ba8e39859b658696729" category="list-text">BlueXPまたはAWS Marketplaceからコネクタを作成する場合は、インスタンスで使用するEC2キーペアを選択する必要があります。</block>
   <block id="0a772cdeecb207bdf7ffd5850a8d59bd" category="list-text">/opt のディスクスペース</block>
   <block id="ad1a9191fe9f7641b2a07a347aa78359" category="list-text">100GiB のスペースが使用可能である必要があります</block>
   <block id="12e2060dbbd01e288c66757f239fb192" category="list-text">/var のディスク領域</block>
@@ -805,13 +704,10 @@
   <block id="9d7731be7d930a1152dbf528e9a20972" category="inline-image-macro">NSSクレデンシャルとONTAP クレデンシャル、およびアクションメニューから[Update credentials]と[Delete credentials]を選択する機能を示すスクリーンショット</block>
   <block id="a4ecb2be579cb0376c3938220c6db5bf" category="paragraph"><block ref="a4ecb2be579cb0376c3938220c6db5bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="64286300f4b2d20b21751b700c210a03" category="paragraph">クレデンシャルが更新されます。変更は、ONTAP クラスタ、デジタルアドバイザ、または[ケース管理]ページにアクセスすると反映されます。</block>
-  <block id="3830e9d547eafbb28fff654404e029b8" category="doc">Azureのインストールに必要なコネクタホストの要件を確認します</block>
-  <block id="d76ad2e59fd7508a5cd6b41d8471a6a5" category="paragraph">BlueXPまたはAzure Marketplaceからコネクタを導入する場合、イメージには必要なOSとソフトウェアコンポーネントが含まれています。</block>
   <block id="893ba5865a015de9dc77765cdf7184e3" category="list-text">Azure VM サイズ</block>
   <block id="a6daae7da601d04e5cdb89d612a8d9b1" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。DS3 v2 を推奨します。</block>
   <block id="ae140c7a1104ac99f1a01b18e5dc3ed8" category="summary">BlueXPにはWebベースのコンソールからアクセスできます。BlueXPの利用を開始するには、まず既存のNetApp Support Site クレデンシャルを使用するか、ネットアップクラウドログインアカウントを作成して登録します。</block>
   <block id="156c302d186fc36d9d944c5d74b971af" category="doc">BlueXPにサインアップします</block>
-  <block id="213954d7bdaa5b2d9eab4ee897a935d3" category="paragraph-title">サインアップオプション</block>
   <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">次のいずれかのオプションを使用して、BlueXPにサインアップできます。</block>
   <block id="19df8bb4b5a805b23aeac731605bdf21" category="list-text">既存のNetApp Support Site （NSS）のクレデンシャルを必要に応じて変更</block>
   <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">Eメールアドレスとパスワードを指定してネットアップクラウドにログインします</block>
@@ -837,10 +733,6 @@
   <block id="35065a906fcb04c8b9fad94c74ed75b6" category="paragraph">以下のカスタムロールには、Azureネットワーク内のリソースとプロセスを管理するためにConnectorで必要となる権限が含まれています。</block>
   <block id="770735bf1cfd4e882dd9ac93b90271d3" category="paragraph">BlueXPからコネクタを直接作成すると、BlueXPは自動的にこのカスタムロールをコネクタに適用します。</block>
   <block id="83b9ca4036ac15d5479b1b6947eb5d6b" category="paragraph">Azure MarketplaceからConnectorを導入する場合、またはLinuxホストにConnectorを手動でインストールする場合は、カスタムロールを自分で設定する必要があります。</block>
-  <block id="30f6a1baa5718e2bd568d32242a032a4" category="inline-link-macro">Azureでコネクタをインストールするための権限を設定する（標準モード）</block>
-  <block id="f836e26148c902c19370157a7a01cb05" category="list-text"><block ref="f836e26148c902c19370157a7a01cb05" category="inline-link-macro-rx"></block></block>
-  <block id="590dd9fb05ebafe0979b2dc3256d95d2" category="inline-link-macro">オンプレミスでのコネクタインストールの権限の設定（標準モード）</block>
-  <block id="d9027b224a5d127be0b2843b650e4806" category="list-text"><block ref="d9027b224a5d127be0b2843b650e4806" category="inline-link-macro-rx"></block></block>
   <block id="92ec95b8916ebc493b6546010073c81f" category="section-title">Azure権限の使用方法</block>
   <block id="815957003313e5f9581718376c2c472f" category="paragraph">以降のセクションでは、各BlueXPサービスでの権限の使用方法について説明します。この情報は、企業のポリシーによって、必要な場合にのみアクセス許可が指定されるように指定されている場合に役立ちます。</block>
   <block id="e400a17015f6033633700b6ba11625ba" category="list-text">Microsoft.NetApp/netAppAccounts/read</block>
@@ -1018,14 +910,10 @@
   <block id="176944a9db0702558233e827d21e2f80" category="section-title">2023年1月5日</block>
   <block id="0b4c13076b9b5e7ba5fa39333693ef77" category="paragraph">JSONポリシーに次の権限が追加されました。</block>
   <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">この権限はCloud Volumes ONTAP の導入に必要です。</block>
-  <block id="0cbc2cd2912b2d177ad6561f8eecd314" category="summary">BlueXPのWebベースのコンソールから直接コネクタを作成するか、gcloudを使用するか、独自のLinuxホストにソフトウェアをインストールします。</block>
   <block id="0876dbe9a324b66ea7ac9a411751f1e7" category="doc">Google Cloud でコネクターを作成します</block>
   <block id="d239ca21252855f4ecd1674b876a53d5" category="list-text">コネクタVMのコネクタとサービスアカウントを作成するために必要なGoogle Cloud権限。</block>
-  <block id="5720169312f71a133a573e04d4adffa5" category="inline-link-macro">Google Cloudの権限を設定する方法について説明します</block>
-  <block id="d6995c4749dad4283009bf997f8c6591" category="paragraph"><block ref="d6995c4749dad4283009bf997f8c6591" category="inline-link-macro-rx"></block></block>
   <block id="482049a2c27830202c448327d329f378" category="list-text">ネットワーク要件を満たすVPCとサブネット。</block>
   <block id="b66539d8d1c1e3f97e751ce32b201932" category="inline-link-macro">ネットワーク要件について説明します</block>
-  <block id="1e2c4b5ca22d40c55b8d98ccd5e1ba09" category="paragraph"><block ref="1e2c4b5ca22d40c55b8d98ccd5e1ba09" category="inline-link-macro-rx"></block></block>
   <block id="5ec1fdc717a09349991e1304c5bd757a" category="list-text">クラウドプロバイダとして * Google Cloud Platform * を選択します。</block>
   <block id="1fbc47392baedd9a8a771f5372aa43d4" category="list-text">[*コネクターの配置（Deploying a Connector *）]ページで、必要なものについて詳しく確認してください。次の 2 つのオプションがあります。</block>
   <block id="12e9d88275170959cb7167c4c85f6c77" category="list-text">プロンプトが表示されたら、 Google アカウントにログインします。このアカウントには、仮想マシンインスタンスを作成するために必要な権限が付与されている必要があります。</block>
@@ -1070,29 +958,8 @@
   <block id="4d342acc2474b2bd9afcbf4cc2be732e" category="paragraph"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block>。</block>
   <block id="aeb47633d22edfd2e068571b631d2d5e" category="paragraph">これで、コネクタのインストールとBlueXPアカウントでのセットアップが完了しました。</block>
   <block id="31b69cff9901ca80c50a1d680a9b258a" category="paragraph">Webブラウザを開き、にアクセスします<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> BlueXPでコネクタの使用を開始します</block>
-  <block id="85f6ae158ca09afed76462ea1cc6c83a" category="paragraph"><block ref="11212461cb0b46a76db0f4428a0c264d" category="inline-link-macro-rx"></block>。</block>
   <block id="b630649167e22ae03b6b2263ca0a2200" category="summary">NetApp BlueXPの利用を開始すると、オンプレミス環境とクラウド環境にわたるデータの構築、保護、ガバナンスを開始できます。セットアップが完了すると、BlueXPアカウント、コネクタ、クラウドプロバイダアカウントなどを管理できます。</block>
   <block id="7390f55a27add10ddc1a6c765b8a67c7" category="doc">BlueXPのセットアップと管理に関するドキュメント</block>
-  <block id="d27c20ffdc2a86f7372d5fe1b59e028f" category="summary">ネットワークの設定、ホストの準備、クラウド権限の準備などを行い、オンプレミスにコネクタを作成します。</block>
-  <block id="98d9ada7707df3ce65e62a758c63ad03" category="doc">オンプレミスでコネクタを作成するためのクイックスタート</block>
-  <block id="e071ab81a4783f903994f78f7a641a70" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> ネットワークをセットアップする</block>
-  <block id="f50c4ba17348a5e0542232d8d75e1596" category="list-text">コネクタをインストールするネットワークの場所</block>
-  <block id="c14a3c27c9b99c1e6025fb5f221fbafb" category="paragraph"><block ref="aa525e3e69894e1f6b676c167a2560ba" category="inline-link-macro-rx"></block>。</block>
-  <block id="a07cb7fb5ce9135a8773e8bea7482805" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> ホストの要件を確認します</block>
-  <block id="00d715a985d0831f7e7d597720d762bd" category="paragraph">コネクタソフトウェアは、特定の要件を満たすホストで実行する必要があります。主な要件は次のとおりです。</block>
-  <block id="8c50cd4574263791cd459fcd335396e6" category="paragraph"><block ref="15bac65475627557eec572f482a43236" category="inline-link-macro-rx"></block>。</block>
-  <block id="5c0c84fefcd4417cfbedf9fbf4562eed" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> クラウド権限を設定</block>
-  <block id="4a47d3779eb0597214517a7843412f90" category="paragraph">BlueXPを使用してクラウド内のストレージを管理できるように、クラウドプロバイダの権限を設定します。</block>
-  <block id="fbb72fb8d60e4d1c40aae004e0fda275" category="list-text">* AWS *：IAMポリシーを作成し、IAMユーザに適用します。インストールが完了したら、そのIAMユーザのアクセスキーをBlueXPに提供する必要があります。</block>
-  <block id="a77ba34b0a2055dcde170a463c81ed45" category="list-text">*Azure*:必要な権限を含むサービスプリンシパルをAzure Active Directoryで設定します。インストールが完了したら、サービスプリンシパルのクレデンシャルをBlueXPに指定する必要があります。</block>
-  <block id="b45b5e59066b1e0ed7a2e8bc64451585" category="paragraph">コネクタがオンプレミスにインストールされている場合、Google Cloudのストレージやデータを管理することはできません。Google Cloudに存在するストレージやデータを管理するには、コネクタをGoogle Cloudにインストールする必要があります。</block>
-  <block id="b9522c30c371a6f71fa863a0ba65a525" category="paragraph"><block ref="39f16d528eb496008e05d456b0ec0f27" category="inline-link-macro-rx"></block>。</block>
-  <block id="8d24d74cf26c152a4e13d16c63d70d11" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> コネクタソフトウェアをインストールします</block>
-  <block id="d8c00445d6ad97aca54ad8782abe7b31" category="paragraph">からConnectorソフトウェアをダウンロードします<block ref="ecafab118b2af7ac4f48713d9a2b867a" category="inline-link-rx"></block> インストールスクリプトを実行します。</block>
-  <block id="86d9b1db9e7d84920c7d3da427153240" category="paragraph"><block ref="5c707091415a38351716e02387f1f80a" category="inline-link-macro-rx"></block>。</block>
-  <block id="b8f9d14087253cebc31c83b42a72cbc3" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> BlueXPに権限を付与する</block>
-  <block id="a7b114f476970595307dd92a3e0f6be2" category="paragraph">コネクタのインストールとセットアップが完了したら、クラウドクレデンシャルを追加して、AWSまたはAzureで操作を実行するために必要な権限をBlueXPに付与する必要があります。</block>
-  <block id="cf2d38112597f0d44d97de0c4cca9f4c" category="paragraph"><block ref="4c365cb758b6ce5a87327aef44778443" category="inline-link-macro-rx"></block>。</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">ネットアップでは、さまざまな方法でBlueXPをサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">ヘルプを表示します</block>
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">ネットアップでは、BlueXPとその クラウド サービス をさまざまな方法でサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
@@ -1158,9 +1025,6 @@
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*ケースノートの更新*：問題の詳細を入力するか、*ファイルのアップロード*を選択して最大5つのファイルを添付します。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。</block>
   <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4453e7502515d4db1f3a4a1c28c48f13" category="summary">コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。コネクタを手動でインストールする場合は、以下の要件をホストが満たしていることを確認する必要があります。コネクタを取り付ける前に、ホストがこれらの要件を満たしていることを確認してください。</block>
-  <block id="eb85167d5f66600c122d2c7e42c7ce1e" category="doc">Google Cloudのインストールに必要なコネクタホストの要件を確認します</block>
-  <block id="5382927625de2bb1d09d5cd54f9c0363" category="paragraph">BlueXPからまたはglcoudを使用してコネクタを導入する場合、イメージには必要なOSとソフトウェアコンポーネントが含まれています。</block>
   <block id="35ba60210572b9248078c07c4079b9ab" category="list-text">Google Cloudマシンのタイプ</block>
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。</block>
   <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">シールドVM機能</block>
@@ -1169,7 +1033,6 @@
   <block id="1ab5193f89cf79df51fd4138318923ac" category="doc">Azure のクレデンシャルと権限</block>
   <block id="08a6159f6d9d986210470d2ab6dff166" category="section-title">Azure の初期クレデンシャル</block>
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Azure の Connector 導入ポリシー</block>
-  <block id="3944b94e332ebaaeeb1f75ea267f7687" category="paragraph">BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます <block ref="215c62f8f7b8f0001687c60d93a1178c" category="inline-link-macro-rx"></block>。</block>
   <block id="9cbe008fc71c240a16ab125b2873fe44" category="inline-link-macro">BlueXPがどのように権限を使用しているかを確認します</block>
   <block id="1985b326c07cdcb2a260ae0c0c6fde8d" category="inline-link">システムによって割り当てられた管理 ID</block>
   <block id="d47be244f383106c84a24b1e4ba4fea6" category="paragraph">BlueXPがAzureにConnector仮想マシンを導入すると、が有効になります<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> 仮想マシンで、カスタムロールを作成して仮想マシンに割り当てます。このロールは、そのAzureサブスクリプション内でリソースとプロセスを管理するために必要な権限をBlueXPに提供します。 <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>。</block>
@@ -1195,9 +1058,7 @@
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">オンプレミス展開の場合、コネクタの管理IDを設定することはできませんが、サービスプリンシパルを使用して権限を提供することはできます。</block>
   <block id="53c512e9599c71e1a585d636a5229820" category="list-text">標準モード</block>
   <block id="4275ae61422c34253a59329bd20a0449" category="inline-link-macro">Azure権限を設定する</block>
-  <block id="c088522f0e4ffe177c00c48412e66bc7" category="list-text"><block ref="c088522f0e4ffe177c00c48412e66bc7" category="inline-link-macro-rx"></block></block>
   <block id="12f7970cff397ea2f0846f3904f8e00f" category="inline-link-macro">オンプレミス環境のクラウド権限を設定</block>
-  <block id="252d22e530897961c08d91b185bf8a2a" category="list-text"><block ref="252d22e530897961c08d91b185bf8a2a" category="inline-link-macro-rx"></block></block>
   <block id="b3a595111956cd206b5fcd5e77bee895" category="summary">BlueXPにサインアップすると、組織のアカウントを作成するように求められます。このアカウントだけが必要な場合もありますが、ビジネスで複数のアカウントが必要な場合は、Tenancy APIを使用して追加のアカウントを作成する必要があります。</block>
   <block id="6c45b1e5876b4865e0208a9ade3da041" category="doc">BlueXPアカウントをもう1つ作成します</block>
   <block id="6eb6b03d63d198bc73be4828f333e30e" category="paragraph">次のAPI呼び出しを使用して、追加のBlueXPアカウントを作成します。</block>
@@ -1208,17 +1069,7 @@
   <block id="07999df8a3fec91dcf6daa7e52777cc7" category="list-text"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block></block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link-macro">BlueXPの導入モードについて説明します</block>
   <block id="d8c1ee023ea7a4705048e3464cfcb854" category="list-text"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block></block>
-  <block id="a8c09a74cb45bd11998b4a98f8f88973" category="summary">データとストレージインフラの管理に必要な権限を使用してコネクタを導入できるように、AWSで権限を設定します。権限の設定方法と付与方法は、使用するインストールオプションによって異なります。</block>
   <block id="2d3fc94cd0898448a15e6e05f4098b6f" category="doc">AWS権限を設定</block>
-  <block id="e683a5094eb71367e8a15ad324b46379" category="paragraph">次のインストールオプションから選択できます。</block>
-  <block id="c937fc05f2955ef401888c1c0bf5bd2d" category="list-text">* BlueXPからインストール*：BlueXPがAWSで認証してインスタンスを導入できるように権限を設定します。コネクタインスタンスの権限は、導入時にBlueXPによって自動的に設定されます。</block>
-  <block id="60b59d59647a26f17a4decb8cfe7b702" category="inline-xref">ステップバイステップの手順を確認します</block>
-  <block id="d5786d083ce98b15ceef7f3c58f9e8a9" category="paragraph"><block ref="849ef99058f6e57ce49b431e7af82013" category="inline-xref-macro-rx"></block>。</block>
-  <block id="cf640a92a906bcdb78162c5786b4d3de" category="list-text">* AWS Marketplaceからインストール*：コネクタインスタンスに関連付けることができるIAMロールを設定します。</block>
-  <block id="56571bd386deaec7f43f209bd0df0766" category="paragraph"><block ref="cc26fd4b83c69a3c3917b2a2a6c3f380" category="inline-xref-macro-rx"></block>。</block>
-  <block id="df7114b91c38b799f7e55c741aae2b74" category="list-text">*手動インストール*：IAMポリシーを作成し、IAMロールまたはIAMユーザに適用します。</block>
-  <block id="d427acae4bc956af9fed6c72fb68b12a" category="paragraph"><block ref="b2113e9e3a9e0e0062402d34fe3bdc2d" category="inline-xref-macro-rx"></block>。</block>
-  <block id="8fa94e457ddf7ae7a3491158af3228e0" category="section-title">BlueXPからコネクタを作成するための権限を設定します</block>
   <block id="92c5959c8282fd63c3afcbd1c9b13f51" category="paragraph">BlueXPでは、VPCにConnectorインスタンスを導入する前にAWSで認証する必要があります。次のいずれかの認証方式を選択できます。</block>
   <block id="61f21c125c1220d8643bea1729345e36" category="list-text">必要な権限を持つIAMロールをBlueXPに割り当てます</block>
   <block id="4964e9eef6df2fe316a2618afd8cd963" category="list-text">必要な権限を持つIAMユーザにAWSアクセスキーとシークレットキーを指定します</block>
@@ -1239,29 +1090,23 @@
   <block id="8bcbf62e98416780ffe2095559aba87a" category="list-text">作成したポリシーを選択します。</block>
   <block id="c34ab4140439856fda51871a0f20b53c" category="list-text">IAMユーザのアクセスキーとシークレットキーがあることを確認します。</block>
   <block id="faeb6083a2ae4785925222b65d1d968f" category="paragraph">これで、必要な権限を持つIAMロールまたは必要な権限を持つIAMユーザが作成されました。BlueXPからコネクタを作成するときに、ロールまたはアクセスキーに関する情報を指定できます。</block>
-  <block id="59d21ffd9004e044bf10a41bde94377c" category="section-title">AWS Marketplaceからデプロイする際にコネクタの権限を設定します</block>
   <block id="c0b444d12ee4e633b23b686f19a32aaa" category="list-text">残りの手順を完了してポリシーを作成します。</block>
   <block id="b905fd344340f966488111072eda83d7" category="paragraph">使用するBlueXPサービスによっては、2つ目のポリシーの作成が必要になる場合があります。</block>
   <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。</block>
   <block id="caab423eeeabf261321ce00d10ad838a" category="list-text">[AWS service]&gt;[EC2]*を選択します。</block>
   <block id="0543e6140cb57d05d778d01c055f1dc0" category="list-text">残りの手順を完了してロールを作成します。</block>
   <block id="97f503ba18358d479d025475ba069bec" category="paragraph">これで、AWS Marketplaceからの導入時にEC2インスタンスに関連付けることができるIAMロールが作成されました。</block>
-  <block id="4d2d01568f9b93e826d4d27986238904" category="section-title">手動インストール後に割り当てる権限を設定します</block>
   <block id="168b098cb315f9dde326e5fcaa738ac3" category="list-text">オプション1：IAMポリシーを作成し、EC2インスタンスに関連付けることができるIAMロールにポリシーを関連付けます。</block>
-  <block id="330d1c128dd39c2609ba6f24835a6934" category="list-text">オプション2：必要な権限を持つIAMユーザのAWSアクセスキーをBlueXPに提供します。</block>
   <block id="09c9c82c723e5b567f845ec916d3a4d3" category="inline-link-macro">コネクタのIAMポリシー</block>
   <block id="79227a5098f7cf00b9628d1590ac3d54" category="list-text">[*json]*を選択し、の内容をコピーして貼り付けます <block ref="d0403cae0524415841c71c1fdc91e454" category="inline-link-macro-rx"></block>。</block>
   <block id="683ec591d5df56209a71ab6f5bd3f041" category="inline-link-macro">コネクタのIAMポリシーの詳細については、こちらを参照してください</block>
   <block id="43f377176ce45b78586869d6392c609c" category="paragraph">標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。 <block ref="60507836418f54f0b2b646fcefa2cf2c" category="inline-link-macro-rx"></block>。</block>
-  <block id="c0675f0ac53a37bf3be2b775afed6c26" category="inline-link-macro">これらの権限をBlueXPに付与する方法について説明します</block>
-  <block id="85a77afe8b3078d236de8d253372d1c2" category="paragraph">これで、コネクタのインストール後にEC2インスタンスに関連付けることができるIAMロールが作成されました。 <block ref="8a294bb0a6b1478a82e1cbe37e4b7e40" category="inline-link-macro-rx"></block>。</block>
   <block id="cc8a9437947f6931749101ef3ca06072" category="list-text">IAMユーザにポリシーを適用します。</block>
   <block id="001eb8189b805b3dbf012a0955d8682f" category="inline-link">AWS のドキュメント：「 Creating IAM Roles</block>
   <block id="f470dc03b4486f269b32bef6a5d721d1" category="list-text"><block ref="f470dc03b4486f269b32bef6a5d721d1" category="inline-link-rx"></block></block>
   <block id="ae447524ca7a094fbd322687e0154e93" category="inline-link">AWS のドキュメント：「 Adding and Removing IAM Policies</block>
   <block id="7c04a15d03a827f3e932f6ea885fb875" category="list-text"><block ref="7c04a15d03a827f3e932f6ea885fb875" category="inline-link-rx"></block></block>
   <block id="59c8a7b2e005ee251a6301c0ca1f23b3" category="list-text">コネクタのインストール後にBlueXPに追加できるアクセスキーがユーザに割り当てられていることを確認します。</block>
-  <block id="b320bf58ccfe757487e62843428e1bc2" category="paragraph">これで、必要な権限とBlueXPへのアクセスキーを持つIAMユーザが作成されました。 <block ref="8a294bb0a6b1478a82e1cbe37e4b7e40" category="inline-link-macro-rx"></block>。</block>
   <block id="9370643895ad52c4da3ddf50c1e24a82" category="summary">アカウント管理者、ワークスペース管理者、コンプライアンスビューア、および SnapCenter 管理者の各ロールは、ユーザーに特定の権限を提供します。BlueXPアカウントに新しいユーザを関連付けるときに、これらのロールのいずれかを割り当てることができます。</block>
   <block id="a5cd3ed116608dac017f14c046ea56bf" category="doc">ロール</block>
   <block id="706c30f817a6d965f23bc2798759eb15" category="paragraph">Compliance Viewerロールは、BlueXPの分類への読み取り専用アクセス用です。</block>
@@ -1289,14 +1134,11 @@
   <block id="efb23fed841e93229b5eba2d12143dd0" category="list-text"><block ref="efb23fed841e93229b5eba2d12143dd0" category="inline-link-macro-rx"></block></block>
   <block id="5cc33db7bd831802e558ae70eb573d98" category="inline-link-macro">BlueXPアカウントでのワークスペースとユーザの管理</block>
   <block id="9eda901ca4a8d939f48fdc3e1139b8d2" category="list-text"><block ref="9eda901ca4a8d939f48fdc3e1139b8d2" category="inline-link-macro-rx"></block></block>
-  <block id="c476ad33fb1b26ddb19ee3a220d86c1d" category="summary">AWSまたはAzureでBlueXPサービスをオンプレミスコネクタで使用する場合は、インストール後にコネクタにクレデンシャルを追加できるように、クラウドプロバイダで権限を設定する必要があります。</block>
   <block id="45f5c7b6248438f849cf619c647c63e4" category="paragraph">AWSまたはAzureでBlueXPサービスをオンプレミスコネクタで使用する場合は、インストール後にコネクタにクレデンシャルを追加できるように、クラウドプロバイダで権限を設定する必要があります。</block>
-  <block id="7a058a34f23a2bf7156c66de4e989624" category="admonition">Google Cloudではない理由コネクタがオンプレミスにインストールされている場合、Google Cloudでリソースを管理することはできません。Google Cloudに存在するリソースを管理するには、コネクタをGoogle Cloudにインストールする必要があります。</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="open-title">AWS</block>
   <block id="e1ef579b405a3d1b9ab7d84e56f110d3" category="paragraph">コネクタをオンプレミスにインストールする場合は、必要な権限を持つIAMユーザのアクセスキーを追加して、BlueXPにAWS権限を設定する必要があります。</block>
   <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">コネクタがオンプレミスにインストールされている場合は、この認証方法を使用する必要があります。IAMロールは使用できません。</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">これで、必要な権限を持つIAMユーザのアクセスキーが作成されました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。</block>
-  <block id="46c117d35b7e35d840f713eed7c57cba" category="paragraph"><block ref="4d598d4763799d9bfff84dccd242be80" category="inline-link-macro-rx"></block>。</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="open-title">Azure</block>
   <block id="0180cc84ac01ea354335e5e4c42027db" category="paragraph">コネクタをオンプレミスにインストールする場合は、Azure Active Directoryでサービスプリンシパルを設定し、BlueXPに必要なAzureクレデンシャルを取得して、BlueXPにAzure権限を付与する必要があります。</block>
   <block id="ac572c9e1fee2fbf598102a8524251e8" category="list-title">ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します</block>
@@ -1359,18 +1201,14 @@
   <block id="62089e33eb517da2e77f2dbae303746e" category="paragraph">これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。</block>
   <block id="b6bbae5bdf4c539603a70f4db19e6b04" category="summary">コネクタをオンプレミスにインストールし、ログインしてBlueXPアカウントと連携するように設定します。</block>
   <block id="1fb392a56edc456b1bc3eddb57b0906b" category="doc">コネクタをオンプレミスにインストールしてセットアップします</block>
-  <block id="7c521ef00b3568ffec78f7d18b3f23a1" category="section-title">コネクタを取り付ける</block>
   <block id="430c29468d032364c0f94cffe3c8a10b" category="paragraph">コネクタソフトウェアをオンプレミスの既存のLinuxホストにダウンロードしてインストールします。</block>
   <block id="e832abccfbda1e1df2db47f59705c74c" category="paragraph">これでコネクタがインストールされました。プロキシサーバを指定した場合は、インストールの終了時にConnectorサービス（occm）が2回再起動されます。</block>
-  <block id="32a79a3da73e9b7dab502ea9e60bf1a5" category="section-title">コネクタをセットアップします</block>
-  <block id="9679c37d1ece85e4705ecd886aca356e" category="paragraph">サインアップまたはログインして、アカウントで使用できるようにコネクタを設定します。</block>
   <block id="8dae847f59a6afd8d7e49b7b7654d0eb" category="list-text">Web ブラウザを開き、次の URL を入力します。</block>
   <block id="a28c11d82be2375d6506ed209153e0c1" category="paragraph">_ipaddress _ には、ホストの設定に応じて、 localhost 、プライベート IP アドレス、またはパブリック IP アドレスを指定できます。たとえば、パブリック IP アドレスのないパブリッククラウドにコネクタがある場合は、コネクタホストに接続されているホストからプライベート IP アドレスを入力する必要があります。</block>
   <block id="2b7648ae4507d851df87a08114c2876e" category="list-text">サインアップまたはログインします。</block>
   <block id="41adb69bcb6f24f8432b590170f61d23" category="list-text">ログインしたら、BlueXPをセットアップします。</block>
   <block id="c0112364e46bcec7ed4460a6be7ead53" category="paragraph">標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。(また、コネクタがオンプレミスにインストールされている場合、制限モードはサポートされません)。</block>
   <block id="dcdd03125bee39fb6c8e9aa5e0bfcc7f" category="paragraph">これで、先ほどインストールしたコネクタでBlueXPがセットアップされました。</block>
-  <block id="a2d7243b3053c6c5842cf1d530d3a09f" category="paragraph"><block ref="fbbff0e39cb3f5e5617a1207bee6d992" category="inline-link-macro-rx"></block>。</block>
   <block id="773752fa8722d25b5cb88d771e3c6459" category="summary">Google CloudにConnectorをインストールすると、BlueXPは、ConnectorがインストールされているGoogleアカウントにあるGoogle Cloudバケットに関する情報を自動的に検出できます。Google Cloud Storage作業環境がCanvasに追加され、この情報を表示できます。</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="doc">Google Cloud Storageバケットを表示します</block>
   <block id="e952b1c060b2dc1be5663131351e06a5" category="paragraph">Google CloudにConnectorをインストールすると、BlueXPは、ConnectorがインストールされているGoogleアカウントにあるGoogle Cloud Storageバケットに関する情報を自動的に検出できます。Google Cloud Storage作業環境がCanvasに追加され、この情報を表示できます。</block>
@@ -1448,8 +1286,6 @@
   <block id="b8502b99c36d378968d3d20a7561e523" category="list-text">また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。</block>
   <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="list-text">必要に応じて、IAMを使用してIAMポリシーを制限できます<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 要素（Element）：<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
   <block id="5e7e2fc7d83311cfc7311fe5dec48480" category="list-text">これらのポリシーの使用手順については、次のページを参照してください。</block>
-  <block id="0e056226cf0c491e9f8541fa39bd442d" category="inline-link-macro">AWSでコネクタをインストールするための権限を設定する（標準モード）</block>
-  <block id="ba958418e2417e3848579844570a221c" category="list-text"><block ref="ba958418e2417e3848579844570a221c" category="inline-link-macro-rx"></block></block>
   <block id="de16d176ab7c6c01a7ce45f2e7213194" category="paragraph">必要なポリシーを表示する地域を選択します。</block>
   <block id="222ddb2f355a49f64fb3858123f2b97b" category="example-title">標準領域</block>
   <block id="989bc9b22ba83d48ca30cdc4d2a0cbb8" category="paragraph">1つ目のポリシーでは、次のサービスに対する権限を付与します。</block>
@@ -1647,7 +1483,6 @@
   <block id="0d5d3e78379f182967772aab096aa6ac" category="list-text">インストーラを Linux ホストにコピーします。</block>
   <block id="482c8088b93a78c2682279e88617ca7f" category="list-text">インストールスクリプトを実行します。</block>
   <block id="d932ef50072ac5f51fe3242771618f19" category="paragraph">コネクタソフトウェアがインストールされます。BlueXPをセットアップできるようになりました。</block>
-  <block id="83a65995d5bbf52cd29819d6f528a030" category="section-title">BlueXPをセットアップします</block>
   <block id="45895bc4a56853b37f659008812720d2" category="paragraph">BlueXPコンソールに初めてアクセスすると、BlueXPをセットアップするように求められます。</block>
   <block id="0f35cbc7e00034a2864005fe2859c834" category="list-text">Web ブラウザを開き、と入力します<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block> _ipaddress_は、コネクタをインストールしたLinuxホストのIPアドレスです。</block>
   <block id="31f7ed39632ba5f8fbafe2e78de61213" category="paragraph">次の画面が表示されます。</block>
@@ -1661,10 +1496,8 @@
   <block id="d847fd38c43b77f685712342ed5f2a9a" category="list-text">作成した管理者ユーザを使用してBlueXPにログインします。</block>
   <block id="2fdca5f14e2fdf34df61ef1c2e18eae5" category="paragraph">これでコネクタがインストールされ、セットアップされました。</block>
   <block id="c4d9d6c8e652595e9d46970f56499783" category="inline-link-macro">コネクタをアップグレードする方法について説明します</block>
-  <block id="4f63de4c96383f078fb74fced1187f1d" category="section-title">BlueXPへの権限を付与します</block>
   <block id="fc0a94ce93071b9e22ad0f0a9d4c266d" category="paragraph">Cloud Volumes ONTAP 作業環境を作成する場合は、以前に設定したクラウド権限をBlueXPに付与する必要があります。</block>
   <block id="d8325912caeaba85aaefdb17eacaea8d" category="inline-link-macro">クラウドへのアクセス許可を準備する方法をご確認ください</block>
-  <block id="e4d92181a6b9e1e349eaf5a0a240c377" category="paragraph"><block ref="4ea10232c8418831e5c00dd7cd9f8a4a" category="inline-link-macro-rx"></block>。</block>
   <block id="29a14a9c6a2abcb61244f5ae4ef77363" category="open-title">AWS IAMロール</block>
   <block id="946bcf9e2dc7073d2ef1eb38d4046b2d" category="paragraph">BlueXPに、AWSでユーザに代わって操作を実行するために必要な権限が付与されました。</block>
   <block id="0c8a608ccb6d8462e37f1062502116c5" category="open-title">Azureロール</block>
@@ -1683,7 +1516,6 @@
   <block id="97911b3c54a4e826b34c1f79026316c5" category="doc">AWS のクレデンシャルと権限</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">AWS の初期クレデンシャル</block>
   <block id="09c2333ff15fa85698d91a366cce26dd" category="inline-link-macro">AWS 用のコネクタ導入ポリシー</block>
-  <block id="a581b6951e2b88c90d61a623574f78a4" category="paragraph">BlueXPからコネクタを展開する場合は、IAMロールのARNまたはIAMユーザのアクセスキーを指定する必要があります。使用する認証方式に、 Connector インスタンスを AWS に導入するための必要な権限がある必要があります。必要な権限は、に表示されます <block ref="bf48510c601c5b66c7e07c07a7613cba" category="inline-link-macro-rx"></block>。</block>
   <block id="858c852a1a4696d4e56295d4b4b0ea20" category="paragraph">BlueXPがAWSでコネクタインスタンスを起動すると、インスタンスのIAMロールとインスタンスプロファイルが作成されます。また、ポリシーを適用して、指定した AWS アカウント内のリソースやプロセスを管理する権限を Connector に提供します。 <block ref="9d2ef148313eb953f656b8efd4016e8c" category="inline-link-macro-rx"></block>。</block>
   <block id="87905dffb8ffacc115ce029071ecc843" category="inline-image-macro">BlueXPがConnectorをAWSアカウントに導入する様子を示す概念図。IAMポリシーは、BlueXPインスタンスに関連付けられているIAMロールに割り当てられている。</block>
   <block id="c234f29a81f1d5eb1c1e71c54ce5a0e7" category="paragraph"><block ref="c234f29a81f1d5eb1c1e71c54ce5a0e7" category="inline-image-macro-rx" type="image"></block></block>
@@ -1711,7 +1543,6 @@
   <block id="3551bffff472d33de9e274227109232f" category="paragraph">上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。AWS MarketplaceからAWSにコネクタを導入したり、独自のLinuxホストにコネクタソフトウェアを手動でインストールしたりすることもできます。</block>
   <block id="a4542ce435b67066671321f478dce8cc" category="paragraph">Marketplace を使用する場合も、アクセス許可は同じ方法で提供されます。IAM ロールを手動で作成して設定し、追加のアカウントに権限を付与するだけで済みます。</block>
   <block id="c369edb322a8885a983610e18f932d0c" category="paragraph">オンプレミス環境の場合、BlueXPシステム用のIAMロールを設定することはできませんが、AWSアクセスキーを使用して権限を指定することはできます。</block>
-  <block id="5e32b9a1412a74f0635b487d41937c4a" category="list-text"><block ref="5e32b9a1412a74f0635b487d41937c4a" category="inline-link-macro-rx"></block></block>
   <block id="70bfaa19a89e29bf0fc2b34b8f3150ba" category="section-title">AWS クレデンシャルを安全にローテーションするにはどうすればよいですか。</block>
   <block id="ee0f653772b33fb034bc7001a0c5e7a3" category="paragraph">前述のように、BlueXPではいくつかの方法でAWSクレデンシャルを提供できます。コネクタインスタンスに関連付けられたIAMロールでは、信頼されたアカウントでIAMロールを割り当てるか、AWSアクセスキーを提供します。</block>
   <block id="025a22cb479bbf0e83048a4ae6ffaaa0" category="paragraph">最初の2つのオプションでは、BlueXPはAWS Security Token Serviceを使用して、絶えず回転する一時的な資格情報を取得します。このプロセスはベストプラクティスであり、自動的に実行され、セキュリティが確保されています。</block>
@@ -2091,18 +1922,6 @@
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">(2021年2月9日).</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">サポートダッシュボードの強化</block>
   <block id="2a42bd1b25c8685af4b1b1d1ca8e4805" category="paragraph">サポートダッシュボードが更新され、NetApp Support Siteのクレデンシャルを追加できるようになりました。このクレデンシャルをサポートに登録してください。ネットアップサポートケースは、ダッシュボードから直接開始することもできます。[ ヘルプ ] アイコンをクリックして、 [*Support*] をクリックします。</block>
-  <block id="dd6d1a7ee88d575527e2bf81d4c7c6df" category="summary">BlueXPを使用してGoogle Cloudでデータとストレージインフラを管理できるように、Google Cloudの権限を設定します。</block>
-  <block id="e914e731bb669784ea88e9ad697407fb" category="doc">Google Cloud権限を設定する</block>
-  <block id="f00f3911e8c8254ce1ec4c23f1062879" category="paragraph">Google Cloudで権限を設定して、データとストレージインフラの管理に必要な権限でコネクタを導入できるようにします。</block>
-  <block id="53e6a36c2135867f33ff9540dc3277c2" category="paragraph">Google Cloudの権限は次のように設定する必要があります。</block>
-  <block id="89033d28e17545a21aadcebd8bcf792d" category="list-text">BlueXPまたはgcloudを使用してコネクタを作成する場合は、コネクタVMを導入するGoogle Cloudユーザの権限を設定する必要があります。</block>
-  <block id="61291d12552dccc5c384a1daeedf5c51" category="list-text">ロールを作成し、そのロールをサービスアカウントに付与することで、コネクタの権限を設定します。</block>
-  <block id="18db51c98524cca1980881946553937b" category="paragraph">このサービスアカウントをコネクタVMに関連付けて、BlueXPに必要な権限を付与します。</block>
-  <block id="8e791012319a6cc33e02b9f65f0eb71d" category="paragraph">構成によっては、次の手順も実行する必要があります。</block>
-  <block id="f78e7e80b2f4d00362b5fcc2740c2408" category="list-text">プロジェクト間でアクセス許可を設定する</block>
-  <block id="f25346a7c8bf8795443396442b179238" category="list-text">共有VPCの権限を設定します</block>
-  <block id="f511b131df5742575d4143124dccaf53" category="section-title">BlueXPまたはgcloudからコネクタを作成するための権限を設定します</block>
-  <block id="7c449783ef2d182bbc6b55e101fb3196" category="paragraph">BlueXPまたはgcloudを使用してコネクタを導入する前に、Google Cloudアカウントに正しい権限が割り当てられていることを確認する必要があります。</block>
   <block id="eb13228b7d3a81ef5fba30ba79924b80" category="list-text">Google Cloudでカスタムロールを作成します。</block>
   <block id="98b95b176d8b51112c2de8e58e9caf10" category="list-text">次の権限を含むYAMLファイルを作成します。</block>
   <block id="49cfb78048f1f3515483265f3346abf2" category="list-text">Google CloudからCloud Shellをアクティブ化します。</block>
@@ -2117,7 +1936,6 @@
   <block id="3570a09ca6fe90de537293b162a08dac" category="paragraph"><block ref="3570a09ca6fe90de537293b162a08dac" category="inline-link-rx"></block></block>
   <block id="5da55b582cbca296c8d85616607ef88b" category="paragraph">Google Cloudユーザに、Connectorの作成に必要な権限が付与されるようになりました。</block>
   <block id="969649bfc72cfeb92f696e30256b4152" category="section-title">コネクタの権限を設定します</block>
-  <block id="891271639b7eb98f69885ebc6f4f6e6d" category="paragraph">Google Cloudでリソースを管理するためにBlueXPで必要な権限をコネクタに付与するには、サービスアカウントが必要です。このサービスアカウントをコネクタVMに関連付ける必要があります。</block>
   <block id="d3f43fed60f0a507e6418503d2e5133b" category="inline-link-macro">コネクタのサービスアカウント権限</block>
   <block id="89c19793fa4fd34426a128c4ebe03948" category="list-text">の内容を含むYAMLファイルを作成します <block ref="16c885f571f66caafdba8f3cb6f880e3" category="inline-link-macro-rx"></block>。</block>
   <block id="60696c8c3376d314543ef1f6c5dd3364" category="paragraph">次の例では、プロジェクトレベルで「Connector」という名前のロールを作成します。</block>
@@ -2128,13 +1946,11 @@
   <block id="a4b90b417735642fce23ce0ce7441ca3" category="paragraph">Connector VMのサービスアカウントが設定されます。</block>
   <block id="b54026f2d69ec7f7219507fafb9892a7" category="paragraph">Cloud Volumes ONTAP システムを、Connectorが存在するプロジェクトとは異なるプロジェクトに導入する場合は、Connectorのサービスアカウントにこれらのプロジェクトへのアクセスを提供する必要があります。</block>
   <block id="cf4f902f986fa557d6c9a367c5fc98aa" category="paragraph">たとえば、コネクタがプロジェクト1にあり、プロジェクト2でCloud Volumes ONTAP システムを作成するとします。プロジェクト2のサービスアカウントへのアクセス権を付与する必要があります。</block>
-  <block id="c2e0d7b38c035030529af19f9203dd9b" category="list-text">Google Cloudコンソールで、IAMサービスに移動し、Cloud Volumes ONTAP システムを作成するプロジェクトを選択します。</block>
   <block id="e2b43bc6eddd7c5ec2c7104bd42e0e6e" category="list-text">[* iAM*（* IAM）]ページで、[*アクセスを許可（Grant Access）]を選択し、必要な詳細を入力します。</block>
   <block id="eacb1b3758ebd1aa03b4f1b86b49bd53" category="list-text">コネクタのサービスアカウントのEメールを入力します。</block>
   <block id="8f3118254324aa503647a0f0a4cd34cc" category="list-text">コネクタのカスタムロールを選択します。</block>
   <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Google Cloudのドキュメント</block>
   <block id="ece59c09a5f78f29903e8e1daac67577" category="paragraph">詳細については、を参照してください<block ref="eb023f41fbcdd6f661c855770356f2dc" category="inline-link-rx"></block></block>
-  <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">共有VPC権限を設定する</block>
   <block id="258ec60588311e40d9028ecd4b015f8a" category="paragraph">共有VPCを使用してサービスプロジェクトにリソースを導入する場合は、権限を準備する必要があります。</block>
   <block id="d723567d50507549f1f0eed5e785438e" category="paragraph">IAM の設定が完了したら、この表を参考にして権限の表を環境に反映させる必要があります。</block>
   <block id="c9c5c65fb4af9cf90eb99b3b84424189" category="cell">ID</block>
@@ -2146,18 +1962,14 @@
   <block id="90589c47f06eb971d548591f23c285af" category="cell">カスタム</block>
   <block id="a546c9049428d60032b181f2f82657b4" category="cell">サービスプロジェクト</block>
   <block id="ea281005ae69ae95f892a81823170250" category="inline-link-macro">コネクタ展開ポリシー</block>
-  <block id="68eb3aa41437f8303a2bd1119e48c4d2" category="paragraph"><block ref="68eb3aa41437f8303a2bd1119e48c4d2" category="inline-link-macro-rx"></block></block>
   <block id="40f49838c90873745fc1b1382a2c4b68" category="paragraph">compute.networkUser</block>
   <block id="0739a8d84cae34de0d2732632c0d3e8e" category="cell">サービスプロジェクトへのコネクタの配置</block>
   <block id="483a6486004960ab28236293d3cf2bce" category="cell">Connectorサービスアカウント</block>
   <block id="6021eec4920c52f3a4df07a5381d9fb0" category="cell">サービスプロジェクト</block>
   <block id="ace9c0d9f74f3b31d738cbc15a6e4799" category="inline-link-macro">コネクタサービスアカウントポリシー</block>
   <block id="c84e9dfc0322e7d45c5c04fb1936a321" category="paragraph"><block ref="c84e9dfc0322e7d45c5c04fb1936a321" category="inline-link-macro-rx"></block></block>
-  <block id="d9dae3e5d95c5ba752d5beb73a01f9f0" category="list-text">deploymentmanager. editor</block>
   <block id="06ca5d86ca92fe80348aec87cb3071db" category="cell">サービスプロジェクトへの Cloud Volumes ONTAP とサービスの導入と保守</block>
   <block id="6a9bc1ac566276782bd9d53b52b2f372" category="cell">Cloud Volumes ONTAP サービスアカウント</block>
-  <block id="1e88d77d48ab40f10d18398d6d56110a" category="list-text">storagec.admin</block>
-  <block id="6596ec425be852d6a717fb02e701c2b2" category="list-text">メンバー：BlueXPサービスアカウントをserviceAccount.userとして登録します</block>
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">該当なし</block>
   <block id="056f501b387d3252fe17b9dbb4d42ad7" category="cell">（オプション）データ階層化とBlueXPのバックアップとリカバリに使用します</block>
   <block id="386abe7036c62f0f27d3787e317b4aff" category="cell">Google API サービスエージェント</block>
@@ -2171,29 +1983,11 @@
   <block id="4b32545acb84a8a99e56ccc813199881" category="list-text">ファイアウォールの作成とfirewall.deleteは、ファイアウォールルールを配布に渡しておらず、BlueXPで作成することを選択している場合にのみ必要です。これらの権限はBlueXPアカウント.yamlファイルにあります。共有 VPC を使用して HA ペアを導入する場合は、これらの権限を使用して VPC1 、 2 、および 3 のファイアウォールルールが作成されます。他のすべての展開では、これらの権限は VPC0 のルールの作成にも使用されます。</block>
   <block id="770b8b43613e5c706e2c10ec7bcc3ec7" category="list-text">データ階層化の場合、階層化サービスアカウントは、プロジェクトレベルだけでなく、サービスアカウントに対して serviceAccount.user ロールを持つ必要があります。現在、プロジェクトレベルで serviceAccount.user を割り当てている場合、 getIAMPolicy でサービスアカウントを照会しても権限は表示されません。</block>
   <block id="0e73a4809ffc38dd69c7199f7f3b9bf2" category="summary">BlueXPをプライベートモードで使用する場合は、コネクタでローカルに実行されるユーザインターフェイスからBlueXPコンソールにログインする必要があります。</block>
-  <block id="1c42e5a3e07db1a9b4f218a40f5f6019" category="doc">BlueXPにログインする（プライベートモード）</block>
-  <block id="0994880ff67f7251649b7fab82f0a166" category="paragraph-title">ログインオプション</block>
   <block id="516e43b3e75e3babe4495cf821a204d3" category="paragraph">プライベートモードでは、ローカルユーザの管理とアクセスがサポートされます。BlueXPのクラウドサービスでは認証が行われません。</block>
   <block id="7771e98a4d3c7e9baf33b576bbae8a46" category="paragraph">_ipaddress_には、コネクタをインストールしたホストの構成に応じて、localhost、プライベートIPアドレス、またはパブリックIPアドレスを指定できます。たとえば、コネクタホストに接続されているホストからプライベートIPアドレスを入力する必要がある場合があります。</block>
   <block id="bf16d7909c891a5a760cab0ad77d53bc" category="list-text">ログインするためのユーザ名とパスワードを入力します。</block>
   <block id="0cdc0aaedcc5278681de9de08217447f" category="paragraph">ログインして、BlueXPを使用してハイブリッドマルチクラウドインフラを管理できるようになりました。</block>
   <block id="52be9a779a7de2bea0867d1d993e7f07" category="summary">コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。コネクタを取り付ける前に、ホストがこれらの要件を満たしていることを確認してください。</block>
-  <block id="a47008d27aa59757cb746310837a7335" category="doc">コネクタホストのオンプレミスインストール要件を確認します</block>
-  <block id="c13f593278192af77f7116c61b4f1828" category="summary">Google Cloudでコネクタを作成するには、インストールオプションの選択、ネットワークの設定、権限の準備などを行います。</block>
-  <block id="a24b77cc28692ab3f067a53b8d87977f" category="doc">Google Cloudでコネクタを作成するためのクイックスタート</block>
-  <block id="7a396f953e409fc4113a3eeb3714978c" category="paragraph">Google Cloudでコネクタを直接作成する標準的な方法はBlueXPから直接作成できますが、gcloudを使用して作成することも、既存のLinuxホストにソフトウェアを手動でインストールすることもできます。</block>
-  <block id="d6b2edc88b04bf885cb72e8cf0bdb02e" category="paragraph"><block ref="7faab28792959edccdd5bb629174a43b" category="inline-link-macro-rx"></block>。</block>
-  <block id="bcbc9fff8d4487788c2d9340f7d3f30a" category="list-text">VPCとサブネット</block>
-  <block id="6d117b41618cb9d361db392dd6ff151b" category="paragraph"><block ref="10b8794b5b9549957094545036a01876" category="inline-link-macro-rx"></block>。</block>
-  <block id="8a9983b753881349972a7c0a24378110" category="paragraph">Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、ホストが特定の要件を満たしていることを確認する必要があります。BlueXPまたはgcloudを使用してコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応できます。</block>
-  <block id="3633aaf72e18b72ee7d2e915e82be0c6" category="paragraph"><block ref="2d4899440637ad0f9b80e78751923630" category="inline-link-macro-rx"></block>。</block>
-  <block id="7a48e91302c9dc7f85920f518f25f1d7" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Google Cloud権限を設定する</block>
-  <block id="f7b1947038df0eb1bf72eca001af4938" category="paragraph">使用するインストールオプションに対してGoogle Cloudの権限を設定します。</block>
-  <block id="dbcdf972a32875d3f398fb9aba2b4388" category="list-text">* BlueXPまたはgcloudからのインストール*：カスタムロールを作成し、コネクタを導入するユーザに割り当てます。別のカスタムロールを作成し、コネクタVMインスタンスのサービスアカウントに割り当てます。</block>
-  <block id="654db1d0d96e02d38f2fad1950efd71e" category="list-text">*手動インストール*：カスタムロールを作成し、コネクタVMインスタンスのサービスアカウントに割り当てます。</block>
-  <block id="604a45edec07589c2eecacd5c58317a0" category="paragraph"><block ref="dd67bca9f69a03dd0e30c3ded8433217" category="inline-link-macro-rx"></block>。</block>
-  <block id="91f5721735e87c3888022376ff4ee935" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> Google Cloud API を有効にします</block>
-  <block id="246e2c0006b42f54df383af22960ca34" category="paragraph">Google CloudにConnectorとCloud Volumes ONTAP を導入するには、いくつかのAPIが必要です。</block>
   <block id="d82c8fcef9b6dd8fb6808c96dcbc5bb5" category="list-text">Cloud Deployment Manager V2 API</block>
   <block id="1439ef482dee1b1e4b2daac93de36c44" category="list-text">クラウドロギング API</block>
   <block id="9e636409b20980fb5089c87705851b4d" category="list-text">Cloud Resource Manager API の略</block>
@@ -2201,13 +1995,6 @@
   <block id="71660685d00034957db3f9a31c160978" category="list-text">ID およびアクセス管理（ IAM ） API</block>
   <block id="b86699cce9d5045d0f0bc82298a74e55" category="list-text">Cloud Key Management Service（KMS）APIの略</block>
   <block id="5cb2601217dd646515fe8e7cba8643b1" category="paragraph">（お客様が管理する暗号化キー（CMEK）でBlueXPのバックアップとリカバリを使用する場合にのみ必要）</block>
-  <block id="015e23fbc94e55a6c0dfa26af68fa935" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> コネクターを作成します</block>
-  <block id="ec5ceaf74aec9d86564e0b833a487119" category="list-text">* gloud *を使用して:を使用してください<block ref="0617854bbddee9be6e27611fd546a125" prefix=" " category="inline-code"></block> コマンドを実行します</block>
-  <block id="1485a5e640d49dbdcd1ad3668e2fe00d" category="paragraph"><block ref="de0c65faa3b7dfffd98d54f0a5e91e87" category="inline-link-macro-rx"></block>。</block>
-  <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">7</block>
-  <block id="19c8e8f30ab12df07d230374892d7826" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> BlueXPに権限を付与する</block>
-  <block id="7e9fd0e0d40d3d730e869463494ded64" category="paragraph">コネクタソフトウェアを自社のLinuxホストに手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。</block>
-  <block id="1a4c1164aacaef15956ea55374b8630f" category="paragraph"><block ref="c60cae4b61906dc194e18ec5beb2b243" category="inline-link-macro-rx"></block>。</block>
   <block id="b8c45dd3fc7b806721f81b6d91964231" category="summary">プライベートモードでBlueXPを起動して実行したら、プライベートモードでサポートされているBlueXPサービスの使用を開始できます。</block>
   <block id="299e0f249c257857628a7f5786b1b039" category="doc">次に実行できる操作（プライベートモード）</block>
   <block id="fced466a309d5f02b614e19af9c50a3a" category="paragraph">ヘルプについては、次のドキュメントを参照してください。</block>
@@ -2266,13 +2053,11 @@
   <block id="590b2ea5933ad8ead3c9a15a914f1a9c" category="list-text">すべてのサービスが Docker コンテナ内で実行されています</block>
   <block id="f76b4c57c56377745199382d59cdeed3" category="paragraph">サービスは、実行されている Docker ランタイムサービスに依存します</block>
   <block id="2ba2174aabffe3eb7a1b296e02063736" category="summary">制限モードでBlueXPを使用する場合は、コネクタでローカルに実行されるユーザインターフェイスからBlueXPコンソールにログインする必要があります。</block>
-  <block id="31225c8edfd852af80a6a97e73367de2" category="doc">BlueXPへのログイン（制限モード）</block>
   <block id="2f9c17fd9cee8c55ea6b3cf6e0358440" category="paragraph">BlueXPでは、アカウントが制限モードで設定されている場合、次のいずれかの方法でログインできます。</block>
   <block id="691be8e1993c2535e4afe5834afe3b01" category="list-text">Eメールアドレスとパスワードを使用したネットアップクラウドへのログイン</block>
   <block id="029351726760b5e014b1e49ec512b591" category="list-text">フェデレーテッド接続</block>
   <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">シングルサインオンを使用して、社内ディレクトリ（フェデレーション ID ）からのクレデンシャルを使用してログインできます。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
   <block id="c68ce7f660a6741b838bea908ac88f81" category="summary">コネクタとCloud Volumes ONTAP をGoogle Cloudに導入する前に、いくつかのGoogle Cloud APIを有効にする必要があります。</block>
-  <block id="3824876226172edfe0f17e8022b60fda" category="doc">Google Cloud API を有効にします</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">ステップ</block>
   <block id="e6db33ee282f55f359f9274b3cb1f285" category="list-text">プロジェクトで次のGoogle Cloud APIを有効にします。</block>
   <block id="8626ee05ff51b6a467bb5d1ee81047b8" category="inline-link">Google Cloudドキュメント：APIの有効化</block>
@@ -2360,9 +2145,6 @@
   <block id="aa03c0a49ae5be9aa71931d934887122" category="paragraph">NetApp Support Siteからコネクタソフトウェアをダウンロードし、インターネットにアクセスできない制限されたネットワークにインストールした場合は、ここに示すコマンドを使用します。</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">Linux ホストから、次のコマンドを実行します。</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">オンプレミスネットワークをセットアップする</block>
-  <block id="2f03f8dd45cb031f8f3cce95fd4acefc" category="paragraph">Connectorでは、作成する作業環境の種類と有効にするサービスへのネットワーク接続が必要です。</block>
-  <block id="caf7fd71047bbc17e23e603d7a448234" category="paragraph">たとえば、クラウドでCloud Volumes ONTAP を起動する場合は、企業ネットワークからCloud Volumes ONTAP を起動する仮想ネットワークへのVPN接続を設定する必要があります。</block>
-  <block id="9827c1dc4f901b9ac9340f0034c5a996" category="paragraph">コネクタを配置するネットワークの場所には、アウトバウンドのインターネット接続が必要です。</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">独自のLinuxホストにコネクタを手動でインストールする場合、コネクタのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。</block>
   <block id="068395f3cd26ca40ad905de3790c9435" category="cell">Azureパブリックリージョン内のリソースを管理します。</block>
   <block id="232055d452a21264f8d549e50d695b18" category="cell">をクリックしてAzure中国地域のリソースを管理してください。</block>
@@ -2376,27 +2158,22 @@
 \https://cloudkms.googleapis.com/v1
 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">Google Cloudでリソースを管理します。</block>
-  <block id="8ae42ef1699b44390c771e4ea6cb78df" category="paragraph"><block ref="8ae42ef1699b44390c771e4ea6cb78df" category="inline-link-macro-rx"></block></block>
   <block id="6c669918d3fd007e30860acf8f0b3634" category="summary">制限モードでBlueXPを導入する前に、環境を準備します。たとえば、ホストの要件の確認、ネットワークの準備、権限の設定などが必要になります。</block>
   <block id="6df5369b59a40f64ce1869a0d4d405ea" category="doc">制限モードでの展開を準備します</block>
-  <block id="bc27549db271a31b155a1f54549518c7" category="section-title">制限モードの仕組みを理解する</block>
   <block id="1b59f23b137c9cc38862c3922293bb00" category="paragraph">作業を開始する前に、制限モードでのBlueXPの動作について理解しておく必要があります。</block>
   <block id="f9dfb70dcd93f4238ee5d913a31bf6e8" category="paragraph">たとえば、インストールする必要があるBlueXP Connectorからローカルにアクセスできるブラウザベースのインターフェイスを使用する必要があることを理解しておく必要があります。BlueXPには、SaaSレイヤ経由で提供されるWebベースのコンソールからはアクセスできません。</block>
   <block id="f85cdd28eb786d1065030e252d80a98f" category="paragraph">また、すべてのBlueXPサービスを利用できるわけではありません。</block>
   <block id="969e5e6dbdd922439410c5eb57bc3c2e" category="inline-link-macro">制限モードの機能について説明します</block>
   <block id="b2036e1cefe79fc164d2eaaa419935c9" category="paragraph"><block ref="f4da007470370a47030c086e797197e9" category="inline-link-macro-rx"></block>。</block>
-  <block id="d64f43d78b1ecaf146784dac38039517" category="section-title">インストールオプションを確認します</block>
   <block id="806d57f398a8a5483fc85ddef0e6e02b" category="paragraph">制限モードでは、クラウドにのみコネクタをインストールできます。次のインストールオプションを使用できます。</block>
   <block id="d86cb0922d867e490dcef6964036e4fd" category="list-text">AWS Marketplace から入手できます</block>
   <block id="298f129fdb30fe24b9eecd86a61f1440" category="list-text">Azure Marketplace から入手できます</block>
   <block id="87d04b298d766a1fd5fe8d102bd7a241" category="list-text">AWS、Azure、Google Cloudで実行されている独自のLinuxホストにコネクタを手動でインストールします</block>
-  <block id="0b83acc0f3acc5df3c9680b942f63fad" category="section-title">ホストの要件を確認します</block>
   <block id="f6c634614114f28ad6651cf4345c81a6" category="paragraph">コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。</block>
   <block id="d644a17aca08fb8104aa91cad3587621" category="paragraph">AWSまたはAzure Marketplaceからコネクタを導入する場合、イメージには必要なOSとソフトウェアコンポーネントが含まれています。必要なのは、CPUとRAMの要件を満たすインスタンスタイプを選択することだけです。</block>
   <block id="ec8c369d41bbd1648282c6ae81d4053a" category="section-title">コネクタのネットワークを準備します</block>
   <block id="df290139b26527b2473b1e82a36386d4" category="paragraph">コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタの仮想ネットワークとサブネットを使用する以外に、次の要件が満たされていることを確認する必要があります。</block>
   <block id="9c4f61930fc3d0e8fcdc4fc034aa30e9" category="paragraph">コネクタには、ストレージを管理する場所へのネットワーク接続が必要です。たとえば、Cloud Volumes ONTAP を導入するVPCまたはVNet、オンプレミスのONTAP クラスタが配置されているデータセンターなどです。</block>
-  <block id="c12c7a94ee242ba689520e046d5f18fe" category="section-title">手動インストール用のアウトバウンドインターネットアクセス</block>
   <block id="fa5cc2cb386581601ffd1b12fb1e1e4f" category="section-title">日常業務用のアウトバウンドインターネットアクセス</block>
   <block id="ba12ed831d0f3c55f2691461b5995db5" category="paragraph">コネクタを配置するネットワークの場所には、アウトバウンドのインターネット接続が必要です。Connector では、パブリッククラウド環境内のリソースとプロセスを管理するために、次のエンドポイントに接続するためにアウトバウンドインターネットアクセスが必要です。</block>
   <block id="7dfb843f052469a3cc66d13554feb0f4" category="cell">\https://management.azure.com
@@ -2422,8 +2199,6 @@
   <block id="11ffd2b7817530008f4bc1916d79b3d7" category="paragraph">コネクタへの着信トラフィックは、開始しない限りありません。</block>
   <block id="4fd45d0ebe27698075cfa2d13f41913e" category="paragraph">HTTP（80）およびHTTPS（443）は、BlueXPコンソールへのアクセスを提供します。SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。</block>
   <block id="65c06ded772ceb4963d08fe97b164419" category="section-title">BlueXPコンソールにユーザがアクセスできるようにネットワークを準備</block>
-  <block id="201391f03ceb3ff56054b6793246b8fe" category="paragraph">制限モードでは、コネクタからBlueXPユーザインターフェイスにアクセスできます。BlueXPユーザインターフェイスを使用すると、いくつかのエンドポイントに接続してデータ管理タスクを実行できます。Web ブラウザを実行するマシンは、次のエンドポイントに接続する必要があります。</block>
-  <block id="9d05d3f0e6b6c76ecd11e19cde8e2714" category="section-title">クラウドの権限を準備</block>
   <block id="1bbc21ea62577425a75c703ea171ec1b" category="paragraph">BlueXPでCloud Volumes ONTAP を仮想ネットワークに導入し、BlueXPデータサービスを使用するには、クラウドプロバイダの権限が必要です。クラウドプロバイダで権限を設定し、それらの権限をコネクタに関連付ける必要があります。</block>
   <block id="0db5b81cf6db397c0165b2a6678ee87e" category="paragraph">必要な手順を表示するには、クラウドプロバイダに使用する認証オプションを選択します。</block>
   <block id="186140c2ad20e30aa2a80665d7e02c6c" category="paragraph">コネクタに権限を付与するには、IAMロールを使用します。</block>
@@ -2453,39 +2228,25 @@
   <block id="46bf370081d2da83a6ee9a9727083e5b" category="paragraph">これでログインして標準モードでBlueXPをセットアップできました。ユーザは作業環境を作成、検出し、BlueXPデータサービスを使用できます。</block>
   <block id="7a1a2603f867b3ab4f911914771995c7" category="inline-link">BlueXPドキュメントのホームページ</block>
   <block id="119ea98564cae99d8f3083158d800124" category="paragraph">ヘルプが必要な場合は、を参照してください<block ref="fcad168018b4f932b8d61fdac1ba9c7f" category="inline-link-rx"></block> をクリックして、すべてのBlueXPサービスのドキュメントを表示してください。</block>
-  <block id="250b0cf2e6c1131d20df693fd390488e" category="doc">BlueXPへのオンプレミスインストール権限を付与</block>
   <block id="d22e9ad90e63b8313cb68883a39b3a99" category="paragraph">AWSでクレデンシャルを作成したばかりの場合は、クレデンシャルが使用可能になるまでに数分かかることがあります。数分待ってから、BlueXPに資格情報を追加します。</block>
   <block id="6a5cc7195e9c182dffb225cfc25d01e7" category="paragraph">これらのクレデンシャルをAzureで作成したばかりの場合は、クレデンシャルが使用可能になるまでに数分かかることがあります。数分待ってから、BlueXPに資格情報を追加します。</block>
   <block id="ffb0fc074900d8a4132e4776f5a4f956" category="paragraph">BlueXPに、Azureで処理を実行するために必要な権限が付与されました。これで、に移動できます<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> BlueXPでコネクタの使用を開始します</block>
   <block id="b7afeec70319496f1e3eb3a317ae30c3" category="doc">Google Cloudネットワークをセットアップする</block>
-  <block id="0065d8b9887fdaed0fbcaa888218a2ef" category="summary">BlueXPを標準モードで開始するには、BlueXPコンソールからサインアップし、必要に応じてコネクタを作成し、BlueXPにサブスクライブします。</block>
   <block id="b48e4ef862d4262f2d1bbbde89d8e48c" category="doc">BlueXPを標準モードでクイックスタートできます</block>
-  <block id="0876e0a47d86eee44886009e6fdae6e5" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> サインアップしてアカウントを作成します</block>
   <block id="d592a53baa7083e5ab7b0bc72eee19ef" category="paragraph">にアクセスします<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 登録してください。アカウントを作成するオプションが表示されますが、既存のアカウントに招待されている場合は、この手順を省略できます。</block>
   <block id="885c0a0c266c904878925a2adb8ad8e3" category="inline-link-macro">コネクタなしでできることを学びます</block>
   <block id="6c8debb34ebc3c407a812ccc72251f69" category="paragraph">これでログインし、デジタルアドバイザ、Amazon FSx for ONTAP 、Azure NetApp Files など、複数のBlueXPサービスの使用を開始できます。 <block ref="8851d71f122770c4a322caec0247d10a" category="inline-link-macro-rx"></block>。</block>
-  <block id="996a84421252d4a7c2db622831369066" category="inline-link-macro">サインアップしてアカウントを作成する方法について説明します</block>
-  <block id="c174f3b881f40db0891af0da161c1ebf" category="paragraph"><block ref="e9f714cbe528d0ccf7168d118c24dc26" category="inline-link-macro-rx"></block>。</block>
-  <block id="70629c795585a51cd2dd42e29eb9110a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> コネクタを作成します</block>
   <block id="82c153b2414dc18b6be5abc5e6109200" category="paragraph">BlueXPの使用を開始するためにコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを活用することができます。このコネクタは、BlueXPでハイブリッドクラウド環境内のリソースとプロセスを管理するためのネットアップのソフトウェアです。</block>
   <block id="8b4a0a506b72094247801bd21678206e" category="paragraph">BlueXPアカウント管理者は、クラウドまたはオンプレミスのネットワークにコネクタを作成できます。</block>
   <block id="249345af661bafcf4f8bd3a0b9d6e949" category="inline-link-macro">コネクタが必要になる状況とその方法については、こちらをご覧ください 仕事</block>
   <block id="850c1601f372329538aba5fe3f86430c" category="list-text"><block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block></block>
   <block id="74d2f2a8ee613c321072e364f7ed33b2" category="inline-link-macro">AWS でコネクタを作成する方法について説明します</block>
-  <block id="6d294229282ac87bee8091b71318371f" category="list-text"><block ref="6d294229282ac87bee8091b71318371f" category="inline-link-macro-rx"></block></block>
   <block id="019fd7c8c6395aedf9e4d8fe995febee" category="inline-link-macro">Azure でコネクタを作成する方法について説明します</block>
-  <block id="bb81c8a12c65cb6417152ea245fc0d08" category="list-text"><block ref="bb81c8a12c65cb6417152ea245fc0d08" category="inline-link-macro-rx"></block></block>
   <block id="aa5c1c092b41ba183b34ea75815e55a2" category="inline-link-macro">Google Cloud でコネクタを作成する方法について説明します</block>
-  <block id="ce2d90cab8e80102030b82f69af64659" category="list-text"><block ref="ce2d90cab8e80102030b82f69af64659" category="inline-link-macro-rx"></block></block>
   <block id="b279d324941aabfaed1bf558f37a98bc" category="inline-link-macro">オンプレミスでコネクタを作成する方法について説明します</block>
-  <block id="3a02d9e1c20028d65ffc412d36f140d0" category="list-text"><block ref="3a02d9e1c20028d65ffc412d36f140d0" category="inline-link-macro-rx"></block></block>
   <block id="11f541a08afbd320cd13f0c88b417a4b" category="paragraph">BlueXPサービスを使用してGoogle Cloudのストレージとデータを管理する場合は、コネクタがGoogle Cloudで実行されている必要があります。</block>
-  <block id="f2a22a629f9bad85f41243962f9380fb" category="paragraph"><block ref="8e1057d16cd60d5c0c31b6f13c293038" category="inline-link-macro-rx"></block>。</block>
-  <block id="cbfb15b83383719b2c85d236f8e414bb" category="summary">コネクタは、BlueXPのWebベースのコンソールやAWS Marketplaceから直接作成するか、自社のLinuxホストにインストールして作成します。</block>
   <block id="aca02eea323174e41d57225a762eb959" category="list-text">AWS認証方式：IAMロールまたは必要な権限を持つIAMユーザのアクセスキー。</block>
   <block id="3f4713c771af26689845a2dfeec86b37" category="inline-link-macro">AWS権限の設定方法をご確認ください</block>
-  <block id="f911544c9d1c454bbad50b12be4649a1" category="paragraph"><block ref="f911544c9d1c454bbad50b12be4649a1" category="inline-link-macro-rx"></block></block>
-  <block id="a2678c8f1e6c4ef6102f9e3e10a87ecc" category="paragraph"><block ref="a2678c8f1e6c4ef6102f9e3e10a87ecc" category="inline-link-macro-rx"></block></block>
   <block id="b16e9971e18d4e63cd90cc2dc398c39e" category="list-text">EC2インスタンスのキーペア。</block>
   <block id="af9010f3e11d7efceb7ba88d02e92d39" category="list-text">* 準備をしてください * ：必要なものを確認してください。</block>
   <block id="694fc44336d7d79e22d661cd3051861e" category="list-text">* AWSクレデンシャル*：AWSリージョンを指定してから認証方式を選択します。認証方式は、BlueXPが引き受けることができるIAMロールか、AWSのアクセスキーとシークレットキーのどちらかです。</block>
@@ -2500,10 +2261,7 @@
   <block id="10d640974ffe6a13a9a3a5b33c7610d6" category="paragraph">コネクタで使用する正しいキーペアがあることを確認します。キーペアがないと、Connector仮想マシンにアクセスできません。</block>
   <block id="461008ea76e4abfc7758a2885f6cdf98" category="inline-link-macro">AWSのセキュリティグループルールを表示します</block>
   <block id="801fb8cfbc6e3ffd99fcb50ae87133bd" category="paragraph"><block ref="cd13f88aaa57bb10606ac0df26b2eb23" category="inline-link-macro-rx"></block>。</block>
-  <block id="cab27dc53edb571cac663ce2e16450dc" category="open-title">AWS Marketplace</block>
-  <block id="31d6851e8b182fb375e0edc42727cd0c" category="paragraph"><block ref="a2678c8f1e6c4ef6102f9e3e10a87ecc" category="inline-link-macro-rx"></block>。</block>
   <block id="b5599f9f352b1fa4cb2153ba99bdb13c" category="list-text">コネクタに必要な権限を含むポリシーが添付されたIAMロール。</block>
-  <block id="ef3d43411b20fb9ad0bca0d540679a94" category="paragraph"><block ref="f911544c9d1c454bbad50b12be4649a1" category="inline-link-macro-rx"></block>。</block>
   <block id="dfcbfa4ce7dbf520f2b737359dfbc591" category="list-text">IAMユーザのAWS Marketplaceをサブスクライブおよびサブスクライブ解除する権限。</block>
   <block id="7c9b14f6116e140202c359bff8bc86c2" category="inline-link">AWS MarketplaceのBlueXPページ</block>
   <block id="3a1757ca714434ada3988895ed0a0fab" category="list-text">にアクセスします<block ref="aa1bf3a3349706e28315b07c47668a91" category="inline-link-rx"></block></block>
@@ -2523,23 +2281,6 @@
   <block id="79b8b9ad9bf89b0b494ac4c62694d70f" category="list-text">*ストレージの設定*：デフォルトのストレージオプションをそのまま使用します。</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*詳細情報*：*[IAMインスタンスプロファイル]*で、コネクタに必要な権限を含むIAMロールを選択します。</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS は、指定した設定でソフトウェアを起動します。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。</block>
-  <block id="263bf141eee327cfdfe08fdc96fb32bc" category="paragraph"><block ref="53f6e9b699374851a8086ab8319c48f4" category="inline-link-macro-rx"></block>。</block>
-  <block id="037ab8e28d036e5a218a1692a62fd8b5" category="summary">インストールオプションの選択、ネットワークの設定、権限の準備などを行い、AWSでコネクタを作成します。</block>
-  <block id="62114d729bedb37529f10ca13d76d0cc" category="doc">AWSでコネクタを作成するためのクイックスタート</block>
-  <block id="7e09fb77e206a242f3f06e7cc61dd58a" category="paragraph">AWSでコネクタを作成する標準的な方法はBlueXPから直接作成できますが、AWS Marketplaceから作成することも、既存のLinuxホストに手動でソフトウェアをインストールすることもできます。</block>
-  <block id="a56be8fcf9cdfe04c839d8381b610ad9" category="paragraph"><block ref="ade0887db526f72ed0d1d6c5708f3e13" category="inline-link-macro-rx"></block>。</block>
-  <block id="b2f11e007fbc7abca64e5c1d6c2b7128" category="paragraph"><block ref="8e7b3f5f067e9282c1888d205cec32d1" category="inline-link-macro-rx"></block>。</block>
-  <block id="a12b9d09313df9b379fff76f6080b543" category="paragraph">Connectorソフトウェアを独自のLinuxホストに手動でインストールする場合は、ホストが特定の要件を満たしていることを確認する必要があります。BlueXPまたはAWS Marketplaceからコネクタを作成する場合は、ソフトウェアがイメージから導入されるため、これらの要件に対応します。</block>
-  <block id="a210968d517dd722bb07b30a19848aba" category="paragraph"><block ref="a0def2bb90da07c3ee565e52d86737eb" category="inline-link-macro-rx"></block>。</block>
-  <block id="9b2016503a2a16403edd8e4505d62007" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> AWS権限を設定</block>
-  <block id="c405be6f63207e29490377f138661fe6" category="paragraph">使用するインストールオプションに基づいてAWS権限を設定します。</block>
-  <block id="d028c4961d6731ef19885db0fa301a85" category="list-text">* BlueXPからインストール*：IAMポリシーを作成して、BlueXPが引き受けるIAMロールまたはアクセスキーを指定できるIAMユーザに関連付けます。BlueXPはAWSで認証し、これらの権限を使用してコネクタインスタンスを作成します。</block>
-  <block id="e49e5a1d08464cf832459ee413ed0c27" category="list-text">* AWS Marketplaceからインストール*：IAMポリシーを作成してIAMロールに関連付けます。このロールは、インストール時にコネクタインスタンスに関連付けます。</block>
-  <block id="bdc97c9d6a82f1b98a6433492922d317" category="list-text">*手動インストール*：IAMポリシーを作成して、IAMロールまたはIAMユーザに適用します。このロールをコネクタインスタンスに関連付けるか、IAMユーザのアクセスキーをBlueXPに指定します。</block>
-  <block id="813d66b9aa6504eb0393fe8f18e410ab" category="paragraph"><block ref="fb50b593341db1d567c02844e3107b31" category="inline-link-macro-rx"></block>。</block>
-  <block id="cc6a83ff79652e7af2e1e46f74ee1d83" category="list-text">* AWS Marketplaceから*：に移動します<block ref="aa1bf3a3349706e28315b07c47668a91" category="inline-link-rx"></block> プロンプトに従ってEC2を起動し、IAMロールを割り当てることができます。</block>
-  <block id="6b4846918ec5562f3ce11157869d4957" category="paragraph"><block ref="91b0e29fcfb2a92bef28fd818c1df87d" category="inline-link-macro-rx"></block>。</block>
-  <block id="eda37b84b461f4ae9020cc011c2ab682" category="paragraph"><block ref="a9d55e0cad45616cf17e8568ca899ca4" category="inline-link-macro-rx"></block>。</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">アイデンティティフェデレーションを使用すると、BlueXPとのシングルサインオンが可能になり、ユーザは自社のアイデンティティのクレデンシャルを使用してログインできます。まず、アイデンティティフェデレーションとBlueXPの連携について説明し、セットアッププロセスの概要を確認してください。</block>
   <block id="5a94ee93b1a4f42d5f889b53b576b4f0" category="doc">BlueXPでアイデンティティフェデレーションを使用</block>
   <block id="dca3cd1676cfe384fbb50f39c2e26eb4" category="paragraph">アイデンティティフェデレーション_ BlueXPとのシングルサインオンを有効にして、ユーザが自社のアイデンティティのクレデンシャルを使用してログインできるようにします。まず、アイデンティティフェデレーションとBlueXPの連携について説明し、セットアッププロセスの概要を確認してください。</block>
@@ -2826,13 +2567,6 @@
   <block id="24cce65a483e1205b8ca7bc0bf14c6c9" category="paragraph"><block ref="24cce65a483e1205b8ca7bc0bf14c6c9" category="inline-link-macro-rx"></block></block>
   <block id="d3846482b7a5f3467b05518965422219" category="section-title">Google Cloud権限</block>
   <block id="891af1225ba19aa10048241aff61f420" category="cell">BlueXPからConnectorを導入するGoogle Cloudユーザーには、Google CloudにConnectorを導入するための特定の権限が必要です。</block>
-  <block id="8bbd308345d88bc23fd26357cd36b8d9" category="inline-link-macro">Connectorを展開する権限を設定します</block>
-  <block id="cf94f172dc39ef92ca49e3c869407357" category="cell"><block ref="cf94f172dc39ef92ca49e3c869407357" category="inline-link-macro-rx"></block></block>
-  <block id="8e83b819241a1bf1d918adcc453afeab" category="cell"><block ref="8e83b819241a1bf1d918adcc453afeab" category="inline-link-macro-rx"></block></block>
-  <block id="56e1e624f64034081fc607cc1b1f8f79" category="summary">Azure Marketplaceでコネクタを作成した場合、またはソフトウェアを手動でインストールした場合は、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、AzureのデータとストレージインフラをBlueXPで管理できるようになります。</block>
-  <block id="d0158e5fcbfd28e34c4ef5775896911d" category="doc">BlueXPにAzure権限を付与します</block>
-  <block id="9b65fc0ae202a6e95605a59099ddd4f2" category="paragraph"><block ref="3834385bc683b7254cee45e1f0337870" category="inline-link-macro-rx"></block>。</block>
-  <block id="5fdfce3740c9425406c353e591925386" category="paragraph">BlueXPからコネクタを直接導入した場合は、導入時に必要な権限がBlueXPによって割り当てられるため、以下の手順は実行しません。</block>
   <block id="dd5f2c116815cb1eac2ffe4f6e18517f" category="open-title">カスタムロール</block>
   <block id="ec09b900c630334c74f96f6faf3eee8e" category="paragraph">にアクセスします<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> BlueXPでコネクタの使用を開始します</block>
   <block id="6019d7a828098995320847394d1a9a09" category="open-title">サービスプリンシパル</block>
@@ -2999,7 +2733,6 @@
   <block id="b829f1a930ae603edd16b249b070f4c9" category="doc">コネクタを制限モードで展開します</block>
   <block id="5cadd29a69b0be5bc8b482cfc2e89adb" category="open-title">AWS Commercial Marketplaceの略</block>
   <block id="278a1d20d474323c7730eb5c88c86df3" category="paragraph"><block ref="278a1d20d474323c7730eb5c88c86df3" category="inline-link-macro-rx"></block></block>
-  <block id="438ce182950c9739961cbff47dcf19b1" category="paragraph"><block ref="438ce182950c9739961cbff47dcf19b1" category="inline-link-macro-rx"></block></block>
   <block id="bf240a359c3f187f19fe389d739230dc" category="paragraph"><block ref="3b2280c8dd3c1825b88cbc43ff0a1ace" category="inline-link-macro-rx"></block>。</block>
   <block id="8a13274378538e70b1d8db3110b13a90" category="paragraph">BlueXPをセットアップします。</block>
   <block id="d919f0caf7e85368ea2bd20d82569c6b" category="open-title">AWS Gov Marketplaceの略</block>
@@ -3019,7 +2752,6 @@
   <block id="36f12b5d2f30503ac36305c4f494f280" category="list-text">ネットワーク要件を満たすVNetとサブネット。</block>
   <block id="e055afdf7d35580a49ddc59582adcf3b" category="list-text">コネクタに必要な権限を含むAzureのカスタムロール。</block>
   <block id="fd5738f5f42540888241b6b51480ad14" category="inline-link-macro">Azure権限の設定方法については、こちらをご覧ください</block>
-  <block id="8207e660ad4680e73479d143400652db" category="paragraph"><block ref="8207e660ad4680e73479d143400652db" category="inline-link-macro-rx"></block></block>
   <block id="8ac340f924d72696326df51a32dbdee5" category="inline-link">Azure GovernmentリージョンのAzure Marketplaceのページ</block>
   <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
   <block id="b5171064f2a0a87a764aa82511ee57e4" category="list-text">* VMサイズ*：CPUとRAMの要件を満たすVMサイズを選択します。DS3 v2 を推奨します。</block>
@@ -3045,7 +2777,6 @@
   <block id="2a098ccba4af3c2f56db9cda96a29d3c" category="paragraph">これで、コネクタのインストールとBlueXPアカウントでのセットアップが完了しました。すべてのユーザがコネクタインスタンスのIPアドレスを使用してBlueXPにアクセスする必要があります。</block>
   <block id="51ee17d7a8d2b4c9bc36b4ac4b191f84" category="paragraph">Azure Marketplaceからコネクタを導入した場合やコネクタソフトウェアを手動でインストールした場合は、BlueXPサービスを使用できるように、以前に設定した権限を指定する必要があります。</block>
   <block id="b8d0315300ac2427136acd2d1db19ef8" category="paragraph">AWS Marketplaceからコネクタをデプロイした場合、デプロイ時に必要なIAMロールを選択したため、これらの手順は適用されません。</block>
-  <block id="f643c6bb7284d8ad22546f8b5424984d" category="paragraph"><block ref="6a34c60d674019133bf42537b18417eb" category="inline-link-macro-rx"></block>。</block>
   <block id="2537b48fc15a099f9c795e464f0e7b70" category="paragraph">以前に作成したIAMロールを、コネクタをインストールしたEC2インスタンスにアタッチします。</block>
   <block id="bff15ca70c1ae31932f904ffda23250d" category="paragraph">これらの手順は、コネクタをAWSに手動でインストールした場合にのみ該当します。AWS Marketplace環境の場合は、コネクタインスタンスに必要な権限を含むIAMロールがすでに関連付けられています。</block>
   <block id="cdc80f7691441e19b9937f7e3719514f" category="summary">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるネットアップのソフトウェアです。データインフラを管理するためにBlueXPが実行する必要のあるアクションを実行します。Connectorは、必要なアクションについてBlueXP SaaSレイヤを定期的にポーリングします。BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。</block>
@@ -3099,7 +2830,6 @@
   <block id="ba356dfc51631fb5a0371fea940de345" category="list-text"><block ref="ba356dfc51631fb5a0371fea940de345" category="inline-link-macro-rx"></block></block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="section-title">権限</block>
   <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">BlueXPからコネクタを直接作成するには特定の権限が必要です。コネクタインスタンス自体には別の権限セットが必要です。AWSまたはAzureでBlueXPから直接コネクタを作成する場合は、必要な権限でコネクタがBlueXPによって作成されます。</block>
-  <block id="f068c113e0f68966d3264976bff4de1a" category="list-text"><block ref="f068c113e0f68966d3264976bff4de1a" category="inline-link-macro-rx"></block></block>
   <block id="1e419112f48a13d6b30178e127d0a445" category="paragraph">コネクタに必要な正確な権限を表示するには、次のページを参照してください。</block>
   <block id="338a6f193e9988b8f40b3128d5e4ffb7" category="inline-link-macro">ConnectorでのAWS権限の使用方法について説明します</block>
   <block id="0e4f7db7cba89c0c2240f4376d660bcd" category="list-text"><block ref="0e4f7db7cba89c0c2240f4376d660bcd" category="inline-link-macro-rx"></block></block>
@@ -3199,7 +2929,6 @@
   <block id="3d35bba2e5ea6e739fb94736dc402017" category="inline-link">ONTAP の FSX に必要な権限を表示します</block>
   <block id="f36b248a3e4e722bcc9292d2e5151abc" category="list-text"><block ref="f36b248a3e4e722bcc9292d2e5151abc" category="inline-link-rx"></block></block>
   <block id="d2ec6bce44b6da11cd78a79db47dd385" category="inline-link-macro">Connector展開ポリシーを表示します</block>
-  <block id="06b2dd1ec7bb512ccd3b1b77d7c931b5" category="list-text"><block ref="06b2dd1ec7bb512ccd3b1b77d7c931b5" category="inline-link-macro-rx"></block></block>
   <block id="fa9df323148192800073dd2a78c81f73" category="list-text">次の手順で、IAMロールのロールARNをコピーしてBlueXPに貼り付けることができます。</block>
   <block id="9d0d48ea751e3c71dff57d8fbf894fd5" category="inline-xref">これで、BlueXPに追加できます</block>
   <block id="a53b0d2774799d5bb8ecfc08bf8fa10c" category="paragraph">IAM ロールに必要な権限が割り当てられます。 <block ref="4c349b03912d051c7b948580d66e06a2" category="inline-xref-macro-rx"></block>。</block>
@@ -3224,7 +2953,6 @@
   <block id="9ba678561b5c8922fc9983fcb89e1752" category="summary">BlueXPをプライベートモードで導入する前に、環境を準備します。たとえば、ホストの要件の確認、ネットワークの準備、権限の設定などが必要になります。</block>
   <block id="5f1067df496bfafd5eb793369b955e41" category="doc">プライベートモードでの導入を準備します</block>
   <block id="ffd6a883d5c5e0f954b2db441bf455a2" category="admonition">でBlueXPを使用する場合は<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> その後、コネクタの準備、取り付け、およびCloud Volumes ONTAP の起動方法を説明する別の指示に従う必要があります。<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
-  <block id="3008fdb762c351e807eb6f1a46786992" category="section-title">プライベートモードの仕組みを理解します</block>
   <block id="cd9866f3dfe1445bb49e9984aef06565" category="paragraph">作業を開始する前に、BlueXPがプライベートモードでどのように動作するかを理解しておく必要があります。</block>
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">プライベートモードの仕組みを説明します</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>。</block>
@@ -3291,11 +3019,8 @@
   <block id="7b0c55f247d6f53c6782615b53af4619" category="list-text">アウトバウンド通信</block>
   <block id="b765b1f4695cc75eccd54629c696871c" category="list-text">コネクタからBlueXP SaaSレイヤ、クラウドプロバイダが一般に公開しているリソース、および日常業務に欠かせないその他のコンポーネントへの接続が必要です。</block>
   <block id="481967699cb23b1212553273ddd07956" category="inline-link-macro">コネクタがAWSで接続するエンドポイント</block>
-  <block id="f4986cf63781254c431f585eade70914" category="list-text"><block ref="f4986cf63781254c431f585eade70914" category="inline-link-macro-rx"></block></block>
   <block id="bc9ca29d6605d1cf6f70076a23749d7d" category="inline-link-macro">コネクタがAzureで接続するエンドポイント</block>
-  <block id="d4725a75fbee6904284f3109fa5e079a" category="list-text"><block ref="d4725a75fbee6904284f3109fa5e079a" category="inline-link-macro-rx"></block></block>
   <block id="b9ae7144d8994b521f00e7ea998af276" category="inline-link-macro">コネクタがGoogle Cloudで接続するエンドポイント</block>
-  <block id="31dec7fbef975d09b76f499ef8abfb62" category="list-text"><block ref="31dec7fbef975d09b76f499ef8abfb62" category="inline-link-macro-rx"></block></block>
   <block id="3bf5c9324dc0745f8cad507c90fe86b2" category="list-text">コネクタのサポートされている場所</block>
   <block id="916a2669af97d2f4130e6923cd637b3f" category="list-text">標準モードでは、コネクタはクラウドまたはオンプレミスでサポートされます。</block>
   <block id="fd18b98fb0c01efb9ebdfe9d8aac583c" category="list-text">コネクタのインストールは、BlueXPのセットアップウィザード、AWSまたはAzure Marketplaceから実行できます。また、インストーラを使用して、データセンターまたはクラウドの自社のLinuxホストにコネクタを手動でインストールすることもできます。</block>
@@ -3442,33 +3167,17 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">コネクタの定義済みファイアウォールルールによって、すべてのアウトバウンドトラフィックが開かれます。これが可能な場合は、基本的なアウトバウンドルールに従います。より厳格なルールが必要な場合は、高度なアウトバウンドルールを使用します。</block>
   <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">コネクタの定義済みファイアウォールルールには、次のアウトバウンドルールが含まれています。</block>
   <block id="5dba83ec70c57d2bf0180e542772a92f" category="summary">BlueXPに登録すると、Webベースのコンソールからログインしてデータとストレージインフラの管理を開始できます。</block>
-  <block id="8ccd00d958a4b1c81d6eb1a97c4cc8b6" category="doc">BlueXPにログインする（標準モード）</block>
   <block id="ba4b1c8da80214fd24d3e708e6d5a43e" category="paragraph">BlueXPのWebベースのコンソールには、次のいずれかの方法でログインできます。</block>
   <block id="03eb7e8aedd1ad900f6996ff1a9cf8dd" category="list-text">[ログイン*]ページで、ログインに関連付けられている電子メールアドレスを入力します。</block>
   <block id="784d4eeca11deaf4ee3f37735e4d0334" category="list-text">ログインに関連付けられている認証方法に応じて、クレデンシャルの入力を求められます。</block>
   <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">ネットアップクラウドクレデンシャル：パスワードを入力します</block>
   <block id="a02705346febd77df5680fe2f12343a9" category="list-text">フェデレーテッドユーザ：フェデレーテッドアイデンティティクレデンシャルを入力します</block>
   <block id="24bdc2b22d38abff9ff97a9c5b5e7966" category="list-text">NetApp Support Site アカウント：NetApp Support Site クレデンシャルを入力します</block>
-  <block id="311c494ac0cd96eb59ad27baf29e8829" category="summary">BlueXPを使用してAzureのデータとストレージインフラを管理できるように、Azureの権限を設定します。アクセス許可の設定方法は、使用するインストールオプションによって異なります。</block>
-  <block id="b986898f3a07eb4cea995cd0e9b6547b" category="paragraph">データとストレージインフラの管理に必要な権限を使用してコネクタを導入できるように、Azureで権限を設定します。アクセス許可の設定方法は、使用するインストールオプションによって異なります。</block>
-  <block id="cb3d973e014adc5d984d3ed23e4406ad" category="list-text">* BlueXPからインストール*：BlueXPがAzureで認証してVMを導入できるように権限を設定します。コネクタVMの権限は、導入時にBlueXPによって自動的に設定されます。</block>
-  <block id="877d95ef1c143078eed1fed2fcee7fe8" category="list-text">* Azure Marketplaceからインストール*:コネクタVMまたはAzure ADサービスプリンシパルに関連付けるAzureカスタムロールを設定します。</block>
-  <block id="7a55eba76dd8a091c711cfadb930b146" category="paragraph"><block ref="fbeb752d20896168ed7fb897301fa65c" category="inline-xref-macro-rx"></block>。</block>
-  <block id="d9003614ea07db66c9d68827f29fc043" category="list-text">*手動インストール*:コネクタVMまたはAzure ADサービスプリンシパルに関連付けるAzureカスタムロールを設定します。</block>
-  <block id="bc956e0b0a70bced55db387f9721c4fa" category="paragraph">BlueXPからコネクタを作成するには、AzureでコネクタVMを作成するために必要な権限を持つBlueXPへのログインを設定する必要があります。次の 2 つのオプションがあります。</block>
-  <block id="6b45a3b66e73e4f30a6e6c4974d404b4" category="list-text">プロンプトが表示されたら、 Microsoft アカウントでサインインします。このアカウントには Azure 固有の権限が必要です。これがデフォルトのオプションです。</block>
   <block id="e3e02b70df514c22082124328763d018" category="list-text">Azure AD サービスプリンシパルの詳細を指定します。このサービスプリンシパルには、特定の権限も必要です。</block>
-  <block id="82d6ac02ddffa27fd293c37542ef52a2" category="paragraph">どちらのオプションを使用する場合も、最初にカスタムロールを作成します。</block>
-  <block id="ba705115117b5dcb31d65899295aecf9" category="section-title">カスタムロールを作成します</block>
-  <block id="92331395e6b319e8c3899fe57e0662a4" category="paragraph">Azureアカウントまたはサービスプリンシパルに割り当てることができるカスタムロールを作成します。</block>
   <block id="fdf818accfe04434a4c9fd9ccfe6d56c" category="list-text">Azureの新しいカスタムロールに必要な権限をコピーし、JSONファイルに保存します。</block>
-  <block id="8747c846ccf20f1b6f26f06f38406ffa" category="admonition">このポリシーには、BlueXPからAzureでConnector VMを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。BlueXPがコネクタを作成すると、Connector VMに新しい権限セットが適用され、Connectorがパブリッククラウド環境内のリソースを管理できるようになります。</block>
   <block id="6beeae0bdc78c57583db2029e3f5c09d" category="list-text">JSONを変更して、割り当て可能な範囲にAzureサブスクリプションIDを追加します。</block>
   <block id="6d3e63abb9fe9c98dbe6a99d8a196043" category="list-text">Azure CLI で次のコマンドを入力します。</block>
   <block id="00c71d78fe3c7e32c523588f83a6a685" category="paragraph">これで、 _Azure SetupAsService_という カスタムロールが作成されました。このカスタムロールをユーザーアカウントまたはサービスプリンシパルに適用できるようになりました。</block>
-  <block id="8776144e5038669b29b050b669704134" category="section-title">認証方法を設定します</block>
-  <block id="354220022c6be4143484439507df500d" category="paragraph">BlueXPコネクタを導入するには、BlueXPがAzureで認証される必要があります。2つのAzure認証方式から選択できます。</block>
-  <block id="f9ae909c9f8845215c3524f51ff1ed97" category="open-title">Azureユーザアカウント</block>
   <block id="0c5e0cb46ed59511e60fcbc8e0e423c2" category="paragraph">BlueXPからコネクタを導入するユーザにカスタムロールを割り当てます。</block>
   <block id="69f03931f7dda53f08365d3254d0ce78" category="list-text">Azureポータルで、* Subscriptions *サービスを開き、ユーザーのサブスクリプションを選択します。</block>
   <block id="4cca684df8c889c784e30e6f0215cff5" category="admonition">Azure SetupAsServiceは、Azureのコネクタ導入ポリシーで指定されているデフォルトの名前です。ロールに別の名前を選択した場合は、代わりにその名前を選択します。</block>
@@ -3476,12 +3185,9 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="d9a4ebb1284c84465eac2a20b8331523" category="paragraph">Azureアカウントでログインする代わりに、必要な権限を持つAzureサービスプリンシパルのクレデンシャルをBlueXPに指定できます。</block>
   <block id="f7f4921534d4730228a1def336cce565" category="paragraph">Azure Active Directoryでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。</block>
   <block id="26f0c6c76fbc2f0b096a4ff32489120c" category="paragraph">これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。コネクタを作成するときに、BlueXPでこの情報を入力する必要があります。</block>
-  <block id="44f495c0504d8e7c2c470b12eaf37456" category="section-title">Azure Marketplaceの導入後または手動インストール後に割り当てる権限を設定します</block>
-  <block id="d62cb3591be3e66b0fa2798f4f9ee116" category="paragraph">Azure Marketplaceからコネクタを導入する場合、またはコネクタソフトウェアを手動で独自のLinuxホストにインストールする場合は、次の方法で権限を指定できます。</block>
   <block id="0d1f9ac2ac0f76a6809ba58855ffa7f5" category="list-text">オプション1：システム割り当ての管理IDを使用して、Azure VMにカスタムロールを割り当てます。</block>
   <block id="d31f2fb13b2fed83440a04d526a6ca7d" category="list-text">オプション2：必要な権限を持つAzureサービスプリンシパルのクレデンシャルをBlueXPに提供します。</block>
   <block id="c4da032e0a3943e2f3a51ca860a71925" category="list-text">独自のホストにソフトウェアを手動でインストールする場合は、カスタムロールを使用して必要なAzure権限を提供できるように、VMでシステムが割り当てた管理IDを有効にします。</block>
-  <block id="3dbb225ba0c1c164a61cefbc1cdb0d06" category="paragraph"><block ref="8e4894668aa66afea4219822edca2e80" category="inline-link-macro-rx"></block>。</block>
   <block id="f53835e0f369158c476f99fda577e700" category="sidebar">セットアップおよび管理に関するドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
@@ -3491,14 +3197,10 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="de2a909827c9bf0f62effae09a746963" category="sidebar">BlueXPの概要</block>
   <block id="9b945efebb006547a94415eadaa12921" category="sidebar">アカウント</block>
   <block id="7e99ea34b714387479c29a20b4a89752" category="sidebar">標準モードで開始します</block>
-  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">クイックスタート</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="sidebar">BlueXPにログインします</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">コネクタを作成します</block>
   <block id="ea206a7167c7e693d778525a7c87c869" category="sidebar">インストールオプション</block>
-  <block id="ab316a3ccbad97726269c9705958262a" category="sidebar">ネットワークをセットアップする</block>
-  <block id="6f298a0fdcb94b318444467462bb0e4e" category="sidebar">コネクターを作成します</block>
   <block id="4df40e141b0559f15db8f84f78aed013" category="sidebar">オンプレミス</block>
-  <block id="1583a00dbf57782d8675d5222845f901" category="sidebar">クラウド権限を設定</block>
   <block id="f559abff8763b27adc86fdb8b373f2c7" category="sidebar">BlueXPにサブスクライブします</block>
   <block id="d0a7edff5cd82c23f3d1c18e0779ccbc" category="sidebar">次は何ができるか</block>
   <block id="2e765525323590e2ff4d6c84d224de36" category="sidebar">制限モードの使用を開始します</block>
@@ -3576,7 +3278,6 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="2ad37577d6b48e75deace7b9df85fa0f" category="paragraph">コネクタを起動するか、コネクタがCloud Volumes ONTAPからNetAppサポートにAutoSupportメッセージを送信するためのプロキシとして使用されている場合を除き、コネクタへの受信トラフィックはありません。</block>
   <block id="46b7ac383833d40797a3c63596b781a1" category="list-text">アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。</block>
   <block id="b9ea60abcff3cae1e1a8e213a053504b" category="paragraph">| AWSサービス（amazonaws.com):</block>
-  <block id="29181ef9f282c2bfcd708d63d5d8f305" category="paragraph">|をクリックしてAWSのリソースを管理します。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
   <block id="37602e8df38580064bdd885f0963ea8e" category="paragraph">|\https://management.azure.com
 \https://login.microsoftonline.com
 \https://blob.core.windows.net
@@ -3622,15 +3323,12 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="9c7ace21b2c703b0c1706b0f405490ae" category="paragraph">なお、このポリシーには、BlueXPからAWSでコネクタインスタンスを起動するために必要な権限のみが含まれています。 <block ref="1803651c0d8d31da6be94aca23bd6fb9" category="inline-link-macro-rx"></block>。</block>
   <block id="ee0f5d3d76febb57f0cd8c307401026c" category="paragraph">Marketplaceの導入に備えて、AWSでIAMポリシーを作成し、IAMロールに関連付けます。AWS Marketplaceからコネクタを作成すると、そのIAMロールを選択するように求められます。</block>
   <block id="b8173d0c4669ed6158a49dda320b1515" category="paragraph">使用するBlueXPサービスによっては、2つ目のポリシーの作成が必要になる場合があります。標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。 <block ref="60507836418f54f0b2b646fcefa2cf2c" category="inline-link-macro-rx"></block>。</block>
-  <block id="4150e60305a134c529d4dd6e3ef8fd36" category="paragraph">AWSの独自のLinuxホストにコネクタソフトウェアを手動でインストールする場合は、次の方法で権限を指定できます。</block>
   <block id="ad76b7ae56285d87ab9015cde946bbf4" category="list-text"><block ref="ad76b7ae56285d87ab9015cde946bbf4" category="inline-link-rx"></block></block>
   <block id="89db269549ff807cf08533caabe7fa9b" category="list-text"><block ref="89db269549ff807cf08533caabe7fa9b" category="inline-link-rx"></block></block>
   <block id="c1278cf8c27b19d3b52a16894e40dc28" category="paragraph">BlueXPには、SaaSレイヤを通じて提供されるWebベースのコンソール、マルチテナンシーを提供するアカウント、作業環境を管理してBlueXPクラウドサービスを有効にするコネクタが含まれています。</block>
   <block id="d9e04d29678e517946d6cb6e93b9d025" category="paragraph">BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。コネクタにより、オンプレミス環境とクラウド環境にわたってリソースとプロセスを管理できます。作業環境（Cloud Volumes ONTAPクラスタやオンプレミスのONTAPクラスタなど）の管理や、BlueXPの多くのデータサービスの使用が必要です。</block>
   <block id="64f210f4d96dcba2f41cec7b537055f7" category="list-text">インスタンスのCPUとRAMの要件を理解していること。</block>
   <block id="fbeff5cf304fefe21e93306905a53be6" category="inline-link-macro">インスタンス要件を確認します</block>
-  <block id="beb06263e55dbf1e5b833f9e70adbd3b" category="paragraph"><block ref="56d1d87d56f0c6205965b459b10a28f6" category="inline-link-macro-rx"></block>。</block>
-  <block id="06b41e54acce796724e94edceaa8bd8c" category="paragraph"><block ref="172f848c0eaf289ec1091e3eb6e7272a" category="inline-link-macro-rx"></block>。</block>
   <block id="faa2f324a4d310b356e12aa82056254e" category="paragraph"><block ref="c95ec05c4ecf0f3a1ae9ac9ed3381eba" prefix="" category="inline-code"></block></block>
   <block id="9a29204f81d065ca790be5e05be49951" category="paragraph">これで、に移動できます<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> BlueXPでコネクタの使用を開始します</block>
   <block id="3cedfb797d3e1bc073ba2b0b4d2502cf" category="inline-link">Azure に関するドキュメント</block>
@@ -3661,22 +3359,12 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="6e9436752850e460930666efdaf1e025" category="cell">オンプレミスのONTAPクラスタをGoogle Cloudにバックアップ</block>
   <block id="c37ee52df9a55f654f757f6a622c2ab8" category="cell">BlueXPのバックアップとリカバリを使用してオンプレミスのONTAPクラスタをバックアップする場合は、「検索とリストア」機能を使用するためにコネクタに権限を追加する必要があります。</block>
   <block id="072b4c796b4a06820f943c41d4da3162" category="cell"><block ref="6a045f48523c0716d40c678a68c87636" category="inline-link-rx"></block></block>
-  <block id="7ffe8e26fad260dce8ed03b3e7fc57c8" category="summary">BlueXPを使い始めるときは、ネットワークでBlueXPコンソールから特定のエンドポイントへのアクセスが許可されていることを確認してください。BlueXPの使用方法によっては、コネクタや特定のBlueXPサービス用のネットワークの設定も必要になる場合があります。</block>
-  <block id="26ea1904ce9dbe48d4e4700d1357e591" category="doc">ネットワークの準備</block>
   <block id="045416b62d2dbcb0a3156290bfb14bc5" category="paragraph">これらのエンドポイント以外にも、日常業務のために特定のエンドポイントに接続するためのアウトバウンドインターネットアクセスがコネクタにあることを確認する必要があります。これらのエンドポイントのリストは、次のセクションのリンクに従って確認できます。</block>
-  <block id="1227c418a40b8840e4c8a82551fe4b79" category="section-title">コネクタのネットワークの準備</block>
-  <block id="3f946e1b2eb47723c4cdafa491ff55a8" category="paragraph">コネクタのネットワークをどのように準備するかは、コネクタの設置場所によって異なります。コネクタの設置場所は、クラウド内でもオンプレミスでもかまいません。コネクタのネットワーク要件の詳細については、次のページを参照してください。</block>
-  <block id="8ba51ecb80ef097f62d41ff21811facd" category="list-text"><block ref="8ba51ecb80ef097f62d41ff21811facd" category="inline-link-macro-rx"></block></block>
-  <block id="caa5e6c77b861f1924e25b728934c86c" category="list-text"><block ref="caa5e6c77b861f1924e25b728934c86c" category="inline-link-macro-rx"></block></block>
-  <block id="e10d8dd0770b58818461a0254486dc85" category="list-text"><block ref="e10d8dd0770b58818461a0254486dc85" category="inline-link-macro-rx"></block></block>
-  <block id="b0922574fc254af5af9ea76293d3103a" category="list-text"><block ref="b0922574fc254af5af9ea76293d3103a" category="inline-link-macro-rx"></block></block>
   <block id="33afe8d49ba0b54b76d44e7f5b190b53" category="section-title">BlueXPサービスのネットワークを準備</block>
-  <block id="e9b3a40645009b297636fbacdb5f7e76" category="paragraph">BlueXPの使用を開始するときは、使用するBlueXPサービスのネットワーク要件を満たしていることを確認する必要があります。詳細については、各サービスのマニュアルを参照してください。</block>
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXPのマニュアル</block>
   <block id="1c74bcfdef9917ce07420aafab8bce83" category="paragraph"><block ref="1c74bcfdef9917ce07420aafab8bce83" category="inline-link-rx"></block></block>
   <block id="d1c50736002ef3676d1c143a04d4cc59" category="list-text">Athena：StartQueryExecution</block>
   <block id="e7a0ee2f9390b4213bbeb8838f2d3896" category="list-text">BlueXP SaaSレイヤへのアウトバウンド接続は必要ありません。すべてのパッケージ、依存関係、および必須コンポーネントはコネクタとともにパッケージ化され、ローカルマシンから提供されます。クラウドプロバイダの一般に利用可能なリソースへの接続は、Cloud Volumes ONTAP を導入する場合にのみ必要です。</block>
-  <block id="75dbd7f878d584e6e9f033b3806519ac" category="sidebar">ネットワークを準備</block>
   <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">BlueXPの機能やサービスを使用するには、権限を指定してBlueXPがクラウド環境で処理を実行できるようにする必要があります。このページのリンクを使用して、目的に応じて必要な権限にすばやくアクセスできます。</block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">オンプレミスのONTAPクラスタをAmazon S3に階層化</block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">StorageGRIDケンケン</block>
@@ -3709,8 +3397,6 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="12975d5f412a47bef9db3c7a4d365814" category="list-text">[サブスクライブ]*を選択します。</block>
   <block id="9dc9a5b2f23fe90a0fd71125f3034dfd" category="list-text">フォームに必要事項を入力し、* Subscribe *を選択します。</block>
   <block id="3221538307211e131f96e1a83b1a5235" category="list-text">サブスクリプションプロセスが完了したら、*[今すぐアカウントを設定する]*を選択します。</block>
-  <block id="6887254b5f03610818b55891a5db48ef" category="list-text">[Azure SetupAsService]*ロールを選択し、*[Next]*を選択します。</block>
-  <block id="53b4a11766155c5b179df42cfaced80f" category="list-text">*メンバーの選択*を選択し、ユーザーアカウントを選択して*選択*を選択します。</block>
   <block id="497002c594b6f249087bf6b22381ee4d" category="list-text">クレデンシャルを既存のサブスクリプションに関連付けるには、ダウンリストからGoogle Cloudプロジェクトとサブスクリプションを選択し、*[関連付け]*を選択します。</block>
   <block id="ba192d211ab8fe6aceb98f59e685d1bb" category="list-text">サブスクリプションをまだお持ちでない場合は、*[サブスクリプションの追加]&gt;[続行]*を選択し、Google Cloud Marketplaceの手順に従います。</block>
   <block id="375b5c037ddde62b74d4b30381271828" category="list-text">ポップアップダイアログボックスで、* NetApp、Inc.への登録*を選択します</block>
@@ -3738,7 +3424,6 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="93583a9b95fb527997b95ba8db57df14" category="list-text">[権限の追加]&gt;[既存のポリシーを直接適用]*を選択します。</block>
   <block id="0a6bca3addac2684ad319713b9fb22ed" category="list-text">[次へ]*を選択し、*[権限の追加]*を選択します。</block>
   <block id="2f1197d590dc982e571ad76ed9962122" category="list-text">[ロール]&gt;[ロールの作成]*を選択します。</block>
-  <block id="cd22a7243285b0197650652e956f0870" category="list-text">* BlueXP *で：[Connector]ドロップダウンを選択し、*[Add Connector]*を選択して、画面の指示に従います。</block>
   <block id="a383b5c1d32b2c38a7dcfa44af208c71" category="list-text">IAMロールを選択し、*[IAMロールの更新]*を選択します。</block>
   <block id="03c5d9363dbf1b3b05f46e5d41ec0266" category="list-text">[コネクタ]*ドロップダウンを選択し、*[コネクタの追加]*を選択します。</block>
   <block id="0447e5af15c21fbb6eee1972d30cef83" category="list-text">クラウドプロバイダとして* Amazon Web Services *を選択し、* Continue *を選択します。</block>
@@ -3749,7 +3434,6 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="b5db57dbb4b1fc339bfbf2e32844ab33" category="list-text">[Choose Action]*で、[Launch through EC2]*を選択し、[Launch]*を選択します。</block>
   <block id="a77947bca5ad1214f93361073cfddb0a" category="list-text">*概要*：概要を確認し、*インスタンスの起動*を選択します。</block>
   <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">[* Let's start]*を選択します。</block>
-  <block id="74fea2a07b811e755565557990612058" category="list-text">最初の作業環境を作成する場合は、*[Add Working Environment]*を選択し、画面の指示に従います。それ以外の場合は、*コネクタ*ドロップダウンを選択し、*コネクタの追加*を選択します。</block>
   <block id="1ce857b02028095dcbdb6522daf11862" category="list-text">[今すぐ入手]*を選択し、*[続行]*を選択します。</block>
   <block id="36cfedae32501cb288f9aa908aadb288" category="list-text">Azureポータルで、*[作成]*を選択し、手順に従って仮想マシンを設定します。</block>
   <block id="6b18581fd807739e0d0c13a503a419de" category="list-text">[確認と作成]ページで、選択内容を確認し、*[作成]*を選択して導入を開始します。</block>
@@ -3778,24 +3462,8 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="2da6f1af030756bb235fd83baa6abd7b" category="paragraph">すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。</block>
   <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するためのアウトバウンドインターネット接続が確立されていない場合は、コネクタに付属のプロキシサーバを使用するように自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
   <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">BlueXPからAzureにコネクタを作成します</block>
-  <block id="5b943b0498231c38714aca470c3c0dab" category="paragraph">ネットワークをセットアップし、Azure権限を準備してから、BlueXPからAzureでコネクタを作成します。</block>
-  <block id="42f8643eb52a942747937327c72c8361" category="section-title">導入の概要</block>
-  <block id="ac5d5b7ded11cc7f8b4df462f961d2e8" category="paragraph">次の手順では、このページで実行するタスクの概要を示します。これらの各手順の詳細については、以降のセクションを参照してください。</block>
-  <block id="2ef15946081a8510366177e6ee7e5111" category="paragraph">コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。たとえば、アウトバウンドのインターネットアクセスとターゲットネットワークへのネットワーク接続が確立された仮想ネットワークが必要です。</block>
-  <block id="c794110cfe04873f3ea19458fb48df3c" category="inline-xref">ネットワーク要件を表示する</block>
-  <block id="582b3a879115844ed6c92eedc860c81a" category="paragraph"><block ref="01fbc73f2f4d3ada99434a64c61d271f" category="inline-xref-macro-rx"></block>。</block>
-  <block id="3cf3b3a2d331d9973e9029f5ee423d59" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Azure権限を設定する</block>
-  <block id="1503a9f546164361607faf57c69eae56" category="paragraph">カスタムロールを作成して、AzureアカウントまたはAzure ADサービスプリンシパルに適用します。BlueXPはAzureで認証し、これらの権限を使用してコネクタインスタンスを作成します。</block>
-  <block id="e82d7f6d0b7a997d6eac1814ff1c2863" category="paragraph"><block ref="74b20113240190c7a71403f57a3cd8fc" category="inline-xref-macro-rx"></block>。</block>
-  <block id="aea46324800b152c6a50caff1d14e2fc" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> コネクターを作成します</block>
-  <block id="985afe15de341c249321c6704172a4ea" category="paragraph">BlueXPで、[Connector]ドロップダウンをクリックし、*[Add Connector]*を選択して、画面の指示に従います。</block>
-  <block id="1dc565e14b0401db0c6aee5f8e24ef79" category="paragraph"><block ref="450d1cb8d9a0a316433d14e18974a979" category="inline-xref-macro-rx"></block>。</block>
-  <block id="95643ce42bab17c218d7c19a0c0040bb" category="paragraph">コネクタをインストールするネットワークの場所が、次の要件をサポートしていることを確認します。</block>
-  <block id="83bb814dc9552aa2612588ab7ce9f0e9" category="list-text">コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。たとえば、Cloud Volumes ONTAPシステムやストレージをオンプレミス環境に作成するVNetなどです。</block>
-  <block id="8e97b7d14c907dc59419c53c5e813e4d" category="list-text">次のセクションで説明するように、コネクタを展開するネットワークの場所には、特定のエンドポイントに接続するためのアウトバウンドインターネット接続が必要です。</block>
   <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">BlueXPからコネクタを作成するときは、BlueXPがAzureで認証してVMを導入するためのログインを指定する必要があります。次の 2 つのオプションがあります。</block>
   <block id="79a9c2b8e447685125856ec6046d8128" category="admonition">このカスタムロールには、BlueXPからAzureでコネクタVMを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。BlueXPがコネクタを作成すると、Connector VMに新しい権限セットが適用され、Connectorがパブリッククラウド環境内のリソースを管理できるようになります。</block>
-  <block id="00e80b4b164dd96954a27ed3236c9728" category="paragraph">コネクタを導入するには、BlueXPがAzureで認証される必要があります。2つのAzure認証方式から選択できます。</block>
   <block id="6dc4f3e9aa2dada18f0a17189fa7d079" category="list-text">「 * アクセスコントロール（ IAM ） * 」をクリックします。</block>
   <block id="761218505548d0e5a2977bd7c31de50a" category="list-text">[ * 追加 *&gt;* 役割の割り当ての追加 * ] をクリックして、権限を追加します。</block>
   <block id="407df91196b1a54a89a9911a8ac6a332" category="list-text">Azure SetupAsService * ロールを選択し、 * 次へ * をクリックします。</block>
@@ -3808,8 +3476,6 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="e33ca9bd2b94654f882a0e0ed82dec19" category="list-text">アプリケーションを選択し、 * Select * をクリックします。</block>
   <block id="16d491a352eff99aff3a3090f243e9a7" category="paragraph">BlueXPのWebベースのコンソールから直接コネクタを作成します。</block>
   <block id="38c0deaf9ce4435ad8d471fc04a21ac0" category="paragraph">これらの権限はコネクタインスタンス自体に適用されます。これは、コネクタVMを導入するために以前に設定した権限とは異なる権限のセットです。</block>
-  <block id="d2b74161d054c69894469355bb22cb63" category="list-text">最初の作業環境を作成する場合は、 * 作業環境の追加 * をクリックし、プロンプトに従います。それ以外の場合は、 [*connector*] ドロップダウンをクリックし、 [*Add connector*] を選択します。</block>
-  <block id="7dafa3d9179efddb7b70ff753d853a0e" category="paragraph"><block ref="29949bbccf251af183678449a2465f09" category="inline-xref-macro-rx"></block>。</block>
   <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">[ 追加（ Add ） ] をクリックします。</block>
   <block id="6f634a99f964ad704af4d4f3aaf6d261" category="section-title">既存のサブスクリプションをアカウントに関連付ける</block>
   <block id="18fdf9616b567e691b5890f032e3bba7" category="paragraph">AWS MarketplaceからBlueXPにサブスクライブする際の最後の手順は、BlueXP WebサイトからBlueXPアカウントにサブスクリプションを関連付けることです。この手順を完了していない場合は、BlueXPアカウントでサブスクリプションを使用することはできません。</block>
@@ -3918,4 +3584,193 @@ AWS Marketplaceからコネクタを起動した場合、コネクタを手動�
   <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">AWS MarketplaceでBlueXPにサブスクライブ</block>
   <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Azure MarketplaceでBlueXPにサブスクライブ</block>
   <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Google Cloud MarketplaceからBlueXPにサブスクライブ</block>
+  <block id="9f1bd247464191c700cb44116139a226" category="section-title">手順1：コネクタを取り付ける</block>
+  <block id="0c636bde157e77551496ec8461e40dcc" category="section-title">ステップ2：BlueXPをセットアップする</block>
+  <block id="60a2819d83a7d683770230c16623234f" category="section-title">ステップ3：BlueXPへの権限を付与する</block>
+  <block id="33df6c8bf79bb883818929fadd08fde2" category="paragraph"><block ref="c830bbf16033728edff10270fb2e90fe" category="inline-link-macro-rx"></block>。</block>
+  <block id="895abbd8e532d17f2ca587c540bce83a" category="list-text"><block ref="895abbd8e532d17f2ca587c540bce83a" category="inline-link-macro-rx"></block></block>
+  <block id="72323525d86fb9af6692c45c5d227ba4" category="list-text"><block ref="72323525d86fb9af6692c45c5d227ba4" category="inline-link-macro-rx"></block></block>
+  <block id="6aae497466fed2612ac006372d018332" category="list-text"><block ref="6aae497466fed2612ac006372d018332" category="inline-link-macro-rx"></block></block>
+  <block id="9a1ba924530ef064e3af892730568dd2" category="list-text"><block ref="9a1ba924530ef064e3af892730568dd2" category="inline-link-macro-rx"></block></block>
+  <block id="dcaf9d9995c1cce5dfb4399e2434754e" category="summary">独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、Azureの権限を準備してから、コネクタをインストールし、準備した権限を指定する必要があります。</block>
+  <block id="4a121ca6348602c8e2772e9488d338a9" category="doc">Azureへのコネクタの手動インストール</block>
+  <block id="38c977ce808382575da9f341bee1d199" category="paragraph">確認が必要です <block ref="a2e83c328c5fe53a1b055bac582f41f6" category="inline-link-macro-rx"></block>。</block>
+  <block id="5b6c8baef296a0ee0c5ff5b25d3b43fd" category="section-title">手順1：ホスト要件を確認する</block>
+  <block id="50368de37e44f114e14bdf383d655041" category="section-title">手順2：ネットワークをセットアップする</block>
+  <block id="777217f0ae54cd380d40c78b43240a00" category="paragraph">コネクタをインストールするネットワークの場所が、次の要件をサポートしていることを確認します。これらの要件を満たすことで、コネクタはハイブリッドクラウド環境内のリソースとプロセスを管理できるようになります。</block>
+  <block id="7f18b4acc8a5bd4dc5f43cf0deb8c2d8" category="list-text">コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。たとえば、オンプレミス環境にCloud Volumes ONTAPシステムやストレージシステムを作成するネットワークなどです。</block>
+  <block id="3551629b0e37f203b25270d0dfdc1f39" category="list-text">コネクタを展開するネットワークの場所には、特定のエンドポイントに接続するためのアウトバウンドインターネット接続が必要です。</block>
+  <block id="5761fa91677853434e4537aeda21de63" category="section-title">手順3：権限を設定する</block>
+  <block id="98fbfc7b90b1537be74af9a49772f49a" category="paragraph">次のいずれかのオプションを使用して、BlueXPにAzure権限を設定する必要があります。</block>
+  <block id="477e9f08d03102e04ead3de4b2f8b69e" category="paragraph">BlueXPの権限を準備する手順は次のとおりです。</block>
+  <block id="d10eb1d2e85fdd829a66c3fc142d80ad" category="section-title">手順4：コネクタを取り付ける</block>
+  <block id="f20df450b1161c347a5e7eba9538eeb3" category="paragraph">前提条件が完了したら、ソフトウェアを自分のLinuxホストに手動でインストールできます。</block>
+  <block id="15daaea4d03b83616f3ad0b69cf782d4" category="section-title">手順5：BlueXPに権限を付与する</block>
+  <block id="d0fb5ed733cfc3e5faf9cd5d96f676a9" category="paragraph">コネクタのインストールが完了したら、以前に設定したAzure権限をBlueXPに付与する必要があります。権限を付与することで、AzureのデータとストレージインフラをBlueXPで管理できるようになります。</block>
+  <block id="72a8b95c961c5befe0da974b494bd112" category="paragraph"><block ref="72a8b95c961c5befe0da974b494bd112" category="inline-link-macro-rx"></block></block>
+  <block id="3841f44681bf2f357b9d0af73693bfe7" category="paragraph"><block ref="fd1bb5492ba75369497408ab8d3a2621" category="inline-link-macro-rx"></block>。</block>
+  <block id="36e6f8681cc34503cfb0480443d76ab6" category="paragraph"><block ref="36e6f8681cc34503cfb0480443d76ab6" category="inline-link-macro-rx"></block></block>
+  <block id="04db9667b9afd4fbbbb994922ad2f7c1" category="paragraph"><block ref="f578423c9de0a6574109b1d8ac8175ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="d03606e722be163f18ffb05fb7f6b8ad" category="summary">BlueXPを標準モードで使い始めるには、BlueXPコンソールのネットワークを準備し、サインアップしてアカウントを作成し、必要に応じてコネクタを作成し、BlueXPにサブスクライブします。</block>
+  <block id="2c4bc70d5e888213a3bca35048028c96" category="doc">スタートアップワークフロー（標準モード）</block>
+  <block id="c31816e89acef282910453c5620f26f4" category="inline-link-macro">導入モード</block>
+  <block id="63cdcb539602141cbfe5c9301a4015d5" category="paragraph">開始する前に、次のことを理解しておく必要があります。 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>、 <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>および <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
+  <block id="13ba2efb4fd4a349dae9e57188cc7124" category="inline-link-macro">BlueXPコンソールを使用するためのネットワークの準備</block>
+  <block id="d8d95c6e255d7fd2ce0e575678de25b2" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="1bc96baa170355729e3a1a71e3c69ee7" category="inline-link-macro-rx"></block></block>
+  <block id="5e9f2d9ffcf828e9073641fd51d9dd96" category="paragraph">BlueXPコンソールにアクセスするコンピュータは、いくつかの管理タスクを実行するために特定のエンドポイントに接続する必要があります。ネットワークでアウトバウンドアクセスが制限されている場合は、これらのエンドポイントが許可されていることを確認する必要があります。</block>
+  <block id="666211ddfad69f0316f1b85953aa081f" category="inline-link-macro">サインアップしてアカウントを作成します</block>
+  <block id="e8ae36985bee1decac54881ccee2fd0b" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="5b9edf9589bc47960079bd9eebd68511" category="inline-link-macro-rx"></block></block>
+  <block id="825dba606043da7ef954a9b12c9f7d3b" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> コネクタを作成します</block>
+  <block id="df29cf5b19d5f16c92a7f553f92e9d4a" category="list-text"><block ref="df29cf5b19d5f16c92a7f553f92e9d4a" category="inline-link-macro-rx"></block></block>
+  <block id="57e58ed1cb42b3b5aaba112bc48563a6" category="list-text"><block ref="57e58ed1cb42b3b5aaba112bc48563a6" category="inline-link-macro-rx"></block></block>
+  <block id="6563bdfaccc3983704cae5a10067fc4e" category="list-text"><block ref="6563bdfaccc3983704cae5a10067fc4e" category="inline-link-macro-rx"></block></block>
+  <block id="7f80da371418dd1762f659141a966f43" category="list-text"><block ref="7f80da371418dd1762f659141a966f43" category="inline-link-macro-rx"></block></block>
+  <block id="6400bfdbde707064e9b4e7768b35a3f9" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="fa53da48b043041a5a8508c7d2d93104" category="inline-link-macro-rx"></block></block>
+  <block id="e5d3b66eefdb2ac002721447f12c550c" category="summary">SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、いくつかの管理タスクを実行する際に複数のエンドポイントに通信します。BlueXPコンソールにアクセスするコンピュータは、これらのエンドポイントに接続する必要があります。</block>
+  <block id="2ae779b46b9a3564f7c1c2e6ccea2296" category="paragraph">これらのエンドポイントは、BlueXPコンソールから特定の操作を実行するときに、ユーザのコンピュータからアクセスされます。また、コネクタや特定のBlueXPサービスのネットワーク要件も参照してください。詳細については、このページの最後にある関連リンクを参照してください。</block>
+  <block id="0754f1969636526eac38034bd1419234" category="list-text"><block ref="0754f1969636526eac38034bd1419234" category="inline-link-macro-rx"></block></block>
+  <block id="2c23813ca1d467902b4a5cbc8a878232" category="list-text"><block ref="2c23813ca1d467902b4a5cbc8a878232" category="inline-link-macro-rx"></block></block>
+  <block id="f0c3f7365e880532f402961957bd549e" category="list-text"><block ref="f0c3f7365e880532f402961957bd549e" category="inline-link-macro-rx"></block></block>
+  <block id="8f62fdc4eba7cbec71350a9ad0375485" category="list-text"><block ref="8f62fdc4eba7cbec71350a9ad0375485" category="inline-link-macro-rx"></block></block>
+  <block id="e076f6c74577c43033001756a3886ddc" category="paragraph">各BlueXPサービスのドキュメントを参照してください。</block>
+  <block id="0b849731882fd6505b78e31e7c6793e0" category="doc">スタートアップワークフロー（プライベートモード）</block>
+  <block id="86324dc19986cf024d27996fe0699e06" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="0be36da6d7a1ea4d94468b72475c7e35" category="inline-link-macro-rx"></block></block>
+  <block id="99b431ba0bae952794b186c1e8ca969f" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="f4c0bdac7b3aa5cf7bf7f433238f96a2" category="inline-link-macro-rx"></block></block>
+  <block id="e80d828d2459b04d1fa1c01c4becbe8b" category="paragraph">BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます <block ref="87670d19e81a277edefeb1f9eed2acf4" category="inline-link-macro-rx"></block>。</block>
+  <block id="f4426e4062930abb33465fb5b79b35dc" category="inline-link-macro">Azure Marketplace環境の権限を設定する</block>
+  <block id="d16dc391acdc52d611958fdd5ca48d52" category="list-text"><block ref="d16dc391acdc52d611958fdd5ca48d52" category="inline-link-macro-rx"></block></block>
+  <block id="8790c01539f52b3b7d7f0f32b6631813" category="inline-link-macro">オンプレミス環境の権限を設定する</block>
+  <block id="88a6f26465fef463007526defecd01d8" category="list-text"><block ref="88a6f26465fef463007526defecd01d8" category="inline-link-macro-rx"></block></block>
+  <block id="643063b79f29bba54b69c5a3d47a8da5" category="summary">BlueXPからAWSでコネクタを作成するには、ネットワークを設定し、AWS権限を準備してからコネクタを作成する必要があります。</block>
+  <block id="a9b34414733cf4871ed4d1f23b7438dd" category="doc">BlueXPからAWSにコネクタを作成します</block>
+  <block id="70d8bd725ea77c6a4b800edb3d5b9f5f" category="section-title">手順1：ネットワークをセットアップする</block>
+  <block id="49436e703f28a7e02a6fa78f445122ab" category="paragraph">AWSでリソースを管理できます。正確なエンドポイントは、使用しているAWSリージョンによって異なります。<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
+  <block id="bbc8741d5b8cb60c926722b934bec008" category="section-title">手順2：AWS権限を設定する</block>
+  <block id="76fc03e9ac56ec6623a5f3fd59761d4b" category="section-title">手順3：コネクタを作成する</block>
+  <block id="da14ee4a8100ac08980150bcda1e397d" category="inline-link-macro">コネクタのデフォルト設定について説明します</block>
+  <block id="f1620bf756a71002318f3eb8b1277d2f" category="paragraph">BlueXPでコネクタを作成すると、デフォルト設定を使用してAWSにEC2インスタンスが導入されます。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="26b0998fe035211b8097187e431e16b9" category="summary">独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、AWS権限を準備してコネクタをインストールし、準備した権限を指定する必要があります。</block>
+  <block id="eb44c1bbcb138bd8d43dab2a2d5dd798" category="doc">AWSにコネクタを手動でインストールする</block>
+  <block id="2cdec4e0f473161523115d9e1cc50257" category="list-text">コネクタを作成するときは、インスタンスで使用するEC2キーペアを選択する必要があります。</block>
+  <block id="5a91621ccd300e88166b91a0b665aac4" category="paragraph">次のいずれかの方法でBlueXPにAWS権限を指定する必要があります。</block>
+  <block id="6228648e5d6d15ae3dbe8697a0cac46b" category="list-text">オプション2：必要な権限を持つIAMユーザのAWSアクセスキーをBlueXPに提供します。</block>
+  <block id="d09b59b3c361894c6a2979054b0ad2d7" category="paragraph">これで、コネクタのインストール後にEC2インスタンスに関連付けることができるIAMロールが作成されました。</block>
+  <block id="0ab11996db5879cc1a003c58677711c7" category="paragraph">これで、必要な権限とBlueXPへのアクセスキーを持つIAMユーザが作成されました。</block>
+  <block id="d2d1ceed8d98a24134a28e02c516e866" category="paragraph">コネクタのインストールが完了したら、以前に設定したAWS権限をBlueXPに付与する必要があります。権限を付与することで、BlueXPでAWSのデータとストレージインフラを管理できるようになります。</block>
+  <block id="0b535291ac12ed2971b8f6dd20077b57" category="paragraph">Google Cloudでリソースを管理するためにBlueXPで必要な権限をコネクタに付与するには、Google Cloudサービスアカウントが必要です。コネクタを作成するときは、このサービスアカウントをコネクタVMに関連付ける必要があります。</block>
+  <block id="2afbc6cdafdfd50d0796ff7ccdc0fd3e" category="list-text">Google Cloudでサービスアカウントを作成し、ロールをサービスアカウントに割り当てます。</block>
+  <block id="3d6b59e9fbd2e4d484133fea08ac4428" category="list-text">IAMと管理サービスで、Cloud Volumes ONTAPシステムを作成するGoogle Cloudプロジェクトを選択します。</block>
+  <block id="658340d0aa3e36a759f733841569dc13" category="example-title">共有VPC権限の表示</block>
+  <block id="b326fc983a5df57abde362e9d50b49c0" category="paragraph"><block ref="b326fc983a5df57abde362e9d50b49c0" category="inline-link-macro-rx"></block></block>
+  <block id="570229b9947a1227993037f3d9ddc76e" category="cell">compute.networkUser
+
+deploymentmanager. editor</block>
+  <block id="392b1caa909a73660b60354854bfae80" category="cell">storagec.admin
+
+メンバー：BlueXPサービスアカウントをserviceAccount.userとして登録します</block>
+  <block id="5dede1d84f3762484d5f82034b108c8d" category="paragraph">|をクリックしてAWSのリソースを管理します。正確なエンドポイントは、使用しているAWSリージョンによって異なります。<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
+  <block id="3f85a7bdf40074d6d7c5e25de7a35f3a" category="inline-link-macro">AWS Marketplace環境の権限を設定する</block>
+  <block id="cd2bf2a9ec0f834a404adb2dff0bbe33" category="list-text"><block ref="cd2bf2a9ec0f834a404adb2dff0bbe33" category="inline-link-macro-rx"></block></block>
+  <block id="7670b3e7fd0d9b5404a8ab86daf87444" category="section-title">ステップ1：プライベートモードの仕組みを理解する</block>
+  <block id="6a0acc770010231bcc42930780e10a7e" category="section-title">手順2：インストールオプションを確認する</block>
+  <block id="50c4903873872ea1d14776db2fb74652" category="section-title">手順3：ホスト要件を確認する</block>
+  <block id="ba9523b755dd436b9804d56f2425702a" category="section-title">手順4：コネクタのネットワークを準備する</block>
+  <block id="4a34940e5f45b6eb76dabb3e23de10f0" category="section-title">ステップ5：クラウドの権限を準備する</block>
+  <block id="ed699bb1e56dba725718c6f093e80619" category="section-title">ステップ6：Google Cloud APIを有効にする</block>
+  <block id="755bdc98f2ba455bba23e5d86a671294" category="section-title">手順1：制限モードの仕組みを理解する</block>
+  <block id="b5437b8a5eafec074529299c6dc47771" category="section-title">手順4：ネットワークを準備する</block>
+  <block id="62e5d1121361ae6a6b8f2f35c9e1b534" category="list-text">制限モードでは、コネクタからBlueXPユーザインターフェイスにアクセスできます。BlueXPユーザインターフェイスを使用すると、いくつかのエンドポイントに接続してデータ管理タスクを実行できます。これらのエンドポイントは、BlueXPコンソールから特定の操作を実行するときに、ユーザのコンピュータからアクセスされます。</block>
+  <block id="d9d13e4310493bbbe9137b8f0bff73c0" category="section-title">ステップ5クラウドの権限を準備する</block>
+  <block id="d33385b3989ad7c0d0d5068246d54b96" category="summary">Google Cloudでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。</block>
+  <block id="01936da377bd77271790dab55ad9996f" category="inline-link-macro">BlueXPからコネクタを直接作成</block>
+  <block id="81bfdce77d2f02aa0110ac77ab7d117d" category="list-text"><block ref="4e9cbb4f1c74952959ded57fc23d598b" category="inline-link-macro-rx"></block> （これは標準オプションです）</block>
+  <block id="a56140a16ae4fdd6e26238122f72fd1e" category="list-text"><block ref="a56140a16ae4fdd6e26238122f72fd1e" category="inline-link-macro-rx"></block></block>
+  <block id="5310f96a897370524550567753357d0f" category="paragraph">また、Linuxを実行するVMインスタンスとConnectorソフトウェアも起動しますが、導入はBlueXPではなくGoogle Cloudから直接開始されます。</block>
+  <block id="ab98f632a22cf265a09e9110157eba1f" category="list-text"><block ref="ab98f632a22cf265a09e9110157eba1f" category="inline-link-macro-rx"></block></block>
+  <block id="c121381dfee8c4adbd097f5195fa047c" category="summary">AWSでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。</block>
+  <block id="ac5b4fc4d9960ee08b623a5d7e02c723" category="list-text"><block ref="8877e2d58a4afcedb515951b2c2e2822" category="inline-link-macro-rx"></block> （これは標準オプションです）</block>
+  <block id="bfbf33ee365f77b15c3357d7de535a2c" category="list-text"><block ref="bfbf33ee365f77b15c3357d7de535a2c" category="inline-link-macro-rx"></block></block>
+  <block id="b4ddd02a1c9dee7fdc6802111fb3cc25" category="paragraph">また、Linuxを実行するEC2インスタンスとコネクタソフトウェアも起動しますが、導入はBlueXPではなくAWS Marketplaceから直接開始されます。</block>
+  <block id="a0d5fffa896034a79c127d53a34685b7" category="list-text"><block ref="a0d5fffa896034a79c127d53a34685b7" category="inline-link-macro-rx"></block></block>
+  <block id="8ce9c61f5e14fb093fdb6cc132fb3103" category="summary">BlueXPからAzureでコネクタを作成するには、ネットワークを設定し、Azureの権限を準備してから、コネクタを作成する必要があります。</block>
+  <block id="383a4f176227e611b43fffaef447cf94" category="section-title">手順2：カスタムロールを作成する</block>
+  <block id="568a7904f89eda5a0e1ad00f19631224" category="paragraph">AzureアカウントまたはAzure ADサービスプリンシパルに割り当てることができるAzureカスタムロールを作成します。BlueXPはAzureで認証し、これらの権限を使用してコネクタインスタンスを作成します。</block>
+  <block id="93017c2ae371dc5a19be6e0cce08ab5a" category="section-title">手順3：認証を設定する</block>
+  <block id="a29efb5754bb36ee62d4a2e17c5e5717" category="list-text">プロンプトが表示されたら、Azureアカウントでサインインします。このアカウントには Azure 固有の権限が必要です。これがデフォルトのオプションです。</block>
+  <block id="fbb7d70eda793afc4159d1bd8f3c3814" category="paragraph">次の手順に従って、いずれかの認証方式をBlueXPで使用できるように準備します。</block>
+  <block id="a9242e0bd7c37f9c26c954ae4eff29b3" category="open-title">Azureアカウント</block>
+  <block id="d1ff9355f81257b2c8a7693e702ba3f7" category="section-title">手順4：コネクタを作成する</block>
+  <block id="f23ed1e499f82b7b35d463ccef21eed1" category="paragraph">BlueXPからコネクタを作成すると、デフォルトの設定を使用してAzureに仮想マシンが導入されます。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="2f44f891a2e61a894ccc4f30dfd7b4be" category="paragraph"><block ref="8d330a1f00fb06fce7867e682fb9a351" category="inline-xref-macro-rx"></block>。</block>
+  <block id="234849cccf32785a20387f435fbc1665" category="paragraph">標準モードでBlueXPを使用している場合、権限の付与方法はコネクタの作成方法によって異なります。</block>
+  <block id="235df19fd66aa61dd8174f1a6480f822" category="paragraph">アクセス許可の設定方法については、以下を参照してください。</block>
+  <block id="2309e95f128f15afe4bdf21a377f9d87" category="list-text"><block ref="2309e95f128f15afe4bdf21a377f9d87" category="inline-link-macro-rx"></block></block>
+  <block id="c53f978d2c0ef8c78c62cdf0fc803526" category="list-text"><block ref="c53f978d2c0ef8c78c62cdf0fc803526" category="inline-link-macro-rx"></block></block>
+  <block id="412d134b731f1d8c5a5b0a427966703d" category="list-text"><block ref="412d134b731f1d8c5a5b0a427966703d" category="inline-link-macro-rx"></block></block>
+  <block id="ed3271e15717ab8332c1de24eba514e0" category="list-text"><block ref="ed3271e15717ab8332c1de24eba514e0" category="inline-link-macro-rx"></block></block>
+  <block id="2b27af8d5932753265ba5607c4aca373" category="summary">Azure Marketplaceからコネクタを作成するには、ネットワークを設定し、Azureの権限を準備し、インスタンス要件を確認してからコネクタを作成する必要があります。</block>
+  <block id="08162f5d2875618589001f4ce951b82d" category="section-title">ステップ2：VMの要件を確認する</block>
+  <block id="67e296817a0a6c22fc1ef6d510785c4d" category="paragraph">コネクタを作成するときは、次の要件を満たす仮想マシンタイプを選択する必要があります。</block>
+  <block id="2e8efb5a4d803004aa2f7b52e98e57e6" category="paragraph">権限は次の方法で指定できます。</block>
+  <block id="4038d2f08625a8689610b527df3b8ded" category="paragraph">BlueXPの権限を設定するには、次の手順を実行します。</block>
+  <block id="4ce58aed62ea94c374a38864c0fb4252" category="paragraph">Azure Marketplaceからコネクタを直接起動します。</block>
+  <block id="d07ea60173f1265837ca53e342739d45" category="paragraph">Azure Marketplaceからコネクタを作成すると、デフォルト構成を使用してAzureに仮想マシンが導入されます。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="a2832b4d1493aef5e7b104eee31696c2" category="paragraph">コネクタの作成が完了したら、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、AzureのデータとストレージインフラをBlueXPで管理できるようになります。</block>
+  <block id="333a6174ed6d7c0a901714986b18ffe4" category="summary">独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、Google Cloudの権限を準備し、Google Cloud APIを有効にしてから、コネクタをインストールし、準備した権限を指定する必要があります。</block>
+  <block id="2752969f9e640eeece13dd03965d62d0" category="doc">Google Cloudにコネクタを手動でインストールする</block>
+  <block id="ee6518a606731df759329c957c614bd7" category="section-title">手順3：コネクタの権限を設定する</block>
+  <block id="47c702e5703c00c15a7f10ffe5bb3fdd" category="section-title">手順4：共有VPC権限を設定する</block>
+  <block id="fa48079a29f8b87d7d08f79f359feb76" category="section-title">ステップ5：Google Cloud APIを有効にする</block>
+  <block id="69f380f2398b7565bd53d007caa73472" category="paragraph">Cloud Volumes ONTAPシステムをGoogle Cloudに導入する前に、いくつかのGoogle Cloud APIを有効にする必要があります。</block>
+  <block id="da93ca4b1142128f1472b9a3e7c7548c" category="section-title">手順6：コネクタを取り付ける</block>
+  <block id="23f1991165d981fbfc14ff4a1b567d22" category="section-title">手順7：BlueXPに権限を付与する</block>
+  <block id="77c49575039cf84b53e2e3bf39a8a007" category="paragraph">以前に設定したGoogle Cloud権限をBlueXPに付与する必要があります。権限を付与することで、BlueXPでGoogle Cloudのデータとストレージインフラを管理できるようになります。</block>
+  <block id="af2c4df7e8660cdabd8fc59a2aa0aaf1" category="doc">はじめにワークフロー（制限モード）</block>
+  <block id="1308ae14263d9629eb12e11bd10db155" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="f826f61970c0735d0b0624264426b512" category="inline-link-macro-rx"></block></block>
+  <block id="4e23722878b94665fc99da5155740983" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="91952275075ecc9b8aebe16ba6271f44" category="inline-link-macro-rx"></block></block>
+  <block id="4da4136996a5693cce37cbf2f0593ca8" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> <block ref="b6ac9571373b405609dca7f8bd1d8d17" category="inline-link-macro-rx"></block></block>
+  <block id="f27478da3d45a7fb911169376cc097a3" category="list-text"><block ref="f27478da3d45a7fb911169376cc097a3" category="inline-link-macro-rx"></block></block>
+  <block id="fd7bdffe2c7880247dba3b22064b4662" category="list-text"><block ref="fd7bdffe2c7880247dba3b22064b4662" category="inline-link-macro-rx"></block></block>
+  <block id="46eb19bc7ffa54dcdb1974eae5e15a55" category="list-text"><block ref="46eb19bc7ffa54dcdb1974eae5e15a55" category="inline-link-macro-rx"></block></block>
+  <block id="9f1b173da34454dc5496d8e7c6489b76" category="summary">BlueXPへのログイン方法は、アカウントで使用しているBlueXP導入モードによって異なります。</block>
+  <block id="2c3621f7119a3af3ff21d4dabe12e9b8" category="summary">BlueXPまたはgcloudを使用してGoogle Cloudでコネクタを作成するには、ネットワークを設定し、Google Cloud権限を準備し、Google Cloud APIを有効にしてから、コネクタを作成する必要があります。</block>
+  <block id="fc9383e01decd56a18836fe085765bd8" category="doc">BlueXPやgcloudからGoogle Cloudでコネクタを作成</block>
+  <block id="a936481c7c1d5494203a4520626ac2b2" category="section-title">手順2：コネクタを作成するための権限を設定する</block>
+  <block id="4d55aaa36c67fd980b8ca20ca5db6ef9" category="paragraph">BlueXPまたはgcloudを使用してコネクタを導入する前に、コネクタVMを導入するGoogle Cloudユーザの権限を設定する必要があります。</block>
+  <block id="8456ad5c97fd1db8b43fc61d8ea03799" category="section-title">手順6：コネクタを作成する</block>
+  <block id="bb919bb919074dbe6c69b05695d0a1aa" category="paragraph">BlueXPのWebベースのコンソールから直接、またはgcloudを使用してコネクタを作成します。</block>
+  <block id="b03261236b57a26202438940439ee786" category="paragraph">コネクタを作成すると、デフォルトの構成を使用してGoogle Cloudに仮想マシンインスタンスが導入されます。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="ec2ce152b3b60e3721ae091911de473d" category="list-text">VMインスタンスの要件の理解</block>
+  <block id="aab924c92611ee11b49b8687e53ec943" category="list-text">* CPU *：4コアまたは4 vCPU</block>
+  <block id="3f8517f6b0146fc27e0a5144098713fb" category="list-text">* RAM *：14 GB</block>
+  <block id="12214f717d223f4e629e799bb92aa784" category="list-text">*マシンタイプ*：n2-standard-4をお勧めします。</block>
+  <block id="c46c07de3509c2f428511938b99c482c" category="paragraph">このコネクタは、シールドされたVM機能をサポートするOSを持つVMインスタンス上のGoogle Cloudでサポートされています。</block>
+  <block id="b4b2faa64fa527010fe06cf8daebba0d" category="inline-link-macro">BlueXPからコネクタを直接作成</block>
+  <block id="034ffed90c6cbf22b9ac08da3eed1583" category="list-text"><block ref="8a82d6caaf4bb0d15c7ad83c8f8f22c1" category="inline-link-macro-rx"></block> （これは標準オプションです）</block>
+  <block id="f620c8829c45a571ef79c7113979e722" category="list-text"><block ref="f620c8829c45a571ef79c7113979e722" category="inline-link-macro-rx"></block></block>
+  <block id="5d2f88742fa055307c09a80d0773bb7f" category="paragraph">また、Linuxを実行するVMとConnectorソフトウェアも起動しますが、導入はBlueXPではなくAzure Marketplaceから直接開始されます。</block>
+  <block id="152e6840a2911cc120f143ff657bdc7e" category="list-text"><block ref="152e6840a2911cc120f143ff657bdc7e" category="inline-link-macro-rx"></block></block>
+  <block id="6a47e87d123961d13235f32c19e7042d" category="section-title">ステップ3：クラウドの権限を設定する</block>
+  <block id="b393abc2831fb45cf9e5b73489057bcc" category="admonition">Google Cloudではない理由コネクタがオンプレミスにインストールされている場合、Google Cloudでリソースを管理することはできません。Google Cloudに存在するすべてのリソースを管理するには、コネクタをGoogle Cloudにインストールする必要があります。</block>
+  <block id="7380491555cdaf40fdcbfe5baeb961c4" category="section-title">手順5：コネクタを設定する</block>
+  <block id="b8312cd81869d608f8aa6c172b1efa56" category="paragraph">サインアップまたはログインして、BlueXPアカウントと連携するようにConnectorを設定します。</block>
+  <block id="63833bed9bf25b857c994cd51a878896" category="section-title">手順6：BlueXPに権限を付与する</block>
+  <block id="ccbf44ea31f64041eb3e02bf2d4f1003" category="paragraph">コネクタのインストールとセットアップが完了したら、クラウドクレデンシャルを追加して、AWSまたはAzureで操作を実行するために必要な権限をBlueXPに付与します。</block>
+  <block id="1afdeeb91955c8912691275e3b9c68c4" category="paragraph">BlueXPからコネクタを展開する場合は、IAMロールのARNまたはIAMユーザのアクセスキーを指定する必要があります。使用する認証方式に、 Connector インスタンスを AWS に導入するための必要な権限がある必要があります。必要な権限は、に表示されます <block ref="c368ad024408b872d841d80ba747ea9c" category="inline-link-macro-rx"></block>。</block>
+  <block id="22212781592f02202c8c844bb4a04932" category="cell"><block ref="22212781592f02202c8c844bb4a04932" category="inline-link-macro-rx"></block></block>
+  <block id="fce0a0b0a267cd8305c849b06f175b89" category="cell"><block ref="fce0a0b0a267cd8305c849b06f175b89" category="inline-link-macro-rx"></block></block>
+  <block id="5a67de31666dbed1b084c8f0ca78f388" category="inline-link-macro">コネクタを作成するための権限を設定する</block>
+  <block id="a0452faa68d5d4a71a8b9513c9b786dc" category="cell"><block ref="a0452faa68d5d4a71a8b9513c9b786dc" category="inline-link-macro-rx"></block></block>
+  <block id="fad6ca384c3ce615d6e92009f691fe31" category="cell"><block ref="fad6ca384c3ce615d6e92009f691fe31" category="inline-link-macro-rx"></block></block>
+  <block id="16110a6364a30618ae3faccd08462846" category="list-text"><block ref="16110a6364a30618ae3faccd08462846" category="inline-link-macro-rx"></block></block>
+  <block id="027fc0f63a53618941a525d7db26960b" category="summary">AWS Marketplaceからコネクタを作成するには、ネットワークを設定し、AWS権限を準備し、インスタンス要件を確認してから、コネクタを作成する必要があります。</block>
+  <block id="1fa4b84064fd1694da61ac2d0778532e" category="section-title">ステップ3：インスタンス要件を確認する</block>
+  <block id="22eed080ddd28e5a07bee6511daf36b3" category="paragraph">コネクタを作成するときは、次の要件を満たすEC2インスタンスタイプを選択する必要があります。</block>
+  <block id="9cc4c3a223d9b6def6feaec3c11d5585" category="paragraph">AWS Marketplaceからコネクタを直接作成します。</block>
+  <block id="0d8dcd0440293645b17304e6ec7f0b44" category="paragraph">AWS Marketplaceからコネクタを作成すると、デフォルト設定を使用してAWSにEC2インスタンスがデプロイされます。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="65ce4dce26160be29539699c6623e379" category="sidebar">スタートアップワークフロー</block>
+  <block id="4cb8580dcb7bdd5753758d2029cf5760" category="sidebar">BlueXPで作成</block>
+  <block id="490065fa675522d3a515cadb526d26f6" category="sidebar">マーケットプレイスから作成します</block>
+  <block id="655a3c90b399118b5d073277c90e6b0f" category="sidebar">手動でインストール</block>
+  <block id="054df94b323e23fce659cffe65ef10ef" category="sidebar">BlueXPまたはgcloudを使用して作成</block>
 </blocks>

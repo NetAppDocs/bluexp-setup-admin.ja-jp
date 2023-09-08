@@ -94,9 +94,9 @@ BlueXPは、標準モードで次のように機能します。
 アウトバウンド通信:: コネクタからBlueXP SaaSレイヤ、クラウドプロバイダが一般に公開しているリソース、および日常業務に欠かせないその他のコンポーネントへの接続が必要です。
 +
 --
-* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector["コネクタがAWSで接続するエンドポイント"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector["コネクタがAzureで接続するエンドポイント"]
-* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector["コネクタがGoogle Cloudで接続するエンドポイント"]
+* link:task-install-connector-aws-bluexp.html#step-1-set-up-networking["コネクタがAWSで接続するエンドポイント"]
+* link:task-install-connector-azure-bluexp.html#step-1-set-up-networking["コネクタがAzureで接続するエンドポイント"]
+* link:task-install-connector-google-bluexp-gcloud.html#step-1-set-up-networking["コネクタがGoogle Cloudで接続するエンドポイント"]
 
 
 --

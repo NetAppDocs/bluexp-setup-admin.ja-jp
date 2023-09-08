@@ -18,7 +18,7 @@ summary: コネクタをプライベートモードで導入し、BlueXP SaaSレ
 
 
 
-== コネクタを取り付ける
+== 手順1：コネクタを取り付ける
 
 NetApp Support Site から製品のインストーラをダウンロードし、手動でコネクタを自分のLinuxホストにインストールします。
 
@@ -64,7 +64,7 @@ sudo /path/cloud-manager-connector-offline-<version>
 
 
 
-== BlueXPをセットアップします
+== ステップ2：BlueXPをセットアップする
 
 BlueXPコンソールに初めてアクセスすると、BlueXPをセットアップするように求められます。
 
@@ -102,11 +102,11 @@ image:screenshot-onprem-darksite-details.png["システムの詳細ページの�
 
 
 
-== BlueXPへの権限を付与します
+== ステップ3：BlueXPへの権限を付与する
 
 Cloud Volumes ONTAP 作業環境を作成する場合は、以前に設定したクラウド権限をBlueXPに付与する必要があります。
 
-link:task-prepare-private-mode.html#prepare-cloud-permissions["クラウドへのアクセス許可を準備する方法をご確認ください"]。
+link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["クラウドへのアクセス許可を準備する方法をご確認ください"]。
 
 [role="tabbed-block"]
 ====

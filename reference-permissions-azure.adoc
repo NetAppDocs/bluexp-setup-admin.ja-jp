@@ -26,10 +26,12 @@ BlueXPからコネクタを直接作成すると、BlueXPは自動的にこの�
 
 Azure MarketplaceからConnectorを導入する場合、またはLinuxホストにConnectorを手動でインストールする場合は、カスタムロールを自分で設定する必要があります。
 
-* link:task-set-up-permissions-azure.html["Azureでコネクタをインストールするための権限を設定する（標準モード）"]
-* link:task-set-up-permissions-on-prem.html["オンプレミスでのコネクタインストールの権限の設定（標準モード）"]
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["制限モードの権限を設定します"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["プライベートモードの権限を設定します"]
+これらのポリシーの使用手順については、次のページを参照してください。
+
+* link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Azure Marketplace環境の権限を設定する"]
+* link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["オンプレミス環境の権限を設定する"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["制限モードの権限を設定します"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["プライベートモードの権限を設定します"]
 
 
 また、新しい権限が以降のリリースで追加されるときに、ロールが最新の状態であることを確認する必要があります。

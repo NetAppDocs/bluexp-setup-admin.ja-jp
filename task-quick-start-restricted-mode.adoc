@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-quick-start-restricted-mode.html 
 keywords: quick start, restricted mode quick start 
-summary: わずか数ステップでBlueXPを制限モードで開始できます。 
+summary: 環境を準備し、コネクタを導入し、BlueXPにサブスクライブすることで、制限モードでBlueXPを開始できます。 
 ---
-= 制限モードのBlueXPのクイックスタート
+= はじめにワークフロー（制限モード）
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,29 +16,22 @@ summary: わずか数ステップでBlueXPを制限モードで開始できま�
 [role="lead"]
 環境を準備し、コネクタを導入し、BlueXPにサブスクライブすることで、制限モードでBlueXPを開始できます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] 導入を準備
+開始する前に、次のことを理解しておく必要があります。 link:concept-netapp-accounts.html["BlueXPのアカウント"]、 link:concept-connectors.html["コネクタ"]および link:concept-modes.html["導入モード"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] link:task-prepare-restricted-mode.html["導入を準備"]
 [role="quick-margin-list"]
 . CPU、RAM、ディスクスペース、Docker Engineなどの要件を満たす専用のLinuxホストを準備します。
 . ターゲットネットワークへのアクセス、手動インストールの場合はアウトバウンドインターネットアクセス、日常的なアクセスの場合はアウトバウンドインターネットを提供するネットワークをセットアップします。
 . クラウドプロバイダで権限を設定して、導入後にコネクタインスタンスにそれらの権限を関連付けることができるようにします。
 
 
-[role="quick-margin-para"]
-link:task-prepare-restricted-mode.html["導入の準備方法をご確認ください"]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] コネクタを展開します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] link:task-install-restricted-mode.html["コネクタを展開します"]
 [role="quick-margin-list"]
 . クラウドプロバイダのマーケットプレイスから、または手動で独自のLinuxホストにソフトウェアをインストールして、コネクタをインストールします。
 . Webブラウザを開き、LinuxホストのIPアドレスを入力してBlueXPをセットアップします。
 . 以前に設定した権限をBlueXPに付与します。
 
 
-[role="quick-margin-para"]
-link:task-install-restricted-mode.html["コネクタの導入方法について説明します"]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] BlueXPにサブスクライブします
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] link:task-subscribe-restricted-mode.html["BlueXPにサブスクライブします"]
 [role="quick-margin-para"]
 クラウドプロバイダのマーケットプレイスからBlueXPにサブスクライブして、BlueXPサービスの料金を時間単位（PAYGO）または年間契約でお支払いください。
-
-[role="quick-margin-para"]
-link:task-subscribe-restricted-mode.html["BlueXPの購読方法をご確認ください"]。

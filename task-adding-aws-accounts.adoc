@@ -176,7 +176,7 @@ BlueXP SaaSレイヤからロールを引き継ぐためのIAMロールを設定
 ** コネクタの作成に必要な権限を含むポリシーを作成します。
 +
 *** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["ONTAP の FSX に必要な権限を表示します"^]
-*** link:task-set-up-permissions-aws.html["Connector展開ポリシーを表示します"]
+*** link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["Connector展開ポリシーを表示します"]
 
 
 

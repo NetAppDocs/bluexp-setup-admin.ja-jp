@@ -31,7 +31,7 @@ BlueXPでは、コネクタと個 々 のサービスにAWS権限が必要です
 | 目標 | 説明 | リンク 
 
 
-| BlueXPからコネクタを導入 | BlueXPからConnectorを作成するユーザには、AWSにインスタンスを導入するための特別な権限が必要です。 | link:task-set-up-permissions-aws.html["AWS権限を設定"] 
+| BlueXPからコネクタを導入 | BlueXPからConnectorを作成するユーザには、AWSにインスタンスを導入するための特別な権限が必要です。 | link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["AWS権限を設定"] 
 
 
 | コネクタの権限を指定します | BlueXPがConnectorを起動すると、AWSアカウントのリソースとプロセスの管理に必要な権限を提供するポリシーがインスタンスに関連付けられます。
@@ -116,7 +116,7 @@ BlueXPでは、コネクタと個 々 のサービスにAzure権限が必要で�
 | 目標 | 説明 | リンク 
 
 
-| BlueXPからコネクタを導入 | BlueXPからConnectorを導入する場合は、AzureにConnector VMを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。 | link:task-set-up-permissions-azure.html["Azure権限を設定する"] 
+| BlueXPからコネクタを導入 | BlueXPからConnectorを導入する場合は、AzureにConnector VMを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。 | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Azure権限を設定する"] 
 
 
 | コネクタの権限を指定します  a| 
@@ -155,12 +155,12 @@ BlueXPでは、コネクタと個 々 のサービスにGoogle Cloudの権限が
 | 目標 | 説明 | リンク 
 
 
-| BlueXPからコネクタを導入 | BlueXPからConnectorを導入するGoogle Cloudユーザーには、Google CloudにConnectorを導入するための特定の権限が必要です。 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Connectorを展開する権限を設定します"] 
+| BlueXPからコネクタを導入 | BlueXPからConnectorを導入するGoogle Cloudユーザーには、Google CloudにConnectorを導入するための特定の権限が必要です。 | link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["コネクタを作成するための権限を設定する"] 
 
 
 | コネクタの権限を指定します | Connector VMインスタンスのサービスアカウントには、日常処理に対する特定の権限が必要です。導入時にサービスアカウントをコネクタに関連付ける必要があります。
 
-また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:reference-permissions-gcp.html["Connector の Google Cloud 権限"] 
+また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。 | link:task-install-connector-google-bluexp-gcloud.html#step-3-set-up-permissions-for-the-connector["コネクタの権限を設定します"] 
 |===
 
 

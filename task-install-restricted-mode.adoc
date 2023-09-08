@@ -18,7 +18,7 @@ BlueXPのSaaSレイヤへのアウトバウンド接続を制限してBlueXPを�
 
 
 
-== コネクタを取り付ける
+== 手順1：コネクタを取り付ける
 
 クラウドプロバイダのマーケットプレイスから、または手動で独自のLinuxホストにソフトウェアをインストールして、コネクタをインストールします。
 
@@ -35,12 +35,12 @@ link:task-prepare-restricted-mode.html["ネットワーク要件について説�
 
 * コネクタに必要な権限を含むポリシーが添付されたIAMロール。
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["AWS権限の設定方法をご確認ください"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["AWS権限の設定方法をご確認ください"]
 
 * IAMユーザのAWS Marketplaceをサブスクライブおよびサブスクライブ解除する権限。
 * インスタンスのCPUとRAMの要件を理解していること。
 +
-link:task-prepare-restricted-mode.html#review-host-requirements["インスタンス要件を確認します"]。
+link:task-prepare-restricted-mode.html#step-3-review-host-requirements["インスタンス要件を確認します"]。
 
 * EC2インスタンスのキーペア。
 
@@ -100,7 +100,7 @@ link:task-prepare-restricted-mode.html["ネットワーク要件について説�
 
 * コネクタに必要な権限を含むポリシーが添付されたIAMロール。
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["AWS権限の設定方法をご確認ください"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["AWS権限の設定方法をご確認ください"]
 
 * IAMユーザのAWS Marketplaceをサブスクライブおよびサブスクライブ解除する権限。
 * EC2インスタンスのキーペア。
@@ -154,7 +154,7 @@ link:task-prepare-restricted-mode.html["ネットワーク要件について説�
 
 * コネクタに必要な権限を含むAzureのカスタムロール。
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Azure権限の設定方法については、こちらをご覧ください"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Azure権限の設定方法については、こちらをご覧ください"]
 
 
 
@@ -294,7 +294,7 @@ BlueXPをセットアップします。
 ====
 
 
-== BlueXPをセットアップします
+== ステップ2：BlueXPをセットアップする
 
 BlueXPコンソールに初めてアクセスすると、コネクタを関連付けるアカウントを選択するように求められ、制限モードを有効にする必要があります。
 
@@ -338,13 +338,13 @@ image:screenshot-restricted-mode.png["コネクタ名とアカウント名を入
 
 
 
-== BlueXPへの権限を付与します
+== ステップ3：BlueXPへの権限を付与する
 
 Azure Marketplaceからコネクタを導入した場合やコネクタソフトウェアを手動でインストールした場合は、BlueXPサービスを使用できるように、以前に設定した権限を指定する必要があります。
 
 AWS Marketplaceからコネクタをデプロイした場合、デプロイ時に必要なIAMロールを選択したため、これらの手順は適用されません。
 
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["クラウドへのアクセス許可を準備する方法をご確認ください"]。
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["クラウドへのアクセス許可を準備する方法をご確認ください"]。
 
 [role="tabbed-block"]
 ====

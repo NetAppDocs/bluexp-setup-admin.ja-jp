@@ -1,0 +1,530 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-google-bluexp-gcloud.html 
+keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, create connector, gcp installation, gcp connector 
+summary: BlueXPまたはgcloudを使用してGoogle Cloudでコネクタを作成するには、ネットワークを設定し、Google Cloud権限を準備し、Google Cloud APIを有効にしてから、コネクタを作成する必要があります。 
+---
+= BlueXPやgcloudからGoogle Cloudでコネクタを作成
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPまたはgcloudを使用してGoogle Cloudでコネクタを作成するには、ネットワークを設定し、Google Cloud権限を準備し、Google Cloud APIを有効にしてから、コネクタを作成する必要があります。
+
+.作業を開始する前に
+確認が必要です link:reference-limitations.html["コネクタの制限"]。
+
+
+
+== 手順1：ネットワークをセットアップする
+
+コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。たとえば、ターゲットネットワークへの接続が可能で、アウトバウンドのインターネットアクセスが利用可能であることを確認する必要があります。
+
+vPCおよびサブネット:: コネクタを作成するときは、コネクタを配置するVPCとサブネットを指定する必要があります。
+
+
+ターゲットネットワークへの接続:: コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。たとえば、オンプレミス環境にCloud Volumes ONTAPシステムやストレージシステムを作成するネットワークなどです。
+
+
+アウトバウンドインターネットアクセス:: コネクタを展開するネットワークの場所には、特定のエンドポイントに接続するためのアウトバウンドインターネット接続が必要です。
+
+
+コネクタから接続されたエンドポイント:: このコネクタは、パブリッククラウド環境内のリソースとプロセスを日常的に管理するために、次のエンドポイントに接続するためのアウトバウンドインターネットアクセスを必要とします。
++
+--
+[cols="2a,1a"]
+|===
+| エンドポイント | 目的 
+
+
+ a| 
+\https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects
+ a| 
+Google Cloudでリソースを管理します。
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+BlueXPでSaaSの機能とサービスを提供するため。
+
+コネクタは現在「cloudmanager.cloud.netapp.com"」に連絡していますが、今後のリリースでは「api.bluexp.netapp.com"」に連絡を開始します。
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+をクリックして、 Connector と Docker コンポーネントをアップグレードします。
+
+|===
+--
+
+
+BlueXPコンソールからアクセスするエンドポイント:: SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。これには、BlueXPコンソールからコネクタを導入するために接続されるエンドポイントも含まれます。
++
+--
+link:reference-networking-saas-console.html["BlueXPコンソールからアクセスしたエンドポイントのリストを表示します"]。
+
+--
+
+
+プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。
++
+--
+* IP アドレス
+* クレデンシャル
+* HTTPS証明書
+
+
+--
+
+
+ポート:: コネクタを起動するか、コネクタがCloud Volumes ONTAPからNetAppサポートにAutoSupportメッセージを送信するためのプロキシとして使用されている場合を除き、コネクタへの受信トラフィックはありません。
++
+--
+* HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。
+* SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。
+* アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。
++
+Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するためのアウトバウンドインターネット接続が確立されていない場合は、コネクタに付属のプロキシサーバを使用するように自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
+
+
+
+--
+
+
+
+
+== 手順2：コネクタを作成するための権限を設定する
+
+BlueXPまたはgcloudを使用してコネクタを導入する前に、コネクタVMを導入するGoogle Cloudユーザの権限を設定する必要があります。
+
+.手順
+. Google Cloudでカスタムロールを作成します。
++
+.. 次の権限を含むYAMLファイルを作成します。
++
+[source, yaml]
+----
+title: Connector deployment policy
+description: Permissions for the user who deploys the Connector from BlueXP
+stage: GA
+includedPermissions:
+- compute.disks.create
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.get
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.networks.updatePolicy
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- resourcemanager.projects.get
+- compute.instances.setServiceAccount
+- iam.serviceAccounts.list
+----
+.. Google CloudからCloud Shellをアクティブ化します。
+.. 必要な権限を含むYAMLファイルをアップロードします。
+.. を使用して、カスタムロールを作成します `gcloud iam roles create` コマンドを実行します
++
+次の例では、「connectorDeployment」という名前のロールをプロジェクトレベルで作成します。
+
++
+gcloud IAMロールcreate connectorDeployment --project=myproject --file=connector-deployment.yaml
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
+
+
+
+. このカスタムロールを、BlueXPから、またはgcloudを使用してコネクタを導入するユーザに割り当てます。
++
+https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloudドキュメント：ロールを1つだけ指定します"^]
+
+
+
+.結果
+Google Cloudユーザに、Connectorの作成に必要な権限が付与されるようになりました。
+
+
+
+== 手順3：コネクタの権限を設定する
+
+Google Cloudでリソースを管理するためにBlueXPで必要な権限をコネクタに付与するには、Google Cloudサービスアカウントが必要です。コネクタを作成するときは、このサービスアカウントをコネクタVMに関連付ける必要があります。
+
+.手順
+. Google Cloudでカスタムロールを作成します。
++
+.. の内容を含むYAMLファイルを作成します link:reference-permissions-gcp.html["コネクタのサービスアカウント権限"]。
+.. Google CloudからCloud Shellをアクティブ化します。
+.. 必要な権限を含むYAMLファイルをアップロードします。
+.. を使用して、カスタムロールを作成します `gcloud iam roles create` コマンドを実行します
++
+次の例では、プロジェクトレベルで「Connector」という名前のロールを作成します。
+
++
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
+
+
+
+. Google Cloudでサービスアカウントを作成し、ロールをサービスアカウントに割り当てます。
++
+.. IAMおよび管理サービスから、*サービスアカウント>サービスアカウントの作成*を選択します。
+.. サービスアカウントの詳細を入力し、*作成して続行*を選択します。
+.. 作成したロールを選択します。
+.. 残りの手順を完了してロールを作成します。
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloudドキュメント：サービスアカウントの作成"^]
+
+
+
+. Cloud Volumes ONTAP システムを、Connectorが存在するプロジェクトとは異なるプロジェクトに導入する場合は、Connectorのサービスアカウントにこれらのプロジェクトへのアクセスを提供する必要があります。
++
+たとえば、コネクタがプロジェクト1にあり、プロジェクト2でCloud Volumes ONTAP システムを作成するとします。プロジェクト2のサービスアカウントへのアクセス権を付与する必要があります。
+
++
+.. IAMと管理サービスで、Cloud Volumes ONTAPシステムを作成するGoogle Cloudプロジェクトを選択します。
+.. [* iAM*（* IAM）]ページで、[*アクセスを許可（Grant Access）]を選択し、必要な詳細を入力します。
++
+*** コネクタのサービスアカウントのEメールを入力します。
+*** コネクタのカスタムロールを選択します。
+*** [ 保存（ Save ） ] を選択します。
+
+
+
+
++
+詳細については、を参照してください https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloudのドキュメント"^]
+
+
+
+.結果
+Connector VMのサービスアカウントが設定されます。
+
+
+
+== 手順4：共有VPC権限を設定する
+
+共有VPCを使用してサービスプロジェクトにリソースを導入する場合は、権限を準備する必要があります。
+
+IAM の設定が完了したら、この表を参考にして権限の表を環境に反映させる必要があります。
+
+.共有VPC権限の表示
+[%collapsible]
+====
+[cols="10,10,10,18,18,34"]
+|===
+| ID | 作成者 | でホストされています | サービスプロジェクトの権限 | ホストプロジェクトの権限 | 目的 
+
+
+| コネクタを展開するためのGoogleアカウント | カスタム | サービスプロジェクト  a| 
+link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["コネクタ展開ポリシー"]
+ a| 
+compute.networkUser
+| サービスプロジェクトへのコネクタの配置 
+
+
+| Connectorサービスアカウント | カスタム | サービスプロジェクト  a| 
+link:reference-permissions-gcp.html["コネクタサービスアカウントポリシー"]
+| compute.networkUser
+
+deploymentmanager. editor | サービスプロジェクトへの Cloud Volumes ONTAP とサービスの導入と保守 
+
+
+| Cloud Volumes ONTAP サービスアカウント | カスタム | サービスプロジェクト | storagec.admin
+
+メンバー：BlueXPサービスアカウントをserviceAccount.userとして登録します | 該当なし | （オプション）データ階層化とBlueXPのバックアップとリカバリに使用します 
+
+
+| Google API サービスエージェント | Google Cloud | サービスプロジェクト  a| 
+（デフォルト） Editor
+ a| 
+compute.networkUser
+| 導入に代わってGoogle Cloud APIと対話します。BlueXPが共有ネットワークを使用できるようにします 
+
+
+| Google Compute Engine のデフォルトのサービスアカウント | Google Cloud | サービスプロジェクト  a| 
+（デフォルト） Editor
+ a| 
+compute.networkUser
+| 導入に代わってGoogle Cloudインスタンスとコンピューティングインフラストラクチャを導入します。BlueXPが共有ネットワークを使用できるようにします 
+|===
+注：
+
+. deploymentmanager. editorは、ファイアウォール規則を配備に渡していない場合にのみホストプロジェクトで必要です。BlueXPで作成することを選択している場合にのみ必要です。ルールが指定されていない場合、ホストプロジェクトにVPC0ファイアウォールルールが含まれているデプロイメントがBlueXPによって作成されます。
+. ファイアウォールの作成とfirewall.deleteは、ファイアウォールルールを配布に渡しておらず、BlueXPで作成することを選択している場合にのみ必要です。これらの権限はBlueXPアカウント.yamlファイルにあります。共有 VPC を使用して HA ペアを導入する場合は、これらの権限を使用して VPC1 、 2 、および 3 のファイアウォールルールが作成されます。他のすべての展開では、これらの権限は VPC0 のルールの作成にも使用されます。
+. データ階層化の場合、階層化サービスアカウントは、プロジェクトレベルだけでなく、サービスアカウントに対して serviceAccount.user ロールを持つ必要があります。現在、プロジェクトレベルで serviceAccount.user を割り当てている場合、 getIAMPolicy でサービスアカウントを照会しても権限は表示されません。
+
+
+====
+
+
+== ステップ5：Google Cloud APIを有効にする
+
+コネクタとCloud Volumes ONTAP をGoogle Cloudに導入する前に、いくつかのGoogle Cloud APIを有効にする必要があります。
+
+.ステップ
+. プロジェクトで次のGoogle Cloud APIを有効にします。
++
+** Cloud Deployment Manager V2 API
+** クラウドロギング API
+** Cloud Resource Manager API の略
+** Compute Engine API
+** ID およびアクセス管理（ IAM ） API
+** Cloud Key Management Service（KMS）APIの略
++
+（お客様が管理する暗号化キー（CMEK）でBlueXPのバックアップとリカバリを使用する場合にのみ必要）
+
+
+
+
+
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloudドキュメント：APIの有効化"^]
+
+
+
+== 手順6：コネクタを作成する
+
+BlueXPのWebベースのコンソールから直接、またはgcloudを使用してコネクタを作成します。
+
+.このタスクについて
+コネクタを作成すると、デフォルトの構成を使用してGoogle Cloudに仮想マシンインスタンスが導入されます。 link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+.作業を開始する前に
+次の情報が必要です。
+
+* コネクタVMのコネクタとサービスアカウントを作成するために必要なGoogle Cloud権限。
+* ネットワーク要件を満たすVPCとサブネット。
+* コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
+
+
+.手順
+. [コネクタ]*ドロップダウンを選択し、*[コネクタの追加]*を選択します。
++
+image:screenshot_connector_add.gif["ヘッダーのコネクターアイコンとコネクターの追加アクションを示すスクリーンショット。"]
+
+. クラウドプロバイダとして * Google Cloud Platform * を選択します。
+. [*コネクターの配置（Deploying a Connector *）]ページで、必要なものについて詳しく確認してください。次の 2 つのオプションがあります。
++
+.. 製品内のガイドを使用して導入を準備するには、* Continue *を選択します。製品ガイドの各手順には、このページのドキュメントに記載されている情報が含まれています。
+.. このページの手順に従って準備が完了している場合は、[Skip to Deployment]*を選択します。
+
+
+. ウィザードの手順に従って、コネクタを作成します。
++
+** プロンプトが表示されたら、 Google アカウントにログインします。このアカウントには、仮想マシンインスタンスを作成するために必要な権限が付与されている必要があります。
++
+このフォームは Google が所有およびホストしています。クレデンシャルがネットアップに提供されていません。
+
+** *詳細*：仮想マシンインスタンスの名前を入力し、タグを指定してプロジェクトを選択し、必要な権限を持つサービスアカウントを選択します（詳細については、上のセクションを参照してください）。
+** * 場所 * ：インスタンスのリージョン、ゾーン、 VPC 、およびサブネットを指定します。
+** * ネットワーク * ：パブリック IP アドレスを有効にするかどうかを選択し、必要に応じてプロキシ設定を指定します。
+** *ファイアウォールポリシー*：新しいファイアウォールポリシーを作成するか、必要なインバウンドおよびアウトバウンドルールを許可する既存のファイアウォールポリシーを選択するかを選択します。
++
+link:reference-ports-gcp.html["Google Cloudのファイアウォールルール"]
+
+** * 復習 * ：選択内容を確認して、設定が正しいことを確認してください。
+
+
+. 「 * 追加」を選択します。
++
+インスタンスの準備が完了するまでに約 7 分かかります。処理が完了するまで、ページには表示されたままにしておいてください。
+
+
+
+.結果
+プロセスが完了すると、BlueXPからコネクタを使用できるようになります。
+
+--
+.gcloud
+--
+.作業を開始する前に
+次の情報が必要です。
+
+* コネクタVMのコネクタとサービスアカウントを作成するために必要なGoogle Cloud権限。
+* ネットワーク要件を満たすVPCとサブネット。
+* VMインスタンスの要件の理解
++
+** * CPU *：4コアまたは4 vCPU
+** * RAM *：14 GB
+** *マシンタイプ*：n2-standard-4をお勧めします。
++
+このコネクタは、シールドされたVM機能をサポートするOSを持つVMインスタンス上のGoogle Cloudでサポートされています。
+
+
+
+
+
+.手順
+. ご希望の方法で gcloud SDK にログインします。
++
+この例では、gcloud SDKがインストールされたローカルシェルを使用しますが、Google CloudコンソールでネイティブのGoogle Cloud Shellを使用できます。
+
++
+Google Cloud SDK の詳細については、を参照してください link:https://cloud.google.com/sdk["Google Cloud SDK ドキュメントページ"^]。
+
+. 上のセクションで定義した必要な権限を持つユーザとしてログインしていることを確認します。
++
+[source, bash]
+----
+gcloud auth list
+----
++
+出力には次のように表示されます。ここで、 * user account はログインに使用するユーザアカウントです。
+
++
+[listing]
+----
+Credentialed Accounts
+ACTIVE  ACCOUNT
+     some_user_account@domain.com
+*    desired_user_account@domain.com
+To set the active account, run:
+ $ gcloud config set account `ACCOUNT`
+Updates are available for some Cloud SDK components. To install them,
+please run:
+$ gcloud components update
+----
+. を実行します `gcloud compute instances create` コマンドを実行します
++
+[source, bash]
+----
+gcloud compute instances create <instance-name>
+  --machine-type=n2-standard-4
+  --image-project=netapp-cloudmanager
+  --image-family=cloudmanager
+  --scopes=cloud-platform
+  --project=<project>
+  --service-account=<service-account>
+  --zone=<zone>
+  --no-address
+  --tags <network-tag>
+  --network <network-path>
+  --subnet <subnet-path>
+  --boot-disk-kms-key <kms-key-path>
+----
++
+インスタンス名:: VM インスタンスに必要なインスタンス名。
+プロジェクト:: （オプション） VM を導入するプロジェクト。
+service-account のことです:: 手順 2 の出力で指定したサービスアカウント。
+ゾーン:: VM を導入するゾーン
+no-address:: （オプション）外部 IP アドレスは使用されません（パブリックインターネットにトラフィックをルーティングするには、クラウド NAT またはプロキシが必要です）。
+ネットワークタグ:: （オプション）タグを使用してファイアウォールルールをコネクタインスタンスにリンクするには、ネットワークタグを追加します
+network-path:: （オプション）コネクタを配置するネットワークの名前を追加します（共有 VPC の場合は完全パスが必要です）。
+subnet-path 」を指定します:: （オプション）コネクタを導入するサブネットの名前を追加します（共有 VPC の場合は完全パスが必要です）。
+kms -key-path:: （オプション） KMS キーを追加してコネクタのディスクを暗号化する（ IAM 権限も適用する必要があります）
++
+--
+これらの旗についてのより多くの情報のために、訪問しなさい link:https://cloud.google.com/sdk/gcloud/reference/compute/instances/create["Google Cloud Compute SDK ドキュメント"^]。
+
+--
+
+
++
+コマンドを実行すると、ネットアップのゴールデンイメージを使用してコネクタが導入されます。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。
+
+. コネクタインスタンスに接続されているホストから Web ブラウザを開き、次の URL を入力します。
++
+https://_ipaddress_[]
+
+. ログイン後、コネクタを設定します。
++
+.. コネクタに関連付けるBlueXPアカウントを指定します。
++
+link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認ください"]。
+
+.. システムの名前を入力します。
+
+
+
+
+.結果
+これで、コネクタのインストールとBlueXPアカウントでのセットアップが完了しました。
+
+Webブラウザを開き、にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+
+--
+====

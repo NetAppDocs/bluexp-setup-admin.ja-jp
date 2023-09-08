@@ -2,6 +2,9 @@
 :allow-uri-read: 
 
 
+コネクタから接続されたエンドポイント:: このコネクタは、パブリッククラウド環境内のリソースとプロセスを日常的に管理するために、次のエンドポイントに接続するためのアウトバウンドインターネットアクセスを必要とします。
+
+
 | AWSサービス（amazonaws.com):
 
 * クラウド形成
@@ -12,7 +15,7 @@
 * シンプルなストレージサービス（ S3 ）
 
 
-|をクリックしてAWSのリソースを管理します。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWSのドキュメントを参照してください"^]
+|をクリックしてAWSのリソースを管理します。正確なエンドポイントは、使用しているAWSリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWSのドキュメントを参照してください"^]
 
 |\https://management.azure.com
 \https://login.microsoftonline.com

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-google.html 
 keywords: install connector google cloud, google cloud install connector, connector google cloud, google cloud connector, install connector gcp, gcp install connector, connector gcp, gcp connector, installation options, manual install 
-summary: Google Cloudでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。選択するインストールオプションによって、導入の準備方法が決まります。 
+summary: Google Cloudでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。 
 ---
 = Google Cloudでのコネクタのインストールオプション
 :hardbreaks:
@@ -14,21 +14,19 @@ summary: Google Cloudでコネクタを作成する方法はいくつかあり�
 
 
 [role="lead"]
-Google Cloudでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。選択するインストールオプションによって、導入の準備方法が決まります。
+Google Cloudでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。
 
 次のインストールオプションを使用できます。
 
-* BlueXPからコネクタを直接作成（標準オプション）
+* link:task-install-connector-google-bluexp-gcloud.html["BlueXPからコネクタを直接作成"] （これは標準オプションです）
 +
 この操作により、Linuxを実行するVMインスタンスとコネクタソフトウェアが、選択したVPCで起動されます。
 
-* gcloudを使用してコネクターを作成します
+* link:task-install-connector-google-bluexp-gcloud.html["gcloudを使用してコネクターを作成します"]
 +
-また、LinuxとConnectorソフトウェアを実行するVMインスタンスも起動します。
+また、Linuxを実行するVMインスタンスとConnectorソフトウェアも起動しますが、導入はBlueXPではなくGoogle Cloudから直接開始されます。
 
-* ソフトウェアをダウンロードして、自分のLinuxホストに手動でインストールします
+* link:task-install-connector-google-manual.html["ソフトウェアをダウンロードして、自分のLinuxホストに手動でインストールします"]
 
 
 選択するインストールオプションは、インストールの準備方法に影響します。これには、Google Cloudのリソースの認証と管理に必要な権限をBlueXPに付与する方法も含まれます。
-
-link:task-install-connector-google.html["Google Cloudにコネクタをインストールする方法について説明します"]。

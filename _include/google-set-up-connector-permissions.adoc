@@ -1,0 +1,57 @@
+= 
+:allow-uri-read: 
+
+
+Google Cloudでリソースを管理するためにBlueXPで必要な権限をコネクタに付与するには、Google Cloudサービスアカウントが必要です。コネクタを作成するときは、このサービスアカウントをコネクタVMに関連付ける必要があります。
+
+.手順
+. Google Cloudでカスタムロールを作成します。
++
+.. の内容を含むYAMLファイルを作成します link:reference-permissions-gcp.html["コネクタのサービスアカウント権限"]。
+.. Google CloudからCloud Shellをアクティブ化します。
+.. 必要な権限を含むYAMLファイルをアップロードします。
+.. を使用して、カスタムロールを作成します `gcloud iam roles create` コマンドを実行します
++
+次の例では、プロジェクトレベルで「Connector」という名前のロールを作成します。
+
++
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloudのドキュメント：カスタムロールの作成と管理"^]
+
+
+
+. Google Cloudでサービスアカウントを作成し、ロールをサービスアカウントに割り当てます。
++
+.. IAMおよび管理サービスから、*サービスアカウント>サービスアカウントの作成*を選択します。
+.. サービスアカウントの詳細を入力し、*作成して続行*を選択します。
+.. 作成したロールを選択します。
+.. 残りの手順を完了してロールを作成します。
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloudドキュメント：サービスアカウントの作成"^]
+
+
+
+. Cloud Volumes ONTAP システムを、Connectorが存在するプロジェクトとは異なるプロジェクトに導入する場合は、Connectorのサービスアカウントにこれらのプロジェクトへのアクセスを提供する必要があります。
++
+たとえば、コネクタがプロジェクト1にあり、プロジェクト2でCloud Volumes ONTAP システムを作成するとします。プロジェクト2のサービスアカウントへのアクセス権を付与する必要があります。
+
++
+.. IAMと管理サービスで、Cloud Volumes ONTAPシステムを作成するGoogle Cloudプロジェクトを選択します。
+.. [* iAM*（* IAM）]ページで、[*アクセスを許可（Grant Access）]を選択し、必要な詳細を入力します。
++
+*** コネクタのサービスアカウントのEメールを入力します。
+*** コネクタのカスタムロールを選択します。
+*** [ 保存（ Save ） ] を選択します。
+
+
+
+
++
+詳細については、を参照してください https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloudのドキュメント"^]
+
+
+
+.結果
+Connector VMのサービスアカウントが設定されます。

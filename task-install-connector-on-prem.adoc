@@ -16,9 +16,392 @@ summary: コネクタをオンプレミスにインストールし、ログイ�
 [role="lead"]
 コネクタをオンプレミスにインストールし、ログインしてBlueXPアカウントと連携するように設定します。
 
+.作業を開始する前に
+確認が必要です link:reference-limitations.html["コネクタの制限"]。
 
 
-== コネクタを取り付ける
+
+== 手順1：ホスト要件を確認する
+
+コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。コネクタを取り付ける前に、ホストがこれらの要件を満たしていることを確認してください。
+
+専用ホスト:: 他のアプリケーションと共有しているホストでは、このコネクタはサポートされていません。専用のホストである必要があります。
+サポートされているオペレーティングシステム::
++
+--
+* Ubuntu 22.04.
+* CentOS 7.6、7.7、7.8、7.9
+* Red Hat Enterprise Linux 7.6、7.7、7.8、および7.9
++
+ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
+
++
+Connector は、これらのオペレーティングシステムの英語版でサポートされています。
+
+
+
+--
+ハイパーバイザー:: Ubuntu、CentOS、またはRed Hat Enterprise Linuxの実行が認定されているベアメタルまたはホスト型のハイパーバイザーが必要です。
++
+--
+https://access.redhat.com/certified-hypervisors["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
+
+--
+CPU:: 4 コアまたは 4 個の vCPU
+RAM:: 14GB
+/opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
+/var のディスク領域:: 20GiB のスペースが必要です
+Docker Engine の略:: Connectorをインストールする前に、ホストにDocker Engineバージョン19.3.1以降が必要です。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+
+
+
+
+== 手順2：ネットワークをセットアップする
+
+コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。たとえば、ターゲットネットワークへの接続が可能で、アウトバウンドのインターネットアクセスが利用可能であることを確認する必要があります。
+
+ターゲットネットワークへの接続:: コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。たとえば、オンプレミス環境にCloud Volumes ONTAPシステムやストレージシステムを作成するネットワークなどです。
+
+
+アウトバウンドインターネットアクセス:: コネクタを展開するネットワークの場所には、特定のエンドポイントに接続するためのアウトバウンドインターネット接続が必要です。
+
+
+手動インストール中にエンドポイントに接続しました:: 独自のLinuxホストにコネクタを手動でインストールする場合、コネクタのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。
++
+--
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。
+
+
+
+--
+
+
+コネクタから接続されたエンドポイント:: このコネクタは、パブリッククラウド環境内のリソースとプロセスを日常的に管理するために、次のエンドポイントに接続するためのアウトバウンドインターネットアクセスを必要とします。
++
+--
+[cols="2a,1a"]
+|===
+| エンドポイント | 目的 
+
+
+ a| 
+AWS サービス（ amazonaws.com ）：
+
+* クラウド形成
+* 柔軟なコンピューティングクラウド（ EC2 ）
+* IDおよびアクセス管理（IAM）
+* キー管理サービス（ KMS ）
+* セキュリティトークンサービス（ STS ）
+* シンプルなストレージサービス（ S3 ）
+
+ a| 
+AWSでリソースを管理できます。正確なエンドポイントは、使用しているAWSリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWSのドキュメントを参照してください"^]
+
+
+
+ a| 
+\https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net
+ a| 
+Azureパブリックリージョン内のリソースを管理します。
+
+
+
+ a| 
+\https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn
+ a| 
+をクリックしてAzure中国地域のリソースを管理してください。
+
+
+
+ a| 
+\https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects
+ a| 
+Google Cloudでリソースを管理します。
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+BlueXPでSaaSの機能とサービスを提供するため。
+
+コネクタは現在「cloudmanager.cloud.netapp.com"」に連絡していますが、今後のリリースでは「api.bluexp.netapp.com"」に連絡を開始します。
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+をクリックして、 Connector と Docker コンポーネントをアップグレードします。
+
+|===
+--
+
+
+プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。
++
+--
+* IP アドレス
+* クレデンシャル
+* HTTPS証明書
+
+
+--
+
+
+ポート:: コネクタを起動するか、コネクタがCloud Volumes ONTAPからNetAppサポートにAutoSupportメッセージを送信するためのプロキシとして使用されている場合を除き、コネクタへの受信トラフィックはありません。
++
+--
+* HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。
+* SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。
+* アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。
++
+Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するためのアウトバウンドインターネット接続が確立されていない場合は、コネクタに付属のプロキシサーバを使用するように自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
+
+
+
+--
+
+
+
+
+== ステップ3：クラウドの権限を設定する
+
+AWSまたはAzureでBlueXPサービスをオンプレミスコネクタで使用する場合は、インストール後にコネクタにクレデンシャルを追加できるように、クラウドプロバイダで権限を設定する必要があります。
+
+
+TIP: Google Cloudではない理由コネクタがオンプレミスにインストールされている場合、Google Cloudでリソースを管理することはできません。Google Cloudに存在するすべてのリソースを管理するには、コネクタをGoogle Cloudにインストールする必要があります。
+
+[role="tabbed-block"]
+====
+.AWS
+--
+コネクタをオンプレミスにインストールする場合は、必要な権限を持つIAMユーザのアクセスキーを追加して、BlueXPにAWS権限を設定する必要があります。
+
+コネクタがオンプレミスにインストールされている場合は、この認証方法を使用する必要があります。IAMロールは使用できません。
+
+.手順
+. AWSコンソールにログインし、IAMサービスに移動します。
+. ポリシーを作成します。
++
+.. [Policies]>[Create policy]*を選択します。
+.. [*json]*を選択し、の内容をコピーして貼り付けます link:reference-permissions-aws.html["コネクタのIAMポリシー"]。
+.. 残りの手順を完了してポリシーを作成します。
++
+使用するBlueXPサービスによっては、2つ目のポリシーの作成が必要になる場合があります。
+
++
+標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。 link:reference-permissions-aws.html["コネクタのIAMポリシーの詳細については、こちらを参照してください"]。
+
+
+
+. IAMユーザにポリシーを適用します。
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS のドキュメント：「 Creating IAM Roles"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS のドキュメント：「 Adding and Removing IAM Policies"^]
+
+
+. コネクタのインストール後にBlueXPに追加できるアクセスキーがユーザに割り当てられていることを確認します。
+
+
+.結果
+これで、必要な権限を持つIAMユーザのアクセスキーが作成されました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。
+
+--
+.Azure
+--
+コネクタをオンプレミスにインストールする場合は、Azure Active Directoryでサービスプリンシパルを設定し、BlueXPに必要なAzureクレデンシャルを取得して、BlueXPにAzure権限を付与する必要があります。
+
+.ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
+. Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
++
+詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]
+
+. Azure ポータルで、 * Azure Active Directory * サービスを開きます。
++
+image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サービスを示しています。"]
+
+. メニューで*アプリ登録*を選択します。
+. [New registration]*を選択します。
+. アプリケーションの詳細を指定します。
++
+** * 名前 * ：アプリケーションの名前を入力します。
+** *アカウントの種類*:アカウントの種類を選択します(すべてのアカウントはBlueXPで動作します)。
+** * リダイレクト URI *: このフィールドは空白のままにできます。
+
+
+. [*Register] を選択します。
++
+AD アプリケーションとサービスプリンシパルを作成しておきます。
+
+
+
+.アプリケーションをロールに割り当てます
+. カスタムロールを作成します。
++
+Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
+
++
+.. の内容をコピーします link:reference-permissions-azure.html["Connectorのカスタムロールの権限"] JSONファイルに保存します。
+.. 割り当て可能なスコープに Azure サブスクリプション ID を追加して、 JSON ファイルを変更します。
++
+ユーザが Cloud Volumes ONTAP システムを作成する Azure サブスクリプションごとに ID を追加する必要があります。
+
++
+* 例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. JSON ファイルを使用して、 Azure でカスタムロールを作成します。
++
+次の手順は、 Azure Cloud Shell で Bash を使用してロールを作成する方法を示しています。
+
++
+*** 開始 https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell の略"^] Bash 環境を選択します。
+*** JSON ファイルをアップロードします。
++
+image:screenshot_azure_shell_upload.png["ファイルをアップロードするオプションを選択できる Azure Cloud Shell のスクリーンショット。"]
+
+*** Azure CLIを使用してカスタムロールを作成します。
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+これで、Connector仮想マシンに割り当てることができるBlueXP Operatorというカスタムロールが作成されました。
+
+
+
+
+
+. ロールにアプリケーションを割り当てます。
++
+.. Azure ポータルで、 * Subscriptions * サービスを開きます。
+.. サブスクリプションを選択します。
+.. [アクセス制御（IAM）]>[追加]>[ロール割り当ての追加]*を選択します。
+.. [ロール]タブで、*[BlueXP Operator]*ロールを選択し、*[次へ]*を選択します。
+.. [* Members* （メンバー * ） ] タブで、次の手順を実行します。
++
+*** [* ユーザー、グループ、またはサービスプリンシパル * ] を選択したままにします。
+*** [メンバーの選択]*を選択します。
++
+image:screenshot-azure-service-principal-role.png["アプリケーションにロールを追加するときに Members タブを表示する Azure ポータルのスクリーンショット。"]
+
+*** アプリケーションの名前を検索します。
++
+次に例を示します。
+
++
+image:screenshot_azure_service_principal_role.png["Azure ポータルのスクリーンショットで、 Azure ポータルのロール割り当ての追加フォームが表示されています。"]
+
+*** アプリケーションを選択し、*選択*を選択します。
+*** 「 * 次へ * 」を選択します。
+
+
+.. [Review + Assign]*を選択します。
++
+サービスプリンシパルに、 Connector の導入に必要な Azure 権限が付与されるようになりました。
+
++
+Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入する場合は、サービスプリンシパルを各サブスクリプションにバインドする必要があります。BlueXPを使用すると、Cloud Volumes ONTAP の導入時に使用するサブスクリプションを選択できます。
+
+
+
+
+
+.Windows Azure Service Management API 権限を追加します
+. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
+. [API permissions]>[Add a permission]*を選択します。
+. Microsoft API* で、 * Azure Service Management * を選択します。
++
+image:screenshot_azure_service_mgmt_apis.gif["Azure Service Management API 権限を示す Azure ポータルのスクリーンショット。"]
+
+. [Access Azure Service Management as organization users]*を選択し、*[Add permissions]*を選択します。
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API の追加を示す Azure ポータルのスクリーンショット。"]
+
+
+
+.アプリケーションのアプリケーションIDとディレクトリIDを取得します
+. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
+. アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。
++
+image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケーション（クライアント）の ID とディレクトリ（テナント） ID を示すスクリーンショット。"]
+
++
+AzureアカウントをBlueXPに追加するときは、アプリケーション（クライアント）IDとディレクトリ（テナント）IDを指定する必要があります。BlueXPでは、プログラムでサインインするためにIDが使用されます。
+
+
+
+.クライアントシークレットを作成します
+. Azure Active Directory * サービスを開きます。
+. *アプリ登録*を選択し、アプリケーションを選択します。
+. [Certificates & secrets]>[New client secret]*を選択します。
+. シークレットと期間の説明を入力します。
+. 「 * 追加」を選択します。
+. クライアントシークレットの値をコピーします。
++
+image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパルのクライアントシークレットを表示する Azure ポータルのスクリーンショット。"]
+
++
+BlueXPでAzure ADの認証に使用するクライアントシークレットが作成されました。
+
+
+
+.結果
+これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。
+
+--
+====
+
+
+== 手順4：コネクタを取り付ける
 
 コネクタソフトウェアをオンプレミスの既存のLinuxホストにダウンロードしてインストールします。
 
@@ -106,9 +489,9 @@ chmod +x OnCommandCloudManager-<version>
 
 
 
-== コネクタをセットアップします
+== 手順5：コネクタを設定する
 
-サインアップまたはログインして、アカウントで使用できるようにコネクタを設定します。
+サインアップまたはログインして、BlueXPアカウントと連携するようにConnectorを設定します。
 
 .手順
 . Web ブラウザを開き、次の URL を入力します。
@@ -135,5 +518,68 @@ _ipaddress _ には、ホストの設定に応じて、 localhost 、プライ�
 .結果
 これで、先ほどインストールしたコネクタでBlueXPがセットアップされました。
 
-.次の手順
-link:task-provide-permissions-on-prem.html["以前に設定した権限をBlueXPに付与します"]。
+
+
+== 手順6：BlueXPに権限を付与する
+
+コネクタのインストールとセットアップが完了したら、クラウドクレデンシャルを追加して、AWSまたはAzureで操作を実行するために必要な権限をBlueXPに付与します。
+
+[role="tabbed-block"]
+====
+.AWS
+--
+.作業を開始する前に
+AWSでクレデンシャルを作成したばかりの場合は、クレデンシャルが使用可能になるまでに数分かかることがあります。数分待ってから、BlueXPに資格情報を追加します。
+
+.手順
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
++
+image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
+
+. [クレデンシャルの追加]*を選択し、ウィザードの手順に従います。
++
+.. * 資格情報の場所 * ：「 * Amazon Web Services > Connector * 」を選択します。
+.. *クレデンシャルを定義*：AWSアクセスキーとシークレットキーを入力します。
+.. * Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。
+.. *確認*：新しいクレデンシャルの詳細を確認し、*[追加]*を選択します。
+
+
+
+
+.結果
+BlueXPに、AWSでユーザに代わって操作を実行するために必要な権限が付与されました。
+
+これで、に移動できます https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+
+--
+.Azure
+--
+.作業を開始する前に
+これらのクレデンシャルをAzureで作成したばかりの場合は、クレデンシャルが使用可能になるまでに数分かかることがあります。数分待ってから、BlueXPに資格情報を追加します。
+
+.手順
+. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
++
+image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
+
+. [クレデンシャルの追加]*を選択し、ウィザードの手順に従います。
++
+.. * 資格情報の場所 * ： Microsoft Azure > Connector * を選択します。
+.. * クレデンシャルの定義 * ：必要な権限を付与する Azure Active Directory サービスプリンシパルに関する情報を入力します。
++
+*** アプリケーション（クライアント）ID
+*** ディレクトリ（テナント）ID
+*** クライアントシークレット
+
+
+.. * Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。
+.. *確認*：新しいクレデンシャルの詳細を確認し、*[追加]*を選択します。
+
+
+
+
+.結果
+BlueXPに、Azureで処理を実行するために必要な権限が付与されました。これで、に移動できます https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
+
+--
+====

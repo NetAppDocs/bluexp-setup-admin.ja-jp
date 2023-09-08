@@ -1,0 +1,319 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-aws-bluexp.html 
+keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, create connector 
+summary: BlueXPからAWSでコネクタを作成するには、ネットワークを設定し、AWS権限を準備してからコネクタを作成する必要があります。 
+---
+= BlueXPからAWSにコネクタを作成します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPからAWSでコネクタを作成するには、ネットワークを設定し、AWS権限を準備してからコネクタを作成する必要があります。
+
+.作業を開始する前に
+確認が必要です link:reference-limitations.html["コネクタの制限"]。
+
+
+
+== 手順1：ネットワークをセットアップする
+
+コネクタをインストールするネットワークの場所が、次の要件をサポートしていることを確認します。これらの要件を満たすことで、コネクタはハイブリッドクラウド環境内のリソースとプロセスを管理できるようになります。
+
+vPCおよびサブネット:: コネクタを作成するときは、コネクタを配置するVPCとサブネットを指定する必要があります。
+
+
+ターゲットネットワークへの接続:: コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。たとえば、オンプレミス環境にCloud Volumes ONTAPシステムやストレージシステムを作成するネットワークなどです。
+
+
+アウトバウンドインターネットアクセス:: コネクタを展開するネットワークの場所には、特定のエンドポイントに接続するためのアウトバウンドインターネット接続が必要です。
+
+
+コネクタから接続されたエンドポイント:: このコネクタは、パブリッククラウド環境内のリソースとプロセスを日常的に管理するために、次のエンドポイントに接続するためのアウトバウンドインターネットアクセスを必要とします。
++
+--
+[cols="2a,1a"]
+|===
+| エンドポイント | 目的 
+
+
+ a| 
+AWS サービス（ amazonaws.com ）：
+
+* クラウド形成
+* 柔軟なコンピューティングクラウド（ EC2 ）
+* IDおよびアクセス管理（IAM）
+* キー管理サービス（ KMS ）
+* セキュリティトークンサービス（ STS ）
+* シンプルなストレージサービス（ S3 ）
+
+ a| 
+AWSでリソースを管理できます。正確なエンドポイントは、使用しているAWSリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWSのドキュメントを参照してください"^]
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+BlueXPでSaaSの機能とサービスを提供するため。
+
+コネクタは現在「cloudmanager.cloud.netapp.com"」に連絡していますが、今後のリリースでは「api.bluexp.netapp.com"」に連絡を開始します。
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+をクリックして、 Connector と Docker コンポーネントをアップグレードします。
+
+|===
+--
+
+
+BlueXPコンソールからアクセスするエンドポイント:: SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。これには、BlueXPコンソールからコネクタを導入するために接続されるエンドポイントも含まれます。
++
+--
+link:reference-networking-saas-console.html["BlueXPコンソールからアクセスしたエンドポイントのリストを表示します"]。
+
+--
+
+
+プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。
++
+--
+* IP アドレス
+* クレデンシャル
+* HTTPS証明書
+
+
+--
+
+
+ポート:: コネクタを起動するか、コネクタがCloud Volumes ONTAPからNetAppサポートにAutoSupportメッセージを送信するためのプロキシとして使用されている場合を除き、コネクタへの受信トラフィックはありません。
++
+--
+* HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。
+* SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。
+* アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。
++
+Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するためのアウトバウンドインターネット接続が確立されていない場合は、コネクタに付属のプロキシサーバを使用するように自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
+
+
+
+--
+
+
+
+
+== 手順2：AWS権限を設定する
+
+BlueXPでは、VPCにConnectorインスタンスを導入する前にAWSで認証する必要があります。次のいずれかの認証方式を選択できます。
+
+* 必要な権限を持つIAMロールをBlueXPに割り当てます
+* 必要な権限を持つIAMユーザにAWSアクセスキーとシークレットキーを指定します
+
+
+どちらのオプションを使用する場合も、最初にIAMポリシーを作成します。このポリシーには、BlueXPからAWSでConnectorインスタンスを起動するために必要な権限のみが含まれています。
+
+必要に応じて、IAMを使用してIAMポリシーを制限できます `Condition` 要素（Element）： https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWSドキュメント：Condition要素"^]
+
+
+TIP: BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、コネクタでAWSリソースを管理できるようになります。
+
+.手順
+. AWS IAMコンソールに移動します。
+. [Policies]>[Create policy]*を選択します。
+. 「* JSON *」を選択します。
+. 次のポリシーをコピーして貼り付けます。
++
+なお、このポリシーには、BlueXPからAWSでコネクタインスタンスを起動するために必要な権限のみが含まれています。 link:reference-permissions-aws.html["コネクタインスタンス自体に必要な表示権限"]。
+
++
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "iam:PassRole",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DescribeInstances",
+                "ec2:CreateTags",
+                "ec2:DescribeImages",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "iam:GetRole",
+                "iam:TagRole",
+                "iam:ListRoles",
+                "kms:ListAliases"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:TerminateInstances"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/OCCMInstance": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ]
+        }
+    ]
+}
+----
+. 必要に応じて、[次へ]*を選択し、タグを追加します。
+. [次へ]*を選択し、名前と概要を入力します。
+. [ポリシーの作成]*を選択します。
+. BlueXPが引き継ぐことができるIAMロールにポリシーを適用するか、BlueXPにアクセスキーを提供できるようにIAMユーザにポリシーを関連付けます。
++
+** （オプション1）BlueXPで想定できるIAMロールを設定します。
++
+... ターゲットアカウントの AWS IAM コンソールに移動します。
+... [Access Management]で、*[Roles]>[Create Role]*を選択し、手順に従ってロールを作成します。
+... 信頼されるエンティティのタイプ * で、 * AWS アカウント * を選択します。
+... 別のAWSアカウント*を選択して、BlueXP SaaSアカウントのID 952013314444を入力します
+... 前のセクションで作成したポリシーを選択します。
+... ロールを作成したら、ロールARNをコピーして、コネクタの作成時にBlueXPに貼り付けることができます。
+
+
+** （オプション2）BlueXPにアクセスキーを提供できるように、IAMユーザの権限を設定します。
++
+... AWS IAMコンソールで、*[Users]*を選択し、ユーザ名を選択します。
+... [権限の追加]>[既存のポリシーを直接適用]*を選択します。
+... 作成したポリシーを選択します。
+... [次へ]*を選択し、*[権限の追加]*を選択します。
+... IAMユーザのアクセスキーとシークレットキーがあることを確認します。
+
+
+
+
+
+
+.結果
+これで、必要な権限を持つIAMロールまたは必要な権限を持つIAMユーザが作成されました。BlueXPからコネクタを作成するときに、ロールまたはアクセスキーに関する情報を指定できます。
+
+
+
+== 手順3：コネクタを作成する
+
+BlueXPのWebベースのコンソールから直接コネクタを作成します。
+
+.このタスクについて
+BlueXPでコネクタを作成すると、デフォルト設定を使用してAWSにEC2インスタンスが導入されます。 link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。
+
+.作業を開始する前に
+次の情報が必要です。
+
+* AWS認証方式：IAMロールまたは必要な権限を持つIAMユーザのアクセスキー。
+* ネットワーク要件を満たすVPCとサブネット。
+* EC2インスタンスのキーペア。
+* コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
+
+
+.手順
+. [コネクタ]*ドロップダウンを選択し、*[コネクタの追加]*を選択します。
++
+image:screenshot_connector_add.gif["ヘッダーのコネクターアイコンとコネクターの追加アクションを示すスクリーンショット。"]
+
+. クラウドプロバイダとして* Amazon Web Services *を選択し、* Continue *を選択します。
+. [*コネクターの配置（Deploying a Connector *）]ページで、必要なものについて詳しく確認してください。次の 2 つのオプションがあります。
++
+.. 製品内のガイドを使用して導入を準備するには、* Continue *を選択します。製品ガイドの各手順には、このページのドキュメントに記載されている情報が含まれています。
+.. このページの手順に従って準備が完了している場合は、[Skip to Deployment]*を選択します。
+
+
+. ウィザードの手順に従って、コネクタを作成します。
++
+** * 準備をしてください * ：必要なものを確認してください。
+** * AWSクレデンシャル*：AWSリージョンを指定してから認証方式を選択します。認証方式は、BlueXPが引き受けることができるIAMロールか、AWSのアクセスキーとシークレットキーのどちらかです。
++
+
+TIP: [*Assume Role] を選択した場合は、 Connector 展開ウィザードから最初の資格情報セットを作成できます。クレデンシャルの追加のセットは、 [Credentials] ページから作成する必要があります。ウィザードのドロップダウンリストから使用できるようになります。 link:task-adding-aws-accounts.html["クレデンシャルを追加する方法について説明します"]。
+
+** * 詳細 * ：コネクタの詳細を入力します。
++
+*** インスタンスの名前を入力します。
+*** カスタムタグ（メタデータ）をインスタンスに追加します。
+*** 必要な権限を持つ新しいロールを作成するか、で設定した既存のロールを選択するかを選択します link:reference-permissions-aws.html["必要な権限"]。
+*** コネクタの EBS ディスクを暗号化するかどうかを選択します。デフォルトの暗号化キーを使用することも、カスタムキーを使用することもできます。
+
+
+** * ネットワーク * ：インスタンスに VPC 、サブネット、キーペアを指定し、パブリック IP アドレスを有効にするかどうかを選択し、必要に応じてプロキシ設定を指定します。
++
+コネクタで使用する正しいキーペアがあることを確認します。キーペアがないと、Connector仮想マシンにアクセスできません。
+
+** *セキュリティグループ*:新しいセキュリティグループを作成するか、必要なインバウンドおよびアウトバウンドルールを許可する既存のセキュリティグループを選択するかを選択します。
++
+link:reference-ports-aws.html["AWSのセキュリティグループルールを表示します"]。
+
+** * 復習 * ：選択内容を確認して、設定が正しいことを確認してください。
+
+
+. 「 * 追加」を選択します。
++
+インスタンスの準備が完了するまでに約 7 分かかります。処理が完了するまで、ページには表示されたままにしておいてください。
+
+
+
+.結果
+プロセスが完了すると、BlueXPからコネクタを使用できるようになります。

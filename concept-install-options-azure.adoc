@@ -14,21 +14,19 @@ summary: Azureでコネクタを作成する方法はいくつかあります。
 
 
 [role="lead"]
-Azureでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。選択するインストールオプションによって、導入の準備方法が決まります。
+Azureでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。
 
 次のインストールオプションを使用できます。
 
-* BlueXPからコネクタを直接作成（標準オプション）
+* link:task-install-connector-azure-bluexp.html["BlueXPからコネクタを直接作成"] （これは標準オプションです）
 +
 この操作により、Linuxを実行するVMとコネクタソフトウェアが任意のVNetで起動されます。
 
-* Azure Marketplace からコネクタを作成します
+* link:task-install-connector-azure-marketplace.html["Azure Marketplace からコネクタを作成します"]
 +
-また、LinuxとConnectorソフトウェアを実行しているVMも起動します。
+また、Linuxを実行するVMとConnectorソフトウェアも起動しますが、導入はBlueXPではなくAzure Marketplaceから直接開始されます。
 
-* ソフトウェアをダウンロードして、自分のLinuxホストに手動でインストールします
+* link:task-install-connector-azure-manual.html["ソフトウェアをダウンロードして、自分のLinuxホストに手動でインストールします"]
 
 
 選択するインストールオプションは、インストールの準備方法に影響します。これには、Azureのリソースの認証と管理に必要な権限をBlueXPに付与する方法も含まれます。
-
-link:task-install-connector-azure.html["Azureにコネクタをインストールする方法について説明します"]。

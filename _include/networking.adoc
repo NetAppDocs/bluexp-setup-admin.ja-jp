@@ -1,0 +1,71 @@
+= 
+:allow-uri-read: 
+
+
+専用ホスト:: 他のアプリケーションと共有しているホストでは、このコネクタはサポートされていません。専用のホストである必要があります。
+
+
+vPCおよびサブネット:: コネクタを作成するときは、コネクタを配置するVPCとサブネットを指定する必要があります。
+
+
+VNetおよびサブネット:: コネクタを作成するときは、コネクタを配置するVNetとサブネットを指定する必要があります。
+
+
+ターゲットネットワークへの接続:: コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。たとえば、オンプレミス環境にCloud Volumes ONTAPシステムやストレージシステムを作成するネットワークなどです。
+
+
+アウトバウンドインターネットアクセス:: コネクタを展開するネットワークの場所には、特定のエンドポイントに接続するためのアウトバウンドインターネット接続が必要です。
+
+
+BlueXPコンソールからアクセスするエンドポイント:: SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。これには、BlueXPコンソールからコネクタを導入するために接続されるエンドポイントも含まれます。
++
+--
+link:reference-networking-saas-console.html["BlueXPコンソールからアクセスしたエンドポイントのリストを表示します"]。
+
+--
+
+
+Azure リージョン:: Cloud Volumes ONTAPを使用する場合は、コネクタを管理するCloud Volumes ONTAPシステムと同じAzureリージョンまたはに導入する必要があります https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure リージョンペア"^] Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。
++
+--
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP での Azure プライベートリンクの使用方法をご確認ください"^]
+
+--
+
+
+ポート:: コネクタを起動するか、コネクタがCloud Volumes ONTAPからNetAppサポートにAutoSupportメッセージを送信するためのプロキシとして使用されている場合を除き、コネクタへの受信トラフィックはありません。
++
+--
+* HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。
+* SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。
+* アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。
++
+Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するためのアウトバウンドインターネット接続が確立されていない場合は、コネクタに付属のプロキシサーバを使用するように自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
+
+
+
+--
+
+
+プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。
++
+--
+* IP アドレス
+* クレデンシャル
+* HTTPS証明書
+
+
+--
+
+
+AzureのパブリックIPアドレス:: AzureのコネクタVMでパブリックIPアドレスを使用する場合は、そのIPアドレスでBasic SKUを使用して、BlueXPでこのパブリックIPアドレスが使用されるようにする必要があります。
++
+--
+image:screenshot-azure-sku.png["Azureで新しいIPアドレスを作成するスクリーンショット。[SKU]フィールドで[Basic]を選択できます。"]
+
+Standard SKUのIPアドレスを代わりに使用する場合、BlueXPでは、パブリックIPではなくコネクタの_private_IPアドレスが使用されます。BlueXPコンソールへのアクセスに使用しているマシンがそのプライベートIPアドレスにアクセスできない場合、BlueXPコンソールからの操作が失敗します。
+
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azureのドキュメント：パブリックIP SKU"^]
+
+--
+
