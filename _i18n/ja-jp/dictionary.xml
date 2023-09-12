@@ -3406,7 +3406,6 @@ Google Cloudまたはではサポートされていません<block ref="5388026a
   <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">クレデンシャルを新しいサブスクリプションに関連付けるには、*[Add Subscription]&gt;[Continue]*を選択し、AWS Marketplaceで次の手順を実行します。</block>
   <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">[購入オプションの表示]*を選択します。</block>
   <block id="0b45e429b84384fa541446c3364409c9" category="list-text">[アカウントを設定する]*を選択します。</block>
-  <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">7月30日</block>
   <block id="167693b239be0e2939d61376cd3a5487" category="section-title">コネクタ3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">BlueXP監査サービスAPIを使用して監査ログをエクスポートできるようになりました。</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">監査サービスAPIの使用に関する詳細情報</block>
@@ -3773,4 +3772,11 @@ deploymentmanager. editor</block>
   <block id="490065fa675522d3a515cadb526d26f6" category="sidebar">マーケットプレイスから作成します</block>
   <block id="655a3c90b399118b5d073277c90e6b0f" category="sidebar">手動でインストール</block>
   <block id="054df94b323e23fce659cffe65ef10ef" category="sidebar">BlueXPまたはgcloudを使用して作成</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
+  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">コネクタ3.9.33</block>
+  <block id="d8465669650730f887acd3754f3dea9f" category="list-text">BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。</block>
+  <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">BlueXPからAWSでコネクタを作成するときに[Network]ページに表示される[Key Pair]フィールドの検索オプションのスクリーンショット。</block>
+  <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">このアップデートにはバグ修正も含まれています。</block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
 </blocks>

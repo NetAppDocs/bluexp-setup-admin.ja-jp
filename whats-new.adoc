@@ -18,7 +18,22 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
-== 7月30日
+== 2023年9月10日
+
+
+
+=== コネクタ3.9.33
+
+* BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["BlueXPからAWSでコネクタを作成するときに[Network]ページに表示される[Key Pair]フィールドの検索オプションのスクリーンショット。"]
+
+* このアップデートにはバグ修正も含まれています。
+
+
+
+
+== 2023年7月30日
 
 
 
