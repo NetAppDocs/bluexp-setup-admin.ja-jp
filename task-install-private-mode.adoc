@@ -22,7 +22,7 @@ summary: コネクタをプライベートモードで導入し、BlueXP SaaSレ
 
 NetApp Support Site から製品のインストーラをダウンロードし、手動でコネクタを自分のLinuxホストにインストールします。
 
-でBlueXPを使用する場合は https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial Cloud Services（C2S）環境"^] その後、別の手順に従ってその環境で作業を開始する必要があります。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["AWS C2S環境でCloud Volumes ONTAP を使用する方法をご確認ください"^]
+でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^] または https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^]それらの環境で作業を開始するには、別の手順に従う必要があります。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["AWSシークレットクラウドまたはTop Secret CloudでCloud Volumes ONTAPの使用を開始する方法をご確認ください"^]
 
 .必要な権限
 コネクタをインストールするには root 権限が必要です。

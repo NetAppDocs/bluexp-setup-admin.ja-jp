@@ -1295,7 +1295,6 @@
   <block id="995c7db8420cf7c1d22ec979a1f735ba" category="open-title">ポリシー1</block>
   <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">ポリシー#2</block>
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="example-title">GovCloud（US）リージョン</block>
-  <block id="a8416eae2db8c97eb943559351fab358" category="example-title">C2S環境</block>
   <block id="abc9b009fdeb5b04ca7bcd60cdae2434" category="section-title">AWS権限の使用方法</block>
   <block id="06be37baefaab50eae9f413a227fd74c" category="paragraph">コネクタは、Amazon FSx for ONTAP を管理するための次のAPI要求を行います。</block>
   <block id="c8e20ceabac2b519b4f4eb301166c9bd" category="list-text">EC2: DescribeInstances</block>
@@ -1473,9 +1472,6 @@
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">コネクタをプライベートモードで導入し、BlueXP SaaSレイヤへのアウトバウンド接続なしでBlueXPを使用できるようにします。まず、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、以前に設定したクラウド権限を指定します。</block>
   <block id="2f549fb867eb9c0be636782d32264aa6" category="doc">コネクタをプライベートモードで展開します</block>
   <block id="377655366b79df746cc3d0c01596ba86" category="paragraph">NetApp Support Site から製品のインストーラをダウンロードし、手動でコネクタを自分のLinuxホストにインストールします。</block>
-  <block id="c9ce61bb8ba26b9e777140e6bd34ee95" category="inline-link">AWS Commercial Cloud Services（C2S）環境</block>
-  <block id="76dc45fc0f678a65bdd98f708893456c" category="inline-link">AWS C2S環境でCloud Volumes ONTAP を使用する方法をご確認ください</block>
-  <block id="5091509329e4947abb15d886a22552f1" category="paragraph">でBlueXPを使用する場合は<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> その後、別の手順に従ってその環境で作業を開始する必要があります。<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
   <block id="ffe7522d9ea3d134eb0a945275d454d7" category="paragraph-title">必要な権限</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">コネクタをインストールするには root 権限が必要です。</block>
   <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">からConnectorソフトウェアをダウンロードします<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
@@ -1703,7 +1699,6 @@
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">サポートケースの管理方法について説明します</block>
   <block id="84b67e035ee851e17fd4010870ec0a29" category="paragraph"><block ref="f0098b5aeef401e4baf694b939b219f4" category="inline-link-rx"></block>。</block>
   <block id="d2792d178cbdf6c41f2b8f2ae64424ed" category="list-text">このコネクタは、インターネットから完全に分離されたクラウド環境でサポートされるようになりました。その後、コネクタで実行されているBlueXPコンソールを使用して、同じ場所にCloud Volumes ONTAP を導入し、オンプレミスのONTAP クラスタを検出できます（クラウド環境からオンプレミス環境に接続されている場合）。BlueXPのバックアップとリカバリを使用して、AWSとAzureのコマーシャルリージョンのCloud Volumes ONTAP ボリュームをバックアップすることもできます。このタイプの環境では、BlueXPデジタルウォレットを除き、他のBlueXPサービスはサポートされません。</block>
-  <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">クラウドリージョンは、AWS C2S/SC2S、Azure IL6、または任意の商用リージョンのような安全な米国機関のリージョンにすることができます。</block>
   <block id="75327cdc175eca204abf0a4aa66413b3" category="paragraph">開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BlueXPデジタルウォレットにBYOLライセンスを追加してから、Cloud Volumes ONTAP を導入します。</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">インターネットにアクセスできない場所にコネクタを取り付けます</block>
   <block id="148472786b9015b5f19ac843e8bc0f31" category="list-text"><block ref="148472786b9015b5f19ac843e8bc0f31" category="inline-link-rx"></block></block>
@@ -2952,7 +2947,6 @@
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">コネクタインスタンスに関連付けられているインスタンスプロファイルのクレデンシャルは削除できません。</block>
   <block id="9ba678561b5c8922fc9983fcb89e1752" category="summary">BlueXPをプライベートモードで導入する前に、環境を準備します。たとえば、ホストの要件の確認、ネットワークの準備、権限の設定などが必要になります。</block>
   <block id="5f1067df496bfafd5eb793369b955e41" category="doc">プライベートモードでの導入を準備します</block>
-  <block id="ffd6a883d5c5e0f954b2db441bf455a2" category="admonition">でBlueXPを使用する場合は<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> その後、コネクタの準備、取り付け、およびCloud Volumes ONTAP の起動方法を説明する別の指示に従う必要があります。<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
   <block id="cd9866f3dfe1445bb49e9984aef06565" category="paragraph">作業を開始する前に、BlueXPがプライベートモードでどのように動作するかを理解しておく必要があります。</block>
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">プライベートモードの仕組みを説明します</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>。</block>
@@ -2980,9 +2974,7 @@
   <block id="5120a32615b91a5de80fd01e90d53677" category="inline-xref">SaaSレイヤへのアウトバウンド接続の詳細については、こちらをご覧ください</block>
   <block id="26791add2e44035ab424c178d3f4c61f" category="paragraph"><block ref="4a9f480c757559738dc0bf80da949e99" category="inline-xref-macro-rx"></block>。</block>
   <block id="9c39d5b8fd0bf20212456c9aceeaea5b" category="list-text">BlueXP Connectorはオンプレミスまたはクラウド（セキュアなリージョン、ソブリンクラウドリージョン、商用リージョン）にインストールされ、BlueXP SaaSレイヤへの_no_connectivityがあります。BlueXPには、SaaSレイヤではなくコネクタからアクセスできるWebベースのコンソールからローカルにアクセスします。</block>
-  <block id="43ff95fff31da6098dc2104a2b9903cd" category="inline-link">AWS C2SおよびSC2S</block>
   <block id="f7a5a85e5651d269f8be77a9a2e84792" category="inline-link">Azure IL6</block>
-  <block id="f4ffd6793bd6a15bb751635d36738fa2" category="paragraph">セキュアなリージョンには、が含まれます<block ref="f61a6c487032eb3fbf14a041d1a80535" category="inline-link-rx"></block> および<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="55fbab9267d4e9aae7daef26b314226f" category="paragraph">次の表に、これらのモードの比較を示します。</block>
   <block id="2113372caa2625fc2eac79b5c72bd737" category="cell">BlueXPのSaaSレイヤへの接続が必要ですか？</block>
   <block id="6a4fdae8165172d715565269b5d6eb0b" category="cell">アウトバウンドのみ</block>
@@ -3095,11 +3087,6 @@
   <block id="9ebc1b25e2041947b9103da47cd1c08a" category="list-text">認証は、ローカルユーザの管理とアクセスを通じて提供されます。BlueXPのクラウドサービスでは認証が行われません。</block>
   <block id="9155ed0ad2860f7dbb98e01dbb6fa42d" category="list-text">クラウド環境でサポートされるBlueXPサービス</block>
   <block id="8a4d4c53b0a8fbc638ca47e5e362f9e3" category="list-text">BlueXPでは、コネクタがクラウドにインストールされている場合、プライベートモードで次のストレージサービスとデータサービスがサポートされます。</block>
-  <block id="5cab93e720177e480ed8d2fe603b87b8" category="inline-link">AWS C2S / SC2S</block>
-  <block id="ed6f21c8b73c49053eac72fb867ecff6" category="cell">AWSとAzureの商用リージョンでサポートされます。
-
-Google Cloudまたはではサポートされていません<block ref="5388026a167091fc23180597ac85e174" category="inline-link-rx"></block> または<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
-  <block id="2c4d2c4938d2e881355a7e09fe8b1993" category="cell">インターネットにアクセスできないため、自動ソフトウェアアップグレード、AutoSupport 、AWSのコスト情報などの機能は使用できません。</block>
   <block id="5ddc4e154584048fc0f47939b47c7b63" category="cell">デジタルウォレットは、プライベートモードでサポートされている以下のライセンスオプションで使用できます。</block>
   <block id="71fa0def55e8ba28f8cea8204dcaaf4f" category="cell">クラウド（コネクタがインストールされている場所）からオンプレミス環境への接続が必要
 
@@ -3779,4 +3766,16 @@ deploymentmanager. editor</block>
   <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">このアップデートにはバグ修正も含まれています。</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
+  <block id="e22252cf3c711c916163d727b6261500" category="paragraph">クラウドリージョンは、AWS Top Secret Cloud、AWS Secret Cloud、Azure IL6、または任意の商用リージョンのような米国の安全な機関のリージョンにすることができます。</block>
+  <block id="ff2c9914d275ee17c3f22e89e7ca1ef7" category="inline-link">AWSシークレットクラウド</block>
+  <block id="a864a931bf30f7ad758b78e4a2cb264c" category="inline-link">AWSのトップシークレットクラウド</block>
+  <block id="958949b356b2f90081cbb745321e2bf3" category="inline-link">AWSシークレットクラウドまたはTop Secret CloudでCloud Volumes ONTAPの使用を開始する方法をご確認ください</block>
+  <block id="d6d8d91e7b96dd482dc74f45a4f14045" category="paragraph">でBlueXPを使用する場合は<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block> または<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>それらの環境で作業を開始するには、別の手順に従う必要があります。<block ref="4d25824b3e9e7473eac5e4c3e5c39cc3" category="inline-link-rx"></block></block>
+  <block id="026951b63281b53e88087e2423613cad" category="example-title">シークレットリージョン</block>
+  <block id="76187385115cd00f6a1ec1ff426ad7b5" category="example-title">Top Secret領域</block>
+  <block id="5327be2346849398acb42586361c3fa1" category="paragraph">セキュアなリージョンには、が含まれます<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>、<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>および<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="1b46f73bf231e8eefaf1347b4383cc0a" category="cell">AWSとAzureの商用リージョンでサポートされます。
+
+Google Cloudまたはではサポートされていません<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>、<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>または<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="fcbe8b204f3332d68f1b0f5f05c998db" category="cell">インターネットにアクセスできないため、自動ソフトウェアアップグレードとAutoSupportの機能は使用できません。</block>
 </blocks>
