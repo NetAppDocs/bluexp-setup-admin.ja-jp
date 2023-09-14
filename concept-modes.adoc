@@ -368,7 +368,7 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 | StorageGRID | いいえ | いいえ 
 
 
-.17+| * サービス * | バックアップとリカバリ | はい。 | はい。 
+.16+| * サービス * | バックアップとリカバリ | はい。 | はい。 
 
 
 | 分類 | はい。 | はい。 
@@ -399,9 +399,6 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 
 
 | 運用の耐障害性 | いいえ | いいえ 
-
-
-| ランサムウェアからの保護 | いいえ | いいえ 
 
 
 | 修正 | いいえ | いいえ 

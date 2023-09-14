@@ -68,7 +68,6 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 * https://bluexp.netapp.com/digital-advisor["デジタルアドバイザ"^]
 * https://bluexp.netapp.com/digital-advisor["経済効率"^]
 * https://bluexp.netapp.com/digital-advisor["運用の耐障害性"^]
-* https://bluexp.netapp.com/ransomware-protection["ランサムウェアからの保護"^]
 
 
 --
