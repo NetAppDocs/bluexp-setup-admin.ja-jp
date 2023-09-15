@@ -2271,7 +2271,6 @@
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">インスタンスにパブリックIPアドレスを割り当てるかどうかを指定します。</block>
   <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">コネクタインスタンスに必要な接続方法（SSH、HTTP、HTTPS）を有効にするファイアウォール設定を指定します。</block>
   <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">特定の構成にはさらにいくつかのルールが必要です。</block>
-  <block id="79b8b9ad9bf89b0b494ac4c62694d70f" category="list-text">*ストレージの設定*：デフォルトのストレージオプションをそのまま使用します。</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*詳細情報*：*[IAMインスタンスプロファイル]*で、コネクタに必要な権限を含むIAMロールを選択します。</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS は、指定した設定でソフトウェアを起動します。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">アイデンティティフェデレーションを使用すると、BlueXPとのシングルサインオンが可能になり、ユーザは自社のアイデンティティのクレデンシャルを使用してログインできます。まず、アイデンティティフェデレーションとBlueXPの連携について説明し、セットアッププロセスの概要を確認してください。</block>
@@ -3776,4 +3775,6 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="d80bf17e105d87b4295cb2e090a28117" category="list-text">現時点では、コネクタ、BlueXPデジタルウォレット、BlueXPのコピーと同期、BlueXPのバックアップとリカバリ、BlueXP階層化、BlueXP移行レポートなど、BlueXPの機能とサービスに関する通知がEメールで送信されます。サービスは今後のリリースで追加される予定です。</block>
   <block id="2cc0b2404e9976abc7bb1156519a654c" category="cell">AWS、ONTAP、BlueXPへのAPI呼び出し、NetAppへのAutoSupportメッセージの送信</block>
   <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">Google Cloud、ONTAP、BlueXPへのAPI呼び出し、NetAppへのAutoSupportメッセージの送信</block>
+  <block id="3bb1e2709fa189f2a1cf46aadeab3b46" category="list-text">*ストレージの構成*：ルートボリュームのデフォルトサイズとディスクタイプを維持します。</block>
+  <block id="4aed728875c28373d48d9ac6dc115722" category="paragraph">ルートボリュームでAmazon EBS暗号化を有効にする場合は、*[アドバンスト]*を選択し、*[ボリューム1]*を展開して*[暗号化]*を選択し、KMSキーを選択します。</block>
 </blocks>
