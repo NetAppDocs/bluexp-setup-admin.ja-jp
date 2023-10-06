@@ -3778,4 +3778,7 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">クラウドプロバイダのファイルサービスのサポート</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">クラウドプロバイダのファイルサービスとそのインフラ、またはサービスを使用する解決策に関連するテクニカルサポートについては、該当する製品のBlueXPドキュメントの「困ったときは」を参照してください。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXPおよびそのストレージソリューションとサービスに固有のテクニカルサポートを受けるには、以下に記載されているサポートオプションを使用してください。</block>
+  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023年10月6日</block>
+  <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">コネクタ3.9.34</block>
+  <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">このリリースには、マイナーな改善とバグ修正が含まれています。</block>
 </blocks>
