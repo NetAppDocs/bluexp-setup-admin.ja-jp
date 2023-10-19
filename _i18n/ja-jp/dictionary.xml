@@ -147,7 +147,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">BlueXPに関する注意事項</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="paragraph"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
-  <block id="60f3c104288fca2aca24db064cb7c7c1" category="doc">BlueXPをプライベートモードでクイックスタートします</block>
   <block id="077d70acc6fcd0e9c32a626a8ef8e416" category="paragraph">BlueXPをプライベートモードで使用するには、環境を準備してコネクタを導入します。</block>
   <block id="19b89452bb4e16dbfc6dc9d3fbbf8fc1" category="list-text">CPU、RAM、ディスクスペース、Docker Engineなどの要件を満たす専用のLinuxホストを準備します。</block>
   <block id="8cb1247d6f1cd796c983b5b1cfbbd285" category="list-text">ターゲットネットワークへのアクセスを提供するネットワークをセットアップします。</block>
@@ -524,7 +523,6 @@
   <block id="681992b8581f6d4247af5523a14d0ce4" category="list-text">Docker Engine の略</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">インストール手順を確認します</block>
   <block id="762cb137e48e2922920955cfb157dea8" category="list-text">Connectorをインストールする前に、ホストにDocker Engineバージョン19.3.1以降が必要です。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
-  <block id="c5b365377913424e6a59866f8ca70ef5" category="summary">NetApp BlueXPは、オンプレミス環境とクラウド環境にわたってデータの構築、保護、ガバナンスを支援する単一のコントロールプレーンです。BlueXPのSaaSプラットフォームは、ストレージとデータサービスで構成され、ストレージ管理、データモビリティ、データ保護、データ分析と制御を実現します。管理機能は、WebベースのコンソールとAPIを介して提供されます。</block>
   <block id="9f0bb2acc3984bc2da2e5e566dd4bc0a" category="doc">BlueXPの詳細をご覧ください</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">機能</block>
   <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">BlueXPプラットフォームは、データ管理において、ストレージ、モビリティ、保護、分析と制御という4つの主要な柱を提供します。</block>
@@ -544,8 +542,6 @@
   <block id="6b068f0a943d421535c7d8d412ee3522" category="list-text">Eシリーズシステム</block>
   <block id="3404cce75db90acf6a9d52860721a139" category="list-text">ONTAP クラスタ</block>
   <block id="7fcb7f97cbc710b693fef37b5e86770f" category="list-text">StorageGRID システム</block>
-  <block id="7f346b4ef7825b27ccadbbf10f2d2cd0" category="inline-link">Kubernetesの永続的データ</block>
-  <block id="bf51187e0e630c8bb2fbde7d3c4a5f69" category="list-text">オーケストレーションと保護<block ref="17466ff7cb59071f2d4e860ff4e2c4e1" category="inline-link-rx"></block></block>
   <block id="340a76e3aef8e862f5fd79411261b297" category="list-text">モビリティ</block>
   <block id="55e7d878083c03ce4abbbc1175e10f41" category="list-text">データを同期、コピー、階層化、キャッシュすることで、必要な場所にデータを移動できます。</block>
   <block id="e216b7a924341f796bca310d1d812baf" category="inline-link">コピーと同期</block>
@@ -561,7 +557,6 @@
   <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">レプリケーション</block>
   <block id="e5335d776982e29d68ce5591f7857b38" category="list-text"><block ref="e5335d776982e29d68ce5591f7857b38" category="inline-link-rx"></block></block>
   <block id="27d62ce672b932b5110b78a6ca41f5d9" category="list-text">分析と管理</block>
-  <block id="166c994d4abe4a5b8c4f0a60491d6b92" category="list-text">ツールを使用して、データストレージとインフラを監視、マッピング、最適化できます。</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="inline-link">分類</block>
   <block id="3e347fe716ab17eefd02acef8c0347bf" category="list-text"><block ref="3e347fe716ab17eefd02acef8c0347bf" category="inline-link-rx"></block></block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="inline-link">デジタルアドバイザ</block>
@@ -2813,12 +2808,8 @@
   <block id="31f2b2cbba0d986ad6ce5bec030a9de1" category="paragraph"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block>。</block>
   <block id="fa1f9e92f4f0aa51cba859b2dbc37a02" category="section-title">コネクタを作成する方法</block>
   <block id="e4e0875eedbe591adccfba1b76d09729" category="paragraph">BlueXPアカウント管理者は、BlueXPまたはクラウドプロバイダのマーケットプレイスから直接コネクタを作成するか、自社のLinuxホストに手動でソフトウェアをインストールしてコネクタを作成できます。BlueXPを標準モード、制限モード、プライベートモードのいずれで使用しているかによって、作業を開始する方法が異なります。</block>
-  <block id="ce6d43255d920acadadb7e3862aee0b0" category="list-text"><block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block></block>
-  <block id="2d9421fac12c9ac9462f27b55d118c68" category="list-text"><block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block></block>
-  <block id="ba356dfc51631fb5a0371fea940de345" category="list-text"><block ref="ba356dfc51631fb5a0371fea940de345" category="inline-link-macro-rx"></block></block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="section-title">権限</block>
   <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">BlueXPからコネクタを直接作成するには特定の権限が必要です。コネクタインスタンス自体には別の権限セットが必要です。AWSまたはAzureでBlueXPから直接コネクタを作成する場合は、必要な権限でコネクタがBlueXPによって作成されます。</block>
-  <block id="1e419112f48a13d6b30178e127d0a445" category="paragraph">コネクタに必要な正確な権限を表示するには、次のページを参照してください。</block>
   <block id="338a6f193e9988b8f40b3128d5e4ffb7" category="inline-link-macro">ConnectorでのAWS権限の使用方法について説明します</block>
   <block id="0e4f7db7cba89c0c2240f4376d660bcd" category="list-text"><block ref="0e4f7db7cba89c0c2240f4376d660bcd" category="inline-link-macro-rx"></block></block>
   <block id="a039d4d02d5241a9510700b22c46787e" category="inline-link-macro">ConnectorでのAzure権限の使用方法について説明します</block>
@@ -3230,8 +3221,6 @@
   <block id="297a49f6150dc8dc8d45620c0f09f393" category="list-text">他のGoogle Cloudプロジェクトのリソースを管理する場合は、BlueXPロールを持つサービスアカウントをそのプロジェクトに追加してアクセスを許可します。プロジェクトごとにこの手順を繰り返す必要があります。</block>
   <block id="1f7d098197ba2def0ffc66c388b2aa6c" category="paragraph">Cloud Volumes ONTAPの新しい作業環境を作成すると、BlueXPでは次のAWSクレデンシャルがデフォルトで選択されます。</block>
   <block id="1c16bd0b2377f4460ae56ecb40a419ae" category="paragraph">このロールに関連付けられているAzureサブスクリプションを選択できることに注意してください。選択した各サブスクリプションには、そのサブスクリプション内のリソースを管理するためのコネクタ権限（Cloud Volumes ONTAPなど）が用意されています。</block>
-  <block id="55a733edf0d6d526d9ebeda09e38bdd1" category="summary">BlueXPアカウントは組織にマルチテナンシーを提供するため、分離されたワークスペースでユーザやリソースを整理できます。たとえば、ユーザーのグループは、異なるワークスペースで異なるタイプの作業環境を管理する他のユーザーには表示されないワークスペース内のCloud Volumes ONTAPシステムを展開および管理できます。</block>
-  <block id="e96a7b63d6df3633f05aea7438dd616e" category="paragraph">A_BlueXPアカウント_は組織にマルチテナンシーを提供するため、isolated_workspaces_でユーザとリソースを整理できます。たとえば、ユーザーのグループは、異なるワークスペースで異なるタイプの作業環境を管理する他のユーザーには表示されないワークスペース内のCloud Volumes ONTAPシステムを展開および管理できます。</block>
   <block id="d90aceadc99dce46d7d593ee18ab0d90" category="paragraph">コネクタは、次のエンドポイントに接続して、パブリッククラウド環境内のリソースとプロセスを管理します。</block>
   <block id="91499b479a6f9fe14de575cded8e2ab6" category="paragraph">複数のAzureサブスクリプションでリソースを管理する場合は、各サブスクリプションにサービスプリンシパルをバインドする必要があります。たとえば、BlueXPでは、Cloud Volumes ONTAPの導入時に使用するサブスクリプションを選択できます。</block>
   <block id="6258a889f12d08d6da95cf4059f67498" category="paragraph">BlueXPで使用する各AzureサブスクリプションのIDを追加する必要があります。</block>
@@ -3781,4 +3770,18 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023年10月6日</block>
   <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">コネクタ3.9.34</block>
   <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">このリリースには、マイナーな改善とバグ修正が含まれています。</block>
+  <block id="fbfcc41262435943a07339aac43c3871" category="summary">NetApp BlueXPは、オンプレミス環境とクラウド環境にわたってデータの構築、保護、ガバナンスを支援する単一のコントロールプレーンです。BlueXP SaaSプラットフォームには、ストレージ管理、データモビリティ、データ保護、データ分析と制御を提供するサービスが含まれています。管理機能は、WebベースのコンソールとAPIを介して提供されます。</block>
+  <block id="3c7cc2c5cfc598a6280bf919763758f3" category="inline-link">Kubernetesワークロードのデータ保護</block>
+  <block id="3f0e4bbce5ac7b1b50e921687f2ef311" category="list-text"><block ref="3f0e4bbce5ac7b1b50e921687f2ef311" category="inline-link-rx"></block></block>
+  <block id="17b1e045b0e19ff6f254c01b1f9a9131" category="list-text">ツールを使用して、データストレージとインフラを監視、マッピング、最適化できます。実用的な情報を取得して、ストレージの健全性、耐障害性、経済性を最適化します。</block>
+  <block id="ca61c00bb942882ff64e228d1e677f97" category="paragraph">BlueXPを制限モードまたはプライベートモードで使用するには、コネクタが必要です。</block>
+  <block id="25a9b1247ec1fd14b6ef367a6910af4a" category="inline-link-macro">BlueXPを標準モードで開始する</block>
+  <block id="53307bf922b08c003dac0571547a263c" category="list-text"><block ref="53307bf922b08c003dac0571547a263c" category="inline-link-macro-rx"></block></block>
+  <block id="91f55c66e69b3b40e117fc5d123e8cd6" category="inline-link-macro">制限モードでのBlueXPの使用を開始する</block>
+  <block id="def77b30fc5552aeb374df8119e2c2c8" category="list-text"><block ref="def77b30fc5552aeb374df8119e2c2c8" category="inline-link-macro-rx"></block></block>
+  <block id="08e6464d98921d4b239eda70bb4b04b2" category="inline-link-macro">BlueXPのプライベートモードで開始する</block>
+  <block id="484cc15e142fd16556c500975b95d031" category="list-text"><block ref="484cc15e142fd16556c500975b95d031" category="inline-link-macro-rx"></block></block>
+  <block id="a6500600136e87d0f971781229e9f9ab" category="paragraph">コネクタが日常的な操作に必要とする正確な権限を表示するには、次のページを参照してください。</block>
+  <block id="b3686cfa126ecda3f385bc3c05a38641" category="summary">BlueXPアカウントは組織にマルチテナンシーを提供するため、分離されたワークスペースでユーザやリソースを整理できます。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。</block>
+  <block id="59a7c4ef8ec683b4486222e8f42e56e6" category="paragraph">A_BlueXPアカウント_は組織にマルチテナンシーを提供するため、isolated_workspaces_でユーザとリソースを整理できます。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。</block>
 </blocks>

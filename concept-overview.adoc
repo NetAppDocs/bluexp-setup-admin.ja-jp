@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-overview.html 
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers 
-summary: NetApp BlueXPは、オンプレミス環境とクラウド環境にわたってデータの構築、保護、ガバナンスを支援する単一のコントロールプレーンです。BlueXPのSaaSプラットフォームは、ストレージとデータサービスで構成され、ストレージ管理、データモビリティ、データ保護、データ分析と制御を実現します。管理機能は、WebベースのコンソールとAPIを介して提供されます。 
+summary: NetApp BlueXPは、オンプレミス環境とクラウド環境にわたってデータの構築、保護、ガバナンスを支援する単一のコントロールプレーンです。BlueXP SaaSプラットフォームには、ストレージ管理、データモビリティ、データ保護、データ分析と制御を提供するサービスが含まれています。管理機能は、WebベースのコンソールとAPIを介して提供されます。 
 ---
 = BlueXPの詳細をご覧ください
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp BlueXPは、オンプレミス環境とクラウド環境にわ�
 
 
 [role="lead"]
-NetApp BlueXPは、オンプレミス環境とクラウド環境にわたってデータの構築、保護、ガバナンスを支援する単一のコントロールプレーンです。BlueXPのSaaSプラットフォームは、ストレージとデータサービスで構成され、ストレージ管理、データモビリティ、データ保護、データ分析と制御を実現します。管理機能は、WebベースのコンソールとAPIを介して提供されます。
+NetApp BlueXPは、オンプレミス環境とクラウド環境にわたってデータの構築、保護、ガバナンスを支援する単一のコントロールプレーンです。BlueXP SaaSプラットフォームには、ストレージ管理、データモビリティ、データ保護、データ分析と制御を提供するサービスが含まれています。管理機能は、WebベースのコンソールとAPIを介して提供されます。
 
 
 
@@ -40,7 +40,6 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 ** StorageGRID システム
 
 
-* オーケストレーションと保護 https://bluexp.netapp.com/solutions/kubernetes["Kubernetesの永続的データ"^]
 
 
 --
@@ -58,10 +57,11 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 --
 * https://bluexp.netapp.com/cloud-backup["バックアップとリカバリ"^]
 * https://bluexp.netapp.com/replication["レプリケーション"^]
+* https://bluexp.netapp.com/solutions/kubernetes["Kubernetesワークロードのデータ保護"^]
 
 
 --
-分析と管理:: ツールを使用して、データストレージとインフラを監視、マッピング、最適化できます。
+分析と管理:: ツールを使用して、データストレージとインフラを監視、マッピング、最適化できます。実用的な情報を取得して、ストレージの健全性、耐障害性、経済性を最適化します。
 +
 --
 * https://bluexp.netapp.com/netapp-cloud-data-sense["分類"^]

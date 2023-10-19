@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
 keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
-summary: BlueXPアカウントは組織にマルチテナンシーを提供するため、分離されたワークスペースでユーザやリソースを整理できます。たとえば、ユーザーのグループは、異なるワークスペースで異なるタイプの作業環境を管理する他のユーザーには表示されないワークスペース内のCloud Volumes ONTAPシステムを展開および管理できます。 
+summary: BlueXPアカウントは組織にマルチテナンシーを提供するため、分離されたワークスペースでユーザやリソースを整理できます。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。 
 ---
 = BlueXPアカウントの詳細をご確認ください
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXPアカウントは組織にマルチテナンシーを提供す�
 
 
 [role="lead"]
-A_BlueXPアカウント_は組織にマルチテナンシーを提供するため、isolated_workspaces_でユーザとリソースを整理できます。たとえば、ユーザーのグループは、異なるワークスペースで異なるタイプの作業環境を管理する他のユーザーには表示されないワークスペース内のCloud Volumes ONTAPシステムを展開および管理できます。
+A_BlueXPアカウント_は組織にマルチテナンシーを提供するため、isolated_workspaces_でユーザとリソースを整理できます。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。
 
 BlueXPに初めてアクセスすると、アカウントを選択または作成するように求められます。たとえば、まだアカウントを持っていない場合は、次の画面が表示されます。
 

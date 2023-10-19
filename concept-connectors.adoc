@@ -81,6 +81,8 @@ BlueXPを標準モードで使用する場合、BlueXPの次の機能やサー�
 
 ^1^コネクタなしでこれらのサービスにアクセスできますが、サービスからアクションを開始するにはコネクタが必要です。
 
+BlueXPを制限モードまたはプライベートモードで使用するには、コネクタが必要です。
+
 
 
 == コネクタは常に動作している必要があります
@@ -130,9 +132,9 @@ link:concept-modes.html["BlueXPの導入モードについて説明します"]�
 BlueXPアカウント管理者は、BlueXPまたはクラウドプロバイダのマーケットプレイスから直接コネクタを作成するか、自社のLinuxホストに手動でソフトウェアをインストールしてコネクタを作成できます。BlueXPを標準モード、制限モード、プライベートモードのいずれで使用しているかによって、作業を開始する方法が異なります。
 
 * link:concept-modes.html["BlueXPの導入モードについて説明します"]
-* link:task-quick-start-standard-mode.html["BlueXPを標準モードでクイックスタートできます"]
-* link:task-quick-start-restricted-mode.html["制限モードのBlueXPのクイックスタート"]
-* link:task-quick-start-private-mode.html["BlueXPをプライベートモードでクイックスタートします"]
+* link:task-quick-start-standard-mode.html["BlueXPを標準モードで開始する"]
+* link:task-quick-start-restricted-mode.html["制限モードでのBlueXPの使用を開始する"]
+* link:task-quick-start-private-mode.html["BlueXPのプライベートモードで開始する"]
 
 
 
@@ -157,7 +159,7 @@ BlueXPからコネクタを直接作成するには特定の権限が必要で�
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["プライベートモードの権限を設定します"]
 
 
-コネクタに必要な正確な権限を表示するには、次のページを参照してください。
+コネクタが日常的な操作に必要とする正確な権限を表示するには、次のページを参照してください。
 
 * link:reference-permissions-aws.html["ConnectorでのAWS権限の使用方法について説明します"]
 * link:reference-permissions-azure.html["ConnectorでのAzure権限の使用方法について説明します"]
