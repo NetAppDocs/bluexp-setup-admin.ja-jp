@@ -368,7 +368,7 @@ chmod +x OnCommandCloudManager-<version>
  ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
---proxyパラメータと--cacert.pemパラメータはオプションです。プロキシサーバがある場合は、次のようにパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。
+--proxyパラメータと--cacert.pemパラメータはオプションです。プロキシサーバを使用している場合は、次のようにパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。
 
 +
 次に、両方のオプションパラメータを使用したコマンドの例を示します。
@@ -376,18 +376,26 @@ chmod +x OnCommandCloudManager-<version>
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./OnCommandCloudManager-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。
 
 +
 ** \http://address:port
-** \http://username:password@address:port
+** \http://user-name:password@address:port
+** \http://domain-name%92user-name:password@address:port
 ** \https://address:port
-** \https://username:password@address:port
+** \https://user-name:password@address:port
+** \https://domain-name%92user-name:password@address:port
 +
-ユーザはローカルユーザである必要があります。ドメインユーザはサポートされません。
+次の点に注意してください。
+
++
+*** ユーザには、ローカルユーザまたはドメインユーザを指定できます。
+*** ドメインユーザの場合は、上記のように\にASCIIコードを使用する必要があります。
+*** BlueXPでは、@文字を含むパスワードはサポートされていません。
+
 
 
 

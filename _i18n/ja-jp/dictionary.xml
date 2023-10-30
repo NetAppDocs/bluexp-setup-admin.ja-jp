@@ -124,14 +124,10 @@
   <block id="e9b5bbe1e4c19139761534abb688155a" category="list-text">スクリプトを実行する権限を割り当てます。</block>
   <block id="643a877b7c306b1bcece42c8f03bebfb" category="paragraph">&lt;version&gt; は、ダウンロードしたコネクタのバージョンです。</block>
   <block id="325740f998865be7879e32048d406868" category="list-text">インストールスクリプトを実行します。</block>
-  <block id="658dfe68751aa32c88df07e11961f9e4" category="paragraph">--proxyパラメータと--cacert.pemパラメータはオプションです。プロキシサーバがある場合は、次のようにパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。</block>
   <block id="b9fe00008273bec266b1b13a375c5496" category="paragraph">次に、両方のオプションパラメータを使用したコマンドの例を示します。</block>
   <block id="c4b4fca8bb676cd8922fa6d8e24c4b0b" category="paragraph">--proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。</block>
   <block id="2ceb0e196c300f23618f8a9e66bf0553" category="list-text">\http://address:port</block>
-  <block id="56ea310ec955ce6bca75693a1ac8f92d" category="list-text">\http://username:password@address:port</block>
   <block id="ab0bd0c76dc86ad344963fb604cbdb9a" category="list-text">\https://address:port</block>
-  <block id="0e304d528ea3fafc4ceebb3dd322c283" category="list-text">\https://username:password@address:port</block>
-  <block id="b9a11b90960ff803269429887ab4cff3" category="paragraph">ユーザはローカルユーザである必要があります。ドメインユーザはサポートされません。</block>
   <block id="1d012dd95bea10f05050cd3762e31e84" category="paragraph">--cacertsは、コネクタとプロキシサーバ間のHTTPSアクセスに使用するCA署名証明書を指定しています。このパラメータは、HTTPSプロキシサーバを指定する場合、または代行受信プロキシを指定する場合にのみ必要です。</block>
   <block id="f5f31bd671c0968ba09c8eb577f95629" category="list-text">インストールが完了するまで待ちます。</block>
   <block id="d242483bab76006d2edbd9135be8effe" category="paragraph">プロキシサーバを指定した場合は、インストールの終了時にConnectorサービス（occm）が2回再起動されます。</block>
@@ -1590,8 +1586,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">既知の制限</block>
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">これらの制限は、BlueXPのセットアップと管理に特有のものです。コネクタ、SaaSプラットフォームなどです。</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">コネクタの制限</block>
-  <block id="37c1762f10d4fe7f0bd3dd2820e543c3" category="section-title">ドメインユーザを使用したプロキシ設定</block>
-  <block id="2ced7e677ffb2b0b579ea765f328f9d9" category="paragraph">BlueXPでは、コネクタのプロキシサーバの設定時にドメインユーザがサポートされません。プロキシサーバのユーザ名を入力する場合は、ローカルユーザである必要があります。</block>
   <block id="cf4525e15b866700f10e91573643ba54" category="section-title">デフォルトのEC2インスタンス設定は変更しないでください</block>
   <block id="505d2a7358228b26711e097c3ca6dc24" category="paragraph">AWSにコネクタを導入すると、デフォルトで次のEC2インスタンス設定が構成されます。</block>
   <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2はオプションに設定されています</block>
@@ -2426,7 +2420,6 @@
   <block id="2c451caa323474f558c4e4065578647d" category="list-text">プロキシを設定します。</block>
   <block id="dabc8d2c79f6529ca393b4b3d4f75805" category="list-text">[Enable Proxy]*を選択します。</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">構文を使用してサーバを指定します<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> または<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
-  <block id="3d069ceba6ecf8b2c1c3def00d512e45" category="list-text">ベーシック認証の場合は、ユーザ名とパスワードを指定します サーバに必要です</block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="admonition">BlueXPでは、@文字を含むパスワードはサポートされていません。</block>
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">API の直接トラフィックを有効にします</block>
   <block id="6282017b43dee5b3762b81c0124c425c" category="paragraph">プロキシサーバを使用するようにコネクタを設定した場合は、コネクタで直接APIトラフィックを有効にして、プロキシを経由せずにAPI呼び出しをクラウドプロバイダサービスに直接送信できます。このオプションは、 AWS 、 Azure 、または Google Cloud で実行されているコネクタでサポートされます。</block>
@@ -3784,4 +3777,14 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="a6500600136e87d0f971781229e9f9ab" category="paragraph">コネクタが日常的な操作に必要とする正確な権限を表示するには、次のページを参照してください。</block>
   <block id="b3686cfa126ecda3f385bc3c05a38641" category="summary">BlueXPアカウントは組織にマルチテナンシーを提供するため、分離されたワークスペースでユーザやリソースを整理できます。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。</block>
   <block id="59a7c4ef8ec683b4486222e8f42e56e6" category="paragraph">A_BlueXPアカウント_は組織にマルチテナンシーを提供するため、isolated_workspaces_でユーザとリソースを整理できます。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。</block>
+  <block id="68d3d8808dd0c97d733b830adcc3ce04" category="paragraph">--proxyパラメータと--cacert.pemパラメータはオプションです。プロキシサーバを使用している場合は、次のようにパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。</block>
+  <block id="5c19a40334d46880274be75a5173b4c4" category="list-text">\http://user-name:password@address:port</block>
+  <block id="33dbf59ca7c7ba76bec757cd7f795ed4" category="list-text">\http://domain-name%92user-name:password@address:port</block>
+  <block id="0c41c26ede4faf2f62d330df516b6e2c" category="list-text">\https://user-name:password@address:port</block>
+  <block id="84d3a6cbeb010ca14b892dcb244ad6c5" category="list-text">\https://domain-name%92user-name:password@address:port</block>
+  <block id="9c959780e1c60d211b8e7acdef1e4650" category="list-text">ユーザには、ローカルユーザまたはドメインユーザを指定できます。</block>
+  <block id="288412232e1a46f03f9c36a0d0f3b5c0" category="list-text">ドメインユーザの場合は、上記のように\にASCIIコードを使用する必要があります。</block>
+  <block id="2fc62556a3d8d2f1a8b9dc5e4e4ba9ca" category="list-text">サーバでベーシック認証が必要な場合は、ユーザ名とパスワードを指定します。</block>
+  <block id="80bba58d673fb4fcbcf926f928bf80c7" category="list-text">ドメインユーザの場合は、\のASCIIコードを次のように入力する必要があります。domain-name%92user-name</block>
+  <block id="5596775e1e7017bff2ae389af56efd57" category="paragraph">例：NetApp%92proxy</block>
 </blocks>
