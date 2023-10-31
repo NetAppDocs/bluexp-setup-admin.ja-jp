@@ -356,7 +356,7 @@ unset https_proxy
 +
 [source, cli]
 ----
-chmod +x OnCommandCloudManager-<version>
+chmod +x Cloud-Manager-Connector-Cloud-<version>
 ----
 +
 <version> は、ダウンロードしたコネクタのバージョンです。
@@ -365,7 +365,7 @@ chmod +x OnCommandCloudManager-<version>
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+ ./Cloud-Manager-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
 --proxyパラメータと--cacert.pemパラメータはオプションです。プロキシサーバを使用している場合は、次のようにパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。
@@ -376,7 +376,7 @@ chmod +x OnCommandCloudManager-<version>
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./Cloud-Manager-Connector-Cloud-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。
