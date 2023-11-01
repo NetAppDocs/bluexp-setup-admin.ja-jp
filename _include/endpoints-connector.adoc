@@ -58,7 +58,9 @@
 
 | Google Cloudでリソースを管理するには
 
-|\https://support.netapp.com |をクリックしてライセンス情報を取得し、AutoSupportメッセージをNetAppサポートに送信します。
+|
+\ https://support.netapp.com
+\https://mysupport.netapp.com |を使用してライセンス情報を取得し、AutoSupportメッセージをNetAppサポートに送信します。
 
 |\https://*.api.bluexp.netapp.com
 

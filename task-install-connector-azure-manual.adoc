@@ -122,7 +122,8 @@ Azureパブリックリージョン内のリソースを管理します。
 
 
  a| 
-\https://support.netapp.com
+\ https://support.netapp.com
+https://mysupport.netapp.com をご覧ください
  a| 
 ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。
 
