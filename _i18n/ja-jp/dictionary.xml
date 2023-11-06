@@ -37,13 +37,7 @@
   <block id="5e15e451ab1dcb5e3bfae55f8b58e524" category="list-text">* 資格情報の場所 * ：「 * Amazon Web Services &gt; Connector * 」を選択します。</block>
   <block id="8117407a9689d4f991904d5739091c47" category="list-text">*クレデンシャルを定義*：AWSアクセスキーとシークレットキーを入力します。</block>
   <block id="dc6e318a413899b5467eabc5f69ad366" category="list-text">* Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。</block>
-  <block id="3747d8dfb456f8cefbe5ea8eed8a4289" category="summary">AzureにConnectorをインストールすると、コネクタがインストールされているAzureサブスクリプションにあるAzureストレージアカウントに関する情報がBlueXPによって自動的に検出されます。Azure Blob作業環境がCanvasに追加され、この情報を表示できるようになりました。</block>
   <block id="70c85793f0a33ef534a67f193287a992" category="doc">Azure Blobアカウントを管理します</block>
-  <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Azure Blob作業環境のスクリーンショット</block>
-  <block id="33b5e081bfc2a4ff553d44178d68dda0" category="paragraph"><block ref="33b5e081bfc2a4ff553d44178d68dda0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="df329246877a4bd1e46b66f9dd6845df" category="paragraph">Azureストレージアカウントに関する詳細を確認できます。これには、場所、リソースグループ、合計容量と使用済み容量などの情報が含まれます。これらのアカウントは、BlueXPのバックアップとリカバリ、BlueXPの階層化、BlueXPのコピーと同期の処理のデスティネーションとして使用できます。</block>
-  <block id="bbea79834217efc10b46f4ce874042e0" category="inline-link">BlueXPを使用してAzureストレージアカウントを表示、作成、管理する方法については、こちらをご覧ください</block>
-  <block id="925b4bfac5efe2fd0e529d00b71f77ab" category="paragraph">新たに追加された機能で、Azureストレージアカウントを作成および編集できるようになりました。<block ref="3ed7f712e1a5045237f8df14106ff39a" category="inline-link-rx"></block>。</block>
   <block id="f9a2f8eef1df12108fd0c6b9b6b7fe6a" category="doc">Google Cloudでのコネクタのインストールオプション</block>
   <block id="b5afc81c4f24b143224e304b939a3f6c" category="paragraph">次のインストールオプションを使用できます。</block>
   <block id="b584cbf8cb993e5b450384402639e3c4" category="paragraph">この操作により、Linuxを実行するVMインスタンスとコネクタソフトウェアが、選択したVPCで起動されます。</block>
@@ -394,7 +388,6 @@
   <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
   <block id="7c68c9240932ba8b284de266f9564faa" category="paragraph">これらの権限はBlueXPのバックアップとリカバリに必要です。</block>
   <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">BlueXPでGoogle Cloudのクレデンシャルと権限を使用して操作を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する際に役立ちます。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。</block>
-  <block id="0384f4ba39f6a15ffd9b42bfb03b8d83" category="doc">Google Cloud のプロジェクト、権限、アカウント</block>
   <block id="a8f8f08c9d91eeaecc31377113ddd27b" category="section-title">BlueXPのプロジェクトと権限</block>
   <block id="627c5def4348066ddd5e7a1664e1079b" category="paragraph">BlueXPを使用してGoogle Cloudプロジェクトのリソースを管理するには、まずコネクタを導入する必要があります。Connector は、オンプレミスでも別のクラウドプロバイダでも実行できません。</block>
   <block id="356334a26d74c400a5e0a69f237ba73e" category="paragraph">BlueXPからコネクタを直接展開するには、次の2セットの権限が必要です。</block>
@@ -1019,7 +1012,6 @@
   <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">シールドVM機能</block>
   <block id="5e59673ea4dc0650f587413c4848c02c" category="paragraph">このコネクタは、OSがサポートされているVMインスタンス上のGoogle Cloudでサポートされます<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
   <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">BlueXPがAzureのクレデンシャルと権限を使用して処理を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のAzureサブスクリプションのクレデンシャルを管理する際に役立ちます。たとえば、AzureクレデンシャルをBlueXPに追加するタイミングを確認できます。</block>
-  <block id="1ab5193f89cf79df51fd4138318923ac" category="doc">Azure のクレデンシャルと権限</block>
   <block id="08a6159f6d9d986210470d2ab6dff166" category="section-title">Azure の初期クレデンシャル</block>
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Azure の Connector 導入ポリシー</block>
   <block id="9cbe008fc71c240a16ab125b2873fe44" category="inline-link-macro">BlueXPがどのように権限を使用しているかを確認します</block>
@@ -1097,7 +1089,6 @@
   <block id="7c04a15d03a827f3e932f6ea885fb875" category="list-text"><block ref="7c04a15d03a827f3e932f6ea885fb875" category="inline-link-rx"></block></block>
   <block id="59c8a7b2e005ee251a6301c0ca1f23b3" category="list-text">コネクタのインストール後にBlueXPに追加できるアクセスキーがユーザに割り当てられていることを確認します。</block>
   <block id="9370643895ad52c4da3ddf50c1e24a82" category="summary">アカウント管理者、ワークスペース管理者、コンプライアンスビューア、および SnapCenter 管理者の各ロールは、ユーザーに特定の権限を提供します。BlueXPアカウントに新しいユーザを関連付けるときに、これらのロールのいずれかを割り当てることができます。</block>
-  <block id="a5cd3ed116608dac017f14c046ea56bf" category="doc">ロール</block>
   <block id="706c30f817a6d965f23bc2798759eb15" category="paragraph">Compliance Viewerロールは、BlueXPの分類への読み取り専用アクセス用です。</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">タスク</block>
   <block id="023bddc1580239bc605771883a09c8ff" category="cell">アカウント管理者</block>
@@ -1198,12 +1189,6 @@
   <block id="41adb69bcb6f24f8432b590170f61d23" category="list-text">ログインしたら、BlueXPをセットアップします。</block>
   <block id="c0112364e46bcec7ed4460a6be7ead53" category="paragraph">標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。(また、コネクタがオンプレミスにインストールされている場合、制限モードはサポートされません)。</block>
   <block id="dcdd03125bee39fb6c8e9aa5e0bfcc7f" category="paragraph">これで、先ほどインストールしたコネクタでBlueXPがセットアップされました。</block>
-  <block id="773752fa8722d25b5cb88d771e3c6459" category="summary">Google CloudにConnectorをインストールすると、BlueXPは、ConnectorがインストールされているGoogleアカウントにあるGoogle Cloudバケットに関する情報を自動的に検出できます。Google Cloud Storage作業環境がCanvasに追加され、この情報を表示できます。</block>
-  <block id="82f74539a8232efa9fe9d44fbb820377" category="doc">Google Cloud Storageバケットを表示します</block>
-  <block id="e952b1c060b2dc1be5663131351e06a5" category="paragraph">Google CloudにConnectorをインストールすると、BlueXPは、ConnectorがインストールされているGoogleアカウントにあるGoogle Cloud Storageバケットに関する情報を自動的に検出できます。Google Cloud Storage作業環境がCanvasに追加され、この情報を表示できます。</block>
-  <block id="4a5a2cb37f05953f58468c7fed5af846" category="paragraph">Google Cloud Storageバケットの場所、アクセスステータス、ストレージクラス、合計容量と使用済み容量などの詳細を確認できます。これらのバケットは、BlueXPのバックアップとリカバリ、BlueXPの階層化、BlueXPのコピーと同期の処理のデスティネーションとして使用できます。</block>
-  <block id="21b1bc909131728ad1b5d3d05c538f6b" category="inline-image-macro">Google Cloud Storage作業環境のスクリーンショット。</block>
-  <block id="94bd1056e53b5ba66af1269a83d9d853" category="paragraph"><block ref="94bd1056e53b5ba66af1269a83d9d853" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c7c7fe81ff2afbb7f657e592f9871125" category="summary">制限モードでBlueXPを起動して実行したら、制限モードでサポートされるBlueXPサービスの使用を開始できます。</block>
   <block id="d279ef9d3fa427882e45e653bc7b1949" category="doc">次に実行できる処理（制限モード）</block>
   <block id="9ed3d93e6149b9255047c4f345ace3ed" category="paragraph">ヘルプについては、次のサービスのマニュアルを参照してください。</block>
@@ -1461,7 +1446,6 @@
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">コネクタをプライベートモードで導入し、BlueXP SaaSレイヤへのアウトバウンド接続なしでBlueXPを使用できるようにします。まず、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、以前に設定したクラウド権限を指定します。</block>
   <block id="2f549fb867eb9c0be636782d32264aa6" category="doc">コネクタをプライベートモードで展開します</block>
   <block id="377655366b79df746cc3d0c01596ba86" category="paragraph">NetApp Support Site から製品のインストーラをダウンロードし、手動でコネクタを自分のLinuxホストにインストールします。</block>
-  <block id="ffe7522d9ea3d134eb0a945275d454d7" category="paragraph-title">必要な権限</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">コネクタをインストールするには root 権限が必要です。</block>
   <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">からConnectorソフトウェアをダウンロードします<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
   <block id="21ecc51e06ea55adef72442730b0d5cf" category="paragraph">インターネットにアクセスできない制限されたネットワーク用のインストーラを必ずダウンロードしてください。</block>
@@ -1497,7 +1481,6 @@
   <block id="3612e0e7a44ec38da1e226c618526f91" category="open-title">Google Cloudサービスアカウント</block>
   <block id="4b6fbf3b382ce342b57bbdb4fe0d6baf" category="paragraph">サービスアカウントをコネクタVMに関連付けます。</block>
   <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">BlueXPがAWSのクレデンシャルと権限を使用してユーザに代わって操作を実行する方法をご紹介します。これらの詳細を理解しておくと、BlueXPで1つ以上のAWSアカウントのクレデンシャルを管理する際に役立ちます。たとえば、AWSクレデンシャルをBlueXPに追加するタイミングを把握できます。</block>
-  <block id="97911b3c54a4e826b34c1f79026316c5" category="doc">AWS のクレデンシャルと権限</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">AWS の初期クレデンシャル</block>
   <block id="09c2333ff15fa85698d91a366cce26dd" category="inline-link-macro">AWS 用のコネクタ導入ポリシー</block>
   <block id="858c852a1a4696d4e56295d4b4b0ea20" category="paragraph">BlueXPがAWSでコネクタインスタンスを起動すると、インスタンスのIAMロールとインスタンスプロファイルが作成されます。また、ポリシーを適用して、指定した AWS アカウント内のリソースやプロセスを管理する権限を Connector に提供します。 <block ref="9d2ef148313eb953f656b8efd4016e8c" category="inline-link-macro-rx"></block>。</block>
@@ -1544,7 +1527,6 @@
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443年</block>
   <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">クライアントWebブラウザからローカルユーザインターフェイスへのHTTPSアクセスを提供します</block>
   <block id="771e18f961335c5b2ae045b3fefc3e80" category="summary">コネクタのAWSセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。BlueXPでコネクタを作成すると、BlueXPでこのセキュリティグループが自動的に作成されます。他のすべてのインストールオプションには、このセキュリティグループを設定する必要があります。</block>
-  <block id="60f0453bf0393ab630be6aa37dc20180" category="doc">AWSのセキュリティグループのルール</block>
   <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">インバウンドルール</block>
   <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22.</block>
@@ -2081,7 +2063,6 @@
   <block id="c1c864c3ccb60090d311d4a9c4abf990" category="section-title">プライベートモードを使用する場合は、コネクタをアップグレードします</block>
   <block id="bdfe8a8b0f5b6a0b4242be2e550dff4a" category="paragraph">BlueXPをプライベートモードで使用している場合は、NetApp Support Site から新しいバージョンが利用可能になったらコネクタをアップグレードできます。</block>
   <block id="84692ef80d23d7ba11b5ce40223e1af5" category="paragraph">アップグレード中にWebベースのコンソールを使用できなくなるように、アップグレードプロセス中にコネクタを再起動する必要があります。</block>
-  <block id="3d41aa2f47aa25529d8df924099f90c8" category="admonition">インターネットにアクセスできるホストでは、ソフトウェアの更新を取得するためのアウトバウンドインターネットアクセスがある限り、コネクタはソフトウェアを自動的に最新バージョンに更新します。</block>
   <block id="d651da37c0942c2e8d61b167e835ec80" category="list-text">からConnectorソフトウェアをダウンロードします<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>。</block>
   <block id="29796d02ce8782cd7e5fc7ab3be29617" category="list-text">アップグレードが完了したら、 * Help &gt; Support &gt; Connector * を選択してコネクタのバージョンを確認できます。</block>
   <block id="5c6b09600cdfc594130f9f3c053efecb" category="section-title">コネクタの IP アドレスを変更します</block>
@@ -2692,12 +2673,7 @@
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">クレデンシャルを削除</block>
   <block id="a16b0bbea9ed6a7a22d41efc21ec1cef" category="paragraph">一連の資格情報が不要になった場合は、BlueXPから削除できます。削除できるのは、作業環境に関連付けられていないクレデンシャルのみです。</block>
   <block id="79c33710e10337a79e50227860ebf59a" category="list-text">[アカウントのクレデンシャル]*ページで、一連のクレデンシャルの操作メニューを選択し、*[クレデンシャルの削除]*を選択します。</block>
-  <block id="efd9710de9c698fbbeb7b7b11597f70b" category="summary">コネクタをAWSにインストールすると、コネクタがインストールされているAWSアカウントにあるAmazon S3バケットに関する情報がBlueXPによって自動的に検出されます。Amazon S3作業環境がCanvasに追加され、この情報を表示できるようになります。</block>
   <block id="a4f513306c1a0ead14679ffb7c282460" category="doc">Amazon S3バケットを管理します</block>
-  <block id="620734ddcf438083fa8f2f7a7550fbbf" category="inline-image-macro">Amazon S3 作業環境のスクリーンショット。</block>
-  <block id="93850b8e1d97181700833dcae4c7e219" category="paragraph"><block ref="93850b8e1d97181700833dcae4c7e219" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="54301079e01fc865e928c6fe22deeeef" category="paragraph">リージョン、アクセスポリシー、アカウント、合計容量と使用済み容量など、S3バケットに関する詳細を確認できます。これらのバケットは、BlueXPのバックアップとリカバリ、BlueXPの階層化、BlueXPのコピーと同期の処理のデスティネーションとして使用できます。また、BlueXPの分類を使用してこれらのバケットをスキャンすることもできます。</block>
-  <block id="1f96aa045f6500e7c58cc5f50ea21ffd" category="inline-link">ここでは、BlueXPを使用してS3バケットを表示、作成、管理する方法を説明します</block>
   <block id="08533087d95fb07c92ed0773080a65d4" category="doc">Azureネットワークをセットアップする</block>
   <block id="1387f52f9e1a700036780a5bf567fab3" category="section-title">VNetおよびサブネット</block>
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">コネクタを作成するときは、コネクタを配置するVNetとサブネットを指定する必要があります。</block>
@@ -2811,7 +2787,6 @@
   <block id="e3ab4c013397e346e8f211ff03ac44b2" category="list-text"><block ref="e3ab4c013397e346e8f211ff03ac44b2" category="inline-link-macro-rx"></block></block>
   <block id="538fc0c04ce8a0ef5cf78a12dbe8f68a" category="section-title">コネクタのアップグレード</block>
   <block id="c568c61bf8e9e5a305fc06655cdac862" category="paragraph">私たちは通常、コネクタソフトウェアを毎月更新して新機能を導入し、安定性を向上させています。BlueXPプラットフォームのサービスと機能のほとんどはSaaSベースのソフトウェアで提供されますが、いくつかの機能はコネクタのバージョンによって異なります。Cloud Volumes ONTAP 管理、オンプレミスの ONTAP クラスタ管理、設定、ヘルプが含まれます。</block>
-  <block id="8c03e33a988ffb4175368e0784ca1ff5" category="paragraph">Connectorは、ソフトウェアアップデートを取得するためにアウトバウンドインターネットアクセスがある限り、ソフトウェアを自動的に最新バージョンにアップデートします。BlueXPをプライベートモードで使用している場合は、コネクタを手動でアップグレードする必要があります。</block>
   <block id="ed0b87049db36af81b1e2989ce889651" category="inline-link-macro">コネクタソフトウェアを手動でアップグレードする方法について説明します</block>
   <block id="c6793bcdb1eae6a26c6e9cb42e6b2f31" category="paragraph"><block ref="079398d71b1e343d69f7a6ed5f005eb2" category="inline-link-macro-rx"></block>。</block>
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>。</block>
@@ -3110,7 +3085,6 @@
   <block id="a274f4d4670213a9045ce258c6c56b80" category="cell">通知</block>
   <block id="13348442cc6a27032d2b4aa28b75a5d3" category="cell">検索</block>
   <block id="285c4c5f9756d9707fc1afed457a8b43" category="summary">コネクタのAzureセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。BlueXPでコネクタを作成すると、BlueXPでこのセキュリティグループが自動的に作成されます。他のすべてのインストールオプションには、このセキュリティグループを設定する必要があります。</block>
-  <block id="569fe31933e5918613ae1efa70e82d16" category="doc">Azureのセキュリティグループルール</block>
   <block id="60a24477cd4bc1d96c88b21629d8cd7c" category="summary">クラウドプロバイダのマーケットプレイスからBlueXPに登録すると、時間単位または年間契約でBlueXPサービスの料金をお支払いできます。ネットアップからライセンスを購入した場合は、マーケットプレイスのサービスにサブスクライブする必要もあります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。</block>
   <block id="7280e590fc25414ce879506ed16e2a62" category="doc">BlueXPにサブスクライブ（Standardモード）</block>
   <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">クラウドプロバイダのマーケットプレイスからBlueXPにサブスクライブして、BlueXPサービスの料金を時間単位（PAYGO）または年間契約でお支払いください。ネットアップからライセンスを購入した場合（BYOL）は、マーケットプレイスのサービスにも登録する必要があります。ライセンスは常に最初に課金されますが、ライセンス容量を超えた場合やライセンスの有効期限が切れた場合は、時間単位で課金されます。</block>
@@ -3155,15 +3129,12 @@
   <block id="f53835e0f369158c476f99fda577e700" category="sidebar">セットアップおよび管理に関するドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
-  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="sidebar">制限</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
   <block id="e4c53684ddd66ee4898db459d57514e8" category="sidebar">基本事項をご確認ください</block>
-  <block id="de2a909827c9bf0f62effae09a746963" category="sidebar">BlueXPの概要</block>
   <block id="9b945efebb006547a94415eadaa12921" category="sidebar">アカウント</block>
   <block id="7e99ea34b714387479c29a20b4a89752" category="sidebar">標準モードで開始します</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="sidebar">BlueXPにログインします</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">コネクタを作成します</block>
-  <block id="ea206a7167c7e693d778525a7c87c869" category="sidebar">インストールオプション</block>
   <block id="4df40e141b0559f15db8f84f78aed013" category="sidebar">オンプレミス</block>
   <block id="f559abff8763b27adc86fdb8b373f2c7" category="sidebar">BlueXPにサブスクライブします</block>
   <block id="d0a7edff5cd82c23f3d1c18e0779ccbc" category="sidebar">次は何ができるか</block>
@@ -3174,11 +3145,7 @@
   <block id="a222de5f9a1db461954d4160797dfa76" category="sidebar">BlueXPを管理します</block>
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">アイデンティティフェデレーション</block>
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">BlueXPのアカウント</block>
-  <block id="f20e69549fc23f9df431f9511f177e5e" category="sidebar">アカウントを管理します</block>
-  <block id="cb7db6069dfbe23b6c36beb350a5ceaa" category="sidebar">別のアカウントを作成します</block>
   <block id="f4040f71a7d553f2519487070892b115" category="sidebar">ユーザロール</block>
-  <block id="ca82fdd9a480fcc34a6b470f5ec8e908" category="sidebar">プロキシを設定します</block>
-  <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">デフォルト設定</block>
   <block id="6dc6b060b761d145366b9ed041137917" category="sidebar">AWS クレデンシャルを管理する</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">クレデンシャルとサブスクリプションを管理する</block>
   <block id="c135c603177e58023474a65f829c0fd3" category="sidebar">Azure クレデンシャルを管理します</block>
@@ -3229,9 +3196,6 @@
   <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">デフォルトでは、すべてのアクティブな通知が通知センターに表示されます。表示される通知をフィルタリングして、重要な通知のみを表示できます。BlueXPの「サービス」と通知の「タイプ」でフィルタリングできます。</block>
   <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">通知センターで設定したフィルタは、電子メールで受信する通知の種類を決定するものではありません。既定では、BlueXPアカウント管理者はすべての「重要」および「推奨」通知の電子メールを受信します。これらの通知はすべてのサービスに適用されます。コネクタやBlueXPのバックアップとリカバリなど、特定のサービスについてのみ通知を受け取ることはできません。</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">他のすべてのユーザーと受信者は、通知メールを受信しないように設定されているため、追加のユーザーの通知設定を構成する必要があります。</block>
-  <block id="00fba3f8242dff426927884c6521757a" category="paragraph">新たに追加された機能で、S3バケットを作成および編集できるようになりました。<block ref="c4481f66e0558788424eb34d61e736ff" category="inline-link-rx"></block>。</block>
-  <block id="238db521ba5110fd4f7c460de28dd0c8" category="inline-link">BlueXPを使用してCloud Storageバケットを表示、作成、管理する方法については、こちらをご覧ください</block>
-  <block id="8bc5e348bcf49d1543e86fd28ce45f86" category="paragraph">新たに追加された機能で、Google Cloud Storageバケットを作成および編集できるようになりました。<block ref="640cf64376886268ca971c71c762f644" category="inline-link-rx"></block>。</block>
   <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">Google Cloud Storageバケットを管理します</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">次の情報が必要です。</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">詳細については、を参照してください<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
@@ -3723,10 +3687,6 @@ deploymentmanager. editor</block>
   <block id="9cc4c3a223d9b6def6feaec3c11d5585" category="paragraph">AWS Marketplaceからコネクタを直接作成します。</block>
   <block id="0d8dcd0440293645b17304e6ec7f0b44" category="paragraph">AWS Marketplaceからコネクタを作成すると、デフォルト設定を使用してAWSにEC2インスタンスがデプロイされます。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="65ce4dce26160be29539699c6623e379" category="sidebar">スタートアップワークフロー</block>
-  <block id="4cb8580dcb7bdd5753758d2029cf5760" category="sidebar">BlueXPで作成</block>
-  <block id="490065fa675522d3a515cadb526d26f6" category="sidebar">マーケットプレイスから作成します</block>
-  <block id="655a3c90b399118b5d073277c90e6b0f" category="sidebar">手動でインストール</block>
-  <block id="054df94b323e23fce659cffe65ef10ef" category="sidebar">BlueXPまたはgcloudを使用して作成</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
   <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">コネクタ3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。</block>
@@ -3791,4 +3751,28 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="e3f6d97d14c949f7b5db051894f11c57" category="paragraph">|
 \ https://support.netapp.com
 \https://mysupport.netapp.com |を使用してライセンス情報を取得し、AutoSupportメッセージをNetAppサポートに送信します。</block>
+  <block id="825f8f6e963c62263362be1e363454da" category="paragraph">次に示すエンドポイントはすべてCNAMEエントリであることに注意してください。</block>
+  <block id="efd3103f59d6a221100ba6b86e61d13f" category="inline-link">BlueXPでS3バケットを管理する方法</block>
+  <block id="0686a4b69c0857da5761e2372d45472a" category="paragraph">コネクタを作成したAWSアカウントにAmazon S3バケットがある場合は、BlueXPキャンバスにAmazon S3の作業環境が自動的に表示されます。<block ref="359ed6b0e0b11360def0521aafc36e93" category="inline-link-rx"></block></block>
+  <block id="00f6aa26fd2d156c4cb2ed8cdca2d096" category="inline-link">BlueXPからAzure Blobストレージを管理する方法</block>
+  <block id="4bb1f971cf168c4c2e4189001ae61261" category="paragraph">コネクタを作成したAzureサブスクリプションと同じAzure BLOBストレージがある場合は、BlueXPキャンバスにAzure BLOBストレージの作業環境が自動的に表示されます。<block ref="ecbdb206e5a4043c75ba8711318e9969" category="inline-link-rx"></block></block>
+  <block id="517b4864a21021001d9ffbea31801854" category="doc">AWSでのコネクタセキュリティグループのルール</block>
+  <block id="1fd4a2295cad602ba9d73683db88e799" category="doc">Google Cloudのプロジェクトと権限の詳細</block>
+  <block id="2182d12983be8c797d228ee21c2b02b0" category="inline-link">BlueXP SaaSコンソール</block>
+  <block id="17b675be82d235246bdf979500c94ab2" category="paragraph">コネクタには、コネクタホストからアクセスできるローカルUIが含まれています。このUIは、BlueXPを制限モードまたはプライベートモードで使用しているお客様向けに提供されます。標準モードでBlueXPを使用する場合は、からユーザインターフェイスにアクセスする必要があります。<block ref="6548feb79c59958b036d822d57f02759" category="inline-link-rx"></block></block>
+  <block id="f04fb35532e1f63b23af3f141e062ccb" category="admonition">標準モードまたは制限モードでBlueXPを使用すると、ソフトウェアの更新を取得するためにアウトバウンドのインターネットアクセスが確立されていれば、コネクタは自動的にソフトウェアを最新バージョンに更新します。</block>
+  <block id="3268a52d584d54a973d1b4473e7ef96b" category="doc">Google Cloudのコネクタファイアウォールルール</block>
+  <block id="2a503072b9710cfa223e43ffc3e2205d" category="inline-link">BlueXPからGoogle Cloud Storageを管理する方法をご確認ください</block>
+  <block id="bd41cc82cd5b7d398db648a7e5e5c451" category="paragraph">コネクタを作成したのと同じGoogle CloudアカウントにGoogle Cloud Storageバケットがある場合は、BlueXPキャンバスにGoogle Cloud Storageの作業環境が自動的に表示されます。<block ref="7f24473f521905a69e81b318fe43926f" category="inline-link-rx"></block></block>
+  <block id="ebbdb2eceb6d812854d7adfa9001d63f" category="paragraph">標準モードまたは制限モードでBlueXPを使用すると、ソフトウェアの更新を取得するためにアウトバウンドのインターネットアクセスが確立されていれば、コネクタは自動的にソフトウェアを最新バージョンに更新します。BlueXPをプライベートモードで使用している場合は、コネクタを手動でアップグレードする必要があります。</block>
+  <block id="d53959ef476385f4ff37b13069a7450f" category="doc">Azureでのコネクタセキュリティグループのルール</block>
+  <block id="af790df8534f0e00ebe9aac720a6201b" category="admonition">AWS、Microsoft Azure、Google Cloudにコネクタをインストールしている場合は、コネクタがインストールされている場所のAmazon S3バケット、Azure BLOBストレージ、またはGoogle Cloud Storageバケットに関する情報がBlueXPで自動的に検出されます。作業環境がBlueXPのキャンバスに自動的に追加されます。</block>
+  <block id="dd746cfc77428bc895dc95237f5de7a8" category="sidebar">コネクタのインストールオプション</block>
+  <block id="a42616d3c3ebba497b57aee237328d50" category="sidebar">BlueXPからコネクタを作成します</block>
+  <block id="0f7c22f8ff1ddbe6e606a0a2925ab6b4" category="sidebar">マーケットプレイスからコネクターを作成する</block>
+  <block id="6abbc2938988f1a163c4450f171a3d41" category="sidebar">コネクタを手動で取り付ける</block>
+  <block id="411ed7f7690ed51edcf19e7db36a24a5" category="sidebar">BlueXPやgcloudからコネクタを作成</block>
+  <block id="260bcd27c402b5ba9f5dcabbfc1e0ddd" category="sidebar">クレデンシャルとサブスクリプション</block>
+  <block id="cbaee96b9499da2c5c6d3b23090382c6" category="sidebar">クレデンシャルと権限の詳細</block>
+  <block id="9d812302dfdd0fdbf4faa0fe53b9ed24" category="sidebar">プロジェクトと権限の詳細</block>
 </blocks>

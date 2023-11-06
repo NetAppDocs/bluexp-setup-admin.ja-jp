@@ -4,7 +4,7 @@ permalink: concept-accounts-azure.html
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
 summary: BlueXPがAzureのクレデンシャルと権限を使用して処理を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のAzureサブスクリプションのクレデンシャルを管理する際に役立ちます。たとえば、AzureクレデンシャルをBlueXPに追加するタイミングを確認できます。 
 ---
-= Azure のクレデンシャルと権限
+= Azure のクレデンシャルと権限について説明します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

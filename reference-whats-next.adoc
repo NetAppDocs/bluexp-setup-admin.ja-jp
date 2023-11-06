@@ -16,6 +16,9 @@ summary: これでログインして標準モードでBlueXPをセットアッ�
 [role="lead"]
 これでログインして標準モードでBlueXPをセットアップできました。ユーザは作業環境を作成、検出し、BlueXPデータサービスを使用できます。
 
+
+TIP: AWS、Microsoft Azure、Google Cloudにコネクタをインストールしている場合は、コネクタがインストールされている場所のAmazon S3バケット、Azure BLOBストレージ、またはGoogle Cloud Storageバケットに関する情報がBlueXPで自動的に検出されます。作業環境がBlueXPのキャンバスに自動的に追加されます。
+
 ヘルプが必要な場合は、を参照してください https://docs.netapp.com/us-en/bluexp-family/["BlueXPドキュメントのホームページ"^] をクリックして、すべてのBlueXPサービスのドキュメントを表示してください。
 
 .関連リンク

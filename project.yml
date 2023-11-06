@@ -17,13 +17,13 @@ sidebar:
     entries:
     - title: 新機能
       url: "/whats-new.html"
-    - title: 制限
+    - title: 既知の制限
       url: "/reference-limitations.html"
   - title: はじめに
     entries:
     - title: 基本事項をご確認ください
       entries:
-      - title: BlueXPの概要
+      - title: BlueXP
         url: "/concept-overview.html"
       - title: アカウント
         url: "/concept-netapp-accounts.html"
@@ -43,31 +43,31 @@ sidebar:
         entries:
         - title: AWS
           entries:
-          - title: インストールオプション
+          - title: コネクタのインストールオプション
             url: "/concept-install-options-aws.html"
-          - title: BlueXPで作成
+          - title: BlueXPからコネクタを作成します
             url: "/task-install-connector-aws-bluexp.html"
-          - title: マーケットプレイスから作成します
+          - title: マーケットプレイスからコネクターを作成する
             url: "/task-install-connector-aws-marketplace.html"
-          - title: 手動でインストール
+          - title: コネクタを手動で取り付ける
             url: "/task-install-connector-aws-manual.html"
         - title: Azure
           entries:
-          - title: インストールオプション
+          - title: コネクタのインストールオプション
             url: "/concept-install-options-azure.html"
-          - title: BlueXPで作成
+          - title: BlueXPからコネクタを作成します
             url: "/task-install-connector-azure-bluexp.html"
-          - title: マーケットプレイスから作成します
+          - title: マーケットプレイスからコネクターを作成する
             url: "/task-install-connector-azure-marketplace.html"
-          - title: 手動でインストール
+          - title: コネクタを手動で取り付ける
             url: "/task-install-connector-azure-manual.html"
         - title: Google Cloud
           entries:
-          - title: インストールオプション
+          - title: コネクタのインストールオプション
             url: "/concept-install-options-google.html"
-          - title: BlueXPまたはgcloudを使用して作成
+          - title: BlueXPやgcloudからコネクタを作成
             url: "/task-install-connector-google-bluexp-gcloud.html"
-          - title: 手動でインストール
+          - title: コネクタを手動で取り付ける
             url: "/task-install-connector-google-manual.html"
         - title: オンプレミス
           url: "/task-install-connector-on-prem.html"
@@ -105,11 +105,11 @@ sidebar:
       url: "/concept-federation.html"
     - title: BlueXPのアカウント
       entries:
-      - title: アカウントを管理します
+      - title: BlueXPアカウントを管理します
         url: "/task-managing-netapp-accounts.html"
       - title: アカウントでの処理を監視します
         url: "/task-monitor-cm-operations.html"
-      - title: 別のアカウントを作成します
+      - title: BlueXPアカウントをもう1つ作成します
         url: "/task-create-account.html"
       - title: ユーザロール
         url: "/reference-user-roles.html"
@@ -119,29 +119,29 @@ sidebar:
         url: "/task-finding-system-id.html"
       - title: 既存のコネクタを管理します
         url: "/task-managing-connectors.html"
-      - title: HTTPS 証明書をインストールします
+      - title: セキュアなアクセスのためのHTTPS証明書をインストールします
         url: "/task-installing-https-cert.html"
-      - title: プロキシを設定します
+      - title: プロキシサーバを使用するようにコネクタを設定します
         url: "/task-configuring-proxy.html"
-      - title: デフォルト設定
+      - title: コネクタのデフォルト設定
         url: "/reference-connector-default-config.html"
-    - title: クレデンシャル
+    - title: クレデンシャルとサブスクリプション
       entries:
-      - title: AWS クレデンシャルを管理する
+      - title: AWS
         entries:
-        - title: 概要
+        - title: クレデンシャルと権限の詳細
           url: "/concept-accounts-aws.html"
         - title: クレデンシャルとサブスクリプションを管理する
           url: "/task-adding-aws-accounts.html"
-      - title: Azure クレデンシャルを管理します
+      - title: Azure
         entries:
-        - title: 概要
+        - title: クレデンシャルと権限の詳細
           url: "/concept-accounts-azure.html"
         - title: クレデンシャルとサブスクリプションを管理する
           url: "/task-adding-azure-accounts.html"
-      - title: Google Cloud クレデンシャルを管理します
+      - title: Google Cloud
         entries:
-        - title: 概要
+        - title: プロジェクトと権限の詳細
           url: "/concept-accounts-gcp.html"
         - title: クレデンシャルとサブスクリプションを管理する
           url: "/task-adding-gcp-accounts.html"
@@ -171,11 +171,11 @@ sidebar:
         url: "/reference-permissions-gcp.html"
     - title: ポート
       entries:
-      - title: AWSのセキュリティグループのルール
+      - title: AWSでのコネクタセキュリティグループのルール
         url: "/reference-ports-aws.html"
-      - title: Azureのセキュリティグループルール
+      - title: Azureでのコネクタセキュリティグループのルール
         url: "/reference-ports-azure.html"
-      - title: Google Cloudのファイアウォールルール
+      - title: Google Cloudのコネクタファイアウォールルール
         url: "/reference-ports-gcp.html"
       - title: オンプレミスコネクタ用のポート
         url: "/reference-ports-on-prem.html"

@@ -24,7 +24,7 @@ NetApp Support Site から製品のインストーラをダウンロードし、
 
 でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^] または https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^]それらの環境で作業を開始するには、別の手順に従う必要があります。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["AWSシークレットクラウドまたはTop Secret CloudでCloud Volumes ONTAPの使用を開始する方法をご確認ください"^]
 
-.必要な権限
+.作業を開始する前に
 コネクタをインストールするには root 権限が必要です。
 
 .手順

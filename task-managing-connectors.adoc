@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-connectors.html 
-keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
 summary: コネクタの作成後は、コネクタの管理が必要になる場合があります。たとえば、複数のコネクタがある場合は、コネクタを切り替えることができます。または、BlueXPをプライベートモードで使用している場合は、コネクタの手動アップグレードが必要になることがあります。 
 ---
 = 既存のコネクタを管理します
@@ -18,6 +18,13 @@ summary: コネクタの作成後は、コネクタの管理が必要になる�
 
 link:concept-connectors.html["コネクタの仕組みを説明します"]。
 
+[NOTE]
+====
+コネクタには、コネクタホストからアクセスできるローカルUIが含まれています。このUIは、BlueXPを制限モードまたはプライベートモードで使用しているお客様向けに提供されます。標準モードでBlueXPを使用する場合は、からユーザインターフェイスにアクセスする必要があります。 https://console.bluexp.netapp.com/["BlueXP SaaSコンソール"^]
+
+link:concept-modes.html["BlueXPの導入モードについて説明します"]。
+
+====
 
 
 == オペレーティングシステムとVMのメンテナンス
@@ -106,7 +113,7 @@ BlueXPをプライベートモードで使用している場合は、NetApp Supp
 アップグレード中にWebベースのコンソールを使用できなくなるように、アップグレードプロセス中にコネクタを再起動する必要があります。
 
 
-NOTE: インターネットにアクセスできるホストでは、ソフトウェアの更新を取得するためのアウトバウンドインターネットアクセスがある限り、コネクタはソフトウェアを自動的に最新バージョンに更新します。
+NOTE: 標準モードまたは制限モードでBlueXPを使用すると、ソフトウェアの更新を取得するためにアウトバウンドのインターネットアクセスが確立されていれば、コネクタは自動的にソフトウェアを最新バージョンに更新します。
 
 .手順
 . からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Site"^]。

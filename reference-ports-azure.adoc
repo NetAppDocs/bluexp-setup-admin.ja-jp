@@ -4,7 +4,7 @@ permalink: reference-ports-azure.html
 keywords: ports, security group, http, https, inbound, outbound 
 summary: コネクタのAzureセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。BlueXPでコネクタを作成すると、BlueXPでこのセキュリティグループが自動的に作成されます。他のすべてのインストールオプションには、このセキュリティグループを設定する必要があります。 
 ---
-= Azureのセキュリティグループルール
+= Azureでのコネクタセキュリティグループのルール
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

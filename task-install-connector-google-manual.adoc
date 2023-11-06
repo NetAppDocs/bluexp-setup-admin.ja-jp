@@ -93,6 +93,8 @@ Docker Engine の略:: Connectorをインストールする前に、ホストに
 コネクタから接続されたエンドポイント:: このコネクタは、パブリッククラウド環境内のリソースとプロセスを日常的に管理するために、次のエンドポイントに接続するためのアウトバウンドインターネットアクセスを必要とします。
 +
 --
+次に示すエンドポイントはすべてCNAMEエントリであることに注意してください。
+
 [cols="2a,1a"]
 |===
 | エンドポイント | 目的 
@@ -426,6 +428,8 @@ https://_ipaddress_[]
 
 .結果
 これでコネクタがインストールされ、BlueXPアカウントでセットアップされました。
+
+コネクタを作成したのと同じGoogle CloudアカウントにGoogle Cloud Storageバケットがある場合は、BlueXPキャンバスにGoogle Cloud Storageの作業環境が自動的に表示されます。 https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["BlueXPからGoogle Cloud Storageを管理する方法をご確認ください"^]
 
 
 
