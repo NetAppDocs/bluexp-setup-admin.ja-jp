@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-permissions-aws.html 
-keywords: permissions, actions, aws, aws permissions 
+keywords: permissions, actions, aws, aws permissions, top secret, secret, aws top secret, aws secret, aws govcloud, govcloud, govcloud permissions, secret permissions, top secret permissions 
 summary: BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカウント内のリソースとプロセスを管理するための権限をConnectorに提供するポリシーがインスタンスにアタッチされます。Connectorでは、権限を使用してAPI呼び出しを実行することで、EC2、S3、CloudFormation、IAM、 キー管理サービスなど。 
 ---
 = Connector の AWS 権限

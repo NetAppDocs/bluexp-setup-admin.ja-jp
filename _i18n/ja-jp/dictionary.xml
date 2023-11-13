@@ -3146,21 +3146,13 @@
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">アイデンティティフェデレーション</block>
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">BlueXPのアカウント</block>
   <block id="f4040f71a7d553f2519487070892b115" category="sidebar">ユーザロール</block>
-  <block id="6dc6b060b761d145366b9ed041137917" category="sidebar">AWS クレデンシャルを管理する</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">クレデンシャルとサブスクリプションを管理する</block>
-  <block id="c135c603177e58023474a65f829c0fd3" category="sidebar">Azure クレデンシャルを管理します</block>
-  <block id="15f599d5c4282f662b38657a0b5c5739" category="sidebar">Google Cloud クレデンシャルを管理します</block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">クラウドストレージを検出</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参照</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">権限の概要</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">導入モードについて説明します</block>
-  <block id="761d871e89c5ad68ac5c2de768bb7fc4" category="sidebar">AWSでのコネクタの作成（標準モード）</block>
-  <block id="1df187938f50cb0ec2035714e29f9008" category="sidebar">Azureでのコネクタの作成（標準モード）</block>
-  <block id="421e0ee20fb73cf162f2c03955c94f24" category="sidebar">Google Cloudでコネクタを作成する（標準モード）</block>
-  <block id="a80c3e3d3461039581490c3b665e6c55" category="sidebar">オンプレミスでコネクターを作成（標準モード）</block>
   <block id="c8aded93abddb2318a41b08cba739012" category="sidebar">コネクタを管理します</block>
-  <block id="5287995c403f34c9ff0e79af4e8e7c9d" category="sidebar">アカウントのNSSクレデンシャルを管理します</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXPブログ</block>
@@ -3778,4 +3770,23 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">2023年11月8日</block>
   <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">コネクタ3.9.35</block>
   <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">このリリースには、セキュリティのマイナーな改善とバグの修正が含まれています。</block>
+  <block id="ee06369b39630f4fbf14829266d40a91" category="paragraph">プライベートモードは通常、インターネットに接続されていないオンプレミス環境や、次のようなセキュアなクラウドリージョンで使用されます。<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>、<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>および<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="a95e947d8a886ad72a7cea0e895006fd" category="paragraph">制限モードは通常、州政府や地方自治体、規制対象の企業（AWS GovCloudリージョンやAzure Governmentリージョンへの導入を含む）で使用されます。開始する前に、次のことを理解しておく必要があります。 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>、 <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>および <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
+  <block id="c2a3212cb98f382140fb5a23af1c6063" category="paragraph">標準モードでは、WebベースのコンソールからクラウドサービスとしてBlueXPにアクセスできます。開始する前に、次のことを理解しておく必要があります。 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>、 <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>および <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
+  <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">AWS権限の表示</block>
+  <block id="b7053c5f835c45d38cf071449c74fd56" category="sidebar">Azure権限を表示</block>
+  <block id="7050d365baa220c42a688cbf36a7e997" category="sidebar">Google Cloudの権限を表示</block>
+  <block id="891c5b2cea54480f0e1abb74959457a6" category="sidebar">標準のAWSリージョンで開始する</block>
+  <block id="e766f31fe70a68c11b8631144211d0f7" category="sidebar">AWS GovCloudリージョンで開始する</block>
+  <block id="9722aa95875a94430d4569d2e8bd2382" category="sidebar">AWS SecretまたはTop Secret Cloudの利用を開始</block>
+  <block id="e55aba8c57180a56450db886ecd8232e" category="sidebar">コネクタのIAMポリシーを表示する</block>
+  <block id="27c705176bc1f05cf50771b1f8fe182a" category="sidebar">標準のAzureリージョンで開始する</block>
+  <block id="60563f8b2620e88ac71d1a98ee73e2e5" category="sidebar">Azure Governmentリージョンで開始する</block>
+  <block id="31b63be41ae4657f9e340188aa268589" category="sidebar">Azureで開始するIL6</block>
+  <block id="3dbdf7d7951b212ca0000f0027184bb8" category="sidebar">コネクタのカスタムロールを表示する</block>
+  <block id="6c3328ab0a2ccaa273efaec9a88e2751" category="sidebar">Google Cloudの標準リージョンで開始する</block>
+  <block id="6844a754c2b209da7ac4949824ac467d" category="sidebar">コネクタのサービスアカウントを表示する</block>
+  <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">標準モードでのコネクタの取り付けとセットアップ</block>
+  <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">プライベートモードでのコネクタのインストールとセットアップ</block>
+  <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">ログインしています</block>
 </blocks>

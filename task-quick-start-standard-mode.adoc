@@ -16,7 +16,7 @@ summary: BlueXPを標準モードで使い始めるには、BlueXPコンソー�
 [role="lead"]
 BlueXPを標準モードで使い始めるには、BlueXPコンソールのネットワークを準備し、サインアップしてアカウントを作成し、必要に応じてコネクタを作成し、BlueXPにサブスクライブします。
 
-開始する前に、次のことを理解しておく必要があります。 link:concept-netapp-accounts.html["BlueXPのアカウント"]、 link:concept-connectors.html["コネクタ"]および link:concept-modes.html["導入モード"]。
+標準モードでは、WebベースのコンソールからクラウドサービスとしてBlueXPにアクセスできます。開始する前に、次のことを理解しておく必要があります。 link:concept-netapp-accounts.html["BlueXPのアカウント"]、 link:concept-connectors.html["コネクタ"]および link:concept-modes.html["導入モード"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] link:reference-networking-saas-console.html["BlueXPコンソールを使用するためのネットワークの準備"]
 [role="quick-margin-para"]

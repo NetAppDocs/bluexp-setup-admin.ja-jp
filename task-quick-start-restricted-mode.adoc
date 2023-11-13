@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-quick-start-restricted-mode.html 
-keywords: quick start, restricted mode quick start 
+keywords: quick start, restricted mode quick start, govcloud, government, aws gov, azure gov 
 summary: 環境を準備し、コネクタを導入し、BlueXPにサブスクライブすることで、制限モードでBlueXPを開始できます。 
 ---
 = はじめにワークフロー（制限モード）
@@ -16,7 +16,7 @@ summary: 環境を準備し、コネクタを導入し、BlueXPにサブスク�
 [role="lead"]
 環境を準備し、コネクタを導入し、BlueXPにサブスクライブすることで、制限モードでBlueXPを開始できます。
 
-開始する前に、次のことを理解しておく必要があります。 link:concept-netapp-accounts.html["BlueXPのアカウント"]、 link:concept-connectors.html["コネクタ"]および link:concept-modes.html["導入モード"]。
+制限モードは通常、州政府や地方自治体、規制対象の企業（AWS GovCloudリージョンやAzure Governmentリージョンへの導入を含む）で使用されます。開始する前に、次のことを理解しておく必要があります。 link:concept-netapp-accounts.html["BlueXPのアカウント"]、 link:concept-connectors.html["コネクタ"]および link:concept-modes.html["導入モード"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] link:task-prepare-restricted-mode.html["導入を準備"]
 [role="quick-margin-list"]

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-quick-start-private-mode.html 
-keywords: private mode quick start, quick start 
+keywords: private mode quick start, quick start, aws top secret cloud, aws secret cloud, secret cloud, top secret cloud 
 summary: BlueXPをプライベートモードで使用するには、環境を準備してコネクタを導入します。 
 ---
 = スタートアップワークフロー（プライベートモード）
@@ -15,6 +15,8 @@ summary: BlueXPをプライベートモードで使用するには、環境を�
 
 [role="lead"]
 BlueXPをプライベートモードで使用するには、環境を準備してコネクタを導入します。
+
+プライベートモードは通常、インターネットに接続されていないオンプレミス環境や、次のようなセキュアなクラウドリージョンで使用されます。 https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^]、 https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^]および https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
 
 開始する前に、次のことを理解しておく必要があります。 link:concept-netapp-accounts.html["BlueXPのアカウント"]、 link:concept-connectors.html["コネクタ"]および link:concept-modes.html["導入モード"]。
 
