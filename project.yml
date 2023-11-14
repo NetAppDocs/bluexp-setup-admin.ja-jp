@@ -149,14 +149,6 @@ sidebar:
         url: "/task-adding-nss-accounts.html"
       - title: BlueXPログインに関連付けられているクレデンシャルを管理します
         url: "/task-manage-user-credentials.html"
-    - title: クラウドストレージを検出
-      entries:
-      - title: Amazon S3バケットを管理します
-        url: "/task-viewing-amazon-s3.html"
-      - title: Azure Blobアカウントを管理します
-        url: "/task-viewing-azure-blob.html"
-      - title: Google Cloud Storageバケットを管理します
-        url: "/task-viewing-gcp-storage.html"
   - title: 参照
     entries:
     - title: 権限
