@@ -4,7 +4,7 @@ permalink: task-adding-azure-accounts.html
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
 summary: Azureクレデンシャルを追加および管理して、Azureサブスクリプションのクラウドリソースの導入と管理に必要な権限をBlueXPに付与する。複数の Azure Marketplace サブスクリプションを管理する場合は、それぞれのサブスクリプションを、クレデンシャルページから別々の Azure クレデンシャルに割り当てることができます。 
 ---
-= Azureの資格情報とBlueXPのサブスクリプションを管理します
+= BlueXPのAzureクレデンシャルとマーケットプレイスサブスクリプションを管理
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -327,7 +327,10 @@ AzureのクレデンシャルをBlueXPに追加したら、Azure Marketplaceサ�
 資格情報をBlueXPに追加した後、Azure Marketplaceサブスクリプションを関連付けるシナリオは2つあります。
 
 * BlueXPに最初に資格情報を追加したときに、サブスクリプションを関連付けませんでした。
-* 既存の Azure Marketplace サブスクリプションを新しいサブスクリプションに置き換える場合。
+* Azureクレデンシャルに関連付けられているAzure Marketplaceサブスクリプションを変更する。
++
+現行のMarketplaceサブスクリプションを新しいサブスクリプションに置き換えると、既存のCloud Volumes ONTAP作業環境とすべての新規作業環境のMarketplaceサブスクリプションが変更されます。
+
 
 
 .作業を開始する前に

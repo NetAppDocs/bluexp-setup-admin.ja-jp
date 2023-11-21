@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
-keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
-summary: BlueXPがAzureのクレデンシャルと権限を使用して処理を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のAzureサブスクリプションのクレデンシャルを管理する際に役立ちます。たとえば、AzureクレデンシャルをBlueXPに追加するタイミングを確認できます。 
+keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials, marketplace subscription, replace subscription, subscription 
+summary: BlueXPがAzureクレデンシャルを使用してユーザに代わってアクションを実行する方法と、それらのクレデンシャルがマーケットプレイスのサブスクリプションにどのように関連付けられているかをご確認くださいこれらの詳細を理解しておくと、1つ以上のAzureサブスクリプションのクレデンシャルを管理する際に役立ちます。たとえば、AzureクレデンシャルをBlueXPに追加するタイミングを確認できます。 
 ---
 = Azure のクレデンシャルと権限について説明します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXPがAzureのクレデンシャルと権限を使用して処理を
 
 
 [role="lead"]
-BlueXPがAzureのクレデンシャルと権限を使用して処理を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のAzureサブスクリプションのクレデンシャルを管理する際に役立ちます。たとえば、AzureクレデンシャルをBlueXPに追加するタイミングを確認できます。
+BlueXPがAzureクレデンシャルを使用してユーザに代わってアクションを実行する方法と、それらのクレデンシャルがマーケットプレイスのサブスクリプションにどのように関連付けられているかをご確認くださいこれらの詳細を理解しておくと、1つ以上のAzureサブスクリプションのクレデンシャルを管理する際に役立ちます。たとえば、AzureクレデンシャルをBlueXPに追加するタイミングを確認できます。
 
 
 
@@ -54,7 +54,49 @@ image:screenshot_accounts_switch_azure.gif["[Details  Credentials]ページで[S
 
 
 
-== 市場への導入とオンプレミスの導入についてはどうでしょうか。
+== クレデンシャルとマーケットプレイスのサブスクリプション
+
+Cloud Volumes ONTAPの料金を時間単位（PAYGO）または年間契約で支払い、その他のBlueXPサービスを使用できるようにするには、Connectorに追加するクレデンシャルをAzure Marketplaceサブスクリプションに関連付ける必要があります。
+
+link:task-adding-azure-accounts.html#subscribe["Azureサブスクリプションを関連付ける方法について説明します"]。
+
+Azureクレデンシャルとマーケットプレイスサブスクリプションについては、次の点に注意してください。
+
+* 一連のAzureクレデンシャルに関連付けることができるAzure Marketplaceサブスクリプションは1つだけです。
+* 既存のMarketplaceサブスクリプションを新しいサブスクリプションに置き換えることが可能
+
+
+
+
+== よく寄せられる質問
+
+次の質問は、クレデンシャルとサブスクリプションに関するものです。
+
+
+
+=== Azure MarketplaceのCloud Volumes ONTAP作業環境向けサブスクリプションを変更できますか。
+
+はい、できます。一連のAzureクレデンシャルに関連付けられているAzure Marketplaceサブスクリプションを変更すると、既存および新規のすべてのCloud Volumes ONTAP作業環境が新しいサブスクリプションに対して課金されます。
+
+link:task-adding-azure-accounts.html#subscribe["Azureサブスクリプションを関連付ける方法について説明します"]。
+
+
+
+=== マーケットプレイスのサブスクリプションが異なる複数のAzureクレデンシャルを追加できますか。
+
+同じAzureサブスクリプションに属するすべてのAzureクレデンシャルは、同じAzure Marketplaceサブスクリプションに関連付けられます。
+
+異なるAzureサブスクリプションに属する複数のAzureクレデンシャルがある場合、それらのクレデンシャルを同じAzure Marketplaceサブスクリプションまたは異なるマーケットプレイスサブスクリプションに関連付けることができます。
+
+
+
+=== 既存のCloud Volumes ONTAP作業環境を別のAzureサブスクリプションに移行できますか。
+
+いいえ、Cloud Volumes ONTAP作業環境に関連付けられているAzureリソースを別のAzureサブスクリプションに移動することはできません。
+
+
+
+=== マーケットプレイスの導入とオンプレミスの導入でクレデンシャルはどのように機能しますか？
 
 上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。Azure MarketplaceからAzureにコネクタを導入したり、独自のLinuxホストにコネクタソフトウェアをインストールしたりすることもできます。
 

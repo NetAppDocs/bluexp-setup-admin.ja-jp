@@ -4,7 +4,7 @@ permalink: task-adding-aws-accounts.html
 keywords: permissions, aws, policy, iam, iam role, role, granting, policy, iam policy, iam user, access keys, arn, cloud provider accounts, aws, cloud provider profile, json, iam, credentials, adding credentials, add credentials 
 summary: AWSクレデンシャルを追加および管理して、BlueXPがAWSアカウントでクラウドリソースを導入および管理するために必要な権限を持つようにします。複数の AWS サブスクリプションを管理する場合は、それぞれのサブスクリプションをのクレデンシャルページから別々の AWS クレデンシャルに割り当てることができます。 
 ---
-= AWSのクレデンシャルとBlueXPのサブスクリプションを管理します
+= BlueXPのAWSクレデンシャルとマーケットプレイスサブスクリプションを管理
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -228,7 +228,10 @@ AWSのクレデンシャルをBlueXPに追加したら、AWS Marketplaceサブ�
 BlueXPに資格情報を追加した後、AWS Marketplaceサブスクリプションを関連付けるシナリオは2つあります。
 
 * BlueXPに最初に資格情報を追加したときに、サブスクリプションを関連付けませんでした。
-* 既存の AWS Marketplace サブスクリプションを新しいサブスクリプションに置き換える場合。
+* AWSクレデンシャルに関連付けられているAWS Marketplaceサブスクリプションを変更する。
++
+現行のMarketplaceサブスクリプションを新しいサブスクリプションに置き換えると、既存のCloud Volumes ONTAP作業環境とすべての新規作業環境のMarketplaceサブスクリプションが変更されます。
+
 
 
 .作業を開始する前に

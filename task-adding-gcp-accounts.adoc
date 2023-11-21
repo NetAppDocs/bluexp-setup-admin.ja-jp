@@ -20,7 +20,9 @@ Connector VMインスタンスに関連付けられているGoogle Cloudクレ�
 
 == MarketplaceサブスクリプションをGoogle Cloudのクレデンシャルに関連付ける
 
-Google CloudでConnectorを導入すると、Connector VMインスタンスに関連付けられたデフォルトのクレデンシャルセットがBlueXPによって作成されます。これらの資格情報に関連付けられている Marketplace サブスクリプションは、いつでも変更できます。このサブスクリプションでは、従量課金制のCloud Volumes ONTAP システムを作成したり、他のBlueXPサービスを使用したりできます。
+Google CloudでConnectorを導入すると、Connector VMインスタンスに関連付けられたデフォルトのクレデンシャルセットがBlueXPによって作成されます。これらのクレデンシャルに関連付けられているGoogle Cloud Marketplaceサブスクリプションは、いつでも変更できます。このサブスクリプションでは、従量課金制のCloud Volumes ONTAP システムを作成したり、他のBlueXPサービスを使用したりできます。
+
+現行のMarketplaceサブスクリプションを新しいサブスクリプションに置き換えると、既存のCloud Volumes ONTAP作業環境とすべての新規作業環境のMarketplaceサブスクリプションが変更されます。
 
 .手順
 . BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。

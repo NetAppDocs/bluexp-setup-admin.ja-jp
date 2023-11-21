@@ -37,7 +37,6 @@
   <block id="5e15e451ab1dcb5e3bfae55f8b58e524" category="list-text">* 資格情報の場所 * ：「 * Amazon Web Services &gt; Connector * 」を選択します。</block>
   <block id="8117407a9689d4f991904d5739091c47" category="list-text">*クレデンシャルを定義*：AWSアクセスキーとシークレットキーを入力します。</block>
   <block id="dc6e318a413899b5467eabc5f69ad366" category="list-text">* Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。</block>
-  <block id="70c85793f0a33ef534a67f193287a992" category="doc">Azure Blobアカウントを管理します</block>
   <block id="f9a2f8eef1df12108fd0c6b9b6b7fe6a" category="doc">Google Cloudでのコネクタのインストールオプション</block>
   <block id="b5afc81c4f24b143224e304b939a3f6c" category="paragraph">次のインストールオプションを使用できます。</block>
   <block id="b584cbf8cb993e5b450384402639e3c4" category="paragraph">この操作により、Linuxを実行するVMインスタンスとコネクタソフトウェアが、選択したVPCで起動されます。</block>
@@ -387,7 +386,6 @@
   <block id="9df83ab1f3ab5fb0d62768dd3ff406e6" category="list-text">cloudks.keyrings.getIamPolicyを参照してください</block>
   <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
   <block id="7c68c9240932ba8b284de266f9564faa" category="paragraph">これらの権限はBlueXPのバックアップとリカバリに必要です。</block>
-  <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">BlueXPでGoogle Cloudのクレデンシャルと権限を使用して操作を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する際に役立ちます。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。</block>
   <block id="a8f8f08c9d91eeaecc31377113ddd27b" category="section-title">BlueXPのプロジェクトと権限</block>
   <block id="627c5def4348066ddd5e7a1664e1079b" category="paragraph">BlueXPを使用してGoogle Cloudプロジェクトのリソースを管理するには、まずコネクタを導入する必要があります。Connector は、オンプレミスでも別のクラウドプロバイダでも実行できません。</block>
   <block id="356334a26d74c400a5e0a69f237ba73e" category="paragraph">BlueXPからコネクタを直接展開するには、次の2セットの権限が必要です。</block>
@@ -1011,7 +1009,6 @@
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。</block>
   <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">シールドVM機能</block>
   <block id="5e59673ea4dc0650f587413c4848c02c" category="paragraph">このコネクタは、OSがサポートされているVMインスタンス上のGoogle Cloudでサポートされます<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
-  <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">BlueXPがAzureのクレデンシャルと権限を使用して処理を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のAzureサブスクリプションのクレデンシャルを管理する際に役立ちます。たとえば、AzureクレデンシャルをBlueXPに追加するタイミングを確認できます。</block>
   <block id="08a6159f6d9d986210470d2ab6dff166" category="section-title">Azure の初期クレデンシャル</block>
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Azure の Connector 導入ポリシー</block>
   <block id="9cbe008fc71c240a16ab125b2873fe44" category="inline-link-macro">BlueXPがどのように権限を使用しているかを確認します</block>
@@ -1033,7 +1030,6 @@
   <block id="9d28e4868b7fcb2d0b7ab54f9d7f7b3c" category="inline-link-macro">アカウントの資格情報をBlueXPに追加します</block>
   <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">そのあとで <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> AD サービスプリンシパルの詳細を指定します。</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">たとえば、新しいCloud Volumes ONTAP 作業環境を作成するときにクレデンシャルを切り替えることができます。</block>
-  <block id="baa9dd166d2a7f1d62e78a829f4b35a6" category="section-title">市場への導入とオンプレミスの導入についてはどうでしょうか。</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。Azure MarketplaceからAzureにコネクタを導入したり、独自のLinuxホストにコネクタソフトウェアをインストールしたりすることもできます。</block>
   <block id="f0e36fc8cdf840530f36b60220f9185b" category="paragraph">Marketplaceを使用する場合は、コネクタVMとシステムによって割り当てられた管理IDにカスタムロールを割り当てることで権限を付与するか、Azure ADサービスプリンシパルを使用できます。</block>
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">オンプレミス展開の場合、コネクタの管理IDを設定することはできませんが、サービスプリンシパルを使用して権限を提供することはできます。</block>
@@ -1212,7 +1208,6 @@
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。どちらのタスクも、Marketplaceのサブスクリプションを使用してBlueXPサービスの料金を支払うことができます。</block>
   <block id="f691281f53b81c9f5d73a97dc7c334fd" category="doc">BlueXPのGoogle Cloudクレデンシャルとサブスクリプションを管理します</block>
   <block id="209e33f8aa50ade8c82e5bc82a8c023d" category="section-title">MarketplaceサブスクリプションをGoogle Cloudのクレデンシャルに関連付ける</block>
-  <block id="e6bd6cdf191b4526ecbd9326bd7b5c24" category="paragraph">Google CloudでConnectorを導入すると、Connector VMインスタンスに関連付けられたデフォルトのクレデンシャルセットがBlueXPによって作成されます。これらの資格情報に関連付けられている Marketplace サブスクリプションは、いつでも変更できます。このサブスクリプションでは、従量課金制のCloud Volumes ONTAP システムを作成したり、他のBlueXPサービスを使用したりできます。</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">一連の既存のクレデンシャルに対する操作メニューのスクリーンショット。</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
@@ -1480,7 +1475,6 @@
   <block id="5d1285233566f1379ef88c010de06abc" category="list-text">* クレデンシャルの定義 * ：必要な権限を付与する Azure Active Directory サービスプリンシパルに関する情報を入力します。</block>
   <block id="3612e0e7a44ec38da1e226c618526f91" category="open-title">Google Cloudサービスアカウント</block>
   <block id="4b6fbf3b382ce342b57bbdb4fe0d6baf" category="paragraph">サービスアカウントをコネクタVMに関連付けます。</block>
-  <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">BlueXPがAWSのクレデンシャルと権限を使用してユーザに代わって操作を実行する方法をご紹介します。これらの詳細を理解しておくと、BlueXPで1つ以上のAWSアカウントのクレデンシャルを管理する際に役立ちます。たとえば、AWSクレデンシャルをBlueXPに追加するタイミングを把握できます。</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">AWS の初期クレデンシャル</block>
   <block id="09c2333ff15fa85698d91a366cce26dd" category="inline-link-macro">AWS 用のコネクタ導入ポリシー</block>
   <block id="858c852a1a4696d4e56295d4b4b0ea20" category="paragraph">BlueXPがAWSでコネクタインスタンスを起動すると、インスタンスのIAMロールとインスタンスプロファイルが作成されます。また、ポリシーを適用して、指定した AWS アカウント内のリソースやプロセスを管理する権限を Connector に提供します。 <block ref="9d2ef148313eb953f656b8efd4016e8c" category="inline-link-macro-rx"></block>。</block>
@@ -1494,11 +1488,9 @@
   <block id="d366b2fda179ae88058b546b6cd89726" category="list-text">AWSクレデンシャルはBlueXPに直接追加できます</block>
   <block id="1fba93959336f34e08c6d34d0ca68230" category="paragraph">詳細については、以下のセクションを参照してください。</block>
   <block id="a456be184fc96fef017630ede092b15d" category="section-title">AWS クレデンシャルを既存のコネクタに追加する</block>
-  <block id="c0f31a85c681cbd2946d5195b382308e" category="paragraph">Cloud Volumes ONTAP を別の AWS アカウントで起動する場合は、 IAM ユーザに AWS キーを提供するか、信頼されたアカウントのロールの ARN を提供します。次の図は、 2 つの追加アカウントを示しています。 1 つは、信頼されたアカウントの IAM ロールを介してアクセス許可を提供し、もう 1 つは IAM ユーザの AWS キーを使用してアクセス許可を提供します。</block>
   <block id="25743d3dcac2dfe95c6e899571bfccc3" category="inline-image-macro">2 つの追加アカウントを示す概念図。各には IAM ポリシーが 1 つあり、 1 つは IAM ユーザに関連付けられ、もう 1 つは IAM ロールに関連付けられている。」</block>
   <block id="49a11e441cb19dc0d43b1d3a3794d033" category="paragraph"><block ref="49a11e441cb19dc0d43b1d3a3794d033" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48c7f5d184d27ef640370421d3317ba5" category="paragraph">その後、IAMロールのAmazon Resource Name（ARN）またはIAMユーザのAWSキーを指定して、アカウントクレデンシャルをBlueXPに追加します。</block>
-  <block id="bc84b27c0d74f906857d6c1a83c368a0" category="paragraph">クレデンシャルを追加したら、新しい作業環境を作成するときにクレデンシャルに切り替えることができます。</block>
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">既存のコネクタにAWSクレデンシャルを追加する方法を説明します。</block>
   <block id="affef63146feae005315127173a28aa9" category="paragraph"><block ref="affef63146feae005315127173a28aa9" category="inline-link-macro-rx"></block></block>
   <block id="a923d2e65283c489ad78d9cdfa9bad74" category="section-title">AWSクレデンシャルをBlueXPに直接追加します</block>
@@ -1511,7 +1503,6 @@
   <block id="a4542ce435b67066671321f478dce8cc" category="paragraph">Marketplace を使用する場合も、アクセス許可は同じ方法で提供されます。IAM ロールを手動で作成して設定し、追加のアカウントに権限を付与するだけで済みます。</block>
   <block id="c369edb322a8885a983610e18f932d0c" category="paragraph">オンプレミス環境の場合、BlueXPシステム用のIAMロールを設定することはできませんが、AWSアクセスキーを使用して権限を指定することはできます。</block>
   <block id="70bfaa19a89e29bf0fc2b34b8f3150ba" category="section-title">AWS クレデンシャルを安全にローテーションするにはどうすればよいですか。</block>
-  <block id="ee0f653772b33fb034bc7001a0c5e7a3" category="paragraph">前述のように、BlueXPではいくつかの方法でAWSクレデンシャルを提供できます。コネクタインスタンスに関連付けられたIAMロールでは、信頼されたアカウントでIAMロールを割り当てるか、AWSアクセスキーを提供します。</block>
   <block id="025a22cb479bbf0e83048a4ae6ffaaa0" category="paragraph">最初の2つのオプションでは、BlueXPはAWS Security Token Serviceを使用して、絶えず回転する一時的な資格情報を取得します。このプロセスはベストプラクティスであり、自動的に実行され、セキュリティが確保されています。</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">BlueXPにAWSアクセスキーを提供する場合は、BlueXPで定期的にキーを更新して、キーを回転させる必要があります。これは完全に手動で行います。</block>
   <block id="ccd2fd61b259ee660f0c8a22d4d70882" category="summary">コネクタは、オンプレミスのLinuxホストに手動でインストールした場合、インバウンドポートを使用します。計画のためにこれらのポートを参照しなければならない場合があります。</block>
@@ -2661,7 +2652,6 @@
   <block id="ef21f4467b6f56b5c04a15d016e654a2" category="paragraph">AzureのクレデンシャルをBlueXPに追加したら、Azure Marketplaceサブスクリプションをそれらのクレデンシャルに関連付けることができます。このサブスクリプションでは、従量課金制のCloud Volumes ONTAP システムを作成したり、他のBlueXPサービスを使用したりできます。</block>
   <block id="2e6aa15d4609a29d86e5e9f886599c4c" category="paragraph">資格情報をBlueXPに追加した後、Azure Marketplaceサブスクリプションを関連付けるシナリオは2つあります。</block>
   <block id="20e15acf80fa51f5de6b9e96c9c64fde" category="list-text">BlueXPに最初に資格情報を追加したときに、サブスクリプションを関連付けませんでした。</block>
-  <block id="086754afbe30b09d7f6a643dd6e05800" category="list-text">既存の Azure Marketplace サブスクリプションを新しいサブスクリプションに置き換える場合。</block>
   <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">プロンプトが表示されたら、Azureアカウントにログインします。</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">BlueXPのWebサイトにリダイレクトされます</block>
@@ -2673,7 +2663,6 @@
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">クレデンシャルを削除</block>
   <block id="a16b0bbea9ed6a7a22d41efc21ec1cef" category="paragraph">一連の資格情報が不要になった場合は、BlueXPから削除できます。削除できるのは、作業環境に関連付けられていないクレデンシャルのみです。</block>
   <block id="79c33710e10337a79e50227860ebf59a" category="list-text">[アカウントのクレデンシャル]*ページで、一連のクレデンシャルの操作メニューを選択し、*[クレデンシャルの削除]*を選択します。</block>
-  <block id="a4f513306c1a0ead14679ffb7c282460" category="doc">Amazon S3バケットを管理します</block>
   <block id="08533087d95fb07c92ed0773080a65d4" category="doc">Azureネットワークをセットアップする</block>
   <block id="1387f52f9e1a700036780a5bf567fab3" category="section-title">VNetおよびサブネット</block>
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">コネクタを作成するときは、コネクタを配置するVNetとサブネットを指定する必要があります。</block>
@@ -2890,7 +2879,6 @@
   <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">AWS サブスクリプションを関連付ける</block>
   <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">AWSのクレデンシャルをBlueXPに追加したら、AWS Marketplaceサブスクリプションをそれらのクレデンシャルに関連付けることができます。このサブスクリプションでは、Cloud Volumes ONTAP の料金を時間単位（PAYGO）または年単位の契約で支払い、その他のBlueXPサービスを利用できます。</block>
   <block id="5eae6608f40144c94d96a8f0a1602c97" category="paragraph">BlueXPに資格情報を追加した後、AWS Marketplaceサブスクリプションを関連付けるシナリオは2つあります。</block>
-  <block id="dbaf1a33cea4faeebcb91c3b7d479cc9" category="list-text">既存の AWS Marketplace サブスクリプションを新しいサブスクリプションに置き換える場合。</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">コネクタの作成方法を説明します</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">BlueXP設定を変更する前にコネクタを作成する必要があります。 <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>。</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
@@ -3147,7 +3135,6 @@
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">BlueXPのアカウント</block>
   <block id="f4040f71a7d553f2519487070892b115" category="sidebar">ユーザロール</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">クレデンシャルとサブスクリプションを管理する</block>
-  <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">クラウドストレージを検出</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参照</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">権限の概要</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
@@ -3188,7 +3175,6 @@
   <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">デフォルトでは、すべてのアクティブな通知が通知センターに表示されます。表示される通知をフィルタリングして、重要な通知のみを表示できます。BlueXPの「サービス」と通知の「タイプ」でフィルタリングできます。</block>
   <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">通知センターで設定したフィルタは、電子メールで受信する通知の種類を決定するものではありません。既定では、BlueXPアカウント管理者はすべての「重要」および「推奨」通知の電子メールを受信します。これらの通知はすべてのサービスに適用されます。コネクタやBlueXPのバックアップとリカバリなど、特定のサービスについてのみ通知を受け取ることはできません。</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">他のすべてのユーザーと受信者は、通知メールを受信しないように設定されているため、追加のユーザーの通知設定を構成する必要があります。</block>
-  <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">Google Cloud Storageバケットを管理します</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">次の情報が必要です。</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">詳細については、を参照してください<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
   <block id="1b6d3b3a89f4e066eb8bb8d481156cbb" category="list-text">*インスタンスタイプ*：リージョンの可用性に応じて、RAMとCPUの要件を満たすインスタンスタイプを選択します（T3.xlargeを推奨）。</block>
@@ -3789,4 +3775,49 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">標準モードでのコネクタの取り付けとセットアップ</block>
   <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">プライベートモードでのコネクタのインストールとセットアップ</block>
   <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">ログインしています</block>
+  <block id="337e8febb8ac96133c86a51cd7bc0240" category="summary">BlueXPがAzureクレデンシャルを使用してユーザに代わってアクションを実行する方法と、それらのクレデンシャルがマーケットプレイスのサブスクリプションにどのように関連付けられているかをご確認くださいこれらの詳細を理解しておくと、1つ以上のAzureサブスクリプションのクレデンシャルを管理する際に役立ちます。たとえば、AzureクレデンシャルをBlueXPに追加するタイミングを確認できます。</block>
+  <block id="3bf21bdc87a8f6ebde5b75e8cb0d5138" category="section-title">クレデンシャルとマーケットプレイスのサブスクリプション</block>
+  <block id="b1e32c999d336fb505915de8a8ffca55" category="paragraph">Cloud Volumes ONTAPの料金を時間単位（PAYGO）または年間契約で支払い、その他のBlueXPサービスを使用できるようにするには、Connectorに追加するクレデンシャルをAzure Marketplaceサブスクリプションに関連付ける必要があります。</block>
+  <block id="fb84f4e33822ea62702acf73a6936590" category="paragraph"><block ref="1203dc0bfed75eb2f240871bcc177fc9" category="inline-link-macro-rx"></block>。</block>
+  <block id="699a4563fbdfb82a77a96312a9c5b942" category="paragraph">Azureクレデンシャルとマーケットプレイスサブスクリプションについては、次の点に注意してください。</block>
+  <block id="394fe3b41aaabcee1c8575842cbb5c99" category="list-text">一連のAzureクレデンシャルに関連付けることができるAzure Marketplaceサブスクリプションは1つだけです。</block>
+  <block id="d9fbcede0b5dd54b1e4b6bd98ebd3fff" category="list-text">既存のMarketplaceサブスクリプションを新しいサブスクリプションに置き換えることが可能</block>
+  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="section-title">よく寄せられる質問</block>
+  <block id="c304c6eb88f5bb91ab96ba559c3124d2" category="paragraph">次の質問は、クレデンシャルとサブスクリプションに関するものです。</block>
+  <block id="d1498a931fa5f0af32115f36f233018b" category="section-title">Azure MarketplaceのCloud Volumes ONTAP作業環境向けサブスクリプションを変更できますか。</block>
+  <block id="eb61c2cc62653045f5374d6c02b9cb28" category="paragraph">はい、できます。一連のAzureクレデンシャルに関連付けられているAzure Marketplaceサブスクリプションを変更すると、既存および新規のすべてのCloud Volumes ONTAP作業環境が新しいサブスクリプションに対して課金されます。</block>
+  <block id="9da47999e254d317c9c5eadda7df30b7" category="section-title">マーケットプレイスのサブスクリプションが異なる複数のAzureクレデンシャルを追加できますか。</block>
+  <block id="c0e1571fee7bc6b756a9626664ca06e8" category="paragraph">同じAzureサブスクリプションに属するすべてのAzureクレデンシャルは、同じAzure Marketplaceサブスクリプションに関連付けられます。</block>
+  <block id="0fa4c0b97cc5b7972696a2ba8c38b9c8" category="paragraph">異なるAzureサブスクリプションに属する複数のAzureクレデンシャルがある場合、それらのクレデンシャルを同じAzure Marketplaceサブスクリプションまたは異なるマーケットプレイスサブスクリプションに関連付けることができます。</block>
+  <block id="4666e56ab2715e92af8b4dbb7fc97357" category="section-title">既存のCloud Volumes ONTAP作業環境を別のAzureサブスクリプションに移行できますか。</block>
+  <block id="cd0af57faab800d64dbc9b6686539495" category="paragraph">いいえ、Cloud Volumes ONTAP作業環境に関連付けられているAzureリソースを別のAzureサブスクリプションに移動することはできません。</block>
+  <block id="94db8f0d9e472465df4f4a2373f34e15" category="section-title">マーケットプレイスの導入とオンプレミスの導入でクレデンシャルはどのように機能しますか？</block>
+  <block id="459f61ebe7bde01cca8ed21d42e836ca" category="paragraph">Google CloudでConnectorを導入すると、Connector VMインスタンスに関連付けられたデフォルトのクレデンシャルセットがBlueXPによって作成されます。これらのクレデンシャルに関連付けられているGoogle Cloud Marketplaceサブスクリプションは、いつでも変更できます。このサブスクリプションでは、従量課金制のCloud Volumes ONTAP システムを作成したり、他のBlueXPサービスを使用したりできます。</block>
+  <block id="9e2bbef36ac6bd075f201eb1ac82fddb" category="paragraph">現行のMarketplaceサブスクリプションを新しいサブスクリプションに置き換えると、既存のCloud Volumes ONTAP作業環境とすべての新規作業環境のMarketplaceサブスクリプションが変更されます。</block>
+  <block id="6f3c919771c405c0014ee0f6d72d3149" category="summary">BlueXPでGoogle Cloudのクレデンシャルを使用してユーザに代わって操作を実行する方法と、それらのクレデンシャルがマーケットプレイスのサブスクリプションにどのように関連付けられているかをご確認くださいこれらの詳細を理解しておくと、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する際に役立ちます。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。</block>
+  <block id="2b28187ebaea3b39a76735548553c017" category="paragraph">Google Cloudにコネクタを導入すると、BlueXPによって、コネクタが配置されているプロジェクト内のGoogle Cloudサービスアカウント用のデフォルトクレデンシャルのセットが作成されます。Cloud Volumes ONTAPの料金を時間単位（PAYGO）で支払い、他のBlueXPサービスを使用できるように、これらのクレデンシャルをGoogle Cloud Marketplaceのサブスクリプションに関連付ける必要があります。</block>
+  <block id="09287a1087bc09afb8b07a6d1a5eae1e" category="inline-link-macro">Google Cloud Marketplaceのサブスクリプションを関連付ける方法を確認する</block>
+  <block id="7acdafee5614d2da4affd478462c535e" category="paragraph"><block ref="4394d3ef2937eb47839ebd4e9350c4a7" category="inline-link-macro-rx"></block>。</block>
+  <block id="ebb6d853fd57e1782a582fe71ada39d8" category="paragraph">Google Cloudクレデンシャルとマーケットプレイスのサブスクリプションについては、次の点に注意してください。</block>
+  <block id="4d1b7e7c166bf4ed32fa5d56516fa083" category="list-text">コネクタに関連付けることができるGoogle Cloudクレデンシャルのセットは1つだけです</block>
+  <block id="6d399b7b3ed393068765f55064547297" category="list-text">クレデンシャルに関連付けることができるGoogle Cloud Marketplaceサブスクリプションは1つだけです。</block>
+  <block id="239d1b40f08bc1656a0d7e74a463506d" category="summary">BlueXPがAWSクレデンシャルを使用してユーザに代わって操作を実行する方法と、それらのクレデンシャルがマーケットプレイスのサブスクリプションにどのように関連付けられているかをご確認くださいこれらの詳細を理解しておくと、BlueXPで1つ以上のAWSアカウントのクレデンシャルを管理する際に役立ちます。たとえば、AWSクレデンシャルをBlueXPに追加するタイミングを把握できます。</block>
+  <block id="83c8c6a596b650f7a3d797d7ca610eec" category="paragraph">BlueXPを追加のAWSアカウントで使用する場合は、IAMユーザのAWSキー、または信頼されたアカウントのロールのARNを指定できます。次の図は、 2 つの追加アカウントを示しています。 1 つは、信頼されたアカウントの IAM ロールを介してアクセス許可を提供し、もう 1 つは IAM ユーザの AWS キーを使用してアクセス許可を提供します。</block>
+  <block id="69989e90b246317e0163189ff8d059e9" category="paragraph">Cloud Volumes ONTAPの料金を時間単位（PAYGO）または年間契約で支払い、その他のBlueXPサービスを使用できるようにするには、Connectorに追加するクレデンシャルをAWS Marketplaceサブスクリプションに関連付ける必要があります。</block>
+  <block id="121abc14ff73ca8b4e21d30028c17399" category="paragraph"><block ref="ec04a55c38de32bb88fa7b4155061e7c" category="inline-link-macro-rx"></block>。</block>
+  <block id="76561e64ef8af12896c02fcfaddaf89e" category="paragraph">AWSクレデンシャルとマーケットプレイスサブスクリプションについては、次の点に注意してください。</block>
+  <block id="7b0c974aab7fa6523b2e4aa45c818464" category="list-text">1つのAWSクレデンシャルに関連付けることができるAWS Marketplaceサブスクリプションは1つだけです。</block>
+  <block id="d33d86c6f3f99b3b9b1b988bde0679bd" category="paragraph">次の質問は、クレデンシャルとサブスクリプションに関するものです。</block>
+  <block id="f4ccd042e43557d6dcec2b8d243b7662" category="paragraph">前述のセクションで説明したように、BlueXPではいくつかの方法でAWSクレデンシャルを指定できます。コネクタインスタンスに関連付けられたIAMロール、信頼されたアカウントでIAMロールを想定するか、AWSアクセスキーを指定します。</block>
+  <block id="c9195aa1791c4bdbc03156535bd27fc0" category="section-title">AWS MarketplaceのCloud Volumes ONTAP作業環境向けサブスクリプションを変更できますか。</block>
+  <block id="2fde9464009be43ef57f1ae03915ce1b" category="paragraph">はい、できます。一連のクレデンシャルに関連付けられているAWS Marketplaceサブスクリプションを変更すると、既存および新規のすべてのCloud Volumes ONTAP作業環境に新しいサブスクリプション料金が請求されます。</block>
+  <block id="5f40627f2e8501cf250f4cc37e129f5c" category="section-title">マーケットプレイスのサブスクリプションごとに、複数のAWSクレデンシャルを追加できますか。</block>
+  <block id="f3d5116dad7634904c5a0daad024b77d" category="paragraph">同じAWSアカウントに属するすべてのAWSクレデンシャルは、同じAWS Marketplaceサブスクリプションに関連付けられます。</block>
+  <block id="941c9eda62bf4e57d449bdcf28810b26" category="paragraph">異なるAWSアカウントに属する複数のAWSクレデンシャルがある場合は、それらのクレデンシャルを同じAWS Marketplaceサブスクリプションまたは異なるサブスクリプションに関連付けることができます。</block>
+  <block id="240d9c0eecb88b98c7fc253d7a1ea3e9" category="section-title">既存のCloud Volumes ONTAP作業環境を別のAWSアカウントに移動できますか。</block>
+  <block id="48fee81c8905ac5f4a12516fa379b0f7" category="paragraph">いいえ、Cloud Volumes ONTAP作業環境に関連付けられているAWSリソースを別のAWSアカウントに移動することはできません。</block>
+  <block id="a0b5de080d56bb71b1a6a7c72fd88757" category="doc">BlueXPのAWSクレデンシャルとマーケットプレイスサブスクリプションを管理</block>
+  <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">AWSクレデンシャルに関連付けられているAWS Marketplaceサブスクリプションを変更する。</block>
+  <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">BlueXPのAzureクレデンシャルとマーケットプレイスサブスクリプションを管理</block>
+  <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">Azureクレデンシャルに関連付けられているAzure Marketplaceサブスクリプションを変更する。</block>
 </blocks>

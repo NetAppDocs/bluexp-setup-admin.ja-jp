@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: BlueXPでGoogle Cloudのクレデンシャルと権限を使用して操作を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する際に役立ちます。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。 
+summary: BlueXPでGoogle Cloudのクレデンシャルを使用してユーザに代わって操作を実行する方法と、それらのクレデンシャルがマーケットプレイスのサブスクリプションにどのように関連付けられているかをご確認くださいこれらの詳細を理解しておくと、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する際に役立ちます。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。 
 ---
 = Google Cloudのプロジェクトと権限の詳細
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXPでGoogle Cloudのクレデンシャルと権限を使用して�
 
 
 [role="lead"]
-BlueXPでGoogle Cloudのクレデンシャルと権限を使用して操作を実行する方法をご紹介します。これらの詳細を理解しておくと、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する際に役立ちます。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。
+BlueXPでGoogle Cloudのクレデンシャルを使用してユーザに代わって操作を実行する方法と、それらのクレデンシャルがマーケットプレイスのサブスクリプションにどのように関連付けられているかをご確認くださいこれらの詳細を理解しておくと、1つ以上のGoogle Cloudプロジェクトのクレデンシャルを管理する際に役立ちます。たとえば、コネクタVMに関連付けられているサービスアカウントの詳細を確認できます。
 
 
 
@@ -37,6 +37,21 @@ image:diagram_permissions_gcp.png["GoogleとサービスアカウントがCloud 
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["標準モードのGoogle Cloud権限を設定します"]
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["制限モードの権限を設定します"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["プライベートモードの権限を設定します"]
+
+
+
+
+== クレデンシャルとマーケットプレイスのサブスクリプション
+
+Google Cloudにコネクタを導入すると、BlueXPによって、コネクタが配置されているプロジェクト内のGoogle Cloudサービスアカウント用のデフォルトクレデンシャルのセットが作成されます。Cloud Volumes ONTAPの料金を時間単位（PAYGO）で支払い、他のBlueXPサービスを使用できるように、これらのクレデンシャルをGoogle Cloud Marketplaceのサブスクリプションに関連付ける必要があります。
+
+link:task-adding-gcp-accounts.html["Google Cloud Marketplaceのサブスクリプションを関連付ける方法を確認する"]。
+
+Google Cloudクレデンシャルとマーケットプレイスのサブスクリプションについては、次の点に注意してください。
+
+* コネクタに関連付けることができるGoogle Cloudクレデンシャルのセットは1つだけです
+* クレデンシャルに関連付けることができるGoogle Cloud Marketplaceサブスクリプションは1つだけです。
+* 既存のMarketplaceサブスクリプションを新しいサブスクリプションに置き換えることが可能
 
 
 
