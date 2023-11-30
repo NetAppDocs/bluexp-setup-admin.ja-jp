@@ -27,6 +27,9 @@ SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用す�
 \https://*.console.bluexp.netapp.com | BlueXPのWebベースのコンソールを使用すると、WebブラウザからこれらのURLにアクセスできます。 
 
 
+| \https://aiq.netapp.com | BlueXP Digital Advisorにアクセスするには必要です。 
+
+
  a| 
 AWS サービス（ amazonaws.com ）：
 

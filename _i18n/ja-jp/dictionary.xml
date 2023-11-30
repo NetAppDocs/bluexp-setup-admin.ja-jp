@@ -487,7 +487,6 @@
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">専用ホスト</block>
   <block id="3e54bf758f50b15d709edd166d8bf82b" category="list-text">他のアプリケーションと共有しているホストでは、このコネクタはサポートされていません。専用のホストである必要があります。</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">サポートされているオペレーティングシステム</block>
-  <block id="e5051949dc3a37f9077e85df0f1c8a21" category="list-text">Ubuntu 22.04.</block>
   <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6、7.7、7.8、7.9</block>
   <block id="eaf5618d0182a88179ac8580cc418219" category="list-text">Red Hat Enterprise Linux 7.6、7.7、7.8、および7.9</block>
   <block id="24dfedb0d4bd46f0cd823d4e245f7642" category="paragraph">ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。</block>
@@ -1970,7 +1969,6 @@
   <block id="5eeca886fa07462826a9ea747483f528" category="section-title">AWSの詳細</block>
   <block id="a0676ac5cfebaef69b53ff7e37cd8c3c" category="paragraph">BlueXPまたはクラウドプロバイダのマーケットプレイスからコネクタを導入した場合は、次の点に注意してください。</block>
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">EC2インスタンスタイプはt3.xlargeです。</block>
-  <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">このイメージのオペレーティングシステムはUbuntu 22.04です。</block>
   <block id="953e61420be6157aa122dfd3475d4070" category="paragraph">オペレーティングシステムには GUI は含まれていません。システムにアクセスするには、端末を使用する必要があります。</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">デフォルトのシステムディスクは100GiBのgp2ディスクです。</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Azureの詳細</block>
@@ -2089,13 +2087,8 @@
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">確認するコネクタの名前を入力し、*[削除]*を選択します。</block>
   <block id="7c42efcb94d7f8204bfb69f49301938f" category="paragraph">BlueXPはコネクタをレコードから削除します。</block>
   <block id="1e5422449b0eb99ea40cb7fe70879cc1" category="section-title">Connector ソフトウェアをアンインストールします</block>
-  <block id="1eadfd8e2f3b513abf35355f37e97001" category="paragraph">問題のトラブルシューティングを行う場合や、ソフトウェアをホストから完全に削除する場合は、コネクタソフトウェアをアンインストールします。使用する必要がある手順は、インターネットにアクセスできるホストにコネクタをインストールしたか、インターネットにアクセスできない制限されたネットワーク内のホストにインストールしたかによって異なります。</block>
-  <block id="4d67fb715dceafe12fe6803426ac57b2" category="section-title">インターネットにアクセスできるホストからをアンインストールします</block>
-  <block id="e089c95fb359ddfa284cac5771dbcd57" category="paragraph">Online Connector には、ソフトウェアのアンインストールに使用できるアンインストールスクリプトが含まれています。</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">Linux ホストからアンインストールスクリプトを実行します。</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">silent_ 確認を求めずにスクリプトを実行します。</block>
-  <block id="8df713934e0916c402f7101820962747" category="section-title">インターネットにアクセスできないホストからをアンインストールします</block>
-  <block id="aa03c0a49ae5be9aa71931d934887122" category="paragraph">NetApp Support Siteからコネクタソフトウェアをダウンロードし、インターネットにアクセスできない制限されたネットワークにインストールした場合は、ここに示すコマンドを使用します。</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">Linux ホストから、次のコマンドを実行します。</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">オンプレミスネットワークをセットアップする</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">独自のLinuxホストにコネクタを手動でインストールする場合、コネクタのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。</block>
@@ -2444,7 +2437,6 @@
   <block id="aca7ecb913d1693820d3cecc61146e57" category="list-text">ユーザーに関連付けるワークスペースを選択し、*適用*を選択します。</block>
   <block id="00c13424586ec3eadb8e36d6a47c5a3d" category="paragraph">コネクタがワークスペースにも関連付けられていれば、ユーザはBlueXPからこれらのワークスペースにアクセスできるようになりました。</block>
   <block id="f932d2619edea0dc69b40e9be53abdc4" category="section-title">サービスアカウントを作成および管理します</block>
-  <block id="a27c9464b539fe59f34a06ecfb5eebf0" category="paragraph">サービスアカウントは、自動化のために承認されたAPIコールをBlueXPに発信できる「ユーザ」として機能します。これにより、自動化スクリプトを作成する必要がなくなります。自動化スクリプトは、会社を離れることができる実際のユーザアカウントに基づいて作成する必要がなくなります。フェデレーションを使用している場合は、クラウドから更新トークンを生成することなくトークンを作成できます。</block>
   <block id="3867fe57530ba0aa0540b395cae02bbe" category="paragraph">サービスアカウントに権限を付与するには、他のBlueXPユーザーと同様に、サービスアカウントにロールを割り当てます。サービスアカウントを特定のワークスペースに関連付けることで、サービスがアクセスできる作業環境（リソース）を制御することもできます。</block>
   <block id="3e90ee6ffbf4747b6daa7514209e20ef" category="paragraph">サービスアカウントを作成すると、サービスアカウントのクライアントIDとクライアントシークレットをコピーまたはダウンロードできます。このキーペアは、BlueXPでの認証に使用されます。</block>
   <block id="41d9e1257b3e21add2e59d038938ea94" category="section-title">サービスアカウントを作成します</block>
@@ -3820,4 +3812,19 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">AWSクレデンシャルに関連付けられているAWS Marketplaceサブスクリプションを変更する。</block>
   <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">BlueXPのAzureクレデンシャルとマーケットプレイスサブスクリプションを管理</block>
   <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">Azureクレデンシャルに関連付けられているAzure Marketplaceサブスクリプションを変更する。</block>
+  <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22.04 LTS</block>
+  <block id="7f9b20909dd63d1bee579fee63d32a4a" category="paragraph">問題のトラブルシューティングを行う場合や、ソフトウェアをホストから完全に削除する場合は、コネクタソフトウェアをアンインストールします。必要な手順は、コネクタをインターネットにアクセスできるホスト（標準モードまたは制限モード）にインストールしたか、インターネットにアクセスできないネットワーク内のホスト（プライベートモード）にインストールしたかによって異なります。</block>
+  <block id="704318f2299bbf226c9c1348790ad16a" category="section-title">標準モードまたは制限モードを使用する場合のアンインストール</block>
+  <block id="cb4aad09336fbc7a1b8ecf07e5495e18" category="paragraph">標準モードまたは制限モードでBlueXPを使用している場合は、以下の手順でコネクタソフトウェアをアンインストールできます。</block>
+  <block id="fd1e4807d8caf9eb7b22acef39d3e5ce" category="list-text">コネクタのLinux VMに接続します。</block>
+  <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
+  <block id="e62b509228c00429c0a06d3fd75b6e6e" category="section-title">プライベートモード使用時のアンインストール</block>
+  <block id="56772d07c7720c5dc4391eea138265a3" category="paragraph">次の手順では、BlueXPをプライベートモードで使用している場合にインターネットアクセスを使用できないときにコネクタソフトウェアをアンインストールできます。</block>
+  <block id="72b013396e56865d3673702aa9bcc731" category="paragraph"><block ref="53c9ecf44ffc5c93a5a42f4cda983463" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
+  <block id="6ae4e7f185de6791c9b45f3d273959f9" category="cell">\https://aiq.netapp.com</block>
+  <block id="034ade3fc7b98591feafb7b0039b2724" category="cell">BlueXP Digital Advisorにアクセスするには必要です。</block>
+  <block id="345dbd48a6c734a7dc3b743f014493be" category="paragraph">サービスアカウントは、自動化のために承認されたAPIコールをBlueXPに発信できる「ユーザ」として機能します。これにより、自動化スクリプトを作成する必要がなくなります。自動化スクリプトは、会社を離れることができる実際のユーザアカウントに基づいて作成する必要がなくなります。</block>
+  <block id="f48ee857175ccdfbd5ae5d5354c32c08" category="inline-link">リフレッシュトークンの詳細</block>
+  <block id="713b059ba47ab000812d3dd15273cee6" category="paragraph">サービスアカウントを使用する場合、API処理に更新トークンは必要ありません。<block ref="cc919b62f11a25e2d8c9fb23b34ada32" category="inline-link-rx"></block></block>
+  <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">イメージのオペレーティングシステムはUbuntu 22.04 LTSです。</block>
 </blocks>
