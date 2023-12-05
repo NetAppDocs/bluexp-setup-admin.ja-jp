@@ -3839,4 +3839,7 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="74456640d8afbf406f720d7bd598b445" category="list-text">オンプレミスのONTAPボリュームをONTAP S3にバックアップおよびリストアすることもサポートされています。</block>
   <block id="18bb302ce6a2bf46e1beed1133756fb6" category="inline-link">オンプレミスのONTAPデータをONTAP S3にバックアップする方法</block>
   <block id="4befb86902877ee4e8c0bab35f4c9850" category="paragraph"><block ref="4befb86902877ee4e8c0bab35f4c9850" category="inline-link-rx"></block></block>
+  <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">2023年12月5日</block>
+  <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">Azure BLOBストレージにボリュームデータをバックアップする場合、BlueXPのバックアップとリカバリに次の権限は不要になりました。</block>
+  <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">これらの権限は他のBlueXPストレージサービスに必要なため、他のストレージサービスを使用している場合はコネクタのカスタムロールが引き続き使用されます。</block>
 </blocks>
