@@ -36,14 +36,14 @@ sudo systemctl enable docker && sudo systemctl start docker
 ----
 . からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Site"^]
 +
-インターネットにアクセスできない制限されたネットワーク用のインストーラを必ずダウンロードしてください。
+インターネットにアクセスできないプライベートネットワーク用のオフラインインストーラを必ずダウンロードしてください。
 
 . インストーラを Linux ホストにコピーします。
 . スクリプトを実行する権限を割り当てます。
 +
 [source, cli]
 ----
-chmod +x /path/cloud-manager-connector-offline-<version>
+chmod +x /path/BlueXP-Connector-offline-<version>
 ----
 +
 <version> は、ダウンロードしたコネクタのバージョンです。
@@ -52,7 +52,7 @@ chmod +x /path/cloud-manager-connector-offline-<version>
 +
 [source, cli]
 ----
-sudo /path/cloud-manager-connector-offline-<version>
+sudo /path/BlueXP-Connector-offline-<version>
 ----
 +
 <version> は、ダウンロードしたコネクタのバージョンです。

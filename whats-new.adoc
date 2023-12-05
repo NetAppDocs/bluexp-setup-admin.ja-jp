@@ -18,6 +18,23 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
+== 2023年12月5日
+
+
+
+=== プライベートモードリリース
+
+BlueXPで新しいプライベートモードリリースが見積もり可能になりました。このリリースには、コネクタのバージョン3.9.35と、2023年10月時点でプライベートモードでサポートされるBlueXPサービスのバージョンが含まれています。
+
+この新しいリリースは、NetApp Support Siteからダウンロードできます。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["プライベートモードに含まれるBlueXPサービスの詳細"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
+
+
+
+
 == 2023年11月8日
 
 

@@ -276,9 +276,17 @@ Google Cloudまたはではサポートされていません https://aws.amazon.
 | サポートされるサービス | 注： 
 
 
-| バックアップとリカバリ | オンプレミスのONTAP ボリュームのStorageGRID システムへのバックアップとリストアのみがサポートされます。
+| バックアップとリカバリ  a| 
+* オンプレミスのONTAPボリュームのStorageGRIDシステムへのバックアップとリストアがサポートされています。
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["オンプレミスのONTAP データをStorageGRID にバックアップする方法をご紹介します"^]
 
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["オンプレミスのONTAP データをStorageGRID にバックアップする方法をご紹介します"^] 
+* オンプレミスのONTAPボリュームをONTAP S3にバックアップおよびリストアすることもサポートされています。
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["オンプレミスのONTAPデータをONTAP S3にバックアップする方法"^]
+
+
+
 
 
 | 分類  a| 
