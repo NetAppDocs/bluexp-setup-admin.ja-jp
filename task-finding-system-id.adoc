@@ -18,14 +18,14 @@ summary: 使用を開始するにあたり、ネットアップの担当者か�
 
 .手順
 . BlueXPコンソールの右上にある[Help]アイコンを選択します。
-. [Support]>[Connector]*を選択します。
+. [サポート]>[BlueXP Connector]*を選択します。
 +
-システム ID が一番上に表示されます。
+システムIDがページの上部に表示されます。
 
 +
 * 例 *
 
 +
-image:screenshot_system_id.gif["サポートダッシュボードに表示されるBlueXPのシステムIDを示すスクリーンショット。"]
+image:screenshot-system-id.png["サポートダッシュボードに表示されるBlueXPのシステムIDを示すスクリーンショット。"]
 
 

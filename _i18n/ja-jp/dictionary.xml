@@ -12,11 +12,8 @@
   <block id="4d23d12ce4b0de2019310ec73c45d09b" category="doc">コネクタのシステム ID を確認します</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
   <block id="beabea313ffb3a9482595dfdd092b6c6" category="list-text">BlueXPコンソールの右上にある[Help]アイコンを選択します。</block>
-  <block id="ee2045d2e396ef6520817ecf395d1155" category="list-text">[Support]&gt;[Connector]*を選択します。</block>
-  <block id="cd9ffc2440addbacdf692ee7105ad41f" category="paragraph">システム ID が一番上に表示されます。</block>
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 例 *</block>
   <block id="2529cf627b3e8b4f850e5b8e7998dea3" category="inline-image-macro">サポートダッシュボードに表示されるBlueXPのシステムIDを示すスクリーンショット。</block>
-  <block id="dd452be96917f1c62ed3d40b11c4ebf2" category="paragraph"><block ref="dd452be96917f1c62ed3d40b11c4ebf2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a31342596e31d918d08c0417177a8f77" category="list-text">Google Cloudポータルに移動し、コネクタVMインスタンスにサービスアカウントを割り当てます。</block>
   <block id="81c722be01f6c1251ced26ff2ff9dd3f" category="inline-link">Google Cloudドキュメント：インスタンスのサービスアカウントとアクセス範囲の変更</block>
   <block id="c8b77e7a211a8e1bbb884962a105fc2f" category="paragraph"><block ref="c8b77e7a211a8e1bbb884962a105fc2f" category="inline-link-rx"></block></block>
@@ -952,8 +949,6 @@
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">コミュニティ</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXPコミュニティに参加して、進行中のディスカッションをフォローしたり、新しいディスカッションを作成したりできます。</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com [ フィードバックメール ]</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">お客様のご意見をお考えください。フィードバックを送信して、BlueXPの改善に役立ててください。</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">ネットアップサポートと一緒にケースを作成します</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">上記のセルフサポートオプションに加え、サポートを有効にしたあとで問題が発生した場合は、ネットアップサポートの担当者と相談して解決できます。</block>
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">BlueXPログインに関連付けられているクレデンシャルの管理方法について説明します</block>
@@ -3842,4 +3837,17 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">2023年12月5日</block>
   <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">Azure BLOBストレージにボリュームデータをバックアップする場合、BlueXPのバックアップとリカバリに次の権限は不要になりました。</block>
   <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">これらの権限は他のBlueXPストレージサービスに必要なため、他のストレージサービスを使用している場合はコネクタのカスタムロールが引き続き使用されます。</block>
+  <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">2024年1月11日</block>
+  <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">コネクタ3.9.36</block>
+  <block id="c86344b833d64024dcd801a79f3f366e" category="paragraph">このリリースには、以下のクラウドリージョンでマイナーな改善、バグ修正、コネクタのサポートが含まれています。</block>
+  <block id="5c4c535d51f9fbfc21f1baf9f449004c" category="list-text">AWSのイスラエル（テルアビブ）リージョン</block>
+  <block id="c53c95f8243560e843dabb8877e4d787" category="list-text">Google Cloudのサウジアラビアリージョン</block>
+  <block id="3244421fb40bc38e67d918370813ac13" category="list-text">[サポート]&gt;[BlueXP Connector]*を選択します。</block>
+  <block id="f3678f7b6e79e91c386c1443915f058a" category="paragraph">システムIDがページの上部に表示されます。</block>
+  <block id="78b33f2334c7af84c813788a6be69874" category="paragraph"><block ref="78b33f2334c7af84c813788a6be69874" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="da0773230b01d6a89d37c6a470238b1c" category="section-title">コネクタのバージョンの表示</block>
+  <block id="9135b5936981eca97dce83eb29069ca4" category="paragraph">コネクタのバージョンを表示して、コネクタが自動的に最新リリースにアップグレードされたこと、またはNetApp担当者と共有する必要があることを確認できます。</block>
+  <block id="eb59fa7ccae5cea6d510c55c15078ce1" category="paragraph">ページの上部にバージョンが表示されます。</block>
+  <block id="a2f380016f769a1938d51415013af95a" category="inline-image-macro">サポートダッシュボードのコネクタのバージョンを示すスクリーンショット。</block>
+  <block id="da65ca9f7cc579e3fad52951fe45cdb6" category="paragraph"><block ref="da65ca9f7cc579e3fad52951fe45cdb6" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
