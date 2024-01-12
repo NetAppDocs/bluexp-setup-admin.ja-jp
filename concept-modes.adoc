@@ -158,7 +158,9 @@ APIエンドポイント:: 次のエンドポイントに対してAPI呼び出�
 
 | バックアップとリカバリ | 制限モードの政府地域および商用地域でサポートされています。制限モードの主権領域ではサポートされていません。
 
-サポートされていない機能は、アプリケーション、仮想マシン、Kubernetesです。 
+制限モードでは、BlueXPのバックアップとリカバリでONTAPボリュームのデータのバックアップとリストアのみがサポートされます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["ONTAPデータでサポートされるバックアップデスティネーションのリストを表示する"^]
+
+アプリケーションデータ、仮想マシンデータ、およびKubernetesデータのバックアップとリストアはサポートされていません。 
 
 
 | 分類  a| 
@@ -254,7 +256,11 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 
 | バックアップとリカバリ | AWSとAzureの商用リージョンでサポートされます。
 
-Google Cloudまたはではサポートされていません https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^]、 https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^]または https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+Google Cloudまたはではサポートされていません https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^]、 https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^]または https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
+
+プライベートモードでは、BlueXPのバックアップとリカバリでONTAPボリュームのデータのバックアップとリストアのみがサポートされます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["ONTAPデータでサポートされるバックアップデスティネーションのリストを表示する"^]
+
+アプリケーションデータ、仮想マシンデータ、およびKubernetesデータのバックアップとリストアはサポートされていません。 
 
 
 | Cloud Volumes ONTAP | インターネットにアクセスできないため、自動ソフトウェアアップグレードとAutoSupportの機能は使用できません。 
@@ -277,15 +283,9 @@ Google Cloudまたはではサポートされていません https://aws.amazon.
 
 
 | バックアップとリカバリ  a| 
-* オンプレミスのONTAPボリュームのStorageGRIDシステムへのバックアップとリストアがサポートされています。
-+
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["オンプレミスのONTAP データをStorageGRID にバックアップする方法をご紹介します"^]
+プライベートモードでは、BlueXPのバックアップとリカバリでONTAPボリュームのデータのバックアップとリストアのみがサポートされます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^]
 
-* オンプレミスのONTAPボリュームをONTAP S3にバックアップおよびリストアすることもサポートされています。
-+
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["オンプレミスのONTAPデータをONTAP S3にバックアップする方法"^]
-
-
+アプリケーションデータ、仮想マシンデータ、およびKubernetesデータのバックアップとリストアはサポートされていません。
 
 
 
@@ -343,7 +343,9 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 | 製品エリア | BlueXPのサービスまたは機能 | 制限モード | プライベートモード 
 
 
-.11+| *作業環境* | ONTAP 対応の Amazon FSX | はい。 | いいえ 
+.11+| *作業環境*
+
+表の次の部分には、BlueXPキャンバスでの作業環境管理のサポートが表示されます。BlueXPのバックアップとリカバリでサポートされるバックアップ先を示すわけではありません。 | ONTAP 対応の Amazon FSX | はい。 | いいえ 
 
 
 | Amazon S3 | いいえ | いいえ 
@@ -376,7 +378,11 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 | StorageGRID | いいえ | いいえ 
 
 
-.16+| * サービス * | バックアップとリカバリ | はい。 | はい。 
+.16+| * サービス * | バックアップとリカバリ | はい。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] | はい。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] 
 
 
 | 分類 | はい。 | はい。 
