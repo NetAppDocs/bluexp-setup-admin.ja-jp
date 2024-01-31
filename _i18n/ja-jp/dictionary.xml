@@ -61,7 +61,6 @@
   <block id="ca5c14dd1767138ec0ae60d1c4d7a128" category="list-text">Azureユーザーアカウント*を選択して、必要な権限があるMicrosoftアカウントにログインします。</block>
   <block id="e0f74d06e87b3ad6fc9f3b3cfc573c38" category="paragraph">このフォームは、 Microsoft が所有およびホストしています。クレデンシャルがネットアップに提供されていません。</block>
   <block id="49e88457c3aa8d56ebf17eb8460a3eb8" category="admonition">すでにAzureアカウントにログインしている場合は、BlueXPによって自動的にそのアカウントが使用されます。アカウントが複数ある場合は、適切なアカウントを使用するために、最初にログアウトする必要があります。</block>
-  <block id="0a3420a284048b3146bfedfda39bc929" category="list-text">[Active Directory service principal]*を選択して、必要な権限を付与するAzure Active Directoryサービスプリンシパルに関する情報を入力します。</block>
   <block id="5f92aba7d335e90da33ac643d56ed817" category="list-text">アプリケーション（クライアント）ID</block>
   <block id="ac1fdeeca5975112ea2d53b754a4c94f" category="list-text">ディレクトリ（テナント）ID</block>
   <block id="734082edf44417dd19cc65943aa65c36" category="list-text">クライアントシークレット</block>
@@ -586,7 +585,6 @@
   <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">[NSS Management]&gt;[Add NSS Account]*を選択します。</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">プロンプトが表示されたら、*続行*を選択してMicrosoftログインページにリダイレクトします。</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログインページで、NetApp Support Siteの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">これらのアクションにより、BlueXPはライセンスのダウンロード、ソフトウェアのアップグレード検証、および将来のサポート登録などの目的でNSSアカウントを使用できます。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
@@ -608,19 +606,9 @@
   <block id="f8c7ce78aaf937671ef25c9c931e368e" category="list-text"><block ref="f8c7ce78aaf937671ef25c9c931e368e" category="inline-link-rx"></block></block>
   <block id="a37ea04c3e1568f7c0e8e6abc9104d40" category="inline-link">従量課金制システムの登録</block>
   <block id="b973035f0b680495b14f344d6beef53c" category="list-text"><block ref="b973035f0b680495b14f344d6beef53c" category="inline-link-rx"></block></block>
-  <block id="bdc3d022de69262bc7cb126fddac2df3" category="section-title">NSS アカウントを更新して新しい認証方法を適用します</block>
-  <block id="759f5e4f5dca6e6753e9254efed21ea1" category="paragraph">2021 年 11 月以降、ネットアップはサポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用します。この更新プログラムの結果、以前に追加した既存のアカウントの資格情報を更新するように求められます。</block>
-  <block id="a8ee828dbf9ffbba52ad9d7c1d04242a" category="inline-link">Microsoft Azure Active Directory B2Cアカウントを作成します。このアカウントは現在のBlueXPアカウントにリンクされます</block>
-  <block id="4ca24677e66997a22608e9d0d222f780" category="list-text">まだ行っていない場合は、<block ref="7a8e518e973906b81bf65d6cae725be0" category="inline-link-rx"></block>。</block>
   <block id="b7d544e19d5b26255a1df1dd3e33d678" category="list-text">[NSS Management]*を選択します。</block>
-  <block id="de427ea5ca6af7aba62b71992e7b574a" category="list-text">更新するNSSアカウントの*[アカウントの更新]*を選択します。</block>
-  <block id="d351b79158a130fb8ea25841a60a3d92" category="inline-image-macro">［ アカウントの更新 ］ オプションを示すスクリーンショット</block>
-  <block id="8c513892354d080911596538a0a8e779" category="paragraph"><block ref="8c513892354d080911596538a0a8e779" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="12e10a54c3e2f5a33f8aa5731c8309bd" category="paragraph">処理が完了したら、更新したアカウントが表に _new_account として表示されるようになります。古いバージョンのアカウントは ' 既存の作業環境の関連付けとともにテーブルに表示されます</block>
   <block id="5f74d1c3714e49926cf5f752029ebcc2" category="inline-xref">それらの作業環境を別の NSS アカウントに接続します</block>
-  <block id="fa867fa0605c678ee51d2260103bd8bf" category="list-text">既存の Cloud Volumes ONTAP 作業環境が古いバージョンのアカウントに接続されている場合は、次の手順に従ってください <block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0afff19aa3343a6f86619d833dbd316" category="inline-image-macro">横方向の 3 つの点を示すアイコン</block>
-  <block id="957061f35945035f7619d487eeae3396" category="list-text">古いバージョンのNSSアカウントに移動し、を選択します <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 次に、 * Delete * を選択します。</block>
   <block id="8cb2ff10d15cea1a460cee3b506d5a6c" category="section-title">NSS クレデンシャルを更新します</block>
   <block id="90488de845793cd541dd12866e86b44a" category="paragraph">次のいずれかの場合は、BlueXPでNSSアカウントの資格情報を更新する必要があります。</block>
   <block id="d7fb44c1919b66d02d93dc18ebb82756" category="list-text">このアカウントのクレデンシャルを変更した場合</block>
@@ -630,7 +618,6 @@
   <block id="2aa3557242cb0eddbff8233ad0c81a45" category="paragraph"><block ref="2aa3557242cb0eddbff8233ad0c81a45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="297e9bab56e72eca06bc12c5f89c3007" category="section-title">作業環境を別の NSS アカウントに接続します</block>
   <block id="8b65cb7585cade7e7c6df120ae10da1b" category="paragraph">組織に複数のNetApp Support Siteのアカウントがある場合、 Cloud Volumes ONTAP システムに関連付けられているアカウントを変更することができます。</block>
-  <block id="71030de456dade7df9dd4194ac0cc64e" category="paragraph">この機能は、ネットアップがアイデンティティ管理に導入した Microsoft Azure AD を使用するように設定された NSS アカウントでのみサポートされます。この機能を使用する前に、* NSSアカウントの追加*または*アカウントの更新*を選択する必要があります。</block>
   <block id="2b1290920584c08c2e2b07569cf0a3b0" category="list-text">NSS アカウントを変更するには、次の手順を実行します。</block>
   <block id="7ebef2f036d00a5760c52a09582f43b4" category="list-text">作業環境が現在関連付けられているNetApp Support Siteのアカウントの行を展開します。</block>
   <block id="4ff944075f223ced34dfceaeee89f003" category="list-text">関連付けを変更する作業環境で、を選択します <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
@@ -639,7 +626,6 @@
   <block id="11ecc3de6ba7beb5561699b813f5f452" category="paragraph"><block ref="11ecc3de6ba7beb5561699b813f5f452" category="inline-image-macro-rx" type="image"></block></block>
   <block id="17b44f0405de560bdd9ba352b67adb7a" category="list-text">アカウントを選択し、*[保存]*を選択します。</block>
   <block id="504f62cd55407d98070b45659035b7f5" category="section-title">NSS アカウントの E メールアドレスを表示します</block>
-  <block id="b740e07b8f623825c65d7d54111e7561" category="paragraph">NetApp Support Site アカウントで認証サービスにMicrosoft Azure Active Directoryを使用しているため、BlueXPに表示されるNSSユーザ名は通常、Azure ADで生成された識別子です。そのため、そのアカウントに関連付けられている E メールアドレスがすぐにわからない場合があります。しかし、BlueXPには、関連するメールアドレスを表示するオプションがあります。</block>
   <block id="a74d4f6da1f4962caa974b5e68852f05" category="admonition">NSS管理ページに移動すると、表の各アカウントのトークンがBlueXPによって生成されます。このトークンには、関連付けられた E メールアドレスに関する情報が含まれます。その後、ページから移動するとトークンが削除されます。この情報はキャッシュされないため、プライバシーを保護できます。</block>
   <block id="fb62719b7db2f72c6247845a1f5cbcb1" category="list-text">更新するNSSアカウントのを選択します <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 次に、 [ 電子メールアドレスの表示 *] を選択します。</block>
   <block id="51f80facd7c70833cf77adf937c57d0f" category="inline-image-macro">NetApp Support Siteのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。</block>
@@ -1017,15 +1003,12 @@
   <block id="daa8ebdcea8faf9c0a905610b976465d" category="inline-link-macro">管理対象 ID をこれらのサブスクリプションに関連付けます</block>
   <block id="e9449a821e5687d61739e39e9c79898a" category="paragraph">コネクタVMに割り当てられたシステム割り当ての管理IDは、コネクタを起動したサブスクリプションに関連付けられています。別の Azure サブスクリプションを選択する場合は、が必要です <block ref="f01caac2e85764bbee287cdcbf568231" category="inline-link-macro-rx"></block>。</block>
   <block id="87201b9d2d1782996b39bbbe3547cd00" category="section-title">Azure の追加クレデンシャル</block>
-  <block id="65362b4c54ef572e25b742c44ba41e3e" category="inline-link-macro">Azure Active でサービスプリンシパルを作成およびセットアップする ディレクトリ</block>
-  <block id="008c03a90ac1fbf6c15706a19f919f3b" category="paragraph">BlueXPで別のAzureクレデンシャルを使用する場合は、で必要な権限を付与する必要があります <block ref="551303c9f711674f6fbd417b1f488bc0" category="inline-link-macro-rx"></block> を Azure アカウントごとに用意します。次の図は、 2 つの追加アカウントを示しています。各アカウントには、権限を提供するサービスプリンシパルとカスタムロールが設定されています。</block>
   <block id="21df124adba9039de035d33b17717b15" category="inline-image-macro">「 Azure の最初のアカウントを示す概念図。カスタムのロールと管理対象 ID を使用して権限を付与します。また、カスタムのロールとサービスプリンシパルを使用して権限を付与するもう 1 つのアカウントも含まれます。」</block>
   <block id="0d613716f3793197f23817b5b3a36ec3" category="paragraph"><block ref="0d613716f3793197f23817b5b3a36ec3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d28e4868b7fcb2d0b7ab54f9d7f7b3c" category="inline-link-macro">アカウントの資格情報をBlueXPに追加します</block>
   <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">そのあとで <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> AD サービスプリンシパルの詳細を指定します。</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">たとえば、新しいCloud Volumes ONTAP 作業環境を作成するときにクレデンシャルを切り替えることができます。</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。Azure MarketplaceからAzureにコネクタを導入したり、独自のLinuxホストにコネクタソフトウェアをインストールしたりすることもできます。</block>
-  <block id="f0e36fc8cdf840530f36b60220f9185b" category="paragraph">Marketplaceを使用する場合は、コネクタVMとシステムによって割り当てられた管理IDにカスタムロールを割り当てることで権限を付与するか、Azure ADサービスプリンシパルを使用できます。</block>
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">オンプレミス展開の場合、コネクタの管理IDを設定することはできませんが、サービスプリンシパルを使用して権限を提供することはできます。</block>
   <block id="53c512e9599c71e1a585d636a5229820" category="list-text">標準モード</block>
   <block id="4275ae61422c34253a59329bd20a0449" category="inline-link-macro">Azure権限を設定する</block>
@@ -1110,13 +1093,9 @@
   <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">コネクタがオンプレミスにインストールされている場合は、この認証方法を使用する必要があります。IAMロールは使用できません。</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">これで、必要な権限を持つIAMユーザのアクセスキーが作成されました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="open-title">Azure</block>
-  <block id="0180cc84ac01ea354335e5e4c42027db" category="paragraph">コネクタをオンプレミスにインストールする場合は、Azure Active Directoryでサービスプリンシパルを設定し、BlueXPに必要なAzureクレデンシャルを取得して、BlueXPにAzure権限を付与する必要があります。</block>
-  <block id="ac572c9e1fee2fbf598102a8524251e8" category="list-title">ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します</block>
   <block id="2189e37a9b7c751d238d4e13fd8f634b" category="list-text">Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。</block>
   <block id="9e0b4c608c2ed027fef07ddc68aae407" category="inline-link">Microsoft Azure のドキュメント：「 Required permissions</block>
-  <block id="c9bae6707a626ab71ed3b97345b5becf" category="list-text">Azure ポータルで、 * Azure Active Directory * サービスを開きます。</block>
   <block id="2edcc284e8171b76333ca90d4cda988f" category="inline-image-macro">は、 Microsoft Azure の Active Directory サービスを示しています。</block>
-  <block id="2947c6ef91b5c925ae2fcec9d7750590" category="paragraph"><block ref="2947c6ef91b5c925ae2fcec9d7750590" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9034af778b085a9440ffcb8389cc4db" category="list-text">アプリケーションの詳細を指定します。</block>
   <block id="46beecb01aa2327ae1886dfc53955977" category="list-text">* 名前 * ：アプリケーションの名前を入力します。</block>
   <block id="c1433d2b36933dc034014d989542d7e9" category="list-text">*アカウントの種類*:アカウントの種類を選択します(すべてのアカウントはBlueXPで動作します)。</block>
@@ -1158,16 +1137,10 @@
   <block id="1e957f13620bb4b87171f37fc42387b1" category="paragraph"><block ref="1e957f13620bb4b87171f37fc42387b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f7cb8eeaecd418d11a034c2be7337f33" category="list-title">アプリケーションのアプリケーションIDとディレクトリIDを取得します</block>
   <block id="e762ce4f71e8abc9d8deee4d4b7277fe" category="list-text">アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。</block>
-  <block id="8fd7e29954792b2ee199fcf4fb0e7dec" category="inline-image-macro">Azure Active Directory 内のアプリケーション（クライアント）の ID とディレクトリ（テナント） ID を示すスクリーンショット。</block>
-  <block id="825a40e15534f0cdcdd95391c6eb18c2" category="paragraph"><block ref="825a40e15534f0cdcdd95391c6eb18c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f49aa80c50bf9d897f387113aee3a15" category="paragraph">AzureアカウントをBlueXPに追加するときは、アプリケーション（クライアント）IDとディレクトリ（テナント）IDを指定する必要があります。BlueXPでは、プログラムでサインインするためにIDが使用されます。</block>
   <block id="3a1ecf20407e16f0524dacb991fefae3" category="list-title">クライアントシークレットを作成します</block>
-  <block id="eeae8e1dd73b92b26863247fdba559d5" category="list-text">Azure Active Directory * サービスを開きます。</block>
   <block id="56c696c4118c8dc3d2947c159fdbbb7c" category="list-text">シークレットと期間の説明を入力します。</block>
   <block id="a91d60261e2974b6b9f5d3d3d0abacdd" category="list-text">クライアントシークレットの値をコピーします。</block>
-  <block id="5a3a4c596a95b6a9851a1c7b6539b0ea" category="inline-image-macro">Azure AD サービスプリンシパルのクライアントシークレットを表示する Azure ポータルのスクリーンショット。</block>
-  <block id="7c5f29026f30af547f4c1e9a0f0854e6" category="paragraph"><block ref="7c5f29026f30af547f4c1e9a0f0854e6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="023ea1edce87fad0b64c3daf1301e63a" category="paragraph">BlueXPでAzure ADの認証に使用するクライアントシークレットが作成されました。</block>
   <block id="62089e33eb517da2e77f2dbae303746e" category="paragraph">これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。</block>
   <block id="b6bbae5bdf4c539603a70f4db19e6b04" category="summary">コネクタをオンプレミスにインストールし、ログインしてBlueXPアカウントと連携するように設定します。</block>
   <block id="1fb392a56edc456b1bc3eddb57b0906b" category="doc">コネクタをオンプレミスにインストールしてセットアップします</block>
@@ -1465,7 +1438,6 @@
   <block id="201a0e8a9a7e1b007b99b4e4c24c017d" category="open-title">Azureサービスプリンシパル</block>
   <block id="e326875367720b38c29c8fa0afd491be" category="paragraph">以前にセットアップしたAzureサービスプリンシパルのクレデンシャルをBlueXPに指定します。</block>
   <block id="58cf09b42fff9dfb526ddbf232538ae2" category="list-text">* 資格情報の場所 * ： Microsoft Azure &gt; Connector * を選択します。</block>
-  <block id="5d1285233566f1379ef88c010de06abc" category="list-text">* クレデンシャルの定義 * ：必要な権限を付与する Azure Active Directory サービスプリンシパルに関する情報を入力します。</block>
   <block id="3612e0e7a44ec38da1e226c618526f91" category="open-title">Google Cloudサービスアカウント</block>
   <block id="4b6fbf3b382ce342b57bbdb4fe0d6baf" category="paragraph">サービスアカウントをコネクタVMに関連付けます。</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">AWS の初期クレデンシャル</block>
@@ -1811,10 +1783,6 @@
   <block id="afd82a1708e69d4da8a44f0cbee4ae9c" category="section-title">NetApp Support Siteのアカウントを更新する必要があります</block>
   <block id="cd9cf4a2a1c115f8da1d3cd4b0b783dd" category="paragraph">2021 年 12 月以降、ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用するようになりました。この更新によって、 Cloud Manager は、以前に追加した既存のNetApp Support Siteのアカウントのクレデンシャルの更新を求めます。</block>
   <block id="a47acc65b2885cddfc6096e5aa5324f7" category="paragraph">NSS アカウントを IDaaS に移行していない場合は、まずアカウントを移行してから、 Cloud Manager でクレデンシャルを更新する必要があります。</block>
-  <block id="d843af49cdcc73f67f6a04467ff7a5b1" category="inline-link-macro">NSS アカウントを新しい認証方法に更新する方法について説明します</block>
-  <block id="39324a4f3b6b149e18eccdfc7337abd7" category="list-text"><block ref="3c862e0ed1419b55d2a034c234cd6671" category="inline-link-macro-rx"></block>。</block>
-  <block id="b48762bb68eb4f8c518d5be6f1c76d16" category="inline-link">ネットアップによるアイデンティティ管理での Microsoft Azure AD の使用方法の詳細については、こちらをご覧ください</block>
-  <block id="d9031e6782c3419c7b81c9c83572daf7" category="list-text"><block ref="d9031e6782c3419c7b81c9c83572daf7" category="inline-link-rx"></block></block>
   <block id="3d0f9c18d87223bbfa0a981f08fc2ba8" category="section-title">Cloud Volumes ONTAP の NSS アカウントを変更します</block>
   <block id="e99f30e825d98bd08033ec588636b5fc" category="paragraph">組織内に複数のNetApp Support Siteのアカウントがある場合、 Cloud Volumes ONTAP システムに関連付けられているアカウントを変更できるようになりました。</block>
   <block id="410c9dea5614a1c565dab22836dac506" category="inline-link-macro">作業環境を別の NSS アカウントに接続する方法について説明します</block>
@@ -2152,7 +2120,6 @@
   <block id="608216b752e1b11f41d17b75b772c3a3" category="paragraph">IAMユーザの権限とアクセスキーを設定します。コネクタをインストールしてBlueXPをセットアップしたら、BlueXPにAWSアクセスキーを指定する必要があります。</block>
   <block id="5850d39c612d40f90f438e324ad5d585" category="paragraph">これで、アカウントに必要な権限が付与されました。</block>
   <block id="e204418b1dd1e0b04b4cf51c3a87d8b4" category="paragraph">必要な権限を持つAzureカスタムロールを作成します。このロールをコネクタVMに割り当てます。</block>
-  <block id="a05caac06592f9dd951208e6ba7ea716" category="paragraph">Azure Active Directoryでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。これらのクレデンシャルは、コネクタをインストールしてBlueXPをセットアップしたあとにBlueXPに提供する必要があります。</block>
   <block id="173005bb35533114a1987fe6db4b3ce0" category="list-title">アプリケーションにカスタムロールを割り当てます</block>
   <block id="0f49f1997355db31e21cf44f968bde0d" category="paragraph">これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。Azureアカウントを追加する場合は、BlueXPでこの情報を入力する必要があります。</block>
   <block id="1ed6266d74ad49161a59212a6ae176ed" category="paragraph">ロールを作成し、コネクタVMインスタンスに使用するサービスアカウントに適用します。</block>
@@ -2243,7 +2210,6 @@
   <block id="f1a3fd4ef355aad263b4de618c67166b" category="section-title">サポートされているIDプロバイダ</block>
   <block id="7d141767127fe81f539e933e77b452bf" category="paragraph">BlueXPは次のIDプロバイダをサポートしています。</block>
   <block id="a07e97604d6d44417ed607f955f75bb4" category="list-text">Security Assertion Markup Language（SAML）アイデンティティプロバイダ</block>
-  <block id="6ed3014fadd3eec5c63b090c750c1377" category="list-text">Microsoft Azure Active Directory（AD）</block>
   <block id="00f7a7902fa21b12c977cbf65a600530" category="list-text">Active Directory フェデレーションサービス（ ADFS ）</block>
   <block id="8be692f2d7f8fe746b9e4a80e973c3ab" category="list-text">PingFederate</block>
   <block id="b3a90c39fbb2a07cca4a396cdcfbcda7" category="paragraph">BlueXPでは、サービスプロバイダ主導（SP主導）のSSOのみがサポートされます。アイデンティティプロバイダが開始する（IdPが開始する）SSOはサポートされていません。</block>
@@ -2291,17 +2257,10 @@
   <block id="77515c9e6cbb6a15e2cb738105271642" category="cell">から接続をテストして有効にします<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block>
 
 接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。</block>
-  <block id="6e9feb3d8b1d2610e025f8bd1e048c93" category="section-title">Microsoft Azure ADの略</block>
-  <block id="fa292d75bd72ae1e1506c8f6c8e39fa3" category="paragraph">BlueXPとAzure ADの間にフェデレーテッド接続を設定するには、大まかに言って次の手順を実行します。</block>
-  <block id="9149dec1c87108fda2f607ad7f9d0f7c" category="paragraph">BlueXPでアイデンティティフェデレーションを有効にするには、Azure Active Directoryを設定します。</block>
-  <block id="a2c2d074b529efb4b812b96b74e02f33" category="inline-link">Azure ADにアプリケーションを登録する手順を表示します</block>
-  <block id="8f916695f0c02d47ca7caf627294b5b2" category="paragraph"><block ref="8f916695f0c02d47ca7caf627294b5b2" category="inline-link-rx"></block></block>
   <block id="ef64c252ec5198cd24bcab0c5b591d8c" category="paragraph">この手順を完了するには、AD管理者から次の情報を入手する必要があります。</block>
   <block id="76525f0f34b48475e5ca33f71d296f3b" category="list-text">クライアント ID</block>
   <block id="797685b539958d3786d560ae97430767" category="list-text">クライアントシークレット値</block>
-  <block id="a5ebf29140e5a70af04c991816638085" category="list-text">Microsoft Azure ADドメイン</block>
   <block id="5b70b2d98b345016c9e69390ea296277" category="admonition">シークレットキーの有効期限をメモします。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。</block>
-  <block id="bcaf1c3aeb49ac35fd670bdcd8cd4946" category="cell">手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用してAzure ADで構成を完了します。</block>
   <block id="d39660f3085c958967d8d820464b4974" category="paragraph">BlueXPとADFSの間にフェデレーテッド接続を設定する手順の概要は次のとおりです。</block>
   <block id="d37e669914774ef1ff275b462c890f08" category="paragraph">BlueXPとのアイデンティティフェデレーションを有効にするようにADFSサーバを設定します。</block>
   <block id="f1b98402afda515a4e3b322603f457af" category="inline-link">Auth0を使用してADFSサーバを構成する手順を表示します</block>
@@ -2605,24 +2564,15 @@
   <block id="4c8e6ab2d23d4298d90b773c324cb53f" category="paragraph">BlueXPからConnectorを展開すると、BlueXPでは、必要な権限を持つシステム割り当ての管理対象IDを仮想マシンで使用できるようになります。Cloud Volumes ONTAP 用の新しい作業環境を作成すると、デフォルトでAzureクレデンシャルが選択されます。</block>
   <block id="960aa67e3f5a73b6b0ebfceb7ad917b1" category="inline-link-macro">Azure のクレデンシャルと権限について説明します</block>
   <block id="85d7d6e9942cf214a95a83e7e69cb42d" category="admonition">既存のシステムに Connector ソフトウェアを手動でインストールした場合、初期クレデンシャルは追加されません。 <block ref="03e7749e48caa10071407ca0a90e6393" category="inline-link-macro-rx"></block>。</block>
-  <block id="59472e728844389989783720db86de5d" category="paragraph">異なる Azure クレデンシャルを使用して Cloud Volumes ONTAP を導入する場合は、 Azure Active Directory でサービスプリンシパルを作成して設定し、必要な権限を付与する必要があります。その後、新しい資格情報をBlueXPに追加できます。</block>
   <block id="6e95efa08c25f0af7a47ce778b6734b5" category="section-title">サービスプリンシパルを使用してAzure権限を付与します</block>
-  <block id="b2998e2e0ef7309b8da02b90df84bd24" category="paragraph">BlueXPには、Azureで処理を実行するための権限が必要です。Azureアカウントに必要な権限を付与するには、Azure Active Directoryでサービスプリンシパルを作成して設定し、BlueXPで必要なAzureクレデンシャルを取得します。</block>
-  <block id="a51a8051417c96e970980b9b28955db7" category="paragraph">次の図は、Azureで処理を実行するための権限をBlueXPが取得する方法を示しています。1つ以上のAzureサブスクリプションに関連付けられたサービスプリンシパルオブジェクトは、Azure Active DirectoryのBlueXPを表し、必要な権限を許可するカスタムロールに割り当てられます。</block>
-  <block id="a842603387c8331a94843de5d982e083" category="inline-image-macro">この概念図は、BlueXPがAPI呼び出しを行う前にAzure Active Directoryから認証と許可を取得する方法を示しています。Active Directoryでは、BlueXPロールが権限を定義します。Azure サブスクリプションと、 Cloud Manger アプリケーションを表すサービスプリンシパルオブジェクトに関連付けています。</block>
-  <block id="36cdb45a5a4d45ce925c965292b1bf5e" category="paragraph"><block ref="36cdb45a5a4d45ce925c965292b1bf5e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="38a91ab5feb97884a3314ce2a24ffe85" category="list-text"><block ref="37b5fab1aa996a2c516511211cb14d49" category="inline-xref-macro-rx"></block>。</block>
   <block id="b5cf760d7a6af85b245fd69703dbf615" category="list-text"><block ref="043a4d29eb639fbbd1f56826dde09f8f" category="inline-xref-macro-rx"></block>。</block>
   <block id="a7fa3c1cd24012fd30c1c780e76ed243" category="list-text"><block ref="64c971bf921f5a3e2106b2880ac38406" category="inline-xref-macro-rx"></block>。</block>
   <block id="1c80a5d7f18a46f8056d76d21087faa4" category="list-text"><block ref="6e43fddc58b77d10342452e0c5f86200" category="inline-xref-macro-rx"></block>。</block>
   <block id="984e49e0fdc61eadd13acdd5613f2579" category="list-text"><block ref="2f8da44aff19ae4d1a810f6d1d618984" category="inline-xref-macro-rx"></block>。</block>
-  <block id="f80027e1697bb881bbd28096ec4eb44d" category="section-title">Azure Active Directory アプリケーションを作成します</block>
-  <block id="bde31a3498404dfaa1dada9308b8c172" category="paragraph">BlueXPでロールベースアクセス制御に使用できるAzure Active Directory（AD）アプリケーションとサービスプリンシパルを作成します。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">作業を開始する前に</block>
   <block id="805d5c27eec50dcf481d2dff37f36287" category="paragraph">Azureで権限を持つように、サービスプリンシパルを1つ以上のAzureサブスクリプションにバインドし、カスタムの「BlueXP Operator」ロールを割り当てる必要があります。</block>
   <block id="10976842fc02803e74db1e7ad1d16d24" category="paragraph">サービスプリンシパルに「 Windows Azure Service Management API 」の権限が必要です。</block>
   <block id="4c8a0043df6fc20c84f393cad42133de" category="section-title">アプリケーション ID とディレクトリ ID を取得します</block>
-  <block id="38551ea5316187f2da6d181a1e614e38" category="paragraph">クライアントシークレットを作成し、BlueXPがこれを使用してAzure ADで認証できるようにシークレットの値をBlueXPに提供する必要があります。</block>
   <block id="6186e185b0ea9b1c5909f6190ea935aa" category="section-title">BlueXPにクレデンシャルを追加します</block>
   <block id="897558c0bcdd42cd68064bdca7591b82" category="paragraph">必要な権限を持つAzureアカウントを入力したら、そのアカウントのクレデンシャルをBlueXPに追加できます。この手順を完了すると、複数の Azure クレデンシャルを使用して Cloud Volumes ONTAP を起動できます。</block>
   <block id="15bb02041f104dbc655746382fa7ea1c" category="paragraph">作成したクレデンシャルをクラウドプロバイダで使用できるようになるまでに数分かかることがあります。数分待ってから、BlueXPに資格情報を追加します。</block>
@@ -2686,7 +2636,6 @@
   <block id="fd5bdaf26d6756bb4ba2d2c659da9808" category="list-text">*パブリックIP *：コネクタVMでパブリックIPアドレスを使用する場合、BlueXPでこのパブリックIPアドレスが確実に使用されるように、そのIPアドレスでBasic SKUを使用する必要があります。</block>
   <block id="0b7c0e66015972c9e3c3e051249db480" category="list-text">*ネットワークセキュリティグループ*：コネクタには、SSH、HTTP、およびHTTPSを使用したインバウンド接続が必要です。</block>
   <block id="92fa0fc1299e55c066d0a19cd22b4e7b" category="list-text">* ID *：* Management *で* Enable system assigned managed identity *を選択します。</block>
-  <block id="76f2625388817626b5d20572023827a8" category="paragraph">管理対象の ID を使用すると、 Connector 仮想マシンはクレデンシャルを指定せずに自身を Azure Active Directory に識別できるため、この設定は重要です。<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
   <block id="2d3bb174766a8cbc78a4d5d0a2739c56" category="paragraph">BlueXPコンソールに初めてアクセスすると、コネクタを関連付けるアカウントを選択するように求められ、制限モードを有効にする必要があります。</block>
   <block id="b22816a3d20c18e89e4ef89984ca5df6" category="inline-link-macro">BlueXPアカウントを追加で作成する方法をご紹介します</block>
   <block id="432f719258fc9e575a2982302eac9cdc" category="admonition">すでにアカウントを持っていて、別のアカウントを作成する場合は、Tenancy APIを使用する必要があります。 <block ref="987610e2980e99ab837daf2502634d0e" category="inline-link-macro-rx"></block>。</block>
@@ -2966,7 +2915,6 @@
   <block id="572a35a7a9ed649cca9ec1cf347c9b9a" category="paragraph">リージョン内のクラウドプロバイダリソースへの接続も必要です。</block>
   <block id="f987da77cc0f6de4634d1fa74f39b8bf" category="list-text">制限モードでは、コネクタはクラウド（政府地域、主権地域、または商業地域）でサポートされます。</block>
   <block id="d4d5e0af068ca8798201df6c91671178" category="list-text">Connectorのインストールは、AWSまたはAzure Marketplaceから行うことも、手動で独自のLinuxホストにインストールすることもできます。</block>
-  <block id="5d2e991218aeae54cc4d2ce0102ec194" category="list-text">ユーザーインターフェイスには、クラウドリージョンにデプロイされているコネクタからアクセスできます。</block>
   <block id="a67215d34dfdabae38d0a7c1f5f4b6cc" category="list-text">認証は、BlueXPのクラウドサービスを通じて、Auth0を使用して行われます。アイデンティティフェデレーションも使用できます。</block>
   <block id="2a4defb74ef42279e0fb8c75b5c452cd" category="list-text">BlueXPでは、制限モードで次のストレージサービスとデータサービスがサポートされます。</block>
   <block id="ea22f9957523103248d84695e98b17ba" category="cell">サポートされるサービス</block>
@@ -3077,7 +3025,6 @@
   <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">ネットアップクラウドクレデンシャル：パスワードを入力します</block>
   <block id="a02705346febd77df5680fe2f12343a9" category="list-text">フェデレーテッドユーザ：フェデレーテッドアイデンティティクレデンシャルを入力します</block>
   <block id="24bdc2b22d38abff9ff97a9c5b5e7966" category="list-text">NetApp Support Site アカウント：NetApp Support Site クレデンシャルを入力します</block>
-  <block id="e3e02b70df514c22082124328763d018" category="list-text">Azure AD サービスプリンシパルの詳細を指定します。このサービスプリンシパルには、特定の権限も必要です。</block>
   <block id="fdf818accfe04434a4c9fd9ccfe6d56c" category="list-text">Azureの新しいカスタムロールに必要な権限をコピーし、JSONファイルに保存します。</block>
   <block id="6beeae0bdc78c57583db2029e3f5c09d" category="list-text">JSONを変更して、割り当て可能な範囲にAzureサブスクリプションIDを追加します。</block>
   <block id="6d3e63abb9fe9c98dbe6a99d8a196043" category="list-text">Azure CLI で次のコマンドを入力します。</block>
@@ -3087,7 +3034,6 @@
   <block id="4cca684df8c889c784e30e6f0215cff5" category="admonition">Azure SetupAsServiceは、Azureのコネクタ導入ポリシーで指定されているデフォルトの名前です。ロールに別の名前を選択した場合は、代わりにその名前を選択します。</block>
   <block id="f6d4189bf00021bb75f4f2f5b11507bf" category="paragraph">これで、Azureユーザには、BlueXPからConnectorを導入するために必要な権限が付与されました。</block>
   <block id="d9a4ebb1284c84465eac2a20b8331523" category="paragraph">Azureアカウントでログインする代わりに、必要な権限を持つAzureサービスプリンシパルのクレデンシャルをBlueXPに指定できます。</block>
-  <block id="f7f4921534d4730228a1def336cce565" category="paragraph">Azure Active Directoryでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。</block>
   <block id="26f0c6c76fbc2f0b096a4ff32489120c" category="paragraph">これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。コネクタを作成するときに、BlueXPでこの情報を入力する必要があります。</block>
   <block id="0d1f9ac2ac0f76a6809ba58855ffa7f5" category="list-text">オプション1：システム割り当ての管理IDを使用して、Azure VMにカスタムロールを割り当てます。</block>
   <block id="d31f2fb13b2fed83440a04d526a6ca7d" category="list-text">オプション2：必要な権限を持つAzureサービスプリンシパルのクレデンシャルをBlueXPに提供します。</block>
@@ -3116,12 +3062,6 @@
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参照</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">権限の概要</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
-  <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">導入モードについて説明します</block>
-  <block id="c8aded93abddb2318a41b08cba739012" category="sidebar">コネクタを管理します</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXPブログ</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="cell">持続可能性</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023年7月2日</block>
   <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">コネクタ3.9.31</block>
@@ -3261,7 +3201,6 @@
   <block id="ce2590ec8b406b42ba7a670543c8ab81" category="list-text">アプリケーションを選択し、*選択*を選択します。</block>
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">「 * 次へ * 」を選択します。</block>
   <block id="85b8cec39bdb05ec73cd076b2359cfd1" category="list-text">[Review + Assign]*を選択します。</block>
-  <block id="9993d6f6284200668a6f4c51df9812da" category="list-text">Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。</block>
   <block id="69dc2d1327bf480b016b4aed7cd7d900" category="list-text">[API permissions]&gt;[Add a permission]*を選択します。</block>
   <block id="4477be44a064848adbf1b5f50428e0cd" category="list-text">[Access Azure Service Management as organization users]*を選択し、*[Add permissions]*を選択します。</block>
   <block id="39ec83d3cc8c12b784bf30f64700b168" category="list-text">*アプリ登録*を選択し、アプリケーションを選択します。</block>
@@ -3568,7 +3507,6 @@ deploymentmanager. editor</block>
   <block id="a0d5fffa896034a79c127d53a34685b7" category="list-text"><block ref="a0d5fffa896034a79c127d53a34685b7" category="inline-link-macro-rx"></block></block>
   <block id="8ce9c61f5e14fb093fdb6cc132fb3103" category="summary">BlueXPからAzureでコネクタを作成するには、ネットワークを設定し、Azureの権限を準備してから、コネクタを作成する必要があります。</block>
   <block id="383a4f176227e611b43fffaef447cf94" category="section-title">手順2：カスタムロールを作成する</block>
-  <block id="568a7904f89eda5a0e1ad00f19631224" category="paragraph">AzureアカウントまたはAzure ADサービスプリンシパルに割り当てることができるAzureカスタムロールを作成します。BlueXPはAzureで認証し、これらの権限を使用してコネクタインスタンスを作成します。</block>
   <block id="93017c2ae371dc5a19be6e0cce08ab5a" category="section-title">手順3：認証を設定する</block>
   <block id="a29efb5754bb36ee62d4a2e17c5e5717" category="list-text">プロンプトが表示されたら、Azureアカウントでサインインします。このアカウントには Azure 固有の権限が必要です。これがデフォルトのオプションです。</block>
   <block id="fbb7d70eda793afc4159d1bd8f3c3814" category="paragraph">次の手順に従って、いずれかの認証方式をBlueXPで使用できるように準備します。</block>
@@ -3734,22 +3672,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="ee06369b39630f4fbf14829266d40a91" category="paragraph">プライベートモードは通常、インターネットに接続されていないオンプレミス環境や、次のようなセキュアなクラウドリージョンで使用されます。<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>、<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>および<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="a95e947d8a886ad72a7cea0e895006fd" category="paragraph">制限モードは通常、州政府や地方自治体、規制対象の企業（AWS GovCloudリージョンやAzure Governmentリージョンへの導入を含む）で使用されます。開始する前に、次のことを理解しておく必要があります。 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>、 <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>および <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
   <block id="c2a3212cb98f382140fb5a23af1c6063" category="paragraph">標準モードでは、WebベースのコンソールからクラウドサービスとしてBlueXPにアクセスできます。開始する前に、次のことを理解しておく必要があります。 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>、 <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>および <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
-  <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">AWS権限の表示</block>
-  <block id="b7053c5f835c45d38cf071449c74fd56" category="sidebar">Azure権限を表示</block>
-  <block id="7050d365baa220c42a688cbf36a7e997" category="sidebar">Google Cloudの権限を表示</block>
-  <block id="891c5b2cea54480f0e1abb74959457a6" category="sidebar">標準のAWSリージョンで開始する</block>
-  <block id="e766f31fe70a68c11b8631144211d0f7" category="sidebar">AWS GovCloudリージョンで開始する</block>
-  <block id="9722aa95875a94430d4569d2e8bd2382" category="sidebar">AWS SecretまたはTop Secret Cloudの利用を開始</block>
-  <block id="e55aba8c57180a56450db886ecd8232e" category="sidebar">コネクタのIAMポリシーを表示する</block>
-  <block id="27c705176bc1f05cf50771b1f8fe182a" category="sidebar">標準のAzureリージョンで開始する</block>
-  <block id="60563f8b2620e88ac71d1a98ee73e2e5" category="sidebar">Azure Governmentリージョンで開始する</block>
-  <block id="31b63be41ae4657f9e340188aa268589" category="sidebar">Azureで開始するIL6</block>
-  <block id="3dbdf7d7951b212ca0000f0027184bb8" category="sidebar">コネクタのカスタムロールを表示する</block>
-  <block id="6c3328ab0a2ccaa273efaec9a88e2751" category="sidebar">Google Cloudの標準リージョンで開始する</block>
-  <block id="6844a754c2b209da7ac4949824ac467d" category="sidebar">コネクタのサービスアカウントを表示する</block>
-  <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">標準モードでのコネクタの取り付けとセットアップ</block>
-  <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">プライベートモードでのコネクタのインストールとセットアップ</block>
-  <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">ログインしています</block>
   <block id="337e8febb8ac96133c86a51cd7bc0240" category="summary">BlueXPがAzureクレデンシャルを使用してユーザに代わってアクションを実行する方法と、それらのクレデンシャルがマーケットプレイスのサブスクリプションにどのように関連付けられているかをご確認くださいこれらの詳細を理解しておくと、1つ以上のAzureサブスクリプションのクレデンシャルを管理する際に役立ちます。たとえば、AzureクレデンシャルをBlueXPに追加するタイミングを確認できます。</block>
   <block id="3bf21bdc87a8f6ebde5b75e8cb0d5138" category="section-title">クレデンシャルとマーケットプレイスのサブスクリプション</block>
   <block id="b1e32c999d336fb505915de8a8ffca55" category="paragraph">Cloud Volumes ONTAPの料金を時間単位（PAYGO）または年間契約で支払い、その他のBlueXPサービスを使用できるようにするには、Connectorに追加するクレデンシャルをAzure Marketplaceサブスクリプションに関連付ける必要があります。</block>
@@ -3862,4 +3784,52 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="fa0738e12b2324073fa9b5f91af71e48" category="cell">はい。
 
 <block ref="42dbd2df9d57eeeb664cce05b5a35bf1" category="inline-link-rx"></block></block>
+  <block id="ceff1e7e9afd603be2687369aac73bb6" category="paragraph">管理されたIDを使用すると、コネクタ仮想マシンは資格情報を提供せずにMicrosoft Entra IDに対して自身を識別できるため、この設定は重要です。<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
+  <block id="10d9864d222fd249479246f9c50df58c" category="list-text">*資格情報の定義*:必要な権限を付与するMicrosoft Entraサービスプリンシパルに関する情報を入力します。</block>
+  <block id="9c0e62a86b9fe558cad9c4d280ea439d" category="list-text">NTPを有効にする</block>
+  <block id="726d1cad4d0527532460d1a853919ebc" category="inline-link">BlueXPの分類の詳細については、こちらをご覧ください</block>
+  <block id="aa58ae713abe4e1f7b639f232b2814b8" category="list-text">BlueXP分類を使用して企業データソースをスキャンする場合は、システム間で時刻が同期されるように、BlueXP ConnectorシステムとBlueXP分類システムの両方でネットワークタイムプロトコル（NTP）サービスを有効にする必要があります。<block ref="f37549d88d23259dc9470e2f2bfbbbf0" category="inline-link-rx"></block></block>
+  <block id="9ed6715eace733ae6dc526b52a03058e" category="paragraph">コネクタを作成した後で、このネットワーク要件を実装する必要があります。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetAppでは、サポートとライセンスに固有の認証サービスのIDプロバイダとしてMicrosoftエントラIDを使用します。</block>
+  <block id="dfec517d439938ca1ef24de3972ed1d6" category="paragraph">この機能は、ID管理にNetAppが採用したMicrosoftエントラIDを使用するように設定されたNSSアカウントでのみサポートされます。この機能を使用する前に、* NSSアカウントの追加*または*アカウントの更新*を選択する必要があります。</block>
+  <block id="a5b46ae1ec2ad5287349444529a0b53c" category="paragraph">NetApp Support Siteアカウントで認証サービスにMicrosoft Entra IDが使用されるようになったため、BlueXPに表示されるNSSユーザ名は通常、Microsoft Entraによって生成された識別子です。そのため、そのアカウントに関連付けられている E メールアドレスがすぐにわからない場合があります。しかし、BlueXPには、関連するメールアドレスを表示するオプションがあります。</block>
+  <block id="009cf1f7b9b15240104b17e10bb20e3a" category="paragraph">Microsoft Entra IDでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。</block>
+  <block id="20a548e155064dfebc2cf8e9a74ab489" category="list-title">ロールベースアクセス制御用のMicrosoft Entraアプリケーションの作成</block>
+  <block id="3acc75f616414df16724fc2f4fe192eb" category="list-text">Azureポータルで、* Microsoft Entra ID *サービスを開きます。</block>
+  <block id="ef37e6517cca469b358f0c04ca3cf119" category="paragraph"><block ref="ef37e6517cca469b358f0c04ca3cf119" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8427c98ccc673304dbaa4bf3fd3975a1" category="list-text">Microsoft Entra ID *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。</block>
+  <block id="0e9983a04d343289b5ae2931f37d22a2" category="inline-image-macro">Microsoft Entra IDYのアプリケーションのアプリケーション（クライアント）IDとディレクトリ（テナント）IDを示すスクリーンショット。</block>
+  <block id="5f3a0546e3f6705a50269404106d5aba" category="paragraph"><block ref="5f3a0546e3f6705a50269404106d5aba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0540893171fcc820664625cbbe23e031" category="list-text">Microsoft Entra ID *サービスを開きます。</block>
+  <block id="9056be4df2e385c15b0e73176bcf8af3" category="inline-image-macro">Microsoft Entraサービスプリンシパルのクライアントシークレットを示すAzureポータルのスクリーンショット。</block>
+  <block id="bc061266b02f85e444a9b5ae50e1a3fd" category="paragraph"><block ref="bc061266b02f85e444a9b5ae50e1a3fd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b750da0ca2dca4110c6636dcb1ebbe6f" category="paragraph">BlueXPでクライアントシークレットを使用してMicrosoft Entra IDで認証できるようになりました。</block>
+  <block id="93f1f0c1ede8583ffa25159579861501" category="inline-link">ネットアップによるID管理にMicrosoft Azure Active Directoryを使用する方法の詳細</block>
+  <block id="b17de28cfe26993460dbe87832a64b2e" category="paragraph"><block ref="b17de28cfe26993460dbe87832a64b2e" category="inline-link-rx"></block></block>
+  <block id="8b0acfdcefc686d1057ba6e0a6e5660e" category="paragraph">コネクタをオンプレミスにインストールする場合は、Microsoft Entra IDでサービスプリンシパルを設定し、BlueXPに必要なAzureクレデンシャルを取得して、BlueXPにAzure権限を付与する必要があります。</block>
+  <block id="33a300827c19fa9f3bf7b47e8b880c1a" category="paragraph">AzureアカウントまたはMicrosoft Entraサービスプリンシパルに割り当てることができるAzureカスタムロールを作成します。BlueXPはAzureで認証し、これらの権限を使用してコネクタインスタンスを作成します。</block>
+  <block id="4dc29cf7d5ceac3415d2828b1afce709" category="list-text">Microsoft Entraサービスプリンシパルの詳細を入力します。このサービスプリンシパルには、特定の権限も必要です。</block>
+  <block id="b4dba39cc2b8d5c6f4a03822fd76264e" category="list-text">[Active Directory service principal]*を選択して、必要な権限を付与するMicrosoft Entraサービスプリンシパルに関する情報を入力します。</block>
+  <block id="7f29dd2bb0d156a9d6d9989b5778daa2" category="paragraph">クラウドプロバイダーのマーケットプレイスからコネクタを作成する場合は、コネクタの作成後にこのネットワーク要件を実装する必要があります。</block>
+  <block id="b8209f3a8b56fd0a82dda548b64e89ef" category="paragraph">Microsoft Entra IDでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。これらのクレデンシャルは、コネクタをインストールしてBlueXPをセットアップしたあとにBlueXPに提供する必要があります。</block>
+  <block id="861b0fb25af072735ec514d20fc89dcf" category="list-text">ユーザーインターフェイスには、クラウドリージョンに導入されているコネクタ仮想マシンからアクセスできます。</block>
+  <block id="22b4db6594130f0f35e22d0a9f00512b" category="paragraph">_different_azureクレデンシャルを使用してCloud Volumes ONTAPを導入する場合は、各AzureアカウントのMicrosoft Entra IDでサービスプリンシパルを作成して設定し、必要な権限を付与する必要があります。その後、新しい資格情報をBlueXPに追加できます。</block>
+  <block id="5c1680223b4715618aa00772c8cde483" category="paragraph">BlueXPには、Azureで処理を実行するための権限が必要です。Azureアカウントに必要な権限を付与するには、Microsoft Entra IDでサービスプリンシパルを作成して設定し、BlueXPに必要なAzureクレデンシャルを取得します。</block>
+  <block id="fe5c910b24c178432f88a8f6c9bff2f8" category="paragraph">次の図は、Azureで処理を実行するための権限をBlueXPが取得する方法を示しています。1つ以上のAzureサブスクリプションに関連付けられたサービスプリンシパルオブジェクトは、Microsoft Entra IDではBlueXPを表し、必要な権限を許可するカスタムロールに割り当てられます。</block>
+  <block id="7afd1b01e02546b27e413c581edae96f" category="inline-image-macro">この概念図は、BlueXPがAPI呼び出しを行う前にMicrosoft Entra IDから認証と許可を取得する方法を示しています。Active Directoryでは、BlueXPロールが権限を定義します。Azure サブスクリプションと、 Cloud Manger アプリケーションを表すサービスプリンシパルオブジェクトに関連付けています。</block>
+  <block id="6d78ad58e10567f5ec4210ab631a73a7" category="paragraph"><block ref="6d78ad58e10567f5ec4210ab631a73a7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f2ef9d77d1510f334154dfe7d165c04f" category="list-text"><block ref="f6c5720bdbe1f9f8e6fbf04de7a942ac" category="inline-xref-macro-rx"></block>。</block>
+  <block id="6a9a84396b26e1101ebf5eac3a9595ed" category="section-title">Microsoft Entraアプリケーションの作成</block>
+  <block id="1e6c9b3850b2a8aff77429d3da407ad1" category="paragraph">BlueXPでロールベースアクセス制御に使用できるMicrosoft Entraアプリケーションとサービスプリンシパルを作成します。</block>
+  <block id="de44ed3c24fd21ff1cd5065625a6d78e" category="paragraph">クライアントシークレットを作成し、そのシークレットの値をBlueXPに提供して、BlueXPがMicrosoft Entra IDで認証できるようにする必要があります。</block>
+  <block id="4df90909cc2d04997870c4949a39d14b" category="list-text">MicrosoftエントラID</block>
+  <block id="f03abb60d67394fd935c0b64f6d1c3c1" category="paragraph">概して、BlueXPとMicrosoft Entra IDの間にフェデレーテッド接続を設定する手順は次のとおりです。</block>
+  <block id="4d78a4f82051c51790a4d6a1b19d7bf4" category="paragraph">BlueXPでアイデンティティフェデレーションを有効にするには、Microsoft Entra IDを設定します。</block>
+  <block id="91b6e8c144e0b0c26485c1d90cdf8e9b" category="inline-link">Microsoft Entra IDにアプリケーションを登録する手順を表示する</block>
+  <block id="f56344318e894c9b20e07a08f6a512c3" category="paragraph"><block ref="f56344318e894c9b20e07a08f6a512c3" category="inline-link-rx"></block></block>
+  <block id="b1b357376edc356774ec099bb39e65b7" category="list-text">Microsoft Entra IDドメイン</block>
+  <block id="bcf96e38858d09ccb3d335e0944d8a4a" category="cell">手順2が完了したら、[フェデレーションセットアップ]ページに表示されているパラメータを使用して、Microsoft Entra IDで設定を完了します。</block>
+  <block id="b63eb36e7e2e258bb1104cee2cd67c79" category="inline-link-macro">Microsoft Entra IDでのサービスプリンシパルの作成と設定</block>
+  <block id="3c648c2bdafb5df126cd7d0e3dfcad8a" category="paragraph">BlueXPで別のAzureクレデンシャルを使用する場合は、で必要な権限を付与する必要があります <block ref="45c7e71be639d18293cd100d389b6dc3" category="inline-link-macro-rx"></block> を Azure アカウントごとに用意します。次の図は、 2 つの追加アカウントを示しています。各アカウントには、権限を提供するサービスプリンシパルとカスタムロールが設定されています。</block>
+  <block id="66106267dde1c941a1fde19110f5e949" category="paragraph">Marketplaceを使用する場合は、コネクタVMとシステムによって割り当てられた管理IDにカスタムロールを割り当てることで権限を付与することも、Microsoft Entraサービスプリンシパルを使用することもできます。</block>
 </blocks>

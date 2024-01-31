@@ -141,11 +141,19 @@ Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するた�
 --
 
 
+NTPを有効にする:: BlueXP分類を使用して企業データソースをスキャンする場合は、システム間で時刻が同期されるように、BlueXP ConnectorシステムとBlueXP分類システムの両方でネットワークタイムプロトコル（NTP）サービスを有効にする必要があります。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
++
+--
+コネクタを作成した後で、このネットワーク要件を実装する必要があります。
+
+--
+
+
 
 
 == 手順2：カスタムロールを作成する
 
-AzureアカウントまたはAzure ADサービスプリンシパルに割り当てることができるAzureカスタムロールを作成します。BlueXPはAzureで認証し、これらの権限を使用してコネクタインスタンスを作成します。
+AzureアカウントまたはMicrosoft Entraサービスプリンシパルに割り当てることができるAzureカスタムロールを作成します。BlueXPはAzureで認証し、これらの権限を使用してコネクタインスタンスを作成します。
 
 Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
 
@@ -266,7 +274,7 @@ az role definition create --role-definition Policy_for_Setup_As_Service_Azure.js
 BlueXPからコネクタを作成するときは、BlueXPがAzureで認証してVMを導入するためのログインを指定する必要があります。次の 2 つのオプションがあります。
 
 . プロンプトが表示されたら、Azureアカウントでサインインします。このアカウントには Azure 固有の権限が必要です。これがデフォルトのオプションです。
-. Azure AD サービスプリンシパルの詳細を指定します。このサービスプリンシパルには、特定の権限も必要です。
+. Microsoft Entraサービスプリンシパルの詳細を入力します。このサービスプリンシパルには、特定の権限も必要です。
 
 
 次の手順に従って、いずれかの認証方式をBlueXPで使用できるように準備します。
@@ -303,16 +311,16 @@ NOTE: Azure SetupAsServiceは、Azureのコネクタ導入ポリシーで指定�
 --
 Azureアカウントでログインする代わりに、必要な権限を持つAzureサービスプリンシパルのクレデンシャルをBlueXPに指定できます。
 
-Azure Active Directoryでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。
+Microsoft Entra IDでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。
 
-.ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
+.ロールベースアクセス制御用のMicrosoft Entraアプリケーションの作成
 . Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
 +
 詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]
 
-. Azure ポータルで、 * Azure Active Directory * サービスを開きます。
+. Azureポータルで、* Microsoft Entra ID *サービスを開きます。
 +
-image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サービスを示しています。"]
+image:screenshot_azure_ad.png["は、 Microsoft Azure の Active Directory サービスを示しています。"]
 
 . メニューで*アプリ登録*を選択します。
 . [New registration]*を選択します。
@@ -362,7 +370,7 @@ image:screenshot_azure_service_principal_role.png["Azure ポータルのスク�
 
 
 .Windows Azure Service Management API 権限を追加します
-. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
+. Microsoft Entra ID *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
 . [API permissions]>[Add a permission]*を選択します。
 . Microsoft API* で、 * Azure Service Management * を選択します。
 +
@@ -375,10 +383,10 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API �
 
 
 .アプリケーションのアプリケーションIDとディレクトリIDを取得します
-. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
+. Microsoft Entra ID *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
 . アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。
 +
-image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケーション（クライアント）の ID とディレクトリ（テナント） ID を示すスクリーンショット。"]
+image:screenshot_azure_app_ids.gif["Microsoft Entra IDYのアプリケーションのアプリケーション（クライアント）IDとディレクトリ（テナント）IDを示すスクリーンショット。"]
 
 +
 AzureアカウントをBlueXPに追加するときは、アプリケーション（クライアント）IDとディレクトリ（テナント）IDを指定する必要があります。BlueXPでは、プログラムでサインインするためにIDが使用されます。
@@ -386,17 +394,17 @@ AzureアカウントをBlueXPに追加するときは、アプリケーション
 
 
 .クライアントシークレットを作成します
-. Azure Active Directory * サービスを開きます。
+. Microsoft Entra ID *サービスを開きます。
 . *アプリ登録*を選択し、アプリケーションを選択します。
 . [Certificates & secrets]>[New client secret]*を選択します。
 . シークレットと期間の説明を入力します。
 . 「 * 追加」を選択します。
 . クライアントシークレットの値をコピーします。
 +
-image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパルのクライアントシークレットを表示する Azure ポータルのスクリーンショット。"]
+image:screenshot_azure_client_secret.gif["Microsoft Entraサービスプリンシパルのクライアントシークレットを示すAzureポータルのスクリーンショット。"]
 
 +
-BlueXPでAzure ADの認証に使用するクライアントシークレットが作成されました。
+BlueXPでクライアントシークレットを使用してMicrosoft Entra IDで認証できるようになりました。
 
 
 
@@ -454,7 +462,7 @@ image:screenshot_connector_add.gif["ヘッダーのコネクターアイコン�
 
 TIP: すでにAzureアカウントにログインしている場合は、BlueXPによって自動的にそのアカウントが使用されます。アカウントが複数ある場合は、適切なアカウントを使用するために、最初にログアウトする必要があります。
 
-*** [Active Directory service principal]*を選択して、必要な権限を付与するAzure Active Directoryサービスプリンシパルに関する情報を入力します。
+*** [Active Directory service principal]*を選択して、必要な権限を付与するMicrosoft Entraサービスプリンシパルに関する情報を入力します。
 +
 **** アプリケーション（クライアント）ID
 **** ディレクトリ（テナント）ID

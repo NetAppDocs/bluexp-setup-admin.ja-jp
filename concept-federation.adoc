@@ -56,7 +56,7 @@ image:diagram-identity-federation.png["BlueXPで認証しているユーザと�
 BlueXPは次のIDプロバイダをサポートしています。
 
 * Security Assertion Markup Language（SAML）アイデンティティプロバイダ
-* Microsoft Azure Active Directory（AD）
+* MicrosoftエントラID
 * Active Directory フェデレーションサービス（ ADFS ）
 * PingFederate
 
@@ -129,9 +129,9 @@ NOTE: 証明書の有効期限をメモします。[フェデレーションセ�
 |===
 
 
-=== Microsoft Azure ADの略
+=== MicrosoftエントラID
 
-BlueXPとAzure ADの間にフェデレーテッド接続を設定するには、大まかに言って次の手順を実行します。
+概して、BlueXPとMicrosoft Entra IDの間にフェデレーテッド接続を設定する手順は次のとおりです。
 
 [cols="10,15,75"]
 |===
@@ -139,9 +139,9 @@ BlueXPとAzure ADの間にフェデレーテッド接続を設定するには、
 
 
 | 1. | AD管理者  a| 
-BlueXPでアイデンティティフェデレーションを有効にするには、Azure Active Directoryを設定します。
+BlueXPでアイデンティティフェデレーションを有効にするには、Microsoft Entra IDを設定します。
 
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Azure ADにアプリケーションを登録する手順を表示します"^]
+https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Microsoft Entra IDにアプリケーションを登録する手順を表示する"^]
 
 
 TIP: DO_NOT_Auth0で接続を作成する方法を説明する手順を完了します。この接続は次のステップで作成します。
@@ -155,7 +155,7 @@ TIP: DO_NOT_Auth0で接続を作成する方法を説明する手順を完了し
 
 * クライアント ID
 * クライアントシークレット値
-* Microsoft Azure ADドメイン
+* Microsoft Entra IDドメイン
 
 
 この情報を使用して接続を作成すると、[フェデレーションセットアップ]ページに、次の手順で設定を完了するためにAD管理者に送信できるパラメータが一覧表示されます。
@@ -165,7 +165,7 @@ NOTE: シークレットキーの有効期限をメモします。[フェデレ�
 
 
 
-| 3. | AD管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用してAzure ADで構成を完了します。 
+| 3. | AD管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されているパラメータを使用して、Microsoft Entra IDで設定を完了します。 
 
 
 | 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]

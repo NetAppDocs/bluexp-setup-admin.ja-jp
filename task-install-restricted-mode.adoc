@@ -192,7 +192,7 @@ link:reference-ports-azure.html["Azureのセキュリティグループルール
 
 ** * ID *：* Management *で* Enable system assigned managed identity *を選択します。
 +
-管理対象の ID を使用すると、 Connector 仮想マシンはクレデンシャルを指定せずに自身を Azure Active Directory に識別できるため、この設定は重要です。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Azure リソース用の管理対象 ID の詳細については、こちらをご覧ください"^]。
+管理されたIDを使用すると、コネクタ仮想マシンは資格情報を提供せずにMicrosoft Entra IDに対して自身を識別できるため、この設定は重要です。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Azure リソース用の管理対象 ID の詳細については、こちらをご覧ください"^]。
 
 
 
@@ -440,7 +440,7 @@ image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設�
 . [クレデンシャルの追加]*を選択し、ウィザードの手順に従います。
 +
 .. * 資格情報の場所 * ： Microsoft Azure > Connector * を選択します。
-.. * クレデンシャルの定義 * ：必要な権限を付与する Azure Active Directory サービスプリンシパルに関する情報を入力します。
+.. *資格情報の定義*:必要な権限を付与するMicrosoft Entraサービスプリンシパルに関する情報を入力します。
 +
 *** アプリケーション（クライアント）ID
 *** ディレクトリ（テナント）ID

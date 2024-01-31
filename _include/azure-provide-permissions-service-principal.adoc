@@ -9,7 +9,7 @@ image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設�
 . [クレデンシャルの追加]*を選択し、ウィザードの手順に従います。
 +
 .. * 資格情報の場所 * ： Microsoft Azure > Connector * を選択します。
-.. * クレデンシャルの定義 * ：必要な権限を付与する Azure Active Directory サービスプリンシパルに関する情報を入力します。
+.. *資格情報の定義*:必要な権限を付与するMicrosoft Entraサービスプリンシパルに関する情報を入力します。
 +
 *** アプリケーション（クライアント）ID
 *** ディレクトリ（テナント）ID

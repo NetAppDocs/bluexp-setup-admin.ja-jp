@@ -128,6 +128,14 @@ Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するた�
 --
 
 
+NTPを有効にする:: BlueXP分類を使用して企業データソースをスキャンする場合は、システム間で時刻が同期されるように、BlueXP ConnectorシステムとBlueXP分類システムの両方でネットワークタイムプロトコル（NTP）サービスを有効にする必要があります。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
++
+--
+コネクタを作成した後で、このネットワーク要件を実装する必要があります。
+
+--
+
+
 
 
 == 手順2：AWS権限を設定する

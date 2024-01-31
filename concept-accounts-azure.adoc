@@ -42,7 +42,7 @@ image:screenshot_accounts_select_azure.gif["[Details  Credentials]ページの[S
 
 == Azure の追加クレデンシャル
 
-BlueXPで別のAzureクレデンシャルを使用する場合は、で必要な権限を付与する必要があります link:task-adding-azure-accounts.html["Azure Active でサービスプリンシパルを作成およびセットアップする ディレクトリ"] を Azure アカウントごとに用意します。次の図は、 2 つの追加アカウントを示しています。各アカウントには、権限を提供するサービスプリンシパルとカスタムロールが設定されています。
+BlueXPで別のAzureクレデンシャルを使用する場合は、で必要な権限を付与する必要があります link:task-adding-azure-accounts.html["Microsoft Entra IDでのサービスプリンシパルの作成と設定"] を Azure アカウントごとに用意します。次の図は、 2 つの追加アカウントを示しています。各アカウントには、権限を提供するサービスプリンシパルとカスタムロールが設定されています。
 
 image:diagram_permissions_multiple_azure.png["「 Azure の最初のアカウントを示す概念図。カスタムのロールと管理対象 ID を使用して権限を付与します。また、カスタムのロールとサービスプリンシパルを使用して権限を付与するもう 1 つのアカウントも含まれます。」"]
 
@@ -100,7 +100,7 @@ link:task-adding-azure-accounts.html#subscribe["Azureサブスクリプション
 
 上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。Azure MarketplaceからAzureにコネクタを導入したり、独自のLinuxホストにコネクタソフトウェアをインストールしたりすることもできます。
 
-Marketplaceを使用する場合は、コネクタVMとシステムによって割り当てられた管理IDにカスタムロールを割り当てることで権限を付与するか、Azure ADサービスプリンシパルを使用できます。
+Marketplaceを使用する場合は、コネクタVMとシステムによって割り当てられた管理IDにカスタムロールを割り当てることで権限を付与することも、Microsoft Entraサービスプリンシパルを使用することもできます。
 
 オンプレミス展開の場合、コネクタの管理IDを設定することはできませんが、サービスプリンシパルを使用して権限を提供することはできます。
 

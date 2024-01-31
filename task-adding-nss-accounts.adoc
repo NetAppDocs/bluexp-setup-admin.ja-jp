@@ -56,7 +56,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 . [NSS Management]>[Add NSS Account]*を選択します。
 . プロンプトが表示されたら、*続行*を選択してMicrosoftログインページにリダイレクトします。
 +
-ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。
+NetAppでは、サポートとライセンスに固有の認証サービスのIDプロバイダとしてMicrosoftエントラIDを使用します。
 
 . ログインページで、NetApp Support Siteの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
 +
@@ -97,32 +97,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 
 
 
-== NSS アカウントを更新して新しい認証方法を適用します
-
-2021 年 11 月以降、ネットアップはサポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用します。この更新プログラムの結果、以前に追加した既存のアカウントの資格情報を更新するように求められます。
-
-.手順
-. まだ行っていない場合は、 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Microsoft Azure Active Directory B2Cアカウントを作成します。このアカウントは現在のBlueXPアカウントにリンクされます"^]。
-. BlueXPコンソールの右上で、[ヘルプ]アイコンを選択し、*[サポート]*を選択します。
-. [NSS Management]*を選択します。
-. 更新するNSSアカウントの*[アカウントの更新]*を選択します。
-+
-image:screenshot-nss-update-account.png["［ アカウントの更新 ］ オプションを示すスクリーンショット"]
-
-. プロンプトが表示されたら、*続行*を選択してMicrosoftログインページにリダイレクトします。
-+
-ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。
-
-. ログインページで、NetApp Support Siteの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
-+
-処理が完了したら、更新したアカウントが表に _new_account として表示されるようになります。古いバージョンのアカウントは ' 既存の作業環境の関連付けとともにテーブルに表示されます
-
-. 既存の Cloud Volumes ONTAP 作業環境が古いバージョンのアカウントに接続されている場合は、次の手順に従ってください <<作業環境を別の NSS アカウントに接続します,それらの作業環境を別の NSS アカウントに接続します>>。
-. 古いバージョンのNSSアカウントに移動し、を選択します image:icon-action.png["横方向の 3 つの点を示すアイコン"] 次に、 * Delete * を選択します。
-
-
-
-
 == NSS クレデンシャルを更新します
 
 次のいずれかの場合は、BlueXPでNSSアカウントの資格情報を更新する必要があります。
@@ -140,7 +114,7 @@ image:screenshot-nss-update-credentials.png["NetApp Support Siteのアカウン�
 
 . プロンプトが表示されたら、*続行*を選択してMicrosoftログインページにリダイレクトします。
 +
-ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。
+NetAppでは、サポートとライセンスに固有の認証サービスのIDプロバイダとしてMicrosoftエントラIDを使用します。
 
 . ログインページで、NetApp Support Siteの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。
 
@@ -151,7 +125,7 @@ image:screenshot-nss-update-credentials.png["NetApp Support Siteのアカウン�
 
 組織に複数のNetApp Support Siteのアカウントがある場合、 Cloud Volumes ONTAP システムに関連付けられているアカウントを変更することができます。
 
-この機能は、ネットアップがアイデンティティ管理に導入した Microsoft Azure AD を使用するように設定された NSS アカウントでのみサポートされます。この機能を使用する前に、* NSSアカウントの追加*または*アカウントの更新*を選択する必要があります。
+この機能は、ID管理にNetAppが採用したMicrosoftエントラIDを使用するように設定されたNSSアカウントでのみサポートされます。この機能を使用する前に、* NSSアカウントの追加*または*アカウントの更新*を選択する必要があります。
 
 .手順
 . BlueXPコンソールの右上で、[ヘルプ]アイコンを選択し、*[サポート]*を選択します。
@@ -173,7 +147,7 @@ image:screenshot-nss-change-account.png["NetApp Support Siteのアカウント�
 
 == NSS アカウントの E メールアドレスを表示します
 
-NetApp Support Site アカウントで認証サービスにMicrosoft Azure Active Directoryを使用しているため、BlueXPに表示されるNSSユーザ名は通常、Azure ADで生成された識別子です。そのため、そのアカウントに関連付けられている E メールアドレスがすぐにわからない場合があります。しかし、BlueXPには、関連するメールアドレスを表示するオプションがあります。
+NetApp Support Siteアカウントで認証サービスにMicrosoft Entra IDが使用されるようになったため、BlueXPに表示されるNSSユーザ名は通常、Microsoft Entraによって生成された識別子です。そのため、そのアカウントに関連付けられている E メールアドレスがすぐにわからない場合があります。しかし、BlueXPには、関連するメールアドレスを表示するオプションがあります。
 
 
 TIP: NSS管理ページに移動すると、表の各アカウントのトークンがBlueXPによって生成されます。このトークンには、関連付けられた E メールアドレスに関する情報が含まれます。その後、ページから移動するとトークンが削除されます。この情報はキャッシュされないため、プライバシーを保護できます。

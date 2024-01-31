@@ -191,6 +191,9 @@ HTTP（80）およびHTTPS（443）は、BlueXPコンソールへのアクセス
 --
 
 
+NTPを有効にする:: BlueXP分類を使用して企業データソースをスキャンする場合は、システム間で時刻が同期されるように、BlueXP ConnectorシステムとBlueXP分類システムの両方でネットワークタイムプロトコル（NTP）サービスを有効にする必要があります。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
+
+
 
 
 == ステップ5：クラウドの権限を準備する
@@ -315,16 +318,16 @@ az role definition create --role-definition Connector_Policy.json
 --
 .Azureサービスプリンシパル
 --
-Azure Active Directoryでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。これらのクレデンシャルは、コネクタをインストールしてBlueXPをセットアップしたあとにBlueXPに提供する必要があります。
+Microsoft Entra IDでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。これらのクレデンシャルは、コネクタをインストールしてBlueXPをセットアップしたあとにBlueXPに提供する必要があります。
 
-.ロールベースアクセス制御用のAzure Active Directoryアプリケーションを作成します
+.ロールベースアクセス制御用のMicrosoft Entraアプリケーションの作成
 . Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。
 +
 詳細については、を参照してください https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure のドキュメント：「 Required permissions"^]
 
-. Azure ポータルで、 * Azure Active Directory * サービスを開きます。
+. Azureポータルで、* Microsoft Entra ID *サービスを開きます。
 +
-image:screenshot_azure_ad.gif["は、 Microsoft Azure の Active Directory サービスを示しています。"]
+image:screenshot_azure_ad.png["は、 Microsoft Azure の Active Directory サービスを示しています。"]
 
 . メニューで*アプリ登録*を選択します。
 . [New registration]*を選択します。
@@ -422,7 +425,7 @@ Cloud Volumes ONTAP を複数の Azure サブスクリプションから導入�
 
 
 .Windows Azure Service Management API 権限を追加します
-. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
+. Microsoft Entra ID *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
 . [API permissions]>[Add a permission]*を選択します。
 . Microsoft API* で、 * Azure Service Management * を選択します。
 +
@@ -435,10 +438,10 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure Service Management API �
 
 
 .アプリケーションのアプリケーションIDとディレクトリIDを取得します
-. Azure Active Directory *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
+. Microsoft Entra ID *サービスで、*アプリ登録*を選択し、アプリケーションを選択します。
 . アプリケーション（クライアント） ID * とディレクトリ（テナント） ID * をコピーします。
 +
-image:screenshot_azure_app_ids.gif["Azure Active Directory 内のアプリケーション（クライアント）の ID とディレクトリ（テナント） ID を示すスクリーンショット。"]
+image:screenshot_azure_app_ids.gif["Microsoft Entra IDYのアプリケーションのアプリケーション（クライアント）IDとディレクトリ（テナント）IDを示すスクリーンショット。"]
 
 +
 AzureアカウントをBlueXPに追加するときは、アプリケーション（クライアント）IDとディレクトリ（テナント）IDを指定する必要があります。BlueXPでは、プログラムでサインインするためにIDが使用されます。
@@ -446,17 +449,17 @@ AzureアカウントをBlueXPに追加するときは、アプリケーション
 
 
 .クライアントシークレットを作成します
-. Azure Active Directory * サービスを開きます。
+. Microsoft Entra ID *サービスを開きます。
 . *アプリ登録*を選択し、アプリケーションを選択します。
 . [Certificates & secrets]>[New client secret]*を選択します。
 . シークレットと期間の説明を入力します。
 . 「 * 追加」を選択します。
 . クライアントシークレットの値をコピーします。
 +
-image:screenshot_azure_client_secret.gif["Azure AD サービスプリンシパルのクライアントシークレットを表示する Azure ポータルのスクリーンショット。"]
+image:screenshot_azure_client_secret.gif["Microsoft Entraサービスプリンシパルのクライアントシークレットを示すAzureポータルのスクリーンショット。"]
 
 +
-BlueXPでAzure ADの認証に使用するクライアントシークレットが作成されました。
+BlueXPでクライアントシークレットを使用してMicrosoft Entra IDで認証できるようになりました。
 
 
 
