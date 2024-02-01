@@ -422,6 +422,51 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#6-novemb
 
 == 2022年11月1日
 
+
+
+=== BlueXPの導入
+
+NetApp BlueXPは、Cloud Managerを通じて提供される機能を拡張、強化します。BlueXPは、オンプレミス環境とクラウド環境のストレージとデータサービスにハイブリッドマルチクラウド環境を提供する統合コントロールプレーンです。
+
+統合された管理エクスペリエンス:: BlueXPを使用すると'すべてのストレージおよびデータ資産を1つのインタフェースから管理できます
++
+--
+BlueXPを使用して、クラウドストレージ（Cloud Volumes ONTAP やAzure NetApp Files など）の作成と管理、データの移動、保護、分析、オンプレミスやエッジの多くのストレージデバイスの管理を行うことができます。
+
+https://bluexp.netapp.com["詳細については、BlueXPのWebサイトをご覧ください"^]
+
+--
+新しいナビゲーションメニュー:: BlueXPのナビゲーションメニューでは、サービスがカテゴリ別に分類され、機能に応じてサービスの名前が付けられます。たとえば、BlueXPのバックアップとリカバリには*[保護]*カテゴリからアクセスできます。
++
+--
+image:screenshot-navigation-menu.png["BlueXPのナビゲーションメニューのスクリーンショット。ストレージやヘルスなどのカテゴリを示しています。"]
+
+--
+新しい製品統合::
++
+--
+* コネクタがインストールされているAWSアカウントでAmazon S3バケットを管理できるようになりました。
+* EシリーズやStorageGRID など、オンプレミスのストレージシステムをさらに管理できるようになりました。
+* これまでスタンドアロンサービスとしてしか提供されていなかったデータサービスを、別のUIで使用できるようになりました。たとえば、BlueXP Digital Advisor（Active IQ ）などです。
+
+
+--
+詳細はこちら。::
++
+--
+* https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Amazon S3バケットを管理する"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html["Eシリーズストレージシステムを管理"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html["StorageGRID ストレージシステムを管理します"^]
+* https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-bluexp.html["Digital Advisorの統合について"^]
+
+
+--
+
+
+
+
+=== NSSクレデンシャルの更新を求めるプロンプト
+
 アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["NSS アカウントを管理する方法について説明します"^]
 
 

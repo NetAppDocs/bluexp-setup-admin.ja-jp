@@ -3832,4 +3832,29 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="b63eb36e7e2e258bb1104cee2cd67c79" category="inline-link-macro">Microsoft Entra IDでのサービスプリンシパルの作成と設定</block>
   <block id="3c648c2bdafb5df126cd7d0e3dfcad8a" category="paragraph">BlueXPで別のAzureクレデンシャルを使用する場合は、で必要な権限を付与する必要があります <block ref="45c7e71be639d18293cd100d389b6dc3" category="inline-link-macro-rx"></block> を Azure アカウントごとに用意します。次の図は、 2 つの追加アカウントを示しています。各アカウントには、権限を提供するサービスプリンシパルとカスタムロールが設定されています。</block>
   <block id="66106267dde1c941a1fde19110f5e949" category="paragraph">Marketplaceを使用する場合は、コネクタVMとシステムによって割り当てられた管理IDにカスタムロールを割り当てることで権限を付与することも、Microsoft Entraサービスプリンシパルを使用することもできます。</block>
+  <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">BlueXPの導入</block>
+  <block id="6cc6d549680ee5bae0375022aa7c117c" category="paragraph">NetApp BlueXPは、Cloud Managerを通じて提供される機能を拡張、強化します。BlueXPは、オンプレミス環境とクラウド環境のストレージとデータサービスにハイブリッドマルチクラウド環境を提供する統合コントロールプレーンです。</block>
+  <block id="4860911c5c67c5e04987564884e8b85e" category="list-text">統合された管理エクスペリエンス</block>
+  <block id="c3eb39b445a75ad05505fe32c6f061df" category="list-text">BlueXPを使用すると'すべてのストレージおよびデータ資産を1つのインタフェースから管理できます</block>
+  <block id="a28e6578744ceeb545878235d414e497" category="paragraph">BlueXPを使用して、クラウドストレージ（Cloud Volumes ONTAP やAzure NetApp Files など）の作成と管理、データの移動、保護、分析、オンプレミスやエッジの多くのストレージデバイスの管理を行うことができます。</block>
+  <block id="fc8ff23d0bf81d0f8427b5c75023f80e" category="inline-link">詳細については、BlueXPのWebサイトをご覧ください</block>
+  <block id="6680bbdbd7bdd3c542020121df4cb264" category="paragraph"><block ref="6680bbdbd7bdd3c542020121df4cb264" category="inline-link-rx"></block></block>
+  <block id="31f0834695d820dc381e57397e466d12" category="list-text">新しいナビゲーションメニュー</block>
+  <block id="e6481c5ec5346aeaf59c7bacad0a735a" category="list-text">BlueXPのナビゲーションメニューでは、サービスがカテゴリ別に分類され、機能に応じてサービスの名前が付けられます。たとえば、BlueXPのバックアップとリカバリには*[保護]*カテゴリからアクセスできます。</block>
+  <block id="7cb04a79785e33be744a126127319a35" category="inline-image-macro">BlueXPのナビゲーションメニューのスクリーンショット。ストレージやヘルスなどのカテゴリを示しています。</block>
+  <block id="e3a2069a256a46b571b57fe46324f5c0" category="paragraph"><block ref="e3a2069a256a46b571b57fe46324f5c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="68d4f3d7366b4ea59a65f0c44540e368" category="list-text">新しい製品統合</block>
+  <block id="cf6a3994dac804af910024cf740e14ac" category="list-text">コネクタがインストールされているAWSアカウントでAmazon S3バケットを管理できるようになりました。</block>
+  <block id="054332983ba253fe4573945dcdbc8109" category="list-text">EシリーズやStorageGRID など、オンプレミスのストレージシステムをさらに管理できるようになりました。</block>
+  <block id="bcaa38b35b3f595027217ec10755368a" category="list-text">これまでスタンドアロンサービスとしてしか提供されていなかったデータサービスを、別のUIで使用できるようになりました。たとえば、BlueXP Digital Advisor（Active IQ ）などです。</block>
+  <block id="d59048f21fd887ad520398ce677be586" category="list-text">詳細はこちら。</block>
+  <block id="72098f7f145b12a125b92539edd37f4a" category="inline-link">Amazon S3バケットを管理する</block>
+  <block id="8a4a49cb4536baac7f58e0eb6e2dac29" category="list-text"><block ref="8a4a49cb4536baac7f58e0eb6e2dac29" category="inline-link-rx"></block></block>
+  <block id="23c19e9851a45bd1a62c97b5c51e16ab" category="inline-link">Eシリーズストレージシステムを管理</block>
+  <block id="120b07a98eececd322e53cecc2102f44" category="list-text"><block ref="120b07a98eececd322e53cecc2102f44" category="inline-link-rx"></block></block>
+  <block id="280f0ea2e556e240b5f15b51047b45b8" category="inline-link">StorageGRID ストレージシステムを管理します</block>
+  <block id="e85444ee57c2061143502fa15b083bcc" category="list-text"><block ref="e85444ee57c2061143502fa15b083bcc" category="inline-link-rx"></block></block>
+  <block id="f3bb3ec21babd88d81e5f7aefe69cced" category="inline-link">Digital Advisorの統合について</block>
+  <block id="fd93e0ac3cede5691afd22e4d95042e3" category="list-text"><block ref="fd93e0ac3cede5691afd22e4d95042e3" category="inline-link-rx"></block></block>
+  <block id="ba1f7346b31e12566f94dd10dbca2587" category="section-title">NSSクレデンシャルの更新を求めるプロンプト</block>
 </blocks>
