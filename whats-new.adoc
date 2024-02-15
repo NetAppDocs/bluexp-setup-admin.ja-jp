@@ -34,17 +34,17 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 NetAppのクラウドクレデンシャルを使用してBlueXPにログインすると、*[ユーザ設定]*で名前を編集できるようになりました。
 
-image:screenshot-edit-name.png["[User Settings]で名前を編集する機能を示すスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["[User Settings]で名前を編集する機能を示すスクリーンショット。"]
 
 フェデレーテッド接続またはNetApp Support Siteアカウントでログインした場合、名前の編集はサポートされません。
 
 
 
-=== Amazon EC2インスタンスメタデータサービスの要件
+=== EC2インスタンスのIMDSv1要件
 
-AWSにコネクタソフトウェアを手動でインストールする前に、EC2インスタンスにIMDSv1が必要であることに注意してください。
+AWSにコネクタソフトウェアを手動でインストールする前に、Amazon EC2インスタンスにInstance Metadata Service Version 1（IMDSv1）が必要であることに注意してください。
 
-link:reference-limitations.html["AWSでのIMDSv1の要件の詳細を確認する"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["AWSでのIMDSv1の要件の詳細を確認する"]。
 
 
 
@@ -107,7 +107,7 @@ BlueXPで新しいプライベートモードリリースが見積もり可能�
 
 * BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["BlueXPからAWSでコネクタを作成するときに[Network]ページに表示される[Key Pair]フィールドの検索オプションのスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-aws-key-pair.png["BlueXPからAWSでコネクタを作成するときに[Network]ページに表示される[Key Pair]フィールドの検索オプションのスクリーンショット。"]
 
 * このアップデートにはバグ修正も含まれています。
 
