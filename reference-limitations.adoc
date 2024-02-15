@@ -24,9 +24,19 @@ summary: 既知の制限事項は、このリリースの製品でサポート�
 
 
 
+=== EC2インスタンスにIMDSv1が必要
+
+標準モードまたは制限モードを使用している場合、AWSのEC2インスタンスにコネクタソフトウェアを手動でインストールする前に、EC2インスタンスがInstance Metadata Service Version 1（IMDSv1）を使用していることを確認する必要があります。このコネクタはIMDSv2ではサポートされていません。
+
+新しいEC2インスタンスのデフォルトバージョンはIMDSv2になったため、IMDSv1を使用できるようにするには、インスタンスメタデータオプションを変更する必要があります。
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["AWSのドキュメント：Restore the use of IMDSv1"^]
+
+
+
 === デフォルトのEC2インスタンス設定は変更しないでください
 
-AWSにコネクタを導入すると、デフォルトで次のEC2インスタンス設定が構成されます。
+BlueXPまたはAWS MarketplaceからAWSにコネクタを導入する場合、デフォルトで次のEC2インスタンス設定が構成されます。
 
 * IMDSv2はオプションに設定されています
 * HttpTokensはオプションに設定されています

@@ -40,6 +40,14 @@ image:screenshot-edit-name.png["[User Settings]で名前を編集する機能を
 
 
 
+=== Amazon EC2インスタンスメタデータサービスの要件
+
+AWSにコネクタソフトウェアを手動でインストールする前に、EC2インスタンスにIMDSv1が必要であることに注意してください。
+
+link:reference-limitations.html["AWSでのIMDSv1の要件の詳細を確認する"]。
+
+
+
 == 2024年1月11日
 
 

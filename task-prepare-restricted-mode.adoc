@@ -82,6 +82,14 @@ Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たす�
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
 /var のディスク領域:: 20GiB のスペースが必要です
 Docker Engine の略:: Connectorをインストールする前に、ホストにDocker Engineバージョン19.3.1以降が必要です。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+IMDSv1:: EC2インスタンスには、Instance Metadata Service Version 1（IMDSv1）が必要です。このコネクタはIMDSv2ではサポートされていません。
++
+--
+新しいEC2インスタンスのデフォルトバージョンはIMDSv2になったため、IMDSv1を使用できるようにするには、インスタンスメタデータオプションを変更する必要があります。
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["AWSのドキュメント：Restore the use of IMDSv1"^]
+
+--
 
 
 
