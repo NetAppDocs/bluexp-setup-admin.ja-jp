@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors' 
 summary: BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど）をご確認ください。 
 ---
 = 新機能
@@ -15,6 +15,28 @@ summary: BlueXPの管理機能の新機能（BlueXPアカウント、コネク�
 
 [role="lead"]
 BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど）をご確認ください。
+
+
+
+== 2024年2月15日
+
+
+
+=== コネクタ3.9.37
+
+今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
+
+現時点では、3.9.37リリースは標準モードと制限モードで使用できます。
+
+
+
+=== 名前の編集
+
+NetAppのクラウドクレデンシャルを使用してBlueXPにログインすると、*[ユーザ設定]*で名前を編集できるようになりました。
+
+image:screenshot-edit-name.png["[User Settings]で名前を編集する機能を示すスクリーンショット。"]
+
+フェデレーテッド接続またはNetApp Support Siteアカウントでログインした場合、名前の編集はサポートされません。
 
 
 

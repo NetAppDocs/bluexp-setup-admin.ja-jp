@@ -170,15 +170,21 @@ sudo /path/BlueXP-Connector-offline-<version>
 . パブリックIPアドレスを変更した場合、コネクタで実行されているローカルユーザインターフェイスに接続する必要があるときは、コネクタインスタンスを再起動して、新しいIPアドレスをBlueXPに登録します。
 . プライベート IP アドレスを変更した場合は、 Cloud Volumes ONTAP 構成ファイルのバックアップ先を更新して、コネクタ上の新しいプライベート IP アドレスにバックアップが送信されるようにします。
 +
-.. Cloud Volumes ONTAP CLI から次のコマンドを実行して、現在のバックアップターゲットを削除します。
+各Cloud Volumes ONTAPシステムのバックアップ場所を更新する必要があります。
+
++
+.. Cloud Volumes ONTAP CLIから次のコマンドを実行して、現在のバックアップターゲットを表示します。
 +
 [source, cli]
 ----
-system configuration backup settings modify -destination ""
+system configuration backup show
 ----
-.. BlueXPにアクセスして作業環境を開きます
-.. メニューを選択し、*[詳細設定]>[設定バックアップ]*を選択します。
-.. [バックアップターゲットの設定]*を選択します。
+.. 次のコマンドを実行して、バックアップターゲットのIPアドレスを更新します。
++
+[source, cli]
+----
+system configuration backup settings modify -destination <target-location>
+----
 
 
 
