@@ -42,7 +42,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 * Cloud Volumes ONTAPでは、新規および既存のインスタンスでIMDSv1がデフォルトで有効になっています。必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
 
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["既存のインスタンスでIMDSv2を設定する方法"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["既存のインスタンスでIMDSv2を設定する方法"]。
 
 
 

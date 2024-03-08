@@ -3909,7 +3909,6 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">既存のコネクタについては、IMDSv1は引き続きサポートされますが、必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。</block>
   <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">Cloud Volumes ONTAPでは、新規および既存のインスタンスでIMDSv1がデフォルトで有効になっています。必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。</block>
   <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">既存のインスタンスでIMDSv2を設定する方法</block>
-  <block id="35caf9a212e382e214a82a5d75099530" category="paragraph"><block ref="2136f09eaf84594e894a08f345e725b8" category="inline-link-rx"></block>。</block>
   <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">AWS権限の更新</block>
   <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">AWSのコネクタポリシーを更新して、「EC2：DescriptionAvailabilityZones」権限を追加しました。この権限は、今後のリリースで必要になります。リリースノートの詳細については、リリースノートを更新します。</block>
   <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">コネクタのAWS権限を表示する</block>
@@ -3937,4 +3936,5 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">[サポート][Direct API Traffic]*を選択します。</block>
   <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">BlueXPでコネクタを作成すると、デフォルト設定を使用してAWSにEC2インスタンスが導入されます。コネクタの作成後は、CPUやRAMの少ない小さいEC2インスタンスタイプに変更しないでください。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">コネクタを作成すると、デフォルトの構成を使用してGoogle Cloudに仮想マシンインスタンスが導入されます。コネクタの作成後は、CPUやRAMが少ないVMインスタンスに変更しないでください。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>。</block>
 </blocks>
