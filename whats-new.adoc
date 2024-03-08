@@ -18,6 +18,54 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
+== 2024年3月8日
+
+
+
+=== コネクタ3.9.38
+
+現時点では、3.9.38リリースは標準モードと制限モードで使用できます。このリリースでは、AWSでのIMDSv2とAWS権限の更新がサポートされます。
+
+
+
+==== IMDSv2のサポート
+
+BlueXPで、コネクタインスタンスとCloud Volumes ONTAPインスタンスでAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）がサポートされるようになりました。IMDSv2では、脆弱性に対する保護が強化されています。以前はIMDSv1のみがサポートされていました。
+
+https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["AWSセキュリティブログでIMDSv2の詳細を確認する"^]
+
+インスタンスメタデータサービス（IMDS）は、EC2インスタンスで次のように有効になります。
+
+* BlueXP、AWS Marketplace、または https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraformスクリプト"^]IMDSv2はEC2インスタンスでデフォルトで有効になっています。
+* AWSで新しいEC2インスタンスを起動し、コネクタソフトウェアを手動でインストールすると、IMDSv2もデフォルトで有効になります。
+* 既存のコネクタについては、IMDSv1は引き続きサポートされますが、必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
+* Cloud Volumes ONTAPでは、新規および既存のインスタンスでIMDSv1がデフォルトで有効になっています。必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["既存のインスタンスでIMDSv2を設定する方法"]。
+
+
+
+==== AWS権限の更新
+
+AWSのコネクタポリシーを更新して、「EC2：DescriptionAvailabilityZones」権限を追加しました。この権限は、今後のリリースで必要になります。リリースノートの詳細については、リリースノートを更新します。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["コネクタのAWS権限を表示する"]。
+
+
+
+=== プロキシ設定とCloud Volumes ONTAP設定
+
+コネクターのプロキシサーバー設定は、*コネクターの管理*ページ（標準モード）または*コネクターの編集*ページ（制限モードおよびプライベートモード）から利用できるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["プロキシサーバを使用するようにコネクタを設定する方法について説明します。"]。
+
+また、*コネクター設定*ページの名前を* Cloud Volumes ONTAP設定*に変更しました。
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["[Settings]メニューから使用できるCloud Volumes ONTAP Settings]オプションを示すスクリーンショット。"]
+
+
+
 == 2024年2月15日
 
 
@@ -37,14 +85,6 @@ NetAppのクラウドクレデンシャルを使用してBlueXPにログイン�
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["[User Settings]で名前を編集する機能を示すスクリーンショット。"]
 
 フェデレーテッド接続またはNetApp Support Siteアカウントでログインした場合、名前の編集はサポートされません。
-
-
-
-=== EC2インスタンスのIMDSv1要件
-
-AWSにコネクタソフトウェアを手動でインストールする前に、Amazon EC2インスタンスにInstance Metadata Service Version 1（IMDSv1）が必要であることに注意してください。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["AWSでのIMDSv1の要件の詳細を確認する"]。
 
 
 

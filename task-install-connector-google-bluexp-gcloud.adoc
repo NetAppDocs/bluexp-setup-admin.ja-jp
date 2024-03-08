@@ -378,7 +378,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud�
 BlueXPのWebベースのコンソールから直接、またはgcloudを使用してコネクタを作成します。
 
 .このタスクについて
-コネクタを作成すると、デフォルトの構成を使用してGoogle Cloudに仮想マシンインスタンスが導入されます。 link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。
+コネクタを作成すると、デフォルトの構成を使用してGoogle Cloudに仮想マシンインスタンスが導入されます。コネクタの作成後は、CPUやRAMが少ないVMインスタンスに変更しないでください。 link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。
 
 [role="tabbed-block"]
 ====

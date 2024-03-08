@@ -1401,9 +1401,7 @@
   <block id="f624e5f75138eb92caddd44e1bc7342e" category="list-text">tag:getTagValues</block>
   <block id="5e665d8f5cf0c341dce9f3bd5e7f4cc0" category="list-text">Tag:タグリソース</block>
   <block id="5e10058ad3f07bfeca3eef81de09ce28" category="list-text">タグ: UntagResources</block>
-  <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">2023年6月6日</block>
   <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Cloud Volumes ONTAPには次の権限が必要です。</block>
-  <block id="1be1ae3d277ebf372ecefda4d444dbbb" category="section-title">2023年2月14日</block>
   <block id="bf9c7c9727a11f040da47cdd589f7ea6" category="paragraph">BlueXPの階層化には次の権限が必要です。</block>
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">コネクタをプライベートモードで導入し、BlueXP SaaSレイヤへのアウトバウンド接続なしでBlueXPを使用できるようにします。まず、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、以前に設定したクラウド権限を指定します。</block>
   <block id="2f549fb867eb9c0be636782d32264aa6" category="doc">コネクタをプライベートモードで展開します</block>
@@ -1524,10 +1522,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">既知の制限</block>
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">これらの制限は、BlueXPのセットアップと管理に特有のものです。コネクタ、SaaSプラットフォームなどです。</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">コネクタの制限</block>
-  <block id="cf4525e15b866700f10e91573643ba54" category="section-title">デフォルトのEC2インスタンス設定は変更しないでください</block>
-  <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2はオプションに設定されています</block>
-  <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokensはオプションに設定されています</block>
-  <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">これらの設定を「必須」に変更しないでください。これらの設定を[必須]に変更すると、コネクタとCloud Volumes ONTAP の可用性に影響します。</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">172 の範囲の IP アドレスと競合する可能性があります</block>
   <block id="efdb2123102821583a0af000d2fa9040" category="paragraph">BlueXPは、172.17.0.0/16と172.18.0.0/16の範囲にIPアドレスを持つ2つのインターフェイスを持つコネクタを展開します。</block>
   <block id="5646658d58bb92ba775a6c2cd024ef17" category="paragraph">ネットワークにこれらのいずれかの範囲が設定されたサブネットがある場合、BlueXPから接続エラーが発生する可能性があります。たとえば、BlueXPでオンプレミスのONTAP クラスタを検出できない場合があります。</block>
@@ -2328,8 +2322,6 @@
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">コネクタでプロキシを有効にします</block>
   <block id="a211e8f0d908dfd70d36364b3fbd91b0" category="paragraph">プロキシサーバ、そのコネクタ、および管理対象の Cloud Volumes ONTAP システム（ HA メディエーターを含む）を使用するようにコネクタを設定すると、すべてのでプロキシサーバが使用されます。</block>
   <block id="f5cfd333047dfa220ee8666d14286034" category="paragraph">この操作により、コネクタが再起動されます。続行する前に、コネクタが操作を実行していないことを確認してください。</block>
-  <block id="1ba8304c99952e6f64861018bbefcdd0" category="list-text">BlueXPコンソールの右上で、[設定]アイコンを選択し、*[コネクタ設定]*を選択します。</block>
-  <block id="861d390100edeb52d8f385f026c72049" category="list-text">[General]*で、[HTTP Proxy Configuration]*を選択します。</block>
   <block id="2c451caa323474f558c4e4065578647d" category="list-text">プロキシを設定します。</block>
   <block id="dabc8d2c79f6529ca393b4b3d4f75805" category="list-text">[Enable Proxy]*を選択します。</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">構文を使用してサーバを指定します<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> または<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
@@ -2339,7 +2331,6 @@
   <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">Cloud Volumes ONTAP でAzureプライベートリンクの使用を無効にし、代わりにサービスエンドポイントを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。そうしないと、トラフィックは適切にルーティングされません。</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">Azure Private LinkまたはサービスエンドポイントをCloud Volumes ONTAP で使用する方法の詳細については、こちらをご覧ください</block>
   <block id="6143580a5ae490efe32d3c566650ad6c" category="paragraph"><block ref="6143580a5ae490efe32d3c566650ad6c" category="inline-link-rx"></block></block>
-  <block id="73918d630dd9a657f3442a2c1231fd74" category="list-text">[General]*で、*[Support Direct API Traffic]*を選択します。</block>
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">チェックボックスをオンにしてオプションを有効にし、*[保存]*を選択します。</block>
   <block id="9345f603d48306b04203c8a77bc1ec43" category="summary">BlueXPアカウントの作成時には、管理者ユーザとワークスペースが1人だけ含まれます。ユーザーの追加、自動化を目的としたサービスアカウントの作成、ワークスペースの追加など、組織のニーズに合わせてアカウントを管理できます。</block>
   <block id="f2b686d839a94b2d7f1e0a55d1c7c302" category="doc">BlueXPアカウントを管理します</block>
@@ -3456,7 +3447,6 @@ AWS Marketplaceからコネクタを起動した場合、コネクタを手動�
   <block id="bbc8741d5b8cb60c926722b934bec008" category="section-title">手順2：AWS権限を設定する</block>
   <block id="76fc03e9ac56ec6623a5f3fd59761d4b" category="section-title">手順3：コネクタを作成する</block>
   <block id="da14ee4a8100ac08980150bcda1e397d" category="inline-link-macro">コネクタのデフォルト設定について説明します</block>
-  <block id="f1620bf756a71002318f3eb8b1277d2f" category="paragraph">BlueXPでコネクタを作成すると、デフォルト設定を使用してAWSにEC2インスタンスが導入されます。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="26b0998fe035211b8097187e431e16b9" category="summary">独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、AWS権限を準備してコネクタをインストールし、準備した権限を指定する必要があります。</block>
   <block id="eb44c1bbcb138bd8d43dab2a2d5dd798" category="doc">AWSにコネクタを手動でインストールする</block>
   <block id="2cdec4e0f473161523115d9e1cc50257" category="list-text">コネクタを作成するときは、インスタンスで使用するEC2キーペアを選択する必要があります。</block>
@@ -3507,7 +3497,6 @@ deploymentmanager. editor</block>
   <block id="fbb7d70eda793afc4159d1bd8f3c3814" category="paragraph">次の手順に従って、いずれかの認証方式をBlueXPで使用できるように準備します。</block>
   <block id="a9242e0bd7c37f9c26c954ae4eff29b3" category="open-title">Azureアカウント</block>
   <block id="d1ff9355f81257b2c8a7693e702ba3f7" category="section-title">手順4：コネクタを作成する</block>
-  <block id="f23ed1e499f82b7b35d463ccef21eed1" category="paragraph">BlueXPからコネクタを作成すると、デフォルトの設定を使用してAzureに仮想マシンが導入されます。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="2f44f891a2e61a894ccc4f30dfd7b4be" category="paragraph"><block ref="8d330a1f00fb06fce7867e682fb9a351" category="inline-xref-macro-rx"></block>。</block>
   <block id="234849cccf32785a20387f435fbc1665" category="paragraph">標準モードでBlueXPを使用している場合、権限の付与方法はコネクタの作成方法によって異なります。</block>
   <block id="235df19fd66aa61dd8174f1a6480f822" category="paragraph">アクセス許可の設定方法については、以下を参照してください。</block>
@@ -3546,7 +3535,6 @@ deploymentmanager. editor</block>
   <block id="4d55aaa36c67fd980b8ca20ca5db6ef9" category="paragraph">BlueXPまたはgcloudを使用してコネクタを導入する前に、コネクタVMを導入するGoogle Cloudユーザの権限を設定する必要があります。</block>
   <block id="8456ad5c97fd1db8b43fc61d8ea03799" category="section-title">手順6：コネクタを作成する</block>
   <block id="bb919bb919074dbe6c69b05695d0a1aa" category="paragraph">BlueXPのWebベースのコンソールから直接、またはgcloudを使用してコネクタを作成します。</block>
-  <block id="b03261236b57a26202438940439ee786" category="paragraph">コネクタを作成すると、デフォルトの構成を使用してGoogle Cloudに仮想マシンインスタンスが導入されます。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="ec2ce152b3b60e3721ae091911de473d" category="list-text">VMインスタンスの要件の理解</block>
   <block id="aab924c92611ee11b49b8687e53ec943" category="list-text">* CPU *：4コアまたは4 vCPU</block>
   <block id="3f8517f6b0146fc27e0a5144098713fb" category="list-text">* RAM *：14 GB</block>
@@ -3862,19 +3850,91 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">各Cloud Volumes ONTAPシステムのバックアップ場所を更新する必要があります。</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">Cloud Volumes ONTAP CLIから次のコマンドを実行して、現在のバックアップターゲットを表示します。</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">次のコマンドを実行して、バックアップターゲットのIPアドレスを更新します。</block>
-  <block id="375a8301ce4caf38298dba148206d69c" category="section-title">EC2インスタンスにIMDSv1が必要</block>
-  <block id="997791080d6fcd216110fbfe145cef98" category="paragraph">標準モードまたは制限モードを使用している場合、AWSのEC2インスタンスにコネクタソフトウェアを手動でインストールする前に、EC2インスタンスがInstance Metadata Service Version 1（IMDSv1）を使用していることを確認する必要があります。このコネクタはIMDSv2ではサポートされていません。</block>
   <block id="95371958414dbd4f614d7ff8348b9b31" category="paragraph">新しいEC2インスタンスのデフォルトバージョンはIMDSv2になったため、IMDSv1を使用できるようにするには、インスタンスメタデータオプションを変更する必要があります。</block>
   <block id="c637448044ff305c64a7c1cd8b77b196" category="inline-link">AWSのドキュメント：Restore the use of IMDSv1</block>
   <block id="dd3ddc1f5982d8946100b097e7993378" category="paragraph"><block ref="dd3ddc1f5982d8946100b097e7993378" category="inline-link-rx"></block></block>
-  <block id="1dd4f77b0b91e0fcf80bc700a9a86fd6" category="paragraph">BlueXPまたはAWS MarketplaceからAWSにコネクタを導入する場合、デフォルトで次のEC2インスタンス設定が構成されます。</block>
   <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
   <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">EC2インスタンスには、Instance Metadata Service Version 1（IMDSv1）が必要です。このコネクタはIMDSv2ではサポートされていません。</block>
-  <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link-macro">AWSでのIMDSv1の要件の詳細を確認する</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c7f67b21e0c8d093756f7b3a59e8d2e8" category="section-title">EC2インスタンスのIMDSv1要件</block>
-  <block id="09477b433fb18272d0d3ee6b7a7e23ad" category="paragraph">AWSにコネクタソフトウェアを手動でインストールする前に、Amazon EC2インスタンスにInstance Metadata Service Version 1（IMDSv1）が必要であることに注意してください。</block>
-  <block id="ae1d4316f9a8104fa910e65fd2096cb3" category="paragraph"><block ref="3fb75bc46ec80b0989f43707450cda37" category="inline-link-rx"></block>。</block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="list-text">ランサムウェアからの保護</block>
+  <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">2024年3月8日</block>
+  <block id="e95eef6ba2551f885847cc2b51459994" category="paragraph">次の権限がコネクタポリシーに含まれるようになりました。</block>
+  <block id="33e595f0fd43192e3f1d28a291860881" category="paragraph">EC2：説明AvailabilityZones</block>
+  <block id="b12f2c2fee8ccdb3cad2171b53ed3cfd" category="paragraph">この権限は、今後のリリースで必要になります。リリースノートの詳細については、リリースノートを更新します。</block>
+  <block id="6a7140fd5370f297d9a834d30e26ffde" category="section-title">2023年6月6日</block>
+  <block id="5fc531b28735a6e141b39c2b5e2f1dcc" category="section-title">2023年2月14日</block>
+  <block id="d1b9e6a9e660eac14ba251761cf89e4b" category="paragraph">BlueXPからコネクタを作成すると、デフォルトの設定を使用してAzureに仮想マシンが導入されます。コネクタの作成後は、CPUやRAMが少ないVMタイプに変更しないでください。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="d54ab8a1d5dd0b1066137c76d5021844" category="section-title">VMまたはインスタンスタイプ</block>
+  <block id="c371dc405db8facc84986c93c1618d1e" category="paragraph">コネクタをBlueXPから直接作成した場合は、デフォルトの設定を使用してクラウドプロバイダに仮想マシンインスタンスを導入しました。コネクタの作成後は、CPUやRAMが少ないVMインスタンスに変更しないでください。</block>
+  <block id="bdfd85d15fc6c7ed4e5a19af0a8f1999" category="paragraph">CPUとRAMの要件は次のとおりです。</block>
+  <block id="84fc34721c0c912a148a70d22ac7cd5a" category="paragraph"><block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="98dddf7eafbbdfa88756d62945237473" category="section-title">Amazon EC2インスタンスでIMDSv2を使用する必要がある</block>
+  <block id="824e7fae55f361d08bb9bd5bdf494ff0" category="inline-link">AWSセキュリティブログでIMDSv2の詳細を確認する</block>
+  <block id="c49009b6f155acc311d4014abe19ec98" category="paragraph">2024年3月より、BlueXPで、コネクタとCloud Volumes ONTAP（HA環境のメディエーターを含む）でAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）がサポートされるようになりました。IMDSv2では、脆弱性に対する保護が強化されています。<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
+  <block id="4166379ba80de4be17a81c04ec7819c4" category="list-text">IMDSv2は、すべての新しいコネクタEC2インスタンスでデフォルトで有効になっています。IMDSv1は2024年3月より前に有効になっています。</block>
+  <block id="6f218fd0d06a9a2564453a73bc05ee13" category="list-text">IMDSv1は、新規および既存のすべてのCloud Volumes ONTAP EC2インスタンスでデフォルトで有効になっています。</block>
+  <block id="7e6c98db93605459a9b69da423ef4684" category="paragraph">セキュリティポリシーで必要な場合は、IMDSv2を使用するようにEC2インスタンスを設定できます。</block>
+  <block id="b2f60e6f194d16e1bf9deaa367cd9eae" category="list-text">コネクタのバージョンは3.9.38以降である必要があります。</block>
+  <block id="177aac65c5f4518e1a35eb1479fac1a1" category="list-text">この変更を行うには、Cloud Volumes ONTAPインスタンスを再起動する必要があります。</block>
+  <block id="5024434a1308ae5aff26ba15a55bce13" category="paragraph">応答ホップの制限を3に変更する必要があるため、この手順ではAWS CLIを使用する必要があります。</block>
+  <block id="674bc63ff5794e51146ad842329f5afd" category="list-text">コネクタインスタンスでIMDSv2を使用する必要があります。</block>
+  <block id="7c08236138358b7a6e12dcdf43b92969" category="list-text">AWS CLIをインストールします。</block>
+  <block id="97b647a1aeead85f7ff9e6660cadfd49" category="inline-link">AWSドキュメント：最新バージョンのAWS CLIをインストールまたは更新する</block>
+  <block id="0eccbc3e7cb345786a9c69cf32e0b410" category="paragraph"><block ref="0eccbc3e7cb345786a9c69cf32e0b410" category="inline-link-rx"></block></block>
+  <block id="fdedd16440c0c883dfc66fe8ef510c62" category="list-text">を使用します<block ref="163406f31b4a352573543db4a8b761b7" prefix=" " category="inline-code"></block> IMDSv2の使用を要求し、PUT応答ホップ制限を3に変更するコマンド。</block>
+  <block id="d83ec76d50b3bda1cf13e81a46048f91" category="admonition">。<block ref="b14a1de55f9953d856d03b1230916191" prefix=" " category="inline-code"></block> パラメータはIMDSv2を必須に設定します。いつ<block ref="b14a1de55f9953d856d03b1230916191" prefix=" " category="inline-code"></block> は必須です。次の項目も設定する必要があります。<block ref="075040dbadfe9a123d2621d11f01b0a6" prefix=" " category="inline-code"></block> を有効にします。</block>
+  <block id="e3562f747ad313da62190f86bb64dc87" category="list-text">Cloud Volumes ONTAPインスタンスでIMDSv2を使用する必要があります。</block>
+  <block id="e813184f980902e482da371f4c1635a3" category="inline-link">Amazon EC2コンソール</block>
+  <block id="a3c1ab8ea16cbc440d74ed1810e1ea29" category="list-text">にアクセスします<block ref="a979ef0662428242021a3b937a5a7bf7" category="inline-link-rx"></block></block>
+  <block id="0923d272646612aa7fcac06ded4f9775" category="list-text">ナビゲーションペインで、*[インスタンス]*を選択します。</block>
+  <block id="bd669926126507d7fbfbbb50bfafba24" category="list-text">Cloud Volumes ONTAPインスタンスを選択します。</block>
+  <block id="1c9db3e842584a909d28ae8882a8e58a" category="list-text">[Actions]&gt;[Instance settings]&gt;[Modify instance metadata options]*を選択します。</block>
+  <block id="dee3242d9f387f850469315724ac6c27" category="list-text">インスタンスメタデータオプションの変更*（Modify instance metadata options *）ダイアログボックスで、次のオプションを選択します。</block>
+  <block id="e24b7163a4dc37a3db7eb4e01db5a81f" category="list-text">[インスタンスメタデータサービス]*で、*[有効化]*を選択します。</block>
+  <block id="2c239daef1a43ddd2011dfa4a307c157" category="list-text">IMDSv2 *で、*必須*を選択します。</block>
+  <block id="5cf803d4e6ce3c1fc67e7320dcd440b1" category="list-text">HAメディエーターを含む他のCloud Volumes ONTAPインスタンスについて、上記の手順を繰り返します。</block>
+  <block id="0694adc8bc882f236f606e1c56eebe94" category="inline-link">Cloud Volumes ONTAPインスタンスの停止と開始</block>
+  <block id="96afcc62a59c68b277c1a37c2254e239" category="list-text"><block ref="96afcc62a59c68b277c1a37c2254e239" category="inline-link-rx"></block></block>
+  <block id="1bf094b9d6f1b1c1ae5e745beefb3ff7" category="paragraph">コネクタインスタンスとCloud Volumes ONTAPインスタンスがIMDSv2を使用するように構成されました。</block>
+  <block id="00d14f718aca7db50368d8fc7008b41a" category="section-title">コネクタ3.9.38</block>
+  <block id="d39d3f642c13ecde9b0fc02889aa6386" category="paragraph">現時点では、3.9.38リリースは標準モードと制限モードで使用できます。このリリースでは、AWSでのIMDSv2とAWS権限の更新がサポートされます。</block>
+  <block id="b8048e9aa508d6c9379607c39c84e904" category="section-title">IMDSv2のサポート</block>
+  <block id="727615b8adbd72d276572a4469f7c09d" category="paragraph">BlueXPで、コネクタインスタンスとCloud Volumes ONTAPインスタンスでAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）がサポートされるようになりました。IMDSv2では、脆弱性に対する保護が強化されています。以前はIMDSv1のみがサポートされていました。</block>
+  <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
+  <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">インスタンスメタデータサービス（IMDS）は、EC2インスタンスで次のように有効になります。</block>
+  <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Terraformスクリプト</block>
+  <block id="0b18bb2eadaff9912e9bbefb3accbc90" category="list-text">BlueXP、AWS Marketplace、または<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>IMDSv2はEC2インスタンスでデフォルトで有効になっています。</block>
+  <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">AWSで新しいEC2インスタンスを起動し、コネクタソフトウェアを手動でインストールすると、IMDSv2もデフォルトで有効になります。</block>
+  <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">既存のコネクタについては、IMDSv1は引き続きサポートされますが、必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。</block>
+  <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">Cloud Volumes ONTAPでは、新規および既存のインスタンスでIMDSv1がデフォルトで有効になっています。必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。</block>
+  <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">既存のインスタンスでIMDSv2を設定する方法</block>
+  <block id="35caf9a212e382e214a82a5d75099530" category="paragraph"><block ref="2136f09eaf84594e894a08f345e725b8" category="inline-link-rx"></block>。</block>
+  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">AWS権限の更新</block>
+  <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">AWSのコネクタポリシーを更新して、「EC2：DescriptionAvailabilityZones」権限を追加しました。この権限は、今後のリリースで必要になります。リリースノートの詳細については、リリースノートを更新します。</block>
+  <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">コネクタのAWS権限を表示する</block>
+  <block id="bad85d32b5f3e46e956809c13b502817" category="paragraph"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block>。</block>
+  <block id="9796f4649a0c963c7b6019196c7f14f0" category="section-title">プロキシ設定とCloud Volumes ONTAP設定</block>
+  <block id="1697d0f8a0936757a7bb28b4fa2eacd1" category="paragraph">コネクターのプロキシサーバー設定は、*コネクターの管理*ページ（標準モード）または*コネクターの編集*ページ（制限モードおよびプライベートモード）から利用できるようになりました。</block>
+  <block id="50770490f832c2b93de5aff17e5102b5" category="inline-link">プロキシサーバを使用するようにコネクタを設定する方法について説明します。</block>
+  <block id="d58ba1e11f305c91632d6e86e3515966" category="paragraph"><block ref="f2fec40748e9e912170fdd2984d9b989" category="inline-link-rx"></block>。</block>
+  <block id="d560347c8aaf0de44ab17132b9923b1c" category="paragraph">また、*コネクター設定*ページの名前を* Cloud Volumes ONTAP設定*に変更しました。</block>
+  <block id="79c73187c699b08002880f70fb88a0a8" category="inline-image-macro">[Settings]メニューから使用できるCloud Volumes ONTAP Settings]オプションを示すスクリーンショット。</block>
+  <block id="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="paragraph"><block ref="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03c012ec036bd77d62ef64e67f7dbc5a" category="list-text">[BlueXPコネクタの編集]*ページに移動します。</block>
+  <block id="5682fb3f3dc6955b7e9d4b14adc8daa0" category="paragraph">操作方法は、BlueXPを標準モード（SaaS WebサイトからBlueXPインターフェイスにアクセス）で使用しているか、制限モードとプライベートモード（コネクタホストからローカルにBlueXPインターフェイスにアクセス）で使用しているかによって異なります。</block>
+  <block id="75effefc9fa992948e167a31a7b2c21e" category="inline-image-macro">コネクタの選択後に表示される[Manage Connectors]ページのスクリーンショット。</block>
+  <block id="e929efc0ae3c20b98faca1bce939c39f" category="paragraph"><block ref="e929efc0ae3c20b98faca1bce939c39f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d7cd2871be8edef469dbc0a8331b2ea1" category="list-text">コネクターのアクションメニューを選択し、*コネクターを編集*を選択します。</block>
+  <block id="51061648a222d2e9cfc0c81e3936b2ed" category="inline-image-macro">アクションメニューから使用できる[Edit Connectors]オプションを示すスクリーンショット。</block>
+  <block id="b56348249fcdfb1d99adf3c4aed569de" category="paragraph"><block ref="b56348249fcdfb1d99adf3c4aed569de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c2e1602403c9ad1e0a65c8bcd78343f0" category="open-title">制限モードまたはプライベートモード</block>
+  <block id="58254850bdb77fd29a5e690737b3b38e" category="list-text">[Edit Connector]*を選択します。</block>
+  <block id="52151b08532438e354a67736d7f485dd" category="inline-image-macro">[Connector]メニューを展開すると使用できる[Edit Connector]オプションを示すスクリーンショット。</block>
+  <block id="00f7462bbd72cb5b8ec9621909b3ebb1" category="paragraph"><block ref="00f7462bbd72cb5b8ec9621909b3ebb1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3a71443a0764cf544fb5e2055be2d744" category="list-text">[HTTP Proxy Configuration]*を選択します。</block>
+  <block id="7562ce5f768e11625bc10a4b9ebb71b0" category="list-text">[BlueXPコネクタの編集]*ページに移動します。</block>
+  <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">[サポート][Direct API Traffic]*を選択します。</block>
+  <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">BlueXPでコネクタを作成すると、デフォルト設定を使用してAWSにEC2インスタンスが導入されます。コネクタの作成後は、CPUやRAMの少ない小さいEC2インスタンスタイプに変更しないでください。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">コネクタを作成すると、デフォルトの構成を使用してGoogle Cloudに仮想マシンインスタンスが導入されます。コネクタの作成後は、CPUやRAMが少ないVMインスタンスに変更しないでください。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
 </blocks>

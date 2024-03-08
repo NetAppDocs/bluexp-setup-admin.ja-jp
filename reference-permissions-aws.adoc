@@ -73,6 +73,7 @@ BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカ�
     "Statement": [
         {
             "Action": [
+                "ec2:DescribeAvailabilityZones",
                 "ec2:DescribeInstances",
                 "ec2:DescribeInstanceStatus",
                 "ec2:RunInstances",
@@ -1301,6 +1302,16 @@ BlueXPの修正措置を使用する場合、コネクタは次のAPI要求を�
 == 変更ログ
 
 権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。
+
+
+
+=== 2024年3月8日
+
+次の権限がコネクタポリシーに含まれるようになりました。
+
+EC2：説明AvailabilityZones
+
+この権限は、今後のリリースで必要になります。リリースノートの詳細については、リリースノートを更新します。
 
 
 

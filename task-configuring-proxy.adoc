@@ -31,11 +31,39 @@ Cloud Volumes ONTAP システムにAutoSupport メッセージを送信するた
 この操作により、コネクタが再起動されます。続行する前に、コネクタが操作を実行していないことを確認してください。
 
 .手順
-. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[コネクタ設定]*を選択します。
+. [BlueXPコネクタの編集]*ページに移動します。
 +
-image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
+操作方法は、BlueXPを標準モード（SaaS WebサイトからBlueXPインターフェイスにアクセス）で使用しているか、制限モードとプライベートモード（コネクタホストからローカルにBlueXPインターフェイスにアクセス）で使用しているかによって異なります。
 
-. [General]*で、[HTTP Proxy Configuration]*を選択します。
++
+[role="tabbed-block"]
+====
+.標準モード
+--
+.. BlueXPヘッダーの* Connector *ドロップダウンを選択します。
+.. [コネクタの管理]*を選択します。
++
+image:screenshot-manage-connectors.png["コネクタの選択後に表示される[Manage Connectors]ページのスクリーンショット。"]
+
+.. コネクターのアクションメニューを選択し、*コネクターを編集*を選択します。
++
+image:screenshot-edit-connector-standard.png["アクションメニューから使用できる[Edit Connectors]オプションを示すスクリーンショット。"]
+
+
+
+--
+.制限モードまたはプライベートモード
+--
+.. BlueXPヘッダーの* Connector *ドロップダウンを選択します。
+.. [Edit Connector]*を選択します。
++
+image:screenshot-edit-connector.png["[Connector]メニューを展開すると使用できる[Edit Connector]オプションを示すスクリーンショット。"]
+
+
+
+--
+====
+. [HTTP Proxy Configuration]*を選択します。
 . プロキシを設定します。
 +
 .. [Enable Proxy]*を選択します。
@@ -69,10 +97,38 @@ Cloud Volumes ONTAP でAzureプライベートリンクの使用を無効にし�
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Azure Private LinkまたはサービスエンドポイントをCloud Volumes ONTAP で使用する方法の詳細については、こちらをご覧ください"^]
 
 .手順
-. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[コネクタ設定]*を選択します。
+. [BlueXPコネクタの編集]*ページに移動します。
 +
-image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
+操作方法は、BlueXPを標準モード（SaaS WebサイトからBlueXPインターフェイスにアクセス）で使用しているか、制限モードとプライベートモード（コネクタホストからローカルにBlueXPインターフェイスにアクセス）で使用しているかによって異なります。
 
-. [General]*で、*[Support Direct API Traffic]*を選択します。
++
+[role="tabbed-block"]
+====
+.標準モード
+--
+.. BlueXPヘッダーの* Connector *ドロップダウンを選択します。
+.. [コネクタの管理]*を選択します。
++
+image:screenshot-manage-connectors.png["コネクタの選択後に表示される[Manage Connectors]ページのスクリーンショット。"]
+
+.. コネクターのアクションメニューを選択し、*コネクターを編集*を選択します。
++
+image:screenshot-edit-connector-standard.png["アクションメニューから使用できる[Edit Connectors]オプションを示すスクリーンショット。"]
+
+
+
+--
+.制限モードまたはプライベートモード
+--
+.. BlueXPヘッダーの* Connector *ドロップダウンを選択します。
+.. [Edit Connector]*を選択します。
++
+image:screenshot-edit-connector.png["[Connector]メニューを展開すると使用できる[Edit Connector]オプションを示すスクリーンショット。"]
+
+
+
+--
+====
+. [サポート][Direct API Traffic]*を選択します。
 . チェックボックスをオンにしてオプションを有効にし、*[保存]*を選択します。
 

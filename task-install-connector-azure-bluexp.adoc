@@ -420,7 +420,7 @@ BlueXPでクライアントシークレットを使用してMicrosoft Entra ID�
 BlueXPのWebベースのコンソールから直接コネクタを作成します。
 
 .このタスクについて
-BlueXPからコネクタを作成すると、デフォルトの設定を使用してAzureに仮想マシンが導入されます。 link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。
+BlueXPからコネクタを作成すると、デフォルトの設定を使用してAzureに仮想マシンが導入されます。コネクタの作成後は、CPUやRAMが少ないVMタイプに変更しないでください。 link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。
 
 .作業を開始する前に
 次の情報が必要です。
