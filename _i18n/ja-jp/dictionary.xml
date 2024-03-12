@@ -3937,4 +3937,51 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">BlueXPでコネクタを作成すると、デフォルト設定を使用してAWSにEC2インスタンスが導入されます。コネクタの作成後は、CPUやRAMの少ない小さいEC2インスタンスタイプに変更しないでください。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">コネクタを作成すると、デフォルトの構成を使用してGoogle Cloudに仮想マシンインスタンスが導入されます。コネクタの作成後は、CPUやRAMが少ないVMインスタンスに変更しないでください。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>。</block>
+  <block id="dbbd746e2d2c019dcb0c3c40b74f4f75" category="section-title">2021年3月8日</block>
+  <block id="7b2a09e0d726d9a52333a0ecb6df6812" category="paragraph">このアップデートには、いくつかの機能とサービスの機能強化が含まれています。</block>
+  <block id="f4eb7f69c035214da13ca0f958ab2c5a" category="section-title">Cloud Volumes ONTAP の機能拡張</block>
+  <block id="e2c75aece78307cc6efce80e0fc6a89f" category="paragraph">このリリースの Cloud Manager では、 Cloud Volumes ONTAP の管理が強化されています。</block>
+  <block id="cedfa4114a856d26f8fcf723a5b4cb7a" category="section-title">すべてのクラウドプロバイダで利用できる機能強化</block>
+  <block id="ab2fea55ae9697fcfeae223bb8d1a161" category="paragraph">Cloud Volumes ONTAP 9.9.9..0 を導入および管理できるようになりました。</block>
+  <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP</block>
+  <block id="41671c8c2787c6b4ae4a7430aaed25a5" category="paragraph"><block ref="1d003678f7aeecaa48a9a55ee79dfa0c" category="inline-link-rx"></block>。</block>
+  <block id="7b73adc87602305d19eea3376846e09c" category="section-title">AWS で利用できる機能拡張</block>
+  <block id="360907953d19dad6cd45833cc14167e2" category="list-text">クラウドサービス 9.8 を AWS Commercial Cloud Volumes ONTAP （ C2S ）環境に導入できるようになりました。</block>
+  <block id="3e45f0a61d57f2e3257d5825fe5a7c94" category="inline-link">C2S の使用を開始する方法をご確認ください</block>
+  <block id="b2d82b2661ffd005fd69b6dbe8cd323c" category="paragraph"><block ref="b2d82b2661ffd005fd69b6dbe8cd323c" category="inline-link-rx"></block></block>
+  <block id="acaa3f0ba647338374e9aa5717e4b179" category="list-text">Cloud Manager では、 AWS Key Management Service （ KMS ）を使用して Cloud Volumes ONTAP データを暗号化できるようになりました。Cloud Volumes ONTAP 9.9.9..0 以降では、お客様が管理する CMK を選択すると、 EBS ディスク上のデータと S3 に階層化されたデータが暗号化されます。これまでは、 EBS データだけが暗号化されていました。</block>
+  <block id="dcbf930e1a349b31dc68e26e5227c6d0" category="paragraph">Cloud Volumes ONTAP IAM ロールに CMK を使用するためのアクセス権を付与する必要があります。</block>
+  <block id="b2eca227b653383cc96f103eeeeaf77a" category="inline-link">Cloud で AWS KMS を設定する方法については、こちらをご覧ください Volume ONTAP の略</block>
+  <block id="97e8e04f21dce84bbdc17d9128f42a47" category="paragraph"><block ref="97e8e04f21dce84bbdc17d9128f42a47" category="inline-link-rx"></block></block>
+  <block id="0ac19842b01b2e595d367d49d3a2f512" category="section-title">Azure で利用できる機能拡張</block>
+  <block id="f4ddf81019b69d6e9ec665b8c011944c" category="paragraph">Cloud Volumes ONTAP 9.8 を、国防総省（ DoD ）の影響レベル 6 （ IL6 ）に導入できるようになりました。</block>
+  <block id="b1f9439900369929f00410057598c853" category="section-title">Google Cloud で利用可能な機能強化</block>
+  <block id="235712a00d7d49281addbc1384cc33f2" category="list-text">Google Cloud で Cloud Volumes ONTAP 9.8 以降に必要な IP アドレスの数が削減されました。デフォルトでは、 IP アドレスを 1 つ減らす必要があります（インタークラスタ LIF をノード管理 LIF と統合しました）。また、 API を使用する場合は SVM 管理 LIF の作成を省略でき、追加の IP アドレスが不要になります。</block>
+  <block id="4d75268045c1a28e17697720e7f27123" category="inline-link">Google Cloud の IP アドレス要件の詳細については、こちらをご覧ください</block>
+  <block id="d28733663a4e51b540df89210de1322c" category="paragraph"><block ref="d28733663a4e51b540df89210de1322c" category="inline-link-rx"></block></block>
+  <block id="933d399c3cb0f03992675d49630ab818" category="list-text">Google Cloud で Cloud Volumes ONTAP HA ペアを導入する際に、 VPC -1 、 VPC -2 、および VPC -3 の共有 VPC を選択できるようになりました。以前は、 VPC を共有できるのは VPC のみでした。この変更は Cloud Volumes ONTAP 9.8 以降でサポートされています。</block>
+  <block id="fcc0572bd798a75498f99e20a8093f04" category="inline-link">Google Cloud のネットワーク要件の詳細については、こちらをご覧ください</block>
+  <block id="0007fc2f224950d7146482dd816d045a" category="paragraph"><block ref="0007fc2f224950d7146482dd816d045a" category="inline-link-rx"></block></block>
+  <block id="36758ba57a2ee81dcda1cf690cba345c" category="section-title">コネクタの機能拡張</block>
+  <block id="c620fdcd127f42421f0ebb82ca0160b3" category="list-text">Connector が実行されていない場合に、 Cloud Manager から管理者ユーザに E メールで通知されるようになりました。</block>
+  <block id="f4923be5b51cdac20509609eb07ce1aa" category="paragraph">コネクタを常時稼働させておくと、 Cloud Volumes ONTAP やその他の NetApp クラウドサービスを最大限に管理するのに役立ちます。</block>
+  <block id="fbbb26e1a604e4bb843aa5158a56bf75" category="list-text">コネクタのインスタンスタイプを変更する必要がある場合に、 Cloud Manager に通知が表示されるようになりました。</block>
+  <block id="07a7156f8ae2953eb97fcedc0f846001" category="paragraph">インスタンスタイプを変更することで、現在利用できない新しい機能を確実に使用できます。</block>
+  <block id="bd10f9ff269639d7e4902e8c79d702a6" category="section-title">Cloud Sync の機能拡張</block>
+  <block id="dd7348bf6510a0f506ab7acf9e645e94" category="list-text">Cloud Sync で ONTAP S3 ストレージと SMB サーバの同期関係がサポートされるようになりました。</block>
+  <block id="eb6261f1bc2ebf45d278c1fde4d7cfc4" category="list-text">ONTAP S3 ストレージから SMB サーバへの移動</block>
+  <block id="cc619045f8d284993e15378035fbf631" category="list-text">SMB サーバから ONTAP S3 ストレージ</block>
+  <block id="3d9c61bbb0656b8a470cbe7bd67859f7" category="inline-link">サポートされている同期関係を表示する</block>
+  <block id="a75cec21dd4fd0bc8a57fdafde743e02" category="paragraph"><block ref="a75cec21dd4fd0bc8a57fdafde743e02" category="inline-link-rx"></block></block>
+  <block id="0957e4e6271f0a8785ac7980f9561e4e" category="list-text">Cloud Sync では、ユーザインターフェイスからデータブローカーグループの設定を直接統合できるようになりました。</block>
+  <block id="e0341128a5853714165581951816b70b" category="paragraph">自分で設定を変更することはお勧めしません。設定を変更するタイミングと変更方法については、ネットアップに相談してください。</block>
+  <block id="a51f8f17029baacb9ec578d529b96fc1" category="inline-link">ユニファイド構成の定義に関する詳細は、こちらをご覧ください</block>
+  <block id="ba6ad1a8a7ff7fed9858ae1a6056a044" category="paragraph"><block ref="ba6ad1a8a7ff7fed9858ae1a6056a044" category="inline-link-rx"></block></block>
+  <block id="af8de564f8a6452ff0926ac0d084a2a0" category="section-title">Cloud Tiering の機能拡張</block>
+  <block id="b4baef0a3a494382cb3865753733f031" category="list-text">Google Cloud Storage に階層化する場合は、ライフサイクルルールを適用して、階層化されたデータを Standard ストレージクラスから 30 日後に低コストの Nearline 、 Coldline 、または Archive ストレージに移行することができます。</block>
+  <block id="d85e79234e503ba2929218e38d0c7268" category="list-text">Cloud Tiering Now は、オンプレミスの ONTAP クラスタで検出されていないものがある場合に表示されます。これにより、クラスタへの階層化やその他のサービスを有効にすることができます。</block>
+  <block id="da79c9a9c81722678ed4139ebb8929d9" category="inline-link">これらのクラスタの詳細については、こちらをご覧ください</block>
+  <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
+  <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Azure NetApp Files の機能拡張</block>
+  <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">ワークロードのニーズを満たし、コストを最適化するために、ボリュームのサービスレベルを動的に変更できるようになりました。ボリュームは、ボリュームに影響を及ぼすことなく、もう一方の容量プールに移動されます。<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
 </blocks>
