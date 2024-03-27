@@ -177,10 +177,12 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 * IP アドレス
 * クレデンシャル
 * HTTPS証明書
-+
+
+
+BlueXPでは透過型プロキシサーバはサポートされません。
+
+[+]
 プライベートモードの場合、BlueXPがアウトバウンドトラフィックを送信するのは、Cloud Volumes ONTAP システムを作成するためにクラウドプロバイダにしかありません。
-
-
 
 --
 ポート:: コネクタへの着信トラフィックは、開始しない限りありません。

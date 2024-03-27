@@ -55,6 +55,8 @@ Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するた�
 * HTTPS証明書
 
 
+BlueXPでは透過型プロキシサーバはサポートされません。
+
 --
 
 

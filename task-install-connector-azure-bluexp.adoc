@@ -124,6 +124,8 @@ link:reference-networking-saas-console.html["BlueXPコンソールからアク�
 * HTTPS証明書
 
 
+BlueXPでは透過型プロキシサーバはサポートされません。
+
 --
 
 
