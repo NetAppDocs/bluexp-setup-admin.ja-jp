@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bluexp-setup-admin | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/ja-jp/bluexp-setup-admin</link>
+    <description>The latest updates from NetApp Documentation</description>
+    <language>ja-jp</language>
+    <ttl>60</ttl>
+    <pubDate>Thu, 28 Mar 2024 17:53:06 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Mar 2024 17:53:06 +0000</lastBuildDate>
+    
+    
+    
+    <item>
+      <title>新機能 (26 Mar 2024)</title>
+      <pubDate>Tue, 26 Mar 2024 16:05:02 +0000</pubDate>
+      <link>https://docs.netapp.com/ja-jp/bluexp-setup-admin/whats-new.html?time=1711469102</link>
+      <guid isPermaLink="false">Tue, 26 Mar 2024 16:05:02 +0000</guid>
+      <description><![CDATA[ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど）をご確認ください。 ]]></description>
+    </item>
+    
+    
+  </channel>
+</rss>

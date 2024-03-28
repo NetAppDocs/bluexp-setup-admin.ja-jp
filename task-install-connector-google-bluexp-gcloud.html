@@ -1,0 +1,3155 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head class="at-element-marker">
+  <title>BlueXPやgcloudからGoogle Cloudでコネクタを作成 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="BlueXPやgcloudからGoogle Cloudでコネクタを作成 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+	<meta property="og:description" content="BlueXPまたはgcloudを使用してGoogle Cloudでコネクタを作成するには、ネットワークを設定し、Google Cloud権限を準備し、Google Cloud APIを有効にしてから、コネクタを作成する必要があります。" />
+  <meta property="og:image" content="https://docs.netapp.com/ja-jp/bluexp-setup-admin/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="BlueXPまたはgcloudを使用してGoogle Cloudでコネクタを作成するには、ネットワークを設定し、Google Cloud権限を準備し、Google Cloud APIを有効にしてから、コネクタを作成する必要があります。">
+  <meta name="keywords" content=" install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, create connector, gcp installation, gcp connector"><!-- Icons -->
+  <link rel="icon" href="/ja-jp/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ja-jp/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/bluexp-setup-admin/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/ja-jp/bluexp-setup-admin/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ja-jp/bluexp-setup-admin/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/bluexp-setup-admin/js/na-search.js'></script><script src='/ja-jp/bluexp-setup-admin/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/ja-jp/bluexp-setup-admin/js/custom-dropdown.js'></script>
+  <script src='/ja-jp/bluexp-setup-admin/js/FileSaver.min.js'></script>
+  <script src='/ja-jp/bluexp-setup-admin/js/jszip-utils.min.js'></script>
+  <script src='/ja-jp/bluexp-setup-admin/js/jszip.min.js'></script><script src='/ja-jp/bluexp-setup-admin/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/ja-jp/bluexp-setup-admin/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/ja/">
+                <image id="ie-header-logo" src="/ja-jp/bluexp-setup-admin/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/ja/support-and-training/documentation/">ドキュメント</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/ja-jp/bluexp-setup-admin/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">日本語</span>
+                    <img src="/ja-jp/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ja-jp/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/ja-jp/bluexp-setup-admin/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">すべてのNetApp</span>
+                    <img src="/ja-jp/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ja-jp/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/ja/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">サポート</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb-ja.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">ナレッジ ベース</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">トレーニング</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/ja-jp/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/ja-jp/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">すべてのドキュメント</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">クラウド ドキュメント</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/ja-jp/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/ja-jp/bluexp-setup-admin/">-->
+      Setup and administration
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/ja-jp/bluexp-setup-admin/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/ja-jp/bluexp-setup-admin/search.html" 
+        data-type="widget"
+        data-placeholder="ドキュメントを検索"
+        data-no-results-found="{query}に一致する結果は見つかりませんでした"
+        data-did-you-mean="{suggestion}で検索しています。"
+        data-no-results-found-did-you-mean="{query}に一致する結果は見つかりませんでした。{suggestion}で検索しますか？"
+        data-results-found="{hitCount}件の結果が見つかりました"
+        data-error-message="エラーが発生しました。もう一度お試しください。"
+        data-error-reset="検索をリセット"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="セットアップおよび管理に関するドキュメント"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/bluexp-setup-admin/index.html">
+        セットアップおよび管理に関するドキュメント
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="リリースノート"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> リリースノート</div>-->
+         リリースノート
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新機能"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/bluexp-setup-admin/whats-new.html">
+        新機能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="既知の制限"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/bluexp-setup-admin/reference-limitations.html">
+        既知の制限
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="はじめに"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> はじめに</div>-->
+         はじめに
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="基本事項をご確認ください"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 基本事項をご確認ください</div>-->
+         基本事項をご確認ください
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/concept-overview.html">
+        BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アカウント"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/concept-netapp-accounts.html">
+        アカウント
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタ"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/concept-connectors.html">
+        コネクタ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="展開モード"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-modes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/concept-modes.html">
+        展開モード
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="標準モードで開始します"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 標準モードで開始します</div>-->
+         標準モードで開始します
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="スタートアップワークフロー"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-quick-start-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-quick-start-standard-mode.html">
+        スタートアップワークフロー
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPコンソールを使用するためのネットワークの準備"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-networking-saas-console.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-networking-saas-console.html">
+        BlueXPコンソールを使用するためのネットワークの準備
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPにサインアップします"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-sign-up-saas.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-sign-up-saas.html">
+        BlueXPにサインアップします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタを作成します"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> コネクタを作成します</div>-->
+         コネクタを作成します
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタのインストールオプション"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-install-options-aws.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/bluexp-setup-admin/concept-install-options-aws.html">
+        コネクタのインストールオプション
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPからコネクタを作成します"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-aws-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/bluexp-setup-admin/task-install-connector-aws-bluexp.html">
+        BlueXPからコネクタを作成します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="マーケットプレイスからコネクターを作成する"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-aws-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/bluexp-setup-admin/task-install-connector-aws-marketplace.html">
+        マーケットプレイスからコネクターを作成する
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタを手動で取り付ける"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-aws-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/bluexp-setup-admin/task-install-connector-aws-manual.html">
+        コネクタを手動で取り付ける
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタのインストールオプション"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-install-options-azure.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/bluexp-setup-admin/concept-install-options-azure.html">
+        コネクタのインストールオプション
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPからコネクタを作成します"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-azure-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/bluexp-setup-admin/task-install-connector-azure-bluexp.html">
+        BlueXPからコネクタを作成します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="マーケットプレイスからコネクターを作成する"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-azure-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/bluexp-setup-admin/task-install-connector-azure-marketplace.html">
+        マーケットプレイスからコネクターを作成する
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタを手動で取り付ける"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-azure-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/bluexp-setup-admin/task-install-connector-azure-manual.html">
+        コネクタを手動で取り付ける
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタのインストールオプション"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-install-options-google.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/bluexp-setup-admin/concept-install-options-google.html">
+        コネクタのインストールオプション
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPやgcloudからコネクタを作成"
+      data-li-level="5#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-google-bluexp-gcloud.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html">
+        BlueXPやgcloudからコネクタを作成
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタを手動で取り付ける"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-google-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/bluexp-setup-admin/task-install-connector-google-manual.html">
+        コネクタを手動で取り付ける
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="オンプレミス"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/bluexp-setup-admin/task-install-connector-on-prem.html">
+        オンプレミス
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPにサブスクライブします"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-subscribe-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-subscribe-standard-mode.html">
+        BlueXPにサブスクライブします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="次は何ができるか"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-whats-next.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-whats-next.html">
+        次は何ができるか
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="制限モードの使用を開始します"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 制限モードの使用を開始します</div>-->
+         制限モードの使用を開始します
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="スタートアップワークフロー"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-quick-start-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-quick-start-restricted-mode.html">
+        スタートアップワークフロー
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="導入を準備"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-prepare-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-prepare-restricted-mode.html">
+        導入を準備
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタを展開します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-install-restricted-mode.html">
+        コネクタを展開します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPにサブスクライブします"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-subscribe-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-subscribe-restricted-mode.html">
+        BlueXPにサブスクライブします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="次は何ができるか"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-whats-next-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-whats-next-restricted-mode.html">
+        次は何ができるか
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="プライベートモードで開始します"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> プライベートモードで開始します</div>-->
+         プライベートモードで開始します
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="スタートアップワークフロー"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-quick-start-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-quick-start-private-mode.html">
+        スタートアップワークフロー
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="導入を準備"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-prepare-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-prepare-private-mode.html">
+        導入を準備
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタを展開します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-install-private-mode.html">
+        コネクタを展開します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="次は何ができるか"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-whats-next-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-whats-next-private-mode.html">
+        次は何ができるか
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPにログインします"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-logging-in.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/bluexp-setup-admin/task-logging-in.html">
+        BlueXPにログインします
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPを管理します"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> BlueXPを管理します</div>-->
+         BlueXPを管理します
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アイデンティティフェデレーション"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-federation.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/bluexp-setup-admin/concept-federation.html">
+        アイデンティティフェデレーション
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPのアカウント"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> BlueXPのアカウント</div>-->
+         BlueXPのアカウント
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPアカウントを管理します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-managing-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-managing-netapp-accounts.html">
+        BlueXPアカウントを管理します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アカウントでの処理を監視します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-monitor-cm-operations.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-monitor-cm-operations.html">
+        アカウントでの処理を監視します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPアカウントをもう1つ作成します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-create-account.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-create-account.html">
+        BlueXPアカウントをもう1つ作成します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ユーザロール"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-user-roles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-user-roles.html">
+        ユーザロール
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタ"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> コネクタ</div>-->
+         コネクタ
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタのシステム ID を確認します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-finding-system-id.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-finding-system-id.html">
+        コネクタのシステム ID を確認します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="既存のコネクタを管理します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-managing-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-managing-connectors.html">
+        既存のコネクタを管理します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="セキュアなアクセスのためのHTTPS証明書をインストールします"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-installing-https-cert.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-installing-https-cert.html">
+        セキュアなアクセスのためのHTTPS証明書をインストールします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="プロキシサーバを使用するようにコネクタを設定します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-configuring-proxy.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-configuring-proxy.html">
+        プロキシサーバを使用するようにコネクタを設定します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コネクタのデフォルト設定"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-connector-default-config.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-connector-default-config.html">
+        コネクタのデフォルト設定
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="クレデンシャルとサブスクリプション"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> クレデンシャルとサブスクリプション</div>-->
+         クレデンシャルとサブスクリプション
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="クレデンシャルと権限の詳細"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-accounts-aws.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/bluexp-setup-admin/concept-accounts-aws.html">
+        クレデンシャルと権限の詳細
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="クレデンシャルとサブスクリプションを管理する"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-adding-aws-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/bluexp-setup-admin/task-adding-aws-accounts.html">
+        クレデンシャルとサブスクリプションを管理する
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="クレデンシャルと権限の詳細"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-accounts-azure.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/bluexp-setup-admin/concept-accounts-azure.html">
+        クレデンシャルと権限の詳細
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="クレデンシャルとサブスクリプションを管理する"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-adding-azure-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/bluexp-setup-admin/task-adding-azure-accounts.html">
+        クレデンシャルとサブスクリプションを管理する
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="プロジェクトと権限の詳細"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-accounts-gcp.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/bluexp-setup-admin/concept-accounts-gcp.html">
+        プロジェクトと権限の詳細
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="クレデンシャルとサブスクリプションを管理する"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-adding-gcp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/bluexp-setup-admin/task-adding-gcp-accounts.html">
+        クレデンシャルとサブスクリプションを管理する
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPアカウントに関連付けられているNSSクレデンシャルを管理します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-adding-nss-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-adding-nss-accounts.html">
+        BlueXPアカウントに関連付けられているNSSクレデンシャルを管理します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPログインに関連付けられているクレデンシャルを管理します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-manage-user-credentials.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/task-manage-user-credentials.html">
+        BlueXPログインに関連付けられているクレデンシャルを管理します
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="参照"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 参照</div>-->
+         参照
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="権限"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 権限</div>-->
+         権限
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="権限の概要"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-permissions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-permissions.html">
+        権限の概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector の AWS 権限"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-permissions-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-permissions-aws.html">
+        Connector の AWS 権限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector の Azure 権限"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-permissions-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-permissions-azure.html">
+        Connector の Azure 権限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector の Google Cloud 権限"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-permissions-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-permissions-gcp.html">
+        Connector の Google Cloud 権限
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ポート"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> ポート</div>-->
+         ポート
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWSでのコネクタセキュリティグループのルール"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-ports-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-ports-aws.html">
+        AWSでのコネクタセキュリティグループのルール
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azureでのコネクタセキュリティグループのルール"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-ports-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-ports-azure.html">
+        Azureでのコネクタセキュリティグループのルール
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloudのコネクタファイアウォールルール"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-ports-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-ports-gcp.html">
+        Google Cloudのコネクタファイアウォールルール
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="オンプレミスコネクタ用のポート"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-ports-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-setup-admin/reference-ports-on-prem.html">
+        オンプレミスコネクタ用のポート
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="知識とサポート"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 知識とサポート</div>-->
+         知識とサポート
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="サポートに登録します"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/bluexp-setup-admin/task-support-registration.html">
+        サポートに登録します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ヘルプを表示します"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/bluexp-setup-admin/task-get-help.html">
+        ヘルプを表示します
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法的通知"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/bluexp-setup-admin/legal-notices.html">
+        法的通知
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/ja-jp/bluexp-setup-admin"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/ja-jp/bluexp-setup-admin"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/ja-jp/bluexp-setup-admin/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 日本語は機械翻訳による参考訳です。内容に矛盾や不一致があった場合には、英語の内容が優先されます。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">BlueXPやgcloudからGoogle Cloudでコネクタを作成</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-03-27 18:21:20 +0000">03/27/2024</time>
+        
+    
+    
+        <span>共同作成者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/ja-jp/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />変更を提案</span>
+        <img src="/ja-jp/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/ja-jp/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin.ja-jp/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html&page-title=BlueXPやgcloudからGoogle Cloudでコネクタを作成" class="page-nav-contribute-link" role="button">ドキュメントの変更をリクエスト</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-install-connector-google-bluexp-gcloud.adoc" class="page-nav-contribute-link" role="button">このページを編集</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >フィードバックを送るには</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/ja-jp/bluexp-setup-admin/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/ja-jp/bluexp-setup-admin/pdfs/fullsite-sidebar/BlueXPのセットアップと管理に関するドキュメント.pdf" >
+                    <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>このドキュメント ページのPDF</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/リリースノート.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            リリースノート
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/はじめに.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            はじめに
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/基本事項をご確認ください.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            基本事項をご確認ください
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/標準モードで開始します.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            標準モードで開始します
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/コネクタを作成します.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            コネクタを作成します
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/制限モードの使用を開始します.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            制限モードの使用を開始します
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/プライベートモードで開始します.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            プライベートモードで開始します
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/BlueXPを管理します.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            BlueXPを管理します
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/BlueXPのアカウント.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            BlueXPのアカウント
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/コネクタ.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            コネクタ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/クレデンシャルとサブスクリプション.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            クレデンシャルとサブスクリプション
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/参照.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            参照
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/権限.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            権限
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/ポート.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            ポート
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-setup-admin/pdfs/sidebar/知識とサポート.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            知識とサポート
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/ja-jp/bluexp-setup-admin/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>PDF版ドキュメントのセット<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>BlueXPまたはgcloudを使用してGoogle Cloudでコネクタを作成するには、ネットワークを設定し、Google Cloud権限を準備し、Google Cloud APIを有効にしてから、コネクタを作成する必要があります。</p>
+</div>
+<div class="paragraph">
+<div class="title">作業を開始する前に</div>
+<p>確認が必要です <a href="reference-limitations.html">"コネクタの制限"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順1ネットワークをセットアップする">手順1：ネットワークをセットアップする</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。たとえば、ターゲットネットワークへの接続が可能で、アウトバウンドのインターネットアクセスが利用可能であることを確認する必要があります。</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">vPCおよびサブネット</dt>
+<dd>
+<p>コネクタを作成するときは、コネクタを配置するVPCとサブネットを指定する必要があります。</p>
+</dd>
+<dt class="hdlist1">ターゲットネットワークへの接続</dt>
+<dd>
+<p>コネクタには、作業環境を作成および管理する予定の場所へのネットワーク接続が必要です。たとえば、オンプレミス環境にCloud Volumes ONTAPシステムやストレージシステムを作成するネットワークなどです。</p>
+</dd>
+<dt class="hdlist1">アウトバウンドインターネットアクセス</dt>
+<dd>
+<p>コネクタを展開するネットワークの場所には、特定のエンドポイントに接続するためのアウトバウンドインターネット接続が必要です。</p>
+</dd>
+<dt class="hdlist1">コネクタから接続されたエンドポイント</dt>
+<dd>
+<p>このコネクタは、パブリッククラウド環境内のリソースとプロセスを日常的に管理するために、次のエンドポイントに接続するためのアウトバウンドインターネットアクセスを必要とします。</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>次に示すエンドポイントはすべてCNAMEエントリであることに注意してください。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 66.6666%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">エンドポイント</th>
+<th class="tableblock halign-left valign-top">目的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://www.googleapis.com/compute/v1/<br>
+https://compute.googleapis.com/compute/v1<br>
+https://cloudresourcemanager.googleapis.com/v1/projects<br>
+https://www.googleapis.com/compute/beta<br>
+https://storage.googleapis.com/storage/v1<br>
+https://www.googleapis.com/storage/v1<br>
+https://iam.googleapis.com/v1<br>
+https://cloudkms.googleapis.com/v1<br>
+https://www.googleapis.com/deploymentmanager/v2/projects</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Google Cloudでリソースを管理します。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\ <a href="https://support.netapp.com" class="bare">https://support.netapp.com</a><br>
+<a href="https://mysupport.netapp.com" class="bare">https://mysupport.netapp.com</a> をご覧ください</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://*.cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://netapp-cloud-account.auth0.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>BlueXPでSaaSの機能とサービスを提供するため。</p>
+</div>
+<div class="paragraph">
+<p>コネクタは現在「cloudmanager.cloud.netapp.com"」に連絡していますが、今後のリリースでは「api.bluexp.netapp.com"」に連絡を開始します。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.blob.core.windows.net</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>をクリックして、 Connector と Docker コンポーネントをアップグレードします。</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">BlueXPコンソールからアクセスするエンドポイント</dt>
+<dd>
+<p>SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、IT部門は複数のエンドポイントと通信してデータ管理タスクを実行します。これには、BlueXPコンソールからコネクタを導入するために接続されるエンドポイントも含まれます。</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="reference-networking-saas-console.html">"BlueXPコンソールからアクセスしたエンドポイントのリストを表示します"</a>。</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">プロキシサーバ</dt>
+<dd>
+<p>すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>IP アドレス</p>
+</li>
+<li>
+<p>クレデンシャル</p>
+</li>
+<li>
+<p>HTTPS証明書</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>BlueXPでは透過型プロキシサーバはサポートされません。</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">ポート</dt>
+<dd>
+<p>コネクタを起動するか、コネクタがCloud Volumes ONTAPからNetAppサポートにAutoSupportメッセージを送信するためのプロキシとして使用されている場合を除き、コネクタへの受信トラフィックはありません。</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。</p>
+</li>
+<li>
+<p>SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。</p>
+</li>
+<li>
+<p>アウトバウンドインターネット接続を使用できないサブネットにCloud Volumes ONTAP システムを導入する場合は、ポート3128経由のインバウンド接続が必要です。</p>
+<div class="paragraph">
+<p>Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するためのアウトバウンドインターネット接続が確立されていない場合は、コネクタに付属のプロキシサーバを使用するように自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">NTPを有効にする</dt>
+<dd>
+<p>BlueXP分類を使用して企業データソースをスキャンする場合は、システム間で時刻が同期されるように、BlueXP ConnectorシステムとBlueXP分類システムの両方でネットワークタイムプロトコル（NTP）サービスを有効にする必要があります。 <a href="https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html" target="_blank" rel="noopener">"BlueXPの分類の詳細については、こちらをご覧ください"</a></p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>コネクタを作成した後で、このネットワーク要件を実装する必要があります。</p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順2コネクタを作成するための権限を設定する">手順2：コネクタを作成するための権限を設定する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXPまたはgcloudを使用してコネクタを導入する前に、コネクタVMを導入するGoogle Cloudユーザの権限を設定する必要があります。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>Google Cloudでカスタムロールを作成します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>次の権限を含むYAMLファイルを作成します。</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">title: Connector deployment policy
+description: Permissions for the user who deploys the Connector from BlueXP
+stage: GA
+includedPermissions:
+- compute.disks.create
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.get
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.networks.updatePolicy
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- resourcemanager.projects.get
+- compute.instances.setServiceAccount
+- iam.serviceAccounts.list</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Google CloudからCloud Shellをアクティブ化します。</p>
+</li>
+<li>
+<p>必要な権限を含むYAMLファイルをアップロードします。</p>
+</li>
+<li>
+<p>を使用して、カスタムロールを作成します <code>gcloud iam roles create</code> コマンドを実行します</p>
+<div class="paragraph">
+<p>次の例では、「connectorDeployment」という名前のロールをプロジェクトレベルで作成します。</p>
+</div>
+<div class="paragraph">
+<p>gcloud IAMロールcreate connectorDeployment --project=myproject --file=connector-deployment.yaml</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud" target="_blank" rel="noopener">"Google Cloudのドキュメント：カスタムロールの作成と管理"</a></p>
+</div>
+</li>
+<li>
+<p>このカスタムロールを、BlueXPから、またはgcloudを使用してコネクタを導入するユーザに割り当てます。</p>
+<div class="paragraph">
+<p><a href="https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role" target="_blank" rel="noopener">"Google Cloudドキュメント：ロールを1つだけ指定します"</a></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>Google Cloudユーザに、Connectorの作成に必要な権限が付与されるようになりました。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順3コネクタの権限を設定する">手順3：コネクタの権限を設定する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Google Cloudでリソースを管理するためにBlueXPで必要な権限をコネクタに付与するには、Google Cloudサービスアカウントが必要です。コネクタを作成するときは、このサービスアカウントをコネクタVMに関連付ける必要があります。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>Google Cloudでカスタムロールを作成します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>の内容を含むYAMLファイルを作成します <a href="reference-permissions-gcp.html">"コネクタのサービスアカウント権限"</a>。</p>
+</li>
+<li>
+<p>Google CloudからCloud Shellをアクティブ化します。</p>
+</li>
+<li>
+<p>必要な権限を含むYAMLファイルをアップロードします。</p>
+</li>
+<li>
+<p>を使用して、カスタムロールを作成します <code>gcloud iam roles create</code> コマンドを実行します</p>
+<div class="paragraph">
+<p>次の例では、プロジェクトレベルで「Connector」という名前のロールを作成します。</p>
+</div>
+<div class="paragraph">
+<p><code>gcloud iam roles create connector --project=myproject --file=connector.yaml</code></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud" target="_blank" rel="noopener">"Google Cloudのドキュメント：カスタムロールの作成と管理"</a></p>
+</div>
+</li>
+<li>
+<p>Google Cloudでサービスアカウントを作成し、ロールをサービスアカウントに割り当てます。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>IAMおよび管理サービスから、*サービスアカウント&gt;サービスアカウントの作成*を選択します。</p>
+</li>
+<li>
+<p>サービスアカウントの詳細を入力し、*作成して続行*を選択します。</p>
+</li>
+<li>
+<p>作成したロールを選択します。</p>
+</li>
+<li>
+<p>残りの手順を完了してロールを作成します。</p>
+<div class="paragraph">
+<p><a href="https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account" target="_blank" rel="noopener">"Google Cloudドキュメント：サービスアカウントの作成"</a></p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Cloud Volumes ONTAP システムを、Connectorが存在するプロジェクトとは異なるプロジェクトに導入する場合は、Connectorのサービスアカウントにこれらのプロジェクトへのアクセスを提供する必要があります。</p>
+<div class="paragraph">
+<p>たとえば、コネクタがプロジェクト1にあり、プロジェクト2でCloud Volumes ONTAP システムを作成するとします。プロジェクト2のサービスアカウントへのアクセス権を付与する必要があります。</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>IAMと管理サービスで、Cloud Volumes ONTAPシステムを作成するGoogle Cloudプロジェクトを選択します。</p>
+</li>
+<li>
+<p>[* iAM*（* IAM）]ページで、[*アクセスを許可（Grant Access）]を選択し、必要な詳細を入力します。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>コネクタのサービスアカウントのEメールを入力します。</p>
+</li>
+<li>
+<p>コネクタのカスタムロールを選択します。</p>
+</li>
+<li>
+<p>[ 保存（ Save ） ] を選択します。</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>詳細については、を参照してください <a href="https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role" target="_blank" rel="noopener">"Google Cloudのドキュメント"</a></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>Connector VMのサービスアカウントが設定されます。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順4共有vpc権限を設定する">手順4：共有VPC権限を設定する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>共有VPCを使用してサービスプロジェクトにリソースを導入する場合は、権限を準備する必要があります。</p>
+</div>
+<div class="paragraph">
+<p>IAM の設定が完了したら、この表を参考にして権限の表を環境に反映させる必要があります。</p>
+</div>
+<details>
+<summary class="title">共有VPC権限の表示</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 18%;">
+<col style="width: 18%;">
+<col style="width: 34%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ID</th>
+<th class="tableblock halign-left valign-top">作成者</th>
+<th class="tableblock halign-left valign-top">でホストされています</th>
+<th class="tableblock halign-left valign-top">サービスプロジェクトの権限</th>
+<th class="tableblock halign-left valign-top">ホストプロジェクトの権限</th>
+<th class="tableblock halign-left valign-top">目的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">コネクタを展開するためのGoogleアカウント</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">カスタム</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">サービスプロジェクト</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector">"コネクタ展開ポリシー"</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>compute.networkUser</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">サービスプロジェクトへのコネクタの配置</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connectorサービスアカウント</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">カスタム</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">サービスプロジェクト</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="reference-permissions-gcp.html">"コネクタサービスアカウントポリシー"</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">compute.networkUser<br>
+<br>
+deploymentmanager. editor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">サービスプロジェクトへの Cloud Volumes ONTAP とサービスの導入と保守</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP サービスアカウント</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">カスタム</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">サービスプロジェクト</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">storagec.admin<br>
+<br>
+メンバー：BlueXPサービスアカウントをserviceAccount.userとして登録します</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">該当なし</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">（オプション）データ階層化とBlueXPのバックアップとリカバリに使用します</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Google API サービスエージェント</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Google Cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">サービスプロジェクト</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>（デフォルト） Editor</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>compute.networkUser</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">導入に代わってGoogle Cloud APIと対話します。BlueXPが共有ネットワークを使用できるようにします</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Google Compute Engine のデフォルトのサービスアカウント</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Google Cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">サービスプロジェクト</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>（デフォルト） Editor</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>compute.networkUser</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">導入に代わってGoogle Cloudインスタンスとコンピューティングインフラストラクチャを導入します。BlueXPが共有ネットワークを使用できるようにします</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>注：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>deploymentmanager. editorは、ファイアウォール規則を配備に渡していない場合にのみホストプロジェクトで必要です。BlueXPで作成することを選択している場合にのみ必要です。ルールが指定されていない場合、ホストプロジェクトにVPC0ファイアウォールルールが含まれているデプロイメントがBlueXPによって作成されます。</p>
+</li>
+<li>
+<p>ファイアウォールの作成とfirewall.deleteは、ファイアウォールルールを配布に渡しておらず、BlueXPで作成することを選択している場合にのみ必要です。これらの権限はBlueXPアカウント.yamlファイルにあります。共有 VPC を使用して HA ペアを導入する場合は、これらの権限を使用して VPC1 、 2 、および 3 のファイアウォールルールが作成されます。他のすべての展開では、これらの権限は VPC0 のルールの作成にも使用されます。</p>
+</li>
+<li>
+<p>データ階層化の場合、階層化サービスアカウントは、プロジェクトレベルだけでなく、サービスアカウントに対して serviceAccount.user ロールを持つ必要があります。現在、プロジェクトレベルで serviceAccount.user を割り当てている場合、 getIAMPolicy でサービスアカウントを照会しても権限は表示されません。</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ステップ5google-cloud-apiを有効にする">ステップ5：Google Cloud APIを有効にする</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>コネクタとCloud Volumes ONTAP をGoogle Cloudに導入する前に、いくつかのGoogle Cloud APIを有効にする必要があります。</p>
+</div>
+<div class="olist arabic">
+<div class="title">ステップ</div>
+<ol class="arabic">
+<li>
+<p>プロジェクトで次のGoogle Cloud APIを有効にします。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Deployment Manager V2 API</p>
+</li>
+<li>
+<p>クラウドロギング API</p>
+</li>
+<li>
+<p>Cloud Resource Manager API の略</p>
+</li>
+<li>
+<p>Compute Engine API</p>
+</li>
+<li>
+<p>ID およびアクセス管理（ IAM ） API</p>
+</li>
+<li>
+<p>Cloud Key Management Service（KMS）APIの略</p>
+<div class="paragraph">
+<p>（お客様が管理する暗号化キー（CMEK）でBlueXPのバックアップとリカバリを使用する場合にのみ必要）</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.google.com/apis/docs/getting-started#enabling_apis" target="_blank" rel="noopener">"Google Cloudドキュメント：APIの有効化"</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順6コネクタを作成する">手順6：コネクタを作成する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXPのWebベースのコンソールから直接、またはgcloudを使用してコネクタを作成します。</p>
+</div>
+<div class="paragraph">
+<div class="title">このタスクについて</div>
+<p>コネクタを作成すると、デフォルトの構成を使用してGoogle Cloudに仮想マシンインスタンスが導入されます。コネクタの作成後は、CPUやRAMが少ないVMインスタンスに変更しないでください。 <a href="reference-connector-default-config.html">"コネクタのデフォルト設定について説明します"</a>。</p>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">BlueXP</div>
+<div class="content">
+<div class="paragraph">
+<div class="title">作業を開始する前に</div>
+<p>次の情報が必要です。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>コネクタVMのコネクタとサービスアカウントを作成するために必要なGoogle Cloud権限。</p>
+</li>
+<li>
+<p>ネットワーク要件を満たすVPCとサブネット。</p>
+</li>
+<li>
+<p>コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p><strong class="コネクタ">ドロップダウンを選択し、</strong>[コネクタの追加]*を選択します。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_connector_add.gif" alt="ヘッダーのコネクターアイコンとコネクターの追加アクションを示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>クラウドプロバイダとして * Google Cloud Platform * を選択します。</p>
+</li>
+<li>
+<p>[*コネクターの配置（Deploying a Connector *）]ページで、必要なものについて詳しく確認してください。次の 2 つのオプションがあります。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>製品内のガイドを使用して導入を準備するには、* Continue *を選択します。製品ガイドの各手順には、このページのドキュメントに記載されている情報が含まれています。</p>
+</li>
+<li>
+<p>このページの手順に従って準備が完了している場合は、[Skip to Deployment]*を選択します。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>ウィザードの手順に従って、コネクタを作成します。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>プロンプトが表示されたら、 Google アカウントにログインします。このアカウントには、仮想マシンインスタンスを作成するために必要な権限が付与されている必要があります。</p>
+<div class="paragraph">
+<p>このフォームは Google が所有およびホストしています。クレデンシャルがネットアップに提供されていません。</p>
+</div>
+</li>
+<li>
+<p><strong>詳細</strong>：仮想マシンインスタンスの名前を入力し、タグを指定してプロジェクトを選択し、必要な権限を持つサービスアカウントを選択します（詳細については、上のセクションを参照してください）。</p>
+</li>
+<li>
+<p>* 場所 * ：インスタンスのリージョン、ゾーン、 VPC 、およびサブネットを指定します。</p>
+</li>
+<li>
+<p>* ネットワーク * ：パブリック IP アドレスを有効にするかどうかを選択し、必要に応じてプロキシ設定を指定します。</p>
+</li>
+<li>
+<p><strong>ファイアウォールポリシー</strong>：新しいファイアウォールポリシーを作成するか、必要なインバウンドおよびアウトバウンドルールを許可する既存のファイアウォールポリシーを選択するかを選択します。</p>
+<div class="paragraph">
+<p><a href="reference-ports-gcp.html">"Google Cloudのファイアウォールルール"</a></p>
+</div>
+</li>
+<li>
+<p>* 復習 * ：選択内容を確認して、設定が正しいことを確認してください。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>「 * 追加」を選択します。</p>
+<div class="paragraph">
+<p>インスタンスの準備が完了するまでに約 7 分かかります。処理が完了するまで、ページには表示されたままにしておいてください。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>プロセスが完了すると、BlueXPからコネクタを使用できるようになります。</p>
+</div>
+<div class="paragraph">
+<p>コネクタを作成したのと同じGoogle CloudアカウントにGoogle Cloud Storageバケットがある場合は、BlueXPキャンバスにGoogle Cloud Storageの作業環境が自動的に表示されます。 <a href="https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html" target="_blank" rel="noopener">"BlueXPからGoogle Cloud Storageを管理する方法をご確認ください"</a></p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">gcloud</div>
+<div class="content">
+<div class="paragraph">
+<div class="title">作業を開始する前に</div>
+<p>次の情報が必要です。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>コネクタVMのコネクタとサービスアカウントを作成するために必要なGoogle Cloud権限。</p>
+</li>
+<li>
+<p>ネットワーク要件を満たすVPCとサブネット。</p>
+</li>
+<li>
+<p>VMインスタンスの要件の理解</p>
+<div class="ulist">
+<ul>
+<li>
+<p>* CPU *：4コアまたは4 vCPU</p>
+</li>
+<li>
+<p>* RAM *：14 GB</p>
+</li>
+<li>
+<p><strong>マシンタイプ</strong>：n2-standard-4をお勧めします。</p>
+<div class="paragraph">
+<p>このコネクタは、シールドされたVM機能をサポートするOSを持つVMインスタンス上のGoogle Cloudでサポートされています。</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>ご希望の方法で gcloud SDK にログインします。</p>
+<div class="paragraph">
+<p>この例では、gcloud SDKがインストールされたローカルシェルを使用しますが、Google CloudコンソールでネイティブのGoogle Cloud Shellを使用できます。</p>
+</div>
+<div class="paragraph">
+<p>Google Cloud SDK の詳細については、を参照してください <a href="https://cloud.google.com/sdk" target="_blank" rel="noopener">"Google Cloud SDK ドキュメントページ"</a>。</p>
+</div>
+</li>
+<li>
+<p>上のセクションで定義した必要な権限を持つユーザとしてログインしていることを確認します。</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">gcloud auth list</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>出力には次のように表示されます。ここで、 * user account はログインに使用するユーザアカウントです。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Credentialed Accounts
+ACTIVE  ACCOUNT
+     some_user_account@domain.com
+*    desired_user_account@domain.com
+To set the active account, run:
+ $ gcloud config set account `ACCOUNT`
+Updates are available for some Cloud SDK components. To install them,
+please run:
+$ gcloud components update</pre>
+</div>
+</div>
+</li>
+<li>
+<p>を実行します <code>gcloud compute instances create</code> コマンドを実行します</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">gcloud compute instances create &lt;instance-name&gt;
+  --machine-type=n2-standard-4
+  --image-project=netapp-cloudmanager
+  --image-family=cloudmanager
+  --scopes=cloud-platform
+  --project=&lt;project&gt;
+  --service-account=&lt;service-account&gt;
+  --zone=&lt;zone&gt;
+  --no-address
+  --tags &lt;network-tag&gt;
+  --network &lt;network-path&gt;
+  --subnet &lt;subnet-path&gt;
+  --boot-disk-kms-key &lt;kms-key-path&gt;</code></pre>
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">インスタンス名</dt>
+<dd>
+<p>VM インスタンスに必要なインスタンス名。</p>
+</dd>
+<dt class="hdlist1">プロジェクト</dt>
+<dd>
+<p>（オプション） VM を導入するプロジェクト。</p>
+</dd>
+<dt class="hdlist1">service-account のことです</dt>
+<dd>
+<p>手順 2 の出力で指定したサービスアカウント。</p>
+</dd>
+<dt class="hdlist1">ゾーン</dt>
+<dd>
+<p>VM を導入するゾーン</p>
+</dd>
+<dt class="hdlist1">no-address</dt>
+<dd>
+<p>（オプション）外部 IP アドレスは使用されません（パブリックインターネットにトラフィックをルーティングするには、クラウド NAT またはプロキシが必要です）。</p>
+</dd>
+<dt class="hdlist1">ネットワークタグ</dt>
+<dd>
+<p>（オプション）タグを使用してファイアウォールルールをコネクタインスタンスにリンクするには、ネットワークタグを追加します</p>
+</dd>
+<dt class="hdlist1">network-path</dt>
+<dd>
+<p>（オプション）コネクタを配置するネットワークの名前を追加します（共有 VPC の場合は完全パスが必要です）。</p>
+</dd>
+<dt class="hdlist1">subnet-path 」を指定します</dt>
+<dd>
+<p>（オプション）コネクタを導入するサブネットの名前を追加します（共有 VPC の場合は完全パスが必要です）。</p>
+</dd>
+<dt class="hdlist1">kms -key-path</dt>
+<dd>
+<p>（オプション） KMS キーを追加してコネクタのディスクを暗号化する（ IAM 権限も適用する必要があります）</p>
+</dd>
+</dl>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>これらの旗についてのより多くの情報のために、訪問しなさい <a href="https://cloud.google.com/sdk/gcloud/reference/compute/instances/create" target="_blank" rel="noopener">"Google Cloud Compute SDK ドキュメント"</a>。</p>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>+<br>
+コマンドを実行すると、ネットアップのゴールデンイメージを使用してコネクタが導入されます。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>コネクタインスタンスに接続されているホストから Web ブラウザを開き、次の URL を入力します。</p>
+<div class="paragraph">
+<p><a href="https://<em>ipaddress</em>" class="bare">https://<em>ipaddress</em></a></p>
+</div>
+</li>
+<li>
+<p>ログイン後、コネクタを設定します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>コネクタに関連付けるBlueXPアカウントを指定します。</p>
+<div class="paragraph">
+<p><a href="concept-netapp-accounts.html">"BlueXPアカウントの詳細をご確認ください"</a>。</p>
+</div>
+</li>
+<li>
+<p>システムの名前を入力します。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>これで、コネクタのインストールとBlueXPアカウントでのセットアップが完了しました。</p>
+</div>
+<div class="paragraph">
+<p>Webブラウザを開き、にアクセスします <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">"BlueXPコンソール"</a> BlueXPでコネクタの使用を開始します</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/ja-jp/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/ja-jp/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">このページ</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">ご利用規約</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">プライバシー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">クッキー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">クッキーの設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">このページに関するフィードバックをお寄せください</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ja-jp/bluexp-setup-admin/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ja-jp/bluexp-setup-admin/js/prism.js'></script>
+      <script type="text/javascript" src='/ja-jp/bluexp-setup-admin/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ja-jp/bluexp-setup-admin/js/ie-tabbed-blocks.js'></script>
+    <script src='/ja-jp/bluexp-setup-admin/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
