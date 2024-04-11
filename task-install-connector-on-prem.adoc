@@ -51,7 +51,17 @@ CPU:: 4 コアまたは 4 個の vCPU
 RAM:: 14GB
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
 /var のディスク領域:: 20GiB のスペースが必要です
-Docker Engine の略:: Connectorをインストールする前に、ホストにDocker Engineバージョン19.3.1以降が必要です。 https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+Docker Engine の略:: コネクタをインストールする前に、ホストにDocker Engineが必要です。
++
+--
+* サポートされる最小バージョンは19.3.1です。
+* サポートされる最大バージョンは25.0.5です。
++
+https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+
+
+
+--
 
 
 
