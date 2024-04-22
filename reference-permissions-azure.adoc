@@ -731,20 +731,6 @@ Connectorは、Azure Kubernetes Service（AKS）で実行されているクラ�
 
 
 
-=== 修正
-
-BlueXPの修正措置を使用すると、コネクタはAzureリソースのタグを管理するために次のAPI要求を行います。
-
-* microsoft.resources/resources/read
-* microsoft.Resources/Subscriptions /operationresults/read
-* microsoft.Resources/Subscriptions /resourceGroups/read
-* microsoft.resources/Subscriptions /resourcegroups/resources/read
-* microsoft.Resources/tags/read
-* microsoft.Resources/tags/write
-
-
-
-
 === 階層化
 
 BlueXP階層化のセットアップ時に、コネクタは次のAPI要求を行います。

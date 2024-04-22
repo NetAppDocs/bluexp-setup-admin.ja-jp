@@ -377,7 +377,7 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 | StorageGRID | いいえ | いいえ 
 
 
-.17+| * サービス * | バックアップとリカバリ | はい。
+.16+| * サービス * | バックアップとリカバリ | はい。
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] | はい。
 
@@ -415,9 +415,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 | ランサムウェアからの保護 | いいえ | いいえ 
-
-
-| 修正 | いいえ | いいえ 
 
 
 | レプリケーション | はい。 | はい。 
