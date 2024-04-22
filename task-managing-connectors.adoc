@@ -139,13 +139,19 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 == Amazon EC2インスタンスでIMDSv2を使用する必要がある
 
-2024年3月より、BlueXPで、コネクタとCloud Volumes ONTAP（HA環境のメディエーターを含む）でAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）がサポートされるようになりました。IMDSv2では、脆弱性に対する保護が強化されています。 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["AWSセキュリティブログでIMDSv2の詳細を確認する"^]
+2024年3月より、BlueXPで、コネクタとCloud Volumes ONTAP（HA環境のメディエーターを含む）でAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）がサポートされるようになりました。ほとんどの場合、IMDSv2は新しいEC2インスタンスで自動的に設定されます。IMDSv1は2024年3月より前に有効になっています。セキュリティポリシーで必要な場合は、EC2インスタンスでIMDSv2を手動で設定する必要があります。
 
-* IMDSv2は、すべての新しいコネクタEC2インスタンスでデフォルトで有効になっています。IMDSv1は2024年3月より前に有効になっています。
-* IMDSv1は、新規および既存のすべてのCloud Volumes ONTAP EC2インスタンスでデフォルトで有効になっています。
+.このタスクについて
+IMDSv2では、脆弱性に対する保護が強化されています。 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["AWSセキュリティブログでIMDSv2の詳細を確認する"^]
 
+インスタンスメタデータサービス（IMDS）は、EC2インスタンスで次のように有効になります。
 
-セキュリティポリシーで必要な場合は、IMDSv2を使用するようにEC2インスタンスを設定できます。
+* BlueXPから新規コネクタを導入する場合、または https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraformスクリプト"^]IMDSv2はEC2インスタンスでデフォルトで有効になっています。
+* AWSで新しいEC2インスタンスを起動し、コネクタソフトウェアを手動でインストールすると、IMDSv2もデフォルトで有効になります。
+* AWS Marketplaceからコネクタを起動すると、IMDSv1がデフォルトで有効になります。EC2インスタンスにIMDSv2を手動で設定できます。
+* 既存のコネクタについては、IMDSv1は引き続きサポートされますが、必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
+* Cloud Volumes ONTAPでは、新規および既存のインスタンスでIMDSv1がデフォルトで有効になっています。必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
+
 
 .作業を開始する前に
 * コネクタのバージョンは3.9.38以降である必要があります。

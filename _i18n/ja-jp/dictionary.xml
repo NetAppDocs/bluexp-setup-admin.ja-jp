@@ -3860,10 +3860,6 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="84fc34721c0c912a148a70d22ac7cd5a" category="paragraph"><block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="98dddf7eafbbdfa88756d62945237473" category="section-title">Amazon EC2インスタンスでIMDSv2を使用する必要がある</block>
   <block id="824e7fae55f361d08bb9bd5bdf494ff0" category="inline-link">AWSセキュリティブログでIMDSv2の詳細を確認する</block>
-  <block id="c49009b6f155acc311d4014abe19ec98" category="paragraph">2024年3月より、BlueXPで、コネクタとCloud Volumes ONTAP（HA環境のメディエーターを含む）でAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）がサポートされるようになりました。IMDSv2では、脆弱性に対する保護が強化されています。<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
-  <block id="4166379ba80de4be17a81c04ec7819c4" category="list-text">IMDSv2は、すべての新しいコネクタEC2インスタンスでデフォルトで有効になっています。IMDSv1は2024年3月より前に有効になっています。</block>
-  <block id="6f218fd0d06a9a2564453a73bc05ee13" category="list-text">IMDSv1は、新規および既存のすべてのCloud Volumes ONTAP EC2インスタンスでデフォルトで有効になっています。</block>
-  <block id="7e6c98db93605459a9b69da423ef4684" category="paragraph">セキュリティポリシーで必要な場合は、IMDSv2を使用するようにEC2インスタンスを設定できます。</block>
   <block id="b2f60e6f194d16e1bf9deaa367cd9eae" category="list-text">コネクタのバージョンは3.9.38以降である必要があります。</block>
   <block id="177aac65c5f4518e1a35eb1479fac1a1" category="list-text">この変更を行うには、Cloud Volumes ONTAPインスタンスを再起動する必要があります。</block>
   <block id="5024434a1308ae5aff26ba15a55bce13" category="paragraph">応答ホップの制限を3に変更する必要があるため、この手順ではAWS CLIを使用する必要があります。</block>
@@ -4013,4 +4009,17 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">コネクタホスト要件の表示</block>
   <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>。</block>
   <block id="91c7ed7e9c640df79f6bf153c6642ae5" category="list-text">BlueXPから新規コネクタを導入する場合、または<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>IMDSv2はEC2インスタンスでデフォルトで有効になっています。</block>
+  <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">2024年4月22日</block>
+  <block id="1389c5e279a667948337a56d97caf570" category="section-title">コネクタ3.9.39</block>
+  <block id="103f00dbabbbaa84ff4ad44e1ae8f0e0" category="paragraph">現時点では、3.9.39リリースは標準モードと制限モードで使用できます。</block>
+  <block id="dcaa3e92176845b160207f9f0d80aef3" category="section-title">コネクタを作成するためのAWS権限</block>
+  <block id="492d5f07c90a7db03029f9a6c5532ce3" category="paragraph">BlueXPからAWSでコネクタを作成するには、さらに2つの権限が必要になりました。</block>
+  <block id="d563c67cb5d34e4276aadadd838867f8" category="paragraph">これらの権限は、コネクタのEC2インスタンスでIMDSv2を有効にするために必要です。</block>
+  <block id="99c957a89e85bd737f02914924c399b3" category="paragraph">これらの権限は、コネクタの作成時にBlueXPユーザインターフェイスに表示されるポリシーと、ドキュメントで提供されているポリシーに含まれています。</block>
+  <block id="679562c52996a8e2a4db9524251394f4" category="admonition">このポリシーには、BlueXPからAWSでConnectorインスタンスを起動するために必要な権限のみが含まれています。コネクタインスタンスに割り当てられるポリシーとは異なります。</block>
+  <block id="1c51e24c3b44b362001f3c1a6c51b065" category="inline-link">AWSからコネクタを作成するためのAWS権限を設定する方法</block>
+  <block id="16a785388c44f1116fdb34f01d8816bb" category="paragraph"><block ref="53bbefe6872cea40f97befa74964b71d" category="inline-link-rx"></block>。</block>
+  <block id="946e79c4f58ab5a0a68d36b7ccc89998" category="list-text">AWS Marketplaceからコネクタを起動すると、IMDSv1がデフォルトで有効になります。EC2インスタンスにIMDSv2を手動で設定できます。</block>
+  <block id="f2e7cda30b20334f5432b14d41028597" category="paragraph">2024年3月より、BlueXPで、コネクタとCloud Volumes ONTAP（HA環境のメディエーターを含む）でAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）がサポートされるようになりました。ほとんどの場合、IMDSv2は新しいEC2インスタンスで自動的に設定されます。IMDSv1は2024年3月より前に有効になっています。セキュリティポリシーで必要な場合は、EC2インスタンスでIMDSv2を手動で設定する必要があります。</block>
+  <block id="3c27ef222c1ee58d80a2a938ecc7eab9" category="paragraph">IMDSv2では、脆弱性に対する保護が強化されています。<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
 </blocks>

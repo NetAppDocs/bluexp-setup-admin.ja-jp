@@ -18,6 +18,38 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
+== 2024年4月22日
+
+
+
+=== コネクタ3.9.39
+
+今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
+
+現時点では、3.9.39リリースは標準モードと制限モードで使用できます。
+
+
+
+=== コネクタを作成するためのAWS権限
+
+BlueXPからAWSでコネクタを作成するには、さらに2つの権限が必要になりました。
+
+[source, json]
+----
+"ec2:DescribeLaunchTemplates",
+"ec2:CreateLaunchTemplate",
+----
+これらの権限は、コネクタのEC2インスタンスでIMDSv2を有効にするために必要です。
+
+これらの権限は、コネクタの作成時にBlueXPユーザインターフェイスに表示されるポリシーと、ドキュメントで提供されているポリシーに含まれています。
+
+
+NOTE: このポリシーには、BlueXPからAWSでConnectorインスタンスを起動するために必要な権限のみが含まれています。コネクタインスタンスに割り当てられるポリシーとは異なります。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["AWSからコネクタを作成するためのAWS権限を設定する方法"]。
+
+
+
 == 2024年4月11日
 
 
@@ -92,6 +124,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 * BlueXPから新規コネクタを導入する場合、または https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraformスクリプト"^]IMDSv2はEC2インスタンスでデフォルトで有効になっています。
 * AWSで新しいEC2インスタンスを起動し、コネクタソフトウェアを手動でインストールすると、IMDSv2もデフォルトで有効になります。
+* AWS Marketplaceからコネクタを起動すると、IMDSv1がデフォルトで有効になります。EC2インスタンスにIMDSv2を手動で設定できます。
 * 既存のコネクタについては、IMDSv1は引き続きサポートされますが、必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
 * Cloud Volumes ONTAPでは、新規および既存のインスタンスでIMDSv1がデフォルトで有効になっています。必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
 
