@@ -854,8 +854,6 @@
   <block id="0987e5bde139c54427573b7afe1d9422" category="paragraph">Connectorは、Azure Kubernetes Service（AKS）で実行されているクラスタを検出し管理するために次のAPI要求を実行します。</block>
   <block id="42f3fa961e42affb80862a782c9341af" category="list-text">Microsoft .ContainerService/managedClusters/read</block>
   <block id="317850f59220c738a6550c8cc0fbd9c5" category="list-text">Microsoft .ContainerService/managedClusters/listClusterUserCredential/action</block>
-  <block id="282baca6aef56652f503adce6afa9f07" category="section-title">修正</block>
-  <block id="92b5575604daffe3be8d9be7e9eea83d" category="paragraph">BlueXPの修正措置を使用すると、コネクタはAzureリソースのタグを管理するために次のAPI要求を行います。</block>
   <block id="826e9938777ea2a0280d06c76218f7c7" category="paragraph">BlueXP階層化のセットアップ時に、コネクタは次のAPI要求を行います。</block>
   <block id="f786a140deb938ac21ab095b7c402176" category="paragraph">このコネクタは、次のAPI要求を日々の処理に送信します。</block>
   <block id="47ddffc293a6a5748897c2f965fa7212" category="list-text">Microsoft。Storage/storageAccounts/managementPolicies/read</block>
@@ -1392,12 +1390,6 @@
   <block id="b272876bb8d27e636bb70f2dce15cb34" category="list-text">EKS：リストクラスタ</block>
   <block id="457a1b6178515d282232753f808e8cf5" category="list-text">EKS：DescribeCluster</block>
   <block id="53ac904630fdbb4d62f208e001934c7c" category="list-text">IAM：GetInstanceProfile</block>
-  <block id="c8a11657cad4105099bd9eb0d4bdbaec" category="paragraph">BlueXPの修正措置を使用する場合、コネクタは次のAPI要求を実行してAWSリソースのタグを管理します。</block>
-  <block id="4c62ed8ff3597b57ab26a72e8f7294b7" category="list-text">Tag:getResources</block>
-  <block id="b2ca34a52079f0ba5f066943f1dd2482" category="list-text">tag:getTagKeys</block>
-  <block id="f624e5f75138eb92caddd44e1bc7342e" category="list-text">tag:getTagValues</block>
-  <block id="5e665d8f5cf0c341dce9f3bd5e7f4cc0" category="list-text">Tag:タグリソース</block>
-  <block id="5e10058ad3f07bfeca3eef81de09ce28" category="list-text">タグ: UntagResources</block>
   <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Cloud Volumes ONTAPには次の権限が必要です。</block>
   <block id="bf9c7c9727a11f040da47cdd589f7ea6" category="paragraph">BlueXPの階層化には次の権限が必要です。</block>
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">コネクタをプライベートモードで導入し、BlueXP SaaSレイヤへのアウトバウンド接続なしでBlueXPを使用できるようにします。まず、コネクタをインストールし、コネクタで実行されているユーザインターフェイスにアクセスしてBlueXPをセットアップし、以前に設定したクラウド権限を指定します。</block>
@@ -3198,7 +3190,6 @@
   <block id="ba192d211ab8fe6aceb98f59e685d1bb" category="list-text">サブスクリプションをまだお持ちでない場合は、*[サブスクリプションの追加]&gt;[続行]*を選択し、Google Cloud Marketplaceの手順に従います。</block>
   <block id="375b5c037ddde62b74d4b30381271828" category="list-text">ポップアップダイアログボックスで、* NetApp、Inc.への登録*を選択します</block>
   <block id="dcb058618377cff08193ee6990096f07" category="list-text">[アクセス制御（IAM）]*&gt;*[追加]*&gt;*[ロール割り当ての追加]*を選択します。</block>
-  <block id="51c9db5527a197748c924f3777b04b5d" category="list-text">*メンバーの選択*を選択し、コネクター仮想マシンが作成されたサブスクリプションを選択して*仮想マシン*を選択し、コネクター仮想マシンを選択します。</block>
   <block id="a907c3ee93defa4e7eb326edec72fa3d" category="list-text">[選択]*を選択します。</block>
   <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">クレデンシャルを新しいサブスクリプションに関連付けるには、*[Add Subscription]&gt;[Continue]*を選択し、AWS Marketplaceで次の手順を実行します。</block>
   <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">[購入オプションの表示]*を選択します。</block>
@@ -4022,4 +4013,8 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="946e79c4f58ab5a0a68d36b7ccc89998" category="list-text">AWS Marketplaceからコネクタを起動すると、IMDSv1がデフォルトで有効になります。EC2インスタンスにIMDSv2を手動で設定できます。</block>
   <block id="f2e7cda30b20334f5432b14d41028597" category="paragraph">2024年3月より、BlueXPで、コネクタとCloud Volumes ONTAP（HA環境のメディエーターを含む）でAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）がサポートされるようになりました。ほとんどの場合、IMDSv2は新しいEC2インスタンスで自動的に設定されます。IMDSv1は2024年3月より前に有効になっています。セキュリティポリシーで必要な場合は、EC2インスタンスでIMDSv2を手動で設定する必要があります。</block>
   <block id="3c27ef222c1ee58d80a2a938ecc7eab9" category="paragraph">IMDSv2では、脆弱性に対する保護が強化されています。<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
+  <block id="8cdfbe4b35f3f9abb80295a7c104865a" category="paragraph">サブスクリプションレベルでのロール割り当ての範囲が指定されるため、* Subscriptions *サービスからロールを割り当てることが重要です。_scope_は、環境にアクセスするリソースセットを定義します。別のレベル（仮想マシンレベルなど）でスコープを指定すると、BlueXPで操作を実行できなくなります。</block>
+  <block id="0fde3f77d505a0a1192041da57a5754b" category="inline-link">Microsoft Azureのドキュメント：「Azure RBACの範囲を理解する」</block>
+  <block id="7ec9f2759e8cd477327da5c994d69fd0" category="paragraph"><block ref="7ec9f2759e8cd477327da5c994d69fd0" category="inline-link-rx"></block></block>
+  <block id="fae4c7bdd396cfb82d86677f8bc6f763" category="list-text">* Select members *を選択し、コネクター仮想マシンが作成されたサブスクリプションを選択します。* Managed identity *で* Virtual machine *を選択し、コネクター仮想マシンを選択します。</block>
 </blocks>
