@@ -2800,15 +2800,12 @@
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">プライベートモードの仕組みを説明します</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>。</block>
   <block id="ba7c13ef3e78a348949ddfd6f17e4f18" category="paragraph">プライベートモードでは、コネクタを自社のLinuxホストに手動でインストールすることで、コネクタをオンプレミスまたはクラウドにインストールできます。</block>
-  <block id="fb04864667c4668b6288df7ac7f6f40b" category="paragraph">Google CloudでCloud Volumes ONTAP システムを作成する場合は、コネクタをGoogle Cloudで実行する必要があります。オンプレミスで実行することはできません。</block>
   <block id="c3d3f783d267d1bd41b2e7f8639a5865" category="section-title">日常業務のエンドポイント</block>
   <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">\https://management.azure.microsoft.scloud
 \https://login.microsoftonline.microsoft.scloud
 \https://blob.core.microsoft.scloud
 \https://core.microsoft.scloud</block>
   <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">をクリックして、Azure IL6リージョン内のリソースを管理します。</block>
-  <block id="41d07a4a0a908721d3dbbf8c6e1a98a4" category="paragraph">Cloud Volumes ONTAP システムの作成を計画している場合は、クラウドプロバイダからBlueXPの権限が必要です。クラウドプロバイダで権限を設定し、インストール後にそれらの権限をコネクタインスタンスに関連付ける必要があります。</block>
-  <block id="3d715e57805c2356f84c41d139ed45c5" category="paragraph">コネクタをオンプレミスにインストールする場合は、AWSアクセスキーまたはAzureサービスプリンシパルを使用して権限を提供する必要があります。その他のオプションはサポートされていません。</block>
   <block id="68f824a5014b20fc98aea0beb5945581" category="paragraph">コネクタに権限を付与するには、IAMロールを使用します。コネクタのEC2インスタンスにロールを手動でアタッチする必要があります。</block>
   <block id="862b0c0ff0da2b02588d845f4c6d6d34" category="list-text">カスタムロールを使用して必要なAzure権限を提供できるように、コネクタをインストールするVMでシステム割り当ての管理IDを有効にします。</block>
   <block id="81b303f46dd1d85b6f031bc99d8e87a6" category="summary">BlueXPには複数の導入モードが用意されており、ビジネスやセキュリティの要件に合わせてBlueXPを使用できます。Standardモードでは、BlueXPのSaaSレイヤを活用してすべての機能を提供します。RestrictedモードとPrivateモードは、接続が制限されている組織で使用できます。</block>
@@ -4017,4 +4014,7 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="0fde3f77d505a0a1192041da57a5754b" category="inline-link">Microsoft Azureのドキュメント：「Azure RBACの範囲を理解する」</block>
   <block id="7ec9f2759e8cd477327da5c994d69fd0" category="paragraph"><block ref="7ec9f2759e8cd477327da5c994d69fd0" category="inline-link-rx"></block></block>
   <block id="fae4c7bdd396cfb82d86677f8bc6f763" category="list-text">* Select members *を選択し、コネクター仮想マシンが作成されたサブスクリプションを選択します。* Managed identity *で* Virtual machine *を選択し、コネクター仮想マシンを選択します。</block>
+  <block id="437c802c34c0b8670d61901c4e05641e" category="inline-link-macro">プライベートモードの詳細</block>
+  <block id="d05ac7ff6398ff4f2b0bd26105dd1697" category="paragraph">コネクタのインストール先によって、プライベートモードの使用時に使用できるBlueXPのサービスと機能が決まります。たとえば、Cloud Volumes ONTAPを導入して管理する場合は、コネクタをクラウドにインストールする必要があります。 <block ref="11a7253f43076934a5664eb6b2874efc" category="inline-link-macro-rx"></block>。</block>
+  <block id="60a1a3ba0b214492b5ab5c5bd4a52eb0" category="paragraph">コネクタがクラウドにインストールされていて、Cloud Volumes ONTAPシステムを作成する場合は、クラウドプロバイダからBlueXPの権限が必要です。クラウドプロバイダで権限を設定し、インストール後にそれらの権限をコネクタインスタンスに関連付ける必要があります。</block>
 </blocks>
