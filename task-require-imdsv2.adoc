@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: task-require-imdsv2.html 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
+summary: BlueXPは、コネクタとCloud Volumes ONTAPでIMDSv2をサポートしています。ほとんどの場合、IMDSv2は新しいEC2インスタンスで自動的に設定されます。IMDSv1は2024年3月より前に有効になっています。セキュリティポリシーで必要な場合は、EC2インスタンスでIMDSv2を手動で設定する必要があります。 
+---
+= Amazon EC2インスタンスでIMDSv2を使用する必要がある
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPは、コネクタとCloud Volumes ONTAP（HA環境のメディエーターを含む）でAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）をサポートします。ほとんどの場合、IMDSv2は新しいEC2インスタンスで自動的に設定されます。IMDSv1は2024年3月より前に有効になっています。セキュリティポリシーで必要な場合は、EC2インスタンスでIMDSv2を手動で設定する必要があります。
+
+.作業を開始する前に
+* コネクタのバージョンは3.9.38以降である必要があります。
+* Cloud Volumes ONTAPで次のいずれかのバージョンが実行されている必要があります。
++
+** 9.12.1 P2（またはそれ以降のパッチ）
+** 9.13.0 P4（またはそれ以降のパッチ）
+** 9.13.1以降のすべてのバージョン
+
+
+* この変更を行うには、Cloud Volumes ONTAPインスタンスを再起動する必要があります。
+* 応答ホップの制限を3に変更する必要があるため、この手順ではAWS CLIを使用する必要があります。
+
+
+.このタスクについて
+IMDSv2では、脆弱性に対する保護が強化されています。 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["AWSセキュリティブログでIMDSv2の詳細を確認する"^]
+
+インスタンスメタデータサービス（IMDS）は、EC2インスタンスで次のように有効になります。
+
+* BlueXPから新規コネクタを導入する場合、または https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraformスクリプト"^]IMDSv2はEC2インスタンスでデフォルトで有効になっています。
+* AWSで新しいEC2インスタンスを起動し、コネクタソフトウェアを手動でインストールすると、IMDSv2もデフォルトで有効になります。
+* AWS Marketplaceからコネクタを起動すると、IMDSv1がデフォルトで有効になります。EC2インスタンスにIMDSv2を手動で設定できます。
+* 既存のコネクタについては、IMDSv1は引き続きサポートされますが、必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
+* Cloud Volumes ONTAPでは、新規および既存のインスタンスでIMDSv1がデフォルトで有効になっています。必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
+
+
+.手順
+. コネクタインスタンスでIMDSv2を使用する必要があります。
++
+.. コネクタのLinux VMに接続します。
++
+AWS でコネクタインスタンスを作成する際に、 AWS のアクセスキーとシークレットキーを指定しました。このキーペアを使用して、 SSH でインスタンスに接続できます。EC2 Linuxインスタンスのユーザ名はUbuntuです（2023年5月より前に作成されたコネクタの場合、ユーザ名はEC2-user）。
+
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs ： Linux インスタンスに接続します"^]
+
+.. AWS CLIをインストールします。
++
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html["AWSドキュメント：最新バージョンのAWS CLIをインストールまたは更新する"^]
+
+.. を使用します `aws ec2 modify-instance-metadata-options` IMDSv2の使用を要求し、PUT応答ホップ制限を3に変更するコマンド。
++
+* 例 *
+
++
+[source, awscli]
+----
+aws ec2 modify-instance-metadata-options \
+    --instance-id <instance-id> \
+    --http-put-response-hop-limit 3 \
+    --http-tokens required \
+    --http-endpoint enabled
+----
+
+
++
+
+NOTE: 。 `http-tokens` パラメータはIMDSv2を必須に設定します。いつ `http-tokens` は必須です。次の項目も設定する必要があります。 `http-endpoint` を有効にします。
+
+. Cloud Volumes ONTAPインスタンスでIMDSv2を使用する必要があります。
++
+.. にアクセスします https://console.aws.amazon.com/ec2/["Amazon EC2コンソール"^]
+.. ナビゲーションペインで、*[インスタンス]*を選択します。
+.. Cloud Volumes ONTAPインスタンスを選択します。
+.. [Actions]>[Instance settings]>[Modify instance metadata options]*を選択します。
+.. インスタンスメタデータオプションの変更*（Modify instance metadata options *）ダイアログボックスで、次のオプションを選択します。
++
+*** [インスタンスメタデータサービス]*で、*[有効化]*を選択します。
+*** IMDSv2 *で、*必須*を選択します。
+*** [ 保存（ Save ） ] を選択します。
+
+
+.. HAメディエーターを含む他のCloud Volumes ONTAPインスタンスについて、上記の手順を繰り返します。
+.. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-state.html["Cloud Volumes ONTAPインスタンスの停止と開始"^]
+
+
+
+
+.結果
+コネクタインスタンスとCloud Volumes ONTAPインスタンスがIMDSv2を使用するように構成されました。

@@ -19,6 +19,8 @@ sidebar:
       url: "/whats-new.html"
     - title: 既知の制限
       url: "/reference-limitations.html"
+    - title: サポートされるLinuxオペレーティングシステムに対する変更
+      url: "/reference-connector-operating-system-changes.html"
   - title: はじめに
     entries:
     - title: 基本事項をご確認ください
@@ -115,15 +117,23 @@ sidebar:
         url: "/reference-user-roles.html"
     - title: コネクタ
       entries:
-      - title: コネクタのシステム ID を確認します
-        url: "/task-finding-system-id.html"
-      - title: 既存のコネクタを管理します
-        url: "/task-managing-connectors.html"
+      - title: VMとOSの保守
+        url: "/task-maintain-connectors.html"
       - title: セキュアなアクセスのためのHTTPS証明書をインストールします
         url: "/task-installing-https-cert.html"
       - title: プロキシサーバを使用するようにコネクタを設定します
         url: "/task-configuring-proxy.html"
-      - title: コネクタのデフォルト設定
+      - title: EC2インスタンスでIMDSv2を使用する必要がある
+        url: "/task-require-imdsv2.html"
+      - title: プライベートモード使用時のコネクタのアップグレード
+        url: "/task-upgrade-connector.html"
+      - title: 複数のコネクタの操作
+        url: "/task-manage-multiple-connectors.html"
+      - title: コネクタのトラブルシューティング
+        url: "/task-troubleshoot-connector.html"
+      - title: コネクタをアンインストールして取り外します
+        url: "/task-uninstall-connector.html"
+      - title: デフォルト設定
         url: "/reference-connector-default-config.html"
     - title: クレデンシャルとサブスクリプション
       entries:

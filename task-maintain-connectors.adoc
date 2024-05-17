@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: task-maintain-connectors.html 
+keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector 
+summary: コネクタホストでのオペレーティングシステムの保守はお客様の責任で行ってください。たとえば、オペレーティングシステムの配布に関する会社の標準手順に従って、コネクタホストのオペレーティングシステムにセキュリティ更新プログラムを適用する必要があります。 
+---
+= コネクタVMとオペレーティングシステムの保守
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+コネクタホストでのオペレーティングシステムの保守はお客様の責任で行ってください。たとえば、オペレーティングシステムの配布に関する会社の標準手順に従って、コネクタホストのオペレーティングシステムにセキュリティ更新プログラムを適用する必要があります。
+
+
+TIP: 既存のコネクタがある場合は、次の点に注意する必要があります。 link:reference-connector-operating-system-changes.html["サポートされるLinuxオペレーティングシステムに対する変更"]。
+
+
+
+== オペレーティングシステムのパッチとコネクタ
+
+OSのセキュリティパッチを適用するときに、コネクタホスト上のサービスを停止する必要はありません。
+
+
+
+== VMまたはインスタンスタイプ
+
+コネクタをBlueXPから直接作成した場合は、デフォルトの設定を使用してクラウドプロバイダに仮想マシンインスタンスを導入しました。コネクタの作成後は、CPUやRAMが少ないVMインスタンスに変更しないでください。
+
+CPUとRAMの要件は次のとおりです。
+
+CPU:: 4 コアまたは 4 個の vCPU
+RAM:: 14GB
+
+
+link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。
+
+
+
+== コネクタVMの起動の停止
+
+コネクタVMを停止してから起動する必要がある場合は、クラウドプロバイダのコンソールから、またはオンプレミス管理の標準手順を使用して実行する必要があります。
+
+link:concept-connectors.html#connectors-must-be-operational-at-all-times["コネクタは常に動作している必要があることに注意してください"]。
+
+
+
+== Linux VM に接続します
+
+コネクタが実行されている Linux VM に接続する必要がある場合は、クラウドプロバイダから提供されている接続オプションを使用できます。
+
+AWS:: AWS でコネクタインスタンスを作成する際に、 AWS のアクセスキーとシークレットキーを指定しました。このキーペアを使用して、 SSH でインスタンスに接続できます。EC2 Linuxインスタンスのユーザ名はUbuntuです（2023年5月より前に作成されたコネクタの場合、ユーザ名はEC2-user）。
++
+--
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs ： Linux インスタンスに接続します"^]
+
+--
+Azure:: AzureでコネクタVMを作成するときに、ユーザ名を指定し、パスワードまたはSSH公開鍵で認証することを選択しました。選択した認証方式を使用して VM に接続します。
++
+--
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure Docs ： SSH を使用して VM を接続します"^]
+
+--
+Google Cloud:: Google Cloud でコネクタを作成するときに認証方法を指定することはできません。ただし、 Google Cloud Console または Google Cloud CLI （ gcloud ）を使用して Linux VM インスタンスに接続することができます。
++
+--
+https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs ： Linux VM に接続します"^]
+
+--
+
+
+
+
+== コネクタの IP アドレスを変更します
+
+ビジネスに必要な場合は、クラウドプロバイダによって自動的に割り当てられたコネクタインスタンスの内部 IP アドレスとパブリック IP アドレスを変更できます。
+
+.手順
+. クラウドプロバイダからの指示に従って、 Connector インスタンスのローカル IP アドレスまたはパブリック IP アドレス（またはその両方）を変更します。
+. パブリックIPアドレスを変更した場合、コネクタで実行されているローカルユーザインターフェイスに接続する必要があるときは、コネクタインスタンスを再起動して、新しいIPアドレスをBlueXPに登録します。
+. プライベート IP アドレスを変更した場合は、 Cloud Volumes ONTAP 構成ファイルのバックアップ先を更新して、コネクタ上の新しいプライベート IP アドレスにバックアップが送信されるようにします。
++
+各Cloud Volumes ONTAPシステムのバックアップ場所を更新する必要があります。
+
++
+.. Cloud Volumes ONTAP CLIから次のコマンドを実行して、現在のバックアップターゲットを表示します。
++
+[source, cli]
+----
+system configuration backup show
+----
+.. 次のコマンドを実行して、バックアップターゲットのIPアドレスを更新します。
++
+[source, cli]
+----
+system configuration backup settings modify -destination <target-location>
+----
+
+
+
+
+
+
+== コネクターのURIを編集します
+
+コネクタのUniform Resource Identifier（URI）を追加および削除します。
+
+.手順
+. BlueXPヘッダーの* Connector *ドロップダウンを選択します。
+. [コネクタの管理]*を選択します。
+. コネクタのアクションメニューを選択し、* URIの編集*を選択します。
+. URIを追加および削除し、*適用*を選択します。
+

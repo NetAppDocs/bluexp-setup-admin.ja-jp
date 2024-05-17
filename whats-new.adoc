@@ -18,6 +18,52 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
+== 2024年5月17日
+
+
+
+=== コネクタ3.9.40
+
+今回のリリースのBlueXP Connectorには、オペレーティングシステムの追加サポート、セキュリティの若干の改善、バグの修正が含まれています。
+
+現時点では、3.9.40リリースは標準モードと制限モードで使用できます。
+
+
+
+==== RHEL 8および9のサポート
+
+このコネクタは、次のバージョンのRed Hat Enterprise Linux with _new_connectorインストールを実行しているホストでサポートされるようになりました。
+
+* 8.6～8.9
+* 9.1から9.3
+
+
+これらのオペレーティングシステムでは、コンテナオーケストレーションツールとしてPodmanが必要です。
+
+Podmanの要件、既知の制限事項、サポートされるオペレーティングシステムの概要、RHEL 7ホストを使用している場合の対処方法、開始方法などを確認しておく必要があります。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
+
+
+
+==== RHEL 7およびCentOS 7のサポート終了
+
+2024年6月30日に、RHEL 7はメンテナンス終了（EOM）になり、CentOS 7はサポート終了（EOL）になります。NetAppは、これらのLinuxディストリビューションでのコネクタのサポートを2024年6月30日まで継続します。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["RHEL 7またはCentOS 7で既存のコネクタが実行されている場合の対処方法について説明します。"]。
+
+
+
+==== AWS権限の更新
+
+3.9.38リリースでは、AWSのコネクタポリシーが更新され、「EC2：DescriptionAvailabilityZones」権限が追加されました。Cloud Volumes ONTAPでAWSローカルゾーンをサポートするには、この権限が必要になりました。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["コネクタのAWS権限を表示する"]。
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["AWSローカルゾーンのサポートに関する詳細情報"^]
+
+
+
+
 == 2024年4月22日
 
 
@@ -99,7 +145,7 @@ BlueXPで新しいプライベートモードリリースが見積もり可能�
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
 
 
 
@@ -129,7 +175,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 * Cloud Volumes ONTAPでは、新規および既存のインスタンスでIMDSv1がデフォルトで有効になっています。必要に応じて、EC2インスタンスでIMDSv2を手動で設定できます。
 
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["既存のインスタンスでIMDSv2を設定する方法"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["既存のインスタンスでIMDSv2を設定する方法"]。
 
 
 
@@ -201,7 +247,7 @@ BlueXPで新しいプライベートモードリリースが見積もり可能�
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["プライベートモードに含まれるBlueXPサービスの詳細"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
 
 
 
@@ -464,7 +510,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-
 
 +
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを取り付けます"^]
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["コネクタのBlueXPコンソールにアクセスします"^]
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["未割り当てライセンスを追加します"^]
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-overview-cvo.html["Cloud Volumes ONTAP の使用を開始します"^]
 

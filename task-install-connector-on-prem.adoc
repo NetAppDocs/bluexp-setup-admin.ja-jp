@@ -30,8 +30,18 @@ summary: コネクタをオンプレミスにインストールし、ログイ�
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6、7.7、7.8、7.9
-* Red Hat Enterprise Linux 7.6、7.7、7.8、および7.9
+* CentOS 7.6～7.9
++
+NetAppは、2024年6月30日までCentOS 7でのコネクタのサポートを継続します。
+
+* Red Hat Enterprise Linux の場合
++
+** 7.6～7.9
++
+NetAppは、2024年6月30日までRHEL 7でのコネクタのサポートを継続します。
+
+** 8.6～8.9
+** 9.1から9.3
 +
 ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 
@@ -40,24 +50,38 @@ Connector は、これらのオペレーティングシステムの英語版で�
 
 
 
+
+
 --
 ハイパーバイザー:: Ubuntu、CentOS、またはRed Hat Enterprise Linuxの実行が認定されているベアメタルまたはホスト型のハイパーバイザーが必要です。
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
+https://access.redhat.com/articles/973163["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
 
 --
 CPU:: 4 コアまたは 4 個の vCPU
 RAM:: 14GB
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
 /var のディスク領域:: 20GiB のスペースが必要です
-Docker Engine の略:: コネクタをインストールする前に、ホストにDocker Engineが必要です。
+コンテナオーケストレーションツール:: オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 +
 --
-* サポートされる最小バージョンは19.3.1です。
-* サポートされる最大バージョンは25.0.5です。
+* Red Hat Enterprise Linux 8および9にはPodmanバージョン4.6.1が必要です。
 +
-https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+Podmanでは、次の前提条件を満たす必要があります。
+
++
+** podman.socketサービスを有効にして開始する必要があります
+** Python3がインストールされている必要があります
+** podman-composeパッケージバージョン1.0.6がインストールされている必要があります。
+** podman-composeをPATH環境変数に追加する必要があります
+
+
+* Ubuntu、CentOS、およびRed Hat Enterprise Linux 7にはDocker Engineが必要です。
++
+** サポートされる最小バージョンは19.3.1です。
+** サポートされる最大バージョンは25.0.5です。
+
 
 
 
@@ -66,7 +90,108 @@ https://docs.docker.com/engine/install/["インストール手順を確認しま
 
 
 
-== 手順2：ネットワークをセットアップする
+== 手順2：PodmanまたはDocker Engineをインストールする
+
+オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
+
+* Red Hat Enterprise Linux 8および9にはPodmanが必要です。
+* Ubuntu、CentOS、およびRed Hat Enterprise Linux 7にはDocker Engineが必要です。
+
+
+.手順
+[role="tabbed-block"]
+====
+.ポドマン
+--
+Podman 4.6.1をインストールします。
+
+.手順
+. podman-dockerパッケージがホストにインストールされている場合は削除します。
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. Podmanをインストールします。
++
+PodmanはRed Hat Enterprise Linuxの公式リポジトリから入手できます。
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
+. podman.socketサービスを有効にして開始します。
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. python3をインストールします。
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. EPELリポジトリパッケージがシステムにない場合はインストールします。
++
+podman-composeはExtra Packages for Enterprise Linux（EPEL）リポジトリから利用できるため、この手順が必要です。
+
++
+Red Hat Enterprise Linux 9の場合：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+Red Hat Enterprise Linux 8の場合：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. podman-composeパッケージ1.0.6をインストールします。
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: を使用する `dnf install` コマンドは、PATH環境変数にpodman-composeを追加するための要件を満たしています。インストールコマンドを実行すると、/usr/binにpodman-composeが追加されます。 `secure_path` オプションを指定します。
+
+
+
+--
+.Docker Engine の略
+--
+19.3.1から25.0.5の間のバージョンのDocker Engineをインストールします。
+
+.手順
+. Docker Engineをインストールします。
++
+https://docs.docker.com/engine/install/["Dockerからインストール手順を表示"^]
+
++
+特定のバージョンのDocker Engineをインストールするには、必ず次の手順に従ってください。最新バージョンをインストールすると、BlueXPでサポートされていないバージョンのDockerがインストールされます。
+
+. Dockerが有効で実行されていることを確認します。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====
+
+
+== 手順3：ネットワークをセットアップする
 
 コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。たとえば、ターゲットネットワークへの接続が可能で、アウトバウンドのインターネットアクセスが利用可能であることを確認する必要があります。
 
@@ -190,15 +315,13 @@ BlueXPでSaaSの機能とサービスを提供するため。
 --
 
 
-プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。
+プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。BlueXPでは透過型プロキシサーバはサポートされません。
 +
 --
 * IP アドレス
 * クレデンシャル
 * HTTPS証明書
 
-
-BlueXPでは透過型プロキシサーバはサポートされません。
 
 --
 
@@ -222,7 +345,7 @@ NTPを有効にする:: BlueXP分類を使用して企業データソースを�
 
 
 
-== ステップ3：クラウドの権限を設定する
+== ステップ4：クラウドの権限を設定する
 
 AWSまたはAzureでBlueXPサービスをオンプレミスコネクタで使用する場合は、インストール後にコネクタにクレデンシャルを追加できるように、クラウドプロバイダで権限を設定する必要があります。
 
@@ -419,7 +542,7 @@ BlueXPでクライアントシークレットを使用してMicrosoft Entra ID�
 ====
 
 
-== 手順4：コネクタを取り付ける
+== 手順5：コネクタを取り付ける
 
 コネクタソフトウェアをオンプレミスの既存のLinuxホストにダウンロードしてインストールします。
 
@@ -441,12 +564,6 @@ BlueXPでは透過型プロキシサーバはサポートされません。
 NetApp Support Siteで入手できるインストーラは、それよりも古いバージョンの場合があります。インストール後、新しいバージョンが利用可能になると、コネクタは自動的に更新されます。
 
 .手順
-. Docker が有効で実行されていることを確認します。
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . ホストに_http_proxy_or_https_proxy_system変数が設定されている場合は、削除します。
 +
 [source, cli]
@@ -485,7 +602,7 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。
@@ -502,8 +619,15 @@ chmod +x BlueXP-Connector-Cloud-<version>
 
 +
 *** ユーザには、ローカルユーザまたはドメインユーザを指定できます。
-*** ドメインユーザの場合は、上記のように\にASCIIコードを使用する必要があります。
-*** BlueXPでは、@文字を含むパスワードはサポートされていません。
+*** ドメインユーザの場合は、上に示すように、\にASCIIコードを使用する必要があります。
+*** BlueXPでは、@文字を含むユーザ名やパスワードはサポートされていません。
+*** パスワードに次の特殊文字が含まれている場合は、その特殊文字の前にバックスラッシュ（&または！）を付けてエスケープする必要があります。
++
+例：
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
 
 
 
@@ -518,7 +642,7 @@ chmod +x BlueXP-Connector-Cloud-<version>
 
 
 
-== 手順5：コネクタを設定する
+== 手順6：コネクタを設定する
 
 サインアップまたはログインして、BlueXPアカウントと連携するようにConnectorを設定します。
 
@@ -549,7 +673,7 @@ _ipaddress _ には、ホストの設定に応じて、 localhost 、プライ�
 
 
 
-== 手順6：BlueXPに権限を付与する
+== 手順7：BlueXPに権限を付与する
 
 コネクタのインストールとセットアップが完了したら、クラウドクレデンシャルを追加して、AWSまたはAzureで操作を実行するために必要な権限をBlueXPに付与します。
 

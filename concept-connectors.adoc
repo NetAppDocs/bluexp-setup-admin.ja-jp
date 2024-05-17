@@ -153,10 +153,10 @@ BlueXPからコネクタを直接作成するには特定の権限が必要で�
 ** link:concept-install-options-aws.html["AWSでのコネクタのインストールオプション"]
 ** link:concept-install-options-azure.html["Azureでのコネクタのインストールオプション"]
 ** link:concept-install-options-google.html["Google Cloudでのコネクタのインストールオプション"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["オンプレミス環境のクラウド権限を設定"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["オンプレミス環境のクラウド権限を設定"]
 
 
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["制限モードの権限を設定します"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["制限モードの権限を設定します"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["プライベートモードの権限を設定します"]
 
 
@@ -175,7 +175,7 @@ BlueXPからコネクタを直接作成するには特定の権限が必要で�
 
 標準モードまたは制限モードでBlueXPを使用すると、ソフトウェアの更新を取得するためにアウトバウンドのインターネットアクセスが確立されていれば、コネクタは自動的にソフトウェアを最新バージョンに更新します。BlueXPをプライベートモードで使用している場合は、コネクタを手動でアップグレードする必要があります。
 
-link:task-managing-connectors.html["コネクタソフトウェアを手動でアップグレードする方法について説明します"]。
+link:task-upgrade-connector.html["コネクタソフトウェアを手動でアップグレードする方法について説明します"]。
 
 
 
@@ -183,7 +183,7 @@ link:task-managing-connectors.html["コネクタソフトウェアを手動で�
 
 コネクタホストでのオペレーティングシステムの保守はお客様の責任で行ってください。たとえば、オペレーティングシステムの配布に関する会社の標準手順に従って、コネクタホストのオペレーティングシステムにセキュリティ更新プログラムを適用する必要があります。
 
-OSの更新を実行するときは、コネクタホスト上のサービスを停止する必要はありません。
+マイナーなセキュリティ更新を適用する場合は、コネクタホスト上のサービスを停止する必要はありません。
 
 コネクタVMを停止してから起動する必要がある場合は、クラウドプロバイダのコンソールから、またはオンプレミス管理の標準手順を使用して起動する必要があります。
 
@@ -191,15 +191,11 @@ OSの更新を実行するときは、コネクタホスト上のサービスを
 
 
 
-== 複数の作業環境
+== 複数の作業環境とコネクタ
 
 コネクタは、BlueXPで複数の作業環境を管理できます。1 つのコネクタで管理できる作業環境の最大数は、環境によって異なります。管理対象は、作業環境の種類、ボリュームの数、管理対象の容量、ユーザの数によって異なります。
 
 大規模な導入の場合は、ネットアップの担当者にご相談のうえ、環境のサイジングを行ってください。途中で問題が発生した場合は、製品内のチャットでお問い合わせください。
-
-
-
-== 複数のコネクタ
 
 コネクタが 1 つしか必要ない場合もありますが、 2 つ以上のコネクタが必要な場合もあります。
 
@@ -207,33 +203,4 @@ OSの更新を実行するときは、コネクタホスト上のサービスを
 
 * マルチクラウド環境（AWSやAzureなど）で、コネクタの1つをAWSに、もう1つをAzureに配置したいと考えています。各で、それらの環境で実行される Cloud Volumes ONTAP システムを管理します。
 * サービスプロバイダは、1つのBlueXPアカウントを使用してお客様にサービスを提供し、別のアカウントを使用してビジネスユニットのディザスタリカバリを提供することができます。アカウントごとに個別のコネクタがあります。
-
-
-
-
-=== いつスイッチするか
-
-最初のコネクタを作成すると、作成した追加の作業環境ごとにそのコネクタが自動的に使用されます。コネクタを追加で作成したら、コネクタを切り替えることで各コネクタに固有の作業環境を確認する必要があります。
-
-link:task-managing-connectors.html["コネクタを切り替える方法について説明します"]。
-
-
-
-=== ディザスタリカバリ
-
-ディザスタリカバリ目的で、複数のコネクタを備えた作業環境を同時に管理できます。一方のコネクタが停止した場合は、もう一方のコネクタに切り替えて、作業環境をただちに管理できます。
-
-この構成をセットアップするには：
-
-. link:task-managing-connectors.html["別のコネクタに切り替えます"]。
-. 既存の作業環境を検出
-+
-** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["既存のCloud Volumes ONTAP システムをBlueXPに追加します"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["ONTAP クラスタを検出"^]
-
-
-. を設定します https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage-management.html["Capacity Management Mode （容量管理モード）"^]
-+
-メインコネクターのみ * オートマチックモード * に設定する必要があります。DR 目的で別のコネクタに切り替える場合は、必要に応じて容量管理モードを変更できます。
-
 

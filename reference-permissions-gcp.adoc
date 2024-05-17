@@ -25,7 +25,7 @@ BlueXPには、Google Cloudでアクションを実行するための権限が�
 このカスタムロールは、Connector VMに関連付けられているサービスアカウントに適用する必要があります。
 
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["標準モードのGoogle Cloud権限を設定します"]
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["制限モードの権限を設定します"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["制限モードの権限を設定します"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["プライベートモードの権限を設定します"]
 
 

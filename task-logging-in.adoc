@@ -16,6 +16,10 @@ summary: BlueXPへのログイン方法は、アカウントで使用してい�
 [role="lead"]
 BlueXPへのログイン方法は、アカウントで使用しているBlueXP導入モードによって異なります。
 
+コネクタには、コネクタホストからアクセスできるローカルUIが含まれています。このUIは、BlueXPを制限モードまたはプライベートモードで使用しているお客様向けに提供されます。標準モードでBlueXPを使用する場合は、からユーザインターフェイスにアクセスする必要があります。 https://console.bluexp.netapp.com/["BlueXP SaaSコンソール"^]
+
+link:concept-modes.html["BlueXPの導入モードについて説明します"]。
+
 [role="tabbed-block"]
 ====
 .標準モード

@@ -31,8 +31,8 @@ BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカ�
 * これらのポリシーの使用手順については、次のページを参照してください。
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["AWS Marketplace環境の権限を設定する"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["オンプレミス環境の権限を設定する"]
-** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["制限モードの権限を設定します"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["オンプレミス環境の権限を設定する"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["制限モードの権限を設定します"]
 ** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["プライベートモードの権限を設定します"]
 
 
@@ -1256,6 +1256,9 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 
 
 | EC2：ModifyVolume | いいえ | はい。 | いいえ 
+
+
+| アベイラビリティゾーンがAWSローカルゾーンであるかどうかを確認し、すべての導入パラメータに互換性があることを確認します。 | EC2：説明AvailabilityZones | はい。 | いいえ | はい。 
 |===
 
 
@@ -1288,13 +1291,11 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 
 
 
-=== 2024年3月8日
+=== 2024年5月9日
 
-次の権限がコネクタポリシーに含まれるようになりました。
+Cloud Volumes ONTAPには次の権限が必要です。
 
 EC2：説明AvailabilityZones
-
-この権限は、今後のリリースで必要になります。リリースノートの詳細については、リリースノートを更新します。
 
 
 

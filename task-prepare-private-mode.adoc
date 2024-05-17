@@ -51,7 +51,13 @@ link:concept-modes.html["プライベートモードの仕組みを説明しま�
 --
 * Ubuntu 22.04 LTS
 * CentOS 7.6、7.7、7.8、7.9
++
+NetAppは、2024年6月30日までCentOS 7でのコネクタのサポートを継続します。
+
 * Red Hat Enterprise Linux 7.6、7.7、7.8、および7.9
++
+NetAppは、2024年6月30日までRHEL 7でのコネクタのサポートを継続します。
+
 +
 ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 
@@ -64,7 +70,7 @@ Connector は、これらのオペレーティングシステムの英語版で�
 ハイパーバイザー:: Ubuntu、CentOS、またはRed Hat Enterprise Linuxの実行が認定されているベアメタルまたはホスト型のハイパーバイザーが必要です。
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
+https://access.redhat.com/articles/973163["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
 
 --
 CPU:: 4 コアまたは 4 個の vCPU
@@ -99,7 +105,7 @@ https://docs.docker.com/engine/install/["インストール手順を確認しま
 コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタの仮想ネットワークとサブネットを使用する以外に、次の要件が満たされていることを確認する必要があります。
 
 ターゲットネットワークへの接続:: コネクタには、ストレージを管理する場所へのネットワーク接続が必要です。たとえば、Cloud Volumes ONTAP を導入するVPCまたはVNet、オンプレミスのONTAP クラスタが配置されているデータセンターなどです。
-日常業務のエンドポイント:: コネクタは、次のエンドポイントに接続して、パブリッククラウド環境内のリソースとプロセスを管理します。
+日常業務のエンドポイント:: Cloud Volumes ONTAPシステムを作成する場合は、クラウドプロバイダの一般に利用可能なリソース内のエンドポイントにコネクタを接続する必要があります。
 +
 --
 [cols="2a,1a"]
@@ -181,18 +187,16 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
-プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。
+プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。BlueXPでは透過型プロキシサーバはサポートされません。
 +
 --
 * IP アドレス
 * クレデンシャル
 * HTTPS証明書
-
-
-BlueXPでは透過型プロキシサーバはサポートされません。
-
-[+]
++
 プライベートモードの場合、BlueXPがアウトバウンドトラフィックを送信するのは、Cloud Volumes ONTAP システムを作成するためにクラウドプロバイダにしかありません。
+
+
 
 --
 ポート:: コネクタへの着信トラフィックは、開始しない限りありません。

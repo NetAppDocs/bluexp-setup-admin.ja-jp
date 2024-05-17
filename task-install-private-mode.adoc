@@ -28,7 +28,7 @@ NetApp Support Site から製品のインストーラをダウンロードし、
 コネクタをインストールするには root 権限が必要です。
 
 .手順
-. Docker が有効で実行されていることを確認します。
+. Dockerが有効で実行されていることを確認します。
 +
 [source, cli]
 ----
@@ -95,7 +95,7 @@ image:screenshot-onprem-darksite-details.png["システムの詳細ページの�
 .結果
 これでコネクタがインストールされ、セットアップされました。
 
-新しいバージョンの Connector ソフトウェアが利用可能になると、ソフトウェアはNetApp Support Siteにアップロードされます。 link:task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["コネクタをアップグレードする方法について説明します"]。
+新しいバージョンの Connector ソフトウェアが利用可能になると、ソフトウェアはNetApp Support Siteにアップロードされます。 link:task-upgrade-connector.html["コネクタをアップグレードする方法について説明します"]。
 
 .次の手順
 以前に設定した権限をBlueXPに付与します。

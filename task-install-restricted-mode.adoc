@@ -35,7 +35,7 @@ link:task-prepare-restricted-mode.html["ネットワーク要件について説�
 
 * コネクタに必要な権限を含むポリシーが添付されたIAMロール。
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["AWS権限の設定方法をご確認ください"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["AWS権限の設定方法をご確認ください"]
 
 * IAMユーザのAWS Marketplaceをサブスクライブおよびサブスクライブ解除する権限。
 * インスタンスのCPUとRAMの要件を理解していること。
@@ -103,7 +103,7 @@ link:task-prepare-restricted-mode.html["ネットワーク要件について説�
 
 * コネクタに必要な権限を含むポリシーが添付されたIAMロール。
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["AWS権限の設定方法をご確認ください"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["AWS権限の設定方法をご確認ください"]
 
 * IAMユーザのAWS Marketplaceをサブスクライブおよびサブスクライブ解除する権限。
 * EC2インスタンスのキーペア。
@@ -157,7 +157,7 @@ link:task-prepare-restricted-mode.html["ネットワーク要件について説�
 
 * コネクタに必要な権限を含むAzureのカスタムロール。
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Azure権限の設定方法については、こちらをご覧ください"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Azure権限の設定方法については、こちらをご覧ください"]
 
 
 
@@ -220,18 +220,13 @@ BlueXPをセットアップします。
 BlueXPでは透過型プロキシサーバはサポートされません。
 
 * プロキシサーバがHTTPSを使用している場合、またはプロキシが代行受信プロキシの場合は、CA署名証明書。
+* オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 
 
 .このタスクについて
 NetApp Support Siteで入手できるインストーラは、それよりも古いバージョンの場合があります。インストール後、新しいバージョンが利用可能になると、コネクタは自動的に更新されます。
 
 .手順
-. Docker が有効で実行されていることを確認します。
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . ホストに_http_proxy_or_https_proxy_system変数が設定されている場合は、削除します。
 +
 [source, cli]
@@ -270,7 +265,7 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。
@@ -287,8 +282,15 @@ chmod +x BlueXP-Connector-Cloud-<version>
 
 +
 *** ユーザには、ローカルユーザまたはドメインユーザを指定できます。
-*** ドメインユーザの場合は、上記のように\にASCIIコードを使用する必要があります。
-*** BlueXPでは、@文字を含むパスワードはサポートされていません。
+*** ドメインユーザの場合は、上に示すように、\にASCIIコードを使用する必要があります。
+*** BlueXPでは、@文字を含むユーザ名やパスワードはサポートされていません。
+*** パスワードに次の特殊文字が含まれている場合は、その特殊文字の前にバックスラッシュ（&または！）を付けてエスケープする必要があります。
++
+例：
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
 
 
 
@@ -358,7 +360,7 @@ Azure Marketplaceからコネクタを導入した場合やコネクタソフト
 
 AWS Marketplaceからコネクタをデプロイした場合、デプロイ時に必要なIAMロールを選択したため、これらの手順は適用されません。
 
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["クラウドへのアクセス許可を準備する方法をご確認ください"]。
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["クラウドへのアクセス許可を準備する方法をご確認ください"]。
 
 [role="tabbed-block"]
 ====

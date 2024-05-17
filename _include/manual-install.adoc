@@ -20,12 +20,6 @@ BlueXPでは透過型プロキシサーバはサポートされません。
 NetApp Support Siteで入手できるインストーラは、それよりも古いバージョンの場合があります。インストール後、新しいバージョンが利用可能になると、コネクタは自動的に更新されます。
 
 .手順
-. Docker が有効で実行されていることを確認します。
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . ホストに_http_proxy_or_https_proxy_system変数が設定されている場合は、削除します。
 +
 [source, cli]
@@ -64,7 +58,7 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。
@@ -81,8 +75,15 @@ chmod +x BlueXP-Connector-Cloud-<version>
 
 +
 *** ユーザには、ローカルユーザまたはドメインユーザを指定できます。
-*** ドメインユーザの場合は、上記のように\にASCIIコードを使用する必要があります。
-*** BlueXPでは、@文字を含むパスワードはサポートされていません。
+*** ドメインユーザの場合は、上に示すように、\にASCIIコードを使用する必要があります。
+*** BlueXPでは、@文字を含むユーザ名やパスワードはサポートされていません。
+*** パスワードに次の特殊文字が含まれている場合は、その特殊文字の前にバックスラッシュ（&または！）を付けてエスケープする必要があります。
++
+例：
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
 
 
 

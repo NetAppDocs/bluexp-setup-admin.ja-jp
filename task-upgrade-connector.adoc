@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: task-upgrade-connector.html 
+keywords: upgrade, manual upgrade, connector upgrade, manual connector upgrade, upgrade connector manually, private mode upgrade, offline upgrade, upgrade private mode 
+summary: 標準モードまたは制限モードでBlueXPを使用している場合、BlueXPは自動的にコネクタを最新リリースにアップグレードします。新しいバージョンは通常、新機能を導入し、安定性を向上させるために毎月リリースされます。必要に応じて、代わりにローカルリポジトリからイメージの更新をプルするようにコネクタを設定できます。プライベートモード展開の場合は、コネクタを手動で手動でアップグレードする必要があります。 
+---
+= プライベートモード使用時のコネクタのアップグレード
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXPをプライベートモードで使用している場合は、NetApp Support Site から新しいバージョンが利用可能になったらコネクタをアップグレードできます。
+
+
+TIP: BlueXPを標準モードまたは制限モードで使用している場合は、コネクタを手動でアップグレードする必要はありません。ソフトウェアの更新を取得するためにアウトバウンドのインターネットアクセスが確立されていれば、BlueXPはコネクタを最新リリースに自動的にアップグレードします。
+
+.このタスクについて
+アップグレード中にWebベースのコンソールを使用できなくなるように、アップグレードプロセス中にコネクタを再起動する必要があります。
+
+.手順
+. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Site"^]。
++
+インターネットにアクセスできないプライベートネットワーク用のオフラインインストーラを必ずダウンロードしてください。
+
+. インストーラを Linux ホストにコピーします。
+. スクリプトを実行する権限を割り当てます。
++
+[source, cli]
+----
+chmod +x /path/BlueXP-Connector-offline-<version>
+----
++
+<version> は、ダウンロードしたコネクタのバージョンです。
+
+. インストールスクリプトを実行します。
++
+[source, cli]
+----
+sudo /path/BlueXP-Connector-offline-<version>
+----
++
+<version> は、ダウンロードしたコネクタのバージョンです。
+
+. アップグレードが完了したら、 * Help > Support > Connector * を選択してコネクタのバージョンを確認できます。
+

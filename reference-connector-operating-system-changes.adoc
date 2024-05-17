@@ -1,0 +1,182 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-operating-system-changes.html 
+keywords: connector, operating systems, connector operating systems, os support, supported operating systems, rhel 8, rhel 9, red hat, docker, podman 
+summary: 特定のLinuxオペレーティングシステムでコネクタのサポートを追加または削除する際に、このサポートが既存のコネクタの展開にどのように影響するかについて質問がある場合があります。 
+---
+= サポートされるLinuxオペレーティングシステムに対する変更
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+特定のLinuxオペレーティングシステムでコネクタのサポートを追加または削除する際に、このサポートが既存のコネクタの展開にどのように影響するかについて質問がある場合があります。
+
+
+
+== RHEL 8および9のサポート
+
+3.9.40リリース以降では、BlueXPで次のバージョンのRed Hat Enterprise Linux（RHEL）でコネクタがサポートされます。
+
+* 8.6～8.9
+* 9.1から9.3
+
+
+これらのバージョンのRHELのサポートについては、次の点に注意してください。
+
+制限::
++
+--
+* コネクタがRHEL 8または9ホストにインストールされている場合、BlueXPのバックアップとリカバリには、単一ファイルのリストアとランサムウェアスキャンに関する制限があります。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["BlueXPのバックアップとリカバリに関する既知の制限事項"^]
+* BlueXPの分類は、オンプレミスのRHEL 8または9ホストにコネクタをインストールする場合にサポートされます。RHEL 8または9ホストがAWS、Azure、Google Cloudにある場合はサポートされません。
+
+
+--
+コンテナオーケストレーションツール:: RHEL 8または9ホストにコネクタをインストールする場合は、コンテナオーケストレーションツールとしてPodmanが必要です。Docker EngineはRHEL 8および9ではサポートされていません。
++
+--
+link:task-install-connector-on-prem.html#step-1-review-host-requirements["Podmanの要件を表示"]。
+
+--
+導入モード:: RHEL 8および9は、BlueXPを標準モードまたは制限モードで使用している場合にサポートされます。
+新規の手動インストールのみ:: RHEL 8および9は、オンプレミスまたはクラウドで実行されているホストにコネクタを手動でインストールする場合、_new_connectorのインストールでサポートされます。
+RHELノアツフクレエト:: RHEL 7ホストで既存のコネクタを実行している場合、RHEL 7オペレーティングシステムをRHEL 8または9にアップグレードすることはできません。 <<RHEL 7またはCentOS 7の既存のコネクタ,RHEL 7またはCentOS 7の既存のコネクタに関する詳細情報>>。
+
+
+
+
+== RHEL 7およびCentOS 7のサポート終了
+
+2024年6月30日に、RHEL 7はメンテナンス終了（EOM）になり、CentOS 7はサポート終了（EOL）になります。NetAppは、これらのLinuxディストリビューションでのコネクタのサポートを2024年6月30日まで継続します。
+
+https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance["Red Hat: Red Hat Enterprise Linux 7のメンテナンス終了について知っておくべきこと"^]
+
+
+
+=== RHEL 7またはCentOS 7の既存のコネクタ
+
+RHEL 7またはCentOS 7で既存のコネクタを実行している場合、オペレーティングシステムのRHEL 8または9へのアップグレードや変換はサポートされていません。代わりにRHEL 8または9ホストでコネクタの実行を開始するには、次の手順を実行する必要があります。
+
+. RHEL 8または9ホストをセットアップします。
+. Podmanをインストールします。
+. _new_connectorのインストールを実行します。
+. 古いコネクタが管理していた作業環境を検出するようにコネクタを設定します。
+
+
+
+
+== Ubuntu 22.04 LTSの継続サポート
+
+このコネクタはUbuntu 22.04 LTSで引き続きサポートされており、BlueXPや市場向けのデフォルトのオペレーティングシステムです。
+
+このオペレーティングシステムにはDocker Engineが必要です。Podmanはサポートされていません。
+
+
+
+== サポートされているオペレーティングシステムの概要
+
+ここでは、前のセクションで説明したオペレーティングシステムのサポートの概要を示します。
+
+
+NOTE: NetAppは、2024年6月30日までRHEL 7およびCentOS 7でのコネクタのサポートを継続します。
+
+[role="tabbed-block"]
+====
+.標準モード
+--
+手動インストール::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6～7.9
+* Red Hat Enterprise Linux の場合
++
+** 7.6～7.9
+** 8.6～8.9
+** 9.1から9.3
+
+
+
+
+--
+BlueXPからの導入:: Ubuntu 22.04 LTS
+AWS Marketplaceからの導入:: Ubuntu 22.04 LTS
+Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
+
+
+--
+.制限モード
+--
+手動インストール::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6～7.9
+* Red Hat Enterprise Linux の場合
++
+** 7.6～7.9
+** 8.6～8.9
+** 9.1から9.3
+
+
+
+
+--
+AWS Marketplaceからの導入:: Ubuntu 22.04 LTS
+Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
+
+
+--
+.プライベートモード
+--
+手動インストール::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6～7.9
+* Red Hat Enterprise Linux 7.6~7.9
+
+
+--
+
+
+--
+====
+
+
+== 関連リンク
+
+
+
+=== RHEL 8および9の使用方法
+
+ホスト要件、Podman要件、およびPodmanとコネクタのインストール手順の詳細については、次のページを参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスにインストールしてセットアップします"] （標準モード）
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["AWSにコネクタを手動でインストールする"] （標準モード）
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Azureへのコネクタの手動インストール"] （標準モード）
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Google Cloudにコネクタを手動でインストールする"] （標準モード）
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["制限モードでの展開を準備します"]
+
+
+
+
+=== 作業環境を再検出する方法
+
+新しいコネクタの導入後に作業環境を再検出するには、次のページを参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["既存のCloud Volumes ONTAP システムをBlueXPに追加します"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["オンプレミスのONTAP クラスタを検出"^]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["FSx for ONTAP作業環境の作成と検出"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["Azure NetApp Files 作業環境を作成します"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["Eシリーズシステムの検出"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["StorageGRID システムを検出"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html["Amazon Kubernetes クラスタを追加"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html["Azure Kubernetes クラスタを追加"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html["Google Cloud Kubernetes クラスタを追加"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["OpenShiftクラスタのインポート"^]
+

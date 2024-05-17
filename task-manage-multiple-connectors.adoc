@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: task-manage-multiple-connectors.html 
+keywords: switch connectors, multiple connectors, disaster recovery, dr, two connectors 
+summary: 複数のコネクタを使用している場合は、コンソールから直接コネクタを切り替えることができます。また、複数のコネクタを使用して単一の作業環境を管理することもできます。 
+---
+= 複数のコネクタの操作
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+複数のコネクタを使用している場合は、コンソールから直接コネクタを切り替えることができます。また、複数のコネクタを使用して単一の作業環境を管理することもできます。
+
+
+
+== コネクタを切り替えます
+
+複数のコネクタがある場合は、コネクタを切り替えることで特定のコネクタに関連付けられている作業環境を確認できます。
+
+たとえば、マルチクラウド環境で作業しているとします。AWS にコネクタが 1 つ、 Google Cloud にコネクタが 1 つあるとします。これらのクラウドで実行されている Cloud Volumes ONTAP システムを管理するには、これらのコネクタを切り替える必要があります。
+
+.ステップ
+. [* Connector]*ドロップダウンを選択し、別のコネクタを選択して、*[Switch]*を選択します。
++
+image:screenshot_connector_switch.gif["ヘッダーのコネクタアイコンとスイッチアクションを示すスクリーンショット。"]
+
+
+
+.結果
+BlueXPが更新され'選択したコネクタに関連付けられている作業環境が表示されます
+
+
+
+== ディザスタリカバリ構成のセットアップ
+
+ディザスタリカバリ目的で、複数のコネクタを備えた作業環境を同時に管理できます。一方のコネクタが停止した場合は、もう一方のコネクタに切り替えて、作業環境をただちに管理できます。
+
+.手順
+. 作業環境で管理するもう一方のコネクタに切り替えます。
+. 既存の作業環境を検出
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["既存のCloud Volumes ONTAP システムをBlueXPに追加します"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["ONTAP クラスタを検出"^]
+
+
+. Cloud Volumes ONTAP作業環境を管理している場合は、*[設定]>[コネクタ設定]*を選択し、[容量管理モード]を*[手動モード]*に設定します。
++
+競合の問題を回避するには、メインコネクタのみを*自動モード*に設定する必要があります。
+
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-storage-management.html#capacity-management["容量管理モードの詳細"^]
+
+

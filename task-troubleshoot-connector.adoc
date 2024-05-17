@@ -1,0 +1,111 @@
+---
+sidebar: sidebar 
+permalink: task-troubleshoot-connector.html 
+keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot connector, download failure, cloud volumes ontap download failure 
+summary: コネクタの問題をトラブルシューティングするには、NetAppサポートにシステムIDや最新のAutoSupportメッセージを問い合わせてください。また、NetAppナレッジベースを参照して、自分で問題をトラブルシューティングすることもできます。 
+---
+= コネクタのトラブルシューティング
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+コネクタの問題をトラブルシューティングするには、システムID、コネクタのバージョン、または最新のAutoSupportメッセージをNetAppサポートに問い合わせてください。また、NetAppナレッジベースを参照して、自分で問題をトラブルシューティングすることもできます。
+
+.関連リンク
+link:task-get-help.html["NetAppサポートからのヘルプ"]。
+
+
+
+== コネクタのシステム ID を確認します
+
+使用を開始するにあたり、ネットアップの担当者からコネクタのシステムIDを尋ねられることがあります。この ID は通常、ライセンスの取得やトラブルシューティングの目的で使用されます。
+
+.手順
+. BlueXPコンソールの右上にある[Help]アイコンを選択します。
+. [サポート]>[BlueXP Connector]*を選択します。
++
+システムIDがページの上部に表示されます。
+
++
+* 例 *
+
++
+image:screenshot-system-id.png["サポートダッシュボードに表示されるBlueXPのシステムIDを示すスクリーンショット。"]
+
+
+
+
+
+== コネクタのバージョンの表示
+
+コネクタのバージョンを表示して、コネクタが自動的に最新リリースにアップグレードされたこと、またはNetApp担当者と共有する必要があることを確認できます。
+
+.手順
+. BlueXPコンソールの右上にある[Help]アイコンを選択します。
+. [サポート]>[BlueXP Connector]*を選択します。
++
+ページの上部にバージョンが表示されます。
+
++
+image:screenshot-connector-version.png["サポートダッシュボードのコネクタのバージョンを示すスクリーンショット。"]
+
+
+
+
+
+== AutoSupport メッセージをダウンロードまたは送信します
+
+問題が発生した場合、ネットアップの担当者から、トラブルシューティングの目的で AutoSupport メッセージをネットアップサポートに送信するように依頼されることがあります。
+
+.手順
+. BlueXPコンソールの右上で、[ヘルプ]アイコンを選択し、*[サポート]*を選択します。
++
+image:screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
+
+. [BlueXP Connector]*を選択します。
+. ネットアップサポートへの情報の送信方法に応じて、次のいずれかを実行します。
++
+.. AutoSupport メッセージをローカルマシンにダウンロードするオプションを選択します。登録したら、任意の方法でネットアップサポートに送信できます。
+.. ネットアップサポートにメッセージを直接送信するには、* Send AutoSupport *を選択します。
+
+
++
+image:screenshot-connector-autosupport.png["サポートダッシュボードのスクリーンショット。ユーザがAutoSupport メッセージのダウンロードと送信を選択できます。"]
+
+
+
+
+
+== Google Cloud NAT ゲートウェイを使用しているときのダウンロードエラーを修正します
+
+コネクタは、 Cloud Volumes ONTAP のソフトウェアアップデートを自動的にダウンロードします。設定で Google Cloud NAT ゲートウェイを使用している場合、ダウンロードが失敗することがあります。この問題を修正するには、ソフトウェアイメージを分割するパーツの数を制限します。この手順は、BlueXP APIを使用して実行する必要があります。
+
+.ステップ
+. 次の JSON を本文として /occm/config に PUT 要求を送信します。
++
+[source]
+----
+{
+  "maxDownloadSessions": 32
+}
+----
++
+_maxDownloadSessions_ の値は 1 または 1 より大きい任意の整数です。値が 1 の場合、ダウンロードされたイメージは分割されません。
+
++
+32 は値の例です。使用する値は、 NAT の設定と同時に使用できるセッションの数によって異なります。
+
+
+
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig["/occm/config API 呼び出しの詳細を確認してください"^]
+
+
+
+== NetAppナレッジベースのヘルプ
+
+https://kb.netapp.com/Special:Search?path=Cloud%2FBlueXP&query=connector&type=wiki["NetAppサポートチームが作成したトラブルシューティング情報を表示する"]。
