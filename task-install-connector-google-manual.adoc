@@ -124,9 +124,20 @@ rm /var/run/docker.sock
 PodmanはRed Hat Enterprise Linuxの公式リポジトリから入手できます。
 
 +
+Red Hat Enterprise Linux 9の場合：
+
++
 [source, cli]
 ----
 sudo dnf install podman-2:4.6.1
+----
++
+Red Hat Enterprise Linux 8の場合：
+
++
+[source, cli]
+----
+sudo dnf install podman-3:4.6.1
 ----
 . podman.socketサービスを有効にして開始します。
 +
@@ -319,6 +330,8 @@ NTPを有効にする:: BlueXP分類を使用して企業データソースを�
 == 手順4：コネクタの権限を設定する
 
 Google Cloudでリソースを管理するためにBlueXPで必要な権限をコネクタに付与するには、Google Cloudサービスアカウントが必要です。コネクタを作成するときは、このサービスアカウントをコネクタVMに関連付ける必要があります。
+
+以降のリリースで新しい権限が追加された場合は、カスタムロールを更新する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。
 
 .手順
 . Google Cloudでカスタムロールを作成します。

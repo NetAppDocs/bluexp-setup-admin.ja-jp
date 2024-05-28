@@ -226,7 +226,6 @@
   <block id="12c7029287280adb69871787fa604772" category="paragraph">このカスタムロールは、Connector VMに関連付けられているサービスアカウントに適用する必要があります。</block>
   <block id="cb3ffce0d4b8f43b3d9f183b558cca41" category="inline-link-macro">制限モードの権限を設定します</block>
   <block id="fad45f664f0478b74c9485a0b1f6d781" category="inline-link-macro">プライベートモードの権限を設定します</block>
-  <block id="c5078b96055d6b776ee265ca4c7650c2" category="paragraph">また、新しい権限が以降のリリースで追加されるときに、ロールが最新の状態であることを確認する必要があります。</block>
   <block id="823b2e7894c2b52c1e9adc9ea10b9be5" category="section-title">Google Cloud権限の使用方法</block>
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">アクション</block>
   <block id="8224e3db072d582bb34ae19441c597fe" category="cell">- compute.disks.create
@@ -1025,7 +1024,6 @@
   <block id="8098dd228e3c3acafd4ab6231ee02a5b" category="paragraph">どちらのオプションを使用する場合も、最初にIAMポリシーを作成します。このポリシーには、BlueXPからAWSでConnectorインスタンスを起動するために必要な権限のみが含まれています。</block>
   <block id="5409221a62615b6b2cf0061a5376c983" category="inline-link">AWSドキュメント：Condition要素</block>
   <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">必要に応じて、IAMを使用してIAMポリシーを制限できます<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 要素（Element）：<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
-  <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、コネクタでAWSリソースを管理できるようになります。</block>
   <block id="1e71ce7defc90d8f5a2c46c08ba968df" category="list-text">AWS IAMコンソールに移動します。</block>
   <block id="26d4a7a50dfbae842d907e3b8000633e" category="list-text">次のポリシーをコピーして貼り付けます。</block>
   <block id="1bd08699c526c66f71094b5ff54dc839" category="list-text">BlueXPが引き継ぐことができるIAMロールにポリシーを適用するか、BlueXPにアクセスキーを提供できるようにIAMユーザにポリシーを関連付けます。</block>
@@ -1210,9 +1208,7 @@
   <block id="30782d3f448f611988824827b71e6b96" category="paragraph">BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカウント内のリソースとプロセスを管理するための権限をConnectorに提供するポリシーがインスタンスにアタッチされます。Connectorでは、権限を使用してAPI呼び出しを実行することで、EC2、S3、CloudFormation、IAM、 Key Management Service（KMS；キー管理サービス）など。</block>
   <block id="c1141a37b962270fc1e8960233830c99" category="section-title">IAMポリシー</block>
   <block id="d169cac20ae3e0b6b9cec32d273de5f2" category="paragraph">以下のIAMポリシーは、ConnectorがAWSリージョンに基づいてパブリッククラウド環境内のリソースとプロセスを管理するために必要な権限を提供します。</block>
-  <block id="74b6a526e505305f967084e06fa6aaf3" category="list-text">BlueXPから直接、標準のAWSリージョンでコネクタを作成すると、BlueXPによって自動的にそのコネクタにポリシーが適用されます。この場合、何も行う必要はありません。</block>
   <block id="7d6d11737dd3bca1243f4e22e7aeaec1" category="list-text">AWS Marketplaceからコネクタを導入する場合、Linuxホストにコネクタを手動でインストールする場合、またはBlueXPにAWSクレデンシャルを追加する場合は、ポリシーを自分で設定する必要があります。</block>
-  <block id="b8502b99c36d378968d3d20a7561e523" category="list-text">また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。</block>
   <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="list-text">必要に応じて、IAMを使用してIAMポリシーを制限できます<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> 要素（Element）：<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
   <block id="5e7e2fc7d83311cfc7311fe5dec48480" category="list-text">これらのポリシーの使用手順については、次のページを参照してください。</block>
   <block id="de16d176ab7c6c01a7ce45f2e7213194" category="paragraph">必要なポリシーを表示する地域を選択します。</block>
@@ -3083,7 +3079,6 @@
 このエンドポイントは、Azure Governmentリージョンでのみ必要です。</block>
   <block id="d7a02621d52c29a3c5f7895e817cba5b" category="list-text">自動化カタログ</block>
   <block id="37b89c92faa8fead3ede2cb2c162ef52" category="inline-link-macro">コネクタインスタンス自体に必要な表示権限</block>
-  <block id="9c7ace21b2c703b0c1706b0f405490ae" category="paragraph">なお、このポリシーには、BlueXPからAWSでコネクタインスタンスを起動するために必要な権限のみが含まれています。 <block ref="1803651c0d8d31da6be94aca23bd6fb9" category="inline-link-macro-rx"></block>。</block>
   <block id="ee0f5d3d76febb57f0cd8c307401026c" category="paragraph">Marketplaceの導入に備えて、AWSでIAMポリシーを作成し、IAMロールに関連付けます。AWS Marketplaceからコネクタを作成すると、そのIAMロールを選択するように求められます。</block>
   <block id="b8173d0c4669ed6158a49dda320b1515" category="paragraph">使用するBlueXPサービスによっては、2つ目のポリシーの作成が必要になる場合があります。標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。 <block ref="60507836418f54f0b2b646fcefa2cf2c" category="inline-link-macro-rx"></block>。</block>
   <block id="ad76b7ae56285d87ab9015cde946bbf4" category="list-text"><block ref="ad76b7ae56285d87ab9015cde946bbf4" category="inline-link-rx"></block></block>
@@ -3218,7 +3213,6 @@
   <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するためのアウトバウンドインターネット接続が確立されていない場合は、コネクタに付属のプロキシサーバを使用するように自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
   <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">BlueXPからAzureにコネクタを作成します</block>
   <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">BlueXPからコネクタを作成するときは、BlueXPがAzureで認証してVMを導入するためのログインを指定する必要があります。次の 2 つのオプションがあります。</block>
-  <block id="79a9c2b8e447685125856ec6046d8128" category="admonition">このカスタムロールには、BlueXPからAzureでコネクタVMを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。BlueXPがコネクタを作成すると、Connector VMに新しい権限セットが適用され、Connectorがパブリッククラウド環境内のリソースを管理できるようになります。</block>
   <block id="6dc4f3e9aa2dada18f0a17189fa7d079" category="list-text">「 * アクセスコントロール（ IAM ） * 」をクリックします。</block>
   <block id="761218505548d0e5a2977bd7c31de50a" category="list-text">[ * 追加 *&gt;* 役割の割り当ての追加 * ] をクリックして、権限を追加します。</block>
   <block id="407df91196b1a54a89a9911a8ac6a332" category="list-text">Azure SetupAsService * ロールを選択し、 * 次へ * をクリックします。</block>
@@ -4179,4 +4173,16 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="a2e2f8288038950766d9cd088e4d892d" category="sidebar">VMとOSの保守</block>
   <block id="417a7f2f69f19fbcd309a4694944397e" category="sidebar">EC2インスタンスでIMDSv2を使用する必要がある</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">デフォルト設定</block>
+  <block id="abaca48e727d4b8ce4fa03323bbfdae6" category="paragraph">以降のリリースで新しい権限が追加された場合は、カスタムロールを更新する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。</block>
+  <block id="3799b61c7b8f19b2e2054544594671c3" category="admonition">このカスタムロールには、BlueXPからAzureでコネクタVMを起動するために必要な権限のみが含まれています。このポリシーは、他の状況では使用しないでください。BlueXPでコネクタを作成すると、コネクタVMに新しい権限セットが適用され、コネクタでAzureリソースを管理できるようになります。</block>
+  <block id="235877cfbecd45ab1b8e8ccb08915ab6" category="inline-link-macro">コネクタのカスタムロールの詳細を確認する</block>
+  <block id="9c94f9d5dbcdb22d1966ac1fff333345" category="list-text">BlueXPでコネクタを導入すると、カスタムロールが作成されてコネクタVMに割り当てられます。このロールには、コネクタがAzureリソースを管理できるようにする権限が含まれています。以降のリリースで新しい権限が追加される場合は、ロールを最新の状態に保つ必要があります。 <block ref="68dcfa6eadd8a48a8164adbbc9abc0e5" category="inline-link-macro-rx"></block>。</block>
+  <block id="1f43b26ddf19b23cb5c358604ad9d1bb" category="paragraph">以降のリリースで新しい権限が追加された場合は、コネクタポリシーを更新する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。</block>
+  <block id="676f79631572648a20e41bdcef2aa88e" category="list-text">いずれの場合も、以降のリリースで新しい権限が追加されるため、ロールが最新の状態になっていることを確認する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。</block>
+  <block id="ced19d28868cf97a99ad66ab748a0458" category="list-text">BlueXPから直接、標準のAWSリージョンでコネクタを作成すると、BlueXPによって自動的にそのコネクタにポリシーが適用されます。</block>
+  <block id="27bfd6a18f38f12efb7983c46e54e86c" category="list-text">いずれの場合も、以降のリリースで新しい権限が追加されるため、ポリシーが最新の状態になっていることを確認する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。</block>
+  <block id="8ed564b3f4045fb1f8ddb641549ce096" category="paragraph">このポリシーには、BlueXPからAWSでConnectorインスタンスを起動するために必要な権限のみが含まれています。BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、コネクタでAWSリソースを管理できるようになります。 <block ref="1803651c0d8d31da6be94aca23bd6fb9" category="inline-link-macro-rx"></block>。</block>
+  <block id="df6a3e698694ef43588c621a4f033d31" category="inline-link-macro">コネクタのIAMポリシーの詳細を確認する</block>
+  <block id="1fb320e90a252e8c1b4c19e3cbd46329" category="list-text">BlueXPでコネクタが作成されると、IAMロールとそのインスタンスのインスタンスプロファイルが作成されます。このロールには、コネクタでAWSリソースを管理できるようにする権限が含まれています。以降のリリースで新しい権限が追加される場合は、ロールを最新の状態に保つ必要があります。 <block ref="7c04064b609d1f2f70bc0b0dc253bdfa" category="inline-link-macro-rx"></block>。</block>
+  <block id="4560d9b851db1f575c8bd1ba53369c0a" category="paragraph">また、新しい権限が以降のリリースで追加されるときに、ロールが最新の状態であることを確認する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。</block>
 </blocks>
