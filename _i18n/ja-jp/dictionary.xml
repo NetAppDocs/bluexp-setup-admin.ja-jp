@@ -4185,4 +4185,17 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="df6a3e698694ef43588c621a4f033d31" category="inline-link-macro">コネクタのIAMポリシーの詳細を確認する</block>
   <block id="1fb320e90a252e8c1b4c19e3cbd46329" category="list-text">BlueXPでコネクタが作成されると、IAMロールとそのインスタンスのインスタンスプロファイルが作成されます。このロールには、コネクタでAWSリソースを管理できるようにする権限が含まれています。以降のリリースで新しい権限が追加される場合は、ロールを最新の状態に保つ必要があります。 <block ref="7c04064b609d1f2f70bc0b0dc253bdfa" category="inline-link-macro-rx"></block>。</block>
   <block id="4560d9b851db1f575c8bd1ba53369c0a" category="paragraph">また、新しい権限が以降のリリースで追加されるときに、ロールが最新の状態であることを確認する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。</block>
+  <block id="74ee4e65950c57ed59a7a33de5a179e6" category="section-title">2024年6月4日</block>
+  <block id="87174c130fb334601e88a5630bf24478" category="section-title">プライベートモードリリース（3.9.40）</block>
+  <block id="3a88f5b91fe23c6da00e330b440f9fd7" category="paragraph">新しいプライベートモードリリースがNetApp Support Siteからダウンロードできるようになりました。このリリースには、プライベートモードでサポートされる次のバージョンのBlueXPサービスが含まれています。</block>
+  <block id="4f56b8c7a0f62edc59659cfaecc68958" category="paragraph">このプライベートモードリリースでは、Red Hat Enterprise Linux 8および9でのコネクタのサポートは_not_includeになっています。</block>
+  <block id="f691a3ef752f6e51a74183a6b7b1c432" category="cell">3.9.40</block>
+  <block id="918de91f5332dad6620331712ef5c21d" category="cell">2024年5月15日（バージョン1.31）</block>
+  <block id="64cc8195fcb01e582343c910736d1abd" category="paragraph">これらのBlueXPサービスのバージョンの詳細については、各BlueXPサービスのリリースノートを参照してください。</block>
+  <block id="451cc12943297b25b1cf250cc5d0e60a" category="inline-link">BlueXPのバックアップとリカバリの新機能</block>
+  <block id="d846859679a4eca86e97e1887623b347" category="list-text"><block ref="d846859679a4eca86e97e1887623b347" category="inline-link-rx"></block></block>
+  <block id="dd890c1f1f06a084e8274154f3f07ebe" category="inline-link">BlueXPの新機能</block>
+  <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
+  <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">BlueXPのCloud Volumes ONTAP Managementの新機能</block>
+  <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
 </blocks>
