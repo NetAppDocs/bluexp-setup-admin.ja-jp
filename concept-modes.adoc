@@ -165,12 +165,6 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 | 分類  a| 
 制限モードの政府機関地域でサポートされます。商用リージョンまたは制限モードのソブリンリージョンではサポートされていません。
 
-次の制限事項が適用されます。
-
-* OneDriveアカウント、SharePointアカウント、Googleドライブアカウントはスキャンできません。
-* Microsoft Azure Information Protection（AIP）ラベル機能を統合できません。
-
-
 
 
 | Cloud Volumes ONTAP | フルサポート 
