@@ -79,7 +79,7 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 ==== RHEL 8および9のサポート
 
-このコネクタは、次のバージョンのRed Hat Enterprise Linux with _new_connectorインストールを実行しているホストでサポートされるようになりました。
+BlueXPを標準モードまたは制限モードで使用している場合、次のバージョンのRed Hat Enterprise Linux with _new_connectorを実行しているホストでコネクタがサポートされるようになりました。
 
 * 8.6～8.9
 * 9.1から9.3
