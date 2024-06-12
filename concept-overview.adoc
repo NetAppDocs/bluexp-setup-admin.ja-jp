@@ -47,7 +47,6 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["コピーと同期"^]
-* https://bluexp.netapp.com/global-file-cache["エッジキャッシュ"^]
 * https://bluexp.netapp.com/cloud-tiering["階層化"^]
 
 
