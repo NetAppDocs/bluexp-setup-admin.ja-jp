@@ -62,7 +62,17 @@ https://access.redhat.com/articles/973163["Red Hat ソリューション：「 W
 CPU:: 4 コアまたは 4 個の vCPU
 RAM:: 14GB
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
++
+--
+BlueXPのユースケース `/opt` をインストールするには `/opt/application/netapp` ディレクトリとその内容。
+
+--
 /var のディスク領域:: 20GiB のスペースが必要です
++
+--
+このスペースはBlueXPの `/var` DockerやPodmanは、このディレクトリ内にコンテナを作成するように設計されているためです。具体的には、 `/var/lib/containers/storage` ディレクトリ。このスペースでは外部マウントやシンボリックリンクは使用できません。
+
+--
 コンテナオーケストレーションツール:: オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 +
 --
