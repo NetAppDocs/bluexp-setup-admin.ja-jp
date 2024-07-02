@@ -30,16 +30,8 @@ summary: 独自のLinuxホストにコネクタを手動でインストールす
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6～7.9
-+
-NetAppは、2024年6月30日までCentOS 7でのコネクタのサポートを継続します。
-
 * Red Hat Enterprise Linux の場合
 +
-** 7.6～7.9
-+
-NetAppは、2024年6月30日までRHEL 7でのコネクタのサポートを継続します。
-
 ** 8.6～8.9
 ** 9.1から9.3
 +
@@ -53,12 +45,7 @@ Connector は、これらのオペレーティングシステムの英語版で�
 
 
 --
-ハイパーバイザー:: Ubuntu、CentOS、またはRed Hat Enterprise Linuxの実行が認定されているベアメタルまたはホスト型のハイパーバイザーが必要です。
-+
---
-https://access.redhat.com/articles/973163["Red Hat ソリューション：「 Which hypervisors are certified to run Red Hat Enterprise Linux ？」"^]
-
---
+ハイパーバイザー:: サポート対象のオペレーティングシステムの実行が認定されているベアメタルまたはホスト型ハイパーバイザーが必要です。
 CPU:: 4 コアまたは 4 個の vCPU
 RAM:: 14GB
 Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。DS3 v2 を推奨します。
@@ -88,7 +75,7 @@ Podmanでは、次の前提条件を満たす必要があります。
 ** podman-composeをPATH環境変数に追加する必要があります
 
 
-* Ubuntu、CentOS、およびRed Hat Enterprise Linux 7にはDocker Engineが必要です。
+* UbuntuにはDocker Engineが必要です。
 +
 ** サポートされる最小バージョンは19.3.1です。
 ** サポートされる最大バージョンは25.0.5です。
@@ -106,7 +93,7 @@ Podmanでは、次の前提条件を満たす必要があります。
 オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 
 * Red Hat Enterprise Linux 8および9にはPodmanが必要です。
-* Ubuntu、CentOS、およびRed Hat Enterprise Linux 7にはDocker Engineが必要です。
+* UbuntuにはDocker Engineが必要です。
 
 
 .手順

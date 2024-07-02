@@ -51,7 +51,7 @@ RHELノアツフクレエト:: RHEL 7ホストで既存のコネクタを実行�
 
 == RHEL 7およびCentOS 7のサポート終了
 
-2024年6月30日に、RHEL 7はメンテナンス終了（EOM）になり、CentOS 7はサポート終了（EOL）になります。NetAppは、これらのLinuxディストリビューションでのコネクタのサポートを2024年6月30日まで継続します。
+2024年6月30日、RHEL 7はメンテナンス終了（EOM）に達し、CentOS 7はサポート終了（EOL）に達しました。NetAppは2024年6月30日にこれらのLinuxディストリビューションでのコネクタのサポートを停止しました。
 
 https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance["Red Hat: Red Hat Enterprise Linux 7のメンテナンス終了について知っておくべきこと"^]
 
@@ -81,9 +81,6 @@ RHEL 7またはCentOS 7で既存のコネクタを実行している場合、オ
 
 ここでは、前のセクションで説明したオペレーティングシステムのサポートの概要を示します。
 
-
-NOTE: NetAppは、2024年6月30日までRHEL 7およびCentOS 7でのコネクタのサポートを継続します。
-
 [role="tabbed-block"]
 ====
 .標準モード
@@ -92,10 +89,8 @@ NOTE: NetAppは、2024年6月30日までRHEL 7およびCentOS 7でのコネク�
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6～7.9
 * Red Hat Enterprise Linux の場合
 +
-** 7.6～7.9
 ** 8.6～8.9
 ** 9.1から9.3
 
@@ -115,10 +110,8 @@ Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6～7.9
 * Red Hat Enterprise Linux の場合
 +
-** 7.6～7.9
 ** 8.6～8.9
 ** 9.1から9.3
 
@@ -133,15 +126,7 @@ Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
 --
 .プライベートモード
 --
-手動インストール::
-+
---
-* Ubuntu 22.04 LTS
-* CentOS 7.6～7.9
-* Red Hat Enterprise Linux 7.6~7.9
-
-
---
+手動インストール:: Ubuntu 22.04 LTS
 
 
 --

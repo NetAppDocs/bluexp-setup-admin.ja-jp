@@ -5,7 +5,7 @@
 オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 
 * Red Hat Enterprise Linux 8および9にはPodmanが必要です。
-* Ubuntu、CentOS、およびRed Hat Enterprise Linux 7にはDocker Engineが必要です。
+* UbuntuにはDocker Engineが必要です。
 
 
 .手順
