@@ -90,7 +90,7 @@ NOTE: を使用する `dnf install` コマンドは、PATH環境変数にpodman-
 --
 .Docker Engine の略
 --
-19.3.1から25.0.5の間のバージョンのDocker Engineをインストールします。
+23.0.6から25.0.5の間のバージョンのDocker Engineをインストールします。
 
 .手順
 . Docker Engineをインストールします。

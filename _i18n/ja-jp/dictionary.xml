@@ -661,18 +661,11 @@
   <block id="a6daae7da601d04e5cdb89d612a8d9b1" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。DS3 v2 を推奨します。</block>
   <block id="ae140c7a1104ac99f1a01b18e5dc3ed8" category="summary">BlueXPにはWebベースのコンソールからアクセスできます。BlueXPの利用を開始するには、まず既存のNetApp Support Site クレデンシャルを使用するか、ネットアップクラウドログインアカウントを作成して登録します。</block>
   <block id="156c302d186fc36d9d944c5d74b971af" category="doc">BlueXPにサインアップします</block>
-  <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">次のいずれかのオプションを使用して、BlueXPにサインアップできます。</block>
   <block id="19df8bb4b5a805b23aeac731605bdf21" category="list-text">既存のNetApp Support Site （NSS）のクレデンシャルを必要に応じて変更</block>
-  <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">Eメールアドレスとパスワードを指定してネットアップクラウドにログインします</block>
   <block id="4cd9dd3aeeaff4f9e2ee0a8b309b6856" category="inline-link-macro">BlueXPでアイデンティティフェデレーションを使用する方法をご紹介します</block>
-  <block id="66721b55faa00316d484082879eed67d" category="paragraph">どちらのオプションも連携接続をサポートしているため、社内ディレクトリのクレデンシャルを使用してシングルサインオンを実行できます（フェデレーテッドアイデンティティ）。フェデレーション接続は、サインアップ後に設定できます。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
   <block id="3a9d5bd356ec8e4fc31c11150128b7ac" category="list-text">Webブラウザを開き、にアクセスします<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block></block>
-  <block id="3587d9f2b48c4f0c9c40433731329a21" category="list-text">NetApp Support Site アカウントをお持ちの場合は、*ログイン*ページでNSSアカウントに関連付けられているメールアドレスを直接入力してください。</block>
   <block id="61bd9c463723beb495c6ca6a1a35e0eb" category="paragraph">NSSアカウントをお持ちの場合は、サインアップページをスキップできます。この初回ログインの一環として、BlueXPがサインアップします。</block>
-  <block id="7c74a9177ae92ae3e635c6ec91ce1d71" category="list-text">NSSアカウントをお持ちでなく、ネットアップクラウドログインを作成して登録する場合は、*[Sign Up]*を選択します。</block>
-  <block id="9c27b53d053eec29dd123f70f05c5d03" category="list-text">[Sign Up]ページで、ネットアップクラウドログインの作成に必要な情報を入力します。</block>
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">サインアップフォームでは、英語の文字のみを使用できます。</block>
-  <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">プロンプトが表示されたら、エンドユーザライセンス契約を確認し、条件に同意します。</block>
   <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">[ようこそ*]ページで、アカウントの名前を入力します。</block>
   <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">既存のアカウントにメンバーを追加する方法について説明します</block>
   <block id="ecbca8245155432067c380b55b5146bb" category="paragraph">アカウントは、ネットアップのアイデンティティプラットフォームにおける最上位の要素です。ユーザ、ロール、権限、作業環境を追加および管理できます。</block>
@@ -3918,7 +3911,6 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1以降のすべてのバージョン</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">Cloud Volumes ONTAPのアップグレードプロセスで使用</block>
   <block id="970c4756c8fc49a0c32d6a5b32d6d6f5" category="list-text">コネクタをインストールする前に、ホストにDocker Engineが必要です。</block>
-  <block id="66a843cd9e2f1ff37fec4c91275dc9a7" category="list-text">サポートされる最小バージョンは19.3.1です。</block>
   <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">サポートされる最大バージョンは25.0.5です。</block>
   <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
   <block id="779956d8a8a5dbf08bbf655892abfefb" category="section-title">2024年4月11日</block>
@@ -3986,7 +3978,6 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="084cfc903eb108eb15642e42f36348f9" category="paragraph">Red Hat Enterprise Linux 8の場合：</block>
   <block id="6f3a42415c589950b9ae4d3fe1f87dc7" category="list-text">podman-composeパッケージ1.0.6をインストールします。</block>
   <block id="ec7c87651a5ede2a98ad4091fe48b517" category="admonition">を使用する<block ref="02c7499137a5d8d10292d68634eb22a0" prefix=" " category="inline-code"></block> コマンドは、PATH環境変数にpodman-composeを追加するための要件を満たしています。インストールコマンドを実行すると、/usr/binにpodman-composeが追加されます。<block ref="c9bac30d1d0554c0790285219e5ad518" prefix=" " category="inline-code"></block> オプションを指定します。</block>
-  <block id="2cb776f499f1161a0b5361cda7d46e37" category="paragraph">19.3.1から25.0.5の間のバージョンのDocker Engineをインストールします。</block>
   <block id="d96a084915e5de032105988cddcc2bc5" category="list-text">Docker Engineをインストールします。</block>
   <block id="08a382dc3dd0f48c28f89b74f8bac2a4" category="inline-link">Dockerからインストール手順を表示</block>
   <block id="3907e04a67ccb717783cc69d280aaa41" category="paragraph"><block ref="3907e04a67ccb717783cc69d280aaa41" category="inline-link-rx"></block></block>
@@ -4192,4 +4183,30 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">サポート対象のオペレーティングシステムの実行が認定されているベアメタルまたはホスト型ハイパーバイザーが必要です。</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">UbuntuにはDocker Engineが必要です。</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">2024年6月30日、RHEL 7はメンテナンス終了（EOM）に達し、CentOS 7はサポート終了（EOL）に達しました。NetAppは2024年6月30日にこれらのLinuxディストリビューションでのコネクタのサポートを停止しました。</block>
+  <block id="547a1a61c710e2dc947389da0967d175" category="list-text">サポートされる最小バージョンは23.0.6です。</block>
+  <block id="7a96db7c574c0cfb888eceb8119d9bac" category="paragraph">23.0.6から25.0.5の間のバージョンのDocker Engineをインストールします。</block>
+  <block id="13265d5e2f2489e0351d3bae9dc7d923" category="doc">BlueXPに登録またはログイン</block>
+  <block id="400356f2a752e6926bd99ce1db45ee8c" category="paragraph">BlueXPにはWebベースのコンソールからアクセスできます。BlueXPの使用を開始するには、まず登録するか、NetAppサポートサイトのクレデンシャルまたは社内ディレクトリからのSSOクレデンシャルを使用してログインします。</block>
+  <block id="71bf124b6b9da30db8c000241ce01691" category="paragraph">BlueXPに初めてアクセスするときは、次のいずれかの方法で登録またはログインできます。</block>
+  <block id="79160996ed8489a5cf6613551aa653a7" category="list-text">BlueXPロクイン</block>
+  <block id="097da8092c10ffe933148ded03ffa5e7" category="list-text">BlueXPログインを作成して登録できます。この認証方法では、Eメールアドレスとパスワードを指定する必要があります。Eメールアドレスを確認したら、ログインしてBlueXPアカウントを作成できます（まだ登録していない場合）。</block>
+  <block id="4e509fcd83df29eba4ce6711d142163b" category="list-text">NetAppサポートサイト（NSS）のクレデンシャル</block>
+  <block id="820249dfc3701fd3b37984191fcdfd5c" category="list-text">NetAppサポートサイトのクレデンシャルがあれば、BlueXPに登録する必要はありません。NSSクレデンシャルを使用してログインすると、BlueXPアカウントをまだ作成していない場合は作成するように求められます。</block>
+  <block id="9cb17ba10a86a6d673f250ed811a88c2" category="list-text">フェデレーテッド接続</block>
+  <block id="b9d11f4546264baa9dae3dabfb844735" category="list-text">シングルサインオンを使用して、社内ディレクトリ（フェデレーション ID ）からのクレデンシャルを使用してログインできます。組織のアカウントの最初のユーザがBlueXPにサインアップするか、NSSクレデンシャルを使用してログインしてから、アイデンティティフェデレーションを設定する必要があります。その後、後続の各ユーザはSSOクレデンシャルを使用してログインできます。</block>
+  <block id="a3343822f7753a8d8b67395fe90b10ba" category="paragraph"><block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>です。</block>
+  <block id="631a9d1918b756ca1857359538227c2a" category="list-text">NetAppサポートサイトのアカウントをお持ちの場合、またはアイデンティティフェデレーションをすでに設定している場合は、アカウントに関連付けられているEメールアドレスを*[ログイン]*ページで直接入力します。</block>
+  <block id="e2a4611e209f9dc6217229cb9441c087" category="list-text">BlueXPログインを作成して登録する場合は、*[Sign Up]*を選択します。</block>
+  <block id="dafbc60d299b7ecf7d1bf490a178f77f" category="list-text">[サインアップ]ページで、必要な情報を入力し、*[次へ]*を選択します。</block>
+  <block id="422588021a93cfdaa26ce8d7d46dfeda" category="list-text">Eメールアドレスの確認手順が記載されたNetAppからのEメールが受信トレイに届いていることを確認します。</block>
+  <block id="6a453053d8be9574b7b5d32eb1d51842" category="paragraph">この手順は、BlueXPにログインする前に実行する必要があります。</block>
+  <block id="a0e12b903763894b05053f1758f87c86" category="list-text">ログインしたら、エンドユーザライセンス契約を確認し、条項に同意します。</block>
+  <block id="8d330209f05c51bacefbee76e24d82e9" category="section-title">2024年7月8日</block>
+  <block id="cfcc30e7f5ca49191957ff6a4f02c34d" category="section-title">コネクタ3.9.42</block>
+  <block id="b1360a775c6891602e0321f2a2a1aa2b" category="paragraph">このリリースには、マイナーな改善、バグ修正、AWS Canada West（カルガリー）リージョンのコネクタのサポートが含まれています。</block>
+  <block id="2a63395e5cc23edb6ca284fd55193c26" category="section-title">Docker Engineの要件を更新</block>
+  <block id="a8b199c601f75b6af66327457070a9f8" category="paragraph">コネクタがUbuntuホストにインストールされている場合、サポートされるDocker Engineの最小バージョンは23.0.6になります。以前は19.3.1でした。</block>
+  <block id="a0171ad16b4ca1d03af998be3b923d6f" category="paragraph">サポートされる最大バージョンは引き続き25.0.5です。</block>
+  <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">Eメールの確認が必要です</block>
+  <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">BlueXPにサインアップした新規ユーザは、ログインする前にEメールアドレスを確認する必要があります。</block>
 </blocks>

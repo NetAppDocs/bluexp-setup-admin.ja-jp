@@ -18,6 +18,32 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
+== 2024年7月8日
+
+
+
+=== コネクタ3.9.42
+
+このリリースには、マイナーな改善、バグ修正、AWS Canada West（カルガリー）リージョンのコネクタのサポートが含まれています。
+
+
+
+=== Docker Engineの要件を更新
+
+コネクタがUbuntuホストにインストールされている場合、サポートされるDocker Engineの最小バージョンは23.0.6になります。以前は19.3.1でした。
+
+サポートされる最大バージョンは引き続き25.0.5です。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["コネクタホスト要件の表示"]。
+
+
+
+=== Eメールの確認が必要です
+
+BlueXPにサインアップした新規ユーザは、ログインする前にEメールアドレスを確認する必要があります。
+
+
+
 == 2024年6月12日
 
 
