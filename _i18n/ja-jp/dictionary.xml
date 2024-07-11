@@ -4209,4 +4209,5 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="a0171ad16b4ca1d03af998be3b923d6f" category="paragraph">サポートされる最大バージョンは引き続き25.0.5です。</block>
   <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">Eメールの確認が必要です</block>
   <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">BlueXPにサインアップした新規ユーザは、ログインする前にEメールアドレスを確認する必要があります。</block>
+  <block id="096051910b67309e40aa0d0e1d279007" category="paragraph">3.9.42リリースは、標準モードと制限モードで使用できます。</block>
 </blocks>
