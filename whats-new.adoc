@@ -26,6 +26,8 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 BlueXPで、標準モードまたは制限モードを使用している場合にRed Hat Enterprise Linux 8.10ホストへのコネクタのインストールがサポートされるようになりました。
 
+RHEL 8.10のサポートは、コネクタの3.9.40リリースから開始されました。
+
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
 
 

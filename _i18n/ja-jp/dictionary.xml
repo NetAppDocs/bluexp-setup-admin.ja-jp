@@ -4204,4 +4204,5 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">2024年7月15日</block>
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">RHEL 8.10のサポート</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXPで、標準モードまたは制限モードを使用している場合にRed Hat Enterprise Linux 8.10ホストへのコネクタのインストールがサポートされるようになりました。</block>
+  <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">RHEL 8.10のサポートは、コネクタの3.9.40リリースから開始されました。</block>
 </blocks>
