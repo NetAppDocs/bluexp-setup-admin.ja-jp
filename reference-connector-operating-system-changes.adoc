@@ -18,15 +18,65 @@ summary: 特定のLinuxオペレーティングシステムでコネクタのサ
 
 
 
+== サポートされているオペレーティングシステム
+
+BlueXP Connectorは次のLinuxオペレーティングシステムでサポートされます。
+
+[role="tabbed-block"]
+====
+.標準モード
+--
+手動インストール::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux の場合
++
+** 8.6～8.10
+** 9.1から9.3
+
+
+
+
+--
+BlueXPからの導入:: Ubuntu 22.04 LTS
+AWS Marketplaceからの導入:: Ubuntu 22.04 LTS
+Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
+
+
+--
+.制限モード
+--
+手動インストール::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux の場合
++
+** 8.6～8.10
+** 9.1から9.3
+
+
+
+
+--
+AWS Marketplaceからの導入:: Ubuntu 22.04 LTS
+Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
+
+
+--
+.プライベートモード
+--
+手動インストール:: Ubuntu 22.04 LTS
+
+
+--
+====
+
+
 == RHEL 8および9のサポート
 
-3.9.40リリース以降では、BlueXPで次のバージョンのRed Hat Enterprise Linux（RHEL）でコネクタがサポートされます。
-
-* 8.6～8.9
-* 9.1から9.3
-
-
-これらのバージョンのRHELのサポートについては、次の点に注意してください。
+RHEL 8および9のサポートについては、次の点に注意してください。
 
 制限::
 +
@@ -77,62 +127,6 @@ RHEL 7またはCentOS 7で既存のコネクタを実行している場合、オ
 
 
 
-== サポートされているオペレーティングシステムの概要
-
-ここでは、前のセクションで説明したオペレーティングシステムのサポートの概要を示します。
-
-[role="tabbed-block"]
-====
-.標準モード
---
-手動インストール::
-+
---
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux の場合
-+
-** 8.6～8.9
-** 9.1から9.3
-
-
-
-
---
-BlueXPからの導入:: Ubuntu 22.04 LTS
-AWS Marketplaceからの導入:: Ubuntu 22.04 LTS
-Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
-
-
---
-.制限モード
---
-手動インストール::
-+
---
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux の場合
-+
-** 8.6～8.9
-** 9.1から9.3
-
-
-
-
---
-AWS Marketplaceからの導入:: Ubuntu 22.04 LTS
-Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
-
-
---
-.プライベートモード
---
-手動インストール:: Ubuntu 22.04 LTS
-
-
---
-====
-
-
 == 関連リンク
 
 
@@ -160,8 +154,4 @@ Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
 * https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["Azure NetApp Files 作業環境を作成します"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["Eシリーズシステムの検出"^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["StorageGRID システムを検出"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html["Amazon Kubernetes クラスタを追加"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html["Azure Kubernetes クラスタを追加"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html["Google Cloud Kubernetes クラスタを追加"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["OpenShiftクラスタのインポート"^]
 
