@@ -3,7 +3,7 @@
 
 
 .手順
-. にアクセスします https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS MarketplaceのBlueXPページ"^]
+. に移動します https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["AWS MarketplaceでのBlueXPコネクタの掲載"^]
 . [Marketplace]ページで、*[Continue to Subscribe]*を選択し、*[Continue to Configuration]*を選択します。
 +
 image:screenshot-subscribe-aws.png["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]

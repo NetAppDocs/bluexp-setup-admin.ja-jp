@@ -2120,8 +2120,6 @@
   <block id="801fb8cfbc6e3ffd99fcb50ae87133bd" category="paragraph"><block ref="cd13f88aaa57bb10606ac0df26b2eb23" category="inline-link-macro-rx"></block>。</block>
   <block id="b5599f9f352b1fa4cb2153ba99bdb13c" category="list-text">コネクタに必要な権限を含むポリシーが添付されたIAMロール。</block>
   <block id="dfcbfa4ce7dbf520f2b737359dfbc591" category="list-text">IAMユーザのAWS Marketplaceをサブスクライブおよびサブスクライブ解除する権限。</block>
-  <block id="7c9b14f6116e140202c359bff8bc86c2" category="inline-link">AWS MarketplaceのBlueXPページ</block>
-  <block id="3a1757ca714434ada3988895ed0a0fab" category="list-text">にアクセスします<block ref="aa1bf3a3349706e28315b07c47668a91" category="inline-link-rx"></block></block>
   <block id="648fca9db3d7e8e554a59d3519d8b0f6" category="inline-image-macro">AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット</block>
   <block id="973e3a2a390bb57ce9d9e16ac0145023" category="paragraph"><block ref="973e3a2a390bb57ce9d9e16ac0145023" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">以下の手順では、コンソールからEC2コンソールからインスタンスを起動する方法について説明します。これは、IAMロールをコネクタインスタンスに関連付けることができるためです。これは、 * ウェブサイトからの起動 * アクションを使用しては実行できません。</block>
@@ -4205,4 +4203,6 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">RHEL 8.10のサポート</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXPで、標準モードまたは制限モードを使用している場合にRed Hat Enterprise Linux 8.10ホストへのコネクタのインストールがサポートされるようになりました。</block>
   <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">RHEL 8.10のサポートは、コネクタの3.9.40リリースから開始されました。</block>
+  <block id="95dfe7c62c6772d34f6255b3027f736d" category="inline-link">AWS MarketplaceでのBlueXPコネクタの掲載</block>
+  <block id="0017322d56b9d155b01ac8380335c15b" category="list-text">に移動します<block ref="00e748787e3cd0352ad19292d67af7aa" category="inline-link-rx"></block></block>
 </blocks>
