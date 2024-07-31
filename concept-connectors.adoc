@@ -157,7 +157,7 @@ BlueXPからコネクタを直接作成するには特定の権限が必要で�
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["制限モードの権限を設定します"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["プライベートモードの権限を設定します"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["プライベートモードの権限を設定します"]
 
 
 コネクタが日常的な操作に必要とする正確な権限を表示するには、次のページを参照してください。

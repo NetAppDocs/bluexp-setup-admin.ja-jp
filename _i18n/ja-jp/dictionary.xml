@@ -132,7 +132,6 @@
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">BlueXPに関する注意事項</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="paragraph"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
   <block id="077d70acc6fcd0e9c32a626a8ef8e416" category="paragraph">BlueXPをプライベートモードで使用するには、環境を準備してコネクタを導入します。</block>
-  <block id="19b89452bb4e16dbfc6dc9d3fbbf8fc1" category="list-text">CPU、RAM、ディスクスペース、Docker Engineなどの要件を満たす専用のLinuxホストを準備します。</block>
   <block id="8cb1247d6f1cd796c983b5b1cfbbd285" category="list-text">ターゲットネットワークへのアクセスを提供するネットワークをセットアップします。</block>
   <block id="31b22ac218f817003d8419ad3518a02a" category="list-text">クラウド環境の場合は、ソフトウェアのインストール後にそれらの権限をコネクタに関連付けることができるように、クラウドプロバイダで権限を設定します。</block>
   <block id="817e58b984e5e3e7eeaf7dcb9b540fed" category="list-text">Connectorソフトウェアを独自のLinuxホストにインストールします。</block>
@@ -3317,10 +3316,8 @@ AWS Marketplaceからコネクタを起動した場合、コネクタを手動�
   <block id="9f1bd247464191c700cb44116139a226" category="section-title">手順1：コネクタを取り付ける</block>
   <block id="0c636bde157e77551496ec8461e40dcc" category="section-title">ステップ2：BlueXPをセットアップする</block>
   <block id="60a2819d83a7d683770230c16623234f" category="section-title">ステップ3：BlueXPへの権限を付与する</block>
-  <block id="33df6c8bf79bb883818929fadd08fde2" category="paragraph"><block ref="c830bbf16033728edff10270fb2e90fe" category="inline-link-macro-rx"></block>。</block>
   <block id="895abbd8e532d17f2ca587c540bce83a" category="list-text"><block ref="895abbd8e532d17f2ca587c540bce83a" category="inline-link-macro-rx"></block></block>
   <block id="72323525d86fb9af6692c45c5d227ba4" category="list-text"><block ref="72323525d86fb9af6692c45c5d227ba4" category="inline-link-macro-rx"></block></block>
-  <block id="9a1ba924530ef064e3af892730568dd2" category="list-text"><block ref="9a1ba924530ef064e3af892730568dd2" category="inline-link-macro-rx"></block></block>
   <block id="dcaf9d9995c1cce5dfb4399e2434754e" category="summary">独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、Azureの権限を準備してから、コネクタをインストールし、準備した権限を指定する必要があります。</block>
   <block id="4a121ca6348602c8e2772e9488d338a9" category="doc">Azureへのコネクタの手動インストール</block>
   <block id="38c977ce808382575da9f341bee1d199" category="paragraph">確認が必要です <block ref="a2e83c328c5fe53a1b055bac582f41f6" category="inline-link-macro-rx"></block>。</block>
@@ -3395,8 +3392,6 @@ deploymentmanager. editor</block>
   <block id="7670b3e7fd0d9b5404a8ab86daf87444" category="section-title">ステップ1：プライベートモードの仕組みを理解する</block>
   <block id="6a0acc770010231bcc42930780e10a7e" category="section-title">手順2：インストールオプションを確認する</block>
   <block id="50c4903873872ea1d14776db2fb74652" category="section-title">手順3：ホスト要件を確認する</block>
-  <block id="ba9523b755dd436b9804d56f2425702a" category="section-title">手順4：コネクタのネットワークを準備する</block>
-  <block id="4a34940e5f45b6eb76dabb3e23de10f0" category="section-title">ステップ5：クラウドの権限を準備する</block>
   <block id="ed699bb1e56dba725718c6f093e80619" category="section-title">ステップ6：Google Cloud APIを有効にする</block>
   <block id="755bdc98f2ba455bba23e5d86a671294" category="section-title">手順1：制限モードの仕組みを理解する</block>
   <block id="62e5d1121361ae6a6b8f2f35c9e1b534" category="list-text">制限モードでは、コネクタからBlueXPユーザインターフェイスにアクセスできます。BlueXPユーザインターフェイスを使用すると、いくつかのエンドポイントに接続してデータ管理タスクを実行できます。これらのエンドポイントは、BlueXPコンソールから特定の操作を実行するときに、ユーザのコンピュータからアクセスされます。</block>
@@ -3992,10 +3987,7 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="7dffd01ec33485e74fcb637e0b8fe15a" category="list-text">コネクタがRHEL 8または9ホストにインストールされている場合、BlueXPのバックアップとリカバリには、単一ファイルのリストアとランサムウェアスキャンに関する制限があります。詳細については、を参照してください<block ref="a84971be17ca73ce2bed9722547a4b2a" category="inline-link-rx"></block></block>
   <block id="b6417b62aacc6d16c1ae7a79d851d413" category="list-text">BlueXPの分類は、オンプレミスのRHEL 8または9ホストにコネクタをインストールする場合にサポートされます。RHEL 8または9ホストがAWS、Azure、Google Cloudにある場合はサポートされません。</block>
   <block id="b71010c70a84a098ff97c54119ce9797" category="list-text">RHEL 8または9ホストにコネクタをインストールする場合は、コンテナオーケストレーションツールとしてPodmanが必要です。Docker EngineはRHEL 8および9ではサポートされていません。</block>
-  <block id="b20f6232e01f99983ab6adfc3cb4648e" category="inline-link-macro">Podmanの要件を表示</block>
-  <block id="5965bb30c82006f547e51cea08649d28" category="paragraph"><block ref="b6742b68d5770c57e621fe89da84d99c" category="inline-link-macro-rx"></block>。</block>
   <block id="6949300ff5b5cf6bb192114a06c923bb" category="list-text">導入モード</block>
-  <block id="f6b985bf429f605650402152a53dd500" category="list-text">RHEL 8および9は、BlueXPを標準モードまたは制限モードで使用している場合にサポートされます。</block>
   <block id="62ee52388b4c1539a4b357c9c16e57c6" category="list-text">新規の手動インストールのみ</block>
   <block id="362134ff254c022479b85d3cb9afd90c" category="list-text">RHEL 8および9は、オンプレミスまたはクラウドで実行されているホストにコネクタを手動でインストールする場合、_new_connectorのインストールでサポートされます。</block>
   <block id="ba657bf59cdaa129ee6a10872f7d63cf" category="list-text">RHELノアツフクレエト</block>
@@ -4019,10 +4011,6 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="21b3bbb098ff9926f5de185468b47efd" category="list-text">Azure Marketplaceからの導入</block>
   <block id="fd976d7410ccbb05f33da778aade918e" category="section-title">RHEL 8および9の使用方法</block>
   <block id="19fbd5208079427f7255588fa19e6216" category="paragraph">ホスト要件、Podman要件、およびPodmanとコネクタのインストール手順の詳細については、次のページを参照してください。</block>
-  <block id="c7ebd4cc461f15f97b0c6bb4d8aa138a" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block> （標準モード）</block>
-  <block id="0a33569de64145f5ddb030c5c68f0e2f" category="list-text"><block ref="ce02a119fe20803f37d74f2f696ae608" category="inline-link-rx"></block> （標準モード）</block>
-  <block id="b9ab4eedcc76eaef5111c38dd7cf6955" category="list-text"><block ref="adf5c1237bee96f4b87ff5eb3fd3c25b" category="inline-link-rx"></block> （標準モード）</block>
-  <block id="1d054abd9ef4fcc0992047bc974a0ca7" category="list-text"><block ref="5f47d3df7f8a6f7d2b2dc0a0630af052" category="inline-link-rx"></block> （標準モード）</block>
   <block id="9f1e71ff4946538e6e8d4160102056bb" category="list-text"><block ref="9f1e71ff4946538e6e8d4160102056bb" category="inline-link-rx"></block></block>
   <block id="cd4dc0cbdf60f743093e390cb5077d8b" category="section-title">作業環境を再検出する方法</block>
   <block id="8c3d753bf73570be606a9b0e412a89ca" category="paragraph">新しいコネクタの導入後に作業環境を再検出するには、次のページを参照してください。</block>
@@ -4165,7 +4153,6 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">BlueXPのユースケース<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> をインストールするには<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> ディレクトリとその内容。</block>
   <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">このスペースはBlueXPの<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> DockerやPodmanは、このディレクトリ内にコンテナを作成するように設計されているためです。具体的には、<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> ディレクトリ。このスペースでは外部マウントやシンボリックリンクは使用できません。</block>
   <block id="2e71b3fb71d89f18906d4807a6011e20" category="list-text">サポートされているオペレーティングシステム</block>
-  <block id="16affed9b9386a1e06dfd59de9b05f10" category="paragraph">コネクタは、このオペレーティングシステムの英語版でサポートされています。</block>
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">サポート対象のオペレーティングシステムの実行が認定されているベアメタルまたはホスト型ハイパーバイザーが必要です。</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">UbuntuにはDocker Engineが必要です。</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">2024年6月30日、RHEL 7はメンテナンス終了（EOM）に達し、CentOS 7はサポート終了（EOL）に達しました。NetAppは2024年6月30日にこれらのLinuxディストリビューションでのコネクタのサポートを停止しました。</block>
@@ -4205,4 +4192,23 @@ Google Cloudまたはではサポートされていません<block ref="da2732e6
   <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">RHEL 8.10のサポートは、コネクタの3.9.40リリースから開始されました。</block>
   <block id="95dfe7c62c6772d34f6255b3027f736d" category="inline-link">AWS MarketplaceでのBlueXPコネクタの掲載</block>
   <block id="0017322d56b9d155b01ac8380335c15b" category="list-text">に移動します<block ref="00e748787e3cd0352ad19292d67af7aa" category="inline-link-rx"></block></block>
+  <block id="6c3a57872e006099844f13049e7b1891" category="list-text"><block ref="6c3a57872e006099844f13049e7b1891" category="inline-link-macro-rx"></block></block>
+  <block id="00e6604adbc44c85a390ab929076d0bb" category="list-text">RHEL 8および9は、BlueXPを標準モード、制限モード、およびプライベートモードで使用している場合にサポートされます。</block>
+  <block id="f3e58ec45f13e79fe493e5ac40efdaef" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block></block>
+  <block id="ce02a119fe20803f37d74f2f696ae608" category="list-text"><block ref="ce02a119fe20803f37d74f2f696ae608" category="inline-link-rx"></block></block>
+  <block id="adf5c1237bee96f4b87ff5eb3fd3c25b" category="list-text"><block ref="adf5c1237bee96f4b87ff5eb3fd3c25b" category="inline-link-rx"></block></block>
+  <block id="5f47d3df7f8a6f7d2b2dc0a0630af052" category="list-text"><block ref="5f47d3df7f8a6f7d2b2dc0a0630af052" category="inline-link-rx"></block></block>
+  <block id="f19b5217f0e887d7e5547d736ab648ff" category="paragraph"><block ref="f19b5217f0e887d7e5547d736ab648ff" category="inline-link-rx"></block></block>
+  <block id="bce5cf056b28239df2bdb7b2083217ac" category="paragraph"><block ref="242e7f2f46e42a12308aa354a9159aef" category="inline-link-macro-rx"></block>です。</block>
+  <block id="b25308e5b7cefc33ec331b935d12e84d" category="paragraph">PodmanまたはDocker Engineをインストールして、コネクタ用のホストを準備する必要があります。</block>
+  <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">2024年7月31日</block>
+  <block id="b9cf377931ad2ee7b1d42618c6c12fa5" category="section-title">プライベートモードリリース（3.9.42）</block>
+  <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">新しいプライベートモードリリースがNetApp Support Siteからダウンロードできるようになりました。</block>
+  <block id="de4d4b8489d091cd028889fa8739a4a3" category="paragraph">このリリースでは、BlueXPをプライベートモードで使用する場合のRed Hat Enterprise Linux 8または9ホストへのコネクタのインストールがサポートされます。次のバージョンのRHELがサポートされています。</block>
+  <block id="2791ae5af0f1b2a708aaa92b1fddb49e" category="section-title">このリリースに含まれるバージョン</block>
+  <block id="ee91704d04c9c24001ba7aa413122767" category="paragraph">このリリースには、プライベートモードでサポートされる次のバージョンのBlueXPサービスが含まれています。</block>
+  <block id="58660abbd738b63f91f751c0fcd3787d" category="cell">3.9.42</block>
+  <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">2024年7月18日</block>
+  <block id="4736cb006ef02fa673f618379e2106bd" category="cell">2024年7月1日（バージョン1.33）</block>
+  <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">2024年6月10日</block>
 </blocks>

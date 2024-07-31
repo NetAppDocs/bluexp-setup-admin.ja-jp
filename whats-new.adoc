@@ -18,6 +18,73 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
+== 2024年7月31日
+
+
+
+=== プライベートモードリリース（3.9.42）
+
+新しいプライベートモードリリースがNetApp Support Siteからダウンロードできるようになりました。
+
+
+
+==== RHEL 8および9のサポート
+
+このリリースでは、BlueXPをプライベートモードで使用する場合のRed Hat Enterprise Linux 8または9ホストへのコネクタのインストールがサポートされます。次のバージョンのRHELがサポートされています。
+
+* 8.6～8.10
+* 9.1から9.3
+
+
+これらのオペレーティングシステムでは、コンテナオーケストレーションツールとしてPodmanが必要です。
+
+Podmanの要件、既知の制限事項、サポートされるオペレーティングシステムの概要、RHEL 7ホストを使用している場合の対処方法、開始方法などを確認しておく必要があります。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
+
+
+
+==== このリリースに含まれるバージョン
+
+このリリースには、プライベートモードでサポートされる次のバージョンのBlueXPサービスが含まれています。
+
+[cols="2*"]
+|===
+| サービス | 含まれるバージョン 
+
+
+| コネクタ | 3.9.42 
+
+
+| バックアップとリカバリ | 2024年7月18日 
+
+
+| 分類 | 2024年7月1日（バージョン1.33） 
+
+
+| Cloud Volumes ONTAP管理 | 2024年6月10日 
+
+
+| デジタルウォレット | 2023年7月30日 
+
+
+| オンプレミスのONTAPクラスタ管理 | 2023年7月30日 
+
+
+| レプリケーション | 2022年9月18日 
+|===
+これらのBlueXPサービスのバージョンの詳細については、各BlueXPサービスのリリースノートを参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXPのバックアップとリカバリの新機能"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXPの新機能"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXPのCloud Volumes ONTAP Managementの新機能"^]
+
+
+
+
 == 2024年7月15日
 
 

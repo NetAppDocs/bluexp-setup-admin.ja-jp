@@ -22,7 +22,7 @@ BlueXPをプライベートモードで使用するには、環境を準備し�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] link:task-prepare-private-mode.html["導入を準備"]
 [role="quick-margin-list"]
-. CPU、RAM、ディスクスペース、Docker Engineなどの要件を満たす専用のLinuxホストを準備します。
+. CPU、RAM、ディスクスペース、コンテナオーケストレーションツールなどの要件を満たす専用のLinuxホストを準備します。
 . ターゲットネットワークへのアクセスを提供するネットワークをセットアップします。
 . クラウド環境の場合は、ソフトウェアのインストール後にそれらの権限をコネクタに関連付けることができるように、クラウドプロバイダで権限を設定します。
 

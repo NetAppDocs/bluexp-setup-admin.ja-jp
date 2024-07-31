@@ -26,7 +26,7 @@ BlueXPには、Google Cloudでアクションを実行するための権限が�
 
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["標準モードのGoogle Cloud権限を設定します"]
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["制限モードの権限を設定します"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["プライベートモードの権限を設定します"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["プライベートモードの権限を設定します"]
 
 
 また、新しい権限が以降のリリースで追加されるときに、ロールが最新の状態であることを確認する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。

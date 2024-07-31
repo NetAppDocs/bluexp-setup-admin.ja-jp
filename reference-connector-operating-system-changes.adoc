@@ -67,7 +67,19 @@ Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
 --
 .プライベートモード
 --
-手動インストール:: Ubuntu 22.04 LTS
+手動インストール::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux の場合
++
+** 8.6～8.10
+** 9.1から9.3
+
+
+
+
+--
 
 
 --
@@ -87,12 +99,7 @@ RHEL 8および9のサポートについては、次の点に注意してくだ�
 
 --
 コンテナオーケストレーションツール:: RHEL 8または9ホストにコネクタをインストールする場合は、コンテナオーケストレーションツールとしてPodmanが必要です。Docker EngineはRHEL 8および9ではサポートされていません。
-+
---
-link:task-install-connector-on-prem.html#step-1-review-host-requirements["Podmanの要件を表示"]。
-
---
-導入モード:: RHEL 8および9は、BlueXPを標準モードまたは制限モードで使用している場合にサポートされます。
+導入モード:: RHEL 8および9は、BlueXPを標準モード、制限モード、およびプライベートモードで使用している場合にサポートされます。
 新規の手動インストールのみ:: RHEL 8および9は、オンプレミスまたはクラウドで実行されているホストにコネクタを手動でインストールする場合、_new_connectorのインストールでサポートされます。
 RHELノアツフクレエト:: RHEL 7ホストで既存のコネクタを実行している場合、RHEL 7オペレーティングシステムをRHEL 8または9にアップグレードすることはできません。 <<RHEL 7またはCentOS 7の既存のコネクタ,RHEL 7またはCentOS 7の既存のコネクタに関する詳細情報>>。
 
@@ -135,13 +142,28 @@ RHEL 7またはCentOS 7で既存のコネクタを実行している場合、オ
 
 ホスト要件、Podman要件、およびPodmanとコネクタのインストール手順の詳細については、次のページを参照してください。
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスにインストールしてセットアップします"] （標準モード）
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["AWSにコネクタを手動でインストールする"] （標準モード）
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Azureへのコネクタの手動インストール"] （標準モード）
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Google Cloudにコネクタを手動でインストールする"] （標準モード）
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["制限モードでの展開を準備します"]
+[role="tabbed-block"]
+====
+.標準モード
+--
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスにインストールしてセットアップします"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["AWSにコネクタを手動でインストールする"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Azureへのコネクタの手動インストール"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Google Cloudにコネクタを手動でインストールする"]
 
 
+--
+.制限モード
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["制限モードでの展開を準備します"]
+
+--
+.プライベートモード
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html["プライベートモードでの導入を準備します"]
+
+--
+====
 
 
 === 作業環境を再検出する方法

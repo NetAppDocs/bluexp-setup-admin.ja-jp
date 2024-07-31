@@ -25,15 +25,11 @@ NetApp Support Site から製品のインストーラをダウンロードし、
 でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^] または https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^]それらの環境で作業を開始するには、別の手順に従う必要があります。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["AWSシークレットクラウドまたはTop Secret CloudでCloud Volumes ONTAPの使用を開始する方法をご確認ください"^]
 
 .作業を開始する前に
-コネクタをインストールするには root 権限が必要です。
+* コネクタをインストールするには root 権限が必要です。
+* オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
+
 
 .手順
-. Dockerが有効で実行されていることを確認します。
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Site"^]
 +
 インターネットにアクセスできないプライベートネットワーク用のオフラインインストーラを必ずダウンロードしてください。
@@ -106,7 +102,7 @@ image:screenshot-onprem-darksite-details.png["システムの詳細ページの�
 
 Cloud Volumes ONTAP 作業環境を作成する場合は、以前に設定したクラウド権限をBlueXPに付与する必要があります。
 
-link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["クラウドへのアクセス許可を準備する方法をご確認ください"]。
+link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["クラウドへのアクセス許可を準備する方法をご確認ください"]です。
 
 [role="tabbed-block"]
 ====

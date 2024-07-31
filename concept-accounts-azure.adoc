@@ -113,5 +113,5 @@ Marketplaceを使用する場合は、コネクタVMとシステムによって�
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["制限モードの権限を設定します"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["プライベートモードの権限を設定します"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["プライベートモードの権限を設定します"]
 

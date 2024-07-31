@@ -46,10 +46,23 @@ link:concept-modes.html["プライベートモードの仕組みを説明しま�
 コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。
 
 専用ホスト:: 他のアプリケーションと共有しているホストでは、このコネクタはサポートされていません。専用のホストである必要があります。
-サポートされているオペレーティングシステム:: Ubuntu 22.04 LTS
+サポートされているオペレーティングシステム::
 +
 --
-コネクタは、このオペレーティングシステムの英語版でサポートされています。
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux の場合
++
+** 8.6～8.10
+** 9.1から9.3
++
+ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
+
++
+Connector は、これらのオペレーティングシステムの英語版でサポートされています。
+
+
+
+
 
 --
 ハイパーバイザー:: サポート対象のオペレーティングシステムの実行が認定されているベアメタルまたはホスト型ハイパーバイザーが必要です。
@@ -75,13 +88,25 @@ BlueXPのユースケース `/opt` をインストールするには `/opt/appli
 このスペースはBlueXPの `/var` DockerやPodmanは、このディレクトリ内にコンテナを作成するように設計されているためです。具体的には、 `/var/lib/containers/storage` ディレクトリ。このスペースでは外部マウントやシンボリックリンクは使用できません。
 
 --
-Docker Engine の略:: コネクタをインストールする前に、ホストにDocker Engineが必要です。
+コンテナオーケストレーションツール:: オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 +
 --
-* サポートされる最小バージョンは23.0.6です。
-* サポートされる最大バージョンは25.0.5です。
+* Red Hat Enterprise Linux 8および9にはPodmanバージョン4.6.1が必要です。
 +
-https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+Podmanでは、次の前提条件を満たす必要があります。
+
++
+** podman.socketサービスを有効にして開始する必要があります
+** Python3がインストールされている必要があります
+** podman-composeパッケージバージョン1.0.6がインストールされている必要があります。
+** podman-composeをPATH環境変数に追加する必要があります
+
+
+* UbuntuにはDocker Engineが必要です。
++
+** サポートされる最小バージョンは23.0.6です。
+** サポートされる最大バージョンは25.0.5です。
+
 
 
 
@@ -90,7 +115,121 @@ https://docs.docker.com/engine/install/["インストール手順を確認しま
 
 
 
-== 手順4：コネクタのネットワークを準備する
+== 手順4：PodmanまたはDocker Engineをインストールする
+
+PodmanまたはDocker Engineをインストールして、コネクタ用のホストを準備する必要があります。
+
+オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
+
+* Red Hat Enterprise Linux 8および9にはPodmanが必要です。
+* UbuntuにはDocker Engineが必要です。
+
+
+.手順
+[role="tabbed-block"]
+====
+.ポドマン
+--
+Podman 4.6.1をインストールします。
+
+.手順
+. podman-dockerパッケージがホストにインストールされている場合は削除します。
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. Podmanをインストールします。
++
+PodmanはRed Hat Enterprise Linuxの公式リポジトリから入手できます。
+
++
+Red Hat Enterprise Linux 9の場合：
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
++
+Red Hat Enterprise Linux 8の場合：
+
++
+[source, cli]
+----
+sudo dnf install podman-3:4.6.1
+----
+. podman.socketサービスを有効にして開始します。
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. python3をインストールします。
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. EPELリポジトリパッケージがシステムにない場合はインストールします。
++
+podman-composeはExtra Packages for Enterprise Linux（EPEL）リポジトリから利用できるため、この手順が必要です。
+
++
+Red Hat Enterprise Linux 9の場合：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+Red Hat Enterprise Linux 8の場合：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. podman-composeパッケージ1.0.6をインストールします。
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: を使用する `dnf install` コマンドは、PATH環境変数にpodman-composeを追加するための要件を満たしています。インストールコマンドを実行すると、/usr/binにpodman-composeが追加されます。 `secure_path` オプションを指定します。
+
+
+
+--
+.Docker Engine の略
+--
+23.0.6から25.0.5の間のバージョンのDocker Engineをインストールします。
+
+.手順
+. Docker Engineをインストールします。
++
+https://docs.docker.com/engine/install/["Dockerからインストール手順を表示"^]
+
++
+特定のバージョンのDocker Engineをインストールするには、必ず次の手順に従ってください。最新バージョンをインストールすると、BlueXPでサポートされていないバージョンのDockerがインストールされます。
+
+. Dockerが有効で実行されていることを確認します。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====
+
+
+== 手順5：ネットワークを準備する
 
 コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタの仮想ネットワークとサブネットを使用する以外に、次の要件が満たされていることを確認する必要があります。
 
@@ -202,7 +341,7 @@ NTPを有効にする:: BlueXP分類を使用して企業データソースを�
 
 
 
-== ステップ5：クラウドの権限を準備する
+== ステップ6：クラウドの権限を準備する
 
 コネクタがクラウドにインストールされていて、Cloud Volumes ONTAPシステムを作成する場合は、クラウドプロバイダからBlueXPの権限が必要です。クラウドプロバイダで権限を設定し、インストール後にそれらの権限をコネクタインスタンスに関連付ける必要があります。
 
@@ -515,7 +654,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 ====
 
 
-== ステップ6：Google Cloud APIを有効にする
+== ステップ7：Google Cloud APIを有効にする
 
 Google CloudにCloud Volumes ONTAP を導入するには、いくつかのAPIが必要です。
 
