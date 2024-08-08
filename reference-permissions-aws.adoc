@@ -45,22 +45,6 @@ BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカ�
 ====
 標準のリージョンでは、権限は2つのポリシーに分散されます。AWSの管理対象ポリシーの最大文字数に制限されているため、2つのポリシーが必要です。
 
-1つ目のポリシーでは、次のサービスに対する権限を付与します。
-
-* Amazon S3 バケットの検出
-* バックアップとリカバリ
-* 分類
-* Cloud Volumes ONTAP
-* FSX for ONTAP の略
-* 階層化
-
-
-2つ目のポリシーは、次のサービスに対する権限を提供します。
-
-* エッジキャッシュ
-* Kubernetes
-
-
 [role="tabbed-block"]
 =====
 .ポリシー1
@@ -1260,29 +1244,6 @@ Connectorは、AWSでのCloud Volumes ONTAP の導入と管理に対して次の
 
 | アベイラビリティゾーンがAWSローカルゾーンであるかどうかを確認し、すべての導入パラメータに互換性があることを確認します。 | EC2：説明AvailabilityZones | はい。 | いいえ | はい。 
 |===
-
-
-=== エッジキャッシュ
-
-コネクタは、導入時にBlueXPエッジキャッシュインスタンスを導入するために次のAPI要求を行います。
-
-* CloudFormation：DescribeStack
-* CloudWatch：GetMetricStatistics
-* CloudFormation：リストスタック
-
-
-
-
-=== Kubernetes
-
-コネクタは、次のAPI要求を実行してAmazon EKSクラスタを検出および管理します。
-
-* EC2: DescribeRegions (説明領域
-* EKS：リストクラスタ
-* EKS：DescribeCluster
-* IAM：GetInstanceProfile
-
-
 
 
 == 変更ログ

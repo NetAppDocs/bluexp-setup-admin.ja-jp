@@ -50,20 +50,20 @@ Connector は、これらのオペレーティングシステムの英語版で�
 ハイパーバイザー:: サポート対象のオペレーティングシステムの実行が認定されているベアメタルまたはホスト型ハイパーバイザーが必要です。
 
 
-CPU:: 4 コアまたは 4 個の vCPU
-RAM:: 14GB
+CPU:: 8 コアまたは 8 個の vCPU
+RAM:: 32GB
 
 
-AWS EC2 インスタンスタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.xlarge をお勧めします。
+AWS EC2 インスタンスタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.2xlarge をお勧めします。
 
 
 キーペア:: コネクタを作成するときは、インスタンスで使用するEC2キーペアを選択する必要があります。
 
 
-Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。DS3 v2 を推奨します。
+Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。Standard_D8s_v3 をお勧めします。
 
 
-Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。
+Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。n2-standard-8を推奨します。
 +
 --
 このコネクタは、OSがサポートされているVMインスタンス上のGoogle Cloudでサポートされます https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["シールドVM機能"^]
@@ -98,10 +98,37 @@ https://docs.docker.com/engine/install/["インストール手順を確認しま
 --
 
 
+[[podman-versions]]
 コンテナオーケストレーションツール:: オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 +
 --
-* Red Hat Enterprise Linux 8および9にはPodmanバージョン4.6.1が必要です。
+* Red Hat Enterprise Linux 8および9にはPodmanが必要です。
++
+[cols="50a,50a"]
+|===
+| RHELのバージョン | サポートされているPodmanバージョン 
+
+
+ a| 
+RHEL 8.6~8.9
+ a| 
+Podman 4.6.1
+
+
+
+ a| 
+RHEL 8.10
+ a| 
+Podman 4.6.1および4.9.4
+
+
+
+ a| 
+RHEL 9.1から9.3
+ a| 
+Podman 4.6.1
+
+|===
 +
 Podmanでは、次の前提条件を満たす必要があります。
 

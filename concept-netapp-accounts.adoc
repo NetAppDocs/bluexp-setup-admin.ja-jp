@@ -59,7 +59,7 @@ BlueXPでは、ワークスペースによって、_working environments_の数�
 
 * Cloud Volumes ONTAP システム
 * オンプレミスのONTAP クラスタ
-* Kubernetesクラスタ
+* StorageGRIDシステム
 
 
 link:task-setting-up-netapp-accounts.html["ワークスペースを追加する方法について説明します"]。

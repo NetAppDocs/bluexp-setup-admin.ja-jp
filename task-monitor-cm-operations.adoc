@@ -110,7 +110,7 @@ image:screenshot_notification_dismiss1.png["単一の通知を却下する方法
 
 [NOTE]
 ====
-* 現時点では、コネクタ、BlueXPデジタルウォレット、BlueXPのコピーと同期、BlueXPのバックアップとリカバリ、BlueXP階層化、BlueXP移行レポートなど、BlueXPの機能とサービスに関する通知がEメールで送信されます。サービスは今後のリリースで追加される予定です。
+* 現時点では、Connector、BlueXP  デジタルウォレット、BlueXP  のコピーと同期、BlueXP  のバックアップとリカバリ、BlueXP  階層化のBlueXP  機能とサービスに関する通知がEメールで送信されます。サービスは今後のリリースで追加される予定です。
 * Connectorがインターネットにアクセスできないサイトにインストールされている場合は、Eメール通知の送信はサポートされません。
 
 

@@ -296,10 +296,6 @@ includedPermissions:
 - compute.instances.addAccessConfig | してBlueXPの分類を有効にします。 
 
 
-| -container.clusters.get
--container.clusters.list | Google Kubernetes Engine で実行されている Kubernetes クラスタを検出する。 
-
-
 | - compute.instanceGroups.get
 -計算アドレス取得
 - compute.instances.updateNetworkInterface | Cloud Volumes ONTAP HAペアでStorage VMを作成および管理する方法。 

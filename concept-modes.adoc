@@ -155,11 +155,7 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 | Azure NetApp Files の特長 | フルサポート 
 
 
-| バックアップとリカバリ | 制限モードの政府地域および商用地域でサポートされています。制限モードの主権領域ではサポートされていません。
-
-制限モードでは、BlueXPのバックアップとリカバリでONTAPボリュームのデータのバックアップとリストアのみがサポートされます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["ONTAPデータでサポートされるバックアップデスティネーションのリストを表示する"^]
-
-アプリケーションデータ、仮想マシンデータ、およびKubernetesデータのバックアップとリストアはサポートされていません。 
+| バックアップとリカバリ | 制限モードの政府地域および商用地域でサポートされています。制限モードの主権領域ではサポートされていません。制限モードでは、BlueXP  のバックアップとリカバリでONTAPボリュームのデータのバックアップとリストアのみがサポートされます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["ONTAPデータでサポートされるバックアップデスティネーションのリストを表示する"^]アプリケーションデータと仮想マシンデータのバックアップとリストアはサポートされていません。 
 
 
 | 分類  a| 
@@ -247,13 +243,7 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 | サポートされるサービス | 注： 
 
 
-| バックアップとリカバリ | AWSとAzureの商用リージョンでサポートされます。
-
-Google Cloudまたはではサポートされていません https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^]、 https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^]または https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
-
-プライベートモードでは、BlueXPのバックアップとリカバリでONTAPボリュームのデータのバックアップとリストアのみがサポートされます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["ONTAPデータでサポートされるバックアップデスティネーションのリストを表示する"^]
-
-アプリケーションデータ、仮想マシンデータ、およびKubernetesデータのバックアップとリストアはサポートされていません。 
+| バックアップとリカバリ | AWSとAzureの商用リージョンでサポートされます。Google Cloud、またはプライベートモードではサポートされていません https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^] https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^] https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 。BlueXP  のバックアップとリカバリでは、ONTAPボリュームのデータのバックアップとリストアのみがサポートされます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["ONTAPデータでサポートされるバックアップデスティネーションのリストを表示する"^]アプリケーションデータと仮想マシンデータのバックアップとリストアはサポートされていません。 
 
 
 | Cloud Volumes ONTAP | インターネットにアクセスできないため、自動ソフトウェアアップグレードとAutoSupportの機能は使用できません。 
@@ -278,7 +268,7 @@ Google Cloudまたはではサポートされていません https://aws.amazon.
 | バックアップとリカバリ  a| 
 プライベートモードでは、BlueXPのバックアップとリカバリでONTAPボリュームのデータのバックアップとリストアのみがサポートされます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^]
 
-アプリケーションデータ、仮想マシンデータ、およびKubernetesデータのバックアップとリストアはサポートされていません。
+アプリケーションデータと仮想マシンデータのバックアップとリストアはサポートされていません。
 
 
 
@@ -336,7 +326,7 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 | 製品エリア | BlueXPのサービスまたは機能 | 制限モード | プライベートモード 
 
 
-.11+| *作業環境*
+.10+| *作業環境*
 
 表の次の部分には、BlueXPキャンバスでの作業環境管理のサポートが表示されます。BlueXPのバックアップとリカバリでサポートされるバックアップ先を示すわけではありません。 | ONTAP 対応の Amazon FSX | はい。 | いいえ 
 
@@ -359,9 +349,6 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 | Google クラウドストレージ | いいえ | いいえ 
 
 
-| Kubernetes クラスタ | いいえ | いいえ 
-
-
 | オンプレミスの ONTAP クラスタ | はい。 | はい。 
 
 
@@ -371,7 +358,7 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 | StorageGRID | いいえ | いいえ 
 
 
-.16+| * サービス * | バックアップとリカバリ | はい。
+.14+| * サービス * | バックアップとリカバリ | はい。
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] | はい。
 
@@ -397,12 +384,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 | 経済効率 | いいえ | いいえ 
-
-
-| エッジキャッシュ | いいえ | いいえ 
-
-
-| 移行レポート | いいえ | いいえ 
 
 
 | 運用の耐障害性 | いいえ | いいえ 

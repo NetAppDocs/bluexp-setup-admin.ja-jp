@@ -13,7 +13,7 @@
 ====
 .ポドマン
 --
-Podman 4.6.1をインストールします。
+サポートされているバージョンのPodmanをインストールします。<<podman-versions,BlueXP  がサポートするPodmanバージョンを表示する>>です。
 
 .手順
 . podman-dockerパッケージがホストにインストールされている場合は削除します。
@@ -33,16 +33,22 @@ Red Hat Enterprise Linux 9の場合：
 +
 [source, cli]
 ----
-sudo dnf install podman-2:4.6.1
+sudo dnf install podman-2:<version>
 ----
++
+<version>は、インストールするPodmanのサポートされているバージョンです。<<podman-versions,BlueXP  がサポートするPodmanバージョンを表示する>>です。
+
 +
 Red Hat Enterprise Linux 8の場合：
 
 +
 [source, cli]
 ----
-sudo dnf install podman-3:4.6.1
+sudo dnf install podman-3:<version>
 ----
++
+<version>は、インストールするPodmanのサポートされているバージョンです。<<podman-versions,BlueXP  がサポートするPodmanバージョンを表示する>>です。
+
 . podman.socketサービスを有効にして開始します。
 +
 [source, cli]

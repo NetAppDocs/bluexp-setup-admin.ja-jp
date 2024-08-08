@@ -166,7 +166,10 @@ BlueXPがAzureでConnector VMを起動すると、そのAzureサブスクリプ�
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
                     "Microsoft.Compute/images/write",
-                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/write",
+                    "Microsoft.Compute/virtualMachineScaleSets/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/delete"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -698,38 +701,16 @@ Connectorは、AzureでCloud Volumes ONTAP の導入と管理を行うために�
 
 
 | 作成時にストレージアカウントを暗号化 | microsoft.ManagedIdentity/userAssignedIdentities/assign/action | はい。 | はい。 | いいえ 
+
+
+.3+| Cloud Volumes ONTAPの特定のゾーンを指定するために、フレキシブルオーケストレーションモードで仮想マシンスケールセットを使用する | マイクロソフト。 | はい。 | いいえ | いいえ 
+
+
+| マイクロソフト。 | はい。 | いいえ | いいえ 
+
+
+| マイクロソフト。 | いいえ | いいえ | はい。 
 |===
-
-
-=== エッジキャッシュ
-
-BlueXPエッジキャッシングを使用する場合、コネクタは次のAPI要求を行います。
-
-* Microsoft .Insights / Metrics / Read
-* Microsoft.Compute/virtualMachines/extensions/write
-* Microsoft.Compute/virtualMachines/extensions/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
-* Microsoft.Network/networkInterfaces/delete
-* Microsoft.Network/networkSecurityGroups/delete
-* microsoft.Resources/Deployments/delete
-
-
-
-
-=== Kubernetes
-
-Connectorは、Azure Kubernetes Service（AKS）で実行されているクラスタを検出し管理するために次のAPI要求を実行します。
-
-* Microsoft.Compute/virtualMachines/read
-* microsoft.Resources/Subscriptions /locations /read
-* microsoft.Resources/Subscriptions /operationresults/read
-* microsoft.Resources/Subscriptions /resourceGroups/read
-* microsoft.resources/Subscriptions /resourcegroups/resources/read
-* Microsoft .ContainerService/managedClusters/read
-* Microsoft .ContainerService/managedClusters/listClusterUserCredential/action
-
-
 
 
 === 階層化
@@ -754,6 +735,17 @@ BlueXP階層化のセットアップ時に、コネクタは次のAPI要求を�
 == 変更ログ
 
 権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。
+
+
+
+=== 2024/08/07
+
+次の権限は、Cloud Volumes ONTAPで仮想マシンスケールセットをサポートするために必要なため、JSONポリシーに追加されました。
+
+* マイクロソフト。
+* マイクロソフト。
+* マイクロソフト。
+
 
 
 

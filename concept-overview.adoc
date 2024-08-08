@@ -56,7 +56,6 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 --
 * https://bluexp.netapp.com/cloud-backup["バックアップとリカバリ"^]
 * https://bluexp.netapp.com/replication["レプリケーション"^]
-* https://bluexp.netapp.com/solutions/kubernetes["Kubernetesワークロードのデータ保護"^]
 
 
 --

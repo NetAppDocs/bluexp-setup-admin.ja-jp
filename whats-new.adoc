@@ -18,17 +18,74 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
+== 2024年8月8日
+
+
+
+=== コネクタ3.9.43
+
+このリリースには、マイナーな改善、バグの修正、およびAzureの新しい権限の要件が含まれています。
+
+3.9.43リリースは、標準モードと制限モードで使用できます。
+
+
+
+==== Azure権限の更新
+
+Azure用のコネクタポリシーが更新され、次の権限が追加されました。
+
+[source, json]
+----
+"Microsoft.Compute/virtualMachineScaleSets/write",
+"Microsoft.Compute/virtualMachineScaleSets/read",
+"Microsoft.Compute/virtualMachineScaleSets/delete"
+----
+これらの権限は、Cloud Volumes ONTAPが仮想マシンスケールセットをサポートするために必要です。既存のコネクタがあり、この新機能を使用する場合は、Azureクレデンシャルに関連付けられているカスタムロールにこれらの権限を追加する必要があります。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAPによる仮想マシンスケールセットのサポートについて"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["コネクタのAzure権限を表示"]です。
+
+
+
+
+=== CPUおよびRAMの要件の更新
+
+信頼性を高め、BlueXP  とコネクタのパフォーマンスを向上させるために、コネクタ仮想マシン用に追加のCPUとRAMが必要になりました。
+
+* CPU：8コアまたは8 vCPU（以前の要件は4）
+* RAM：32GB（以前の要件は14GB）
+
+
+この変更により、BlueXP  またはクラウドプロバイダのマーケットプレイスからコネクタを導入する際のデフォルトのVMインスタンスタイプは次のとおりです。
+
+* AWS：t3.2xlarge
+* Azure：Standard_D8s_v3
+* Google Cloud：n2-standard-8
+
+
+この要件は、新規および既存のコネクタに適用されます。
+
+
+
+=== RHEL 8.10でのPodman 4.9.4のサポート
+
+Red Hat Enterprise Linux 8.10ホストにコネクタをインストールする際に、Podmanバージョン4.9.4がサポートされるようになりました。
+
+
+
+=== アイデンティティフェデレーションのユーザ検証
+
+BlueXP  でアイデンティティフェデレーションを使用する場合は、BlueXP  に初めてログインした各ユーザが簡単なフォームに入力してIDを検証する必要があります。
+
+[]
+====
 == 2024年7月31日
 
-
-
-=== プライベートモードリリース（3.9.42）
+===プライベートモードリリース(3.9.42)
 
 新しいプライベートモードリリースがNetApp Support Siteからダウンロードできるようになりました。
 
-
-
-==== RHEL 8および9のサポート
+=== RHEL 8および9のサポート
 
 このリリースでは、BlueXPをプライベートモードで使用する場合のRed Hat Enterprise Linux 8または9ホストへのコネクタのインストールがサポートされます。次のバージョンのRHELがサポートされています。
 
@@ -42,9 +99,7 @@ Podmanの要件、既知の制限事項、サポートされるオペレーテ�
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
 
-
-
-==== このリリースに含まれるバージョン
+===このリリースに含まれるバージョン
 
 このリリースには、プライベートモードでサポートされる次のバージョンのBlueXPサービスが含まれています。
 
@@ -83,11 +138,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXPのCloud Volumes ONTAP Managementの新機能"^]
 
 
-
-
 == 2024年7月15日
-
-
 
 === RHEL 8.10のサポート
 
@@ -97,19 +148,13 @@ RHEL 8.10のサポートは、コネクタの3.9.40リリースから開始さ�
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
 
-
-
 == 2024年7月8日
 
-
-
-=== コネクタ3.9.42
+===コネクタ3.9.42
 
 このリリースには、マイナーな改善、バグ修正、AWS Canada West（カルガリー）リージョンのコネクタのサポートが含まれています。
 
 3.9.42リリースは、標準モードと制限モードで使用できます。
-
-
 
 === Docker Engineの要件を更新
 
@@ -119,31 +164,21 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["コネクタホスト要件の表示"]。
 
-
-
-=== Eメールの確認が必要です
+=== Eメールの確認が必要
 
 BlueXPにサインアップした新規ユーザは、ログインする前にEメールアドレスを確認する必要があります。
 
-
-
 == 2024年6月12日
 
-
-
-=== コネクタ3.9.41
+===コネクタ3.9.41
 
 今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
 
 3.9.41リリースは、標準モードと制限モードで使用できます。
 
-
-
 == 2024年6月4日
 
-
-
-=== プライベートモードリリース（3.9.40）
+===プライベートモードリリース(3.9.40)
 
 新しいプライベートモードリリースがNetApp Support Siteからダウンロードできるようになりました。このリリースには、プライベートモードでサポートされる次のバージョンのBlueXPサービスが含まれています。
 
@@ -184,21 +219,15 @@ BlueXPにサインアップした新規ユーザは、ログインする前にE�
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXPのCloud Volumes ONTAP Managementの新機能"^]
 
 
-
-
 == 2024年5月17日
 
-
-
-=== コネクタ3.9.40
+===コネクタ3.9.40
 
 今回のリリースのBlueXP Connectorには、オペレーティングシステムの追加サポート、セキュリティの若干の改善、バグの修正が含まれています。
 
 現時点では、3.9.40リリースは標準モードと制限モードで使用できます。
 
-
-
-==== RHEL 8および9のサポート
+=== RHEL 8および9のサポート
 
 BlueXPを標準モードまたは制限モードで使用している場合、次のバージョンのRed Hat Enterprise Linux with _new_connectorを実行しているホストでコネクタがサポートされるようになりました。
 
@@ -212,17 +241,13 @@ Podmanの要件、既知の制限事項、サポートされるオペレーテ�
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
 
-
-
-==== RHEL 7およびCentOS 7のサポート終了
+=== RHEL 7およびCentOS 7のサポート終了
 
 2024年6月30日に、RHEL 7はメンテナンス終了（EOM）になり、CentOS 7はサポート終了（EOL）になります。NetAppは、これらのLinuxディストリビューションでのコネクタのサポートを2024年6月30日まで継続します。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["RHEL 7またはCentOS 7で既存のコネクタが実行されている場合の対処方法について説明します。"]。
 
-
-
-==== AWS権限の更新
+=== AWS権限の更新
 
 3.9.38リリースでは、AWSのコネクタポリシーが更新され、「EC2：DescriptionAvailabilityZones」権限が追加されました。Cloud Volumes ONTAPでAWSローカルゾーンをサポートするには、この権限が必要になりました。
 
@@ -230,21 +255,15 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["AWSローカルゾーンのサポートに関する詳細情報"^]
 
 
-
-
 == 2024年4月22日
 
-
-
-=== コネクタ3.9.39
+===コネクタ3.9.39
 
 今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
 
 現時点では、3.9.39リリースは標準モードと制限モードで使用できます。
 
-
-
-=== コネクタを作成するためのAWS権限
+===コネクタを作成するためのAWS権限
 
 BlueXPからAWSでコネクタを作成するには、さらに2つの権限が必要になりました。
 
@@ -262,25 +281,17 @@ NOTE: このポリシーには、BlueXPからAWSでConnectorインスタンス�
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["AWSからコネクタを作成するためのAWS権限を設定する方法"]。
 
-
-
 == 2024年4月11日
 
-
-
-=== Docker Engineの更新
+=== Docker Engineのアップデート
 
 Docker Engineの要件を更新して、コネクタでサポートされる最大バージョン（25.0.5）を指定しました。サポートされる最小バージョンは引き続き19.3.1です。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["コネクタホスト要件の表示"]。
 
-
-
 == 2024年3月26日
 
-
-
-=== プライベートモードリリース（3.9.38）
+===プライベートモードリリース(3.9.38)
 
 BlueXPで新しいプライベートモードリリースが見積もり可能になりました。このリリースには、プライベートモードでサポートされる次のバージョンのBlueXPサービスが含まれています。
 
@@ -316,19 +327,13 @@ BlueXPで新しいプライベートモードリリースが見積もり可能�
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
 
 
-
-
 == 2024年3月8日
 
-
-
-=== コネクタ3.9.38
+===コネクタ3.9.38
 
 現時点では、3.9.38リリースは標準モードと制限モードで使用できます。このリリースでは、AWSでのIMDSv2とAWS権限の更新がサポートされます。
 
-
-
-==== IMDSv2のサポート
+=== IMDSv2のサポート
 
 BlueXPで、コネクタインスタンスとCloud Volumes ONTAPインスタンスでAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）がサポートされるようになりました。IMDSv2では、脆弱性に対する保護が強化されています。以前はIMDSv1のみがサポートされていました。
 
@@ -345,17 +350,13 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["既存のインスタンスでIMDSv2を設定する方法"]。
 
-
-
-==== AWS権限の更新
+=== AWS権限の更新
 
 AWSのコネクタポリシーを更新して、「EC2：DescriptionAvailabilityZones」権限を追加しました。この権限は、今後のリリースで必要になります。リリースノートの詳細については、リリースノートを更新します。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["コネクタのAWS権限を表示する"]。
 
-
-
-=== プロキシ設定とCloud Volumes ONTAP設定
+===プロキシ設定とCloud Volumes ONTAP設定
 
 コネクターのプロキシサーバー設定は、*コネクターの管理*ページ（標準モード）または*コネクターの編集*ページ（制限モードおよびプライベートモード）から利用できるようになりました。
 
@@ -365,21 +366,15 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["�
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["[Settings]メニューから使用できるCloud Volumes ONTAP Settings]オプションを示すスクリーンショット。"]
 
-
-
 == 2024年2月15日
 
-
-
-=== コネクタ3.9.37
+===コネクタ3.9.37
 
 今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
 
 現時点では、3.9.37リリースは標準モードと制限モードで使用できます。
 
-
-
-=== 名前の編集
+===名前の編集
 
 NetAppのクラウドクレデンシャルを使用してBlueXPにログインすると、*[ユーザ設定]*で名前を編集できるようになりました。
 
@@ -387,13 +382,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 フェデレーテッド接続またはNetApp Support Siteアカウントでログインした場合、名前の編集はサポートされません。
 
-
-
 == 2024年1月11日
 
-
-
-=== コネクタ3.9.36
+===コネクタ3.9.36
 
 このリリースには、以下のクラウドリージョンでマイナーな改善、バグ修正、コネクタのサポートが含まれています。
 
@@ -401,13 +392,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 * Google Cloudのサウジアラビアリージョン
 
 
-
-
 == 2023年12月5日
 
-
-
-=== プライベートモードリリース（3.9.35）
+===プライベートモードリリース(3.9.35)
 
 BlueXPで新しいプライベートモードリリースが見積もり可能になりました。このリリースには、コネクタのバージョン3.9.35と、2023年10月時点でプライベートモードでサポートされるBlueXPサービスのバージョンが含まれています。
 
@@ -418,33 +405,21 @@ BlueXPで新しいプライベートモードリリースが見積もり可能�
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
 
 
-
-
 == 2023年11月8日
 
-
-
-=== コネクタ3.9.35
+===コネクタ3.9.35
 
 このリリースには、セキュリティのマイナーな改善とバグの修正が含まれています。
 
-
-
 == 2023年10月6日
 
-
-
-=== コネクタ3.9.34
+===コネクタ3.9.34
 
 このリリースには、マイナーな改善とバグ修正が含まれています。
 
-
-
 == 2023年9月10日
 
-
-
-=== コネクタ3.9.33
+===コネクタ3.9.33
 
 * BlueXPからAWSでコネクタを作成するときに、[Key Pair]フィールド内を検索して、コネクタインスタンスで使用するキーペアを簡単に見つけることができるようになりました。
 +
@@ -453,13 +428,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 * このアップデートにはバグ修正も含まれています。
 
 
-
-
 == 2023年7月30日
 
-
-
-=== コネクタ3.9.32
+===コネクタ3.9.32
 
 * BlueXP監査サービスAPIを使用して監査ログをエクスポートできるようになりました。
 +
@@ -479,13 +450,9 @@ https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["監査サ�
 
 
 
-
-
 == 2023年7月2日
 
-
-
-=== コネクタ3.9.31
+===コネクタ3.9.31
 
 * [My estate]タブ（以前の[My Opportunities]）でオンプレミスのONTAPクラスタを検出できるようになりました。
 +
@@ -509,13 +476,9 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#ad
 
 
 
-
-
 == 2023年6月4日
 
-
-
-=== コネクタ3.9.30
+===コネクタ3.9.30
 
 * サポートダッシュボードからNetAppサポートケースをオープンすると、BlueXPログインに関連付けられたNetApp Support Siteアカウントを使用してケースがオープンされるようになりました。以前は、BlueXPアカウント全体に関連付けられたNetApp Support Siteアカウントを使用していました。
 +
@@ -565,13 +528,9 @@ https://cloud.netapp.com/cloud-volumes-global-regions["サポートされてい�
 
 
 
-
-
 == 2023年5月7日
 
-
-
-=== コネクタ3.9.29
+===コネクタ3.9.29
 
 * Ubuntu 22.04は、BlueXPまたはクラウドプロバイダのマーケットプレイスからコネクタを導入する際のコネクタ用の新しいオペレーティングシステムです。
 +
@@ -595,13 +554,9 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-20
 
 
 
-
-
 == 2023年4月4日
 
-
-
-=== 展開モード
+===導入モード
 
 BlueXP_deployment modes_を使用すると、ビジネス要件やセキュリティ要件に合わせてBlueXPを使用できます。次の3つのモードから選択できます。
 
@@ -615,13 +570,9 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["これら�
 
 NOTE: 制限モードが導入されたことで、SaaSプラットフォームを有効または無効にするオプションが廃止されました。制限モードはアカウント作成時に有効にすることができます。後で有効または無効にすることはできません。
 
-
-
 == 2023年4月3日
 
-
-
-=== コネクタ3.9.28
+===コネクタ3.9.28
 
 * Eメール通知がBlueXPデジタルウォレットでサポートされるようになりました。
 +
@@ -653,13 +604,9 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-
 
 
 
-
-
 == 2023年3月5日
 
-
-
-=== コネクタ3.9.27
+===コネクタ3.9.27
 
 * BlueXPコンソールで検索できるようになりました。この時点で、検索機能を使用してBlueXPのサービスと機能を検索できます。
 +
@@ -692,13 +639,9 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-march-
 
 
 
-
-
 == 2023年2月5日
 
-
-
-=== コネクタ3.9.26
+===コネクタ3.9.26
 
 * ログイン*ページで、ログインに関連付けられたメールアドレスを入力するように求められます。[次へ]*を選択すると、ログインに関連付けられている認証方式を使用して認証するよう求められます。
 +
@@ -740,25 +683,17 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-februa
 
 
 
-
-
 == 2023年1月1日
 
-
-
-=== コネクタ3.9.25
+===コネクタ3.9.25
 
 このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とバグ修正が含まれています。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-january-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
 
-
-
 == 2022年12月4日
 
-
-
-=== コネクタ3.9.24
+===コネクタ3.9.24
 
 * BlueXPコンソールのURLがに更新されました https://console.bluexp.netapp.com[]
 * ConnectorはGoogle Cloudイスラエル地域でサポートされるようになりました。
@@ -770,13 +705,9 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-januar
 
 
 
-
-
 == 2022年11月6日
 
-
-
-=== コネクタ3.9.23
+===コネクタ3.9.23
 
 * BlueXPのPAYGOサブスクリプションと年間契約が、デジタルウォレットで表示、管理できるようになりました。
 +
@@ -788,13 +719,9 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#6-novemb
 
 
 
-
-
 == 2022年11月1日
 
-
-
-=== BlueXPの導入
+=== BlueXP  の導入
 
 NetApp BlueXPは、Cloud Managerを通じて提供される機能を拡張、強化します。BlueXPは、オンプレミス環境とクラウド環境のストレージとデータサービスにハイブリッドマルチクラウド環境を提供する統合コントロールプレーンです。
 
@@ -833,19 +760,13 @@ image:screenshot-navigation-menu.png["BlueXPのナビゲーションメニュー
 --
 
 
-
-
 === NSSクレデンシャルの更新を求めるプロンプト
 
 アカウントに関連付けられた更新トークンが3カ月後に期限切れになると、Cloud ManagerはNetApp Support Site アカウントに関連付けられたクレデンシャルの更新を求めます。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["NSS アカウントを管理する方法について説明します"^]
 
-
-
 == 2022年9月18日
 
-
-
-=== コネクタ3.9.22
+===コネクタ3.9.22
 
 * Connectorのインストールウィザードを強化しました。このウィザードには、Connectorのインストールに関する最小要件（権限、認証、ネットワーク）を満たすための手順が記載されています。
 * ネットアップサポートケースをCloud Managerのサポートダッシュボードで直接作成できるようになりました。
@@ -858,13 +779,9 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#18-septe
 
 
 
-
-
 == 2022年7月31日
 
-
-
-=== コネクタ3.9.21
+===コネクタ3.9.21
 
 * Cloud Managerでまだ管理していない既存のクラウドリソースを検出する新しい方法が導入されました。
 +
@@ -882,13 +799,9 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#31-july-
 
 
 
-
-
 == 2022年7月15日
 
-
-
-=== ポリシーの変更
+===ポリシーの変更
 
 ドキュメントを更新するには、Cloud Managerのポリシーをドキュメント内に直接追加します。これにより、コネクタとCloud Volumes ONTAP に必要な権限を、設定方法を説明する手順とともに表示できるようになりました。これらのポリシーには、NetApp Support Siteのページからアクセスできます。
 
@@ -896,13 +809,9 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 また、各ポリシーへのリンクを提供するページも作成しました。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Cloud Managerの権限の概要を確認します"]。
 
-
-
 == 2022年7月3日
 
-
-
-=== コネクタ3.9.20
+===コネクタ3.9.20
 
 * 拡大する機能のリストへの新しいナビゲート方法が導入されました。左側のパネルにカーソルを合わせると、使い慣れたCloud Managerの機能を簡単に確認できます。
 +
@@ -940,26 +849,18 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-july-2
 
 
 
-
-
 == 2022年6月28日
 
-
-
-=== ネットアップのクレデンシャルでログインします
+=== NetAppクレデンシャルでログイン
 
 新規ユーザがCloud Centralに登録する際に、「ネットアップでログイン」オプションを選択して、NetApp Support Siteのクレデンシャルを使用してログインできるようになりました。Eメールアドレスとパスワードを入力する代わりに使用できます。
 
 
 NOTE: Eメールアドレスとパスワードを使用する既存のログインでは、このログイン方法を使用し続ける必要があります。ネットアップでログインするオプションは、新規ユーザがサインアップする際に使用できます。
 
-
-
 == 2022年6月7日
 
-
-
-=== コネクタ3.9.19
+===コネクタ3.9.19
 
 * このコネクタは、AWSジャカルタリージョン（AP-Southee-3）でサポートされるようになりました。
 * このコネクタは、Azureブラジル南東部でサポートされるようになりました。
@@ -974,23 +875,15 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされてい
 
 
 
-
-
 == 2022年5月12日
 
-
-
-=== コネクタ3.9.18パッチ
+===コネクタ3.9.18パッチ
 
 コネクタを更新し、バグ修正を実施しました。最も注目すべき解決策は、問題 が共有VPC内にある場合にGoogle CloudでのCloud Volumes ONTAP の導入に影響するというものです。
 
-
-
 == 2022年5月2日
 
-
-
-=== コネクタ3.9.18
+===コネクタ3.9.18
 
 * Connectorは、次のGoogle Cloudリージョンでサポートされるようになりました。
 +
@@ -1027,13 +920,9 @@ Cloud Managerに追加したAWSクレデンシャルの各セットに、これ�
 
 
 
-
-
 == 2022年4月3日
 
-
-
-=== コネクタ3.9.17
+===コネクタ3.9.17
 
 * Cloud Manager に、環境で設定した IAM ロールを割り当てることでコネクタを作成できるようになりました。この認証方式は、 AWS のアクセスキーとシークレットキーを共有する場合よりも安全です。
 +
@@ -1042,63 +931,43 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2022["これらの拡張機能について説明します"^]
 
 
+== 2022年2月27日
 
-
-== (2022年2月27日).
-
-
-
-=== コネクタ3.9.16
+===コネクタ3.9.16
 
 * Google Cloud で新しいコネクタを作成すると、 Cloud Manager に既存のすべてのファイアウォールポリシーが表示されるようになります。以前は、 Cloud Manager にはターゲットタグがないポリシーは表示されませんでした。
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#27-february-2022["これらの拡張機能について説明します"^]
 
 
+== 2022年1月30日
 
-
-== (2022年1月30日).
-
-
-
-=== コネクタ3.9.15
+===コネクタ3.9.15
 
 このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-january-2022["これらの拡張機能について説明します"^]
 
-
-
 == 2022年1月2日
 
-
-
-=== コネクタのエンドポイントが減少しました
+===コネクタの端点が縮小されました
 
 パブリッククラウド環境内でリソースやプロセスを管理するためにコネクタが接続する必要があるエンドポイントの数を削減しました。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-checklist-cm.html["必要なエンドポイントのリストを表示します"]
 
-
-
-=== コネクタの EBS ディスク暗号化
+===コネクタのEBSディスク暗号化
 
 Cloud Manager から AWS に新しいコネクタを導入する際に、デフォルトのマスターキーまたは管理対象キーを使用してコネクタの EBS ディスクを暗号化できるようになりました。
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-disk-encryption.png["AWS でコネクタを作成する際のディスク暗号化オプションを示すスクリーンショット。"]
 
-
-
-=== NSS アカウントの E メールアドレス
+=== NSSアカウントのEメールアドレス
 
 Cloud Manager に、NetApp Support Siteのアカウントに関連付けられている E メールアドレスが表示されるようになりました。
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-nss-display-email.png["NetApp Support Siteのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。"]
 
+== 2021年11月28日
 
-
-== (2021年11月28日).
-
-
-
-=== NetApp Support Siteのアカウントを更新する必要があります
+=== NetAppサポートサイトのアカウントの更新が必要
 
 2021 年 12 月以降、ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用するようになりました。この更新によって、 Cloud Manager は、以前に追加した既存のNetApp Support Siteのアカウントのクレデンシャルの更新を求めます。
 
@@ -1106,69 +975,47 @@ NSS アカウントを IDaaS に移行していない場合は、まずアカウ
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["ネットアップによるID管理にMicrosoft Azure Active Directoryを使用する方法の詳細"^]
 
-
-
-=== Cloud Volumes ONTAP の NSS アカウントを変更します
+=== Cloud Volumes ONTAPのNSSアカウントを変更する
 
 組織内に複数のNetApp Support Siteのアカウントがある場合、 Cloud Volumes ONTAP システムに関連付けられているアカウントを変更できるようになりました。
 
 link:task-adding-nss-accounts.html#attach-a-working-environment-to-a-different-nss-account["作業環境を別の NSS アカウントに接続する方法について説明します"]。
 
+== 2021年11月4日
 
-
-== (2021年11月4日).
-
-
-
-=== SOC 2 Type 2 認定
+=== SOC 2 Type 2認証
 
 独立機関の公認会計士であり、サービス監査役は、 Cloud Manager 、 Cloud Sync 、 Cloud Tiering 、 Cloud Data Sense 、 Cloud Backup （ Cloud Manager プラットフォーム）を調査し、該当する信頼サービス基準に基づいて SOC 2 Type 2 のレポートを達成したことを確認しました。
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["ネットアップの SOC 2 レポートをご覧ください"^]。
 
-
-
-=== コネクタはプロキシとしてサポートされなくなりました
+===コネクタはプロキシとしてサポートされなくなりました
 
 AutoSupport から Cloud Volumes ONTAP メッセージを送信するためのプロキシサーバとして Cloud Manager Connector を使用することはできなくなりました。この機能は削除され、サポートも終了しています。AutoSupport 接続は、 NAT インスタンスまたは環境のプロキシサービスを介して提供する必要があります。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["Cloud Volumes ONTAP による AutoSupport の検証の詳細については、こちらをご覧ください"^]
 
+== 2021年10月31日
 
-
-== 2021年10月31日閲覧
-
-
-
-=== サービスプリンシパルを使用した認証
+===サービスプリンシパルによる認証
 
 Microsoft Azure で新しいコネクタを作成する際、 Azure アカウントのクレデンシャルではなく Azure サービスプリンシパルで認証できるようになりました。
 
 link:task-creating-connectors-azure.html["Azure サービスプリンシパルでの認証方法について説明します"]。
 
-
-
-=== クレデンシャルの機能拡張
+===資格情報の強化
 
 クレデンシャルページのデザインを見直し、使いやすく、 Cloud Manager のインターフェイスの外観に合わせて刷新しました。
 
-
-
 == 2021年9月2日
 
-
-
-=== 新しい通知サービスが追加されました
+===新しい通知サービスが追加されました
 
 通知サービスが導入され、現在のログインセッションで開始した Cloud Manager の処理のステータスを表示できるようになりました。処理が成功したかどうか、または失敗したかどうかを確認できます。 link:task-monitor-cm-operations.html["アカウントの操作を監視する方法については、を参照してください"]。
 
+== 2021年7月7日
 
-
-== 2021 年 7 月 7 日
-
-
-
-=== コネクタの追加ウィザードの機能拡張
+===コネクタの追加ウィザードの機能強化
 
 新しいオプションを追加して使いやすくするために、 * コネクターの追加 * ウィザードを再設計しました。タグの追加、ロール（ AWS または Azure ）の指定、プロキシサーバのルート証明書のアップロード、 Terraform Automation のコードの表示、進捗状況の詳細の表示などが可能になりました。
 
@@ -1177,9 +1024,7 @@ link:task-creating-connectors-azure.html["Azure サービスプリンシパル�
 * link:task-creating-connectors-gcp.html["Google Cloud でコネクターを作成します"]
 
 
-
-
-=== NSS アカウントの管理をサポートダッシュボードから行うこともできます
+===サポートダッシュボードからのNSSアカウント管理
 
 NetApp Support Site（ NSS ）アカウントは、設定メニューではなくサポートダッシュボードで管理できるようになりました。この変更により、すべてのサポート関連情報を 1 箇所から簡単に検索して管理できるようになります。
 
@@ -1187,33 +1032,23 @@ link:task-adding-nss-accounts.html["NSS アカウントを管理する方法に�
 
 image:screenshot_nss_management.png["NSS アカウントを追加できる Support Dashboard の NSS Management タブのスクリーンショット。"]
 
+== 2021年5月5日
 
-
-== 2021 年 5 月 5 日
-
-
-
-=== タイムラインのアカウント
+===タイムラインのアカウント
 
 Cloud Manager のタイムラインに、アカウント管理に関連する操作とイベントが表示されるようになりました。アクションには、ユーザーの関連付け、ワークスペースの作成、コネクタの作成などがあります。タイムラインのチェックは、特定のアクションを実行したユーザーを特定する必要がある場合や、アクションのステータスを特定する必要がある場合に役立ちます。
 
 link:task-monitor-cm-operations.html#audit-user-activity-in-your-account["タイムラインをテナンシーサービスにフィルタリングする方法について説明します"]。
 
+== 2021年4月11日
 
-
-== (2021年4月11日).
-
-
-
-=== Cloud Manager に直接 API で呼び出します
+=== Cloud Managerへの直接API呼び出し
 
 プロキシサーバを設定している場合、プロキシを経由せずに Cloud Manager に API 呼び出しを直接送信するオプションを有効にできるようになりました。このオプションは、 AWS または Google Cloud で実行されているコネクタでサポートされます。
 
 link:task-configuring-proxy.html["この設定の詳細については、こちらをご覧ください"]。
 
-
-
-=== サービスアカウントユーザ
+===サービスアカウントユーザー
 
 サービスアカウントユーザを作成できるようになりました。
 
@@ -1221,45 +1056,33 @@ link:task-configuring-proxy.html["この設定の詳細については、こち�
 
 link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["サービスアカウントの使用方法の詳細については、こちらをご覧ください"]。
 
-
-
-=== プライベートプレビュー
+===プライベートプレビュー
 
 アカウントのプライベートプレビューで、新しい NetApp クラウドサービスが Cloud Manager のプレビューとして利用できるようになりました。
 
 link:task-managing-netapp-accounts.html#allow-private-previews["このオプションの詳細については、こちらをご覧ください"]。
 
-
-
-=== サードパーティのサービス
+===サードパーティのサービス
 
 また、アカウント内のサードパーティサービスが Cloud Manager で使用可能なサードパーティサービスにアクセスできるようにすることもできます。
 
 link:task-managing-netapp-accounts.html#allow-third-party-services["このオプションの詳細については、こちらをご覧ください"]。
 
-
-
 == 2021年3月8日
 
 このアップデートには、いくつかの機能とサービスの機能強化が含まれています。
 
-
-
-=== Cloud Volumes ONTAP の機能拡張
+=== Cloud Volumes ONTAPの機能強化
 
 このリリースの Cloud Manager では、 Cloud Volumes ONTAP の管理が強化されています。
 
-
-
-==== すべてのクラウドプロバイダで利用できる機能強化
+===すべてのクラウドプロバイダで利用可能な拡張機能
 
 Cloud Volumes ONTAP 9.9.9..0 を導入および管理できるようになりました。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_new_990.html["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
 
-
-
-==== AWS で利用できる機能拡張
+=== AWSで利用可能な拡張機能
 
 * クラウドサービス 9.8 を AWS Commercial Cloud Volumes ONTAP （ C2S ）環境に導入できるようになりました。
 +
@@ -1274,15 +1097,11 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.htm
 
 
 
-
-
-==== Azure で利用できる機能拡張
+=== Azureで拡張機能を利用可能
 
 Cloud Volumes ONTAP 9.8 を、国防総省（ DoD ）の影響レベル 6 （ IL6 ）に導入できるようになりました。
 
-
-
-==== Google Cloud で利用可能な機能強化
+=== Google Cloudで利用可能な機能強化
 
 * Google Cloud で Cloud Volumes ONTAP 9.8 以降に必要な IP アドレスの数が削減されました。デフォルトでは、 IP アドレスを 1 つ減らす必要があります（インタークラスタ LIF をノード管理 LIF と統合しました）。また、 API を使用する場合は SVM 管理 LIF の作成を省略でき、追加の IP アドレスが不要になります。
 +
@@ -1294,9 +1113,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gc
 
 
 
-
-
-=== コネクタの機能拡張
+===コネクタの拡張機能
 
 * Connector が実行されていない場合に、 Cloud Manager から管理者ユーザに E メールで通知されるようになりました。
 +
@@ -1308,9 +1125,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gc
 
 
 
-
-
-=== Cloud Sync の機能拡張
+=== Cloud Syncの機能強化
 
 * Cloud Sync で ONTAP S3 ストレージと SMB サーバの同期関係がサポートされるようになりました。
 +
@@ -1330,9 +1145,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#s
 
 
 
-
-
-=== Cloud Tiering の機能拡張
+=== Cloud Tieringの機能拡張
 
 * Google Cloud Storage に階層化する場合は、ライフサイクルルールを適用して、階層化されたデータを Standard ストレージクラスから 30 日後に低コストの Nearline 、 Coldline 、または Archive ストレージに移行することができます。
 * Cloud Tiering Now は、オンプレミスの ONTAP クラスタで検出されていないものがある場合に表示されます。これにより、クラスタへの階層化やその他のサービスを有効にすることができます。
@@ -1341,18 +1154,14 @@ https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discover
 
 
 
-
-
-=== Azure NetApp Files の機能拡張
+=== Azure NetApp Filesの機能強化
 
 ワークロードのニーズを満たし、コストを最適化するために、ボリュームのサービスレベルを動的に変更できるようになりました。ボリュームは、ボリュームに影響を及ぼすことなく、もう一方の容量プールに移動されます。 https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["詳細はこちら。"^]
 
+== 2021年2月9日
 
-
-== (2021年2月9日).
-
-
-
-=== サポートダッシュボードの強化
+===サポートダッシュボードの改善点
 
 サポートダッシュボードが更新され、NetApp Support Siteのクレデンシャルを追加できるようになりました。このクレデンシャルをサポートに登録してください。ネットアップサポートケースは、ダッシュボードから直接開始することもできます。[ ヘルプ ] アイコンをクリックして、 [*Support*] をクリックします。
+
+====

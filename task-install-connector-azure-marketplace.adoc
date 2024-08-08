@@ -147,9 +147,9 @@ NTPを有効にする:: BlueXP分類を使用して企業データソースを�
 
 コネクタを作成するときは、次の要件を満たす仮想マシンタイプを選択する必要があります。
 
-CPU:: 4 コアまたは 4 個の vCPU
-RAM:: 14GB
-Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。DS3 v2 を推奨します。
+CPU:: 8 コアまたは 8 個の vCPU
+RAM:: 32GB
+Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。Standard_D8s_v3 をお勧めします。
 
 
 
@@ -409,7 +409,7 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 VM を設定する際には、次の点に注意してください。
 
 +
-** * VMサイズ*：CPUとRAMの要件を満たすVMサイズを選択します。DS3 v2 を推奨します。
+** * VMサイズ*：CPUとRAMの要件を満たすVMサイズを選択します。Standard_D8s_v3 をお勧めします。
 ** *ディスク*：コネクタはHDDまたはSSDディスクで最適なパフォーマンスを発揮します。
 ** *ネットワークセキュリティグループ*：コネクタには、SSH、HTTP、およびHTTPSを使用したインバウンド接続が必要です。
 +

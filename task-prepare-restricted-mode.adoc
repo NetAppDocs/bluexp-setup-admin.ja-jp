@@ -68,11 +68,11 @@ Connector は、これらのオペレーティングシステムの英語版で�
 
 --
 ハイパーバイザー:: サポート対象のオペレーティングシステムの実行が認定されているベアメタルまたはホスト型ハイパーバイザーが必要です。
-CPU:: 4 コアまたは 4 個の vCPU
-RAM:: 14GB
-AWS EC2 インスタンスタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.xlarge をお勧めします。
-Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。DS3 v2 を推奨します。
-Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。私たちは、n2規格4をお勧めします。
+CPU:: 8 コアまたは 8 個の vCPU
+RAM:: 32GB
+AWS EC2 インスタンスタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.2xlarge をお勧めします。
+Azure VM サイズ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。Standard_D8s_v3 をお勧めします。
+Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。n2-standard-8を推奨します。
 +
 --
 このコネクタは、OSがサポートされているVMインスタンス上のGoogle Cloudでサポートされます https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["シールドVM機能"^]
@@ -90,10 +90,39 @@ BlueXPのユースケース `/opt` をインストールするには `/opt/appli
 このスペースはBlueXPの `/var` DockerやPodmanは、このディレクトリ内にコンテナを作成するように設計されているためです。具体的には、 `/var/lib/containers/storage` ディレクトリ。このスペースでは外部マウントやシンボリックリンクは使用できません。
 
 --
+
+
+[[podman-versions]]
 コンテナオーケストレーションツール:: オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 +
 --
-* Red Hat Enterprise Linux 8および9にはPodmanバージョン4.6.1が必要です。
+* Red Hat Enterprise Linux 8および9にはPodmanが必要です。
++
+[cols="50a,50a"]
+|===
+| RHELのバージョン | サポートされているPodmanバージョン 
+
+
+ a| 
+RHEL 8.6~8.9
+ a| 
+Podman 4.6.1
+
+
+
+ a| 
+RHEL 8.10
+ a| 
+Podman 4.6.1および4.9.4
+
+
+
+ a| 
+RHEL 9.1から9.3
+ a| 
+Podman 4.6.1
+
+|===
 +
 Podmanでは、次の前提条件を満たす必要があります。
 
@@ -132,7 +161,7 @@ Podmanでは、次の前提条件を満たす必要があります。
 ====
 .ポドマン
 --
-Podman 4.6.1をインストールします。
+サポートされているバージョンのPodmanをインストールします。<<podman-versions,BlueXP  がサポートするPodmanバージョンを表示する>>です。
 
 .手順
 . podman-dockerパッケージがホストにインストールされている場合は削除します。
@@ -152,16 +181,22 @@ Red Hat Enterprise Linux 9の場合：
 +
 [source, cli]
 ----
-sudo dnf install podman-2:4.6.1
+sudo dnf install podman-2:<version>
 ----
++
+<version>は、インストールするPodmanのサポートされているバージョンです。<<podman-versions,BlueXP  がサポートするPodmanバージョンを表示する>>です。
+
 +
 Red Hat Enterprise Linux 8の場合：
 
 +
 [source, cli]
 ----
-sudo dnf install podman-3:4.6.1
+sudo dnf install podman-3:<version>
 ----
++
+<version>は、インストールするPodmanのサポートされているバージョンです。<<podman-versions,BlueXP  がサポートするPodmanバージョンを表示する>>です。
+
 . podman.socketサービスを有効にして開始します。
 +
 [source, cli]
