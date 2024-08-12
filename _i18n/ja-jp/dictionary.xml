@@ -4199,4 +4199,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">サポートダッシュボードの強化</block>
   <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">にアクセスする<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>と、BlueXP  はHTTPSアクセスに自己署名証明書を使用します。ビジネスで必要な場合は、認証局（CA）によって署名された証明書をインストールできます。これにより、自己署名証明書よりもセキュリティ保護が強化されます。証明書をインストールしたあと、BlueXP  では、ユーザがWebベースのコンソールにアクセスするときにCA署名証明書が使用されます。</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
+  <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">ソフトウェアの更新</block>
 </blocks>

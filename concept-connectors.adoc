@@ -50,6 +50,7 @@ Azure NetApp Files のセットアップと管理にコネクタは必要あり�
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["オンプレミスのONTAP クラスタの検出オプションと管理オプションの詳細については、こちらをご覧ください"^]
 
+* ソフトウェアの更新
 * 持続可能性
 
 
