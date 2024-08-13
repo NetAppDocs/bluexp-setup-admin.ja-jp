@@ -4,7 +4,7 @@ permalink: task-installing-https-cert.html
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
 summary: デフォルトでは、BlueXPはWebコンソールへのHTTPSアクセスに自己署名証明書を使用します。認証局（ CA ）によって署名された証明書をインストールできます。これにより、自己署名証明書よりも優れたセキュリティ保護が提供されます。 
 ---
-= セキュアなアクセスのためのHTTPS証明書をインストールします
+= Webコンソールアクセス用のCA署名証明書のインストール
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: デフォルトでは、BlueXPはWebコンソールへのHTTPSアクセ
 
 
 [role="lead"]
-にアクセスする https://console.bluexp.netapp.com/["WebベースのBlueXPコンソール"^]と、BlueXP  はHTTPSアクセスに自己署名証明書を使用します。ビジネスで必要な場合は、認証局（CA）によって署名された証明書をインストールできます。これにより、自己署名証明書よりもセキュリティ保護が強化されます。証明書をインストールしたあと、BlueXP  では、ユーザがWebベースのコンソールにアクセスするときにCA署名証明書が使用されます。
+デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、HTTPS接続を使用したへのセキュアなアクセスを提供します https://console.bluexp.netapp.com/["WebベースのBlueXPコンソール"^] 。ビジネスで必要な場合は、認証局（CA）によって署名された証明書をインストールできます。これにより、自己署名証明書よりもセキュリティ保護が強化されます。証明書をインストールしたあと、BlueXP  では、ユーザがWebベースのコンソールにアクセスするときにCA署名証明書が使用されます。
 
 
 

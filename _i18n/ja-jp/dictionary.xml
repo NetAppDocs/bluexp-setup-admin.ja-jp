@@ -4197,7 +4197,13 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Azure NetApp Files の機能拡張</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021年2月9日</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">サポートダッシュボードの強化</block>
-  <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">にアクセスする<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>と、BlueXP  はHTTPSアクセスに自己署名証明書を使用します。ビジネスで必要な場合は、認証局（CA）によって署名された証明書をインストールできます。これにより、自己署名証明書よりもセキュリティ保護が強化されます。証明書をインストールしたあと、BlueXP  では、ユーザがWebベースのコンソールにアクセスするときにCA署名証明書が使用されます。</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
   <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">ソフトウェアの更新</block>
+  <block id="66c9d0cfd45dc71069845154fb72a8b8" category="list-text">サポートされるコネクタのバージョン</block>
+  <block id="4dc9e2f6078fbeb26bbafe7461aa7ecf" category="list-text">RHEL 8および9は、次のバージョンのコネクタ以降でサポートされます。</block>
+  <block id="1316cb3dbdfa1d8facde6d30372df833" category="list-text">3.9.40標準モードまたは制限モードでBlueXP  を使用する場合</block>
+  <block id="c8fff1f28296d1ce9e5b594252b146c8" category="list-text">3.9.42プライベートモードでBlueXP  を使用する場合</block>
+  <block id="70328d3965555bdfe7c71386e9e25887" category="doc">Webコンソールアクセス用のCA署名証明書のインストール</block>
+  <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、HTTPS接続を使用したへのセキュアなアクセスを提供します<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> 。ビジネスで必要な場合は、認証局（CA）によって署名された証明書をインストールできます。これにより、自己署名証明書よりもセキュリティ保護が強化されます。証明書をインストールしたあと、BlueXP  では、ユーザがWebベースのコンソールにアクセスするときにCA署名証明書が使用されます。</block>
+  <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">デフォルトのパスワードは、登録済みEメールアドレスへのワンタイムパスコード（OTP）です。サインインを試行するたびに新しいOTPが生成されます。</block>
 </blocks>
