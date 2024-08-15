@@ -185,7 +185,6 @@
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。</block>
   <block id="288bb352dffecbb16aa463067359ba15" category="summary">デフォルトでは、BlueXPはWebコンソールへのHTTPSアクセスに自己署名証明書を使用します。認証局（ CA ）によって署名された証明書をインストールできます。これにより、自己署名証明書よりも優れたセキュリティ保護が提供されます。</block>
-  <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">セキュアなアクセスのためのHTTPS証明書をインストールします</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">始める前に</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">詳細をご確認ください</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">BlueXP設定を変更する前にコネクタを作成する必要があります。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
@@ -2857,7 +2856,6 @@
   <block id="0d1f9ac2ac0f76a6809ba58855ffa7f5" category="list-text">オプション1：システム割り当ての管理IDを使用して、Azure VMにカスタムロールを割り当てます。</block>
   <block id="d31f2fb13b2fed83440a04d526a6ca7d" category="list-text">オプション2：必要な権限を持つAzureサービスプリンシパルのクレデンシャルをBlueXPに提供します。</block>
   <block id="c4da032e0a3943e2f3a51ca860a71925" category="list-text">独自のホストにソフトウェアを手動でインストールする場合は、カスタムロールを使用して必要なAzure権限を提供できるように、VMでシステムが割り当てた管理IDを有効にします。</block>
-  <block id="f53835e0f369158c476f99fda577e700" category="sidebar">セットアップおよび管理に関するドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
@@ -3493,7 +3491,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22.04 LTS</block>
   <block id="fd1e4807d8caf9eb7b22acef39d3e5ce" category="list-text">コネクタのLinux VMに接続します。</block>
   <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
-  <block id="72b013396e56865d3673702aa9bcc731" category="paragraph"><block ref="53c9ecf44ffc5c93a5a42f4cda983463" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="6ae4e7f185de6791c9b45f3d273959f9" category="cell">\https://aiq.netapp.com</block>
   <block id="034ade3fc7b98591feafb7b0039b2724" category="cell">BlueXP Digital Advisorにアクセスするには必要です。</block>
   <block id="345dbd48a6c734a7dc3b743f014493be" category="paragraph">サービスアカウントは、自動化のために承認されたAPIコールをBlueXPに発信できる「ユーザ」として機能します。これにより、自動化スクリプトを作成する必要がなくなります。自動化スクリプトは、会社を離れることができる実際のユーザアカウントに基づいて作成する必要がなくなります。</block>
@@ -3611,7 +3608,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">[User Settings]で名前を編集する機能を示すスクリーンショット。</block>
   <block id="4a784443543a41df794122c52fae1df7" category="paragraph">フェデレーテッド接続またはNetApp Support Siteアカウントでログインした場合、名前の編集はサポートされません。</block>
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">各Cloud Volumes ONTAPシステムのバックアップ場所を更新する必要があります。</block>
-  <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">Cloud Volumes ONTAP CLIから次のコマンドを実行して、現在のバックアップターゲットを表示します。</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">次のコマンドを実行して、バックアップターゲットのIPアドレスを更新します。</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
@@ -4206,4 +4202,8 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="70328d3965555bdfe7c71386e9e25887" category="doc">Webコンソールアクセス用のCA署名証明書のインストール</block>
   <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、HTTPS接続を使用したへのセキュアなアクセスを提供します<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> 。ビジネスで必要な場合は、認証局（CA）によって署名された証明書をインストールできます。これにより、自己署名証明書よりもセキュリティ保護が強化されます。証明書をインストールしたあと、BlueXP  では、ユーザがWebベースのコンソールにアクセスするときにCA署名証明書が使用されます。</block>
   <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">デフォルトのパスワードは、登録済みEメールアドレスへのワンタイムパスコード（OTP）です。サインインを試行するたびに新しいOTPが生成されます。</block>
+  <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">Cloud Volumes ONTAP CLIで、権限レベルをadvancedに設定します。</block>
+  <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">次のコマンドを実行して、現在のバックアップターゲットを表示します。</block>
+  <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
+  <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">BlueXP  のセットアップと管理のドキュメント</block>
 </blocks>

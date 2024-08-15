@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Setup and administration
+  name: BlueXP setup and administration
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,7 +11,7 @@ settings:
   langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: セットアップおよび管理に関するドキュメント
+  - title: BlueXP  のセットアップと管理のドキュメント
     url: "/index.html"
   - title: リリースノート
     entries:
@@ -119,7 +119,7 @@ sidebar:
       entries:
       - title: VMとOSの保守
         url: "/task-maintain-connectors.html"
-      - title: セキュアなアクセスのためのHTTPS証明書をインストールします
+      - title: Webコンソールアクセス用のCA署名証明書のインストール
         url: "/task-installing-https-cert.html"
       - title: プロキシサーバを使用するようにコネクタを設定します
         url: "/task-configuring-proxy.html"

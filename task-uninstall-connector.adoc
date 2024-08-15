@@ -48,7 +48,7 @@ BlueXPをプライベートモード（コネクタホストに_no_outbound接�
 . コネクタのLinux VMに接続します。
 . Linux ホストから、次のコマンドを実行します。
 +
-`./opt/application/netapp/ds/cleanup.sh`
+`/opt/application/netapp/ds/cleanup.sh`
 `rm -rf /opt/application/netapp/ds`
 
 

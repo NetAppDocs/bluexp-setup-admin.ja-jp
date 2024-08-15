@@ -87,11 +87,17 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 各Cloud Volumes ONTAPシステムのバックアップ場所を更新する必要があります。
 
 +
-.. Cloud Volumes ONTAP CLIから次のコマンドを実行して、現在のバックアップターゲットを表示します。
+.. Cloud Volumes ONTAP CLIで、権限レベルをadvancedに設定します。
 +
 [source, cli]
 ----
-system configuration backup show
+set -privilege advanced
+----
+.. 次のコマンドを実行して、現在のバックアップターゲットを表示します。
++
+[source, cli]
+----
+system configuration backup settings show
 ----
 .. 次のコマンドを実行して、バックアップターゲットのIPアドレスを更新します。
 +
