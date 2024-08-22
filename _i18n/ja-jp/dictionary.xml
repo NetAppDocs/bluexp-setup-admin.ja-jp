@@ -823,15 +823,12 @@
   <block id="f786a140deb938ac21ab095b7c402176" category="paragraph">このコネクタは、次のAPI要求を日々の処理に送信します。</block>
   <block id="47ddffc293a6a5748897c2f965fa7212" category="list-text">Microsoft。Storage/storageAccounts/managementPolicies/read</block>
   <block id="a2fd314f394dbb1eeb56c09e3cd9770f" category="list-text">microsoft.StorageAccounts/managementPolicies/write</block>
-  <block id="c9d7cb56a51bc183eea92ab6ecce2997" category="section-title">2023年5月12日</block>
   <block id="c8e8c3b324197dbdad9e21df5a435a35" category="paragraph">次の権限はCloud Volumes ONTAP の管理に必要なため、JSONポリシーに追加されました。</block>
   <block id="1ff61a19534f16f8c2b0aa752b13fb0a" category="paragraph">JSONポリシーから次の権限が削除されました。これらの権限は不要になりました。</block>
   <block id="468934d9746a4d6bea918c799a7877cd" category="list-text">microsoft.Storage/storageAccounts/blobServices/container/write</block>
   <block id="43fb0ec1619aa20051c9794494536f05" category="list-text">Microsoft.Network/publicIPAddresses/delete</block>
-  <block id="0c511f4078f33be6ce46a7b4c4d64f3e" category="section-title">2023年3月23日</block>
   <block id="6bf8cf4546732effc9436b03e26fd3ab" category="paragraph">BlueXPの分類に「Microsoft.Storage/storageAccounts/delete」権限は不要になりました。</block>
   <block id="47e8280c2cd82cf2f49537bfd5661b15" category="paragraph">この権限はCloud Volumes ONTAP では引き続き必要です。</block>
-  <block id="176944a9db0702558233e827d21e2f80" category="section-title">2023年1月5日</block>
   <block id="0b4c13076b9b5e7ba5fa39333693ef77" category="paragraph">JSONポリシーに次の権限が追加されました。</block>
   <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">この権限はCloud Volumes ONTAP の導入に必要です。</block>
   <block id="0876dbe9a324b66ea7ac9a411751f1e7" category="doc">Google Cloud でコネクターを作成します</block>
@@ -3505,7 +3502,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">プライベートモードの使用時にコネクタをアップグレードする方法について説明します。</block>
   <block id="a6c2003199e95310a83aa40a67058bd8" category="paragraph">インターネットにアクセスできないプライベートネットワーク用のオフラインインストーラを必ずダウンロードしてください。</block>
-  <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">2023年12月5日</block>
   <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">Azure BLOBストレージにボリュームデータをバックアップする場合、BlueXPのバックアップとリカバリに次の権限は不要になりました。</block>
   <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">これらの権限は他のBlueXPストレージサービスに必要なため、他のストレージサービスを使用している場合はコネクタのカスタムロールが引き続き使用されます。</block>
   <block id="c86344b833d64024dcd801a79f3f366e" category="paragraph">このリリースには、以下のクラウドリージョンでマイナーな改善、バグ修正、コネクタのサポートが含まれています。</block>
@@ -4206,4 +4202,22 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">次のコマンドを実行して、現在のバックアップターゲットを表示します。</block>
   <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">BlueXP  のセットアップと管理のドキュメント</block>
+  <block id="d44b908365d28414a72f5b042c756f89" category="cell">Cloud Volumes ONTAPの特定のゾーンを指定するために、フレキシブルオーケストレーションモードで仮想マシンスケールセットを使用する</block>
+  <block id="e32bb1c8b64cbfd8bf1712551cd39a15" category="cell">マイクロソフト。</block>
+  <block id="da4802bef00f05ba8274ecb054d0388f" category="cell">マイクロソフト。</block>
+  <block id="d1cca5c5928df2cf3cc230adb4148b49" category="cell">マイクロソフト。</block>
+  <block id="bfe1024d3c9f1a02aa5dd1d7e5dccb34" category="section-title">2024年8月22日</block>
+  <block id="51ec06da7f63e08ee6add2ed46d50777" category="paragraph">次の権限は、Cloud Volumes ONTAPで仮想マシンスケールセットをサポートするために必要なため、JSONポリシーに追加されました。</block>
+  <block id="31c59436a743feb0e198d549a11637b0" category="section-title">2023年5月12日</block>
+  <block id="8b5a7355367fbfe0f4039d610b872ea2" category="section-title">2023年3月23日</block>
+  <block id="cb73adae14da8ca1c572c8494ce45515" category="section-title">2023年1月5日</block>
+  <block id="22e645000db07af6682e1c6517a3c82a" category="section-title">2024年8月22日</block>
+  <block id="335b63351c39337de35ede84c3852d4d" category="section-title">コネクタ3.9.43パッチ</block>
+  <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">Cloud Volumes ONTAP 9.15.1リリースをサポートするようにコネクタを更新しました。</block>
+  <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">このリリースのサポートには、Azure用コネクタポリシーの更新が含まれています。ポリシーに次の権限が追加されました。</block>
+  <block id="c78a856f5972910d86f9b588fe9783e6" category="paragraph">これらの権限は、Cloud Volumes ONTAPが仮想マシンスケールセットをサポートするために必要です。既存のコネクタがあり、この新機能を使用する場合は、Azureクレデンシャルに関連付けられているカスタムロールにこれらの権限を追加する必要があります。</block>
+  <block id="33deee49118b5c8f42cddf68ea82eb12" category="inline-link">Cloud Volumes ONTAPによる仮想マシンスケールセットのサポートについて</block>
+  <block id="d68b9311c71dab46bbfe2456fb69212b" category="list-text"><block ref="d68b9311c71dab46bbfe2456fb69212b" category="inline-link-rx"></block></block>
+  <block id="21952e368aec0a06297b408b56d39588" category="inline-link">コネクタのAzure権限を表示</block>
+  <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>です。</block>
 </blocks>

@@ -18,6 +18,30 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
+== 2024年8月22日
+
+
+
+=== コネクタ3.9.43パッチ
+
+Cloud Volumes ONTAP 9.15.1リリースをサポートするようにコネクタを更新しました。
+
+このリリースのサポートには、Azure用コネクタポリシーの更新が含まれています。ポリシーに次の権限が追加されました。
+
+[source, json]
+----
+"Microsoft.Compute/virtualMachineScaleSets/write",
+"Microsoft.Compute/virtualMachineScaleSets/read",
+"Microsoft.Compute/virtualMachineScaleSets/delete"
+----
+これらの権限は、Cloud Volumes ONTAPが仮想マシンスケールセットをサポートするために必要です。既存のコネクタがあり、この新機能を使用する場合は、Azureクレデンシャルに関連付けられているカスタムロールにこれらの権限を追加する必要があります。
+
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Cloud Volumes ONTAPによる仮想マシンスケールセットのサポートについて"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["コネクタのAzure権限を表示"]です。
+
+
+
+
 == 2024 年 8 月 8 日
 
 
