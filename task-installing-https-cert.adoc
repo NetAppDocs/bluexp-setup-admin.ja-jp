@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-installing-https-cert.html 
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
-summary: デフォルトでは、BlueXPはWebコンソールへのHTTPSアクセスに自己署名証明書を使用します。認証局（ CA ）によって署名された証明書をインストールできます。これにより、自己署名証明書よりも優れたセキュリティ保護が提供されます。 
+summary: 制限モードまたはプライベートモードでBlueXP  を使用する場合は、WebベースのコンソールにユーザがアクセスするためのCA署名証明書をインストールします。 
 ---
-= Webコンソールアクセス用のCA署名証明書のインストール
+= Webベースのコンソールアクセス用のCA署名証明書のインストール
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: デフォルトでは、BlueXPはWebコンソールへのHTTPSアクセ
 
 
 [role="lead"]
-デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、HTTPS接続を使用したへのセキュアなアクセスを提供します https://console.bluexp.netapp.com/["WebベースのBlueXPコンソール"^] 。ビジネスで必要な場合は、認証局（CA）によって署名された証明書をインストールできます。これにより、自己署名証明書よりもセキュリティ保護が強化されます。証明書をインストールしたあと、BlueXP  では、ユーザがWebベースのコンソールにアクセスするときにCA署名証明書が使用されます。
+BlueXP  を制限モードまたはプライベートモードで使用する場合、クラウドリージョンまたはオンプレミスに導入されているコネクタ仮想マシンからユーザーインターフェイスにアクセスできます。デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、コネクタで実行されているWebベースのコンソールへのセキュアなHTTPSアクセスを提供します。ビジネスで必要な場合は、認証局（CA）によって署名された証明書をインストールできます。これにより、自己署名証明書よりもセキュリティ保護が強化されます。証明書をインストールしたあと、BlueXP  では、ユーザがWebベースのコンソールにアクセスするときにCA署名証明書が使用されます。
 
 
 
 == 作業を開始する前に
 
-BlueXP設定を変更する前にコネクタを作成する必要があります。 link:concept-connectors.html#how-to-create-a-connector["詳細をご確認ください"]。
+BlueXP設定を変更する前にコネクタを作成する必要があります。 link:concept-connectors.html#how-to-create-a-connector["コネクタの作成方法を説明します"]。
 
 
 
@@ -66,7 +66,7 @@ image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設�
 
 
 .結果
-BlueXPでは、CA署名証明書を使用してセキュアなHTTPSアクセスが提供されるようになりました。次の図は、セキュアなアクセスが設定されたBlueXPアカウントを示しています。
+BlueXPでは、CA署名証明書を使用してセキュアなHTTPSアクセスが提供されるようになりました。次の図は、セキュアアクセス用に設定されたコネクタを示しています。
 
 image:screenshot_https_cert.gif["スクリーンショット：署名付き証明書をインストールした後の HTTPS セットアップページを表示します。このページには、証明書のプロパティと、証明書を更新するオプションが表示されます。"]
 

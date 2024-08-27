@@ -36,7 +36,7 @@ Cloud Volumes ONTAP 9.15.1リリースをサポートするようにコネクタ
 ----
 これらの権限は、Cloud Volumes ONTAPが仮想マシンスケールセットをサポートするために必要です。既存のコネクタがあり、この新機能を使用する場合は、Azureクレデンシャルに関連付けられているカスタムロールにこれらの権限を追加する必要があります。
 
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Cloud Volumes ONTAPによる仮想マシンスケールセットのサポートについて"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Cloud Volumes ONTAP 9.15.1リリースの詳細"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["コネクタのAzure権限を表示"]です。
 
 
