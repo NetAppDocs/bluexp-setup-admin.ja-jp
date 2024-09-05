@@ -193,7 +193,7 @@ AWS Marketplaceからコネクタを作成すると、デフォルト設定を�
 . に移動します https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["AWS MarketplaceでのBlueXPコネクタの掲載"^]
 . [Marketplace]ページで、*[Continue to Subscribe]*を選択します。
 +
-image:screenshot-subscribe-aws.png["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]
+image:screenshot-subscribe-aws-continue.png["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]
 
 . ソフトウェアを購読するには、*契約条件に同意する*を選択します。
 +
