@@ -47,29 +47,34 @@ link:task-prepare-restricted-mode.html#step-3-review-host-requirements["イン�
 
 .手順
 . に移動します https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["AWS MarketplaceでのBlueXPコネクタの掲載"^]
-. [Marketplace]ページで、*[Continue to Subscribe]*を選択し、*[Continue to Configuration]*を選択します。
+. [Marketplace]ページで、*[Continue to Subscribe]*を選択します。
 +
 image:screenshot-subscribe-aws.png["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]
 
-. デフォルトのオプションを変更して、*[起動を続行]*を選択します。
-. [Choose Action]*で、[Launch through EC2]*を選択し、[Launch]*を選択します。
+. ソフトウェアを購読するには、*契約条件に同意する*を選択します。
++
+サブスクリプションプロセスには数分かかることがあります。
+
+. サブスクリプションプロセスが完了したら、*[設定に進む]*を選択します。
++
+image:screenshot-subscribe-aws-configuration.png["AWS Marketplace の Continue to Subscribe and Continue to Configuration ボタンを示すスクリーンショット"]
+
+. [このソフトウェアの設定]ページで、正しい地域を選択していることを確認し、[起動を続行]を選択します。
+. [Launch this software]ページの[Choose Action]*で[Launch through EC2]*を選択し、[Launch]*を選択します。
 +
 以下の手順では、コンソールからEC2コンソールからインスタンスを起動する方法について説明します。これは、IAMロールをコネクタインスタンスに関連付けることができるためです。これは、 * ウェブサイトからの起動 * アクションを使用しては実行できません。
 
 . プロンプトに従って、インスタンスを設定および導入します。
 +
 ** *名前とタグ*：インスタンスの名前とタグを入力します。
-** *アプリケーションとOSイメージ*:このセクションは省略します。コネクタAMIはすでに選択されています。
-** *インスタンスタイプ*：リージョンの可用性に応じて、RAMとCPUの要件を満たすインスタンスタイプを選択します（t3.2xlargeを推奨）。
+** *アプリケーションおよびOSイメージ*:このセクションはスキップします。コネクタAMIはすでに選択されています。
+** *インスタンスタイプ*：リージョンの可用性に応じて、RAMとCPUの要件を満たすインスタンスタイプを選択します（t3.2xlargeが事前に選択され、推奨されます）。
 ** *キーペア（ログイン）*：インスタンスへのセキュアな接続に使用するキーペアを選択します。
 ** *ネットワーク設定*：必要に応じてネットワーク設定を編集します。
 +
 *** 目的のVPCとサブネットを選択します。
 *** インスタンスにパブリックIPアドレスを割り当てるかどうかを指定します。
-*** コネクタインスタンスに必要な接続方法（SSH、HTTP、HTTPS）を有効にするファイアウォール設定を指定します。
-+
-特定の構成にはさらにいくつかのルールが必要です。
-
+*** コネクタインスタンスに必要な接続方法（SSH、HTTP、HTTPS）を有効にするセキュリティグループ設定を指定します。
 +
 link:reference-ports-aws.html["AWSのセキュリティグループルールを表示します"]。
 

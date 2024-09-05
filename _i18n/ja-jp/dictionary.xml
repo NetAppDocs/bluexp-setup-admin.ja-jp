@@ -2019,14 +2019,11 @@
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">以下の手順では、コンソールからEC2コンソールからインスタンスを起動する方法について説明します。これは、IAMロールをコネクタインスタンスに関連付けることができるためです。これは、 * ウェブサイトからの起動 * アクションを使用しては実行できません。</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">プロンプトに従って、インスタンスを設定および導入します。</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*名前とタグ*：インスタンスの名前とタグを入力します。</block>
-  <block id="5fa511356078e407d467aeb21afa8311" category="list-text">*アプリケーションとOSイメージ*:このセクションは省略します。コネクタAMIはすでに選択されています。</block>
   <block id="3346e4a27b0ab9e94d29515e25908ed6" category="inline-link-macro">インスタンスの要件を確認します</block>
   <block id="a2edeeec0c237aa79e3b1f0eb87b07e4" category="list-text">*キーペア（ログイン）*：インスタンスへのセキュアな接続に使用するキーペアを選択します。</block>
   <block id="db8b616682d262766c36f81013b4f840" category="list-text">*ネットワーク設定*：必要に応じてネットワーク設定を編集します。</block>
   <block id="c04d267ebc445e8f04c29787ecab6547" category="list-text">目的のVPCとサブネットを選択します。</block>
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">インスタンスにパブリックIPアドレスを割り当てるかどうかを指定します。</block>
-  <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">コネクタインスタンスに必要な接続方法（SSH、HTTP、HTTPS）を有効にするファイアウォール設定を指定します。</block>
-  <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">特定の構成にはさらにいくつかのルールが必要です。</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*詳細情報*：*[IAMインスタンスプロファイル]*で、コネクタに必要な権限を含むIAMロールを選択します。</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS は、指定した設定でソフトウェアを起動します。コネクタインスタンスとソフトウェアは、約 5 分後に実行される必要があります。</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">アイデンティティフェデレーションを使用すると、BlueXPとのシングルサインオンが可能になり、ユーザは自社のアイデンティティのクレデンシャルを使用してログインできます。まず、アイデンティティフェデレーションとBlueXPの連携について説明し、セットアッププロセスの概要を確認してください。</block>
@@ -3049,9 +3046,6 @@
   <block id="0447e5af15c21fbb6eee1972d30cef83" category="list-text">クラウドプロバイダとして* Amazon Web Services *を選択し、* Continue *を選択します。</block>
   <block id="15de410cab5b286c0cff40620cbbc2f8" category="list-text">製品内のガイドを使用して導入を準備するには、* Continue *を選択します。製品ガイドの各手順には、このページのドキュメントに記載されている情報が含まれています。</block>
   <block id="43c314e15e760781773285daf91c0ad5" category="list-text">このページの手順に従って準備が完了している場合は、[Skip to Deployment]*を選択します。</block>
-  <block id="21d86ad4e09aa752397558f2a4a4d776" category="list-text">[Marketplace]ページで、*[Continue to Subscribe]*を選択し、*[Continue to Configuration]*を選択します。</block>
-  <block id="62e122f28cedb83482c8d975a0ebbc6b" category="list-text">デフォルトのオプションを変更して、*[起動を続行]*を選択します。</block>
-  <block id="b5db57dbb4b1fc339bfbf2e32844ab33" category="list-text">[Choose Action]*で、[Launch through EC2]*を選択し、[Launch]*を選択します。</block>
   <block id="a77947bca5ad1214f93361073cfddb0a" category="list-text">*概要*：概要を確認し、*インスタンスの起動*を選択します。</block>
   <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">[* Let's start]*を選択します。</block>
   <block id="1ce857b02028095dcbdb6522daf11862" category="list-text">[今すぐ入手]*を選択し、*[続行]*を選択します。</block>
@@ -4023,7 +4017,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">2024年7月18日</block>
   <block id="4736cb006ef02fa673f618379e2106bd" category="cell">2024年7月1日（バージョン1.33）</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">2024年6月10日</block>
-  <block id="d2c0dfc6934302fa99dba597124c94a2" category="list-text">*インスタンスタイプ*：リージョンの可用性に応じて、RAMとCPUの要件を満たすインスタンスタイプを選択します（t3.2xlargeを推奨）。</block>
   <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 コアまたは 8 個の vCPU</block>
   <block id="911ede8df5585598c294830dafe276fa" category="list-text">32GB</block>
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.2xlarge をお勧めします。</block>
@@ -4221,4 +4214,14 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">Cloud Volumes ONTAP 9.15.1リリースの詳細</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
   <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">更新されたCPUとRAMの要件は、すべての新しいコネクタに適用されます。既存のコネクタの場合は、パフォーマンスと信頼性を向上させるために、CPUとRAMを増やすことをお勧めします。</block>
+  <block id="f24abcf11233503db09edba21b8e5cdb" category="list-text">[Marketplace]ページで、*[Continue to Subscribe]*を選択します。</block>
+  <block id="b57313d1cbeb83e2be3f889cd8fc5526" category="list-text">ソフトウェアを購読するには、*契約条件に同意する*を選択します。</block>
+  <block id="b33dcc2933561e1bbdc43d2b68e8ab24" category="paragraph">サブスクリプションプロセスには数分かかることがあります。</block>
+  <block id="11c2c43373c3fc2b79b1a6f46f2372bf" category="list-text">サブスクリプションプロセスが完了したら、*[設定に進む]*を選択します。</block>
+  <block id="84bdd294c5ae866bbc0419f7bba9f368" category="paragraph"><block ref="84bdd294c5ae866bbc0419f7bba9f368" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2630dda750b0b4c54559adbe4e5daa21" category="list-text">[このソフトウェアの設定]ページで、正しい地域を選択していることを確認し、[起動を続行]を選択します。</block>
+  <block id="4a3fda2105dbdf853aa237113073a9f0" category="list-text">[Launch this software]ページの[Choose Action]*で[Launch through EC2]*を選択し、[Launch]*を選択します。</block>
+  <block id="e5df21e6d1c0f91eabeef6ab2202379e" category="list-text">*アプリケーションおよびOSイメージ*:このセクションはスキップします。コネクタAMIはすでに選択されています。</block>
+  <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">*インスタンスタイプ*：リージョンの可用性に応じて、RAMとCPUの要件を満たすインスタンスタイプを選択します（t3.2xlargeが事前に選択され、推奨されます）。</block>
+  <block id="2ff5664491ece284c069195a204d44c0" category="list-text">コネクタインスタンスに必要な接続方法（SSH、HTTP、HTTPS）を有効にするセキュリティグループ設定を指定します。</block>
 </blocks>
