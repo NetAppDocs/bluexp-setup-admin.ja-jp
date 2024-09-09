@@ -14,10 +14,12 @@ summary: BlueXPからAzureでコネクタを作成するには、ネットワー
 
 
 [role="lead"]
-BlueXPからAzureでコネクタを作成するには、ネットワークを設定し、Azureの権限を準備してから、コネクタを作成する必要があります。
+コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションの1つは、BlueXP  からAzureでコネクタを直接作成することです。BlueXPからAzureでコネクタを作成するには、ネットワークを設定し、Azureの権限を準備してから、コネクタを作成する必要があります。
 
 .作業を開始する前に
-確認が必要です link:reference-limitations.html["コネクタの制限"]。
+* が必要ですlink:concept-connectors.html["コネクタの概要"]。
+* 確認が必要です link:reference-limitations.html["コネクタの制限"]。
+
 
 
 

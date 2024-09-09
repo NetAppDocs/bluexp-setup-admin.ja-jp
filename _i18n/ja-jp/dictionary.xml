@@ -489,7 +489,6 @@
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">機能</block>
   <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">BlueXPプラットフォームは、データ管理において、ストレージ、モビリティ、保護、分析と制御という4つの主要な柱を提供します。</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="list-text">ストレージ</block>
-  <block id="14e51ced0d5dc6abc5f091838e1fd7a8" category="list-text">AWS、Azure、Google Cloud、オンプレミスのいずれであっても、ストレージを検出、導入、管理できます。</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
   <block id="4066a2484747588656be41f7c6f52cf0" category="list-text">をセットアップして使用します<block ref="f57700eb7f072532c25bc35835afbefb" category="inline-link-rx"></block> 複数のクラウドにわたって効率的なマルチプロトコルデータ管理を実現します。</block>
   <block id="17a28f89a71d8bcba39452a2fd7343db" category="list-text">クラウドファイルストレージサービスをセットアップして使用</block>
@@ -1042,8 +1041,6 @@
   <block id="9eda901ca4a8d939f48fdc3e1139b8d2" category="list-text"><block ref="9eda901ca4a8d939f48fdc3e1139b8d2" category="inline-link-macro-rx"></block></block>
   <block id="45f5c7b6248438f849cf619c647c63e4" category="paragraph">AWSまたはAzureでBlueXPサービスをオンプレミスコネクタで使用する場合は、インストール後にコネクタにクレデンシャルを追加できるように、クラウドプロバイダで権限を設定する必要があります。</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="open-title">AWS</block>
-  <block id="e1ef579b405a3d1b9ab7d84e56f110d3" category="paragraph">コネクタをオンプレミスにインストールする場合は、必要な権限を持つIAMユーザのアクセスキーを追加して、BlueXPにAWS権限を設定する必要があります。</block>
-  <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">コネクタがオンプレミスにインストールされている場合は、この認証方法を使用する必要があります。IAMロールは使用できません。</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">これで、必要な権限を持つIAMユーザのアクセスキーが作成されました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="open-title">Azure</block>
   <block id="2189e37a9b7c751d238d4e13fd8f634b" category="list-text">Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。</block>
@@ -1095,15 +1092,11 @@
   <block id="56c696c4118c8dc3d2947c159fdbbb7c" category="list-text">シークレットと期間の説明を入力します。</block>
   <block id="a91d60261e2974b6b9f5d3d3d0abacdd" category="list-text">クライアントシークレットの値をコピーします。</block>
   <block id="62089e33eb517da2e77f2dbae303746e" category="paragraph">これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。コネクタをインストールしたら、これらのクレデンシャルをBlueXPのコネクタに関連付ける必要があります。</block>
-  <block id="b6bbae5bdf4c539603a70f4db19e6b04" category="summary">コネクタをオンプレミスにインストールし、ログインしてBlueXPアカウントと連携するように設定します。</block>
-  <block id="1fb392a56edc456b1bc3eddb57b0906b" category="doc">コネクタをオンプレミスにインストールしてセットアップします</block>
-  <block id="430c29468d032364c0f94cffe3c8a10b" category="paragraph">コネクタソフトウェアをオンプレミスの既存のLinuxホストにダウンロードしてインストールします。</block>
   <block id="e832abccfbda1e1df2db47f59705c74c" category="paragraph">これでコネクタがインストールされました。プロキシサーバを指定した場合は、インストールの終了時にConnectorサービス（occm）が2回再起動されます。</block>
   <block id="8dae847f59a6afd8d7e49b7b7654d0eb" category="list-text">Web ブラウザを開き、次の URL を入力します。</block>
   <block id="a28c11d82be2375d6506ed209153e0c1" category="paragraph">_ipaddress _ には、ホストの設定に応じて、 localhost 、プライベート IP アドレス、またはパブリック IP アドレスを指定できます。たとえば、パブリック IP アドレスのないパブリッククラウドにコネクタがある場合は、コネクタホストに接続されているホストからプライベート IP アドレスを入力する必要があります。</block>
   <block id="2b7648ae4507d851df87a08114c2876e" category="list-text">サインアップまたはログインします。</block>
   <block id="41adb69bcb6f24f8432b590170f61d23" category="list-text">ログインしたら、BlueXPをセットアップします。</block>
-  <block id="c0112364e46bcec7ed4460a6be7ead53" category="paragraph">標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。(また、コネクタがオンプレミスにインストールされている場合、制限モードはサポートされません)。</block>
   <block id="dcdd03125bee39fb6c8e9aa5e0bfcc7f" category="paragraph">これで、先ほどインストールしたコネクタでBlueXPがセットアップされました。</block>
   <block id="c7c7fe81ff2afbb7f657e592f9871125" category="summary">制限モードでBlueXPを起動して実行したら、制限モードでサポートされるBlueXPサービスの使用を開始できます。</block>
   <block id="d279ef9d3fa427882e45e653bc7b1949" category="doc">次に実行できる処理（制限モード）</block>
@@ -1994,7 +1987,6 @@
   <block id="74d2f2a8ee613c321072e364f7ed33b2" category="inline-link-macro">AWS でコネクタを作成する方法について説明します</block>
   <block id="019fd7c8c6395aedf9e4d8fe995febee" category="inline-link-macro">Azure でコネクタを作成する方法について説明します</block>
   <block id="aa5c1c092b41ba183b34ea75815e55a2" category="inline-link-macro">Google Cloud でコネクタを作成する方法について説明します</block>
-  <block id="b279d324941aabfaed1bf558f37a98bc" category="inline-link-macro">オンプレミスでコネクタを作成する方法について説明します</block>
   <block id="11f541a08afbd320cd13f0c88b417a4b" category="paragraph">BlueXPサービスを使用してGoogle Cloudのストレージとデータを管理する場合は、コネクタがGoogle Cloudで実行されている必要があります。</block>
   <block id="aca02eea323174e41d57225a762eb959" category="list-text">AWS認証方式：IAMロールまたは必要な権限を持つIAMユーザのアクセスキー。</block>
   <block id="3f4713c771af26689845a2dfeec86b37" category="inline-link-macro">AWS権限の設定方法をご確認ください</block>
@@ -2584,7 +2576,6 @@
   <block id="0db58c0529496c0e926af5f8c9002335" category="list-text"><block ref="60d271fc50ad3f5d03a8767578822d7b" category="inline-xref-macro-rx"></block></block>
   <block id="6fca6b826d3e4d0980a08d26e6cf905f" category="section-title">別のアカウントで IAM ロールを想定して権限を付与します</block>
   <block id="cc9abb75b8a4618db30dc1fa4729b191" category="paragraph">IAM ロールを使用して、コネクタインスタンスを導入したソース AWS アカウントと他の AWS アカウントの間に信頼関係を設定できます。次に、信頼できるアカウントのIAMロールのARNをBlueXPに提供します。</block>
-  <block id="296337985ff5f0cc398e02f1aff0b176" category="paragraph">コネクタがオンプレミスにインストールされている場合は、この認証方法は使用できません。AWSキーを使用する必要があります。</block>
   <block id="2c76935f38c3f21d03c203f5311fc4f4" category="list-text">コネクタに権限を付与するターゲットアカウントのIAMコンソールに移動します。</block>
   <block id="61b72a48f16d18bfce7a18c7ce80f123" category="list-text">[Access Management]で、*[Roles]&gt;[Create Role]*を選択し、手順に従ってロールを作成します。</block>
   <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">必ず次の手順を実行してください。</block>
@@ -2641,7 +2632,6 @@
   <block id="cd9866f3dfe1445bb49e9984aef06565" category="paragraph">作業を開始する前に、BlueXPがプライベートモードでどのように動作するかを理解しておく必要があります。</block>
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">プライベートモードの仕組みを説明します</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>。</block>
-  <block id="ba7c13ef3e78a348949ddfd6f17e4f18" category="paragraph">プライベートモードでは、コネクタを自社のLinuxホストに手動でインストールすることで、コネクタをオンプレミスまたはクラウドにインストールできます。</block>
   <block id="c3d3f783d267d1bd41b2e7f8639a5865" category="section-title">日常業務のエンドポイント</block>
   <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">\https://management.azure.microsoft.scloud
 \https://login.microsoftonline.microsoft.scloud
@@ -2652,7 +2642,6 @@
   <block id="862b0c0ff0da2b02588d845f4c6d6d34" category="list-text">カスタムロールを使用して必要なAzure権限を提供できるように、コネクタをインストールするVMでシステム割り当ての管理IDを有効にします。</block>
   <block id="81b303f46dd1d85b6f031bc99d8e87a6" category="summary">BlueXPには複数の導入モードが用意されており、ビジネスやセキュリティの要件に合わせてBlueXPを使用できます。Standardモードでは、BlueXPのSaaSレイヤを活用してすべての機能を提供します。RestrictedモードとPrivateモードは、接続が制限されている組織で使用できます。</block>
   <block id="534fd3c26a29e770ad82ea272b33fadf" category="paragraph">BlueXPには複数の_導入モード_が用意されており、ビジネス要件やセキュリティ要件を満たす方法でBlueXPを使用できます。_Standard mode__はBlueXP SaaSレイヤを活用してすべての機能を提供しますが、_restricted mode_and_private mode__は接続が制限されている組織で使用できます。</block>
-  <block id="3bee795df059c001dd8dffe355235790" category="paragraph">制限モードまたはプライベートモードを使用している場合、BlueXPではトラフィック、通信、データのフローが禁止されますが、環境（オンプレミスとクラウド内）が必要な規制に準拠していることを確認するのはお客様の責任です。</block>
   <block id="3003441b99515b8ab9a5d515870819a4" category="paragraph">BlueXPには、お客様のアカウントに次の導入モードが用意されています。各モードは、アウトバウンド接続要件、導入場所、インストールプロセス、認証方法、使用可能なデータサービスとストレージサービス、課金方法の点で異なります。</block>
   <block id="e3795acf5a54c95b1889f3c7c929ab50" category="list-text">BlueXPは、Webベースのコンソールからクラウドサービスとしてアクセスできます。使用するBlueXPサービスに応じて、BlueXP管理者はハイブリッドクラウド環境内のデータを管理するためのコネクタを1つ以上作成します。</block>
   <block id="299192dda00d9cbb51cb176b72e6f464" category="paragraph">このモードでは、パブリックインターネットを介した暗号化されたデータ転送が使用されます。</block>
@@ -2660,7 +2649,6 @@
   <block id="90fed451e3dab076e7f87c02c10b6e5d" category="paragraph">このモードは通常、州や地方自治体や規制された企業で使用されます。</block>
   <block id="5120a32615b91a5de80fd01e90d53677" category="inline-xref">SaaSレイヤへのアウトバウンド接続の詳細については、こちらをご覧ください</block>
   <block id="26791add2e44035ab424c178d3f4c61f" category="paragraph"><block ref="4a9f480c757559738dc0bf80da949e99" category="inline-xref-macro-rx"></block>。</block>
-  <block id="9c39d5b8fd0bf20212456c9aceeaea5b" category="list-text">BlueXP Connectorはオンプレミスまたはクラウド（セキュアなリージョン、ソブリンクラウドリージョン、商用リージョン）にインストールされ、BlueXP SaaSレイヤへの_no_connectivityがあります。BlueXPには、SaaSレイヤではなくコネクタからアクセスできるWebベースのコンソールからローカルにアクセスします。</block>
   <block id="f7a5a85e5651d269f8be77a9a2e84792" category="inline-link">Azure IL6</block>
   <block id="55fbab9267d4e9aae7daef26b314226f" category="paragraph">次の表に、これらのモードの比較を示します。</block>
   <block id="2113372caa2625fc2eac79b5c72bd737" category="cell">BlueXPのSaaSレイヤへの接続が必要ですか？</block>
@@ -2751,18 +2739,13 @@
   <block id="999ae70b12514c648b606bf0f3afabcb" category="inline-link-macro">制限モードの使用を開始する方法について説明します</block>
   <block id="3adc000476556fe48061c952620b6394" category="list-text"><block ref="b25261838e688763c403e651d058df29" category="inline-link-macro-rx"></block>。</block>
   <block id="cdd00bf67dbaadd905bfd3009de402e0" category="list-text"><block ref="987610e2980e99ab837daf2502634d0e" category="inline-link-macro-rx"></block>。</block>
-  <block id="f6c6b4fd2db0ea773400bb3972e0cb6a" category="paragraph">プライベートモードでは、オンプレミスまたはクラウドにコネクタをインストールし、BlueXPを使用してハイブリッドクラウド全体のデータを管理できます。BlueXP SaaSレイヤへの接続はありません。</block>
   <block id="1ba924375f21d42237f7e64fdfaa9eb2" category="paragraph">次の図は、コネクタをクラウドにインストールし、Cloud Volumes ONTAP とオンプレミスのONTAP クラスタの両方を管理するプライベートモードの導入例を示しています。</block>
   <block id="a5fee7a4c74b489c2e8e8d39b686e4e8" category="inline-image-macro">この概念図は、コネクタを実行してWebベースのコンソールへのアクセスを提供し、オンプレミスのデータセンターでCloud Volumes ONTAP とAFF クラスタを管理しているクラウド内の仮想ネットワークを示しています。</block>
   <block id="a694033f641f0571740cee35545e0d7b" category="paragraph"><block ref="a694033f641f0571740cee35545e0d7b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="91e148a438d522c7bf22cb76961971bb" category="paragraph">一方、2つ目の図はプライベートモードの環境の例を示しています。この環境では、コネクタをオンプレミスにインストールし、オンプレミスのONTAP クラスタを管理し、サポートされているBlueXPデータサービスへのアクセスを提供します。</block>
   <block id="abe210b497cdf1c7a95420fde5e0a084" category="inline-image-macro">この概念図は、コネクタを実行してWebベースのコンソールやBlueXPデータサービスへのアクセスを提供し、オンプレミスのデータセンターのAFF クラスタを管理しているオンプレミスのデータセンターを示しています。</block>
   <block id="f93e5962b5e90d7eb1d0880c090f849c" category="paragraph"><block ref="f93e5962b5e90d7eb1d0880c090f849c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="310027a7e917a90953e50ed1339f3406" category="paragraph">BlueXPはプライベートモードで次のように機能します。</block>
-  <block id="f3c1a94d2912b274af9305a55f3a5898" category="list-text">プライベートモードでは、コネクタはクラウドまたはオンプレミスでサポートされます。</block>
-  <block id="353a8aa5f642372473dec3b281845de2" category="list-text">コネクタの手動インストールは、クラウドまたはオンプレミスの独自のLinuxホストでサポートされています。</block>
   <block id="7de085033718a90f09298783df66d7f7" category="list-text">コネクタソフトウェアを手動でアップグレードする必要があります。コネクターソフトウェアは、未定義の間隔でNetApp Support Site にパブリッシュされます。</block>
-  <block id="f455e039c0995560727cdaff463a454e" category="list-text">ユーザインターフェイスには、クラウドリージョンまたはオンプレミスに導入されているコネクタからアクセスできます。</block>
   <block id="ed7ea5a66dc5685a9fd16fc1534926fe" category="list-text">コネクタ仮想マシンに対してAPI呼び出しが実行されます。</block>
   <block id="9ebc1b25e2041947b9103da47cd1c08a" category="list-text">認証は、ローカルユーザの管理とアクセスを通じて提供されます。BlueXPのクラウドサービスでは認証が行われません。</block>
   <block id="9155ed0ad2860f7dbb98e01dbb6fa42d" category="list-text">クラウド環境でサポートされるBlueXPサービス</block>
@@ -2855,7 +2838,6 @@
   <block id="7e99ea34b714387479c29a20b4a89752" category="sidebar">標準モードで開始します</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="sidebar">BlueXPにログインします</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">コネクタを作成します</block>
-  <block id="4df40e141b0559f15db8f84f78aed013" category="sidebar">オンプレミス</block>
   <block id="f559abff8763b27adc86fdb8b373f2c7" category="sidebar">BlueXPにサブスクライブします</block>
   <block id="d0a7edff5cd82c23f3d1c18e0779ccbc" category="sidebar">次は何ができるか</block>
   <block id="2e765525323590e2ff4d6c84d224de36" category="sidebar">制限モードの使用を開始します</block>
@@ -3224,7 +3206,6 @@ AWS Marketplaceからコネクタを起動した場合、コネクタを手動�
   <block id="df29cf5b19d5f16c92a7f553f92e9d4a" category="list-text"><block ref="df29cf5b19d5f16c92a7f553f92e9d4a" category="inline-link-macro-rx"></block></block>
   <block id="57e58ed1cb42b3b5aaba112bc48563a6" category="list-text"><block ref="57e58ed1cb42b3b5aaba112bc48563a6" category="inline-link-macro-rx"></block></block>
   <block id="6563bdfaccc3983704cae5a10067fc4e" category="list-text"><block ref="6563bdfaccc3983704cae5a10067fc4e" category="inline-link-macro-rx"></block></block>
-  <block id="7f80da371418dd1762f659141a966f43" category="list-text"><block ref="7f80da371418dd1762f659141a966f43" category="inline-link-macro-rx"></block></block>
   <block id="6400bfdbde707064e9b4e7768b35a3f9" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="fa53da48b043041a5a8508c7d2d93104" category="inline-link-macro-rx"></block></block>
   <block id="e5d3b66eefdb2ac002721447f12c550c" category="summary">SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、いくつかの管理タスクを実行する際に複数のエンドポイントに通信します。BlueXPコンソールにアクセスするコンピュータは、これらのエンドポイントに接続する必要があります。</block>
   <block id="2ae779b46b9a3564f7c1c2e6ccea2296" category="paragraph">これらのエンドポイントは、BlueXPコンソールから特定の操作を実行するときに、ユーザのコンピュータからアクセスされます。また、コネクタや特定のBlueXPサービスのネットワーク要件も参照してください。詳細については、このページの最後にある関連リンクを参照してください。</block>
@@ -3540,7 +3521,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="b750da0ca2dca4110c6636dcb1ebbe6f" category="paragraph">BlueXPでクライアントシークレットを使用してMicrosoft Entra IDで認証できるようになりました。</block>
   <block id="93f1f0c1ede8583ffa25159579861501" category="inline-link">ネットアップによるID管理にMicrosoft Azure Active Directoryを使用する方法の詳細</block>
   <block id="b17de28cfe26993460dbe87832a64b2e" category="paragraph"><block ref="b17de28cfe26993460dbe87832a64b2e" category="inline-link-rx"></block></block>
-  <block id="8b0acfdcefc686d1057ba6e0a6e5660e" category="paragraph">コネクタをオンプレミスにインストールする場合は、Microsoft Entra IDでサービスプリンシパルを設定し、BlueXPに必要なAzureクレデンシャルを取得して、BlueXPにAzure権限を付与する必要があります。</block>
   <block id="33a300827c19fa9f3bf7b47e8b880c1a" category="paragraph">AzureアカウントまたはMicrosoft Entraサービスプリンシパルに割り当てることができるAzureカスタムロールを作成します。BlueXPはAzureで認証し、これらの権限を使用してコネクタインスタンスを作成します。</block>
   <block id="4dc29cf7d5ceac3415d2828b1afce709" category="list-text">Microsoft Entraサービスプリンシパルの詳細を入力します。このサービスプリンシパルには、特定の権限も必要です。</block>
   <block id="b4dba39cc2b8d5c6f4a03822fd76264e" category="list-text">[Active Directory service principal]*を選択して、必要な権限を付与するMicrosoft Entraサービスプリンシパルに関する情報を入力します。</block>
@@ -3730,7 +3710,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1以降のすべてのバージョン</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">Cloud Volumes ONTAPのアップグレードプロセスで使用</block>
   <block id="970c4756c8fc49a0c32d6a5b32d6d6f5" category="list-text">コネクタをインストールする前に、ホストにDocker Engineが必要です。</block>
-  <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">サポートされる最大バージョンは25.0.5です。</block>
   <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
   <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">Docker Engineの要件を更新して、コネクタでサポートされる最大バージョン（25.0.5）を指定しました。サポートされる最小バージョンは引き続き19.3.1です。</block>
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">コネクタホスト要件の表示</block>
@@ -3971,7 +3950,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">UbuntuにはDocker Engineが必要です。</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">2024年6月30日、RHEL 7はメンテナンス終了（EOM）に達し、CentOS 7はサポート終了（EOL）に達しました。NetAppは2024年6月30日にこれらのLinuxディストリビューションでのコネクタのサポートを停止しました。</block>
   <block id="547a1a61c710e2dc947389da0967d175" category="list-text">サポートされる最小バージョンは23.0.6です。</block>
-  <block id="7a96db7c574c0cfb888eceb8119d9bac" category="paragraph">23.0.6から25.0.5の間のバージョンのDocker Engineをインストールします。</block>
   <block id="13265d5e2f2489e0351d3bae9dc7d923" category="doc">BlueXPに登録またはログイン</block>
   <block id="400356f2a752e6926bd99ce1db45ee8c" category="paragraph">BlueXPにはWebベースのコンソールからアクセスできます。BlueXPの使用を開始するには、まず登録するか、NetAppサポートサイトのクレデンシャルまたは社内ディレクトリからのSSOクレデンシャルを使用してログインします。</block>
   <block id="71bf124b6b9da30db8c000241ce01691" category="paragraph">BlueXPに初めてアクセスするときは、次のいずれかの方法で登録またはログインできます。</block>
@@ -4002,7 +3980,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="0017322d56b9d155b01ac8380335c15b" category="list-text">に移動します<block ref="00e748787e3cd0352ad19292d67af7aa" category="inline-link-rx"></block></block>
   <block id="6c3a57872e006099844f13049e7b1891" category="list-text"><block ref="6c3a57872e006099844f13049e7b1891" category="inline-link-macro-rx"></block></block>
   <block id="00e6604adbc44c85a390ab929076d0bb" category="list-text">RHEL 8および9は、BlueXPを標準モード、制限モード、およびプライベートモードで使用している場合にサポートされます。</block>
-  <block id="f3e58ec45f13e79fe493e5ac40efdaef" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block></block>
   <block id="ce02a119fe20803f37d74f2f696ae608" category="list-text"><block ref="ce02a119fe20803f37d74f2f696ae608" category="inline-link-rx"></block></block>
   <block id="adf5c1237bee96f4b87ff5eb3fd3c25b" category="list-text"><block ref="adf5c1237bee96f4b87ff5eb3fd3c25b" category="inline-link-rx"></block></block>
   <block id="5f47d3df7f8a6f7d2b2dc0a0630af052" category="list-text"><block ref="5f47d3df7f8a6f7d2b2dc0a0630af052" category="inline-link-rx"></block></block>
@@ -4021,13 +3998,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.2xlarge をお勧めします。</block>
   <block id="021caa7094e7de94c50c2e35da292351" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。Standard_D8s_v3 をお勧めします。</block>
   <block id="bff17a7a57b9d5cdc97a4f823a72230f" category="list-text">上記の CPU と RAM の要件を満たすインスタンスタイプ。n2-standard-8を推奨します。</block>
-  <block id="8abbe747192e82bfa2032f017a838560" category="cell">RHELのバージョン</block>
-  <block id="a364bd44d579f5e34c65860ec7315249" category="cell">サポートされているPodmanバージョン</block>
-  <block id="43af2bbad49057d23c6e4820111aa078" category="paragraph">RHEL 8.6~8.9</block>
-  <block id="49eebb445dc65a643c84c0a3f87edc63" category="paragraph">Podman 4.6.1</block>
-  <block id="c48cc40f38f8bc361e9a53b83a812d48" category="paragraph">RHEL 8.10</block>
-  <block id="da6353ecfbed18a800723b5888858632" category="paragraph">Podman 4.6.1および4.9.4</block>
-  <block id="52ee9eded79e01170d5ef36dbb0f640a" category="paragraph">RHEL 9.1から9.3</block>
   <block id="91a03852a4fcc00d6d0d7b56befab967" category="inline-xref">BlueXP  がサポートするPodmanバージョンを表示する</block>
   <block id="ab8cca64c499d5f050e52a06f69e6322" category="paragraph">サポートされているバージョンのPodmanをインストールします。<block ref="3c15003d1ebf129cb6cebdaf6ae30fe9" category="inline-xref-macro-rx"></block>です。</block>
   <block id="37ec26cfa2b5ba215786c921633974f0" category="paragraph">&lt;version&gt;は、インストールするPodmanのサポートされているバージョンです。<block ref="3c15003d1ebf129cb6cebdaf6ae30fe9" category="inline-xref-macro-rx"></block>です。</block>
@@ -4045,7 +4015,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">*インスタンスタイプを選択*：リージョンの可用性に応じて、サポートされているインスタンスタイプ（t3.2xlargeを推奨）のいずれかを選択します。</block>
   <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">現時点では、Connector、BlueXP  デジタルウォレット、BlueXP  のコピーと同期、BlueXP  のバックアップとリカバリ、BlueXP  階層化のBlueXP  機能とサービスに関する通知がEメールで送信されます。サービスは今後のリリースで追加される予定です。</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">コネクタ3.9.43</block>
-  <block id="be1b4db310d7b6590c7af9eb4751b6ce" category="paragraph">このリリースには、マイナーな改善、バグの修正、およびAzureの新しい権限の要件が含まれています。</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">3.9.43リリースは、標準モードと制限モードで使用できます。</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">CPUおよびRAMの要件の更新</block>
   <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">信頼性を高め、BlueXP  とコネクタのパフォーマンスを向上させるために、コネクタ仮想マシン用に追加のCPUとRAMが必要になりました。</block>
@@ -4199,7 +4168,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="31c59436a743feb0e198d549a11637b0" category="section-title">2023年5月12日</block>
   <block id="8b5a7355367fbfe0f4039d610b872ea2" category="section-title">2023年3月23日</block>
   <block id="cb73adae14da8ca1c572c8494ce45515" category="section-title">2023年1月5日</block>
-  <block id="22e645000db07af6682e1c6517a3c82a" category="section-title">2024年8月22日</block>
   <block id="335b63351c39337de35ede84c3852d4d" category="section-title">コネクタ3.9.43パッチ</block>
   <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">Cloud Volumes ONTAP 9.15.1リリースをサポートするようにコネクタを更新しました。</block>
   <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">このリリースのサポートには、Azure用コネクタポリシーの更新が含まれています。ポリシーに次の権限が追加されました。</block>
@@ -4208,7 +4176,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>です。</block>
   <block id="649038b676315e0ebdd7132fcd5362c2" category="summary">制限モードまたはプライベートモードでBlueXP  を使用する場合は、WebベースのコンソールにユーザがアクセスするためのCA署名証明書をインストールします。</block>
   <block id="76b215b1722d5e63e6379d518b352edf" category="doc">Webベースのコンソールアクセス用のCA署名証明書のインストール</block>
-  <block id="40e7815d87fea23da90e3571602f7f78" category="paragraph">BlueXP  を制限モードまたはプライベートモードで使用する場合、クラウドリージョンまたはオンプレミスに導入されているコネクタ仮想マシンからユーザーインターフェイスにアクセスできます。デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、コネクタで実行されているWebベースのコンソールへのセキュアなHTTPSアクセスを提供します。ビジネスで必要な場合は、認証局（CA）によって署名された証明書をインストールできます。これにより、自己署名証明書よりもセキュリティ保護が強化されます。証明書をインストールしたあと、BlueXP  では、ユーザがWebベースのコンソールにアクセスするときにCA署名証明書が使用されます。</block>
   <block id="e7b76852295808494e2734a85e108067" category="paragraph">BlueXPでは、CA署名証明書を使用してセキュアなHTTPSアクセスが提供されるようになりました。次の図は、セキュアアクセス用に設定されたコネクタを示しています。</block>
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">Cloud Volumes ONTAP 9.15.1リリースの詳細</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
@@ -4224,4 +4191,77 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">*インスタンスタイプ*：リージョンの可用性に応じて、RAMとCPUの要件を満たすインスタンスタイプを選択します（t3.2xlargeが事前に選択され、推奨されます）。</block>
   <block id="2ff5664491ece284c069195a204d44c0" category="list-text">コネクタインスタンスに必要な接続方法（SSH、HTTP、HTTPS）を有効にするセキュリティグループ設定を指定します。</block>
   <block id="f04e7bde7d47a749e6ba7643ae027953" category="paragraph"><block ref="f04e7bde7d47a749e6ba7643ae027953" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="list-text">9.1～9.4</block>
+  <block id="3b1bfd730b4217c8855d7ce0b155acdc" category="list-text">サポートされる最大バージョンは26.0.0です。</block>
+  <block id="c4924fa73c6ac3240841a8329a4a87a2" category="paragraph">Docker Engine 26は、コネクタの3.9.44リリース以降の_new_connectorインストールでサポートされています。</block>
+  <block id="c71ee68b655a1c2de6162e6ea2837535" category="list-text">Red Hat Enterprise LinuxにはPodmanが必要です。</block>
+  <block id="3ee8b338aa466b632e26ed7928d4b063" category="list-text">Podmanバージョン4.6.1または4.9.4が必要</block>
+  <block id="f99019d3e8e3a4daa34cad5d0e1cccc2" category="inline-xref">BlueXP  がサポートするDocker Engineのバージョンを表示する</block>
+  <block id="6abb84cd1ebbb51102cb3ca371b8a8ca" category="paragraph">サポートされているバージョンのDocker Engineをインストールします。<block ref="2fdf32031e9fd2d8e629141f098d92fe" category="inline-xref-macro-rx"></block>です。</block>
+  <block id="b425a48ec3cd2a8cf0d731578b9ac8cb" category="paragraph">制限モードまたはプライベートモードを使用している場合、BlueXP  はトラフィック、通信、データのフローを禁止しますが、お客様の環境（オンプレミスとクラウド内）が必要な規制に準拠していることを確認する責任はお客様にあります。</block>
+  <block id="ad8ea852a1d73dd8dbfac3b19dd09403" category="list-text">BlueXP  Connectorはオンプレミスまたはクラウド（セキュアリージョン、ソブリンクラウドリージョン、または商用リージョン）にインストールされ、BlueXP  SaaSレイヤへの接続は_no_connectivityです。BlueXPには、SaaSレイヤではなくコネクタからアクセスできるWebベースのコンソールからローカルにアクセスします。</block>
+  <block id="95f7a3f8f1594da8c9dbd6c9cb3ee51e" category="paragraph">プライベートモードでは、オンプレミスまたはクラウドにコネクタをインストールし、BlueXP  を使用してハイブリッドクラウド全体のデータを管理できます。BlueXP SaaSレイヤへの接続はありません。</block>
+  <block id="abf28f2fb4149a9c246bdad2c7003d6f" category="paragraph">一方、2つ目の図はプライベートモードの導入例を示しています。プライベートモードでは、コネクタをオンプレミスにインストールし、オンプレミスのONTAPクラスタを管理し、サポートされているBlueXP  データサービスへのアクセスを提供します。</block>
+  <block id="9aa917589a67807ae517fb9273102cfc" category="list-text">プライベートモードでは、コネクタはクラウドまたはオンプレミスでサポートされます。</block>
+  <block id="d807dd72163fd15a4c8f1c109e3e464f" category="list-text">コネクタの手動インストールは、クラウドまたはオンプレミスの独自のLinuxホストでサポートされています。</block>
+  <block id="93c8aa442d9657958e3a6b431149b6c7" category="list-text">ユーザインターフェイスには、クラウドリージョンまたはオンプレミスに導入されているコネクタからアクセスできます。</block>
+  <block id="293b0d6507d1bd7abf464948b7ee72e3" category="list-text">AWS、Azure、Google Cloud、オンプレミスのいずれであっても、ストレージを検出、導入、管理できます。</block>
+  <block id="697e19b973c6dfabc32eda21853b990c" category="inline-link">コネクタをオンプレミスにインストールしてセットアップする</block>
+  <block id="66579202619073ba384ce27dfcd8dff1" category="list-text"><block ref="66579202619073ba384ce27dfcd8dff1" category="inline-link-rx"></block></block>
+  <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024年9月9日</block>
+  <block id="8edd5bd442ff2f098d5cd9a411e19444" category="paragraph">標準リージョンのポリシー#2から権限が削除されました。これは、BlueXP  がBlueXP  エッジキャッシングとKubernetesクラスタの検出と管理をサポートしなくなったためです。</block>
+  <block id="233590199dce2cbcf120d8b311c92db1" category="example-title">ポリシーから削除された権限を表示する</block>
+  <block id="8c16b137acb60eb3b351f65f0f551d50" category="paragraph">BlueXP  ではKubernetesクラスタの検出と管理がサポートされなくなったため、次の権限がJSONポリシーから削除されました。</block>
+  <block id="317850f59220c738a6550c8cc0fbd9c5" category="list-text">Microsoft .ContainerService/managedClusters/listClusterUserCredential/action</block>
+  <block id="42f3fa961e42affb80862a782c9341af" category="list-text">Microsoft .ContainerService/managedClusters/read</block>
+  <block id="db311ee703dc0562542410a07692686e" category="paragraph">コネクタがオンプレミスにインストールされている場合、この認証方法は使用できません。AWSキーを使用する必要があります。</block>
+  <block id="18eeee44961787b52080a2c714b406a6" category="paragraph">コネクタがオンプレミスにインストールされている場合は、この認証方法を使用する必要があります。IAMロールは使用できません。</block>
+  <block id="0cd8313934e43905fe55906d112bfcba" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションの1つは、BlueXP  から直接AWSでコネクタを作成することです。BlueXPからAWSでコネクタを作成するには、ネットワークを設定し、AWS権限を準備してからコネクタを作成する必要があります。</block>
+  <block id="e74b1c05a68d1410f2fdc6be60f433dd" category="inline-link-macro">コネクタの概要</block>
+  <block id="a69707f32a14657a4148714e0858cc16" category="list-text">が必要です<block ref="265bf4041c284cedb5265913609f75cf" category="inline-link-macro-rx"></block>。</block>
+  <block id="0f6f328a496422180419aea5d68c3d2b" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションの1つは、AWSで実行されているLinuxホストにコネクタソフトウェアを手動でインストールすることです。独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、AWS権限を準備してコネクタをインストールし、準備した権限を指定する必要があります。</block>
+  <block id="bde99503b08825a9b6290c21b6ff2424" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。利用可能なインストールオプションの1つは、AWS MarketplaceからAWSでコネクタを直接作成することです。AWS Marketplaceからコネクタを作成するには、ネットワークを設定し、AWS権限を準備し、インスタンス要件を確認してから、コネクタを作成する必要があります。</block>
+  <block id="f83b4f8c16705e26d282f2cb4ed19e78" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションの1つは、BlueXP  からAzureでコネクタを直接作成することです。BlueXPからAzureでコネクタを作成するには、ネットワークを設定し、Azureの権限を準備してから、コネクタを作成する必要があります。</block>
+  <block id="5cb6efc5332c23d8c22978f3559aa613" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションの1つは、Azureで実行されているLinuxホストにコネクタソフトウェアを手動でインストールすることです。独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、Azureの権限を準備してから、コネクタをインストールし、準備した権限を指定する必要があります。</block>
+  <block id="1017ad8551dc7209fead1d996608e2b5" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。利用可能なインストールオプションの1つは、Azure MarketplaceからAzureでコネクタを直接作成することです。Azure Marketplaceからコネクタを作成するには、ネットワークを設定し、Azureの権限を準備し、インスタンス要件を確認してからコネクタを作成する必要があります。</block>
+  <block id="9a63fba43be3e1df0de44c749000ffc5" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションには、BlueXP  から直接AWSでコネクタを作成するか、gcloudを使用してコネクタを作成することがあります。BlueXPまたはgcloudを使用してGoogle Cloudでコネクタを作成するには、ネットワークを設定し、Google Cloud権限を準備し、Google Cloud APIを有効にしてから、コネクタを作成する必要があります。</block>
+  <block id="455e0d1571fc687b88776ecc58050d7b" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションの1つは、Google Cloudで実行されているLinuxホストにコネクタソフトウェアを手動でインストールすることです。独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、Google Cloudの権限を準備し、APIを有効にしてから、コネクタをインストールし、準備した権限を指定する必要があります。</block>
+  <block id="2645e78b8215441741aa8ea067e0db45" category="summary">コネクタをオンプレミスにインストールし、ログインしてBlueXP  アカウントで動作するように設定します。</block>
+  <block id="e080a3173dc73a079c4fd120abb491e0" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。コネクタをオンプレミスで実行するには、ホストの要件を確認し、ネットワークを設定し、クラウドの権限を準備し、コネクタをインストールし、コネクタを設定してから、準備した権限を指定する必要があります。</block>
+  <block id="5ed8d571b208e6fe2728f122d3340d93" category="paragraph">コネクタをオンプレミスにインストールする場合は、必要な権限を持つIAMユーザのアクセスキーを追加して、BlueXP  にAWS権限を付与する必要があります。</block>
+  <block id="7247a245f2594a184b7ed7669be8c32e" category="paragraph">コネクタがオンプレミスにインストールされている場合は、Microsoft Entra IDでサービスプリンシパルを設定し、BlueXP  が必要とするAzureクレデンシャルを取得して、BlueXP  にAzure権限を付与する必要があります。</block>
+  <block id="d73fea737459cd596b8a61a9c640bf6f" category="paragraph">コネクタソフトウェアをオンプレミスの既存のLinuxホストにダウンロードしてインストールします。</block>
+  <block id="efa5b8441900c9d334fd44b2a0480c25" category="paragraph">標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。(また、コネクタがオンプレミスにインストールされている場合、制限モードはサポートされません)。</block>
+  <block id="703afaf08bc749a3a4cb4aa82e3edc43" category="paragraph">BlueXP  を制限モードまたはプライベートモードで使用する場合、クラウドリージョンまたはオンプレミスに導入されているコネクタ仮想マシンからユーザーインターフェイスにアクセスできます。デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、コネクタで実行されているWebベースのコンソールへのセキュアなHTTPSアクセスを提供します。ビジネスで必要な場合は、認証局（CA）によって署名された証明書をインストールできます。これにより、自己署名証明書よりもセキュリティ保護が強化されます。証明書をインストールしたあと、BlueXP  では、ユーザがWebベースのコンソールにアクセスするときにCA署名証明書が使用されます。</block>
+  <block id="1dabb4ec55ee6a1ed060669969044936" category="paragraph">プライベートモードでは、コネクタを自社のLinuxホストに手動でインストールすることで、コネクタをオンプレミスまたはクラウドにインストールできます。</block>
+  <block id="b926732963e0a721fc9fc28ea36c9483" category="inline-link-macro">オンプレミスでコネクタを作成する方法</block>
+  <block id="159a6de5191a13d6941603c4b5854079" category="list-text"><block ref="159a6de5191a13d6941603c4b5854079" category="inline-link-macro-rx"></block></block>
+  <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">コネクタ3.9.44</block>
+  <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">このリリースでは、Docker Engine 26のサポート、SSL証明書の強化、およびバグの修正が含まれています。</block>
+  <block id="8e05f2728c2c4042bd5165b33b122aa7" category="paragraph">3.9.44リリースは、標準モードと制限モードで使用できます。</block>
+  <block id="000a9ac711d57d6c617331857e9c3100" category="section-title">Docker Engineのサポート26</block>
+  <block id="849eb58f322918eda95ee3acd8e4497d" category="paragraph">Docker Engineは、Ubuntu 22.04 LTSにコネクタをインストールする際に必要なコンテナオーケストレーションツールです。</block>
+  <block id="4391ac6ef3fe7c6a1cb6b50f0df238d3" category="paragraph">コネクタの3.9.44リリース以降では、_new_connectorのインストールでDocker Engine 26がサポートされるようになりました。</block>
+  <block id="ff42db58a1b88b5b9aedbcedc8daa613" category="paragraph">サポートされているDocker Engineバージョンの最新リストは次のとおりです。</block>
+  <block id="15ba9bb026c53a148756b12826c46f8b" category="section-title">ローカルUIアクセス用のSSL証明書が更新されました</block>
+  <block id="b96edd49155123375756b26e44b38121" category="paragraph">BlueXP  を制限モードまたはプライベートモードで使用する場合、クラウドリージョンまたはオンプレミスに導入されているコネクタ仮想マシンからユーザーインターフェイスにアクセスできます。デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、コネクタで実行されているWebベースのコンソールへのセキュアなHTTPSアクセスを提供します。</block>
+  <block id="2737440e84d6c8a13a097fa583a6e67a" category="paragraph">このリリースでは、新規および既存のコネクタのSSL証明書に変更を加えました。</block>
+  <block id="6cb49682fd1f125736d18f28cbce1f23" category="list-text">証明書の共通名が短いホスト名と一致するようになりました。</block>
+  <block id="982638142d38ac9441736ff5402f4e2a" category="list-text">Certificate Subject Alternative Nameは、ホストマシンのFully Qualified Domain Name（FQDN；完全修飾ドメイン名）です。</block>
+  <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">RHEL 9.4のサポート</block>
+  <block id="70a7dd17e18fef168a9d377653df73ca" category="paragraph">BlueXP  を標準モードまたは制限モードで使用している場合、BlueXP  でRed Hat Enterprise Linux 9.4ホストへのコネクタのインストールがサポートされるようになりました。</block>
+  <block id="2ba7632ac1d83ea5ae8e4c11321eb1d3" category="paragraph">RHEL 9.4のサポートは、コネクタの3.9.40リリースから開始されました。</block>
+  <block id="d624d762d93c33c9dde16183d90a90e0" category="paragraph">標準モードおよび制限モードでサポートされるRHELのバージョンリストに、次のものが追加されました。</block>
+  <block id="7a8260cd47a221886a3337b85ff2ec45" category="section-title">すべてのバージョンのRHELでのPodman 4.9.4のサポート</block>
+  <block id="3a5941c5e1e3e3c4cb703b2d9d78963c" category="paragraph">Podman 4.9.4は、Red Hat Enterprise Linuxのすべてのサポート対象バージョンでサポートされるようになりました。バージョン4.9.4は、これまでRHEL 8.10でのみサポートされていました。</block>
+  <block id="d0f584a070c78efb8fff64b377dbf729" category="paragraph">サポートされるPodmanバージョンの更新されたリストには、Red Hat Enterprise Linuxホストでの4.6.1および4.9.4が含まれています。</block>
+  <block id="fef89f8fc6e9d583565954d5abe02ec4" category="paragraph">コネクタの3.9.40リリース以降のRHELホストにはPodmanが必要です。</block>
+  <block id="842ce6e5c3bdb8cf81ffbd4f90a57649" category="section-title">AWSとAzureの権限が更新されました</block>
+  <block id="c1f46e9419a384f29f23682739cc8d58" category="paragraph">コネクタのAWSポリシーとAzureポリシーを更新し、不要になった権限を削除しました。この権限は、BlueXP  エッジのキャッシングとKubernetesクラスタの検出と管理に関連していましたが、2024年8月にサポートが終了しました。</block>
+  <block id="d201eff65f4516de2c618efea5a7edde" category="inline-link">AWSポリシーの変更点を確認する</block>
+  <block id="b0c050c316c776928b8b8bc0c327449e" category="list-text"><block ref="aff0e765a5d2f4e281feabd61d1dd500" category="inline-link-rx"></block>です。</block>
+  <block id="2f036a4385aa02ab7c67e7932bd4036f" category="inline-link">Azureポリシーの変更点を確認</block>
+  <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>です。</block>
+  <block id="d30916c53949113e97a8033f02e41364" category="paragraph">このリリースには、マイナーな改善とバグ修正が含まれています。</block>
+  <block id="f0e69ccbb7ad96f546f7924206944bfa" category="sidebar">オンプレミス</block>
 </blocks>

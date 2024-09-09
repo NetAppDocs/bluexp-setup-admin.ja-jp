@@ -33,7 +33,7 @@ BlueXP Connectorは次のLinuxオペレーティングシステムでサポー�
 * Red Hat Enterprise Linux の場合
 +
 ** 8.6～8.10
-** 9.1から9.3
+** 9.1～9.4
 
 
 
@@ -54,7 +54,7 @@ Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux の場合
 +
 ** 8.6～8.10
-** 9.1から9.3
+** 9.1～9.4
 
 
 
@@ -154,7 +154,7 @@ RHEL 7またはCentOS 7で既存のコネクタを実行している場合、オ
 ====
 .標準モード
 --
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスにインストールしてセットアップします"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスにインストールしてセットアップする"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["AWSにコネクタを手動でインストールする"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Azureへのコネクタの手動インストール"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Google Cloudにコネクタを手動でインストールする"]

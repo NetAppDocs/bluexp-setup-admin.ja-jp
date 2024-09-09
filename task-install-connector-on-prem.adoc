@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-connector-on-prem.html 
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: コネクタをオンプレミスにインストールし、ログインしてBlueXPアカウントと連携するように設定します。 
+summary: コネクタをオンプレミスにインストールし、ログインしてBlueXP  アカウントで動作するように設定します。 
 ---
-= コネクタをオンプレミスにインストールしてセットアップします
+= コネクタをオンプレミスにインストールしてセットアップする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,12 @@ summary: コネクタをオンプレミスにインストールし、ログイ�
 
 
 [role="lead"]
-コネクタをオンプレミスにインストールし、ログインしてBlueXPアカウントと連携するように設定します。
+コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。コネクタをオンプレミスで実行するには、ホストの要件を確認し、ネットワークを設定し、クラウドの権限を準備し、コネクタをインストールし、コネクタを設定してから、準備した権限を指定する必要があります。
 
 .作業を開始する前に
-確認が必要です link:reference-limitations.html["コネクタの制限"]。
+* が必要ですlink:concept-connectors.html["コネクタの概要"]。
+* 確認が必要です link:reference-limitations.html["コネクタの制限"]。
+
 
 
 
@@ -33,7 +35,7 @@ summary: コネクタをオンプレミスにインストールし、ログイ�
 * Red Hat Enterprise Linux の場合
 +
 ** 8.6～8.10
-** 9.1から9.3
+** 9.1～9.4
 +
 ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 
@@ -66,37 +68,12 @@ BlueXPのユースケース `/opt` をインストールするには `/opt/appli
 コンテナオーケストレーションツール:: オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 +
 --
-* Red Hat Enterprise Linux 8および9にはPodmanが必要です。
-+
-[cols="50a,50a"]
-|===
-| RHELのバージョン | サポートされているPodmanバージョン 
-
-
- a| 
-RHEL 8.6~8.9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8.10
- a| 
-Podman 4.6.1および4.9.4
-
-
-
- a| 
-RHEL 9.1から9.3
- a| 
-Podman 4.6.1
-
-|===
+* Red Hat Enterprise LinuxにはPodmanが必要です。
 +
 Podmanでは、次の前提条件を満たす必要があります。
 
 +
+** Podmanバージョン4.6.1または4.9.4が必要
 ** podman.socketサービスを有効にして開始する必要があります
 ** Python3がインストールされている必要があります
 ** podman-composeパッケージバージョン1.0.6がインストールされている必要があります。
@@ -106,7 +83,10 @@ Podmanでは、次の前提条件を満たす必要があります。
 * UbuntuにはDocker Engineが必要です。
 +
 ** サポートされる最小バージョンは23.0.6です。
-** サポートされる最大バージョンは25.0.5です。
+** サポートされる最大バージョンは26.0.0です。
++
+Docker Engine 26は、コネクタの3.9.44リリース以降の_new_connectorインストールでサポートされています。
+
 
 
 
@@ -212,7 +192,7 @@ NOTE: を使用する `dnf install` コマンドは、PATH環境変数にpodman-
 --
 .Docker Engine の略
 --
-23.0.6から25.0.5の間のバージョンのDocker Engineをインストールします。
+サポートされているバージョンのDocker Engineをインストールします。<<podman-versions,BlueXP  がサポートするDocker Engineのバージョンを表示する>>です。
 
 .手順
 . Docker Engineをインストールします。
@@ -399,7 +379,7 @@ TIP: Google Cloudではない理由コネクタがオンプレミスにインス
 ====
 .AWS
 --
-コネクタをオンプレミスにインストールする場合は、必要な権限を持つIAMユーザのアクセスキーを追加して、BlueXPにAWS権限を設定する必要があります。
+コネクタをオンプレミスにインストールする場合は、必要な権限を持つIAMユーザのアクセスキーを追加して、BlueXP  にAWS権限を付与する必要があります。
 
 コネクタがオンプレミスにインストールされている場合は、この認証方法を使用する必要があります。IAMロールは使用できません。
 
@@ -433,7 +413,7 @@ TIP: Google Cloudではない理由コネクタがオンプレミスにインス
 --
 .Azure
 --
-コネクタをオンプレミスにインストールする場合は、Microsoft Entra IDでサービスプリンシパルを設定し、BlueXPに必要なAzureクレデンシャルを取得して、BlueXPにAzure権限を付与する必要があります。
+コネクタがオンプレミスにインストールされている場合は、Microsoft Entra IDでサービスプリンシパルを設定し、BlueXP  が必要とするAzureクレデンシャルを取得して、BlueXP  にAzure権限を付与する必要があります。
 
 .ロールベースアクセス制御用のMicrosoft Entraアプリケーションの作成
 . Active Directoryアプリケーションを作成し、そのアプリケーションをロールに割り当てる権限がAzureにあることを確認します。

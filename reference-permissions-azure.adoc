@@ -152,8 +152,6 @@ BlueXPがAzureでConnector VMを起動すると、そのAzureサブスクリプ�
                     "Microsoft.Network/networkSecurityGroups/securityRules/write",
                     "Microsoft.Network/applicationSecurityGroups/delete",
                     "Microsoft.Network/networkSecurityGroups/securityRules/delete",
-                    "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action",
-                    "Microsoft.ContainerService/managedClusters/read",
                     "Microsoft.Synapse/workspaces/write",
                     "Microsoft.Synapse/workspaces/read",
                     "Microsoft.Synapse/workspaces/delete",
@@ -735,6 +733,16 @@ BlueXP階層化のセットアップ時に、コネクタは次のAPI要求を�
 == 変更ログ
 
 権限が追加および削除されると、以下のセクションにそれらの権限が表示されます。
+
+
+
+=== 2024年9月9日
+
+BlueXP  ではKubernetesクラスタの検出と管理がサポートされなくなったため、次の権限がJSONポリシーから削除されました。
+
+* Microsoft .ContainerService/managedClusters/listClusterUserCredential/action
+* Microsoft .ContainerService/managedClusters/read
+
 
 
 

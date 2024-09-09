@@ -55,7 +55,7 @@ AWSまたはAzure Marketplaceからコネクタを導入する場合、イメー
 * Red Hat Enterprise Linux の場合
 +
 ** 8.6～8.10
-** 9.1から9.3
+** 9.1～9.4
 +
 ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 
@@ -96,37 +96,12 @@ BlueXPのユースケース `/opt` をインストールするには `/opt/appli
 コンテナオーケストレーションツール:: オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 +
 --
-* Red Hat Enterprise Linux 8および9にはPodmanが必要です。
-+
-[cols="50a,50a"]
-|===
-| RHELのバージョン | サポートされているPodmanバージョン 
-
-
- a| 
-RHEL 8.6~8.9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8.10
- a| 
-Podman 4.6.1および4.9.4
-
-
-
- a| 
-RHEL 9.1から9.3
- a| 
-Podman 4.6.1
-
-|===
+* Red Hat Enterprise LinuxにはPodmanが必要です。
 +
 Podmanでは、次の前提条件を満たす必要があります。
 
 +
+** Podmanバージョン4.6.1または4.9.4が必要
 ** podman.socketサービスを有効にして開始する必要があります
 ** Python3がインストールされている必要があります
 ** podman-composeパッケージバージョン1.0.6がインストールされている必要があります。
@@ -136,7 +111,10 @@ Podmanでは、次の前提条件を満たす必要があります。
 * UbuntuにはDocker Engineが必要です。
 +
 ** サポートされる最小バージョンは23.0.6です。
-** サポートされる最大バージョンは25.0.5です。
+** サポートされる最大バージョンは26.0.0です。
++
+Docker Engine 26は、コネクタの3.9.44リリース以降の_new_connectorインストールでサポートされています。
+
 
 
 
@@ -244,7 +222,7 @@ NOTE: を使用する `dnf install` コマンドは、PATH環境変数にpodman-
 --
 .Docker Engine の略
 --
-23.0.6から25.0.5の間のバージョンのDocker Engineをインストールします。
+サポートされているバージョンのDocker Engineをインストールします。<<podman-versions,BlueXP  がサポートするDocker Engineのバージョンを表示する>>です。
 
 .手順
 . Docker Engineをインストールします。

@@ -41,7 +41,7 @@ BlueXPアカウント管理者は、クラウドまたはオンプレミスの�
 * link:concept-install-options-aws.html["AWS でコネクタを作成する方法について説明します"]
 * link:concept-install-options-azure.html["Azure でコネクタを作成する方法について説明します"]
 * link:concept-install-options-google.html["Google Cloud でコネクタを作成する方法について説明します"]
-* link:task-install-connector-on-prem.html["オンプレミスでコネクタを作成する方法について説明します"]
+* link:task-install-connector-on-prem.html["オンプレミスでコネクタを作成する方法"]
 
 
 [role="quick-margin-para"]

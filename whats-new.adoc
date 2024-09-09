@@ -18,6 +18,82 @@ BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、ク�
 
 
 
+== 2024年9月9日
+
+
+
+=== コネクタ3.9.44
+
+このリリースでは、Docker Engine 26のサポート、SSL証明書の強化、およびバグの修正が含まれています。
+
+3.9.44リリースは、標準モードと制限モードで使用できます。
+
+
+
+==== Docker Engineのサポート26
+
+Docker Engineは、Ubuntu 22.04 LTSにコネクタをインストールする際に必要なコンテナオーケストレーションツールです。
+
+コネクタの3.9.44リリース以降では、_new_connectorのインストールでDocker Engine 26がサポートされるようになりました。
+
+サポートされているDocker Engineバージョンの最新リストは次のとおりです。
+
+* サポートされる最小バージョンは23.0.6です。
+* サポートされる最大バージョンは26.0.0です。
+
+
+
+
+==== ローカルUIアクセス用のSSL証明書が更新されました
+
+BlueXP  を制限モードまたはプライベートモードで使用する場合、クラウドリージョンまたはオンプレミスに導入されているコネクタ仮想マシンからユーザーインターフェイスにアクセスできます。デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、コネクタで実行されているWebベースのコンソールへのセキュアなHTTPSアクセスを提供します。
+
+このリリースでは、新規および既存のコネクタのSSL証明書に変更を加えました。
+
+* 証明書の共通名が短いホスト名と一致するようになりました。
+* Certificate Subject Alternative Nameは、ホストマシンのFully Qualified Domain Name（FQDN；完全修飾ドメイン名）です。
+
+
+
+
+=== RHEL 9.4のサポート
+
+BlueXP  を標準モードまたは制限モードで使用している場合、BlueXP  でRed Hat Enterprise Linux 9.4ホストへのコネクタのインストールがサポートされるようになりました。
+
+RHEL 9.4のサポートは、コネクタの3.9.40リリースから開始されました。
+
+標準モードおよび制限モードでサポートされるRHELのバージョンリストに、次のものが追加されました。
+
+* 8.6～8.10
+* 9.1～9.4
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
+
+
+
+=== すべてのバージョンのRHELでのPodman 4.9.4のサポート
+
+Podman 4.9.4は、Red Hat Enterprise Linuxのすべてのサポート対象バージョンでサポートされるようになりました。バージョン4.9.4は、これまでRHEL 8.10でのみサポートされていました。
+
+サポートされるPodmanバージョンの更新されたリストには、Red Hat Enterprise Linuxホストでの4.6.1および4.9.4が含まれています。
+
+コネクタの3.9.40リリース以降のRHELホストにはPodmanが必要です。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
+
+
+
+=== AWSとAzureの権限が更新されました
+
+コネクタのAWSポリシーとAzureポリシーを更新し、不要になった権限を削除しました。この権限は、BlueXP  エッジのキャッシングとKubernetesクラスタの検出と管理に関連していましたが、2024年8月にサポートが終了しました。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log["AWSポリシーの変更点を確認する"]です。
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log["Azureポリシーの変更点を確認"]です。
+
+
+
+
 == 2024年8月22日
 
 
@@ -48,7 +124,7 @@ Cloud Volumes ONTAP 9.15.1リリースをサポートするようにコネクタ
 
 === コネクタ3.9.43
 
-このリリースには、マイナーな改善、バグの修正、およびAzureの新しい権限の要件が含まれています。
+このリリースには、マイナーな改善とバグ修正が含まれています。
 
 3.9.43リリースは、標準モードと制限モードで使用できます。
 
