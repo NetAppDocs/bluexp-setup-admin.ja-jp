@@ -68,12 +68,10 @@ BlueXPのユースケース `/opt` をインストールするには `/opt/appli
 このスペースはBlueXPの `/var` DockerやPodmanは、このディレクトリ内にコンテナを作成するように設計されているためです。具体的には、 `/var/lib/containers/storage` ディレクトリ。このスペースでは外部マウントやシンボリックリンクは使用できません。
 
 --
-
-
-[[podman-versions]]
 コンテナオーケストレーションツール:: オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 +
 --
+[[podman-versions]]
 * Red Hat Enterprise LinuxにはPodmanが必要です。
 +
 Podmanでは、次の前提条件を満たす必要があります。
@@ -88,12 +86,18 @@ Podmanでは、次の前提条件を満たす必要があります。
 
 * UbuntuにはDocker Engineが必要です。
 +
-** サポートされる最小バージョンは23.0.6です。
-** サポートされる最大バージョンは26.0.0です。
+[cols="3*"]
+|===
+| コネクタのバージョン | Docker Engineの最小バージョン | Docker Engineの最大バージョン 
+
+
+| _New_Connectorのインストール（3.9.44以降） | 23.0.6 | 26.0.0 
+
+
+| 3.9.44リリースより前のリリースで作成されたコネクタ | 23.0.6 | 25.0.5 
+|===
 +
-Docker Engine 26は、コネクタの3.9.44リリース以降の_new_connectorインストールでサポートされています。
-
-
+https://docs.docker.com/engine/install/["インストール手順を確認します"^]
 
 
 
