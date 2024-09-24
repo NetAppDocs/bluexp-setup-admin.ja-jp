@@ -188,7 +188,6 @@
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">詳細をご確認ください</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">BlueXP設定を変更する前にコネクタを作成する必要があります。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
   <block id="c49ff7d7009f9d4727b2b25afa496418" category="section-title">HTTPS 証明書をインストールします</block>
-  <block id="08547be5df7da5ef1e22244cbdbfd5d6" category="paragraph">セキュアなアクセスのために、 CA によって署名された証明書をインストールします。</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">BlueXPコンソールの右上で、[設定]アイコンを選択し、*[HTTPSセットアップ]*を選択します。</block>
   <block id="4d646a6e32f8084a095a674812f1fb31" category="list-text">[HTTPS Setup] ページで、証明書署名要求（ CSR ）を生成するか、独自の CA 署名付き証明書をインストールして、証明書をインストールします。</block>
   <block id="054b4f3ea543c990f6b125f41af6ebf7" category="cell">オプション</block>
@@ -4271,4 +4270,11 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">3.9.44より前のリリースで作成された既存のコネクタがある場合、Docker Engine 25.0.5は引き続きUbuntuホストでサポートされる最大バージョンです。</block>
   <block id="c64c773fbe16e4df6ae417c106a467ef" category="inline-link">Docker Engineの要件の詳細</block>
   <block id="395f31b2f1bc9cb3993acbb14cf4fb1f" category="paragraph"><block ref="724b4d6e1bb3e6bea768572a2ce7c10e" category="inline-link-rx"></block>です。</block>
+  <block id="346c9e732e7e7f6e38707ad310f548d0" category="list-text">\ https://signin.b2c .CNAME.com NetApp（このエンドポイントは、\ https://mysupport .CNAME.comのCNAME URL NetAppです）</block>
+  <block id="6f875ca46d399fa9c75701aab6b0e1eb" category="paragraph">コネクタで実行されているWebベースのコンソールにセキュアにアクセスするために、CAによって署名された証明書をインストールします。</block>
+  <block id="00be756b024b45d0d82f8cb900cbeacb" category="paragraph">次のいずれかのオプションを使用して証明書をインストールできます。</block>
+  <block id="e832a3ac44d931a4b705999aa307cd09" category="list-text">BlueXP  から証明書署名要求（CSR）を生成し、証明書要求をCAに送信してから、CA署名証明書をコネクタにインストールします。</block>
+  <block id="f42f94dc205ad041c3d86658f703465e" category="paragraph">BlueXP  がCSRの生成に使用するキーペアは、コネクタの内部に格納されます。BlueXP  は、証明書をコネクタにインストールすると、同じキーペア（秘密鍵）を自動的に取得します。</block>
+  <block id="fa7c85eec1cc76ccc0e893292ce638e4" category="list-text">すでに使用しているCA署名証明書をインストールします。</block>
+  <block id="44f374dc4bb34314bb885e22229628b6" category="paragraph">このオプションでは、CSRはBlueXP  を介して生成されません。CSRを個別に生成し、秘密鍵を外部に保存します。証明書をインストールするときに、BlueXP  に秘密鍵を指定します。</block>
 </blocks>
