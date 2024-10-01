@@ -33,7 +33,7 @@ Connector は、これらのオペレーティングシステムの英語版で�
 * Red Hat Enterprise Linux の場合
 +
 ** 8.6～8.10
-** 9.1から9.3
+** 9.1～9.4
 +
 ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 
@@ -116,17 +116,23 @@ Podmanでは、次の前提条件を満たす必要があります。
 | 3.9.44リリースより前のリリースで作成されたコネクタ | 23.0.6 | 25.0.5 
 |===
 +
-https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+https://docs.docker.com/engine/install/["Dockerのインストール手順を表示する"^]
 
 
 
 * UbuntuにはDocker Engineが必要です。
 +
-** サポートされる最小バージョンは23.0.6です。
-** サポートされる最大バージョンは25.0.5です。
+[cols="3*"]
+|===
+| コネクタのバージョン | Docker Engineの最小バージョン | Docker Engineの最大バージョン 
+
+
+| _New_Connectorのインストール（3.9.44以降） | 23.0.6 | 26.0.0 
+
+
+| 3.9.44リリースより前のリリースで作成されたコネクタ | 23.0.6 | 25.0.5 
+|===
 +
-https://docs.docker.com/engine/install/["インストール手順を確認します"^]
-
-
+https://docs.docker.com/engine/install/["Dockerのインストール手順を表示する"^]
 
 

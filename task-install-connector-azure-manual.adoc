@@ -92,7 +92,7 @@ Podmanでは、次の前提条件を満たす必要があります。
 | 3.9.44リリースより前のリリースで作成されたコネクタ | 23.0.6 | 25.0.5 
 |===
 +
-https://docs.docker.com/engine/install/["インストール手順を確認します"^]
+https://docs.docker.com/engine/install/["Dockerのインストール手順を表示する"^]
 
 
 

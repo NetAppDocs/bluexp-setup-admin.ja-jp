@@ -483,7 +483,6 @@
   <block id="12e2060dbbd01e288c66757f239fb192" category="list-text">/var のディスク領域</block>
   <block id="530ae65bce71acbabc920f0c53c4b5c2" category="list-text">20GiB のスペースが必要です</block>
   <block id="681992b8581f6d4247af5523a14d0ce4" category="list-text">Docker Engine の略</block>
-  <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">インストール手順を確認します</block>
   <block id="9f0bb2acc3984bc2da2e5e566dd4bc0a" category="doc">BlueXPの詳細をご覧ください</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">機能</block>
   <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">BlueXPプラットフォームは、データ管理において、ストレージ、モビリティ、保護、分析と制御という4つの主要な柱を提供します。</block>
@@ -3708,7 +3707,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4（またはそれ以降のパッチ）</block>
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1以降のすべてのバージョン</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">Cloud Volumes ONTAPのアップグレードプロセスで使用</block>
-  <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
   <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">Docker Engineの要件を更新して、コネクタでサポートされる最大バージョン（25.0.5）を指定しました。サポートされる最小バージョンは引き続き19.3.1です。</block>
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">コネクタホスト要件の表示</block>
   <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>。</block>
@@ -3947,7 +3945,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">サポート対象のオペレーティングシステムの実行が認定されているベアメタルまたはホスト型ハイパーバイザーが必要です。</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">UbuntuにはDocker Engineが必要です。</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">2024年6月30日、RHEL 7はメンテナンス終了（EOM）に達し、CentOS 7はサポート終了（EOL）に達しました。NetAppは2024年6月30日にこれらのLinuxディストリビューションでのコネクタのサポートを停止しました。</block>
-  <block id="547a1a61c710e2dc947389da0967d175" category="list-text">サポートされる最小バージョンは23.0.6です。</block>
   <block id="13265d5e2f2489e0351d3bae9dc7d923" category="doc">BlueXPに登録またはログイン</block>
   <block id="400356f2a752e6926bd99ce1db45ee8c" category="paragraph">BlueXPにはWebベースのコンソールからアクセスできます。BlueXPの使用を開始するには、まず登録するか、NetAppサポートサイトのクレデンシャルまたは社内ディレクトリからのSSOクレデンシャルを使用してログインします。</block>
   <block id="71bf124b6b9da30db8c000241ce01691" category="paragraph">BlueXPに初めてアクセスするときは、次のいずれかの方法で登録またはログインできます。</block>
@@ -4264,7 +4261,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f2162c8532f84cb24bc54e30c4c0341c" category="cell">26.0.0</block>
   <block id="4d2dd7c014e329b4fb387303e47f1d83" category="cell">3.9.44リリースより前のリリースで作成されたコネクタ</block>
   <block id="9b8f09d8d408f824fbf8c4f7321295aa" category="cell">25.0.5</block>
-  <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">サポートされる最大バージョンは25.0.5です。</block>
   <block id="f258c97f55e85bfbd607e70e86d840dc" category="section-title">新規インストール時のDocker Engine 26のサポート</block>
   <block id="5c968eab53d6065ccf63e9766935cb7b" category="paragraph">コネクタの3.9.44リリース以降では、Ubuntuホストでの_new_connectorのインストールでDocker Engine 26がサポートされるようになりました。</block>
   <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">3.9.44より前のリリースで作成された既存のコネクタがある場合、Docker Engine 25.0.5は引き続きUbuntuホストでサポートされる最大バージョンです。</block>
@@ -4277,4 +4273,24 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f42f94dc205ad041c3d86658f703465e" category="paragraph">BlueXP  がCSRの生成に使用するキーペアは、コネクタの内部に格納されます。BlueXP  は、証明書をコネクタにインストールすると、同じキーペア（秘密鍵）を自動的に取得します。</block>
   <block id="fa7c85eec1cc76ccc0e893292ce638e4" category="list-text">すでに使用しているCA署名証明書をインストールします。</block>
   <block id="44f374dc4bb34314bb885e22229628b6" category="paragraph">このオプションでは、CSRはBlueXP  を介して生成されません。CSRを個別に生成し、秘密鍵を外部に保存します。証明書をインストールするときに、BlueXP  に秘密鍵を指定します。</block>
+  <block id="cce7af47240992bbe7e732a4ed33061c" category="inline-link">Dockerのインストール手順を表示する</block>
+  <block id="11f197927bd64550079e417137ab4ce2" category="paragraph"><block ref="11f197927bd64550079e417137ab4ce2" category="inline-link-rx"></block></block>
+  <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">2024年9月30日</block>
+  <block id="0beb94109608ff82d313b33947162f96" category="section-title">プライベートモードリリース（3.9.44）</block>
+  <block id="f1fb6fd189345cf04ef77974b58bcbfc" category="paragraph">このリリースには、プライベートモードでサポートされる次のバージョンのBlueXP  コンポーネントとサービスが含まれています。</block>
+  <block id="8dd8dbe371973ff01954f1d0db6a6c30" category="cell">3.9.44</block>
+  <block id="5fcc5d3ffc4bbbcf6d018ab4a9639205" category="cell">2024年9月27日</block>
+  <block id="48f2931f061b9d56d7805eddf6969cea" category="paragraph">コネクタの3.9.44プライベートモードリリースには、2024年8月および2024年9月のリリースで導入されたアップデートが含まれています。特に注目すべきは、Red Hat Enterprise Linux 9.4のサポートです。</block>
+  <block id="288ce8ff800de0648500c62f0658b96c" category="paragraph">これらのBlueXP  コンポーネントおよびサービスのバージョンに含まれる内容の詳細については、各BlueXP  サービスのリリースノートを参照してください。</block>
+  <block id="65439cdb7546ae11a93a141421129d1a" category="inline-link">コネクタの2024年9月リリースの新機能</block>
+  <block id="46c02b08a8d12f7b5b9a43c01b252fe0" category="list-text"><block ref="46c02b08a8d12f7b5b9a43c01b252fe0" category="inline-link-rx"></block></block>
+  <block id="c531086859410bbf7d79b1d007644e8c" category="inline-link">コネクタの2024年8月リリースの新機能</block>
+  <block id="3447cde4c00b98b6428bff77da46fd8c" category="list-text"><block ref="3447cde4c00b98b6428bff77da46fd8c" category="inline-link-rx"></block></block>
+  <block id="116a2755907d33cc76c6cdc442c467b0" category="inline-link">BlueXP  バックアップ/リカバリの新機能</block>
+  <block id="4e02af58c02d9f0704b79eb4e000eb20" category="list-text"><block ref="4e02af58c02d9f0704b79eb4e000eb20" category="inline-link-rx"></block></block>
+  <block id="cdcec1bb4c8f6524979a702b1691d4f7" category="inline-link">BlueXP  分類の新機能</block>
+  <block id="9212eddb7e41302606e7873d754ab3aa" category="list-text"><block ref="9212eddb7e41302606e7873d754ab3aa" category="inline-link-rx"></block></block>
+  <block id="00dc7f0b165829f9f81bfaf12a8db2e4" category="inline-link">BlueXP  のCloud Volumes ONTAP管理の新機能</block>
+  <block id="941cdb6d27c83c929d4abe28f2321665" category="list-text"><block ref="941cdb6d27c83c929d4abe28f2321665" category="inline-link-rx"></block></block>
+  <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">アップグレード方法を含むプライベートモードの詳細については、次を参照してください。</block>
 </blocks>
