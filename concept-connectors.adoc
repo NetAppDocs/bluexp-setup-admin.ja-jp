@@ -60,6 +60,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 BlueXPを標準モードで使用する場合、BlueXPの次の機能やサービスにはコネクタが必要です。
 
+* アラート
 * ONTAP 管理機能用の Amazon FSX
 * Amazon S3ストレージ
 * Azure BLOBストレージ
