@@ -25,14 +25,14 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 ストレージ:: AWS、Azure、Google Cloud、オンプレミスのいずれであっても、ストレージを検出、導入、管理できます。
 +
 --
-* をセットアップして使用します https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 複数のクラウドにわたって効率的なマルチプロトコルデータ管理を実現します。
 * クラウドファイルストレージサービスをセットアップして使用
 +
 ** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files の特長"^]
-** https://bluexp.netapp.com/fsx-for-ontap["ONTAP 対応の Amazon FSX"^]
+** https://bluexp.netapp.com/fsx-for-ontap["NetApp ONTAP 対応の Amazon FSX"^]
 ** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service for Google Cloud"^]
 
 
+* をセットアップして使用します https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 複数のクラウドにわたって効率的なマルチプロトコルデータ管理を実現します。
 * 検出と管理 https://bluexp.netapp.com/netapp-on-premises["オンプレミスストレージ"^]：
 +
 ** Eシリーズシステム
@@ -43,7 +43,7 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 
 
 --
-モビリティ:: データを同期、コピー、階層化、キャッシュすることで、必要な場所にデータを移動できます。
+モビリティ:: データを同期、コピー、階層化することで、必要な場所にデータを移動できます。
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["コピーと同期"^]
@@ -55,7 +55,9 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 +
 --
 * https://bluexp.netapp.com/cloud-backup["バックアップとリカバリ"^]
+* https://bluexp.netapp.com/disaster-recovery["ディザスタリカバリ"^]
 * https://bluexp.netapp.com/replication["レプリケーション"^]
+* https://bluexp.netapp.com/ransomware-protection["ランサムウェアからの保護"^]
 
 
 --
@@ -71,7 +73,7 @@ BlueXPプラットフォームは、データ管理において、ストレー�
 --
 
 
-https://bluexp.netapp.com/["BlueXPを活用して組織を支援する方法をご紹介します"^]
+https://bluexp.netapp.com/["BlueXP  を使用してハイブリッドマルチクラウド環境全体にわたってデータを管理する方法の詳細をご確認ください。"^]
 
 
 
@@ -89,35 +91,45 @@ BlueXPの価格は、使用する予定のサービスによって異なりま�
 
 == BlueXPの仕組み
 
-BlueXPには、SaaSレイヤを通じて提供されるWebベースのコンソール、マルチテナンシーを提供するアカウント、作業環境を管理してBlueXPクラウドサービスを有効にするコネクタが含まれています。
+BlueXP  には、SaaSレイヤを通じて提供されるWebベースのコンソール、リソースおよびアクセス管理システム、作業環境を管理してBlueXP  クラウドサービスを有効にするコネクタが含まれています。
 
 
 
 === ソフトウェアサービス
 
-BlueXPには、からアクセスできます https://console.bluexp.netapp.com["Webベースのコンソール"^] API を使用できます。このSaaSエクスペリエンスでは、リリースされた最新機能に自動的にアクセスし、BlueXPアカウントとコネクタを簡単に切り替えることができます。
+BlueXP  には、APIとAPIを使用してアクセスでき https://console.bluexp.netapp.com["Webベースのコンソール"^]ます。このSaaSエクスペリエンスにより、リリースされた最新の機能に自動的にアクセスし、BlueXP  の組織、プロジェクト、コネクタを簡単に切り替えることができます。
 
 
 
-=== BlueXPアカウント
+=== BlueXP  IDおよびアクセス管理（IAM）
 
-BlueXPに初めてログインすると、_BlueXPアカウント_を作成するように求められます。このアカウントはマルチテナンシーを提供し、分離されたワークスペース内でユーザとリソースを整理することができます。
+BlueXP  IDおよびアクセス管理（IAM）は、リソースとアクセス権をきめ細かく管理できるリソースおよびアクセス管理モデルです。
 
-link:concept-netapp-accounts.html["アカウントの詳細については、こちらをご覧ください"]。
+* 最上位の_organization_を使用すると、さまざまな_projects_へのアクセスを管理できます。
+* _Folders_関連するプロジェクトをグループ化できるようにします
+* リソース管理を使用すると、リソースを1つ以上のフォルダまたはプロジェクトに関連付けることができます。
+* アクセス管理を使用すると、組織階層のさまざまなレベルのメンバーにロールを割り当てることができます。
+
+
+BlueXP  IAMは、標準モードでBlueXP  を使用する場合にサポートされます。BlueXP  を制限モードまたはプライベートモードで使用している場合は、BlueXP  アカウント_を使用してワークスペース、ユーザー、およびリソースを管理します。
+
+* link:concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
+* link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認ください"]
+
 
 
 
 === コネクタ
 
-BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。コネクタにより、オンプレミス環境とクラウド環境にわたってリソースとプロセスを管理できます。作業環境（Cloud Volumes ONTAPクラスタやオンプレミスのONTAPクラスタなど）の管理や、BlueXPの多くのデータサービスの使用が必要です。
+BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。コネクタにより、オンプレミス環境とクラウド環境にわたってリソースとプロセスを管理できます。作業環境（Cloud Volumes ONTAPなど）を管理し、多数のBlueXP  サービスを使用するために必要です。
 
 link:concept-connectors.html["コネクタの詳細については、こちらをご覧ください"]。
 
 
 
-=== 制限モードとプライベートモード
+=== 展開モード
 
-BlueXPは、セキュリティや接続が制限されている環境でもサポートされます。restricted mode_or_private mode__を使用して、アウトバウンド接続をBlueXP SaaSレイヤへの制限できます。
+BlueXP  は、セキュリティと接続が制限されている環境でサポートされています。restricted mode_or_private mode__を使用して、アウトバウンド接続をBlueXP SaaSレイヤへの制限できます。
 
 link:concept-modes.html["BlueXPの導入モードの詳細については、こちらをご覧ください"]。
 

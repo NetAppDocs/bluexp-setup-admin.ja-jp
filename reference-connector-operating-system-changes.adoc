@@ -29,6 +29,7 @@ BlueXP Connectorは次のLinuxオペレーティングシステムでサポー�
 手動インストール::
 +
 --
+* Ubuntu 24.04 LTS
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux の場合
 +
@@ -50,6 +51,7 @@ Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
 手動インストール::
 +
 --
+* Ubuntu 24.04 LTS
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux の場合
 +
@@ -74,7 +76,7 @@ Azure Marketplaceからの導入:: Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux の場合
 +
 ** 8.6～8.10
-** 9.1から9.3
+** 9.1～9.4
 
 
 
@@ -131,14 +133,6 @@ RHEL 7またはCentOS 7で既存のコネクタを実行している場合、オ
 . _new_connectorのインストールを実行します。
 . 古いコネクタが管理していた作業環境を検出するようにコネクタを設定します。
 
-
-
-
-== Ubuntu 22.04 LTSの継続サポート
-
-このコネクタはUbuntu 22.04 LTSで引き続きサポートされており、BlueXPや市場向けのデフォルトのオペレーティングシステムです。
-
-このオペレーティングシステムにはDocker Engineが必要です。Podmanはサポートされていません。
 
 
 

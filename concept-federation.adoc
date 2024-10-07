@@ -4,7 +4,7 @@ permalink: concept-federation.html
 keywords: identity federation, federation, federated identity, set up identity federation, set up federated connection, federated connection 
 summary: アイデンティティフェデレーションを使用すると、BlueXPとのシングルサインオンが可能になり、ユーザは自社のアイデンティティのクレデンシャルを使用してログインできます。まず、アイデンティティフェデレーションとBlueXPの連携について説明し、セットアッププロセスの概要を確認してください。 
 ---
-= BlueXPでアイデンティティフェデレーションを使用
+= BlueXP  でアイデンティティフェデレーションを使用してシングルサインオンを有効にする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

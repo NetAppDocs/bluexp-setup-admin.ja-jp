@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: task-iam-audit-actions-timeline.html 
+keywords: iam, audit, monitor, audit iam actions, monitor iam actions 
+summary: BlueXP  IDおよびアクセス管理（IAM）アクションをタイムラインから監視または監査します。 
+---
+= BlueXP  タイムラインからIAMアクティビティを監視または監査
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  IDおよびアクセス管理（IAM）から完了したアクションを監視または監査する必要がある場合は、BlueXP  タイムラインで詳細を表示できます。たとえば、組織にメンバーを追加したユーザーや、プロジェクトが正常に削除されたことを確認できます。
+
+.手順
+. BlueXP  コンソールの右上で、>*タイムライン*を選択しますimage:icon-settings-option.png["BlueXP  Webコンソールの右上に表示される設定アイコン。"]。
+. フィルタから*[Service]*を選択し、*[Tenancy]*を選択します。
+. 他のフィルタを使用して、テーブルに表示するアクションを変更します。
++
+たとえば、* User *フィルタを使用すると、特定のユーザアカウントに関連するアクションを表示できます。
+
+
+
+.結果
+タイムラインが更新され、BlueXP  IAMに関連して完了した管理アクションが表示されます。

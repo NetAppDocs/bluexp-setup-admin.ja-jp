@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: task-iam-associate-connectors.html 
+keywords: connector, associate connector, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource 
+summary: 組織のメンバーが別のプロジェクトでコネクタを使用する必要がある場合は、BlueXP  IAMから関連付けを作成する必要があります。 
+---
+= BlueXP  コネクタを他のフォルダおよびプロジェクトに関連付ける
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+コネクタは、BlueXP  から複数のタイプの作業環境を管理するために必要です。組織管理者_がコネクタを作成すると、BlueXP  はそのコネクタを組織および現在選択されているプロジェクトに自動的に関連付けます。_Organization admin_は、組織内の任意の場所からそのコネクタに自動的にアクセスできます。組織内の他のメンバーは、そのコネクタが作成されたプロジェクトからのみそのコネクタにアクセスできます。ただし、コネクタをBlueXP  IDおよびアクセス管理(IAM)の他のプロジェクトと関連付ける必要があります。
+
+.作業を開始する前に
+コネクタの関連付けの仕組みを理解しておく必要があります。link:concept-identity-and-access-management.html#associate-connectors["BlueXP  IAMでのコネクタの使用について"]です。
+
+.このタスクについて
+* フォルダまたはプロジェクト管理者が*コネクタ*ページを表示すると'そのページには組織内のすべてのコネクタが表示されますただし、このロールを持つメンバは、コネクタを表示および関連付けできるのは、コネクタが権限を持つフォルダおよびプロジェクトのみです。link:reference-iam-predefined-roles.html["フォルダまたはプロジェクト管理者が実行できるアクションの詳細"]です。
+* 既知の問題により、BlueXP  IAMの[Connectors]ページに、以前にBlueXP  から削除した古いコネクタが表示されます。
+
+
+.手順
+. BlueXP  コンソールの右上で、>* IDおよびアクセス管理*を選択しますimage:icon-settings-option.png["BlueXP  Webコンソールの右上に表示される設定アイコン。"]。
+. [コネクタ]*を選択します。
+. テーブルで、関連付けるコネクタを探します。
++
+特定のコネクタを検索するには、テーブルの上にある検索を使用し、リソース階層の特定の部分を選択してテーブルの内容をフィルタリングします。
+
+. コネクタが関連付けられているフォルダとプロジェクトを最初に表示するには、を選択しimage:icon-action.png["横方向の 3 つの点を示すアイコン"]、*詳細の表示*を選択します。
++
+BlueXP  には、コネクタが関連付けられているフォルダとプロジェクトの詳細が表示されます。
+
+. [フォルダまたはプロジェクトに関連付ける]*を選択します。
+. フォルダーまたはプロジェクトを選択し、*承認*を選択します。
+. コネクタを追加のフォルダまたはプロジェクトに関連付けるには、*フォルダまたはプロジェクトの追加*を選択し、フォルダまたはプロジェクトを選択します。
+. [コネクタを関連付け（Associate Connector）]*を選択する。
+
+
+.結果
+BlueXP  は、コネクタを選択したフォルダおよびプロジェクトに関連付けます。これらのフォルダおよびプロジェクトに対する権限を持つメンバーは、そのコネクタを選択できるようになりました。
+
+.完了後
+コネクタが管理するリソースを同じフォルダとプロジェクトに関連付ける場合は、[リソース]ページから関連付けることができます。
+
+link:task-iam-manage-resources.html#associate-resource["リソースをフォルダおよびプロジェクトに関連付ける方法について説明します。"]です。
+
+.関連情報
+* link:concept-connectors.html["BlueXP  コネクタの詳細"]
+* link:concept-identity-and-access-management.html["BlueXP  のアイデンティティ管理とアクセス管理の詳細"]
+* link:task-iam-get-started.html["BlueXP  IAMの使用を開始する"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP  IAM向けAPIの詳細"^]
+

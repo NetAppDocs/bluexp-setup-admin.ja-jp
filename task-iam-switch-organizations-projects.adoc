@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: task-iam-switch-organizations-projects.html 
+keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors 
+summary: 組織、プロジェクト、およびコネクタを切り替えて、それらに関連付けられているリソースにアクセスします。 
+---
+= BlueXP  組織、プロジェクト、コネクタの切り替え
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+複数のBlueXP  組織に属している場合や、BlueXP  組織内の複数のプロジェクトやコネクタにアクセスする権限を持っている場合があります。必要に応じて、組織、プロジェクト、コネクタを簡単に切り替えて、その組織、プロジェクト、コネクタに関連付けられているリソースにアクセスできます。
+
+
+TIP: 別の組織に参加するよう招待された場合、または自分で追加の組織を作成した場合は、複数の組織に所属することがあります。APIを使用して、追加の組織を作成できます。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/post-organizations.html["新しい組織を作成する方法を確認する"^]
+
+
+
+== 組織間の切り替え
+
+複数の組織のメンバーである場合は、いつでも切り替えることができます。
+
+.手順
+. BlueXP  の上部で、*組織*を選択します。
++
+image:screenshot-iam-switch-organizations.png["BlueXP  トップバナーのスクリーンショット。[Organization]ドロップダウンを選択し、別の組織を選択できます。"]
+
+. 別の組織を選択し、*[スイッチ]*を選択します。
+
+
+.結果
+BlueXP  が選択した組織に切り替わり、その組織に関連付けられているリソースが表示されます。
+
+
+
+== プロジェクト間の切り替え
+
+組織に複数のプロジェクトが含まれていて、それらのプロジェクトにアクセスできる場合は、それらのプロジェクトをいつでも切り替えることができます。
+
+.作業を開始する前に
+BlueXP  コンソールのBlueXP  Identity and Access Management（IAM）ページ以外のページに移動している必要があります。IAMページを表示しているときに別のプロジェクトに切り替えることはできません。
+
+.手順
+. BlueXP  の上部で、* Project*を選択します。
++
+image:screenshot-iam-switch-projects.png["[Scope]ドロップダウンを選択して別のプロジェクトを選択できるBlueXP  上部バナーのスクリーンショット。"]
+
+. 組織内のフォルダとプロジェクトを参照し、目的のプロジェクトを選択して、*[切り替え]*を選択します。
++
+image:screenshot-iam-switch-projects-select.png["新しいプロジェクトを選択できる[スコープ]メニューのスクリーンショット。"]
+
+
+
+.結果
+BlueXP  が選択したプロジェクトに切り替わり、そのプロジェクトに関連付けられているリソースが表示されます。
+
+
+
+== コネクタを切り替えます
+
+複数のコネクタがある場合は、コネクタを切り替えることで、特定のコネクタに関連付けられている作業環境を確認できます。
+
+.手順
+. BlueXP  の上部で、* Connector *を選択します。
+. 別のコネクタを選択し、*スイッチ*を選択します。
+
+
+.結果
+BlueXP  が更新され、選択したコネクタに関連付けられている作業環境が表示されます。
+
+.関連リンク
+link:task-iam-associate-connectors.html["フォルダーおよびプロジェクトへのコネクターの関連付け"]です。
+
+
+
+== 関連情報
+
+* link:concept-identity-and-access-management.html["BlueXP  のアイデンティティ管理とアクセス管理の詳細"]
+* link:task-iam-get-started.html["BlueXP  IAMの使用を開始する"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP  IAM向けAPIの詳細"^]
+

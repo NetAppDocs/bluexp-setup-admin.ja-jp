@@ -5,7 +5,13 @@
 オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 
 * Red Hat Enterprise Linux 8および9にはPodmanが必要です。
++
+<<podman-versions,BlueXP  がサポートするPodmanバージョンを表示する>>です。
+
 * UbuntuにはDocker Engineが必要です。
++
+<<podman-versions,BlueXP  がサポートするDocker Engineのバージョンを表示する>>です。
+
 
 
 .手順
@@ -13,7 +19,13 @@
 ====
 .ポドマン
 --
-サポートされているバージョンのPodmanをインストールします。<<podman-versions,BlueXP  がサポートするPodmanバージョンを表示する>>です。
+次の手順に従って、Podmanをインストールし、次の要件を満たすように設定します。
+
+* podman.socketサービスを有効にして開始する必要があります
+* Python3がインストールされている必要があります
+* podman-composeパッケージバージョン1.0.6がインストールされている必要があります。
+* podman-composeをPATH環境変数に追加する必要があります
+
 
 .手順
 . podman-dockerパッケージがホストにインストールされている場合は削除します。
@@ -96,13 +108,10 @@ NOTE: を使用する `dnf install` コマンドは、PATH環境変数にpodman-
 --
 .Docker Engine の略
 --
-サポートされているバージョンのDocker Engineをインストールします。<<podman-versions,BlueXP  がサポートするDocker Engineのバージョンを表示する>>です。
+Dockerのドキュメントに従ってDocker Engineをインストールします。
 
 .手順
-. Docker Engineをインストールします。
-+
-https://docs.docker.com/engine/install/["Dockerからインストール手順を表示"^]
-
+. https://docs.docker.com/engine/install/["Dockerからインストール手順を表示"^]
 +
 特定のバージョンのDocker Engineをインストールするには、必ず次の手順に従ってください。最新バージョンをインストールすると、BlueXPでサポートされていないバージョンのDockerがインストールされます。
 

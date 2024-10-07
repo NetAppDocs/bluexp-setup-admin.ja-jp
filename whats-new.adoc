@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors' 
-summary: BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど）をご確認ください。 
+summary: BlueXP  IAM、コネクタ、クラウドプロバイダのクレデンシャルなど、BlueXP  管理機能の新機能をご確認ください。 
 ---
 = 新機能
 :hardbreaks:
@@ -14,7 +14,106 @@ summary: BlueXPの管理機能の新機能（BlueXPアカウント、コネク�
 
 
 [role="lead"]
-BlueXPの管理機能の新機能（BlueXPアカウント、コネクタ、クラウドプロバイダのクレデンシャルなど）をご確認ください。
+IDおよびアクセス管理（IAM）、コネクタ、クラウドプロバイダのクレデンシャルなど、BlueXP  管理機能の新機能をご確認ください。
+
+
+
+== 2024年10月7日
+
+
+
+=== BlueXP  IDおよびアクセス管理
+
+BlueXP  IDおよびアクセス管理（IAM）は、標準モードでBlueXP  を使用するときにBlueXP  アカウントが提供する以前の機能を置き換え、強化する新しいリソースおよびアクセス管理モデルです。
+
+BlueXP  IAMでは、リソースと権限をよりきめ細かく管理できます。
+
+* 最上位の_organization_を使用すると、さまざまな_projects_のアクセスを管理できます。
+* _Folders_関連するプロジェクトをグループ化できます。
+* 強化されたリソース管理により、リソースを1つ以上のフォルダまたはプロジェクトに関連付けることができます。
++
+たとえば、Cloud Volumes ONTAPシステムを複数のプロジェクトに関連付けることができます。
+
+* 強化されたアクセス管理により、組織階層のさまざまなレベルのメンバーにロールを割り当てることができます。
+
+
+これらの機能拡張により、ユーザが実行できるアクションとユーザがアクセスできるリソースをより適切に制御できるようになります。
+
+
+
+==== BlueXP  IAMが既存アカウントに与える影響
+
+BlueXP  にログインすると、次の変更が表示されます。
+
+* あなたの_アカウント_が_組織_と呼ばれるようになりました
+* your_workspaces_が_projects_と呼ばれるようになりました。
+* ユーザロールの名前が変更されました。
++
+** アカウント管理者_が現在_組織管理者_である_
+** _Workspace admin_現在_フォルダまたはプロジェクト管理_
+** _コンプライアンスビューア_現在_分類ビューア_
+
+
+* [設定]では、BlueXP  IDとアクセス管理にアクセスして、これらの拡張機能を利用できます。
+
+
+image:screenshot-iam-introduction.png["BlueXP  のスクリーンショットは、インターフェイスの上部から選択可能な組織とプロジェクト、および[設定]メニューから使用できるIDとアクセスの管理を示しています。"]
+
+次の点に注意してください。
+
+* 既存のユーザや作業環境に変更はありません。
+* ロールの名前は変更されていますが、権限の観点からは違いはありません。ユーザは以前と同じ作業環境に引き続きアクセスできます。
+* BlueXP  へのログイン方法に変更はありません。BlueXP  IAMは、BlueXP  アカウントと同様に、NetAppクラウドログイン、NetAppサポートサイトのクレデンシャル、フェデレーテッド接続と連携します。
+* 複数のBlueXP  アカウントを使用している場合は、複数のBlueXP  組織が存在することになります。
+
+
+
+
+==== BlueXP  IAM用API
+
+この変更により、BlueXP  IAM用の新しいAPIが導入されましたが、以前のテナンシーAPIと下位互換性があります。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP  IAM向けAPIの詳細"^]
+
+
+
+==== サポートされる展開モード
+
+BlueXP  IAMは、標準モードでBlueXP  を使用する場合にサポートされます。BlueXP  を制限モードまたはプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。
+
+
+
+==== 次の手順
+
+* link:concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
+* link:task-iam-get-started.html["BlueXP  IAMの使用を開始する"]
+
+
+
+
+=== コネクタ3.9.45
+
+このリリースには、拡張されたオペレーティングシステムサポートとバグ修正が含まれています。
+
+3.9.45リリースは、標準モードと制限モードで使用できます。
+
+
+
+==== Ubuntu 24.04 LTSのサポート
+
+3.9.45リリース以降、BlueXP  では、BlueXP  を標準モードまたは制限モードで使用する場合、Ubuntu 24.04 LTSホストへのコネクタの新規インストールがサポートされるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["コネクタホスト要件の表示"]。
+
+
+
+=== RHELホストでのSELinuxのサポート
+
+BlueXP  では、強制モードまたは許可モードのいずれかでSELinuxが有効になっているRed Hat Enterprise Linuxホストでコネクタがサポートされるようになりました。
+
+SELinuxのサポートは、標準モードと制限モードの3.9.40リリースから開始され、プライベートモードの3.9.42リリースから開始されます。
+
+BlueXP  では、UbuntuホストでのSELinuxはサポートされません。
+
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["SELinuxの詳細"^]
 
 
 
@@ -1391,7 +1490,7 @@ image:screenshot_nss_management.png["NSS アカウントを追加できる Suppo
 
 Cloud Manager のタイムラインに、アカウント管理に関連する操作とイベントが表示されるようになりました。アクションには、ユーザーの関連付け、ワークスペースの作成、コネクタの作成などがあります。タイムラインのチェックは、特定のアクションを実行したユーザーを特定する必要がある場合や、アクションのステータスを特定する必要がある場合に役立ちます。
 
-link:task-monitor-cm-operations.html#audit-user-activity-in-your-account["タイムラインをテナンシーサービスにフィルタリングする方法について説明します"]。
+link:task-monitor-cm-operations.html["タイムラインをテナンシーサービスにフィルタリングする方法について説明します"]です。
 
 
 

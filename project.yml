@@ -27,8 +27,6 @@ sidebar:
       entries:
       - title: BlueXP
         url: "/concept-overview.html"
-      - title: アカウント
-        url: "/concept-netapp-accounts.html"
       - title: コネクタ
         url: "/concept-connectors.html"
       - title: 展開モード
@@ -37,7 +35,7 @@ sidebar:
       entries:
       - title: スタートアップワークフロー
         url: "/task-quick-start-standard-mode.html"
-      - title: BlueXPコンソールを使用するためのネットワークの準備
+      - title: BlueXP  コンソールのネットワークの準備
         url: "/reference-networking-saas-console.html"
       - title: BlueXPにサインアップします
         url: "/task-sign-up-saas.html"
@@ -103,18 +101,40 @@ sidebar:
       url: "/task-logging-in.html"
   - title: BlueXPを管理します
     entries:
-    - title: アイデンティティフェデレーション
-      url: "/concept-federation.html"
+    - title: アイデンティティ管理とアクセス管理
+      entries:
+      - title: BlueXP  IAMの詳細
+        url: "/concept-identity-and-access-management.html"
+      - title: BlueXP  IAMの使用を開始する
+        url: "/task-iam-get-started.html"
+      - title: フォルダとプロジェクトを使用してリソースを整理する
+        url: "/task-iam-manage-folders-projects.html"
+      - title: メンバーの追加と権限の管理
+        url: "/task-iam-manage-members-permissions.html"
+      - title: リソース階層の管理
+        url: "/task-iam-manage-resources.html"
+      - title: コネクタを他のフォルダおよびプロジェクトに関連付ける
+        url: "/task-iam-associate-connectors.html"
+      - title: 組織、プロジェクト、コネクタの切り替え
+        url: "/task-iam-switch-organizations-projects.html"
+      - title: 組織名の変更
+        url: "/task-iam-rename-organization.html"
+      - title: IAMアクティビティの監視または監査
+        url: "/task-iam-audit-actions-timeline.html"
+      - title: 事前定義されたIAMロール
+        url: "/reference-iam-predefined-roles.html"
     - title: BlueXPのアカウント
       entries:
+      - title: アカウントの詳細を確認します
+        url: "/concept-netapp-accounts.html"
       - title: BlueXPアカウントを管理します
         url: "/task-managing-netapp-accounts.html"
-      - title: アカウントでの処理を監視します
-        url: "/task-monitor-cm-operations.html"
       - title: BlueXPアカウントをもう1つ作成します
         url: "/task-create-account.html"
       - title: ユーザロール
         url: "/reference-user-roles.html"
+    - title: アイデンティティフェデレーション
+      url: "/concept-federation.html"
     - title: コネクタ
       entries:
       - title: VMとOSの保守
@@ -155,10 +175,12 @@ sidebar:
           url: "/concept-accounts-gcp.html"
         - title: クレデンシャルとサブスクリプションを管理する
           url: "/task-adding-gcp-accounts.html"
-      - title: BlueXPアカウントに関連付けられているNSSクレデンシャルを管理します
+      - title: BlueXP  の組織またはアカウントに関連付けられたNSSクレデンシャルの管理
         url: "/task-adding-nss-accounts.html"
       - title: BlueXPログインに関連付けられているクレデンシャルを管理します
         url: "/task-manage-user-credentials.html"
+    - title: BlueXP  処理の監視
+      url: "/task-monitor-cm-operations.html"
   - title: 参照
     entries:
     - title: 権限

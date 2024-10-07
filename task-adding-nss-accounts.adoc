@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: NetApp Support SiteアカウントをBlueXPアカウントに関連付けて、Cloud Volumes ONTAPの主要なワークフローを有効にします。これらのNSSクレデンシャルはBlueXPアカウント全体に関連付けられます。 
+summary: NetAppサポートサイトのアカウントをBlueXP  の組織またはアカウントに関連付けて、Cloud Volumes ONTAPの主要なワークフローを有効にします。これらのNSSクレデンシャルは、BlueXP  の組織またはアカウント全体に関連付けられます。 
 ---
-= BlueXPアカウントに関連付けられているNSSクレデンシャルを管理します
+= BlueXP  の組織またはアカウントに関連付けられたNSSクレデンシャルの管理
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,23 @@ summary: NetApp Support SiteアカウントをBlueXPアカウントに関連付�
 
 
 [role="lead"]
-NetApp Support SiteアカウントをBlueXPアカウントに関連付けて、Cloud Volumes ONTAPの主要なワークフローを有効にします。これらのNSSクレデンシャルはBlueXPアカウント全体に関連付けられます。
+NetAppサポートサイトのアカウントをBlueXP  の組織またはアカウントに関連付けて、Cloud Volumes ONTAPの主要なワークフローを有効にします。これらのNSSクレデンシャルは、BlueXP  の組織またはアカウント全体に関連付けられます。
+
+BlueXP  では、BlueXP  ユーザアカウントごとに1つのNSSアカウントを関連付けることもできます。link:task-manage-user-credentials.html["ユーザレベルのクレデンシャルを管理する方法について説明します"]です。
 
 
-NOTE: BlueXPでは、BlueXPユーザごとに1つのNSSアカウントを関連付けることもできます。 link:task-manage-user-credentials.html["ユーザレベルのクレデンシャルを管理する方法について説明します"]。
+TIP: BlueXP  を標準モードで使用している場合は、BlueXP  IDおよびアクセス管理(IAM)を使用して管理する_ BlueXP  organization_があります。ただし、制限モードまたはプライベートモードでBlueXP  を使用している場合は、_ BlueXP  アカウント_があります。
+
+* link:concept-modes.html["BlueXPの導入モードについて説明します"]
+* link:concept-identity-and-access-management.html["BlueXP  のアイデンティティ管理とアクセス管理の詳細"]
+* link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認ください"]
+
 
 
 
 == 概要
 
-BlueXPで次のタスクを有効にするには、NetApp Support Site クレデンシャルを特定のBlueXPアカウントIDに関連付ける必要があります。
+BlueXP  で次のタスクを実行するには、NetAppサポートサイトのクレデンシャルを特定のBlueXP  アカウントのシリアル番号に関連付ける必要があります。
 
 * お客様所有のライセンスを使用（BYOL）する場合のCloud Volumes ONTAP の導入
 +
@@ -36,13 +43,13 @@ BlueXPで次のタスクを有効にするには、NetApp Support Site クレデ
 * Cloud Volumes ONTAP ソフトウェアを最新リリースにアップグレードしています
 
 
-これらのクレデンシャルは、特定のBlueXPアカウントIDに関連付けられます。BlueXPアカウントに属するユーザは、*[サポート]>[NSS管理]*からこれらのクレデンシャルにアクセスできます。
+これらのクレデンシャルは、特定のBlueXP  アカウントのシリアル番号に関連付けられています。BlueXP  の組織またはアカウントに属するユーザは、*[サポート]>[NSS管理]*からこれらのクレデンシャルにアクセスできます。
 
 
 
 == NSS アカウントを追加します
 
-サポートダッシュボードでは、BlueXPで使用するNetApp Support Site アカウントをBlueXPアカウントレベルで追加および管理できます。
+サポートダッシュボードでは、BlueXP  で使用するNetAppサポートサイトのアカウントをBlueXP  の組織レベルまたはアカウントレベルで追加および管理できます。
 
 * お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。
 * パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することはできますが、お客様レベルのアカウントと一緒に追加することはできません。

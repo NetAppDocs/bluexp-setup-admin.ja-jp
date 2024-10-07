@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
-keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
-summary: BlueXPアカウントは組織にマルチテナンシーを提供するため、分離されたワークスペースでユーザやリソースを整理できます。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。 
+keywords: accounts, workspaces, users, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
+summary: BlueXP  アカウントを使用すると、制限モードまたはプライベートモードを使用している場合に、分離されたワークスペースでユーザーを管理し、リソースを整理できます。 
 ---
 = BlueXPアカウントの詳細をご確認ください
 :hardbreaks:
@@ -14,7 +14,17 @@ summary: BlueXPアカウントは組織にマルチテナンシーを提供す�
 
 
 [role="lead"]
-A_BlueXPアカウント_は組織にマルチテナンシーを提供するため、isolated_workspaces_でユーザとリソースを整理できます。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。
+制限モードまたはプライベートモードでBlueXP  を使用する場合は、_ BlueXP  account_を使用してユーザーを管理し、isolated_workspaces_でリソースを整理します。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。
+
+BlueXP  を標準モードで使用している場合は、BlueXP  アカウントはありません。代わりに、BlueXP  IDおよびアクセス管理(IAM)を使用して管理する_ BlueXP  organization_があります。
+
+* link:concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
+* link:concept-modes.html["BlueXPの導入モードについて説明します"]
+
+
+
+
+== 概要
 
 BlueXPに初めてアクセスすると、アカウントを選択または作成するように求められます。たとえば、まだアカウントを持っていない場合は、次の画面が表示されます。
 
@@ -25,14 +35,6 @@ BlueXPアカウント管理者は'ユーザー(メンバー)'ワークスペー�
 image:screenshot-account-settings.png["ユーザー、ワークスペース、およびコネクタを管理できる ［ アカウントの管理 ］ ウィジェットを示すスクリーンショット。"]
 
 link:task-managing-netapp-accounts.html["BlueXPアカウントの管理方法をご紹介します"]。
-
-
-
-== 展開モード
-
-BlueXPには、アカウントに標準モード、制限モード、プライベートモードの導入モードが用意されています。これらのモードは、さまざまなレベルのセキュリティおよび接続制限を持つ環境をサポートします。
-
-link:concept-modes.html["BlueXPの導入モードの詳細については、こちらをご覧ください"]。
 
 
 

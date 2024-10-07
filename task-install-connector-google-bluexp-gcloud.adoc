@@ -105,7 +105,7 @@ link:reference-networking-saas-console.html["BlueXPコンソールからアク�
 --
 
 
-プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。BlueXPでは透過型プロキシサーバはサポートされません。
+プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを展開する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。BlueXPでは透過型プロキシサーバはサポートされません。
 +
 --
 * IP アドレス
@@ -529,9 +529,9 @@ https://_ipaddress_[]
 
 . ログイン後、コネクタを設定します。
 +
-.. コネクタに関連付けるBlueXPアカウントを指定します。
+.. コネクタに関連付けるBlueXP  組織を指定します。
 +
-link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認ください"]。
+link:concept-identity-and-access-management.html["BlueXP  のアイデンティティ管理とアクセス管理の詳細"]です。
 
 .. システムの名前を入力します。
 
@@ -539,7 +539,7 @@ link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認く
 
 
 .結果
-これで、コネクタのインストールとBlueXPアカウントでのセットアップが完了しました。
+これで、コネクタがインストールされ、BlueXP  組織に設定されました。
 
 Webブラウザを開き、にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] BlueXPでコネクタの使用を開始します
 

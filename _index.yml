@@ -1,10 +1,12 @@
 ---
 indexpage:
   title: BlueXPのセットアップと管理に関するドキュメント
-  summary: NetApp BlueXPの利用を開始すると、オンプレミス環境とクラウド環境にわたるデータの構築、保護、ガバナンスを開始できます。セットアップが完了すると、BlueXPアカウント、コネクタ、クラウドプロバイダアカウントなどを管理できます。
+  summary: NetApp BlueXPの利用を開始すると、オンプレミス環境とクラウド環境にわたるデータの構築、保護、ガバナンスを開始できます。セットアップが完了したら、BlueXP 
+    IDおよびアクセス管理（IAM）を使用してリソースへのアクセスを制御し、コネクタ、クラウドプロバイダアカウントなどを管理できます。
   keywords: bluexp, connector, accounts, get started, setup, administration, sign
     up, log in, login, permissions
-  lead: NetApp BlueXPの利用を開始すると、オンプレミス環境とクラウド環境にわたるデータの構築、保護、ガバナンスを開始できます。セットアップが完了すると、BlueXPアカウント、コネクタ、クラウドプロバイダアカウントなどを管理できます。
+  lead: NetApp BlueXPの利用を開始すると、オンプレミス環境とクラウド環境にわたるデータの構築、保護、ガバナンスを開始できます。セットアップが完了したら、BlueXP 
+    IDおよびアクセス管理（IAM）を使用してリソースへのアクセスを制御し、コネクタ、クラウドプロバイダアカウントなどを管理できます。
   tiles:
   - title: はじめに
     links:
@@ -18,14 +20,18 @@ indexpage:
       url: "/task-quick-start-restricted-mode.html"
     - title: プライベートモードで開始します
       url: "/task-quick-start-private-mode.html"
-  - title: BlueXPのアカウント
+  - title: BlueXPのIAM
     links:
-    - title: BlueXPアカウントの詳細をご確認ください
-      url: concept-netapp-accounts.html
-    - title: BlueXPアカウントを管理します
-      url: task-managing-netapp-accounts.html
-    - title: アカウントでの処理を監視します
-      url: task-monitor-cm-operations.html
+    - title: BlueXP  のアイデンティティ管理とアクセス管理の詳細
+      url: concept-identity-and-access-management.html
+    - title: BlueXP  IAMの使用を開始する
+      url: task-iam-get-started.html
+    - title: フォルダとプロジェクトを使用してリソースを整理する
+      url: task-iam-manage-folders-projects.html
+    - title: メンバーとその権限の管理
+      url: task-iam-manage-members-permissions.html
+    - title: リソース階層の管理
+      url: task-iam-manage-resources.html
   - title: コネクタ
     links:
     - title: コネクタについて説明します
@@ -78,7 +84,7 @@ indexpage:
     links:
     - title: BlueXPにログインします
       url: task-logging-in.html
-    - title: BlueXPでアイデンティティフェデレーションを使用
+    - title: BlueXP  でアイデンティティフェデレーションを使用する
       url: concept-federation.html
   - title: ブログとコミュニティ
     links:

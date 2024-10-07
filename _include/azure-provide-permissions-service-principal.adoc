@@ -4,7 +4,7 @@
 
 . BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
 +
-image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
+image:screenshot-settings-icon-organization.png["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 
 . [クレデンシャルの追加]*を選択し、ウィザードの手順に従います。
 +

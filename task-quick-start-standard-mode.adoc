@@ -16,15 +16,15 @@ summary: BlueXPを標準モードで使い始めるには、BlueXPコンソー�
 [role="lead"]
 BlueXPを標準モードで使い始めるには、BlueXPコンソールのネットワークを準備し、サインアップしてアカウントを作成し、必要に応じてコネクタを作成し、BlueXPにサブスクライブします。
 
-標準モードでは、WebベースのコンソールからクラウドサービスとしてBlueXPにアクセスできます。開始する前に、次のことを理解しておく必要があります。 link:concept-netapp-accounts.html["BlueXPのアカウント"]、 link:concept-connectors.html["コネクタ"]および link:concept-modes.html["導入モード"]。
+標準モードでは、WebベースのコンソールからクラウドサービスとしてBlueXPにアクセスできます。作業を開始する前に、とについて理解しておく必要があります link:concept-modes.html["導入モード"] link:concept-connectors.html["コネクタ"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] link:reference-networking-saas-console.html["BlueXPコンソールを使用するためのネットワークの準備"]
 [role="quick-margin-para"]
 BlueXPコンソールにアクセスするコンピュータは、いくつかの管理タスクを実行するために特定のエンドポイントに接続する必要があります。ネットワークでアウトバウンドアクセスが制限されている場合は、これらのエンドポイントが許可されていることを確認する必要があります。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] link:task-sign-up-saas.html["サインアップしてアカウントを作成します"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] link:task-sign-up-saas.html["サインアップして組織を作成する"]
 [role="quick-margin-para"]
-にアクセスします https://console.bluexp.netapp.com["BlueXPコンソール"^] 登録してください。アカウントを作成するオプションが表示されますが、既存のアカウントに招待されている場合は、この手順を省略できます。
+に移動 https://console.bluexp.netapp.com["BlueXPコンソール"^]してサインアップします。BlueXP  組織を作成するオプションが表示されますが、既存の組織に招待されている場合は、その手順をスキップできます。
 
 [role="quick-margin-para"]
 これでログインし、デジタルアドバイザ、Amazon FSx for ONTAP 、Azure NetApp Files など、複数のBlueXPサービスの使用を開始できます。 link:concept-connectors.html["コネクタなしでできることを学びます"]。
@@ -34,7 +34,7 @@ BlueXPコンソールにアクセスするコンピュータは、いくつか�
 BlueXPの使用を開始するためにコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを活用することができます。このコネクタは、BlueXPでハイブリッドクラウド環境内のリソースとプロセスを管理するためのネットアップのソフトウェアです。
 
 [role="quick-margin-para"]
-BlueXPアカウント管理者は、クラウドまたはオンプレミスのネットワークにコネクタを作成できます。
+クラウドまたはオンプレミスネットワークにコネクタを作成できます。
 
 [role="quick-margin-list"]
 * link:concept-connectors.html["コネクタが必要になる状況とその方法については、こちらをご覧ください 仕事"]

@@ -27,7 +27,7 @@ summary: 複数のコネクタを使用している場合は、コンソール�
 .ステップ
 . [* Connector]*ドロップダウンを選択し、別のコネクタを選択して、*[Switch]*を選択します。
 +
-image:screenshot_connector_switch.gif["ヘッダーのコネクタアイコンとスイッチアクションを示すスクリーンショット。"]
+image:screenshot-connector-switch.png["ヘッダーのコネクタアイコンとスイッチアクションを示すスクリーンショット。"]
 
 
 

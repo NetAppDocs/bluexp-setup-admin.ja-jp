@@ -46,22 +46,49 @@ link:concept-modes.html["プライベートモードの仕組みを説明しま�
 コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。
 
 専用ホスト:: 他のアプリケーションと共有しているホストでは、このコネクタはサポートされていません。専用のホストである必要があります。
-サポートされているオペレーティングシステム::
+[[podman-versions]]オペレーティングシステムとコンテナの要件:: BlueXP  は、プライベートモードでBlueXP  を使用する場合、次のオペレーティングシステムでコネクタをサポートします。コネクタをインストールする前に、コンテナオーケストレーションツールが必要です。
 +
 --
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux の場合
-+
-** 8.6～8.10
-** 9.1～9.4
-+
-ホストがRed Hat Subscription Managementに登録されている必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
-
-+
-Connector は、これらのオペレーティングシステムの英語版でサポートされています。
+[cols="2a,2a,2a,2a,2a"]
+|===
+| オペレーティングシステム | サポートされるOSバージョン | サポートされるコネクタのバージョン | 必要なコンテナツール | SELinux 
 
 
+ a| 
+Red Hat Enterprise Linux の場合
+ a| 
+9.1～9.4
 
+8.6～8.10
+ a| 
+3.9.42以降（BlueXP  をプライベートモードで使用）
+ a| 
+Podmanバージョン4.6.1または4.9.4
+
+<<podman-configuration,Podman設定要件の表示>>です。
+ a| 
+強制モードまたは許可モードでサポート
+
+
+
+ a| 
+Ubuntu
+ a| 
+22.04 LTS
+ a| 
+3.9.29以降
+ a| 
+Docker Engine 23.0.6～26.0.0
+
+26.0.0は_new_connector 3.9.44以降のインストールでサポートされます。
+ a| 
+サポート対象外
+
+|===
+注：
+
+* Connector は、これらのオペレーティングシステムの英語版でサポートされています。
+* RHELの場合は、ホストをRed Hat Subscription Managementに登録する必要があります。登録されていない場合、ホストはコネクタのインストール時に必要なサードパーティ製ソフトウェアを更新するためのリポジトリにアクセスできません。
 
 
 --
@@ -88,40 +115,6 @@ BlueXPのユースケース `/opt` をインストールするには `/opt/appli
 このスペースはBlueXPの `/var` DockerやPodmanは、このディレクトリ内にコンテナを作成するように設計されているためです。具体的には、 `/var/lib/containers/storage` ディレクトリ。このスペースでは外部マウントやシンボリックリンクは使用できません。
 
 --
-コンテナオーケストレーションツール:: オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
-+
---
-[[podman-versions]]
-* Red Hat Enterprise LinuxにはPodmanが必要です。
-+
-Podmanでは、次の前提条件を満たす必要があります。
-
-+
-** Podmanバージョン4.6.1または4.9.4が必要
-** podman.socketサービスを有効にして開始する必要があります
-** Python3がインストールされている必要があります
-** podman-composeパッケージバージョン1.0.6がインストールされている必要があります。
-** podman-composeをPATH環境変数に追加する必要があります
-
-
-* UbuntuにはDocker Engineが必要です。
-+
-[cols="3*"]
-|===
-| コネクタのバージョン | Docker Engineの最小バージョン | Docker Engineの最大バージョン 
-
-
-| _New_Connectorのインストール（3.9.44以降） | 23.0.6 | 26.0.0 
-
-
-| 3.9.44リリースより前のリリースで作成されたコネクタ | 23.0.6 | 25.0.5 
-|===
-+
-https://docs.docker.com/engine/install/["Dockerのインストール手順を表示する"^]
-
-
-
---
 
 
 
@@ -133,7 +126,13 @@ PodmanまたはDocker Engineをインストールして、コネクタ用のホ�
 オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。
 
 * Red Hat Enterprise Linux 8および9にはPodmanが必要です。
++
+<<podman-versions,BlueXP  がサポートするPodmanバージョンを表示する>>です。
+
 * UbuntuにはDocker Engineが必要です。
++
+<<podman-versions,BlueXP  がサポートするDocker Engineのバージョンを表示する>>です。
+
 
 
 .手順
@@ -141,7 +140,13 @@ PodmanまたはDocker Engineをインストールして、コネクタ用のホ�
 ====
 .ポドマン
 --
-サポートされているバージョンのPodmanをインストールします。<<podman-versions,BlueXP  がサポートするPodmanバージョンを表示する>>です。
+次の手順に従って、Podmanをインストールし、次の要件を満たすように設定します。
+
+* podman.socketサービスを有効にして開始する必要があります
+* Python3がインストールされている必要があります
+* podman-composeパッケージバージョン1.0.6がインストールされている必要があります。
+* podman-composeをPATH環境変数に追加する必要があります
+
 
 .手順
 . podman-dockerパッケージがホストにインストールされている場合は削除します。
@@ -224,13 +229,10 @@ NOTE: を使用する `dnf install` コマンドは、PATH環境変数にpodman-
 --
 .Docker Engine の略
 --
-サポートされているバージョンのDocker Engineをインストールします。<<podman-versions,BlueXP  がサポートするDocker Engineのバージョンを表示する>>です。
+Dockerのドキュメントに従ってDocker Engineをインストールします。
 
 .手順
-. Docker Engineをインストールします。
-+
-https://docs.docker.com/engine/install/["Dockerからインストール手順を表示"^]
-
+. https://docs.docker.com/engine/install/["Dockerからインストール手順を表示"^]
 +
 特定のバージョンのDocker Engineをインストールするには、必ず次の手順に従ってください。最新バージョンをインストールすると、BlueXPでサポートされていないバージョンのDockerがインストールされます。
 
@@ -333,7 +335,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
-プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを導入する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。BlueXPでは透過型プロキシサーバはサポートされません。
+プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを展開する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。BlueXPでは透過型プロキシサーバはサポートされません。
 +
 --
 * IP アドレス

@@ -4,7 +4,7 @@ permalink: reference-networking-saas-console.html
 keywords: networking, urls, endpoints, web browser, console, network, set up networking 
 summary: SaaSレイヤで提供されるWebベースのBlueXPコンソールを使用すると、いくつかの管理タスクを実行する際に複数のエンドポイントに通信します。BlueXPコンソールにアクセスするコンピュータは、これらのエンドポイントに接続する必要があります。 
 ---
-= BlueXPコンソールを使用するためのネットワークの準備
+= BlueXP  コンソールのネットワークの準備
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -74,7 +74,7 @@ AWS サービス（ amazonaws.com ）：
 |===
 これらのエンドポイント以外にも、日常業務のために特定のエンドポイントに接続するためのアウトバウンドインターネットアクセスがコネクタにあることを確認する必要があります。これらのエンドポイントのリストは、次のセクションのリンクに従って確認できます。
 
-.関連リンク
+.関連情報
 * コネクタのネットワークを準備します
 +
 ** link:task-install-connector-aws-bluexp.html#step-1-set-up-networking["AWSネットワークをセットアップする"]
