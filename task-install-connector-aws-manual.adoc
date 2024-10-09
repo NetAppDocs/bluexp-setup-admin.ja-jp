@@ -90,6 +90,14 @@ CPU:: 8 コアまたは 8 個の vCPU
 RAM:: 32GB
 AWS EC2 インスタンスタイプ:: 上記の CPU と RAM の要件を満たすインスタンスタイプ。t3.2xlarge をお勧めします。
 キーペア:: コネクタを作成するときは、インスタンスで使用するEC2キーペアを選択する必要があります。
+IMDSv2使用時のPUT応答ホップ制限:: EC2インスタンスでIMDSv2がイネーブルになっている場合（新しいEC2インスタンスのデフォルト設定）、インスタンスのPUT応答ホップ制限を3に変更する必要があります。EC2インスタンスの制限を変更しないと、コネクタを設定しようとするとUI初期化エラーが表示されます。
++
+--
+* link:task-require-imdsv2.html["Amazon EC2インスタンスでIMDSv2を使用する必要がある"]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit["AWSのドキュメント：PUT応答ホップ制限の変更"^]
+
+
+--
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
 +
 --
