@@ -97,7 +97,7 @@ Google Cloudマシンのタイプ:: 上記の CPU と RAM の要件を満たす�
 /opt のディスクスペース:: 100GiB のスペースが使用可能である必要があります
 +
 --
-BlueXPのユースケース `/opt` をインストールするには `/opt/application/netapp` ディレクトリとその内容。
+BlueXP  は、を使用して `/opt`ディレクトリとその内容をインストールし `/opt/application/netapp`ます。
 
 --
 /var のディスク領域:: 20GiB のスペースが必要です

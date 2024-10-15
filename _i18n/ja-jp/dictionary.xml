@@ -3826,7 +3826,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
   <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">BlueXPを標準モードまたは制限モードで使用している場合、次のバージョンのRed Hat Enterprise Linux with _new_connectorを実行しているホストでコネクタがサポートされるようになりました。</block>
   <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">3.9.41リリースは、標準モードと制限モードで使用できます。</block>
-  <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">BlueXPのユースケース<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> をインストールするには<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> ディレクトリとその内容。</block>
   <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">このスペースはBlueXPの<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> DockerやPodmanは、このディレクトリ内にコンテナを作成するように設計されているためです。具体的には、<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> ディレクトリ。このスペースでは外部マウントやシンボリックリンクは使用できません。</block>
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">サポート対象のオペレーティングシステムの実行が認定されているベアメタルまたはホスト型ハイパーバイザーが必要です。</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">UbuntuにはDocker Engineが必要です。</block>
@@ -4272,8 +4271,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  では、組織のメンバーに割り当てることができるいくつかの事前定義されたロールがサポートされています。</block>
   <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">IAMの事前定義されたロールの詳細</block>
   <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>です。</block>
-  <block id="96798f05426bc55e0ae4e4719f68dc28" category="section-title">カスタムロール</block>
-  <block id="a38d248b1e1740da2f4eccb2dc9492be" category="paragraph">現時点ではカスタムロールはサポートされていません。</block>
   <block id="1f2652079b5030c3e1f5c5b95701a71c" category="paragraph">組織管理者_がコネクタを作成すると、BlueXP  はそのコネクタを組織および現在選択されているプロジェクトに自動的に関連付けます。_Organization admin_は、組織内の任意の場所からそのコネクタに自動的にアクセスできます。ただし、組織内に別のロールを持つ他のメンバーがいる場合は、そのコネクタを他のプロジェクトに関連付けない限り、それらのメンバーはそのコネクタが作成されたプロジェクトからのみそのコネクタにアクセスできます。</block>
   <block id="a84eaa1aafc5282e553ddc52e74d77b9" category="paragraph">次のような場合に、コネクタを別のプロジェクトで使用できるようにすることができます。</block>
   <block id="9ce6bd5f8ae0c74108c66519e8a1d5dd" category="list-text">組織内のメンバーが既存のコネクタを使用して、別のプロジェクトで追加の作業環境を作成または検出できるようにする場合</block>
@@ -4857,4 +4854,8 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
   <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
+  <block id="f7d8f0ba412660e43ffeb2e82b61e167" category="paragraph">BlueXP  は、を使用して<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block>ディレクトリとその内容をインストールし<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024年10月10日</block>
+  <block id="9071c576479353103106b574601bd920" category="section-title">コネクタ3.9.45パッチ</block>
+  <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">このパッチにはバグ修正が含まれています。</block>
 </blocks>
