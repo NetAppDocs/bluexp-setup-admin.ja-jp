@@ -3889,7 +3889,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="3baace5508f5436415356f7f1c718d50" category="list-text">* RAM *：32 GB</block>
   <block id="e5ee5282a10eef25059e919331c8ea5e" category="list-text">*マシンタイプ*：n2-standard-8をお勧めします。</block>
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">*インスタンスタイプを選択*：リージョンの可用性に応じて、サポートされているインスタンスタイプ（t3.2xlargeを推奨）のいずれかを選択します。</block>
-  <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">現時点では、Connector、BlueXP  デジタルウォレット、BlueXP  のコピーと同期、BlueXP  のバックアップとリカバリ、BlueXP  階層化のBlueXP  機能とサービスに関する通知がEメールで送信されます。サービスは今後のリリースで追加される予定です。</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">コネクタ3.9.43</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">3.9.43リリースは、標準モードと制限モードで使用できます。</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">CPUおよびRAMの要件の更新</block>
@@ -4858,4 +4857,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024年10月10日</block>
   <block id="9071c576479353103106b574601bd920" category="section-title">コネクタ3.9.45パッチ</block>
   <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">このパッチにはバグ修正が含まれています。</block>
+  <block id="ab99e6e0b893c9db1dce5c6dc26245bc" category="list-text">コネクタ、BlueXP  デジタルウォレット、BlueXP  のコピーと同期、BlueXP  のバックアップとリカバリなど、BlueXP  の機能とサービスに関する通知がEメールで送信されます。</block>
 </blocks>
