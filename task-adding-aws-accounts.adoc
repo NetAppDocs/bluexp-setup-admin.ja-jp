@@ -162,7 +162,7 @@ BlueXPに、Connectorの作成に必要な権限をBlueXPに与えるIAMロー�
 
 === IAM ロールを設定します
 
-BlueXP SaaSレイヤからロールを引き継ぐためのIAMロールを設定します。
+BlueXP  Software as a Service（SaaS）レイヤが役割を引き継ぐことを可能にするIAMロールを設定します。
 
 .手順
 . ターゲットアカウントの IAM コンソールに移動します。

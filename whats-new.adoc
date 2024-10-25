@@ -121,7 +121,11 @@ BlueXP  では、強制モードまたは許可モードのいずれかでSELin
 
 SELinuxのサポートは、標準モードと制限モードの3.9.40リリースから開始され、プライベートモードの3.9.42リリースから開始されます。
 
-BlueXP  では、UbuntuホストでのSELinuxはサポートされません。
+次の制限事項に注意してください。
+
+* BlueXP  では、UbuntuホストでのSELinuxはサポートされません。
+* Cloud Volumes ONTAPシステムの管理オペレーティングシステムでSELinuxが有効になっているコネクタではサポートされていません。
+
 
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["SELinuxの詳細"^]
 

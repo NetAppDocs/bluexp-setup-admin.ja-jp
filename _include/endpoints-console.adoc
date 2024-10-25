@@ -1,0 +1,11 @@
+= 
+:allow-uri-read: 
+
+
+BlueXP  Webベースのコンソールを使用しているときにコンピュータから接続されるエンドポイント:: WebブラウザからBlueXP  コンソールにアクセスするコンピュータには、複数のエンドポイントに接続できる必要があります。BlueXP  コンソールを使用してコネクタを設定し、BlueXP  を日常的に使用する必要があります。
++
+--
+link:reference-networking-saas-console.html["BlueXP  コンソールのネットワークの準備"]です。
+
+--
+
