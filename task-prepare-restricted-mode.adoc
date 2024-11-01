@@ -275,6 +275,9 @@ BlueXPコンソールにユーザがアクセスできるようにネットワ�
 | エンドポイント | 目的 
 
 
+| \https://api.bluexp.netapp.com | BlueXP  Webベースのコンソールは、このエンドポイントと通信して、許可、ライセンス、サブスクリプション、クレデンシャル、通知などに関連するアクションをBlueXP  APIとやり取りします。 
+
+
 | \https://signin.b2c.netapp.com | NetApp Support Site (NSS)の資格情報を更新するか、新しいNSS資格情報をBlueXPに追加する必要があります。 
 
 
