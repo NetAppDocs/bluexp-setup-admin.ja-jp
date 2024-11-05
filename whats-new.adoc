@@ -49,10 +49,7 @@ BlueXP  IAMでは、リソースと権限をよりきめ細かく管理でき�
 
 これらの機能拡張により、ユーザが実行できるアクションとユーザがアクセスできるリソースをより適切に制御できるようになります。
 
-
-
-==== BlueXP  IAMが既存アカウントに与える影響
-
+.BlueXP  IAMが既存アカウントに与える影響
 BlueXP  にログインすると、次の変更が表示されます。
 
 * あなたの_アカウント_が_組織_と呼ばれるようになりました
@@ -77,22 +74,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 * 複数のBlueXP  アカウントを使用している場合は、複数のBlueXP  組織が存在することになります。
 
 
-
-
-==== BlueXP  IAM用API
-
+.BlueXP  IAM用API
 この変更により、BlueXP  IAM用の新しいAPIが導入されましたが、以前のテナンシーAPIと下位互換性があります。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP  IAM向けAPIの詳細"^]
 
-
-
-==== サポートされる展開モード
-
+.サポートされる展開モード
 BlueXP  IAMは、標準モードでBlueXP  を使用する場合にサポートされます。BlueXP  を制限モードまたはプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。
 
-
-
-==== 次の手順
-
+.次の手順
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["BlueXP  IAMの使用を開始する"]
 
@@ -105,10 +93,7 @@ BlueXP  IAMは、標準モードでBlueXP  を使用する場合にサポー�
 
 3.9.45リリースは、標準モードと制限モードで使用できます。
 
-
-
-==== Ubuntu 24.04 LTSのサポート
-
+.Ubuntu 24.04 LTSのサポート
 3.9.45リリース以降、BlueXP  では、BlueXP  を標準モードまたは制限モードで使用する場合、Ubuntu 24.04 LTSホストへのコネクタの新規インストールがサポートされるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["コネクタホスト要件の表示"]。
@@ -196,20 +181,14 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 
 3.9.44リリースは、標準モードと制限モードで使用できます。
 
-
-
-==== 新規インストール時のDocker Engine 26のサポート
-
+.新規インストール時のDocker Engine 26のサポート
 コネクタの3.9.44リリース以降では、Ubuntuホストでの_new_connectorのインストールでDocker Engine 26がサポートされるようになりました。
 
 3.9.44より前のリリースで作成された既存のコネクタがある場合、Docker Engine 25.0.5は引き続きUbuntuホストでサポートされる最大バージョンです。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Docker Engineの要件の詳細"]です。
 
-
-
-==== ローカルUIアクセス用のSSL証明書が更新されました
-
+.ローカルUIアクセス用のSSL証明書が更新されました
 BlueXP  を制限モードまたはプライベートモードで使用する場合、クラウドリージョンまたはオンプレミスに導入されているコネクタ仮想マシンからユーザーインターフェイスにアクセスできます。デフォルトでは、BlueXP  は自己署名SSL証明書を使用して、コネクタで実行されているWebベースのコンソールへのセキュアなHTTPSアクセスを提供します。
 
 このリリースでは、新規および既存のコネクタのSSL証明書に変更を加えました。
@@ -333,10 +312,7 @@ BlueXP  でアイデンティティフェデレーションを使用する場�
 
 新しいプライベートモードリリースがNetApp Support Siteからダウンロードできるようになりました。
 
-
-
-==== RHEL 8および9のサポート
-
+.RHEL 8および9のサポート
 このリリースでは、BlueXPをプライベートモードで使用する場合のRed Hat Enterprise Linux 8または9ホストへのコネクタのインストールがサポートされます。次のバージョンのRHELがサポートされています。
 
 * 8.6～8.10
@@ -349,10 +325,7 @@ Podmanの要件、既知の制限事項、サポートされるオペレーテ�
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
 
-
-
-==== このリリースに含まれるバージョン
-
+.このリリースに含まれるバージョン
 このリリースには、プライベートモードでサポートされる次のバージョンのBlueXPサービスが含まれています。
 
 [cols="2*"]
@@ -503,10 +476,7 @@ BlueXPにサインアップした新規ユーザは、ログインする前にE�
 
 現時点では、3.9.40リリースは標準モードと制限モードで使用できます。
 
-
-
-==== RHEL 8および9のサポート
-
+.RHEL 8および9のサポート
 BlueXPを標準モードまたは制限モードで使用している場合、次のバージョンのRed Hat Enterprise Linux with _new_connectorを実行しているホストでコネクタがサポートされるようになりました。
 
 * 8.6～8.9
@@ -519,18 +489,12 @@ Podmanの要件、既知の制限事項、サポートされるオペレーテ�
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
 
-
-
-==== RHEL 7およびCentOS 7のサポート終了
-
+.RHEL 7およびCentOS 7のサポート終了
 2024年6月30日に、RHEL 7はメンテナンス終了（EOM）になり、CentOS 7はサポート終了（EOL）になります。NetAppは、これらのLinuxディストリビューションでのコネクタのサポートを2024年6月30日まで継続します。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["RHEL 7またはCentOS 7で既存のコネクタが実行されている場合の対処方法について説明します。"]。
 
-
-
-==== AWS権限の更新
-
+.AWS権限の更新
 3.9.38リリースでは、AWSのコネクタポリシーが更新され、「EC2：DescriptionAvailabilityZones」権限が追加されました。Cloud Volumes ONTAPでAWSローカルゾーンをサポートするには、この権限が必要になりました。
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["コネクタのAWS権限を表示する"]。
@@ -633,10 +597,7 @@ BlueXPで新しいプライベートモードリリースが見積もり可能�
 
 現時点では、3.9.38リリースは標準モードと制限モードで使用できます。このリリースでは、AWSでのIMDSv2とAWS権限の更新がサポートされます。
 
-
-
-==== IMDSv2のサポート
-
+.IMDSv2のサポート
 BlueXPで、コネクタインスタンスとCloud Volumes ONTAPインスタンスでAmazon EC2インスタンスメタデータサービスバージョン2（IMDSv2）がサポートされるようになりました。IMDSv2では、脆弱性に対する保護が強化されています。以前はIMDSv1のみがサポートされていました。
 
 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["AWSセキュリティブログでIMDSv2の詳細を確認する"^]
@@ -652,10 +613,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["既存のインスタンスでIMDSv2を設定する方法"]。
 
-
-
-==== AWS権限の更新
-
+.AWS権限の更新
 AWSのコネクタポリシーを更新して、「EC2：DescriptionAvailabilityZones」権限を追加しました。この権限は、今後のリリースで必要になります。リリースノートの詳細については、リリースノートを更新します。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["コネクタのAWS権限を表示する"]。
@@ -1556,18 +1514,12 @@ link:task-managing-netapp-accounts.html#allow-third-party-services["このオプ
 
 このリリースの Cloud Manager では、 Cloud Volumes ONTAP の管理が強化されています。
 
-
-
-==== すべてのクラウドプロバイダで利用できる機能強化
-
+.すべてのクラウドプロバイダで利用できる機能強化
 Cloud Volumes ONTAP 9.9.9..0 を導入および管理できるようになりました。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_new_990.html["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
 
-
-
-==== AWS で利用できる機能拡張
-
+.AWS で利用できる機能拡張
 * クラウドサービス 9.8 を AWS Commercial Cloud Volumes ONTAP （ C2S ）環境に導入できるようになりました。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["C2S の使用を開始する方法をご確認ください"^]
@@ -1581,16 +1533,10 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.htm
 
 
 
-
-
-==== Azure で利用できる機能拡張
-
+.Azure で利用できる機能拡張
 Cloud Volumes ONTAP 9.8 を、国防総省（ DoD ）の影響レベル 6 （ IL6 ）に導入できるようになりました。
 
-
-
-==== Google Cloud で利用可能な機能強化
-
+.Google Cloud で利用可能な機能強化
 * Google Cloud で Cloud Volumes ONTAP 9.8 以降に必要な IP アドレスの数が削減されました。デフォルトでは、 IP アドレスを 1 つ減らす必要があります（インタークラスタ LIF をノード管理 LIF と統合しました）。また、 API を使用する場合は SVM 管理 LIF の作成を省略でき、追加の IP アドレスが不要になります。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html["Google Cloud の IP アドレス要件の詳細については、こちらをご覧ください"^]
