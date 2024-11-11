@@ -24,9 +24,9 @@ BlueXPの使用を開始するためにコネクタは必要ありません。�
 
 コネクタなしでBlueXPの次の機能とサービスを使用できます。
 
-* Amazon FSx for NetApp ONTAP 作業環境の作成
+* NetApp ONTAP 対応の Amazon FSX
 +
-コネクタは作業環境の作成には必要ありませんが、ボリュームの作成と管理、データのレプリケート、FSx for ONTAP とBlueXPの分類やコピーと同期などのサービスの統合を行う必要があります。
+一部のアクションでは、コネクタまたはBlueXP  ワークロードファクトリリンクが必要です。 https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["コネクタまたはリンクが必要なアクションを確認する"^]
 
 * 自動化カタログ
 * Azure NetApp Files の特長
@@ -52,6 +52,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 * ソフトウェアの更新
 * 持続可能性
+* ワークロードファクトリ
 
 
 

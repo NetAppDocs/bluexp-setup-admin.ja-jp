@@ -36,17 +36,18 @@ image:screenshot_accounts_select_aws.gif["[Details  Credentials]ページの[Swi
 
 == 追加の AWS クレデンシャル
 
-AWSクレデンシャルを追加するには、次の2つの方法があります。
+次の場合、BlueXP  にAWSクレデンシャルを追加することがあります。
 
-* 既存のコネクタにAWSクレデンシャルを追加できます
-* AWSクレデンシャルはBlueXPに直接追加できます
+* 既存のBlueXP  Connectorを追加のAWSアカウントで使用するには
+* 特定のAWSアカウントで新しいコネクタを作成するには
+* FSx for ONTAPファイルシステムの作成と管理
 
 
 詳細については、以下のセクションを参照してください。
 
 
 
-=== AWS クレデンシャルを既存のコネクタに追加する
+=== 別のAWSアカウントでコネクタを使用するためのAWSクレデンシャルを追加する
 
 BlueXPを追加のAWSアカウントで使用する場合は、IAMユーザのAWSキー、または信頼されたアカウントのロールのARNを指定できます。次の図は、 2 つの追加アカウントを示しています。 1 つは、信頼されたアカウントの IAM ロールを介してアクセス許可を提供し、もう 1 つは IAM ユーザの AWS キーを使用してアクセス許可を提供します。
 
@@ -62,13 +63,19 @@ link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["�
 
 
 
-=== AWSクレデンシャルをBlueXPに直接追加します
+=== AWSクレデンシャルを追加してコネクタを作成
 
-BlueXPに新しいAWS資格情報を追加すると'FSX for ONTAP 作業環境の作成と管理'またはコネクタの作成に必要な権限が提供されます
+BlueXP  に新しいAWSクレデンシャルを追加すると、コネクタの作成に必要な権限が付与されます。
 
-* link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["BlueXP for Amazon FSx for ONTAP にAWSクレデンシャルを追加する方法をご紹介します"^]
-* link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["コネクタを作成するためにAWSクレデンシャルをBlueXPに追加する方法について説明します"]
+link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["コネクタを作成するためにAWSクレデンシャルをBlueXPに追加する方法について説明します"]
 
+
+
+=== FSx for ONTAP用のAWSクレデンシャルの追加
+
+BlueXP  に新しいAWSクレデンシャルを追加すると、FSx for ONTAP作業環境の作成と管理に必要な権限が付与されます。
+
+https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["BlueXP for Amazon FSx for ONTAP にAWSクレデンシャルを追加する方法をご紹介します"^]
 
 
 

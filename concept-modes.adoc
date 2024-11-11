@@ -149,9 +149,6 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 | サポートされるサービス | 注： 
 
 
-| ONTAP 対応の Amazon FSX | フルサポート 
-
-
 | Azure NetApp Files の特長 | フルサポート 
 
 
@@ -328,7 +325,7 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 
 .10+| *作業環境*
 
-表の次の部分には、BlueXPキャンバスでの作業環境管理のサポートが表示されます。BlueXPのバックアップとリカバリでサポートされるバックアップ先を示すわけではありません。 | ONTAP 対応の Amazon FSX | はい。 | いいえ 
+表の次の部分には、BlueXPキャンバスでの作業環境管理のサポートが表示されます。BlueXPのバックアップとリカバリでサポートされるバックアップ先を示すわけではありません。 | ONTAP 対応の Amazon FSX | いいえ | いいえ 
 
 
 | Amazon S3 | いいえ | いいえ 
@@ -358,7 +355,7 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 | StorageGRID | いいえ | いいえ 
 
 
-.16+| * サービス * | アラート | いいえ | いいえ 
+.17+| * サービス * | アラート | いいえ | いいえ 
 
 
 | バックアップとリカバリ | はい。
@@ -408,6 +405,9 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 | ボリュームキャッシュ | いいえ | いいえ 
+
+
+| ワークロードファクトリ | いいえ | いいえ 
 
 
 .7+| *機能* | BlueXP  IDおよびアクセス管理 | いいえ | いいえ 

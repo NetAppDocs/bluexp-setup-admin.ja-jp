@@ -764,7 +764,7 @@ BlueXPがAWSでConnectorインスタンスを起動すると、そのAWSアカ�
 
 === ONTAP 対応の Amazon FSX
 
-コネクタは、Amazon FSx for ONTAP を管理するための次のAPI要求を行います。
+コネクタは、Amazon FSx for ONTAPファイルシステムを管理するために次のAPI要求を行います。
 
 * EC2: DescribeInstances
 * EC2: DescribeInstanceStatus
