@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-iam-manage-folders-projects.html 
-keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management 
+keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management, project id 
 summary: BlueXP  のIDとアクセス管理により、フォルダとプロジェクトを使用して完全なリソース階層を表すことができます。 
 ---
 = フォルダとプロジェクトを使用してBlueXP  IAMでリソースを整理する
@@ -145,6 +145,23 @@ link:concept-identity-and-access-management.html#role-inheritance["ロールの�
 
 .結果
 BlueXP  は、フォルダまたはプロジェクトへのアクセス権を持つメンバーを更新します。
+
+
+
+== プロジェクトのIDを取得する
+
+BlueXP  APIを使用している場合は、プロジェクトのIDを取得する必要があります。たとえば、Cloud Volumes ONTAP作業環境を作成する場合などです。
+
+.手順
+. [*Organization*]ページで、テーブル内のプロジェクトに移動し、image:icon-action.png["横方向の 3 つの点を示すアイコン"]
++
+プロジェクトIDが表示されます。
+
+. IDをコピーするには、コピーボタンを選択します。
++
+image:screenshot-iam-project-id.png["プロジェクトのアクションメニューを選択するプロジェクトIDが表示されたフォルダとプロジェクトテーブルのスクリーンショット。"]
+
+
 
 
 
