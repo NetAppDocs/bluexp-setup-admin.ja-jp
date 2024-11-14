@@ -4078,7 +4078,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="1017ad8551dc7209fead1d996608e2b5" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。利用可能なインストールオプションの1つは、Azure MarketplaceからAzureでコネクタを直接作成することです。Azure Marketplaceからコネクタを作成するには、ネットワークを設定し、Azureの権限を準備し、インスタンス要件を確認してからコネクタを作成する必要があります。</block>
   <block id="9a63fba43be3e1df0de44c749000ffc5" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションには、BlueXP  から直接AWSでコネクタを作成するか、gcloudを使用してコネクタを作成することがあります。BlueXPまたはgcloudを使用してGoogle Cloudでコネクタを作成するには、ネットワークを設定し、Google Cloud権限を準備し、Google Cloud APIを有効にしてから、コネクタを作成する必要があります。</block>
   <block id="455e0d1571fc687b88776ecc58050d7b" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションの1つは、Google Cloudで実行されているLinuxホストにコネクタソフトウェアを手動でインストールすることです。独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、Google Cloudの権限を準備し、APIを有効にしてから、コネクタをインストールし、準備した権限を指定する必要があります。</block>
-  <block id="e080a3173dc73a079c4fd120abb491e0" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。コネクタをオンプレミスで実行するには、ホストの要件を確認し、ネットワークを設定し、クラウドの権限を準備し、コネクタをインストールし、コネクタを設定してから、準備した権限を指定する必要があります。</block>
   <block id="5ed8d571b208e6fe2728f122d3340d93" category="paragraph">コネクタをオンプレミスにインストールする場合は、必要な権限を持つIAMユーザのアクセスキーを追加して、BlueXP  にAWS権限を付与する必要があります。</block>
   <block id="7247a245f2594a184b7ed7669be8c32e" category="paragraph">コネクタがオンプレミスにインストールされている場合は、Microsoft Entra IDでサービスプリンシパルを設定し、BlueXP  が必要とするAzureクレデンシャルを取得して、BlueXP  にAzure権限を付与する必要があります。</block>
   <block id="d73fea737459cd596b8a61a9c640bf6f" category="paragraph">コネクタソフトウェアをオンプレミスの既存のLinuxホストにダウンロードしてインストールします。</block>
@@ -4887,4 +4886,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024年11月11日</block>
   <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>です。</block>
+  <block id="be6af94f792f554a6fe5be714926ba2a" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。コネクタをオンプレミスで実行するには、ホスト要件の確認、ネットワークのセットアップ、クラウドの権限の準備、コネクタのインストール、コネクタのセットアップ、準備した権限の提供が必要です。</block>
 </blocks>
