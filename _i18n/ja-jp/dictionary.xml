@@ -4905,7 +4905,7 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">に移動し<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block>、2024年11月リリースに含まれる変更点を確認します。</block>
   <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">BlueXP  デジタルウォレットとBlueXP  レプリケーションもプライベートモードに含まれていますが、以前のプライベートモードリリースから変更はありません。</block>
   <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>S</block>
-  <block id="d9e0b5302621c1c23c370143ae83f9e2" category="paragraph">BlueXP  Connectorを設定するユーザーは、標準モードで動作しているBlueXP  組織に属していないログインを使用してBlueXP  にログインする必要があります。</block>
-  <block id="958a2cecb2c46938c95b34d62fe1951c" category="paragraph">BlueXP  ログインが標準モードで動作している組織に関連付けられている場合は、新しいBlueXP  ログインまたは組織に属していないNetAppサポートサイトのクレデンシャルでサインアップする必要があります。そうしないと、セットアップ画面に制限モードを有効にするオプションが表示されません。</block>
   <block id="fbb40b7689fb13eea9ed1fa8b7206a3b" category="list-text">新しいBlueXP  アカウントの名前を入力します。</block>
+  <block id="57d3121acc1a5ab1d49ad8c9d1074921" category="paragraph">BlueXP  Connectorを設定するユーザーは、BlueXP  アカウントまたは組織に属していないログインを使用してBlueXP  にログインする必要があります。</block>
+  <block id="b1308196c2d004e3aef97cd9d7807956" category="paragraph">BlueXP  ログインが別のアカウントまたは組織に関連付けられている場合は、新しいBlueXP  ログインでサインアップする必要があります。そうしないと、セットアップ画面に制限モードを有効にするオプションが表示されません。</block>
 </blocks>
