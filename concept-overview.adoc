@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-overview.html 
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers 
-summary: NetApp BlueXPは、オンプレミス環境とクラウド環境にわたってデータの構築、保護、ガバナンスを支援する単一のコントロールプレーンです。BlueXP SaaSプラットフォームには、ストレージ管理、データモビリティ、データ保護、データ分析と制御を提供するサービスが含まれています。管理機能は、WebベースのコンソールとAPIを介して提供されます。 
+summary: NetApp BlueXPは、オンプレミス環境とクラウド環境にわたってデータの構築、保護、ガバナンスを支援する単一のコントロールプレーンです。 
 ---
 = BlueXPの詳細をご覧ください
 :hardbreaks:
@@ -20,60 +20,84 @@ NetApp BlueXPは、オンプレミス環境とクラウド環境にわたって�
 
 == 機能
 
-BlueXPプラットフォームは、データ管理において、ストレージ、モビリティ、保護、分析と制御という4つの主要な柱を提供します。
+BlueXP  は、ハイブリッドマルチクラウドと統合データサービス全体にわたってストレージを一元的に管理し、データの保護、セキュリティの確保、最適化を実現します。
 
-ストレージ:: AWS、Azure、Google Cloud、オンプレミスのいずれであっても、ストレージを検出、導入、管理できます。
+
+
+=== BlueXP  キャンバスからストレージを一元管理
+
+_ BlueXP  canvas_を使用すると、クラウドとオンプレミスのストレージを検出、導入、最適化、管理できます。キャンバスは、すべてのストレージ管理のための単一の場所を提供します。
+
+
+
+==== サポートされるクラウドとオンプレミスのストレージ
+
+BlueXP  では、BlueXP  キャンバスから次のタイプのストレージを管理できます。
+
+クラウドストレージソリューション::
 +
 --
-* クラウドファイルストレージサービスをセットアップして使用
-+
-** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files の特長"^]
-** https://bluexp.netapp.com/fsx-for-ontap["NetApp ONTAP 対応の Amazon FSX"^]
-** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service for Google Cloud"^]
-
-
-* をセットアップして使用します https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 複数のクラウドにわたって効率的なマルチプロトコルデータ管理を実現します。
-* 検出と管理 https://bluexp.netapp.com/netapp-on-premises["オンプレミスストレージ"^]：
-+
-** Eシリーズシステム
-** ONTAP クラスタ
-** StorageGRID システム
-
-
+* NetApp ONTAP 対応の Amazon FSX
+* Azure NetApp Files の特長
+* Cloud Volumes ONTAP
 
 
 --
-モビリティ:: データを同期、コピー、階層化することで、必要な場所にデータを移動できます。
+オンプレミスのフラッシュとオブジェクトストレージ::
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["コピーと同期"^]
-* https://bluexp.netapp.com/cloud-tiering["階層化"^]
+* Eシリーズシステム
+* ONTAP クラスタ
+* StorageGRID システム
 
 
 --
-保護:: 自動化された保護メカニズムを使用して、データ損失、計画外停止、ランサムウェアなどのサイバー脅威からデータを保護します。
+クラウドオブジェクトストレージ::
 +
 --
-* https://bluexp.netapp.com/cloud-backup["バックアップとリカバリ"^]
-* https://bluexp.netapp.com/disaster-recovery["ディザスタリカバリ"^]
-* https://bluexp.netapp.com/replication["レプリケーション"^]
-* https://bluexp.netapp.com/ransomware-protection["ランサムウェアからの保護"^]
-
-
---
-分析と管理:: ツールを使用して、データストレージとインフラを監視、マッピング、最適化できます。実用的な情報を取得して、ストレージの健全性、耐障害性、経済性を最適化します。
-+
---
-* https://bluexp.netapp.com/netapp-cloud-data-sense["分類"^]
-* https://bluexp.netapp.com/digital-advisor["デジタルアドバイザ"^]
-* https://bluexp.netapp.com/digital-advisor["経済効率"^]
-* https://bluexp.netapp.com/digital-advisor["運用の耐障害性"^]
+* Amazon S3ストレージ
+* Azure BLOBストレージ
+* Google クラウドストレージ
 
 
 --
 
 
-https://bluexp.netapp.com/["BlueXP  を使用してハイブリッドマルチクラウド環境全体にわたってデータを管理する方法の詳細をご確認ください。"^]
+
+
+==== 作業環境からのストレージ管理
+
+BlueXP  キャンバスの_working environments _は、検出または導入したクラウドとオンプレミスのストレージを表します。作業環境を選択してBlueXP  データサービスと統合するか、作業環境に移行して、ボリュームの追加などのストレージ管理操作を実行できます。
+
+image:screenshot-canvas.png["BlueXP  キャンバスのスクリーンショット。複数の作業環境が表示されています。そのうちの1つが選択されており、BlueXP  データサービスを有効にするか、[Enter Working Environment]を選択してストレージを管理できます。"]
+
+
+
+=== データの保護、セキュリティ、最適化を実現する統合サービス
+
+BlueXP  には、オンプレミスとクラウドのストレージ環境にわたってデータのセキュリティ、整合性、可用性を維持するための包括的な統合データサービススイートが含まれています。
+
+BlueXP  アラート:: ONTAP環境の容量、可用性、パフォーマンス、保護、セキュリティに関連する問題を表示できます。
+BlueXP自動化カタログ:: スクリプト化されたソリューションを使用して、NetApp製品とサービスの導入と統合を自動化できます。
+BlueXPのバックアップとリカバリ:: クラウドとオンプレミスのデータをバックアップ、リストア
+BlueXPの分類:: アプリケーションデータとクラウド環境のプライバシーを確保
+BlueXPのクラウド運用:: クラウドコンピューティング関連の支出を可視化し、削減可能なコストを特定できます。
+BlueXPのコピーと同期:: オンプレミスとクラウドのデータストア間でデータを同期
+BlueXPデジタルアドバイザ:: 予測分析とプロアクティブなサポートでデータインフラを最適化
+BlueXPのデジタルウォレット:: ライセンスとサブスクリプションを管理および監視します。
+BlueXPディザスタリカバリ:: ディザスタリカバリサイトとしてVMware Cloud on Amazon FSx for ONTAPを使用して、オンプレミスのVMwareワークロードを保護します。
+BlueXPの優れた経済性:: 現在または予測されている低容量のクラスタを特定し、データ階層化または容量追加の推奨事項を実装します。
+BlueXPの優れた運用耐障害性:: ファームウェアとソフトウェア設定のリスクを自動で修正し、ONTAP クラスタの健全性を維持
+BlueXPのランサムウェア対策:: ランサムウェア攻撃につながる可能性のある異常を検出ワークロードの保護とリカバリ
+BlueXPレプリケーション:: バックアップとディザスタリカバリをサポートするために、ストレージシステム間でデータをレプリケートします。
+BlueXP  ソフトウェアアップデート:: ONTAPアップグレードの評価、計画、実行を自動化
+BlueXPの持続可能性ダッシュボード:: ストレージシステムの持続可能性を分析します。
+BlueXP  の階層化:: オンプレミスの ONTAP ストレージをクラウドに拡張
+BlueXPのボリュームキャッシュ:: 書き込み可能なキャッシュボリュームを作成して、データへのアクセスを高速化したり、アクセス頻度の高いボリュームのトラフィックをオフロードしたりします。
+BlueXP  ワークロードファクトリ:: Amazon FSx for NetApp ONTAPを使用して主要なワークロードを設計、セットアップ、運用できます。
+
+
+https://www.netapp.com/bluexp/["BlueXP  と利用可能なデータサービスの詳細"^]
 
 
 
@@ -91,7 +115,7 @@ BlueXPの価格は、使用する予定のサービスによって異なりま�
 
 == BlueXPの仕組み
 
-BlueXP  には、SaaSレイヤを通じて提供されるWebベースのコンソール、リソースおよびアクセス管理システム、作業環境を管理してBlueXP  クラウドサービスを有効にするコネクタが含まれています。
+BlueXP  には、SaaSレイヤを通じて提供されるWebベースのコンソール、リソースおよびアクセス管理システム、作業環境を管理してBlueXP  クラウドサービスを有効にするコネクタ、ビジネス要件を満たすさまざまな導入モードが含まれています。
 
 
 
@@ -129,7 +153,7 @@ link:concept-connectors.html["コネクタの詳細については、こちら�
 
 === 展開モード
 
-BlueXP  は、セキュリティと接続が制限されている環境でサポートされています。restricted mode_or_private mode__を使用して、アウトバウンド接続をBlueXP SaaSレイヤへの制限できます。
+BlueXP  には3つの導入モードがあります。_標準モード_すべての機能を提供するために、BlueXP  ソフトウェアサービス（SaaS）レイヤを利用します。セキュリティと接続が制限されている環境では、_restricted mode_and_private mode_limitを使用してBlueXP  SaaSレイヤへのアウトバウンド接続を制限します。
 
 link:concept-modes.html["BlueXPの導入モードの詳細については、こちらをご覧ください"]。
 

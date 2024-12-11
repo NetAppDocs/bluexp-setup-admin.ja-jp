@@ -18,6 +18,29 @@ IDおよびアクセス管理（IAM）、コネクタ、クラウドプロバイ
 
 
 
+== 2024年12月9日
+
+
+
+=== コネクタ3.9.47
+
+このリリースのBlueXP  Connectorには、バグの修正と、コネクタのインストール時に通知されるエンドポイントの変更が含まれています。
+
+現時点では、3.9.47リリースは標準モードと制限モードで使用できます。
+
+.インストール時にNetAppサポートに連絡するエンドポイント
+コネクタを手動でインストールすると、インストーラは\https://support NetApp .comに接続しなくなります。
+
+インストーラは引き続き\ https://mysupport . NetApp . comにアクセスします。
+
+
+
+=== BlueXP  IDおよびアクセス管理
+
+[Connectors]ページには、現在使用可能なコネクタのみが表示されます削除したコネクタは表示されなくなります。
+
+
+
 == 2024年11月26日
 
 
@@ -53,7 +76,7 @@ BlueXP  デジタルウォレットとBlueXP  レプリケーションもプ�
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]S
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
 
 
 
@@ -1134,7 +1157,7 @@ https://bluexp.netapp.com["詳細については、BlueXPのWebサイトをご�
 新しいナビゲーションメニュー:: BlueXPのナビゲーションメニューでは、サービスがカテゴリ別に分類され、機能に応じてサービスの名前が付けられます。たとえば、BlueXPのバックアップとリカバリには*[保護]*カテゴリからアクセスできます。
 +
 --
-image:screenshot-navigation-menu.png["BlueXPのナビゲーションメニューのスクリーンショット。ストレージやヘルスなどのカテゴリを示しています。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-navigation-menu.png["BlueXPのナビゲーションメニューのスクリーンショット。ストレージやヘルスなどのカテゴリを示しています。"]
 
 --
 新しい製品統合::
@@ -1510,7 +1533,7 @@ NetApp Support Site（ NSS ）アカウントは、設定メニューではな�
 
 link:task-adding-nss-accounts.html["NSS アカウントを管理する方法について説明します"]。
 
-image:screenshot_nss_management.png["NSS アカウントを追加できる Support Dashboard の NSS Management タブのスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot_nss_management.png["NSS アカウントを追加できる Support Dashboard の NSS Management タブのスクリーンショット。"]
 
 
 

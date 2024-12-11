@@ -259,7 +259,6 @@ link:reference-networking-saas-console.html["BlueXP  コンソールのネッ�
 手動インストール中にエンドポイントに接続しました:: 独自のLinuxホストにコネクタを手動でインストールする場合、コネクタのインストーラは、インストールプロセス中に次のURLにアクセスする必要があります。
 +
 --
-* \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \ https://signin.b2c .CNAME.com NetApp（このエンドポイントは、\ https://mysupport .CNAME.comのCNAME URL NetAppです）
 * \https://cloudmanager.cloud.netapp.com/tenancy
