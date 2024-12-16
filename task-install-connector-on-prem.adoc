@@ -258,12 +258,34 @@ link:reference-networking-saas-console.html["BlueXP  コンソールのネッ�
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
+* イメージを取得するには、インストーラが次の2つのエンドポイントセットのいずれかにアクセスする必要があります。
 +
+** オプション1（推奨）：
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** オプション2：
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
++
+オプション1にリストされているエンドポイントは、より安全であるため推奨されます。オプション1にリストされているエンドポイントを許可し、オプション2にリストされているエンドポイントを拒否するようにファイアウォールを設定することをお勧めします。これらのエンドポイントについて、次の点に注意してください。
+
++
+** オプション1にリストされているエンドポイントは、コネクタの3.9.47リリース以降でサポートされています。以前のリリースのコネクタとの下位互換性はありません。
+** コネクタは、最初にオプション2にリストされているエンドポイントに接続します。これらのエンドポイントにアクセスできない場合、コネクタはオプション1にリストされているエンドポイントに自動的に接続します。
+** コネクタをBlueXP  のバックアップおよびリカバリまたはBlueXP  ランサムウェア対策で使用する場合、オプション1のエンドポイントはサポートされません。この場合、オプション1にリストされているエンドポイントを禁止し、オプション2にリストされているエンドポイントを許可することができます。
+
+
+
+
 ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。
-
-
 
 --
 
@@ -337,15 +359,7 @@ https://mysupport.netapp.com をご覧ください
 
 
  a| 
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+\https://\*.api。BlueXP 。NetApp。com\https://api。BlueXP 。NetApp。com\https://*.cloudmanager.cloud。NetApp。com\https://cloudmanager.cloud。NetApp。com\https：// NetApp -cloud-account.auth0.com
  a| 
 BlueXPでSaaSの機能とサービスを提供するため。
 
@@ -354,13 +368,28 @@ BlueXPでSaaSの機能とサービスを提供するため。
 
 
  a| 
-\https://*.blob.core.windows.net
+2つのエンドポイントセットから選択します。
 
-\https://cloudmanagerinfraprod.azurecr.io
+* オプション1（推奨）^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* オプション2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
  a| 
-をクリックして、 Connector と Docker コンポーネントをアップグレードします。
+コネクタのアップグレード用のイメージを取得します。
 
 |===
+^1^オプション1にリストされているエンドポイントは、より安全であるため推奨されます。オプション1にリストされているエンドポイントを許可し、オプション2にリストされているエンドポイントを拒否するようにファイアウォールを設定することをお勧めします。これらのエンドポイントについて、次の点に注意してください。
+
+* オプション1にリストされているエンドポイントは、コネクタの3.9.47リリース以降でサポートされています。以前のリリースのコネクタとの下位互換性はありません。
+* コネクタは、最初にオプション2にリストされているエンドポイントに接続します。これらのエンドポイントにアクセスできない場合、コネクタはオプション1にリストされているエンドポイントに自動的に接続します。
+* コネクタをBlueXP  のバックアップおよびリカバリまたはBlueXP  ランサムウェア対策で使用する場合、オプション1のエンドポイントはサポートされません。この場合、オプション1にリストされているエンドポイントを禁止し、オプション2にリストされているエンドポイントを許可することができます。
+
+
 --
 
 

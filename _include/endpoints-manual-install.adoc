@@ -10,11 +10,72 @@
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
+* イメージを取得するには、インストーラが次の2つのエンドポイントセットのいずれかにアクセスする必要があります。
++
+** オプション1（推奨）：
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** オプション2：
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
 
 
 --
 
+
+手動インストール中にエンドポイントに接続しました:: 独自のLinuxホストにコネクタを手動でインストールする場合、コネクタのインストーラでは、インストールプロセス中に複数のURLにアクセスする必要があります。
++
+--
+* コネクタのインストール場所に関係なく、次のエンドポイントに常に接続されます。
++
+** \https://mysupport.netapp.com
+** \ https://signin.b2c .CNAME.com NetApp（このエンドポイントは、\ https://mysupport .CNAME.comのCNAME URL NetAppです）
+** \https://cloudmanager.cloud.netapp.com/tenancy
+** \https://stream.cloudmanager.cloud.netapp.com
+** \https://production-artifacts.cloudmanager.cloud.netapp.com
+
+
+* AWS Governmentリージョンにコネクタをインストールする場合、インストーラは次のエンドポイントにもアクセスする必要があります。
++
+** \https://*.blob.core.windows.net
+** \https://cloudmanagerinfraprod.azurecr.io
+
+
+* コネクタをAzure Governmentリージョンにインストールする場合、インストーラは次のエンドポイントにもアクセスする必要があります。
++
+** \https://*.blob.core.windows.net
+** \https://occmclientinfragov.azurecr.us
+
+
+* 商用リージョンまたは主権リージョンにコネクタをインストールする場合は、次の2つのエンドポイントセットから選択できます。
++
+** オプション1（推奨）：
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** オプション2：
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
+
+
+--
+
+
+オプション1にリストされているエンドポイントは、より安全であるため推奨されます。オプション1にリストされているエンドポイントを許可し、オプション2にリストされているエンドポイントを拒否するようにファイアウォールを設定することをお勧めします。これらのエンドポイントについては、次の点に注意してください。**オプション1にリストされているエンドポイントは、コネクタの3.9.47リリース以降でサポートされています。以前のリリースのコネクタとの下位互換性はありません。**コネクタは、最初にオプション2にリストされているエンドポイントに接続します。これらのエンドポイントにアクセスできない場合、コネクタはオプション1にリストされているエンドポイントに自動的に接続します。**コネクタをBlueXP  バックアップ/リカバリまたはBlueXP  ランサムウェア対策で使用する場合、オプション1のエンドポイントはサポートされません。この場合、オプション1にリストされているエンドポイントを禁止し、オプション2にリストされているエンドポイントを許可することができます。
 
 ホストは、インストール中にオペレーティングシステムパッケージの更新を試みる可能性があります。ホストは、これらの OS パッケージの別のミラーリングサイトにアクセスできます。

@@ -22,7 +22,7 @@ BlueXPがAzureクレデンシャルを使用してユーザに代わってアク
 
 BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Azure の Connector 導入ポリシー"]。
 
-BlueXPがAzureにConnector仮想マシンを導入すると、が有効になります https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["システムによって割り当てられた管理 ID"^] 仮想マシンで、カスタムロールを作成して仮想マシンに割り当てます。このロールは、そのAzureサブスクリプション内でリソースとプロセスを管理するために必要な権限をBlueXPに提供します。 link:reference-permissions-azure.html["BlueXPがどのように権限を使用しているかを確認します"]。
+BlueXP  がAzureにConnector仮想マシンを導入すると、仮想マシンでが有効になり https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["システムによって割り当てられた管理 ID"^]、カスタムロールが作成されて仮想マシンに割り当てられます。このロールは、そのAzureサブスクリプション内でリソースとプロセスを管理するために必要な権限をBlueXPに提供します。link:reference-permissions-azure.html["BlueXPがどのように権限を使用しているかを確認します"]です。
 
 image:diagram_permissions_initial_azure.png["BlueXPがコネクタをAzureアカウントとサブスクリプションに導入する様子を示す概念図。システムによって割り当てられた管理IDが有効になり、Connector仮想マシンにカスタムロールが割り当てられます。"]
 

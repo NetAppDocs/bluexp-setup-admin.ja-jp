@@ -67,32 +67,48 @@
 \ https://support.netapp.com
 \https://mysupport.netapp.com |を使用してライセンス情報を取得し、AutoSupportメッセージをNetAppサポートに送信します。
 
-|\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+|\ https://\*.api . BlueXP . NetApp . com \ https://api . BlueXP . NetApp . com \ https://*.cloudmanager.cloud . NetApp . com \ https://cloudmanager.cloud . NetApp .com \ https：// NetApp -cloud-account.auth0.com
 
 |をクリックして、BlueXP内でSaaSの機能とサービスを提供します。
 
 コネクタは現在「cloudmanager.cloud.netapp.com"」に連絡していますが、今後のリリースでは「api.bluexp.netapp.com"」に連絡を開始します。
 
-|\https://*.blob.core.windows.net
+A | 2つのエンドポイントセットから選択します。
 
-\https://cloudmanagerinfraprod.azurecr.io
+* オプション1（推奨）^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
 
-|を押して、コネクタとそのDockerコンポーネントをアップグレードします。
+* オプション2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
 
-|\https://*.blob.core.windows.net
 
-\https://cloudmanagerinfraprod.azurecr.io
-このエンドポイントは、Azure Governmentリージョンでは必要ありません。
 
-\https://occmclientinfragov.azurecr.us
-このエンドポイントは、Azure Governmentリージョンでのみ必要です。
+|コネクタアップグレードのイメージを取得します。
 
-|を押して、コネクタとそのDockerコンポーネントをアップグレードします。
+^1^オプション1にリストされているエンドポイントは、より安全であるため推奨されます。オプション1にリストされているエンドポイントを許可し、オプション2にリストされているエンドポイントを拒否するようにファイアウォールを設定することをお勧めします。これらのエンドポイントについて、次の点に注意してください。
+
++*オプション1にリストされているエンドポイントは、コネクタの3.9.47リリース以降でサポートされています。以前のリリースのコネクタとの下位互換性はありません。*コネクタは、最初にオプション2にリストされているエンドポイントに接続します。これらのエンドポイントにアクセスできない場合、コネクタはオプション1にリストされているエンドポイントに自動的に接続します。*コネクタをBlueXP  バックアップ/リカバリまたはBlueXP  ランサムウェア対策で使用する場合、オプション1のエンドポイントはサポートされません。この場合、オプション1にリストされているエンドポイントを禁止し、オプション2にリストされているエンドポイントを許可することができます。
+
+|コネクタがAWS Governmentリージョンにある場合：\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+|コネクタがAWS Governmentリージョンにインストールされている場合にコネクタアップグレードのイメージを取得するには。
+
+|コネクタがAzure Governmentリージョンにある場合：\https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us
+
+|コネクタがAzure Governmentリージョンにインストールされているときに、コネクタアップグレードのイメージを取得するには。
+
+A|コネクタが商用リージョンまたはソブリンリージョンにある場合は、次の2つのエンドポイントセットから選択できます。
+
+* オプション1（推奨）^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* オプション2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+|コネクタが商業地域または主権地域にインストールされている場合に、コネクタアップグレードのイメージを取得します。
