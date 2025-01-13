@@ -71,5 +71,5 @@ BlueXP  を標準モードで使用している場合は、BlueXP  アカウ�
 
 | サポートダッシュボードを表示および管理します | はい。 | はい。 | いいえ | いいえ 
 |===
-.関連リンク
+.関連情報
 link:task-managing-netapp-accounts.html["BlueXPアカウントを管理します"]

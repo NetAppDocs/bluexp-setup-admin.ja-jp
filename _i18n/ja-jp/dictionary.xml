@@ -1044,7 +1044,6 @@
   <block id="3c2636f752222ce604af87906e481f03" category="list-text"><block ref="3c2636f752222ce604af87906e481f03" category="inline-link-rx"></block></block>
   <block id="7596270426e8c5f92be308ff330e0e64" category="inline-link">レプリケーションドキュメント</block>
   <block id="17ba1853097c1b83e5a82753f8133c2e" category="list-text"><block ref="17ba1853097c1b83e5a82753f8133c2e" category="inline-link-rx"></block></block>
-  <block id="06afa66cf6eca938a45be835a47030e1" category="paragraph-title">関連リンク</block>
   <block id="2579d10862aa7770a64b058fb84ce858" category="inline-link-macro">BlueXPの導入モード</block>
   <block id="672184337bf12286628179253519271e" category="paragraph"><block ref="672184337bf12286628179253519271e" category="inline-link-macro-rx"></block></block>
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。どちらのタスクも、Marketplaceのサブスクリプションを使用してBlueXPサービスの料金を支払うことができます。</block>
@@ -2487,9 +2486,6 @@
   <block id="3fa57b54a57f48366778b5343dad7a48" category="section-title">BlueXP for Amazon FSx for ONTAP にクレデンシャルを追加</block>
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">Amazon FSx for ONTAP 向けBlueXPドキュメント</block>
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">詳細については、を参照してください<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
-  <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">AWS サブスクリプションを関連付ける</block>
-  <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">AWSのクレデンシャルをBlueXPに追加したら、AWS Marketplaceサブスクリプションをそれらのクレデンシャルに関連付けることができます。このサブスクリプションでは、Cloud Volumes ONTAP の料金を時間単位（PAYGO）または年単位の契約で支払い、その他のBlueXPサービスを利用できます。</block>
-  <block id="5eae6608f40144c94d96a8f0a1602c97" category="paragraph">BlueXPに資格情報を追加した後、AWS Marketplaceサブスクリプションを関連付けるシナリオは2つあります。</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">コネクタの作成方法を説明します</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">BlueXP設定を変更する前にコネクタを作成する必要があります。 <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>。</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
@@ -2943,7 +2939,6 @@
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">次のビデオでは、Azure Marketplaceでのサブスクライブ手順を紹介しています。</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">次のビデオでは、Google Cloud Marketplaceから登録する手順を紹介しています。</block>
-  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">次のビデオは、AWS Marketplaceからサブスクライブする手順を示しています。</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -3286,7 +3281,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="240d9c0eecb88b98c7fc253d7a1ea3e9" category="section-title">既存のCloud Volumes ONTAP作業環境を別のAWSアカウントに移動できますか。</block>
   <block id="48fee81c8905ac5f4a12516fa379b0f7" category="paragraph">いいえ、Cloud Volumes ONTAP作業環境に関連付けられているAWSリソースを別のAWSアカウントに移動することはできません。</block>
   <block id="a0b5de080d56bb71b1a6a7c72fd88757" category="doc">BlueXPのAWSクレデンシャルとマーケットプレイスサブスクリプションを管理</block>
-  <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">AWSクレデンシャルに関連付けられているAWS Marketplaceサブスクリプションを変更する。</block>
   <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">BlueXPのAzureクレデンシャルとマーケットプレイスサブスクリプションを管理</block>
   <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">Azureクレデンシャルに関連付けられているAzure Marketplaceサブスクリプションを変更する。</block>
   <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22.04 LTS</block>
@@ -4387,8 +4381,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="888af4d1c4f4f8cf5928fe9cc5ae80c1" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用すると、プロジェクトとフォルダを使用してNetAppリソースを整理できます。a_project_は、組織のメンバーがmanage_resources_（Cloud Volumes ONTAPシステムなど）にアクセスするBlueXP  内のワークスペースを表します。a_folder_は、関連するプロジェクトをまとめてグループ化します。リソースをフォルダとプロジェクトに整理したら、組織メンバーに特定のフォルダとプロジェクトに対する権限を与えることで、リソースへのきめ細かなアクセス権を付与できます。</block>
   <block id="c08b7d4448e95633b73e2495389e853c" category="section-title">フォルダまたはプロジェクトの追加</block>
   <block id="9b72b5a70aa482b566f3aded23197da9" category="paragraph">BlueXP  組織を作成すると、1つのプロジェクトが含まれます。追加のプロジェクトを作成して、組織のリソースを管理できます。必要に応じてフォルダを作成し、関連するプロジェクトをまとめてグループ化することもできます。</block>
-  <block id="b9b4d0d7c739aa9127b9919f23478743" category="paragraph">組織の階層の深さは、7つのレベルまで下がります。その結果、ネストされたフォルダを6レベルまで作成できます。最後にネストされたフォルダには、階層の7番目のレベルにあるプロジェクトを含めることができます。</block>
-  <block id="5ed844477243e17219a5a1bb8244cb94" category="paragraph">次の図は、組織の階層の最大階層を示しています。</block>
   <block id="de599df9f91a76585a5d0e5049f80230" category="inline-image-macro">組織、6つのネストされたフォルダ、および最後にネストされたフォルダ内のプロジェクトを示すスクリーンショット。</block>
   <block id="140320cb76bc5580566bd6ef83ee9d69" category="paragraph"><block ref="140320cb76bc5580566bd6ef83ee9d69" category="inline-image-macro-rx" type="image"></block></block>
   <block id="54f6cd3aa5e387ea27f8d46fcd265b0f" category="list-text">[組織]ページで、*[フォルダまたはプロジェクトの追加]*を選択します。</block>
@@ -4403,24 +4395,17 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">必要に応じて、*メンバーの追加*を選択して、フォルダーまたはプロジェクトへのアクセス権を持つ追加の組織メンバーを指定し、役割を選択します。ロールは、メンバーがフォルダまたはプロジェクトに対して持つ権限を定義します。</block>
   <block id="23b701226cc247c8895ac46e9cd633ab" category="inline-link-macro">事前定義されたIAMロールの詳細</block>
   <block id="8d9ad9660b2859a6d51b88d7e31b54d2" category="paragraph"><block ref="ac90d6f587d2b5ff3fb7bb93da707f89" category="inline-link-macro-rx"></block>です。</block>
-  <block id="13ea0232702fea363d7f4aaffe9ba8f1" category="paragraph">BlueXP  はフォルダまたはプロジェクトを作成し、指定したリソースとメンバーを関連付けます。</block>
-  <block id="698adc884d432ec429a17995e5d34320" category="section-title">フォルダまたはプロジェクトに関連付けられているリソースとメンバーを表示する</block>
   <block id="903a5130798fef050adcb933e11d9330" category="paragraph">リソースが適切に整理され、組織内の適切なメンバーがアクセスできることを確認するには、フォルダまたはプロジェクトに関連付けられているリソースとメンバーを表示します。</block>
   <block id="5d051468e96f24341fd4c6192e28f6e2" category="list-text">[組織]ページで、テーブル内のプロジェクトまたはフォルダに移動し、を選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>て*[フォルダの編集]*または*[プロジェクトの編集]*を選択します。</block>
   <block id="3f6ecf327501ffc3f265d065c39f55b6" category="inline-image-macro">テーブル内のプロジェクトのアクションメニューを選択したときに[プロジェクトの編集]オプションが表示される[組織]ページのスクリーンショット。</block>
   <block id="f8731f9389f28c059bc2471d56363fcd" category="paragraph"><block ref="f8731f9389f28c059bc2471d56363fcd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="71aa242e147c147797dbd6f9f41b801c" category="list-text">[編集]ページで、関連付けられているリソースとメンバーアクセスに関する詳細を表示します。</block>
   <block id="a470fed0aa4603c3c8d460c4028252f1" category="list-text">関連付けられているリソースを表示するには、*[リソース]*を選択します。テーブルの*ステータス*列は、フォルダまたはプロジェクトに関連付けられているリソースを示します。</block>
   <block id="c2fdbd86cd719dffbb80161af27b0ec9" category="inline-image-macro">[プロジェクトの編集]ページのスクリーンショット。プロジェクトに関連付けることも、関連付けを解除することもできる利用可能なリソースが表示されます。</block>
   <block id="65381685a85e45e94ee53dbceff322ff" category="paragraph"><block ref="65381685a85e45e94ee53dbceff322ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b1db5558a176057dbfc6d02d715d5ee" category="list-text">フォルダまたはプロジェクトへのアクセス権を持つメンバーを表示するには、*アクセス*を選択します。</block>
   <block id="68f9e92246f3af16e2706083b8012f92" category="inline-image-macro">プロジェクトの編集ページのスクリーンショット。プロジェクトへのアクセス権を持つメンバーが表示されます。</block>
   <block id="e537768f43901c1791172250c6c08115" category="paragraph"><block ref="e537768f43901c1791172250c6c08115" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9e17333b6af28e20b12b88031ec846a2" category="inline-xref">関連付けられているリソースの変更</block>
-  <block id="d6b7bb304d4f265bbfd145a745c68eed" category="inline-xref">メンバーアクセスの変更</block>
-  <block id="ba165dec55dcb067d55d8a2bbb32e738" category="paragraph">必要に応じて、またはを実行できます<block ref="fa5515ea77ce1b6a8dbcd79e2fc3ca20" category="inline-xref-macro-rx"></block><block ref="50dc3585d06eec07143d3dfe141dd3c9" category="inline-xref-macro-rx"></block>。</block>
   <block id="df3e2bd0fe2ced6b1bd1a55dad748146" category="section-title">フォルダまたはプロジェクトに関連付けられているリソースの変更</block>
-  <block id="a6393b52680d3f8c4ed45e505093ff28" category="paragraph">リソースを関連付けたり関連付け解除したりすることで、フォルダまたはプロジェクトに関連付けられているリソースを変更できます。たとえば、リソースに別のチームが使用できる容量があるため、リソースを別のプロジェクトに関連付けることができます。</block>
   <block id="0727cfa5c59f7b7114ac7246e406611c" category="list-text">[編集]ページで、*[リソース]*を選択します。</block>
   <block id="d66e1bd376f74d0703fc72b368b92cd7" category="paragraph">テーブルの*ステータス*列は、フォルダまたはプロジェクトに関連付けられているリソースを示します。</block>
   <block id="95e3e0534ba1d2354c42f80be5302007" category="list-text">関連付けまたは関連付けを解除するリソースを選択します。</block>
@@ -4428,26 +4413,20 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="152ff89b1af4f8995e50a4b8f158db52" category="inline-image-macro">[Edit project]ページのスクリーンショット。[Associate resources]オプションが表示されます。このオプションは、現在関連付けられていないリソースを選択したあとに使用できます。</block>
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">[適用]を選択します。</block>
-  <block id="2020ca2154e03d2358d7a18c7bd4e4ee" category="paragraph">BlueXP  は、リソースをフォルダまたはプロジェクトに関連付けます。そのフォルダまたはプロジェクトに対する権限を持つ組織メンバーは、関連付けられたリソースにアクセスできるようになりました。</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">フォルダーまたはプロジェクトへのメンバーアクセス権の変更</block>
   <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">フォルダーまたはプロジェクトへのメンバーアクセス権を変更して、適切なメンバーがフォルダーまたはプロジェクトに関連付けられたリソースにアクセスできるようにします。</block>
   <block id="91686a8345015e73c2baa91ffbe5ecd6" category="list-text">[編集]*ページで、*[アクセス]*を選択します。</block>
-  <block id="a8781f46e241d03a4d2657a4d6f9a9b2" category="paragraph">BlueXP  には、フォルダまたはプロジェクトへのアクセス権を持つメンバーのリストが表示されます。</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">メンバーアクセスの変更：</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*メンバーの追加*:フォルダーまたはプロジェクトに追加するメンバーを選択し、役割を割り当てます。</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*メンバーのロールを変更する*:組織管理者以外のロールを持つメンバーの場合は、既存のロールを選択してから、新しいロールを選択します。</block>
-  <block id="ec947f15d50d5e45f56ce8c956d581f0" category="paragraph">ロールが階層の上位レベル（フォルダまたは組織レベル）で提供されている場合は、ロールを下位レベルと上位レベルのどちらで変更するかを検討する必要があります。たとえば、フォルダレベルで_Folderまたはproject admin_roleを割り当てた場合、プロジェクトレベルでロールを下位レベルの権限に変更しても、メンバーの権限は変更されません。役割は組織階層に継承されるため、メンバーにはプロジェクトレベルでの管理者権限があります。</block>
   <block id="6774afc9942c8dcab2e06828e8f199cb" category="inline-link-macro">ロールの継承の詳細</block>
   <block id="8945f05b50a19ebe83ee85e629a09120" category="paragraph"><block ref="e2e11ae218588663759cb10a40da4876" category="inline-link-macro-rx"></block>です。</block>
   <block id="961a7d705cef5925f92fdc2102dfe17d" category="list-text">*メンバーアクセス権の削除*:表示しているフォルダーまたはプロジェクトでロールが定義されているメンバーのアクセス権を削除できます。</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">[メンバー]ページからの権限の管理</block>
-  <block id="e8600e476151636aa41417322bf8eecb" category="paragraph">メンバーアクセスが階層の上位レベル（フォルダまたは組織レベル）で提供されている場合、このフォルダまたはプロジェクトを表示しているときにメンバーアクセス権を削除することはできません。階層のその部分に切り替える必要があります。または、できます<block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>。</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">* 適用 * を選択します。</block>
-  <block id="d93816509ec30392c51369fac191445e" category="paragraph">BlueXP  は、フォルダまたはプロジェクトへのアクセス権を持つメンバーを更新します。</block>
   <block id="7f394af8afb3598061eec3ed6197180d" category="section-title">フォルダまたはプロジェクトの名前を変更する</block>
   <block id="f8ca84129dded5d2d753c0d0cc1ddea1" category="paragraph">必要に応じて、フォルダとプロジェクトの名前を変更できます。</block>
   <block id="ec4b36b02d2682a0624b6df463ee2789" category="list-text">[編集]ページで、新しい名前を入力し、*[適用]*を選択します。</block>
-  <block id="d8f0fb037537a867a046608fffa33518" category="paragraph">BlueXP  はフォルダまたはプロジェクトの名前を更新します。</block>
   <block id="03b976867f3d4bd64ebf2dde3b296e4d" category="section-title">フォルダまたはプロジェクトを削除する</block>
   <block id="0a868630764e886d94bedbbfd727e6f4" category="paragraph">不要になったフォルダとプロジェクトを削除できます。</block>
   <block id="11c35e27e51a047151d75fb0ede09570" category="inline-xref">リソースの関連付けを解除する方法</block>
@@ -4455,7 +4434,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="aa028ced940586c19c0a4e4d80b01fd3" category="list-text">フォルダにサブフォルダまたはプロジェクトを含めることはできません。最初にこれらのフォルダとプロジェクトを削除する必要があります。</block>
   <block id="fe7e8f43628806d12162357cbc6c575a" category="list-text">[*Organization*]ページで、テーブル内のプロジェクトまたはフォルダに移動し、を選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>てから[*Delete*]を選択します。</block>
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">フォルダまたはプロジェクトを削除することを確認します。</block>
-  <block id="d8fe55db78c51b6f4ff410e959687f9f" category="paragraph">BlueXP  はフォルダまたはプロジェクトを削除します。そのフォルダまたはプロジェクトは、組織メンバーが使用できなくなります。</block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">組織のメンバーを管理して、組織のリソース階層のさまざまなレベルに権限を付与します。</block>
   <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">BlueXP  IAMメンバーの追加と権限の管理</block>
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用すると、組織にメンバーを追加し、リソース階層全体で1つ以上のロールを割り当てることができます。a_role_には'メンバーがリソース階層の特定のレベルで特定のアクションを実行できるようにする一連の権限が含まれています新しいユーザアカウントとサービスアカウントの関連付け、メンバーロールの管理などを行うことができます。</block>
@@ -4546,13 +4524,7 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">組織からメンバーを削除することを確認します。</block>
   <block id="75e73ef4d25f9f9ea49c38a3bcb941e4" category="paragraph">BlueXP  がメンバーを削除します。そのメンバーがBlueXP  に再度ログインすると、そのメンバーはBlueXP  組織にアクセスできなくなります。</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">リソースを特定のプロジェクトやフォルダに関連付けることで、組織のリソース階層を管理します。</block>
-  <block id="dacc6cf59d7e0f66f697ef48b807951c" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用してメンバーを組織に関連付ける場合は、組織、フォルダ、またはプロジェクトレベルで権限を提供します。これらのメンバーが適切なリソースにアクセスする権限を持つようにするには、リソースを特定のプロジェクトやフォルダに関連付けて、組織のリソース階層を管理する必要があります。a_resource_は、BlueXP  がすでに管理している作業環境です。</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">組織内のリソースを表示する</block>
-  <block id="8271e2759587670b87881a1e083e0a52" category="paragraph">リソース階層の管理を開始するには、組織に関連付けられているリソースを把握しておく必要があります。</block>
-  <block id="95c9ea5440ca8b54a3d3dae8e1d1f492" category="list-text">[リソース]*を選択します。</block>
-  <block id="90eb4a50a957d74015adf452111a7dd5" category="paragraph">組織に関連付けられたリソースが*リソース*テーブルに表示されます。</block>
-  <block id="573f6fc7f3c18fb7721ddccfe2520412" category="inline-xref">テーブルの内容を検索してフィルタリングする</block>
-  <block id="74a216516ae6f979fa921c96dd5057a8" category="paragraph">特定のリソースを見つけるには、できます<block ref="2fd3d11c7689796e93f3888013589416" category="inline-xref-macro-rx"></block>。</block>
   <block id="7e2927a58abcc62c9eb5c28962dc9573" category="paragraph">探しているリソースが見つかったら、次のいずれかの操作を実行できます。</block>
   <block id="d488db7f816284f6712caf2d76eb5169" category="inline-xref">リソースに関連付けられているフォルダとプロジェクトを表示する</block>
   <block id="ea450edd18061a7cc42c1dc5a73807e9" category="list-text"><block ref="725a161a6f11aca02e0e25e2ae9628c0" category="inline-xref-macro-rx"></block></block>
@@ -4560,25 +4532,19 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="e43736ff73ca6844bfafd7ef8dc58bad" category="list-text"><block ref="7d9c5683f2b3adedfbcf34a695515c4d" category="inline-xref-macro-rx"></block></block>
   <block id="b6af3f20458abefb8743e926f21c0677" category="inline-xref">フォルダまたはプロジェクトからリソースを削除する</block>
   <block id="1797f1c38c97687b6136c8e69786e0a2" category="list-text"><block ref="bb02d809bee1364f03f71b60d989a04d" category="inline-xref-macro-rx"></block></block>
-  <block id="a29510a9013088f354480f508c907c2e" category="section-title">組織内の特定のリソースを検索する</block>
-  <block id="1acca7d7f6a7f4515e946bae053cbc27" category="paragraph">組織内に多数のリソースがある場合は、検索およびフィルタオプションを使用して特定のリソースを検索できます。</block>
-  <block id="a89524edc025c255e3e415e871e88e5d" category="list-text">[リソース]ページで、*[高度な検索とフィルタリング]*を選択します。</block>
   <block id="3d1bc41342a56d581edf9d1765f01a0b" category="list-text">利用可能なオプションのいずれかを使用して、目的のリソースを検索します。</block>
   <block id="48ca2619b5dca392dc3969df94469cf3" category="list-text">*リソース名で検索*：テキスト文字列を入力し、*追加*を選択します。</block>
   <block id="b2efca9e0863336ee0d7aa6af1771c24" category="list-text">*プラットフォーム*：Amazon Web Servicesなどのプラットフォームを1つ以上選択します。</block>
   <block id="e6d1209910233e075e359b7fdb3892a8" category="list-text">*リソース*：Cloud Volumes ONTAPなどのリソースを1つ以上選択します。</block>
   <block id="4a42d7a28e04f8a9b2270b8906ae904c" category="list-text">*組織、フォルダ、またはプロジェクト*:組織全体、特定のフォルダ、または特定のプロジェクトを選択します。</block>
   <block id="fb3b214ed2681d71df95f0a2e1ad7ee8" category="list-text">[検索]*を選択します。</block>
-  <block id="de1dcc903e0def1031803a58221b8303" category="paragraph">[Resources]テーブルの内容が更新され、選択した検索とフィルタに一致するリソースが表示されます。</block>
   <block id="6b979ebd5780c7df2c462682bbe1749e" category="section-title">リソースとフォルダおよびプロジェクトの関連付け</block>
-  <block id="6f4141394827d668d7827055e97c0bb9" category="paragraph">組織内の別のフォルダまたはプロジェクトでリソースを使用できるようにするには、フォルダまたはプロジェクトとリソースとの関連付けを作成する必要があります。</block>
   <block id="123b63ad16a2eb2123e4d954ed9b410d" category="inline-link-macro">リソースの詳細（リソースをフォルダに関連付けるタイミングなど）</block>
   <block id="aa17a9cf1b2a8bd01a901a0eb2e99eee" category="paragraph">リソースの関連付けの仕組みを理解しておく必要があります。<block ref="a1afb03a32649c13d619ffef925eefd6" category="inline-link-macro-rx"></block>です。</block>
   <block id="0ba76e0dec90ea0767d0bea623254565" category="list-text">[リソース]ページで、テーブル内のリソースに移動し、を選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>て*[フォルダまたはプロジェクトに関連付ける]*を選択します。</block>
   <block id="40604a706a532d51e9c0e2942f20bbbd" category="list-text">追加のフォルダーまたはプロジェクトを関連付けるには、*フォルダーまたはプロジェクトを追加*を選択し、フォルダーまたはプロジェクトを選択します。</block>
   <block id="227d0042933a910c506c0345c27ef64f" category="paragraph">選択できるのは、管理者権限を持つフォルダとプロジェクトのみです。</block>
   <block id="5c4e241b983cce10c131e9a51dc2f2e5" category="list-text">[リソースを関連付ける]*を選択します。</block>
-  <block id="71e4a1d057d7694dd5ea8710ca5d07a9" category="paragraph">BlueXP  は、リソースを選択したフォルダおよびプロジェクトに関連付けます。</block>
   <block id="f487d6f4a22314a7fc4b480b252f4981" category="list-text">リソースをプロジェクトに関連付けた場合は、それらのプロジェクトに対する権限を持つメンバーがBlueXP  でリソースにアクセスできるようになります。</block>
   <block id="6330741dc930a8e0cff70d2bbd0c2a2d" category="inline-link-macro">リソースとフォルダの関連付けについて</block>
   <block id="0764009847ea7e98389494f95f4d739e" category="list-text">リソースをフォルダに関連付けた場合'_Folderまたはプロジェクトadmin_はBlueXP  IAM内からリソースにアクセスできるようになります<block ref="a53b921d2a913725c8b4e28a24824743" category="inline-link-macro-rx"></block>です。</block>
@@ -4586,7 +4552,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="3a04b19767b9262d748f5bc93b4d433d" category="section-title">リソースに関連付けられているフォルダとプロジェクトを表示する</block>
   <block id="012ed1b51c49e99d9e7c8472bbf96c42" category="paragraph">組織の階層でリソースを使用できる場所を特定するには、そのリソースに関連付けられているフォルダとプロジェクトを表示します。</block>
   <block id="ae35c12a9d0798db618751302c4603bd" category="list-text">[Resources]ページで、テーブル内のリソースに移動し、を選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>て*[View details]*を選択します。</block>
-  <block id="147b2b655dda25ecac27a2d7381599e4" category="paragraph">BlueXP  には、リソースに関連付けられているフォルダとプロジェクトが表示されます。</block>
   <block id="0d8f80667cd7bc86a6f6ea26c12d18b9" category="paragraph">次の例は、1つのプロジェクトに関連付けられているリソースを示しています。</block>
   <block id="a46cbe82e9adff7ecc82d6eadb58aa97" category="inline-image-macro">リソースの詳細ページのスクリーンショット。組織の直下にあるプロジェクトに関連付けられているリソースが表示されます。</block>
   <block id="7cadbb5f400f149f938a910df5c5cb0d" category="paragraph"><block ref="7cadbb5f400f149f938a910df5c5cb0d" category="inline-image-macro-rx" type="image"></block></block>
@@ -4601,7 +4566,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="7f6be6d71b75090da3f7888443a6d4f8" category="paragraph">検出されたリソースを組織全体から削除する場合は、BlueXP  キャンバスから作業環境を削除する必要があります。</block>
   <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">リソースを削除するフォルダまたはプロジェクトに対して、<block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">[削除]*を選択して、関連付けを削除することを確認します。</block>
-  <block id="4cc93df03851cba78d596a3fa944ce1a" category="paragraph">BlueXP  によって関連付けが削除されます。メンバーは、そのフォルダまたはプロジェクトからリソースにアクセスできなくなります。</block>
   <block id="08599f4c51d7b3ffe063f2612e7c4f5e" category="summary">必要に応じて、BlueXP  組織の名前を変更できます。</block>
   <block id="3b2af1e86badf70e10ee3dd7bd601881" category="paragraph">必要に応じて、BlueXP  組織の名前をBlueXP  IDおよびアクセス管理（IAM）から変更できます。組織名は、BlueXP  Webベースのコンソールの上部とIAMページ内に表示されます。</block>
   <block id="8bf336ab115156eac88db2970ab0e70d" category="list-text">[Organization（組織）]ページで、テーブルの最初の行に移動し、を選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>てから[Edit organization（組織の編集）]*を選択します。</block>
@@ -4965,4 +4929,27 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="815ee4222e11b0d1d149ad24cabecc80" category="paragraph">コネクタが商用リージョンまたはソブリンリージョンにある場合は、次の2つのエンドポイントセットから選択できます。</block>
   <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">コネクタが商業地域または主権地域にインストールされている場合に、コネクタアップグレードのイメージを取得するため。</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">2024年12月16日</block>
+  <block id="67f44df0b66677509cb8a85769f34ee3" category="paragraph">次のビデオは、AWS MarketplaceからBlueXP  にサブスクライブする手順を示しています。</block>
+  <block id="96be219c15e8fd2a25d382cfbe8aba22" category="list-text">一連の資格情報のアクションメニューを選択し、*サブスクリプションの設定*を選択します。</block>
+  <block id="f9ffa76e11dc9be1f06d413d4c1da4ed" category="list-text">クレデンシャルを既存のサブスクリプションに関連付けるには、ダウンリストからサブスクリプションを選択し、*[設定]*を選択します。</block>
+  <block id="e7225dcfe470884c10cd0ab60d4ad033" category="section-title">関連情報</block>
+  <block id="ff462988ef2bf728297fe5ed85ddc08d" category="section-title">AWSサブスクリプションを設定</block>
+  <block id="b8da1935866ccfc3044b85a99232dc4f" category="paragraph">AWSクレデンシャルをBlueXP  に追加したら、それらのクレデンシャルを使用してAWS Marketplaceサブスクリプションを設定できます。このサブスクリプションでは、Cloud Volumes ONTAP の料金を時間単位（PAYGO）または年単位の契約で支払い、その他のBlueXPサービスを利用できます。</block>
+  <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">BlueXP  にクレデンシャルを追加したあとにAWS Marketplaceサブスクリプションを設定するシナリオは2つあります。</block>
+  <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">最初にBlueXP  に資格情報を追加したときに、サブスクリプションを設定しなかった。</block>
+  <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">AWSクレデンシャルに設定されているAWS Marketplaceサブスクリプションを変更する。</block>
+  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">組織のリソース階層の深さは、7つのレベルまで下がります。その結果、ネストされたフォルダを6レベルまで作成できます。最後にネストされたフォルダには、階層の7番目のレベルにあるプロジェクトを含めることができます。</block>
+  <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">次の図は、組織のリソース階層の最大階層を示しています。</block>
+  <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">フォルダまたはプロジェクトに関連付けられているリソースを表示する</block>
+  <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">[編集]ページで、[リソース]セクションまたは[アクセス]セクションを展開すると、選択したフォルダまたはプロジェクトの詳細を表示できます。</block>
+  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">リソースを関連付けたり関連付け解除したりすることで、フォルダまたはプロジェクトに関連付けられているリソースを変更できます。たとえば、リソースに別のチームが使用できる容量があるため、リソースを別のプロジェクトに関連付けることができます。リソースをフォルダまたはプロジェクトに関連付けると、そのフォルダまたはプロジェクトに対する権限を持つ組織メンバーは、関連付けられたリソースにアクセスできます。</block>
+  <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">フォルダまたはプロジェクトに関連付けられているメンバーを表示する</block>
+  <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">メンバーアクセス権が階層の上位レベル（フォルダまたは組織レベル）で提供されている場合、下位レベルのフォルダまたはプロジェクトを表示しているときにメンバーアクセス権を削除または変更することはできません。階層のその部分に切り替えて、メンバーの権限を更新する必要があります。または、できます<block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>。</block>
+  <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">[編集]ページで、[アクセス]を選択して、選択したフォルダーまたはプロジェクトへのアクセス権を持つメンバーのリストを表示します。</block>
+  <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用してメンバーを組織に関連付ける場合は、組織、フォルダ、またはプロジェクトレベルで権限を提供します。これらのメンバーが適切なリソースにアクセスする権限を持つようにするには、リソースを特定のプロジェクトやフォルダに関連付けて、組織のリソース階層を管理する必要があります。a_resource_は、BlueXP  がすでに管理している、または認識しているストレージリソースです。</block>
+  <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">組織に関連付けられている検出されたリソースと検出されていないリソースの両方を表示できます。検出されないリソースとは、通常、デジタルアドバイザで認識されるストレージリソースのうち、作業環境として追加していないリソースのことです。</block>
+  <block id="7e797bc936bc19649c91fa90509a82a9" category="admonition">Amazon FSx for NetApp ONTAPリソースは、IAMロールに関連付けることができないため、IAMリソースページに表示されません。これらのリソースは、それぞれのキャンバスまたはワークロードで表示できます。</block>
+  <block id="3135ebe2cc4398e8de27fc39c6eb605e" category="list-text">[リソース]*を選択して[リソース]ページを表示します。</block>
+  <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">[Advanced Search &amp; Filtering]*を選択します。</block>
+  <block id="f7e276f42cb40dbaba008d93e6aff422" category="paragraph">組織内のフォルダまたはプロジェクトでリソースを使用できるようにするには、フォルダまたはプロジェクトとリソースとの関連付けを作成する必要があります。</block>
 </blocks>

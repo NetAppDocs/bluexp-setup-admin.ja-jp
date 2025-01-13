@@ -25,5 +25,5 @@ summary: プライベートモードでBlueXPを起動して実行したら、�
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["BlueXPのバックアップとリカバリを使用して、オンプレミスのONTAP ボリュームのデータをStorageGRID にバックアップします"^]
 
 
-.関連リンク
+.関連情報
 link:concept-modes.html["BlueXPの導入モード"]

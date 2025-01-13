@@ -27,5 +27,5 @@ summary: 制限モードでBlueXPを起動して実行したら、制限モー�
 * https://docs.netapp.com/us-en/bluexp-replication/index.html["レプリケーションドキュメント"^]
 
 
-.関連リンク
+.関連情報
 link:concept-modes.html["BlueXPの導入モード"]
