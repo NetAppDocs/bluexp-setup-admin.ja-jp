@@ -4948,8 +4948,17 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">[編集]ページで、[アクセス]を選択して、選択したフォルダーまたはプロジェクトへのアクセス権を持つメンバーのリストを表示します。</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用してメンバーを組織に関連付ける場合は、組織、フォルダ、またはプロジェクトレベルで権限を提供します。これらのメンバーが適切なリソースにアクセスする権限を持つようにするには、リソースを特定のプロジェクトやフォルダに関連付けて、組織のリソース階層を管理する必要があります。a_resource_は、BlueXP  がすでに管理している、または認識しているストレージリソースです。</block>
   <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">組織に関連付けられている検出されたリソースと検出されていないリソースの両方を表示できます。検出されないリソースとは、通常、デジタルアドバイザで認識されるストレージリソースのうち、作業環境として追加していないリソースのことです。</block>
-  <block id="7e797bc936bc19649c91fa90509a82a9" category="admonition">Amazon FSx for NetApp ONTAPリソースは、IAMロールに関連付けることができないため、IAMリソースページに表示されません。これらのリソースは、それぞれのキャンバスまたはワークロードで表示できます。</block>
+  <block id="7e797bc936bc19649c91fa90509a82a9" category="list-text">Amazon FSx for NetApp ONTAPリソースは、IAMロールに関連付けることができないため、IAMリソースページに表示されません。これらのリソースは、それぞれのキャンバスまたはワークロードで表示できます。</block>
   <block id="3135ebe2cc4398e8de27fc39c6eb605e" category="list-text">[リソース]*を選択して[リソース]ページを表示します。</block>
   <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">[Advanced Search &amp; Filtering]*を選択します。</block>
   <block id="f7e276f42cb40dbaba008d93e6aff422" category="paragraph">組織内のフォルダまたはプロジェクトでリソースを使用できるようにするには、フォルダまたはプロジェクトとリソースとの関連付けを作成する必要があります。</block>
+  <block id="19cb29a89a6fbf6d87da92950ea8482c" category="doc">コネクタ3.9.48</block>
+  <block id="4d83c70b301d09d322c3d604e361a689" category="paragraph">現時点では、3.9.48リリースは標準モードと制限モードで使用できます。</block>
+  <block id="a8afa3393166930c13f7426758547bca" category="list-text">[Resources]ページに未検出のリソースが表示されるようになりました。未検出のリソースは、BlueXP  で認識されているが作業環境を作成していないストレージリソースです。たとえば、まだ作業環境がないデジタルアドバイザに表示されるリソースは、[リソース]ページに検出されていないリソースとして表示されます。</block>
+  <block id="441419ddc3a341f3081b481a3084eef7" category="section-title">追加のBlueXP  サービスのサポートケースを作成</block>
+  <block id="ac9424bee543a4a40d453b3ffa72ca64" category="paragraph">BlueXP  をサポートに登録したら、BlueXP  Webベースのコンソールから直接サポートケースを作成できます。ケースを作成するときは、問題が関連付けられているサービスを選択する必要があります。</block>
+  <block id="c16acacf37243c052df936e1994e4488" category="paragraph">このリリースから、サポートケースを作成して、追加のBlueXP  サービスに関連付けることができるようになりました。</block>
+  <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">サポートケースの作成に関する詳細情報</block>
+  <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>です。</block>
+  <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">2025年1月13日</block>
 </blocks>
