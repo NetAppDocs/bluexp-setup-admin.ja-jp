@@ -14,9 +14,9 @@ summary: BlueXP  を制限モードまたはプライベートモードで設�
 
 
 [role="lead"]
-BlueXP  を制限モードまたはプライベートモードで設定すると、_ BlueXP  account_を作成するように求められます。これにより、ユーザーの管理とリソースの編成が可能になります。このアカウントだけが必要な場合もありますが、ビジネスで複数のアカウントが必要な場合は、Tenancy APIを使用して追加のアカウントを作成する必要があります。
+BlueXP  をプライベートモードで設定すると、_ BlueXP  account_を作成するように求められます。これにより、ユーザーの管理とリソースの整理が可能になります。このアカウントだけが必要な場合もありますが、ビジネスで複数のアカウントが必要な場合は、Tenancy APIを使用して追加のアカウントを作成する必要があります。
 
-BlueXP  を標準モードで使用している場合は、BlueXP  アカウントはありません。代わりに、BlueXP  IDおよびアクセス管理（IAM）を使用して管理する組織があります。link:concept-identity-and-access-management.html["BlueXP  IAMの詳細"]です。
+BlueXP  を標準モードまたは制限モードで使用している場合は、BlueXP  アカウントはありません。代わりに、BlueXP  IDおよびアクセス管理（IAM）を使用して管理する組織があります。link:concept-identity-and-access-management.html["BlueXP  IAMの詳細"]です。
 
 .手順
 . 次のAPI呼び出しを使用して、追加のBlueXPアカウントを作成します。

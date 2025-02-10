@@ -18,6 +18,85 @@ IDおよびアクセス管理（IAM）、コネクタ、クラウドプロバイ
 
 
 
+== 2025年2月10日
+
+
+
+=== コネクタ3.9.49
+
+今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
+
+現時点では、3.9.49リリースは標準モードと制限モードで使用できます。
+
+
+
+=== BlueXP  IDおよびアクセス管理（IAM）
+
+* 1人のユーザに複数のロールを割り当てることができます。
+* ロールが、プラットフォーム、アプリケーション、データサービスの3つのカテゴリのいずれかに関連付けられるようになりました。
+* アプリケーションカテゴリには、Storage ViewerとStorage Adminという2つの新しいロールが関連付けられています。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["IAMロールの詳細を読む"]
+* BlueXP  制限モードでのIAMの使用
+
+
+
+
+==== 制限モードでBlueXP  IAMが使用されるようになりました
+
+BlueXP  IDおよびアクセス管理（IAM）が制限モードで使用されるようになりました。
+
+BlueXP  IDおよびアクセス管理（IAM）は、標準モードおよび制限モードでBlueXP  を使用するときにBlueXP  アカウントが提供する以前の機能を置き換え、強化するリソースおよびアクセス管理モデルです。
+
+.関連情報
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["BlueXP  IAMの使用を開始する"]
+
+
+BlueXP  IAMでは、リソースと権限をよりきめ細かく管理できます。
+
+* 最上位の_organization_を使用すると、さまざまな_projects_のアクセスを管理できます。
+* _Folders_関連するプロジェクトをグループ化できます。
+* 強化されたリソース管理により、リソースを1つ以上のフォルダまたはプロジェクトに関連付けることができます。
++
+たとえば、Cloud Volumes ONTAPシステムを複数のプロジェクトに関連付けることができます。
+
+* 強化されたアクセス管理により、組織階層のさまざまなレベルのメンバーにロールを割り当てることができます。
+
+
+これらの機能拡張により、ユーザが実行できるアクションとユーザがアクセスできるリソースをより適切に制御できるようになります。
+
+.制限モードでの既存アカウントへのBlueXP  IAMの影響
+BlueXP  にログインすると、次の変更が表示されます。
+
+* あなたの_アカウント_が_組織_と呼ばれるようになりました
+* your_workspaces_が_projects_と呼ばれるようになりました。
+* ユーザロールの名前が変更されました。
++
+** アカウント管理者_が現在_組織管理者_である_
+** _Workspace admin_現在_フォルダまたはプロジェクト管理_
+** _コンプライアンスビューア_現在_分類ビューア_
+
+
+* [設定]では、BlueXP  IDとアクセス管理にアクセスして、これらの拡張機能を利用できます。
+
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["BlueXP  のスクリーンショットは、インターフェイスの上部から選択可能な組織とプロジェクト、および[設定]メニューから使用できるIDとアクセスの管理を示しています。"]
+
+次の点に注意してください。
+
+* 既存のユーザや作業環境に変更はありません。
+* ロールの名前は変更されていますが、権限の観点からは違いはありません。ユーザは以前と同じ作業環境に引き続きアクセスできます。
+* BlueXP  へのログイン方法に変更はありません。BlueXP  IAMは、BlueXP  アカウントと同様に、NetAppクラウドログイン、NetAppサポートサイトのクレデンシャル、フェデレーテッド接続と連携します。
+* 複数のBlueXP  アカウントを使用している場合は、複数のBlueXP  組織が存在することになります。
+
+
+.BlueXP  IAM用API
+この変更により、BlueXP  IAM用の新しいAPIが導入されましたが、以前のテナンシーAPIと下位互換性があります。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP  IAM向けAPIの詳細"^]
+
+.サポートされる展開モード
+BlueXP  IAMは、BlueXP  を標準モードおよび制限モードで使用する場合にサポートされます。BlueXP  をプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。
+
+
+
 == 2025年1月13日
 
 

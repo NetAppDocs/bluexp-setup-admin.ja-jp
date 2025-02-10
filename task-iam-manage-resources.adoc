@@ -40,14 +40,6 @@ NOTE: Amazon FSx for NetApp ONTAPリソースは、IAMロールに関連付け�
 . [検索]*を選択します。
 
 
-.次の手順
-探しているリソースが見つかったら、次のいずれかの操作を実行できます。
-
-* <<associate-resource,リソースを追加のフォルダおよびプロジェクトに関連付ける>>
-* <<view-folders-and-projects,リソースに関連付けられているフォルダとプロジェクトを表示する>>
-* <<remove-resource,フォルダまたはプロジェクトからリソースを削除する>>
-
-
 
 
 == リソースとフォルダおよびプロジェクトの関連付け
@@ -83,6 +75,9 @@ link:task-iam-associate-connectors.html["コネクタをフォルダまたはプ
 
 組織の階層でリソースを使用できる場所を特定するには、そのリソースに関連付けられているフォルダとプロジェクトを表示します。
 
+
+NOTE: リソースへのアクセス権を持つ組織メンバーを特定する必要がある場合は、を実行できますlink:task-iam-manage-folders-projects.html#view-associated-resources-members["リソースに関連付けられているフォルダおよびプロジェクトへのアクセス権を持つメンバーを表示する"]。
+
 .手順
 . [Resources]ページで、テーブル内のリソースに移動し、を選択しimage:icon-action.png["横方向の 3 つの点を示すアイコン"]て*[View details]*を選択します。
 
@@ -91,11 +86,8 @@ link:task-iam-associate-connectors.html["コネクタをフォルダまたはプ
 
 image:screenshot-iam-resource-details.png["リソースの詳細ページのスクリーンショット。組織の直下にあるプロジェクトに関連付けられているリソースが表示されます。"]
 
-.次の手順
-* できます<<associate-resource,リソースを追加のプロジェクトまたはフォルダに関連付ける>>。
-* できます<<remove-resource,特定のフォルダまたはプロジェクトからリソースを削除する>>。
-* リソースへのアクセス権を持つ組織メンバーを特定する必要がある場合は、を実行できますlink:task-iam-manage-folders-projects.html#view-associated-resources-members["リソースに関連付けられているフォルダおよびプロジェクトへのアクセス権を持つメンバーを表示する"]。
 
+NOTE: リソースへのアクセス権を持つ組織メンバーを特定する必要がある場合は、を実行できますlink:task-iam-manage-folders-projects.html#view-associated-resources-members["リソースに関連付けられているフォルダおよびプロジェクトへのアクセス権を持つメンバーを表示する"]。
 
 
 
@@ -103,8 +95,8 @@ image:screenshot-iam-resource-details.png["リソースの詳細ページのス�
 
 フォルダまたはプロジェクトからリソースを削除するには、フォルダまたはプロジェクトとリソースとの関連付けを削除する必要があります。関連付けを削除すると、組織メンバーはフォルダまたはプロジェクトからリソースを管理できなくなります。
 
-.このタスクについて
-検出されたリソースを組織全体から削除する場合は、BlueXP  キャンバスから作業環境を削除する必要があります。
+
+NOTE: 検出されたリソースを組織全体から削除する場合は、BlueXP  キャンバスから作業環境を削除する必要があります。
 
 .手順
 . [Resources]ページで、テーブル内のリソースに移動し、を選択しimage:icon-action.png["横方向の 3 つの点を示すアイコン"]て*[View details]*を選択します。

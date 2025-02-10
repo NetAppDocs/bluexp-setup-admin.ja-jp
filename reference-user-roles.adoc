@@ -14,9 +14,9 @@ summary: アカウント管理者、ワークスペース管理者、コンプ�
 
 
 [role="lead"]
-BlueXP  を制限モードまたはプライベートモードで使用する場合は、_ BlueXP  account_を使用してユーザーを管理します。アカウント管理者、ワークスペース管理者、コンプライアンスビューア、SnapCenter管理者のいずれかのロールを選択して、アカウント内のユーザーに特定の権限を付与できます。
+BlueXP  をプライベートモードで使用する場合は、_ BlueXP  account_を使用してユーザーを管理します。アカウント管理者、ワークスペース管理者、コンプライアンスビューア、SnapCenter管理者のいずれかのロールを選択して、アカウント内のユーザーに特定の権限を付与できます。
 
-BlueXP  を標準モードで使用している場合は、BlueXP  アカウントはありません。代わりに、BlueXP  IDおよびアクセス管理(IAM)を使用して管理する_ BlueXP  organization_があります。
+BlueXP  を標準モードまたは制限モードで使用している場合は、BlueXP  アカウントはありません。代わりに、BlueXP  IDおよびアクセス管理(IAM)を使用して管理する_ BlueXP  organization_があります。
 
 * link:concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
 * link:concept-modes.html["BlueXPの導入モードについて説明します"]

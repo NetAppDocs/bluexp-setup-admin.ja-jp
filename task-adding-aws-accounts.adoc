@@ -248,7 +248,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 コネクタに関連付けられているクレデンシャルを選択する必要があります。BlueXPに関連付けられているクレデンシャルにMarketplaceサブスクリプションを関連付けることはできません。
 
 +
-image:screenshot_associate_subscription.png["一連の既存のクレデンシャルに対する操作メニューのスクリーンショット。"]
+image:screenshot_aws_configure_subscription.png["一連の既存のクレデンシャルに対する操作メニューのスクリーンショット。"]
 
 . クレデンシャルを既存のサブスクリプションに関連付けるには、ダウンリストからサブスクリプションを選択し、*[設定]*を選択します。
 . クレデンシャルを新しいサブスクリプションに関連付けるには、*[Add Subscription]>[Continue]*を選択し、AWS Marketplaceで次の手順を実行します。

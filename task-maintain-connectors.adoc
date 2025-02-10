@@ -33,8 +33,10 @@ OSのセキュリティパッチを適用するときに、コネクタホスト
 
 CPUとRAMの要件は次のとおりです。
 
-CPU:: 8 コアまたは 8 個の vCPU
-RAM:: 32GB
+ホストは、これらのサイズ要件を満たす任意のアーキテクチャで構成できます。
+
+* * CPU：* 8コアまたは8 vCPU
+* * RAM：* 32 GB
 
 
 link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。

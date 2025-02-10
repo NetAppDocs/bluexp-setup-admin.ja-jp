@@ -14,9 +14,9 @@ summary: BlueXP  アカウントを使用すると、制限モードまたは�
 
 
 [role="lead"]
-制限モードまたはプライベートモードでBlueXP  を使用する場合は、_ BlueXP  account_を使用してユーザーを管理し、isolated_workspaces_でリソースを整理します。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。
+BlueXP  をプライベートモードで使用する場合は、_ BlueXP  account_を使用してユーザーを管理し、isolated_workspaces_でリソースを整理します。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。
 
-BlueXP  を標準モードで使用している場合は、BlueXP  アカウントはありません。代わりに、BlueXP  IDおよびアクセス管理(IAM)を使用して管理する_ BlueXP  organization_があります。
+BlueXP  を標準モードまたは制限モードで使用している場合は、BlueXP  アカウントはありません。代わりに、BlueXP  IDおよびアクセス管理(IAM)を使用して管理する_ BlueXP  organization_があります。
 
 * link:concept-identity-and-access-management.html["BlueXP  IAMの詳細"]
 * link:concept-modes.html["BlueXPの導入モードについて説明します"]
