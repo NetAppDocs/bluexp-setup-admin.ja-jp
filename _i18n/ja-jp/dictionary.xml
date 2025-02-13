@@ -1405,8 +1405,6 @@
   <block id="0a6b76c04095167ad3b2e08901195ca3" category="list-text">Connectorは、次のGoogle Cloudリージョンでサポートされるようになりました。</block>
   <block id="db760e7471192daa123eed31bfba312d" category="list-text">コロンバス（us-east5）</block>
   <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">ダラス（US -サウス1）</block>
-  <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">サポートされているリージョンの完全なリストを表示します</block>
-  <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
   <block id="05263fcc56b50972b2dfe4be20698328" category="list-text">Ubuntu 22.04は、BlueXPまたはクラウドプロバイダのマーケットプレイスからコネクタを導入する際のコネクタ用の新しいオペレーティングシステムです。</block>
   <block id="9ab8f4fa1e0839b1101d04c9cd4e1bae" category="paragraph">また、Ubuntu 22.04を実行している独自のLinuxホストにコネクタを手動でインストールすることもできます。</block>
   <block id="dfcaca26de191f6219819bb7091c9ebe" category="list-text">Red Hat Enterprise Linux 8.6および8.7は、新しいコネクタの導入ではサポートされなくなりました。</block>
@@ -1524,7 +1522,6 @@
   <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">パリ（ヨーロッパ-西9区）</block>
   <block id="eb4cae07e62b958e999eaa4c0d9b254b" category="list-text">ワルシャワ（ヨーロッパ中央部2）</block>
   <block id="05f08f9410eed79855c8ade92149a276" category="list-text">Azure West US 3リージョンでコネクタがサポートされるようになりました。</block>
-  <block id="075b5f25465b6b108fb916bce6a2219f" category="paragraph"><block ref="075b5f25465b6b108fb916bce6a2219f" category="inline-link-rx"></block></block>
   <block id="d9815601b56ec3084872748d000734dd" category="paragraph"><block ref="d9815601b56ec3084872748d000734dd" category="inline-link-rx"></block></block>
   <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">新規ユーザがCloud Centralに登録する際に、「ネットアップでログイン」オプションを選択して、NetApp Support Siteのクレデンシャルを使用してログインできるようになりました。Eメールアドレスとパスワードを入力する代わりに使用できます。</block>
   <block id="f27b2370dfece83354cbb560bf251abc" category="admonition">Eメールアドレスとパスワードを使用する既存のログインでは、このログイン方法を使用し続ける必要があります。ネットアップでログインするオプションは、新規ユーザがサインアップする際に使用できます。</block>
@@ -4982,4 +4979,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="69ac82a1779b2cc7d528017241f5324f" category="paragraph">ホストは、次のサイズ要件を満たす任意のアーキテクチャで構成できます。</block>
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU：8コアまたは8 vCPU</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM ： 32GB</block>
+  <block id="0c257ecd276502d9a2d45fc70759eec6" category="admonition">2025年2月以降、標準および制限付きの導入モードでは、これらのユーザロールは廃止されました。BlueXP  プライベートモードでは、ユーザに関連付けるロールが1つだけ用意されています。つまり、すべてのBlueXP  権限を付与するCloud Managerのadminロールです。</block>
 </blocks>

@@ -1069,9 +1069,6 @@ https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Bl
 ** ダラス（US -サウス1）
 
 
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
-
 
 
 
@@ -1095,9 +1092,6 @@ Red Hat 7.6、7.7、7.8、および7.9は、新規および既存のコネクタ
 
 * コネクタは現在、Google Cloudのカタール地域でサポートされています。
 * このコネクタは、Microsoft AzureのSweden Centralリージョンでもサポートされています。
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
-
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張が含まれています。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
@@ -1140,9 +1134,6 @@ NOTE: 制限モードが導入されたことで、SaaSプラットフォーム�
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Eメール通知の設定方法については、こちらをご覧ください"]。
 
 * Google Cloud Turinリージョンでコネクタがサポートされるようになりました。
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
-
 * BlueXPログインに関連付けられたユーザクレデンシャル（ONTAP クレデンシャルとNetApp Support Site （NSS）クレデンシャル）を管理できるようになりました。
 +
 [設定]>[クレデンシャル]*に移動すると、クレデンシャルを表示したり、更新したり、削除したりできます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。
@@ -1440,9 +1431,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 
 * Azure West US 3リージョンでコネクタがサポートされるようになりました。
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
-
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-july-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
@@ -1472,9 +1460,6 @@ NOTE: Eメールアドレスとパスワードを使用する既存のログイ�
 
 * このコネクタは、AWSジャカルタリージョン（AP-Southee-3）でサポートされるようになりました。
 * このコネクタは、Azureブラジル南東部でサポートされるようになりました。
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
-
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-june-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
@@ -1508,9 +1493,6 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされてい
 ** ミラノ（ヨーロッパ-西8）
 ** サンティアゴ（サウスメリカ-西1）
 
-
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
 
 * Connectorで使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。
 +
