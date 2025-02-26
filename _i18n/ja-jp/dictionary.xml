@@ -4773,7 +4773,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）は、標準モードおよび制限モードでBlueXP  を使用するときにBlueXP  アカウントが提供する以前の機能を置き換え、強化するリソースおよびアクセス管理モデルです。</block>
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">制限モードでの既存アカウントへのBlueXP  IAMの影響</block>
   <block id="8f2f21c16dc203c77301e868fae6ff8c" category="paragraph">BlueXP  IAMは、BlueXP  を標準モードおよび制限モードで使用する場合にサポートされます。BlueXP  をプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。</block>
-  <block id="71d8d71c8cd5b49b9c78b0ae89ca1b5f" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用すると、NetAppリソースへのアクセスを整理および制御できます。組織の階層に従ってリソースを編成できます。たとえば、地理的な場所、サイト、ビジネスユニットごとにリソースを整理できます。次に、階層の特定の部分のメンバーにpIAMロールを割り当てることができます。これにより、階層の他の部分のリソースにアクセスできなくなります。</block>
   <block id="492bd3385d9d03385f8098817a8d0196" category="paragraph">BlueXP  IAMは、標準モードおよび制限モードでBlueXP  を使用する場合にサポートされます。BlueXP  をプライベートモードで使用している場合は、BlueXP  アカウント_を使用してユーザーとリソースを管理します。</block>
   <block id="5d733a1853078585aec87e3ef2524bec" category="paragraph">BlueXP  をプライベートモードで使用する場合は、_ BlueXP  account_を使用してユーザーを管理し、isolated_workspaces_でリソースを整理します。たとえば、ユーザーのグループは、別のワークスペースで作業環境を管理するユーザーには表示されないワークスペースにCloud Volumes ONTAP作業環境を展開および管理できます。</block>
   <block id="73f420193f5136d2f1d09a09d6f9aabb" category="paragraph">BlueXP  を標準モードまたは制限モードで使用している場合は、BlueXP  アカウントはありません。代わりに、BlueXP  IDおよびアクセス管理(IAM)を使用して管理する_ BlueXP  organization_があります。</block>
@@ -4980,4 +4979,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU：8コアまたは8 vCPU</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM ： 32GB</block>
   <block id="0c257ecd276502d9a2d45fc70759eec6" category="admonition">2025年2月以降、標準および制限付きの導入モードでは、これらのユーザロールは廃止されました。BlueXP  プライベートモードでは、ユーザに関連付けるロールが1つだけ用意されています。つまり、すべてのBlueXP  権限を付与するCloud Managerのadminロールです。</block>
+  <block id="e1625dbf565504d716b37b407e4f24a4" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用すると、NetAppリソースへのアクセスを整理および制御できます。組織の階層に従ってリソースを編成できます。たとえば、地理的な場所、サイト、ビジネスユニットごとにリソースを整理できます。その後、階層の特定の部分のメンバーにIAMロールを割り当てることができます。これにより、階層の他の部分のリソースにアクセスできなくなります。</block>
 </blocks>
