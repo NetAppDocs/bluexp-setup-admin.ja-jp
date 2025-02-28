@@ -93,15 +93,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 .サポートされる展開モード
 BlueXP  IAMは、BlueXP  を標準モードおよび制限モードで使用する場合にサポートされます。BlueXP  をプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。
 
-.その他のIAMの機能拡張
-* 1人のユーザに複数のロールを割り当てることができます。
-* ロールが、プラットフォーム、アプリケーション、データサービスの3つのカテゴリのいずれかに関連付けられるようになりました。
-* アプリケーションカテゴリには、Storage ViewerとStorage Adminという2つの新しいロールが関連付けられています。
-+
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["IAMロールの詳細を読む"]
-
-
-
 
 
 == 2025年1月13日
