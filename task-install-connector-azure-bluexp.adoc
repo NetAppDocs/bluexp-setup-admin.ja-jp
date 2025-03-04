@@ -14,7 +14,7 @@ summary: BlueXPからAzureでコネクタを作成するには、ネットワー
 
 
 [role="lead"]
-コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションの1つは、BlueXP  からAzureでコネクタを直接作成することです。BlueXPからAzureでコネクタを作成するには、ネットワークを設定し、Azureの権限を準備してから、コネクタを作成する必要があります。
+Azureでは、BlueXP  から直接コネクタを作成できます。BlueXP  からAzureでコネクタを作成するには、ネットワークをセットアップし、コネクタのデプロイに使用するAzureロールを準備してから、コネクタをデプロイする必要があります。
 
 .作業を開始する前に
 * が必要ですlink:concept-connectors.html["コネクタの概要"]。
@@ -160,9 +160,13 @@ NTPを有効にする:: BlueXP分類を使用して企業データソースを�
 
 
 
-== 手順2：カスタムロールを作成する
+== 手順2：コネクタ導入ポリシーを作成する（カスタムロール）
+
+Azureにコネクタをデプロイする権限を持つカスタムロールを作成する必要があります。
 
 AzureアカウントまたはMicrosoft Entraサービスプリンシパルに割り当てることができるAzureカスタムロールを作成します。BlueXPはAzureで認証し、これらの権限を使用してコネクタインスタンスを作成します。
+
+BlueXP  は、Connector仮想マシンをAzureに導入すると、その仮想マシンでを有効にし https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["システムによって割り当てられた管理 ID"^]、必要なロールを自動的に作成して仮想マシンに割り当てます。自動的に作成されるロールは、そのAzureサブスクリプション内のリソースとプロセスの管理に必要な権限をBlueXP  に提供します。link:reference-permissions-azure.html["BlueXPがどのように権限を使用しているかを確認します"]です。
 
 Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
 

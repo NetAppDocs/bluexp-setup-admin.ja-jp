@@ -600,10 +600,6 @@
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">サインアップフォームでは、英語の文字のみを使用できます。</block>
   <block id="082338dd3697084a7af4c20fcdf81e82" category="summary">BlueXPがAzureでConnector VMを起動すると、そのAzureサブスクリプション内のリソースとプロセスを管理するための権限をConnectorに提供するカスタムロールがVMに割り当てられます。Connectorは、権限を使用して複数のAzureサービスに対してAPI呼び出しを実行します。</block>
   <block id="94864bc66faf9702eb87f3ddb6665c2c" category="doc">Connector の Azure 権限</block>
-  <block id="9fbcb95374723e2f8d5b7c17a2ece586" category="section-title">カスタムロールの権限</block>
-  <block id="35065a906fcb04c8b9fad94c74ed75b6" category="paragraph">以下のカスタムロールには、Azureネットワーク内のリソースとプロセスを管理するためにConnectorで必要となる権限が含まれています。</block>
-  <block id="770735bf1cfd4e882dd9ac93b90271d3" category="paragraph">BlueXPからコネクタを直接作成すると、BlueXPは自動的にこのカスタムロールをコネクタに適用します。</block>
-  <block id="83b9ca4036ac15d5479b1b6947eb5d6b" category="paragraph">Azure MarketplaceからConnectorを導入する場合、またはLinuxホストにConnectorを手動でインストールする場合は、カスタムロールを自分で設定する必要があります。</block>
   <block id="92ec95b8916ebc493b6546010073c81f" category="section-title">Azure権限の使用方法</block>
   <block id="815957003313e5f9581718376c2c472f" category="paragraph">以降のセクションでは、各BlueXPサービスでの権限の使用方法について説明します。この情報は、企業のポリシーによって、必要な場合にのみアクセス許可が指定されるように指定されている場合に役立ちます。</block>
   <block id="e400a17015f6033633700b6ba11625ba" category="list-text">Microsoft.NetApp/netAppAccounts/read</block>
@@ -3034,7 +3030,6 @@ AWS Marketplaceからコネクタを起動した場合、コネクタを手動�
   <block id="0b849731882fd6505b78e31e7c6793e0" category="doc">スタートアップワークフロー（プライベートモード）</block>
   <block id="86324dc19986cf024d27996fe0699e06" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="0be36da6d7a1ea4d94468b72475c7e35" category="inline-link-macro-rx"></block></block>
   <block id="99b431ba0bae952794b186c1e8ca969f" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="f4c0bdac7b3aa5cf7bf7f433238f96a2" category="inline-link-macro-rx"></block></block>
-  <block id="e80d828d2459b04d1fa1c01c4becbe8b" category="paragraph">BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限は、に表示されます <block ref="87670d19e81a277edefeb1f9eed2acf4" category="inline-link-macro-rx"></block>。</block>
   <block id="f4426e4062930abb33465fb5b79b35dc" category="inline-link-macro">Azure Marketplace環境の権限を設定する</block>
   <block id="d16dc391acdc52d611958fdd5ca48d52" category="list-text"><block ref="d16dc391acdc52d611958fdd5ca48d52" category="inline-link-macro-rx"></block></block>
   <block id="8790c01539f52b3b7d7f0f32b6631813" category="inline-link-macro">オンプレミス環境の権限を設定する</block>
@@ -3085,7 +3080,6 @@ deploymentmanager. editor</block>
   <block id="b4ddd02a1c9dee7fdc6802111fb3cc25" category="paragraph">また、Linuxを実行するEC2インスタンスとコネクタソフトウェアも起動しますが、導入はBlueXPではなくAWS Marketplaceから直接開始されます。</block>
   <block id="a0d5fffa896034a79c127d53a34685b7" category="list-text"><block ref="a0d5fffa896034a79c127d53a34685b7" category="inline-link-macro-rx"></block></block>
   <block id="8ce9c61f5e14fb093fdb6cc132fb3103" category="summary">BlueXPからAzureでコネクタを作成するには、ネットワークを設定し、Azureの権限を準備してから、コネクタを作成する必要があります。</block>
-  <block id="383a4f176227e611b43fffaef447cf94" category="section-title">手順2：カスタムロールを作成する</block>
   <block id="93017c2ae371dc5a19be6e0cce08ab5a" category="section-title">手順3：認証を設定する</block>
   <block id="a29efb5754bb36ee62d4a2e17c5e5717" category="list-text">プロンプトが表示されたら、Azureアカウントでサインインします。このアカウントには Azure 固有の権限が必要です。これがデフォルトのオプションです。</block>
   <block id="fbb7d70eda793afc4159d1bd8f3c3814" category="paragraph">次の手順に従って、いずれかの認証方式をBlueXPで使用できるように準備します。</block>
@@ -3139,7 +3133,6 @@ deploymentmanager. editor</block>
   <block id="ccbf44ea31f64041eb3e02bf2d4f1003" category="paragraph">コネクタのインストールとセットアップが完了したら、クラウドクレデンシャルを追加して、AWSまたはAzureで操作を実行するために必要な権限をBlueXPに付与します。</block>
   <block id="1afdeeb91955c8912691275e3b9c68c4" category="paragraph">BlueXPからコネクタを展開する場合は、IAMロールのARNまたはIAMユーザのアクセスキーを指定する必要があります。使用する認証方式に、 Connector インスタンスを AWS に導入するための必要な権限がある必要があります。必要な権限は、に表示されます <block ref="c368ad024408b872d841d80ba747ea9c" category="inline-link-macro-rx"></block>。</block>
   <block id="22212781592f02202c8c844bb4a04932" category="cell"><block ref="22212781592f02202c8c844bb4a04932" category="inline-link-macro-rx"></block></block>
-  <block id="fce0a0b0a267cd8305c849b06f175b89" category="cell"><block ref="fce0a0b0a267cd8305c849b06f175b89" category="inline-link-macro-rx"></block></block>
   <block id="5a67de31666dbed1b084c8f0ca78f388" category="inline-link-macro">コネクタを作成するための権限を設定する</block>
   <block id="a0452faa68d5d4a71a8b9513c9b786dc" category="cell"><block ref="a0452faa68d5d4a71a8b9513c9b786dc" category="inline-link-macro-rx"></block></block>
   <block id="fad6ca384c3ce615d6e92009f691fe31" category="cell"><block ref="fad6ca384c3ce615d6e92009f691fe31" category="inline-link-macro-rx"></block></block>
@@ -3722,7 +3715,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="235877cfbecd45ab1b8e8ccb08915ab6" category="inline-link-macro">コネクタのカスタムロールの詳細を確認する</block>
   <block id="9c94f9d5dbcdb22d1966ac1fff333345" category="list-text">BlueXPでコネクタを導入すると、カスタムロールが作成されてコネクタVMに割り当てられます。このロールには、コネクタがAzureリソースを管理できるようにする権限が含まれています。以降のリリースで新しい権限が追加される場合は、ロールを最新の状態に保つ必要があります。 <block ref="68dcfa6eadd8a48a8164adbbc9abc0e5" category="inline-link-macro-rx"></block>。</block>
   <block id="1f43b26ddf19b23cb5c358604ad9d1bb" category="paragraph">以降のリリースで新しい権限が追加された場合は、コネクタポリシーを更新する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。</block>
-  <block id="676f79631572648a20e41bdcef2aa88e" category="list-text">いずれの場合も、以降のリリースで新しい権限が追加されるため、ロールが最新の状態になっていることを確認する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。</block>
   <block id="ced19d28868cf97a99ad66ab748a0458" category="list-text">BlueXPから直接、標準のAWSリージョンでコネクタを作成すると、BlueXPによって自動的にそのコネクタにポリシーが適用されます。</block>
   <block id="27bfd6a18f38f12efb7983c46e54e86c" category="list-text">いずれの場合も、以降のリリースで新しい権限が追加されるため、ポリシーが最新の状態になっていることを確認する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。</block>
   <block id="8ed564b3f4045fb1f8ddb641549ce096" category="paragraph">このポリシーには、BlueXPからAWSでConnectorインスタンスを起動するために必要な権限のみが含まれています。BlueXPでコネクタを作成すると、コネクタインスタンスに新しい権限セットが適用され、コネクタでAWSリソースを管理できるようになります。 <block ref="1803651c0d8d31da6be94aca23bd6fb9" category="inline-link-macro-rx"></block>。</block>
@@ -3888,7 +3880,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="a69707f32a14657a4148714e0858cc16" category="list-text">が必要です<block ref="265bf4041c284cedb5265913609f75cf" category="inline-link-macro-rx"></block>。</block>
   <block id="0f6f328a496422180419aea5d68c3d2b" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションの1つは、AWSで実行されているLinuxホストにコネクタソフトウェアを手動でインストールすることです。独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、AWS権限を準備してコネクタをインストールし、準備した権限を指定する必要があります。</block>
   <block id="bde99503b08825a9b6290c21b6ff2424" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。利用可能なインストールオプションの1つは、AWS MarketplaceからAWSでコネクタを直接作成することです。AWS Marketplaceからコネクタを作成するには、ネットワークを設定し、AWS権限を準備し、インスタンス要件を確認してから、コネクタを作成する必要があります。</block>
-  <block id="f83b4f8c16705e26d282f2cb4ed19e78" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションの1つは、BlueXP  からAzureでコネクタを直接作成することです。BlueXPからAzureでコネクタを作成するには、ネットワークを設定し、Azureの権限を準備してから、コネクタを作成する必要があります。</block>
   <block id="5cb6efc5332c23d8c22978f3559aa613" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションの1つは、Azureで実行されているLinuxホストにコネクタソフトウェアを手動でインストールすることです。独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、Azureの権限を準備してから、コネクタをインストールし、準備した権限を指定する必要があります。</block>
   <block id="1017ad8551dc7209fead1d996608e2b5" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。利用可能なインストールオプションの1つは、Azure MarketplaceからAzureでコネクタを直接作成することです。Azure Marketplaceからコネクタを作成するには、ネットワークを設定し、Azureの権限を準備し、インスタンス要件を確認してからコネクタを作成する必要があります。</block>
   <block id="9a63fba43be3e1df0de44c749000ffc5" category="paragraph">コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるNetAppソフトウェアであり、BlueXP  のすべての機能とサービスを使用できます。使用可能なインストールオプションには、BlueXP  から直接AWSでコネクタを作成するか、gcloudを使用してコネクタを作成することがあります。BlueXPまたはgcloudを使用してGoogle Cloudでコネクタを作成するには、ネットワークを設定し、Google Cloud権限を準備し、Google Cloud APIを有効にしてから、コネクタを作成する必要があります。</block>
@@ -4767,8 +4758,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="8e64dfb0168516c0e7f7880ae745072a" category="doc">コネクタ3.9.49</block>
   <block id="f5c64d3f640238b8d1e1ed7062c5561f" category="paragraph">現時点では、3.9.49リリースは標準モードと制限モードで使用できます。</block>
   <block id="36cef198e9fac4b4a194f5e01017b8d1" category="list-text">1人のユーザに複数のロールを割り当てることができます。</block>
-  <block id="6708a31732ccaf29d9ba72b524255e3e" category="list-text">ロールが、プラットフォーム、アプリケーション、データサービスの3つのカテゴリのいずれかに関連付けられるようになりました。</block>
-  <block id="035261365b324f2942fd56c2f10f6ed5" category="inline-link">IAMロールの詳細を読む</block>
   <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）が制限モードで使用されるようになりました。</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）は、標準モードおよび制限モードでBlueXP  を使用するときにBlueXP  アカウントが提供する以前の機能を置き換え、強化するリソースおよびアクセス管理モデルです。</block>
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">制限モードでの既存アカウントへのBlueXP  IAMの影響</block>
@@ -4972,12 +4961,23 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 コアまたは 8 個の vCPU</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
   <block id="911ede8df5585598c294830dafe276fa" category="list-text">32 GB</block>
-  <block id="3a85c700de68ae35770a964c115eb7cb" category="list-title">その他のIAMの機能拡張</block>
-  <block id="afa69926e5d0001214117331ecb2e622" category="list-text">アプリケーションカテゴリには、Storage ViewerとStorage Adminという2つの新しいロールが関連付けられています。</block>
-  <block id="df90fe85a844ffa5c11d99e37754376f" category="paragraph"><block ref="df90fe85a844ffa5c11d99e37754376f" category="inline-link-rx"></block></block>
   <block id="69ac82a1779b2cc7d528017241f5324f" category="paragraph">ホストは、次のサイズ要件を満たす任意のアーキテクチャで構成できます。</block>
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU：8コアまたは8 vCPU</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM ： 32GB</block>
   <block id="0c257ecd276502d9a2d45fc70759eec6" category="admonition">2025年2月以降、標準および制限付きの導入モードでは、これらのユーザロールは廃止されました。BlueXP  プライベートモードでは、ユーザに関連付けるロールが1つだけ用意されています。つまり、すべてのBlueXP  権限を付与するCloud Managerのadminロールです。</block>
   <block id="e1625dbf565504d716b37b407e4f24a4" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用すると、NetAppリソースへのアクセスを整理および制御できます。組織の階層に従ってリソースを編成できます。たとえば、地理的な場所、サイト、ビジネスユニットごとにリソースを整理できます。その後、階層の特定の部分のメンバーにIAMロールを割り当てることができます。これにより、階層の他の部分のリソースにアクセスできなくなります。</block>
+  <block id="179864dbcf93f914bb2504e0d17f7afc" category="paragraph">BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限がに表示され<block ref="a3d6867da21f74b7e760876f5e090de9" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="1f0c50a54c656fee9ca2814ffcfc5d68" category="paragraph">コネクタにこのカスタムロールを作成する必要があるかどうかは、その配置方法によって異なります。</block>
+  <block id="fa922c926b9bd1ffad4f5c26c082d203" category="paragraph-title">BlueXP  からの導入</block>
+  <block id="657d65defc193e1f1ae69cc71d8dde9c" category="paragraph">BlueXP  を使用してAzureにConnector仮想マシンを導入すると、仮想マシンでが有効になり<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block>、カスタムロールが作成されて仮想マシンに割り当てられます。このロールは、そのAzureサブスクリプション内でリソースとプロセスを管理するために必要な権限をBlueXPに提供します。コネクタがアップグレードされると、ロールの権限は最新の状態に保たれます。コネクタ用にこのロールを作成したり、更新を管理したりする必要はありません。</block>
+  <block id="17187c9f3c6d4fe394ea1db0cb6f0b16" category="paragraph-title">手動またはAzure Marketplaceからの導入</block>
+  <block id="a4d75af0169953eb40d887c4820fd6c1" category="paragraph">Azure Marketplaceからコネクタを導入する場合、またはLinuxホストにコネクタを手動でインストールする場合は、カスタムロールを自分で設定し、変更があった場合は権限を維持する必要があります。</block>
+  <block id="ad7d7ef56b8ff6022bbad683c5492270" category="paragraph">今後のリリースで新しい権限が追加されるため、ロールが最新の状態になっていることを確認する必要があります。新しい権限が必要な場合は、リリースノートに記載されます。</block>
+  <block id="97d45041217492c3fe9ac0d49a0674a5" category="cell"><block ref="97d45041217492c3fe9ac0d49a0674a5" category="inline-link-macro-rx"></block></block>
+  <block id="2ff6b1064f88d62b00c4062b5e82d23f" category="paragraph">Azureでは、BlueXP  から直接コネクタを作成できます。BlueXP  からAzureでコネクタを作成するには、ネットワークをセットアップし、コネクタのデプロイに使用するAzureロールを準備してから、コネクタをデプロイする必要があります。</block>
+  <block id="799e45e78d3615d4d8005dadaa50f617" category="section-title">手順2：コネクタ導入ポリシーを作成する（カスタムロール）</block>
+  <block id="7916ff578d0c4f1b6b2fb089e194887a" category="paragraph">Azureにコネクタをデプロイする権限を持つカスタムロールを作成する必要があります。</block>
+  <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">BlueXP  は、Connector仮想マシンをAzureに導入すると、その仮想マシンでを有効にし<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block>、必要なロールを自動的に作成して仮想マシンに割り当てます。自動的に作成されるロールは、そのAzureサブスクリプション内のリソースとプロセスの管理に必要な権限をBlueXP  に提供します。<block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>です。</block>
+  <block id="be77518281f390b896a01faba311cae7" category="section-title">手順4：コネクタの配置権限を設定する</block>
+  <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">コネクタ展開用のカスタムロールの作成</block>
 </blocks>

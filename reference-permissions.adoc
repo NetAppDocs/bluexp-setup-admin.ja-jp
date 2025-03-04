@@ -116,7 +116,7 @@ BlueXPでは、コネクタと個 々 のサービスにAzure権限が必要で�
 | 目標 | 説明 | リンク 
 
 
-| BlueXPからコネクタを導入 | BlueXPからConnectorを導入する場合は、AzureにConnector VMを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。 | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Azure権限を設定する"] 
+| BlueXPからコネクタを導入 | BlueXPからConnectorを導入する場合は、AzureにConnector VMを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。 | link:task-install-connector-azure-bluexp.html#connector-custom-role["Azure権限を設定する"] 
 
 
 | コネクタの権限を指定します  a| 

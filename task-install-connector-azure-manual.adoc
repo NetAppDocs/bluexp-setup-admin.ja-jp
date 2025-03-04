@@ -409,7 +409,7 @@ NTPを有効にする:: BlueXP分類を使用して企業データソースを�
 
 
 
-== 手順4：権限を設定する
+== 手順4：コネクタの配置権限を設定する
 
 次のいずれかのオプションを使用して、BlueXPにAzure権限を設定する必要があります。
 
@@ -421,7 +421,7 @@ BlueXPの権限を準備する手順は次のとおりです。
 
 [role="tabbed-block"]
 ====
-.カスタムロール
+.コネクタ展開用のカスタムロールの作成
 --
 Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
 
