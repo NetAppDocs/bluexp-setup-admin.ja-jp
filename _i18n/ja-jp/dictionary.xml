@@ -1768,7 +1768,6 @@
   <block id="c160cffd96a1bb98161a7add244e274f" category="paragraph">コネクタのUniform Resource Identifier（URI）を追加および削除します。</block>
   <block id="f98b44043815b68b5ba8272fb252dafd" category="list-text">BlueXPヘッダーの* Connector *ドロップダウンを選択します。</block>
   <block id="9cf3804bed44acd4f31054cd5804edd6" category="list-text">[コネクタの管理]*を選択します。</block>
-  <block id="330b38a06abadd478b0e03585b3789a5" category="list-text">コネクタのアクションメニューを選択し、* URIの編集*を選択します。</block>
   <block id="fb9b59364e346ccfcbfc4636f13644b5" category="list-text">URIを追加および削除し、*適用*を選択します。</block>
   <block id="fb6890fd99d108eeb3627b961bdfb529" category="section-title">Google Cloud NAT ゲートウェイを使用しているときのダウンロードエラーを修正します</block>
   <block id="2eac5df1bc108f46482e586570f46442" category="paragraph">コネクタは、 Cloud Volumes ONTAP のソフトウェアアップデートを自動的にダウンロードします。設定で Google Cloud NAT ゲートウェイを使用している場合、ダウンロードが失敗することがあります。この問題を修正するには、ソフトウェアイメージを分割するパーツの数を制限します。この手順は、BlueXP APIを使用して実行する必要があります。</block>
@@ -4980,4 +4979,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">BlueXP  は、Connector仮想マシンをAzureに導入すると、その仮想マシンでを有効にし<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block>、必要なロールを自動的に作成して仮想マシンに割り当てます。自動的に作成されるロールは、そのAzureサブスクリプション内のリソースとプロセスの管理に必要な権限をBlueXP  に提供します。<block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>です。</block>
   <block id="be77518281f390b896a01faba311cae7" category="section-title">手順4：コネクタの配置権限を設定する</block>
   <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">コネクタ展開用のカスタムロールの作成</block>
+  <block id="87a06bc88e9a560195c606632e964e42" category="list-text">[Connector URIs]*を選択します。</block>
 </blocks>
