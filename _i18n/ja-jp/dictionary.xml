@@ -5025,6 +5025,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">コネクタの自動アップグレードを無効にする方法について説明します。</block>
   <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
   <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">コネクタの自動アップグレードを無効にするには、2つの手順を実行します。まず、現在のコネクタが正常で最新であることを確認する必要があります。次に、設定ファイルを編集して、自動アップグレード機能をオフにします。</block>
-  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
   <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">デフォルトでは、ONTAPシステムマネージャにアクセスするためのONTAPクレデンシャルの入力は求められません。ただし、BlueXP  管理者（Organization adminロールを持つ）は、ユーザにONTAPクレデンシャルの入力を求めるようにBlueXP  を設定できます。この設定を[Enabled]にすると、ユーザは毎回ONTAPクレデンシャルを入力する必要があります。</block>
+  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025年3月6日</block>
 </blocks>
