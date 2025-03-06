@@ -41,7 +41,7 @@ link:reference-connector-default-config.html["コネクタのデフォルト設�
 
 
 
-== コネクタVMの起動の停止
+== コネクタVMの停止と起動
 
 コネクタVMを停止してから起動する必要がある場合は、クラウドプロバイダのコンソールから、またはオンプレミス管理の標準手順を使用して実行する必要があります。
 
@@ -119,6 +119,6 @@ system configuration backup settings modify -destination <target-location>
 . BlueXPヘッダーの* Connector *ドロップダウンを選択します。
 . [コネクタの管理]*を選択します。
 . コネクターのアクションメニューを選択し、*コネクターを編集*を選択します。
-. [Connector URIs]*を選択します。
+. コネクターのURIを表示するには、*コネクターURI *バーを展開します。
 . URIを追加および削除し、*適用*を選択します。
 

@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: task-ontap-access-connector.html 
+keywords: administer, credentials, ONTAP, connector, Cloud Volumes ONTAP, on-premises, roles, permissions 
+summary: 管理者は、ユーザにONTAPクレデンシャルの入力を求めるようにBlueXP  Connectorを設定できます。 
+---
+= ONTAP詳細ビューのONTAP権限を強制する（ONTAPシステムマネージャ）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+デフォルトでは、BlueXP  ユーザはコネクタのクレデンシャルを使用してアドバンストビュー（ONTAPシステムマネージャ）にアクセスできます。代わりに、ユーザにONTAPクレデンシャルの入力を求めるようにBlueXP  を設定できます。これにより、ONTAP Cloud Volumes ONTAPとONTAPの両方のオンプレミスクラスタでユーザのONTAP権限が適用されます。
+
+
+NOTE: コネクタ設定を編集するには、組織管理者ロールのいずれかが必要です。
+
+.手順
+. BlueXPヘッダーの* Connector *ドロップダウンを選択します。
+. [コネクタの管理]*を選択します。
+. 編集するコネクタに対応する行のアクションメニューを選択します。
+. [Force Credentials]*オプションを展開します。
+. チェックボックスをオンにして*資格情報を強制*オプションを有効にし、*保存*を選択します。
+. [Force Credentials]*オプションを表示して、オプションが有効になっていることを確認します。
++
+image:screenshot-force-credentials-on.png["クレデンシャルの強制適用がオンになっているスクリーンショット"]
+
+

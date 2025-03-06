@@ -570,7 +570,6 @@
   <block id="e3884a4ce043ad31217e0098c7c0537f" category="doc">BlueXPログインに関連付けられているクレデンシャルを管理します</block>
   <block id="5a66a53c80f94aa60f854872b432d82d" category="paragraph">BlueXPで実行した操作によっては、ONTAP クレデンシャルとNetApp Support Site （NSS）クレデンシャルがBlueXPユーザログインに関連付けられている場合があります。関連付けたクレデンシャルは、BlueXPで表示および管理できます。たとえば、これらのクレデンシャルのパスワードを変更した場合は、BlueXPでパスワードを更新する必要があります。</block>
   <block id="823a6e1d7fe661be55dd3af05f972b11" category="section-title">ONTAP クレデンシャル</block>
-  <block id="b82af7a7b96d34942cadb7921514f408" category="paragraph">コネクタを使用せずにオンプレミスのONTAP クラスタを直接検出すると、クラスタのONTAP クレデンシャルを入力するように求められます。これらのクレデンシャルはユーザレベルで管理されます。つまり、ログインした他のユーザはこれらのクレデンシャルを表示できません。</block>
   <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">NSSクレデンシャル</block>
   <block id="9b7ea233ab4085c74e7506949f6c1a49" category="paragraph">BlueXPログインに関連付けられたNSSクレデンシャルにより、サポート登録、ケース管理、Digital Advisorへのアクセスが可能になります。</block>
   <block id="f57a365a74c463e64fe68cc99fbed5f5" category="list-text">[サポート]&gt;[リソース]*にアクセスしてサポートに登録すると、NSSクレデンシャルをBlueXPログインに関連付けるように求められます。</block>
@@ -1755,7 +1754,6 @@
   <block id="fa25ff644bc82c03a613715d969f788d" category="list-text">Google Cloud でコネクタを作成するときに認証方法を指定することはできません。ただし、 Google Cloud Console または Google Cloud CLI （ gcloud ）を使用して Linux VM インスタンスに接続することができます。</block>
   <block id="b60097f9f3ac90a5ce4fd69c66be0717" category="inline-link">Google Cloud Docs ： Linux VM に接続します</block>
   <block id="b80f2820ec689140e03615f3240fde24" category="paragraph"><block ref="b80f2820ec689140e03615f3240fde24" category="inline-link-rx"></block></block>
-  <block id="bdfe8a8b0f5b6a0b4242be2e550dff4a" category="paragraph">BlueXPをプライベートモードで使用している場合は、NetApp Support Site から新しいバージョンが利用可能になったらコネクタをアップグレードできます。</block>
   <block id="84692ef80d23d7ba11b5ce40223e1af5" category="paragraph">アップグレード中にWebベースのコンソールを使用できなくなるように、アップグレードプロセス中にコネクタを再起動する必要があります。</block>
   <block id="d651da37c0942c2e8d61b167e835ec80" category="list-text">からConnectorソフトウェアをダウンロードします<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>。</block>
   <block id="29796d02ce8782cd7e5fc7ab3be29617" category="list-text">アップグレードが完了したら、 * Help &gt; Support &gt; Connector * を選択してコネクタのバージョンを確認できます。</block>
@@ -3627,8 +3625,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="9a8e93f292200e4d86cfd716262b53cc" category="paragraph">\http://bxpproxyuser:netapp1\!@address:3128</block>
   <block id="b47596b2df9e477c6203e15d91a678ba" category="section-title">手順8：BlueXPに権限を付与する</block>
   <block id="1963a5845bb573651eecf0188b584456" category="summary">標準モードまたは制限モードでBlueXPを使用している場合、BlueXPは自動的にコネクタを最新リリースにアップグレードします。新しいバージョンは通常、新機能を導入し、安定性を向上させるために毎月リリースされます。必要に応じて、代わりにローカルリポジトリからイメージの更新をプルするようにコネクタを設定できます。プライベートモード展開の場合は、コネクタを手動で手動でアップグレードする必要があります。</block>
-  <block id="d6b403d1857ecb824db228cac4a628ae" category="doc">プライベートモード使用時のコネクタのアップグレード</block>
-  <block id="eb775c24a0b347148812da8a6496489b" category="admonition">BlueXPを標準モードまたは制限モードで使用している場合は、コネクタを手動でアップグレードする必要はありません。ソフトウェアの更新を取得するためにアウトバウンドのインターネットアクセスが確立されていれば、BlueXPはコネクタを最新リリースに自動的にアップグレードします。</block>
   <block id="eb762959fcc0cce31949abce6f8eb1c1" category="list-text">CPU、RAM、ディスクスペース、コンテナオーケストレーションツールなどの要件を満たす専用のLinuxホストを準備します。</block>
   <block id="99ca40e706695ba7607287669fab39f3" category="cell">アベイラビリティゾーンがAWSローカルゾーンであるかどうかを確認し、すべての導入パラメータに互換性があることを確認します。</block>
   <block id="0683995d371439e19d907680da921ba9" category="section-title">2024年5月9日</block>
@@ -3683,7 +3679,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="6f16d8c603420093f0274e54a03d0a2f" category="admonition">既存のコネクタがある場合は、次の点に注意する必要があります。 <block ref="bd6e461b9eed09ced9eb75610086f8d1" category="inline-link-macro-rx"></block>。</block>
   <block id="6a8efb58df7d7b111b6073b7ce536fe1" category="section-title">オペレーティングシステムのパッチとコネクタ</block>
   <block id="5c6b62893e9b8753b16ce8db64ae077c" category="paragraph">OSのセキュリティパッチを適用するときに、コネクタホスト上のサービスを停止する必要はありません。</block>
-  <block id="d4c7d564cf9384303b11292ec4d09bf7" category="section-title">コネクタVMの起動の停止</block>
   <block id="f65f967e9525533fe9edbca2e40db32f" category="paragraph">コネクタVMを停止してから起動する必要がある場合は、クラウドプロバイダのコンソールから、またはオンプレミス管理の標準手順を使用して実行する必要があります。</block>
   <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">導入モードについて説明します</block>
   <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">AWS権限の表示</block>
@@ -4979,5 +4974,48 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">BlueXP  は、Connector仮想マシンをAzureに導入すると、その仮想マシンでを有効にし<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block>、必要なロールを自動的に作成して仮想マシンに割り当てます。自動的に作成されるロールは、そのAzureサブスクリプション内のリソースとプロセスの管理に必要な権限をBlueXP  に提供します。<block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>です。</block>
   <block id="be77518281f390b896a01faba311cae7" category="section-title">手順4：コネクタの配置権限を設定する</block>
   <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">コネクタ展開用のカスタムロールの作成</block>
-  <block id="87a06bc88e9a560195c606632e964e42" category="list-text">[Connector URIs]*を選択します。</block>
+  <block id="68ea9cebb3c452c83085356b253868c5" category="paragraph">コネクタの自動アップグレードを無効にできるようになりました。これは、ビジネス上の理由からソフトウェアのアップグレードを手動で処理する必要がある場合に役立ちます。</block>
+  <block id="3d4e00cd939cc5521989a751b4b1dbdb" category="paragraph">コネクタバージョン3.9.48以降では、自動アップグレードをオフにすることができます。</block>
+  <block id="71ae02c171873e7af0f7b72300d1da9b" category="inline-link">コネクタのアップグレードの管理</block>
+  <block id="d8d6c527b108697862bc5a357c01048f" category="list-text"><block ref="d8d6c527b108697862bc5a357c01048f" category="inline-link-rx"></block></block>
+  <block id="56997c9a04ad826028323008fa4ae68f" category="doc">ユーザにONTAPクレデンシャルの入力を強制してアドバンストビューにアクセスさせる（ONTAPシステムマネージャ）</block>
+  <block id="7947a3598cd43dbb491dfbcdf1970bb1" category="paragraph">ONTAPシステムマネージャにアクセスするために、ユーザにONTAPクレデンシャルの入力を強制できるようになりました。この設定は、Cloud Volumes ONTAPとオンプレミスのONTAPの両方に適用されます。組織管理者ロールを持つユーザーは、この設定を構成できます。</block>
+  <block id="47c94941fabbd38f1b71c23663c608d6" category="section-title">コネクタVMの停止と起動</block>
+  <block id="90754b70edd81e7b1f33fbe6f09ee188" category="list-text">コネクターのURIを表示するには、*コネクターURI *バーを展開します。</block>
+  <block id="fbd9d54f39ed5129df98414b561236de" category="paragraph">BlueXP  でONTAPクラスタを検出するには、ONTAPの管理者クレデンシャルが必要です。ただし、ONTAPシステムマネージャへのアクセスは、コネクタを使用しているかどうかによって異なります。</block>
+  <block id="b2d980523e7f68a234b1bef9046bf610" category="paragraph-title">コネクタなし</block>
+  <block id="dbe7e61b89ec728b027dc1237e881b38" category="paragraph">クラスタのONTAP System Managerにアクセスするために、ONTAPクレデンシャルを入力するように求められます。ユーザは、これらのクレデンシャルをBlueXP  に保存することを選択できます。つまり、クレデンシャルを毎回入力するように求められることはありません。ユーザクレデンシャルは、それぞれのユーザにのみ表示され、[User Credentials]ページから管理できます。</block>
+  <block id="ebed6caedf3ce370608544cd61300fb9" category="paragraph-title">コネクタ付き</block>
+  <block id="e8cbfb0691fa9052d50053bb8d48f3ca" category="paragraph">デフォルトでは、ONTAPシステムマネージャにアクセスするためのONTAPクレデンシャルの入力は求められません。ただし、BlueXP  管理者（Organization adminロールを持つ）は、ユーザにONTAPクレデンシャルの入力を求めるようにBlueXP  を設定できます。この設定を有効にすると、BlueXP  に保存されないため、ユーザは毎回ONTAPクレデンシャルを入力する必要があります。</block>
+  <block id="f990e553cdc4c29c2efffba33e08a8c7" category="inline-link-macro">詳細はこちら。</block>
+  <block id="efd19a04c99c31329dfaad38a02c2181" category="paragraph"><block ref="efd19a04c99c31329dfaad38a02c2181" category="inline-link-macro-rx"></block></block>
+  <block id="034059bc028cfbb547d4683b2caff29f" category="summary">管理者は、ユーザにONTAPクレデンシャルの入力を求めるようにBlueXP  Connectorを設定できます。</block>
+  <block id="29f68982771966bddc72b7dbd3b2f3d3" category="doc">ONTAP詳細ビューのONTAP権限を強制する（ONTAPシステムマネージャ）</block>
+  <block id="3b0e6670a76f82f4c760fe4ff152d8c0" category="paragraph">デフォルトでは、BlueXP  ユーザはコネクタのクレデンシャルを使用してアドバンストビュー（ONTAPシステムマネージャ）にアクセスできます。代わりに、ユーザにONTAPクレデンシャルの入力を求めるようにBlueXP  を設定できます。これにより、ONTAP Cloud Volumes ONTAPとONTAPの両方のオンプレミスクラスタでユーザのONTAP権限が適用されます。</block>
+  <block id="19c9798fb0fc2fbadcc32b5470960e0e" category="admonition">コネクタ設定を編集するには、組織管理者ロールのいずれかが必要です。</block>
+  <block id="1d34d896e9246492a9cf64de3c5abb49" category="list-text">編集するコネクタに対応する行のアクションメニューを選択します。</block>
+  <block id="79200641e6b3df738c3bda6a52fd51c1" category="list-text">[Force Credentials]*オプションを展開します。</block>
+  <block id="305fd31774e543ad8e03e87cad28ea54" category="list-text">チェックボックスをオンにして*資格情報を強制*オプションを有効にし、*保存*を選択します。</block>
+  <block id="09d01e9645cf22853822390959d6c792" category="list-text">[Force Credentials]*オプションを表示して、オプションが有効になっていることを確認します。</block>
+  <block id="74b59d176e85a927c1b9ec89cd8847b2" category="inline-image-macro">クレデンシャルの強制適用がオンになっているスクリーンショット</block>
+  <block id="e47d9b41f27e043909b844e706663ff6" category="paragraph"><block ref="e47d9b41f27e043909b844e706663ff6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="651a32308986dea9de3797c8e0997c14" category="paragraph">BlueXP  を標準モードまたは制限モードで使用すると、コネクタにソフトウェアの更新を取得するためのアウトバウンドインターネットアクセスがある限り、BlueXP  はコネクタを自動的に最新リリースにアップグレードします。コネクタのアップグレード時に手動で管理する必要がある場合は、標準モードまたは制限モードの自動アップグレードを無効にできます。</block>
+  <block id="a30a1e13c5419a2d602474533f69dcd1" category="admonition">BlueXP  をプライベートモードで実行する場合は、コネクタを常に自分でアップグレードする必要があります。</block>
+  <block id="6c66e308926fc039cc9e20fe56d7abdf" category="section-title">自動アップグレードを無効にする</block>
+  <block id="a1188a88192f3f804b6f1b62d79bcd67" category="paragraph">コネクタの自動アップグレードを無効にするには、2つの手順を実行します。まず、現在のコネクタが正常で最新であることを確認する必要があります。次に、構成ファイルを編集して、自動アップグレード機能をオフにします。</block>
+  <block id="04b99f73471ca057d71f53c3f053b60e" category="admonition">コネクタのバージョンが3.9.48以上の場合にのみ、自動アップグレードを無効にできます。</block>
+  <block id="377245fa7e4be29c2941f9c3069eae57" category="section-title">コネクタの状態を確認する</block>
+  <block id="70a6926b672111815dfe273a0292468d" category="paragraph">コネクタが安定しており、コネクタVMで実行されているすべてのコンテナが正常に動作していることを確認する必要があります。自動アップグレードを無効にすると、Connector VMは新しいサービスまたはアップグレードパッケージのチェックを停止します。</block>
+  <block id="aca0bf9b192b34e35fb37ccbd9cd98be" category="paragraph">次のいずれかのコマンドを使用して、コネクタを確認します。すべてのサービスのステータスが_running_になっている必要があります。そうでない場合は、自動アップグレードを無効にする前にNetAppサポートにお問い合わせください。</block>
+  <block id="c5fd214cdd0d2b3b4272e73b022ba5c2" category="list-text">Docker</block>
+  <block id="21fa3d085631029b33cc6537b5b1a964" category="section-title">コネクタの自動アップグレードを無効にする</block>
+  <block id="f1a415c9565a5203c9cab67d50062380" category="paragraph">自動アップグレードを無効にするには、_com/opt/application/service-manager-2/config.json_fileで_isUpgradeDisabled_flagを設定しNetAppます。デフォルトでは、このフラグはfalseに設定され、コネクタは自動的にアップグレードされます。このフラグをtrueに設定すると、自動アップグレードを無効にできます。</block>
+  <block id="fda5aa414d851bf8018163c5fe4acb1a" category="paragraph">自動アップグレードを再度有効にするには、次の手順を実行して_isUpgradeDisabled_flagをfalseに設定します。</block>
+  <block id="942778941acc11e030b5e5615f2d8d41" category="list-text">コネクタが最新で正常であることを確認します。</block>
+  <block id="667f94e7aab832b818ed3d6710e2b890" category="list-text">_/opt/application/service-manager-2/config.json_file NetAppを編集し、_isUpgradeDisabled_flagの値をtrueに変更します（この例の下部に示されているように）。</block>
+  <block id="9e3e4c61d70076bf677edfc157a67761" category="list-text">ファイルを保存します。</block>
+  <block id="92ae5258778c2fa8ece2b13c88ec0853" category="list-text">次のコマンドを実行して、Service Manager 2サービスを再起動します。</block>
+  <block id="0a38f6fb9751bd939880be04152c67f3" category="section-title">コネクタのアップグレード</block>
+  <block id="084d853adc45dcd521da8dd702d68cc0" category="section-title">2025年2月15日</block>
+  <block id="ea807586843dea568060289fb3d6cc9a" category="sidebar">BlueXP  でONTAP権限を適用する</block>
 </blocks>

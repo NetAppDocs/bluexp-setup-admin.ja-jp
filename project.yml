@@ -145,7 +145,7 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: EC2インスタンスでIMDSv2を使用する必要がある
         url: "/task-require-imdsv2.html"
-      - title: プライベートモード使用時のコネクタのアップグレード
+      - title: コネクタのアップグレードの管理
         url: "/task-upgrade-connector.html"
       - title: 複数のコネクタの操作
         url: "/task-manage-multiple-connectors.html"
@@ -155,6 +155,8 @@ sidebar:
         url: "/task-uninstall-connector.html"
       - title: デフォルト設定
         url: "/reference-connector-default-config.html"
+      - title: BlueXP  でONTAP権限を適用する
+        url: "/task-ontap-access-connector.html"
     - title: クレデンシャルとサブスクリプション
       entries:
       - title: AWS
