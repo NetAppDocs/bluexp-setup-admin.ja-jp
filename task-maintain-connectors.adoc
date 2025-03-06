@@ -118,7 +118,7 @@ system configuration backup settings modify -destination <target-location>
 .手順
 . BlueXPヘッダーの* Connector *ドロップダウンを選択します。
 . [コネクタの管理]*を選択します。
-. コネクターのアクションメニューを選択し、*コネクターを編集*を選択します。
+. コネクターのURIを表示するには、*コネクターURI *バーを展開します。
 . コネクターのURIを表示するには、*コネクターURI *バーを展開します。
 . URIを追加および削除し、*適用*を選択します。
 
