@@ -5027,9 +5027,9 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">コネクタの自動アップグレードを無効にするには、2つの手順を実行します。まず、現在のコネクタが正常で最新であることを確認する必要があります。次に、設定ファイルを編集して、自動アップグレード機能をオフにします。</block>
   <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">デフォルトでは、ONTAPシステムマネージャにアクセスするためのONTAPクレデンシャルの入力は求められません。ただし、BlueXP  管理者（Organization adminロールを持つ）は、ユーザにONTAPクレデンシャルの入力を求めるようにBlueXP  を設定できます。この設定を[Enabled]にすると、ユーザは毎回ONTAPクレデンシャルを入力する必要があります。</block>
   <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025年3月6日</block>
-  <block id="7f1693b8d0ac4ce81a83df26522897a8" category="doc">コネクタ3.9.50アップデート</block>
   <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">現時点では、3.9.50リリースは標準モードと制限モードで使用できます。</block>
   <block id="3f45680fc0523f726aa3afe05af65c63" category="section-title">BlueXP  でNetApp Keystoneベータ版を利用可能</block>
   <block id="6bcb702faf24747c517b58ba5f3b8a99" category="paragraph">NetApp Keystoneは近日中にBlueXP  から利用可能になり、ベータ版として提供されます。NetApp Keystoneベータ版のサインアップページには、BlueXP  の左側のナビゲーションバーからアクセスできます。</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
+  <block id="23b3b711859803a815b81aca1cc4811c" category="doc">コネクタ3.9.50</block>
 </blocks>
