@@ -5034,4 +5034,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d0ec983e93943635bce3349bbdcbf79e" category="list-text">_/opt/application/service-manager-2/config.json_ NetAppファイルのバックアップコピーを作成して、変更を元に戻せるようにします。</block>
   <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">_/opt/application/service-manager-2/config.json_file NetAppを編集し、_isUpgradeDisabled_flagの値をtrueに変更します。</block>
   <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">次のコマンドを実行して、コネクタのステータスが_active（running）_と表示されていることを確認します。_</block>
+  <block id="973c3bcf96d6257755a3e8ee090eb5f1" category="list-text">デジタルウォレット（ライセンスのみ、サブスクリプションの監視にはコネクタが必要）</block>
 </blocks>
