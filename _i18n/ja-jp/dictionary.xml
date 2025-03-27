@@ -5035,4 +5035,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">_/opt/application/service-manager-2/config.json_file NetAppを編集し、_isUpgradeDisabled_flagの値をtrueに変更します。</block>
   <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">次のコマンドを実行して、コネクタのステータスが_active（running）_と表示されていることを確認します。_</block>
   <block id="973c3bcf96d6257755a3e8ee090eb5f1" category="list-text">デジタルウォレット（ライセンスのみ、サブスクリプションの監視にはコネクタが必要）</block>
+  <block id="01dc19e1f1ebe0b9a261b5e0d555ea43" category="admonition">BlueXP  からAutoSupportメッセージを送信するように選択した場合、BlueXP  はAutoSupportメッセージの送信時に自動的にロードバランシングを行うため、最大5時間かかることがあります。NetAppサポートとの通信に時間がかかる場合は、ファイルをダウンロードしてNetAppサポートに自分で送信してください。</block>
 </blocks>
