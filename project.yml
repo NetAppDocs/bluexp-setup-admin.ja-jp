@@ -95,6 +95,12 @@ sidebar:
         url: "/task-prepare-private-mode.html"
       - title: コネクタを展開します
         url: "/task-install-private-mode.html"
+      - title: BlueXPのアカウント
+        entries:
+        - title: アカウントの詳細を確認します
+          url: "/concept-netapp-accounts.html"
+        - title: BlueXPアカウントを管理します
+          url: "/task-managing-netapp-accounts.html"
       - title: 次は何ができるか
         url: "/reference-whats-next-private-mode.html"
     - title: BlueXPにログインします
@@ -123,16 +129,12 @@ sidebar:
         url: "/task-iam-audit-actions-timeline.html"
       - title: 事前定義されたIAMロール
         url: "/reference-iam-predefined-roles.html"
-    - title: BlueXPのアカウント
+    - title: BlueXP  アカウント（プライベートモードのみ）
       entries:
       - title: アカウントの詳細を確認します
         url: "/concept-netapp-accounts.html"
       - title: BlueXPアカウントを管理します
         url: "/task-managing-netapp-accounts.html"
-      - title: BlueXPアカウントをもう1つ作成します
-        url: "/task-create-account.html"
-      - title: ユーザロール
-        url: "/reference-user-roles.html"
     - title: アイデンティティフェデレーション
       url: "/concept-federation.html"
     - title: コネクタ
