@@ -1,0 +1,31 @@
+= プライベートモードリリース（3.9.50）
+:allow-uri-read: 
+
+
+
+
+=== プライベートモードリリース（3.9.50）
+
+新しいプライベートモードリリースをからダウンロードできるようになりました。 https://mysupport.netapp.com/site/downloads["NetApp Support Site"^]
+
+3.9.50リリースでは、BlueXP  の次のコンポーネントとサービスが更新されています。
+
+[cols="3*"]
+|===
+| コンポーネントまたはサービス | このリリースに含まれるバージョン | 前回のプライベートモードリリースからの変更点 
+
+
+| コネクタ | 3.9.50、3.9.49 | を参照 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP  Connectorページの新機能"]し、バージョン3.9.50および3.9.49に含まれている変更を参照してください。 
+
+
+| バックアップとリカバリ | 2025年3月17日 | に移動し https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  バックアップ/リカバリページの新機能"^]、2024年3月リリースに含まれる変更点を参照してください。 
+
+
+| 分類 | 2025年3月10日（バージョン1.41） | にアクセス https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分類ページの新機能"^]し、1.38リリースから1.371.41リリースに含まれる変更点を参照してください。 
+|===
+アップグレード方法を含むプライベートモードの詳細については、次を参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
+
