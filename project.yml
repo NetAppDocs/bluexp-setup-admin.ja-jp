@@ -123,7 +123,7 @@ sidebar:
         url: "/task-iam-associate-connectors.html"
       - title: 組織、プロジェクト、コネクタの切り替え
         url: "/task-iam-switch-organizations-projects.html"
-      - title: 組織名の変更
+      - title: 組織IDとプロジェクトID
         url: "/task-iam-rename-organization.html"
       - title: IAMアクティビティの監視または監査
         url: "/task-iam-audit-actions-timeline.html"

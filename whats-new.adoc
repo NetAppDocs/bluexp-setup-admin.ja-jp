@@ -335,7 +335,7 @@ BlueXP  デジタルウォレットとBlueXP  レプリケーションもプ�
 
 BlueXP  IDおよびアクセス管理からプロジェクトのIDを表示できるようになりました。このIDは、API呼び出しの実行時に必要になる場合があります。
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["プロジェクトのIDを取得する方法"]です。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-rename-organization.html#project-id["プロジェクトのIDを取得する方法"]です。
 
 
 

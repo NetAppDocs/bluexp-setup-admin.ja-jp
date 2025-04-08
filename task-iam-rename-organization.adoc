@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-iam-rename-organization.html 
-keywords: rename organization, change organization name, name change, rename, change name, iam, identity and access management 
+keywords: rename organization, change organization name, name change, rename, change name, iam, ID, integration, project, organization, API, identity and access management 
 summary: 必要に応じて、BlueXP  組織の名前を変更できます。 
 ---
-= BlueXP  組織の名前を変更する
+= 組織IDとプロジェクトID
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,13 @@ summary: 必要に応じて、BlueXP  組織の名前を変更できます。
 
 
 [role="lead"]
-必要に応じて、BlueXP  組織の名前をBlueXP  IDおよびアクセス管理（IAM）から変更できます。組織名は、BlueXP  Webベースのコンソールの上部とIAMページ内に表示されます。
+BlueXP  組織には名前とIDがあります。BlueXP  環境で識別しやすい組織の名前を選択できます。また、特定の統合のために組織IDを取得する必要がある場合もあります。
+
+
+
+== 組織名の変更
+
+BlueXP  で組織の名前を変更できます。これは、BlueXP  環境内で複数の組織をサポートする場合に役立ちます。
 
 .手順
 . BlueXP  コンソールの右上で、>* IDおよびアクセス管理*を選択しますimage:icon-settings-option.png["BlueXP  Webコンソールの右上に表示される設定アイコン。"]。
@@ -25,8 +31,36 @@ image:screenshot-iam-edit-organization.png["[Overview]ページのスクリー�
 . 新しい組織名を入力し、*適用*を選択します。
 
 
-.結果
-BlueXP  によって組織名が更新されます。BlueXP  コンソールの上部に更新後の名前がすぐに表示されます。
+
+
+== 組織IDの取得
+
+組織IDは、BlueXP  との特定の統合に使用されます。
+
+組織ページから組織IDを表示し、必要に応じてクリップボードにコピーできます。
+
+.手順
+. BlueXP  コンソールの右上で、>* IDおよびアクセス管理*を選択しますimage:icon-settings-option.png["BlueXP  Webコンソールの右上に表示される設定アイコン。"]。
+. [Organization]タブを選択して、[Organization]ページを表示します。
+. [*Organization*]ページで、サマリーバーで組織IDを探し、クリップボードにコピーします。後で使用するために保存することも、必要な場所に直接コピーすることもできます。
+
+
+
+
+== プロジェクトのIDを取得する
+
+BlueXP  APIを使用している場合は、プロジェクトのIDを取得する必要があります。たとえば、Cloud Volumes ONTAP作業環境を作成する場合などです。
+
+.手順
+. [*Organization*]ページで、テーブル内のプロジェクトに移動し、image:icon-action.png["横方向の 3 つの点を示すアイコン"]
++
+プロジェクトIDが表示されます。
+
+. IDをコピーするには、コピーボタンを選択します。
++
+image:screenshot-iam-project-id.png["プロジェクトのアクションメニューを選択した後にプロジェクトIDが表示されるフォルダとプロジェクトテーブルのスクリーンショット。"]
+
+
 
 .関連情報
 * link:concept-identity-and-access-management.html["BlueXP  のアイデンティティ管理とアクセス管理の詳細"]
