@@ -4883,7 +4883,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="0a38f6fb9751bd939880be04152c67f3" category="section-title">コネクタのアップグレード</block>
   <block id="ea807586843dea568060289fb3d6cc9a" category="sidebar">BlueXP  でONTAP権限を適用する</block>
   <block id="4bbf2de0e52eb20a42e04cf23bdb1683" category="list-text">BlueXP  ユーザへの複数のロールの割り当てがサポートされます。</block>
-  <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">BlueXP  組織（Org/フォルダ/プロジェクト）の複数のリソースへの役割の割り当てのサポート</block>
   <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">コネクタ3.9.49アップデート</block>
   <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">BlueXP  テコネクタヲシヨウスルシヨウコウノONTAP System Managerヘノアクセス</block>
   <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">BlueXP  管理者（Organization adminロールを持つユーザ）は、ONTAPシステムマネージャにアクセスするためにONTAPクレデンシャルの入力を求めるようにBlueXP  を設定できます。この設定を有効にすると、BlueXP  に保存されないため、ユーザは毎回ONTAPクレデンシャルを入力する必要があります。</block>
@@ -4941,7 +4940,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="3ed9698e266f4060e99b8c0f2f38b027" category="paragraph">3.9.50リリースでは、BlueXP  の次のコンポーネントとサービスが更新されています。</block>
   <block id="5820ebbb1da4e36bc0eb0db564450b99" category="cell">3.9.50、3.9.49</block>
   <block id="03f247630aa241e4b15df35baf8f5fd1" category="inline-link">BlueXP  Connectorページの新機能</block>
-  <block id="e411690e8dc95cbf79272f1e53cce845" category="cell">を参照<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>し、バージョン3.9.50および3.9.49に含まれている変更を参照してください。</block>
   <block id="499d067ffbbd553e23809aa38aa67bfa" category="cell">2025年3月17日</block>
   <block id="0e231d3391a335865e696150143618bc" category="cell">に移動し<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>、2024年3月リリースに含まれる変更点を参照してください。</block>
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">2025年3月10日（バージョン1.41）</block>
@@ -4958,4 +4956,27 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="65684205c2c17c1079112735fcb6d59c" category="list-text">[*Organization*]ページで、サマリーバーで組織IDを探し、クリップボードにコピーします。後で使用するために保存することも、必要な場所に直接コピーすることもできます。</block>
   <block id="3b114d25af2bc979de4e8bf4773b092f" category="inline-image-macro">プロジェクトのアクションメニューを選択した後にプロジェクトIDが表示されるフォルダとプロジェクトテーブルのスクリーンショット。</block>
   <block id="03666f94d7af611921b392c3ee39f483" category="paragraph"><block ref="03666f94d7af611921b392c3ee39f483" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2139dd52a52b11dde53f2a9724789c73" category="list-text">BlueXP  組織の複数のリソース（Org/フォルダ/プロジェクト）への役割の割り当てのサポート</block>
+  <block id="f16867c24816cbe638e99bd00c5d371b" category="cell">にアクセス<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>し、バージョン3.9.50および3.9.49の変更点を参照してください。</block>
+  <block id="d05e8333cecdf836d5befa221763f3df" category="doc">ロールを使用してリソースへのユーザアクセスを管理する</block>
+  <block id="8d6e47c2cba8a87a34c20d42630d03de" category="paragraph">BlueXP  では、必要な作業と場所に基づいてユーザにロールを割り当てることができます。</block>
+  <block id="43f7ba5a95da6743e6d2a613c53f3979" category="paragraph">組織管理者、フォルダ管理者、またはプロジェクト管理者の役割を持つユーザーは、他のユーザーに役割を割り当てる責任があります。アクセスロールは、プロジェクトまたはフォルダ単位で割り当てることができます。たとえば、あるプロジェクトにRansomware protection adminロールを割り当て、別のプロジェクトにSnapCenter adminロールを割り当てることができます。または、ユーザーが特定のフォルダー内のすべてのプロジェクトに対して分類管理者ロールを必要とする場合は、フォルダーレベルでこのアクセスロールを付与できます。</block>
+  <block id="d4cee7f9299f715f35c592b05a90fcd5" category="paragraph">アクセスロールを使用して、ユーザが実行する必要があるBlueXP  タスクに基づいてストレージリソースへのアクセスを割り当てます。たとえば、BlueXP  ユーザがランサムウェア対策サービスを操作する必要がある場合、アクセスロールが付与されているプロジェクトのランサムウェア対策サービスの表示権限または管理権限を含むアクセスロールを付与する必要があります。</block>
+  <block id="5bd93d2f07b4ba6321e2f33614c76585" category="paragraph">IAM戦略に基づいてユーザにロールを割り当て、セキュリティを強化します。BlueXP  IAMロールは、ユーザが必要なものだけにアクセスできるようにするために設計されています。</block>
+  <block id="9088af3701d0cc1247f7ea61c2e8cc5f" category="inline-link-macro">フォルダとプロジェクトを使用してBlueXP  IAMでリソースを整理する方法について説明します。</block>
+  <block id="008c625fbd0c2108cc88a6317b2572a8" category="admonition">リソースに直接付与することはできません。最初にリソースをプロジェクトに割り当てる必要があります。ユーザにアクセス権を割り当てる前に、リソース階層の設定を検討してください。<block ref="41b378741b8a64d0f324528fa1890b6f" category="inline-link-macro-rx"></block></block>
+  <block id="f178bfd6340a45b4202cfc2ad448263a" category="paragraph">BlueXP  組織にメンバーを追加すると、ロールを割り当てるように求められます。メンバーは、現在割り当てられているロールを確認できます。</block>
+  <block id="a0a87a9cfcb0287c5701c8fd542f95f5" category="paragraph">フォルダまたはプロジェクトのadmin_roleを持っている場合は'組織内のすべてのメンバーがページに表示されますただし、権限を持つフォルダおよびプロジェクトのメンバー権限のみを表示および管理できます。<block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>です。</block>
+  <block id="d63f1c66d83451eade374ce0e602a4b4" category="list-text">テーブルで、メンバーに割り当てられた役割を表示する組織、フォルダ、またはプロジェクトのそれぞれの行を展開し、*役割*列の*表示*を選択します。</block>
+  <block id="58bd7e162d519a40f0d8ae550e293a4c" category="section-title">メンバーへのアクセスロールの追加</block>
+  <block id="cfe68ea193af58b89bdd91bea4468531" category="paragraph">通常、メンバーを組織に追加するときに、メンバーに役割を割り当てます。ただし、ロールを削除するか、別のロールを追加することで、いつでもメンバーのロールを更新できます。ユーザーの役割を削除することで、プロジェクトへのユーザーのアクセス権を削除できます。</block>
+  <block id="ba364a79f6fbfab0c8591198ecfd87cc" category="paragraph">ユーザーに組織、フォルダ、またはプロジェクトのアクセスロールを割り当てることができます。</block>
+  <block id="a9cc80dbcd1f48accd079ee5c494be43" category="paragraph">メンバーは、同じプロジェクト内および異なるプロジェクト内で複数の役割を持つことができます。たとえば、小規模な組織では、使用可能なすべてのアクセスロールを同じユーザーに割り当てることができますが、大規模な組織では、ユーザーにBlueXP  でより特殊なタスクを割り当てることができます。または、1人のユーザに組織のRansomware projection adminロールを割り当てることもできます。この例では、ユーザは組織内のすべてのプロジェクトに対してランサムウェア対策タスクを実行できます。</block>
+  <block id="93bc4c31eeacd2985551a427d417a897" category="paragraph">アクセスロール戦略は、BlueXP  でNetAppリソースを編成した方法に沿っている必要があります。</block>
+  <block id="e3c810a55ea2c0b2958ee28af3cba2d1" category="admonition">組織管理者ロールが割り当てられているメンバーには、追加のロールを割り当てることはできません。組織全体の権限がすでに付与されています。フォルダーまたはプロジェクトの役割を持つメンバーには、その役割が既にあるフォルダーまたはプロジェクト内の他の役割を割り当てることはできません。どちらのロールも、割り当てられたスコープ内のすべてのBlueXP  サービスへのアクセスを提供します。</block>
+  <block id="0e6e1e539b578c2b0388d566d8ae4e15" category="inline-link-macro">アクセスロールの詳細</block>
+  <block id="66c24c7330d0db4acf1f42ab6074b3ca" category="list-text">*カテゴリを選択*：BlueXP  役割は、プラットフォームとデータサービスの2つのカテゴリに分けられます。<block ref="a51247ccde87e175c686e81825c9f657" category="inline-link-macro-rx"></block>です。</block>
+  <block id="e666f475ae71221ef0568980f94a0316" category="paragraph"><block ref="a51247ccde87e175c686e81825c9f657" category="inline-link-macro-rx"></block>です。**役割の追加*:組織内の追加のフォルダまたはプロジェクトへのアクセスを許可する場合は、*役割の追加*を選択し、別のフォルダまたはプロジェクトまたは役割のカテゴリを指定してから、役割のカテゴリと対応する役割を選択します。</block>
+  <block id="88ccee89efe2b556b8fcc7b01ae63c9f" category="paragraph">ユーザのアクセスを調整する必要がある場合は、メンバーに割り当てられているロールを変更できます。</block>
+  <block id="bd572303cf9daecbf8e01f72f337d250" category="list-text">メンバーの既存のロールを変更したり、ロールを削除したりできます。</block>
 </blocks>
