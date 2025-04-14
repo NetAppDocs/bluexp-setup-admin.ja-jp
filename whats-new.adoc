@@ -37,7 +37,7 @@ IDおよびアクセス管理（IAM）、コネクタ、クラウドプロバイ
 * Org管理者、フォルダ管理者、またはプロジェクト管理者のロールがある場合は、KeystoneサブスクリプションをIAMプロジェクトに関連付けることができるようになりました。KeystoneサブスクリプションをIAMプロジェクトに関連付けると、BlueXP  内でKeystoneへのアクセスを制御できます。
 
 
-link:reference-iam-predefined-roles.html["新しい役割について説明します。"^]です。
+link:reference-iam-predefined-roles.html["新しい役割について説明します。"^]
 
 
 

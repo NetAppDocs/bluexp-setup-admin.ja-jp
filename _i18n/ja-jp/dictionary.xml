@@ -4923,7 +4923,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">現時点では、3.9.51リリースは標準モードと制限モードで使用できます。</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  IDおよびアクセス管理（IAM）</block>
   <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">新しい役割について説明します。</block>
-  <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>です。</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
   <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェアからの保護にアクセスするには、ランサムウェアからの保護ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">組織管理者、フォルダ管理者、プロジェクト管理者がいないユーザにKeystoneにアクセスするには、Keystoneロールが割り当てられている必要があります。ユーザには、Keystone管理者またはKeystoneビューアのいずれかのロールを割り当てることができます。</block>
@@ -5025,4 +5024,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  のセットアップと管理</block>
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">メンバーとサービスアカウントの追加</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">ロールを使用してリソースへのメンバーアクセスを制御する</block>
+  <block id="7b86bd575ced3444e23389ac71f98a8f" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block></block>
 </blocks>
