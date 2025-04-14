@@ -5010,7 +5010,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="e5a26c78a572123c5a5e442167efbf6e" category="paragraph">コネクタは、ユーザがインストールするNetAppソフトウェアで、ストレージインフラを管理するためにBlueXP  が実行する必要のある処理を実行します。BlueXP  の機能の多くにコネクタは必要ありませんが、コネクタがない場合、一部の機能は利用できません。</block>
   <block id="9097a69a8c3aa1836902abae4c2af6b5" category="paragraph">BlueXP  を標準モードで実行する場合、ソフトウェアアップデートやデジタルウォレットなど、BlueXP  の一部のサービスを実行するためにコネクタをインストールする必要はありません。ただし、ランサムウェア対策やディザスタリカバリなどのBlueXP  のプレミアムサービスの一部では、コネクタのインストールが必要です。BlueXP  を制限モードまたはプライベートモードで使用する場合は、コネクタをインストールする必要があります。</block>
   <block id="c9ea5b101d4c3beb590e4912f1117899" category="section-title">標準モードでコネクタを使用しない場合の操作</block>
-  <block id="25ec9fbdb3e3fbeaa1a630feb04991b6" category="paragraph">BlueXP  の最も重要なサービスの一部は、標準モードで実行している場合、コネクタをインストールせずに利用できます。</block>
   <block id="8d17fdbbeb88dfc223add1e324431fb7" category="paragraph">デジタルウォレットにライセンスを追加するためにコネクタが必要なのは、Cloud Volumes ONTAP _ノードベース_ライセンスのみです。BlueXP  がCloud Volumes ONTAPシステムにインストールされているライセンスデータにアクセスする必要があるため、コネクタが必要です。</block>
   <block id="8cba62c58c5613090d8d857aa64a0495" category="paragraph">BlueXP  を標準モードで使用する場合は、1つ以上のコネクタをインストールして、BlueXP  で次の機能とサービスを有効にする必要があります。</block>
   <block id="3dc40720b958919be726cd65a8331a73" category="list-text">経済性（表示のみ）</block>
@@ -5050,4 +5049,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="4304dbdc82316f438e38c644a361fd66" category="paragraph">^2^ Azure NetApp Filesのセットアップと管理にコネクタは必要ありませんが、BlueXP  分類を使用してAzure NetApp Filesデータをスキャンする場合はコネクタが必要です。</block>
   <block id="86429eb78c6bc64d5f1ce4125590fe22" category="paragraph">^3^オンプレミスのONTAPクラスタを直接検出する場合はコネクタは必要ありませんが、BlueXP  の追加機能を利用する場合はコネクタが必要です。<block ref="04529f27c98d308747ea6be915c240c4" category="inline-link-rx"></block></block>
   <block id="9c723fb8e231218b213744c9ee3160ca" category="paragraph">Azureで実行されているLinuxホストにコネクタを手動でインストールできます。独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、Azureの権限を準備してから、コネクタをインストールし、準備した権限を指定する必要があります。</block>
+  <block id="e6ddd5a54a1d2f8ae254b9358dfed6b9" category="paragraph">標準モードで実行している場合は、コネクタを取り付けることなく、BlueXP  を使用してストレージリソースを一元管理できます。</block>
 </blocks>
