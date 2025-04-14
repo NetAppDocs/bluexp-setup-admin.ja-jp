@@ -3704,7 +3704,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">Cloud Volumes ONTAP CLIで、権限レベルをadvancedに設定します。</block>
   <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">次のコマンドを実行して、現在のバックアップターゲットを表示します。</block>
   <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
-  <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">BlueXP  のセットアップと管理のドキュメント</block>
   <block id="d44b908365d28414a72f5b042c756f89" category="cell">Cloud Volumes ONTAPの特定のゾーンを指定するために、フレキシブルオーケストレーションモードで仮想マシンスケールセットを使用する</block>
   <block id="e32bb1c8b64cbfd8bf1712551cd39a15" category="cell">マイクロソフト。</block>
   <block id="da4802bef00f05ba8274ecb054d0388f" category="cell">マイクロソフト。</block>
@@ -3870,7 +3869,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="5fdbce3d2319aac7495f83deb2cfb4ec" category="paragraph">BlueXP  IAMは、BlueXP  アカウントによって提供されていた以前の機能を置き換え、強化します。<block ref="05afd8790c123b20ba2a3355efdad456" category="inline-link-macro-rx"></block>です。</block>
   <block id="03dc9106de5affc832d68c188393146d" category="section-title">BlueXP  IAMの仕組み</block>
   <block id="c070b3ed0873722a725505fd8f648c60" category="paragraph">BlueXP  IAMを使用すると、組織階層の特定の部分に対する権限を持つメンバーを定義して、組織のリソースへのアクセスを許可できます。たとえば、メンバーは、5つのリソースが関連付けられているプロジェクトに対して、プロジェクト管理者権限を持つことができます。</block>
-  <block id="7d5499ec968e6c97c7264ba95116b2d6" category="paragraph">BlueXP  IAMを使用する場合は、次のコンポーネントを管理します。</block>
   <block id="ba49e39a2ccedcfe8d31a1eb6440393b" category="list-text">組織</block>
   <block id="60c7502b5c40479908aed919a94c1786" category="list-text">フォルダ</block>
   <block id="54e1d44609e3abed11f6e1eb6ae54988" category="list-text">プロジェクト</block>
@@ -3885,11 +3883,8 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="10119787527a31da075fede0d76f0203" category="inline-image-macro">BlueXP  IAMのリソース階層（組織、フォルダ、プロジェクト、およびリソース）を示す概念図。</block>
   <block id="7e775be1764f78009e9846f9006651fa" category="paragraph"><block ref="7e775be1764f78009e9846f9006651fa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6b258792ff06f82933c74eeb8aef591" category="section-title">組織</block>
-  <block id="31e872437335d3d81483e87525b418b2" category="paragraph">an_organization_は、BlueXP  のIAMシステムの最上位レベルであり、通常は会社を表します。組織は、フォルダ、プロジェクト、メンバー、ロール、およびリソースで構成されています。コネクタは、組織内の特定のプロジェクトに関連付けられています。</block>
-  <block id="2514dc2ef1e14f7696838f5cc8280315" category="paragraph">BlueXP  にサインアップすると、新しい組織を作成するように求められます。</block>
   <block id="ee07c487a7e0b5c18c94b4bded207535" category="paragraph">a_folder_を使用すると、関連するプロジェクトをグループ化し、組織内の他のプロジェクトから分離できます。たとえば、フォルダは地理的な場所（EUまたは米国東部）、サイト（ロンドンまたはトロント）、ビジネスユニット（エンジニアリングまたはマーケティング）を表す場合があります。</block>
   <block id="4f4b6c71ed586432b1f40e519b555023" category="paragraph">フォルダには、プロジェクト、他のフォルダ、またはその両方を含めることができます。</block>
-  <block id="229579d2bfa52f21a46468d1600ae5db" category="paragraph">フォルダを作成する必要はありません。これらはオプションです。</block>
   <block id="073b4a34202498afcb0022a2400e1b32" category="paragraph">a_project_は、組織メンバーがリソースを管理するためにBlueXP  キャンバスからアクセスするBlueXP  内のワークスペースを表します。たとえば、Cloud Volumes ONTAPシステム、オンプレミスのONTAPクラスタ、FSx for ONTAPファイルシステムなどをプロジェクトに含めることができます。</block>
   <block id="420332558cea2f6b48a90723f1ba988b" category="paragraph">組織は1つまたは複数のプロジェクトを持つことができます。プロジェクトは、組織の直下に配置することも、フォルダ内に配置することもできます。</block>
   <block id="6df9abd9c7b51bbfb5b24919ebf7a0d9" category="paragraph">a_resource_は、BlueXP  で作成または検出した作業環境です。</block>
@@ -3925,10 +3920,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f7cc750b6297ad0e9c4ddc933def018d" category="list-text">プロジェクトレベルで付与したロールは、そのプロジェクトに関連付けられているすべてのリソースに継承されます。</block>
   <block id="d91e4a7f7d3d057f2ceb3bf51ca4b809" category="section-title">複数のロール</block>
   <block id="3a6537a8a84cacd748ff26028e103b68" category="paragraph">組織階層のさまざまなレベルで、各組織メンバーに役割を割り当てることができます。同じロールでも別のロールでもかまいません。たとえば、プロジェクト1とプロジェクト2のメンバーロールAを割り当てることができます。または、プロジェクト1にメンバーロールAを、プロジェクト2にロールBを割り当てることもできます。</block>
-  <block id="778cae7482baa87153f906bf3473adc3" category="section-title">事前定義のロール</block>
-  <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  では、組織のメンバーに割り当てることができるいくつかの事前定義されたロールがサポートされています。</block>
-  <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">IAMの事前定義されたロールの詳細</block>
-  <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>です。</block>
   <block id="1f2652079b5030c3e1f5c5b95701a71c" category="paragraph">組織管理者_がコネクタを作成すると、BlueXP  はそのコネクタを組織および現在選択されているプロジェクトに自動的に関連付けます。_Organization admin_は、組織内の任意の場所からそのコネクタに自動的にアクセスできます。ただし、組織内に別のロールを持つ他のメンバーがいる場合は、そのコネクタを他のプロジェクトに関連付けない限り、それらのメンバーはそのコネクタが作成されたプロジェクトからのみそのコネクタにアクセスできます。</block>
   <block id="a84eaa1aafc5282e553ddc52e74d77b9" category="paragraph">次のような場合に、コネクタを別のプロジェクトで使用できるようにすることができます。</block>
   <block id="9ce6bd5f8ae0c74108c66519e8a1d5dd" category="list-text">組織内のメンバーが既存のコネクタを使用して、別のプロジェクトで追加の作業環境を作成または検出できるようにする場合</block>
@@ -3999,7 +3990,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="8fbf37ccd9a099359c44e494e119477c" category="paragraph">BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。コネクタにより、オンプレミス環境とクラウド環境にわたってリソースとプロセスを管理できます。作業環境（Cloud Volumes ONTAPなど）を管理し、多数のBlueXP  サービスを使用するために必要です。</block>
   <block id="cdf60a7d13d1d74e115661d87ae97a3f" category="list-text">Ubuntu 24.04 LTS</block>
   <block id="b6f945763d62ac8e8f24fb52111049ee" category="summary">BlueXP  IDおよびアクセス管理には、組織のメンバーに割り当てることができる事前定義されたロールがいくつか含まれています。</block>
-  <block id="9a4737feea9b9d5b10fea0c8478ac45b" category="doc">事前定義されたBlueXP  IAMロールと権限</block>
   <block id="6a476d78ce3a8169d99c99c3285fa106" category="section-title">組織管理者</block>
   <block id="b35f7cd4ff8cf3b50f8a254ff8eaab4d" category="list-text">このロールを持つメンバーは、BlueXP  で次の操作を実行できます。</block>
   <block id="b7468effacd77ea7140c661bd2dce11a" category="list-text">権限を持つプロジェクトおよびフォルダ内のすべての作業環境を管理します。</block>
@@ -4113,7 +4103,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="dc401be3adab60c813414832f0b97d88" category="inline-link-macro">リソースをフォルダに関連付けるタイミングを確認する</block>
   <block id="d706c5ded100123a86d8602a03703158" category="paragraph"><block ref="114ceb4aae340f51ba021c40f504c25f" category="inline-link-macro-rx"></block>です。</block>
   <block id="8bb3c5dc86a399d0babf2eb49831e5ec" category="list-text">*アクセス*:リソース階層ですでに定義されている既存の権限に基づいて、フォルダまたはプロジェクトへのアクセス権を持つメンバーを表示します。</block>
-  <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">必要に応じて、*メンバーの追加*を選択して、フォルダーまたはプロジェクトへのアクセス権を持つ追加の組織メンバーを指定し、役割を選択します。ロールは、メンバーがフォルダまたはプロジェクトに対して持つ権限を定義します。</block>
   <block id="23b701226cc247c8895ac46e9cd633ab" category="inline-link-macro">事前定義されたIAMロールの詳細</block>
   <block id="8d9ad9660b2859a6d51b88d7e31b54d2" category="paragraph"><block ref="ac90d6f587d2b5ff3fb7bb93da707f89" category="inline-link-macro-rx"></block>です。</block>
   <block id="903a5130798fef050adcb933e11d9330" category="paragraph">リソースが適切に整理され、組織内の適切なメンバーがアクセスできることを確認するには、フォルダまたはプロジェクトに関連付けられているリソースとメンバーを表示します。</block>
@@ -4142,7 +4131,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="6774afc9942c8dcab2e06828e8f199cb" category="inline-link-macro">ロールの継承の詳細</block>
   <block id="8945f05b50a19ebe83ee85e629a09120" category="paragraph"><block ref="e2e11ae218588663759cb10a40da4876" category="inline-link-macro-rx"></block>です。</block>
   <block id="961a7d705cef5925f92fdc2102dfe17d" category="list-text">*メンバーアクセス権の削除*:表示しているフォルダーまたはプロジェクトでロールが定義されているメンバーのアクセス権を削除できます。</block>
-  <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">[メンバー]ページからの権限の管理</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">* 適用 * を選択します。</block>
   <block id="7f394af8afb3598061eec3ed6197180d" category="section-title">フォルダまたはプロジェクトの名前を変更する</block>
   <block id="f8ca84129dded5d2d753c0d0cc1ddea1" category="paragraph">必要に応じて、フォルダとプロジェクトの名前を変更できます。</block>
@@ -4155,7 +4143,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="fe7e8f43628806d12162357cbc6c575a" category="list-text">[*Organization*]ページで、テーブル内のプロジェクトまたはフォルダに移動し、を選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>てから[*Delete*]を選択します。</block>
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">フォルダまたはプロジェクトを削除することを確認します。</block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">組織のメンバーを管理して、組織のリソース階層のさまざまなレベルに権限を付与します。</block>
-  <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">BlueXP  IAMメンバーの追加と権限の管理</block>
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用すると、組織にメンバーを追加し、リソース階層全体で1つ以上のロールを割り当てることができます。a_role_には'メンバーがリソース階層の特定のレベルで特定のアクションを実行できるようにする一連の権限が含まれています新しいユーザアカウントとサービスアカウントの関連付け、メンバーロールの管理などを行うことができます。</block>
   <block id="5ab22546ed60fe10595d23125ed0b721" category="admonition">BlueXP  組織へのアクセスが失われないようにするには、組織管理者ロールを持つメンバーを2人持つことをお勧めします。</block>
   <block id="0c33a84e89f04d016e75e654ef3ce490" category="paragraph">フォルダまたはプロジェクト管理者が*メンバー*ページを表示すると'そのページには組織内のすべてのメンバーが表示されますただし、このロールを持つメンバーは、権限を持つフォルダおよびプロジェクトのメンバー権限のみを表示および管理できます。<block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>です。</block>
@@ -4174,7 +4161,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="ef40c18024e43a3effd7c56a4ee5e3b8" category="list-text">*組織'フォルダ'またはプロジェクトを選択*:メンバーがアクセス権を持つリソース階層のレベルを選択します</block>
   <block id="6a4cc2830754c534e4d4ede0d53dd765" category="list-text">管理者権限を持つフォルダとプロジェクトからのみ選択できます。</block>
   <block id="78693d86cfd1ee5b776ba655fad718c2" category="list-text">組織またはフォルダを選択すると、そのメンバーは組織またはフォルダ内に存在するすべてのものに対する権限を持ちます。</block>
-  <block id="edd875bb1109a9f8286024a3b4794e94" category="list-text">組織を選択した場合は、*フォルダまたはプロジェクト管理者*以外の任意のロールから選択できます。</block>
   <block id="4361a448252604e85e36e94b87d2292d" category="list-text">フォルダーまたはプロジェクトを選択した場合は、* Organization admin*以外の任意のロールから選択できます。</block>
   <block id="2c83e58d75bb3a8e196e882a13fad2b6" category="paragraph">ユーザーはNetApp BlueXP  から電子メールを受信する必要があります。このメールには、メンバーがBlueXP  にアクセスするために使用できる情報が含まれています。</block>
   <block id="18ceb42f6a360de22895a255078e9829" category="open-title">サービスアカウント</block>
@@ -4183,20 +4169,10 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f67f980ba471dba7c5f95c824dd43bf6" category="list-text">クライアントIDとクライアントシークレットをダウンロードまたはコピーします。</block>
   <block id="8294c35652607973fb1c045f68ed7198" category="paragraph">クライアントシークレットは1回だけ表示され、BlueXPによってどこにも保存されません。シークレットをコピーまたはダウンロードして安全に保管します。クライアントIDとクライアントシークレットは、後で必要に応じて再作成できます。</block>
   <block id="043819e1bae944c0c66cfa39d92d377a" category="section-title">組織メンバーの表示</block>
-  <block id="85f7f0a38e4d8907b849af9be7f0523b" category="paragraph">BlueXP  組織内のすべてのメンバーのリストを表示できます。メンバーが使用できるリソースと権限を確認するには、組織のリソース階層のさまざまなレベルでメンバーに割り当てられたロールを表示します。</block>
-  <block id="4bd98620ebfd813b73be1bb04c31e63a" category="paragraph">*メンバー*ページには、ユーザーアカウントとサービスアカウントの2種類のメンバーの詳細が表示されます。</block>
   <block id="ac926c3351f3a5bf1296ce5e7341b403" category="paragraph">組織のメンバーが*メンバー*テーブルに表示されます。</block>
   <block id="9c537de44875b062f96c3c19b5d405f8" category="list-text">[メンバー]ページで、テーブル内のメンバーに移動し、を選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>て*[詳細の表示]*を選択します。</block>
-  <block id="6f3b2d366fd74358540895c5d487f7fc" category="paragraph">フォルダに_Folderまたはproject admin_roleが割り当てられているメンバの例を次に示します。このメンバは、フォルダ内の3つのプロジェクトにアクセス権を提供します。</block>
-  <block id="a6102229f11a975b96c232bac6fe4518" category="inline-image-macro">プロジェクトとフォルダに対する権限を持つメンバーの詳細ページのスクリーンショット。</block>
-  <block id="77029620a91c1437c153c854b16400d8" category="paragraph"><block ref="77029620a91c1437c153c854b16400d8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2ec798ce1d65b266be695e73de188467" category="paragraph">ここでは、組織管理者ロールを持つメンバーを示しています。これにより、ユーザーは組織内のすべてのリソースにアクセスできます。</block>
-  <block id="8395f2651a81b25e9b7a23fbee8b9549" category="inline-image-macro">組織管理者権限を持つメンバーの詳細ページのスクリーンショット。</block>
-  <block id="3d5d541246a5be6ff781d877024461b5" category="paragraph"><block ref="3d5d541246a5be6ff781d877024461b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c2a2a4211749f24853726e3f3a3f7a50" category="inline-link-macro">特定のフォルダまたはプロジェクトに関連付けられているすべてのメンバーを表示する</block>
   <block id="1b6d4c30361c139d898bdf90eabbe5db" category="paragraph"><block ref="f0a4010d1241fe1a26982be23d0ea714" category="inline-link-macro-rx"></block>です。</block>
-  <block id="07e7a075870b5fd1a97b81d0f2032e95" category="admonition">組織管理者ロールが割り当てられているメンバーには、追加のロールを割り当てることはできません。組織全体の権限がすでに付与されています。</block>
-  <block id="ffb0fd8d3db2f95c2bb0961f852f2b9f" category="paragraph">組織、フォルダ、またはプロジェクトレベルに適用されるロールを追加して、組織内の追加の権限をメンバーに付与します。</block>
   <block id="276d24e9485b31bc0a3bf0758ebc947d" category="list-text">[メンバー]ページで、テーブル内のメンバーに移動し、を選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>て*[ロールの追加]*を選択します。</block>
   <block id="5f4f2140800f25dcab7691933bfbdbdb" category="list-text">ロールを追加するには、ダイアログボックスで次の手順を実行します。</block>
   <block id="a09853f10b1e18c9e2f541f7e1763305" category="list-text">[新しいロールの追加]*を選択します。</block>
@@ -4380,11 +4356,9 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="e824a4cdd52665a1b8f0bccc58724034" category="sidebar">リソース階層の管理</block>
   <block id="0baaa5b5cebd5e340294b6393a2b73f4" category="sidebar">BlueXP  でアイデンティティフェデレーションを使用する</block>
   <block id="22bdd8c71cc34511ea88881e20f7ca21" category="sidebar">アイデンティティ管理とアクセス管理</block>
-  <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">メンバーの追加と権限の管理</block>
   <block id="2ee77c8821c341ed628d409d85faa73c" category="sidebar">コネクタを他のフォルダおよびプロジェクトに関連付ける</block>
   <block id="0074076abc48f077b5f84eb71e8dee87" category="sidebar">組織、プロジェクト、コネクタの切り替え</block>
   <block id="902a8ce7390bb726da2910b3ec25aae6" category="sidebar">組織名の変更</block>
-  <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">事前定義されたIAMロール</block>
   <block id="1326a41ad4b26f3395b0f54dd9172b2b" category="sidebar">アカウントの詳細を確認します</block>
   <block id="df583ae7ba964fd4806b55904da81813" category="list-text">アラート</block>
   <block id="c8e7383477673ee726b6ba29dc487444" category="list-text">IMDSv2使用時のPUT応答ホップ制限</block>
@@ -4531,13 +4505,10 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="936eb1752a4903797cd8c4e6f2cfa68b" category="paragraph"><block ref="936eb1752a4903797cd8c4e6f2cfa68b" category="inline-link-rx"></block></block>
   <block id="e444b5bc216b871d85a48d564b7ce0c4" category="paragraph">BlueXP  には、SaaSレイヤを通じて提供されるWebベースのコンソール、リソースおよびアクセス管理システム、作業環境を管理してBlueXP  クラウドサービスを有効にするコネクタ、ビジネス要件を満たすさまざまな導入モードが含まれています。</block>
   <block id="c7c20b1a51c664c1850bab1281296aca" category="paragraph">BlueXP  には3つの導入モードがあります。_標準モード_すべての機能を提供するために、BlueXP  ソフトウェアサービス（SaaS）レイヤを利用します。セキュリティと接続が制限されている環境では、_restricted mode_and_private mode_limitを使用してBlueXP  SaaSレイヤへのアウトバウンド接続を制限します。</block>
-  <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">プラットフォームの役割</block>
-  <block id="6573eb5e7a9033869897566e8b1b5f6a" category="paragraph">フォルダまたはプロジェクト管理者ロールはコネクタを作成できません。</block>
   <block id="36dc01ca540c36d8a66ee2b32bacb1b6" category="cell">フォルダまたはプロジェクト管理者</block>
   <block id="10c51a836e78385fbf6ad623ad658ee0" category="cell">コネクタの作成</block>
   <block id="1feb614364d6d0a180fddcd6e40a0223" category="cell">作業環境の作成、変更、削除（BlueXP  キャンバスを使用して新しいリソースを追加または検出）</block>
   <block id="15a95a870efdd28ed28ff5a317681ee4" category="cell">ロールの割り当てとユーザの追加</block>
-  <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">大規模な多国籍組織のBlueXP  における組織の役割の例</block>
   <block id="c89eaf90b9f27cb0ed6b4d2e288716ba" category="list-text">多国籍企業であるXYZ Corporationは、北米、ヨーロッパ、アジア太平洋の地理的地域に基づいて、データストレージリソースへのアクセスを分離することを目指しています。各地域には、一元的な監視を維持しながら、リソースを独占的に管理できるようにしたいと考えています。</block>
   <block id="38e4f28b5f78613457381816eb4a925e" category="paragraph">これを実現するために、XYZ社のBlueXP  で組織管理者ロールを割り当てられたユーザーが、初期作業環境を作成してから、地域ごとにBlueXP  に別 々 のフォルダを作成します。各リージョンのフォルダには、そのリージョンに関連するプロジェクト（および関連リソース）が含まれています。組織管理者は、各地域のBlueXP  ユーザーにフォルダ/プロジェクト管理者ロールを割り当てます。</block>
   <block id="b232bda0fe68f193c9d3c56d75b4bb04" category="paragraph">初期セットアップが完了すると、フォルダまたはプロジェクト管理者の役割を持つ地域管理者は、新しい作業環境を作成し、地域内にユーザーを追加できます。これらの地域管理者は、割り当てられているフォルダやプロジェクトを追加/削除/名前変更することもできます。組織管理者は、新しい作業環境やリソースの権限を継承し、組織全体でのストレージ使用状況の可視性を維持します。</block>
@@ -4611,7 +4582,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">[編集]ページで、[リソース]セクションまたは[アクセス]セクションを展開すると、選択したフォルダまたはプロジェクトの詳細を表示できます。</block>
   <block id="c89793030e51a304fd86f478545c616e" category="paragraph">リソースを関連付けたり関連付け解除したりすることで、フォルダまたはプロジェクトに関連付けられているリソースを変更できます。たとえば、リソースに別のチームが使用できる容量があるため、リソースを別のプロジェクトに関連付けることができます。リソースをフォルダまたはプロジェクトに関連付けると、そのフォルダまたはプロジェクトに対する権限を持つ組織メンバーは、関連付けられたリソースにアクセスできます。</block>
   <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">フォルダまたはプロジェクトに関連付けられているメンバーを表示する</block>
-  <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">メンバーアクセス権が階層の上位レベル（フォルダまたは組織レベル）で提供されている場合、下位レベルのフォルダまたはプロジェクトを表示しているときにメンバーアクセス権を削除または変更することはできません。階層のその部分に切り替えて、メンバーの権限を更新する必要があります。または、できます<block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>。</block>
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">[編集]ページで、[アクセス]を選択して、選択したフォルダーまたはプロジェクトへのアクセス権を持つメンバーのリストを表示します。</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用してメンバーを組織に関連付ける場合は、組織、フォルダ、またはプロジェクトレベルで権限を提供します。これらのメンバーが適切なリソースにアクセスする権限を持つようにするには、リソースを特定のプロジェクトやフォルダに関連付けて、組織のリソース階層を管理する必要があります。a_resource_は、BlueXP  がすでに管理している、または認識しているストレージリソースです。</block>
   <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">組織に関連付けられている検出されたリソースと検出されていないリソースの両方を表示できます。検出されないリソースとは、通常、デジタルアドバイザで認識されるストレージリソースのうち、作業環境として追加していないリソースのことです。</block>
@@ -4638,11 +4608,7 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="8f2f21c16dc203c77301e868fae6ff8c" category="paragraph">BlueXP  IAMは、BlueXP  を標準モードおよび制限モードで使用する場合にサポートされます。BlueXP  をプライベートモードで使用している場合は、引き続きBlueXP  アカウント_を使用してワークスペース、ユーザー、リソースを管理します。</block>
   <block id="492bd3385d9d03385f8098817a8d0196" category="paragraph">BlueXP  IAMは、標準モードおよび制限モードでBlueXP  を使用する場合にサポートされます。BlueXP  をプライベートモードで使用している場合は、BlueXP  アカウント_を使用してユーザーとリソースを管理します。</block>
   <block id="73f420193f5136d2f1d09a09d6f9aabb" category="paragraph">BlueXP  を標準モードまたは制限モードで使用している場合は、BlueXP  アカウントはありません。代わりに、BlueXP  IDおよびアクセス管理(IAM)を使用して管理する_ BlueXP  organization_があります。</block>
-  <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">プラットフォームロールは、ユーザに割り当てることができる最も広範なロールであり、ロールの割り当てやユーザの追加、BlueXP  のすべての機能の実行など、BlueXP  の管理に対する幅広い権限を許可します。BlueXP  IAMには、組織管理者とフォルダ管理者またはプロジェクト管理者という2つのプラットフォームロールがあります。2つのBlueXP  IAMプラットフォームロールの主な違いはスコープです。</block>
-  <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">組織内のすべてのプロジェクトおよびフォルダへの無制限のアクセス、任意のプロジェクトまたはフォルダへのメンバーの追加、任意のBlueXP  タスクの実行、任意のデータサービスの使用をユーザーに許可します。</block>
   <block id="08fe1197004da98b5b31b7f36eb2ecd2" category="section-title">フォルダまたはプロジェクト管理者</block>
-  <block id="d35d08b038947991ac552eb86cf0f88e" category="paragraph">割り当てられている特定のプロジェクトおよびフォルダへの無制限のアクセスをユーザーに許可します。管理するプロジェクトまたはフォルダにメンバーを追加したり、任意のBlueXP  タスクを実行したり、割り当てられたフォルダまたはプロジェクト内の任意のデータサービスを使用したりできます。</block>
-  <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">プラットフォームの役割の比較表</block>
   <block id="7a6a3038937ff2733afeba79c5939221" category="cell">プロジェクト/フォルダの作成（削除を含む）</block>
   <block id="9190c2227acc58d22f06cf5bd5f7f517" category="cell">既存のプロジェクト/フォルダの名前変更</block>
   <block id="f713962a8902c207873eb4046423a1bd" category="cell">リソースとフォルダおよびプロジェクトの関連付け</block>
@@ -4650,17 +4616,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="aa3ec14d13bb1138309921733478241a" category="cell">フォルダおよびプロジェクトからのコネクタの削除</block>
   <block id="a45abfc4b47949975fbb4a65b1c69386" category="cell">コネクタの管理（証明書、設定などの編集）</block>
   <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">アプリケーションの役割</block>
-  <block id="a8cd96485fd6550be6397e836024466a" category="paragraph">アプリケーションロールは、Active IQデジタルアドバイザ（デジタルアドバイザとも呼ばれる）などのBlueXP  アプリケーションへのアクセスを提供します。</block>
-  <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="section-title">Storage Admin</block>
-  <block id="5aa668ad17ac4c6dff7f61a5848484d4" category="paragraph">ソフトウェアの更新やBlueXP  作業環境の作成と削除など、BlueXP  でストレージ管理機能を実行できます。</block>
-  <block id="5c15172341e03d32ed74659c371f8934" category="list-text">BlueXP  キャンバスを表示できます。BlueXP  コネクタを作成および管理できます。次のようなBlueXP  のストレージ健全性機能とガバナンス機能への読み取り/書き込みアクセスが可能</block>
-  <block id="3e13881bc2ca947e3961fcf40ae74430" category="list-text">ソフトウェアアップデート（ソフトウェアアップデートを実行可能）</block>
-  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="list-text">Sustainability Dashboard</block>
-  <block id="1d63b1d397254c4d509474883c1cb2b9" category="section-title">ストレージビューア</block>
-  <block id="9af31d1128df8146e70487ad0eba97f4" category="paragraph">BlueXP  の健全性機能とガバナンス機能への読み取り専用アクセスを提供します。通常、このロールは、組織のストレージリソースの健全性の監視を担当するユーザに割り当てられます。このロールのユーザは、BlueXP  内で複数のアプリケーションを表示して、ソフトウェア更新計画や効率化計画を作成したり、ストレージ全体の健全性を確認したりできます。</block>
-  <block id="a191e428602026277274d53cff237c2c" category="list-text">次のようなBlueXP  のストレージ健全性機能とガバナンス機能に読み取り専用でアクセスできます。</block>
-  <block id="0920501bc6df68e157496ea6dfe73a04" category="list-text">ソフトウェアの更新（アップグレードプランのダウンロードが可能）</block>
-  <block id="09246652e91bee267cf93f6b3c2e9a32" category="paragraph">データサービスロールは、アクセス権を持つ組織、プロジェクト、またはフォルダ内のデータサービスに対してを使用する権限をユーザに提供します。</block>
   <block id="9c671793f6e87d755268257623fd8ca3" category="paragraph">ユーザとその権限を管理するには、次のいずれかのロールが割り当てられている必要があります。</block>
   <block id="e315fd1b95b71681931eeb8955a37b50" category="paragraph">このロールのユーザは、すべてのメンバーを管理できます。</block>
   <block id="c51c480c437b7c47a9f2adb67928e089" category="paragraph">このロールを持つユーザーは'指定したフォルダまたはプロジェクトのメンバーのみを管理できます</block>
@@ -4669,18 +4624,9 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="516abd045e4dfab41688be05ed0e24b2" category="list-text">*カテゴリ*を選択してから、選択した組織、フォルダ、またはプロジェクトに関連付けられているリソースに対する権限をメンバーに提供する*ロール*を選択します。</block>
   <block id="5fe83be1c3cd8b5af9b7f3c7fae6d1ad" category="list-text">*役割の追加*:組織内の追加のフォルダまたはプロジェクトへのアクセス権を付与する場合、または選択した領域でユーザーにさらなる権限を付与する場合は、*役割の追加*を選択し、別のフォルダまたはプロジェクト、または別の役割カテゴリを指定してから、役割を選択します。</block>
   <block id="58f4b315c1bb5704a3e82ffd26d7c1a8" category="paragraph">組織からメンバーを削除しても、そのメンバーのBlueXP  アカウントまたはNetAppサポートサイトアカウントは削除されません。組織からメンバーとその関連権限が削除されるだけです。</block>
-  <block id="71a902b9bd8bd5f915e170707c50e813" category="section-title">メンバーロールの管理</block>
-  <block id="bb6a1c303d753a3800aa29f0149ef2da" category="paragraph">メンバーからのロールの割り当て解除、新しいロールの追加、またはその両方を行うことができます。ロールは、組織、フォルダ、またはプロジェクトレベルでメンバーに割り当てられる権限を定義します。BlueXP  組織の責任に関連するメンバーロールを割り当てることができます。</block>
-  <block id="6cbcd95c7c747face3f074348da093de" category="paragraph">各組織メンバーは、組織階層の異なるレベルでロールを割り当てることができます。同じロールでも別のロールでもかまいません。たとえば、プロジェクト1にメンバーロールAを、プロジェクト2にロールBを割り当てることができます。</block>
   <block id="34025ad60edecbf8612a359edaca8684" category="section-title">メンバーに割り当てられたロールを表示する</block>
-  <block id="914f7dbf9ae27653eb2ab889d315d7b8" category="paragraph">メンバーを表示して、現在割り当てられているロールを確認できます。</block>
-  <block id="787919896edfa2afa28d9030c2bd8ee2" category="list-text">テーブルで、メンバーに割り当てられた役割を表示する組織、フォルダ、またはプロジェクトのそれぞれの行を展開し、*役割*列の*表示*を選択します。</block>
-  <block id="3f4fb5bf409c65d0cdc07e16e971923b" category="section-title">ロールの割り当て</block>
-  <block id="868c665304c1cc003d592c37eb2d9284" category="inline-link-macro">IAMロールの詳細</block>
   <block id="c46547e3019dfd55748629f99ac2f49c" category="list-text">Select a * Role *：選択した組織、フォルダ、またはプロジェクトに関連付けられているリソースに対する権限をメンバーに提供するロールを選択します。</block>
-  <block id="5f3c99e4fd9b4f957adfdcdde4d5a1de" category="list-text">*役割の追加*:組織内の追加のフォルダーまたはプロジェクトへのアクセスを許可する場合は、*役割の追加*を選択し、別のフォルダーまたはプロジェクトまたは役割のカテゴリを指定してから、役割のカテゴリと対応する役割を選択します。</block>
   <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">メンバーに割り当てられているロールを変更する</block>
-  <block id="955a0a3e2fca13996f710db6f2fbe6a3" category="paragraph">に割り当てられたロールは、組織、フォルダ、またはプロジェクトレベルで変更できます。メンバーは、組織のさまざまなレベルでさまざまな役割を持つことができます。</block>
   <block id="28e019f4a845184dbf1a98b3299252a4" category="list-text">テーブルで、メンバーの割り当てられたロールを変更する組織、フォルダ、またはプロジェクトのそれぞれの行を展開し、*ロール*列の*表示*を選択して、このメンバーに割り当てられたロールを表示します。</block>
   <block id="9a3441a99feefccc201b51666c68d0d2" category="inline-image-macro">ゴミ箱に似たアイコン</block>
   <block id="9410d39af130c313b964685327e24e7a" category="list-text">メンバーのロールの割り当てを解除するには、ロールの横にあるを選択し<block ref="65d5e1d842da62aa3653eba17c2cb20e" category="inline-image-macro-rx" type="image"></block>て、メンバーにそれぞれのロールの割り当てを解除します。削除の確認を求められます。</block>
@@ -4694,10 +4640,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="dcaa51b19c3334da8a1c68178fddabbe" category="paragraph">BlueXP  データサービスにサブスクライブするには、コネクタに関連付けられたクラウドクレデンシャルにマーケットプレイスのサブスクリプションを関連付けます。「標準モードで開始」ワークフローに従っている場合は、コネクタがすでにあるはずです。詳細については、を参照して<block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>ください。</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">2025年2月10日</block>
   <block id="5a1f7548d3f8b383dfe658d26f915cce" category="list-text">ロールがプラットフォームとデータサービスの2つのカテゴリのいずれかに関連付けられるようになりました。</block>
-  <block id="46c10ba27472d93c08d7a9eea31b47a2" category="paragraph">タスクの例：たとえば、リソース階層内にそれぞれのプロジェクト（作業環境）を表す7つのプロジェクトがある場合、3つのプロジェクトのストレージ管理者ロールを誰かに割り当ててから、残りのプロジェクトのストレージ管理者を別のメンバーに割り当てることができます。1人のユーザに組織全体のストレージ管理者ロールを割り当てることもできます。組織のニーズに応じてメンバーロールを管理できます。</block>
-  <block id="94d01a25e8d719777d74e40fde0e74eb" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）には、リソース階層のさまざまなレベルで組織のメンバーに割り当てることができる、事前定義されたロールがいくつか含まれています。これらのロールを割り当てる前に、各ロールに含まれる権限について理解しておく必要があります。ロールは、プラットフォームとデータサービスの2つのカテゴリに分類されます。</block>
-  <block id="e9d61c4ab8f60a06a549f931f8154bc3" category="paragraph">組織メンバーには、リソース階層の各レベルと複数のレベルでロールを割り当てることができます。BlueXP  組織内の各自の責任に関連するメンバーロールを割り当てることができます。</block>
-  <block id="8eaa33e37e898cc8fe60223764d1b067" category="list-text">*カテゴリを選択*：BlueXP  役割は、プラットフォームとデータサービスの2つのカテゴリに分けられます。<block ref="95a2a1c0b49231381e965b8dd6b00696" category="inline-link-macro-rx"></block>です。</block>
   <block id="9c7bc4ef4922fcab1fc451f7902a3977" category="list-text">メンバーの役割を変更するには、変更する役割の横にある*変更*を選択します。このロールは、同じロールカテゴリ内のロールにのみ変更できます。たとえば、あるデータサービスロールを別のデータサービスロールに変更できます。変更の確認を求められます。</block>
   <block id="2a3e7caa563b2592e27f3890e8d21765" category="section-title">制限モードでBlueXP  IAMが使用されるようになりました</block>
   <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">2025年1月13日</block>
@@ -4833,7 +4775,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="69ac82a1779b2cc7d528017241f5324f" category="paragraph">ホストは、次のサイズ要件を満たす任意のアーキテクチャで構成できます。</block>
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU：8コアまたは8 vCPU</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM ： 32GB</block>
-  <block id="e1625dbf565504d716b37b407e4f24a4" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用すると、NetAppリソースへのアクセスを整理および制御できます。組織の階層に従ってリソースを編成できます。たとえば、地理的な場所、サイト、ビジネスユニットごとにリソースを整理できます。その後、階層の特定の部分のメンバーにIAMロールを割り当てることができます。これにより、階層の他の部分のリソースにアクセスできなくなります。</block>
   <block id="179864dbcf93f914bb2504e0d17f7afc" category="paragraph">BlueXPからConnectorを導入する場合は、Connector仮想マシンを導入する権限を持つAzureアカウントまたはサービスプリンシパルを使用する必要があります。必要な権限がに表示され<block ref="a3d6867da21f74b7e760876f5e090de9" category="inline-link-macro-rx"></block>ます。</block>
   <block id="1f0c50a54c656fee9ca2814ffcfc5d68" category="paragraph">コネクタにこのカスタムロールを作成する必要があるかどうかは、その配置方法によって異なります。</block>
   <block id="fa922c926b9bd1ffad4f5c26c082d203" category="paragraph-title">BlueXP  からの導入</block>
@@ -4981,10 +4922,107 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="1fa6d342759ba5c5a8f23c210cac048c" category="doc">コネクタ3.9.51</block>
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">現時点では、3.9.51リリースは標準モードと制限モードで使用できます。</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  IDおよびアクセス管理（IAM）</block>
-  <block id="280cb81762489dce44889f9130b6e870" category="list-text">次に、ランサムウェア対策にユーザがアクセスできるようにするために、ユーザにロールを割り当てる必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。</block>
-  <block id="0fc0d7857aba2fcd01e923d9a32e9297" category="list-text">ユーザがNetApp Keystoneにアクセスできるようにするには、ロールをユーザに割り当てる必要があります。ユーザには、Keystone管理者またはKeystoneビューアのいずれかのロールを割り当てることができます。</block>
-  <block id="7fc94980a9075f2005ba4d674e6766ee" category="list-text">KeystoneサブスクリプションをIAMプロジェクトに関連付けることができるようになりました。KeystoneサブスクリプションをIAMプロジェクトに関連付けると、BlueXP  内でKeystoneへのアクセスを制御できます。</block>
   <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">新しい役割について説明します。</block>
   <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>です。</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
+  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェアからの保護にアクセスするには、ランサムウェアからの保護ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。</block>
+  <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">組織管理者、フォルダ管理者、プロジェクト管理者がいないユーザにKeystoneにアクセスするには、Keystoneロールが割り当てられている必要があります。ユーザには、Keystone管理者またはKeystoneビューアのいずれかのロールを割り当てることができます。</block>
+  <block id="d4d44165c3ece93b64c24e52e61879a3" category="list-text">Org管理者、フォルダ管理者、またはプロジェクト管理者のロールがある場合は、KeystoneサブスクリプションをIAMプロジェクトに関連付けることができるようになりました。KeystoneサブスクリプションをIAMプロジェクトに関連付けると、BlueXP  内でKeystoneへのアクセスを制御できます。</block>
+  <block id="06ae2eb5f4697ec006608fbf2e1e5a5e" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）は、BlueXP  リソースへのユーザアクセスを管理し、最小限の権限ロールで適切な権限レベルを付与する、拡張性に優れた基本的なアクセス制御メカニズムです。</block>
+  <block id="d4809de34ba9cc073d054ecbd5e6f4fa" category="paragraph">IAMを使用すると、NetAppリソースへのアクセスを整理および制御できます。組織の階層に従ってリソースを編成できます。たとえば、地理的な場所、サイト、ビジネスユニットごとにリソースを整理できます。その後、階層の特定の部分のメンバーにIAMロールを割り当てることができます。これにより、階層の他の部分のリソースにアクセスできなくなります。</block>
+  <block id="29869679a689db821d47cf8abfed64b1" category="paragraph">ユーザーがフォルダを管理するには、組織管理者ロールまたはフォルダ管理者ロールまたはプロジェクト管理者ロールを持っている必要があります。組織管理者ロールを持つユーザーは、BlueXP  組織内のすべての場所でリソースを作成および管理できます。フォルダーおよびプロジェクト管理者の役割を持つユーザーは、割り当てられているフォルダーまたはプロジェクトに対してのみ実行できます。</block>
+  <block id="facb12ccfc7fd1078f18b312bcd32fec" category="paragraph">link：：reference-iam-predefined-roles.html[Learn about BlueXP  roles.]</block>
+  <block id="723f0aaeaff3d17b73530431650056f5" category="paragraph">BlueXP  IAMを使用する場合、これらのロールを持つユーザは次のコンポーネントを管理します。</block>
+  <block id="a5cd3ed116608dac017f14c046ea56bf" category="list-text">役割</block>
+  <block id="a246a657e3bb11b0fad6ac951e7a7921" category="paragraph">an_organization_は、BlueXP  のIAMシステムの最上位レベルであり、通常は会社を表します。組織は、コネクタ、ストレージ、サブスクリプションなどのリソースで構成され、フォルダやプロジェクトに編成できます。その後'組織のメンバー(ユーザー)に'ストレージ環境の管理に対する応答に応じて'フォルダまたはプロジェクトへのアクセス権を割り当てることができます</block>
+  <block id="eaea6bbd21c34da8f5c712819b2fa7e8" category="paragraph">組織の規模とストレージリソースの数に応じて、フォルダはNetAppリソースを整理するための便利なツールです。また、異なるフォルダの管理を異なるユーザと共有する場合は、アクセスをより適切に管理できます。特定のフォルダーのフォルダーまたはプロジェクト管理者の役割をユーザーに割り当てることができます。ユーザーは、フォルダーとそのプロジェクトへのアクセスを管理したり、フォルダー内に新しいプロジェクトを作成したりできます。</block>
+  <block id="e89b4a6e191e212029f58a77e3906781" category="paragraph">フォルダを作成するときに、そのフォルダへのアクセス権をユーザに割り当てることができます。ユーザーにフォルダへのアクセスロールを割り当てると、そのユーザーは、それぞれのフォルダ内のすべてのプロジェクトに対して、そのロールに関連付けられている作業を実行できます。逆に、プロジェクトごとにユーザーアクセス権を付与することもできます。</block>
+  <block id="99b209bdb6e04c3b0bb3aadbaf4809f0" category="paragraph">複数のプロジェクトを作成して、NetAppリソースへのより詳細なアクセスを提供します。たとえば、小規模な組織では、ビジネスユニットや地理的な場所ごとにプロジェクトを作成できます。大規模な組織では、ストレージリソースをビジネスユニットごとに複数のプロジェクトに編成して、アクセスをさらに制御したい場合があります。プロジェクトまたはフォルダごとに、ユーザーにリソースへのアクセス権を割り当てることができます。</block>
+  <block id="31a47a2847cf69d6a86e5dc8e6475320" category="paragraph">プロジェクトがフォルダにある場合は、次の操作を実行できます。</block>
+  <block id="2c2e7be4268cd14a5e106bbdd7de7669" category="section-title">アクセスロール</block>
+  <block id="55b6d94d9ad6439fe5c46ccdba149ed3" category="paragraph">BlueXP  では、組織のメンバーに割り当てることができる複数のアクセスロールがサポートされています。</block>
+  <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>です。</block>
+  <block id="8c3d337cee5ab07c0918b1ab7f1db96a" category="doc">BlueXP  アクセスロール</block>
+  <block id="5c7fdc642eeb15903590365b16190946" category="paragraph">BlueXP  アクセスロールは、ストレージ管理タスクを実行するためにユーザに最小限の権限を付与するように設計されています。これにより、セキュリティが強化され、権限のないストレージサービスがユーザによって誤って中断されるのを防ぐことができます。ロールは、プラットフォーム、アプリケーション、データサービスの3つのカテゴリに分類されます。</block>
+  <block id="6fee4cd31e4fd207650d866994c2e27b" category="paragraph">BlueXP  プラットフォームの役割を持つユーザー（組織管理者、プロジェクト管理者、またはフォルダ管理者）は、プロジェクトにユーザーを追加し、特定のプロジェクトまたはフォルダの役割を割り当てることができます。</block>
+  <block id="fd2cb0f491a111c6c30e31d8550da648" category="section-title">BlueXP  プラットフォームの役割</block>
+  <block id="82d121fce2370e981f0805f28491d2ea" category="paragraph">プラットフォームロールには、ロールの割り当てやユーザの追加など、BlueXP  の管理に関するすべての権限が付与されます。また、ストレージリソースとデータサービスの両方について、すべてのBlueXP  管理機能を実行できるようになります。BlueXP  には、組織管理者とフォルダ管理者またはプロジェクト管理者の2つのプラットフォーム全体の役割があります。</block>
+  <block id="2300294e5ba32a77ce27f4dea6bce375" category="paragraph-title">例：プラットフォームロールを使用して管理責任を委任する</block>
+  <block id="3f945256abb83dc0dc6e4ab43245f2f7" category="paragraph">次のプラットフォームロールを使用できます。</block>
+  <block id="953cacffc58d4ef1c6a0d6666463490f" category="list-text">*組織管理者*：組織内のすべてのプロジェクトおよびフォルダへの無制限のアクセス、任意のプロジェクトまたはフォルダへのメンバーの追加、任意のBlueXP  管理タスクの実行、任意のデータサービスの使用をユーザーに許可します。組織には、少なくとも1人の組織管理者が必要です。</block>
+  <block id="b9ec7cf1c2e070364443da595ac27885" category="list-text">*フォルダーまたはプロジェクト管理者*：ユーザーが割り当てられている特定のプロジェクトおよびフォルダーへの無制限のアクセスを許可します。管理するプロジェクトまたはフォルダにメンバーを追加したり、BlueXP  管理タスクを実行したり、割り当てられたフォルダまたはプロジェクト内の任意のデータサービスを使用したりできます。フォルダまたはプロジェクト管理者ロールはコネクタを作成できません。</block>
+  <block id="12bf15e0266e4456919bca8fc27d8445" category="paragraph">次の表に、各BlueXP  プラットフォーム保護ロールで実行できるアクションを示します。</block>
+  <block id="d48140a7630d821243e3ac2204b3d871" category="paragraph">アプリケーションカテゴリのロールのリストを次に示します。</block>
+  <block id="a11961cab6627eac643ea36ae57ce8df" category="section-title">Keystoneロール</block>
+  <block id="2a04d5504b28b9efe0f0dfff02a03355" category="paragraph">次のロールを使用して、Keystoneへのユーザアクセスを割り当てることができます。</block>
+  <block id="78fdf101e42d4e276f66b98cdfe73866" category="admonition">現在、BlueXP  経由でKeystoneにアクセスする作業はベータ版です。Keystoneベータ版への参加をご希望の場合は、NetAppの担当者にお問い合わせください。</block>
+  <block id="cdcfd0d4763f6f8983003ea128be38cf" category="list-text">* Keystone管理者*：Keystoneサブスクリプションを管理し、アラート、レポート、サブスクリプションに対してアクションを実行します。</block>
+  <block id="3275a956f3a80df98f4623ac3ac931a6" category="list-text">* Keystone Viewer *：Keystoneサブスクリプションのほか、レポート、アラート、アセットを表示できます。</block>
+  <block id="cb97d9e7423da9b58bc3b595cad3fe19" category="paragraph">次の表に、Keystoneの各ロールで実行できるアクションを示します。</block>
+  <block id="4420e7353184ac575b539cdce1b991db" category="cell">特徴とアクション</block>
+  <block id="3522959e95c9f2aad088e504a7c016d0" category="cell">Keystone管理者</block>
+  <block id="9d0ab4774b32ad710dbc8b73cdf29cce" category="cell">Keystoneビューア</block>
+  <block id="3d96431c652abba07d810be9a4a3b187" category="cell">[Subscription]、[Assets]、[Monitor]、および[Administration]タブを表示します。</block>
+  <block id="04b2aaee865f1746c975de785d02e95f" category="cell">* Keystoneサブスクリプションページ*：</block>
+  <block id="96a37a10e0f320cc761610a86cf2637c" category="cell">サブスクリプションを表示できる</block>
+  <block id="0c6e0cfae3b0f2712b3389db1db10e1b" category="cell">サブスクリプションの変更または更新が可能</block>
+  <block id="86744a031b02e581d9a8908f0dbdc8c1" category="cell">* Keystone関連資料ページ*：</block>
+  <block id="7c38a1a6d325208696c25a2b660d7c45" category="cell">アセットの表示</block>
+  <block id="bb295074f705be0407b1b743a2f6e967" category="cell">資産の管理</block>
+  <block id="f00f11f1b7ecc36f276ac4d83ea8ba95" category="cell">* Keystoneアラートページ*：</block>
+  <block id="428c58ec1c2902ea6bff31e38cae88ff" category="cell">アラートを表示します</block>
+  <block id="685b0f2db45e4fc09a06ccb4695806de" category="cell">アラートの管理</block>
+  <block id="683e7b4cc33c1c5bb12cefaa8e17c9da" category="cell">自分用のアラートを作成する</block>
+  <block id="203311c515509be12349a4f1fc044cd7" category="cell">*デジタルウォレット*：</block>
+  <block id="d7609c91ac60bd14d6f61465cd81ab5a" category="cell">デジタルウォレットを表示できる</block>
+  <block id="605bf3e1f808ef9bc9fe99c9bf4cdf1f" category="cell">* Keystoneレポートページ*：</block>
+  <block id="df6e3c89245cdc5bf0a7191c642d6997" category="cell">レポートのダウンロード</block>
+  <block id="61b0e09fe12f82c766454563f7be036b" category="cell">レポートの管理</block>
+  <block id="4d1159457f35bcc3ef7ee5b2f65bc124" category="cell">自分用のレポートの作成</block>
+  <block id="3b8988881170da948296006bcb3af098" category="cell">*サービスリクエスト*：</block>
+  <block id="c144ad302e0d51a72f17afbd09594ba8" category="cell">サービスリクエストの作成</block>
+  <block id="3f07e6ff7933633c723d3474e50d9d65" category="cell">組織内の任意のユーザーが作成したサービスリクエストを表示できる</block>
+  <block id="aafdddc00f0073d6f8feca81436dbc0f" category="paragraph">以下は、データサービスカテゴリのロールのリストです。</block>
+  <block id="452c59bc627cf63c04afb8e67c894d8f" category="paragraph">分類には管理者ロールがありません。</block>
+  <block id="6e4131153ef85e6099f1a34150c48c4e" category="paragraph">次のロールを使用して、ランサムウェア対策へのアクセスをユーザに割り当てることができます。</block>
+  <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">*ランサムウェア対策管理者*：[保護]、[アラート]、[リカバリ]、[設定]、[レポート]の各タブでアクションを管理します。</block>
+  <block id="2342f940e11a97078a40faa46aad14e1" category="list-text">*ランサムウェア対策ビューア*：ワークロードデータの表示、アラートデータの表示、リカバリデータのダウンロード、レポートのダウンロードが可能です。</block>
+  <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">次の表に、各BlueXP  ランサムウェア対策ロールで実行できるアクションを示します。</block>
+  <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="cell">ランサムウェア対策管理者</block>
+  <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="cell">ランサムウェア対策ツール</block>
+  <block id="b60c44c6bbbb3793d0c08c34cd6e2382" category="cell">ダッシュボードとすべてのタブを表示</block>
+  <block id="78c7efbfa07116553a52f59800129dde" category="cell">無償トライアルを開始</block>
+  <block id="42174d568723a8694dc7e6dfd143cb12" category="cell">ワークロードの検出を開始</block>
+  <block id="26548eb85488e3cdc0f0b9b27802995f" category="cell">*[保護]タブで*：</block>
+  <block id="0ceaa792ae3f25d0f79dcd1125e9284e" category="cell">ポリシーの追加、変更、削除</block>
+  <block id="bf4011ddd9ae5a6521f75843972999ab" category="cell">ワークロードを保護</block>
+  <block id="21a74bcaa4f6aef211c1ce1e13ed98fe" category="cell">機密データを特定</block>
+  <block id="c102bfc829ed11fa589522aa305984a3" category="cell">ワークロード保護の編集</block>
+  <block id="d1e541a95d5060702dc6153a411c6c35" category="cell">ワークロードの詳細を表示</block>
+  <block id="4330b42a340140b836c42bbe9c7105be" category="cell">データをダウンロードします</block>
+  <block id="b1e60ac72e50f485ca0a5ea9c82143d2" category="cell">*[アラート]タブ*：</block>
+  <block id="9f64c529078a13eebc43993d1ac578d4" category="cell">アラートの詳細の表示</block>
+  <block id="f700fad2259a25a87fbe56ba2810e8ff" category="cell">インシデントステータスの編集</block>
+  <block id="ef9988f85b068b8709daa3be2c31fca3" category="cell">インシデント詳細の表示</block>
+  <block id="38de1b212ca13fa4c230f4c20adbb48a" category="cell">影響を受けるファイルの完全なリストを取得</block>
+  <block id="4b1b2c63b979feafab4b35d6b2307876" category="cell">アラートデータのダウンロード</block>
+  <block id="b338bf8c8e0fbc61d8a0fad3b4a74e35" category="cell">*[リカバリ]タブで*：</block>
+  <block id="f5f949f53a00b2da6ffa7a9f7a0fd0f8" category="cell">影響を受けるファイルのダウンロード</block>
+  <block id="65ca8041cc328ebb64db5f8368a9101a" category="cell">ワークロードのリストア</block>
+  <block id="4ebc1406711ca6754873e22a81f31c6f" category="cell">リカバリデータのダウンロード</block>
+  <block id="a4f2411faacb07693dd051a3d2d9f97e" category="cell">*[設定]タブで*：</block>
+  <block id="988c84a947938e98e39deda3665fae89" category="cell">バックアップターゲットの追加または変更</block>
+  <block id="08fec10c338548595a28b0310a1c0600" category="cell">SIEMターゲットの追加または変更</block>
+  <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*[レポート]タブで*：</block>
+  <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenterにはビューアの役割はありません。</block>
+  <block id="b5d12b62e8878125882ab75bf3c30b5a" category="paragraph">必要に応じて、*メンバーの追加*を選択して、フォルダーまたはプロジェクトへのアクセス権を持つ追加の組織メンバーを指定し、役割を選択します。アクセスロールは、メンバーがフォルダまたはプロジェクトに対して持つ権限を定義します。</block>
+  <block id="eca36d51093f2e51afd4eb802cf98239" category="inline-link-macro">[メンバー]ページでのロールの管理</block>
+  <block id="af604cf2b2afd9d725da34221d04ae6a" category="paragraph">メンバーアクセスが階層の上位レベル（フォルダまたは組織レベル）で提供されている場合、下位レベルのフォルダまたはプロジェクトを表示するときに、メンバーのロールを削除または変更することはできません。階層のその部分に切り替えて、そこでメンバーの役割を更新する必要があります。または、できます<block ref="af57133875ea4f57510f09c053d32073" category="inline-link-macro-rx"></block>。</block>
+  <block id="e07d586e54fb2ecc1791d2d434436330" category="doc">BlueXP  メンバーの追加と権限の管理</block>
+  <block id="45fa36bab7b7452cfb911598ccd2d223" category="inline-link-macro">ロールを使用してBlueXP  リソースへのアクセスを制御する方法について説明します。</block>
+  <block id="eef972128da3061d69cdfbbd20808652" category="paragraph">BlueXP  組織内のすべてのメンバーのリストを表示できます。メンバーが使用できるリソースと権限を確認するには、組織のリソース階層のさまざまなレベルでメンバーに割り当てられたロールを表示します。<block ref="4e7a66baee137600d665a8be3cbcb6a5" category="inline-link-macro-rx"></block></block>
+  <block id="57c4db21a8e5f9688baa21606de89184" category="paragraph">ユーザーアカウントとサービスアカウントの両方を*メンバー*ページから表示できます。</block>
+  <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  のセットアップと管理</block>
+  <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">メンバーとサービスアカウントの追加</block>
+  <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">ロールを使用してリソースへのメンバーアクセスを制御する</block>
 </blocks>
