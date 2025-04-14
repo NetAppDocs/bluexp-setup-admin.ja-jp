@@ -1,0 +1,22 @@
+= コネクタ3.9.51
+:allow-uri-read: 
+
+
+
+
+=== コネクタ3.9.51
+
+今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
+
+現時点では、3.9.51リリースは標準モードと制限モードで使用できます。
+
+
+
+=== BlueXP  IDおよびアクセス管理（IAM）
+
+* 次に、ランサムウェア対策にユーザがアクセスできるようにするために、ユーザにロールを割り当てる必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。
+* ユーザがNetApp Keystoneにアクセスできるようにするには、ロールをユーザに割り当てる必要があります。ユーザには、Keystone管理者またはKeystoneビューアのいずれかのロールを割り当てることができます。
+* KeystoneサブスクリプションをIAMプロジェクトに関連付けることができるようになりました。KeystoneサブスクリプションをIAMプロジェクトに関連付けると、BlueXP  内でKeystoneへのアクセスを制御できます。
+
+
+link:reference-iam-predefined-roles.html["新しい役割について説明します。"^]です。

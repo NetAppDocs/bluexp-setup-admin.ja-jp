@@ -4944,7 +4944,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="0e231d3391a335865e696150143618bc" category="cell">に移動し<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>、2024年3月リリースに含まれる変更点を参照してください。</block>
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">2025年3月10日（バージョン1.41）</block>
   <block id="49e0c1b5be27dbeb84e3a7ca1d634276" category="cell">にアクセス<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>し、1.38リリースから1.371.41リリースに含まれる変更点を参照してください。</block>
-  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
   <block id="cb3410a9bf17cf666d6a34ac1b7c6d6c" category="paragraph"><block ref="2416ec7d97fab7b3c3e0f434ea922dd9" category="inline-link-rx"></block>です。</block>
   <block id="1920da3586c2e2872f88b02997c971c3" category="doc">組織IDとプロジェクトID</block>
   <block id="106aaea1e5532e2978889c60809a6ba7" category="paragraph">BlueXP  組織には名前とIDがあります。BlueXP  環境で識別しやすい組織の名前を選択できます。また、特定の統合のために組織IDを取得する必要がある場合もあります。</block>
@@ -4979,4 +4978,13 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="e666f475ae71221ef0568980f94a0316" category="paragraph"><block ref="a51247ccde87e175c686e81825c9f657" category="inline-link-macro-rx"></block>です。**役割の追加*:組織内の追加のフォルダまたはプロジェクトへのアクセスを許可する場合は、*役割の追加*を選択し、別のフォルダまたはプロジェクトまたは役割のカテゴリを指定してから、役割のカテゴリと対応する役割を選択します。</block>
   <block id="88ccee89efe2b556b8fcc7b01ae63c9f" category="paragraph">ユーザのアクセスを調整する必要がある場合は、メンバーに割り当てられているロールを変更できます。</block>
   <block id="bd572303cf9daecbf8e01f72f337d250" category="list-text">メンバーの既存のロールを変更したり、ロールを削除したりできます。</block>
+  <block id="1fa6d342759ba5c5a8f23c210cac048c" category="doc">コネクタ3.9.51</block>
+  <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">現時点では、3.9.51リリースは標準モードと制限モードで使用できます。</block>
+  <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  IDおよびアクセス管理（IAM）</block>
+  <block id="280cb81762489dce44889f9130b6e870" category="list-text">次に、ランサムウェア対策にユーザがアクセスできるようにするために、ユーザにロールを割り当てる必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。</block>
+  <block id="0fc0d7857aba2fcd01e923d9a32e9297" category="list-text">ユーザがNetApp Keystoneにアクセスできるようにするには、ロールをユーザに割り当てる必要があります。ユーザには、Keystone管理者またはKeystoneビューアのいずれかのロールを割り当てることができます。</block>
+  <block id="7fc94980a9075f2005ba4d674e6766ee" category="list-text">KeystoneサブスクリプションをIAMプロジェクトに関連付けることができるようになりました。KeystoneサブスクリプションをIAMプロジェクトに関連付けると、BlueXP  内でKeystoneへのアクセスを制御できます。</block>
+  <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">新しい役割について説明します。</block>
+  <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>です。</block>
+  <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
 </blocks>
