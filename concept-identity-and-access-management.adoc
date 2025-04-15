@@ -247,6 +247,6 @@ image:diagram-iam-example-hierarchy-advanced.png["3つのフォルダ、それ�
 * link:task-iam-switch-organizations-projects.html["BlueXP  プロジェクトと組織を切り替える"]
 * link:task-iam-rename-organization.html["BlueXP  組織の名前を変更する"]
 * link:task-iam-audit-actions-timeline.html["IAMアクティビティの監視または監査"]
-* link:reference-iam-predefined-roles.html["事前定義されたBlueXP  IAMロール"]
+* link:reference-iam-predefined-roles.html["BlueXP  アクセスロール"]
 * https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP  IAM向けAPIの詳細"^]
 
