@@ -34,10 +34,6 @@ IDおよびアクセス管理（IAM）、コネクタ、クラウドプロバイ
 
 * Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェアからの保護にアクセスするには、ランサムウェアからの保護ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。
 * 組織管理者、フォルダ管理者、プロジェクト管理者がいないユーザにKeystoneにアクセスするには、Keystoneロールが割り当てられている必要があります。ユーザには、Keystone管理者またはKeystoneビューアのいずれかのロールを割り当てることができます。
-
-
-link:https://docs.netapp.com/reference-iam-predefined-roles.html["新しい役割について説明します。"^]
-
 * Org管理者、フォルダ管理者、またはプロジェクト管理者のロールがある場合は、KeystoneサブスクリプションをIAMプロジェクトに関連付けることができるようになりました。KeystoneサブスクリプションをIAMプロジェクトに関連付けると、BlueXP  内でKeystoneへのアクセスを制御できます。
 
 
@@ -105,7 +101,7 @@ NetApp Keystoneは近日中にBlueXP  から利用可能になり、ベータ�
 
 BlueXP  管理者（Organization adminロールを持つユーザ）は、ONTAPシステムマネージャにアクセスするためにONTAPクレデンシャルの入力を求めるようにBlueXP  を設定できます。この設定を有効にすると、BlueXP  に保存されないため、ユーザは毎回ONTAPクレデンシャルを入力する必要があります。
 
-この機能は、コネクタバージョン3.9.49以降で使用できます。link:task-ontap-access-connector.html["クレデンシャルを設定する方法について説明します。"^]です。
+この機能は、コネクタバージョン3.9.49以降で使用できます。link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["クレデンシャルを設定する方法について説明します。"^]です。
 
 
 
@@ -124,7 +120,7 @@ NOTE: この変更は、コネクタを常に自分でアップグレードす�
 
 この機能は、コネクタバージョン3.9.48以降で使用できます。
 
-link:task-upgrade-connector.html["コネクタの自動アップグレードを無効にする方法について説明します。"^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["コネクタの自動アップグレードを無効にする方法について説明します。"^]
 
 
 

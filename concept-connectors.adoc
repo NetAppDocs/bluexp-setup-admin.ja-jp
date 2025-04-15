@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-connectors.html 
-keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agent' 
+keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery' 
 summary: コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるネットアップのソフトウェアです。データインフラを管理するためにBlueXPが実行する必要のあるアクションを実行します。Connectorは、必要なアクションについてBlueXP SaaSレイヤを定期的にポーリングします。BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。 
 ---
 = コネクタについて説明します
@@ -14,15 +14,13 @@ summary: コネクタは、クラウドネットワークまたはオンプレ�
 
 
 [role="lead"]
-コネクタは、ユーザがインストールするNetAppソフトウェアで、ストレージインフラを管理するためにBlueXP  が実行する必要のある処理を実行します。BlueXP  の機能の多くにコネクタは必要ありませんが、コネクタがない場合、一部の機能は利用できません。
-
-BlueXP  を標準モードで実行する場合、ソフトウェアアップデートやデジタルウォレットなど、BlueXP  の一部のサービスを実行するためにコネクタをインストールする必要はありません。ただし、ランサムウェア対策やディザスタリカバリなどのBlueXP  のプレミアムサービスの一部では、コネクタのインストールが必要です。BlueXP  を制限モードまたはプライベートモードで使用する場合は、コネクタをインストールする必要があります。
+A_connector_は、クラウドネットワークまたはオンプレミスネットワークで実行されるネットアップのソフトウェアです。データインフラを管理するためにBlueXPが実行する必要のあるアクションを実行します。コネクタは、実行する必要があるアクションについて、BlueXP  ソフトウェアサービス（SaaS）レイヤを常にポーリングします。BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。
 
 
 
-== 標準モードでコネクタを使用しない場合の操作
+== コネクタなしでできること
 
-標準モードで実行している場合は、コネクタを取り付けることなく、BlueXP  を使用してストレージリソースを一元管理できます。
+BlueXPの使用を開始するためにコネクタは必要ありません。コネクタを作成することなく、BlueXPで複数の機能やサービスを使用できます。
 
 コネクタなしでBlueXPの次の機能とサービスを使用できます。
 
@@ -43,7 +41,7 @@ Azure NetApp Files のセットアップと管理にコネクタは必要あり�
 ほとんどすべての場合、コネクタなしでデジタルウォレットにライセンスを追加できます。
 
 +
-デジタルウォレットにライセンスを追加するためにコネクタが必要なのは、Cloud Volumes ONTAP _ノードベース_ライセンスのみです。BlueXP  がCloud Volumes ONTAPシステムにインストールされているライセンスデータにアクセスする必要があるため、コネクタが必要です。
+デジタルウォレットにライセンスを追加するためにコネクタが必要なのは、Cloud Volumes ONTAP _ノードベース_ライセンスのみです。この場合、 Cloud Volumes ONTAP システムにインストールされているライセンスのデータを使用するため、コネクタが必要です。
 
 * オンプレミスのONTAP クラスタを直接検出
 +
@@ -61,7 +59,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 == コネクタが必要な場合
 
-BlueXP  を標準モードで使用する場合は、1つ以上のコネクタをインストールして、BlueXP  で次の機能とサービスを有効にする必要があります。
+BlueXPを標準モードで使用する場合、BlueXPの次の機能やサービスにはコネクタが必要です。
 
 * アラート
 * ONTAP 管理機能用の Amazon FSX
@@ -72,21 +70,25 @@ BlueXP  を標準モードで使用する場合は、1つ以上のコネクタ�
 * Cloud Volumes ONTAP
 * ディザスタリカバリ
 * Eシリーズシステム
-* 経済性（表示のみ）
+* 経済性^ 1^
 * Google Cloud Storageバケット
 * オンプレミスのONTAP クラスタとBlueXPデータサービスの統合
-* 運用の耐障害性（表示のみ）
+* 運用の耐障害性^1^
 * ランサムウェアからの保護
 * StorageGRID システム
 * 階層化
 * ボリュームキャッシュ
 
 
+^1^コネクタなしでこれらのサービスにアクセスできますが、サービスからアクションを開始するにはコネクタが必要です。
+
+BlueXPを制限モードまたはプライベートモードで使用するには、コネクタが必要です。
+
 
 
 == コネクタは常に動作している必要があります
 
-コネクタはBlueXP  サービスアーキテクチャの基本要素であるため、関連するコネクタが常に稼働し、アクセス可能であることを確認する必要があります。このサービスは、コネクタの可用性の短い停止を克服するように設計されていますが、インフラストラクチャの障害を修復するために必要なときにすぐに対処する必要があります。
+コネクタは、BlueXPサービスアーキテクチャの基本要素です。関連するコネクタが常に稼働し、アクセス可能であることを確認するのは、お客様の責任です。このサービスは、コネクタの可用性の短い停止を克服するように設計されていますが、インフラストラクチャの障害を修復するために必要なときにすぐに対処する必要があります。
 
 このドキュメントにはEULAが適用されます。製品がドキュメントに従って操作されていない場合、製品の機能と操作、およびEULAに基づくお客様の権利に悪影響を及ぼす可能性があります。
 
@@ -102,12 +104,12 @@ Cloud Volumes ONTAP システムにノードベースのBYOLライセンスが�
 
 == サポートされている場所
 
-コネクタは、ニーズに応じて、サポートされているハイパースケーラ環境またはオンプレミスにインストールできます。
+コネクタは次の場所でサポートされています。
 
 * Amazon Web Services の
 * Microsoft Azure
 +
-コネクタを管理するCloud Volumes ONTAPシステムと同じAzureリージョンに導入するか、Cloud Volumes ONTAPシステムの場合はに導入します https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure リージョンペア"^]。これにより、Cloud Volumes ONTAPとそれに関連付けられたストレージアカウントの間でAzureプライベートリンク接続が使用されます。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP での Azure プライベートリンクの使用方法をご確認ください"^]
+Azureのコネクタは、管理するCloud Volumes ONTAPシステムと同じAzureリージョンに導入するか、Cloud Volumes ONTAPシステムの場合はに導入する必要があります https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure リージョンペア"^]。この要件により、Cloud Volumes ONTAPとそれに関連付けられたストレージアカウントの間でAzure Private Link接続が使用されるようになります。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP での Azure プライベートリンクの使用方法をご確認ください"^]
 
 * Google Cloud
 +
@@ -177,7 +179,7 @@ BlueXPからコネクタを直接作成するには特定の権限が必要で�
 
 == コネクタのアップグレード
 
-NetAppは通常、新しい機能を導入し、安定性を向上させるために、毎月コネクタソフトウェアを更新します。BlueXP  プラットフォームのサービスと機能のほとんどはSaaSベースのソフトウェアで提供されますが、一部の機能はコネクタのバージョンに依存します。Cloud Volumes ONTAP 管理、オンプレミスの ONTAP クラスタ管理、設定、ヘルプが含まれます。
+私たちは通常、コネクタソフトウェアを毎月更新して新機能を導入し、安定性を向上させています。BlueXP  プラットフォームのサービスと機能のほとんどはSaaSベースのソフトウェアで提供されますが、一部の機能はコネクタのバージョンに依存します。Cloud Volumes ONTAP 管理、オンプレミスの ONTAP クラスタ管理、設定、ヘルプが含まれます。
 
 標準モードまたは制限モードでBlueXPを使用すると、ソフトウェアの更新を取得するためにアウトバウンドのインターネットアクセスが確立されていれば、コネクタは自動的にソフトウェアを最新バージョンに更新します。BlueXPをプライベートモードで使用している場合は、コネクタを手動でアップグレードする必要があります。
 
@@ -199,13 +201,13 @@ link:task-upgrade-connector.html["プライベートモードを使用してい�
 
 == 複数の作業環境とコネクタ
 
-同じコネクタを使用して、BlueXP  の複数の作業環境を管理できます。1 つのコネクタで管理できる作業環境の最大数は、環境によって異なります。管理対象は、作業環境の種類、ボリュームの数、管理対象の容量、ユーザの数によって異なります。
+コネクタは、BlueXPで複数の作業環境を管理できます。1 つのコネクタで管理できる作業環境の最大数は、環境によって異なります。管理対象は、作業環境の種類、ボリュームの数、管理対象の容量、ユーザの数によって異なります。
 
-大規模な導入の場合は、ネットアップの担当者にご相談のうえ、環境のサイジングを行ってください。
+大規模な導入の場合は、ネットアップの担当者にご相談のうえ、環境のサイジングを行ってください。途中で問題が発生した場合は、製品内のチャットでお問い合わせください。
 
-必要なコネクタの数を決定する際のもう1つの考慮事項は、ストレージの配置先です。たとえば、Google CloudとAzureの両方にCloud Volumes ONTAPがある場合、環境ごとにコネクタが必要になります。ストレージがすべてオンプレミスに存在する場合は、任意のハイパースケーラまたはオンプレミスでコネクタを実行できます。
+コネクタが 1 つしか必要ない場合もありますが、 2 つ以上のコネクタが必要な場合もあります。
 
-その他の例を次に示します。
+次にいくつかの例を示します。
 
 * マルチクラウド環境（AWSやAzureなど）で、コネクタの1つをAWSに、もう1つをAzureに配置したいと考えています。各で、それらの環境で実行される Cloud Volumes ONTAP システムを管理します。
 * サービスプロバイダは、1つのBlueXP  組織を使用して顧客にサービスを提供し、別の組織を使用してビジネスユニットの1つにディザスタリカバリを提供することができます。各組織には個別のコネクタがあります。

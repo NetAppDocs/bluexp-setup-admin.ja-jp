@@ -12,7 +12,7 @@
 
 BlueXP  管理者（Organization adminロールを持つユーザ）は、ONTAPシステムマネージャにアクセスするためにONTAPクレデンシャルの入力を求めるようにBlueXP  を設定できます。この設定を有効にすると、BlueXP  に保存されないため、ユーザは毎回ONTAPクレデンシャルを入力する必要があります。
 
-この機能は、コネクタバージョン3.9.49以降で使用できます。link:task-ontap-access-connector.html["クレデンシャルを設定する方法について説明します。"^]です。
+この機能は、コネクタバージョン3.9.49以降で使用できます。link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["クレデンシャルを設定する方法について説明します。"^]です。
 
 
 
@@ -31,4 +31,4 @@ NOTE: この変更は、コネクタを常に自分でアップグレードす�
 
 この機能は、コネクタバージョン3.9.48以降で使用できます。
 
-link:task-upgrade-connector.html["コネクタの自動アップグレードを無効にする方法について説明します。"^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["コネクタの自動アップグレードを無効にする方法について説明します。"^]
