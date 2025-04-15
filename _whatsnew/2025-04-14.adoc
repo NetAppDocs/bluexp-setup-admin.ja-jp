@@ -16,5 +16,9 @@
 
 * Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェアからの保護にアクセスするには、ランサムウェアからの保護ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。
 * 組織管理者、フォルダ管理者、プロジェクト管理者がいないユーザにKeystoneにアクセスするには、Keystoneロールが割り当てられている必要があります。ユーザには、Keystone管理者またはKeystoneビューアのいずれかのロールを割り当てることができます。
+
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["アクセスロールについて説明します。"^]
+
 * Org管理者、フォルダ管理者、またはプロジェクト管理者のロールがある場合は、KeystoneサブスクリプションをIAMプロジェクトに関連付けることができるようになりました。KeystoneサブスクリプションをIAMプロジェクトに関連付けると、BlueXP  内でKeystoneへのアクセスを制御できます。
 

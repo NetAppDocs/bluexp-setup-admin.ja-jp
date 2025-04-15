@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-install-options-aws.html 
-keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
+keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install, deploy 
 summary: AWSでコネクタを作成する方法はいくつかあります。最も一般的な方法はBlueXPから直接実行することです。 
 ---
 = AWSでのコネクタのインストールオプション
