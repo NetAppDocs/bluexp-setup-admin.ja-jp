@@ -5006,7 +5006,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  のセットアップと管理</block>
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">メンバーとサービスアカウントの追加</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">ロールを使用してリソースへのメンバーアクセスを制御する</block>
-  <block id="7b86bd575ced3444e23389ac71f98a8f" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block></block>
   <block id="e5a26c78a572123c5a5e442167efbf6e" category="paragraph">コネクタは、ユーザがインストールするNetAppソフトウェアで、ストレージインフラを管理するためにBlueXP  が実行する必要のある処理を実行します。BlueXP  の機能の多くにコネクタは必要ありませんが、コネクタがない場合、一部の機能は利用できません。</block>
   <block id="9097a69a8c3aa1836902abae4c2af6b5" category="paragraph">BlueXP  を標準モードで実行する場合、ソフトウェアアップデートやデジタルウォレットなど、BlueXP  の一部のサービスを実行するためにコネクタをインストールする必要はありません。ただし、ランサムウェア対策やディザスタリカバリなどのBlueXP  のプレミアムサービスの一部では、コネクタのインストールが必要です。BlueXP  を制限モードまたはプライベートモードで使用する場合は、コネクタをインストールする必要があります。</block>
   <block id="c9ea5b101d4c3beb590e4912f1117899" category="section-title">標準モードでコネクタを使用しない場合の操作</block>
@@ -5050,4 +5049,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="86429eb78c6bc64d5f1ce4125590fe22" category="paragraph">^3^オンプレミスのONTAPクラスタを直接検出する場合はコネクタは必要ありませんが、BlueXP  の追加機能を利用する場合はコネクタが必要です。<block ref="04529f27c98d308747ea6be915c240c4" category="inline-link-rx"></block></block>
   <block id="9c723fb8e231218b213744c9ee3160ca" category="paragraph">Azureで実行されているLinuxホストにコネクタを手動でインストールできます。独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、Azureの権限を準備してから、コネクタをインストールし、準備した権限を指定する必要があります。</block>
   <block id="e6ddd5a54a1d2f8ae254b9358dfed6b9" category="paragraph">標準モードで実行している場合は、コネクタを取り付けることなく、BlueXP  を使用してストレージリソースを一元管理できます。</block>
+  <block id="e179a365cbbaaab0ffe96afa0b1123f8" category="paragraph"><block ref="e179a365cbbaaab0ffe96afa0b1123f8" category="inline-link-macro-rx"></block></block>
+  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
 </blocks>
