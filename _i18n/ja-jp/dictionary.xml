@@ -4893,7 +4893,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">現時点では、3.9.51リリースは標準モードと制限モードで使用できます。</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  IDおよびアクセス管理（IAM）</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
-  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェアからの保護にアクセスするには、ランサムウェアからの保護ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">組織管理者、フォルダ管理者、プロジェクト管理者がいないユーザにKeystoneにアクセスするには、Keystoneロールが割り当てられている必要があります。ユーザには、Keystone管理者またはKeystoneビューアのいずれかのロールを割り当てることができます。</block>
   <block id="d4d44165c3ece93b64c24e52e61879a3" category="list-text">Org管理者、フォルダ管理者、またはプロジェクト管理者のロールがある場合は、KeystoneサブスクリプションをIAMプロジェクトに関連付けることができるようになりました。KeystoneサブスクリプションをIAMプロジェクトに関連付けると、BlueXP  内でKeystoneへのアクセスを制御できます。</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
@@ -5038,4 +5037,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="08fec10c338548595a28b0310a1c0600" category="cell">SIEMターゲットの追加または変更</block>
   <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*[レポート]タブで*：</block>
   <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenterにはビューアの役割はありません。</block>
+  <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェア対策にアクセスするには、ランサムウェア対策ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。</block>
 </blocks>
