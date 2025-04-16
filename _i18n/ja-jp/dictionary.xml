@@ -2752,7 +2752,6 @@
   <block id="b7d7e6e6aa05f7913906689b7f1e583a" category="list-text">*確認*：選択内容を確認し、*起動*を選択します。</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">*確認*：詳細を確認し、使用許諾契約に同意して、*セットアップ*を選択します。</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">コネクタは現在「cloudmanager.cloud.netapp.com"」に連絡していますが、今後のリリースでは「api.bluexp.netapp.com"」に連絡を開始します。</block>
   <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するためのアウトバウンドインターネット接続が確立されていない場合は、コネクタに付属のプロキシサーバを使用するように自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
   <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">BlueXPからAzureにコネクタを作成します</block>
   <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">BlueXPからコネクタを作成するときは、BlueXPがAzureで認証してVMを導入するためのログインを指定する必要があります。次の 2 つのオプションがあります。</block>
@@ -5038,4 +5037,12 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*[レポート]タブで*：</block>
   <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenterにはビューアの役割はありません。</block>
   <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェア対策にアクセスするには、ランサムウェア対策ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。</block>
+  <block id="92b9ccffb9a7aebd350ecfd6d0c224c9" category="section-title">プライベートモードリリース（3.9.48）</block>
+  <block id="cbf6e80d5966345d963bedae0e933eb6" category="paragraph">3.9.48リリースでは、BlueXP  の次のコンポーネントとサービスが更新されています。</block>
+  <block id="b3a482492c0cc68db9c85faa2f89ba61" category="cell">3.9.48</block>
+  <block id="6a8544d6477cbe97e8f2b597011b60cc" category="cell">に移動し<block ref="682cda11c1c81d1c1e6c42597faddff3" category="inline-link-rx"></block>、バージョン3.9.48に含まれている変更点を参照してください。</block>
+  <block id="2fd37378e1e9677d0e420385f414d8f5" category="cell">2025年2月5日</block>
+  <block id="ea4e82ea5af0ff62421ac55574c06dca" category="cell">にアクセス<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>し、2025年2月リリースに含まれる変更点を確認してください。</block>
+  <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">2025年1月22日（バージョン1.39）</block>
+  <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">に移動し<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>、1.39リリースに含まれる変更点を参照してください。</block>
 </blocks>

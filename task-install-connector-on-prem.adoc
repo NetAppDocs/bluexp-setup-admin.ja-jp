@@ -370,8 +370,6 @@ https://mysupport.netapp.com をご覧ください
  a| 
 BlueXPでSaaSの機能とサービスを提供するため。
 
-コネクタは現在「cloudmanager.cloud.netapp.com"」に連絡していますが、今後のリリースでは「api.bluexp.netapp.com"」に連絡を開始します。
-
 
 
  a| 

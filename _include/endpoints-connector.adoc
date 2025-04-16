@@ -71,8 +71,6 @@
 
 |をクリックして、BlueXP内でSaaSの機能とサービスを提供します。
 
-コネクタは現在「cloudmanager.cloud.netapp.com"」に連絡していますが、今後のリリースでは「api.bluexp.netapp.com"」に連絡を開始します。
-
 A | 2つのエンドポイントセットから選択します。
 
 * オプション1（推奨）^1^
