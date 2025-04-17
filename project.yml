@@ -11,7 +11,7 @@ settings:
   langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: BlueXP  のセットアップと管理のドキュメント
+  - title: BlueXP  のセットアップと管理
     url: "/index.html"
   - title: リリースノート
     entries:
@@ -115,8 +115,10 @@ sidebar:
         url: "/task-iam-get-started.html"
       - title: フォルダとプロジェクトを使用してリソースを整理する
         url: "/task-iam-manage-folders-projects.html"
-      - title: メンバーの追加と権限の管理
+      - title: メンバーとサービスアカウントの追加
         url: "/task-iam-manage-members-permissions.html"
+      - title: ロールを使用してリソースへのメンバーアクセスを制御する
+        url: "/task-iam-manage-roles.html"
       - title: リソース階層の管理
         url: "/task-iam-manage-resources.html"
       - title: コネクタを他のフォルダおよびプロジェクトに関連付ける

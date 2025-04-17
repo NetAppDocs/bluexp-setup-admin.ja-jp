@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-iam-manage-roles.html 
-keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members 
+keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles 
 summary: BlueXP  のIDとアクセス管理により、フォルダとプロジェクトを使用して完全なリソース階層を表すことができます。 
 ---
 = ロールを使用してリソースへのユーザアクセスを管理する

@@ -28,10 +28,10 @@ indexpage:
       url: task-iam-get-started.html
     - title: フォルダとプロジェクトを使用してリソースを整理する
       url: task-iam-manage-folders-projects.html
-    - title: メンバーとその権限の管理
+    - title: メンバーとサービスアカウントの追加
       url: task-iam-manage-members-permissions.html
-    - title: リソース階層の管理
-      url: task-iam-manage-resources.html
+    - title: ロールを使用してリソースへのメンバーアクセスを制御する
+      url: task-iam-manage-roles.html
   - title: コネクタ
     links:
     - title: コネクタについて説明します

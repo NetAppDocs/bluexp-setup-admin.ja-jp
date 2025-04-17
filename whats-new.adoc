@@ -1840,15 +1840,11 @@ link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["サ�
 
 アカウントのプライベートプレビューで、新しい NetApp クラウドサービスが Cloud Manager のプレビューとして利用できるようになりました。
 
-link:task-managing-netapp-accounts.html#allow-private-previews["このオプションの詳細については、こちらをご覧ください"]。
-
 
 
 === サードパーティのサービス
 
 また、アカウント内のサードパーティサービスが Cloud Manager で使用可能なサードパーティサービスにアクセスできるようにすることもできます。
-
-link:task-managing-netapp-accounts.html#allow-third-party-services["このオプションの詳細については、こちらをご覧ください"]。
 
 
 
