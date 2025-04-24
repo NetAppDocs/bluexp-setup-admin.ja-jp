@@ -508,9 +508,6 @@
   <block id="5f74d1c3714e49926cf5f752029ebcc2" category="inline-xref">それらの作業環境を別の NSS アカウントに接続します</block>
   <block id="b0afff19aa3343a6f86619d833dbd316" category="inline-image-macro">横方向の 3 つの点を示すアイコン</block>
   <block id="8cb2ff10d15cea1a460cee3b506d5a6c" category="section-title">NSS クレデンシャルを更新します</block>
-  <block id="90488de845793cd541dd12866e86b44a" category="paragraph">次のいずれかの場合は、BlueXPでNSSアカウントの資格情報を更新する必要があります。</block>
-  <block id="d7fb44c1919b66d02d93dc18ebb82756" category="list-text">このアカウントのクレデンシャルを変更した場合</block>
-  <block id="b3926834345be7a1da662eba385876a4" category="list-text">アカウントに関連付けられた更新トークンの有効期限は3カ月です</block>
   <block id="a316383f81642dfed8c486925c8bc0d9" category="list-text">更新するNSSアカウントのを選択します <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 次に、 [ 資格情報の更新 ] を選択します。</block>
   <block id="6194803972b351a3a1a725ec35734320" category="inline-image-macro">NetApp Support Siteのアカウントの操作メニューを示すスクリーンショット。削除オプションを選択できます。</block>
   <block id="2aa3557242cb0eddbff8233ad0c81a45" category="paragraph"><block ref="2aa3557242cb0eddbff8233ad0c81a45" category="inline-image-macro-rx" type="image"></block></block>
@@ -524,14 +521,10 @@
   <block id="11ecc3de6ba7beb5561699b813f5f452" category="paragraph"><block ref="11ecc3de6ba7beb5561699b813f5f452" category="inline-image-macro-rx" type="image"></block></block>
   <block id="17b44f0405de560bdd9ba352b67adb7a" category="list-text">アカウントを選択し、*[保存]*を選択します。</block>
   <block id="504f62cd55407d98070b45659035b7f5" category="section-title">NSS アカウントの E メールアドレスを表示します</block>
-  <block id="a74d4f6da1f4962caa974b5e68852f05" category="admonition">NSS管理ページに移動すると、表の各アカウントのトークンがBlueXPによって生成されます。このトークンには、関連付けられた E メールアドレスに関する情報が含まれます。その後、ページから移動するとトークンが削除されます。この情報はキャッシュされないため、プライバシーを保護できます。</block>
-  <block id="fb62719b7db2f72c6247845a1f5cbcb1" category="list-text">更新するNSSアカウントのを選択します <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 次に、 [ 電子メールアドレスの表示 *] を選択します。</block>
   <block id="51f80facd7c70833cf77adf937c57d0f" category="inline-image-macro">NetApp Support Siteのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。</block>
   <block id="e1116fc74825566193b6ce2f33cadc2b" category="paragraph"><block ref="e1116fc74825566193b6ce2f33cadc2b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c7a6c5419388c54dd17826c0c6b4dc85" category="paragraph">NetApp Support Site ユーザー名と関連するメールアドレスが表示されます。コピーボタンを使用して、電子メールアドレスをコピーできます。</block>
   <block id="269f277ce2140226081fe499a22595d6" category="section-title">NSS アカウントを削除します</block>
   <block id="09e40761f22ee02fc6f59d79db4d6f93" category="paragraph">BlueXPで使用しないNSSアカウントをすべて削除します。</block>
-  <block id="76734448143dd55adf6431fa26af46e4" category="paragraph">Cloud Volumes ONTAP 作業環境に現在関連付けられているアカウントは削除できません。最初にが必要です <block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>。</block>
   <block id="e5db2949e66eb1e7684dd81e4145d6e3" category="list-text">削除するNSSアカウントのを選択します <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 次に、 * Delete * を選択します。</block>
   <block id="007f1e2d3f01b80a8179746ea45b3c41" category="paragraph"><block ref="007f1e2d3f01b80a8179746ea45b3c41" category="inline-image-macro-rx" type="image"></block></block>
   <block id="93ab98e83f767e271a56c06a99e0061f" category="list-text">[削除]*を選択して確定します。</block>
@@ -3176,8 +3169,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="aa58ae713abe4e1f7b639f232b2814b8" category="list-text">BlueXP分類を使用して企業データソースをスキャンする場合は、システム間で時刻が同期されるように、BlueXP ConnectorシステムとBlueXP分類システムの両方でネットワークタイムプロトコル（NTP）サービスを有効にする必要があります。<block ref="f37549d88d23259dc9470e2f2bfbbbf0" category="inline-link-rx"></block></block>
   <block id="9ed6715eace733ae6dc526b52a03058e" category="paragraph">コネクタを作成した後で、このネットワーク要件を実装する必要があります。</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetAppでは、サポートとライセンスに固有の認証サービスのIDプロバイダとしてMicrosoftエントラIDを使用します。</block>
-  <block id="dfec517d439938ca1ef24de3972ed1d6" category="paragraph">この機能は、ID管理にNetAppが採用したMicrosoftエントラIDを使用するように設定されたNSSアカウントでのみサポートされます。この機能を使用する前に、* NSSアカウントの追加*または*アカウントの更新*を選択する必要があります。</block>
-  <block id="a5b46ae1ec2ad5287349444529a0b53c" category="paragraph">NetApp Support Siteアカウントで認証サービスにMicrosoft Entra IDが使用されるようになったため、BlueXPに表示されるNSSユーザ名は通常、Microsoft Entraによって生成された識別子です。そのため、そのアカウントに関連付けられている E メールアドレスがすぐにわからない場合があります。しかし、BlueXPには、関連するメールアドレスを表示するオプションがあります。</block>
   <block id="009cf1f7b9b15240104b17e10bb20e3a" category="paragraph">Microsoft Entra IDでサービスプリンシパルを作成してセットアップし、BlueXPに必要なAzureクレデンシャルを取得します。</block>
   <block id="20a548e155064dfebc2cf8e9a74ab489" category="list-title">ロールベースアクセス制御用のMicrosoft Entraアプリケーションの作成</block>
   <block id="3acc75f616414df16724fc2f4fe192eb" category="list-text">Azureポータルで、* Microsoft Entra ID *サービスを開きます。</block>
@@ -3998,7 +3989,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="1ebe3d8a3d69a73646283d430c26a946" category="paragraph">BlueXP  では、BlueXP  ユーザアカウントごとに1つのNSSアカウントを関連付けることもできます。<block ref="92ab4e1c25ae34810f6c6d2ede81f4ab" category="inline-link-macro-rx"></block>です。</block>
   <block id="e2ca9dfd816e611b53e740c0def06a75" category="paragraph">BlueXP  で次のタスクを実行するには、NetAppサポートサイトのクレデンシャルを特定のBlueXP  アカウントのシリアル番号に関連付ける必要があります。</block>
   <block id="acc5d74b9730b17cf679fd826310c607" category="paragraph">これらのクレデンシャルは、特定のBlueXP  アカウントのシリアル番号に関連付けられています。BlueXP  の組織またはアカウントに属するユーザは、*[サポート]&gt;[NSS管理]*からこれらのクレデンシャルにアクセスできます。</block>
-  <block id="607d5f9332bf0fe8fef9f43fcf68c22e" category="paragraph">サポートダッシュボードでは、BlueXP  で使用するNetAppサポートサイトのアカウントをBlueXP  の組織レベルまたはアカウントレベルで追加および管理できます。</block>
   <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">作業環境のリストは、サービスの上部バナーで選択したBlueXP  組織（またはアカウント）、プロジェクト（またはワークスペース）、コネクタの範囲内にあります。</block>
   <block id="aeaa07e62e0681df3c00b18be44e1799" category="summary">組織のメンバーが別のプロジェクトでコネクタを使用する必要がある場合は、BlueXP  IAMから関連付けを作成する必要があります。</block>
   <block id="9c1561cceda808c78453a453f4175e14" category="doc">BlueXP  コネクタを他のフォルダおよびプロジェクトに関連付ける</block>
@@ -5022,4 +5012,25 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="57b248bc2bcc519c9d26da79b5753feb" category="cell">組織内の任意のユーザーが作成したCViewサービスリクエスト</block>
   <block id="40abfc355f5aea2697c05cedc7637005" category="section-title">データサービスロール</block>
   <block id="3b5148467641fe76592e826ef571410c" category="paragraph">データサービスカテゴリのロールのリストを次に示します。各ロールには、指定した範囲内で特定の権限が付与されます。必要なデータサービスロールまたはプラットフォームロールがないユーザは、データサービスにアクセスできません。</block>
+  <block id="490e13bea5876f4583d326593619ee16" category="list-text">Cloud Volumes ONTAPシステムの管理は、オペレーティングシステムでSELinuxが有効になっているコネクタでサポートされるようになりました。</block>
+  <block id="a34db0f5fbf1e24b51b5a7a24f301c5e" category="doc">BlueXP  に関連付けられたNSSクレデンシャルの管理</block>
+  <block id="c60157a3e7becc31536d0dc036b53af0" category="admonition">BlueXP  を標準モードまたは制限モードで使用している場合は、BlueXP  IDおよびアクセス管理(IAM)を使用して管理する_ BlueXP  organization_があります。ただし、BlueXP  をプライベートモードで使用している場合は、_ BlueXP  アカウント_があります。</block>
+  <block id="6dbd01b1c2b8dd3f051f0a9d6b7b2bd3" category="paragraph">BlueXP  で使用するNetAppサポートサイトのアカウントは、BlueXP  のサポートダッシュボードから追加および管理できます。</block>
+  <block id="cd35825320d9b999711fdb0b0b96b105" category="paragraph">NSSアカウントを追加すると、BlueXP  はこの情報を使用して、ライセンスのダウンロード、ソフトウェアアップグレードの検証、今後のサポート登録などを行うことができます。</block>
+  <block id="668a927dea46030d99f290f562cf9a8c" category="paragraph">BlueXP  組織には複数のNSSアカウントを関連付けることができますが、同じ組織内にお客様アカウントとパートナーアカウントを含めることはできません。</block>
+  <block id="aa46302bfdec80cdcbdb3268e1b7a8f4" category="list-text">Microsoftのログインページにリダイレクトするには、[続行]*を選択します。</block>
+  <block id="55e65cdb758bf0c89a872d9cbd3e9b79" category="list-text">ログインページで、NetAppサポートサイトに登録されているEメールアドレスとパスワードを入力します。</block>
+  <block id="256ed78b4e0484125eb0f0e66fdb7156" category="inline-link-macro">通知センターの詳細</block>
+  <block id="4689ffd51b2968888f8c155b13dfcaf5" category="paragraph">セキュリティ上の理由から、NSSクレデンシャルは90日ごとに更新する必要があります。NSSクレデンシャルの有効期限が切れた場合は、BlueXP  通知センターで通知されます。<block ref="7547de016d191efcd551f32d625b2bc1" category="inline-link-macro-rx"></block>です。</block>
+  <block id="a68bd898b36ffcd9b8247470114f5f4a" category="paragraph">クレデンシャルが期限切れになると、次のような問題が発生する可能性があります。</block>
+  <block id="41a210fc1fd64ddb44bf15d9fe670679" category="list-text">デジタルウォレットでライセンスが更新されるため、新しく購入した容量を利用することはできません。</block>
+  <block id="9866777d09d57d152447888262701c25" category="list-text">サポートケースの送信と追跡が可能</block>
+  <block id="6179959f116f310a8ad1ec9ecbaf81f6" category="paragraph">また、BlueXP  組織に関連付けられているNSSアカウントを変更する場合は、組織に関連付けられているNSSクレデンシャルを更新できます。たとえば、NSSアカウントに関連付けられているユーザーが退職した場合などです。</block>
+  <block id="021c1a8115e127518ed9afb84086b193" category="paragraph">NetAppでは、サポートとライセンスに関連する認証サービスのIDプロバイダとしてMicrosoftエントラIDを使用します。</block>
+  <block id="eeda1356f6044cf81d9e31043444b9aa" category="paragraph">最初にアカウントをBlueXP  に関連付けておく必要があります。</block>
+  <block id="2f8da686adebbe94321da99d4cee7340" category="paragraph">セキュリティ上の理由から、NSSアカウントに関連付けられたEメールアドレスはデフォルトでは表示されません。NSSアカウントのEメールアドレスと関連付けられているユーザ名を確認できます。</block>
+  <block id="9231e2c70a8d6560c0d7f9c307c71524" category="admonition">NSS管理ページに移動すると、表の各アカウントのトークンがBlueXPによって生成されます。このトークンには、関連付けられた E メールアドレスに関する情報が含まれます。トークンは、ページを離れると削除されます。この情報はキャッシュされないため、プライバシーを保護できます。</block>
+  <block id="91db0dcecdec6f07d8d7296d1c7d5cf1" category="list-text">更新するNSSアカウントのを選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>、*[Display Email Address]*を選択します。コピーボタンを使用して、電子メールアドレスをコピーできます。</block>
+  <block id="95113dfcf72340b0f58f2233f6b68f7d" category="paragraph">Cloud Volumes ONTAP作業環境に現在関連付けられているアカウントは削除できません。あなたは最初にする必要があります<block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>。</block>
+  <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">2025年2月18日</block>
 </blocks>
