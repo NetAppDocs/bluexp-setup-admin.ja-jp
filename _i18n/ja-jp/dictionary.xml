@@ -1714,7 +1714,6 @@
   <block id="e8e3de05575910fc8863b3e5715b75a4" category="inline-image-macro">非アクティブなコネクタを削除できるコネクタウィジェットのスクリーンショット。</block>
   <block id="2edb4e92b7a9da8aeba40d13e6c35982" category="paragraph"><block ref="2edb4e92b7a9da8aeba40d13e6c35982" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">確認するコネクタの名前を入力し、*[削除]*を選択します。</block>
-  <block id="7c42efcb94d7f8204bfb69f49301938f" category="paragraph">BlueXPはコネクタをレコードから削除します。</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">Linux ホストからアンインストールスクリプトを実行します。</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">silent_ 確認を求めずにスクリプトを実行します。</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">Linux ホストから、次のコマンドを実行します。</block>
@@ -3529,7 +3528,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="716e455593e3f61d09e3bf6cbb30d375" category="doc">コネクタをアンインストールして取り外します</block>
   <block id="0ca48b615c940d64cdde98b76cdee8b3" category="section-title">標準モードまたは制限モードを使用する場合のコネクタのアンインストール</block>
   <block id="da529abe542a53761e1008dc23815cf7" category="paragraph">標準モードまたは制限モード（つまり、コネクタホストにアウトバウンド接続が確立されている）でBlueXPを使用している場合は、次の手順に従ってコネクタソフトウェアをアンインストールする必要があります。</block>
-  <block id="0f915c6b577573f25e2e8bfac8c2aacb" category="paragraph">これで、コネクタソフトウェアがLinuxホストからアンインストールされます。</block>
   <block id="32b4ba2ff55d15357ed5b70aeb566059" category="section-title">プライベートモードを使用する場合のコネクタのアンインストール</block>
   <block id="34a2bd34ae23cc65060f62957132c0eb" category="paragraph">BlueXPをプライベートモード（コネクタホストに_no_outbound接続が設定されている）で使用している場合は、次の手順に従ってコネクタソフトウェアをアンインストールする必要があります。</block>
   <block id="a1fd436d8cb76b77def4aeb2d8bba352" category="doc">コネクタVMとオペレーティングシステムの保守</block>
@@ -3674,7 +3672,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">デフォルトのパスワードは、登録済みEメールアドレスへのワンタイムパスコード（OTP）です。サインインを試行するたびに新しいOTPが生成されます。</block>
   <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">Cloud Volumes ONTAP CLIで、権限レベルをadvancedに設定します。</block>
   <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">次のコマンドを実行して、現在のバックアップターゲットを表示します。</block>
-  <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="d44b908365d28414a72f5b042c756f89" category="cell">Cloud Volumes ONTAPの特定のゾーンを指定するために、フレキシブルオーケストレーションモードで仮想マシンスケールセットを使用する</block>
   <block id="e32bb1c8b64cbfd8bf1712551cd39a15" category="cell">マイクロソフト。</block>
   <block id="da4802bef00f05ba8274ecb054d0388f" category="cell">マイクロソフト。</block>
@@ -5032,4 +5029,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">2025年2月18日</block>
   <block id="186343db38833a48df757e694e69337d" category="doc">BlueXP  に関連付けられたNSSクレデンシャルの管理</block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">デジタルウォレットでライセンスが更新されるため、新しく購入した容量を利用することはできません。</block>
+  <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">コネクタホストでのオペレーティングシステムの保守は、お客様の責任で行ってください。たとえば、ユーザー(顧客)は、オペレーティングシステムの配布に関する会社の標準手順に従って、コネクタホスト上のオペレーティングシステムにセキュリティ更新プログラムを適用する必要があります。</block>
+  <block id="ec3b20ec97830a6ca400807ee52fba22" category="list-text">Linuxホストから、削除する古い、現在使用されていないコンテナイメージファイルを削除します。これにより、/varディレクトリに再インストールするのに十分なスペースが確保されます。</block>
 </blocks>

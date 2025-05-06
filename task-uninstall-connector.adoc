@@ -35,9 +35,6 @@ silent_ 確認を求めずにスクリプトを実行します。
 
 
 
-.結果
-これで、コネクタソフトウェアがLinuxホストからアンインストールされます。
-
 
 
 == プライベートモードを使用する場合のコネクタのアンインストール
@@ -48,13 +45,31 @@ BlueXPをプライベートモード（コネクタホストに_no_outbound接�
 . コネクタのLinux VMに接続します。
 . Linux ホストから、次のコマンドを実行します。
 +
-`/opt/application/netapp/ds/cleanup.sh`
-`rm -rf /opt/application/netapp/ds`
+[source, cli]
+----
+/opt/application/netapp/ds/cleanup.sh
+rm -rf /opt/application/netapp/
+----
+. Linuxホストから、削除する古い、現在使用されていないコンテナイメージファイルを削除します。これにより、/varディレクトリに再インストールするのに十分なスペースが確保されます。
++
+[role="tabbed-block"]
+====
+.ポドマン
+--
+[source, cli]
+----
+podman system prune --all
+----
+--
+.Docker
+--
+[source, cli]
+----
+docker system prune -a
+----
+--
+====
 
-
-
-.結果
-これで、コネクタソフトウェアがLinuxホストからアンインストールされます。
 
 
 
@@ -77,6 +92,3 @@ image:screenshot_connector_remove.gif["非アクティブなコネクタを削�
 
 . 確認するコネクタの名前を入力し、*[削除]*を選択します。
 
-
-.結果
-BlueXPはコネクタをレコードから削除します。
