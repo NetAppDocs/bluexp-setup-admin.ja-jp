@@ -1,34 +1,8 @@
----
-sidebar: sidebar 
-permalink: concept-identity-and-access-management.html 
-keywords: iam overview, overview, how iam works, iam example, organization, folders, projects, resources, members, roles, permissions, resource hierarchy, identity and access management, access roles, iam 
-summary: BlueXP  IDおよびアクセス管理（IAM）を使用すると、組織のリソースへのアクセスを制御できます。 
----
-= BlueXP  のアイデンティティ管理とアクセス管理の詳細
-:hardbreaks:
+= 組織
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
-[role="lead"]
-BlueXP  IDおよびアクセス管理（IAM）を使用すると、NetAppリソースへのアクセスを整理および制御できます。組織の階層に従ってリソースを編成できます。たとえば、地理的な場所、サイト、ビジネスユニットごとにリソースを整理できます。その後、階層の特定の部分のメンバーにIAMロールを割り当てることができます。これにより、階層の他の部分のリソースにアクセスできなくなります。
-
-BlueXP  IAMは、BlueXP  アカウントによって提供されていた以前の機能を置き換え、強化します。link:whats-new.html#iam["BlueXP  IAMの導入について詳しくは、こちらをご覧ください。"]です。
-
-BlueXP  IAMは、標準モードおよび制限モードでBlueXP  を使用する場合にサポートされます。BlueXP  をプライベートモードで使用している場合は、BlueXP  アカウント_を使用してユーザーとリソースを管理します。
-
-* link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認ください"]
-* link:concept-modes.html["BlueXPの導入モードについて説明します"]
-
-
-
-
-== BlueXP  IAMの仕組み
-
-BlueXP  IAMを使用すると、組織階層の特定の部分に対する権限を持つメンバーを定義して、組織のリソースへのアクセスを許可できます。たとえば、メンバーは、5つのリソースが関連付けられているプロジェクトに対して、プロジェクト管理者権限を持つことができます。
+次のセクションでは、BlueXP  内でIAMを使用するさまざまなコンポーネントについて説明します。
 
 BlueXP  IAMを使用する場合は、次のコンポーネントを管理します。
 
@@ -69,8 +43,6 @@ a_folder_を使用すると、関連するプロジェクトをグループ化�
 
 フォルダには、プロジェクト、他のフォルダ、またはその両方を含めることができます。
 
-フォルダを作成する必要はありません。これらはオプションです。
-
 
 
 === プロジェクト
@@ -96,7 +68,7 @@ TIP: コネクタを組織内の別のフォルダまたはプロジェクトに
 
 ==== リソースをフォルダに関連付けるタイミング
 
-リソースをフォルダに関連付けるオプションもありますが、これはオプションであり、特定のユースケースのニーズを満たしています。
+担当リソースまたはストレージリソースの分離が必要な場合は、リソースをフォルダに整理できます。
 
 _Organization admin_は'リソースをフォルダに関連付けて'_Folderまたはプロジェクトadmin_がそのリソースをフォルダ内の適切なプロジェクトに関連付けることができます
 
@@ -164,7 +136,7 @@ BlueXP  IAMでは、組織メンバーに直接権限を付与することは�
 
 ==== アクセスロール
 
-BlueXP  では、組織のメンバーに割り当てることができるいくつかの事前定義されたロールがサポートされています。
+BlueXP  では、組織のメンバーに割り当てることができる複数のアクセスロールがサポートされています。
 
 link:reference-iam-predefined-roles.html["アクセスロールの詳細"]です。
 
@@ -196,57 +168,4 @@ link:reference-iam-predefined-roles.html["アクセスロールの詳細"]です
 +
 _Organization admin_はコネクタをフォルダに関連付けて、_Folderまたはプロジェクトadmin_がそのコネクタをフォルダ内の適切なプロジェクトに関連付けるかどうかを決定できるようにする場合があります。
 
-
-
-
-
-== IAMの例
-
-次の例は、組織のセットアップ方法を示しています。
-
-
-
-=== シンプルな構成
-
-次の図は、デフォルトのプロジェクトを使用し、フォルダを使用しない組織の簡単な例を示しています。1人のメンバーが組織全体を管理します。
-
-image:diagram-iam-example-hierarchy-simple.png["プロジェクト、関連リソース、および1人の組織管理者を持つ組織を示す概念図。"]
-
-
-
-=== 高度な構成
-
-次の図は、フォルダを使用して、ビジネス内の地理的な場所ごとにプロジェクトを整理する組織を示しています。各プロジェクトには、関連するリソースの独自のセットがあります。メンバーには、組織内の各フォルダの組織管理者と管理者が含まれます。
-
-image:diagram-iam-example-hierarchy-advanced.png["3つのフォルダ、それぞれ3つのプロジェクト、および関連するリソースを持つ組織を示す概念図。組織管理者1人とフォルダ管理者3人の4人のメンバーがいます。"]
-
-
-
-== BlueXP  IAMの機能
-
-次に、IAMを使用してBlueXP  組織を管理する例を示します。
-
-* 特定のメンバーに特定のロールを付与して、必要なタスクのみを完了できるようにします。
-* メンバーの権限を変更する理由は、メンバーが部門を移動した場合や、追加の権限がある場合です。
-* 退社したユーザを削除します。
-* 新しいビジネスユニットによってNetAppストレージが追加されたため、フォルダまたはプロジェクトを階層に追加します。
-* リソースに別のチームが使用できる容量があるため、リソースを別のプロジェクトに関連付けます。
-* メンバーがアクセスできるリソースを表示します。
-* 特定のプロジェクトに関連付けられているメンバーとリソースを表示します。
-
-
-
-
-== 次の手順
-
-* link:task-iam-get-started.html["BlueXP  IAMの使用を開始する"]
-* link:task-iam-manage-folders-projects.html["フォルダとプロジェクトを使用してBlueXP  でリソースを整理する"]
-* link:task-iam-manage-members-permissions.html["BlueXP  メンバーとその権限を管理します。"]
-* link:task-iam-manage-resources.html["BlueXP  組織のリソース階層を管理します。"]
-* link:task-iam-associate-connectors.html["フォルダーおよびプロジェクトへのコネクターの関連付け"]
-* link:task-iam-switch-organizations-projects.html["BlueXP  プロジェクトと組織を切り替える"]
-* link:task-iam-rename-organization.html["BlueXP  組織の名前を変更する"]
-* link:task-iam-audit-actions-timeline.html["IAMアクティビティの監視または監査"]
-* link:reference-iam-predefined-roles.html["BlueXP  アクセスロール"]
-* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["BlueXP  IAM向けAPIの詳細"^]
 

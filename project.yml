@@ -130,7 +130,19 @@ sidebar:
       - title: IAMアクティビティの監視または監査
         url: "/task-iam-audit-actions-timeline.html"
       - title: BlueXP  アクセスロール
-        url: "/reference-iam-predefined-roles.html"
+        entries:
+        - title: BlueXP  アクセスロールの詳細
+          url: "/reference-iam-predefined-roles.html"
+        - title: プラットフォームの役割
+          url: "/reference-iam-platform-roles.html"
+        - title: アプリケーションの役割
+          entries:
+          - title: Keystoneロール
+            url: "/reference-iam-keystone-roles.html"
+        - title: データサービスの役割
+          entries:
+          - title: ランサムウェア対策の役割
+            url: "/reference-iam-ransomware-roles.html"
     - title: BlueXP  アカウント（プライベートモードのみ）
       entries:
       - title: アカウントの詳細を確認します

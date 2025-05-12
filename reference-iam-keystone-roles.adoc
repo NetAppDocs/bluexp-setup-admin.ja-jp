@@ -1,0 +1,143 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-keystone-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: BlueXP  IDおよびアクセス管理には、組織のメンバーに割り当てることができる2つの管理ロールが用意されています。 
+---
+= BlueXP  向けのKeystoneアクセスロール
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Keystoneロールは、Keystoneダッシュボードへのアクセスを提供し、ユーザがKeystoneサブスクリプションを表示および管理できるようにします。Keystoneには、Keystone管理者とKeystoneビューアの2つのロールがあります。この2つの役割の主な違いは、Keystoneで実行できるアクションです。Keystone管理者ロールは、サービスリクエストの作成やサブスクリプションの変更を許可される唯一のロールです。
+
+.BlueXP  でのKeystoneロールの例
+XYZ Corporationでは、Keystoneサブスクリプションに関する情報を確認するために、さまざまな部門から4人のストレージエンジニアがKeystoneサブスクリプションに参加しています。これらのユーザはいずれもKeystoneサブスクリプションを監視する必要がありますが、サービスのリクエストはチームリーダーのみが許可されます。チームメンバーの3人には「Keystoneビューア」ロールが割り当てられ、チームリーダーには「Keystone管理者」ロールが割り当てられます。これにより、会社に対するサービスリクエストを管理できるようになります。
+
+次の表に、Keystoneの各ロールで実行できるアクションを示します。
+
+[cols="40,20a,20a"]
+|===
+| 特徴とアクション | Keystone管理者 | Keystoneビューア 
+
+
+| [Subscription]、[Assets]、[Monitor]、および[Administration]タブを表示します。  a| 
+はい。
+ a| 
+はい。
+
+
+
+3+| * Keystoneサブスクリプションページ*： 
+
+
+| サブスクリプションの表示  a| 
+はい。
+ a| 
+はい。
+
+
+
+| サブスクリプションの修正または更新  a| 
+はい。
+ a| 
+いいえ
+
+
+
+3+| * Keystone関連資料ページ*： 
+
+
+| アセットの表示  a| 
+はい。
+ a| 
+はい。
+
+
+
+| 資産の管理  a| 
+はい。
+ a| 
+いいえ
+
+
+
+3+| * Keystoneアラートページ*： 
+
+
+| アラートを表示します  a| 
+はい。
+ a| 
+いいえ
+
+
+
+| アラートの管理  a| 
+はい。
+ a| 
+いいえ
+
+
+
+| 自分用のアラートを作成する  a| 
+はい。
+ a| 
+はい。
+
+
+
+3+| *デジタルウォレット*： 
+
+
+| デジタルウォレットを表示できる  a| 
+はい。
+ a| 
+はい。
+
+
+
+3+| * Keystoneレポートページ*： 
+
+
+| レポートのダウンロード  a| 
+はい。
+ a| 
+はい。
+
+
+
+| レポートの管理  a| 
+はい。
+ a| 
+はい。
+
+
+
+| 自分用のレポートの作成  a| 
+はい。
+ a| 
+はい。
+
+
+
+3+| *サービスリクエスト*： 
+
+
+| サービスリクエストの作成  a| 
+はい。
+ a| 
+いいえ
+
+
+
+| 組織内の任意のユーザーが作成したサービスリクエストを表示する  a| 
+はい。
+ a| 
+はい。
+
+|===

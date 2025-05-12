@@ -1658,7 +1658,6 @@
   <block id="738140038c4506b7e29508b58d682758" category="paragraph"><block ref="738140038c4506b7e29508b58d682758" category="inline-link-rx"></block></block>
   <block id="28d40d49edc5d8557dfa8624f4921f55" category="section-title">オペレーティングシステムとVMのメンテナンス</block>
   <block id="19584c42f9ee050980069e98aba18776" category="paragraph">コネクタホストでのオペレーティングシステムの保守はお客様の責任で行ってください。たとえば、オペレーティングシステムの配布に関する会社の標準手順に従って、コネクタホストのオペレーティングシステムにセキュリティ更新プログラムを適用する必要があります。</block>
-  <block id="58eaadf4bb73c6121323ec8ad981c1bf" category="paragraph">コネクタVMを停止してから起動する必要がある場合は、クラウドプロバイダのコンソールから、またはオンプレミス管理の標準手順を使用して起動する必要があります。</block>
   <block id="56f7fa1ed2a5960645c3e1c3f3521ac4" category="inline-link-macro">コネクタは常に動作している必要があることに注意してください</block>
   <block id="50f74838f982f7a3b705af170ddd7da4" category="paragraph"><block ref="c94a7910d5b535a9c639377af3b5e75b" category="inline-link-macro-rx"></block>。</block>
   <block id="f86faf1862caeed3f6dccfce3a669edf" category="section-title">コネクタを切り替えます</block>
@@ -3486,7 +3485,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="99ca40e706695ba7607287669fab39f3" category="cell">アベイラビリティゾーンがAWSローカルゾーンであるかどうかを確認し、すべての導入パラメータに互換性があることを確認します。</block>
   <block id="0683995d371439e19d907680da921ba9" category="section-title">2024年5月9日</block>
   <block id="376a26b461e6c64a1c38b284dbc9703f" category="paragraph">Cloud Volumes ONTAPには次の権限が必要です。</block>
-  <block id="caf547270bba046bebc03d7ccf4b0203" category="paragraph">マイナーなセキュリティ更新を適用する場合は、コネクタホスト上のサービスを停止する必要はありません。</block>
   <block id="ebb952d62c1eec36921c93691e959c82" category="paragraph"><block ref="ebb952d62c1eec36921c93691e959c82" category="inline-link-macro-rx"></block></block>
   <block id="25ed61080ee73d701a5ba6feef931050" category="paragraph"><block ref="25ed61080ee73d701a5ba6feef931050" category="inline-link-macro-rx"></block></block>
   <block id="1b9eb4a1347f52519d9e7d0e26300a53" category="paragraph"><block ref="01cf67ff20127008355664826b726767" category="inline-link-macro-rx"></block>。</block>
@@ -3951,19 +3949,13 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="cdf60a7d13d1d74e115661d87ae97a3f" category="list-text">Ubuntu 24.04 LTS</block>
   <block id="b6f945763d62ac8e8f24fb52111049ee" category="summary">BlueXP  IDおよびアクセス管理には、組織のメンバーに割り当てることができる事前定義されたロールがいくつか含まれています。</block>
   <block id="6a476d78ce3a8169d99c99c3285fa106" category="section-title">組織管理者</block>
-  <block id="b35f7cd4ff8cf3b50f8a254ff8eaab4d" category="list-text">このロールを持つメンバーは、BlueXP  で次の操作を実行できます。</block>
   <block id="b7468effacd77ea7140c661bd2dce11a" category="list-text">権限を持つプロジェクトおよびフォルダ内のすべての作業環境を管理します。</block>
   <block id="b510afc7b0f705daf7ba3b0e6a9509ab" category="list-text">すべてのBlueXP  サービスを使用する</block>
   <block id="379e8cc7b99cd4d7696788fde49a89de" category="list-text">[設定]&gt;[クレデンシャル]</block>
   <block id="5c2549b200adb54fcf4ab1fa173b79b7" category="list-text">BlueXP  タイムラインを表示</block>
   <block id="ea6f3818343083288cee520c382ca65a" category="list-text">BlueXP  を登録してサポートケースを送信</block>
   <block id="36910b765d93c29f4611f725c05faabe" category="section-title">SnapCenterカンリシヤ</block>
-  <block id="9475c3d2084f0988bba4e27b2659a267" category="list-text">アプリケーションのBlueXP  バックアップ/リカバリを使用して、オンプレミスのONTAPクラスタからSnapshotをバックアップできます。</block>
   <block id="b839a58c0750f04dc83675a2a8c1ba61" category="list-text">[Backup and Recovery]&gt;[Applications]から任意の操作を実行します。</block>
-  <block id="1393a4279651a3334e20f39925a139f5" category="section-title">分類ビューア</block>
-  <block id="4a7c2bc5a034a095b9cd966aff4637c5" category="list-text">BlueXP  分類スキャン結果を表示する機能を提供します。</block>
-  <block id="84e4a7656b5466806bf9fbeda2eedd15" category="list-text">コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成します。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。</block>
-  <block id="5f8c43dca47697fafd9a89eae3ea6f82" category="paragraph">このロールを持つメンバーは、他のアクションを使用できません。</block>
   <block id="ef8eb5bec0bebce3b4cac1797fe12831" category="list-text"><block ref="ef8eb5bec0bebce3b4cac1797fe12831" category="inline-link-macro-rx"></block></block>
   <block id="24fff469b53b3c0caad8c3049aada3bc" category="doc">BlueXP  コンソールのネットワークの準備</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="list-title">関連情報</block>
@@ -4891,13 +4883,8 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="31e872437335d3d81483e87525b418b2" category="paragraph">an_organization_は、BlueXP  のIAMシステムの最上位レベルであり、通常は会社を表します。組織は、フォルダ、プロジェクト、メンバー、ロール、およびリソースで構成されています。コネクタは、組織内の特定のプロジェクトに関連付けられています。</block>
   <block id="2514dc2ef1e14f7696838f5cc8280315" category="paragraph">BlueXP  にサインアップすると、新しい組織を作成するように求められます。</block>
   <block id="229579d2bfa52f21a46468d1600ae5db" category="paragraph">フォルダを作成する必要はありません。これらはオプションです。</block>
-  <block id="778cae7482baa87153f906bf3473adc3" category="section-title">事前定義のロール</block>
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  では、組織のメンバーに割り当てることができるいくつかの事前定義されたロールがサポートされています。</block>
-  <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">IAMの事前定義されたロールの詳細</block>
-  <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>です。</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">プラットフォームの役割</block>
-  <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">組織内のすべてのプロジェクトおよびフォルダへの無制限のアクセス、任意のプロジェクトまたはフォルダへのメンバーの追加、任意のBlueXP  タスクの実行、任意のデータサービスの使用をユーザーに許可します。</block>
-  <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">プラットフォームの役割の比較表</block>
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">大規模な多国籍組織のBlueXP  における組織の役割の例</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">必要に応じて、*メンバーの追加*を選択して、フォルダーまたはプロジェクトへのアクセス権を持つ追加の組織メンバーを指定し、役割を選択します。ロールは、メンバーがフォルダまたはプロジェクトに対して持つ権限を定義します。</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">[メンバー]ページからの権限の管理</block>
@@ -4916,9 +4903,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="a7d6279e87395342f6ca8ef1ab6ad3ca" category="list-text"><block ref="a7d6279e87395342f6ca8ef1ab6ad3ca" category="inline-link-macro-rx"></block></block>
   <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">アプリケーションの役割</block>
   <block id="a11961cab6627eac643ea36ae57ce8df" category="section-title">Keystoneロール</block>
-  <block id="2a04d5504b28b9efe0f0dfff02a03355" category="paragraph">次のロールを使用して、Keystoneへのユーザアクセスを割り当てることができます。</block>
-  <block id="cdcfd0d4763f6f8983003ea128be38cf" category="list-text">* Keystone管理者*：Keystoneサブスクリプションを管理し、アラート、レポート、サブスクリプションに対してアクションを実行します。</block>
-  <block id="3275a956f3a80df98f4623ac3ac931a6" category="list-text">* Keystone Viewer *：Keystoneサブスクリプションのほか、レポート、アラート、アセットを表示できます。</block>
   <block id="147e83598b37ab6627136a0fbebd7717" category="paragraph">次の表に、Keystoneの各ロールで実行できるアクションを示します。</block>
   <block id="4420e7353184ac575b539cdce1b991db" category="cell">特徴とアクション</block>
   <block id="3522959e95c9f2aad088e504a7c016d0" category="cell">Keystone管理者</block>
@@ -4940,10 +4924,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="4d1159457f35bcc3ef7ee5b2f65bc124" category="cell">自分用のレポートの作成</block>
   <block id="3b8988881170da948296006bcb3af098" category="cell">*サービスリクエスト*：</block>
   <block id="c144ad302e0d51a72f17afbd09594ba8" category="cell">サービスリクエストの作成</block>
-  <block id="452c59bc627cf63c04afb8e67c894d8f" category="paragraph">分類には管理者ロールがありません。</block>
-  <block id="6e4131153ef85e6099f1a34150c48c4e" category="paragraph">次のロールを使用して、ランサムウェア対策へのアクセスをユーザに割り当てることができます。</block>
-  <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">*ランサムウェア対策管理者*：[保護]、[アラート]、[リカバリ]、[設定]、[レポート]の各タブでアクションを管理します。</block>
-  <block id="2342f940e11a97078a40faa46aad14e1" category="list-text">*ランサムウェア対策ビューア*：ワークロードデータの表示、アラートデータの表示、リカバリデータのダウンロード、レポートのダウンロードが可能です。</block>
   <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">次の表に、各BlueXP  ランサムウェア対策ロールで実行できるアクションを示します。</block>
   <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="cell">ランサムウェア対策管理者</block>
   <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="cell">ランサムウェア対策ツール</block>
@@ -4992,20 +4972,15 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  のセットアップと管理</block>
   <block id="52ae0ac7aa539174fa20e657c71eddf3" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）には、リソース階層のさまざまなレベルで組織のメンバーに割り当てることができる、事前定義されたロールがいくつか含まれています。これらのロールを割り当てる前に、各ロールに含まれる権限について理解しておく必要があります。ロールは、プラットフォーム、アプリケーション、データサービスのカテゴリに分類されます。</block>
   <block id="af7aabee58f78d8c3ba27e6b227a45cd" category="paragraph">プラットフォームロールは、ユーザに割り当てることができる最も広範なロールで、ロールの割り当てやユーザの追加など、BlueXPの管理に必要なすべての権限を許可します。プラットフォームロールを持つユーザは、BlueXP  内のすべてのデータサービスとアプリケーションにアクセスできます。BlueXP  IAMには、組織管理者とフォルダ管理者またはプロジェクト管理者という2つのプラットフォームロールがあります。2つのBlueXP  IAMプラットフォームロールの主な違いはスコープです。</block>
-  <block id="354b5c7e04f33eff066b4dc5b8104237" category="paragraph">割り当てられている特定のプロジェクトおよびフォルダへの無制限のアクセスをユーザーに許可します。管理するフォルダまたはプロジェクトにメンバーを追加したり、任意のBlueXP  タスクを実行したり、割り当てられたフォルダまたはプロジェクト内のリソースで任意のデータサービスまたはアプリケーションを使用したりできます。</block>
-  <block id="ac6f21d3ccd4ab7c12a14f56f9a464bd" category="paragraph">フォルダまたはプロジェクト管理者ロールはコネクタを作成できません。</block>
   <block id="91ddd20c84fc1e8ded7b005f805d8705" category="cell">コネクタを作成します</block>
   <block id="1963c5def9c98c78ad1a24795d77fd45" category="cell">フォルダとプロジェクトの作成（削除を含む）</block>
   <block id="3e02e95230f791e515adffdd7086123c" category="cell">既存のフォルダとプロジェクトの名前を変更する</block>
   <block id="c9cff18229760a66e25f980da9c1850b" category="cell">フォルダおよびプロジェクトからのコネクタの削除</block>
   <block id="b6f5b5483997d6dff9a8ee0bc1932433" category="cell">コネクタの管理（証明書、設定などの編集）</block>
-  <block id="0600246627669cf56a49de00fb320e66" category="paragraph">これを実現するために、XYZ社のBlueXP  で組織管理者ロールを割り当てられたユーザーが、初期作業環境を作成してから、地域ごとにBlueXP  に別 々 のフォルダを作成します。各リージョンのフォルダには、そのリージョンに関連するプロジェクト（および関連リソース）が含まれています。組織管理者は、各地域のBlueXP  ユーザーにフォルダ/プロジェクト管理者ロールを割り当てます。</block>
-  <block id="35a83113bde80420d7102c597d0dfac6" category="paragraph">初期セットアップが完了すると、フォルダ管理者またはプロジェクト管理者の役割を持つ地域管理者は、新しい作業環境を作成し、地域内にユーザーを追加できます。これらの地域管理者は、割り当てられているフォルダやプロジェクトを追加/削除/名前変更することもできます。組織管理者は、新しい作業環境やリソースの権限を継承し、組織全体でのストレージ使用状況の可視性を維持します。</block>
   <block id="d76310e425debd9a2b76f8114d4c1d27" category="paragraph">アプリケーションカテゴリのロールのリストを次に示します。各ロールには、指定した範囲内で特定の権限が付与されます。必要なアプリケーションロールまたはプラットフォームロールを持たないユーザーは、アプリケーションにアクセスできません。</block>
   <block id="4be5ebc45ada5051c97493c24dafb98f" category="admonition">現在、BlueXP  経由でKeystoneにアクセスする作業はベータ版です。Keystoneベータ版への参加をご希望の場合は、NetAppの担当者にお問い合わせください。</block>
   <block id="124cd0f2df6f1c0e90303ec188b16200" category="cell">サブスクリプションの表示</block>
   <block id="d01d98071916332acadef4e86c7ff279" category="cell">サブスクリプションの修正または更新</block>
-  <block id="57b248bc2bcc519c9d26da79b5753feb" category="cell">組織内の任意のユーザーが作成したCViewサービスリクエスト</block>
   <block id="40abfc355f5aea2697c05cedc7637005" category="section-title">データサービスロール</block>
   <block id="3b5148467641fe76592e826ef571410c" category="paragraph">データサービスカテゴリのロールのリストを次に示します。各ロールには、指定した範囲内で特定の権限が付与されます。必要なデータサービスロールまたはプラットフォームロールがないユーザは、データサービスにアクセスできません。</block>
   <block id="490e13bea5876f4583d326593619ee16" category="list-text">Cloud Volumes ONTAPシステムの管理は、オペレーティングシステムでSELinuxが有効になっているコネクタでサポートされるようになりました。</block>
@@ -5027,8 +5002,113 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="91db0dcecdec6f07d8d7296d1c7d5cf1" category="list-text">更新するNSSアカウントのを選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>、*[Display Email Address]*を選択します。コピーボタンを使用して、電子メールアドレスをコピーできます。</block>
   <block id="95113dfcf72340b0f58f2233f6b68f7d" category="paragraph">Cloud Volumes ONTAP作業環境に現在関連付けられているアカウントは削除できません。あなたは最初にする必要があります<block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>。</block>
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">2025年2月18日</block>
-  <block id="186343db38833a48df757e694e69337d" category="doc">BlueXP  に関連付けられたNSSクレデンシャルの管理</block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">デジタルウォレットでライセンスが更新されるため、新しく購入した容量を利用することはできません。</block>
   <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">コネクタホストでのオペレーティングシステムの保守は、お客様の責任で行ってください。たとえば、ユーザー(顧客)は、オペレーティングシステムの配布に関する会社の標準手順に従って、コネクタホスト上のオペレーティングシステムにセキュリティ更新プログラムを適用する必要があります。</block>
   <block id="ec3b20ec97830a6ca400807ee52fba22" category="list-text">Linuxホストから、削除する古い、現在使用されていないコンテナイメージファイルを削除します。これにより、/varディレクトリに再インストールするのに十分なスペースが確保されます。</block>
+  <block id="1d91ba09123988594615f201a8f3eb35" category="paragraph">27.0.0および28.0.0は、_new_connector 3.9.52以降のインストールでサポートされます。</block>
+  <block id="acd994f3f908677c5d2ca549b13f2fdd" category="paragraph">マイナーなセキュリティ更新プログラムを適用する場合は、コネクタホスト上のサービスを停止する必要はありません。</block>
+  <block id="cadb6c86b1cf837dd9677b37639d5d4d" category="paragraph">コネクタVMを停止してから起動する必要がある場合は、クラウドプロバイダのコンソールから、またはオンプレミス管理の標準手順を使用して起動する必要があります。</block>
+  <block id="f4136fdf902ca32b4530c7a614c0ed71" category="doc">コネクタ3.9.52</block>
+  <block id="aa9f9a6b10a3fcd2209035620051306c" category="paragraph">このリリースのBlueXP  Connectorには、セキュリティのマイナーな改善とバグの修正、およびいくつかの追加アップデートが含まれています。</block>
+  <block id="6f9b6bb76caa4f1e59bff34c9ae037fe" category="paragraph">現時点では、3.9.52リリースは標準モードと制限モードで使用できます。</block>
+  <block id="66b821747bf772a5a92a60270143558a" category="section-title">Docker 27およびDocker 28のサポート</block>
+  <block id="01bd213c78b554183ce88619eeb02cce" category="paragraph">コネクタでDocker 27とDocker 28がサポートされるようになりました。</block>
+  <block id="ab83fd01c3620a62252ab67adbc06a91" category="section-title">Keystoneの管理はBlueXP  で可能</block>
+  <block id="4359bea5882e2896e306955792589a33" category="paragraph">BlueXP  のNetApp Keystoneベータ版では、Keystone管理機能へのアクセスが追加されました。NetApp Keystoneベータ版のサインアップページには、BlueXP  の左側のナビゲーションバーからアクセスできます。</block>
+  <block id="3c4f7accda6c4e5b05c122dfef01bebe" category="paragraph">次のセクションでは、BlueXP  内でIAMを使用するさまざまなコンポーネントについて説明します。</block>
+  <block id="e95e1ea14aa7dd2b3186795a75b45b13" category="paragraph">担当リソースまたはストレージリソースの分離が必要な場合は、リソースをフォルダに整理できます。</block>
+  <block id="b1371d1a1eaa0db34a42be4569a94358" category="section-title">アクセスロール</block>
+  <block id="55b6d94d9ad6439fe5c46ccdba149ed3" category="paragraph">BlueXP  では、組織のメンバーに割り当てることができる複数のアクセスロールがサポートされています。</block>
+  <block id="2c2e7be4268cd14a5e106bbdd7de7669" category="section-title">アクセスロール</block>
+  <block id="481fde2b9d3163b5bc94a4f5d5a81c31" category="summary">BlueXP  IDおよびアクセス管理には、組織のメンバーに割り当てることができる2つの管理ロールが用意されています。</block>
+  <block id="917ed85266888b2a7a9981b7b5a988fd" category="doc">BlueXP  向けのKeystoneアクセスロール</block>
+  <block id="8523ef412b93586e7483ff371da34a44" category="paragraph">Keystoneロールは、Keystoneダッシュボードへのアクセスを提供し、ユーザがKeystoneサブスクリプションを表示および管理できるようにします。Keystoneには、Keystone管理者とKeystoneビューアの2つのロールがあります。この2つの役割の主な違いは、Keystoneで実行できるアクションです。Keystone管理者ロールは、サービスリクエストの作成やサブスクリプションの変更を許可される唯一のロールです。</block>
+  <block id="cf05bacc5606910682219fb31232e8be" category="paragraph-title">BlueXP  でのKeystoneロールの例</block>
+  <block id="6711a14165f040e53c13e848daea3ef0" category="paragraph">XYZ Corporationでは、Keystoneサブスクリプションに関する情報を確認するために、さまざまな部門から4人のストレージエンジニアがKeystoneサブスクリプションに参加しています。これらのユーザはいずれもKeystoneサブスクリプションを監視する必要がありますが、サービスのリクエストはチームリーダーのみが許可されます。チームメンバーの3人には「Keystoneビューア」ロールが割り当てられ、チームリーダーには「Keystone管理者」ロールが割り当てられます。これにより、会社に対するサービスリクエストを管理できるようになります。</block>
+  <block id="e9bbe4519d8938c73c2ce0dbaa4adf60" category="cell">組織内の任意のユーザーが作成したサービスリクエストを表示する</block>
+  <block id="f14b021b1ac020c4bd6150459ddd2d19" category="doc">BlueXP  プラットフォームアクセスロール</block>
+  <block id="2a80e7029e86e0b477bbea9ab387b5e3" category="paragraph">プラットフォームロールは、ユーザに割り当てることができる最も広範なロールで、ロールの割り当てやユーザの追加など、BlueXPの管理に必要なすべての権限を許可します。プラットフォームロールを持つユーザは、BlueXP  内のすべてのデータサービスとアプリケーションにアクセスできます。BlueXP  には、* Organization admin*と* FolderまたはProject admin*という2つのプラットフォームロールがあります。2つのBlueXP  プラットフォームロールの主な違いは、ロールが適用される範囲です。</block>
+  <block id="0a93e6a5a2b06eac2cb4370bc70d9a40" category="paragraph">これを実現するために、XYZ CorporationのBlueXP  で* Organization admin*ロールを割り当てられたユーザーが、初期作業環境を作成し、地域ごとにBlueXP  に別 々 のフォルダを作成します。各リージョンのフォルダには、そのリージョンに関連するプロジェクト（および関連リソース）が含まれています。組織管理者*は、各地域のBlueXP  ユーザーに*フォルダまたはプロジェクト管理者*ロールを割り当てます。</block>
+  <block id="14be76003904f893c083de9f6a193111" category="paragraph">初期セットアップが完了すると、*フォルダまたはプロジェクト管理者*ロールを持つ地域管理者は、新しい作業環境を作成し、地域内にユーザーを追加できます。これらの地域管理者は、割り当てられているフォルダやプロジェクトを追加/削除/名前変更することもできます。組織管理者*は、新しい作業環境やリソースの権限を継承し、組織全体でのストレージ使用状況の可視性を維持します。</block>
+  <block id="f7e279e88014dd7b5f4694b49a2c91f2" category="paragraph">次の表に、BlueXP  プラットフォームの各ロールで実行できるアクションを示します。</block>
+  <block id="3aba2887bff41f744b43940b1b82080a" category="cell">プラットフォームの役割</block>
+  <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">責任</block>
+  <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">組織管理者</block>
+  <block id="35ccbb635b1465432c3a19f88cbf034c" category="cell"><block ref="35ccbb635b1465432c3a19f88cbf034c" category="inline-link-macro-rx"></block></block>
+  <block id="6d67156c2e45db37cd67283f29d6768d" category="cell">組織内のすべてのプロジェクトおよびフォルダへの無制限のアクセス、任意のプロジェクトまたはフォルダへのメンバーの追加、任意のBlueXP  タスクの実行、任意のデータサービスの使用をユーザーに許可します。このロールのユーザは、BlueXP  環境全体の整理と管理を行う必要があります。フォルダやプロジェクトを作成したり、ロールを割り当てたり、任意のプロジェクトやフォルダにユーザーを追加したりできます。また、組織内のすべての作業環境を管理することもできます。これは、コネクタを作成できる唯一のアクセスロールです。</block>
+  <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
+  <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">割り当てられている特定のプロジェクトおよびフォルダへの無制限のアクセスをユーザーに許可します。管理するフォルダまたはプロジェクトにメンバーを追加したり、任意のBlueXP  タスクを実行したり、割り当てられたフォルダまたはプロジェクト内のリソースで任意のデータサービスまたはアプリケーションを使用したりできます。フォルダまたはプロジェクト管理者ロールはコネクタを作成できません。</block>
+  <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">アプリケーションの役割</block>
+  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
+  <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Keystone管理者ロールを持つユーザは、サービスリクエストを作成できます。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。</block>
+  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
+  <block id="1457cd573aaf85c5528a52382534d843" category="cell">Keystone Viewerロールのユーザはサービスをリクエストできません。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。////</block>
+  <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">Storage Admin</block>
+  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
+  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">ストレージの健全性とガバナンス機能の管理、ストレージリソースの検出、既存の作業環境の変更と削除を実行できます。</block>
+  <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">ストレージビューア</block>
+  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
+  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">ストレージの健全性とガバナンスの機能、および以前に検出されたストレージリソースを表示できます。既存のストレージ作業環境を検出、変更、削除することはできません。</block>
+  <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">システムヘルススペシャリスト</block>
+  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
+  <block id="d5ce9b158c00a4469a72ebb1ff919ca7" category="cell">ストレージ、健常性、ガバナンスの各機能を管理します。既存の作業環境を変更または削除することはできません。ただし、ストレージ管理者のすべての権限を管理することはできません。////</block>
+  <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">データサービスの役割</block>
+  <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分類管理者</block>
+  <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">BlueXP  分類スキャン結果を表示する機能を提供します。分類には、ビューアの役割はありません。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。</block>
+  <block id="d9662380e44d74fee971f8bcdbb998ba" category="cell"><block ref="d9662380e44d74fee971f8bcdbb998ba" category="inline-link-macro-rx"></block></block>
+  <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">ランサムウェア対策サービスの[保護]、[アラート]、[リカバリ]、[設定]、[レポート]の各タブでの操作を管理します。</block>
+  <block id="61e1bc1deec24a3ec686d90d9df2cf23" category="cell"><block ref="61e1bc1deec24a3ec686d90d9df2cf23" category="inline-link-macro-rx"></block></block>
+  <block id="c449660979799948a46372470a0eddb9" category="cell">ランサムウェア対策サービスで、ワークロードデータの表示、アラートデータの表示、リカバリデータのダウンロード、レポートのダウンロードを行うことができます。</block>
+  <block id="7da7bcb3da6129c11bc8f0544e81beb1" category="paragraph">アプリケーションのBlueXP  バックアップ/リカバリを使用して、オンプレミスのONTAPクラスタからSnapshotをバックアップできます。このロールを持つメンバーは、BlueXP  で次の操作を実行できます。</block>
+  <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">BlueXP  のランサムウェア対策アクセスロール</block>
+  <block id="47ecf80e12db1325b5156ff3a7d35b15" category="paragraph">ランサムウェアの役割は、ランサムウェア対策サービスへのアクセスを提供するように設計されている。ユーザには、ランサムウェア対策のアクションを実行できる管理者ロールと、監視だけの場合はビューアロールのどちらかを割り当てることができます。Ransomware Protection AdminとRansomware Protection Viewerの2つのロールがあります。この2つのロールの主な違いは、ランサムウェア対策で実行できるアクションです。</block>
+  <block id="318302fa87b47b527d51268d94db7ea6" category="doc">BlueXP  のストレージアクセスロール</block>
+  <block id="53105795a2d166c0331ae09564295071" category="paragraph">次のロールをユーザに割り当てて、サポートされるストレージリソースに関連付けられているBlueXP  のストレージ管理機能へのアクセスをユーザに許可することができます。ユーザには、ストレージ管理でアクションを実行できる管理ロールを割り当てることも、監視だけの場合はビューアロールを割り当てることもできます。</block>
+  <block id="09e3c84fe1afd5eaa9fc94f8638d3695" category="paragraph">ストレージロールは、次のストレージリソースおよび機能のユーザに割り当てることができます。</block>
+  <block id="2074db110c64e6023c79b620df0670af" category="paragraph">ストレージリソース：</block>
+  <block id="8961844857d18125fa7300df96ad4e94" category="paragraph">BlueXP  のサービスと機能：</block>
+  <block id="7d4d3675a79561800c46dfdad71222a2" category="paragraph-title">BlueXP  のストレージロールの例</block>
+  <block id="47f8970af0c44342a763bfde8e222e13" category="paragraph">多国籍企業であるXYZ Corporationには、ストレージエンジニアやストレージ管理者の大規模なチームがあります。お客様は、このチームがそれぞれの地域のストレージ資産を管理できるようにする一方で、ユーザ管理、コネクタ作成、デジタルウォレットなどのコスト管理ツールなど、BlueXP  のコア管理タスクへのアクセスを制限したいと考えています。</block>
+  <block id="3917088f255e5877d39c6fe9da2e1f62" category="paragraph">12人のチームでは、2人のユーザに* Storage viewer *ロールが割り当てられ、割り当てられているBlueXP  プロジェクトに関連付けられているストレージリソースを監視できます。残りの9つには* Storage Admin *ロールが割り当てられます。このロールには、ソフトウェアの更新の管理、BlueXP  からONTAP System Managerへのアクセス、ストレージリソースの検出（作業環境の追加）が含まれます。チームの1人には*システムヘルススペシャリスト*ロールが割り当てられます。このロールでは、担当地域のストレージリソースの健全性を管理できますが、作業環境の変更や削除はできません。また、割り当てられたプロジェクトのストレージリソースに対してソフトウェアの更新を実行することもできます。</block>
+  <block id="31fd11b2048f5356558b9e26634e67ce" category="paragraph">組織には、ユーザー管理、コネクタ作成、デジタルウォレットなどのコスト管理ツールなど、BlueXP  のすべての側面を管理できる* Organization admin*ロールを持つ2人のユーザーと、割り当てられているフォルダおよびプロジェクトのBlueXP  管理タスクを実行できる*フォルダまたはプロジェクト管理者*ロールを持つ複数のユーザーがいます。</block>
+  <block id="294e40f9cc227c86e788ac8d546ddade" category="paragraph">次の表に、各BlueXP  ストレージロールで実行できる操作を示します。</block>
+  <block id="32d0b8cf78bc04242aed5ba6801818b6" category="cell">*キャンバス*：</block>
+  <block id="eaef5d2ec844a2f5d6658bd86a05a85a" category="cell">新しいリソースの検出（新しい作業環境の作成）</block>
+  <block id="65075797bf35acb1b1da033d464a2127" category="cell">検出されたリソースを表示</block>
+  <block id="93b557fcf4dca896b9a77328a5ae0e92" category="cell">作業環境を削除します</block>
+  <block id="c7b18a0b4f7adea3bae003772260030d" category="cell">作業環境の変更</block>
+  <block id="a58bf8bc00d7951e76f88f0a279baa68" category="cell">*コネクタの作成*</block>
+  <block id="8822cc008eedc76497bc19a6017e6e3c" category="cell">*デジタルアドバイザ*</block>
+  <block id="eab210dd297eed7a23f02ae9ff070512" category="cell">すべてのページと機能を表示</block>
+  <block id="15f388beaad85e03ee21e73343d1f1e7" category="cell">*デジタルウォレット*</block>
+  <block id="5c079e1551d5969c8a448104c556be58" category="cell">*ソフトウェアのアップデート*</block>
+  <block id="f65dcc1f4a8bfacd0a2da1809fb7646a" category="cell">ランディングページと推奨事項を表示する</block>
+  <block id="b578911d78bfaf1e75bbe69b0a471d0b" category="cell">推奨されるバージョンと主なメリットを確認する</block>
+  <block id="34153016d27f6bc08ca28afe350597f0" category="cell">クラスタの更新の詳細を表示する</block>
+  <block id="b9632e5402da95a15f8096dffe8fe849" category="cell">更新前チェックを実行し、アップグレードプランをダウンロード</block>
+  <block id="26c438938da81386c731f3d387eda803" category="cell">ソフトウェアアップデートのインストール</block>
+  <block id="faf3b0fdd74f34bfe5b5e712fd212952" category="cell">*運用の耐障害性*</block>
+  <block id="71dfe4aa697335a7f919f97a8273c0b2" category="cell">セキュリティリスクの問題をレビューします</block>
+  <block id="0416203226164e8fc52087494d33b58d" category="cell">Ansibleプレイブックをダウンロード</block>
+  <block id="55ecbcc86c1df8e0bbccc58434b65675" category="cell">問題を自動的に修正</block>
+  <block id="c7c10204d64df7a89f6234e58c752612" category="cell">*経済効率*</block>
+  <block id="2dcdbb99022cfb6c4ef2bd327930b9d0" category="cell">キャパシティプランニングのステータスを確認します</block>
+  <block id="a9857843d1ca1e121ff59133f171d8cf" category="cell">次のアクションを選択（ベストプラクティス、階層）</block>
+  <block id="80b117d13aeb1c0337cca44c4f432522" category="cell">コールドデータをクラウドストレージに階層化し、ストレージを解放します</block>
+  <block id="92232278439b322df2fe12388a374e65" category="cell">リマインダーを設定する</block>
+  <block id="b028539b680706e70a20202f01750b69" category="cell">*持続可能性*</block>
+  <block id="912c827ef07339a2dbfe984d27d383f4" category="cell">ダッシュボードと推奨事項を表示</block>
+  <block id="7060312ff39606d1f6621f242cc6790b" category="cell">レポートデータをダウンロード</block>
+  <block id="512234aa0dc7508aa0db235f9f41b384" category="cell">炭素軽減パーセンテージの編集</block>
+  <block id="45ecf2d70851bc50cacb9f98bc2fea05" category="cell">推奨事項の修正</block>
+  <block id="7aea1a17c89c2ee783bd1fa5128e24a4" category="cell">推奨事項を延期</block>
+  <block id="6223d9366b08aab00344df4d74ae6ef3" category="cell">*システムマネージャへのアクセス*</block>
+  <block id="27f3006d10a705c76accae9904ea16cd" category="cell">クレデンシャルを入力可能</block>
+  <block id="3a8e375f86c81e7b283b9ee0db531e4d" category="cell">* 資格情報 *</block>
+  <block id="1dc9c22149f4c0ef8e2fc6c49159dc73" category="cell">ユーザクレデンシャル</block>
+  <block id="6cf4eb09d2134609121513a507415999" category="doc">BlueXP  に関連付けられたNSSクレデンシャルの管理</block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025年5月12日</block>
+  <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">BlueXP  アクセスロールの詳細</block>
+  <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">データサービスの役割</block>
+  <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">ランサムウェア対策の役割</block>
 </blocks>

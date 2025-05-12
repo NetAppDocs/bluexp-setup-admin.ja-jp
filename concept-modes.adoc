@@ -407,7 +407,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | ワークロードファクトリ | いいえ | いいえ 
 
 
-.7+| *機能* | BlueXP  IDおよびアクセス管理 | いいえ | いいえ 
+.7+| *機能* | BlueXP  IDおよびアクセス管理 | はい。 | いいえ 
 
 
 | BlueXPのアカウント | はい。 | はい。 
