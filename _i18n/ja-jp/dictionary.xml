@@ -5039,19 +5039,10 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
   <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">割り当てられている特定のプロジェクトおよびフォルダへの無制限のアクセスをユーザーに許可します。管理するフォルダまたはプロジェクトにメンバーを追加したり、任意のBlueXP  タスクを実行したり、割り当てられたフォルダまたはプロジェクト内のリソースで任意のデータサービスまたはアプリケーションを使用したりできます。フォルダまたはプロジェクト管理者ロールはコネクタを作成できません。</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">アプリケーションの役割</block>
-  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Keystone管理者ロールを持つユーザは、サービスリクエストを作成できます。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。</block>
-  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
-  <block id="1457cd573aaf85c5528a52382534d843" category="cell">Keystone Viewerロールのユーザはサービスをリクエストできません。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。////</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">Storage Admin</block>
-  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
-  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">ストレージの健全性とガバナンス機能の管理、ストレージリソースの検出、既存の作業環境の変更と削除を実行できます。</block>
   <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">ストレージビューア</block>
-  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
-  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">ストレージの健全性とガバナンスの機能、および以前に検出されたストレージリソースを表示できます。既存のストレージ作業環境を検出、変更、削除することはできません。</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">システムヘルススペシャリスト</block>
-  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
-  <block id="d5ce9b158c00a4469a72ebb1ff919ca7" category="cell">ストレージ、健常性、ガバナンスの各機能を管理します。既存の作業環境を変更または削除することはできません。ただし、ストレージ管理者のすべての権限を管理することはできません。////</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">データサービスの役割</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分類管理者</block>
   <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">BlueXP  分類スキャン結果を表示する機能を提供します。分類には、ビューアの役割はありません。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。</block>
@@ -5111,4 +5102,7 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">BlueXP  アクセスロールの詳細</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">データサービスの役割</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">ランサムウェア対策の役割</block>
+  <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
+  <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
+  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Keystoneビューアロールのユーザはサービスリクエストを作成できません。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。</block>
 </blocks>
