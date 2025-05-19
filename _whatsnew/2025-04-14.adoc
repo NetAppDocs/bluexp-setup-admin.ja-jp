@@ -12,6 +12,12 @@
 
 
 
+==== コネクタのダウンロード用のセキュアなエンドポイントが、バックアップとリカバリとランサムウェア対策でサポートされるようになりました。
+
+Backup and RecoveryまたはRansomware Protectionを使用している場合は、コネクタのダウンロードにセキュアなエンドポイントを使用できるようになりました。 link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images["コネクタのダウンロード用のセキュアなエンドポイントについて説明します。"^]
+
+
+
 === BlueXP  IDおよびアクセス管理（IAM）
 
 * Org管理者、フォルダ管理者、プロジェクト管理者がいないユーザにランサムウェア対策にアクセスするには、ランサムウェア対策ロールが割り当てられている必要があります。ユーザには、Ransomware protection adminまたはRansomware protection viewerのいずれかのロールを割り当てることができます。

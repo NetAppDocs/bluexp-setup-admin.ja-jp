@@ -5105,4 +5105,7 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
   <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Keystoneビューアロールのユーザはサービスリクエストを作成できません。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。</block>
+  <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">コネクタのダウンロード用のセキュアなエンドポイントが、バックアップとリカバリとランサムウェア対策でサポートされるようになりました。</block>
+  <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">コネクタのダウンロード用のセキュアなエンドポイントについて説明します。</block>
+  <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Backup and RecoveryまたはRansomware Protectionを使用している場合は、コネクタのダウンロードにセキュアなエンドポイントを使用できるようになりました。 <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
 </blocks>
