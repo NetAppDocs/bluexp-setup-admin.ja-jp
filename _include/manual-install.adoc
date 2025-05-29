@@ -91,6 +91,27 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 --cacertsは、コネクタとプロキシサーバ間のHTTPSアクセスに使用するCA署名証明書を指定しています。このパラメータは、HTTPSプロキシサーバを指定する場合、または代行受信プロキシを指定する場合にのみ必要です。
 
+. Podman を使用した場合は、aardvark-dns ポートを調整する必要があります。
++
+.. BlueXP Connector 仮想マシンに SSH で接続します。
+.. podman _/usr/share/containers/containers.conf_ ファイルを開き、Aardvark DNS サービスに選択したポートを変更します。例えば、54 に変更します。
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. コネクタ仮想マシンを再起動します。
+
+
 
 
 . インストールが完了するまで待ちます。
@@ -113,6 +134,3 @@ https://_ipaddress_[]
 
 
 
-
-.結果
-これでコネクタがインストールされ、BlueXP  組織でセットアップされました。

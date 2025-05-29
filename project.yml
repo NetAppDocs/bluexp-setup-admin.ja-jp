@@ -139,6 +139,8 @@ sidebar:
           entries:
           - title: Keystoneロール
             url: "/reference-iam-keystone-roles.html"
+          - title: ストレージの役割
+            url: "/reference-iam-storage.roles.html"
         - title: データサービスの役割
           entries:
           - title: ランサムウェア対策の役割

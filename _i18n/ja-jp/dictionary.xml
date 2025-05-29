@@ -2248,9 +2248,6 @@
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">ボリュームキャッシュ</block>
   <block id="5bf7ac4937c946ab4eedfb091ffa67ab" category="section-title">コネクタは常に動作している必要があります</block>
   <block id="5e546ca24430fc2b79e0e409176438c9" category="paragraph">このドキュメントにはEULAが適用されます。製品がドキュメントに従って操作されていない場合、製品の機能と操作、およびEULAに基づくお客様の権利に悪影響を及ぼす可能性があります。</block>
-  <block id="5d5a04495ebcd46b843dcafaea428460" category="section-title">Cloud Volumes ONTAP への影響</block>
-  <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">コネクタは、Cloud Volumes ONTAP の正常性と動作における重要なコンポーネントです。コネクタの電源がオフの場合は、Cloud Volumes ONTAP PAYGOシステムと容量ベースのBYOLシステムは、コネクタとの通信を14日以上切断したあとでシャットダウンします。これは、コネクタがシステムのライセンスを毎日更新するためです。</block>
-  <block id="b9c53fca7bb84d0455a2b4768b130e38" category="paragraph">Cloud Volumes ONTAP システムにノードベースのBYOLライセンスがある場合は、ライセンスがCloud Volumes ONTAP システムにインストールされているため、14日後もシステムは実行されたままになります。</block>
   <block id="ff0e00d64f60db5d99e55c6d706306cc" category="section-title">サポートされている場所</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="list-text">Amazon Web Services の</block>
   <block id="1668ca1bd914c1d847f23b491319ac91" category="list-text">Microsoft Azure</block>
@@ -3402,10 +3399,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d80ef147e70626ef64e723b33860d715" category="list-text">9.1から9.3</block>
   <block id="bd3df16097ce93a7398107a82c38c714" category="list-text">コンテナオーケストレーションツール</block>
   <block id="58ee14553c5227edc98c5edc7c7652e1" category="list-text">オペレーティングシステムに応じて、コネクタをインストールする前にPodmanまたはDocker Engineのいずれかが必要です。</block>
-  <block id="6c92d07ad47ca46a1d54c06516989463" category="list-text">podman.socketサービスを有効にして開始する必要があります</block>
-  <block id="a9beaf3f1f76b7989733494d5f0683c6" category="list-text">Python3がインストールされている必要があります</block>
-  <block id="43868fbb689a64ee607e9c7e12ad974b" category="list-text">podman-composeパッケージバージョン1.0.6がインストールされている必要があります。</block>
-  <block id="52b91e466535d0b3aeeecf2ff692015c" category="list-text">podman-composeをPATH環境変数に追加する必要があります</block>
   <block id="105ab5fc478f234922108aa9df08a4ee" category="section-title">手順4：PodmanまたはDocker Engineをインストールする</block>
   <block id="539f3f37fd39a23eafb39c20263238f1" category="paragraph">コネクタソフトウェアを手動でインストールする場合は、PodmanまたはDocker Engineをインストールしてホストを準備する必要があります。</block>
   <block id="c124e878249e7549657a0f175026b2f9" category="list-text">Red Hat Enterprise Linux 8および9にはPodmanが必要です。</block>
@@ -4832,17 +4825,12 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="2139dd52a52b11dde53f2a9724789c73" category="list-text">BlueXP  組織の複数のリソース（Org/フォルダ/プロジェクト）への役割の割り当てのサポート</block>
   <block id="f16867c24816cbe638e99bd00c5d371b" category="cell">にアクセス<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>し、バージョン3.9.50および3.9.49の変更点を参照してください。</block>
   <block id="d05e8333cecdf836d5befa221763f3df" category="doc">ロールを使用してリソースへのユーザアクセスを管理する</block>
-  <block id="8d6e47c2cba8a87a34c20d42630d03de" category="paragraph">BlueXP  では、必要な作業と場所に基づいてユーザにロールを割り当てることができます。</block>
-  <block id="43f7ba5a95da6743e6d2a613c53f3979" category="paragraph">組織管理者、フォルダ管理者、またはプロジェクト管理者の役割を持つユーザーは、他のユーザーに役割を割り当てる責任があります。アクセスロールは、プロジェクトまたはフォルダ単位で割り当てることができます。たとえば、あるプロジェクトにRansomware protection adminロールを割り当て、別のプロジェクトにSnapCenter adminロールを割り当てることができます。または、ユーザーが特定のフォルダー内のすべてのプロジェクトに対して分類管理者ロールを必要とする場合は、フォルダーレベルでこのアクセスロールを付与できます。</block>
   <block id="d4cee7f9299f715f35c592b05a90fcd5" category="paragraph">アクセスロールを使用して、ユーザが実行する必要があるBlueXP  タスクに基づいてストレージリソースへのアクセスを割り当てます。たとえば、BlueXP  ユーザがランサムウェア対策サービスを操作する必要がある場合、アクセスロールが付与されているプロジェクトのランサムウェア対策サービスの表示権限または管理権限を含むアクセスロールを付与する必要があります。</block>
   <block id="5bd93d2f07b4ba6321e2f33614c76585" category="paragraph">IAM戦略に基づいてユーザにロールを割り当て、セキュリティを強化します。BlueXP  IAMロールは、ユーザが必要なものだけにアクセスできるようにするために設計されています。</block>
   <block id="9088af3701d0cc1247f7ea61c2e8cc5f" category="inline-link-macro">フォルダとプロジェクトを使用してBlueXP  IAMでリソースを整理する方法について説明します。</block>
-  <block id="008c625fbd0c2108cc88a6317b2572a8" category="admonition">リソースに直接付与することはできません。最初にリソースをプロジェクトに割り当てる必要があります。ユーザにアクセス権を割り当てる前に、リソース階層の設定を検討してください。<block ref="41b378741b8a64d0f324528fa1890b6f" category="inline-link-macro-rx"></block></block>
   <block id="f178bfd6340a45b4202cfc2ad448263a" category="paragraph">BlueXP  組織にメンバーを追加すると、ロールを割り当てるように求められます。メンバーは、現在割り当てられているロールを確認できます。</block>
   <block id="a0a87a9cfcb0287c5701c8fd542f95f5" category="paragraph">フォルダまたはプロジェクトのadmin_roleを持っている場合は'組織内のすべてのメンバーがページに表示されますただし、権限を持つフォルダおよびプロジェクトのメンバー権限のみを表示および管理できます。<block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>です。</block>
   <block id="d63f1c66d83451eade374ce0e602a4b4" category="list-text">テーブルで、メンバーに割り当てられた役割を表示する組織、フォルダ、またはプロジェクトのそれぞれの行を展開し、*役割*列の*表示*を選択します。</block>
-  <block id="58bd7e162d519a40f0d8ae550e293a4c" category="section-title">メンバーへのアクセスロールの追加</block>
-  <block id="cfe68ea193af58b89bdd91bea4468531" category="paragraph">通常、メンバーを組織に追加するときに、メンバーに役割を割り当てます。ただし、ロールを削除するか、別のロールを追加することで、いつでもメンバーのロールを更新できます。ユーザーの役割を削除することで、プロジェクトへのユーザーのアクセス権を削除できます。</block>
   <block id="ba364a79f6fbfab0c8591198ecfd87cc" category="paragraph">ユーザーに組織、フォルダ、またはプロジェクトのアクセスロールを割り当てることができます。</block>
   <block id="a9cc80dbcd1f48accd079ee5c494be43" category="paragraph">メンバーは、同じプロジェクト内および異なるプロジェクト内で複数の役割を持つことができます。たとえば、小規模な組織では、使用可能なすべてのアクセスロールを同じユーザーに割り当てることができますが、大規模な組織では、ユーザーにBlueXP  でより特殊なタスクを割り当てることができます。または、1人のユーザに組織のRansomware projection adminロールを割り当てることもできます。この例では、ユーザは組織内のすべてのプロジェクトに対してランサムウェア対策タスクを実行できます。</block>
   <block id="93bc4c31eeacd2985551a427d417a897" category="paragraph">アクセスロール戦略は、BlueXP  でNetAppリソースを編成した方法に沿っている必要があります。</block>
@@ -4971,7 +4959,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">ロールを使用してリソースへのメンバーアクセスを制御する</block>
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  のセットアップと管理</block>
   <block id="52ae0ac7aa539174fa20e657c71eddf3" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）には、リソース階層のさまざまなレベルで組織のメンバーに割り当てることができる、事前定義されたロールがいくつか含まれています。これらのロールを割り当てる前に、各ロールに含まれる権限について理解しておく必要があります。ロールは、プラットフォーム、アプリケーション、データサービスのカテゴリに分類されます。</block>
-  <block id="af7aabee58f78d8c3ba27e6b227a45cd" category="paragraph">プラットフォームロールは、ユーザに割り当てることができる最も広範なロールで、ロールの割り当てやユーザの追加など、BlueXPの管理に必要なすべての権限を許可します。プラットフォームロールを持つユーザは、BlueXP  内のすべてのデータサービスとアプリケーションにアクセスできます。BlueXP  IAMには、組織管理者とフォルダ管理者またはプロジェクト管理者という2つのプラットフォームロールがあります。2つのBlueXP  IAMプラットフォームロールの主な違いはスコープです。</block>
   <block id="91ddd20c84fc1e8ded7b005f805d8705" category="cell">コネクタを作成します</block>
   <block id="1963c5def9c98c78ad1a24795d77fd45" category="cell">フォルダとプロジェクトの作成（削除を含む）</block>
   <block id="3e02e95230f791e515adffdd7086123c" category="cell">既存のフォルダとプロジェクトの名前を変更する</block>
@@ -5034,9 +5021,7 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="3aba2887bff41f744b43940b1b82080a" category="cell">プラットフォームの役割</block>
   <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">責任</block>
   <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">組織管理者</block>
-  <block id="35ccbb635b1465432c3a19f88cbf034c" category="cell"><block ref="35ccbb635b1465432c3a19f88cbf034c" category="inline-link-macro-rx"></block></block>
   <block id="6d67156c2e45db37cd67283f29d6768d" category="cell">組織内のすべてのプロジェクトおよびフォルダへの無制限のアクセス、任意のプロジェクトまたはフォルダへのメンバーの追加、任意のBlueXP  タスクの実行、任意のデータサービスの使用をユーザーに許可します。このロールのユーザは、BlueXP  環境全体の整理と管理を行う必要があります。フォルダやプロジェクトを作成したり、ロールを割り当てたり、任意のプロジェクトやフォルダにユーザーを追加したりできます。また、組織内のすべての作業環境を管理することもできます。これは、コネクタを作成できる唯一のアクセスロールです。</block>
-  <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
   <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">割り当てられている特定のプロジェクトおよびフォルダへの無制限のアクセスをユーザーに許可します。管理するフォルダまたはプロジェクトにメンバーを追加したり、任意のBlueXP  タスクを実行したり、割り当てられたフォルダまたはプロジェクト内のリソースで任意のデータサービスまたはアプリケーションを使用したりできます。フォルダまたはプロジェクト管理者ロールはコネクタを作成できません。</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">アプリケーションの役割</block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Keystone管理者ロールを持つユーザは、サービスリクエストを作成できます。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。</block>
@@ -5046,13 +5031,10 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">データサービスの役割</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分類管理者</block>
   <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">BlueXP  分類スキャン結果を表示する機能を提供します。分類には、ビューアの役割はありません。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。</block>
-  <block id="d9662380e44d74fee971f8bcdbb998ba" category="cell"><block ref="d9662380e44d74fee971f8bcdbb998ba" category="inline-link-macro-rx"></block></block>
   <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">ランサムウェア対策サービスの[保護]、[アラート]、[リカバリ]、[設定]、[レポート]の各タブでの操作を管理します。</block>
-  <block id="61e1bc1deec24a3ec686d90d9df2cf23" category="cell"><block ref="61e1bc1deec24a3ec686d90d9df2cf23" category="inline-link-macro-rx"></block></block>
   <block id="c449660979799948a46372470a0eddb9" category="cell">ランサムウェア対策サービスで、ワークロードデータの表示、アラートデータの表示、リカバリデータのダウンロード、レポートのダウンロードを行うことができます。</block>
   <block id="7da7bcb3da6129c11bc8f0544e81beb1" category="paragraph">アプリケーションのBlueXP  バックアップ/リカバリを使用して、オンプレミスのONTAPクラスタからSnapshotをバックアップできます。このロールを持つメンバーは、BlueXP  で次の操作を実行できます。</block>
   <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">BlueXP  のランサムウェア対策アクセスロール</block>
-  <block id="47ecf80e12db1325b5156ff3a7d35b15" category="paragraph">ランサムウェアの役割は、ランサムウェア対策サービスへのアクセスを提供するように設計されている。ユーザには、ランサムウェア対策のアクションを実行できる管理者ロールと、監視だけの場合はビューアロールのどちらかを割り当てることができます。Ransomware Protection AdminとRansomware Protection Viewerの2つのロールがあります。この2つのロールの主な違いは、ランサムウェア対策で実行できるアクションです。</block>
   <block id="318302fa87b47b527d51268d94db7ea6" category="doc">BlueXP  のストレージアクセスロール</block>
   <block id="53105795a2d166c0331ae09564295071" category="paragraph">次のロールをユーザに割り当てて、サポートされるストレージリソースに関連付けられているBlueXP  のストレージ管理機能へのアクセスをユーザに許可することができます。ユーザには、ストレージ管理でアクションを実行できる管理ロールを割り当てることも、監視だけの場合はビューアロールを割り当てることもできます。</block>
   <block id="09e3c84fe1afd5eaa9fc94f8638d3695" category="paragraph">ストレージロールは、次のストレージリソースおよび機能のユーザに割り当てることができます。</block>
@@ -5097,16 +5079,60 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="27f3006d10a705c76accae9904ea16cd" category="cell">クレデンシャルを入力可能</block>
   <block id="3a8e375f86c81e7b283b9ee0db531e4d" category="cell">* 資格情報 *</block>
   <block id="1dc9c22149f4c0ef8e2fc6c49159dc73" category="cell">ユーザクレデンシャル</block>
-  <block id="6cf4eb09d2134609121513a507415999" category="doc">BlueXP  に関連付けられたNSSクレデンシャルの管理</block>
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025年5月12日</block>
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">BlueXP  アクセスロールの詳細</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">データサービスの役割</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">ランサムウェア対策の役割</block>
-  <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
-  <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Keystoneビューアロールのユーザはサービスリクエストを作成できません。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。</block>
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">コネクタのダウンロード用のセキュアなエンドポイントが、バックアップとリカバリとランサムウェア対策でサポートされるようになりました。</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">コネクタのダウンロード用のセキュアなエンドポイントについて説明します。</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Backup and RecoveryまたはRansomware Protectionを使用している場合は、コネクタのダウンロードにセキュアなエンドポイントを使用できるようになりました。 <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
   <block id="299e5505ce975112afaefec130cc83e0" category="paragraph">7.9</block>
+  <block id="4d286ab7c41699ac1c0222a6a25c8ee6" category="list-text">Podman を使用した場合は、aardvark-dns ポートを調整する必要があります。</block>
+  <block id="6d6b1f0f1080ec2381bb912afda46e99" category="list-text">BlueXP Connector 仮想マシンに SSH で接続します。</block>
+  <block id="dbd4c3db8125866be9bb5a796f445d43" category="list-text">podman _/usr/share/containers/containers.conf_ ファイルを開き、Aardvark DNS サービスに選択したポートを変更します。例えば、54 に変更します。</block>
+  <block id="c64d59ca306ac51dc7b163258cb6505c" category="list-text">コネクタ仮想マシンを再起動します。</block>
+  <block id="98ddd266a82e7cfd3a24eb45842bec48" category="list-text">podman.socket サービスを有効にして起動します</block>
+  <block id="402a934d05f32752831bc2ed8043fb03" category="list-text">python3の設置</block>
+  <block id="e7655ce2e211e4106a4d229011bca18b" category="list-text">podman-compose パッケージ バージョン 1.0.6 をインストールします。</block>
+  <block id="a50a451f2ba0bc5a53f19d6887c717e4" category="list-text">podman-composeをPATH環境変数に追加する</block>
+  <block id="18a986f7c2b60d8720ae30a7dcf4925a" category="admonition">Podmanを使用する場合は、コネクタをインストールした後、ホストのDNSポートとの競合を避けるため、aardvark-dnsサービスのポート（デフォルト：53）を調整してください。ポートの設定方法については、手順に従ってください。</block>
+  <block id="1cb98a955a2cc6db0fd659024f067adb" category="paragraph">Cloud Volumes ONTAPノードは、コネクタがコンプライアンス違反または14日間以上ダウンしている場合でもシャットダウンしなくなりました。CloudVolumes ONTAPは、コネクタへのアクセスを失った場合でも、イベント管理メッセージを送信します。この変更は、コネクタが長期間ダウンした場合でも、Cloud Volumes ONTAPが動作を継続できるようにするためのものです。コネクタのコンプライアンス要件は変更されません。</block>
+  <block id="b2a4dd9da503b6b927d0278084e6ea56" category="section-title">新しいストレージ管理の役割</block>
+  <block id="bf593570fbef026982251facf0c215e1" category="paragraph">ストレージ管理者、システム正常性スペシャリスト、ストレージ閲覧者の役割が利用可能であり、ユーザーに割り当てることができます。</block>
+  <block id="9e8f8caceb21ce13b88d4160e465e2a5" category="paragraph">これらのロールを使用すると、組織内のどのユーザーがストレージ リソースを検出および管理できるかを管理できるほか、ストレージの正常性情報を表示したり、ソフトウェアの更新を実行したりすることもできます。</block>
+  <block id="1640c7bcb4a85ded2f136361a51dd52e" category="paragraph">これらのロールは、次のストレージ リソースへのアクセスを制御するためにサポートされています。</block>
+  <block id="d0a39c85bb5fdaacac18ed6c4e5b511f" category="list-text">オンプレミスの ONTAP システム</block>
+  <block id="b80ffca4d1f83e77193d4613c9044556" category="paragraph">これらのロールを使用して、次の BlueXP サービスへのアクセスを制御することもできます。</block>
+  <block id="a594a24eac9dea3cdb34c6d3c35b39a6" category="paragraph">次のロールが追加されました:</block>
+  <block id="98d63ffef525e1f04dd3ec407ff57b30" category="list-text">*ストレージ管理者*</block>
+  <block id="f1aeec4f24299e314aab97d634337c25" category="paragraph">組織内のストレージリソースの健全性、ガバナンス、検出を管理します。このロールは、ストレージリソースのソフトウェア更新も実行できます。</block>
+  <block id="24bae3be890c130e5ac1c22d16f741bd" category="list-text">*システムヘルススペシャリスト*</block>
+  <block id="3886b56eea2fe550b4e6b51dc07a1911" category="paragraph">組織内のストレージリソースの健全性とガバナンスを管理します。このロールは、ストレージリソースのソフトウェアアップデートも実行できます。作業環境を変更または削除することはできません。</block>
+  <block id="4172ddc56d4e9fa18f3ae18bdb0184b5" category="list-text">*ストレージビューア*</block>
+  <block id="c4bd9bd2263d800e3d498cc0849de57f" category="paragraph">ストレージの健全性情報とガバナンス データを表示します。</block>
+  <block id="91fc3f2bc4cd3f1898449b6955a5b0dc" category="doc">BlueXP で AWS の認証情報と権限について学ぶ</block>
+  <block id="7de6afef390d0c27101fd5599a80c841" category="doc">BlueXP で Azure の資格情報と権限について学習する</block>
+  <block id="03254909de451d9aa06c90615a3da4c3" category="paragraph">プラットフォームロールは、ユーザに割り当てることができる最も広範なロールで、ロールの割り当てやユーザの追加など、BlueXPの管理に必要なすべての権限を許可します。プラットフォームロールを持つユーザは、BlueXP  内のすべてのデータサービスとアプリケーションにアクセスできます。BlueXP IAM には、組織管理者とフォルダーまたはプロジェクト管理者の 2 つのプラットフォーム ロールが含まれます。2つのBlueXP  IAMプラットフォームロールの主な違いはスコープです。</block>
+  <block id="3ef1691185c3215cee725eacc5ae60e1" category="cell"><block ref="3ef1691185c3215cee725eacc5ae60e1" category="inline-link-macro-rx"></block></block>
+  <block id="92d4c119f475b9887b30ea36f68501b4" category="cell"><block ref="92d4c119f475b9887b30ea36f68501b4" category="inline-link-macro-rx"></block></block>
+  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
+  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
+  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
+  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">ストレージの健全性とガバナンス機能の管理、ストレージリソースの検出、既存の作業環境の変更と削除を実行できます。</block>
+  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
+  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">ストレージの健全性とガバナンスの機能、および以前に検出されたストレージリソースを表示できます。既存のストレージ作業環境を検出、変更、削除することはできません。</block>
+  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
+  <block id="b37ec767ea432f9cebcfa9e86d16aebd" category="cell">ストレージ、健常性、ガバナンスの各機能を管理します。既存の作業環境を変更または削除することはできません。ただし、ストレージ管理者のすべての権限を管理することはできません。</block>
+  <block id="a7ea070f0a66aea7597cf3f5e4e8e58b" category="cell"><block ref="a7ea070f0a66aea7597cf3f5e4e8e58b" category="inline-link-macro-rx"></block></block>
+  <block id="dfab73175d9a922a1fe643936c1f54e4" category="cell"><block ref="dfab73175d9a922a1fe643936c1f54e4" category="inline-link-macro-rx"></block></block>
+  <block id="833e00f31e416ca14991170252d67cec" category="paragraph">ランサムウェアロールは、ユーザーにランサムウェア保護サービスへのアクセスを提供します。ユーザーには、ランサムウェア保護でアクションを実行できる管理者ロール、または監視のみの責任を持つ閲覧者ロールを割り当てることができます。Ransomware Protection AdminとRansomware Protection Viewerの2つのロールがあります。この2つのロールの主な違いは、ランサムウェア対策で実行できるアクションです。</block>
+  <block id="bf4e3f1e6e25cc18b8667c6b66e7fdec" category="admonition">これらのロールは、BlueXP パートナーシップ API からは利用できません。</block>
+  <block id="186343db38833a48df757e694e69337d" category="doc">BlueXP  に関連付けられたNSSクレデンシャルの管理</block>
+  <block id="deb39e59109a0390d9ded9ebca0fafc9" category="paragraph">BlueXP では、ユーザーが実行する必要がある操作と場所に基づいて、ユーザーに役割を割り当てることができます。</block>
+  <block id="cac6061c847908899813ed3b8a218b9a" category="paragraph">*組織管理者* または *フォルダーまたはプロジェクト管理者* の役割を持つユーザーには、他のユーザーに役割を割り当てる責任があります。アクセスロールは、プロジェクトまたはフォルダ単位で割り当てることができます。たとえば、あるプロジェクトにRansomware protection adminロールを割り当て、別のプロジェクトにSnapCenter adminロールを割り当てることができます。または、ユーザーが特定のフォルダー内のすべてのプロジェクトに対して分類管理者ロールを必要とする場合は、フォルダーレベルでこのアクセスロールを付与できます。</block>
+  <block id="40f8b3f803da288fde0e62e0282c00f7" category="admonition">リソースへのアクセスを直接許可することはできないことに注意してください。最初にリソースをプロジェクトに割り当てる必要があります。ユーザにアクセス権を割り当てる前に、リソース階層の設定を検討してください。<block ref="41b378741b8a64d0f324528fa1890b6f" category="inline-link-macro-rx"></block></block>
+  <block id="12815307393fa19648b391d49b4282e4" category="section-title">メンバーにアクセスロールを追加する</block>
+  <block id="e1c2f7c4dfacd1ec651c2d8a7b88a182" category="paragraph">通常、メンバーを組織に追加するときに、メンバーに役割を割り当てます。ただし、役割を削除したり別の役割を追加したりすることで、いつでもメンバーの役割を更新できます。ユーザーの役割を削除することで、プロジェクトへのユーザーのアクセス権を削除できます。</block>
+  <block id="7654fe6ca44295ba5f844fc9798f0103" category="sidebar">ストレージの役割</block>
 </blocks>

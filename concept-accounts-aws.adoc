@@ -4,7 +4,7 @@ permalink: concept-accounts-aws.html
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permission, aws permissions, policy, policies, credentials, marketplace subscription, replace subscription, subscription, amazon 
 summary: BlueXPがAWSクレデンシャルを使用してユーザに代わって操作を実行する方法と、それらのクレデンシャルがマーケットプレイスのサブスクリプションにどのように関連付けられているかをご確認くださいこれらの詳細を理解しておくと、BlueXPで1つ以上のAWSアカウントのクレデンシャルを管理する際に役立ちます。たとえば、AWSクレデンシャルをBlueXPに追加するタイミングを把握できます。 
 ---
-= AWS のクレデンシャルと権限について説明します
+= BlueXP で AWS の認証情報と権限について学ぶ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
