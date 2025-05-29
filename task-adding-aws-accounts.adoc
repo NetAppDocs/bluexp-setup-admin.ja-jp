@@ -235,7 +235,7 @@ BlueXP  にクレデンシャルを追加したあとにAWS Marketplaceサブ�
 
 
 .作業を開始する前に
-BlueXP設定を変更する前にコネクタを作成する必要があります。 link:concept-connectors.html#how-to-create-a-connector["コネクタの作成方法を説明します"]。
+BlueXP設定を変更する前にコネクタを作成する必要があります。link:concept-connectors.html#connector-installation["コネクタの作成方法を説明します"]です。
 
 次のビデオは、AWS MarketplaceからBlueXP  にサブスクライブする手順を示しています。
 

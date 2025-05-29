@@ -178,8 +178,6 @@
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP （ 80 ）と HTTPS （ 443 ）はローカル UI へのアクセスを提供しますが、これはまれに使用されます。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH （ 22 ）は、トラブルシューティングのためにホストに接続する必要がある場合にのみ必要です。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">始める前に</block>
-  <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">詳細をご確認ください</block>
-  <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">BlueXP設定を変更する前にコネクタを作成する必要があります。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
   <block id="c49ff7d7009f9d4727b2b25afa496418" category="section-title">HTTPS 証明書をインストールします</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">BlueXPコンソールの右上で、[設定]アイコンを選択し、*[HTTPSセットアップ]*を選択します。</block>
   <block id="4d646a6e32f8084a095a674812f1fb31" category="list-text">[HTTPS Setup] ページで、証明書署名要求（ CSR ）を生成するか、独自の CA 署名付き証明書をインストールして、証明書をインストールします。</block>
@@ -2328,7 +2326,6 @@
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">Amazon FSx for ONTAP 向けBlueXPドキュメント</block>
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">詳細については、を参照してください<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">コネクタの作成方法を説明します</block>
-  <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">BlueXP設定を変更する前にコネクタを作成する必要があります。 <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>。</block>
   <block id="eceb74088d706d5484df6b70296f87ad" category="paragraph">BlueXPでAWSクレデンシャルを編集するには、アカウントタイプ（AWSキーまたは権限）を変更するか、名前を編集するか、クレデンシャル自体（キーまたはロールARN）を更新します。</block>
   <block id="608e5d2c6ae29eafd4acefb54d76730a" category="admonition">コネクタインスタンスに関連付けられているインスタンスプロファイルのクレデンシャルは編集できません。</block>
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">コネクタインスタンスに関連付けられているインスタンスプロファイルのクレデンシャルは削除できません。</block>
@@ -3948,8 +3945,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">BlueXP  コンソールの右上で、&gt;* IDおよびアクセス管理*を選択します<block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="898a5f7650c6f7bf6a01efe09c881973" category="list-text">[コネクタ]*を選択します。</block>
   <block id="efd7c600c956f9a4ecd581c9e8a5de04" category="list-text">テーブルで、関連付けるコネクタを探します。</block>
-  <block id="0e081d7aa898f932c4f244f1d41dd4df" category="paragraph">特定のコネクタを検索するには、テーブルの上にある検索を使用し、リソース階層の特定の部分を選択してテーブルの内容をフィルタリングします。</block>
-  <block id="16b0f0c24bd4a14288344d064f0b09c2" category="list-text">コネクタが関連付けられているフォルダとプロジェクトを最初に表示するには、を選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>、*詳細の表示*を選択します。</block>
   <block id="a2884a208c64d00906f60b988f29dfd3" category="paragraph">BlueXP  には、コネクタが関連付けられているフォルダとプロジェクトの詳細が表示されます。</block>
   <block id="7b0e84897f645e2241868699f64b6699" category="list-text">[フォルダまたはプロジェクトに関連付ける]*を選択します。</block>
   <block id="3ecb65defa4c1a5901512a34a0590820" category="list-text">フォルダーまたはプロジェクトを選択し、*承認*を選択します。</block>
@@ -4009,7 +4004,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="5506a3204ff4171234856af0ca0d34fd" category="list-text">フォルダまたはプロジェクトの詳細を入力します。</block>
   <block id="0ab63481584814b59197d796cfc5dc97" category="list-text">*名前と場所*:名前を入力し、フォルダまたはプロジェクトの階層内の場所を選択します。フォルダーまたはプロジェクトは、組織の直下に配置することも、フォルダー内に配置することもできます。</block>
   <block id="f46059ba82cb53e4af025ce918760999" category="list-text">*リソース*:このフォルダまたはプロジェクトに関連付けるリソースを選択します。</block>
-  <block id="217f7358d2ee319a9c814b539574d78d" category="paragraph">フォルダまたはプロジェクトの親に関連付けられているリソースからのみ選択できます。親が組織の場合は、組織内の任意のリソースから選択できます。親がフォルダの場合は、フォルダに関連付けられているリソースからのみ選択できます。</block>
   <block id="dc401be3adab60c813414832f0b97d88" category="inline-link-macro">リソースをフォルダに関連付けるタイミングを確認する</block>
   <block id="d706c5ded100123a86d8602a03703158" category="paragraph"><block ref="114ceb4aae340f51ba021c40f504c25f" category="inline-link-macro-rx"></block>です。</block>
   <block id="8bb3c5dc86a399d0babf2eb49831e5ec" category="list-text">*アクセス*:リソース階層ですでに定義されている既存の権限に基づいて、フォルダまたはプロジェクトへのアクセス権を持つメンバーを表示します。</block>
@@ -4034,7 +4028,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">[適用]を選択します。</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">フォルダーまたはプロジェクトへのメンバーアクセス権の変更</block>
-  <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">フォルダーまたはプロジェクトへのメンバーアクセス権を変更して、適切なメンバーがフォルダーまたはプロジェクトに関連付けられたリソースにアクセスできるようにします。</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">メンバーアクセスの変更：</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*メンバーの追加*:フォルダーまたはプロジェクトに追加するメンバーを選択し、役割を割り当てます。</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*メンバーのロールを変更する*:組織管理者以外のロールを持つメンバーの場合は、既存のロールを選択してから、新しいロールを選択します。</block>
@@ -4316,8 +4309,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="798eb88714cdc2034c3335c3a6c21193" category="list-text">[*Organization*]ページで、テーブル内のプロジェクトに移動し、<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="efb318f1d905ec45c96414554f0f7c18" category="paragraph">プロジェクトIDが表示されます。</block>
   <block id="811c7706be3ba95d1d407ea18e420365" category="list-text">IDをコピーするには、コピーボタンを選択します。</block>
-  <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">プロジェクトのアクションメニューを選択するプロジェクトIDが表示されたフォルダとプロジェクトテーブルのスクリーンショット。</block>
-  <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024年11月11日</block>
   <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">プライベートモードリリース（3.9.46）</block>
   <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">新しいプライベートモードリリースをからダウンロードできるようになりました。<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
@@ -4466,11 +4457,9 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">BlueXP  にクレデンシャルを追加したあとにAWS Marketplaceサブスクリプションを設定するシナリオは2つあります。</block>
   <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">最初にBlueXP  に資格情報を追加したときに、サブスクリプションを設定しなかった。</block>
   <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">AWSクレデンシャルに設定されているAWS Marketplaceサブスクリプションを変更する。</block>
-  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">組織のリソース階層の深さは、7つのレベルまで下がります。その結果、ネストされたフォルダを6レベルまで作成できます。最後にネストされたフォルダには、階層の7番目のレベルにあるプロジェクトを含めることができます。</block>
   <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">次の図は、組織のリソース階層の最大階層を示しています。</block>
   <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">フォルダまたはプロジェクトに関連付けられているリソースを表示する</block>
   <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">[編集]ページで、[リソース]セクションまたは[アクセス]セクションを展開すると、選択したフォルダまたはプロジェクトの詳細を表示できます。</block>
-  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">リソースを関連付けたり関連付け解除したりすることで、フォルダまたはプロジェクトに関連付けられているリソースを変更できます。たとえば、リソースに別のチームが使用できる容量があるため、リソースを別のプロジェクトに関連付けることができます。リソースをフォルダまたはプロジェクトに関連付けると、そのフォルダまたはプロジェクトに対する権限を持つ組織メンバーは、関連付けられたリソースにアクセスできます。</block>
   <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">フォルダまたはプロジェクトに関連付けられているメンバーを表示する</block>
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">[編集]ページで、[アクセス]を選択して、選択したフォルダーまたはプロジェクトへのアクセス権を持つメンバーのリストを表示します。</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">BlueXP  IDおよびアクセス管理（IAM）を使用してメンバーを組織に関連付ける場合は、組織、フォルダ、またはプロジェクトレベルで権限を提供します。これらのメンバーが適切なリソースにアクセスする権限を持つようにするには、リソースを特定のプロジェクトやフォルダに関連付けて、組織のリソース階層を管理する必要があります。a_resource_は、BlueXP  がすでに管理している、または認識しているストレージリソースです。</block>
@@ -4900,7 +4889,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">2025年1月22日（バージョン1.39）</block>
   <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">に移動し<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>、1.39リリースに含まれる変更点を参照してください。</block>
   <block id="09d7c2dac047caa965175fead07159aa" category="cell">2025年2月21日</block>
-  <block id="c77472b3cb88175d9f673b4976ce643a" category="paragraph">メンバーアクセス権が階層の上位レベル（フォルダまたは組織レベル）で提供されている場合、下位レベルのフォルダまたはプロジェクトを表示しているときにメンバーアクセス権を削除または変更することはできません。階層のその部分に切り替えて、メンバーの権限を更新する必要があります。または、できます<block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>。</block>
   <block id="e07d586e54fb2ecc1791d2d434436330" category="doc">BlueXP  メンバーの追加と権限の管理</block>
   <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>です。</block>
   <block id="45fa36bab7b7452cfb911598ccd2d223" category="inline-link-macro">ロールを使用してBlueXP  リソースへのアクセスを制御する方法について説明します。</block>
@@ -5133,4 +5121,24 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="ab244aa8ea93b8114e0cc9009af3f81b" category="list-text">E シリーズや StorageGRID などのオンプレミスのストレージ システムをさらに管理できるようになりました。</block>
   <block id="036d3952a98988224205b6f039be487f" category="list-text"><block ref="036d3952a98988224205b6f039be487f" category="inline-link-rx"></block></block>
   <block id="6a3405f47013290acf99c18684c84269" category="list-text">クラウド階層化では、検出されていないオンプレミスの ONTAP クラスターがあるかどうかが表示されるようになりました。これにより、それらのクラスターを Cloud Manager に追加して、階層化やその他のサービスを有効にできるようになります。</block>
+  <block id="5aac456da49390227897f1fa93e12f80" category="doc">プライベートモードリリース（3.9.52）</block>
+  <block id="3ad3533e2236195b0d2ff39cc302bac1" category="paragraph">3.9.52リリースでは、BlueXP  の次のコンポーネントとサービスが更新されています。</block>
+  <block id="918d08b069e4e8b9bd825945d099eff0" category="cell">3.9.52、3.9.51</block>
+  <block id="d29240cb60727e796e55d4bf8ac33966" category="cell">にアクセス<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>し、バージョン3.9.52および3.9.50の変更点を参照してください。</block>
+  <block id="fb6bee0c273267d6fdde07008552b62f" category="cell">に行く<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> 2025 年 5 月のリリースに含まれる変更を参照してください。</block>
+  <block id="3e18ba454ff1bfb5aee5e5d425b20ea3" category="cell">2025年5月12日（バージョン1.43）</block>
+  <block id="e604d3f0ea5a3e895506b1c61f048b4d" category="paragraph">BlueXP設定を変更する前にコネクタを作成する必要があります。<block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block>です。</block>
+  <block id="5b5ddc8c08b78e13543c02ee18a88455" category="paragraph">BlueXP 設定を変更する前に、コネクタを作成する必要があります。 <block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block> 。</block>
+  <block id="e049b2d97a8ed0a8d2e842c6e0c625b3" category="inline-image-macro">設定アイコン</block>
+  <block id="1ffc44d5620a15f62b04c6a8580e783a" category="list-text">BlueXP  コンソールの右上で、&gt;* IDおよびアクセス管理*を選択します<block ref="c0116accfefd0197a42c99a28533a02c" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="aa16286c48b235d2df04d578aeed8edb" category="paragraph">特定のコネクタを検索するには、表の上にある検索機能を使用するか、リソース階層で表をフィルタリングします。</block>
+  <block id="f53392d049b9dddff4ba55ad74c96588" category="inline-image-macro">3つの点を持つアイコン</block>
+  <block id="c16d0f9fc94c90341b26a5a3efda881c" category="list-text">コネクタにリンクされたフォルダとプロジェクトを表示するには、 <block ref="e85cc783c74f9ef35cfeeca99fcaf6f6" category="inline-image-macro-rx" type="image"></block>次に、[詳細を表示] を選択します。</block>
+  <block id="e91f37331347d046e8f84d619f57d7c8" category="paragraph">組織のリソース階層は最大 7 レベルまで設定でき、ネストされたフォルダーは 6 レベルまで、プロジェクトは 7 レベルまでになります。</block>
+  <block id="8d7e1bfd65485e98b0f12b20edd6d4b2" category="paragraph">親フォルダーまたはプロジェクトに関連付けられたリソース（組織の親の場合はすべてのリソース、フォルダーの親の場合はフォルダー固有のリソース）を選択できます。</block>
+  <block id="e6e4545a44f4062ee0d1ed5ca569ddc1" category="paragraph">プロジェクト ID が表示されます。</block>
+  <block id="189b8907a7ab6c4c7b1ea92510e40d70" category="paragraph">フォルダーまたはプロジェクトに対する権限を持つメンバーは、それに関連付けられたリソースにアクセスできます。</block>
+  <block id="838d404665efe77bad8374ea27c3b7ca" category="paragraph">メンバー アクセスを変更して、適切なメンバーが関連リソースにアクセスできるようにします。</block>
+  <block id="a5adc30e4e36f3ae2a8e99ff0f19a490" category="paragraph">上位階層レベルで提供されるメンバー アクセスは、下位レベルでは変更できません。階層のその部分に切り替えて、メンバーの権限を更新する必要があります。または、できます<block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>。</block>
+  <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">2025年5月29日</block>
 </blocks>

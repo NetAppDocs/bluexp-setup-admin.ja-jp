@@ -284,7 +284,7 @@ BlueXPでクライアントシークレットを使用してMicrosoft Entra ID�
 作成したクレデンシャルをクラウドプロバイダで使用できるようになるまでに数分かかることがあります。数分待ってから、BlueXPに資格情報を追加します。
 
 .作業を開始する前に
-BlueXP設定を変更する前にコネクタを作成する必要があります。 link:concept-connectors.html#how-to-create-a-connector["コネクタの作成方法を説明します"]。
+BlueXP設定を変更する前にコネクタを作成する必要があります。link:concept-connectors.html#connector-installation["コネクタの作成方法を説明します"]です。
 
 .手順
 . BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
@@ -334,7 +334,7 @@ AzureのクレデンシャルをBlueXPに追加したら、Azure Marketplaceサ�
 
 
 .作業を開始する前に
-BlueXP設定を変更する前にコネクタを作成する必要があります。 link:concept-connectors.html#how-to-create-a-connector["詳細をご確認ください"]。
+BlueXP 設定を変更する前に、コネクタを作成する必要があります。 link:concept-connectors.html#connector-installation["コネクタの作成方法を説明します"] 。
 
 .手順
 . BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
