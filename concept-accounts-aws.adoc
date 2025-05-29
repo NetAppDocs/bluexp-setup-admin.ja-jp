@@ -131,7 +131,7 @@ link:task-adding-aws-accounts.html#subscribe["AWSサブスクリプションを�
 
 
 
-=== マーケットプレイスの導入とオンプレミスの導入でクレデンシャルはどのように機能しますか？
+=== マーケットプレイスのデプロイメントとオンプレミスのデプロイメントでは資格情報はどのように機能しますか?
 
 上記の項では、BlueXPのコネクタの推奨される展開方法について説明します。AWS MarketplaceからAWSにコネクタを導入したり、独自のLinuxホストにコネクタソフトウェアを手動でインストールしたりすることもできます。
 
@@ -144,7 +144,7 @@ Marketplace を使用する場合も、アクセス許可は同じ方法で提�
 * 標準モード
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["AWS Marketplace環境の権限を設定する"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["オンプレミス環境の権限を設定する"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["オンプレミス展開の権限を設定する"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["制限モードの権限を設定します"]

@@ -36,7 +36,7 @@ link:task-configuring-proxy.html["コネクタでプロキシサーバを使用�
 
 BlueXPは、172.17.0.0/16と172.18.0.0/16の範囲にIPアドレスを持つ2つのインターフェイスを持つコネクタを展開します。
 
-ネットワークにこれらのいずれかの範囲が設定されたサブネットがある場合、BlueXPから接続エラーが発生する可能性があります。たとえば、BlueXPでオンプレミスのONTAP クラスタを検出できない場合があります。
+ネットワークにこれらのいずれかの範囲が設定されたサブネットがある場合、BlueXPから接続エラーが発生する可能性があります。たとえば、BlueXP でオンプレミスの ONTAP クラスターを検出しようとすると失敗する可能性があります。
 
 技術情報アーティクルを参照してください link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["BlueXP ConnectorのIPが既存のネットワークと競合しています"] コネクタのインターフェイスのIPアドレスを変更する方法については、を参照してください。
 

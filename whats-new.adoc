@@ -1216,10 +1216,10 @@ https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["監査サ�
 +
 このリンクには、BlueXPのユーザインターフェイスの[Timeline]ページからもアクセスできます。
 
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
+* このコネクタのリリースには、Cloud Volumes ONTAP の機能強化と on-premisesONTAP クラスターの機能強化も含まれています。
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["ONTAPオンプレミスクラスタの機能強化について学ぶ"^]
 
 
 
@@ -1381,10 +1381,10 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.ht
 +
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-support-cases["サポートケースを作成および管理する方法について説明します"]。
 
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
+* このコネクタのリリースには、Cloud Volumes ONTAP の機能強化と on-premisesONTAP クラスターの機能強化も含まれています。
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2023["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["ONTAPオンプレミスクラスタの機能強化について学ぶ"^]
 
 
 
@@ -1498,10 +1498,10 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-januar
 
 * BlueXPコンソールのURLがに更新されました https://console.bluexp.netapp.com[]
 * ConnectorはGoogle Cloudイスラエル地域でサポートされるようになりました。
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
+* このコネクタのリリースには、Cloud Volumes ONTAP の機能強化と on-premisesONTAP クラスターの機能強化も含まれています。
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#4-december-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#4-december-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#4-december-2022["ONTAPオンプレミスクラスタの機能強化について学ぶ"^]
 
 
 
@@ -1537,7 +1537,7 @@ NetApp BlueXPは、Cloud Managerを通じて提供される機能を拡張、強
 統合された管理エクスペリエンス:: BlueXPを使用すると'すべてのストレージおよびデータ資産を1つのインタフェースから管理できます
 +
 --
-BlueXPを使用して、クラウドストレージ（Cloud Volumes ONTAP やAzure NetApp Files など）の作成と管理、データの移動、保護、分析、オンプレミスやエッジの多くのストレージデバイスの管理を行うことができます。
+BlueXP を使用すると、クラウド ストレージ (Cloud Volumes ONTAP や Azure NetApp Files など) を作成および管理したり、データを移動、保護、分析したり、多数のオンプレミスおよびエッジ ストレージ デバイスを制御したりできます。
 
 https://bluexp.netapp.com["詳細については、BlueXPのWebサイトをご覧ください"^]
 
@@ -1552,7 +1552,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 +
 --
 * コネクタがインストールされているAWSアカウントでAmazon S3バケットを管理できるようになりました。
-* EシリーズやStorageGRID など、オンプレミスのストレージシステムをさらに管理できるようになりました。
+* E シリーズや StorageGRID などのオンプレミスのストレージ システムをさらに管理できるようになりました。
 * これまでスタンドアロンサービスとしてしか提供されていなかったデータサービスを、別のUIで使用できるようになりました。たとえば、BlueXP Digital Advisor（Active IQ ）などです。
 
 
@@ -1696,10 +1696,10 @@ NOTE: Eメールアドレスとパスワードを使用する既存のログイ�
 
 * このコネクタは、AWSジャカルタリージョン（AP-Southee-3）でサポートされるようになりました。
 * このコネクタは、Azureブラジル南東部でサポートされるようになりました。
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
+* このコネクタのリリースには、Cloud Volumes ONTAP の機能強化と on-premisesONTAP クラスターの機能強化も含まれています。
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-june-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#7-june-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#7-june-2022["ONTAPオンプレミスクラスタの機能強化について学ぶ"^]
 
 
 
@@ -2046,7 +2046,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#s
 === Cloud Tiering の機能拡張
 
 * Google Cloud Storage に階層化する場合は、ライフサイクルルールを適用して、階層化されたデータを Standard ストレージクラスから 30 日後に低コストの Nearline 、 Coldline 、または Archive ストレージに移行することができます。
-* Cloud Tiering Now は、オンプレミスの ONTAP クラスタで検出されていないものがある場合に表示されます。これにより、クラスタへの階層化やその他のサービスを有効にすることができます。
+* クラウド階層化では、検出されていないオンプレミスの ONTAP クラスターがあるかどうかが表示されるようになりました。これにより、それらのクラスターを Cloud Manager に追加して、階層化やその他のサービスを有効にできるようになります。
 +
 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["これらのクラスタの詳細については、こちらをご覧ください"^]
 

@@ -4,7 +4,7 @@ permalink: concept-connectors.html
 keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery' 
 summary: コネクタは、クラウドネットワークまたはオンプレミスネットワークで実行されるネットアップのソフトウェアです。データインフラを管理するためにBlueXPが実行する必要のあるアクションを実行します。Connectorは、必要なアクションについてBlueXP SaaSレイヤを定期的にポーリングします。BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。 
 ---
-= コネクタについて説明します
+= BlueXP  コネクタの詳細
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -48,7 +48,7 @@ Azure NetApp Files のセットアップと管理にコネクタは必要あり�
 オンプレミスのONTAP クラスタを直接検出する場合はコネクタは必要ありませんが、BlueXPのその他の機能を利用する場合はコネクタが必要です。
 
 +
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["オンプレミスのONTAP クラスタの検出オプションと管理オプションの詳細については、こちらをご覧ください"^]
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["オンプレミスの ONTAP クラスタの検出および管理オプションの詳細"^]
 
 * ソフトウェアの更新
 * 持続可能性
@@ -90,7 +90,7 @@ BlueXPを制限モードまたはプライベートモードで使用するに�
 
 コネクタは、BlueXPサービスアーキテクチャの基本要素です。関連するコネクタが常に稼働し、アクセス可能であることを確認するのは、お客様の責任です。このサービスは、コネクタの可用性の短い停止を克服するように設計されていますが、インフラストラクチャの障害を修復するために必要なときにすぐに対処する必要があります。
 
-このドキュメントにはEULAが適用されます。製品がドキュメントに従って操作されていない場合、製品の機能と操作、およびEULAに基づくお客様の権利に悪影響を及ぼす可能性があります。
+このドキュメントにはEULAが適用されます。製品をマニュアルに従って操作しないと、製品の機能や操作、および EULA に基づくお客様の権利に悪影響が及ぶ可能性があります。
 
 
 
@@ -114,7 +114,7 @@ BlueXPサービスをGoogle Cloudで使用する場合は、Google Cloudで実�
 
 == クラウドプロバイダとの通信
 
-このコネクタは、AWS、Azure、Google Cloudへのすべての通信にTLS 1.2を使用します。
+このコネクタは、AWS、Azure、Google Cloudへのすべての通信にTLS 1.3を使用します。
 
 
 
@@ -126,9 +126,9 @@ link:concept-modes.html["BlueXPの導入モードについて説明します"]�
 
 
 
-== コネクタを作成する方法
+== コネクタのインストール方法
 
-コネクタは、BlueXP  またはクラウドプロバイダのマーケットプレイスから直接作成することも、手動で独自のLinuxホストにインストールすることもできます。BlueXPを標準モード、制限モード、プライベートモードのいずれで使用しているかによって、作業を開始する方法が異なります。
+コネクタは、BlueXP から直接インストールすることも、クラウド プロバイダーのマーケットプレイスからインストールすることも、独自の Linux ホストにソフトウェアを手動でインストールすることもできます。BlueXPを標準モード、制限モード、プライベートモードのいずれで使用しているかによって、作業を開始する方法が異なります。
 
 * link:concept-modes.html["BlueXPの導入モードについて説明します"]
 * link:task-quick-start-standard-mode.html["BlueXPを標準モードで開始する"]
@@ -151,7 +151,7 @@ BlueXPからコネクタを直接作成するには特定の権限が必要で�
 ** link:concept-install-options-aws.html["AWSでのコネクタのインストールオプション"]
 ** link:concept-install-options-azure.html["Azureでのコネクタのインストールオプション"]
 ** link:concept-install-options-google.html["Google Cloudでのコネクタのインストールオプション"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["オンプレミス環境のクラウド権限を設定"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["オンプレミス展開のクラウド権限を設定する"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["制限モードの権限を設定します"]
@@ -171,7 +171,7 @@ BlueXPからコネクタを直接作成するには特定の権限が必要で�
 
 == コネクタのアップグレード
 
-私たちは通常、コネクタソフトウェアを毎月更新して新機能を導入し、安定性を向上させています。BlueXP  プラットフォームのサービスと機能のほとんどはSaaSベースのソフトウェアで提供されますが、一部の機能はコネクタのバージョンに依存します。Cloud Volumes ONTAP 管理、オンプレミスの ONTAP クラスタ管理、設定、ヘルプが含まれます。
+私たちは通常、コネクタソフトウェアを毎月更新して新機能を導入し、安定性を向上させています。BlueXP  プラットフォームのサービスと機能のほとんどはSaaSベースのソフトウェアで提供されますが、一部の機能はコネクタのバージョンに依存します。これには、Cloud Volumes ONTAP 管理、オンプレミス ONTAP クラスタ管理、設定、ヘルプが含まれます。
 
 標準モードまたは制限モードでBlueXPを使用すると、ソフトウェアの更新を取得するためにアウトバウンドのインターネットアクセスが確立されていれば、コネクタは自動的にソフトウェアを最新バージョンに更新します。BlueXPをプライベートモードで使用している場合は、コネクタを手動でアップグレードする必要があります。
 
@@ -201,6 +201,6 @@ link:task-upgrade-connector.html["プライベートモードを使用してい�
 
 次にいくつかの例を示します。
 
-* マルチクラウド環境（AWSやAzureなど）で、コネクタの1つをAWSに、もう1つをAzureに配置したいと考えています。各で、それらの環境で実行される Cloud Volumes ONTAP システムを管理します。
+* マルチクラウド環境 (AWS と Azure など) があり、AWS に 1 つのコネクタを配置し、Azure に別のコネクタを配置することを希望しています。各で、それらの環境で実行される Cloud Volumes ONTAP システムを管理します。
 * サービスプロバイダは、1つのBlueXP  組織を使用して顧客にサービスを提供し、別の組織を使用してビジネスユニットの1つにディザスタリカバリを提供することができます。各組織には個別のコネクタがあります。
 

@@ -184,7 +184,7 @@ BlueXPのバックアップとリカバリを使用してCloud Volumes ONTAPを�
 
 
 
-| オンプレミスのONTAPクラスタをGoogle Cloudにバックアップ | BlueXPのバックアップとリカバリを使用してオンプレミスのONTAPクラスタをバックアップする場合は、「検索とリストア」機能を使用するためにコネクタに権限を追加する必要があります。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["検索と復元機能の権限"^] 
+| オンプレミスのONTAPクラスタをGoogle Cloudにバックアップ | BlueXP バックアップとリカバリを使用してオンプレミスの ONTAP クラスターをバックアップする場合は、「検索と復元」機能を使用するために、コネクタに権限を追加する必要があります。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["検索と復元機能の権限"^] 
 |===
 
 

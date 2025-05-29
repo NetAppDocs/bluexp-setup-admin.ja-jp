@@ -4,7 +4,7 @@ permalink: reference-ports-on-prem.html
 keywords: networking, network, requirements, ports, on-prem, linux, http, https 
 summary: コネクタは、オンプレミスのLinuxホストに手動でインストールした場合、インバウンドポートを使用します。計画のためにこれらのポートを参照しなければならない場合があります。 
 ---
-= オンプレミスコネクタ用のポート
+= オンプレミスコネクタのポート
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

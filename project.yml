@@ -221,7 +221,7 @@ sidebar:
         url: "/reference-ports-azure.html"
       - title: Google Cloudのコネクタファイアウォールルール
         url: "/reference-ports-gcp.html"
-      - title: オンプレミスコネクタ用のポート
+      - title: オンプレミスコネクタのポート
         url: "/reference-ports-on-prem.html"
   - title: 知識とサポート
     entries:
