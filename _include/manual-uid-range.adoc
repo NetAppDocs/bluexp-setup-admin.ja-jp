@@ -1,0 +1,136 @@
+= 
+:allow-uri-read: 
+
+
+.作業を開始する前に
+次の情報が必要です。
+
+* コネクタをインストールするためのroot権限。
+* コネクタからのインターネットアクセスにプロキシが必要な場合は、プロキシサーバに関する詳細。
++
+インストール後にプロキシサーバを設定することもできますが、その場合はコネクタを再起動する必要があります。
+
++
+BlueXPでは透過型プロキシサーバはサポートされません。
+
+* プロキシサーバがHTTPSを使用している場合、またはプロキシが代行受信プロキシの場合は、CA署名証明書。
+
+
+.このタスクについて
+NetApp Support Siteで入手できるインストーラは、それよりも古いバージョンの場合があります。インストール後、新しいバージョンが利用可能になると、コネクタは自動的に更新されます。
+
+.手順
+. ホストに_http_proxy_or_https_proxy_system変数が設定されている場合は、削除します。
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+これらのシステム変数を削除しないと、インストールは失敗します。
+
+. からConnectorソフトウェアをダウンロードします https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Site"^]をクリックし、 Linux ホストにコピーします。
++
+ネットワークまたはクラウドで使用するための「オンライン」コネクタインストーラをダウンロードする必要があります。コネクタには別の「オフライン」インストーラが用意されていますが、プライベートモード展開でのみサポートされています。
+
+. スクリプトを実行する権限を割り当てます。
++
+[source, cli]
+----
+chmod +x BlueXP-Connector-Cloud-<version>
+----
++
+<version> は、ダウンロードしたコネクタのバージョンです。
+
+. インストールスクリプトを実行します。
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+--proxyパラメータと--cacert.pemパラメータはオプションです。プロキシサーバを使用している場合は、次のようにパラメータを入力する必要があります。プロキシに関する情報の入力を求めるプロンプトは表示されません。
+
++
+次に、両方のオプションパラメータを使用したコマンドの例を示します。
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--proxyは、次のいずれかの形式を使用してHTTPまたはHTTPSプロキシサーバを使用するようにコネクタを設定します。
+
++
+** \http://address:port
+** \http://user-name:password@address:port
+** \http://domain-name%92user-name:password@address:port
+** \https://address:port
+** \https://user-name:password@address:port
+** \https://domain-name%92user-name:password@address:port
++
+次の点に注意してください。
+
++
+*** ユーザには、ローカルユーザまたはドメインユーザを指定できます。
+*** ドメインユーザの場合は、上に示すように、\にASCIIコードを使用する必要があります。
+*** BlueXPでは、@文字を含むユーザ名やパスワードはサポートされていません。
+*** パスワードに次の特殊文字が含まれている場合は、その特殊文字の前にバックスラッシュ（&または！）を付けてエスケープする必要があります。
++
+例：
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
+
+
+
+
++
+--cacertsは、コネクタとプロキシサーバ間のHTTPSアクセスに使用するCA署名証明書を指定しています。このパラメータは、HTTPSプロキシサーバを指定する場合、または代行受信プロキシを指定する場合にのみ必要です。
+
+. Podman を使用した場合は、aardvark-dns ポートを調整する必要があります。
++
+.. BlueXP Connector 仮想マシンに SSH で接続します。
+.. podman _/usr/share/containers/containers.conf_ ファイルを開き、Aardvark DNS サービスに選択したポートを変更します。例えば、54 に変更します。
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. コネクタ仮想マシンを再起動します。
+
+
+
+
+. インストールが完了するまで待ちます。
++
+プロキシサーバを指定した場合は、インストールの終了時にConnectorサービス（occm）が2回再起動されます。
+
+. Connector 仮想マシンに接続されているホストから Web ブラウザを開き、次の URL を入力します。
++
+https://_ipaddress_[]
+
+. ログイン後、コネクタを設定します。
++
+.. コネクタに関連付けるBlueXP  組織を指定します。
+.. システムの名前を入力します。
+.. *では、セキュリティ保護された環境で実行していますか？*制限モードを無効にしたままにします。
++
+標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。セキュアな環境でBlueXPバックエンドサービスからこのアカウントを切断する場合にのみ、制限モードを有効にしてください。その場合は、 link:task-quick-start-restricted-mode.html["制限モードでBlueXPの使用を開始するには、次の手順に従います"]。
+
+.. [* Let's start]*を選択します。
+
+
+

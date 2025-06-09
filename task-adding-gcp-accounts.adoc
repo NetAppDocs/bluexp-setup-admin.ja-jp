@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-gcp-accounts.html 
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。どちらのタスクも、Marketplaceのサブスクリプションを使用してBlueXPサービスの料金を支払うことができます。 
+summary: Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。これら両方のタスクにより、マーケットプレイスのサブスクリプションを使用してデータ サービスの支払いができるようになります。 
 ---
 = BlueXPのGoogle Cloudクレデンシャルとサブスクリプションを管理します
 :hardbreaks:
@@ -14,18 +14,18 @@ summary: Connector VMインスタンスに関連付けられているGoogle Clou
 
 
 [role="lead"]
-Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。どちらのタスクも、Marketplaceのサブスクリプションを使用してBlueXPサービスの料金を支払うことができます。
+Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。これら両方のタスクにより、マーケットプレイスのサブスクリプションを使用してデータ サービスの支払いができるようになります。
 
 
 
 == MarketplaceサブスクリプションをGoogle Cloudのクレデンシャルに関連付ける
 
-Google CloudでConnectorを導入すると、Connector VMインスタンスに関連付けられたデフォルトのクレデンシャルセットがBlueXPによって作成されます。これらのクレデンシャルに関連付けられているGoogle Cloud Marketplaceサブスクリプションは、いつでも変更できます。このサブスクリプションでは、従量課金制のCloud Volumes ONTAP システムを作成したり、他のBlueXPサービスを使用したりできます。
+Google CloudでConnectorを導入すると、Connector VMインスタンスに関連付けられたデフォルトのクレデンシャルセットがBlueXPによって作成されます。これらのクレデンシャルに関連付けられているGoogle Cloud Marketplaceサブスクリプションは、いつでも変更できます。このサブスクリプションを使用すると、従量課金制の Cloud Volumes ONTAP システムを作成し、その他のデータ サービスを使用できるようになります。
 
 現行のMarketplaceサブスクリプションを新しいサブスクリプションに置き換えると、既存のCloud Volumes ONTAP作業環境とすべての新規作業環境のMarketplaceサブスクリプションが変更されます。
 
 .手順
-. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
+. コンソールの右上にある設定アイコンを選択し、*資格情報*を選択します。
 . 一連の資格情報のアクションメニューを選択し、*サブスクリプションの設定*を選択します。+新しいスクリーンショットが必要（TS）image:screenshot_gcp_add_subscription.png["一連の既存のクレデンシャルに対する操作メニューのスクリーンショット。"]
 . 選択したクレデンシャルで既存のサブスクリプションを設定するには、ドロップダウンリストからGoogle Cloudプロジェクトとサブスクリプションを選択し、*[設定]*を選択します。
 +
@@ -37,7 +37,7 @@ image:screenshot_gcp_associate.gif["Google Cloud の資格情報に対して選�
 NOTE: 次の手順を実行する前に、Google CloudアカウントとBlueXPログインの両方に課金管理者権限があることを確認してください。
 
 +
-.. にリダイレクトされたら https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^]をクリックし、上部のナビゲーションメニューで正しいプロジェクトが選択されていることを確認します。
+.. リダイレクトされたら https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace の NetApp Intelligent Services ページ"^]上部のナビゲーション メニューで正しいプロジェクトが選択されていることを確認します。
 +
 image:screenshot_gcp_cvo_marketplace.png["Google CloudのCloud Volumes ONTAP Marketplaceページのスクリーンショット。"]
 
@@ -89,7 +89,7 @@ image:screenshot_gcp_associate.gif["サブスクリプションの割り当て�
 
 == Marketplaceのサブスクリプションプロセスのトラブルシューティング
 
-Google Cloud MarketplaceからBlueXPにサブスクライブすると、権限が正しくない場合やBlueXP Webサイトへのリダイレクトを誤って実行しなかった場合に、断片化されることがあります。この場合は、次の手順に従ってサブスクリプションプロセスを完了してください。
+Google Cloud Marketplace を通じて NetApp Intelligent Services にサブスクライブすると、権限が間違っていたり、BlueXP Web サイトへのリダイレクトに誤って従わなかったりしたために、断片化されることがあります。この場合は、次の手順に従ってサブスクリプションプロセスを完了してください。
 
 .手順
 . に移動します https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^] 注文の状態を確認します。ページに「プロバイダで管理」と表示されている場合は、下にスクロールして「注文の管理」を選択します。

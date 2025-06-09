@@ -71,7 +71,7 @@ sidebar:
             url: "/task-install-connector-google-manual.html"
         - title: オンプレミス
           url: "/task-install-connector-on-prem.html"
-      - title: BlueXPにサブスクライブします
+      - title: NetAppインテリジェントサービスにご登録ください
         url: "/task-subscribe-standard-mode.html"
       - title: 次は何ができるか
         url: "/reference-whats-next.html"
@@ -83,7 +83,7 @@ sidebar:
         url: "/task-prepare-restricted-mode.html"
       - title: コネクタを展開します
         url: "/task-install-restricted-mode.html"
-      - title: BlueXPにサブスクライブします
+      - title: NetAppインテリジェントサービスにご登録ください
         url: "/task-subscribe-restricted-mode.html"
       - title: 次は何ができるか
         url: "/reference-whats-next-restricted-mode.html"
@@ -103,8 +103,12 @@ sidebar:
           url: "/task-managing-netapp-accounts.html"
       - title: 次は何ができるか
         url: "/reference-whats-next-private-mode.html"
+  - title: BlueXPを使用する
+    entries:
     - title: BlueXPにログインします
       url: "/task-logging-in.html"
+    - title: BlueXPのユーザー設定を管理する
+      url: "/task-user-settings.html"
   - title: BlueXPを管理します
     entries:
     - title: アイデンティティ管理とアクセス管理
@@ -115,7 +119,7 @@ sidebar:
         url: "/task-iam-get-started.html"
       - title: フォルダとプロジェクトを使用してリソースを整理する
         url: "/task-iam-manage-folders-projects.html"
-      - title: メンバーとサービスアカウントの追加
+      - title: メンバーとサービスアカウントを管理する
         url: "/task-iam-manage-members-permissions.html"
       - title: ロールを使用してリソースへのメンバーアクセスを制御する
         url: "/task-iam-manage-roles.html"

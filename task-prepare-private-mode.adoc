@@ -17,17 +17,17 @@ summary: BlueXPをプライベートモードで導入する前に、環境を�
 BlueXPをプライベートモードで導入する前に、環境を準備します。たとえば、ホストの要件の確認、ネットワークの準備、権限の設定などが必要になります。
 
 
-NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^] または https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^]それらの環境で作業を開始するには、別の手順に従う必要があります。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["AWSシークレットクラウドまたはTop Secret CloudでCloud Volumes ONTAPの使用を開始する方法をご確認ください"^]
+NOTE: BlueXPを使用するには https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^]または https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^]それぞれの環境に応じた指示に従ってください。  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["AWSシークレットクラウドまたはTop Secret CloudでCloud Volumes ONTAPの使用を開始する方法をご確認ください"^]
 
 
 
 == ステップ1：プライベートモードの仕組みを理解する
 
-作業を開始する前に、BlueXPがプライベートモードでどのように動作するかを理解しておく必要があります。
+始める前に、プライベート モードについて理解しておく必要があります。
 
-たとえば、インストールする必要があるBlueXP Connectorからローカルにアクセスできるブラウザベースのインターフェイスを使用する必要があることを理解しておく必要があります。BlueXPには、SaaSレイヤ経由で提供されるWebベースのコンソールからはアクセスできません。
+たとえば、インストールしたコネクタからローカルで使用できるブラウザベースのインターフェースを使用する必要があります。BlueXPには、SaaSレイヤ経由で提供されるWebベースのコンソールからはアクセスできません。
 
-また、すべてのBlueXPサービスを利用できるわけではありません。
+また、すべての機能とサービスが利用できるわけではありません。
 
 link:concept-modes.html["プライベートモードの仕組みを説明します"]。
 
@@ -43,7 +43,7 @@ link:concept-modes.html["プライベートモードの仕組みを説明しま�
 
 == 手順3：ホスト要件を確認する
 
-コネクタソフトウェアは、特定のオペレーティングシステム要件、 RAM 要件、ポート要件などを満たすホストで実行する必要があります。
+コネクタ ソフトウェアを実行するには、ホストが特定のオペレーティング システム要件、RAM 要件、ポート要件などを満たしている必要があります。
 
 専用ホスト:: 他のアプリケーションと共有しているホストでは、このコネクタはサポートされていません。専用のホストである必要があります。
 +
@@ -263,9 +263,8 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 == 手順5：ネットワークを準備する
 
-コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタの仮想ネットワークとサブネットを使用する以外に、次の要件が満たされていることを確認する必要があります。
+パブリッククラウド内のリソースを管理するために、コネクタのネットワークを設定します。コネクタ用の仮想ネットワークとサブネットに加えて、以下の要件を満たしていることを確認してください。ターゲットネットワークへの接続: コネクタは、ストレージを管理する予定の場所へのネットワーク接続が必要です。たとえば、Cloud Volumes ONTAP を導入するVPCまたはVNet、オンプレミスのONTAP クラスタが配置されているデータセンターなどです。
 
-ターゲットネットワークへの接続:: コネクタには、ストレージを管理する場所へのネットワーク接続が必要です。たとえば、Cloud Volumes ONTAP を導入するVPCまたはVNet、オンプレミスのONTAP クラスタが配置されているデータセンターなどです。
 日常業務のエンドポイント:: Cloud Volumes ONTAPシステムを作成する場合は、クラウドプロバイダの一般に利用可能なリソース内のエンドポイントにコネクタを接続する必要があります。
 +
 --
@@ -375,7 +374,7 @@ NTPを有効にする:: BlueXP分類を使用して企業データソースを�
 
 == ステップ6：クラウドの権限を準備する
 
-コネクタがクラウドにインストールされていて、Cloud Volumes ONTAPシステムを作成する場合は、クラウドプロバイダからBlueXPの権限が必要です。クラウドプロバイダで権限を設定し、インストール後にそれらの権限をコネクタインスタンスに関連付ける必要があります。
+コネクタがクラウドにインストールされていて、Cloud Volumes ONTAP システムを作成する予定の場合、BlueXP にはクラウド プロバイダーの権限が必要です。クラウドプロバイダで権限を設定し、インストール後にそれらの権限をコネクタインスタンスに関連付ける必要があります。
 
 必要な手順を表示するには、クラウドプロバイダに使用する認証オプションを選択します。
 
@@ -410,7 +409,7 @@ NTPを有効にする:: BlueXP分類を使用して企業データソースを�
 --
 .AWSアクセスキー
 --
-IAMユーザの権限とアクセスキーを設定します。コネクタをインストールしてBlueXPをセットアップしたら、BlueXPにAWSアクセスキーを指定する必要があります。
+IAMユーザの権限とアクセスキーを設定します。コネクタをインストールして BlueXP をセットアップした後、BlueXP に AWS アクセスキーを提供します。
 
 .手順
 . AWSコンソールにログインし、IAMサービスに移動します。
@@ -442,7 +441,7 @@ IAMユーザの権限とアクセスキーを設定します。コネクタを�
 --
 .Azureロール
 --
-必要な権限を持つAzureカスタムロールを作成します。このロールをコネクタVMに割り当てます。
+必要な権限を持つAzureカスタムロールを作成します。このロールをコネクタ VM に割り当てます。
 
 Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure に関するドキュメント"^]
 
@@ -639,7 +638,7 @@ BlueXPでクライアントシークレットを使用してMicrosoft Entra ID�
 
 
 .結果
-これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。Azureアカウントを追加する場合は、BlueXPでこの情報を入力する必要があります。
+これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。Azure アカウントを追加するときに、この情報を BlueXP に入力します。
 
 --
 .Google Cloudサービスアカウント
@@ -688,7 +687,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 
 == ステップ7：Google Cloud APIを有効にする
 
-Google CloudにCloud Volumes ONTAP を導入するには、いくつかのAPIが必要です。
+Google Cloud に Cloud Volumes ONTAP をデプロイするには、いくつかの API を有効にする必要があります。
 
 .ステップ
 . https://cloud.google.com/apis/docs/getting-started#enabling_apis["プロジェクトで次の Google Cloud API を有効にします"^]

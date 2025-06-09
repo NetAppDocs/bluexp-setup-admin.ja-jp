@@ -3,7 +3,7 @@
 
 
 .手順
-. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
+. コンソールの右上にある設定アイコンを選択し、*資格情報*を選択します。
 . 一連の資格情報のアクションメニューを選択し、*サブスクリプションの設定*を選択します。+新しいスクリーンショットが必要（TS）image:screenshot_gcp_add_subscription.png["一連の既存のクレデンシャルに対する操作メニューのスクリーンショット。"]
 . 選択したクレデンシャルで既存のサブスクリプションを設定するには、ドロップダウンリストからGoogle Cloudプロジェクトとサブスクリプションを選択し、*[設定]*を選択します。
 +
@@ -15,7 +15,7 @@ image:screenshot_gcp_associate.gif["Google Cloud の資格情報に対して選�
 NOTE: 次の手順を実行する前に、Google CloudアカウントとBlueXPログインの両方に課金管理者権限があることを確認してください。
 
 +
-.. にリダイレクトされたら https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud MarketplaceのNetApp BlueXPページ"^]をクリックし、上部のナビゲーションメニューで正しいプロジェクトが選択されていることを確認します。
+.. リダイレクトされたら https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace の NetApp Intelligent Services ページ"^]上部のナビゲーション メニューで正しいプロジェクトが選択されていることを確認します。
 +
 image:screenshot_gcp_cvo_marketplace.png["Google CloudのCloud Volumes ONTAP Marketplaceページのスクリーンショット。"]
 

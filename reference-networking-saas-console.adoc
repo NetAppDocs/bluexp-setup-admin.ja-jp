@@ -14,11 +14,11 @@ summary: SaaSレイヤで提供されるWebベースのBlueXPコンソールを�
 
 
 [role="lead"]
-ログインしてBlueXP  Webベースのコンソールを使用すると、BlueXP  は複数のエンドポイントに接続して、開始したアクションを完了します。BlueXP  コンソールにアクセスするコンピュータには、これらのエンドポイントへの接続が必要です。
+ログインしてWebベースのコンソールを使用すると、BlueXPは複数のエンドポイントに接続して、ユーザーが開始したアクションを実行します。コンソールにアクセスするコンピューターは、これらのエンドポイントに接続している必要があります。
 
 これらのエンドポイントには、次の2つのシナリオがあります。
 
-* ソフトウェアサービス(SaaS)として利用可能なから特定のアクションを実行するときに、ユーザーのコンピュータから https://console.bluexp.netapp.com["WebベースのBlueXPコンソール"^]。
+* ユーザーのコンピュータから、  https://console.bluexp.netapp.com["WebベースのBlueXPコンソール"^] SaaS (サービスとしてのソフトウェア) として利用できます。
 * ユーザーのコンピュータからWebブラウザを開いて、コネクタホストのIPアドレスを入力し、ログインしてコネクタを設定します。これらの手順は、コネクタを手動で取り付ける場合に必要です。
 
 
@@ -28,13 +28,13 @@ summary: SaaSレイヤで提供されるWebベースのBlueXPコンソールを�
 
 
 | \https://console.bluexp.netapp.com
-\https://*.console.bluexp.netapp.com | これは、BlueXP  Webベースのコンソールを使用するためにWebブラウザに入力するエンドポイントです。 
+\https://*.console.bluexp.netapp.com | これは、Web ベースのコンソールを使用するために Web ブラウザに入力するエンドポイントです。 
 
 
-| \https://api.bluexp.netapp.com | BlueXP  Webベースのコンソールは、このエンドポイントと通信して、許可、ライセンス、サブスクリプション、クレデンシャル、通知などに関連するアクションをBlueXP  APIとやり取りします。 
+| \https://api.bluexp.netapp.com | Web ベースのコンソールは、このエンドポイントに接続して API と対話し、承認、ライセンス、サブスクリプション、資格情報、通知などに関連するアクションを実行します。 
 
 
-| \https://aiq.netapp.com | BlueXP Digital Advisorにアクセスするには必要です。 
+| \https://aiq.netapp.com | デジタルアドバイザーにアクセスするために必要です。 
 
 
  a| 
@@ -46,7 +46,7 @@ AWS サービス（ amazonaws.com ）：
 * セキュリティトークンサービス（ STS ）
 * シンプルなストレージサービス（ S3 ）
 
-| BlueXPからAWSにコネクタを導入する場合に必要です。正確なエンドポイントは、コネクタを配置するリージョンによって異なります。 https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、 AWS のマニュアルを参照してください。"^] 
+| BlueXPからAWSにコネクタを導入する場合に必要です。正確なエンドポイントは、コネクタをデプロイするリージョンによって異なります。  https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWS のドキュメントを参照してください。"]提案：  https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細については、AWS のドキュメントを参照してください。"] 
 
 
 | \https://management.azure.com
@@ -77,9 +77,9 @@ AWS サービス（ amazonaws.com ）：
 \https://services.cloud.netapp.com | Webブラウザはこれらのエンドポイントに接続して、BlueXPを介した集中型ユーザ認証を行います。 
 
 
-| \https://widget.intercom.io | 製品内でのチャットにより、ネットアップのクラウドエキスパートと会話できます。 
+| \https://widget.intercom.io | NetApp サポートと会話できる製品内チャットです。 
 |===
-これらのエンドポイント以外にも、日常業務のために特定のエンドポイントに接続するためのアウトバウンドインターネットアクセスがコネクタにあることを確認する必要があります。これらのエンドポイントのリストは、次のセクションのリンクに従って確認できます。
+コネクタが日常業務で使用するエンドポイントへのアウトバウンドインターネットアクセスを確保していることを確認してください。これらのエンドポイントのリストについては、次のセクションのリンクをご覧ください。
 
 .関連情報
 * コネクタのネットワークを準備します

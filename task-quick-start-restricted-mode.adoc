@@ -14,7 +14,7 @@ summary: 環境を準備し、コネクタを導入し、BlueXPにサブスク�
 
 
 [role="lead"]
-環境を準備し、コネクタを導入し、BlueXPにサブスクライブすることで、制限モードでBlueXPを開始できます。
+環境を準備し、コネクタを展開して、制限モードで BlueXP の使用を開始します。
 
 制限モードは通常、州政府や地方自治体、規制対象の企業（AWS GovCloudリージョンやAzure Governmentリージョンへの導入を含む）で使用されます。開始する前に、次のことを理解しておく必要があります。 link:concept-netapp-accounts.html["BlueXPのアカウント"]、 link:concept-connectors.html["コネクタ"]および link:concept-modes.html["導入モード"]。
 
@@ -32,6 +32,6 @@ summary: 環境を準備し、コネクタを導入し、BlueXPにサブスク�
 . 以前に設定した権限をBlueXPに付与します。
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] link:task-subscribe-restricted-mode.html["BlueXPにサブスクライブします"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] link:task-subscribe-restricted-mode.html["NetAppインテリジェントサービスに加入する（オプション）"]
 [role="quick-margin-para"]
-クラウドプロバイダのマーケットプレイスからBlueXPにサブスクライブして、BlueXPサービスの料金を時間単位（PAYGO）または年間契約でお支払いください。
+オプション：クラウドプロバイダのマーケットプレイスからNetApp Intelligent Servicesにご登録いただくと、データサービスの料金を時間単位（PAYGO）または年間契約でお支払いいただけます。NetAppIntelligent Servicesには、バックアップとリカバリ、Cloud Volumes ONTAP、階層化、ランサムウェア対策、ディザスタリカバリが含まれます。分類機能はサブスクリプションに含まれており、追加料金はかかりません。

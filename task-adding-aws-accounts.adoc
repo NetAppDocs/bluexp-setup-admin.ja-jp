@@ -14,7 +14,7 @@ summary: AWSクレデンシャルを追加および管理して、BlueXPがAWS�
 
 
 [role="lead"]
-AWSクレデンシャルを追加および管理して、BlueXPがAWSアカウントでクラウドリソースを導入および管理するために必要な権限を持つようにします。複数のAWS Marketplaceサブスクリプションを管理している場合は、[Credentials]ページで各サブスクリプションを異なるAWSクレデンシャルに割り当てることができます。
+BlueXP から AWS アカウントのクラウド リソースをデプロイおよび管理できるように、AWS 認証情報を追加および管理します。複数のAWS Marketplaceサブスクリプションを管理している場合は、[Credentials]ページで各サブスクリプションを異なるAWSクレデンシャルに割り当てることができます。
 
 
 
@@ -24,7 +24,7 @@ AWSクレデンシャルを既存のコネクタに追加するか、またはBl
 
 * 既存のコネクタにAWSクレデンシャルを追加する
 +
-AWSクレデンシャルを既存のコネクタに追加すると、パブリッククラウド環境内のリソースとプロセスの管理に必要な権限が付与されます。 <<コネクタにクレデンシャルを追加してください,AWS クレデンシャルをコネクタに追加する方法について説明します>>。
+クラウド環境内のリソースを管理するには、コネクタに AWS 認証情報を追加します。<<コネクタにクレデンシャルを追加してください,AWS クレデンシャルをコネクタに追加する方法について説明します>>です。
 
 * BlueXPに、コネクタを作成するためのAWSクレデンシャルを追加します
 +
@@ -32,7 +32,7 @@ AWSクレデンシャルを既存のコネクタに追加すると、パブリ�
 
 * BlueXP for FSX for ONTAP にAWSクレデンシャルを追加します
 +
-BlueXPに新しいAWS資格情報を追加すると'BlueXPにONTAP 用FSXの作成と管理に必要な権限が与えられます https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSX for ONTAP のアクセス許可を設定する方法について説明します"^]
+FSx for ONTAP を作成および管理するには、BlueXP に新しい AWS 認証情報を追加します。  https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSX for ONTAP のアクセス許可を設定する方法について説明します"^]
 
 
 
@@ -44,7 +44,7 @@ BlueXPでは、いくつかの方法でAWSクレデンシャルを提供でき�
 
 最初の2つのオプションでは、BlueXPはAWS Security Token Serviceを使用して、絶えず回転する一時的な資格情報を取得します。このプロセスは自動でセキュアであるため、ベストプラクティスです。
 
-BlueXPにAWSアクセスキーを提供する場合は、BlueXPで定期的にキーを更新して、キーを回転させる必要があります。これは完全に手動で行います。
+BlueXPでAWSアクセスキーを更新し、定期的にローテーションしてください。このプロセスは手動で行います。
 
 
 
@@ -58,10 +58,10 @@ BlueXPを使い始めたばかりの方は、 link:concept-accounts-aws.html["Bl
 
 === 権限を付与します
 
-ConnectorにAWSクレデンシャルを追加する前に、必要な権限を指定する必要があります。この権限を持つBlueXPは、そのAWSアカウント内のリソースとプロセスを管理できるようになります。アクセス許可の指定方法は、BlueXPに信頼されたアカウントまたはAWSキーの役割のARNを提供するかどうかによって異なります。
+AWS認証情報をコネクタに追加する前に、必要な権限を付与してください。これらの権限により、コネクタはAWSアカウント内のリソースとプロセスを管理できます。権限は、信頼できるアカウントのロールのARNまたはAWSキーを使用して付与できます。
 
 
-NOTE: BlueXPからコネクタを導入した場合'BlueXPはコネクタを導入したアカウントのAWS資格情報を自動的に追加しましたこの初期アカウントは、AWS MarketplaceからConnectorを導入した場合や、Connectorソフトウェアを既存のシステムに手動でインストールした場合は追加されません。 link:concept-accounts-aws.html["AWS のクレデンシャルと権限について説明します"]。
+NOTE: BlueXPからコネクタを導入した場合'BlueXPはコネクタを導入したアカウントのAWS資格情報を自動的に追加しましたこれにより、リソースを管理するために必要な権限が確保されます。link:concept-accounts-aws.html["AWS のクレデンシャルと権限について説明します"]です。
 
 * 選択肢 *
 
@@ -126,11 +126,11 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 必要な権限を AWS アカウントに付与したら、そのアカウントのクレデンシャルを既存のコネクタに追加できます。これにより、同じコネクタを使用してアカウントの Cloud Volumes ONTAP システムを起動できます。
 
 .作業を開始する前に
-作成したクレデンシャルをクラウドプロバイダで使用できるようになるまでに数分かかることがあります。数分待ってから、BlueXPに資格情報を追加します。
+作成したクレデンシャルをクラウドプロバイダで使用できるようになるまでに数分かかることがあります。数分待ってから資格情報を追加します。
 
 .手順
-. BlueXPで正しいコネクタが選択されていることを確認します
-. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
+. 上部のナビゲーション バーを使用して、資格情報を追加するコネクタを選択します。
+. コンソールの右上にある設定アイコンを選択し、*資格情報*を選択します。
 +
 image:screenshot-settings-icon-organization.png["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 
@@ -140,7 +140,7 @@ image:screenshot-settings-icon-organization.png["BlueXPコンソールの右上�
 .. * クレデンシャルの定義 * ：信頼された IAM ロールの ARN （ Amazon リソース名）を指定するか、 AWS アクセスキーとシークレットキーを入力します。
 .. * Marketplace サブスクリプション *: 今すぐ登録するか、既存のサブスクリプションを選択して、 Marketplace サブスクリプションをこれらの資格情報に関連付けます。
 +
-BlueXPサービスの料金を時間単位（PAYGO）または年間契約で支払うには、AWSクレデンシャルをAWS Marketplaceサブスクリプションに関連付ける必要があります。
+時間単位の料金 (PAYGO) または年間契約でサービス料金を支払うには、AWS 認証情報を AWS Marketplace サブスクリプションに関連付ける必要があります。
 
 .. *確認*：新しいクレデンシャルの詳細を確認し、*[追加]*を選択します。
 
@@ -156,7 +156,7 @@ image:screenshot_accounts_switch_aws.png["[Details  Credentials]ページで[Swi
 
 == コネクタを作成するために、BlueXPに資格情報を追加します
 
-BlueXPに、Connectorの作成に必要な権限をBlueXPに与えるIAMロールのARNを提供して、AWSクレデンシャルをBlueXPに追加します。これらのクレデンシャルは、新しいコネクタを作成するときに選択できます。
+コネクタの作成に必要な権限を付与する IAM ロールの ARN を指定して、AWS 認証情報を追加します。これらのクレデンシャルは、新しいコネクタを作成するときに選択できます。
 
 
 
@@ -210,9 +210,6 @@ image:screenshot-settings-icon-organization.png["BlueXPコンソールの右上�
 
 
 
-.結果
-新しいコネクタを作成するときにクレデンシャルを使用できるようになりました。
-
 
 
 == BlueXP for Amazon FSx for ONTAP にクレデンシャルを追加
@@ -223,11 +220,11 @@ image:screenshot-settings-icon-organization.png["BlueXPコンソールの右上�
 
 == AWSサブスクリプションを設定
 
-AWSクレデンシャルをBlueXP  に追加したら、それらのクレデンシャルを使用してAWS Marketplaceサブスクリプションを設定できます。このサブスクリプションでは、Cloud Volumes ONTAP の料金を時間単位（PAYGO）または年単位の契約で支払い、その他のBlueXPサービスを利用できます。
+AWS認証情報を追加したら、その認証情報を使用してAWS Marketplaceサブスクリプションを設定できます。このサブスクリプションにより、Cloud Volumes ONTAPの料金を時間単位（PAYGO）または年間契約でお支払いいただけるほか、その他のデータサービスもご利用いただけます。
 
-BlueXP  にクレデンシャルを追加したあとにAWS Marketplaceサブスクリプションを設定するシナリオは2つあります。
+認証情報を追加した後に AWS Marketplace サブスクリプションを構成するシナリオは 2 つあります。
 
-* 最初にBlueXP  に資格情報を追加したときに、サブスクリプションを設定しなかった。
+* 資格情報を最初に追加したときに、サブスクリプションを構成しませんでした。
 * AWSクレデンシャルに設定されているAWS Marketplaceサブスクリプションを変更する。
 +
 現行のMarketplaceサブスクリプションを新しいサブスクリプションに置き換えると、既存のCloud Volumes ONTAP作業環境とすべての新規作業環境のMarketplaceサブスクリプションが変更されます。
@@ -235,11 +232,11 @@ BlueXP  にクレデンシャルを追加したあとにAWS Marketplaceサブ�
 
 
 .作業を開始する前に
-BlueXP設定を変更する前にコネクタを作成する必要があります。link:concept-connectors.html#connector-installation["コネクタの作成方法を説明します"]です。
+サブスクリプションを構成する前に、コネクタを作成する必要があります。link:concept-connectors.html#connector-installation["コネクタの作成方法を説明します"]です。
 
-次のビデオは、AWS MarketplaceからBlueXP  にサブスクライブする手順を示しています。
+次のビデオは、AWS Marketplace から NetApp Intelligent Services をサブスクライブする手順を示しています。
 
-.AWS MarketplaceでBlueXPにサブスクライブ
+.AWS MarketplaceからNetAppインテリジェントサービスにサブスクライブする
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .手順
 . BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
@@ -280,33 +277,33 @@ BlueXP  は、組織またはアカウントのすべてのクレデンシャ�
 
 == 既存のサブスクリプションを組織またはアカウントに関連付ける
 
-AWS MarketplaceからBlueXP  にサブスクライブする場合、最後にBlueXP  のWebサイトからBlueXP  組織またはBlueXP  アカウントにサブスクリプションを関連付ける必要があります。この手順を完了していない場合は、BlueXP  組織またはアカウントでサブスクリプションを使用することはできません。
+AWS Marketplace からサブスクリプションを申し込む場合、プロセスの最後のステップは、サブスクリプションを組織に関連付けることです。このステップを完了していない場合、組織またはアカウントでサブスクリプションを使用することはできません。
 
 
-TIP: BlueXP  を標準モードで使用している場合は、BlueXP  IDおよびアクセス管理(IAM)を使用して管理する_ BlueXP  organization_があります。ただし、制限モードまたはプライベートモードでBlueXP  を使用している場合は、_ BlueXP  アカウント_があります。
+TIP: 標準モードまたは制限モードを使用している場合は、BlueXP ID およびアクセス管理 (IAM) を使用して管理する _BlueXP 組織_ が作成されます。ただし、BlueXP  をプライベートモードで使用している場合は、_ BlueXP  アカウント_があります。
 
 * link:concept-modes.html["BlueXPの導入モードについて説明します"]
 * link:concept-identity-and-access-management.html["BlueXP  のアイデンティティ管理とアクセス管理の詳細"]
 * link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認ください"]
 
 
-AWS MarketplaceからBlueXPのサブスクリプションを登録していて、アカウントにサブスクリプションを関連付ける手順をまだ間に合わなかった場合は、次の手順を実行してください。
+AWS Marketplace から NetApp インテリジェント データ サービスにサブスクライブしたが、サブスクリプションをアカウントに関連付ける手順を忘れた場合は、以下の手順に従ってください。
 
 .手順
-. BlueXP  のデジタルウォレットにアクセスして、サブスクリプションがBlueXP  の組織またはアカウントに関連付けられていないことを確認します。
+. デジタル ウォレットにアクセスして、サブスクリプションを BlueXP 組織またはアカウントに関連付けていないことを確認します。
 +
-.. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
+.. ナビゲーション メニューから、*ガバナンス > デジタル ウォレット* を選択します。
 .. [サブスクリプション]を選択します。
-.. BlueXPサブスクリプションが表示されないことを確認します。
+.. サブスクリプションが表示されていないことを確認します。
 +
 現在表示している組織またはアカウントに関連付けられているサブスクリプションのみが表示されます。サブスクリプションが表示されない場合は、次の手順に進みます。
 
 
 
 . AWSコンソールにログインし、*[AWS Marketplace Subscriptions]*に移動します。
-. NetApp BlueXPサブスクリプションを見つけましょう。
+. NetApp Intelligent Data Services サブスクリプションを見つけます。
 +
-image:screenshot-aws-marketplace-bluexp-subscription.png["AWS Marketplaceのスクリーンショット。NetApp BlueXPサブスクリプションが表示されています。"]
+image:screenshot-aws-marketplace-bluexp-subscription.png["NetApp サブスクリプションを示す AWS Marketplace のスクリーンショット。"]
 
 . [製品の設定]*を選択します。
 +
@@ -314,7 +311,7 @@ image:screenshot-aws-marketplace-bluexp-subscription.png["AWS Marketplaceのス�
 
 . [アカウントを設定する]*を選択します。
 +
-image:screenshot-aws-marketplace-set-up-account.png["AWS Marketplaceのスクリーンショット。NetApp BlueXPサブスクリプションとページの右上に表示される[Set up your account]オプションを示しています。"]
+image:screenshot-aws-marketplace-set-up-account.png["NetApp サブスクリプションと、ページの右上に表示されるアカウントの設定オプションを示す AWS Marketplace のスクリーンショット。"]
 
 +
 netapp.comの* Subscription Assignment *ページが新しいブラウザタブまたはウィンドウにロードされます。
@@ -337,16 +334,16 @@ image:screenshot-subscription-assignment.png["[Subscription Assignment]ページ
 
 
 
-. BlueXP  のデジタルウォレットに移動して、サブスクリプションがBlueXP  の組織またはアカウントに関連付けられていることを確認します。
+. デジタル ウォレットにアクセスして、サブスクリプションが組織またはアカウントに関連付けられていることを確認します。
 +
-.. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
+.. ナビゲーション メニューから、*ガバナンス > デジタル ウォレット* を選択します。
 .. [サブスクリプション]を選択します。
-.. BlueXPサブスクリプションが表示されることを確認します。
+.. サブスクリプションが表示されていることを確認します。
 
 
 . サブスクリプションがAWSクレデンシャルに関連付けられていることを確認します。
 +
-.. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
+.. コンソールの右上にある設定アイコンを選択し、*資格情報*を選択します。
 .. [Organization credentials]*または*[Account credentials]*ページで、サブスクリプションがAWSクレデンシャルに関連付けられていることを確認します。
 +
 次に例を示します。
@@ -362,13 +359,13 @@ image:screenshot-credentials-with-subscription.png["BlueXPの[Account credential
 
 == クレデンシャルを編集する
 
-BlueXPでAWSクレデンシャルを編集するには、アカウントタイプ（AWSキーまたは権限）を変更するか、名前を編集するか、クレデンシャル自体（キーまたはロールARN）を更新します。
+アカウントの種類 (AWS キーまたはロールの引き受け) を変更したり、名前を編集したり、認証情報自体 (キーまたはロール ARN) を更新したりして、AWS 認証情報を編集します。
 
 
-TIP: コネクタインスタンスに関連付けられているインスタンスプロファイルのクレデンシャルは編集できません。
+NOTE: コネクタインスタンスまたは Amazon FSx for ONTAP インスタンスに関連付けられているインスタンスプロファイルの認証情報を編集することはできません。
 
 .手順
-. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
+. コンソールの右上にある設定アイコンを選択し、*資格情報*を選択します。
 . [Organization credentials]*または*[Account credentials]*ページで、一連のクレデンシャルのアクションメニューを選択し、*[Edit Credentials]*を選択します。
 . 必要な変更を行い、*適用*を選択します。
 
@@ -377,13 +374,13 @@ TIP: コネクタインスタンスに関連付けられているインスタン
 
 == クレデンシャルを削除
 
-一連の資格情報が不要になった場合は、BlueXPから削除できます。削除できるのは、作業環境に関連付けられていないクレデンシャルのみです。
+資格情報セットが不要になった場合は、削除できます。削除できるのは、作業環境に関連付けられていないクレデンシャルのみです。
 
 
 TIP: コネクタインスタンスに関連付けられているインスタンスプロファイルのクレデンシャルは削除できません。
 
 .手順
-. BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
+. コンソールの右上にある設定アイコンを選択し、*資格情報*を選択します。
 . [Organization credentials]*または*[Account credentials]*ページで、一連のクレデンシャルのアクションメニューを選択し、*[Delete Credentials]*を選択します。
 . [削除]*を選択して確定します。
 

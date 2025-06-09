@@ -22,24 +22,24 @@ BlueXP  IAMから組織全体を管理するには、* Organization admin *権�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]既定のプロジェクトを編集するか、組織の階層に追加します。
 [role="quick-margin-para"]
-デフォルトのプロジェクトを使用するか、ビジネスの階層に一致する追加のプロジェクトやフォルダを作成することができます。
+デフォルトのプロジェクトを使用するか、ビジネス階層に一致する追加のプロジェクトとフォルダーを作成します。
 
 [role="quick-margin-para"]
 link:task-iam-manage-folders-projects.html["フォルダとプロジェクトを使用してリソースを整理する方法について説明します。"]です。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]メンバーを組織に関連付ける
 [role="quick-margin-para"]
-ビジネス内の複数のユーザーがBlueXP  からリソースにアクセスして管理する必要がある場合は、ユーザーアカウントを組織に関連付け、リソース階層全体に適切な権限を付与する必要があります。また、サービスアカウントを組織に追加することもできます。
+社内の複数のユーザーが BlueXP にアクセスする必要がある場合は、ユーザー アカウントを組織に関連付け、必要な権限を割り当てます。また、サービスアカウントを組織に追加することもできます。
 
 [role="quick-margin-para"]
 link:task-iam-manage-members-permissions.html["メンバーとその権限を管理する方法について説明します。"]です。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]リソースを追加または検出する
 [role="quick-margin-para"]
-BlueXP  AS_Working Environments_でリソースを追加または検出します。作業環境とは、組織のメンバーがプロジェクト内から管理するストレージシステムのことです。たとえば、Cloud Volumes ONTAPシステムやオンプレミスのONTAPクラスタなどです。
+BlueXP では、リソースを作業環境として追加または検出できます。組織のメンバーは、プロジェクト内からストレージシステムを表す作業環境を管理します。
 
 [role="quick-margin-para"]
-BlueXP  キャンバスからリソースを作成または検出する方法について説明します。
+リソースを作成または検出する方法を学びます。
 
 [role="quick-margin-list"]
 * https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["NetApp ONTAP 対応の Amazon FSX"^]
@@ -52,7 +52,7 @@ BlueXP  キャンバスからリソースを作成または検出する方法�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."]リソースと追加プロジェクトの関連付け
 [role="quick-margin-para"]
-BlueXP  でリソースを作成または検出すると、そのリソースは、作業環境を作成または検出したときに選択したプロジェクトに自動的に関連付けられます。そのリソースを組織内の別のプロジェクトで使用できるようにするには、リソース間に関連付けを作成する必要があります。リソースがコネクタによって管理されている場合は、プロジェクトと関連付けられているコネクタの間にも関連付けを作成する必要があります。
+BlueXP  でリソースを作成または検出すると、そのリソースは、作業環境を作成または検出したときに選択したプロジェクトに自動的に関連付けられます。そのリソースを組織内の別のプロジェクトで使用できるようにするには、リソース間に関連付けを作成する必要があります。コネクタがリソースを管理する場合は、コネクタをそれぞれのプロジェクトに関連付けます。
 
 [role="quick-margin-list"]
 * link:task-iam-manage-resources.html["組織のリソース階層を管理する方法"]です。

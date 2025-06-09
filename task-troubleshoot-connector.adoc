@@ -74,7 +74,7 @@ image:screenshot-help-support.png["[ ヘルプ ] メニューのスクリーン�
 .. ネットアップサポートにメッセージを直接送信するには、* Send AutoSupport *を選択します。
 +
 
-NOTE: BlueXP  からAutoSupportメッセージを送信するように選択した場合、BlueXP  はAutoSupportメッセージの送信時に自動的にロードバランシングを行うため、最大5時間かかることがあります。NetAppサポートとの通信に時間がかかる場合は、ファイルをダウンロードしてNetAppサポートに自分で送信してください。
+NOTE: BlueXPは負荷分散のため、AutoSupportメッセージの送信に最大5時間かかる場合があります。緊急の場合は、ファイルをダウンロードして手動で送信してください。
 
 
 

@@ -2,9 +2,9 @@
 :allow-uri-read: 
 
 
-次のビデオは、AWS MarketplaceからBlueXP  にサブスクライブする手順を示しています。
+次のビデオは、AWS Marketplace から NetApp Intelligent Services をサブスクライブする手順を示しています。
 
-.AWS MarketplaceでBlueXPにサブスクライブ
+.AWS MarketplaceからNetAppインテリジェントサービスにサブスクライブする
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .手順
 . BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。
