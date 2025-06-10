@@ -18,14 +18,14 @@ Azure MarketplaceからAzureでコネクタを直接作成できます。Azure M
 
 .作業を開始する前に
 * が必要ですlink:concept-connectors.html["コネクタの概要"]。
-* 確認が必要です link:reference-limitations.html["コネクタの制限"]。
+* レビューlink:reference-limitations.html["コネクタの制限"] 。
 
 
 
 
 == 手順1：ネットワークをセットアップする
 
-コネクタをインストールするネットワークの場所が、次の要件をサポートしていることを確認します。これらの要件を満たすことで、コネクタはハイブリッドクラウド環境内のリソースとプロセスを管理できるようになります。
+コネクタをインストールする予定のネットワークの場所が次の要件をサポートしていることを確認します。これらの要件により、コネクタはハイブリッド クラウド内のリソースを管理できるようになります。
 
 Azure リージョン:: Cloud Volumes ONTAPを使用する場合は、コネクタを管理するCloud Volumes ONTAPシステムと同じAzureリージョンまたはに導入する必要があります https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure リージョンペア"^] Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。
 +
@@ -143,7 +143,7 @@ Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するた�
 NTPを有効にする:: BlueXP分類を使用して企業データソースをスキャンする場合は、システム間で時刻が同期されるように、BlueXP ConnectorシステムとBlueXP分類システムの両方でネットワークタイムプロトコル（NTP）サービスを有効にする必要があります。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
 +
 --
-コネクタを作成した後で、このネットワーク要件を実装する必要があります。
+コネクタを作成した後、ネットワーク要件を実装します。
 
 --
 
@@ -152,7 +152,7 @@ NTPを有効にする:: BlueXP分類を使用して企業データソースを�
 
 == ステップ2：VMの要件を確認する
 
-コネクタを作成するときは、次の要件を満たす仮想マシンタイプを選択する必要があります。
+コネクタを作成するときは、次の要件を満たす仮想マシンの種類を選択します。
 
 CPU:: 8 コアまたは 8 個の vCPU
 RAM:: 32 GB
@@ -369,9 +369,6 @@ BlueXPでクライアントシークレットを使用してMicrosoft Entra ID�
 
 
 
-.結果
-これでサービスプリンシパルが設定され、アプリケーション（クライアント） ID 、ディレクトリ（テナント） ID 、およびクライアントシークレットの値をコピーしました。Azureアカウントを追加する場合は、BlueXPでこの情報を入力する必要があります。
-
 --
 ====
 
@@ -381,7 +378,7 @@ BlueXPでクライアントシークレットを使用してMicrosoft Entra ID�
 Azure Marketplaceからコネクタを直接起動します。
 
 .このタスクについて
-Azure Marketplaceからコネクタを作成すると、デフォルト構成を使用してAzureに仮想マシンが導入されます。 link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。
+Azure Marketplace からコネクタを作成すると、デフォルト構成の仮想マシンが設定されます。link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]です。
 
 .作業を開始する前に
 次の情報が必要です。
@@ -430,7 +427,7 @@ link:reference-ports-azure.html["Azureのセキュリティグループルール
 
 . [確認と作成]ページで、選択内容を確認し、*[作成]*を選択して導入を開始します。
 +
-指定した設定で仮想マシンが展開されます。仮想マシンと Connector ソフトウェアが起動するまでの所要時間は約 5 分です。
+指定した設定で仮想マシンが展開されます。約 5 分以内に仮想マシンとコネクタ ソフトウェアが実行されるはずです。
 
 . Connector 仮想マシンに接続されているホストから Web ブラウザを開き、次の URL を入力します。
 +
@@ -442,7 +439,7 @@ https://_ipaddress_[]
 .. システムの名前を入力します。
 .. *では、セキュリティ保護された環境で実行していますか？*制限モードを無効にしたままにします。
 +
-標準モードでBlueXPを使用する手順について説明しているため、制限モードは無効にしておく必要があります。セキュアな環境でBlueXPバックエンドサービスからこのアカウントを切断する場合にのみ、制限モードを有効にしてください。その場合は、 link:task-quick-start-restricted-mode.html["制限モードでBlueXPの使用を開始するには、次の手順に従います"]。
+BlueXPを標準モードで使用したい場合は、制限モードを無効にしてください。セキュアな環境でBlueXPバックエンドサービスからこのアカウントを切断する場合にのみ、制限モードを有効にしてください。その場合は、 link:task-quick-start-restricted-mode.html["制限モードでBlueXPの使用を開始するには、次の手順に従います"] 。
 
 .. [* Let's start]*を選択します。
 
@@ -450,7 +447,7 @@ https://_ipaddress_[]
 
 
 .結果
-これでコネクタがインストールされ、BlueXP  組織でセットアップされました。
+これで、コネクタがインストールされ、BlueXP 組織で設定されました。
 
 コネクタを作成したAzureサブスクリプションと同じAzure BLOBストレージがある場合は、BlueXPキャンバスにAzure BLOBストレージの作業環境が自動的に表示されます。 https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["BlueXPからAzure Blobストレージを管理する方法"^]
 

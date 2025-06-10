@@ -26,13 +26,13 @@ NetApp Support Site （NSS）クレデンシャルを使用してBlueXPにログ
 * フォームに指定されたメールアドレスにフォームを送信します
 
 
-NetApp Identity and Access Management チームがリクエストを確認します。
+NetApp サポート チームがお客様のリクエストを確認し、処理します。
 
 
 
 == アイデンティティフェデレーションの仕組み
 
-アイデンティティフェデレーションを設定すると、BlueXPの認証サービスプロバイダ（Auth0）と独自のアイデンティティ管理プロバイダの間に信頼関係が確立されます。
+ID フェデレーションを設定すると、BlueXP の認証サービス プロバイダー (Auth0) と独自の ID 管理プロバイダーの間に信頼接続が作成されます。
 
 次の図は、アイデンティティフェデレーションとBlueXPの連携を示しています。
 
@@ -57,11 +57,11 @@ BlueXPは次のIDプロバイダをサポートしています。
 
 * Security Assertion Markup Language（SAML）アイデンティティプロバイダ
 * MicrosoftエントラID
-* Active Directory フェデレーションサービス（ ADFS ）
+* アクティブ ディレクトリ フェデレーション サービス (AD FS)
 * PingFederate
 
 
-BlueXPでは、サービスプロバイダ主導（SP主導）のSSOのみがサポートされます。アイデンティティプロバイダが開始する（IdPが開始する）SSOはサポートされていません。
+BlueXP は、サービス プロバイダー開始 (SP 開始) SSO のみをサポートします。
 
 
 
@@ -75,97 +75,56 @@ BlueXP と ID 管理プロバイダー間の接続を設定する前に、準備
 
 === SAMLアイデンティティプロバイダ
 
-概要として、BlueXPとSAMLアイデンティティプロバイダの間にフェデレーテッド接続を設定する手順は次のとおりです。
+SAML ID プロバイダーとのフェデレーション接続を設定するには、次の手順に従います。
 
 [cols="10,15,75"]
 |===
 | ステップ | 完了者 | 説明 
 
 
-| 1. | Active Directory（AD）管理者  a| 
-SAMLアイデンティティプロバイダを設定して、BlueXPとのアイデンティティフェデレーションを有効にします。
-
-SAML IDプロバイダの手順を表示します。
-
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-adfs-saml-connections["ADFS （ ADFS ）"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-okta-as-saml-identity-provider["オクタ"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-onelogin-as-saml-identity-provider["OneLogin"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-pingfederate-as-saml-identity-provider["PingFederate"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-salesforce-as-saml-identity-provider["Salesforce"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-siteminder-as-saml-identity-provider["SiteMinder"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-ssocircle-as-saml-identity-provider["SSOCircleの略"^]
-
-
-お使いのアイデンティティプロバイダが上記のリストに表示されない場合は、 https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["以下の一般的な手順に従ってください"^]
-
-
-TIP: DO_NOT_Auth0で接続を作成する方法を説明する手順を完了します。この接続は次のステップで作成します。
-
+| 1. | IdP管理者 | SAMLアイデンティティプロバイダを設定して、BlueXPとのアイデンティティフェデレーションを有効にします。SAML ID プロバイダーの手順を表示します: *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-adfs-saml-connections["ADFS （ ADFS ）"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-okta-as-saml-identity-provider["オクタ"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-onelogin-as-saml-identity-provider["OneLogin"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-pingfederate-as-saml-identity-provider["PingFederate"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-salesforce-as-saml-identity-provider["Salesforce"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-siteminder-as-saml-identity-provider["SiteMinder"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-ssocircle-as-saml-identity-provider["SSOCircleの略"^]上記のリストにIDプロバイダが表示されない場合は、  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["以下の一般的な手順に従ってください"^]ヒント: auth0 で接続を作成する方法を説明する手順は実行しないでください。この接続は次のステップで作成します。 
 
 
 | 2. | BlueXPの管理者  a| 
 にアクセスします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^] BlueXPとの接続を確立します。
 
-この手順を完了するには、アイデンティティプロバイダに関する次の情報をAD管理者から入手する必要があります。
+この手順を完了するには、ID プロバイダーについて IdP 管理者から次の情報を取得する必要があります。
 
 * サインインURL
 * X509署名証明書（PEMまたはCER形式）
 * サインアウトURL（オプション）
 
 
-この情報を使用して接続を作成すると、[フェデレーションセットアップ]ページに、次の手順で設定を完了するためにAD管理者に送信できるパラメータが一覧表示されます。
+この情報を使用して接続を作成すると、フェデレーション セットアップ ページに、次の手順で構成を完了するために IdP 管理者に送信できるパラメータが一覧表示されます。
 
 
 NOTE: 証明書の有効期限をメモします。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXP は有効期限を追跡しないため、有効期限が切れる前に証明書を監視して更新する必要があります。ITチームと協力して、時間通りにアラートを受け取ることをお勧めします。
 
 
 
-| 3. | AD管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用してアイデンティティプロバイダで設定を完了します。 
+| 3. | IdP管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用してアイデンティティプロバイダで設定を完了します。 
 
 
-| 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]
-
-接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。 
+| 4. | BlueXPの管理者 | 接続をテストして有効にする https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]接続のテストと接続の有効化の間でページが更新されます。 
 |===
 
 
 === MicrosoftエントラID
 
-概して、BlueXPとMicrosoft Entra IDの間にフェデレーテッド接続を設定する手順は次のとおりです。
+BlueXP と Microsoft Entra ID 間のフェデレーション接続を設定するには、次の手順を実行します。
 
 [cols="10,15,75"]
 |===
 | ステップ | 完了者 | 説明 
 
 
-| 1. | AD管理者  a| 
-BlueXPでアイデンティティフェデレーションを有効にするには、Microsoft Entra IDを設定します。
-
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Microsoft Entra IDにアプリケーションを登録する手順を表示する"^]
+| 1. | IdP管理者 | BlueXPでアイデンティティフェデレーションを有効にするには、Microsoft Entra IDを設定します。https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Microsoft Entra IDにアプリケーションを登録する手順を表示する"^]ヒント: auth0 で接続を作成する方法を説明する手順は実行しないでください。この接続は次のステップで作成します。 
 
 
-TIP: DO_NOT_Auth0で接続を作成する方法を説明する手順を完了します。この接続は次のステップで作成します。
+| 2. | BlueXPの管理者 | に行く https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^] BlueXPとの接続を作成します。この手順を完了するには、IdP管理者から以下の情報を取得する必要があります。 * クライアントID * クライアントシークレット値 * Microsoft Entra IDドメイン これらの情報を使用して接続を作成すると、「フェデレーション設定」ページに、次の手順で設定を完了するためにAD管理者に送信できるパラメータが表示されます。注：シークレットキーの有効期限に注意してください。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。 
 
 
-
-| 2. | BlueXPの管理者  a| 
-にアクセスします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^] BlueXPとの接続を確立します。
-
-この手順を完了するには、AD管理者から次の情報を入手する必要があります。
-
-* クライアント ID
-* クライアントシークレット値
-* Microsoft Entra IDドメイン
-
-
-この情報を使用して接続を作成すると、[フェデレーションセットアップ]ページに、次の手順で設定を完了するためにAD管理者に送信できるパラメータが一覧表示されます。
-
-
-NOTE: シークレットキーの有効期限をメモします。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。
-
-
-
-| 3. | AD管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されているパラメータを使用して、Microsoft Entra IDで設定を完了します。 
+| 3. | IdP管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されているパラメータを使用して、Microsoft Entra IDで設定を完了します。 
 
 
 | 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]
@@ -174,84 +133,56 @@ NOTE: シークレットキーの有効期限をメモします。[フェデレ�
 |===
 
 
-=== ADFS （ ADFS ）
+=== AD FS
 
-BlueXPとADFSの間にフェデレーテッド接続を設定する手順の概要は次のとおりです。
+BlueXP と AD FS 間のフェデレーション接続を設定するには、次の手順を実行します。
 
 [cols="10,15,75"]
 |===
 | ステップ | 完了者 | 説明 
 
 
-| 1. | AD管理者  a| 
-BlueXPとのアイデンティティフェデレーションを有効にするようにADFSサーバを設定します。
-
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs["Auth0を使用してADFSサーバを構成する手順を表示します"^]
-
+| 1. | IdP管理者 | BlueXP との ID フェデレーションを有効にするように AD FS サーバーを構成します。 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs["Auth0を使用してADFSサーバを構成する手順を表示します"^] 
 
 
 | 2. | BlueXPの管理者  a| 
 にアクセスします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^] BlueXPとの接続を確立します。
 
-この手順を完了するには、AD管理者からADFSサーバーまたはフェデレーションメタデータファイルのURLを取得する必要があります。
+この手順を完了するには、IdP 管理者から AD FS サーバーの URL またはフェデレーション メタデータ ファイルを取得する必要があります。
 
-この情報を使用して接続を作成すると、[フェデレーションセットアップ]ページに、次の手順で設定を完了するためにAD管理者に送信できるパラメータが一覧表示されます。
-
-
-NOTE: 証明書の有効期限をメモします。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。
+この情報を使用して接続を作成すると、フェデレーション セットアップ ページに、次の手順で構成を完了するために IdP 管理者に送信できるパラメータが一覧表示されます。
 
 
+NOTE: 証明書の有効期限を常に把握しておいてください。有効期限が切れる前に、フェデレーション設定ページで証明書を更新してください。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。
 
-| 3. | AD管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されているパラメータを使用して、ADFSサーバーで設定を完了します。 
 
 
-| 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]
+| 3. | IdP管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されているパラメータを使用して、ADFSサーバーで設定を完了します。 
 
-接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。 
+
+| 4. | BlueXPの管理者 | 接続をテストして有効にする https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]接続のテストと有効化の間でページが更新されます。 
 |===
 
 
 === PingFederate
 
-BlueXPとPingFederateサーバの間にフェデレーテッド接続を設定するには、次の手順を実行します。
+BlueXP と PingFederate サーバー間のフェデレーション接続を設定するには、次の手順を実行します。
 
 [cols="10,15,75"]
 |===
 | ステップ | 完了者 | 説明 
 
 
-| 1. | AD管理者  a| 
-BlueXPでアイデンティティフェデレーションを有効にするようにPingFederateサーバを設定します。
-
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["接続の作成手順を表示します"^]
+| 1. | IdP管理者 | BlueXPでアイデンティティフェデレーションを有効にするようにPingFederateサーバを設定します。https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["接続の作成手順を表示します"^]ヒント: auth0 で接続を作成する方法を説明する手順は実行しないでください。この接続は次のステップで作成します。 
 
 
-TIP: DO_NOT_Auth0で接続を作成する方法を説明する手順を完了します。この接続は次のステップで作成します。
+| 2. | BlueXPの管理者 | に行く https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^] BlueXP との接続を確立します。この手順を完了するには、AD 管理者から以下の情報を取得する必要があります。 * PingFederate サーバーの URL * X509 署名証明書（PEM または CER 形式） これらの情報を使用して接続を確立すると、「フェデレーション設定」ページに、次のステップで設定を完了するために AD 管理者に送信できるパラメータが表示されます。注意：証明書の有効期限を必ず確認してください。有効期限が切れる前に、「フェデレーション設定」ページで証明書を更新してください。これはあなたの責任です。BlueXPでは有効期限は追跡されません。適切なタイミングで通知を受け取るには、IdP チームと連携することをお勧めします。 
 
 
-
-| 2. | BlueXPの管理者  a| 
-にアクセスします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^] BlueXPとの接続を確立します。
-
-この手順を完了するには、AD管理者から次の情報を入手する必要があります。
-
-* PingFederateサーバのURL
-* X509署名証明書（PEMまたはCER形式）
+| 3. | IdP管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用して、PingFederateサーバーで設定を完了します。 
 
 
-この情報を使用して接続を作成すると、[フェデレーションセットアップ]ページに、次の手順で設定を完了するためにAD管理者に送信できるパラメータが一覧表示されます。
-
-
-NOTE: 証明書の有効期限をメモします。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。
-
-
-
-| 3. | AD管理者 | 手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用して、PingFederateサーバーで設定を完了します。 
-
-
-| 4. | BlueXPの管理者 | から接続をテストして有効にします https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]
-
-接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。 
+| 4. | BlueXPの管理者 | 接続をテストして有効にする https://services.cloud.netapp.com/federation-setup["[NetApp Federation Setup]ページ"^]接続のテストと接続の有効化の間でページが更新されます。 
 |===
 
 
@@ -261,4 +192,4 @@ BlueXP管理者が接続を有効にすると、管理者はからいつでも�
 
 たとえば、新しい証明書をアップロードして接続を更新する必要がある場合があります。
 
-接続を更新できるのは、接続を作成したBlueXP管理者のみです。管理者を追加する場合は、ネットアップサポートにお問い合わせください。
+接続を作成した BlueXP 管理者のみが接続を更新できます。管理者を追加する場合は、NetApp サポートにお問い合わせください。

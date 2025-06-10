@@ -453,7 +453,6 @@
   <block id="0cf89ba9f6178dc91d18ec5c2aec1c61" category="paragraph">BlueXPを使用すると、クラウドストレージを管理し、Amazon Web Services、Microsoft Azure、Google Cloudで クラウド サービス を使用できます。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
   <block id="586136b5d097497746a02a0ee9fbf106" category="inline-link">BlueXPの価格設定についてはこちらをご覧ください</block>
-  <block id="a3811f7a922aa3527f60315673066094" category="paragraph">BlueXPの価格は、使用する予定のサービスによって異なります。<block ref="75160bc8e8d9a72990607b919e54f0eb" category="inline-link-rx"></block></block>
   <block id="a2513e72ab3ae9830fac174977d58572" category="section-title">BlueXPの仕組み</block>
   <block id="11cf550820ecd5e75ae1a9046f7f7f05" category="section-title">ソフトウェアサービス</block>
   <block id="22412f0c62e1935807bc2c96a82d38cd" category="inline-link">Webベースのコンソール</block>
@@ -1825,7 +1824,6 @@
   <block id="8c992ea897689b69e58371da6a8ae5e6" category="list-text">をダウンロードして実行します<block ref="82f36446881e14fa28b945cd41d2b383" category="inline-link-rx"></block></block>
   <block id="78080f8885ea72672a94d1643801d9cb" category="list-text">フォームに指定されたメールアドレスにフォームを送信します</block>
   <block id="694b3afac14ef0d070817c7ae79c1199" category="section-title">アイデンティティフェデレーションの仕組み</block>
-  <block id="e4f3bdd29d08f22be201dfa18bf12273" category="paragraph">アイデンティティフェデレーションを設定すると、BlueXPの認証サービスプロバイダ（Auth0）と独自のアイデンティティ管理プロバイダの間に信頼関係が確立されます。</block>
   <block id="1c02ebd5b42ffd51f43e9e1999e816c6" category="paragraph">次の図は、アイデンティティフェデレーションとBlueXPの連携を示しています。</block>
   <block id="b92fe45cc758eb55110c7cc104646651" category="inline-image-macro">BlueXPで認証しているユーザと、BlueXPとユーザを認証するアイデンティティプロバイダとの間の接続を示す図。</block>
   <block id="a15274bd5ac488ac4d633fe751da2ff3" category="paragraph"><block ref="a15274bd5ac488ac4d633fe751da2ff3" category="inline-image-macro-rx" type="image"></block></block>
@@ -1837,72 +1835,40 @@
   <block id="f1a3fd4ef355aad263b4de618c67166b" category="section-title">サポートされているIDプロバイダ</block>
   <block id="7d141767127fe81f539e933e77b452bf" category="paragraph">BlueXPは次のIDプロバイダをサポートしています。</block>
   <block id="a07e97604d6d44417ed607f955f75bb4" category="list-text">Security Assertion Markup Language（SAML）アイデンティティプロバイダ</block>
-  <block id="00f7a7902fa21b12c977cbf65a600530" category="list-text">Active Directory フェデレーションサービス（ ADFS ）</block>
   <block id="8be692f2d7f8fe746b9e4a80e973c3ab" category="list-text">PingFederate</block>
-  <block id="b3a90c39fbb2a07cca4a396cdcfbcda7" category="paragraph">BlueXPでは、サービスプロバイダ主導（SP主導）のSSOのみがサポートされます。アイデンティティプロバイダが開始する（IdPが開始する）SSOはサポートされていません。</block>
   <block id="2867eaf4d1bb2c7bca72acfc58e90e99" category="section-title">セットアッププロセスの概要</block>
   <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">NSSクレデンシャルを使用してアイデンティティフェデレーションを設定する方法について説明します</block>
   <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">以下の手順は、ネットアップのクラウドログインを使用してBlueXPにログインするユーザに固有のものです。NSSクレデンシャルを使用してBlueXPにログインする場合は、 <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>。</block>
   <block id="7994951112a259112c25d6b6556149a5" category="section-title">SAMLアイデンティティプロバイダ</block>
-  <block id="f55a9b624a2373bae08878c0181a1092" category="paragraph">概要として、BlueXPとSAMLアイデンティティプロバイダの間にフェデレーテッド接続を設定する手順は次のとおりです。</block>
   <block id="3fa1942dfddcdac97191c621480a5ded" category="cell">完了者</block>
   <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1.</block>
-  <block id="6c3d838359f74f39c9ee994a4c202763" category="cell">Active Directory（AD）管理者</block>
-  <block id="17155619aa276262956a9169cbbc98ea" category="paragraph">SAMLアイデンティティプロバイダを設定して、BlueXPとのアイデンティティフェデレーションを有効にします。</block>
-  <block id="80723e7f2abf44c346356b58de5584bf" category="paragraph">SAML IDプロバイダの手順を表示します。</block>
   <block id="657ddf7370b0d5eff54a335127a66282" category="inline-link">ADFS （ ADFS ）</block>
-  <block id="c33ddb3734db9918c602b8a73eb3854a" category="list-text"><block ref="c33ddb3734db9918c602b8a73eb3854a" category="inline-link-rx"></block></block>
   <block id="9eddef35bc6181a35b1e146b9fbf2579" category="inline-link">オクタ</block>
-  <block id="2619f78e3f38e67ac152c0efcc61ca3d" category="list-text"><block ref="2619f78e3f38e67ac152c0efcc61ca3d" category="inline-link-rx"></block></block>
   <block id="8b0462fd7af8f1da87014a1daa3319c6" category="inline-link">OneLogin</block>
-  <block id="d8543be54a4507e484f66e71d76ac57a" category="list-text"><block ref="d8543be54a4507e484f66e71d76ac57a" category="inline-link-rx"></block></block>
-  <block id="8b4801b0a2e5acb957a1eb9a5865893e" category="list-text"><block ref="8b4801b0a2e5acb957a1eb9a5865893e" category="inline-link-rx"></block></block>
   <block id="6391fa72874cbb87eccb79e2fcb2cd5c" category="inline-link">Salesforce</block>
-  <block id="82b805f6a7d8b50e7cf82e8f59f7f40e" category="list-text"><block ref="82b805f6a7d8b50e7cf82e8f59f7f40e" category="inline-link-rx"></block></block>
   <block id="b2ab9e36a31c68cc5a0abc6b9f7e6052" category="inline-link">SiteMinder</block>
-  <block id="93e1bb7fc338909c843a3179fcc558ea" category="list-text"><block ref="93e1bb7fc338909c843a3179fcc558ea" category="inline-link-rx"></block></block>
   <block id="c1e831a160e67d1ff6bfbd7f1e326ea6" category="inline-link">SSOCircleの略</block>
-  <block id="e784439ab583dc6269222d988a21051a" category="list-text"><block ref="e784439ab583dc6269222d988a21051a" category="inline-link-rx"></block></block>
   <block id="685a1bb94de19c84d18952bbd724e718" category="inline-link">以下の一般的な手順に従ってください</block>
-  <block id="e1b2d18c713df40e0da0fb45bad9d9de" category="paragraph">お使いのアイデンティティプロバイダが上記のリストに表示されない場合は、<block ref="7e20de1bde53a2c364dc941f7f4f716f" category="inline-link-rx"></block></block>
-  <block id="1660967ba9c7dec5ecf29538424c54a7" category="admonition">DO_NOT_Auth0で接続を作成する方法を説明する手順を完了します。この接続は次のステップで作成します。</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2.</block>
   <block id="9c9a7aca54b3b1227c02037ae00098e1" category="cell">BlueXPの管理者</block>
   <block id="1dd36b1c601a7192a0dbb196db0dae1b" category="inline-link">[NetApp Federation Setup]ページ</block>
   <block id="5876b7c2025f98810f3aceb0f477492f" category="paragraph">にアクセスします<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block> BlueXPとの接続を確立します。</block>
-  <block id="b86474abbb77ac0e71e576bfff42cc23" category="paragraph">この手順を完了するには、アイデンティティプロバイダに関する次の情報をAD管理者から入手する必要があります。</block>
   <block id="e71fdf330ff74d0fdbe7b4b72bdd4fa3" category="list-text">サインインURL</block>
   <block id="d42b45203591ce26ca6f367d3af6d372" category="list-text">X509署名証明書（PEMまたはCER形式）</block>
   <block id="a310970f60e93893530d31ccf2574d6b" category="list-text">サインアウトURL（オプション）</block>
-  <block id="91306fbf01cd483884c64bd2f573aa2f" category="paragraph">この情報を使用して接続を作成すると、[フェデレーションセットアップ]ページに、次の手順で設定を完了するためにAD管理者に送信できるパラメータが一覧表示されます。</block>
-  <block id="0964ada151a483bdbffce0cc395edecc" category="admonition">証明書の有効期限をメモします。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。</block>
   <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="cell">3.</block>
-  <block id="2e227b32919705455ef0fe6fd61b669d" category="cell">AD管理者</block>
   <block id="95df8937201a4d449c13b1649e9ba46d" category="cell">手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用してアイデンティティプロバイダで設定を完了します。</block>
   <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4.</block>
   <block id="77515c9e6cbb6a15e2cb738105271642" category="cell">から接続をテストして有効にします<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block>
 
 接続をテストしてから接続を有効にするまでの間に、ページが更新されることに注意してください。</block>
-  <block id="ef64c252ec5198cd24bcab0c5b591d8c" category="paragraph">この手順を完了するには、AD管理者から次の情報を入手する必要があります。</block>
-  <block id="76525f0f34b48475e5ca33f71d296f3b" category="list-text">クライアント ID</block>
-  <block id="797685b539958d3786d560ae97430767" category="list-text">クライアントシークレット値</block>
-  <block id="5b70b2d98b345016c9e69390ea296277" category="admonition">シークレットキーの有効期限をメモします。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。</block>
-  <block id="d39660f3085c958967d8d820464b4974" category="paragraph">BlueXPとADFSの間にフェデレーテッド接続を設定する手順の概要は次のとおりです。</block>
-  <block id="d37e669914774ef1ff275b462c890f08" category="paragraph">BlueXPとのアイデンティティフェデレーションを有効にするようにADFSサーバを設定します。</block>
   <block id="f1b98402afda515a4e3b322603f457af" category="inline-link">Auth0を使用してADFSサーバを構成する手順を表示します</block>
-  <block id="774bae219d61ddaa3803a99b79315467" category="paragraph"><block ref="774bae219d61ddaa3803a99b79315467" category="inline-link-rx"></block></block>
-  <block id="ea984b58d998a6393b5a21a789c7b789" category="paragraph">この手順を完了するには、AD管理者からADFSサーバーまたはフェデレーションメタデータファイルのURLを取得する必要があります。</block>
   <block id="8d4a0cfaae04a0d29dc491b71ab5dcb1" category="cell">手順2が完了したら、[フェデレーションセットアップ]ページに表示されているパラメータを使用して、ADFSサーバーで設定を完了します。</block>
-  <block id="9340450967aba985f2ce16f324a6284a" category="paragraph">BlueXPとPingFederateサーバの間にフェデレーテッド接続を設定するには、次の手順を実行します。</block>
-  <block id="60f43fc6dd2ef1336922bb7836f8fd10" category="paragraph">BlueXPでアイデンティティフェデレーションを有効にするようにPingFederateサーバを設定します。</block>
   <block id="bb6800676df1891c64f4c92dd2cf1c7e" category="inline-link">接続の作成手順を表示します</block>
-  <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
-  <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">PingFederateサーバのURL</block>
   <block id="512527e34bba36a42c42f1febf1b5404" category="cell">手順2が完了したら、[フェデレーションセットアップ]ページに表示されたパラメータを使用して、PingFederateサーバーで設定を完了します。</block>
   <block id="38354362734b03037ea9de3dd0ec048c" category="section-title">フェデレーテッド接続を更新しています</block>
   <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">BlueXP管理者が接続を有効にすると、管理者はからいつでも接続を更新できます<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
   <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">たとえば、新しい証明書をアップロードして接続を更新する必要がある場合があります。</block>
-  <block id="61bc7bf1f88516437cb71c2afcff94f5" category="paragraph">接続を更新できるのは、接続を作成したBlueXP管理者のみです。管理者を追加する場合は、ネットアップサポートにお問い合わせください。</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">ネットアップテクニカルサポートでサポートケースをオープンするには、まずNetApp Support Site アカウントをBlueXPに追加し、サポートに登録する必要があります。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">サポートに登録します</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">サポート登録の概要</block>
@@ -1946,14 +1912,11 @@
   <block id="146adb7944757e88795676b780c31811" category="doc">プロキシサーバを使用するようにコネクタを設定します</block>
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">コネクタでプロキシを有効にします</block>
   <block id="a211e8f0d908dfd70d36364b3fbd91b0" category="paragraph">プロキシサーバ、そのコネクタ、および管理対象の Cloud Volumes ONTAP システム（ HA メディエーターを含む）を使用するようにコネクタを設定すると、すべてのでプロキシサーバが使用されます。</block>
-  <block id="f5cfd333047dfa220ee8666d14286034" category="paragraph">この操作により、コネクタが再起動されます。続行する前に、コネクタが操作を実行していないことを確認してください。</block>
   <block id="2c451caa323474f558c4e4065578647d" category="list-text">プロキシを設定します。</block>
   <block id="dabc8d2c79f6529ca393b4b3d4f75805" category="list-text">[Enable Proxy]*を選択します。</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">構文を使用してサーバを指定します<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> または<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="admonition">BlueXPでは、@文字を含むパスワードはサポートされていません。</block>
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">API の直接トラフィックを有効にします</block>
-  <block id="6282017b43dee5b3762b81c0124c425c" category="paragraph">プロキシサーバを使用するようにコネクタを設定した場合は、コネクタで直接APIトラフィックを有効にして、プロキシを経由せずにAPI呼び出しをクラウドプロバイダサービスに直接送信できます。このオプションは、 AWS 、 Azure 、または Google Cloud で実行されているコネクタでサポートされます。</block>
-  <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">Cloud Volumes ONTAP でAzureプライベートリンクの使用を無効にし、代わりにサービスエンドポイントを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。そうしないと、トラフィックは適切にルーティングされません。</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">Azure Private LinkまたはサービスエンドポイントをCloud Volumes ONTAP で使用する方法の詳細については、こちらをご覧ください</block>
   <block id="6143580a5ae490efe32d3c566650ad6c" category="paragraph"><block ref="6143580a5ae490efe32d3c566650ad6c" category="inline-link-rx"></block></block>
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">チェックボックスをオンにしてオプションを有効にし、*[保存]*を選択します。</block>
@@ -2359,8 +2322,6 @@
   <block id="b9ae7144d8994b521f00e7ea998af276" category="inline-link-macro">コネクタがGoogle Cloudで接続するエンドポイント</block>
   <block id="3bf5c9324dc0745f8cad507c90fe86b2" category="list-text">コネクタのサポートされている場所</block>
   <block id="916a2669af97d2f4130e6923cd637b3f" category="list-text">標準モードでは、コネクタはクラウドまたはオンプレミスでサポートされます。</block>
-  <block id="fd18b98fb0c01efb9ebdfe9d8aac583c" category="list-text">コネクタのインストールは、BlueXPのセットアップウィザード、AWSまたはAzure Marketplaceから実行できます。また、インストーラを使用して、データセンターまたはクラウドの自社のLinuxホストにコネクタを手動でインストールすることもできます。</block>
-  <block id="da2db927706f6e576c7a34d9fa56eb3a" category="list-text">Connectorソフトウェアの自動アップグレードは、毎月更新されるBlueXPから利用できます。</block>
   <block id="bd521aa973861d923b4649240bf09964" category="list-text">ユーザインターフェイスアクセス</block>
   <block id="9ec70babf788035cb815ff42523734cc" category="list-text">ユーザインターフェイスには、SaaSレイヤを通じて提供されるWebベースのコンソールからアクセスできます。</block>
   <block id="cc4c115c548cda4d8d0ad55f7bef9d6c" category="list-text">次のエンドポイントに対してAPI呼び出しが実行されます。
@@ -2379,7 +2340,6 @@
   <block id="7b076a1276b929fc2edb5555c49710e3" category="inline-image-macro">この概念図は、SaaSレイヤとAuth0認証を使用できるパブリックインターネット、コネクタが実行されてWebベースのコンソールへのアクセスを提供するクラウド内の仮想ネットワーク、オンプレミスのデータセンターでCloud Volumes ONTAP とAFF クラスタを管理している状態を示しています。</block>
   <block id="c97f19753c7808727aa46b10b2bd97ac" category="paragraph"><block ref="c97f19753c7808727aa46b10b2bd97ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8a086c636373dd6d27b6fa162da10ef9" category="paragraph">BlueXPは、制限モードでは次のように機能します。</block>
-  <block id="f203ea7d64b1254dcf8c55622a4f8e5a" category="list-text">BlueXPデータサービスの使用、コネクタの自動ソフトウェアアップグレードの有効化、Auth0ベースの認証の使用、課金用のメタデータ（Storage VM名、割り当て容量、ボリュームのUUID、タイプ、IOPS）の送信には、コネクタからBlueXP SaaSレイヤへのアウトバウンド接続が必要です。</block>
   <block id="d439077c2b251f6970dca2790f55cf72" category="paragraph">SaaSレイヤのBlueXPでは、コネクタとの通信は開始されません。すべての通信はコネクタによって開始され、コネクタは必要に応じてSaaSレイヤとの間でデータを取得またはプッシュできます。</block>
   <block id="572a35a7a9ed649cca9ec1cf347c9b9a" category="paragraph">リージョン内のクラウドプロバイダリソースへの接続も必要です。</block>
   <block id="f987da77cc0f6de4634d1fa74f39b8bf" category="list-text">制限モードでは、コネクタはクラウド（政府地域、主権地域、または商業地域）でサポートされます。</block>
@@ -2866,11 +2826,9 @@ deploymentmanager. editor</block>
   <block id="412d134b731f1d8c5a5b0a427966703d" category="list-text"><block ref="412d134b731f1d8c5a5b0a427966703d" category="inline-link-macro-rx"></block></block>
   <block id="2b27af8d5932753265ba5607c4aca373" category="summary">Azure Marketplaceからコネクタを作成するには、ネットワークを設定し、Azureの権限を準備し、インスタンス要件を確認してからコネクタを作成する必要があります。</block>
   <block id="08162f5d2875618589001f4ce951b82d" category="section-title">ステップ2：VMの要件を確認する</block>
-  <block id="67e296817a0a6c22fc1ef6d510785c4d" category="paragraph">コネクタを作成するときは、次の要件を満たす仮想マシンタイプを選択する必要があります。</block>
   <block id="2e8efb5a4d803004aa2f7b52e98e57e6" category="paragraph">権限は次の方法で指定できます。</block>
   <block id="4038d2f08625a8689610b527df3b8ded" category="paragraph">BlueXPの権限を設定するには、次の手順を実行します。</block>
   <block id="4ce58aed62ea94c374a38864c0fb4252" category="paragraph">Azure Marketplaceからコネクタを直接起動します。</block>
-  <block id="d07ea60173f1265837ca53e342739d45" category="paragraph">Azure Marketplaceからコネクタを作成すると、デフォルト構成を使用してAzureに仮想マシンが導入されます。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="a2832b4d1493aef5e7b104eee31696c2" category="paragraph">コネクタの作成が完了したら、以前に設定した権限をBlueXPに付与する必要があります。権限を付与することで、AzureのデータとストレージインフラをBlueXPで管理できるようになります。</block>
   <block id="333a6174ed6d7c0a901714986b18ffe4" category="summary">独自のLinuxホストにコネクタを手動でインストールするには、ホストの要件を確認し、ネットワークをセットアップし、Google Cloudの権限を準備し、Google Cloud APIを有効にしてから、コネクタをインストールし、準備した権限を指定する必要があります。</block>
   <block id="2752969f9e640eeece13dd03965d62d0" category="doc">Google Cloudにコネクタを手動でインストールする</block>
@@ -3105,11 +3063,7 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="1e6c9b3850b2a8aff77429d3da407ad1" category="paragraph">BlueXPでロールベースアクセス制御に使用できるMicrosoft Entraアプリケーションとサービスプリンシパルを作成します。</block>
   <block id="de44ed3c24fd21ff1cd5065625a6d78e" category="paragraph">クライアントシークレットを作成し、そのシークレットの値をBlueXPに提供して、BlueXPがMicrosoft Entra IDで認証できるようにする必要があります。</block>
   <block id="4df90909cc2d04997870c4949a39d14b" category="list-text">MicrosoftエントラID</block>
-  <block id="f03abb60d67394fd935c0b64f6d1c3c1" category="paragraph">概して、BlueXPとMicrosoft Entra IDの間にフェデレーテッド接続を設定する手順は次のとおりです。</block>
-  <block id="4d78a4f82051c51790a4d6a1b19d7bf4" category="paragraph">BlueXPでアイデンティティフェデレーションを有効にするには、Microsoft Entra IDを設定します。</block>
   <block id="91b6e8c144e0b0c26485c1d90cdf8e9b" category="inline-link">Microsoft Entra IDにアプリケーションを登録する手順を表示する</block>
-  <block id="f56344318e894c9b20e07a08f6a512c3" category="paragraph"><block ref="f56344318e894c9b20e07a08f6a512c3" category="inline-link-rx"></block></block>
-  <block id="b1b357376edc356774ec099bb39e65b7" category="list-text">Microsoft Entra IDドメイン</block>
   <block id="bcf96e38858d09ccb3d335e0944d8a4a" category="cell">手順2が完了したら、[フェデレーションセットアップ]ページに表示されているパラメータを使用して、Microsoft Entra IDで設定を完了します。</block>
   <block id="b63eb36e7e2e258bb1104cee2cd67c79" category="inline-link-macro">Microsoft Entra IDでのサービスプリンシパルの作成と設定</block>
   <block id="3c648c2bdafb5df126cd7d0e3dfcad8a" category="paragraph">BlueXPで別のAzureクレデンシャルを使用する場合は、で必要な権限を付与する必要があります <block ref="45c7e71be639d18293cd100d389b6dc3" category="inline-link-macro-rx"></block> を Azure アカウントごとに用意します。次の図は、 2 つの追加アカウントを示しています。各アカウントには、権限を提供するサービスプリンシパルとカスタムロールが設定されています。</block>
@@ -3196,7 +3150,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="79c73187c699b08002880f70fb88a0a8" category="inline-image-macro">[Settings]メニューから使用できるCloud Volumes ONTAP Settings]オプションを示すスクリーンショット。</block>
   <block id="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="paragraph"><block ref="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03c012ec036bd77d62ef64e67f7dbc5a" category="list-text">[BlueXPコネクタの編集]*ページに移動します。</block>
-  <block id="5682fb3f3dc6955b7e9d4b14adc8daa0" category="paragraph">操作方法は、BlueXPを標準モード（SaaS WebサイトからBlueXPインターフェイスにアクセス）で使用しているか、制限モードとプライベートモード（コネクタホストからローカルにBlueXPインターフェイスにアクセス）で使用しているかによって異なります。</block>
   <block id="75effefc9fa992948e167a31a7b2c21e" category="inline-image-macro">コネクタの選択後に表示される[Manage Connectors]ページのスクリーンショット。</block>
   <block id="e929efc0ae3c20b98faca1bce939c39f" category="paragraph"><block ref="e929efc0ae3c20b98faca1bce939c39f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d7cd2871be8edef469dbc0a8331b2ea1" category="list-text">コネクターのアクションメニューを選択し、*コネクターを編集*を選択します。</block>
@@ -3334,7 +3287,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="a5dacfcdb1adb3167b081f091b368732" category="section-title">RHEL 8および9のサポート</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="list-text">制限</block>
   <block id="b6417b62aacc6d16c1ae7a79d851d413" category="list-text">BlueXPの分類は、オンプレミスのRHEL 8または9ホストにコネクタをインストールする場合にサポートされます。RHEL 8または9ホストがAWS、Azure、Google Cloudにある場合はサポートされません。</block>
-  <block id="b71010c70a84a098ff97c54119ce9797" category="list-text">RHEL 8または9ホストにコネクタをインストールする場合は、コンテナオーケストレーションツールとしてPodmanが必要です。Docker EngineはRHEL 8および9ではサポートされていません。</block>
   <block id="6949300ff5b5cf6bb192114a06c923bb" category="list-text">導入モード</block>
   <block id="62ee52388b4c1539a4b357c9c16e57c6" category="list-text">新規の手動インストールのみ</block>
   <block id="362134ff254c022479b85d3cb9afd90c" category="list-text">RHEL 8および9は、オンプレミスまたはクラウドで実行されているホストにコネクタを手動でインストールする場合、_new_connectorのインストールでサポートされます。</block>
@@ -3346,7 +3298,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="7eba69a7025f97bec42a74bd138b395e" category="inline-link">Red Hat: Red Hat Enterprise Linux 7のメンテナンス終了について知っておくべきこと</block>
   <block id="ebc4aba90c33f7558582b9bbf738fdd9" category="paragraph"><block ref="ebc4aba90c33f7558582b9bbf738fdd9" category="inline-link-rx"></block></block>
   <block id="673678917598778ddca4521cd7c53d87" category="section-title">RHEL 7またはCentOS 7の既存のコネクタ</block>
-  <block id="431ca930d765a9710ef05b1ce095bc0e" category="paragraph">RHEL 7またはCentOS 7で既存のコネクタを実行している場合、オペレーティングシステムのRHEL 8または9へのアップグレードや変換はサポートされていません。代わりにRHEL 8または9ホストでコネクタの実行を開始するには、次の手順を実行する必要があります。</block>
   <block id="0f50cd1079cb24de2b4571c09546a2e1" category="list-text">RHEL 8または9ホストをセットアップします。</block>
   <block id="5122aad3fbc28bb77264e99f11033279" category="list-text">_new_connectorのインストールを実行します。</block>
   <block id="a9d10a06adb23581dce371f468ea4904" category="list-text">古いコネクタが管理していた作業環境を検出するようにコネクタを設定します。</block>
@@ -3502,7 +3453,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">BlueXPにサインアップした新規ユーザは、ログインする前にEメールアドレスを確認する必要があります。</block>
   <block id="096051910b67309e40aa0d0e1d279007" category="paragraph">3.9.42リリースは、標準モードと制限モードで使用できます。</block>
   <block id="597f1630cd21d22c527f63002e42f059" category="list-text">8.6～8.10</block>
-  <block id="231007fefc880f5d22c9c9bd81be28b3" category="paragraph">BlueXP Connectorは次のLinuxオペレーティングシステムでサポートされます。</block>
   <block id="3cf44b158a4bb7a8c4ca007889bedc1a" category="paragraph">RHEL 8および9のサポートについては、次の点に注意してください。</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXPで、標準モードまたは制限モードを使用している場合にRed Hat Enterprise Linux 8.10ホストへのコネクタのインストールがサポートされるようになりました。</block>
   <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">RHEL 8.10のサポートは、コネクタの3.9.40リリースから開始されました。</block>
@@ -3560,7 +3510,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="b1f9439900369929f00410057598c853" category="section-title">Google Cloud で利用可能な機能強化</block>
   <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">ソフトウェアの更新</block>
   <block id="66c9d0cfd45dc71069845154fb72a8b8" category="list-text">サポートされるコネクタのバージョン</block>
-  <block id="4dc9e2f6078fbeb26bbafe7461aa7ecf" category="list-text">RHEL 8および9は、次のバージョンのコネクタ以降でサポートされます。</block>
   <block id="1316cb3dbdfa1d8facde6d30372df833" category="list-text">3.9.40標準モードまたは制限モードでBlueXP  を使用する場合</block>
   <block id="c8fff1f28296d1ce9e5b594252b146c8" category="list-text">3.9.42プライベートモードでBlueXP  を使用する場合</block>
   <block id="70328d3965555bdfe7c71386e9e25887" category="doc">Webコンソールアクセス用のCA署名証明書のインストール</block>
@@ -3600,7 +3549,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f04e7bde7d47a749e6ba7643ae027953" category="paragraph"><block ref="f04e7bde7d47a749e6ba7643ae027953" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="list-text">9.1～9.4</block>
   <block id="f99019d3e8e3a4daa34cad5d0e1cccc2" category="inline-xref">BlueXP  がサポートするDocker Engineのバージョンを表示する</block>
-  <block id="b425a48ec3cd2a8cf0d731578b9ac8cb" category="paragraph">制限モードまたはプライベートモードを使用している場合、BlueXP  はトラフィック、通信、データのフローを禁止しますが、お客様の環境（オンプレミスとクラウド内）が必要な規制に準拠していることを確認する責任はお客様にあります。</block>
   <block id="95f7a3f8f1594da8c9dbd6c9cb3ee51e" category="paragraph">プライベートモードでは、オンプレミスまたはクラウドにコネクタをインストールし、BlueXP  を使用してハイブリッドクラウド全体のデータを管理できます。BlueXP SaaSレイヤへの接続はありません。</block>
   <block id="abf28f2fb4149a9c246bdad2c7003d6f" category="paragraph">一方、2つ目の図はプライベートモードの導入例を示しています。プライベートモードでは、コネクタをオンプレミスにインストールし、オンプレミスのONTAPクラスタを管理し、サポートされているBlueXP  データサービスへのアクセスを提供します。</block>
   <block id="9aa917589a67807ae517fb9273102cfc" category="list-text">プライベートモードでは、コネクタはクラウドまたはオンプレミスでサポートされます。</block>
@@ -3677,7 +3625,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">アップグレード方法を含むプライベートモードの詳細については、次を参照してください。</block>
   <block id="fe70d00031e0c8027b968ff90a57ff67" category="paragraph"><block ref="fe70d00031e0c8027b968ff90a57ff67" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c223cc107d4b6a766458301b9e4ec659" category="list-text">コネクタに関連付けるBlueXP  組織を指定します。</block>
-  <block id="dedba3bd94f6a10ada9755fca9221d1e" category="paragraph">これでコネクタがインストールされ、BlueXP  組織でセットアップされました。</block>
   <block id="5ef39814441210148af2a4089dd68a03" category="list-text">すべての送信インターネットトラフィック用にプロキシサーバーを展開する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。BlueXPでは透過型プロキシサーバはサポートされません。</block>
   <block id="96c5b00de0b07499da2e803348fefa3a" category="list-text">[[podman-versions]]オペレーティングシステムとコンテナの要件</block>
   <block id="5b537a7bc807c86f4601476633c8751d" category="list-text">BlueXP  は、標準モードまたは制限モードでBlueXP  を使用する場合、次のオペレーティングシステムでコネクタをサポートします。コネクタをインストールする前に、コンテナオーケストレーションツールが必要です。</block>
@@ -3717,8 +3664,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d2d6f4fd74e2ac2b843a4f202e5a89b6" category="doc">BlueXP  でアイデンティティフェデレーションを使用してシングルサインオンを有効にする</block>
   <block id="194f68541f58f6c331eacf4db74f4f78" category="summary">BlueXP  IDおよびアクセス管理（IAM）を使用すると、組織のリソースへのアクセスを制御できます。</block>
   <block id="d135d1b6a10879ca27887c632f4576d7" category="doc">BlueXP  のアイデンティティ管理とアクセス管理の詳細</block>
-  <block id="81ac1402c03d0a47ef27fe0243ef45dc" category="inline-link-macro">BlueXP  IAMの導入について詳しくは、こちらをご覧ください。</block>
-  <block id="5fdbce3d2319aac7495f83deb2cfb4ec" category="paragraph">BlueXP  IAMは、BlueXP  アカウントによって提供されていた以前の機能を置き換え、強化します。<block ref="05afd8790c123b20ba2a3355efdad456" category="inline-link-macro-rx"></block>です。</block>
   <block id="03dc9106de5affc832d68c188393146d" category="section-title">BlueXP  IAMの仕組み</block>
   <block id="c070b3ed0873722a725505fd8f648c60" category="paragraph">BlueXP  IAMを使用すると、組織階層の特定の部分に対する権限を持つメンバーを定義して、組織のリソースへのアクセスを許可できます。たとえば、メンバーは、5つのリソースが関連付けられているプロジェクトに対して、プロジェクト管理者権限を持つことができます。</block>
   <block id="ba49e39a2ccedcfe8d31a1eb6440393b" category="list-text">組織</block>
@@ -3784,7 +3729,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="b586758af094fc2bd17d0a7998a3c157" category="paragraph">コネクタをフォルダに関連付けても、フォルダ内のすべてのプロジェクトからコネクタに自動的にアクセスできるわけではありません。組織メンバーは、コネクタを特定のプロジェクトに関連付けるまで、プロジェクトからコネクタにアクセスできません。</block>
   <block id="201614334b2723fd3338cf698f37ecd4" category="paragraph">_Organization admin_はコネクタをフォルダに関連付けて、_Folderまたはプロジェクトadmin_がそのコネクタをフォルダ内の適切なプロジェクトに関連付けるかどうかを決定できるようにする場合があります。</block>
   <block id="0561b5e58584cfa2d9e645e47c0c3bb1" category="section-title">IAMの例</block>
-  <block id="8ddebf391d7c6c8708071496ecce1bf7" category="paragraph">次の例は、組織のセットアップ方法を示しています。</block>
   <block id="135b3c5ddb2b53a7189302bba4295fc6" category="section-title">シンプルな構成</block>
   <block id="bc43b12884b61655079a5a16d18ad9de" category="paragraph">次の図は、デフォルトのプロジェクトを使用し、フォルダを使用しない組織の簡単な例を示しています。1人のメンバーが組織全体を管理します。</block>
   <block id="a72765d3ccd5c52417f70bed4c7b5d10" category="inline-image-macro">プロジェクト、関連リソース、および1人の組織管理者を持つ組織を示す概念図。</block>
@@ -3835,7 +3779,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="29235ad952255adaa81cebf92ab3a0f0" category="list-text">_Folders_関連するプロジェクトをグループ化できるようにします</block>
   <block id="666d088bb19b110a528d20b21622daa9" category="list-text">リソース管理を使用すると、リソースを1つ以上のフォルダまたはプロジェクトに関連付けることができます。</block>
   <block id="4c57f63e49ef8479b418a16f7d776ed6" category="list-text">アクセス管理を使用すると、組織階層のさまざまなレベルのメンバーにロールを割り当てることができます。</block>
-  <block id="8c898441028bb7b6b2d1f2270d148587" category="paragraph">BlueXP  IAMは、標準モードでBlueXP  を使用する場合にサポートされます。BlueXP  を制限モードまたはプライベートモードで使用している場合は、BlueXP  アカウント_を使用してワークスペース、ユーザー、およびリソースを管理します。</block>
   <block id="b2bb1015f4cde818ea1f13912e4e1755" category="inline-link-macro">BlueXP  IAMの詳細</block>
   <block id="1c675fd28ce69ed7126f32d646676158" category="list-text"><block ref="1c675fd28ce69ed7126f32d646676158" category="inline-link-macro-rx"></block></block>
   <block id="8fbf37ccd9a099359c44e494e119477c" category="paragraph">BlueXPの使用を開始するにはコネクタは必要ありませんが、コネクタを作成してBlueXPのすべての機能とサービスを有効にする必要があります。コネクタにより、オンプレミス環境とクラウド環境にわたってリソースとプロセスを管理できます。作業環境（Cloud Volumes ONTAPなど）を管理し、多数のBlueXP  サービスを使用するために必要です。</block>
@@ -4247,18 +4190,15 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="0c203240d7d7088c0a43d84641289267" category="summary">NetApp BlueXPは、オンプレミス環境とクラウド環境にわたってデータの構築、保護、ガバナンスを支援する単一のコントロールプレーンです。</block>
   <block id="1abbc9b3f7ef6da2c82af17a4e17d91d" category="paragraph">BlueXP  は、ハイブリッドマルチクラウドと統合データサービス全体にわたってストレージを一元的に管理し、データの保護、セキュリティの確保、最適化を実現します。</block>
   <block id="3c916fa6dfbc9f3d399c969d9c767df5" category="section-title">BlueXP  キャンバスからストレージを一元管理</block>
-  <block id="9feded36752088310319aa4add1d9bc6" category="paragraph">_ BlueXP  canvas_を使用すると、クラウドとオンプレミスのストレージを検出、導入、最適化、管理できます。キャンバスは、すべてのストレージ管理のための単一の場所を提供します。</block>
   <block id="a7a49fddbe3307c59d164dd83ddf376d" category="section-title">サポートされるクラウドとオンプレミスのストレージ</block>
   <block id="5a19e2344fd7397565c50e4554947edb" category="paragraph">BlueXP  では、BlueXP  キャンバスから次のタイプのストレージを管理できます。</block>
   <block id="165168c444979fab1fc4b5f5234e8edb" category="list-text">クラウドストレージソリューション</block>
   <block id="a77255c8473fd0c82b986bb6ce8b7d4d" category="list-text">オンプレミスのフラッシュとオブジェクトストレージ</block>
   <block id="b9c8cb06fa02abe70007fad1ae9d0b57" category="list-text">クラウドオブジェクトストレージ</block>
   <block id="00bb240da1e628695b0b4b9a35b415e9" category="section-title">作業環境からのストレージ管理</block>
-  <block id="d5d09c8a04d93eaf08592bf42a80b066" category="paragraph">BlueXP  キャンバスの_working environments _は、検出または導入したクラウドとオンプレミスのストレージを表します。作業環境を選択してBlueXP  データサービスと統合するか、作業環境に移行して、ボリュームの追加などのストレージ管理操作を実行できます。</block>
   <block id="7eea8ba09f9fe322cb11baf7a5867123" category="inline-image-macro">BlueXP  キャンバスのスクリーンショット。複数の作業環境が表示されています。そのうちの1つが選択されており、BlueXP  データサービスを有効にするか、[Enter Working Environment]を選択してストレージを管理できます。</block>
   <block id="3b5e2810d2c4d23cff3f78705d592aaa" category="paragraph"><block ref="3b5e2810d2c4d23cff3f78705d592aaa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="23f9f5b793c30aaa036bf6bf045da10f" category="section-title">データの保護、セキュリティ、最適化を実現する統合サービス</block>
-  <block id="98165eb3dfced987bf0a8b76a2804492" category="paragraph">BlueXP  には、オンプレミスとクラウドのストレージ環境にわたってデータのセキュリティ、整合性、可用性を維持するための包括的な統合データサービススイートが含まれています。</block>
   <block id="f7ce517e0d71a43254b7a55670a9b018" category="list-text">BlueXP  アラート</block>
   <block id="2d5c8aeda2ab373d4a288e3bb0e951b0" category="list-text">ONTAP環境の容量、可用性、パフォーマンス、保護、セキュリティに関連する問題を表示できます。</block>
   <block id="2b86317cf346d1bf47abc8c04df6f353" category="list-text">BlueXP自動化カタログ</block>
@@ -4354,7 +4294,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">コネクタが商業地域または主権地域にインストールされている場合に、コネクタアップグレードのイメージを取得するため。</block>
   <block id="96be219c15e8fd2a25d382cfbe8aba22" category="list-text">一連の資格情報のアクションメニューを選択し、*サブスクリプションの設定*を選択します。</block>
   <block id="f9ffa76e11dc9be1f06d413d4c1da4ed" category="list-text">クレデンシャルを既存のサブスクリプションに関連付けるには、ダウンリストからサブスクリプションを選択し、*[設定]*を選択します。</block>
-  <block id="e7225dcfe470884c10cd0ab60d4ad033" category="section-title">関連情報</block>
   <block id="ff462988ef2bf728297fe5ed85ddc08d" category="section-title">AWSサブスクリプションを設定</block>
   <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">AWSクレデンシャルに設定されているAWS Marketplaceサブスクリプションを変更する。</block>
   <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">次の図は、組織のリソース階層の最大階層を示しています。</block>
@@ -5010,27 +4949,17 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">多要素認証（MFA）</block>
   <block id="35234ac77de9ce6dd39c6d724c620019" category="paragraph">フェデレーションされていないユーザーは、BlueXPアカウントで多要素認証（MFA）を有効にしてアカウントのセキュリティを強化できるようになりました。BlueXP管理者は、ユーザーのMFA設定を管理し、必要に応じて個々のユーザーのMFAをリセットまたは無効化できます。</block>
   <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">自分自身に多要素認証を設定する方法について説明します。</block>
-  <block id="bf6be3832a1adb81fee91d5a372e6c58" category="inline-link-macro">ユーザーの多要素認証の管理について学習します。</block>
-  <block id="e0ed5326b71029939b219048d45d36b8" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="3f9491f03691dee79279bcce7d70fa28" category="inline-link-macro-rx"></block></block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">ワークロード</block>
   <block id="01537291f07f4eb50dc075e6b0282ce8" category="paragraph">BlueXP の認証情報ページから Amazon FSx for NetApp ONTAP の認証情報を表示および削除できるようになりました。</block>
   <block id="ab7b4bc3c1371fe89a3ea52a6a5b39c0" category="paragraph">アイデンティティフェデレーション_ BlueXPとのシングルサインオンを有効にして、ユーザが自社のアイデンティティのクレデンシャルを使用してログインできるようにします。まず、ID フェデレーションの仕組みを理解し、セットアップ プロセスの概要を確認してください。</block>
-  <block id="6b0b102933a9be071f218c04b6933b57" category="paragraph">NetApp Identity and Access Management チームがリクエストを確認します。</block>
   <block id="3a589040e88b242371caa452ff52644d" category="list-text">ユーザーは BlueXP ログイン ページで自分の電子メール アドレスを入力します。</block>
   <block id="db463570dbbbbfba65175c56f93e3afa" category="paragraph">BlueXP と ID 管理プロバイダー間の接続を設定する前に、準備に必要な手順を理解してください。</block>
   <block id="43d8a6033ac1e22623cc7444b2fbd60d" category="admonition">証明書の有効期限をメモします。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXP は有効期限を追跡しないため、有効期限が切れる前に証明書を監視して更新する必要があります。ITチームと協力して、時間通りにアラートを受け取ることをお勧めします。</block>
   <block id="a945298807cc3bf3df429116d788d2c4" category="paragraph">BlueXP では、サインアップ時に新しい組織を作成するように求められます。</block>
-  <block id="9a6228fbc2e9d21b80753e94a7b6e8f3" category="paragraph">リソースをフォルダに関連付けても、フォルダ内のすべてのプロジェクトから自動的にアクセスできるようになるわけではありません。どのプロジェクトがリソースにアクセスできるかは、フォルダ管理者またはプロジェクト管理者が決定します。この決定が完了したら、管理者はリソースを適切なプロジェクトに関連付けることができます。</block>
-  <block id="378ca9d331e5ed4027f617c07fd21bbe" category="list-text">組織レベルでメンバーにアクセス ロールを付与すると、組織内のすべてのフォルダー、プロジェクト、リソースがそのロールを継承します。これは、メンバーが組織内のすべてのものに対する権限を持っていることを意味します。</block>
   <block id="f4a866cc8d962c94d7c7fd8decdd7e6c" category="list-text">フォルダ レベルでアクセス ロールを付与すると、フォルダ内のすべてのフォルダ、プロジェクト、リソースがそのロールを継承します。</block>
   <block id="34aee3ad45d37ad6cf603311eb0838fb" category="list-text">プロジェクト レベルでアクセス ロールを付与すると、そのプロジェクトに関連付けられているすべてのリソースがそのロールを継承します。</block>
-  <block id="1bce07c38663e50bd2002abeaa9fff4f" category="paragraph">次の場合には、コネクタを別のプロジェクトで使用できるようにすることができます。</block>
   <block id="b65cc9ab2327fd85f7b0e7503c06a66f" category="paragraph">追加のプロジェクトに関連付けたリソースが BlueXP コネクタを使用して検出された場合は、そのリソースが現在関連付けられているプロジェクトにコネクタを関連付ける必要もあります。そうしないと、_組織管理者_ ロールを持たないメンバーは、BlueXP キャンバスからコネクタとその関連リソースにアクセスできなくなります。</block>
   <block id="23281988aab04cbdc82eb76f370939d5" category="paragraph">BlueXP は、ビジネス要件とセキュリティ要件を満たす複数の _導入モード_ を提供します。_標準モード_ では、SaaS (Software as a Service) レイヤーを活用して完全な機能を提供します。一方、接続制限のある組織では、 _制限モード_ と _プライベート モード_ をご利用いただけます。</block>
-  <block id="2660b3353488b0c34e80937df83bb51d" category="paragraph">各展開モードは、アウトバウンド接続要件、展開場所、インストール プロセス、認証方法、利用可能なデータおよびストレージ サービス、課金方法が異なります。</block>
-  <block id="9a53d34a78d4de240f566b18e7207a88" category="list-text">SaaS サービスは Web ベースのコンソールから使用します。BlueXP管理者は、使用する予定のデータサービスと機能に応じて、ハイブリッドクラウド環境内のデータを管理するための 1 つ以上のコネクタを作成します。</block>
-  <block id="804e9eba54dfad8157ace4068a829a5e" category="list-text">BlueXP コネクタをクラウド（政府リージョン、ソブリン クラウド リージョン、または商用リージョン）にインストールし、BlueXP SaaS レイヤーへの送信接続を制限します。BlueXPには、SaaSレイヤではなくコネクタからアクセスできるWebベースのコンソールからローカルにアクセスします。</block>
-  <block id="7c6fa336a8c480dbf689de203cc914cc" category="list-text">BlueXP コネクタをオンプレミスまたはクラウド（セキュリティ保護されたリージョン、ソブリン クラウド リージョン、または商用リージョン）にインストールしますが、BlueXP SaaS レイヤーには接続されません。BlueXPには、SaaSレイヤではなくコネクタからアクセスできるWebベースのコンソールからローカルにアクセスします。</block>
   <block id="43edcdb6c00656305d8defca5b3b7be0" category="cell">データサービスライセンスオプション</block>
   <block id="da3a71a6a101e5ce1488cbbb02a56811" category="paragraph">プライベート モードを使用する場合は、_BlueXP アカウント_ を使用してユーザーを管理し、分離された _ワークスペース_ でリソースを整理します。</block>
   <block id="73ed026560226caf4536c90af5181235" category="paragraph">標準モードまたは制限モードをご利用の場合、アカウントは作成されません。代わりに、Identity and Access Management (IAM) を使用して管理する組織が作成されます。</block>
@@ -5091,8 +5020,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f54a1ada6e84cbd77add137de73fe499" category="summary">Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。これら両方のタスクにより、マーケットプレイスのサブスクリプションを使用してデータ サービスの支払いができるようになります。</block>
   <block id="0e46c1615780fb701a31f342948323ee" category="paragraph">Google CloudでConnectorを導入すると、Connector VMインスタンスに関連付けられたデフォルトのクレデンシャルセットがBlueXPによって作成されます。これらのクレデンシャルに関連付けられているGoogle Cloud Marketplaceサブスクリプションは、いつでも変更できます。このサブスクリプションを使用すると、従量課金制の Cloud Volumes ONTAP システムを作成し、その他のデータ サービスを使用できるようになります。</block>
   <block id="2e38f18f531fa28a560e832f829a6961" category="paragraph">Google Cloud Marketplace を通じて NetApp Intelligent Services にサブスクライブすると、権限が間違っていたり、BlueXP Web サイトへのリダイレクトに誤って従わなかったりしたために、断片化されることがあります。この場合は、次の手順に従ってサブスクリプションプロセスを完了してください。</block>
-  <block id="bce4b2f944e26241929cb412598dc72a" category="paragraph">コネクタをプロキシサーバーを使用するように設定すると、パブリックIPアドレスまたはNATゲートウェイが利用できない場合でも、アウトバウンドのインターネットアクセスが可能になります。プロキシサーバーはコネクタのみにアウトバウンド接続を提供し、Cloud Volumes ONTAPシステムには提供しません。</block>
-  <block id="5ec63ed83d1fa6fea36745e1f71fa8e8" category="paragraph">Cloud Volumes ONTAP システムにAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、コネクタに含まれているプロキシサーバを使用するようにCloud Volumes ONTAP システムが自動的に設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128を介したインバウンド接続を許可することです。コネクタをデプロイした後、このポートを開きます。</block>
   <block id="c10c892886acddf2e2cadd07adf17f76" category="paragraph">デフォルトのプロジェクトを使用するか、ビジネス階層に一致する追加のプロジェクトとフォルダーを作成します。</block>
   <block id="3ef0bce1ffcb82589ba8b3b82854784c" category="paragraph">社内の複数のユーザーが BlueXP にアクセスする必要がある場合は、ユーザー アカウントを組織に関連付け、必要な権限を割り当てます。また、サービスアカウントを組織に追加することもできます。</block>
   <block id="87e40e0223c47575a5a3e84a25973703" category="paragraph">BlueXP では、リソースを作業環境として追加または検出できます。組織のメンバーは、プロジェクト内からストレージシステムを表す作業環境を管理します。</block>
@@ -5197,7 +5124,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="befac70fd40711c428906b0a641dd516" category="list-text">名前の横にある*編集*アイコンを選択します。</block>
   <block id="a4f6cc91409a8e534a14d0b5e0cfef8f" category="list-text">*名前* フィールドに新しい表示名を入力します。</block>
   <block id="a7c8edfd028f355b86456c7117112269" category="section-title">多要素認証を設定する</block>
-  <block id="33113e956b37d95ea0a647427a36d6dd" category="paragraph">BlueXPアカウントに多要素認証（MFA）を設定できます。MFAは、パスワードに加えて2つ目の方法で本人確認を行うことで、アカウントのセキュリティを強化します。</block>
   <block id="9aadafb8c17cf5f4596ee01261ed6396" category="paragraph">外部IDプロバイダーまたはNetAppサポートサイトを利用したシングルサインオンを使用しているユーザーは、MFAを有効にできません。これらのいずれかに該当する場合、プロファイル設定にMFAを有効にするオプションは表示されません。</block>
   <block id="bee20cf8e1c07904eb9f214aeefc4d26" category="paragraph">BlueXP APIアクセス用のユーザーアカウントの場合は、MFAを有効にしないでください。ユーザーアカウントで多要素認証を有効にすると、APIアクセスが停止されます。すべてのAPIアクセスにはサービスアカウントを使用してください。</block>
   <block id="6d168c0cfcd90046f487062da3a74001" category="list-text">Google Authenticator や Microsoft Authenticator などの認証アプリをデバイスにダウンロードしておく必要があります。</block>
@@ -5205,15 +5131,12 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="fc612e539b3652966735109fc9377251" category="admonition">認証アプリにアクセスできない場合、または回復コードを紛失した場合は、BlueXP 管理者に問い合わせてください。</block>
   <block id="f1ae01eb785f4bb9eb914c3fc8608eb3" category="list-text">*多要素認証*ヘッダーの横にある*構成*を選択します。</block>
   <block id="0c8e2a853d24021dbfc66a9993fb05fd" category="list-text">指示に従ってアカウントの MFA を設定します。</block>
-  <block id="e9f4ecb3d4c11807b70baf29cec2cc83" category="list-text">完了すると、リカバリコードを保存するように求められます。コードをコピーするか、コードを含むテキストファイルをダウンロードしてください。このコードは安全な場所に保管してください。認証アプリにアクセスできなくなった場合に必要になります。</block>
-  <block id="817abe5190825ceb292746cd482c1bc1" category="paragraph">MFA を設定すると、BlueXP にログインするたびに、認証アプリからワンタイム コードを入力するように求められます。</block>
   <block id="85abfea9292794a037b216152d68a42c" category="section-title">MFA回復コードを再生成する</block>
   <block id="6487608bf6fe028f1ce57da2db423d90" category="paragraph">リカバリコードは一度しか使用できません。使用済みまたは紛失した場合は、新しいコードを作成してください。</block>
   <block id="c5f7c138da6978f74df8212e9af75a79" category="list-text">選択<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> *多要素認証*ヘッダーの横にあります。</block>
   <block id="45c07fa99050f57de53fb4ff89fd7cab" category="list-text">*リカバリコードの再生成*を選択します。</block>
   <block id="2332588943c47002d7d4b6b185a7aa0c" category="list-text">生成されたリカバリコードをコピーして安全な場所に保存します。</block>
   <block id="8b473423c18a9814010c33fe5e039084" category="section-title">組織管理者にお問い合わせください</block>
-  <block id="5933c7ac58e5a1a4a01a2a264a8716fe" category="paragraph">組織の管理者に連絡する必要がある場合は、BlueXPから直接メールを送信できます。管理者は、組織内のユーザーアカウントと権限の管理を担当しています。</block>
   <block id="a6e24730e5ea1331a6bae995d45563be" category="admonition">*管理者に連絡*機能を使用するには、ブラウザにデフォルトの電子メール アプリケーションが設定されている必要があります。</block>
   <block id="3314b51d8bf7d2ebba73be57ad95a719" category="list-text">組織の管理者にメールを送信するには、[*管理者に連絡*] を選択します。</block>
   <block id="c516f74c4acd83ce009737361f8f15e2" category="list-text">使用する電子メール アプリケーションを選択します。</block>
@@ -5221,4 +5144,74 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="102e22f275df79c5a1dde1e8293216b7" category="sidebar">NetAppインテリジェントサービスにご登録ください</block>
   <block id="60a6933aebf1c90a063b74167b72b65a" category="sidebar">BlueXPを使用する</block>
   <block id="6055633e93e75f195e1ce7a98f705965" category="sidebar">メンバーとサービスアカウントを管理する</block>
+  <block id="09788a09cd40182e19bc9a2e7bfaa2ac" category="inline-link-macro">ユーザーの多要素認証の管理について学習します。</block>
+  <block id="b06421b9a95d9ca2cc843abf3c5edbe4" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="6e0396b4058b8ab3f91c2a62781d9fbc" category="inline-link-macro-rx"></block></block>
+  <block id="b41bf2522840309de504df12a13b70d2" category="paragraph">NetApp サポート チームがお客様のリクエストを確認し、処理します。</block>
+  <block id="fcad29f3a62024a218de540d2a955cdf" category="paragraph">ID フェデレーションを設定すると、BlueXP の認証サービス プロバイダー (Auth0) と独自の ID 管理プロバイダーの間に信頼接続が作成されます。</block>
+  <block id="d1d43f38caca7dedb941839c492f984b" category="list-text">アクティブ ディレクトリ フェデレーション サービス (AD FS)</block>
+  <block id="d83b89b045c8e624c65e5bdd1df739a2" category="paragraph">BlueXP は、サービス プロバイダー開始 (SP 開始) SSO のみをサポートします。</block>
+  <block id="d2d94334dfcb8951175c03542424e8f6" category="paragraph">SAML ID プロバイダーとのフェデレーション接続を設定するには、次の手順に従います。</block>
+  <block id="d0695a9880ba108c088e6b238dbe5a0f" category="cell">IdP管理者</block>
+  <block id="bee02c363deaf6f0dd8aea6e9d720071" category="cell">SAMLアイデンティティプロバイダを設定して、BlueXPとのアイデンティティフェデレーションを有効にします。SAML ID プロバイダーの手順を表示します: * <block ref="ca3b480f7232aaaec3d2e53215742b63" category="inline-link-rx"></block> * <block ref="04811ba5bf74ab176cfd1cedb7bb94cf" category="inline-link-rx"></block> * <block ref="020f578557ba151dd4cd527703db067a" category="inline-link-rx"></block> * <block ref="c81ec8faa017852bd966e5611ad36b8e" category="inline-link-rx"></block> * <block ref="f2af21e38ad0fe2bcc560174b4a6827e" category="inline-link-rx"></block> * <block ref="7e43b1e9e620eb33d11e55cc9bd68362" category="inline-link-rx"></block> * <block ref="254df073ce11dc90920c494367029dbf" category="inline-link-rx"></block>上記のリストにIDプロバイダが表示されない場合は、 <block ref="7e20de1bde53a2c364dc941f7f4f716f" category="inline-link-rx"></block>ヒント: auth0 で接続を作成する方法を説明する手順は実行しないでください。この接続は次のステップで作成します。</block>
+  <block id="60fd679e445671946a2cb7a040195db7" category="paragraph">この手順を完了するには、ID プロバイダーについて IdP 管理者から次の情報を取得する必要があります。</block>
+  <block id="2818574f22d1ca2014d9c6297c70cb14" category="paragraph">この情報を使用して接続を作成すると、フェデレーション セットアップ ページに、次の手順で構成を完了するために IdP 管理者に送信できるパラメータが一覧表示されます。</block>
+  <block id="209399d6970d476ce09a20df36b98cbe" category="cell">接続をテストして有効にする<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block>接続のテストと接続の有効化の間でページが更新されます。</block>
+  <block id="c093b7d72f16361293aa5e883e689483" category="paragraph">BlueXP と Microsoft Entra ID 間のフェデレーション接続を設定するには、次の手順を実行します。</block>
+  <block id="c3c1b902a3dea2443da1b448acedac00" category="cell">BlueXPでアイデンティティフェデレーションを有効にするには、Microsoft Entra IDを設定します。<block ref="f56344318e894c9b20e07a08f6a512c3" category="inline-link-rx"></block>ヒント: auth0 で接続を作成する方法を説明する手順は実行しないでください。この接続は次のステップで作成します。</block>
+  <block id="696c0e631bde1717a03f5a795947ba6b" category="cell">に行く<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block> BlueXPとの接続を作成します。この手順を完了するには、IdP管理者から以下の情報を取得する必要があります。 * クライアントID * クライアントシークレット値 * Microsoft Entra IDドメイン これらの情報を使用して接続を作成すると、「フェデレーション設定」ページに、次の手順で設定を完了するためにAD管理者に送信できるパラメータが表示されます。注：シークレットキーの有効期限に注意してください。[フェデレーションセットアップ]ページに戻り、証明書_before_itの有効期限を更新する必要があります。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。</block>
+  <block id="41279beddd4264b4e59684bfcd3d3c7c" category="section-title">AD FS</block>
+  <block id="41a90fe3ab9f4194a42660fd91d2c204" category="paragraph">BlueXP と AD FS 間のフェデレーション接続を設定するには、次の手順を実行します。</block>
+  <block id="9a8accdeee46ee20c2fb41fea1fa3d07" category="cell">BlueXP との ID フェデレーションを有効にするように AD FS サーバーを構成します。 <block ref="774bae219d61ddaa3803a99b79315467" category="inline-link-rx"></block></block>
+  <block id="8ffdfb431e8a931f28d7864a9fc960c8" category="paragraph">この手順を完了するには、IdP 管理者から AD FS サーバーの URL またはフェデレーション メタデータ ファイルを取得する必要があります。</block>
+  <block id="3aacbc4eecedf44590227e1f9aa5b2ff" category="admonition">証明書の有効期限を常に把握しておいてください。有効期限が切れる前に、フェデレーション設定ページで証明書を更新してください。これはあなたの責任です。BlueXPでは有効期限は追跡されません。ADチームと協力して、時間通りにアラートを受け取ることをお勧めします。</block>
+  <block id="460bb3da9e31da624dfbccdc0f9abcb3" category="cell">接続をテストして有効にする<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block>接続のテストと有効化の間でページが更新されます。</block>
+  <block id="e59b261e6596f0a0c77328042128f40a" category="paragraph">BlueXP と PingFederate サーバー間のフェデレーション接続を設定するには、次の手順を実行します。</block>
+  <block id="d757fda1e28328e25cb79ea4b1a5cde1" category="cell">BlueXPでアイデンティティフェデレーションを有効にするようにPingFederateサーバを設定します。<block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block>ヒント: auth0 で接続を作成する方法を説明する手順は実行しないでください。この接続は次のステップで作成します。</block>
+  <block id="b525988db77a87baf322d6e304902f31" category="cell">に行く<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block> BlueXP との接続を確立します。この手順を完了するには、AD 管理者から以下の情報を取得する必要があります。 * PingFederate サーバーの URL * X509 署名証明書（PEM または CER 形式） これらの情報を使用して接続を確立すると、「フェデレーション設定」ページに、次のステップで設定を完了するために AD 管理者に送信できるパラメータが表示されます。注意：証明書の有効期限を必ず確認してください。有効期限が切れる前に、「フェデレーション設定」ページで証明書を更新してください。これはあなたの責任です。BlueXPでは有効期限は追跡されません。適切なタイミングで通知を受け取るには、IdP チームと連携することをお勧めします。</block>
+  <block id="1f69ef95344bd24f30451a2bea83a62f" category="paragraph">接続を作成した BlueXP 管理者のみが接続を更新できます。管理者を追加する場合は、NetApp サポートにお問い合わせください。</block>
+  <block id="9721505e7e43ce5787dd83a03fd9b2f3" category="paragraph">フォルダーには、プロジェクト、他のフォルダー、またはその両方を保存できます。</block>
+  <block id="e28a25c8a8e098506ce17a3272017a72" category="paragraph">リソースをフォルダに関連付けても、すべてのプロジェクトから自動的にアクセスできるようになるわけではありません。_フォルダ管理者またはプロジェクト管理者_のみがリソースを参照できます。_フォルダ管理者またはプロジェクト管理者_は、どのプロジェクトがリソースにアクセスできるかを決定し、適切なプロジェクトにリソースを関連付けます。</block>
+  <block id="cd9ef73e5fc3d459d72b97b04b52b7b5" category="paragraph">各組織には、_組織管理者_ ロールを持つユーザーが少なくとも 1 人含まれます (BlueXP は、組織を作成したユーザーにこのロールを自動的に割り当てます)。組織に他のメンバーを追加し、リソース階層のさまざまなレベルで異なる権限を割り当てることができます。</block>
+  <block id="7e5a81668c826cd6eb55e2a526c3b3fc" category="list-text">組織レベルでメンバーにアクセス ロールを付与すると、すべてのフォルダー、プロジェクト、リソースへの権限が付与されます。</block>
+  <block id="6ec4c0cd3ae01264f6d6d1b85b395706" category="paragraph">次の場合には、コネクタを別のプロジェクトで使用できるようにします。</block>
+  <block id="5f340589d07c141520bb25fe26a78177" category="paragraph">これらの例は、組織をどのように設定するかを示しています。</block>
+  <block id="aca510c2eaf184f2e01b23903d684793" category="paragraph">BlueXP は制限モードまたはプライベート モードの使用時にトラフィック、通信、およびデータの流れを抑制しますが、環境 (オンプレミスおよびクラウド) がビジネスに必要な規制に準拠していることを確認するのはお客様の責任となります。</block>
+  <block id="579f2ccfa8f6ecb1be46c191e6f51980" category="paragraph">各展開モードは、アウトバウンド接続、場所、インストール、認証、データ サービス、課金方法が異なります。</block>
+  <block id="9ce975b748ffa315e5b5bd641ca33677" category="list-text">SaaS サービスは Web ベースのコンソールから使用します。BlueXP使用する予定のデータ サービスと機能に応じて、BlueXP 管理者はハイブリッド クラウド環境内でデータを管理するための 1 つ以上のコネクタを作成します。</block>
+  <block id="d98e43e441401fe4017234de6c129578" category="list-text">BlueXP コネクタをクラウド（政府、主権、または商業地域）にインストールすると、BlueXP SaaS レイヤーへの送信接続が制限されます。</block>
+  <block id="972cb60287da31b9611be433ee2ad762" category="list-text">BlueXP コネクタをオンプレミスまたはクラウド（セキュリティ保護されたリージョン、ソブリン クラウド リージョン、または商用リージョン）にインストールしますが、BlueXP SaaS レイヤーには接続されません。ユーザーは、SaaS レイヤーではなく、コネクタによってローカルに提供される BlueXP コンソールにアクセスします。</block>
+  <block id="94eb1ccf1329f0bd1dd8b5cc79bc7e79" category="list-text">コネクタは、BlueXP セットアップ ウィザード、AWS または Azure Marketplace、Google Cloud SDK、またはデータセンターまたはクラウド内の Linux ホスト上の手動インストーラを使用してインストールできます。</block>
+  <block id="ab8c1039b8f699a1415c125a23a9d144" category="list-text">BlueXP は、毎月の更新によりコネクタ ソフトウェアの自動アップグレードを提供します。</block>
+  <block id="7aa15e6ec73e28acfb62cd888de11955" category="list-text">コネクタには、データ サービス、ソフトウェア アップグレード、認証、メタデータの転送のために BlueXP SaaS レイヤーへの送信接続が必要です。</block>
+  <block id="4978b7ac6e381a736fb52cb5a230ac40" category="paragraph">_BlueXP キャンバス_ を使用すると、クラウドおよびオンプレミスのストレージを検出、展開、管理できます。キャンバスは、すべてのストレージ管理のための単一の場所を提供します。</block>
+  <block id="5da0188845ba244ca142b57361e9f357" category="paragraph">BlueXPキャンバスでは、_作業環境_は検出または展開されたストレージを表します。_作業環境_を選択して、BlueXPデータサービスと統合したり、ボリュームの追加などストレージを管理したりできます。</block>
+  <block id="53fa882650f8f65752ae862a7746b468" category="paragraph">BlueXP には、オンプレミスとクラウド ストレージ全体でデータのセキュリティと可用性を維持するための統合データ サービスが含まれています。</block>
+  <block id="36899c5a148a3acea0bffdd254136e52" category="paragraph">BlueXP の価格は、使用するサービスによって異なります。 <block ref="ada12ee0075a75d68914f8fcd2a0e2e5" category="inline-link-rx"></block></block>
+  <block id="0c9b2bd18ffa4ce7cda040e3c61a866c" category="paragraph">BlueXP IAMは、BlueXPを標準モードまたは制限モードで使用している場合のみサポートされます。BlueXPをプライベートモードで使用している場合は、BlueXPアカウントを使用してワークスペース、ユーザー、およびリソースを管理します。</block>
+  <block id="51091fafc49a0babdea6002d621423fa" category="paragraph">NetApp は、次の Linux オペレーティング システムで BlueXP Connector をサポートしています。</block>
+  <block id="a535dcda7766e51e31ffd3df4317f44a" category="list-text">RHEL 8 または 9 ホストにコネクタをインストールする場合は、コンテナ オーケストレーション ツールとして Podman ツールを使用する必要があります。Docker EngineはRHEL 8および9ではサポートされていません。</block>
+  <block id="0f8aaf2eb0ff59886835b54d84602b70" category="list-text">NetApp は、次のバージョンのコネクタから RHEL 8 および 9 をサポートしています。</block>
+  <block id="f632c8a5c18ef59037a7fe9cfc7dc711" category="paragraph">RHEL 7またはCentOS 7で既存のコネクタを実行している場合、オペレーティングシステムのRHEL 8または9へのアップグレードや変換はサポートされていません。サポートされているオペレーティング システムで新しいコネクタを作成する必要があります。</block>
+  <block id="b5914a3931a82c5a178c54880f2cc01a" category="paragraph">コネクタでプロキシ サーバーを使用すると、パブリック IP または NAT ゲートウェイが利用できない場合でも、アウトバウンド インターネット アクセスが可能になります。プロキシサーバーはコネクタのみにアウトバウンド接続を提供し、Cloud Volumes ONTAPシステムには提供しません。</block>
+  <block id="cd7e4cb1c707ce97cf277c3b4bc321ef" category="paragraph">Cloud Volumes ONTAP システムにAutoSupport メッセージを送信するためのアウトバウンドインターネット接続がない場合、コネクタに含まれているプロキシサーバを使用するようにCloud Volumes ONTAP システムが自動的に設定されます。コネクタのセキュリティ グループがポート 3128 経由の受信接続を許可していることを確認する必要があります。コネクタをデプロイした後、このポートを開きます。</block>
+  <block id="4603c55afe11b15b9d5b31093abf5cf2" category="paragraph">この操作によりコネクタが再起動されます。続行する前に、コネクタが操作を実行していないことを確認してください。</block>
+  <block id="f9a3c12ec1399cd9b9113713fa630c13" category="paragraph">ナビゲーションはBlueXPのモードによって異なります。標準モードでは、SaaSウェブサイトからインターフェースにアクセスします。制限モードまたはプライベートモードでは、コネクタホストからローカルにアクセスします。</block>
+  <block id="c9803632fd35e898738b44182cde6082" category="paragraph">プロキシサーバを使用するようにコネクタを設定した場合は、コネクタで直接APIトラフィックを有効にして、プロキシを経由せずにAPI呼び出しをクラウドプロバイダサービスに直接送信できます。AWS、Azure、または Google Cloud で実行されているコネクタはこのオプションをサポートします。</block>
+  <block id="c37870a98a047f7cae1ee48e164d5230" category="paragraph">Cloud Volumes ONTAP を使用して Azure Private Links を無効にし、サービス エンドポイントを使用する場合は、直接 API トラフィックを有効にします。そうしないと、トラフィックは適切にルーティングされません。</block>
+  <block id="e31ce4330cd7a4e20e0b7b591f8ebfd4" category="list-text">レビュー<block ref="a2e83c328c5fe53a1b055bac582f41f6" category="inline-link-macro-rx"></block> 。</block>
+  <block id="7eea6497e8ea70d59d972ac97c28360e" category="paragraph">コネクタをインストールする予定のネットワークの場所が次の要件をサポートしていることを確認します。これらの要件により、コネクタはハイブリッド クラウド内のリソースを管理できるようになります。</block>
+  <block id="ed2437f594e8009c1fc5e8aacacb130e" category="paragraph">コネクタを作成した後、ネットワーク要件を実装します。</block>
+  <block id="3cc20ba39cd607f2a81f29cdf9061945" category="paragraph">コネクタを作成するときは、次の要件を満たす仮想マシンの種類を選択します。</block>
+  <block id="70ed5cd5c43989bfdca05cdead4bdb9f" category="paragraph">Azure Marketplace からコネクタを作成すると、デフォルト構成の仮想マシンが設定されます。<block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>です。</block>
+  <block id="45d0d4be100539c356e8f9492bb2d5f1" category="paragraph">指定した設定で仮想マシンが展開されます。約 5 分以内に仮想マシンとコネクタ ソフトウェアが実行されるはずです。</block>
+  <block id="74bda14a2271ace9bb470b0150286873" category="paragraph">BlueXPを標準モードで使用したい場合は、制限モードを無効にしてください。セキュアな環境でBlueXPバックエンドサービスからこのアカウントを切断する場合にのみ、制限モードを有効にしてください。その場合は、 <block ref="d4230e2957fd67694fbeb2d4cebbd012" category="inline-link-macro-rx"></block> 。</block>
+  <block id="f475e498e375ea618760c62b16000e58" category="paragraph">これで、コネクタがインストールされ、BlueXP 組織で設定されました。</block>
+  <block id="7f467e0b21a7ed92d9a599ed385d6b85" category="paragraph">多要素認証 (MFA) を構成して、パスワードによる 2 番目の検証方法を要求し、アカウントのセキュリティを強化します。</block>
+  <block id="6e33dfc363e882bdf66901c2b11df727" category="list-text">完了すると、リカバリコードを保存するように求められます。コードをコピーするか、コードを含むテキストファイルをダウンロードしてください。このコードは安全な場所に保管してください。認証アプリにアクセスできなくなった場合は、回復コードが必要になります。</block>
+  <block id="4e6656a8f3f39a1c10345bb992a1b43d" category="paragraph">MFA を設定すると、BlueXP にログインするたびに、認証アプリからワンタイム コードを入力するように求められます。</block>
+  <block id="671e07801d48dec4b74d96f219be7477" category="section-title">MFA設定を削除する</block>
+  <block id="45d1a6f833be54e5c76a6425a1bc3d64" category="paragraph">BlueXPアカウントで多要素認証（MFA）の使用を停止するには、MFA設定を削除してください。これにより、ログイン時に認証アプリからワンタイムコードを入力する必要がなくなります。</block>
+  <block id="62fb2f4eacb3d56ea8cb96e9b068426c" category="admonition">認証アプリまたは回復コードにアクセスできない場合は、BlueXP 管理者に連絡して MFA 構成をリセットする必要があります。</block>
+  <block id="42f007f9f4877a6aa4543c5ae82e6e41" category="paragraph">組織の管理者に連絡する必要がある場合は、BlueXPから直接メールを送信できます。管理者は、組織内のユーザー アカウントと権限を管理します。</block>
+  <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">2025年6月9日</block>
 </blocks>

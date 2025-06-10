@@ -18,6 +18,36 @@ IDおよびアクセス管理（IAM）、コネクタ、クラウドプロバイ
 
 
 
+== 2025年6月9日
+
+
+
+=== コネクタ3.9.53
+
+BlueXP コネクタのこのリリースには、セキュリティの改善とバグ修正が含まれています。
+
+現時点では、3.9.53リリースは標準モードと制限モードで使用できます。
+
+
+
+=== BlueXP  IDおよびアクセス管理（IAM）
+
+
+
+==== 多要素認証（MFA）
+
+フェデレーションされていないユーザーは、BlueXPアカウントで多要素認証（MFA）を有効にしてアカウントのセキュリティを強化できるようになりました。BlueXP管理者は、ユーザーのMFA設定を管理し、必要に応じて個々のユーザーのMFAをリセットまたは無効化できます。
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["自分自身に多要素認証を設定する方法について説明します。"^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["ユーザーの多要素認証の管理について学習します。"^]
+
+
+
+=== ワークロード
+
+BlueXP の認証情報ページから Amazon FSx for NetApp ONTAP の認証情報を表示および削除できるようになりました。
+
+
+
 == 2025年5月29日
 
 
