@@ -41,6 +41,14 @@ link:reference-connector-default-config.html["コネクタのデフォルト設�
 
 
 
+== ディスク容量を監視する
+
+BlueXPは、コネクタVMのディスク容量が少なくなると通知します。これらの通知は通知センターで確認するか、メールアラートを送信するように設定してください。ディスク容量の問題の解決はお客様の責任となります。link:ttps://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["NetAppナレッジベースの記事を確認する"^]です。
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center["詳細はこちら。"^]
+
+
+
 == コネクタVMの停止と起動
 
 コネクタVMを停止してから起動する必要がある場合は、クラウドプロバイダのコンソールから、またはオンプレミス管理の標準手順を使用して実行する必要があります。
