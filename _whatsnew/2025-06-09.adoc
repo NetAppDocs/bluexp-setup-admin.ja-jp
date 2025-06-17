@@ -18,6 +18,20 @@ BlueXP コネクタのこのリリースには、セキュリティの改善と�
 
 
 
+=== 監査の改善
+
+タイムラインにユーザーのログインイベントが表示されるようになりました。これにより、ユーザーがBlueXPにログインした日時を確認できるようになり、監査やセキュリティ監視に役立ちます。組織管理者ロールを持つAPIユーザーは、ログインしたユーザーのメールアドレスをタイムラインに表示できます。  `includeUserData=true``パラメータは次のようになります。  `/audit/<account_id>?includeUserData=true` 。
+
+
+
+=== BlueXPでKeystoneサブスクリプション管理が利用可能
+
+BlueXP から NetApp Keystone サブスクリプションを管理できます。
+
+link:https://docs.netapp.com/us-en/keystone-staas/index.html["BlueXP での Keystone サブスクリプション管理について学習します。"^]
+
+
+
 === BlueXP  IDおよびアクセス管理（IAM）
 
 

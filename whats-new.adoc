@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam, notice' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam, notice, releases' 
 summary: BlueXP  IAM、コネクタ、クラウドプロバイダのクレデンシャルなど、BlueXP  管理機能の新機能をご確認ください。 
 ---
 = 新機能
@@ -33,6 +33,20 @@ BlueXP コネクタのこのリリースには、セキュリティの改善と�
 === ディスク容量使用状況アラート
 
 通知センターに、コネクタのディスク領域の使用状況に関するアラートが含まれるようになりました。 link:task-maintain-connectors.html#monitor-disk-space["詳細はこちら。"^]
+
+
+
+=== 監査の改善
+
+タイムラインにユーザーのログインイベントが表示されるようになりました。これにより、ユーザーがBlueXPにログインした日時を確認できるようになり、監査やセキュリティ監視に役立ちます。組織管理者ロールを持つAPIユーザーは、ログインしたユーザーのメールアドレスをタイムラインに表示できます。  `includeUserData=true``パラメータは次のようになります。  `/audit/<account_id>?includeUserData=true` 。
+
+
+
+=== BlueXPでKeystoneサブスクリプション管理が利用可能
+
+BlueXP から NetApp Keystone サブスクリプションを管理できます。
+
+link:https://docs.netapp.com/us-en/keystone-staas/index.html["BlueXP での Keystone サブスクリプション管理について学習します。"^]
 
 
 
