@@ -5211,7 +5211,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="2b081e4d7f5e73b0295cc7f384e9ef53" category="paragraph">BlueXPは、コネクタVMのディスク容量が少なくなると通知します。これらの通知は通知センターで確認するか、メールアラートを送信するように設定してください。ディスク容量の問題の解決はお客様の責任となります。<block ref="2f3ae1328a4e13fb2f2d9aa6f559f827" category="inline-link-macro-rx"></block>です。</block>
   <block id="b76919d8a6dd33b62b49a16ab1b560aa" category="paragraph"><block ref="b76919d8a6dd33b62b49a16ab1b560aa" category="inline-link-macro-rx"></block></block>
   <block id="35e36a667d1baf91dbb76a03357b3183" category="section-title">監査の改善</block>
-  <block id="37e905ff49f6da834567cfa78667e2b7" category="paragraph">タイムラインにユーザーのログインイベントが表示されるようになりました。これにより、ユーザーがBlueXPにログインした日時を確認できるようになり、監査やセキュリティ監視に役立ちます。組織管理者ロールを持つAPIユーザーは、ログインしたユーザーのメールアドレスをタイムラインに表示できます。 <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block>パラメータは次のようになります。 <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> 。</block>
   <block id="a0b97dd4496f33209c0a49172d25b07e" category="section-title">BlueXPでKeystoneサブスクリプション管理が利用可能</block>
   <block id="92fd6983a547cfe3acf24d017a43dd47" category="paragraph">BlueXP から NetApp Keystone サブスクリプションを管理できます。</block>
   <block id="29e615c9125f030edfca48f5dd489a27" category="inline-link-macro">BlueXP での Keystone サブスクリプション管理について学習します。</block>
@@ -5227,4 +5226,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="5c978e399a8f1d0acd4407aa13d8eb47" category="paragraph">通知が不要になった場合は、ページから削除できます。通知は個別に、または一度にすべて閉じることができます。</block>
   <block id="d7fce9a3c3250c2897219cf1e55613fc" category="list-text">BlueXP は、コネクタ、デジタル ウォレット、コピーと同期、バックアップと復元に関する電子メール通知を送信します。</block>
   <block id="1d3e249b6555eefc80860021fe042ffd" category="paragraph">通知設定をカスタマイズするには、組織管理者の役割が必要です。</block>
+  <block id="71c9d16d02984e33cfc9f5c051c0fdb6" category="paragraph">タイムラインにユーザーのログインとログアウトのイベントが表示されるようになりました。ログインアクティビティがいつ発生したかを確認できるため、監査やセキュリティ監視に役立ちます。組織管理者ロールを持つAPIユーザーは、ログインしたユーザーのメールアドレスをタイムラインに表示できます。 <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block>パラメータは次のようになります。 <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> 。</block>
 </blocks>
