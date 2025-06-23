@@ -5205,7 +5205,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">使用不可</block>
   <block id="33eba214b6723fe54975309f2fc419fe" category="paragraph">3.9.53リリースは、標準モードと制限モードで使用できます。</block>
   <block id="39615b94cc2fe576502275ed459d404b" category="section-title">ディスク容量使用状況アラート</block>
-  <block id="0b6d76bd9d461e2dc31436ce64d71b70" category="paragraph">通知センターに、コネクタのディスク領域の使用状況に関するアラートが含まれるようになりました。 <block ref="f731d1927408fd2f4c1db9e73951a633" category="inline-link-macro-rx"></block></block>
   <block id="797f681b34046f4455905e56cb5d8cd4" category="section-title">ディスク容量を監視する</block>
   <block id="373df0df4c9bf458b635c60e6bd81875" category="inline-link-macro">NetAppナレッジベースの記事を確認する</block>
   <block id="2b081e4d7f5e73b0295cc7f384e9ef53" category="paragraph">BlueXPは、コネクタVMのディスク容量が少なくなると通知します。これらの通知は通知センターで確認するか、メールアラートを送信するように設定してください。ディスク容量の問題の解決はお客様の責任となります。<block ref="2f3ae1328a4e13fb2f2d9aa6f559f827" category="inline-link-macro-rx"></block>です。</block>
@@ -5227,4 +5226,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d7fce9a3c3250c2897219cf1e55613fc" category="list-text">BlueXP は、コネクタ、デジタル ウォレット、コピーと同期、バックアップと復元に関する電子メール通知を送信します。</block>
   <block id="1d3e249b6555eefc80860021fe042ffd" category="paragraph">通知設定をカスタマイズするには、組織管理者の役割が必要です。</block>
   <block id="71c9d16d02984e33cfc9f5c051c0fdb6" category="paragraph">タイムラインにユーザーのログインとログアウトのイベントが表示されるようになりました。ログインアクティビティがいつ発生したかを確認できるため、監査やセキュリティ監視に役立ちます。組織管理者ロールを持つAPIユーザーは、ログインしたユーザーのメールアドレスをタイムラインに表示できます。 <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block>パラメータは次のようになります。 <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> 。</block>
+  <block id="da15b66e2df6f7619f48e376251ca70a" category="paragraph">通知センターに、コネクタのディスク領域の使用状況に関するアラートが含まれるようになりました。 <block ref="c622bedc83ce36b38252ce6167a6dc1f" category="inline-link-macro-rx"></block></block>
 </blocks>

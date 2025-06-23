@@ -32,7 +32,7 @@ BlueXP コネクタのこのリリースには、セキュリティの改善と�
 
 === ディスク容量使用状況アラート
 
-通知センターに、コネクタのディスク領域の使用状況に関するアラートが含まれるようになりました。 link:task-maintain-connectors.html#monitor-disk-space["詳細はこちら。"^]
+通知センターに、コネクタのディスク領域の使用状況に関するアラートが含まれるようになりました。 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#monitor-disk-space["詳細はこちら。"^]
 
 
 
