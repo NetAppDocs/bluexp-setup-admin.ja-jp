@@ -362,7 +362,7 @@ image:screenshot-credentials-with-subscription.png["BlueXPの[Account credential
 アカウントの種類 (AWS キーまたはロールの引き受け) を変更したり、名前を編集したり、認証情報自体 (キーまたはロール ARN) を更新したりして、AWS 認証情報を編集します。
 
 
-NOTE: コネクタインスタンスまたは Amazon FSx for ONTAP インスタンスに関連付けられているインスタンスプロファイルの認証情報を編集することはできません。
+NOTE: コネクタインスタンスまたは Amazon FSx for ONTAP インスタンスに関連付けられているインスタンスプロファイルの認証情報を編集することはできません。FSx for ONTAP インスタンスの資格情報の名前のみを変更できます。
 
 .手順
 . コンソールの右上にある設定アイコンを選択し、*資格情報*を選択します。

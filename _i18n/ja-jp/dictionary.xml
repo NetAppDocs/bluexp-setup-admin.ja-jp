@@ -5000,7 +5000,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="b3dcf4c270625912aa46f11d96df2bae" category="list-text">デジタル ウォレットにアクセスして、サブスクリプションが組織またはアカウントに関連付けられていることを確認します。</block>
   <block id="63efa257b0b77bd676137930df4d9b38" category="list-text">サブスクリプションが表示されていることを確認します。</block>
   <block id="62ce53ce4e7e424908529a45cc3ea1d3" category="paragraph">アカウントの種類 (AWS キーまたはロールの引き受け) を変更したり、名前を編集したり、認証情報自体 (キーまたはロール ARN) を更新したりして、AWS 認証情報を編集します。</block>
-  <block id="0da97e00ea780b9865f7c3ffbb4c3271" category="admonition">コネクタインスタンスまたは Amazon FSx for ONTAP インスタンスに関連付けられているインスタンスプロファイルの認証情報を編集することはできません。</block>
   <block id="f6e35353d921e75b732126993889eaf7" category="paragraph">資格情報セットが不要になった場合は、削除できます。削除できるのは、作業環境に関連付けられていないクレデンシャルのみです。</block>
   <block id="f54a1ada6e84cbd77add137de73fe499" category="summary">Connector VMインスタンスに関連付けられているGoogle Cloudクレデンシャルを管理するには、Marketplaceサブスクリプションを関連付け、サブスクリプションプロセスをトラブルシューティングします。これら両方のタスクにより、マーケットプレイスのサブスクリプションを使用してデータ サービスの支払いができるようになります。</block>
   <block id="0e46c1615780fb701a31f342948323ee" category="paragraph">Google CloudでConnectorを導入すると、Connector VMインスタンスに関連付けられたデフォルトのクレデンシャルセットがBlueXPによって作成されます。これらのクレデンシャルに関連付けられているGoogle Cloud Marketplaceサブスクリプションは、いつでも変更できます。このサブスクリプションを使用すると、従量課金制の Cloud Volumes ONTAP システムを作成し、その他のデータ サービスを使用できるようになります。</block>
@@ -5227,4 +5226,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="da15b66e2df6f7619f48e376251ca70a" category="paragraph">通知センターに、コネクタのディスク領域の使用状況に関するアラートが含まれるようになりました。 <block ref="c622bedc83ce36b38252ce6167a6dc1f" category="inline-link-macro-rx"></block></block>
   <block id="8d6b52099b0900a6f09e2d0ebba1cd5a" category="paragraph">Docker エンジン 23.06 から 28.0.0。</block>
   <block id="0930e6e62078c5446e99045f0a678607" category="paragraph">Docker エンジン 23.0.6 から 28.0.0。</block>
+  <block id="457d598af578e6f47129cba886b757ba" category="admonition">コネクタインスタンスまたは Amazon FSx for ONTAP インスタンスに関連付けられているインスタンスプロファイルの認証情報を編集することはできません。FSx for ONTAP インスタンスの資格情報の名前のみを変更できます。</block>
 </blocks>
