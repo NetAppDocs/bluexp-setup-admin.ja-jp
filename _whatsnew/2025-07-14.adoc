@@ -8,7 +8,7 @@
 
 BlueXPコネクタのこのリリースには、セキュリティの改善、バグ修正、および次の新機能が含まれています。
 
-* Cloud Volumes ONTAPサービスのサポート専用のコネクタの透過プロキシのサポート。 link:https://docs.netapp.com/us-en/bluexp/task-configuring-proxy.html["透過プロキシの構成について詳しく学びます。"]
+* Cloud Volumes ONTAPサービスのサポート専用のコネクタの透過プロキシのサポート。 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["透過プロキシの構成について詳しく学びます。"]
 * コネクタが Google Cloud 環境にデプロイされているときに、ネットワーク タグを使用してコネクタ トラフィックをルーティングする機能。
 * CPU および RAM の使用状況を含む、コネクタのヘルス監視に関する追加の製品内通知。
 
@@ -42,7 +42,7 @@ BlueXPは、ID連携を管理するためのより直感的なインターフェ
 
 ID連携によるシングルサインオン（SSO）を有効にすると、ユーザーは企業の認証情報でBlueXPにログインできるようになります。これにより、セキュリティが向上し、パスワードの使用が削減され、オンボーディングが簡素化されます。
 
-新しい管理機能にアクセスするには、既存のフェデレーション接続を新しいインターフェースにインポートするよう求められます。これにより、フェデレーション接続を再作成することなく、最新の機能強化を活用できます。 link:https://docs.netapp.com/us-en/bluexp/task-federation-import.html["既存のフェデレーション接続をBlueXPにインポートする方法の詳細をご覧ください。"]
+新しい管理機能にアクセスするには、既存のフェデレーション接続を新しいインターフェースにインポートするよう求められます。これにより、フェデレーション接続を再作成することなく、最新の機能強化を活用できます。 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-federation-import.html["既存のフェデレーション接続をBlueXPにインポートする方法の詳細をご覧ください。"]
 
 改善されたフェデレーション管理により、次のことが可能になります。
 
@@ -51,7 +51,7 @@ ID連携によるシングルサインオン（SSO）を有効にすると、ユ
 * IAM ロールを使用してフェデレーション管理へのアクセスを制御します。
 
 
-link:https://docs.netap.com/us-en/bluexp-setup-admin/concept-federation.html["BlueXPの ID フェデレーションの詳細をご覧ください。"]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-federation.html["BlueXPの ID フェデレーションの詳細をご覧ください。"]
 
 
 
@@ -64,4 +64,4 @@ BlueXPでは、次の機能とデータ サービスに対する IAM ロール�
 * フェデレーション
 
 
-link:https://docs.netapp.com/us-en/bluexp/reference-iam-predefined-roles.html["アクセス ロールの使用について詳しく学習します。"]
+link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["アクセス ロールの使用について詳しく学習します。"]

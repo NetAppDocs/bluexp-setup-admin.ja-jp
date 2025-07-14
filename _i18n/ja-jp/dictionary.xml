@@ -5015,7 +5015,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f7b353257b71afef5402701e6c93dc8a" category="doc">コネクタ3.9.54</block>
   <block id="98b6a9150dc84b6f02a11b49d3f18c05" category="paragraph">BlueXPコネクタのこのリリースには、セキュリティの改善、バグ修正、および次の新機能が含まれています。</block>
   <block id="0e0a4ccfeecf6ead97d3838c2dc57d40" category="inline-link-macro">透過プロキシの構成について詳しく学びます。</block>
-  <block id="313ef52bd65a76709d5fc69694074f0c" category="list-text">Cloud Volumes ONTAPサービスのサポート専用のコネクタの透過プロキシのサポート。 <block ref="139e9d43e4ebdf2d28d8a7ff0c85548a" category="inline-link-macro-rx"></block></block>
   <block id="4439ae12e6cc703b73c18fa22032bcff" category="list-text">コネクタが Google Cloud 環境にデプロイされているときに、ネットワーク タグを使用してコネクタ トラフィックをルーティングする機能。</block>
   <block id="a72a5a23a9089a372f557a0032363d4e" category="list-text">CPU および RAM の使用状況を含む、コネクタのヘルス監視に関する追加の製品内通知。</block>
   <block id="86c10fecfc44ffe6d27d3e73e9158cad" category="paragraph">現時点では、3.9.54リリースは標準モードと制限モードで使用できます。</block>
@@ -5031,18 +5030,15 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="a7cc903fc36eaee51a699d9d59b1496c" category="paragraph">BlueXPは、ID連携を管理するためのより直感的なインターフェースを提供します。これにより、ナビゲーションが簡素化され、連携接続の設定オプションが明確になり、既存の連携の可視性が向上します。</block>
   <block id="c06fd8d559af4ac97a50afd1857f0e4e" category="paragraph">ID連携によるシングルサインオン（SSO）を有効にすると、ユーザーは企業の認証情報でBlueXPにログインできるようになります。これにより、セキュリティが向上し、パスワードの使用が削減され、オンボーディングが簡素化されます。</block>
   <block id="62532a5520311cce692e8abb3a619189" category="inline-link-macro">既存のフェデレーション接続をBlueXPにインポートする方法の詳細をご覧ください。</block>
-  <block id="09de16a2da9f0884c7445f0a40b10aa4" category="paragraph">新しい管理機能にアクセスするには、既存のフェデレーション接続を新しいインターフェースにインポートするよう求められます。これにより、フェデレーション接続を再作成することなく、最新の機能強化を活用できます。 <block ref="172066467f700483f74d71d92d89ce7c" category="inline-link-macro-rx"></block></block>
   <block id="35db97c0083a9f24d4de60744f2ae08c" category="paragraph">改善されたフェデレーション管理により、次のことが可能になります。</block>
   <block id="c7cfa37b557dec5d42fe4ae1f33a84a9" category="list-text">フェデレーション接続に複数の検証済みドメインを追加すると、同じ ID プロバイダー (IdP) で複数のドメインを使用できるようになります。</block>
   <block id="b4a4e2a03df0b0c5b7847629f778c654" category="list-text">必要に応じてフェデレーション接続を無効化または削除し、ユーザー アクセスとセキュリティを制御できます。</block>
   <block id="77f3e518793db250165393f568090955" category="list-text">IAM ロールを使用してフェデレーション管理へのアクセスを制御します。</block>
   <block id="ac784304eb7a6a12a493cf93b5cef5a9" category="inline-link-macro">BlueXPの ID フェデレーションの詳細をご覧ください。</block>
-  <block id="7970bfbac6093d2cbee1b40bcff193c3" category="paragraph"><block ref="7970bfbac6093d2cbee1b40bcff193c3" category="inline-link-macro-rx"></block></block>
   <block id="e16a950fa56f1c93596e628653af0177" category="section-title">BlueXP backup and recovery、 BlueXP disaster recovery、フェデレーション管理の新しいアクセス ロール</block>
   <block id="f4b57a3793a05b2b72338f8e9fcc9496" category="paragraph">BlueXPでは、次の機能とデータ サービスに対する IAM ロールの使用がサポートされるようになりました。</block>
   <block id="43db2a9bc6b7310c67fd6873bb6ca7a4" category="list-text">フェデレーション</block>
   <block id="f52cf765b6d2324047bf70dbb3a134b2" category="inline-link-macro">アクセス ロールの使用について詳しく学習します。</block>
-  <block id="10bab6385b6290f87ce28199462adf76" category="paragraph"><block ref="10bab6385b6290f87ce28199462adf76" category="inline-link-macro-rx"></block></block>
   <block id="59d63e81aab85c8d960a9f1f13ec3a20" category="paragraph">A_connector_は、クラウドネットワークまたはオンプレミスネットワークで実行されるネットアップのソフトウェアです。これは、BlueXP のサービスをストレージ環境に接続するために使用されます。</block>
   <block id="8e3127f706f1e56c4038e102362daa9e" category="summary">アイデンティティフェデレーションを使用すると、BlueXPとのシングルサインオンが可能になり、ユーザは自社のアイデンティティのクレデンシャルを使用してログインできます。開始するには、セットアップ プロセスを確認してください。</block>
   <block id="35da6b1009cfb85617a9cb6b76ca78b5" category="paragraph">シングルサインオン（フェデレーション）は、ユーザーが企業の認証情報を使用してBlueXPにログインできるようにすることで、ログインプロセスを簡素化し、セキュリティを強化します。シングルサインオン（SSO）は、IDプロバイダ（IdP）またはNetAppサポートサイトから有効化できます。</block>
@@ -5283,7 +5279,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="c3735d9c34fd4ed334e4dbdf6f9399bf" category="list-text">信頼信頼識別子を作成するときは、**YOUR_TENANT** 値を使用します。 <block ref="54abc930040d4aaee039ddb6714c161b" prefix=" " category="inline-code"></block></block>
   <block id="5f1e9ae008e49ccbc1bb7bb997f7072d" category="list-text">*WS-Federation のサポートを有効にする* を選択した場合は、**YOUR_AUTH0_DOMAIN** 値を使用します。 <block ref="fe93c33621416c4736b5beefec28d44e" prefix=" " category="inline-code"></block></block>
   <block id="bf7f21a3f0a9d15815e8898ab4b0d126" category="list-text">信頼関係を作成したら、AD FS サーバーからメタデータ URL をコピーするか、フェデレーション メタデータ ファイルをダウンロードしてください。BlueXPで接続を完了するには、この URL またはファイルが必要になります。</block>
-  <block id="84999323afead336ecc889d3b9f1f8b9" category="paragraph">+ NetApp、メタデータURLを使用してBlueXPが最新のAD FS構成を自動的に取得することを推奨しています。フェデレーションメタデータファイルをダウンロードした場合は、AD FS構成に変更があるたびにBlueXPで手動で更新する必要があります。</block>
   <block id="ca0d62b869f281351aeda2084ef067c3" category="list-text">BlueXPに戻り、[次へ] を選択して接続を作成します。</block>
   <block id="4b682b6bee53df811273a0bfbe611e45" category="list-text">AD FS との接続を作成します。</block>
   <block id="c1b7d1f0d06c7cfb1404c3d5e03d6802" category="list-text">前の手順で AD FS サーバーからコピーした *AD FS URL* を入力するか、AD FS サーバーからダウンロードしたフェデレーション メタデータ ファイルをアップロードします。</block>
@@ -5305,7 +5300,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="a31725e5a996167aefdc67c1628c7ebf" category="list-text">前の手順で作成したクライアント ID とクライアント シークレットを入力します。</block>
   <block id="56195ae93f466d39ec4d363a2fb1500e" category="list-text">Microsoft Entra ID ドメイン名を入力します。</block>
   <block id="414584aec7c36f7a64ee722e65458b2f" category="list-text">*接続を作成*を選択します。数秒で接続が作成されます。</block>
-  <block id="a341e999958dd720d932630dc8e0be57" category="floating-title">接続をテストして有効にする</block>
   <block id="085cc3c433cdddd132661c8498367dd3" category="summary">既存のフェデレーション接続をBlueXPにインポートして、新しいインターフェースで管理できます。これにより、フェデレーション接続を再作成することなく、最新の拡張機能を活用できます。</block>
   <block id="c25a3e76b4346814957eaeaf7f21b29b" category="doc">BlueXPにフェデレーションをインポートする</block>
   <block id="e4ebb9b2ed3ade70212bc0487a5b0956" category="paragraph">BlueXPへのフェデレーション接続を既に設定済みのお客様は、既存のフェデレーションを新しいインターフェースにインポートできます。これにより、フェデレーション接続を再作成することなく、新しいフェデレーションページで管理できるようになります。</block>
@@ -5453,4 +5447,10 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d00255b25e6ac270c154c1b88351cb61" category="sidebar">フェデレーションの管理</block>
   <block id="b738cb995b90e7ef0f6b53e82271107a" category="sidebar">既存のフェデレーション接続をインポートする</block>
   <block id="20bcff7d6fd558badea4ab3c38447c64" category="sidebar">コネクタメンテナンスオンソール</block>
+  <block id="5e976f8888129db7a70ab686bfcc86b9" category="list-text">Cloud Volumes ONTAPサービスのサポート専用のコネクタの透過プロキシのサポート。 <block ref="addeb9305f92d41fc2dd640d1ef810f0" category="inline-link-macro-rx"></block></block>
+  <block id="a930f8ca18589b33c946f81801d0bbf6" category="paragraph">新しい管理機能にアクセスするには、既存のフェデレーション接続を新しいインターフェースにインポートするよう求められます。これにより、フェデレーション接続を再作成することなく、最新の機能強化を活用できます。 <block ref="374020c220651e051317a80c1b5ae1db" category="inline-link-macro-rx"></block></block>
+  <block id="b658b3504fd725bf7abab622b28f1851" category="paragraph"><block ref="b658b3504fd725bf7abab622b28f1851" category="inline-link-macro-rx"></block></block>
+  <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
+  <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp、メタデータ URL を使用してBlueXP が最新の AD FS 構成を自動的に取得できるようにすることをお勧めします。フェデレーションメタデータファイルをダウンロードした場合は、AD FS構成に変更があるたびにBlueXPで手動で更新する必要があります。</block>
+  <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">接続をテストして有効にする</block>
 </blocks>
