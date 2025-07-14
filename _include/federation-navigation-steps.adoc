@@ -1,0 +1,9 @@
+= 
+:allow-uri-read: 
+
+
+.手順
+. BlueXP  コンソールの右上で、>* IDおよびアクセス管理*を選択しますimage:icon-settings-option.png["BlueXP  Webコンソールの右上に表示される設定アイコン。"]。
+. *Federation*タブを選択します。
+. *新しいフェデレーションの構成*を選択します。
+

@@ -95,12 +95,6 @@ sidebar:
         url: "/task-prepare-private-mode.html"
       - title: コネクタを展開します
         url: "/task-install-private-mode.html"
-      - title: BlueXPのアカウント
-        entries:
-        - title: アカウントの詳細を確認します
-          url: "/concept-netapp-accounts.html"
-        - title: BlueXPアカウントを管理します
-          url: "/task-managing-netapp-accounts.html"
       - title: 次は何ができるか
         url: "/reference-whats-next-private-mode.html"
   - title: BlueXPを使用する
@@ -147,16 +141,34 @@ sidebar:
             url: "/reference-iam-storage-roles.html"
         - title: データサービスの役割
           entries:
+          - title: バックアップとリカバリの役割
+            url: "/reference-iam-backup-rec-roles.html"
+          - title: 災害復旧の役割
+            url: "/reference-iam-disaster-rec-roles.html"
           - title: ランサムウェア対策の役割
             url: "/reference-iam-ransomware-roles.html"
-    - title: BlueXP  アカウント（プライベートモードのみ）
-      entries:
-      - title: アカウントの詳細を確認します
-        url: "/concept-netapp-accounts.html"
-      - title: BlueXPアカウントを管理します
-        url: "/task-managing-netapp-accounts.html"
     - title: アイデンティティフェデレーション
-      url: "/concept-federation.html"
+      entries:
+      - title: アイデンティティ連携について学ぶ
+        url: "/concept-federation.html"
+      - title: ドメイン検証
+        entries:
+        - title: ドメインを確認する
+          url: "/task-federation-verify-domain.html"
+      - title: フェデレーションを構成する
+        entries:
+        - title: Active Directory フェデレーション サービス (AD FS) プロバイダーとのフェデレーション
+          url: "/task-federation-adfs.html"
+        - title: Microsoft Entra ID プロバイダーとの連携
+          url: "/task-federation-entra-id.html"
+        - title: PingFederateとの連携
+          url: "/task-federation-ping.html"
+        - title: SAML IDプロバイダとの連携
+          url: "/task-federation-saml.html"
+      - title: フェデレーションの管理
+        url: "/task-federation-manage.html"
+      - title: 既存のフェデレーション接続をインポートする
+        url: "/task-federation-import.html"
     - title: コネクタ
       entries:
       - title: VMとOSの保守
@@ -207,6 +219,10 @@ sidebar:
       url: "/task-monitor-cm-operations.html"
   - title: 参照
     entries:
+    - title: コネクタメンテナンスコンソール
+      entries:
+      - title: コネクタメンテナンスオンソール
+        url: "/reference-connector-maint-console.html"
     - title: 権限
       entries:
       - title: 権限の概要

@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-federation-entra-id.html 
+keywords: Microsoft Entra ID, BlueXP, federation, single sign-on, SSO, identity provider, IdP, service provider-initiated SSO, domain verification, client secret, redirect URL, organization admin 
+summary: NetAppサポートサイトのアカウントをBlueXP  の組織またはアカウントに関連付けて、Cloud Volumes ONTAPの主要なワークフローを有効にします。これらのNSSクレデンシャルは、BlueXP  の組織またはアカウント全体に関連付けられます。 
+---
+= BlueXPと Microsoft Entra ID を連携させる
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Microsoft Entra ID IdPプロバイダーと連携して、 BlueXPのシングルサインオン（SSO）を有効にします。これにより、ユーザーは企業の認証情報を使用してログインできるようになります。
+
+.必要な役割
+フェデレーションを作成および管理するには、組織管理者またはフェデレーション管理者が必要です。フェデレーション閲覧者はフェデレーションページを表示できます。 link:reference-iam-predefined-roles.html["アクセス ロールの詳細について説明します。"]
+
+
+NOTE: 社内のIdPまたはNetAppサポートサイトと連携できます。NetAppNetApp、どちらか一方を選択することを推奨しており、両方を選択することは推奨していません。
+
+NetAppは、サービスプロバイダ主導（SP主導）のSSOのみをサポートしています。まず、 NetAppをサービスプロバイダとして信頼するようにアイデンティティプロバイダを設定する必要があります。その後、 BlueXPでアイデンティティプロバイダの設定を使用して接続を作成できます。
+
+BlueXPのシングルサインオン（SSO）を有効にするには、Microsoft Entra ID とのフェデレーション接続を設定します。このプロセスでは、Microsoft Entra ID を設定してBlueXP をサービスプロバイダーとして信頼し、 BlueXPで接続を作成します。
+
+.作業を開始する前に
+* 管理者権限を持つIdPアカウントが必要です。IdP管理者と調整して手順を完了してください。
+* 連携に使用するドメインを特定します。ご自身のメールドメイン、またはご自身で所有している別のドメインを使用できます。メールドメイン以外のドメインを使用する場合は、まずBlueXPでドメインを検証する必要があります。これは、以下の手順に従って行うことができます。 link:task-federation-verify-domain.html["BlueXPでドメインを認証する"]トピック。
+
+
+.手順
+. BlueXP  コンソールの右上で、>* IDおよびアクセス管理*を選択しますimage:icon-settings-option.png["BlueXP  Webコンソールの右上に表示される設定アイコン。"]。
+. *Federation*タブを選択します。
+. *新しいフェデレーションの構成*を選択します。
+
+
+[discrete]
+====== ドメインの詳細
+
+. ドメインの詳細を入力してください:
++
+.. 検証済みドメインを使用するか、メールドメインを使用するかを選択します。メールドメインとは、ログインしているアカウントに関連付けられているドメインです。
+.. 構成するフェデレーションの名前を入力します。
+.. 検証済みのドメインを選択する場合は、リストからドメインを選択します。
+
+
+. 「 * 次へ * 」を選択します。
+
+
+[discrete]
+====== 接続方法
+
+. 接続方法として、*プロバイダー*を選択し、*Microsoft Entra ID*を選択します。
+. 「 * 次へ * 」を選択します。
+
+
+[discrete]
+====== 設定手順
+
+. NetAppをサービスプロバイダーとして信頼するようにMicrosoft Entra IDを設定してください。この手順はMicrosoft Entra IDサーバーで実行する必要があります。
++
+.. BlueXP を信頼するために Microsoft Entra ID アプリを登録するときは、次の値を使用します。
++
+*** *リダイレクトURL*には、  `https://services.cloud.netapp.com`
+*** *返信URL*には、  `https://netapp-cloud-account.auth0.com/login/callback`
+
+
+.. Microsoft Entra ID アプリのクライアントシークレットを作成します。フェデレーションを完了するには、クライアントID、クライアントシークレット、Entra ID ドメイン名を入力する必要があります。
+
+
+. BlueXPに戻り、[次へ] を選択して接続を作成します。
+
+
+[discrete]
+====== 接続を作成
+
+. Microsoft Entra IDで接続を作成する
++
+.. 前の手順で作成したクライアント ID とクライアント シークレットを入力します。
+.. Microsoft Entra ID ドメイン名を入力します。
+
+
+. *接続を作成*を選択します。数秒で接続が作成されます。
+
+
+[discrete]
+====== 接続をテストして有効にする
+
+. 「 * 次へ * 」を選択します。
+. 接続をテストするには、「*接続テスト*」を選択してください。IdPサーバーのログインページに移動します。IdPの認証情報でログインしてテストを完了し、 BlueXPに戻って接続を有効にしてください。
+. 「 * 次へ * 」を選択します。
+. *フェデレーションの有効化*ページでフェデレーションの詳細を確認し、*フェデレーションの有効化*を選択します。
+. プロセスを完了するには、[完了] を選択します。
+
+
+フェデレーションを有効にすると、ユーザーは企業の資格情報を使用してBlueXPにログインできるようになります。

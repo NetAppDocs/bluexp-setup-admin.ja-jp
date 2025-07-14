@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: task-federation-adfs.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: Active Directory フェデレーションサービス（AD FS）と連携して、 BlueXPのシングルサインオン（SSO）を有効にします。これにより、ユーザーは企業の認証情報を使用してログインできるようになります。 
+---
+= BlueXP をActive Directory フェデレーション サービス (AD FS) と連携させる
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Active Directory フェデレーションサービス（AD FS）をBlueXPと連携させることで、 BlueXPのシングルサインオン（SSO）を有効にできます。これにより、ユーザーは企業の認証情報を使用してBlueXPにログインできるようになります。
+
+.必要な役割
+フェデレーションを作成および管理するには、組織管理者またはフェデレーション管理者が必要です。フェデレーション閲覧者はフェデレーションページを表示できます。 link:reference-iam-predefined-roles.html["アクセス ロールの詳細について説明します。"]
+
+
+NOTE: 社内のIdPまたはNetAppサポートサイトと連携できます。NetAppNetApp、どちらか一方を選択することを推奨しており、両方を選択することは推奨していません。
+
+NetAppは、サービスプロバイダ主導（SP主導）のSSOのみをサポートしています。まず、 BlueXPをサービスプロバイダとして信頼するようにアイデンティティプロバイダを設定します。次に、アイデンティティプロバイダの設定を使用して、 BlueXPで接続を作成します。
+
+AD FS サーバーとのフェデレーションを設定することで、 BlueXPのシングルサインオン (SSO) を有効にすることができます。このプロセスでは、AD FS でBlueXP をサービスプロバイダーとして信頼するように設定し、 BlueXPで接続を作成します。
+
+.作業を開始する前に
+* 管理者権限を持つIdPアカウントが必要です。IdP管理者と調整して手順を完了してください。
+* 連携に使用するドメインを特定します。ご自身のメールドメイン、またはご自身で所有している別のドメインを使用できます。メールドメイン以外のドメインを使用する場合は、まずBlueXPでドメインを検証する必要があります。これは、以下の手順に従って行うことができます。 link:task-federation-verify-domain.html["BlueXPでドメインを認証する"]トピック。
+
+
+.手順
+. BlueXP  コンソールの右上で、>* IDおよびアクセス管理*を選択しますimage:icon-settings-option.png["BlueXP  Webコンソールの右上に表示される設定アイコン。"]。
+. *Federation*タブを選択します。
+. *新しいフェデレーションの構成*を選択します。
+. ドメインの詳細を入力してください:
++
+.. 検証済みドメインを使用するか、メールドメインを使用するかを選択します。メールドメインとは、ログインしているアカウントに関連付けられているドメインです。
+.. 構成するフェデレーションの名前を入力します。
+.. 検証済みのドメインを選択する場合は、リストからドメインを選択します。
+
+
+. 「 * 次へ * 」を選択します。
+. 接続方法として、[*プロトコル*] を選択し、[*Active Directory フェデレーション サービス (AD FS)*] を選択します。
+. 「 * 次へ * 」を選択します。
+. AD FS サーバーに証明書利用者信頼を作成します。PowerShellを使用するか、AD FS サーバー上で手動で構成できます。証明書利用者信頼の作成方法の詳細については、AD FS のドキュメントを参照してください。
++
+.. 次のスクリプトを使用して PowerShell を使用して信頼を作成します。
++
+[source, powershell]
+----
+(new-object Net.WebClient -property @{Encoding = [Text.Encoding]::UTF8}).DownloadString("https://raw.github.com/auth0/AD FS-auth0/master/AD FS.ps1") | iex
+AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.auth0.com/login/callback"
+----
+.. または、AD FS 管理コンソールで手動で信頼関係を作成することもできます。信頼関係を作成する際は、以下のBlueXP値を使用してください。
++
+*** 信頼信頼識別子を作成するときは、**YOUR_TENANT** 値を使用します。  `netapp-cloud-account`
+*** *WS-Federation のサポートを有効にする* を選択した場合は、**YOUR_AUTH0_DOMAIN** 値を使用します。  `netapp-cloud-account.auth0.com`
+
+
+.. 信頼関係を作成したら、AD FS サーバーからメタデータ URL をコピーするか、フェデレーション メタデータ ファイルをダウンロードしてください。BlueXPで接続を完了するには、この URL またはファイルが必要になります。
+
+
+
+
++ NetApp、メタデータURLを使用してBlueXPが最新のAD FS構成を自動的に取得することを推奨しています。フェデレーションメタデータファイルをダウンロードした場合は、AD FS構成に変更があるたびにBlueXPで手動で更新する必要があります。
+
+. BlueXPに戻り、[次へ] を選択して接続を作成します。
+. AD FS との接続を作成します。
++
+.. 前の手順で AD FS サーバーからコピーした *AD FS URL* を入力するか、AD FS サーバーからダウンロードしたフェデレーション メタデータ ファイルをアップロードします。
+
+
+. *接続を作成*を選択します。接続の作成には数秒かかる場合があります。
+. 「 * 次へ * 」を選択します。
+. 接続をテストするには、「*接続テスト*」を選択してください。IdPサーバーのログインページに移動します。IdPの認証情報でログインしてテストを完了し、 BlueXPに戻って接続を有効にしてください。
+. 「 * 次へ * 」を選択します。
+. *フェデレーションの有効化*ページでフェデレーションの詳細を確認し、*フェデレーションの有効化*を選択します。
+. プロセスを完了するには、[完了] を選択します。
+
+
+フェデレーションを有効にすると、ユーザーは企業の資格情報を使用してBlueXPにログインできるようになります。

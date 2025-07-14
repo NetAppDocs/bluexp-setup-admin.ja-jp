@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-iam-keystone-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
-summary: BlueXP  IDおよびアクセス管理には、組織のメンバーに割り当てることができる2つの管理ロールが用意されています。 
+summary: BlueXP ID およびアクセス管理では、組織のメンバーに割り当てることができる 2 つのKeystoneロールが提供されます。 
 ---
 = BlueXP  向けのKeystoneアクセスロール
 :hardbreaks:

@@ -1,0 +1,92 @@
+---
+sidebar: sidebar 
+permalink: task-federation-saml.html 
+keywords: federation, SAML protocol, SAML, federation services,  federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: SAML 2.0 IdPプロバイダーと連携して、 BlueXPのシングルサインオン（SSO）を有効にします。これにより、ユーザーは企業の認証情報を使用してログインできるようになります。 
+---
+= SAML IDプロバイダとの連携
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SAML 2.0 IdPプロバイダーと連携して、 BlueXPのシングルサインオン（SSO）を有効にします。これにより、ユーザーは企業の認証情報を使用してログインできるようになります。
+
+.必要な役割
+組織管理者。 link:reference-iam-predefined-roles.html["アクセス ロールの詳細について説明します。"]
+
+
+NOTE: 社内IdPまたはNetAppサポートサイトのいずれかと連携できます。両方と連携することはできません。
+
+NetAppは、サービスプロバイダ主導（SP主導）のSSOのみをサポートしています。まず、 NetAppをサービスプロバイダとして信頼するようにアイデンティティプロバイダを設定する必要があります。その後、 BlueXPでアイデンティティプロバイダの設定を使用して接続を作成できます。
+
+BlueXPのシングルサインオン（SSO）を有効にするには、SAML 2.0プロバイダとのフェデレーション接続を設定します。このプロセスでは、プロバイダがNetAppをサービスプロバイダとして信頼するように設定し、 BlueXPで接続を作成します。
+
+.作業を開始する前に
+* 管理者権限を持つIdPアカウントが必要です。IdP管理者と調整して手順を完了してください。
+* 連携に使用するドメインを特定します。ご自身のメールドメイン、またはご自身で所有している別のドメインを使用できます。メールドメイン以外のドメインを使用する場合は、まずBlueXPでドメインを検証する必要があります。これは、以下の手順に従って行うことができます。 link:task-federation-verify-domain.html["BlueXPでドメインを認証する"]トピック。
+
+
+.手順
+. BlueXP  コンソールの右上で、>* IDおよびアクセス管理*を選択しますimage:icon-settings-option.png["BlueXP  Webコンソールの右上に表示される設定アイコン。"]。
+. *Federation*タブを選択します。
+. *新しいフェデレーションの構成*を選択します。
+. ドメインの詳細を入力してください:
++
+.. 検証済みドメインを使用するか、メールドメインを使用するかを選択します。メールドメインとは、ログインしているアカウントに関連付けられているドメインです。
+.. 構成するフェデレーションの名前を入力します。
+.. 検証済みのドメインを選択する場合は、リストからドメインを選択します。
+
+
+. 「 * 次へ * 」を選択します。
+. 接続方法として、*プロトコル*を選択し、*SAML ID プロバイダー*を選択します。
+. 「 * 次へ * 」を選択します。
+. SAMLアイデンティティプロバイダを設定して、 NetAppをサービスプロバイダとして信頼するようにします。この手順はSAMLプロバイダサーバーで実行する必要があります。
++
+.. IdPに属性があることを確認する `email`ユーザーのメールアドレスを設定します。これはBlueXPがユーザーを正しく識別するために必要です。
++
+[source, xml]
+----
+<saml:AttributeStatement xmlns:x500="urn:oasis:names:tc:SAML:2.0:profiles:attribute:X500" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <saml:Attribute Name="email" NameFormat="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName">
+        <saml:AttributeValue xsi:type="xs:string">email@domain.com</saml:AttributeValue>
+    </saml:Attribute>
+</saml:AttributeStatement>
+----
+.. SAML アプリケーションをBlueXPに登録するときは、次の値を使用します。
++
+*** *返信URL*または*アサーションコンシューマーサービス（ACS）URL*の場合は、  `https://netapp-cloud-account.auth0.com/login/callback`
+*** *ログアウトURL*には、  `https://netapp-cloud-account.auth0.com/logout`
+*** *オーディエンス/エンティティID*には、  `urn:auth0:netapp-cloud-account:<fed-domain-name-saml>` <fed-domain-name-saml>はフェデレーションに使用するドメイン名です。例えば、ドメインが `example.com`オーディエンス/エンティティIDは次のようになります。  `urn:auth0:netapp-cloud-account:fed-example-com-samlp` 。
+
+
+.. 信頼を作成したら、SAML プロバイダー サーバーから次の値をコピーします。
++
+*** サインインURL
+*** サインアウトURL（オプション）
+
+
+.. SAMLプロバイダーサーバーからX.509証明書をダウンロードしてください。証明書はPEM、CER、またはCRT形式である必要があります。
+
+
+. BlueXPに戻り、[次へ] を選択して接続を作成します。
+. SAML を使用して接続を作成します。
++
+.. SAML サーバーの *サインイン URL* を入力します。
+.. SAML プロバイダー サーバーからダウンロードした X.509 証明書をアップロードします。
+.. 必要に応じて、SAML サーバーの *サインアウト URL* を入力します。
+
+
+. *接続を作成*を選択します。数秒で接続が作成されます。
+. 「 * 次へ * 」を選択します。
+. 接続をテストするには、「*接続テスト*」を選択してください。IdPサーバーのログインページに移動します。IdPの認証情報でログインしてテストを完了し、 BlueXPに戻って接続を有効にしてください。
+. 「 * 次へ * 」を選択します。
+. *フェデレーションの有効化*ページでフェデレーションの詳細を確認し、*フェデレーションの有効化*を選択します。
+. プロセスを完了するには、[完了] を選択します。
+
+
+フェデレーションを有効にすると、ユーザーは企業の資格情報を使用してBlueXPにログインできるようになります。

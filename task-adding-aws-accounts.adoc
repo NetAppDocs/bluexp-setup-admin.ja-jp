@@ -279,12 +279,8 @@ BlueXP  は、組織またはアカウントのすべてのクレデンシャ�
 
 AWS Marketplace からサブスクリプションを申し込む場合、プロセスの最後のステップは、サブスクリプションを組織に関連付けることです。このステップを完了していない場合、組織またはアカウントでサブスクリプションを使用することはできません。
 
-
-TIP: 標準モードまたは制限モードを使用している場合は、BlueXP ID およびアクセス管理 (IAM) を使用して管理する _BlueXP 組織_ が作成されます。ただし、BlueXP  をプライベートモードで使用している場合は、_ BlueXP  アカウント_があります。
-
 * link:concept-modes.html["BlueXPの導入モードについて説明します"]
 * link:concept-identity-and-access-management.html["BlueXP  のアイデンティティ管理とアクセス管理の詳細"]
-* link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認ください"]
 
 
 AWS Marketplace から NetApp インテリジェント データ サービスにサブスクライブしたが、サブスクリプションをアカウントに関連付ける手順を忘れた場合は、以下の手順に従ってください。

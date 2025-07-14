@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task-federation-verify-domain.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: Active Directory フェデレーションサービス（AD FS）と連携して、 BlueXPのシングルサインオン（SSO）を有効にします。これにより、ユーザーは企業の認証情報を使用してログインできるようになります。 
+---
+= フェデレーション接続のメールドメインを確認する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+メールドメインとは異なるドメインと連携する場合は、まずそのドメインの所有権を確認する必要があります。連携には、確認済みのドメインのみを使用できます。
+
+.必要な役割
+組織管理者またはフェデレーション管理者。 link:reference-iam-predefined-roles.html["アクセス ロールの詳細について説明します。"]
+
+ドメインの検証には、ドメインのDNS設定にTXTレコードを追加することが必要です。このレコードは、ドメインの所有者であることを証明し、 BlueXPがフェデレーションにおいてドメインを信頼できるようにするために使用されます。この手順を完了するには、IT管理者またはネットワーク管理者との調整が必要になる場合があります。
+
+.手順
+. BlueXP  コンソールの右上で、>* IDおよびアクセス管理*を選択しますimage:icon-settings-option.png["BlueXP  Webコンソールの右上に表示される設定アイコン。"]。
+. *Federation*タブを選択します。
+. *新しいフェデレーションの構成*を選択します。
+. *ドメインの所有権を確認*を選択します。
+. 検証するドメインを入力し、「続行」を選択します。
+. 提供された TXT レコードをコピーします。
+. ドメインのDNS設定に移動し、ドメインのTXTレコードとして提供されたTXT値を設定してください。必要に応じて、IT管理者またはネットワーク管理者にご相談ください。
+. TXT レコードが追加されたら、 BlueXPに戻り、「*検証*」を選択します。
+

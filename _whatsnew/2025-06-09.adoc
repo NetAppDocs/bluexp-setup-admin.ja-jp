@@ -38,7 +38,7 @@ link:https://docs.netapp.com/us-en/keystone-staas/index.html["BlueXP での Keys
 
 ==== 多要素認証（MFA）
 
-フェデレーションされていないユーザーは、BlueXPアカウントで多要素認証（MFA）を有効にしてアカウントのセキュリティを強化できるようになりました。BlueXP管理者は、ユーザーのMFA設定を管理し、必要に応じて個々のユーザーのMFAをリセットまたは無効化できます。これは標準モードでのみサポートされます。
+フェデレーションされていないユーザーは、 BlueXPアカウントでMFAを有効にしてセキュリティを強化できます。管理者は、必要に応じてユーザーのMFAをリセットまたは無効化するなど、MFA設定を管理できます。これは標準モードでのみサポートされます。
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["自分自身に多要素認証を設定する方法について説明します。"^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["ユーザーに対する多要素認証の管理について学習します。"^]
 

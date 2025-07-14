@@ -14,16 +14,12 @@ summary: NetAppサポートサイトのアカウントをBlueXP  の組織ま�
 
 
 [role="lead"]
-NetAppサポートサイトのアカウントをBlueXP  の組織またはアカウントに関連付けて、Cloud Volumes ONTAPの主要なワークフローを有効にします。これらのNSSクレデンシャルは、BlueXP  の組織またはアカウント全体に関連付けられます。
+Cloud Volumes ONTAPの主要なワークフローを有効にするには、 NetAppサポートサイトアカウントをBlueXP組織に関連付けます。これらの NSS 認証情報は、 BlueXP組織全体に関連付けられます。
 
 BlueXP  では、BlueXP  ユーザアカウントごとに1つのNSSアカウントを関連付けることもできます。link:task-manage-user-credentials.html["ユーザレベルのクレデンシャルを管理する方法について説明します"]です。
 
-
-TIP: BlueXP  を標準モードまたは制限モードで使用している場合は、BlueXP  IDおよびアクセス管理(IAM)を使用して管理する_ BlueXP  organization_があります。ただし、BlueXP  をプライベートモードで使用している場合は、_ BlueXP  アカウント_があります。
-
 * link:concept-modes.html["BlueXPの導入モードについて説明します"]
 * link:concept-identity-and-access-management.html["BlueXP  のアイデンティティ管理とアクセス管理の詳細"]
-* link:concept-netapp-accounts.html["BlueXPアカウントの詳細をご確認ください"]
 
 
 

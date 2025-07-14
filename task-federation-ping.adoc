@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: task-federation-ping.html 
+keywords: PingFederate, BlueXP, federation, single sign-on, SSO, identity provider, IdP, service provider-initiated SSO, X.509 certificate, Audience/Entity ID, Reply URL, organization admin 
+summary: PingFederate IdPプロバイダーと連携して、 BlueXPのシングルサインオン（SSO）を有効にします。これにより、ユーザーは企業の認証情報を使用してログインできるようになります。 
+---
+= BlueXPをPingFederateで連携
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+PingFederate IdPプロバイダーと連携して、 BlueXPのシングルサインオン（SSO）を有効にします。これにより、ユーザーは企業の認証情報を使用してログインできるようになります。
+
+.必要な役割
+フェデレーションを作成および管理するには、組織管理者またはフェデレーション管理者が必要です。フェデレーション閲覧者はフェデレーションページを表示できます。 link:reference-iam-predefined-roles.html["アクセス ロールの詳細について説明します。"]
+
+
+NOTE: 社内のIdPまたはNetAppサポートサイトと連携できます。NetAppNetApp、どちらか一方を選択することを推奨しており、両方を選択することは推奨していません。
+
+NetAppは、サービスプロバイダ主導（SP主導）のSSOのみをサポートしています。まず、 NetAppをサービスプロバイダとして信頼するようにアイデンティティプロバイダを設定する必要があります。その後、 BlueXPでアイデンティティプロバイダの設定を使用して接続を作成できます。
+
+PingFederateとのフェデレーション接続を設定することで、 BlueXPのシングルサインオン（SSO）を有効にすることができます。このプロセスでは、PingFederateサーバーをBlueXPをサービスプロバイダーとして信頼するように設定し、 BlueXPで接続を作成します。
+
+.作業を開始する前に
+* 管理者権限を持つIdPアカウントが必要です。IdP管理者と調整して手順を完了してください。
+* 連携に使用するドメインを特定します。ご自身のメールドメイン、またはご自身で所有している別のドメインを使用できます。メールドメイン以外のドメインを使用する場合は、まずBlueXPでドメインを検証する必要があります。これは、以下の手順に従って行うことができます。 link:task-federation-verify-domain.html["BlueXPでドメインを認証する"]トピック。
+
+
+.手順
+. BlueXP  コンソールの右上で、>* IDおよびアクセス管理*を選択しますimage:icon-settings-option.png["BlueXP  Webコンソールの右上に表示される設定アイコン。"]。
+. *Federation*タブを選択します。
+. *新しいフェデレーションの構成*を選択します。
+. ドメインの詳細を入力してください:
++
+.. 検証済みドメインを使用するか、メールドメインを使用するかを選択します。メールドメインとは、ログインしているアカウントに関連付けられているドメインです。
+.. 構成するフェデレーションの名前を入力します。
+.. 検証済みのドメインを選択する場合は、リストからドメインを選択します。
+
+
+. 「 * 次へ * 」を選択します。
+. 接続方法として、*プロバイダー*を選択し、次に*PingFederate*を選択します。
+. 「 * 次へ * 」を選択します。
+. PingFederateサーバーを設定して、 NetAppをサービスプロバイダーとして信頼するようにします。この手順はPingFederateサーバー上で実行する必要があります。
++
+.. PingFederate がBlueXP を信頼するように構成する場合は、次の値を使用します。
++
+*** *返信URL*または*アサーションコンシューマーサービス（ACS）URL*の場合は、  `https://netapp-cloud-account.auth0.com/login/callback`
+*** *ログアウトURL*には、  `https://netapp-cloud-account.auth0.com/logout`
+*** *オーディエンス/エンティティID*には、  `urn:auth0:netapp-cloud-account:<fed-domain-name-saml>` <fed-domain-name-pingfederate>はフェデレーションのドメイン名です。例えば、ドメインが `example.com`オーディエンス/エンティティIDは次のようになります。  `urn:auth0:netappcloud-account:fed-example-com-pingfederate` 。
+
+
+.. PingFederateサーバーのURLをコピーしてください。BlueXPで接続を作成するときにこのURLが必要になります。
+.. PingFederateサーバーからX.509証明書をダウンロードしてください。証明書はBase64エンコードされたPEM形式（.pem、.crt、.cer）である必要があります。
+
+
+. BlueXPに戻り、[次へ] を選択して接続を作成します。
+. PingFederateで接続を作成する
++
+.. 前の手順でコピーした PingFederate サーバーの URL を入力します。
+.. X.509署名証明書をアップロードしてください。証明書はPEM、CER、またはCRT形式である必要があります。
+
+
+. *接続を作成*を選択します。数秒で接続が作成されます。
+. 「 * 次へ * 」を選択します。
+. 接続をテストするには、「*接続テスト*」を選択してください。IdPサーバーのログインページに移動します。IdPの認証情報でログインしてテストを完了し、 BlueXPに戻って接続を有効にしてください。
+. 「 * 次へ * 」を選択します。
+. *フェデレーションの有効化*ページでフェデレーションの詳細を確認し、*フェデレーションの有効化*を選択します。
+. プロセスを完了するには、[完了] を選択します。
+
+
+フェデレーションを有効にすると、ユーザーは企業の資格情報を使用してBlueXPにログインできるようになります。

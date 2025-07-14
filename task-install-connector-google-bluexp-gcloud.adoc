@@ -25,7 +25,7 @@ BlueXP  またはGoogle Cloudを使用して、Google Cloudでコネクタを�
 
 == 手順1：ネットワークをセットアップする
 
-コネクタがハイブリッドクラウド環境内のリソースとプロセスを管理できるように、ネットワークをセットアップします。たとえば、ターゲットネットワークへの接続が可能で、アウトバウンドのインターネットアクセスが利用可能であることを確認する必要があります。
+コネクタがターゲット ネットワークへの接続と送信インターネット アクセスを使用してリソースを管理できるようにネットワークを設定します。
 
 vPCおよびサブネット:: コネクタを作成するときは、コネクタを配置するVPCとサブネットを指定する必要があります。
 
@@ -110,7 +110,7 @@ link:reference-networking-saas-console.html["BlueXPコンソールからアク�
 --
 
 
-プロキシサーバ:: すべての送信インターネットトラフィック用にプロキシサーバーを展開する必要がある場合は、HTTPまたはHTTPSプロキシに関する次の情報を取得します。この情報は、インストール時に入力する必要があります。BlueXPでは透過型プロキシサーバはサポートされません。
+プロキシサーバ:: NetAppは、明示的プロキシと透過的プロキシの両方の設定をサポートしています。透過的プロキシを使用する場合は、プロキシサーバーの証明書のみを提供すれば済みます。明示的プロキシを使用する場合は、IPアドレスと認証情報も必要になります。
 +
 --
 * IP アドレス
@@ -138,7 +138,7 @@ Cloud Volumes ONTAPシステムでAutoSupportメッセージを送信するた�
 NTPを有効にする:: BlueXP分類を使用して企業データソースをスキャンする場合は、システム間で時刻が同期されるように、BlueXP ConnectorシステムとBlueXP分類システムの両方でネットワークタイムプロトコル（NTP）サービスを有効にする必要があります。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
 +
 --
-コネクタを作成した後で、このネットワーク要件を実装する必要があります。
+コネクタを作成した後、このネットワーク要件を実装します。
 
 --
 
@@ -236,9 +236,6 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloudドキュメント：ロールを1つだけ指定します"^]
 
 
-
-.結果
-Google Cloudユーザに、Connectorの作成に必要な権限が付与されるようになりました。
 
 
 
@@ -360,7 +357,7 @@ compute.networkUser
 
 == ステップ5：Google Cloud APIを有効にする
 
-コネクタとCloud Volumes ONTAP をGoogle Cloudに導入する前に、いくつかのGoogle Cloud APIを有効にする必要があります。
+Connector とCloud Volumes ONTAP をデプロイする前に、いくつかの Google Cloud API を有効にする必要があります。
 
 .ステップ
 . プロジェクトで次のGoogle Cloud APIを有効にします。
@@ -387,7 +384,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud�
 BlueXPのWebベースのコンソールから直接、またはgcloudを使用してコネクタを作成します。
 
 .このタスクについて
-コネクタを作成すると、デフォルトの構成を使用してGoogle Cloudに仮想マシンインスタンスが導入されます。コネクタの作成後は、CPUやRAMが少ないVMインスタンスに変更しないでください。 link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]。
+コネクタを作成すると、デフォルトの構成を使用してGoogle Cloudに仮想マシンインスタンスが導入されます。コネクタの作成後に、CPU または RAM が少ない小さな VM インスタンスに変更しないでください。link:reference-connector-default-config.html["コネクタのデフォルト設定について説明します"]です。
 
 [role="tabbed-block"]
 ====
@@ -422,6 +419,7 @@ image:screenshot_connector_add.gif["ヘッダーのコネクターアイコン�
 ** *詳細*：仮想マシンインスタンスの名前を入力し、タグを指定してプロジェクトを選択し、必要な権限を持つサービスアカウントを選択します（詳細については、上のセクションを参照してください）。
 ** * 場所 * ：インスタンスのリージョン、ゾーン、 VPC 、およびサブネットを指定します。
 ** * ネットワーク * ：パブリック IP アドレスを有効にするかどうかを選択し、必要に応じてプロキシ設定を指定します。
+** *ネットワークタグ*: 透過プロキシを使用する場合は、コネクタインスタンスにネットワークタグを追加します。ネットワークタグは小文字で始まり、小文字、数字、ハイフンを含めることができます。タグの末尾は小文字または数字にする必要があります。例えば、「connector-proxy」というタグを使用できます。
 ** *ファイアウォールポリシー*：新しいファイアウォールポリシーを作成するか、必要なインバウンドおよびアウトバウンドルールを許可する既存のファイアウォールポリシーを選択するかを選択します。
 +
 link:reference-ports-gcp.html["Google Cloudのファイアウォールルール"]
@@ -431,12 +429,12 @@ link:reference-ports-gcp.html["Google Cloudのファイアウォールルール"
 
 . 「 * 追加」を選択します。
 +
-インスタンスの準備が完了するまでに約 7 分かかります。処理が完了するまで、ページには表示されたままにしておいてください。
+インスタンスは約 7 分で準備完了します。プロセスが完了するまで、このページに留まってください。
 
 
 
 .結果
-プロセスが完了すると、BlueXPからコネクタを使用できるようになります。
+プロセスが完了すると、コネクタはBlueXPから使用できるようになります。
 
 コネクタを作成したのと同じGoogle CloudアカウントにGoogle Cloud Storageバケットがある場合は、BlueXPキャンバスにGoogle Cloud Storageの作業環境が自動的に表示されます。 https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["BlueXPからGoogle Cloud Storageを管理する方法をご確認ください"^]
 
@@ -461,7 +459,7 @@ link:reference-ports-gcp.html["Google Cloudのファイアウォールルール"
 
 
 .手順
-. ご希望の方法で gcloud SDK にログインします。
+. お好みの方法で gcloud SDK にログインします。
 +
 この例では、gcloud SDKがインストールされたローカルシェルを使用しますが、Google CloudコンソールでネイティブのGoogle Cloud Shellを使用できます。
 

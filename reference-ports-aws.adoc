@@ -38,7 +38,7 @@ summary: コネクタのAWSセキュリティグループには、インバウ�
 | HTTPS | 443年 | クライアントWebブラウザからローカルユーザインターフェイスへのHTTPSアクセス、およびBlueXP分類インスタンスからの接続を提供します 
 
 
-| TCP | 3128だ | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。導入後にこのポートを手動で開く必要があります。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["コネクタがAutoSupport メッセージのプロキシとしてどのように使用されるかについて説明します"^] 
+| TCP | 3128だ | Cloud Volumes ONTAPにインターネット アクセスを提供します。導入後にこのポートを手動で開く必要があります。 
 |===
 
 
