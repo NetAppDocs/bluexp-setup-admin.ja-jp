@@ -5255,7 +5255,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="0de6f673e972fb67cc36c32ad5fcb898" category="list-text">Cloud Volumes ONTAP以外のNetAppデータ サービスにはコネクタを使用しないでください。</block>
   <block id="ee8603a5f78124f751bd9a36bb2f1053" category="paragraph">既存のコネクタを透過プロキシ サーバーを使用するように構成するには、コネクタ ホストのコマンド ラインから使用できるコネクタ メンテナンス ツールを使用します。</block>
   <block id="66f1817e95be4137166f119a89852722" category="paragraph">プロキシサーバーを設定すると、コネクタが再起動します。続行する前に、コネクタがアイドル状態であることを確認してください。</block>
-  <block id="e1a3bbb95e9e5f5476f81f3831fe98de" category="paragraph">+ プロキシサーバーのPEM形式の証明書ファイルがあることを確認してください。証明書がない場合は、ネットワーク管理者に問い合わせて取得してください。</block>
   <block id="040c90d5413009e841ba3cc3b521d699" category="list-text">コネクタ ホストでコマンド ライン インターフェイスを開きます。</block>
   <block id="2bc1351fc63f28a1cf5ed4c899d4fc35" category="list-text">コネクタメンテナンスツールディレクトリに移動します。 <block ref="ea59a49bc639b17bbbe69f3540f9f07c" prefix=" " category="inline-code"></block></block>
   <block id="05c44d09b879c8fb4432a79dc845c0f5" category="list-text">透過プロキシを有効にするには、次のコマンドを実行します。 <block ref="d2d60207eee35ee99f434fbad44a604c" prefix=" " category="inline-code"></block>プロキシ サーバーのディレクトリと証明書ファイルの名前です。</block>
@@ -5453,4 +5452,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
   <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp、メタデータ URL を使用してBlueXP が最新の AD FS 構成を自動的に取得できるようにすることをお勧めします。フェデレーションメタデータファイルをダウンロードした場合は、AD FS構成に変更があるたびにBlueXPで手動で更新する必要があります。</block>
   <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">接続をテストして有効にする</block>
+  <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">プロキシ サーバーの PEM 形式の証明書ファイルがあることを確認します。証明書がない場合は、ネットワーク管理者に問い合わせて取得してください。</block>
 </blocks>
