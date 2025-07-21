@@ -5449,7 +5449,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">プロキシ サーバーの PEM 形式の証明書ファイルがあることを確認します。証明書がない場合は、ネットワーク管理者に問い合わせて取得してください。</block>
   <block id="89d69ff3dca93dc4c1c160728186e722" category="doc">Google Cloud NetApp Volumesのサポート</block>
   <block id="c0f8420dd2331e8c703faf905ce556ba" category="inline-link-macro">Google Cloud NetApp Volumesの詳細をご覧ください。</block>
-  <block id="e1541d92f45c55d1c796b46df595a40b" category="paragraph">BlueXPでGoogle Cloud NetApp Volumes を表示できるようになりました。 <block ref="2d9a0dbc9abdf3f5520c900e61ce6c78" category="inline-link-macro-rx"></block></block>
   <block id="7ef119d24b993215797de865841c626e" category="section-title">Google Cloud NetApp Volumesの新しいアクセスロール</block>
   <block id="558052264db83696c2bf10ecfe0eaedd" category="paragraph">BlueXP は、次のストレージ システムに対するアクセス ロールの使用をサポートするようになりました。</block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="list-text">Google Cloud NetAppボリューム</block>
@@ -5468,4 +5467,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="afa251e583f752e51e3383587060e30b" category="cell">ストレージの健全性とガバナンス機能を管理し、ストレージ リソースを検出し、既存の作業環境を変更および削除します。</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">BlueXP classificationスキャン結果を表示する機能を提供します。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。分類には、ビューアの役割はありません。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
+  <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">BlueXPでGoogle Cloud NetApp Volumes を表示できるようになりました。 <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
 </blocks>
