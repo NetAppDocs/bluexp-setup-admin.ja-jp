@@ -4567,7 +4567,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="3aba2887bff41f744b43940b1b82080a" category="cell">プラットフォームの役割</block>
   <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">責任</block>
   <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">組織管理者</block>
-  <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">割り当てられている特定のプロジェクトおよびフォルダへの無制限のアクセスをユーザーに許可します。管理するフォルダまたはプロジェクトにメンバーを追加したり、任意のBlueXP  タスクを実行したり、割り当てられたフォルダまたはプロジェクト内のリソースで任意のデータサービスまたはアプリケーションを使用したりできます。フォルダまたはプロジェクト管理者ロールはコネクタを作成できません。</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">アプリケーションの役割</block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Keystone管理者ロールを持つユーザは、サービスリクエストを作成できます。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">Storage Admin</block>
@@ -4575,7 +4574,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">システムヘルススペシャリスト</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">データサービスの役割</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分類管理者</block>
-  <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">BlueXP  分類スキャン結果を表示する機能を提供します。分類には、ビューアの役割はありません。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。</block>
   <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">ランサムウェア対策サービスの[保護]、[アラート]、[リカバリ]、[設定]、[レポート]の各タブでの操作を管理します。</block>
   <block id="c449660979799948a46372470a0eddb9" category="cell">ランサムウェア対策サービスで、ワークロードデータの表示、アラートデータの表示、リカバリデータのダウンロード、レポートのダウンロードを行うことができます。</block>
   <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">BlueXP  のランサムウェア対策アクセスロール</block>
@@ -4658,7 +4656,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
   <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
-  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">ストレージの健全性とガバナンス機能の管理、ストレージリソースの検出、既存の作業環境の変更と削除を実行できます。</block>
   <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
   <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">ストレージの健全性とガバナンスの機能、および以前に検出されたストレージリソースを表示できます。既存のストレージ作業環境を検出、変更、削除することはできません。</block>
   <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
@@ -4753,8 +4750,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="23281988aab04cbdc82eb76f370939d5" category="paragraph">BlueXP は、ビジネス要件とセキュリティ要件を満たす複数の _導入モード_ を提供します。_標準モード_ では、SaaS (Software as a Service) レイヤーを活用して完全な機能を提供します。一方、接続制限のある組織では、 _制限モード_ と _プライベート モード_ をご利用いただけます。</block>
   <block id="43edcdb6c00656305d8defca5b3b7be0" category="cell">データサービスライセンスオプション</block>
   <block id="960800e4f6948441d5ac2b7201b75a9b" category="paragraph">XYZ 社には、Keystone サブスクリプション情報を閲覧する、さまざまな部門のストレージ エンジニアが 4 人います。これらのユーザはいずれもKeystoneサブスクリプションを監視する必要がありますが、サービスのリクエストはチームリーダーのみが許可されます。チームメンバーの3人には「Keystoneビューア」ロールが割り当てられ、チームリーダーには「Keystone管理者」ロールが割り当てられます。これにより、会社に対するサービスリクエストを管理できるようになります。</block>
-  <block id="25145ab25e099e46c84c50107c0e7b62" category="paragraph">プラットフォーム ロールは、ロールの割り当てやユーザーの追加など、BlueXP 管理のすべての権限を付与します。プラットフォームロールを持つユーザは、BlueXP  内のすべてのデータサービスとアプリケーションにアクセスできます。BlueXP IAM には、組織管理者とフォルダーまたはプロジェクト管理者の 2 つのプラットフォーム ロールが含まれます。2つのBlueXP  IAMプラットフォームロールの主な違いはスコープです。</block>
-  <block id="7b04a3d971f6fb74392d3b30085071f6" category="cell">組織内のすべてのプロジェクトおよびフォルダへの無制限のアクセス、任意のプロジェクトまたはフォルダへのメンバーの追加、任意のBlueXP  タスクの実行、任意のデータサービスの使用をユーザーに許可します。このロールを持つユーザーは、BlueXP環境全体を整理・管理します。フォルダとプロジェクトの作成、ロールの割り当て、ユーザーの追加、そして資格情報があればすべての作業環境の管理が可能です。これは、コネクタを作成できる唯一のアクセスロールです。</block>
   <block id="69d1234e785810f2a95867f80dbd3641" category="cell">アプリケーションのBlueXP  バックアップ/リカバリを使用して、オンプレミスのONTAPクラスタからSnapshotをバックアップできます。このロールを持つメンバーは、BlueXP で次のアクションを実行できます。 * バックアップとリカバリ &gt; アプリケーションから任意のアクションを実行する * 権限を持つプロジェクトおよびフォルダー内のすべての作業環境を管理する * すべての BlueXP サービスを使用する SnapCenter には、閲覧者ロールはありません。</block>
   <block id="3165f916e808450973ebffe2ea357d4f" category="paragraph">次の表は、BlueXP ランサムウェア保護の各ロールが実行できるアクションを示しています。</block>
   <block id="bd03ede87c82adb65c788a5ae08c50b6" category="cell">ワークロードを検出</block>
@@ -5207,7 +5202,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d16108a94f09df45e5ddf78eb3f9301c" category="cell">連盟とその詳細を表示する</block>
   <block id="d1030414e0b81438e7c1e475b3ff1c37" category="paragraph">BlueXP ID およびアクセス管理 (IAM) には、リソース階層のさまざまなレベルにわたって組織のメンバーに割り当てることができる定義済みのロールが含まれています。これらのロールを割り当てる前に、各ロールに含まれる権限について理解しておく必要があります。ロールは、プラットフォーム、アプリケーション、データサービスのカテゴリに分類されます。</block>
   <block id="10140df1e1454ada0fe484df8f86e609" category="cell"><block ref="10140df1e1454ada0fe484df8f86e609" category="inline-link-macro-rx"></block></block>
-  <block id="4e85a0bcc87f86ef6776a6100384468f" category="cell">ユーザーがBlueXPとのフェデレーションを作成および管理して、シングル サインオン (SSO) を有効にすることを許可します。</block>
   <block id="94dc84e1e8721887c7b647f1cdb802f2" category="cell"><block ref="94dc84e1e8721887c7b647f1cdb802f2" category="inline-link-macro-rx"></block></block>
   <block id="178e676d4dcf16fc5b1d8f7c9431f792" category="cell">ユーザーがBlueXPとの既存の連携を表示できるようにします。連携を作成または管理することはできません。</block>
   <block id="da46150dd1fb0497beb9ff6a9328d80c" category="cell"><block ref="da46150dd1fb0497beb9ff6a9328d80c" category="inline-link-macro-rx"></block></block>
@@ -5453,4 +5447,25 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp、メタデータ URL を使用してBlueXP が最新の AD FS 構成を自動的に取得できるようにすることをお勧めします。フェデレーションメタデータファイルをダウンロードした場合は、AD FS構成に変更があるたびにBlueXPで手動で更新する必要があります。</block>
   <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">接続をテストして有効にする</block>
   <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">プロキシ サーバーの PEM 形式の証明書ファイルがあることを確認します。証明書がない場合は、ネットワーク管理者に問い合わせて取得してください。</block>
+  <block id="89d69ff3dca93dc4c1c160728186e722" category="doc">Google Cloud NetApp Volumesのサポート</block>
+  <block id="c0f8420dd2331e8c703faf905ce556ba" category="inline-link-macro">Google Cloud NetApp Volumesの詳細をご覧ください。</block>
+  <block id="e1541d92f45c55d1c796b46df595a40b" category="paragraph">BlueXPでGoogle Cloud NetApp Volumes を表示できるようになりました。 <block ref="2d9a0dbc9abdf3f5520c900e61ce6c78" category="inline-link-macro-rx"></block></block>
+  <block id="7ef119d24b993215797de865841c626e" category="section-title">Google Cloud NetApp Volumesの新しいアクセスロール</block>
+  <block id="558052264db83696c2bf10ecfe0eaedd" category="paragraph">BlueXP は、次のストレージ システムに対するアクセス ロールの使用をサポートするようになりました。</block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="list-text">Google Cloud NetAppボリューム</block>
+  <block id="88dadd964be88ff7da405999bf5d6376" category="summary">BlueXP ID およびアクセス管理では、Google Cloud NetApp Volumesへのアクセスを必要とする組織のメンバーに割り当てることができる管理者ロールが提供されます。</block>
+  <block id="5c06fd7ff7155e85c2867088844a5bb8" category="doc">Google Cloud NetApp Volumes のロール</block>
+  <block id="30c0516d71000af9463ac4def215fd5d" category="paragraph">ユーザーに次のロールを割り当てて、 BlueXP内のGoogle Cloud NetApp Volumesへのアクセスを許可できます。</block>
+  <block id="656f6fe68f4a2af975dfebecd7cca424" category="paragraph">Google Cloud NetApp Volumes は次のロールを使用します。</block>
+  <block id="0b4cb7a54420fa8396e2ded3254b1844" category="list-text">* Google Cloud NetApp Volumes管理者*: BlueXPでGoogle Cloud NetApp Volumes を検出し、管理します。</block>
+  <block id="b55b12e6582a0dc256699ea566c98812" category="paragraph">プラットフォームロールは、ロールの割り当てやユーザーの追加など、 BlueXPのすべての管理権限を付与します。プラットフォームロールは、 BlueXPのすべてのデータサービスとアプリケーションへのアクセスを提供します。BlueXP IAM には、組織管理者とフォルダーまたはプロジェクト管理者の 2 つのプラットフォーム ロールが含まれます。2つのBlueXP  IAMプラットフォームロールの主な違いはスコープです。</block>
+  <block id="ab916e6cd4ed974d54491c86731e930c" category="cell">組織内のすべてのプロジェクトおよびフォルダへの無制限のアクセス、任意のプロジェクトまたはフォルダへのメンバーの追加、任意のBlueXP  タスクの実行、任意のデータサービスの使用をユーザーに許可します。この役割を持つユーザーは、 BlueXP組織を整理および管理します。フォルダとプロジェクトの作成、ロールの割り当て、ユーザーの追加、そして資格情報があればすべての作業環境の管理が可能です。これは、コネクタを作成できる唯一のアクセスロールです。</block>
+  <block id="332cf7fa33c69ec5f4db12e0c5d4c230" category="cell">割り当てられている特定のプロジェクトおよびフォルダへの無制限のアクセスをユーザーに許可します。管理するフォルダまたはプロジェクトにメンバーを追加したり、任意のBlueXP  タスクを実行したり、割り当てられたフォルダまたはプロジェクト内のリソースで任意のデータサービスまたはアプリケーションを使用したりできます。フォルダーまたはプロジェクト管理者はコネクタを作成できません。</block>
+  <block id="1e92f5c7fccb14971fe2537bec747773" category="cell">ユーザーがBlueXPとのフェデレーションを作成および管理し、シングル サインオン (SSO) を有効にすることを許可します。</block>
+  <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Google Cloud NetApp Volumes管理者</block>
+  <block id="42e05b82ea98ae962f4c09a6330b152a" category="cell"><block ref="42e05b82ea98ae962f4c09a6330b152a" category="inline-link-macro-rx"></block></block>
+  <block id="ee848730515e9ec34272f93a110738f2" category="cell">Google Cloud NetApp Volumesロールを持つユーザーは、Google Cloud NetApp Volumes を検出して管理できます。</block>
+  <block id="afa251e583f752e51e3383587060e30b" category="cell">ストレージの健全性とガバナンス機能を管理し、ストレージ リソースを検出し、既存の作業環境を変更および削除します。</block>
+  <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">BlueXP classificationスキャン結果を表示する機能を提供します。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。分類には、ビューアの役割はありません。</block>
+  <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
 </blocks>

@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-gc-roles.html 
+keywords: gcp, google cloud, Google Cloud NetApp Volumes, gcnv, permissions, access control, role-based access control, rbac, role-based access 
+summary: BlueXP ID およびアクセス管理では、Google Cloud NetApp Volumesへのアクセスを必要とする組織のメンバーに割り当てることができる管理者ロールが提供されます。 
+---
+= Google Cloud NetApp Volumes のロール
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ユーザーに次のロールを割り当てて、 BlueXP内のGoogle Cloud NetApp Volumesへのアクセスを許可できます。
+
+Google Cloud NetApp Volumes は次のロールを使用します。
+
+* * Google Cloud NetApp Volumes管理者*: BlueXPでGoogle Cloud NetApp Volumes を検出し、管理します。
+
