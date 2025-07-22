@@ -39,7 +39,7 @@ BlueXP は、次のストレージ システムに対するアクセス ロー�
 * Google Cloud NetAppボリューム
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["アクセス ロールの使用について詳しく学習します。"]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["アクセス ロールの使用について詳しく学習します。"]
 
 
 
