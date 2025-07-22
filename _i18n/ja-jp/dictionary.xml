@@ -1811,7 +1811,6 @@
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">両方のタイプのシリアル番号を登録することで、サポートチケットのオープンやケースの自動生成などの機能を利用できます。登録を完了するには、以下の手順でNetApp Support Site（NSS）アカウントをBlueXPに追加してください。</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
-  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSSアカウントをお持ちの既存のお客様</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSSアカウントをお持ちのネットアップのお客様は、BlueXPからサポートに登録するだけで済みます。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">[NSSクレデンシャルの追加]*を選択し、NetApp Support Site（NSS）認証プロンプトに従います。</block>
@@ -3781,7 +3780,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">[メンバー]テーブルで、サービスアカウントに移動し、を選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>て*[シークレットの再作成]*を選択します。</block>
   <block id="8de213850e1e3dc79a14014382d25163" category="list-text">[再作成]*を選択します。</block>
   <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">組織からメンバーを削除する</block>
-  <block id="0479745abf593369ddbda5e8df849e57" category="list-text">[メンバー]ページで、テーブル内のメンバーに移動し、を選択し<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>て*[ユーザーの削除]*を選択します。</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">組織からメンバーを削除することを確認します。</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">リソースを特定のプロジェクトやフォルダに関連付けることで、組織のリソース階層を管理します。</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">組織内のリソースを表示する</block>
@@ -4621,7 +4619,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">BlueXP  アクセスロールの詳細</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">データサービスの役割</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">ランサムウェア対策の役割</block>
-  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Keystoneビューアロールのユーザはサービスリクエストを作成できません。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。</block>
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">コネクタのダウンロード用のセキュアなエンドポイントが、バックアップとリカバリとランサムウェア対策でサポートされるようになりました。</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">コネクタのダウンロード用のセキュアなエンドポイントについて説明します。</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Backup and RecoveryまたはRansomware Protectionを使用している場合は、コネクタのダウンロードにセキュアなエンドポイントを使用できるようになりました。 <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
@@ -4693,7 +4690,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f2822d5dedda5be93d6f6e298458878b" category="paragraph">この役割を持つユーザーは、指定されたフォルダまたはプロジェクトのメンバーのみを管理できます。</block>
   <block id="d0dc99396b7d861a7866a8e109f9b1c6" category="paragraph">サインアップ後、ユーザーは *サインアップ* ページを完了し、メールを確認してログインします。組織を作成するように求められた場合は、BlueXP を閉じてアカウントを作成したことを通知する必要があります。その後、そのユーザを既存のBlueXP  組織に追加できます。</block>
   <block id="08a2395e6fbea42394d928f53df9f3e7" category="paragraph">ユーザーは、メンバーが BlueXP にアクセスするために使用する情報を含む電子メールを NetApp BlueXP から受信します。</block>
-  <block id="00407d7a171d24d8741b64c4670528bc" category="paragraph">lueXP はクライアントシークレットを一度だけ表示し、保存しません。シークレットをコピーまたはダウンロードして安全に保管します。クライアントIDとクライアントシークレットは、後で必要に応じて再作成できます。</block>
   <block id="981e68aebbf5499db66d9a2b0c273b16" category="paragraph">*メンバー* テーブルには組織のメンバーが表示されます。</block>
   <block id="e4cb5729a397d486706aec2c33ce4ea6" category="paragraph">たとえば、メンバーが会社を辞める場合など、組織からメンバーを削除する必要がある場合があります。</block>
   <block id="a8b5ca2eacd6c76f00fb50a8de358707" category="paragraph">メンバーを削除すると、そのメンバーの権限は取り消されますが、BlueXP および NetApp サポート サイトのアカウントは保持されます。</block>
@@ -5468,4 +5464,13 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">BlueXP classificationスキャン結果を表示する機能を提供します。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。分類には、ビューアの役割はありません。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
   <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">BlueXPでGoogle Cloud NetApp Volumes を表示できるようになりました。 <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
+  <block id="4ac442f979edeb4aaec2d297a7c152be" category="cell">Keystoneビューアロールのユーザはサービスリクエストを作成できません。ユーザーは、アクセスしているKeystoneテナント内の消費量、資産、管理情報を監視および表示できます。</block>
+  <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">ONTAPメディエーターのセットアップロール</block>
+  <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="inline-link-macro">ONTAPクラウドメディエーター</block>
+  <block id="04799ba9193d1752205122631a125181" category="cell">ONTAPメディエーター設定ロールを持つサービスアカウントは、サービスリクエストを作成できます。このロールは、サービスアカウントでONTAPメディエーターのインスタンスを設定するために必要です。 <block ref="a95914b5fa4d5193b1ebdf5a17356faa" category="inline-link-macro-rx"></block> 。</block>
+  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">ストレージの健全性とガバナンス機能の管理、ストレージリソースの検出、既存の作業環境の変更と削除を実行できます。</block>
+  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*カテゴリを選択*し、選択した組織、フォルダ、またはプロジェクトに関連付けられているリソースに対する権限をメンバーに付与する*ロール*を選択します。</block>
+  <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP はクライアント シークレットを 1 回だけ表示し、保存しません。シークレットをコピーまたはダウンロードして安全に保管します。クライアントIDとクライアントシークレットは、後で必要に応じて再作成できます。</block>
+  <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">*メンバー*ページで、テーブル内のメンバーに移動し、 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>次に、[*ユーザーの削除*]を選択します。</block>
 </blocks>

@@ -55,7 +55,13 @@ BlueXP ID およびアクセス管理 (IAM) には、リソース階層のさま
 | link:reference-iam-keystone-roles.html["Keystone管理者"] | Keystone管理者ロールを持つユーザは、サービスリクエストを作成できます。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。 
 
 
-| link:reference-iam-keystone-roles.html["Keystoneビューア"] | Keystoneビューアロールのユーザはサービスリクエストを作成できません。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。 
+| link:reference-iam-keystone-roles.html["Keystoneビューア"] | Keystoneビューアロールのユーザはサービスリクエストを作成できません。ユーザーは、アクセスしているKeystoneテナント内の消費量、資産、管理情報を監視および表示できます。 
+
+
+| ONTAPメディエーターのセットアップロール | ONTAPメディエーター設定ロールを持つサービスアカウントは、サービスリクエストを作成できます。このロールは、サービスアカウントでONTAPメディエーターのインスタンスを設定するために必要です。 link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["ONTAPクラウドメディエーター"^] 。 
+
+
+| link:reference-iam-storage-roles.html["Storage Admin"] | ストレージの健全性とガバナンス機能の管理、ストレージリソースの検出、既存の作業環境の変更と削除を実行できます。 
 
 
 | link:reference-iam-storage-roles.html["Storage Admin"] | ストレージの健全性とガバナンス機能を管理し、ストレージ リソースを検出し、既存の作業環境を変更および削除します。 
