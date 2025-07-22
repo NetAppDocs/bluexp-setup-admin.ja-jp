@@ -5464,7 +5464,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">BlueXP classificationスキャン結果を表示する機能を提供します。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。分類には、ビューアの役割はありません。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
   <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">BlueXPでGoogle Cloud NetApp Volumes を表示できるようになりました。 <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
-  <block id="4ac442f979edeb4aaec2d297a7c152be" category="cell">Keystoneビューアロールのユーザはサービスリクエストを作成できません。ユーザーは、アクセスしているKeystoneテナント内の消費量、資産、管理情報を監視および表示できます。</block>
   <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">ONTAPメディエーターのセットアップロール</block>
   <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="inline-link-macro">ONTAPクラウドメディエーター</block>
   <block id="04799ba9193d1752205122631a125181" category="cell">ONTAPメディエーター設定ロールを持つサービスアカウントは、サービスリクエストを作成できます。このロールは、サービスアカウントでONTAPメディエーターのインスタンスを設定するために必要です。 <block ref="a95914b5fa4d5193b1ebdf5a17356faa" category="inline-link-macro-rx"></block> 。</block>
@@ -5474,4 +5473,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP はクライアント シークレットを 1 回だけ表示し、保存しません。シークレットをコピーまたはダウンロードして安全に保管します。クライアントIDとクライアントシークレットは、後で必要に応じて再作成できます。</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">*メンバー*ページで、テーブル内のメンバーに移動し、 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>次に、[*ユーザーの削除*]を選択します。</block>
   <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
+  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Keystoneビューアロールのユーザはサービスリクエストを作成できません。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。</block>
 </blocks>
