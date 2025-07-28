@@ -758,7 +758,6 @@
   <block id="7390f55a27add10ddc1a6c765b8a67c7" category="doc">BlueXPのセットアップと管理に関するドキュメント</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">ネットアップでは、さまざまな方法でBlueXPをサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">ヘルプを表示します</block>
-  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">ネットアップでは、BlueXPとその クラウド サービス をさまざまな方法でサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">セルフサポートオプションを使用します</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">次のオプションは、 1 日 24 時間、週 7 日間無料でご利用いただけます。</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
@@ -1814,8 +1813,6 @@
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSSアカウントをお持ちの既存のお客様</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSSアカウントをお持ちのネットアップのお客様は、BlueXPからサポートに登録するだけで済みます。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">[NSSクレデンシャルの追加]*を選択し、NetApp Support Site（NSS）認証プロンプトに従います。</block>
-  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">アカウントのシリアル番号、緑のチェックボックス、サポート登録済みのテキストを示すスクリーンショット。</block>
-  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">NSSアカウントを持たない既存のお客様</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">NetAppの既存のお客様で、ライセンスとシリアル番号は_NO_NSSアカウントしかお持ちでない場合は、NSSアカウントを作成してBlueXPログインに関連付ける必要があります。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support Site ユーザー登録フォーム</block>
@@ -5295,19 +5292,12 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="ed0a34e7c50c8b6a49b38156f4ad0507" category="inline-link-macro">フェデレーションの管理について詳しく学びます。</block>
   <block id="a28baf546d6789e9df4bf20f4b47ea7e" category="admonition">既存のフェデレーションをインポートした後は、フェデレーション ページからフェデレーションを管理できます。 <block ref="9d534edc1c56628e78a226390e0c6f0b" category="inline-link-macro-rx"></block></block>
   <block id="4538ec0a58b95f3c1aac1a5acb748667" category="paragraph">組織管理者またはフェデレーション管理者。 <block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
-  <block id="6a83e05584ae3a368d76b79ed5fca4ac" category="section-title">フェデレーションをインポートする</block>
   <block id="af5e5162616eb70fd66eb845ab93c3b3" category="list-text">*インポートフェデレーション*を選択します。</block>
   <block id="ad0b8ffb10bbe432e9cf58b09772aa69" category="section-title">検証済みのドメインを既存のフェデレーションに追加する</block>
-  <block id="a0ddba99351ac47d380e4259aadba269" category="paragraph">BlueXPの既存のフェデレーションに検証済みドメインを追加できます。BlueXPの既存のフェデレーションに検証済みドメインを追加することで、同じ ID プロバイダー (IdP) で複数のドメインを使用できます。</block>
-  <block id="be834cc1c8b7f8b6b0e9b3daed0042f5" category="paragraph">ドメインをフェデレーションに追加するには、 BlueXPでドメインを検証しておく必要があります。まだドメインを検証していない場合は、以下の手順に従って検証してください。 <block ref="1a287a79053335f45f3db75bc57fd747" category="inline-link-macro-rx"></block> 。</block>
-  <block id="d62d240b9c34b152e7a4c1f1ba2faecc" category="paragraph">&lt;これをいつ行うかのユースケースが必要です&gt;--Tonia &lt;この新しいドメインのユーザーがログインできるようになるまでどのくらいの時間がかかりますか?--Tonia&gt; 手順</block>
   <block id="62d5f424f490cb35fe635af945e09e93" category="list-text">アクションメニューを選択<block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block>検証済みドメインを追加するフェデレーションの横にある をクリックし、「*ドメインの更新*」を選択します。「*ドメインの更新*」ダイアログボックスには、このフェデレーションに既に関連付けられているドメインが一覧表示されます。</block>
   <block id="d84c85105e6a24d5f4e5213f4a62212a" category="list-text">利用可能なドメインのリストから検証済みのドメインを選択します。</block>
   <block id="35165f9b14f6cde03fa7f6f9b03732ba" category="list-text">「 * Update * 」を選択します。</block>
   <block id="b9441c75b64b2bff3d5c0252b881eb80" category="section-title">期限切れのフェデレーション接続の更新</block>
-  <block id="50bc8d94201d22ead4d5ac5de70f8c4e" category="paragraph">BlueXPでフェデレーション接続の詳細を更新できます。例えば、証明書やクライアントシークレットなどの資格情報の有効期限が切れた場合は、フェデレーションを更新する必要があります。必要に応じて、通知日を更新して、有効期限が切れる前に接続を更新するよう通知します。</block>
-  <block id="6ec267b868ac52e9c551ecf053445e50" category="admonition">ログインに関する問題を回避するため、 BlueXPで接続を更新する前にIdPを更新してください。処理中はBlueXPにログインしたままにしてください。--ここでの順序はどうなっていますか？--Tonia</block>
-  <block id="e8d5347d0ad03b9156b4d8234c820a54" category="list-text">検証済みドメインを追加するフェデレーションの横にあるアクションメニュー（縦に3つの点）を選択し、「フェデレーションを更新」を選択します。「ドメインを更新」ダイアログボックスに、このフェデレーションに既に関連付けられているドメインが表示されます。</block>
   <block id="e82e66adccb64cbe61e87f3c0617c3f8" category="list-text">必要に応じてフェデレーションの詳細を更新します。</block>
   <block id="f0c3a42a5f59fcf574664a16032f7f98" category="section-title">既存のフェデレーションをテストする</block>
   <block id="579e693274492fb64ae09b19e40c366a" category="paragraph">既存のフェデレーションで問題が発生している場合は、接続をテストして正常に動作しているかどうかを確認できます。これにより、フェデレーションの問題を特定し、トラブルシューティングを行うことができます。</block>
@@ -5316,7 +5306,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f00c704f82067284063e6d08ee509d82" category="list-text">*完了*を選択して*連合*タブに戻ります。</block>
   <block id="3104ea2b12b1bb5b1bf9e44f8a04c551" category="section-title">フェデレーションを無効にする</block>
   <block id="e29366acd257602b75067c91b960f62f" category="paragraph">フェデレーションが不要になった場合は、無効にすることができます。これにより、フェデレーションに関連付けられたユーザーが企業の認証情報を使用してBlueXPにログインできなくなります。必要に応じて、後でフェデレーションを再度有効にすることができます。</block>
-  <block id="29fd568fb93920cf501488e171b7f20b" category="paragraph">ユーザーはいつフェデレーションを無効にする必要がありますか? たとえば、IdP が更新されている場合や、フェデレーションが不要になった場合などです。--Tonia さん?</block>
   <block id="ba1cad8ed3a99d167191e2e7f53a0e1d" category="list-text">アクションメニューを選択<block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block>検証済みドメインを追加するフェデレーションの横にあるをクリックし、[無効にする] を選択します。</block>
   <block id="a679ca81df887999afdb29cc812dba1a" category="section-title">フェデレーションを削除する</block>
   <block id="2e39c9a75c534c723834aef16604225c" category="paragraph">フェデレーションが不要になった場合は、削除できます。これにより、 BlueXPからフェデレーションが削除され、フェデレーションに関連付けられているユーザーは、会社の認証情報を使用してBlueXPにログインできなくなります。例えば、IdPが廃止される場合や、フェデレーションが不要になった場合などです。フェデレーションを削除した後は、復元できません。新しいフェデレーションを作成する必要があります。</block>
@@ -5474,4 +5463,11 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">*メンバー*ページで、テーブル内のメンバーに移動し、 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>次に、[*ユーザーの削除*]を選択します。</block>
   <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Keystoneビューアロールのユーザはサービスリクエストを作成できません。ユーザがアクセスしているKeystoneテナント内の消費量、資産、管理情報を監視、表示できます。</block>
+  <block id="43fcb7c92b7808baf72f1cd9eecef7a5" category="list-text">特にAmazon FSx for NetApp ONTAPの場合は、*信頼関係* ポリシーを編集して "AWS": "arn:aws:iam::952013314444:root" を含めます。</block>
+  <block id="f8aabc110ec9d0099e69b9276f73b751" category="paragraph">たとえば、ポリシーは次のようになります。</block>
+  <block id="37747908c82600c4f83a3de02bd7dc1a" category="inline-link-macro">AWS Identity and Access Management (IAM) ドキュメント</block>
+  <block id="e8cffeeec612132e8c2cb2355463f31f" category="paragraph">参照<block ref="ac3530460cd18c242c3653db3709495c" category="inline-link-macro-rx"></block> IAM でのクロスアカウント リソース アクセスの詳細については、こちらをご覧ください。</block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetAppは、 BlueXPとそのクラウドサービスに対して、様々なサポートを提供しています。ナレッジベース（KB）記事やコミュニティフォーラムなど、充実した無料のセルフサポートオプションを24時間365日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">アカウントのシリアル番号、緑色のチェックボックス、および「サポートに登録済み」というテキストが表示されているスクリーンショット。</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

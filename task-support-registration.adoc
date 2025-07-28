@@ -59,7 +59,7 @@ NSSアカウントをお持ちのネットアップのお客様は、BlueXPか�
 [リソース]ページに、BlueXP  組織がサポートに登録されていることが表示されます。
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-support-registration.png["アカウントのシリアル番号、緑のチェックボックス、サポート登録済みのテキストを示すスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-support-registration.png["アカウントのシリアル番号、緑色のチェックボックス、および「サポートに登録済み」というテキストが表示されているスクリーンショット。"]
 
 +
 他のBlueXPユーザにNetApp Support Siteアカウントが関連付けられていない場合、このサポート登録ステータスは表示されません。ただし、BlueXP  組織がサポートに登録されていないわけではありません。組織内の1人のユーザーがこれらの手順を実行している限り、組織は登録されています。

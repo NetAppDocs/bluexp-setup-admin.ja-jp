@@ -173,6 +173,30 @@ BlueXP  Software as a Service（SaaS）レイヤが役割を引き継ぐこと�
 +
 ** 信頼されるエンティティのタイプ * で、 * AWS アカウント * を選択します。
 ** 別のAWSアカウント*を選択して、BlueXP SaaSのID 952013314444を入力します
+** 特にAmazon FSx for NetApp ONTAPの場合は、*信頼関係* ポリシーを編集して "AWS": "arn:aws:iam::952013314444:root" を含めます。
++
+たとえば、ポリシーは次のようになります。
+
++
+[source, JSON]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::952013314444:root",
+        "Service": "ec2.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+----
++
+参照link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cross-account-resource-access.html["AWS Identity and Access Management (IAM) ドキュメント"^] IAM でのクロスアカウント リソース アクセスの詳細については、こちらをご覧ください。
+
 ** コネクタの作成に必要な権限を含むポリシーを作成します。
 +
 *** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["ONTAP の FSX に必要な権限を表示します"^]
