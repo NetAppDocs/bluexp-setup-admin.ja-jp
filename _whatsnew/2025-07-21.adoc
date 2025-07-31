@@ -6,7 +6,7 @@
 
 === Google Cloud NetApp Volumesのサポート
 
-BlueXPでGoogle Cloud NetApp Volumes を表示できるようになりました。 link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html/index.html["Google Cloud NetApp Volumesの詳細をご覧ください。"]
+BlueXPでGoogle Cloud NetApp Volumes を表示できるようになりました。link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html["Google Cloud NetApp Volumesの詳細をご覧ください。"]
 
 
 

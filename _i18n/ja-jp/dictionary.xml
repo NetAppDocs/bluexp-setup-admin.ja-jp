@@ -5452,7 +5452,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="afa251e583f752e51e3383587060e30b" category="cell">ストレージの健全性とガバナンス機能を管理し、ストレージ リソースを検出し、既存の作業環境を変更および削除します。</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">BlueXP classificationスキャン結果を表示する機能を提供します。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。分類には、ビューアの役割はありません。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
-  <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">BlueXPでGoogle Cloud NetApp Volumes を表示できるようになりました。 <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
   <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">ONTAPメディエーターのセットアップロール</block>
   <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="inline-link-macro">ONTAPクラウドメディエーター</block>
   <block id="04799ba9193d1752205122631a125181" category="cell">ONTAPメディエーター設定ロールを持つサービスアカウントは、サービスリクエストを作成できます。このロールは、サービスアカウントでONTAPメディエーターのインスタンスを設定するために必要です。 <block ref="a95914b5fa4d5193b1ebdf5a17356faa" category="inline-link-macro-rx"></block> 。</block>
@@ -5470,4 +5469,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetAppは、 BlueXPとそのクラウドサービスに対して、様々なサポートを提供しています。ナレッジベース（KB）記事やコミュニティフォーラムなど、充実した無料のセルフサポートオプションを24時間365日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
   <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">アカウントのシリアル番号、緑色のチェックボックス、および「サポートに登録済み」というテキストが表示されているスクリーンショット。</block>
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="639e89a5be71c4602c59d165b598d738" category="paragraph">BlueXPでGoogle Cloud NetApp Volumes を表示できるようになりました。<block ref="dbbb7a4d531819b88c662793ae2a1ef8" category="inline-link-macro-rx"></block></block>
 </blocks>
