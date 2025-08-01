@@ -1,10 +1,10 @@
-= プライベートモードリリース（3.9.52）
+= プライベートモードリリース（3.9.54）
 :allow-uri-read: 
 
 
 
 
-=== プライベートモードリリース（3.9.52）
+=== プライベートモードリリース（3.9.54）
 
 新しいプライベートモードリリースをからダウンロードできるようになりました。 https://mysupport.netapp.com/site/downloads["NetApp Support Site"^]
 
@@ -18,7 +18,7 @@
 | コネクタ | 3.9.54、3.9.53 | に行く https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXPページの新着情報"^]バージョン 3.9.54 および 3.9.53 に含まれる変更を参照してください。 
 
 
-| バックアップとリカバリ | 2025年7月22日 | に行く https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  バックアップ/リカバリページの新機能"^]2025 年 7 月のリリースに含まれる変更点を参照してください。 
+| バックアップとリカバリ | 2025年7月28日 | に行く https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  バックアップ/リカバリページの新機能"^]2025 年 7 月のリリースに含まれる変更点を参照してください。 
 
 
 | 分類 | 2025年7月14日（バージョン1.45） | に行く https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分類ページの新機能"^]。 
