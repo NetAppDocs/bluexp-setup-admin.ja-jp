@@ -2394,14 +2394,11 @@
   <block id="9a29204f81d065ca790be5e05be49951" category="paragraph">これで、に移動できます<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> BlueXPでコネクタの使用を開始します</block>
   <block id="3cedfb797d3e1bc073ba2b0b4d2502cf" category="inline-link">Azure に関するドキュメント</block>
   <block id="5c5eae78661bfbe6d566f6e00a0b5a67" category="paragraph">Azureカスタムロールは、Azureポータル、Azure PowerShell、Azure CLI、またはREST APIを使用して作成できます。Azure CLIを使用してロールを作成する手順を次に示します。別の方法を使用する場合は、を参照してください。<block ref="9dee1d16cb9c40964c81f1bda0fd9839" category="inline-link-rx"></block></block>
-  <block id="5377c5407df56ba84e782b4e83f6c6ba" category="cell">オンプレミスのONTAPクラスタをAmazon S3にバックアップ</block>
   <block id="adfa465566f5539105be4291db1cc510" category="cell">ONTAPボリュームでバックアップをアクティブ化すると、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。</block>
   <block id="ba37f89d4d4c6ea1b335169793666fbe" category="inline-link">バックアップのS3権限を設定</block>
-  <block id="3a723efda81312f328c7de4a7741cb2c" category="cell"><block ref="3a723efda81312f328c7de4a7741cb2c" category="inline-link-rx"></block></block>
   <block id="9f60318dba873b8aa280da655451eafb" category="cell">オンプレミスのONTAPクラスタをStorageGRIDにバックアップ</block>
   <block id="649c5239d0163afb3411e36c5e857809" category="cell">StorageGRIDをONTAPクラスタのバックアップターゲットとして準備する際、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。</block>
   <block id="08cdeb7ce64fda06111111c8fea66510" category="inline-link">バックアップターゲットとしてStorageGRIDを準備します</block>
-  <block id="62d09ae20af8b1a53c08a95792d3bdb1" category="cell"><block ref="62d09ae20af8b1a53c08a95792d3bdb1" category="inline-link-rx"></block></block>
   <block id="e6b202bba8f7c7c067b2137e58a41397" category="cell">AWSへのBlueXPの階層化を有効にすると、アクセスキーとシークレットキーを入力するように求められます。これらのクレデンシャルは、ONTAP がS3バケットにデータを階層化できるようにONTAP クラスタに渡されます。</block>
   <block id="827bb82562627531a1105788bd9826e6" category="inline-link">階層化のためのS3権限を設定する</block>
   <block id="5f2c172dbfc6022aa5027029dc114852" category="cell"><block ref="5f2c172dbfc6022aa5027029dc114852" category="inline-link-rx"></block></block>
@@ -2413,12 +2410,7 @@
   <block id="498541290e9165e5844d20ce7c56fdce" category="paragraph">BlueXPのバックアップとリカバリを使用してCloud Volumes ONTAPをバックアップする場合は、次のシナリオでコネクタに権限を追加する必要があります。</block>
   <block id="963c1d6b60ef9ab217e4a2f0f2f4a47f" category="list-text">「検索と復元」機能を使用する場合</block>
   <block id="0ce14c433ae57608c1aced4d631bc039" category="list-text">顧客管理の暗号化キー（CMEK）を使用する場合</block>
-  <block id="3f4149dc5a7846817dd458a59e650f5f" category="inline-link">検索と復元機能の権限</block>
-  <block id="aae920cbe0beab1a7b76937b223c2d92" category="list-text"><block ref="4b3b7e478cad27964ed24a4ab3fe4c45" category="inline-link-rx"></block></block>
-  <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">CMEKの権限</block>
-  <block id="73206ed184feb2313c9f626b7f266208" category="list-text"><block ref="73206ed184feb2313c9f626b7f266208" category="inline-link-rx"></block></block>
   <block id="6e9436752850e460930666efdaf1e025" category="cell">オンプレミスのONTAPクラスタをGoogle Cloudにバックアップ</block>
-  <block id="072b4c796b4a06820f943c41d4da3162" category="cell"><block ref="6a045f48523c0716d40c678a68c87636" category="inline-link-rx"></block></block>
   <block id="33afe8d49ba0b54b76d44e7f5b190b53" category="section-title">BlueXPサービスのネットワークを準備</block>
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXPのマニュアル</block>
   <block id="1c74bcfdef9917ce07420aafab8bce83" category="paragraph"><block ref="1c74bcfdef9917ce07420aafab8bce83" category="inline-link-rx"></block></block>
@@ -2880,12 +2872,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d0622c7af7b2cc2435986b2d005d8fc3" category="cell">*作業環境*
 
 表の次の部分には、BlueXPキャンバスでの作業環境管理のサポートが表示されます。BlueXPのバックアップとリカバリでサポートされるバックアップ先を示すわけではありません。</block>
-  <block id="156b68e03278a01a3d2781f8c900caac" category="cell">はい。
-
-<block ref="14c876cb6a245f558ae78bae571d2b6e" category="inline-link-rx"></block></block>
-  <block id="fa0738e12b2324073fa9b5f91af71e48" category="cell">はい。
-
-<block ref="42dbd2df9d57eeeb664cce05b5a35bf1" category="inline-link-rx"></block></block>
   <block id="ceff1e7e9afd603be2687369aac73bb6" category="paragraph">管理されたIDを使用すると、コネクタ仮想マシンは資格情報を提供せずにMicrosoft Entra IDに対して自身を識別できるため、この設定は重要です。<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
   <block id="10d9864d222fd249479246f9c50df58c" category="list-text">*資格情報の定義*:必要な権限を付与するMicrosoft Entraサービスプリンシパルに関する情報を入力します。</block>
   <block id="9c0e62a86b9fe558cad9c4d280ea439d" category="list-text">NTPを有効にする</block>
@@ -4567,7 +4553,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">ストレージビューア</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">システムヘルススペシャリスト</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">データサービスの役割</block>
-  <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分類管理者</block>
   <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">ランサムウェア対策サービスの[保護]、[アラート]、[リカバリ]、[設定]、[レポート]の各タブでの操作を管理します。</block>
   <block id="c449660979799948a46372470a0eddb9" category="cell">ランサムウェア対策サービスで、ワークロードデータの表示、アラートデータの表示、リカバリデータのダウンロード、レポートのダウンロードを行うことができます。</block>
   <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">BlueXP  のランサムウェア対策アクセスロール</block>
@@ -5192,7 +5177,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="d1030414e0b81438e7c1e475b3ff1c37" category="paragraph">BlueXP ID およびアクセス管理 (IAM) には、リソース階層のさまざまなレベルにわたって組織のメンバーに割り当てることができる定義済みのロールが含まれています。これらのロールを割り当てる前に、各ロールに含まれる権限について理解しておく必要があります。ロールは、プラットフォーム、アプリケーション、データサービスのカテゴリに分類されます。</block>
   <block id="10140df1e1454ada0fe484df8f86e609" category="cell"><block ref="10140df1e1454ada0fe484df8f86e609" category="inline-link-macro-rx"></block></block>
   <block id="94dc84e1e8721887c7b647f1cdb802f2" category="cell"><block ref="94dc84e1e8721887c7b647f1cdb802f2" category="inline-link-macro-rx"></block></block>
-  <block id="178e676d4dcf16fc5b1d8f7c9431f792" category="cell">ユーザーがBlueXPとの既存の連携を表示できるようにします。連携を作成または管理することはできません。</block>
   <block id="da46150dd1fb0497beb9ff6a9328d80c" category="cell"><block ref="da46150dd1fb0497beb9ff6a9328d80c" category="inline-link-macro-rx"></block></block>
   <block id="589491adabb65d62d42f2088d68fdee0" category="cell">バックアップとリカバリ サービスで任意のアクションを実行します。</block>
   <block id="eaec472b7a23d9c311a78adfd10b1032" category="inline-link-macro">バックアップとリカバリの管理者</block>
@@ -5445,7 +5429,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Google Cloud NetApp Volumes管理者</block>
   <block id="42e05b82ea98ae962f4c09a6330b152a" category="cell"><block ref="42e05b82ea98ae962f4c09a6330b152a" category="inline-link-macro-rx"></block></block>
   <block id="ee848730515e9ec34272f93a110738f2" category="cell">Google Cloud NetApp Volumesロールを持つユーザーは、Google Cloud NetApp Volumes を検出して管理できます。</block>
-  <block id="afa251e583f752e51e3383587060e30b" category="cell">ストレージの健全性とガバナンス機能を管理し、ストレージ リソースを検出し、既存の作業環境を変更および削除します。</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">BlueXP classificationスキャン結果を表示する機能を提供します。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。分類には、ビューアの役割はありません。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
   <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">ONTAPメディエーターのセットアップロール</block>
@@ -5479,4 +5462,21 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="985faaef42ae98b8d59df17cd449681e" category="paragraph">NetAppサポート サイトと連携すると、ユーザーは、 NetAppサポート サイト、 Active IQ Digital Advisor 、およびNetAppサポート サイト アカウントに関連付けられているその他のアプリで使用するのと同じ資格情報を使用してログインし、 BlueXP にアクセスできるようになります。フェデレーションを設定すると、 NetAppサポート サイト アカウントを作成した新しいユーザーもBlueXPにアクセスできるようになります。</block>
   <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp は、フェデレーション用に次のプロトコルと ID プロバイダーをサポートしています。</block>
   <block id="f207a0643b8dada892565ed2318b05cd" category="cell"><block ref="f207a0643b8dada892565ed2318b05cd" category="inline-link-macro-rx"></block></block>
+  <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">はい<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
+  <block id="a6c599d9b9bbe744be463c056f9e194a" category="cell">はい<block ref="8cbf8dca81955ce6c3d97cec5394e7fd" category="inline-link-rx"></block></block>
+  <block id="e3e606b368c3f3a65f5cb75fbe9c3115" category="cell">ユーザーがBlueXPとの既存のフェデレーションを表示できるようにします。フェデレーションを作成または管理できません</block>
+  <block id="1393a4279651a3334e20f39925a139f5" category="cell">分類ビューア</block>
+  <block id="725b2ecc37229f77405f9188278a6a1f" category="cell">BlueXP backup and recoveryを使用してオンプレミスのONTAPクラスターを Amazon S3 にバックアップします</block>
+  <block id="12e11cedace336bc23a4b1c9ab448974" category="cell"><block ref="12e11cedace336bc23a4b1c9ab448974" category="inline-link-rx"></block></block>
+  <block id="51fa9005485af9016610af9875c0e913" category="cell">Cloud Volumes ONTAP をAzure BLOB ストレージにバックアップする</block>
+  <block id="8625ed737cea7841c422023f4e27bc1d" category="inline-link">バックアップとリカバリを使用して、 Cloud Volumes ONTAPデータを Azure Blob ストレージにバックアップします。</block>
+  <block id="518ffd78f998d0a25c5446da8989b6a6" category="list-text"><block ref="518ffd78f998d0a25c5446da8989b6a6" category="inline-link-rx"></block></block>
+  <block id="f66493a5c1b72a6a6a675e1d79371789" category="cell">オンプレミスのONTAPクラスターを Azure BLOB ストレージにバックアップする</block>
+  <block id="957901780fae6c72beed34248e8e252d" category="inline-link">バックアップとリカバリを使用してオンプレミスの ONTAPデータを Azure Blob ストレージにバックアップする</block>
+  <block id="6d94d8c7b4ec021fb7a5a5704629681e" category="cell"><block ref="6d94d8c7b4ec021fb7a5a5704629681e" category="inline-link-rx"></block></block>
+  <block id="cd84e76d2557bd459057089ba5e1385c" category="inline-link">バックアップとリカバリを使用して、 Cloud Volumes ONTAPデータを Google Cloud Storage にバックアップします。</block>
+  <block id="3b5162ff96cd00bbd1b1ad424d59bd8f" category="list-text"><block ref="3b5162ff96cd00bbd1b1ad424d59bd8f" category="inline-link-rx"></block></block>
+  <block id="6d4f1161a06d11fa7424e224b2a86d25" category="inline-link">バックアップとリカバリを使用してオンプレミスのONTAPデータを Google Cloud Storage にバックアップする</block>
+  <block id="b9142ed8495860430205961c82c827a0" category="cell"><block ref="b9142ed8495860430205961c82c827a0" category="inline-link-rx"></block></block>
+  <block id="86b4fb0c56ea4924e5069e8f25d3a778" category="cell"><block ref="86b4fb0c56ea4924e5069e8f25d3a778" category="inline-link-rx"></block></block>
 </blocks>

@@ -356,11 +356,7 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 .17+| * サービス * | アラート | いいえ | いいえ 
 
 
-| バックアップとリカバリ | はい。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] | はい。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] 
+| バックアップとリカバリ | はいhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] | はいhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] 
 
 
 | 分類 | はい。 | はい。 

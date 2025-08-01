@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-iam-predefined-roles.html 
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac 
 summary: BlueXP  IDおよびアクセス管理には、組織のメンバーに割り当てることができる事前定義されたロールがいくつか含まれています。 
 ---
 = BlueXP  アクセスロールの詳細
@@ -36,7 +36,7 @@ BlueXP ID およびアクセス管理 (IAM) には、リソース階層のさま
 | link:reference-iam-platform-roles.html["連盟管理者"] | ユーザーがBlueXPとのフェデレーションを作成および管理し、シングル サインオン (SSO) を有効にすることを許可します。 
 
 
-| link:reference-iam-platform-roles.html["連盟ビューア"] | ユーザーがBlueXPとの既存の連携を表示できるようにします。連携を作成または管理することはできません。 
+| link:reference-iam-platform-roles.html["連盟ビューア"] | ユーザーがBlueXPとの既存のフェデレーションを表示できるようにします。フェデレーションを作成または管理できません 
 |===
 
 
@@ -62,9 +62,6 @@ BlueXP ID およびアクセス管理 (IAM) には、リソース階層のさま
 
 
 | link:reference-iam-storage-roles.html["Storage Admin"] | ストレージの健全性とガバナンス機能の管理、ストレージリソースの検出、既存の作業環境の変更と削除を実行できます。 
-
-
-| link:reference-iam-storage-roles.html["Storage Admin"] | ストレージの健全性とガバナンス機能を管理し、ストレージ リソースを検出し、既存の作業環境を変更および削除します。 
 
 
 | link:reference-iam-storage-roles.html["ストレージビューア"] | ストレージの健全性とガバナンスの機能、および以前に検出されたストレージリソースを表示できます。既存のストレージ作業環境を検出、変更、削除することはできません。 
@@ -110,7 +107,7 @@ BlueXP ID およびアクセス管理 (IAM) には、リソース階層のさま
 | link:reference-iam-disaster-rec-roles.html["災害復旧ビューア"] | 情報の表示のみ。 
 
 
-| 分類管理者 | BlueXP classificationスキャン結果を表示する機能を提供します。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。分類には、ビューアの役割はありません。 
+| 分類ビューア | BlueXP classificationスキャン結果を表示する機能を提供します。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。分類には、ビューアの役割はありません。 
 
 
 | link:reference-iam-ransomware-roles.html["ランサムウェア対策管理者"] | ランサムウェア対策サービスの[保護]、[アラート]、[リカバリ]、[設定]、[レポート]の各タブでの操作を管理します。 
