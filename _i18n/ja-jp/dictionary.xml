@@ -5029,13 +5029,9 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="444f23e40f44fdeee25f2095f5e98011" category="paragraph">NetAppは、サービスプロバイダ主導（SP主導）のSSOのみをサポートしています。まず、 NetAppをサービスプロバイダとして信頼するようにアイデンティティプロバイダを設定する必要があります。その後、 BlueXPでアイデンティティプロバイダの設定を使用して接続を作成できます。</block>
   <block id="26171afe4f87cd094533f930e17a3ab6" category="paragraph">ご自身のメールドメイン、またはご自身が所有する別のドメインと連携できます。ご自身のメールドメインとは異なるドメインと連携するには、まずそのドメインの所有権を確認してください。</block>
   <block id="a360b57a0977bad37074d03167fc6b97" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>ドメインを確認する（メールドメインを使用していないとき）</block>
-  <block id="6081ea9f6e28129fa43045bdc0656c38" category="paragraph">メールドメインとは異なるドメインと連携する場合は、まずそのドメインの所有権を確認する必要があります。メールドメインの連携は、追加の手順なしで行えます。</block>
   <block id="3b7b59f484394c5f795c6658135940dc" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> IdP を設定して、 NetApp をサービス プロバイダーとして信頼する</block>
-  <block id="46f8b82359f12177914eba80e56d79bf" category="paragraph">NetAppをサービスプロバイダとして信頼するようにアイデンティティプロバイダを設定するには、新しいアプリケーションを作成し、ACS URL、エンティティID、その他の認証情報などの必要な情報を入力します。サービスプロバイダ情報はアイデンティティプロバイダによって異なるため、詳細については、ご利用のアイデンティティプロバイダのドキュメントを参照してください。この手順を完了するには、IdP管理者にご相談ください。</block>
   <block id="1f2c27a0069d4204cb2408f8f09f64b3" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> BlueXPでフェデレーション接続を作成する</block>
-  <block id="a30e0aeeb1336c06519d765bed7b8b15" category="paragraph">接続を確立するには、SAMLメタデータURLやファイルなど、IDプロバイダから必要な情報を提供する必要があります。この情報は、 BlueXPとIDプロバイダ間の信頼関係を確立するために使用されます。提供する情報は、使用しているIdPによって異なります。例えば、Microsoft Entra IDを使用している場合は、クライアントID、シークレット、ドメインを提供する必要があります。</block>
   <block id="c542c1747b658c80eb08d07be8315a3c" category="paragraph-title"><block ref="d5b760e3b486da6aca46a9bd83d66c13" category="inline-image-macro-rx" type="image"></block> BlueXPでフェデレーションをテストする</block>
-  <block id="eba895451c518afe06d457af732c326f" category="paragraph">フェデレーション接続を有効にする前に、正常に動作するかテストしてください。BlueXPのBlueXPページには、テストユーザーが認証に成功していることを確認できるテストオプションがあります。テストが成功したら、接続を有効にできます。</block>
   <block id="a0f566a97e3f69eafdb05d87fcd258d4" category="paragraph-title"><block ref="3fb1f11a25837416d87a2007da1d76e6" category="inline-image-macro-rx" type="image"></block> BlueXPで接続を有効にする</block>
   <block id="bd2e9b54c20d09ff4a304cf10f821155" category="paragraph">接続を有効にすると、ユーザーは企業の資格情報を使用してBlueXPにログインできるようになります。</block>
   <block id="7a15d5af6f3fb4b588190669535d4bbe" category="paragraph">開始するには、それぞれのプロトコルまたは IdP のトピックを確認してください。</block>
@@ -5459,7 +5455,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="328e39c031d3f6a77403904d6dda2377" category="section-title">2025年7月31日</block>
   <block id="8ec07d17b9626eed73b7d8c3ecb0e32f" category="doc">プライベートモードリリース（3.9.54）</block>
   <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="cell">2025年7月28日</block>
-  <block id="985faaef42ae98b8d59df17cd449681e" category="paragraph">NetAppサポート サイトと連携すると、ユーザーは、 NetAppサポート サイト、 Active IQ Digital Advisor 、およびNetAppサポート サイト アカウントに関連付けられているその他のアプリで使用するのと同じ資格情報を使用してログインし、 BlueXP にアクセスできるようになります。フェデレーションを設定すると、 NetAppサポート サイト アカウントを作成した新しいユーザーもBlueXPにアクセスできるようになります。</block>
   <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp は、フェデレーション用に次のプロトコルと ID プロバイダーをサポートしています。</block>
   <block id="f207a0643b8dada892565ed2318b05cd" category="cell"><block ref="f207a0643b8dada892565ed2318b05cd" category="inline-link-macro-rx"></block></block>
   <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">はい<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
@@ -5479,4 +5474,12 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="6d4f1161a06d11fa7424e224b2a86d25" category="inline-link">バックアップとリカバリを使用してオンプレミスのONTAPデータを Google Cloud Storage にバックアップする</block>
   <block id="b9142ed8495860430205961c82c827a0" category="cell"><block ref="b9142ed8495860430205961c82c827a0" category="inline-link-rx"></block></block>
   <block id="86b4fb0c56ea4924e5069e8f25d3a778" category="cell"><block ref="86b4fb0c56ea4924e5069e8f25d3a778" category="inline-link-rx"></block></block>
+  <block id="00f4500782739238dc0801f2579a354e" category="paragraph">NetAppサポート サイトと連携すると、ユーザーは、 NetAppサポート サイト、 Active IQ Digital Advisor 、およびNetAppサポート サイト アカウントに関連付けられているその他のアプリで使用するのと同じ資格情報を使用してログインし、 BlueXP にアクセスできるようになります。フェデレーションを設定すると、 NetAppサポート サイト アカウントを作成した新しいユーザーもBlueXPにアクセスできるようになります。</block>
+  <block id="6ead1a7fe0f07609f377bd234facc0ef" category="inline-link-macro">フェデレーションをインポートする方法を学ぶ</block>
+  <block id="91f0c5ab0e5f85ccb6fe978fe56bab40" category="admonition">以前にNetApp Cloud Central ( BlueXPの外部アプリケーション) を使用してフェデレーションを構成していた場合は、 BlueXP内でフェデレーションを管理できるように、 BlueXP Federation ページを使用してフェデレーションをインポートする必要があります。<block ref="57d57f1ec815a326ebb31008786ac229" category="inline-link-macro-rx"></block></block>
+  <block id="c2e95c6a48fbf11a14fe5caa4ff899bc" category="paragraph">メール ドメインとは異なるドメインとフェデレーションするには、そのドメインを所有していることを確認します。追加の手順なしで電子メールドメインを統合できます。</block>
+  <block id="c386ea934563047c1e78820c2a719b62" category="paragraph">新しいアプリケーションを作成し、ACS URL、エンティティ ID、その他の資格情報などの必要な情報を提供して、 NetAppを信頼するように ID プロバイダーを構成します。サービス プロバイダー情報は ID プロバイダーによって異なるため、詳細については特定の ID プロバイダーのドキュメントを参照してください。この手順を完了するには、IdP 管理者と協力する必要があります。</block>
+  <block id="c4b307083b5d0cdb2a3121de7077c81a" category="paragraph">接続を作成するには、SAML メタデータ URL やファイルなど、ID プロバイダーから必要な情報を提供する必要があります。この情報は、 BlueXPと ID プロバイダー間の信頼関係を確立するために使用されます。提供する情報は、使用している IdP によって異なります。たとえば、Microsoft Entra ID を使用している場合は、クライアント ID、シークレット、ドメインを指定する必要があります。</block>
+  <block id="c86db883022c01769d1a691d6239d6b6" category="paragraph">フェデレーション接続を有効にする前にテストしてください。 BlueXPのフェデレーション ページには、テスト ユーザーが正常に認証できることを確認できるテスト オプションが用意されています。テストが成功した場合は、接続を有効にできます。</block>
+  <block id="891726cdad713442b056e44ee0faab3d" category="paragraph">以前にNetApp Cloud Central ( BlueXPの外部アプリケーション) を介してフェデレーションを設定したことがある場合は、フェデレーション ページで、既存のフェデレーション接続をBlueXPにインポートして新しいインターフェイスで管理するように求められます。これにより、フェデレーション接続を再作成することなく、最新の拡張機能を活用できるようになります。</block>
 </blocks>

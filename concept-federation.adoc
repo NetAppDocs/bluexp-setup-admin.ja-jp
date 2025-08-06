@@ -43,6 +43,9 @@ NetAppサポート チームがお客様のリクエストを確認し、処理�
 BlueXPのシングルサインオン（SSO）を有効にするには、アイデンティティプロバイダとのフェデレーション接続を設定します。このプロセスでは、アイデンティティプロバイダがNetAppをサービスプロバイダとして信頼するように設定し、 BlueXPで接続を作成します。
 
 
+NOTE: 以前にNetApp Cloud Central ( BlueXPの外部アプリケーション) を使用してフェデレーションを構成していた場合は、 BlueXP内でフェデレーションを管理できるように、 BlueXP Federation ページを使用してフェデレーションをインポートする必要があります。link:task-federation-import.html["フェデレーションをインポートする方法を学ぶ"]
+
+
 
 === サポートされているIDプロバイダ
 
@@ -68,19 +71,19 @@ NetAppは、サービスプロバイダ主導（SP主導）のSSOのみをサポ
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ドメインを確認する（メールドメインを使用していないとき）
 [role="quick-margin-para"]
-メールドメインとは異なるドメインと連携する場合は、まずそのドメインの所有権を確認する必要があります。メールドメインの連携は、追加の手順なしで行えます。
+メール ドメインとは異なるドメインとフェデレーションするには、そのドメインを所有していることを確認します。追加の手順なしで電子メールドメインを統合できます。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] IdP を設定して、 NetApp をサービス プロバイダーとして信頼する
 [role="quick-margin-para"]
-NetAppをサービスプロバイダとして信頼するようにアイデンティティプロバイダを設定するには、新しいアプリケーションを作成し、ACS URL、エンティティID、その他の認証情報などの必要な情報を入力します。サービスプロバイダ情報はアイデンティティプロバイダによって異なるため、詳細については、ご利用のアイデンティティプロバイダのドキュメントを参照してください。この手順を完了するには、IdP管理者にご相談ください。
+新しいアプリケーションを作成し、ACS URL、エンティティ ID、その他の資格情報などの必要な情報を提供して、 NetAppを信頼するように ID プロバイダーを構成します。サービス プロバイダー情報は ID プロバイダーによって異なるため、詳細については特定の ID プロバイダーのドキュメントを参照してください。この手順を完了するには、IdP 管理者と協力する必要があります。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] BlueXPでフェデレーション接続を作成する
 [role="quick-margin-para"]
-接続を確立するには、SAMLメタデータURLやファイルなど、IDプロバイダから必要な情報を提供する必要があります。この情報は、 BlueXPとIDプロバイダ間の信頼関係を確立するために使用されます。提供する情報は、使用しているIdPによって異なります。例えば、Microsoft Entra IDを使用している場合は、クライアントID、シークレット、ドメインを提供する必要があります。
+接続を作成するには、SAML メタデータ URL やファイルなど、ID プロバイダーから必要な情報を提供する必要があります。この情報は、 BlueXPと ID プロバイダー間の信頼関係を確立するために使用されます。提供する情報は、使用している IdP によって異なります。たとえば、Microsoft Entra ID を使用している場合は、クライアント ID、シークレット、ドメインを指定する必要があります。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["3つ"] BlueXPでフェデレーションをテストする
 [role="quick-margin-para"]
-フェデレーション接続を有効にする前に、正常に動作するかテストしてください。BlueXPのBlueXPページには、テストユーザーが認証に成功していることを確認できるテストオプションがあります。テストが成功したら、接続を有効にできます。
+フェデレーション接続を有効にする前にテストしてください。 BlueXPのフェデレーション ページには、テスト ユーザーが正常に認証できることを確認できるテスト オプションが用意されています。テストが成功した場合は、接続を有効にできます。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["3つ"] BlueXPで接続を有効にする
 [role="quick-margin-para"]
