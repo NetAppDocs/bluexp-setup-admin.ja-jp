@@ -259,5 +259,5 @@ BlueXPでは、2つのサービスに対してStorageGRID権限が必要です�
 | 目標 | 説明 | リンク 
 
 
-| オンプレミスのONTAPクラスタをStorageGRIDに階層化 | StorageGRIDへのBlueXPの階層化をセットアップするときは、S3のアクセスキーとシークレットキーを使用してBlueXPの階層化を提供する必要があります。BlueXPの階層化サービスでは、このキーを使用してバケットにアクセスします。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["StorageGRIDへの階層化を準備"^] 
+| オンプレミスのONTAPクラスタをStorageGRIDに階層化 | StorageGRIDへのBlueXPの階層化をセットアップするときは、S3のアクセスキーとシークレットキーを使用してBlueXPの階層化を提供する必要があります。BlueXPの階層化サービスでは、このキーを使用してバケットにアクセスします。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html["StorageGRIDへの階層化を準備"^] 
 |===

@@ -64,4 +64,4 @@ BlueXPでは、次の機能とデータ サービスに対する IAM ロール�
 * フェデレーション
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["アクセス ロールの使用について詳しく学習します。"]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["アクセス ロールの使用について詳しく学習します。"]

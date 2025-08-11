@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-analyst-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: BlueXP ID およびアクセス管理は、監視およびサポート ケースを支援するサポート アナリストの役割を提供します。 
+---
+= BlueXPの運用サポートアナリストのアクセス ロール
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+アラートと監視へのアクセスを提供するために、ユーザーに次のロールを割り当てることができます。この役割を持つユーザーはサポートケースを開くこともできます。
+
+
+
+== 運用サポートアナリスト
+
+[cols="1,1"]
+|===
+| タスク | 実行できる 
+
+
+| 設定 > 資格情報から自分のユーザー資格情報を管理します | はい。 
+
+
+| 検出されたリソースを表示 | はい。 
+
+
+| BlueXPを通じてサポートに登録し、ケースを提出する | はい。 
+
+
+| はい。 | BlueXPのタイムラインと通知を表示する 
+
+
+| はい。 | アラートの表示、ダウンロード、設定 
+|===

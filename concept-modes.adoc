@@ -155,7 +155,7 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 | Azure NetApp Files の特長 | フルサポート 
 
 
-| バックアップとリカバリ | 制限モードの政府地域および商用地域でサポートされています。制限モードの主権領域ではサポートされていません。制限モードでは、BlueXP  のバックアップとリカバリでONTAPボリュームのデータのバックアップとリストアのみがサポートされます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["ONTAPデータでサポートされるバックアップデスティネーションのリストを表示する"^]アプリケーションデータと仮想マシンデータのバックアップとリストアはサポートされていません。 
+| バックアップとリカバリ | 制限モードの政府地域および商用地域でサポートされます。制限モードの主権地域ではサポートされません。制限モードでは、 BlueXP backup and recoveryはONTAPボリューム データのバックアップと復元のみをサポートします。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAPデータでサポートされるバックアップデスティネーションのリストを表示する"^]アプリケーション データおよび仮想マシン データのバックアップと復元はサポートされていません。 
 
 
 | 分類  a| 
@@ -238,7 +238,7 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 | サポートされるサービス | 注： 
 
 
-| バックアップとリカバリ | AWSとAzureの商用リージョンでサポートされます。Google Cloud、またはプライベートモードではサポートされていません https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^] https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^] https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 。BlueXP  のバックアップとリカバリでは、ONTAPボリュームのデータのバックアップとリストアのみがサポートされます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["ONTAPデータでサポートされるバックアップデスティネーションのリストを表示する"^]アプリケーションデータと仮想マシンデータのバックアップとリストアはサポートされていません。 
+| バックアップとリカバリ | AWS および Azure の商用リージョンでサポートされます。 Google Cloudまたは https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^]、 https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^] 、 または https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]プライベート モードでは、 BlueXP backup and recoveryはONTAPボリューム データのみのバックアップと復元をサポートします。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAPデータでサポートされるバックアップデスティネーションのリストを表示する"^]アプリケーション データおよび仮想マシン データのバックアップと復元はサポートされていません。 
 
 
 | Cloud Volumes ONTAP | インターネットにアクセスできないため、自動ソフトウェアアップグレードとAutoSupportの機能は使用できません。 
@@ -261,7 +261,7 @@ APIエンドポイント:: コネクタ仮想マシンに対してAPI呼び出�
 
 
 | バックアップとリカバリ  a| 
-プライベートモードでは、BlueXPのバックアップとリカバリでONTAPボリュームのデータのバックアップとリストアのみがサポートされます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^]
+プライベート モードでは、 BlueXP backup and recoveryはONTAPボリューム データのみのバックアップと復元をサポートします。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^]
 
 アプリケーションデータと仮想マシンデータのバックアップとリストアはサポートされていません。
 
@@ -356,7 +356,7 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 .17+| * サービス * | アラート | いいえ | いいえ 
 
 
-| バックアップとリカバリ | はいhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] | はいhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] 
+| バックアップとリカバリ | はいhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] | はいhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] 
 
 
 | 分類 | はい。 | はい。 

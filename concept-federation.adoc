@@ -43,7 +43,7 @@ NetAppサポート チームがお客様のリクエストを確認し、処理�
 BlueXPのシングルサインオン（SSO）を有効にするには、アイデンティティプロバイダとのフェデレーション接続を設定します。このプロセスでは、アイデンティティプロバイダがNetAppをサービスプロバイダとして信頼するように設定し、 BlueXPで接続を作成します。
 
 
-NOTE: 以前にNetApp Cloud Central ( BlueXPの外部アプリケーション) を使用してフェデレーションを構成していた場合は、 BlueXP内でフェデレーションを管理できるように、 BlueXP Federation ページを使用してフェデレーションをインポートする必要があります。link:task-federation-import.html["フェデレーションをインポートする方法を学ぶ"]
+NOTE: 以前にNetApp Cloud Central ( BlueXPの外部アプリケーション) を使用してフェデレーションを構成していた場合は、 BlueXP内でフェデレーションを管理できるように、 BlueXP Federation ページを使用してフェデレーションをインポートする必要があります。link:task-federation-import.html["フェデレーションをインポートする方法を学びます。"]
 
 
 

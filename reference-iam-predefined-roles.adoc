@@ -61,6 +61,9 @@ BlueXP ID およびアクセス管理 (IAM) には、リソース階層のさま
 | ONTAPメディエーターのセットアップロール | ONTAPメディエーター設定ロールを持つサービスアカウントは、サービスリクエストを作成できます。このロールは、サービスアカウントでONTAPメディエーターのインスタンスを設定するために必要です。 link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["ONTAPクラウドメディエーター"^] 。 
 
 
+| link:reference-iam-analyst-roles.html["オペレーションサポートアナリスト"] | アラートおよび監視ツールへのアクセスと、サポートケースの入力および管理機能を提供します。 
+
+
 | link:reference-iam-storage-roles.html["Storage Admin"] | ストレージの健全性とガバナンス機能の管理、ストレージリソースの検出、既存の作業環境の変更と削除を実行できます。 
 
 
