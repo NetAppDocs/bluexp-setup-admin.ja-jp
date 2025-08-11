@@ -3641,8 +3641,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="c7b1fe992423d57d0e492585ff631c02" category="list-text">ディザスタリカバリサイトとしてVMware Cloud on Amazon FSx for ONTAPを使用して、オンプレミスのVMwareワークロードを保護します。</block>
   <block id="71bd4794c020a7645a4cfe74173f4058" category="list-text">BlueXPの優れた経済性</block>
   <block id="068ff21264880d35ad4153fad90e3828" category="list-text">現在または予測されている低容量のクラスタを特定し、データ階層化または容量追加の推奨事項を実装します。</block>
-  <block id="dd7c710b103a018a2046baa2f5052ed9" category="list-text">BlueXPの優れた運用耐障害性</block>
-  <block id="00ac035a0893138aed2f04da8c8223d3" category="list-text">ファームウェアとソフトウェア設定のリスクを自動で修正し、ONTAP クラスタの健全性を維持</block>
   <block id="67ecb6c0a19888100e5352d06f886856" category="list-text">BlueXPのランサムウェア対策</block>
   <block id="a8dd42d088a97f32bf9a4c69abc2517a" category="list-text">ランサムウェア攻撃につながる可能性のある異常を検出ワークロードの保護とリカバリ</block>
   <block id="3ffe2e9dffcfea6ba0652c1f11e54fc1" category="list-text">BlueXPレプリケーション</block>
@@ -3899,7 +3897,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="da48a166a29b8e248a3113d9bd6cba04" category="paragraph">デジタルウォレットにライセンスを追加するためにコネクタが必要なのは、Cloud Volumes ONTAP _ノードベース_ライセンスのみです。この場合、 Cloud Volumes ONTAP システムにインストールされているライセンスのデータを使用するため、コネクタが必要です。</block>
   <block id="bf2f35a1367a7ddb519a7dd3cedacfdd" category="paragraph">BlueXPを標準モードで使用する場合、BlueXPの次の機能やサービスにはコネクタが必要です。</block>
   <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">経済性^ 1^</block>
-  <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">運用の耐障害性^1^</block>
   <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">^1^コネクタなしでこれらのサービスにアクセスできますが、サービスからアクションを開始するにはコネクタが必要です。</block>
   <block id="ca61c00bb942882ff64e228d1e677f97" category="paragraph">BlueXPを制限モードまたはプライベートモードで使用するには、コネクタが必要です。</block>
   <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">コネクタは、BlueXPサービスアーキテクチャの基本要素です。関連するコネクタが常に稼働し、アクセス可能であることを確認するのは、お客様の責任です。このサービスは、コネクタの可用性の短い停止を克服するように設計されていますが、インフラストラクチャの障害を修復するために必要なときにすぐに対処する必要があります。</block>
@@ -4076,10 +4073,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="34153016d27f6bc08ca28afe350597f0" category="cell">クラスタの更新の詳細を表示する</block>
   <block id="b9632e5402da95a15f8096dffe8fe849" category="cell">更新前チェックを実行し、アップグレードプランをダウンロード</block>
   <block id="26c438938da81386c731f3d387eda803" category="cell">ソフトウェアアップデートのインストール</block>
-  <block id="faf3b0fdd74f34bfe5b5e712fd212952" category="cell">*運用の耐障害性*</block>
-  <block id="71dfe4aa697335a7f919f97a8273c0b2" category="cell">セキュリティリスクの問題をレビューします</block>
-  <block id="0416203226164e8fc52087494d33b58d" category="cell">Ansibleプレイブックをダウンロード</block>
-  <block id="55ecbcc86c1df8e0bbccc58434b65675" category="cell">問題を自動的に修正</block>
   <block id="c7c10204d64df7a89f6234e58c752612" category="cell">*経済効率*</block>
   <block id="2dcdbb99022cfb6c4ef2bd327930b9d0" category="cell">キャパシティプランニングのステータスを確認します</block>
   <block id="a9857843d1ca1e121ff59133f171d8cf" category="cell">次のアクションを選択（ベストプラクティス、階層）</block>
@@ -5007,4 +5000,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="a99608db4d85374403174f1119cac088" category="list-text">*ダーク テーマ* スライダーを動かして有効にします。</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">2025年8月11日</block>
   <block id="107d607a0fbcdbb5eddd688662ad90ca" category="sidebar">オペレーションサポートアナリスト</block>
+  <block id="63c109031bd5690629b7c9170bf3f4e8" category="section-title">運用回復力機能</block>
+  <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">運用回復力機能はBlueXPから削除されました。問題が発生した場合は、 NetAppサポートにお問い合わせください。</block>
 </blocks>
