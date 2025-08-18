@@ -4198,7 +4198,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="f4a866cc8d962c94d7c7fd8decdd7e6c" category="list-text">フォルダ レベルでアクセス ロールを付与すると、フォルダ内のすべてのフォルダ、プロジェクト、リソースがそのロールを継承します。</block>
   <block id="34aee3ad45d37ad6cf603311eb0838fb" category="list-text">プロジェクト レベルでアクセス ロールを付与すると、そのプロジェクトに関連付けられているすべてのリソースがそのロールを継承します。</block>
   <block id="b65cc9ab2327fd85f7b0e7503c06a66f" category="paragraph">追加のプロジェクトに関連付けたリソースが BlueXP コネクタを使用して検出された場合は、そのリソースが現在関連付けられているプロジェクトにコネクタを関連付ける必要もあります。そうしないと、_組織管理者_ ロールを持たないメンバーは、BlueXP キャンバスからコネクタとその関連リソースにアクセスできなくなります。</block>
-  <block id="23281988aab04cbdc82eb76f370939d5" category="paragraph">BlueXP は、ビジネス要件とセキュリティ要件を満たす複数の _導入モード_ を提供します。_標準モード_ では、SaaS (Software as a Service) レイヤーを活用して完全な機能を提供します。一方、接続制限のある組織では、 _制限モード_ と _プライベート モード_ をご利用いただけます。</block>
   <block id="43edcdb6c00656305d8defca5b3b7be0" category="cell">データサービスライセンスオプション</block>
   <block id="960800e4f6948441d5ac2b7201b75a9b" category="paragraph">XYZ 社には、Keystone サブスクリプション情報を閲覧する、さまざまな部門のストレージ エンジニアが 4 人います。これらのユーザはいずれもKeystoneサブスクリプションを監視する必要がありますが、サービスのリクエストはチームリーダーのみが許可されます。チームメンバーの3人には「Keystoneビューア」ロールが割り当てられ、チームリーダーには「Keystone管理者」ロールが割り当てられます。これにより、会社に対するサービスリクエストを管理できるようになります。</block>
   <block id="69d1234e785810f2a95867f80dbd3641" category="cell">アプリケーションのBlueXP  バックアップ/リカバリを使用して、オンプレミスのONTAPクラスタからSnapshotをバックアップできます。このロールを持つメンバーは、BlueXP で次のアクションを実行できます。 * バックアップとリカバリ &gt; アプリケーションから任意のアクションを実行する * 権限を持つプロジェクトおよびフォルダー内のすべての作業環境を管理する * すべての BlueXP サービスを使用する SnapCenter には、閲覧者ロールはありません。</block>
@@ -5002,4 +5001,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="107d607a0fbcdbb5eddd688662ad90ca" category="sidebar">オペレーションサポートアナリスト</block>
   <block id="63c109031bd5690629b7c9170bf3f4e8" category="section-title">運用回復力機能</block>
   <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">運用回復力機能はBlueXPから削除されました。問題が発生した場合は、 NetAppサポートにお問い合わせください。</block>
+  <block id="1483f680ce3bdf9d9815a763f9aff7ff" category="paragraph">BlueXP は、ビジネス要件とセキュリティ要件を満たすことができる_展開モード_ を提供します。  _標準モード_ では、サービスとしてのソフトウェア (SaaS) レイヤーを活用して完全な機能を提供しますが、接続制限がある組織では _制限モード_ と _プライベート モード_ が利用できます。</block>
 </blocks>
