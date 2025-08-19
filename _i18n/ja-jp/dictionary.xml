@@ -4208,7 +4208,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="6c5717b14632d720938288e07cadd604" category="paragraph">多国籍企業であるXYZ Corporationには、ストレージエンジニアやストレージ管理者の大規模なチームがあります。これにより、このチームは、ユーザー管理、コネクタの作成、デジタル ウォレットなどのコスト ツールなどのコア BlueXP タスクへのアクセスを制限しながら、担当リージョンのストレージ資産を管理できるようになります。</block>
   <block id="496d5f930a1daf128efdaf083cd8dcbb" category="paragraph">次の表は、BlueXP ストレージの各ロールが実行するアクションを示しています。</block>
   <block id="f427e4ecee2d5f4a7a3729b4087d142b" category="paragraph">ログインしてWebベースのコンソールを使用すると、BlueXPは複数のエンドポイントに接続して、ユーザーが開始したアクションを実行します。コンソールにアクセスするコンピューターは、これらのエンドポイントに接続している必要があります。</block>
-  <block id="6c5ff8f0129671982d1831fd73cf4dc0" category="list-text">ユーザーのコンピュータから、 <block ref="eecb3fc8bedef660fde4567972ba79cf" category="inline-link-rx"></block> SaaS (サービスとしてのソフトウェア) として利用できます。</block>
   <block id="6f7595410ecabe6d611ded757d1f969c" category="cell">これは、Web ベースのコンソールを使用するために Web ブラウザに入力するエンドポイントです。</block>
   <block id="3e692c92398b899f8bef9e541b9e153b" category="cell">Web ベースのコンソールは、このエンドポイントに接続して API と対話し、承認、ライセンス、サブスクリプション、資格情報、通知などに関連するアクションを実行します。</block>
   <block id="f3000ad965f0ab15a5956bdd572c01d0" category="cell">デジタルアドバイザーにアクセスするために必要です。</block>
@@ -5002,4 +5001,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="63c109031bd5690629b7c9170bf3f4e8" category="section-title">運用回復力機能</block>
   <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">運用回復力機能はBlueXPから削除されました。問題が発生した場合は、 NetAppサポートにお問い合わせください。</block>
   <block id="1483f680ce3bdf9d9815a763f9aff7ff" category="paragraph">BlueXP は、ビジネス要件とセキュリティ要件を満たすことができる_展開モード_ を提供します。  _標準モード_ では、サービスとしてのソフトウェア (SaaS) レイヤーを活用して完全な機能を提供しますが、接続制限がある組織では _制限モード_ と _プライベート モード_ が利用できます。</block>
+  <block id="123a6b352fe45a0ef3d13dd5def43f93" category="list-text">ユーザーのコンピュータからセクションを完了するときに<block ref="eecb3fc8bedef660fde4567972ba79cf" category="inline-link-rx"></block>SaaS (サービスとしてのソフトウェア) として利用できます。</block>
 </blocks>
