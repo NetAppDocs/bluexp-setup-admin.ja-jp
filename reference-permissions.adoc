@@ -49,7 +49,7 @@ AWS Marketplaceからコネクタを起動した場合、コネクタを手動�
 | 目標 | 説明 | リンク 
 
 
-| BlueXP backup and recoveryを使用してオンプレミスのONTAPクラスターを Amazon S3 にバックアップします | ONTAPボリュームでバックアップをアクティブ化すると、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html["バックアップのS3権限を設定"^] 
+| BlueXP backup and recoveryを使用してオンプレミスのONTAPクラスターを Amazon S3 にバックアップします | ONTAPボリュームでバックアップをアクティブ化すると、特定の権限を持つIAMユーザのアクセスキーとシークレットを入力するように求められます。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html#set-up-s3-permissions["バックアップのS3権限を設定"^] 
 |===
 
 
@@ -202,11 +202,12 @@ BlueXPのバックアップとリカバリを使用してCloud Volumes ONTAPを�
 
  a| 
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["バックアップとリカバリを使用して、 Cloud Volumes ONTAPデータを Google Cloud Storage にバックアップします。"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[CMEK の権限^]
 
 
 
 
-| オンプレミスのONTAPクラスタをGoogle Cloudにバックアップ | BlueXP バックアップとリカバリを使用してオンプレミスの ONTAP クラスターをバックアップする場合は、「検索と復元」機能を使用するために、コネクタに権限を追加する必要があります。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["バックアップとリカバリを使用してオンプレミスのONTAPデータを Google Cloud Storage にバックアップする"^] 
+| オンプレミスのONTAPクラスタをGoogle Cloudにバックアップ | BlueXP バックアップとリカバリを使用してオンプレミスの ONTAP クラスターをバックアップする場合は、「検索と復元」機能を使用するために、コネクタに権限を追加する必要があります。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["検索と復元機能の権限"^] 
 |===
 
 

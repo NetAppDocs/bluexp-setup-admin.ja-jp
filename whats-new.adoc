@@ -1026,3 +1026,202 @@ Red Hat Enterprise Linux 8.10ホストにコネクタをインストールする
 === アイデンティティフェデレーションのユーザ検証
 
 BlueXP  でアイデンティティフェデレーションを使用する場合は、BlueXP  に初めてログインした各ユーザが簡単なフォームに入力してIDを検証する必要があります。
+
+
+
+== 2024年7月31日
+
+
+
+=== プライベートモードリリース（3.9.42）
+
+新しいプライベートモードリリースがNetApp Support Siteからダウンロードできるようになりました。
+
+.RHEL 8および9のサポート
+このリリースには、 BlueXP をプライベート モードで使用する場合に、Red Hat Enterprise Linux 8 または 9 ホストにコネクタをインストールするためのサポートが含まれています。次のバージョンの RHEL がサポートされています。
+
+* 8.6～8.10
+* 9.1～9.3
+
+
+これらのオペレーティング システムでは、コンテナー オーケストレーション ツールとして Podman が必要です。
+
+Podman の要件、既知の制限、オペレーティング システムのサポートの概要、RHEL 7 ホストがある場合の対処方法、開始方法などについて知っておく必要があります。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
+
+.このリリースに含まれるバージョン
+このリリースには、プライベート モードでサポートされているBlueXPサービスの次のバージョンが含まれています。
+
+[cols="2*"]
+|===
+| サービス | 含まれるバージョン 
+
+
+| コネクタ | 3.9.42 
+
+
+| バックアップとリカバリ | 2024年7月18日 
+
+
+| 分類 | 2024年7月1日（バージョン1.33） 
+
+
+| Cloud Volumes ONTAP管理 | 2024年6月10日 
+
+
+| デジタルウォレット | 2023年7月30日 
+
+
+| オンプレミスのONTAPクラスタ管理 | 2023年7月30日 
+
+
+| レプリケーション | 2022年9月18日 
+|===
+これらのBlueXPサービスのバージョンに含まれる内容の詳細については、各BlueXPサービスのリリース ノートを参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP backup and recoveryの新機能について"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP classificationの新機能について学ぶ"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXPのCloud Volumes ONTAP管理の新機能について学ぶ"^]
+
+
+
+
+== 2024年7月15日
+
+
+
+=== RHEL 8.10 のサポート
+
+BlueXP は、標準モードまたは制限モードを使用しているときに、Red Hat Enterprise Linux 8.10 ホストにコネクタをインストールすることをサポートするようになりました。
+
+RHEL 8.10 のサポートは、コネクタの 3.9.40 リリースから開始されます。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
+
+
+
+== 2024年7月8日
+
+
+
+=== コネクタ 3.9.42
+
+このリリースには、AWS カナダ西部 (カルガリー) リージョンのコネクタに対するマイナーな改善、バグ修正、およびサポートが含まれています。
+
+3.9.42 リリースは、標準モードと制限モードで利用できます。
+
+
+
+=== 更新されたDockerエンジン要件
+
+コネクタが Ubuntu ホストにインストールされている場合、サポートされる Docker エンジンの最小バージョンは 23.0.6 になりました。以前は19.3.1でした。
+
+サポートされる最大バージョンは 25.0.5 のままです。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["コネクタホスト要件の表示"]。
+
+
+
+=== メール認証が必要になりました
+
+BlueXPにサインアップする新規ユーザーは、ログインする前に電子メール アドレスを確認することが必要になりました。
+
+
+
+== 2024年6月12日
+
+
+
+=== コネクタ 3.9.41
+
+今回のリリースのBlueXP Connectorには、セキュリティが若干改善され、バグが修正されています。
+
+3.9.41 リリースは、標準モードと制限モードで利用できます。
+
+
+
+== 2024年6月4日
+
+
+
+=== プライベートモードリリース（3.9.40）
+
+新しいプライベート モード リリースをNetAppサポート サイトからダウンロードできるようになりました。このリリースには、プライベート モードでサポートされているBlueXPサービスの次のバージョンが含まれています。
+
+このプライベート モード リリースには、Red Hat Enterprise Linux 8 および 9 のコネクタのサポートは含まれていないことに注意してください。
+
+[cols="2*"]
+|===
+| サービス | 含まれるバージョン 
+
+
+| コネクタ | 3.9.40 
+
+
+| バックアップとリカバリ | 2024年5月17日 
+
+
+| 分類 | 2024年5月15日（バージョン1.31） 
+
+
+| Cloud Volumes ONTAP管理 | 2024年5月17日 
+
+
+| デジタルウォレット | 2023年7月30日 
+
+
+| オンプレミスのONTAPクラスタ管理 | 2023年7月30日 
+
+
+| レプリケーション | 2022年9月18日 
+|===
+これらのBlueXPサービスのバージョンに含まれる内容の詳細については、各BlueXPサービスのリリース ノートを参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["プライベートモードの詳細"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["BlueXPのプライベートモードでの利用を開始する方法"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["プライベートモードの使用時にコネクタをアップグレードする方法について説明します。"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP backup and recoveryの新機能について"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP classificationの新機能について学ぶ"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXPのCloud Volumes ONTAP管理の新機能について学ぶ"^]
+
+
+
+
+== 2024年5月17日
+
+
+
+=== コネクタ 3.9.40
+
+BlueXPコネクタのこのリリースには、追加のオペレーティング システムのサポート、マイナーなセキュリティの改善、およびバグ修正が含まれています。
+
+現時点では、3.9.40 リリースは標準モードと制限モードで利用できます。
+
+.RHEL 8および9のサポート
+コネクタは、 BlueXP を標準モードまたは制限モードで使用する場合、_新しい_コネクタ インストールを備えた次のバージョンの Red Hat Enterprise Linux を実行しているホストでサポートされるようになりました。
+
+* 8.6～8.9
+* 9.1～9.3
+
+
+これらのオペレーティング システムでは、コンテナー オーケストレーション ツールとして Podman が必要です。
+
+Podman の要件、既知の制限、オペレーティング システムのサポートの概要、RHEL 7 ホストがある場合の対処方法、開始方法などについて知っておく必要があります。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["コネクタを使用したRHEL 8および9のサポートについて"]。
+
+.RHEL 7およびCentOS 7のサポート終了
+2024 年 6 月 30 日に、RHEL 7 はメンテナンス終了 (EOM) を迎え、CentOS 7 はサポート終了 (EOL) を迎えます。  NetApp は、2024 年 6 月 30 日までこれらの Linux ディストリビューション上のコネクタのサポートを継続します。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["RHEL 7 または CentOS 7 で既存のコネクタを実行している場合の対処方法を学びます"] 。
+
+.AWS 権限の更新
+3.9.38 リリースでは、AWS のコネクタ ポリシーを更新し、「ec2:DescribeAvailabilityZones」権限を追加しました。  Cloud Volumes ONTAPで AWS Local Zones をサポートするには、この権限が必要になりました。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["コネクタの AWS 権限を表示する"] 。
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["AWS Local Zonesのサポートについて詳しくはこちら"^]
+
