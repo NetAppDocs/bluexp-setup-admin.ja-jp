@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-modes.html 
-keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
 summary: BlueXPには複数の導入モードが用意されており、ビジネスやセキュリティの要件に合わせてBlueXPを使用できます。Standardモードでは、BlueXPのSaaSレイヤを活用してすべての機能を提供します。RestrictedモードとPrivateモードは、接続が制限されている組織で使用できます。 
 ---
 = BlueXPの導入モードについて説明します
@@ -353,10 +353,10 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 | StorageGRID | いいえ | いいえ 
 
 
-.16+| * サービス * | アラート | いいえ | いいえ 
+.15+| * サービス * | アラート | いいえ | いいえ 
 
 
-| バックアップとリカバリ | はいhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivityView[]ONTAPボリュームデータのサポートされているバックアップ先のリスト^] | はいhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] 
+| バックアップとリカバリ | はいhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] | はいhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["ONTAPボリュームデータでサポートされるバックアップデスティネーションのリストを表示する"^] 
 
 
 | 分類 | はい。 | はい。 
@@ -398,20 +398,26 @@ NOTE: でBlueXPを使用する場合は https://aws.amazon.com/federal/secret-cl
 | ワークロードファクトリ | いいえ | いいえ 
 
 
-.6+| *機能* | アイデンティティ管理とアクセス管理 | はい。 
+.8+| *機能* | アイデンティティ管理とアクセス管理 | はい。 | はい。 
 
 
-| はい。 | クレデンシャル | はい。 
+| クレデンシャル | はい。 | はい。 
 
 
-| はい。 | NSSアカウント | はい。 
+| フェデレーション | はい。 | いいえ 
 
 
-| いいえ | 通知 | はい。 
+| 多要素認証 | はい。 | いいえ 
 
 
-| いいえ | 検索 | はい。 
+| NSSアカウント | はい。 | いいえ 
 
 
-| いいえ | タイムライン | はい。 
+| 通知 | はい。 | いいえ 
+
+
+| 検索 | はい。 | いいえ 
+
+
+| タイムライン | はい。 | はい。 
 |===
