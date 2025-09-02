@@ -72,8 +72,6 @@ Red Hat Enterprise Linux の場合
 9.1～9.4
 
 8.6～8.10
-
-7.9
  a| 
 3.9.40以降（BlueXP  を標準モードまたは制限モードで使用）
  a| 
