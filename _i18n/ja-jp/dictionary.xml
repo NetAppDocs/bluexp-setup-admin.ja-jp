@@ -5058,4 +5058,5 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">はい<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
   <block id="4ebca8d078924ec17de1cf258147df0c" category="paragraph">フォルダーには、プロジェクト、他のフォルダー、またはその両方を含めることができます。フォルダーの作成はオプションです。</block>
   <block id="5c2b3c6d1859da2427f6c94e995cf39c" category="doc">BlueXPでフェデレーションを管理する</block>
+  <block id="12315f52b33926030701f1c76338e060" category="cell">\https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com</block>
 </blocks>

@@ -70,11 +70,7 @@ AWS サービス（ amazonaws.com ）：
 | \https://signin.b2c.netapp.com | NetApp Support Site (NSS)の資格情報を更新するか、新しいNSS資格情報をBlueXPに追加する必要があります。 
 
 
-| \https://netapp-cloud-account.auth0.com
-
-\https://cdn.auth0.com
-
-\https://services.cloud.netapp.com | Webブラウザはこれらのエンドポイントに接続して、BlueXPを介した集中型ユーザ認証を行います。 
+| \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | Webブラウザはこれらのエンドポイントに接続して、BlueXPを介した集中型ユーザ認証を行います。 
 
 
 | \https://widget.intercom.io | NetApp サポートと会話できる製品内チャットです。 
