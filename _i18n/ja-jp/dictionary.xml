@@ -2335,10 +2335,6 @@ AWS Marketplaceからコネクタを起動した場合、コネクタを手動�
   <block id="ccdd7e208a0a423c2c21b0cf2b9c9cf9" category="cell">Connector VMインスタンスのサービスアカウントには、日常処理に対する特定の権限が必要です。導入時にサービスアカウントをコネクタに関連付ける必要があります。
 
 また、新しい権限が以降のリリースで追加されるときに、ポリシーが最新の状態であることを確認する必要があります。</block>
-  <block id="2ffc85864a3bde535e5f41ca5ceb963e" category="cell">Cloud Volumes Service for Google Cloudの詳細</block>
-  <block id="fb40390dc5f9af56c8a05dba3f355101" category="cell">BlueXPでは、Google Cloudサービスアカウントを使用してCloud Volumes Service APIにアクセスし、適切な権限を付与する必要があります。</block>
-  <block id="ec8725380aa2f688c9b9d45557c44600" category="inline-link">サービスアカウントを設定します</block>
-  <block id="71ff910f19cd22c3817e69aefe990dc8" category="cell"><block ref="71ff910f19cd22c3817e69aefe990dc8" category="inline-link-rx"></block></block>
   <block id="326383c715f7d58418eab62449d7e6b5" category="cell">Google Cloudにデータブローカーを導入</block>
   <block id="6f0cd56d775c80607dc578326e3840bd" category="cell">データブローカーを導入するGoogle Cloudユーザに必要な権限が割り当てられていることを確認します。</block>
   <block id="23c5a36a4e18015e399e97b3a48f2255" category="inline-link">Google Cloud にデータブローカーを導入するための権限が必要です</block>
@@ -4871,7 +4867,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="332cf7fa33c69ec5f4db12e0c5d4c230" category="cell">割り当てられている特定のプロジェクトおよびフォルダへの無制限のアクセスをユーザーに許可します。管理するフォルダまたはプロジェクトにメンバーを追加したり、任意のBlueXP  タスクを実行したり、割り当てられたフォルダまたはプロジェクト内のリソースで任意のデータサービスまたはアプリケーションを使用したりできます。フォルダーまたはプロジェクト管理者はコネクタを作成できません。</block>
   <block id="1e92f5c7fccb14971fe2537bec747773" category="cell">ユーザーがBlueXPとのフェデレーションを作成および管理し、シングル サインオン (SSO) を有効にすることを許可します。</block>
   <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Google Cloud NetApp Volumes管理者</block>
-  <block id="42e05b82ea98ae962f4c09a6330b152a" category="cell"><block ref="42e05b82ea98ae962f4c09a6330b152a" category="inline-link-macro-rx"></block></block>
   <block id="ee848730515e9ec34272f93a110738f2" category="cell">Google Cloud NetApp Volumesロールを持つユーザーは、Google Cloud NetApp Volumes を検出して管理できます。</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">BlueXP classificationスキャン結果を表示する機能を提供します。このロールのユーザは、コンプライアンス情報を表示し、アクセス権を持つリソースのレポートを生成できます。これらのユーザは、ボリューム、バケット、データベーススキーマのスキャンを有効または無効にすることはできません。分類には、ビューアの役割はありません。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
@@ -4997,7 +4992,6 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="794b3a495ea7fc3d5dfc4a04fca36174" category="summary">ユーザーにプラットフォーム ロールを割り当てて、 BlueXPで管理タスクを実行し、ロールを割り当て、ユーザーを追加し、コネクタを作成し、フェデレーションを管理する権限を付与します。</block>
   <block id="c6583b97e14f16bc392f485bc9330714" category="cell">ユーザーは、組織内のすべてのプロジェクトとフォルダに無制限にアクセスでき、任意のプロジェクトまたはフォルダにメンバーを追加できるほか、 BlueXPタスクを実行したり、明示的なロールが関連付けられていないデータ サービスを使用したりできます。この役割を持つユーザーは、 BlueXP組織を整理および管理します。資格情報を持っている場合は、フォルダーとプロジェクトを作成し、ロールを割り当て、ユーザーを追加し、すべての作業環境を管理できます。これはコネクタを作成できる唯一のアクセス ロールです。</block>
   <block id="3adefaf0742bb05998d95535c058e1ff" category="cell"><block ref="3adefaf0742bb05998d95535c058e1ff" category="inline-link-rx"></block></block>
-  <block id="f440bceeae5f537573e3d8bf616b2de6" category="list-text">https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[CMEK の権限^]</block>
   <block id="3f4149dc5a7846817dd458a59e650f5f" category="inline-link">検索と復元機能の権限</block>
   <block id="a420dd2924b01530fcf3ece61c9728df" category="cell"><block ref="81705cdd494c9139b5b5def25d4145b1" category="inline-link-rx"></block></block>
   <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">2024年7月31日</block>
@@ -5059,4 +5053,7 @@ https://mysupport.netapp.com をご覧ください</block>
   <block id="4ebca8d078924ec17de1cf258147df0c" category="paragraph">フォルダーには、プロジェクト、他のフォルダー、またはその両方を含めることができます。フォルダーの作成はオプションです。</block>
   <block id="5c2b3c6d1859da2427f6c94e995cf39c" category="doc">BlueXPでフェデレーションを管理する</block>
   <block id="12315f52b33926030701f1c76338e060" category="cell">\https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com</block>
+  <block id="7e4f2643de3611653e3c76b199ce2ca9" category="cell"><block ref="7e4f2643de3611653e3c76b199ce2ca9" category="inline-link-macro-rx"></block></block>
+  <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">CMEK の権限</block>
+  <block id="564104d82a92323d6161aa7da0e8071a" category="list-text"><block ref="564104d82a92323d6161aa7da0e8071a" category="inline-link-rx"></block></block>
 </blocks>

@@ -202,23 +202,12 @@ BlueXPのバックアップとリカバリを使用してCloud Volumes ONTAPを�
 
  a| 
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["バックアップとリカバリを使用して、 Cloud Volumes ONTAPデータを Google Cloud Storage にバックアップします。"^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[CMEK の権限^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["CMEK の権限"^]
 
 
 
 
 | オンプレミスのONTAPクラスタをGoogle Cloudにバックアップ | BlueXP バックアップとリカバリを使用してオンプレミスの ONTAP クラスターをバックアップする場合は、「検索と復元」機能を使用するために、コネクタに権限を追加する必要があります。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["検索と復元機能の権限"^] 
-|===
-
-
-=== Cloud Volumes Service for Google Cloud
-
-[cols="20,60,20"]
-|===
-| 目標 | 説明 | リンク 
-
-
-| Cloud Volumes Service for Google Cloudの詳細 | BlueXPでは、Google Cloudサービスアカウントを使用してCloud Volumes Service APIにアクセスし、適切な権限を付与する必要があります。 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/task-set-up-google-cloud.html["サービスアカウントを設定します"^] 
 |===
 
 

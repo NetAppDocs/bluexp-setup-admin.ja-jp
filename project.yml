@@ -134,6 +134,8 @@ sidebar:
           url: "/reference-iam-platform-roles.html"
         - title: アプリケーションの役割
           entries:
+          - title: Google Cloud NetApp Volumes のロール
+            url: "/reference-iam-gcnv-roles.html"
           - title: Keystoneロール
             url: "/reference-iam-keystone-roles.html"
           - title: オペレーションサポートアナリスト
